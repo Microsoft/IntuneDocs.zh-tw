@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 197ad888dc8a07cc35efbaec538fde93c76c81c3
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 440eb2d457783ac71b905d064a6d83abaa966cfe
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817621"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503817"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>針對 Microsoft Intune 中的 BitLocker 原則進行疑難排解
 
@@ -32,9 +33,9 @@ BitLocker 磁片磁碟機加密是 Microsoft Windows 作業系統所提供的一
 
 有了 Microsoft Intune，您可以使用下列方法來管理 Windows 10 裝置上的 BitLocker：
 
-- **裝置設定原則**-在 Intune 管理主控台中，有一些內建原則選項可在**裝置**設定  > **Endpoint Protection** > **Windows 加密原則**中取得。 您可以在這裡找到所有可用的交換器和功能： [Windows 加密](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)。
+- **裝置設定原則**-在 Intune 管理主控台中，有一些內建原則選項可在**裝置**設定  > **Endpoint Protection**  > **Windows 加密原則** 中取得。 您可以在這裡找到所有可用的交換器和功能： [Windows 加密](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)。
 
-- **安全性基準** - [安全性基準](security-baselines.md)是已知的設定群組，以及相關安全性小組建議的預設值，以協助保護 Windows 裝置。 不同的基準來源（例如*MDM 安全性基準*或*Microsoft Defender ATP 基準*）可以管理與彼此不同的設定。 他們也可以管理您使用裝置設定原則管理的相同設定。 
+- **安全性基準** - [安全性基準](security-baselines.md)是已知的設定群組，以及相關安全性小組建議的預設值，以協助保護 Windows 裝置的安全。 不同的基準來源（例如*MDM 安全性基準*或*Microsoft Defender ATP 基準*）可以管理與彼此不同的設定。 他們也可以管理您使用裝置設定原則管理的相同設定。 
 
 除了 Intune 以外，BitLocker 設定也可能透過其他方式（例如群組原則）來管理，或由裝置使用者手動設定。
 
@@ -66,16 +67,16 @@ BitLocker 磁片磁碟機加密是 Microsoft Windows 作業系統所提供的一
  
 ### <a name="use-control-panel-on-the-client"></a>在用戶端上使用控制台  
 
-在啟用 BitLocker 和加密磁片磁碟機的裝置上，您可以從 [裝置] 控制台查看 BitLocker 狀態。 在裝置上，開啟 [**控制台**]  > **系統和安全性** > **BitLocker 磁碟機加密**。 如下圖所示的確認隨即出現。  
+在啟用 BitLocker 和加密磁片磁碟機的裝置上，您可以從 [裝置] 控制台查看 BitLocker 狀態。 在裝置上，開啟 **控制台**  >  **系統及安全性**  > **BitLocker 磁碟機加密**。 如下圖所示的確認隨即出現。  
 
 ![開啟控制台中的 BitLocker](./media/troubleshooting-bitlocker-policies/control-panel.png)
 
 ### <a name="use-a-command-prompt"></a>使用命令提示字元  
 
-在已啟用 BitLocker 並已加密磁片磁碟機的裝置上，以系統管理員認證啟動命令提示字元，然後執行 `manage-bde -status`。 結果應如下列範例所示：  
+在已啟用 BitLocker 並已加密磁片磁碟機的裝置上，以系統管理員認證啟動命令提示字元，然後執行 `manage-bde -status`。 結果應類似下列範例：  
 ![A status 命令](./media/troubleshooting-bitlocker-policies/command.png) 的結果
 
-在此範例中： 
+在下列範例中： 
 - **BitLocker 保護**已**開啟**，  
 - 已**加密的百分比**為**100%**  
 - **加密方法**為**XTS-AES 256**。  
@@ -150,7 +151,7 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
   原則會以單一單位的形式提供給裝置，因此，如果有些設定適用，而其他則不是，則您可以確信已收到原則本身。 在此案例中，裝置上的 Windows 版本可能不支援有問題的設定。 如需每個設定的版本需求詳細資料，請參閱 Windows 檔中的[BITLOCKER CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) 。  
 
   1. **並非所有硬體都支援 BitLocker**。  
-  即使您有正確版本的 Windows，基礎裝置硬體仍可能不符合 BitLocker 加密的需求。 您可以在 Windows 檔中找到 [BitLocker 的系統需求（ https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) ]，但要檢查的主要事項是裝置具有相容的 TPM 晶片（1.2 或更新版本）和受信任運算群組（TCG）相容的 BIOS 或 UEFI 固件。
+  即使您有正確版本的 Windows，基礎裝置硬體仍可能不符合 BitLocker 加密的需求。 您可以在 Windows 檔中找到 [BitLocker 的系統需求（ https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) ，但要檢查的主要事項是裝置是否有相容的 TPM 晶片（1.2 或更新版本）和受信任運算群組（TCG）相容的 BIOS 或 UEFI 固件。
 
 **範例調查**-您會將 BitLocker 原則部署到 Windows 10 裝置，而 [**加密裝置**] 設定會在入口網站中顯示 [**錯誤**] 狀態。
 
@@ -168,7 +169,7 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 
 - 因為 BitLocker 會依賴 TPM，所以您可以結束 BitLocker 不會因為 Intune 或原則的問題而失敗，而是因為裝置本身沒有 TPM 晶片，或是在 BIOS 中停用 TPM。
 
-  另一個秘訣是，您可以在 [**應用程式和服務記錄**檔] 下的 [windows 事件檢視器] 中確認相同， > **windows** > **BitLocker API**。 在**BITLOCKER API**事件記錄檔中，您會發現事件識別碼853，表示 TPM 無法使用：
+  另一個秘訣是，您可以在 Windows 事件檢視器的 [**應用程式和服務**] [Log  > **WINDOWS**  > **BitLocker API**] 下確認相同的提示。 在**BITLOCKER API**事件記錄檔中，您會發現事件識別碼853，表示 TPM 無法使用：
 
   ![事件識別碼 853](./media/troubleshooting-bitlocker-policies/event-error.png)
 

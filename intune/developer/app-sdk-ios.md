@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 8e280d23-2a25-4a84-9bcb-210b30c63c0b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 553c4ae4dab211cf33e21c328b4b35408d8bfeb0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733773"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503446"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
@@ -34,7 +35,7 @@ Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (�
 
 * 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，且該電腦必須已安裝 Xcode 9 或更新版本。
 
-* 您的應用程式必須以 iOS 10 或更新版本為目標。
+* 您的應用程式必須以 iOS 11 或更新版本為目標。
 
 * 檢閱[適用於 iOS 的 Intune App SDK 授權條款](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20for%20iOS.pdf)。 列印並保留一份授權條款供您備查。 下載並使用 Intune App SDK for iOS 即表示您同意這些授權條款。  如果您不接受這些條款，請不要使用此軟體。
 
@@ -94,7 +95,7 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
 若要啟用 Intune App SDK，請遵循下列步驟：
 
-1. **選項 1-Framework （建議）** ：如果您使用 Xcode 10.2 +，而您的應用程式/延伸模組包含 Swift 代碼，請將 `IntuneMAMSwift.framework` 和 `IntuneMAMSwiftStub.framework` 連結到您的目標：將 `IntuneMAMSwift.framework` 和 `IntuneMAMSwiftStub.framework` 拖曳至專案目標的**內嵌二進位**檔清單。
+1. **選項 1-架構（建議）** ：如果您使用 Xcode 10.2 +，而您的應用程式/延伸模組包含 Swift 代碼，`IntuneMAMSwiftStub.framework` `IntuneMAMSwift.framework` 請將 `IntuneMAMSwift.framework` 和 `IntuneMAMSwiftStub.framework` 拖曳至專案目標的**內嵌二進位**檔清單。
 
     否則，請將 `IntuneMAM.framework` 連結至您的目標：將 `IntuneMAM.framework` 拖曳至專案目標的**內嵌二進位**檔清單。
 
@@ -231,7 +232,7 @@ MSAL-開發人員需要在 AAD 中以[此處](https://github.com/AzureAD/microso
 ### <a name="special-considerations-when-using-msal"></a>使用 MSAL 時的特殊考慮 
 
 1. **檢查您的 web 工作**-建議應用程式不要使用 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 做為任何應用程式起始 MSAL 互動式驗證作業的 web 工作。 如果基於某些原因，您的應用程式必須使用其中一個網站進行互動式 MSAL 驗證作業，則它也必須在應用程式的資訊 plist 中，將 `IntuneMAMSettings` 字典下的 `SafariViewControllerBlockedOverride` 設定為 `true`。 警告：這會關閉 Intune 的 SafariViewController 勾點以啟用驗證會話。 如果應用程式使用 SafariViewController 來查看公司資料，這會在應用程式的其他地方有風險資料流程失，因此應用程式不應該在任何一種資料檢視類型中顯示公司資料。
-2. **同時連結 ADAL 和 MSAL** -開發人員必須選擇在此案例中，讓 Intune 偏好透過 adal MSAL。 根據預設，如果這兩個版本都是在執行時間連結，Intune 就會偏好支援的 ADAL 版本為支援的 MSAL 版本。 Intune 只會偏好支援的 MSAL 版本，但在 Intune 的第一次驗證作業時，`IntuneMAMUseMSALOnNextLaunch` 在 `NSUserDefaults` `true`。 如果 `IntuneMAMUseMSALOnNextLaunch` 是 `false` 或未設定，則 Intune 會回復為預設行為。 如其名所示，`IntuneMAMUseMSALOnNextLaunch` 的變更會在下次啟動時生效。
+2. **同時連結 ADAL 和 MSAL** -開發人員必須選擇在此案例中，讓 Intune 偏好透過 adal MSAL。 根據預設，如果這兩個版本都是在執行時間連結，Intune 就會偏好支援的 ADAL 版本為支援的 MSAL 版本。 Intune 只會偏好支援的 MSAL 版本，而當 Intune 的第一次驗證作業時，`IntuneMAMUseMSALOnNextLaunch` 會在 `NSUserDefaults` 中 `true`。 如果 `IntuneMAMUseMSALOnNextLaunch` `false` 或未設定，Intune 會回復為預設行為。 如其名所示，`IntuneMAMUseMSALOnNextLaunch` 的變更會在下次啟動時生效。
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>設定 Intune App SDK 的設定
@@ -253,8 +254,6 @@ ADALCacheKeychainGroupOverride | 字串  | 指定要用於 ADAL/MSAL 快取而�
 AppGroupIdentifiers | 字串陣列  | 應用程式之權利 com.apple.security.application-groups 區段中的應用程式群組陣列。 | 如果應用程式使用應用程式群組，則為必要項。 |
 ContainingAppBundleId | 字串 | 指定含有應用程式之擴充功能的配套識別碼。 | 對 IOS 擴充功能而言為必要項。 |
 DebugSettingsEnabled| 布林值 | 如果設定為 [是]，則可以套用 [設定] 配套內的測試原則。 啟用這個設定時，*不*應該提供應用程式。 | 選擇性。 預設為 [否]。 |
-MainNibFile<br>MainNibFile~ipad  | 字串  | 這項設定應該包含應用程式的主要 nib 檔案名稱。  | 如果應用程式在 Info.plist 中定義 MainNibFile，則為必要項。 |
-MainStoryboardFile<br>MainStoryboardFile~ipad  | 字串  | 這項設定應該包含應用程式的主要腳本檔案名稱。 | 如果應用程式在 Info.plist 中定義 UIMainStoryboardFile，則為必要項。 |
 AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL/MSAL 快取中沒有可用的身分識別有效權杖，除非應用程式也已經將 MAMPolicyRequired 設為 [是]，否則註冊嘗試會失敗而不提示輸入認證。 | 選擇性。 預設為 [否]。 |
 MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意事項︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 | 選擇性。 預設為 [否]。 |
 MAMPolicyWarnAbsent | 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否將在啟動期間警告使用者。 <br><br> 注意事項︰使用者在關閉警告之後，仍可在沒有原則的情況下使用應用程式。 | 選擇性。 預設為 [否]。 |
@@ -262,9 +261,10 @@ MultiIdentity | 布林值| 指定應用程式是否為多重身分識別感知�
 SafariViewControllerBlockedOverride | 布林值| 停用 Intune 的 SafariViewController 勾點，以透過 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 啟用 MSAL auth。 | 選擇性。 預設為 [否]。 警告：如果使用不當，可能會導致資料洩漏。 只有在絕對必要時才啟用。 如需詳細資訊，請參閱[使用 MSAL 時的特殊考慮](#special-considerations-when-using-msal)。  |
 SplashIconFile~ipad <br>IntuneMAMSettings | 字串  | 指定 Intune 啟動顯示 (啟動) 畫面的圖示檔。 | 選擇性。 |
 SplashDuration | 數字 | Intune 啟動畫面將於應用程式啟動時顯示的最短時間 (以秒為單位)。 預設為 1.5。 | 選擇性。 |
-BackgroundColor| 字串| 指定啟動畫面和 PIN 畫面的背景色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。   | 選擇性。 預設為淺灰色。 |
-ForegroundColor| 字串| 指定啟動畫面和 PIN 畫面的前景色彩，例如文字色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。  | 選擇性。 預設為黑色。 |
-AccentColor | 字串| 指定 PIN 畫面的輔色，例如按鈕文字色彩和方塊醒目提示色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。| 選擇性。 預設為系統藍色。 |
+BackgroundColor| 字串| 指定 Intune SDK UI 元件的背景色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。   | 選擇性。 預設為系統背景色彩，在不同版本的 iOS 及根據 iOS 深色模式設定時可能會有所不同。 |
+ForegroundColor| 字串| 指定 Intune SDK UI 元件的前景色彩，例如文字色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。  | 選擇性。 預設為 [系統磁碟區標] 色彩，這可能會隨著 ios 版本和 iOS 深色模式設定而有所不同。 |
+AccentColor | 字串| 指定 Intune SDK UI 元件的輔色，例如按鈕文字色彩和 PIN 方塊反白顯示色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。| 選擇性。 預設為系統藍色。 |
+SupportsDarkMode| 布林值 | 指定如果未針對 BackgroundColor/ForegroundColor/AccentColor 設定明確的值，Intune SDK 的 UI 色彩配置是否應該觀察系統深色模式設定 | 選擇性。 預設為 Yes。 |
 MAMTelemetryDisabled| 布林值| 指定 SDK 是否不會將任何遙測資料傳送至其後端。| 選擇性。 預設為 [否]。 |
 MAMTelemetryUsePPE | 布林值 | 指定 MAM SDK 是否會將資料傳送至 PPE 遙測後端。 如果使用 Intune 原則測試應用程式，讓測試遙測資料與客戶資料不混合使用，請使用此選項。 | 選擇性。 預設為 [否]。 |
 MaxFileProtectionLevel | 字串 | 選擇性。 允許應用程式指定其可支援的最大 `NSFileProtectionType`。 如果層級高於應用程式可支援的層級，此值會覆寫服務所傳送的原則。 可能的值：`NSFileProtectionComplete`、`NSFileProtectionCompleteUnlessOpen`、`NSFileProtectionCompleteUntilFirstUserAuthentication`、`NSFileProtectionNone`。|

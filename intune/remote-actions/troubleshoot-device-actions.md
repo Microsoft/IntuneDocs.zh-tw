@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1b3139db8b217dceb495f67e809eae8319eae0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 96f6dc3d1a8f8589395cf49b3bb934adadf437a4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735697"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508505"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>針對 Intune 中的裝置動作進行疑難排解
 
@@ -31,7 +32,7 @@ Microsoft Intune 有許多動作可協助您管理裝置。 本文提供一些�
 ## <a name="bypass-activation-lock-action"></a>略過啟用鎖定動作
 
 ### <a name="i-clicked-the-bypass-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>我在入口網站中按一下 [略過啟用鎖定] 動作，但是裝置上沒有發生任何事。
-這是預期的情況。 開始略過啟用鎖定動作之後，Intune 會向 Apple 要求更新的程式碼。 您會在裝置位於 [啟用鎖定] 畫面上之後，以手動方式在 [密碼] 欄位中輸入程式碼。 這段程式碼只會在15天內有效，因此請務必按一下動作並複製程式碼，然後再發出抹除。
+這是預期的結果。 開始略過啟用鎖定動作之後，Intune 會向 Apple 要求更新的程式碼。 您會在裝置位於 [啟用鎖定] 畫面上之後，以手動方式在 [密碼] 欄位中輸入程式碼。 這段程式碼只會在15天內有效，因此請務必按一下動作並複製程式碼，然後再發出抹除。
 
 ### <a name="why-dont-i-see-the-bypass-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>為什麼我在 iOS 裝置的 硬體總覽 分頁中看不到 略過啟用鎖定的程式碼？
 最可能的原因包括：
@@ -53,7 +54,7 @@ Microsoft Intune 有許多動作可協助您管理裝置。 本文提供一些�
 ## <a name="remove-devices-action"></a>移除裝置動作
 
 ### <a name="how-do-i-tell-who-started-a-retirewipe"></a>如何? 告訴誰開始淘汰/清除？
-移至**Intune** >  部**裝置** > **裝置動作**> 檢查 [**起始者**] 欄。
+移至**Intune**  > **裝置** > **裝置動作**> 檢查 [**起始者**] 欄。
 如果您沒有看到某個專案，則起始該動作的最有可能的人是裝置的使用者。 他們可能會使用公司入口網站應用程式或 portal.manage.microsoft.com。
 
 ### <a name="why-wasnt-my-application-uninstalled-after-using-retire"></a>為什麼我的應用程式在使用淘汰之後才卸載？
@@ -68,7 +69,7 @@ Microsoft Intune 有許多動作可協助您管理裝置。 本文提供一些�
 因為淘汰裝置並不會撤銷存取權杖。 您可以使用條件式存取原則來減輕這種情況。
 
 ### <a name="how-can-i-monitor-a-retirewipe-action-after-it-was-issued"></a>如何在發行後監視淘汰/抹除動作？
-前往**Intune** >  個**裝置** >  個**裝置動作**。
+前往**Intune**  > **裝置** > **裝置動作**。
 
 ### <a name="why-do-wipes-sometimes-show-as-pending-indefinitely"></a>為什麼抹除有時會無限期地顯示為擱置？
 裝置不一定會在重設開始之前，將其狀態回報回 Intune 服務。 因此，此動作會顯示為 [擱置]。 如果您已確認動作已成功，請從服務中刪除裝置。

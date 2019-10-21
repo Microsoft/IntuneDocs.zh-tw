@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: a7e3c742-295b-40bb-9afa-17f243062500
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 230ee8c1206a4d091661b51dd239a4cb0b1a1963
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71814045"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508849"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>為 Intune Exchange Connector 進行疑難排解
 
@@ -32,7 +33,7 @@ ms.locfileid: "71814045"
 
 在您開始針對 Intune 中的 Exchange Connector 問題進行疑難排解之前，請先收集一些基本資訊，讓您能夠使用穩固的基礎。 這種方法可協助您更瞭解問題的本質，並更快速地解決問題。
 
-- 確認您的處理常式符合安裝需求。 請參閱[設定內部部署 Intune Exchange Connector](exchange-connector-install.md)。
+- 確認您的處理常式符合安裝需求。 請參閱[安裝內部部署 Intune Exchange 連接器](exchange-connector-install.md)。
 - 確認您的帳戶同時具有 Exchange 和 Intune 管理員的許可權。
 - 請注意完整和確切的錯誤訊息正文、詳細資料，以及訊息的顯示位置。
 - 判斷問題何時開始： 

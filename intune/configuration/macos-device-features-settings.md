@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.reviewer: ''
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2ae9637e827330fb33c407122450deb014b3725a
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71816860"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506663"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 裝置功能設定
 
@@ -67,11 +68,11 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 4. 使用 IP 位址和資源路徑值。 在此範例中，IP 位址是 `10.50.25.21`，而資源路徑則是 `/ipp/port1`。
 
-## <a name="login-items"></a>登入專案
+## <a name="login-items"></a>登入項目
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定適用于：所有註冊類型
 
-- 檔案 **、資料夾和自訂應用程式**：**新增**您想要在使用者登入裝置時開啟的檔案、資料夾、自訂應用程式或系統應用程式的路徑。 系統應用程式或為貴組織建立或自訂的應用程式通常會在 @no__t 0 資料夾中，路徑類似于 `/Applications/AppName.app`。 
+- 檔案 **、資料夾和自訂應用程式**：**新增**您想要在使用者登入裝置時開啟的檔案、資料夾、自訂應用程式或系統應用程式的路徑。 系統應用程式或為貴組織建立或自訂的應用程式通常會在 `Applications` 資料夾中，路徑類似于 `/Applications/AppName.app`。 
 
   您可以新增許多檔案、資料夾和應用程式。 例如，輸入：  
   
@@ -80,7 +81,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
   - `/Applications/Microsoft Office/root/Office16/winword.exe`
   - `/Users/UserName/music/itunes.app`
   
-  新增任何應用程式、資料夾或檔案時，請務必輸入正確的路徑。 並非所有專案都在 @no__t 0 資料夾中。 如果使用者將專案從某個位置移到另一個位置，則路徑會變更。 當使用者登入時，將不會開啟此移動的專案。
+  新增任何應用程式、資料夾或檔案時，請務必輸入正確的路徑。 並非所有專案都位於 [`Applications`] 資料夾中。 如果使用者將專案從某個位置移到另一個位置，則路徑會變更。 當使用者登入時，將不會開啟此移動的專案。
 
 ## <a name="login-window"></a>登入視窗
 
@@ -120,7 +121,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 - **停用 [登出]** (macOS 10.13 和更新版本)：[停用]  可防止使用者在登入之後選取 [登出]  選項。 [未設定]  (預設) 可讓使用者在裝置上選取 [登出]  功能表項目。
 - **停用 [鎖定畫面]** (macOS 10.13 和更新版本)：[停用]  可防止使用者在登入之後選取 [鎖定畫面]  選項。 [未設定]  (預設) 可讓使用者在裝置上選取 [鎖定畫面]  功能表項目。
 
-## <a name="single-sign-on-app-extension"></a>單一登入應用程式延伸模組
+## <a name="single-sign-on-app-extension"></a>單一登入應用程式擴充功能
 
 本功能適用於：
 
@@ -185,7 +186,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 - **應用程式**套件組合識別碼（僅限 Kerberos）：**新增**應在您的裝置上使用單一登入的應用程式套件組合識別碼。 這些應用程式會被授與 Kerberos 票證授權票證、驗證票證的存取權，以及向已獲授權存取的服務驗證使用者。
 - **網域領域對應**（僅限 Kerberos）：**新增**應對應至您領域的網域 DNS 尾碼。 當主機的 DNS 名稱不符合領域名稱時，請使用此設定。 您很可能不需要建立此自訂網域到領域的對應。
 
-## <a name="associated-domains"></a>相關聯的網域
+## <a name="associated-domains"></a>相關網域
 
 在 Intune 中，您可以︰
 
@@ -198,11 +199,11 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定適用于：所有註冊類型
 
-- **應用程式**識別碼：輸入要與網站產生關聯之應用程式的應用程式識別碼。 應用程式識別碼包含小組識別碼和套件組合識別碼： `TeamID.BundleID`。
+- **應用程式**識別碼：輸入要與網站產生關聯之應用程式的應用程式識別碼。 [應用程式識別碼] 包含 [team ID] 和 [套件組合識別碼]： `TeamID.BundleID`。
 
-  Team ID 是 Apple 為您的應用程式開發人員產生的10個字元的 Alphanumerical （字母和數位）字串，例如 `ABCDE12345`。 [找出您的小組識別碼](https://help.apple.com/developer-account/#/dev55c3c710c)  （開啟 Apple 的網站）會有詳細資訊。
+  小組識別碼是 Apple 為您的應用程式開發人員產生的10個字元的 Alphanumerical （字母和數位）字串，例如 `ABCDE12345`。 [找出您的小組識別碼](https://help.apple.com/developer-account/#/dev55c3c710c)  （開啟 Apple 的網站）的詳細資訊。
 
-  套件組合識別碼可唯一識別應用程式，而且通常會以反向功能變數名稱標記法來格式化。 例如，搜尋工具的配套識別碼為 `com.apple.finder`。 若要尋找套件組合識別碼，請使用終端機中的 AppleScript：
+  套件組合識別碼可唯一識別應用程式，而且通常會以反向功能變數名稱標記法來格式化。 例如，搜尋工具的配套識別碼是 `com.apple.finder`。 若要尋找套件組合識別碼，請使用終端機中的 AppleScript：
 
   `osascript -e 'id of app "ExampleApp"'`
 
@@ -212,14 +213,14 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
   服務類型可以是：
 
-  - **authsrv**：單一登入應用程式延伸模組
+  - **authsrv**：單一登入應用程式擴充功能
   - **applink**：通用連結
   - **webcredentials**：密碼自動填入
 
 - **新增**：選取以新增您的應用程式和相關聯的網域。
 
 > [!TIP]
-> 若要進行疑難排解，請在您的 macOS 裝置上開啟 [**系統喜好**設定]  >  個**設定檔**。 確認您建立的設定檔位於 [裝置設定檔] 清單中。 如果列出，請確定**相關聯的網域**設定是在設定檔中，而且包含正確的應用程式識別碼和網域。
+> 若要進行疑難排解，請在您的 macOS 裝置上開啟 [**系統喜好**設定]  > **設定檔**。 確認您建立的設定檔位於 [裝置設定檔] 清單中。 如果列出，請確定**相關聯的網域**設定是在設定檔中，而且包含正確的應用程式識別碼和網域。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -5,21 +5,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3bd91891fa6da770404dc0af6d59016aeefe30b3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4cbf9c29a1e694726b1b42f7072eea859f812751
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734592"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593801"
 ---
 # <a name="add-e-mail-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 iOS 裝置的電子郵件設定
 
@@ -55,7 +56,7 @@ ms.locfileid: "71734592"
       - **要使用的自訂網域名稱**：輸入 Intune 用於網域名稱的值，例如 `contoso.com` 或 `contoso`
 
 - **AAD 中的電子郵件地址屬性**：選擇使用者電子郵件地址的產生方式。 選取 [使用者主體名稱]  (`user1@contoso.com` 或 `user1`)，以使用完整主體名稱作為電子郵件地址。 選取 [主要 SMTP 位址]  (`user1@contoso.com`)，以使用主要 SMTP 位址登入 Exchange。
-- **驗證方法**：選取 [使用者名稱和密碼]  或 [憑證]  作為電子郵件設定檔所使用的驗證方法。 不支援 Azure Multi-Factor Authentication。
+- **驗證方法**：選取 [使用者名稱和密碼]  、[憑證]  或 [衍生認證]  作為電子郵件設定檔使用的驗證方法。 不支援 Azure Multi-Factor Authentication。
   - 若選取了 [憑證]  ，請選取先前所建立用於驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證。
 - **SSL**：[啟用]  會在傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，使用安全通訊端層 (SSL) 通訊。
 - **OAuth**：[啟用]  會在傳送電子郵件、接收電子郵件以及與 Exchange 進行通訊時，使用 Open Authorization (OAuth) 通訊。 如果您的 OAuth 伺服器使用憑證驗證，請選擇 [憑證]  作為 [驗證方法]  ，並在設定檔中包含憑證。 否則，請選擇 [使用者名稱和密碼]  作為 [驗證方法]  。 使用 OAuth 時，請確定：

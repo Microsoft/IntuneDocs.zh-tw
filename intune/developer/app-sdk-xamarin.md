@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 08/21/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 275d574b-3560-4992-877c-c6aa480717f4
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: de367f28f3f1c7731e5ab67d904aec799925cc03
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 19202d4387635b7cd1f7e4604d755fb8a213d327
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733721"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503430"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -108,9 +109,9 @@ Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.micros
 整合 Intune App SDK 的完整概觀位於 [Microsoft Intune App SDK for Android 開發人員指南](app-sdk-android.md)。 當您閱讀本指南並整合 Intune App SDK 與 Xamarin 應用程式時，下列各節旨在強調以 Java 開發的原生 Android 應用程式與以 C# 開發的 Xamarin 應用程式兩者之間差異。 這些區段應該視為補充，無法取代閱讀完整的指南。
 
 #### <a name="remapper"></a>Remapper
-從1.4428.1 版本開始，您可以將 @no__t 0 封裝新增至 Xamarin Android 應用程式，做為執行 MAM 類別、方法和系統服務取代的[組建工具](app-sdk-android.md#build-tooling)。 如果包含 Remapper，就會在建立應用程式時自動執行已重新命名方法和 MAM 應用程式區段的 MAM 對等取代部分。
+從1.4428.1 版本開始，您可以將 `Microsoft.Intune.MAM.Remapper` 封裝新增到 Xamarin Android 應用程式中，做為執行 MAM 類別、方法和系統服務取代的[組建工具](app-sdk-android.md#build-tooling)。 如果包含 Remapper，就會在建立應用程式時自動執行已重新命名方法和 MAM 應用程式區段的 MAM 對等取代部分。
 
-若要從 ification 由 Remapper 排除類別，您可以在專案中加入下列屬性 `.csproj` 檔案。
+若要從 ification 由 Remapper 排除類別，可以將下列屬性新增至您的專案 `.csproj` 檔案。
 
 ```xml
   <PropertyGroup>

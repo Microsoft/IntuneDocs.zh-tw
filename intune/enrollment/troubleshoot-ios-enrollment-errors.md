@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a02e403fdba34b576aa90b82062b7a602cbb517
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e7c7ec23d0408aa4d4cf81baff2d7cdf749fb65e
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735684"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72509241"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 iOS 裝置註冊問題進行疑難排解
 
@@ -89,10 +90,10 @@ ms.locfileid: "71735684"
 **原因：** 使用者嘗試註冊的裝置數量超過裝置註冊限制。
 
 #### <a name="resolution"></a>解決方案
-1. 開啟[Intune 系統管理員入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) >  部**裝置** >  個 [**所有裝置**]，並檢查使用者已註冊的裝置數目。
+1. 開啟[Intune 系統管理員入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview) >  [**裝置**]  >  [**所有裝置**]，並檢查使用者已註冊的裝置數目。
     > [!NOTE]
     > 您也應該讓受影響的使用者登入[Intune 使用者入口網站](https://portal.manage.microsoft.com/)，並檢查已註冊的裝置。 有些裝置可能出現在[intune 使用者入口網站](https://portal.manage.microsoft.com/)中，但不在[intune 系統管理員入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)中，這類裝置也會計入裝置註冊限制。
-2. 移至 [系統**管理**] [ > ] [行動**裝置管理** >  個**註冊規則**] > 檢查裝置註冊限制。 根據預設，此限制設定為15。 
+2. 移至 [系統**管理**] [ > ] [行動**裝置管理** >  個**註冊規則**] > 檢查裝置註冊限制。 根據預設，此限制數目為 15。 
 3. 如果註冊的裝置數目已達到限制，請移除不必要的裝置，或增加裝置註冊限制。 由於每個已註冊的裝置都會使用 Intune 授權，因此建議您一律先移除不必要的裝置。
 4. 重新註冊裝置。
 
@@ -110,7 +111,7 @@ ms.locfileid: "71735684"
 **原因：** 嘗試註冊裝置的使用者沒有有效的 Intune 授權。
 
 #### <a name="resolution"></a>解決方案
-1. 移至[Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home#/homepage)，然後選擇 [**使用者**] [ >  個作用中**使用者**]。
+1. 移至[Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home#/homepage)，然後選擇 [**使用者**]  >  [作用中**使用者**]。
 2. 選取受影響的使用者帳戶 >**產品授權** > **編輯**。
 3. 確認已將有效的 Intune 授權指派給此使用者。
 4. 重新註冊裝置。
@@ -119,7 +120,7 @@ ms.locfileid: "71735684"
 
 **原因：** 嘗試註冊裝置的使用者沒有有效的 Intune 授權。
 
-1. 移至[Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home#/homepage)，然後選擇 [**使用者**] [ >  個作用中**使用者**]。
+1. 移至[Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home#/homepage)，然後選擇 [**使用者**]  >  [作用中**使用者**]。
 2. 選取受影響的使用者帳戶，然後選擇 **產品授權**  > **編輯**。
 3. 確認已將有效的 Intune 授權指派給此使用者。
 4. 重新註冊裝置。
@@ -183,7 +184,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解決方案
 
 1. 編輯註冊設定檔。 您可以對設定檔進行任何變更。 其目的是要更新設定檔的修改時間。
-2. 同步處理 DEP 管理的裝置：開啟 Intune 入口網站 > **Admin** >  行動**裝置管理** > **iOS** > **裝置註冊計劃** > **立即同步**。 同步處理要求會傳送至 Apple。
+2. 同步處理 DEP 管理的裝置：開啟 Intune 入口網站 > 系統**管理員** >  行動**裝置管理** > **IOS**  > **裝置註冊計劃** > **立即同步**。 同步處理要求會傳送至 Apple。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP 註冊停滯于使用者登入
 當您開啟已指派註冊設定檔的 DEP 管理裝置時，在您輸入認證後的初始安裝程式將會變棒。

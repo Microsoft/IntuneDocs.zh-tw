@@ -9,6 +9,7 @@ ms.date: 03/06/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: ''
 searchScope:
@@ -18,16 +19,16 @@ ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e5aff186d3850e8f9a6081168a5adc9956504019
-ms.sourcegitcommit: c19584b36448bbd4c8638d7cab552fe9b3eb3408
+ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2019
-ms.locfileid: "71163349"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502108"
 ---
 # <a name="reset-device-from-the-company-portal-app"></a>從公司入口網站應用程式重設裝置  
 
-從公司入口網站應用程式，將已使用、遺失或遭竊的裝置重設為其原廠設定。  
+從公司入口網站應用程式將已使用、遺失或遭竊的裝置重設為原廠設定。  
 
 當您重設裝置之後，它就不會再出現在公司入口網站中。 其現有的應用程式和檔案將會清除，並會還原為其預設的設定。  
 

@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f462b04166a2204d47f288d225e1490f8d3ea2a
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: e0be7627403cc95316a99e841127a137e0279ff1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736022"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508979"
 ---
 # <a name="windows-mdm-security-baseline-settings-for-intune"></a>適用於 Intune 的 Windows MDM 安全性基準設定
 針對執行 Windows 10 或更新版本的裝置，查看 Microsoft Intune 所支援的 MDM 安全性基準設定。 此基準中設定的預設值代表適用裝置的建議設定，而且可能不符合其他安全性基準的基準預設值，或來自此基準的其他版本。
@@ -171,19 +172,19 @@ ms.locfileid: "71736022"
 如需詳細資訊，請參閱 Windows 文件中的 [Policy CSP - Browser](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser) (原則 CSP - 瀏覽器)。  
 
 - **Microsoft Edge 需要 SmartScreen**  
-  Microsoft Edge 預設會使用 Windows Defender SmartScreen (已開啟)，以保護使用者免於遭受潛在的網路釣魚詐騙和惡意軟體攻擊。 此外，根據預設，使用者無法停用 (關閉) Windows Defender SmartScreen。 啟用此原則時，會關閉 Windows Defender SmartScreen，並防止使用者將其開啟。 不設定此原則可讓使用者選擇開啟或關閉 Windows Defender SmartScreen。  
+  Microsoft Edge 預設會使用 Microsoft Defender SmartScreen (已開啟)，以保護使用者免於遭受潛在的網路釣魚詐騙和惡意軟體攻擊。 此外，根據預設，使用者無法停用 (關閉) Microsoft Defender SmartScreen。 啟用此原則時，會關閉 Microsoft Defender SmartScreen，並防止使用者開啟它。 不設定此原則可讓使用者選擇開啟或關閉 Microsoft Defender SmartScreen。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067029)   
   
   **預設值**：是  
   
 - **封鎖惡意網站存取**  
-  根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意網站的 Windows Defender SmartScreen 警告，讓他們可以繼續前往該網站。 但是透過此原則，您可以設定 Microsoft Edge 來防止使用者略過警告，讓他們無法繼續前往該網站。  
+  根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意網站的 Microsoft Defender SmartScreen 警告，讓他們可以繼續前往該網站。 但是透過此原則，您可以設定 Microsoft Edge 來防止使用者略過警告，讓他們無法繼續前往該網站。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067040)   
   
   **預設值**：是  
   
 - **封鎖未經驗證的檔案下載**  
-  根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意檔案的 Windows Defender SmartScreen 警告，讓他們可以繼續下載未經驗證的檔案。 啟用此原則可防止使用者略過警告，讓他們無法下載未經驗證的檔案。  
+  根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意檔案的 Microsoft Defender SmartScreen 警告，讓他們可以繼續下載未經驗證的檔案。 啟用此原則可防止使用者略過警告，讓他們無法下載未經驗證的檔案。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067023)  
   
   **預設值**：是  
@@ -273,7 +274,7 @@ ms.locfileid: "71736022"
 ::: zone pivot="mdm-may-2019"
 
 - **虛擬化安全性** 
-  **預設**：使用安全開機來啟用 VBS
+  **預設值**：使用安全開機來啟用 VBS
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
@@ -1670,7 +1671,7 @@ ms.locfileid: "71736022"
 
   **預設**：啟用
   
-## <a name="windows-defender"></a>Windows Defender  
+## <a name="microsoft-defender"></a>Microsoft Defender  
 如需詳細資訊，請參閱 Windows 文件中的 [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (原則 CSP - Defender)。  
 
 - **掃描內送郵件訊息**  
@@ -1686,7 +1687,7 @@ ms.locfileid: "71736022"
   **預設值**：封鎖
   
 - **Defender 範例提交同意類型**  
-  檢查 Windows Defender 中針對傳送資料的使用者同意層級。 如果已獲得必要的同意，Windows Defender 將會提交同意。 如果沒有 (而且指定了一律不再詢問使用者)，您可以啟動 UI，要求使用者同意 (允許 Defender/AllowCloudProtection 時) 再傳送資料。  
+  檢查 Microsoft Defender 中針對傳送資料的使用者同意層級。 如果已獲得必要的同意，Microsoft Defender 將會提交同意。 如果沒有 (而且指定了一律不再詢問使用者)，您可以啟動 UI，要求使用者同意 (允許 Defender/AllowCloudProtection 時) 再傳送資料。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067131)  
   
   **預設**：自動傳送安全的範例 
@@ -1702,7 +1703,7 @@ ms.locfileid: "71736022"
   **預設值**：封鎖
   
 - **防止認證竊取類型**  
-  Windows Defender Credential Guard 使用以虛擬化為基礎的安全性來隔離祕密，只有具特殊權限的系統軟體才能進行存取。 未經授權存取這些機密資料可能會導致認證竊取攻擊，例如傳遞雜湊或傳遞票證。 Windows Defender Credential Guard 會保護 NTLM 密碼雜湊、Kerberos 票證授權票證及應用程式儲存為網域認證的認證，以防止這些攻擊。  
+  Microsoft Defender Credential Guard 使用以虛擬化為基礎的安全性來隔離祕密，只有具特殊權限的系統軟體才能進行存取。 未經授權存取這些機密資料可能會導致認證竊取攻擊，例如傳遞雜湊或傳遞票證。 Microsoft Defender Credential Guard 會保護 NTLM 密碼雜湊、Kerberos 票證授權票證及應用程式儲存為網域認證的認證，以防止這些攻擊。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067065)  
   
   **預設值**：啟用
@@ -1721,9 +1722,9 @@ ms.locfileid: "71736022"
 ::: zone-end
 ::: zone pivot="mdm-preview,mdm-may-2019"
 
-- **網路保護類型**  
-  此原則可讓您在 Windows Defender 惡意探索防護中，開啟或關閉網路保護 (封鎖/稽核)。 網路保護是 Windows Defender 惡意探索防護的一項功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。 值類型是整數。 如果您啟用此設定，則會開啟網路保護，且員工無法將它關閉。 其行為可透過下列選項來控制：[封鎖] 和 [稽核]。 如果您使用 [封鎖] 選項來啟用此原則，則會防止使用者和應用程式連線到危險的網域。 您可以在 Windows Defender 資訊安全中心看到此活動。 如果您使用 [稽核] 選項來啟用此原則，則不會防止使用者/應用程式連線到危險的網域。 不過，您仍然會在 Windows Defender 資訊安全中心看到此活動。 如果您停用此原則，則不會防止使用者/應用程式連線到危險的網域。 您不會在 Windows Defender 資訊安全中心看到任何網路活動。 如果您未設定此原則，預設會停用網路封鎖。  
-  [深入了解](https://go.microsoft.com/fwlink/?linkid=2067102)  
+- **網路保護**  
+  此原則可讓您在 Microsoft Defender 惡意探索防護中，開啟或關閉網路保護 (封鎖/稽核)。 網路保護是 Microsoft Defender 惡意探索防護的一個功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。 值類型是整數。 如果您啟用此設定，則會開啟網路保護，且員工無法將它關閉。 其行為可透過下列選項來控制：[封鎖] 和 [稽核]。 如果您使用 [封鎖] 選項來啟用此原則，則會防止使用者和應用程式連線到危險的網域。 您可以在 Microsoft Defender 資訊安全中心看到此活動。 如果您使用 [稽核] 選項來啟用此原則，則不會防止使用者/應用程式連線到危險的網域。 不過，您仍然會在 Microsoft Defender 資訊安全中心看到此活動。 如果您停用此原則，則不會防止使用者/應用程式連線到危險的網域。 您不會在 Microsoft Defender 資訊安全中心看到任何網路活動。 如果您未設定此原則，預設會停用網路封鎖。  
+  [深入了解](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/enable-network-protection)  
   
   **預設值**：啟用
   
@@ -1733,13 +1734,13 @@ ms.locfileid: "71736022"
   **預設值**：每天
   
 - **雲端提供的保護**  
-  為加強對電腦的保護，Windows Defender 會將找到的任何問題相關資訊傳送給 Microsoft。 Microsoft 將分析該資訊、深入了解影響您與其他客戶的問題，並提供改善的解決方案。  
+  為加強對電腦的保護，Microsoft Defender 會將找到的任何問題相關資訊傳送給 Microsoft。 Microsoft 將分析該資訊、深入了解影響您與其他客戶的問題，並提供改善的解決方案。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067039)
   
   **預設值**：是  
 
 - **Defender 潛在的垃圾應用程式動作**  
-  Windows Defender 防毒軟體中潛在的垃圾應用程式 (PUA) 防護功能可以識別 PUA，並防止將它下載並安裝到您網路中的端點。 這些應用程式不會視為病毒、惡意程式碼或其他類型的威脅，但可能會在端點上執行對其效能或使用造成不良影響的動作。 PUA 也可能是指那些評價不佳的應用程式。 典型 PUA 行為包括：各種綑綁 AD 並會將其插入網頁瀏覽器的軟體。偵測問題的驅動程式與登入最佳化程式，此類程式會要求付款以修正錯誤，但仍存在於端點且沒有進行任何變更或最佳化 (亦稱為「流氓防毒」程式)。 這些應用程式會造成您網路受惡意程式碼感染的風險變高、導致更難找出惡意程式碼，而且會使得 IT 資源浪費在清除這些應用程式上。  
+  Microsoft Defender 防毒軟體中潛在的垃圾應用程式 (PUA) 防護功能可以識別 PUA，並防止將它下載並安裝到您網路中的端點。 這些應用程式不會視為病毒、惡意程式碼或其他類型的威脅，但可能會在端點上執行對其效能或使用造成不良影響的動作。 PUA 也可能是指那些評價不佳的應用程式。 典型 PUA 行為包括：各種綑綁 AD 並會將其插入網頁瀏覽器的軟體。偵測問題的驅動程式與登入最佳化程式，此類程式會要求付款以修正錯誤，但仍存在於端點且沒有進行任何變更或最佳化 (亦稱為「流氓防毒」程式)。 這些應用程式會造成您網路受惡意程式碼感染的風險變高、導致更難找出惡意程式碼，而且會使得 IT 資源浪費在清除這些應用程式上。  
   [深入了解](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)    
   
   **預設值**：封鎖  
@@ -1751,7 +1752,7 @@ ms.locfileid: "71736022"
   **預設值**：封鎖
   
 - **在完整掃描期間掃描抽取式磁碟機**  
-  允許 Windows Defender 在完整掃描期間，掃描抽取式磁碟機 (例如快閃磁碟機) 中是否有惡意和垃圾軟體。 Windows Defender 防毒軟體會掃描 USB 裝置上的所有檔案，再執行這些檔案。  
+  允許 Microsoft Defender 在完整掃描期間，掃描抽取式磁碟機 (例如快閃磁碟機) 中是否有惡意和垃圾軟體。 Microsoft Defender 防毒軟體會掃描 USB 裝置上的所有檔案，再執行這些檔案。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067036)  
   
   **預設值**：是  
@@ -1762,7 +1763,7 @@ ms.locfileid: "71736022"
   **預設值**：是
   
 - **行為監視**  
-  允許或禁止 Windows Defender 行為監視功能。 這些內建在 Windows 10 中的感應器可以收集並處理作業系統的行為訊號，並將此感應器資料傳送至您私人獨立的 Microsoft Defender ATP 雲端執行個體。  
+  允許或禁止 Microsoft Defender 行為監視功能。 這些內建在 Windows 10 中的感應器可以收集並處理作業系統的行為訊號，並將此感應器資料傳送至您私人獨立的 Microsoft Defender ATP 雲端執行個體。  
   [深入了解](https://go.microsoft.com/fwlink/?linkid=2067111)  
   
   **預設值**：是
@@ -1816,7 +1817,7 @@ ms.locfileid: "71736022"
 
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
-## <a name="windows-defender-firewall"></a>Windows Defender 防火牆  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 防火牆  
 如需詳細資訊，請參閱 Windows 通訊協定檔中的[2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) 。  
 
 - **防火牆設定檔網域**  
@@ -1985,11 +1986,11 @@ ms.locfileid: "71736022"
   - **電子郵件邀請方法**
 
 
-*[新增]* [**Windows Defender**](#windows-defender)：
+*[新增]* [**Microsoft Defender**](#microsoft-defender)：
 - **Adobe Reader 在子處理序中啟動**  
 - **Office 通訊應用程式在子處理序中啟動** 
 
-*[新]* [**Windows Defender 防火牆**](#windows-defender-firewall)
+*[新增]* [ **Microsoft Defender 防火牆**](#microsoft-defender-firewall)
 - **防火牆設定檔網域**  
   - **已封鎖輸入連線**  
   - **需要輸出連線**  

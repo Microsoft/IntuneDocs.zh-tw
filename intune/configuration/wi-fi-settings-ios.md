@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 10/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5adde9049f1e5f88df4a55b473f59f1d4a08e396
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71733864"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593774"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於 iOS 裝置的 Wi-Fi 設定
 
@@ -79,7 +80,13 @@ ms.locfileid: "71733864"
     - **伺服器信任** - **憑證伺服器名稱**：將您信任之憑證授權單位 (CA) 簽發之憑證中所使用的一或多個通用名稱**新增**至您的無線網路存取伺服器。 例如：新增 `mywirelessserver.contoso.com` 或 `mywirelessserver`。 輸入此資訊時，可以略過連線到此 Wi-Fi 網路時，使用者裝置上顯示的動態信任視窗。
     - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 此憑證可讓用戶端信任無線網路存取伺服器的憑證。
 
-    - **用戶端驗證** - **用戶端驗證的用戶端憑證 (身分識別憑證)** ：選擇 也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+    - **用戶端驗證**：選擇 [驗證方法]  。 選項包括：
+      
+      - **衍生的認證**：如果未設定任何衍生認證簽發者，Intune 會提示您執行此動作。
+      
+      - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+
+    - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
   - **EAP-TTLS**：另請輸入：
 
@@ -88,6 +95,8 @@ ms.locfileid: "71733864"
 
     - **用戶端驗證** - 選擇 [驗證方法]  。 選項包括：
 
+      - **衍生的認證**：如果未設定任何衍生認證簽發者，Intune 會提示您執行此動作。  
+      
       - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 另請輸入：
         - **非 EAP 方法 (內部識別)** ：選擇驗證連線的方式。 請務必選擇與您的 Wi-Fi 網路設定相同的通訊協定。
 
@@ -106,6 +115,8 @@ ms.locfileid: "71733864"
 
     - **用戶端驗證** - 選擇 [驗證方法]  。 選項包括：
 
+      - **衍生的認證**：如果未設定任何衍生認證簽發者，Intune 會提示您執行此動作。  
+      
       - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 
 
       - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。

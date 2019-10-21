@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/29/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9ab0ebd9a7977b5433c814e9496276ce7a7fc900
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71735736"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503101"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解
 
@@ -56,11 +57,11 @@ ms.locfileid: "71735736"
 - 電腦正在執行 Windows 10 家用版。 不過，只有在 Windows 10 專業版和更新版本上，才支援在 Intune 中註冊或加入 Azure AD。
 
 #### <a name="resolution"></a>解決方案
-此問題有幾個可能的解決方案：
+此問題有幾種可能的解決方式：
 
 ##### <a name="remove-devices-that-were-enrolled"></a>移除已註冊的裝置
 1. 登入 [Azure 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。    
-2. 前往 [**使用者**]  >  個 [**所有使用者**]。    
+2. 前往 [**使用者**]  >  [**所有使用者**]。    
 3. 選取受影響的使用者帳戶，然後按一下 [**裝置**]。    
 4. 選取任何未使用或不想要的裝置，然後按一下 [**刪除**]。 
 
@@ -70,12 +71,12 @@ ms.locfileid: "71735736"
 > 這個方法會增加所有使用者的裝置註冊限制，而不只是受影響的使用者。
 
 1. 登入 [Azure 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
-2. 前往 [**裝置註冊** >  個**註冊限制**]，然後選取 [**裝置限制限制**]。    
+2. 移至 [**裝置註冊**]  >  [**註冊限制**]，然後選取 [**裝置限制**] [限制]。    
 3. 增加 [**裝置限制**] 的值。 
 
 ##### <a name="check-device-type-restrictions"></a>檢查裝置類型限制
 1. 使用全域管理員帳戶登入 [Intune 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
-2. 移至 [**裝置註冊** >  個**註冊限制**]，然後在 [**裝置類型限制**] 下選取**預設**限制。    
+2. 移至 **裝置註冊**  > **註冊限制**，然後在 **裝置類型限制** 下選取**預設**限制。    
 3. 選取 [**平臺**]，然後選取 [**允許** **Windows （MDM）** ]。
 
     > [!IMPORTANT]
@@ -96,7 +97,7 @@ ms.locfileid: "71735736"
 
 #### <a name="resolution"></a>解決方案
 1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/)。    
-2. 移至**Azure Active Directory** >  個**裝置** >  個**裝置設定**。    
+2. 移至 [ **Azure Active Directory** ] [ > **裝置**]  >  [**裝置設定**]。    
 3. 將 [使用者可以將裝置加入 Azure AD]  設定為 [全部]  。    
 4. 重新註冊裝置。   
 
@@ -105,7 +106,7 @@ ms.locfileid: "71735736"
 錯誤8018000a：「發生問題。 已註冊該裝置。  您可以與系統管理員聯繫，錯誤碼8018000a。」
 
 **原因：** 下列其中一個條件成立：
-- 不同的使用者已在 Intune 中註冊裝置，或已將裝置加入至 Azure AD。 若要判斷是否為這種情況，請移至 [**設定**]  >  個**帳戶** >  個 [**工作存取**]。 尋找與下列類似的訊息：「系統上的另一個使用者已連線至公司或學校。 請移除該公司或學校的連線，然後再試一次。」    
+- 不同的使用者已在 Intune 中註冊裝置，或已將裝置加入至 Azure AD。 若要判斷是否為這種情況，請移至 [**設定**]  >  [**帳戶**]  >  [**公司存取**]。 尋找與下列類似的訊息：「系統上的另一個使用者已連線至公司或學校。 請移除該公司或學校的連線，然後再試一次。」    
 - Configuration Manager 用戶端代理程式安裝在電腦上。    
 
 #### <a name="resolution"></a>解決方案
@@ -114,7 +115,7 @@ ms.locfileid: "71735736"
 
 ##### <a name="remove-the-other-work-or-school-account"></a>移除其他工作或學校帳戶
 1. 登出 Windows，然後使用已註冊或已加入裝置的其他帳戶登入。    
-2. 移至 **設定**  >  個**帳戶**  >  個 **工作存取**，然後移除工作或學校帳戶。
+2. 移至 [**設定**]  >  [**帳戶**]  >  [**公司存取**]，然後移除工作或學校帳戶。
 3. 登出 Windows，然後使用您的帳戶登入。    
 4. 在 Intune 中註冊裝置，或將裝置加入至 Azure AD。 
 
@@ -166,7 +167,7 @@ ms.locfileid: "71735736"
 
 ##### <a name="disable-mdm-automatic-enrollment-in-azure"></a>停用 Azure 中的 MDM 自動註冊。
 1. 登入 [Azure 入口網站](https://portal.azure.com/)。    
-2. 請移至**Azure Active Directory** > **行動性（MDM 和 MAM）**  > **Microsoft Intune**。    
+2. 請移至**Azure Active Directory**  > **行動性（MDM 與 MAM）**  > **Microsoft Intune**。    
 3. 將 [ **MDM 使用者範圍**] 設定為 [**無**]，然後按一下 [**儲存**]。    
      
 ##### <a name="uninstall"></a>解除安裝
@@ -180,7 +181,7 @@ ms.locfileid: "71735736"
 
 #### <a name="resolution"></a>解決方案
 1. 登入 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 移至 [系統**管理**] [ > **用戶端軟體下載**]，然後按一下 [**下載用戶端軟體**]。    
+2. 移至 [系統**管理**]  >  [**用戶端軟體下載**]，然後按一下 [**下載用戶端軟體**]。    
 3. 儲存安裝套件，然後再安裝用戶端軟體。 
 
 
@@ -192,7 +193,7 @@ ms.locfileid: "71735736"
 
 #### <a name="resolution"></a>解決方案
 1. 登入 [https://admin.manage.microsoft.com](https://admin.manage.microsoft.com)。    
-2. 移至 [系統**管理**] [ > **用戶端軟體下載**]，然後按一下 [**下載用戶端軟體**]。    
+2. 移至 [系統**管理**]  >  [**用戶端軟體下載**]，然後按一下 [**下載用戶端軟體**]。    
 3. 儲存安裝套件，然後再安裝用戶端軟體。    
 
 ### <a name="your-organization-does-not-support-this-version-of-windows"></a>您的組織不支援此版本的 Windows。 
@@ -205,7 +206,7 @@ ms.locfileid: "71735736"
 若要在獨立的 Intune 環境中修正此問題，請遵循下列步驟： 
  
 1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/)。    
-2. 選取左側的 [ **Intune** ]，然後移至 [**裝置註冊**] [ >  個**註冊限制**]。    
+2. 選取左側的  **Intune** ，然後移至 **裝置註冊**  > **註冊限制**。    
 3. 在 [**裝置類型限制**] 中，按一下 [**平臺**]，然後選取 [**允許** **Windows （MDM）** ]。    
 4. 按一下 **[儲存]** 。    
  
@@ -213,7 +214,7 @@ ms.locfileid: "71735736"
 1. 開啟 Configuration Manager 主控台。    
 2. 選取 [系統**管理**]，然後選取 [**雲端服務**]。    
 3. 以滑鼠右鍵按一下 [ **Microsoft Intune 訂**用帳戶]，然後選取 [**設定 > Windows 的平臺**]。    
-4. 核取 [**啟用 Windows 註冊** > ]**適用于** >  **[確定]** 。  
+4. 勾選 **啟用 Windows 註冊** ** >  套用** > **確定**。  
 
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>大量註冊期間發生安裝程式失敗。
@@ -235,7 +236,7 @@ ms.locfileid: "71735736"
 ### <a name="auto-mdm-enroll-failed"></a>自動 MDM 註冊：失敗 
 
 當您嘗試使用群組原則自動註冊 Windows 10 裝置時，您會遇到下列問題： 
-- 在工作排程器中，在**Microsoft** > **Windows** > **EnterpriseMgmt**下，**由註冊用戶端針對從 AAD 工作自動註冊的排程所建立**的最後一個執行結果如下：**事件76自動 MDM 註冊：失敗（未知的 Win32 錯誤碼：0x8018002b）**       
+- 在工作排程器中， **Microsoft**  > **Windows**  > **EnterpriseMgmt**下，**由註冊用戶端針對從 AAD 工作自動註冊的排程所建立**的最後一個執行結果，如下所示：**事件76自動 MDM 註冊：失敗（未知的 Win32 錯誤碼：0x8018002b）**       
 - 在事件檢視器中，下列事件會記錄在 **應用程式和服務記錄檔/Microsoft/Windows/-企業-診斷-提供者/系統管理員** 底下：   
     ```asciidoc
     Log Name: Microsoft-Windows-DeviceManagement-Enterprise-Diagnostics-Provider/Admin
@@ -335,7 +336,7 @@ Registering your device for mobile management (Previous step failed)
 
 #### <a name="resolution"></a>解決方案
 
-1. 前往**Intune** >   個**裝置註冊** >  個**Windows 註冊** >  個**裝置**。
+1. 前往**Intune**  >  **裝置註冊** > **Windows 註冊** > **裝置**。
 2. 選取發生問題的裝置 > 按一下最右側的省略號（...）。
 3. 選取 [**取消指派使用者**]，並等候進程完成。
 4. 請先確認已指派混合式 Azure AD Autopilot 設定檔，再重新嘗試 OOBE。
@@ -375,12 +376,12 @@ Description:
 3. 在 [委派控制精靈]  中，選取 [下一步]   > [新增]   > [物件類型]  。
 4. 在 [物件類型]  窗格中，選取 [電腦]  核取方塊 > [確定]  。
 5. 在 [選取使用者、電腦或群組]    窗格的 [輸入要選取的物件名稱]  方塊中，輸入要安裝連接器的電腦名稱。
-6. 選取 [**檢查名稱**] 以驗證您的輸入 >**確定** > **下一步**。
+6. 選取 **檢查名稱** 以驗證您的專案 > **確定**  > **下一步**。
 7. 選取 [建立自訂工作來委派]   > [下一步]  。
 8. 選取 [只有在這個資料夾內的下列物件]  核取方塊，然後依序選取 [電腦物件]  、[將選取的物件建立到這個資料夾中]  和 [刪除在這個資料夾中選取的物件]  核取方塊。
 9. 選取 [下一步]  。
 10. 在 [權限]  下，選取 [完全控制]  核取方塊。 此動作會選取所有其他選項。
-11. 選取 **[下一步**]  >  **[完成]** 。
+11. 選取**下一步** ** >  完成**。
 
 ## <a name="next-steps"></a>後續步驟
 

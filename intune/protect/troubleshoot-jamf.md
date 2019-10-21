@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e92e3442e1347cb1a2cd1c737078912b74f075c9
-ms.sourcegitcommit: f04e21ec459998922ba9c7091ab5f8efafd8a01c
+ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71817634"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503573"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>針對 Jamf Pro 與 Microsoft Intune 的整合進行疑難排解
 
@@ -56,11 +57,11 @@ ms.locfileid: "71817634"
 |-----------------|--------------------------|
 | **Jamf Pro 中的裝置會標示為沒有回應**  | [裝置無法使用 Jamf Pro 或 Azure AD 簽入](#devices-are-marked-as-unresponsive-in-jamf-pro) |
 | **當您開啟應用程式裝置無法註冊時，Mac 裝置會提示您進行 keychain 登入**  | [系統會提示使用者輸入密碼，以允許應用程式向 Azure AD 註冊](#mac-devices-prompt-for-keychain-sign-in-when-you-open-an-app)。 |
-| **裝置無法註冊**  | 下列原因可能會適用： <br> **-** [***會導致 1*** -Azure 中的 Jamf Pro 應用程式具有不正確的許可權](#cause-1) <br> **-** [***會導致 2*** -在 Azure AD 中有*Jamf Native macOS 連接器*的問題](#cause-2) <br> **-** [***原因 3*** -使用者沒有有效的 Intune 或 Jamf 授權](#cause-3) <br> **-** [***會導致 4*** -使用者未使用 Jamf 自助服務來啟動公司入口網站應用程式](#cause-4) <br> **-** [***會導致 5*** -Intune 整合已關閉](#cause-5) <br> **-** [***會導致 6*** -裝置先前已在 Intune 中註冊，或使用者已嘗試多次註冊裝置](#cause-6) <br> **-** [***會導致 7*** JamfAAD 要求從使用者的 keychain 存取「Microsoft Workplace Join 金鑰」](#cause-7) |
+| **裝置無法註冊**  | 下列原因可能會適用： <br> **-** [***原因 1*** -Azure 中的 Jamf Pro 應用程式具有不正確的許可權](#cause-1) <br> **-** [***原因 2*** -Azure AD 中有*Jamf Native macOS 連接器*的問題](#cause-2) <br> **-** [***原因 3*** -使用者沒有有效的 Intune 或 Jamf 授權](#cause-3) <br> **-** [***原因 4*** -使用者未使用 Jamf 自助服務來啟動公司入口網站應用程式](#cause-4) <br> **-** [***原因 5*** -關閉 Intune 整合](#cause-5) <br> **-** [***原因 6*** -裝置先前已在 Intune 中註冊，或使用者已嘗試多次註冊裝置](#cause-6) <br> **-** [***導致 7*** JamfAAD 要求從使用者的 keychain 存取「Microsoft Workplace Join 金鑰」](#cause-7) |
 |  **Mac 裝置在 Intune 中顯示為符合規範，但在 Azure 中不相容** | [裝置註冊問題](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **使用 Jamf 註冊的 Mac 裝置的 Intune 主控台中出現重複的專案** | [相同裝置的多個註冊](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **合規性政策無法評估裝置** | [原則目標裝置群組](#compliance-policy-fails-to-evaluate-the-device) |
-| **無法取得 Microsoft Graph API 的存取權杖** | 下列原因可能會適用： <br> [在 Azure 中 Jamf Pro 應用程式](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure)的 - 許可權 <br> -  已[過期的 Jamf 或 Intune 授權](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [埠未開啟](#the-required-ports-arent-open-on-your-network)|
+| **無法取得 Microsoft Graph API 的存取權杖** | 下列原因可能會適用： <br> [在 Azure 中 Jamf Pro 應用程式](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure)的 - 許可權 <br> [Jamf 或 Intune 的 -  過期授權](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [埠未開啟](#the-required-ports-arent-open-on-your-network)|
  
 
 ### <a name="devices-are-marked-as-unresponsive-in-jamf-pro"></a>Jamf Pro 中的裝置會標示為沒有回應  
@@ -207,8 +208,8 @@ ms.locfileid: "71817634"
    - /Library/Preferences/com.microsoft.CompanyPortal.plist
    - /Library/Preferences/com.jamfsoftware.selfservice.mac.plist
    - /Library/Preferences/com.jamfsoftware.management.jamfAAD.plist
-   - /Users/<username>/Library/Cookies/.com. CompanyPortal. binarycookies
-   - /Users/<username>/Library/Cookies/jamf. jamfAAD. binarycookies
+   - /Users/<username>/Library/Cookies/com.microsoft.CompanyPortal.binarycookies
+   - /Users/<username>/Library/Cookies/com.jamf.management.jamfAAD.binarycookies
    - CompanyPortal
    - CompanyPortal. HockeySDK
    - enterpriseregistration.windows.net
@@ -273,7 +274,7 @@ ms.locfileid: "71817634"
 
 ### <a name="compliance-policy-fails-to-evaluate-the-device"></a>合規性政策無法評估裝置  
 
-**原因**： Jamf 與 Intune 整合不支援以裝置群組為目標的合規性政策。 
+**原因**：Jamf 與 Intune 的整合不支援以裝置群組為目標的合規性政策。 
 
 **解決方法**  
 修改要指派給使用者群組之 macOS 裝置的相容性原則。 

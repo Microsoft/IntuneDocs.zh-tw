@@ -8,17 +8,18 @@ manager: dougeby
 ms.date: 03/18/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: 6ee841cc-5694-4ba1-8f66-1d58edec30a4
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d999603abc539fda4d152d15dd1ab965c465f39e
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: fd00a0ae4cb6c3b150fe40cfc6cd7b71cfa973f3
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71736295"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585251"
 ---
 # <a name="use-audit-logs-to-track-and-monitor-events-in-microsoft-intune"></a>使用稽核記錄追蹤與監視 Microsoft Intune 中的事件
 
@@ -49,7 +50,8 @@ ms.locfileid: "71736295"
 
 ![選取 Intune 的 [匯出資料設定]，將記錄檔資料匯出至 Azure 監視器](./media/monitor-audit-logs/audit-logs-export-data-settings.png)
 
-如需此功能的詳細資訊，請參閱[將記錄資料傳送至儲存體、事件中樞或記錄分析](review-logs-using-azure-monitor.md)。
+> [!NOTE]
+> 如需這項功能的詳細資訊，並檢查其使用的必要條件，請參閱[將記錄資料傳送至儲存體、事件中樞或 log analytics](review-logs-using-azure-monitor.md)。
 
 ## <a name="review-audit-events"></a>檢閱稽核事件
 
@@ -67,11 +69,11 @@ ms.locfileid: "71736295"
 
 若要查看事件的相關具體資訊，請在清單中選取項目：
 
-![取得誰對 Intune 稽核記錄檔做了什麼事的特定資訊](./media/monitor-audit-logs/monitor-audit-log-detail.png "稽核記錄檔詳細資料")
+![取得誰對 Intune 稽核記錄檔做了什麼事的特定資訊](./media/monitor-audit-logs/monitor-audit-log-detail.png "|::ref2::|")
 
 > [!NOTE]
 > **初始者 (執行者)** 包含誰執行了工作以及工作在哪裡執行的資訊。 例如，如果您在 Azure 入口網站內執行 Intune 的活動，則 [應用程式]  一律會列出 [Microsoft Intune portal extension] \(Microsoft Intune 入口網站延伸模組\)  ，且 [應用程式識別碼]  一律使用相同的 GUID。
-> 
+>
 > [目標]  區段會列出多個目標及已變更的屬性。  
 
 ## <a name="filter-audit-events"></a>篩選稽核事件

@@ -6,21 +6,22 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/26/2019
+ms.date: 10/08/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: medium
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcd86cedc7684f31483d7cd3c8294a76a9c306b2
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: a26af380ef00c85c681beccdcdf188c343da1b94
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71734904"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584896"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
 
@@ -140,13 +141,13 @@ ms.locfileid: "71734904"
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>設定適用于：裝置註冊、自動裝置註冊（受監督）
 
 > [!IMPORTANT]
-> 在使用者註冊的裝置上，如果您進行任何密碼設定，則**簡單密碼**設定會自動設定為 [**封鎖**]，並強制執行6位數的 PIN。
+> 在使用者註冊裝置上，如果您設定任何密碼設定，[簡單密碼]  設定會自動設定為 [封鎖]  ，並強制執行一組 6 位數的 PIN。
 >
-> 例如，您設定**密碼到期**設定，並將此原則推送至使用者註冊的裝置。 在裝置上，會發生下列情況：
+> 例如，假設您設定 [密碼到期]  設定，並將此原則推播至使用者註冊的裝置。 裝置上會發生下列狀況：
 >
-> - 已忽略**密碼到期**設定。
-> - 不允許簡單密碼，例如 `1111` 或 `1234`。
-> - 會強制執行6位數的 pin。
+> - 會忽略 [密碼到期]  設定。
+> - 不允許使用簡單密碼，例如 `1111` 或 `1234`。
+> - 強制使用 6 位數 PIN。
 
 - **簡單密碼**：選擇 [封鎖]  以要求更加複雜的密碼。 [未設定]  會允許簡單密碼，例如 `0000` 和 `1234`。
 
@@ -267,6 +268,11 @@ ms.locfileid: "71734904"
 
   從 iOS 13.0 開始，此設定需要受監督的裝置。
 
+- **存取檔案應用程式中的網路磁碟機**機：使用伺服器訊息區（SMB）通訊協定，裝置可以存取網路伺服器上的檔案或其他資源。 [**停**用] 會防止存取網路 SMB 磁片磁碟機上的檔案。 [未設定]  (預設) 允許存取。
+
+  本功能適用於：  
+  - iOS 和 iPadOS 13.0 和更新版本
+
 ## <a name="built-in-apps"></a>內建應用程式
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定適用于：所有註冊類型
@@ -377,7 +383,7 @@ ms.locfileid: "71734904"
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>設定適用于：自動裝置註冊（受監督）
 
-- **應用程式類型清單**：建立要顯示或隱藏的應用程式清單。 選項包括：
+- **應用程式類型清單**：建立要顯示或隱藏的應用程式清單。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站有[內建的 apple 應用程式](https://support.apple.com/HT208094)清單。 選項包括：
 
   - **隱藏的應用程式**：輸入要對使用者隱藏的應用程式清單。 使用者將無法檢視或開啟這些應用程式。
   - **顯示的應用程式**：輸入使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
@@ -432,7 +438,12 @@ ms.locfileid: "71734904"
   - iOS 12.2 與更新版本
 
 - **僅使用組態設定檔加入 Wi-Fi 網路**：[需要]  可強制裝置僅使用透過 Intune 組態設定檔設定的 Wi-Fi 網路。 [未設定]  (預設) 允許裝置使用其他 Wi-Fi 網路。
-- **修改 wi-fi 狀態**： [**未設定**] （預設）可讓使用者開啟或關閉裝置上的 wi-fi。 [**封鎖**] 會防止開啟或關閉 wi-fi。
+- **Wi-fi 一律開啟**：當設定為 [**需要**] 時，wi-fi 會保留在 [設定] 應用程式中。 您無法在 [設定] 或 [控制中心] 中關閉它，即使裝置處於飛機模式也一樣。 [**未設定**] （預設）可讓使用者控制開啟或關閉 wi-fi。
+
+  進行此設定不會防止使用者選取 Wi-fi 網路。
+
+  本功能適用於：  
+  - iOS 和 iPadOS 13.0 和更新版本
 
 ## <a name="connected-devices"></a>已連線的裝置
 
@@ -458,6 +469,11 @@ ms.locfileid: "71734904"
 
   本功能適用於：  
   - iOS 11.0 與更新版本
+
+- **存取 usb 磁片磁碟機上的**檔案：裝置可以連接並開啟 usb 磁片磁碟機上的檔案。 [**停**用] 會在 usb 連線至裝置時，防止裝置存取檔案應用程式中的 usb 磁片磁碟機。 停用這項功能也會封鎖終端使用者將檔案傳送到連接到 iPad 的 USB 磁片磁碟機。 [**未設定**] （預設）允許存取檔案應用程式中的 USB 磁片磁碟機。
+
+  本功能適用於：  
+  - iOS 和 iPadOS 13.0 和更新版本
 
 ## <a name="keyboard-and-dictionary"></a>鍵盤與字典
 
