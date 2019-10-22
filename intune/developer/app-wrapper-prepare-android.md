@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
+ms.subservice: developer
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: e9c349c8-51ae-4d73-b74a-6173728a520b
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dfea74c70b81cadfa06c578dc33cdad401fa9e45
-ms.sourcegitcommit: 223d64a72ec85fe222f5bb10639da729368e6d57
+ms.openlocfilehash: 107624ac5d0c5eab423c0d5051ceca45e41de0b9
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2019
-ms.locfileid: "71940061"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72490763"
 ---
 # <a name="prepare-android-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 Android 應用程式
 
@@ -53,7 +54,7 @@ ms.locfileid: "71940061"
     > [!NOTE]
     > Intune App Wrapping Tool d不支援 Google 的 v2 與即將推出的 v3 應用程式簽署配置。 使用 Intune App Wrapping Tool 封裝 .apk 檔案之後，建議使用 [Google 提供的 Apksigner 工具]( https://developer.android.com/studio/command-line/apksigner)。 這將可確保一旦您的應用程式到達使用者裝置，就可由 Android 標準適當地啟動。 
 
-- (選擇性) 應用程式有時可能會達到 Dalvik 可執行檔 (DEX) 大小限制，因為包裝期間新增 Intune MAM SDK 類別。 DEX 檔案是 Android 應用程式編譯的一部分。 Intune 應用程式包裝工具會在將最低 API 層級為21或以上的應用程式換行期間，自動處理 DEX 檔案溢位（從 [v 起。64。51。202。144 針對最低 API 層級為 < 21 的應用程式，最佳做法是使用包裝函式的 `-UseMinAPILevelForNativeMultiDex` 旗標來增加最低 API 層級。 若客戶無法增加應用程式的最低 API 層級，則可使用下列 DEX 溢位解決方法。 在某些組織中，這可能需要與編譯應用程式的人員 (即應用程式建置小組) 合作：
+- (選擇性) 應用程式有時可能會達到 Dalvik 可執行檔 (DEX) 大小限制，因為包裝期間新增 Intune MAM SDK 類別。 DEX 檔案是 Android 應用程式編譯的一部分。 Intune 應用程式包裝工具會在將最低 API 層級為21或以上的應用程式換行期間，自動處理 DEX 檔案溢位（從 [v. 1.0.2501.1 ](https://github.com/msintuneappsdk/intune-app-wrapping-tool-android/releases)）。 針對最低 API 層級為 < 21 的應用程式，最佳做法是使用包裝函式的 `-UseMinAPILevelForNativeMultiDex` 旗標來增加最低 API 層級。 若客戶無法增加應用程式的最低 API 層級，則可使用下列 DEX 溢位解決方法。 在某些組織中，這可能需要與編譯應用程式的人員 (即應用程式建置小組) 合作：
 * 使用 ProGuard，從應用程式的主要 DEX 檔中排除未使用的類別參考。
 * 針對使用 v 3.1.0 或更高版本 Android Gradle 外掛程式的客戶，請停用[D8 dexer](https://android-developers.googleblog.com/2018/04/android-studio-switching-to-d8-dexer.html)。  
 

@@ -9,6 +9,7 @@ ms.date: 09/18/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
+ms.subservice: end-user
 ms.technology: ''
 ms.assetid: cfd214bc-f072-4808-af2e-a3cbf7af9bca
 searchScope:
@@ -18,12 +19,12 @@ ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 16d7142e6dc38a177f8820f60e7335b8b23a1eeb
-ms.sourcegitcommit: 8934b1abec96e18cee15a77107d37551766f7666
+ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2019
-ms.locfileid: "71099791"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508296"
 ---
 # <a name="sign-in-to-company-portal"></a>登入以公司入口網站  
 
@@ -39,7 +40,7 @@ ms.locfileid: "71099791"
 
 1. 在您的裝置上開啟應用程式，然後按 [登**入**]。  
 
-   [![公司入口網站登入頁面的範例螢幕擷取畫面。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [![Example 公司入口網站登入頁面的螢幕擷取畫面。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. 輸入您的 [工作或學校帳戶]  ，然後點選 [下一步]  。
@@ -78,7 +79,7 @@ ms.locfileid: "71099791"
 
    ![系統會提供指示和一個唯一密碼，說明應從工作電腦移至 https://microsoft.com/devicelogin 頁面，然後使用該驗證碼來進行登入。](/intune-user-help/media/cp_ios_aad_signin_after_1804_006.png)
 
-3. 在您的其他裝置（您用來驗證的裝置）上，開啟瀏覽器並移[https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)至。 輸入或貼上程式碼。  
+3. 在您的其他裝置（您用來驗證的裝置）上，開啟瀏覽器並移至[https://microsoft.com/devicelogin](https://microsoft.com/devicelogin)。 輸入或貼上程式碼。  
 
    ![使用者工作電腦上的瀏覽器 (而非公司入口網站應用程式) 的影像。 顯示的 [裝置登入] 頁面提示使用者輸入在公司入口網站應用程式中收到的驗證碼。](/intune/media/cp_ios_aad_signin_from_another_device_after_1704_004.png)
 
