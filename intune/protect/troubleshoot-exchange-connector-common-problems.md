@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 10/02/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14da6274546cbd4c1867975c08c60ece313714b1
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: e9542212e1b75d97c96c024eed20e20e610e2b5d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71917995"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503641"
 ---
 # <a name="resolve-common-problems-with-the-intune-exchange-connector"></a>解決 Intune Exchange connector 的常見問題
  
@@ -72,7 +73,7 @@ ms.locfileid: "71917995"
       ![Nslookup 結果 ](./media/troubleshoot-exchange-connector-common-problems/nslookup-results.png
 )
 
-   您也可以在 https://testconnectivity.microsoft.com 的網際網路上測試自動探索服務。 或者，使用 Microsoft Connectivity Analyzer 工具，從本機網域進行測試。 如需詳細資訊，請參閱[Microsoft Connectivity Analyzer 工具](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))。 如有必要，請[下載 Microsoft Connectivity Analyzer 工具](http://go.microsoft.com/fwlink/?LinkID=313782)。
+   您也可以在 https://testconnectivity.microsoft.com 從網際網路測試自動探索服務。 或者，使用 Microsoft Connectivity Analyzer 工具，從本機網域進行測試。 如需詳細資訊，請參閱[Microsoft Connectivity Analyzer 工具](https://docs.microsoft.com/en-us/previous-versions/office/exchange-remote-connectivity/jj851141(v=exchg.80))。 如有必要，請[下載 Microsoft Connectivity Analyzer 工具](https://go.microsoft.com/fwlink/?LinkID=313782)。
 
 
 ### <a name="check-autodiscovery"></a>檢查自動搜索  
@@ -82,7 +83,7 @@ ms.locfileid: "71917995"
 
 2. 在 Intune Exchange connector 設定檔中將 EWS URL 硬式編碼：
 
-   1. 決定 EWS URL。 Exchange 的預設 EWS URL 為 `https://<mailServerFQDN>/ews/exchange.asmx`，但您的 URL 可能不同。 請洽詢 Exchange 系統管理員，為您的環境驗證正確的 URL。
+   1. 決定 EWS URL。 Exchange 的預設 EWS URL 是 `https://<mailServerFQDN>/ews/exchange.asmx` 的，但您的 URL 可能不同。 請洽詢 Exchange 系統管理員，為您的環境驗證正確的 URL。
 
    2. 編輯 *OnPremisesExchangeConnectorServiceConfiguration.xml* 檔案。 根據預設，此檔案位於執行 Exchange connector 之電腦上的 *%ProgramData%\Microsoft\Windows Intune Exchange Connector* 。 在文字編輯器中開啟檔案，然後變更下列這一行，以反映您環境的 EWS URL： `<ExchangeWebServiceURL> https://<YourExchangeHOST>/EWS/Exchange.asmx</ExchangeWebServiceURL>`
     
