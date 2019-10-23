@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1679eb656e04296e53d8994dcd47144621c99d0c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: dc0194bfaf1ec5e3120b6bd30eb6b2eb82c6ec2d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721769"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504722"
 ---
 # <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>針對 DigiCert PKI 平台設定 Intune 憑證連接器  
 
@@ -38,7 +39,7 @@ ms.locfileid: "71721769"
 * 來自 DigiCert CA 的 PKCS 憑證
 * 來自 Microsoft CA 的 Endpoint Protection 憑證
 
-如果您尚未安裝連接器，但計畫同時針對 Microsoft CA 和 DigiCert CA 使用它，請先完成 Microsoft CA 的連接器設定。 然後，請返回本文以將它也設定為支援 DigiCert。 如需憑證設定檔和連接器的詳細資訊，請參閱[在 Microsoft Intune 中設定裝置的憑證設定檔](certificates-configure.md)。  
+如果您尚未安裝連接器，但計畫同時針對 Microsoft CA 和 DigiCert CA 使用它，請先完成 Microsoft CA 的連接器設定。 然後，返回本文，以將它設定為也支援 DigiCert。 如需憑證設定檔和連接器的詳細資訊，請參閱[在 Microsoft Intune 中設定裝置的憑證設定檔](certificates-configure.md)。  
 
 如果您只會搭配 DigiCert CA 使用連接器，則可使用本文中的指示來安裝連接器，然後加以設定。 
 
@@ -144,7 +145,7 @@ ms.locfileid: "71721769"
 > [!TIP]  
 > 本節適用於您只會搭配 DigiCert CA 使用 Intune 憑證連接器的情況。 如果您是搭配 Microsoft CA 使用 Intune 憑證連接器，並且想要新增 DigiCert CA 支援，請直接跳到[設定連接器以支援 DigiCert](#configure-the-connector-to-support-digicert)。  
 
-1. 從下列清單中選擇其中一個 Windows 作業系統版本，並將它安裝於電腦上：
+1. 從下列清單選擇其中一個 Windows 作業系統版本，並將它安裝於電腦上：
    * Windows Server 2012 R2 Datacenter
    * Windows Server 2012 R2 Standard
    * Windows Server 2016 Datacenter
@@ -326,8 +327,8 @@ ms.locfileid: "71721769"
 | NDES 連接器 - IssuePfx - 一般例外狀況： <br> System.NullReferenceException：物件參考未設定成物件的執行個體。 | 這是暫時性的錯誤。 請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 **services.msc**。 <br> 2.選取 [Intune 連接器服務]  。 <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]  。 |
 | DigiCert 提供者 - 無法取得 DigiCert 原則。 <br><br>「作業已逾時。」 | Intune 憑證連接器在與 DigiCert CA 通訊期間，接收到作業逾時錯誤。 如果此錯誤持續發生，請提高連線逾時值，然後再試一次。 <br><br> 提高連線逾時： <br> 1.移至 NDES 連接器電腦。 <br>2.在 [記事本] 中開啟 **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config** 檔案。 <br> 3.提高下列參數的逾時值： <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4.重新啟動 Intune 憑證連接器服務。 <br><br> 如果此問題持續發生，請連絡 DigiCert 客戶支援。 |
 | DigiCert 提供者 - 無法取得用戶端憑證。 | Intune 憑證連接器無法從 [本機電腦-個人] 憑證存放區擷取資源授權憑證。 若要解決此問題，請將資源授權憑證連同其私密金鑰一起安裝於 [本機電腦-個人] 憑證存放區中。 <br><br> 資源授權憑證必須從 DigiCert CA 取得。 如需更多詳細資料，請連絡 DigiCert 客戶支援。 | 
-| DigiCert 提供者 - 無法取得 DigiCert 原則。 <br><br>「要求已經中止:無法建立 SSL/TLS 的安全通道」。 | 此錯誤會在下列案例發生： <br><br> 1.Intune 憑證連接器服務無權從 [本機電腦-個人] 憑證存放區讀取資源授權憑證及其私密金鑰。 若要解決此問題，請在 services.msc 中檢查連接器服務的執行中內容帳戶。 連接器服務必須在 NT AUTHORITY\SYSTEM 內容下執行。 <br><br> 2.Intune 管理入口網站中的 PKCS 憑證設定檔可能是使用對於 DigiCert CA 無效的基礎服務 FQDN 來設定。 FQDN 類似於 **pki-ws.symauth.com**。 若要解決此問題，請連絡 DigiCert 客戶支援，以確認該 URL 是否適用於您的訂用帳戶。 <br><br> 3.Intune 憑證連接器無法透過資源授權憑證向 DigiCert CA 進行驗證，因為它無法擷取私密金鑰。 若要解決此問題，請將資源授權憑證連同其私密金鑰一起安裝於 [本機電腦-個人] 憑證存放區中。 <br><br> 如果此問題持續發生，請連絡 DigiCert 客戶支援。 |
-| DigiCert 提供者 - 無法取得 DigiCert 原則。 <br><br>「無法理解要求元素。」 | Intune 憑證連接器無法取得 DigiCert 憑證設定檔範本，因為用戶端設定檔 OID 與 Intune 憑證設定檔不符。 在另一種情況下，Intune 憑證連接器在 DigiCert CA 中找不到與用戶端設定檔 OID 相關聯的憑證設定檔範本。 <br><br> 若要解決此問題，請從 DigiCert CA 中的 DigiCert 憑證範本中取得正確的用戶端設定檔 OID。 然後在 Intune 管理入口網站中更新 PKCS 憑證設定檔。 <br><br> 從 DigiCert CA 取得用戶端設定檔 OID： <br> 1.登入 DigiCert CA 管理入口網站。 <br> 2.選取 [Manage Certificate Profiles]  \(管理憑證設定檔\)。 <br> 3.選取您要使用的憑證設定檔。 <br> 4.取得憑證設定檔 OID。 它看起來會與下列範例類似： <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 使用正確的憑證設定檔 OID來更新 PKCS 憑證設定檔： <br>1.登入 Intune 管理入口網站。 <br> 2.移至 PKCS 憑證設定檔，然後選取 [編輯]  。 <br> 3.在憑證範本名稱的欄位中，更新憑證設定檔 OID。 <br> 4.儲存 PKCS 憑證設定檔。 |
+| DigiCert 提供者 - 無法取得 DigiCert 原則。 <br><br>「要求已經中止:無法建立 SSL/TLS 的安全通道」。 | 此錯誤會在下列案例發生： <br><br> 1.Intune 憑證連接器服務無權從 [本機電腦-個人] 憑證存放區讀取資源授權憑證及其私密金鑰。 若要解決此問題，請在 services.msc 中檢查連接器服務的執行中內容帳戶。 連接器服務必須在 NT AUTHORITY\SYSTEM 內容下執行。 <br><br> 2.Intune 管理入口網站中的 PKCS 憑證設定檔可能會使用對 DigiCert CA 無效的基礎服務 FQDN 來設定。 FQDN 類似於 **pki-ws.symauth.com**。 若要解決此問題，請連絡 DigiCert 客戶支援，以確認該 URL 是否適用於您的訂用帳戶。 <br><br> 3.Intune 憑證連接器無法透過資源授權憑證向 DigiCert CA 進行驗證，因為該憑證無法擷取私密金鑰。 若要解決此問題，請將資源授權憑證連同其私密金鑰一起安裝於 [本機電腦-個人] 憑證存放區中。 <br><br> 如果此問題持續發生，請連絡 DigiCert 客戶支援。 |
+| DigiCert 提供者 - 無法取得 DigiCert 原則。 <br><br>「無法了解要求元素。」 | Intune 憑證連接器無法取得 DigiCert 憑證設定檔範本，因為用戶端設定檔 OID 與 Intune 憑證設定檔不符。 在另一種情況下，Intune 憑證連接器在 DigiCert CA 中找不到與用戶端設定檔 OID 相關聯的憑證設定檔範本。 <br><br> 若要解決此問題，請從 DigiCert CA 中的 DigiCert 憑證範本中取得正確的用戶端設定檔 OID。 然後在 Intune 管理入口網站中更新 PKCS 憑證設定檔。 <br><br> 從 DigiCert CA 取得用戶端設定檔 OID： <br> 1.登入 DigiCert CA 管理入口網站。 <br> 2.選取 [Manage Certificate Profiles]  \(管理憑證設定檔\)。 <br> 3.選取您要使用的憑證設定檔。 <br> 4.取得憑證設定檔 OID。 它看起來會與下列範例類似： <br> `Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109` <br><br> 使用正確的憑證設定檔 OID來更新 PKCS 憑證設定檔： <br>1.登入 Intune 管理入口網站。 <br> 2.移至 PKCS 憑證設定檔，然後選取 [編輯]  。 <br> 3.在憑證範本名稱的欄位中，更新憑證設定檔 OID。 <br> 4.儲存 PKCS 憑證設定檔。 |
 | DigiCert 提供者 - 原則驗證失敗。 <br><br> 此屬性不在 DigiCert 支援的憑證範本屬性清單內。 | 當 DigiCert 憑證設定檔範本和 Intune 憑證設定檔之間出現差異時，DigiCert CA 便會顯示此訊息。 此問題很可能是因為 **SubjectName** 或 **SubjectAltName** 中的屬性不符而造成。 <br><br> 若要解決此問題，請在 DigiCert 憑證設定檔範本中針對 **SubjectName** 和 **SubjectAltName** 選取 Intune 支援的屬性。 如需詳細資訊，請參閱＜憑證參數＞  一節中 Intune 所支援的屬性。 |
 | 某些使用者裝置未接收到來自 DigiCert CA 的 PKCS 憑證。 | 此問題會在使用者 UPN 包含像是底線的特殊字元時發生 (範例：`global_admin@intune.onmicrosoft.com`)。 <br><br> DigiCert CA 在 **mail_firstname** 和 **mail_lastname** 中不支援特殊字元。 <br><br> 下列步驟可協助解決此問題： <br><br> 1.登入 DigiCert CA 管理入口網站。 <br> 2.移至 [Manage Certificate Profiles]  \(管理憑證設定檔\)。 <br> 3.選取用於 Intune 的憑證設定檔。 <br> 4.選取 [Customize options]  \(自訂選項\) 連結。 <br> 5.選取 [Advanced options]  \(進階選項\) 按鈕。 <br> 6.在 [Certificate fields – Subject DN]  \(憑證欄位 - 主體 DN\) 底下，新增 [Common Name (CN)]  \(一般名稱 (CN)\) 欄位，並刪除現有的 [Common Name (CN)]  \(一般名稱 (CN)\) 欄位。 新增和刪除作業必須同時執行。 <br> 7.選取 [儲存]  。 <br><br> 透過先前的變更，DigiCert 憑證設定檔將會要求 **“CN=<upn>”** ，而非 **mail_firstname** 和 **mail_lastname**。 |
 | 使用者手動從裝置刪除已部署的憑證。 | Intune 會在下一次簽入或強制執行原則時，重新部署相同的憑證。 在此情況下，NDES 連接器不會接收到 PKCS 憑證要求。 |

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: a1ded457-0ecf-4f9c-a2d2-857d57f8d30a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40bb96000513bb1de09ec8f8865735d70bddcd43
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c8e61be086323a16a6220573874ed80ce4e9bd32
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725214"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498981"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune 
 
@@ -50,7 +51,7 @@ Intune 有支援各種不同的應用程式類型。 每種應用程式類型的
 | **應用程式特定類型** | **一般類型** | **應用程式特定程序** |
 | --- | --- | --- |
 | Android 市集應用程式  | 市集應用程式  | 選取 [Android]  為 [應用程式類型]  ，並輸入應用程式的 Google Play 商店 URL。 |
-| Android Enterprise 應用程式  | 市集應用程式  | 選取 [Android]  作為 [應用程式類型]  ，並輸入應用程式的受控 Google Play 商店 URL。 <sup>1</sup> |
+| Android Enterprise 應用程式  | 市集應用程式  | 選取 [Android]  作為 [應用程式類型]  ，然後輸入應用程式的受控 Google Play 商店 URL。 <sup>1</sup> |
 | iOS 市集應用程式  | 市集應用程式  | 選取 [iOS]  為 [應用程式類型]  ，搜尋應用程式，然後在 Intune 中選取該應用程式。 |
 | Windows Phone 8.1 市集應用程式  | 市集應用程式  | 選取 [Windows Phone 8.1]  為 [應用程式類型]  ，並輸入應用程式的 Microsoft Store URL。 |
 | Microsoft Store 應用程式  | 市集應用程式  | 選取 [Windows]  為 [應用程式類型]  ，並輸入應用程式的 Microsoft Store URL。 |
@@ -66,7 +67,7 @@ Intune 有支援各種不同的應用程式類型。 每種應用程式類型的
 | Web 應用程式  | Web 應用程式  | 選取 [Web 連結]  為 [應用程式類型]  ，然後輸入指向 Web 應用程式的有效 URL。  |
 | Android Enterprise 系統應用程式  | 市集應用程式  | 選取 [Android Enterprise 系統應用程式]  作為 [應用程式類型]  ，然後輸入應用程式名稱、發行者和套件檔案。  |
 | Windows 應用程式 (Win32)  | LOB 應用程式  | 選取 **Windows 應用程式 (Win32)** 應用程式作為 [應用程式類型]  ，選取 [應用程式套件檔案]  ，然後選取副檔名為 **.intunewin** 的安裝檔。  |
-| macOS LOB 應用程式 | LOB 應用程式  | 選取 [企業營運]  作為 [應用程式類型]  ，選取 [應用程式套件檔案]  ，然後選取副檔名為 **.intunemac** 的安裝檔。  |
+| macOS LOB 應用程式 | LOB 應用程式  | 選取 [企業營運]  作為 [應用程式類型]  、選取 [應用程式套件檔案]  ，然後選取副檔名為 **.intunemac** 的安裝檔。  |
 
 
 <sup>1</sup> 如需 Android Enterprise 和 Android 工作設定檔的詳細資訊，請參閱下面的[了解授權的應用程式](apps-add.md#understanding-licensed-apps)。
@@ -107,7 +108,7 @@ Intune 也支援存取需要安全存取內部部署資料的用戶端應用程�
 
 您可以選擇下列應用程式類型：
 - **來自市集的應用程式**：已上傳至 Microsoft Store、iOS 市集或 Android 市集的應用程式即為市集應用程式。 市集應用程式的提供者會維護應用程式並提供更新。 您在市集清單中選取應用程式，並使用 Intune 將它新增為使用者可用的應用程式。
-- **內部撰寫的應用程式 (企業營運)** ：於公司內部建立的應用程式即為企業營運 (LOB) 應用程式。 已為其中一個 Intune 支援的平台，例如 Windows、iOS、macOS 或 Android 建立此類型應用程式的功能。 您的組織會建立更新，並以個別檔案提供給您。 您使用 Intune 新增及部署更新，向使用者提供應用程式更新。
+- **內部撰寫的應用程式 (企業營運)** ：於公司內部建立的應用程式即為企業營運 (LOB) 應用程式。 已為其中一個 Intune 支援的平台 (例如 Windows、iOS、macOS 或 Android) 建立此類型應用程式的功能。 您的組織會建立更新，並以個別檔案提供給您。 您使用 Intune 新增及部署更新，向使用者提供應用程式更新。
 - **網路上的應用程式**：Web 應用程式是用戶端伺服器應用程式。 伺服器提供了 Web 應用程式，其中包括 UI、內容和功能。 此外，現代的 Web 裝載平台通常會提供安全性、負載平衡和其他優勢。 此類型的應用程式會在網路上進行個別維護。 您使用 Intune 指向此應用程式類型。 您也會指派有哪些使用者群組可以存取該應用程式。 請注意，Android 不支援 Web 應用程式。
 
 在決定您的組織需要哪些應用程式時，請考慮這些應用程式會如何與雲端服務整合、會存取哪些資料、是否可供 BYOD 使用者使用，以及是否需要存取網際網路。

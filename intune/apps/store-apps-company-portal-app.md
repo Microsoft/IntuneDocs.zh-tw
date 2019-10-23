@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 07/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bfe1a2d3-f611-4dbb-adef-c0dff4d7b810
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 31fcc3a47a131ca017e3691cc53a7295b81fe67c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 32411e513cec9683faf598c8d73d6d803bcddb3d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724590"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507101"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式
 
@@ -53,18 +54,18 @@ ms.locfileid: "71724590"
 7. 選取 [下載]  ，即可下載「必要架構」底下的所有套件。  
 
     您必須針對 x86、x64 及 ARM 架構完成此動作：<br> 
-    *選取 1507 作為最低 OS 版本時有 9 個必要的 Framework 套件、選取 1511 時有 12 個套件，而選取 1607 時有 15 個套件。*
+    選取 1507 作為最低 OS 版本時有 9 個必要的架構套件、選取 1511 時有 12 個套件，而選取 1607 時有 15 個套件。 
 
 8. 在 Azure 入口網站的 Microsoft Intune 中，將公司入口網站應用程式上傳為新的應用程式。 您必須在 [新增應用程式]  窗格中選取 [企業營運應用程式] 作為 [應用程式類型]  來新增應用程式。 然後，選取應用程式套件檔案 (副檔名為 .AppxBundle)。
 
-9. 在 [選取相依性應用程式檔案]  下，透過按住 Shift 鍵並選取您在步驟 7 中下載的所有相依性，然後確認 [已新增]  資料行針對您所需的架構顯示 [是]  。
+9. 在 [選取相依性應用程式檔案]  底下，按住 Shift 鍵並選取您在步驟 7 中下載的所有相依性，然後確認 [已新增]  資料行會針對您所需的架構顯示 [是]  。
 
      > [!NOTE]
      > 如果未新增相依性，應用程式可能不會安裝在指定的裝置類型上。
 
-10. 按一下 [確定]  ，輸入所需的 [應用程式資訊]  ，然後按一下 [新增]  。
+10. 按一下 [確定]  、輸入任何所需的**應用程式資訊**，然後按一下 [新增]  。
 
-11. 針對您所選的一組使用者或裝置群組，將公司入口網站應用程式指派為他們的必要應用程式。  
+11. 針對您所選的一組使用者或裝置群組，將公司入口網站應用程式指派為必要的應用程式。  
 
 如需 Intune 對通用應用程式相依性的處理方式詳細資訊，請參閱[透過 Microsoft Intune MDM 部署具相依性的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  
 

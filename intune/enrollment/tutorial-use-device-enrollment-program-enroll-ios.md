@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 04/30/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e221e67afa141612d6b565a511866087ce237d25
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 83a9467065bb5c1d1cde2035df936541bb804ddc
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722367"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72503074"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>教學課程：使用 Apple Business Manager (ABM) 中的公司裝置註冊功能在 Intune 中註冊 iOS 裝置
 Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。 Intune 也支援 Apple 較舊的裝置註冊計劃 (DEP) 入口網站，但建議您使用 Apple Business Manager 重新開始。 使用 Microsoft Intune 和 Apple 公司裝置註冊，當使用者第一次開啟裝置時，就會自動安全地註冊裝置。 因此，您可以將裝置提供給許多使用者，而不必個別設定每部裝置。 

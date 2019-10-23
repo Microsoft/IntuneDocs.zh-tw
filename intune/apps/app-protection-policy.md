@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1c086943-84a0-4d99-8295-490a2bc5be4b
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee266d33b247941140569e416c4b43643bcd6a0f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 31bb0e2ff4379c55829afc65fb99b768c9099a47
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725370"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72498946"
 ---
 # <a name="app-protection-policies-overview"></a>應用程式保護原則概觀
 
@@ -30,7 +31,7 @@ ms.locfileid: "71725370"
 
 應用程式保護原則 (APP) 是確保組織資料能夠被保護或保留在受控應用程式中的規則。 原則可以是在使用者嘗試存取或移動「公司」資料時，強制執行的一項規則，或者是當使用者在應用程式內時，禁止執行或受到監視的一組動作。 受管理應用程式是已套用應用程式保護原則的應用程式，而且可由 Intune 管理。
 
-行動應用程式管理 (MAM) 應用程式防護原則可讓您管理和保護應用程式內的組織資料。 透過**沒有註冊的 MAM** (MAM-WE)，包含機密資料的工作或學校相關應用程式幾乎可在任何[裝置](app-management.md#app-management-capabilities-by-platform)上管理，包含**攜帶您自己的裝置** (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的 [Microsoft Intune 受保護應用程式](apps-supported-intune-apps.md)官方清單。
+行動應用程式管理 (MAM) 應用程式防護原則可讓您管理和保護應用程式內的組織資料。 透過**沒有註冊的 MAM** (MAM-WE)，便幾乎可以管理位於任何[裝置](app-management.md#app-management-capabilities-by-platform)上包含敏感性資料的公司或學校相關應用程式，這包括**攜帶您自己的裝置** (BYOD) 案例中的個人裝置。 許多生產力應用程式 (例如 Microsoft Office 應用程式) 可以由 Intune MAM 管理。 請參閱可供公開使用的 [Microsoft Intune 受保護應用程式](apps-supported-intune-apps.md)官方清單。
 
 ## <a name="how-you-can-protect-app-data"></a>如何保護應用程式資料
 您的員工使用行動裝置處理公私事務。 確保員工生產力的同時，想要防止故意和不小心的資料外洩。 您還想要保護從您非受控裝置存取的公司資料。

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 06/11/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 5b0d7644-3183-45ba-a165-0d82d70cb71e
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be2e9371288961d0afdf7ad6e8cfec8f734087f6
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721288"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72502198"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>設定與 Intune 的 Lookout Mobile Endpoint Security 整合
 透過符合[必要條件](lookout-mobile-threat-defense-connector.md#prerequisites)的環境，您可以將 Lookout Mobile Endpoint Security 與 Intune 整合。 本文的資訊將引導您設定整合，並設定 Lookout 中的重要設定以便與 Intune 搭配使用。  

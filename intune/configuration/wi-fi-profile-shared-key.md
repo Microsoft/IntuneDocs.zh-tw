@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: c6fd72a6-7dc8-48fc-9df1-db5627a51597
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 175be4d51b034745ce6fab050f68be277f1d4858
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723758"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72506505"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔 - Intune
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -214,7 +215,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 
 您也可以從現有的 Wi-Fi 連線建立 XML 檔案。 在 Windows 電腦上，使用下列步驟：
 
-1. 為匯出 W-Fi 設定檔建立本機資料夾，例如 c:\WiFi。
+1. 為匯出的 Wi-Fi 設定檔建立本機資料夾，例如 c:\WiFi。
 2. 以系統管理員身分開啟命令提示字元 (以滑鼠右鍵按一下 `cmd` > [以系統管理員​​身分執行]  )
 3. 執行 `netsh wlan show profiles`。 隨即列出所有設定檔的名稱。
 4. 執行 `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`。 此命令會在 c:\Wifi 中建立名為 `Wi-Fi-YourProfileName.xml` 的檔案。

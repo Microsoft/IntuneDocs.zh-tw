@@ -1,6 +1,6 @@
 ---
 title: 在 Microsoft Intune 中將 VPN 設定新增至裝置 - Azure | Microsoft Docs
-description: 若為 Android、Android Enterprise、iOS、macOS 和 Windows 裝置，請使用內建設定來建立 Microsoft Intune 中的虛擬私人網路 (VPN) 連線。
+description: 針對 Android、Android Enterprise、iOS、macOS 與 Windows 裝置，請使用內建設定來建立 Microsoft Intune 中的虛擬私人網路 (VPN) 連線。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -8,26 +8,27 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b96de28e517a989fc1e749176039e6c02ef51e0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723771"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72491760"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中建立 VPN 設定檔以連線到 VPN 伺服器
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-虛擬私人網路 (VPN) 為您的使用者提供安全的組織網路遠端存取。 裝置會使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 Microsoft Intune 中的 **VPN 設定檔**會將 VPN 設定指派給組織中的使用者和裝置，讓他們可以輕鬆且安全地連線到組織網路。
+虛擬私人網路 (VPN) 為您的使用者提供安全的組織網路遠端存取。 裝置會使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 Microsoft Intune 中的 **VPN 設定檔**會將 VPN 設定指派給組織中的使用者與裝置，讓他們可以輕鬆且安全地連線到組織網路。
 
-例如，您想要使用連線到組織網路上檔案共用所需的設定，來設定所有 iOS 裝置。 您會建立包含這些設定的 VPN 設定檔。 接著，您需將此設定檔指派給所有具有 iOS 裝置的使用者。 這些使用者會在可用的網路清單中看到此 VPN 連線，而且很輕鬆就能建立連線。
+例如，您想要使用連線到組織網路上檔案共用所需的設定，來設定所有 iOS 裝置。 您會建立包含這些設定的 VPN 設定檔。 接著，您需將此設定檔指派給所有擁有 iOS 裝置的使用者。 這些使用者會在可用的網路清單中看到此 VPN 連線，而且很輕鬆就能建立連線。
 
 > [!NOTE]
 > 您可以使用 [Intune 自訂設定原則](custom-settings-configure.md)來建立下列平台的 VPN 設定檔：
@@ -52,7 +53,7 @@ ms.locfileid: "71723771"
 |Citrix SSO|- Android<br/>- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |自訂 VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2|Windows 10|
+|IKEv2| - iOS<br/>- Windows 10|
 |L2TP|Windows 10|
 |Palo Alto Networks GlobalProtect|- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |PPTP|Windows 10|
@@ -117,4 +118,4 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 
 一旦設定檔建立完成，它還不會執行任何動作。 接下來，[指派設定檔](device-profile-assign.md)給一些裝置。
 
-您也可以在 [Android](android-pulse-secure-per-app-vpn.md) 和 [iOS](vpn-setting-configure-per-app.md) 裝置上，建立和使用個別應用程式 VPN。
+您也可以在 [Android](android-pulse-secure-per-app-vpn.md) 與 [iOS](vpn-setting-configure-per-app.md) 裝置上，建立及使用個別應用程式 VPN。

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1feca24f-9212-4d5d-afa9-7c171c5e8525
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 63e3a02f9df52052f27714403e8f189d089c6690
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725890"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72507560"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理 Web 存取
 
@@ -154,29 +155,29 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 3. 在下一個刀鋒視窗上，選擇 [指派]  。
 4. 在 [指派]  刀鋒視窗上，選取您要指派應用程式設定的 Azure AD 群組，然後選擇 [確定]  。
 
-## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>如何將 Microsoft Edge 設定為貴組織的受保護瀏覽器
+## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>如何針對貴組織將 Microsoft Edge 設定為受保護的瀏覽器
 
-此設定可讓您設定使用者是否會被導向至 Microsoft Edge 或 Intune 受控瀏覽器，同時假設這兩個瀏覽器都是以應用程式防護原則為目標。 **此應用程式設定原則設定應以開啟 Web 連結的 Intune 受控應用程式為目標。** 
+此設定可讓您設定是否要將使用者導向至 Microsoft Edge 或 Intune Managed Browser，前提假設這兩個瀏覽器都會以應用程式保護原則設為目標。 **此應用程式設定原則設定應以開啟網頁連結的 Intune 受控應用程式為目標。** 
 
-如果此設定設為 "True"：
+如果將此設定設為 "True"：
 
-- 當從以該設定為目標的 Intune 受控應用程式中打開連結時，您的使用者將會導向至 Microsoft Edge。 
-- 如果他們還沒有應用程式，系統會提示他們從商店下載 Microsoft Edge，而不論是否已下載 Intune 受控瀏覽器。
+- 當使用者從以此設定為目標的 Intune 受控應用程式中開啟連結時，即會將其導向至 Microsoft Edge。 
+- 如果他們還沒有此應用程式，系統就會提示他們從商店下載 Microsoft Edge，而不論他們是否已下載 Intune Managed Browser。
 
-如果此設定設為 "False"：
+如果將此設定設為 "False"：
 
-- 如果您的用戶**同時**下載了受控瀏覽器和 Microsoft Edge，則將啟動受控瀏覽器。 
-- 如果您的用戶下載了受控瀏覽器**或** Microsoft Edge **其中之一**，則將啟動瀏覽器應用程式。 
-- 如果您的使用者未下載任何瀏覽器應用程式，系統會提示他們下載受控瀏覽器。
+- 如果您的使用者**同時**下載了 Managed Browser 和 Microsoft Edge，將啟動 Managed Browser。 
+- 如果您的使用者下載了 Managed Browser **或** Microsoft Edge **其中之一**，則將啟動該瀏覽器應用程式。 
+- 如果您的使用者並未下載任一個瀏覽器應用程式，系統就會提示他們下載 Managed Browser。
 
-使用上述程序建立 Microsoft Edge 應用程式設定。 選取 [組態]  刀鋒視窗上的 [組態設定]  時，請提供下列機碼值組 (步驟 9)：
+使用上述程序來建立 Microsoft Edge 應用程式設定。 選取 [組態]  刀鋒視窗上的 [組態設定]  時，提供下列金鑰和值組 (步驟 9)：
 
 | 金鑰                              |  值   |
 |----------------------------------|----------|
 | **com.microsoft.intune.useEdge** | **true** |
 
 > [!NOTE]
-> 在管理 Microsoft Edge 的應用程式防護原則和應用程式設定中指定的相關聯應用程式中，請確定已設定下列資料保護原則設定：
+> 在管理 Microsoft Edge 的應用程式保護原則和應用程式設定中指定的相關聯應用程式中，請確定已設定下列資料保護原則設定：
 > - 將組織資料傳送至其他應用程式：**受原則管理的應用程式**
 > - 與受原則管理的瀏覽器共用 Web 內容：**需要**
 
@@ -184,14 +185,14 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 
 Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) 可以一起使用，以支援下列 iOS 和 Android 裝置的使用者案例：
 
-- 使用者下載並登入 Microsoft Outlook 應用程式。 自動套用 Intune 應用程式保護原則。 它們會加密已儲存的資料，並阻擋使用者將公司檔案傳輸至裝置上未受管理的應用程式或位置。 當使用者接著在 Outlook 中按一下內部網路網站的連結時，您可以指定用受保護的瀏覽器應用程式開啟該連結，不用其他瀏覽器。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的 Multi-Factor Authentication 和條件式存取來進行驗證。 使用者以前從遠端找不到這個網站，現在不但可以存取，Outlook 中的連結也一如預期般運作。
-- 遠端使用者開啟受保護的瀏覽器應用程式，並瀏覽至使用內部 URL 的內部網路網站。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的 Multi-Factor Authentication 和條件式存取來進行驗證。 使用者以前從遠端找不到這個網站，但現在可以存取。
+- 使用者下載並登入 Microsoft Outlook 應用程式。 自動套用 Intune 應用程式保護原則。 它們會加密已儲存的資料，並阻擋使用者將公司檔案傳輸至裝置上未受管理的應用程式或位置。 當使用者接著在 Outlook 中按一下內部網路網站的連結時，您可以指定用受保護的瀏覽器應用程式開啟該連結，不用其他瀏覽器。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的多重要素驗證和條件式存取進行驗證。 使用者以前從遠端找不到這個網站，現在不但可以存取，Outlook 中的連結也一如預期般運作。
+- 遠端使用者開啟受保護的瀏覽器應用程式，並瀏覽至使用內部 URL 的內部網路網站。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的多重要素驗證和條件式存取進行驗證。 使用者以前從遠端找不到這個網站，但現在可以存取。
 
 ### <a name="before-you-start"></a>開始之前
 
 - 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
   - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。 
-  - [使用者必須被指派給](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-a-user-for-testing)要進行重新導向的企業應用程式。 即使應用程式是設定為 [通道] 模式以進行預先驗證，並已關閉應用程式 Proxy 設定中的 [使用者指派需求]，也必須這麼做。
+  - [使用者必須指派給](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy-add-on-premises-application#add-a-user-for-testing)要進行重新導向的企業應用程式。 即使已將應用程式設為通道模式以進行預先驗證，並且已在應用程式 Proxy 設定中關閉使用者指派需求，也必須這麼做。
 - 您至少必須使用 Managed Browser 應用程式 1.2.0 版本。
 - Managed Browser 或 Microsoft Edge 應用程式的使用者已將 [Intune 應用程式防護原則](app-protection-policy.md)指派給應用程式。
 
@@ -202,10 +203,10 @@ Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( htt
 #### <a name="step-1-enable-automatic-redirection-to-a-protected-browser-from-outlook"></a>步驟 1：從 Outlook 啟用自動重新導向到受保護的瀏覽器
 Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web 內容只在 Managed Browser 中顯示**。
 
-#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>步驟 2：為受保護的瀏覽器指派應用程式設定原則
+#### <a name="step-2-assign-an-app-configuration-policy-assigned-for-the-protected-browser"></a>步驟 2：指派已針對受保護的瀏覽器指派的應用程式設定原則
 此程序會設定 Managed Browser 或 Microsoft Edge 應用程式來使用應用程式 Proxy 重新導向。 
 
-開啟原則組態設定中的 [Edge]  索引標籤，然後針對應用程式 Proxy 重新導向值選取 [啟用]  。 啟用此設定可讓使用者存取透過 Azure 應用程式 Proxy 發佈的公司連結和內部部署 Web 應用程式。
+開啟原則組態設定中的 [Edge]  索引標籤，然後針對應用程式 Proxy 重新導向值選取 [啟用]  。 啟用此設定將可讓使用者存取公司連結和透過 Azure 應用程式 Proxy 發佈的內部部署 Web 應用程式。
 
 如需如何前後使用 Managed Browser、Microsoft Edge 與 Azure AD 應用程式 Proxy 緊密 (並受保護) 存取內部部署 Web 應用程式的詳細資訊，請參閱 Enterprise Mobility + Security 部落格文章：[建議搭配使用：Intune 和 Azure Active Directory 合作以改善使用者存取](https://cloudblogs.microsoft.com/enterprisemobility/2017/07/06/better-together-intune-and-azure-active-directory-team-up-to-improve-user-access) \(英文\)。
 
@@ -300,9 +301,9 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
   
 ## <a name="soft-transitions-from-work-to-personal-accounts"></a>從工作到個人帳戶的平順轉換
 
-Microsoft Edge 行動企業體驗的基石是雙重身分識別模型，這表示 Microsoft Edge 同時支援工作和個人身分識別。 與 Office 365 和 Outlook 應用程式一樣，此雙重身分識別模型使終端使用者可以使用 Microsoft Edge 滿足所有瀏覽需求，並根據系統管理員定義的內容原則，輕鬆地在兩種體驗之間切換。 個人執行內容中的瀏覽不受影響，並且公司資訊完全保留在 Microsoft Edge 中的工作執行內容中。 
+Microsoft Edge 行動企業體驗的基石是雙重身分識別模型，這表示 Microsoft Edge 同時支援工作和個人身分識別。 與 Office 365 和 Outlook 應用程式一樣，此雙重身分識別模型讓終端使用者可以使用 Microsoft Edge 來滿足所有瀏覽需求，並根據系統管理員定義的內容原則，輕鬆地在這兩種體驗之間切換。 瀏覽個人內容不會受到影響，而公司資訊會完全保留於 Microsoft Edge 的工作內容中。 
 
-此模型的好處之一是，當使用者嘗試開啟您的組織所不允許的網站連結 (例如報紙文章等) 時，他們能夠在自己的個人執行內容下進行操作，這與他們的工作執行內容完全分開。 這些平順轉換預設為啟用。 
+此模型的好處之一是，當使用者嘗試開啟貴組織不允許的網站連結 (例如報紙文章等) 時，他們能夠在自己的個人內容中進行此操作，這會與他們的工作內容完全分開。 這些平順轉換預設為啟用。 
 
 使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 

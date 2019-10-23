@@ -9,17 +9,18 @@ manager: dougeby
 ms.date: 09/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
-ms.technology: ''
+ms.assetid: 7954a686-25dc-4fce-b395-324816f46d3b
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b55623dec2a89df700da8c0adb1c64e7e754043f
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c79f24d44ad0aed78ed0ae6fce0873a080b2904d
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71721691"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72504856"
 ---
 # <a name="use-the-intune-tenant-status-page"></a>使用 Intune [租用戶狀態] 頁面
 Microsoft Intune [租用戶狀態] 頁面是您可以檢視最新租用戶重要詳細資料的集中式中樞。 這些詳細資料包括授權可用性和使用、連接器狀態，以及 Intune 服務的相關重要通訊。  

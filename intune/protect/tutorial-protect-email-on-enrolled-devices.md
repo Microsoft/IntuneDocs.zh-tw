@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 03/26/2019
 ms.topic: tutorial
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c20c0c1543cd8fcbf7345a02295486aaaa6ddcea
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 72666a973e341e7274750ff0e161281ce8776221
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306878"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72508822"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教學課程：保護受控裝置上的 Exchange Online 電子郵件
 了解如何搭配條件式存取使用裝置合規性政策，以確保 iOS 裝置只能在受到 Intune 管理並使用核准的電子郵件應用程式時，才能存取 Exchange Online 電子郵件。 
