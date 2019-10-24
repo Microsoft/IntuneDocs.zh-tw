@@ -96,13 +96,21 @@
         - name: Mobile Threat Defense
           href: mobile-threat-defense.md
           items:
-            - name: 為 MTD 設定 Intune
+            - name: 在已取消註冊裝置上的 MTD
               items:
-                - name: 新增 MTD 應用程式
+                - name: 將 MTD 應用程式新增到已取消註冊的裝置
+                  href: mtd-add-apps-unenrolled-devices.md
+                - name: 建立 MTD 應用程式保護原則
+                  href: mtd-app-protection-policy.md
+                - name: 為已取消註冊的裝置啟用 MTD
+                  href: mtd-enable-unenrolled-devices.md
+            - name: 在已註冊裝置上的 MTD
+              items:
+                - name: 將 MTD 應用程式新增到已註冊的裝置
                   href: mtd-apps-ios-app-configuration-policy-add-assign.md
                 - name: 建立 MTD 裝置合規性原則
                   href: mtd-device-compliance-policy-create.md
-                - name: 在 Intune 中啟用 MTD
+                - name: 為已註冊的裝置啟用 MTD
                   href: mtd-connector-enable.md
             - name: MTD 應用程式
               items:
