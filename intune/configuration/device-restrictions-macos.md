@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/10/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb5fe19852ffff30566cb6758e156def3b7d64a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8b2efdc04414d29fc1d8d200525cb3a4a880ec01
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72494020"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776874"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 macOS 裝置設定
 
@@ -40,7 +40,7 @@ ms.locfileid: "72494020"
 
 ## <a name="general"></a>一般
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 - **定義查閱**：[封鎖]  可防止使用者將某個文字醒目提示，然後在裝置上查閱其定義。 [未設定]  (預設) 會允許存取定義查閱功能。
 - **聽寫**：[封鎖]  可防止使用者使用語音輸入來輸入文字。 [未設定]  (預設) 會允許使用者使用聽寫輸入。
@@ -82,7 +82,7 @@ ms.locfileid: "72494020"
 
 ## <a name="password"></a>密碼
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 - **密碼**：**要求**使用者輸入密碼才可存取該裝置。 [**未設定**] （預設）不需要密碼。 它也不會強制任何限制，例如封鎖簡單密碼或設定最小長度。
   - **必要的密碼類型**：指定密碼是否只能是數字，或是否必須為英數字元 (包含字母和數字)。
@@ -114,7 +114,7 @@ ms.locfileid: "72494020"
 
 ## <a name="built-in-apps"></a>內建應用程式
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 - **封鎖 Safari 自動填滿**：[封鎖]  會停用裝置上 Safari 中的自動填滿功能。 [未設定]  (預設) 會允許使用者變更網頁瀏覽器中的自動完成設定。
 - **封鎖相機**：選擇 [封鎖]  來防止在裝置上存取相機。 [未設定]  (預設) 會允許存取裝置的相機。
@@ -127,7 +127,7 @@ ms.locfileid: "72494020"
 
 ## <a name="restricted-apps"></a>受限應用程式
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 - **受限制應用程式的類型清單**：建立不允許使用者安裝或使用的應用程式清單。 選項包括：
 
@@ -145,14 +145,14 @@ ms.locfileid: "72494020"
 
 ## <a name="connected-devices"></a>已連線的裝置
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 - **封鎖 AirDrop**：[封鎖]  會防止在裝置上使用 AirDrop。 [未設定]  (預設) 允許使用 AirDrop 功能與鄰近裝置交換內容。
 - **封鎖 Apple Watch 自動解除鎖定**：[封鎖]  會防止使用者以他們的 Apple Watch 解除鎖定其 macOS 裝置。 [未設定]  (預設) 會允許使用者以 Apple Watch 解除鎖定其 macOS 裝置。
 
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 - **封鎖 iCloud 鑰匙圈同步**：選擇 [封鎖]  來停止將儲存在 [鑰匙圈] 中的認證同步到 iCloud。 [未設定]  (預設) 會讓使用者同步這些認證。
 - **封鎖 iCloud 文件同步**：[封鎖]  會防止 iCloud 同步文件和資料。 [未設定]  (預設) 會允許將文件和索引鍵/值同步到 iCloud 儲存空間。
@@ -170,7 +170,7 @@ ms.locfileid: "72494020"
 
 ## <a name="domains"></a>Domains
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 - **電子郵件網域 URL**：將一或多個 URL **新增**到清單中。 當使用者接收到來自不是您所設定之網域的電子郵件時，該電子郵件會在 macOS 郵件應用程式中標記為不受信任。
 

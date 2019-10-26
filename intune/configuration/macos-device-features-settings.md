@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 10/22/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17d0baeeb6b193be6acf8d6087c26a66b18642c5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
+ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506663"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72776917"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 裝置功能設定
 
@@ -42,7 +42,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 ## <a name="airprint"></a>AirPrint
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊 
 
 - **IP 位址**：輸入印表機的 IPv4 或 IPv6 位址。 如果您使用主機名稱來識別印表機，可以透過在終端機應用程式中偵測該印表機來取得 IP 位址。 本文中的[取得 IP 位址和路徑](#get-the-ip-address-and-path)會提供更多詳細資料。
 - **路徑**：輸入印表機的路徑。 您網路上印表機的路徑通常是 `ipp/print`。 本文中的[取得 IP 位址和路徑](#get-the-ip-address-and-path)會提供更多詳細資料。
@@ -85,7 +85,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 ## <a name="login-window"></a>登入視窗
 
-### <a name="settings-apply-to-device-enrollment"></a>設定適用于：裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊 
 
 #### <a name="window-layout"></a>視窗版面配置
 

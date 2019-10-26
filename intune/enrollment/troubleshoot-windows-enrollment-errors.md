@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1089c382a39afb5aad0456e669cb3a2434af73c1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503101"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892547"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解
 
@@ -281,7 +281,7 @@ ms.locfileid: "72503101"
 - 為您的裝置建立唯一名稱。 名稱必須是 15 個字元或更少，而且可以包含字母 (a-z、A-Z)、數字 (0-9) 與連字號 (‐)。
 - 名稱不可以全部為數字。
 - 名稱不能包含空格。
-- 使用 %SERIAL% 巨集新增硬體特定序號。 或者，使用% RAND： < # of 數位 >% 宏來新增數位的隨機字串，字串會包含 > 位數 < 位數。 例如，MYPC-% RAND： 6% 會產生 MYPC-123456 之類的名稱。
+- 使用 %SERIAL% 巨集新增硬體特定序號。 或者，使用% RAND： < # of 數位 >% 宏來新增數位的隨機字串，字串會包含 > 位數 < 位數。 例如，MYPC-% RAND：6% 會產生 MYPC-123456 之類的名稱。
 
 ### <a name="something-went-wrong-oobeidps"></a>發生問題。 OOBEIDPS.
 
@@ -390,3 +390,4 @@ Description:
 - [查看 Microsoft Intune 支援小組的 Blog](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)
 - [查看 Microsoft 企業行動性和安全性的網路日誌](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210)
 - [取得 Microsoft Intune 支援](../fundamentals/get-support.md)
+- [尋找共同管理註冊錯誤](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)

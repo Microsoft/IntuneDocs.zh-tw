@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1d83a77d8823a05accaf1c88b57f6e380636469
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
+ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585390"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72915710"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -193,7 +193,8 @@ ms.locfileid: "72585390"
 
 ### <a name="power-settings"></a>電源設定
 
-- **螢幕鎖定時間**：設定在裝置鎖定前所需的閒置時間量。
+- **鎖定的時間畫面**：輸入使用者可設定的最長時間，直到裝置鎖定為止。 例如，如果您將此設定設為**10 分鐘**，則使用者可以將時間設定為15秒（最多10分鐘）。 當設定為 [**未設定**] （預設）時，Intune 不會變更或控制此設定。
+
 - **裝置充電時開啟螢幕**：選擇充電時哪些電源會導致裝置的螢幕開啟。
 
 ### <a name="users-and-accounts-settings"></a>使用者和帳戶設定
