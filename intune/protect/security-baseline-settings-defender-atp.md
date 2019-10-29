@@ -5,24 +5,24 @@ description: 由 Intune 支援、用於管理 Microsoft Defender 進階威脅防
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 10/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: medium
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: karthib
+ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cb5d7375ae5b76a24861872d4abf786f199dfd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508999"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923395"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -31,12 +31,6 @@ ms.locfileid: "72508999"
 當您的環境符合使用 [Microsoft Defender 進階威脅防護](advanced-threat-protection.md#prerequisites)的必要條件時，即可使用 Microsoft Defender 進階威脅防護基準。 
 
 此基準已針對實體裝置進行優化，目前不建議用於虛擬機器（Vm）或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。 如需詳細資訊，請參閱 Windows 文件中的[提高 Microsoft Defender ATP 安全性基準的合規性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) \(英文\)。
-
-
-> [!NOTE]  
-> ATP 基準設定現為**預覽**。 在預覽狀態中，可用設定清單以及此內容呈現那些設定的順序可能不符合入口網站中提供的項目。  
->
-> 當基準設定結束預覽時，將會更新此內容以反映 Intune 支援的最新安全性基準設定清單。
 
 ## <a name="application-guard"></a>應用程式防護  
 如需詳細資訊，請參閱 Windows 文件中的 [WindowsDefenderApplicationGuard CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp) \(英文\)。  
@@ -55,13 +49,13 @@ ms.locfileid: "72508999"
 
   - **剪貼簿行為** - *Settings/ClipboardSettings*  
     選擇要在本機電腦和應用程式防護虛擬瀏覽器之間允許的複製與貼上動作。  這些選項包括：
-    - *尚未設定*  
-    - *封鎖兩者* - 資料無法在電腦與虛擬瀏覽器之間傳輸。  
-    - *封鎖主機到容器* - 資料無法從電腦傳輸到虛擬瀏覽器。
-    - *封鎖容器到主機* - 資料無法從虛擬瀏覽器傳輸到主機電腦。
-    - *皆不封鎖* - 不封鎖內容。  
+    - 尚未設定  
+    - 封鎖電腦與瀏覽器之間的複製和貼上-封鎖兩者。 資料無法在電腦與虛擬瀏覽器之間傳輸。  
+    - 允許從瀏覽器複製並貼上至僅限電腦-資料無法從電腦傳輸到虛擬瀏覽器。
+    - 僅允許從電腦複製並貼到瀏覽器-資料無法從虛擬瀏覽器傳輸到主機電腦。
+    - 允許在電腦與瀏覽器之間進行複製和貼上-沒有內容的區塊存在。  
 
-    **預設**：封鎖兩者  
+    **預設值**：封鎖電腦與瀏覽器之間的複製和貼上  
 
 - **Windows 網路隔離原則 – 企業網路網域名稱**  
   如需詳細資訊，請參閱 Windows 文件中的[原則 CSP - NetworkIsolation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-networkisolation) \(英文\)。
@@ -101,7 +95,7 @@ ms.locfileid: "72508999"
 
   **預設值**：啟用
 
-- **電子郵件內容執行類型**  
+- [電子郵件內容執行]   
   [受攻擊免縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，此規則可防止從 Microsoft Outlook 或網路郵件 (例如 Gmail.com 或 Outlook.com) 中出現的電子郵件，執行或啟動下列檔案類型：  
 
   - 可執行檔 (例如 .exe、.dll 或 .scr)  
@@ -115,12 +109,12 @@ ms.locfileid: "72508999"
 
   **預設值**：啟用
 
-- **撰寫混淆的巨集程式碼類型**  
+- [遭混淆的指令碼巨集程式碼]   
   [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 惡意程式碼與其他威脅可能會在某些指令檔中，嘗試混淆或隱藏其惡意程式碼。 此規則可防止看似混淆的指令碼執行。  
     
   **預設值**：封鎖
 
-- **不受信任的 USB 處理序類型**  
+- [不信任的 USB 處理序]   
   [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，來自 USB 抽取式磁碟機與 SD 卡且未經簽署或未受信任的可執行檔將無法執行。
 
   可執行檔包括：
@@ -129,12 +123,12 @@ ms.locfileid: "72508999"
 
   **預設值**：封鎖
 
-- **Office 應用程式的其他處理序插入類型**  
+- [Office 應用程式其他處理序插入]   
   [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 當設定為 [封鎖]  時，Office 應用程式 (包括 Word、Excel、PowerPoint 與 OneNote) 無法將程式碼插入到其他處理序中。 程式碼插入通常會利用這點來執行惡意程式碼，試圖隱藏活動不讓防毒掃描引擎發現。  
 
   **預設值**：封鎖
 
-- **Office 巨集程式碼允許 Win32 匯入類型**  
+- [Office 巨集程式碼允許 Win32 匯入]   
   [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) - 當設定為 [封鎖]  時，此規則會嘗試封鎖包含可匯入 Win32 DLL 之巨集程式碼的 Office 檔案。 Office 應用程式包括 Word、Excel、PowerPoint 與 OneNote。 惡意軟體可能會利用 Office 檔案中的巨集程式碼來匯入和載入 Win32 DLL，這些 DLL 接著可用來進行 API 呼叫，以便允許進一步感染整個系統。  
 
   **預設值**：封鎖
@@ -144,7 +138,7 @@ ms.locfileid: "72508999"
 
   **預設值**：啟用
 
-- **Office 應用程式可執行的內容建立或啟動類型**  
+- [Office 應用程式可執行檔內容建立或啟動]   
   [受攻擊面縮小規則](/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#attack-surface-reduction-rules) – 當設定為 [封鎖]  時，Office 應用程式將無法建立可執行的內容。 Office 應用程式包括 Word、Excel、PowerPoint、OneNote 與 Access。  
 
   此規則會將目標鎖定在可疑且惡意附加元件和指令碼 (延伸模組) 為建立或啟動可執行檔所使用的典型行為。 這是典型的惡意軟體手段。 延伸模組會被封鎖而無法供 Office 應用程式使用。 一般而言，這些延伸模組會使用 Windows Scripting Host (.wsh 檔案) 執行指令碼，來將特定工作自動化或提供使用者建立的附加元件功能。
@@ -170,6 +164,10 @@ ms.locfileid: "72508999"
 
   - **加密方法**  
     **預設值**：AES 128 位元 CBC
+
+- **加密儲存卡（僅限**行動裝置版）選取 *[是]* 將會加密行動裝置的儲存卡。  
+
+   **預設值**：是
 
 - **BitLocker 固定磁碟機原則**  
   此原則的值決定 BitLocker 用於固定式磁碟機加密的加密強度。 企業可控制加密層級以提高安全性 (AES-256 強於 AES-128)。 如果您啟用此設定，則能夠為固定資料磁碟機、作業系統磁碟機和抽取式資料磁碟機個別設定加密演算法和金鑰加密強度。 如果是固定磁碟機和作業系統磁碟機，建議您使用 XTS-AES 演算法。 如果是抽取式磁碟機，若在其他未執行 Windows 10 1511 版或更新版本的裝置上使用該磁碟機，您應該使用 AES-CBC 128 位元或 AES-CBC 256 位元。 如果磁碟機已加密或加密正在進行中，變更加密方法就沒有任何作用。 在這些情況下，會忽略這個原則設定。
@@ -224,12 +222,12 @@ ms.locfileid: "72508999"
   - **移除相符的硬體裝置**  
     只有在 [依裝置識別碼的硬體裝置安裝]  設定為 [封鎖硬體裝置安裝]  時，才能使用此設定。  
 
-    **預設**：沒有任何預設設定 
+    **預設值**：是
 
   - **已封鎖的硬體裝置識別碼**  
     只有在 [依裝置識別碼的硬體裝置安裝]  設定為 [封鎖硬體裝置安裝]  時，才能使用此設定。 若要設定此設定，請展開該選項並選取 [+ 新增]  ，然後指定您要封鎖的硬體裝置識別碼。  
 
-    **預設值**：*不會封鎖任何裝置*  
+    **預設值**： PCI\CC_0C0A
 
 - **封鎖直接記憶體存取**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - 使用此原則設定來針對裝置上所有可熱插拔的 PCI 下游連接埠封鎖直接記憶體存取 (DMA)，直到使用者登入 Windows。 使用者登入後，Windows 就會列舉連接至隨插即用 PCI 連接埠的 PCI 裝置。 只要使用者鎖定電腦，在使用者再次登入之前，將會在沒有子裝置的隨插即用 PCI 連接埠上封鎖 DMA。 電腦解除鎖定時已列舉的裝置將繼續運作，直到遭拔除為止。 
@@ -249,23 +247,23 @@ ms.locfileid: "72508999"
   - **移除相符的硬體裝置**  
     只有在 [Hardware device installation by setup classes]  \(依安裝類別安裝硬體裝置\) 設定為 [Block hardware device installation]  \(封鎖硬體裝置安裝\) 時，才能使用此設定。  
  
-    **預設**：沒有任何預設設定   
+    **預設值**：是  
 
   - **已封鎖的硬體裝置識別碼**  
     只有在 [Hardware device installation by setup classes] \(依安裝類別的硬體裝置安裝\) 設定為 [Block hardware device installation] \(封鎖硬體裝置安裝\) 時，才能使用此設定。 若要設定此設定，請展開該選項並選取 [+ 新增]  ，然後指定您要封鎖的硬體裝置識別碼。  
  
-    **預設值**：*不會封鎖任何裝置*
+    **預設值**： {d48179be-ec20-11d1-b6b8-00c04fa372a7}
 
 ## <a name="endpoint-detection-and-response"></a>端點偵測與回應  
 如需詳細資訊，請參閱 Windows 文件中的 [WindowsAdvancedThreatProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/windowsadvancedthreatprotection-csp) \(英文\)。  
 
-- **加快遙測回報頻率** - *Configuration/TelemetryReportingFrequency*  
+- **加快遙測回報頻率** - *Configuration/TelemetryReportingFrequency*
 
   加快 Microsoft Defender 進階威脅防護遙測回報頻率。  
 
   **預設值**：是
 
-- **所有檔案的範例共用** - *Configuration/SampleSharing*  
+- **所有檔案的範例共用** - *Configuration/SampleSharing* 
 
   傳回或設定 Microsoft Defender 進階威脅防護範例共用設定參數。  
 
@@ -286,43 +284,7 @@ ms.locfileid: "72508999"
   [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – 設定為 [是]  以防止使用者變更 Windows Defender 資訊安全中心中的惡意探索保護設定區域。 若您停用或未設定此設定，本機使用者可以變更惡意探索保護設定區域。  
   **預設值**：是  
 
-- **受控制的資料夾存取**  
-  請參閱 [Defender/ControlledFolderAccessAllowedApplications](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessallowedapplications) \(英文\) 與 [Defender/ControlledFolderAccessProtectedFolders](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-controlledfolderaccessprotectedfolders) \(英文\) 
-  
-   保護檔案和資料夾免於惡意應用程式未經授權的變更。
-
-  **預設值**：稽核模式
-
-## <a name="web--network-protection"></a>Web 與網路保護  
-
-- **網路保護類型**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - 此原則可讓您開啟 Windows Defender 惡意探索防護中的網路保護。 網路保護是 Windows Defender 惡意探索防護的一項功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。  
-
-  當設定為 [啟用]  或 [稽核模式]  時，使用者無法關閉網路保護，而且您可以使用 Windows Defender 資訊安全中心來檢視連線嘗試的相關資訊。  
- 
-  - [啟用]  將會封鎖使用者與應用程式，使其無法連線到危險網域。  
-  - [稽核模式]  不會封鎖使用者與應用程式，使其無法連線到危險網域。  
-
-  當設定為 [使用者定義]  時，系統不會封鎖使用者與應用程式，使其無法連線到危險網域，而且 Windows Defender 資訊安全中心不會有連線相關資訊。  
-
-  **預設值**：稽核模式
-
-- **Microsoft Edge 需要 SmartScreen**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge 預設會使用 Windows Defender SmartScreen (已開啟)，以保護使用者免於遭受潛在的網路釣魚詐騙和惡意軟體攻擊。 根據預設，會啟用此原則 (設定為 [是]  )，而且當啟用時，可以防止使用者關閉 Windows Defender SmartScreen。  當裝置的有效原則等於 [尚未設定] 時，使用者可以關閉 Windows Defender SmartScreen，這會讓裝置處於未受保護狀態。  
-
-  **預設值**：是
-  
-- **封鎖惡意網站存取**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意網站的 Windows Defender SmartScreen 警告，讓使用者可以繼續前往該網站。 在啟用此原則的情況下 (設定為 [是]  )，Microsoft Edge 會防止使用者跳過該警告，而且會封鎖他們，使他們無法繼續瀏覽該網站。  
-
-  **預設值**：是
-
-- **封鎖未經驗證的檔案下載**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意檔案的 Windows Defender SmartScreen 警告，讓他們可以繼續下載未經驗證的檔案。 在啟用此原則的情況下 (設定為 [是]  )，使用者無法略過警告，而且無法下載未經驗證的檔案。  
-
-  **預設值**：是
-
-## <a name="windows-defender-anti-virus----settings-review-pending-for-this-section"></a>Windows Defender 防毒軟體    [此節的設定檢閱擱置中]
+## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 防毒軟體  
 
 如需詳細資訊，請參閱 Windows 文件中的 [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (原則 CSP - Defender)。
 
@@ -336,7 +298,7 @@ ms.locfileid: "72508999"
 
   **預設值**：是
 
-- **Defender 範例提交同意類型**  
+- [Defender 範例提交同意]   
   [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 檢查 Windows Defender 中針對傳送資料的使用者同意層級。 如果已獲得必要的同意，Windows Defender 將會提交同意。 如果沒有 (而且指定了一律不再詢問使用者)，您可以啟動 UI，要求使用者同意 (當 [雲端提供的保護]  設定為 [是]*Yes* 時) 再傳送資料。  
 
   **預設**：自動傳送安全的範例
@@ -594,6 +556,35 @@ ms.locfileid: "72508999"
 
 - **憑證撤銷清單驗證**  
   **預設值**：裝置預設值
+
+## <a name="web--network-protection"></a>Web 與網路保護  
+
+- **網路保護類型**  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - 此原則可讓您開啟 Windows Defender 惡意探索防護中的網路保護。 網路保護是 Windows Defender 惡意探索防護的一項功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。  
+
+  當設定為 [啟用]  或 [稽核模式]  時，使用者無法關閉網路保護，而且您可以使用 Windows Defender 資訊安全中心來檢視連線嘗試的相關資訊。  
+ 
+  - [啟用]  將會封鎖使用者與應用程式，使其無法連線到危險網域。  
+  - [稽核模式]  不會封鎖使用者與應用程式，使其無法連線到危險網域。  
+
+  當設定為 [使用者定義]  時，系統不會封鎖使用者與應用程式，使其無法連線到危險網域，而且 Windows Defender 資訊安全中心不會有連線相關資訊。  
+
+  **預設值**：稽核模式
+
+- **Microsoft Edge 需要 SmartScreen**  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge 預設會使用 Windows Defender SmartScreen (已開啟)，以保護使用者免於遭受潛在的網路釣魚詐騙和惡意軟體攻擊。 根據預設，會啟用此原則 (設定為 [是]  )，而且當啟用時，可以防止使用者關閉 Windows Defender SmartScreen。  當裝置的有效原則等於 [尚未設定] 時，使用者可以關閉 Windows Defender SmartScreen，這會讓裝置處於未受保護狀態。  
+
+  **預設值**：是
+  
+- **封鎖惡意網站存取**  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意網站的 Windows Defender SmartScreen 警告，讓使用者可以繼續前往該網站。 在啟用此原則的情況下 (設定為 [是]  )，Microsoft Edge 會防止使用者跳過該警告，而且會封鎖他們，使他們無法繼續瀏覽該網站。  
+
+  **預設值**：是
+
+- **封鎖未經驗證的檔案下載**  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意檔案的 Windows Defender SmartScreen 警告，讓他們可以繼續下載未經驗證的檔案。 在啟用此原則的情況下 (設定為 [是]  )，使用者無法略過警告，而且無法下載未經驗證的檔案。  
+
+  **預設值**：是
 
 ## <a name="windows-hello-for-business"></a>Windows Hello 企業版  
 
