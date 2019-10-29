@@ -6,7 +6,9 @@
 
 ## [裝置密碼需求](password-does-not-meet-it-administrator-requirements.md)
 
-## [登入公司入口網站](sign-in-to-the-company-portal.md)
+## [登入公司入口網站](sign-in-to-the-company-portal.md)  
+
+## [安裝 Mobile Threat Defense 應用程式](set-up-mobile-threat-defense.md)  
 
 ## 使用您的 Android 裝置
 ### [為什麼註冊您的 Android 裝置](why-enroll-android-device.md)
