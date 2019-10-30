@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 10/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d47cee2c26960775d268b317845c118e99b85fe9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
+ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507586"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72813467"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>設定適用於 Android Enterprise 的 Microsoft Managed Home Screen 應用程式
 
@@ -60,25 +60,15 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
 | 設定索引碼 | 數值類型 | 預設值 | 說明 |
 |---------------------------------------------------------------------------------------------------------------------------|-------------|------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 設定格線大小 | 字串 | 自動 | 讓您可為要放置在 Managed Home Screen 上的應用程式設定格線大小。 您可以利用 `columns;rows` 格式來設定應用程式的列數與欄數以定義格線大小。 如果您定義了格線大小，在主畫面上，一列中顯示的應用程式最大數目會是您設定的列數目，而在主畫面上，一欄中顯示的應用程式最大數目會是您設定的欄數目。 |
-| 啟用畫面頁首 | bool | TRUE | 為 Managed Home Screen 提供的不同檢視啟用頂端標題，例如摘要或摘要卡片。 若您啟用這項設定，裝置使用者就會看到頁首。 |
-| 啟用裝置狀態列 | bool | TRUE | 在主畫面啟用狀態列 (顯示目前連線的頂端列，例如 WiFi 等)。 若您啟用這個設定索引碼，終端使用者就能夠看到顯示在狀態列上的圖示，代表連線及使用中的應用程式。 |
 | 啟用通知徽章 | bool | FALSE | 針對應用程式圖示啟用通知徽章，以顯示有關應用程式的新通知數目。 若您啟用此設定，終端使用者會在有未讀通知的應用程式看到通知徽章。 若您維持停用這個設定索引碼，即使應用程式可能有未讀通知，終端使用者也不會看到任何通知徽章。 |
 | 鎖定主畫面 | bool | TRUE | 讓終端使用者無法在主畫面上移動應用程式圖示。 如果您啟用這個設定索引碼，主畫面上的應用程式圖示就會鎖住，使得終端使用者無法拖放到主畫面的其他方格位置。 若改為 `false`，終端使用者就能夠在 Managed Home Screen 移動應用程式與 Web 連結圖示。  |
 | 設定裝置桌布 | 字串 | 預設 | 讓您可以輸入想要設為桌布的影像 URL，以設定自選的桌布。 |
 | 設定應用程式圖示大小 | 整數 | 2 | 讓您可以設定顯示在主畫面上的應用程式圖示大小。 您可以在這項設定中選擇下列值，以呈現不同大小 - 0 (最小)、1 (小)、2 (正常)、3 (大) 和 4 (最大)。 |
 | 設定應用程式資料夾圖示 | 整數 | 0 | 讓您可以定義主畫面上的應用程式資料夾外觀。 您可以從下列值中選擇外觀：深色正方形 (0)；深色圓形 (1)；淺色正方形 (2)；淺色圓形 (3)。 |
-| 啟用手勢 | bool | FALSE | 讓終端使用者能夠將動作指派給不同的手勢，例如向上撥動及向下撥動。 若您停用這個設定索引碼，如果有第二頁，終端使用者就只能向右撥動，以及返回首頁。 |
-| 啟用垂直捲動 | bool | FALSE | 在 Managed Home Screen 啟用垂直捲動。 如果您啟用這個設定索引碼，終端使用者就只能垂直巡覽到不同頁面，而不能垂直撥動。 |
-| 設定主畫面佈景主題 | 字串 | Theme.Light.Blue | 讓您可以從一組不同色彩的預先定義佈景主題中，選擇主畫面的佈景主題。 您可藉由使用下列格式輸入字串值，來選擇下列佈景主題。   Theme.Light.Green。 此處的 Light 可以代換為 Dark，成為深色佈景主題，而 Green 可以代換為 Blue、Yellow、Pink、Red、Orange 和 Purple。 |
-| 啟用固定區 | bool | FALSE | 啟用主畫面底部的應用程式固定區，以顯示常設應用程式，及所有已安裝應用程式的進入點。 如果您啟用此設定索引碼，終端使用者就能夠在固定區存取應用程式，也能存取所有應用程式區段，以前往裝置上所有已安裝應用程式的清單，而不論是否已允許列出這些應用程式。 |
 | 設定畫面方向 | 整數 | 1 | 讓您可將主畫面的方向設為直向模式、橫向模式或允許自動旋轉。 您可以輸入值 1 (直向模式)、2 (橫向模式)、3 (自動旋轉)，來設定方向。 |
-| 啟用主畫面摘要 | bool | FALSE | 啟用主畫面摘要，查看方式為向左撥動主畫面。 此摘要會顯示不同類型的內容，例如新聞、日曆、常用應用程式及 Cortana 語音助理卡片等。若您啟用此項，終端使用者就能夠藉由向左撥動主畫面來巡覽到摘要。 |
-| 啟用概觀模式 | bool | FALSE | 讓終端使用者可在主畫面上新增或移除不同的頁面，存取方式是從預設畫面向右撥動。 若您啟用此項，終端使用者就能夠在主畫面預設畫面的右方新增頁面，也可變更預設頁面，並能夠在 Managed Home Screen 上存取設定。 |
 | 啟用裝置遙測 | bool | FALSE | 啟用正對 Managed Home Screen 擷取的所有遙測。 若您啟用此項，Microsoft 就能夠截取裝置使用方式遙測，例如在這部裝置上啟動某個應用程式遙測。 |
 | 設定允許列出的應用程式 | bundleArray | FALSE | 讓您能夠從裝置上已安裝的應用程式中，定義一組可在主畫面上顯示的應用程式。 您可以針對您想要顯示的應用程式輸入其應用程式套件名稱來定義應用程式，例如輸入 com.microsoft.emmx 將會使設定可在主畫面上存取。 您允許列於此區段的應用程式應已安裝於裝置上，才能在主畫面上顯示。 |
 | 設定釘選的 Web 連結 | bundleArray | FALSE | 讓您可在主畫面上，將網站釘選為快速啟動圖示。 您可以利用這項設定定義 URL，並將其新增到主畫面，讓終端使用者只要輕觸一下，即可在瀏覽器中啟動。 |
-| 啟用搜尋列 | bool | FALSE | 在主畫面上啟用搜尋列。 如果您啟用此項，裝置的使用者會在主畫面上看到搜尋列，而他們能在該處輸入任何想在 Web 上搜尋的內容。 |
-| 停用設定應用程式 | bool | FALSE | 停用 Managed Home Screen 的設定頁面。 若您停用此項，裝置的終端使用者就無法前往 Managed Home Screen 的設定。 |
 | 啟用螢幕保護裝置 | bool | FALSE | 啟用或停用螢幕保護裝置。 若設為 true，您可以設定 **screen_saver_image**、**screen_saver_show_time**、**inactive_time_to_show_screen_saver** 及 **media_detect_screen_saver**。 |
 | 螢幕保護裝置圖片 | 字串 |   | 設定螢幕保護裝置影像的 URL。 若未設定 URL，裝置會在螢幕保護裝置啟用時顯示預設螢幕保護裝置影像。 預設影像會顯示 Managed Home Screen 應用程式圖示。  |
 | 螢幕保護裝置顯示時間 | 整數 | 0 | 提供選項來設定裝置在螢幕保護裝置模式期間要顯示螢幕保護裝置的時間長度 (以秒為單位)。 若設為 0，螢幕保護裝置會在螢幕保護裝置模式無限期顯示，直到裝置進入使用狀態為止。  |
@@ -116,18 +106,6 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
     "productId": "com.microsoft.launcher.enterprise",
     "managedProperty": [
         {
-            "key": "keep_page_header",
-            "valueBool": true
-        },
-        {
-            "key": "keep_status_bar",
-            "valueBool": true
-        },
-        {
-            "key": "show_notification_badge",
-            "valueBool": false
-        },
-        {
             "key": "lock_home_screen",
             "valueBool": true
         },
@@ -144,32 +122,8 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
             "valueInteger": 0
         },
         {
-            "key": "gesture_on",
-            "valueBool": false
-        },
-        {
-            "key": "vertical_scrolling",
-            "valueBool": false
-        },
-        {
-            "key": "theme",
-            "valueString": "Theme.Light.Blue"
-        },
-        {
-            "key": "dock_enable",
-            "valueBool": false
-        },
-        {
             "key": "screen_orientation",
             "valueInteger": 1
-        },
-        {
-            "key": "feed_enable",
-            "valueBool": false
-        },
-        {
-            "key": "allow_overview_mode",
-            "valueBool": false
         },
         {
             "key": "enable_telemetry",
@@ -204,14 +158,6 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
                     ]
                 }
             ]
-        },
-        {
-            "key": "search_bar",
-            "valueBool": false
-        },
-        {
-            "key": "hide_settings",
-            "valueBool": false
         },
         {
             "key": "show_virtual_home",

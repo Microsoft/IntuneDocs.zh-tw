@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d82813f1292c99cf248c56a102503413d2cb8fb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507450"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889583"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -76,7 +76,7 @@ ms.locfileid: "72507450"
 - **上次同步處理**：上次應用程式與 Intune 同步的時間。 
 
 >[!NOTE]
-> [上次同步處理]  資料行代表主控台內使用者狀態報告與應用程式保護原則[可匯出的 .csv 報告](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv)兩者中相同的值。 差異在於兩個報告中，值之間的些許同步處理延遲。 
+> [上次同步處理]  資料行代表主控台內使用者狀態報告與應用程式保護原則[可匯出的 .csv 報告](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)兩者中相同的值。 差異在於兩個報告中，值之間的些許同步處理延遲。 
 >
 > [上次同步處理] 中參考的時間是 Intune 上次看到應用程式執行個體的時間。 當使用者啟動應用程式時，它可能會在啟動時通知 Intune 應用程式保護服務，取決於它上次的簽入時間。 請參閱[應用程式保護原則簽入的重試間隔時間](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)。 如果使用者未在上次簽入間隔 (通常是 30 分鐘的主動使用) 之內使用該特定應用程式，而且他們啟動應用程式，則：
 >
