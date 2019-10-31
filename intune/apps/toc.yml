@@ -45,7 +45,7 @@
               href: store-apps-windows-phone-8-1.md
             - name: Windows 應用程式
               href: store-apps-windows.md
-            - name: 商務用 Microsoft 網上商店應用程式
+            - name: 商務用 Microsoft Store 應用程式
               href: windows-store-for-business.md
             - name: 受管理的 Google Play 應用程式
               href: apps-add-android-for-work.md
@@ -102,7 +102,7 @@
           href: apps-windows-10-app-deploy.md
         - name: 將應用程式部署至政府環境
           href: apps-deploy-gcc-dod.md
-    - name: 監視 App
+    - name: 監視應用程式
       href: apps-monitor.md
     - name: 探索到的應用程式
       href: app-discovered-apps.md
@@ -142,7 +142,7 @@
               displayName: vpp; volume purchased
             - name: iOS VPP 應用程式
               href: vpp-apps-ios.md
-            - name: 商務用 Microsoft 網上商店應用程式
+            - name: 商務用 Microsoft Store 應用程式
               href: windows-store-for-business.md
             - name: iOS 電子書
               href: vpp-ebooks-ios.md
