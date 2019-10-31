@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/17/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9691982c-1a03-4ac1-b7c5-73087be8c5f2
@@ -17,20 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f041c76b4d9b3814a020d51ad4cbb8e33df6c27
-ms.sourcegitcommit: 60ed93682a21860e9d99ba1592ede120477f2b4d
+ms.openlocfilehash: 5d70496a87f923b61cacb3da250e5f22ce5c7817
+ms.sourcegitcommit: aeb76032de216e5feb94559aeaf36c0357f1247d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72379801"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72587945"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 身為 Intune 管理員，您可以建立及管理註冊限制，定義哪些裝置可向 Intune 註冊以進行管理，包括：
-- 裝置數目
-- 作業系統和版本 您可以建立多個限制，並將它們套用至不同的使用者群組。 您可以設定不同限制的[優先順序](#change-enrollment-restriction-priority)。
+- 裝置數目。
+- 作業系統和版本。
+
+您可以建立多項限制，並將它們套用至不同的使用者群組。 您可以設定不同限制的[優先順序](#change-enrollment-restriction-priority)。
 
 >[!NOTE]
 >註冊限制不是安全性功能。 遭盜用的裝置可以冒用身分。 這些限制是非惡意使用者的最佳屏障。
@@ -69,8 +72,17 @@ ms.locfileid: "72379801"
     - Android 裝置管理員與 Android Enterprise 工作設定檔支援 major.minor.rev.build。
     - iOS 支援 major.minor.rev。作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
     - Windows 支援 major.minor.build.rev，僅限 Windows 10。
-    > [!Note]
-    > Windows 10 不會在註冊期間提供修訂編號，所以舉例來說，如果您輸入 10.0.17134.100 而裝置為 10.0.17134.174，則裝置在註冊期間將會被封鎖。
+    
+    > [!IMPORTANT]
+    > Android Enterprise (工作設定檔) 和 Android 裝置系統管理員平台具有下列行為：
+    > - 如果同時針對相同的群組允許這兩個平台，則在使用者裝置支援的情況下，系統會搭配工作設定檔註冊該使用者，否則會以 DA 的形式註冊他們。 
+    > - 如果同時針對群組允許這兩個平台，並針對特定及非重疊版本進行微調，則使用者將會接收到針對其 OS 版本所定義的註冊流程。 
+    > - 如果同時允許這兩個平台，但針對相同的版本進行封鎖，則系統會將使用具有已封鎖版本之裝置的使用者從 Android 裝置系統管理員註冊流程中移除，並封鎖其註冊能力，然後提示以要求登出。 
+    >
+    > 值得注意的是，除非已在 [Android 註冊] 中完成適當的必要條件，否則工作設定檔和裝置系統管理員註冊都會無法正常執行。 
+    
+   > [!Note]
+   > Windows 10 不會在註冊期間提供修訂編號，所以舉例來說，如果您輸入 10.0.17134.100 而裝置為 10.0.17134.174，則裝置在註冊期間將會被封鎖。
 
 8. 在 [個人所擁有]  底下，針對您想要允許作為個人擁有裝置的平台，選擇 [允許]  。
 9. 選擇 [下一步]  以移至 [指派]  頁面。

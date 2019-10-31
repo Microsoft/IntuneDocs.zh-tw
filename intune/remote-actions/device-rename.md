@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 07/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: remote-actions
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,17 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35fae5ea1b3294772db4f4db51179892e08ed5d1
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c1c02248b3208073a3bb09cafe69cf0473eacb2b
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71728503"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584524"
 ---
 # <a name="rename-a-device-in-intune"></a>在 Intune 中重新命名裝置
-
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 **重新命名裝置**動作可讓您重新命名已在 Intune 中註冊的裝置。 裝置在 Intune 中和裝置上的名稱都會變更。
 
@@ -44,6 +42,15 @@ ms.locfileid: "71728503"
 5. 如果要讓裝置在重新命名之後重新啟動，請選擇 [重新命名後重新啟動]  旁邊的 [是]  。
 6. 選擇 [重新命名]  。
 
+## <a name="windows-device-rename-rules"></a>Windows 裝置重新命名規則
+重新命名 Windows 裝置時，新名稱必須遵循這些規則：
+- 15 個字元或更少 (必須小於或等於 63 個位元組，不包括尾端的 NULL 字元)
+- 非 Null 或空字串
+- 允許的 ASCII：字母 (a-z, A-Z)、數字 (0-9) 和連字號
+- 允許的 Unicode：字元 >= 0x80，必須是有效的 UTF8，必須是 IDN 可映射 (也就是繼 RtlIdnToNameprepUnicode 之後；請參閱 RFC 3492)
+- 名稱不能僅包含數字
+- 名稱中不能有空格
+- 不允許的字元：{ | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
 
 
 ## <a name="next-steps"></a>後續步驟

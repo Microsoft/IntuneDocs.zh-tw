@@ -2,12 +2,13 @@
 title: 建立 Microsoft Intune 中的裝置合規性原則 - Azure | Microsoft Docs
 description: 建立裝置合規性原則、狀態和嚴重性等級的概觀、使用 InGracePeriod 狀態、使用條件式存取、處理沒有已指派原則的裝置，以及 Azure 入口網站與傳統入口網站中的 Microsoft Intune 合規性差異
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: samyada
@@ -15,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ec8003264c28ea40d53731c8fb8c3eddef7fded
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: 76998c32f09b20e624359cc8a38231e14a70399b
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306575"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786067"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中建立合規性政策
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 裝置合規性政策是使用 Intune 保護您組織資源時的一項重要功能。 在 Intune 中，您可以建立裝置必須符合才能視為符合規範的規則和設定，例如最低作業系統版本。 如果裝置不符合規範，您接著可以使用[條件式存取](conditional-access.md)來封鎖對資料和資源的存取。
 
@@ -48,10 +47,10 @@ ms.locfileid: "72306575"
 
 - 使用支援的平台：
 
-  - Android
+  - Android 裝置管理員
   - Android 企業
   - iOS
-  - macOS (預覽)
+  - macOS
   - Windows 10
   - Windows 8.1
   - Windows Phone 8.1
@@ -72,26 +71,40 @@ ms.locfileid: "72306575"
 
 3. 選取 [政策]   > [建立政策]  。 輸入下列內容：
 
-    - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，**Mark iOS jailbroken devices as not compliant** 是一個不錯的政策名稱。
-    - **描述**：輸入政策的描述。 這是選擇性設定，但建議執行。
-    - **平台**：選擇您的裝置平台。 選項包括：  
+   - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，**Mark iOS jailbroken devices as not compliant** 是一個不錯的政策名稱。  
 
-       - **Android**
-       - **Android 企業**
-       - **iOS**
-       - **macOS**
-       - **Windows Phone 8.1**
-       - **Windows 8.1 及更新版本**
-       - **Windows 10 及更新版本**
+   - **描述**：輸入政策的描述。 這是選擇性設定，但建議執行。  
 
-    - **設定**：下列文章會列出並描述每個平台的設定︰
+   - **平台**：選擇您的裝置平台。 選項包括：
+     - **Android 裝置系統管理員**
+     - **Android Enterprise**
+     - **iOS/iPadOS**
+     - **macOS**
+     - **Windows Phone 8.1**
+     - **Windows 8.1 及更新版本**
+     - **Windows 10 及更新版本**
 
-        - [Android](compliance-policy-create-android.md)
-        - [Android Enterprise](compliance-policy-create-android-for-work.md)
-        - [iOS](compliance-policy-create-ios.md)
-        - [macOS](compliance-policy-create-mac-os.md)
-        - [Windows Phone 8.1，Windows 8.1 和更新版本](compliance-policy-create-windows-8-1.md)
-        - [Windows 10 及更新版本](compliance-policy-create-windows.md)
+     針對 *Android Enterprise*，您接著必須選取**設定檔類型**：
+     - **裝置擁有者**
+     - **工作設定檔**
+
+   - **設定**：下列文章會列出並描述每個平台的設定︰
+     - [Android 裝置系統管理員](compliance-policy-create-android.md)
+     - [Android Enterprise](compliance-policy-create-android-for-work.md)
+     - [iOS/iPadOS](compliance-policy-create-ios.md)
+     - [macOS](compliance-policy-create-mac-os.md)
+     - [Windows Phone 8.1，Windows 8.1 和更新版本](compliance-policy-create-windows-8-1.md)
+     - [Windows 10 及更新版本](compliance-policy-create-windows.md)  
+
+   - **位置** (Android 裝置系統管理員)  ：在您的原則中，您可以透過裝置的位置強制實行相容性。 從現有的位置中選擇。 還沒有位置？ 在 Intune 中[使用位置 (網路柵欄)](use-network-locations.md) 可提供一些指導。  
+
+   - **因不符合規範而採取的動作**：針對不符合合規性政策的裝置，您可以新增一連串動作，以便自動套用。 您可以變更裝置標示為不符合規範的排程 (例如一天之後)。 您也可以設定第二個動作，在裝置不符合規範時傳送電子郵件給使用者。
+    
+     [為不符合規範的裝置新增動作](actions-for-noncompliance.md)提供詳細資訊，包括建立通知電子郵件給您的使用者。
+
+     例如，您正在使用 [位置] 功能，並在合規性政策中新增一個位置。 當您選取至少一個位置時，則會套用不符合規範的預設動作。 如果裝置未連線到所選取的位置，則會立即視為不符合規範。 您可以提供使用者寬限期，例如一天。
+
+   - **範圍 (標籤)** ：範圍標籤是將政策指派並篩選到特定群組 (例如銷售、人力資源、所有 US-NC 員工等等) 的絕佳方式。 新增設定之後，您也可以將範圍標籤新增至合規性政策。 [使用範圍標籤篩選政策](../fundamentals/scope-tags.md)是不錯的資源。
 
 4. 完成後，請選取 [確定]   > [建立]  以儲存變更。 政策隨即建立，並顯示在清單中。 接下來，將政策指派給您的群組。
 
@@ -114,17 +127,18 @@ ms.locfileid: "72306575"
 
 如果 [評估]  按鈕呈現灰色，請確認該政策已指派給一或多個群組。
 
-## <a name="actions-for-noncompliance"></a>不符合標準時所採取的動作
+<!-- ## Actions for noncompliance
 
-針對不符合合規性政策的裝置，您可以新增一連串動作，以便自動套用。 您可以變更裝置標示為不符合規範的排程 (例如一天之後)。 您也可以設定第二個動作，在裝置不符合規範時傳送電子郵件給使用者。
+For devices that don't meet your compliance policies, you can add a sequence of actions to apply automatically. You can change the schedule when the device is marked non-compliant, such as after one day. You can also configure a second action that sends an email to the user when the device isn't compliant.
 
-[為不符合規範的裝置新增動作](actions-for-noncompliance.md)提供詳細資訊，包括建立通知電子郵件給您的使用者。
+[Add actions for noncompliant devices](actions-for-noncompliance.md) provides more information, including creating a notification email to your users.
 
-例如，您正在使用 [位置] 功能，並在合規性政策中新增一個位置。 當您選取至少一個位置時，則會套用不符合規範的預設動作。 如果裝置未連線到所選取的位置，則會立即視為不符合規範。 您可以提供使用者寬限期，例如一天。
+For example, you're using the Locations feature, and add a location in a compliance policy. The default action for noncompliance applies when you select at least one location. If the device isn't connected to the selected locations, it's immediately considered not compliant. You can give your users a grace period, such as one day.
 
-## <a name="scope-tags"></a>範圍標籤
+## Scope tags
 
-範圍標籤是將政策指派並篩選到特定群組 (例如銷售、人力資源、所有 US-NC 員工等等) 的絕佳方式。 新增設定之後，您也可以將範圍標籤新增至合規性政策。 [使用範圍標籤篩選政策](../fundamentals/scope-tags.md)是不錯的資源。
+Scope tags are a great way to assign and filter policies to specific groups, such as Sales, HR, All US-NC employees, and so on. After you add the settings, you can also add a scope tag to your compliance policies. [Use scope tags to filter policies](../fundamentals/scope-tags.md) is a good resource.
+-->
 
 ## <a name="refresh-cycle-times"></a>重新整理週期時間
 

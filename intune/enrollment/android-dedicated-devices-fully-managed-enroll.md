@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c54d82e2f0035272acce93f54f4080aca53579b9
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 2ad96c80a2cad71feec2afdfa87da767aa72fdb1
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725994"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505621"
 ---
 # <a name="enroll-your-android-enterprise-dedicated-devices-or-fully-managed-devices"></a>註冊 Android Enterprise 專用裝置或完全受控裝置
 
-在 Intune 中設定 [Android Enterprise 專用裝置](android-kiosk-enroll.md)或[完全受控裝置](android-fully-managed-enroll.md)後，即可註冊裝置。 註冊 Android Enterprise 裝置的方式需視作業系統而定。
+在 Intune 中設定 [Android Enterprise 專用裝置](android-kiosk-enroll.md)或[完全受控裝置](android-fully-managed-enroll.md)後，即可註冊裝置。 針對專用裝置和完全受控裝置的 Intune 註冊會從原廠重設開始。 註冊 Android Enterprise 裝置的方式需視作業系統而定。
 
 | 註冊方法 | 專用且完全受控裝置的最低 Android OS 版本 |
 | ----- | ----- |

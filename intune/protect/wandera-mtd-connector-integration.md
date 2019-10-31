@@ -6,24 +6,28 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64a560dc79d3c03f52b8e9389c3e47e3e256ee58
-ms.sourcegitcommit: dd6755383ba89824d1cc128698a65fde6bb2de55
+ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72306673"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681300"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>將 Wandera Mobile Threat Protection 與 Intune 整合  
 
 完成下列步驟以將 Wandera Mobile Threat Defense 解決方案與 Intune 整合。  
+
+> [!NOTE]
+> 此 Mobile Threat Defense 廠商不支援尚未註冊的裝置。
 
 ## <a name="before-you-begin"></a>開始之前  
 

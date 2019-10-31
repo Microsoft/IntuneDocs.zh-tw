@@ -5,9 +5,10 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db1f0944a6725d1f361ea20c972d8ffa8f5d9035
-ms.sourcegitcommit: a50a1ca123ecc2c5ac129f112f73838748f56476
+ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
+ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/10/2019
-ms.locfileid: "72237218"
+ms.lasthandoff: 10/17/2019
+ms.locfileid: "72550815"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -33,6 +34,10 @@ ms.locfileid: "72237218"
 
 > [!NOTE]  
 > 當原則已移除或不再指派給裝置時，設定可能會保留現有的值。 此設定不會還原為預設值。 若要將設定變更為不同的值，請建立新的原則並加以指派。
+
+## <a name="before-you-begin"></a>開始之前
+
+確保您具備指派原則的適當角色。 如需詳細資訊，請參閱[使用 Microsoft Intune 的角色型存取控制 (RBAC)](../fundamentals/role-based-access-control.md)。
 
 ## <a name="assign-a-device-profile"></a>指派裝置設定檔
 

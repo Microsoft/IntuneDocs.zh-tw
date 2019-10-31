@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 0f8b08f2-504c-4b38-bea2-b8a4ef0526b8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: abf04200017f332237c991e32bfd8d58f753be8c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 7939364c04c65334b8be5d75fb43fc2162a0b965
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725435"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785565"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -109,9 +110,9 @@ ms.locfileid: "71725435"
 | **離線寬限期** | MAM 應用程式可以離線執行的分鐘數。 指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 「動作」  包括： <br><ul><li>**封鎖存取 (分鐘)** ：MAM 應用程式可以離線執行的分鐘數。 指定經過多少時間 (分鐘) 之後即會重新檢查應用程式存取需求。 在設定的期間過後，該應用程式會封鎖對公司或學校資料的存取要求，直到有可用的網路連線為止。 此原則設定格式支援正整數。<br><br>預設值 = **720** 分鐘 (12 小時) </li></ul> <ul><li>**抹除資料 (天)** - 在離線執行達到此天數 (由系統管理員定義) 之後，應用程式需要使用者連線到網路並重新驗證。 如果使用者成功驗證，就可以繼續存取其資料，而且會重設離線間隔。  如果使用者無法驗證，應用程式會執行使用者帳戶和資料的選擇性抹除。  如需使用選擇性抹除會移除哪些資料的詳細資訊，請參閱[如何只抹除 Intune 管理之應用程式中的公司資料](apps-selective-wipe.md)。 此原則設定格式支援正整數。 <br><br> 預設值 = **90 天** </li></ul>  此項目可以出現多次，每個執行個體支援不同的動作。 |
 | **已越獄或 Root 破解的裝置** | 這項設定沒有可設定的值。 「動作」  包括： <br><ul><li>**封鎖存取** - 防止在已越獄或 Root 破解的裝置上執行此應用程式。 使用者仍然可以繼續使用這個應用程式來執行個人工作，但必須使用不同裝置來存取這個應用程式中的工作或學校資料。</li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> |
 | **最低應用程式版本** | 指定作業系統最小值。 「動作」  包括： <br><ul><li>**警告** - 如果裝置上的應用程式版本不符合需求，使用者會看見通知。 此通知可以關閉。</li></ul> <ul><li>**封鎖存取** - 如果裝置上的應用程式版本不符合需求，會封鎖使用者進行存取。 </li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> </li></ul>   因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，「Outlook 版本原則」  )。<br><br> 此項目可以出現多次，每個執行個體支援不同的動作。<br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。<br><br> **注意︰** *應用程式需要有 Intune SDK 7.0.1 版或更新版本。*<br><br> 此外，您可以設定終端使用者可從**何處**取得企業營運 (LOB) 應用程式的更新版本。 終端使用者將可在 [應用程式最小版本]  條件式啟動對話方塊中看見此功能，其將提示終端使用者更新為 LOB 應用程式的最小版本。 在 iOS 上，此功能需要整合 (或使用包裝工具包裝) 應用程式與 Intune SDK for iOS 10.0.7 版或更新版本。 若要設定終端使用者應該更新 LOB 應用程式的位置，應用程式需要使用金鑰 `com.microsoft.intune.myappstore` 傳送給它的受控[應用程式設定原則](app-configuration-policies-managed-app.md)。 傳送的值將定義終端使用者要從哪個存放區下載應用程式。 如果透過公司入口網站部署應用程式，則值必須為 `CompanyPortal`。 針對任何其他存放區，您必須輸入完整的 URL。 |
-| **最低 SDK 版本** | 指定 Intune SDK 版本的最低值。 「動作」  包括： <br><ul><li>**封鎖存取** - 如果應用程式的 Intune 應用程式保護原則 SDK 版本不符合需求，會封鎖使用者進行存取。 <br> <br> 若要深入了解 Intune 應用程式保護原則 SDK，請參閱 [Intune App SDK 概觀](../developer/app-sdk.md)。</li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul>  </li></ul> 因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，「Outlook 版本原則」  )。 <br><br> 此項目可以出現多次，每個執行個體支援不同的動作。|
+| **最低 SDK 版本** | 指定 Intune SDK 版本的最低值。 「動作」  包括： <br><ul><li>**封鎖存取** - 如果應用程式的 Intune 應用程式保護原則 SDK 版本不符合需求，會封鎖使用者進行存取。 </li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul></li></ul><br><br> 若要深入了解 Intune 應用程式保護原則 SDK，請參閱 [Intune App SDK 概觀](../developer/app-sdk.md)。 因為應用程式之間通常會有不同的 Intune SDK 版本，所以請建立包含一個針對單一應用程式之最低 Intune SDK 版本的原則 (例如，「適用於 Outlook 的 Intune SDK 版本原則」  )。 <br><br> 此項目可以出現多次，每個執行個體支援不同的動作。|
 | **裝置型號** | 指定以分號分隔的型號識別碼清單。 避免在多個值的清單中有空格。 這些值不會區分大小寫。 「動作」  包括： <br><ul><li>**允許指定 (封鎖非指定)** - 僅有符合指定裝置型號的裝置可以使用應用程式。 會封鎖所有其他裝置型號。 </li></ul> <ul><li>**允許指定 (抹除非指定)** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。</li></ul> 如需使用此設定的詳細資訊，請參閱[條件式啟動動作](app-protection-policies-access-actions.md#ios-policy-settings)。 |
-
+| **允許的裝置威脅等級上限** | 應用程式保護原則可以利用 Intune-MTD 連接器。 指定使用此應用程式可接受的最大威脅等級。 威脅取決於您在終端使用者裝置上選擇的 Mobile Threat Defense (MTD) 廠商應用程式。 指定 [安全]  、[低]  、[中]  或 [高]  。 [安全]  要求裝置上沒有威脅，而且是最嚴格的可設定值，而 [高]  基本上需要作用中的 Intune 對 MTD 連線。 「動作」  包括： <br><ul><li>[封鎖存取]  - 如果終端使用者裝置上由您選擇的 Mobile Threat Defense (MTD) 廠商應用程式所決定的威脅等級不符合此需求，將會封鎖使用者進行存取。</li></ul><ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。</li></ul>**注意︰** *應用程式需要有 Intune SDK TBD 版或更新版本。* <br><br> 如需使用此設定的詳細資訊，請參閱 (##針對已取消註冊裝置上的 MTD 設定 Intune)。 |
 
 ### <a name="learn-more"></a>深入了解
 
@@ -119,4 +120,3 @@ ms.locfileid: "71725435"
 - 在 [Office 365 藍圖頁面](https://products.office.com/en-US/business/office-365-roadmap?filters=%26freeformsearch=linkedin#abc)上深入了解 LinkedIn 帳戶連線版本。 
 - 深入了解 [Microsoft 應用程式和服務的 LinkedIn 帳戶連線](https://docs.microsoft.com/azure/active-directory/linkedin-integration)。
 - 如需在使用者的 LinkedIn 與 Microsoft 工作或學校帳戶之間共用之資料的詳細資訊，請參閱 [LinkedIn in Microsoft applications at your work or school](https://www.linkedin.com/help/linkedin/answer/84077) (工作或學校之 Microsoft 應用程式中的 LinkedIn)。
-

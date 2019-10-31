@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 3fb2f050-ec94-42ab-be05-c3d4101148bb
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ec1af80d52a8331c2bef136cd0947b81beaa3ea
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
+ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724772"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72593700"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -204,7 +205,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 以下是一些詳細資料：
 
-- 使用者在使用 Microsoft Edge 的企業模式時，才會看到這些書籤。 
+- 使用者在使用 Microsoft Edge 的[企業模式](https://docs.microsoft.com/intune/apps/app-configuration-managed-browser#how-to-configure-bookmarks-for-a-protected-browser)時，才會看到這些書籤。 
 - 使用者無法刪除或修改這些書籤。
 - 這些書籤會顯示在清單頂端。 使用者所建立的書籤都會顯示在這些書籤下方。
 - 如果您已啟用應用程式 Proxy 重新導向，即可使用應用程式 Proxy Web 應用程式的內部或外部 URL 來新增這些應用程式 Proxy Web 應用程式。

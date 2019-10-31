@@ -1,16 +1,18 @@
 ---
-ms.openlocfilehash: f7916bc38be085625f5a65d7889212827bcae5d3
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 748174ded8e8331c032ffd9f3b70b2c09b724f85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314628"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72600856"
 ---
 ### <a name="apple"></a>Apple
-- Apple iOS 與 iPadOS 9.0 與更新版本
+
+- Apple iOS 與 iPadOS 10.0 與更新版本
 - Mac OS X 10.9 及更新版本
 
 ### <a name="windows"></a>Windows
+
 - 執行 Windows 10 (家用版、專業版、教育版和企業版) 的電腦
 - Windows 10 Mobile
 - 執行 Windows 10 IoT 企業版 (x86、x64) 的裝置
@@ -23,6 +25,7 @@ ms.locfileid: "72314628"
   您也可以使用 [Intune 軟體用戶端](/intune-classic/deploy-use/manage-windows-pcs-with-microsoft-intune)來管理 Windows 7 與更新版的電腦 (Windows 10 家用版除外)。
 
 ### <a name="google"></a>Google
+
 - Google Android 4.0 及更新版本 (包括 Samsung KNOX Standard 4.0 及更新版本)*
 - Google Android for Work ([需求](https://support.google.com/work/android/answer/6174145?hl=en&ref_topic=6151012 style="target=new_window"))
 

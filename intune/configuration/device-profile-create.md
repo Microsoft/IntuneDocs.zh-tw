@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d98aceff-eb35-4e3e-8e40-5f300e7335cc
@@ -16,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0858eefede678615e5b856fa0e40e48a791e4cce
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724096"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681449"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
 
@@ -76,6 +77,7 @@ ms.locfileid: "71724096"
        - [Identity Protection](../protect/identity-protection-configure.md)  
        - [Kiosk](kiosk-settings.md)
        - [PKCS 憑證](../protect/certficates-pfx-configure.md)
+       - [PKCS 匯入憑證](../protect/certificates-imported-pfx-configure.md)
        - [SCEP 憑證](../protect/certificates-scep-configure.md)
        - [信任的憑證](../protect/certificates-configure.md)
        - [更新原則](../software-updates-ios.md)
@@ -127,7 +129,7 @@ ms.locfileid: "71724096"
 
 - 如果有兩個設定檔具有完全相同的設定，則會套用不含適用性規則的設定檔。 
 
-  例如，ProfileA 會以 Windows 10 裝置群組為目標、啟用 BitLocker，而且沒有適用性規則。 ProfileB 會以相同的 Windows 10 裝置群組為目標、啟用 BitLocker，而且具有只會將設定檔套用至 Windows 10 企業版的適用性規則。
+  例如，ProfileA 以 Windows 10 裝置群組為目標、啟用 BitLocker，而且沒有適用性規則。 ProfileB 以相同的 Windows 10 裝置群組為目標、啟用 BitLocker，而且具有只將設定檔套用至 Windows 10 企業版的適用性規則。
 
   指派這兩個設定檔時，會套用 ProfileA，因為它沒有適用性規則。 
 
@@ -142,7 +144,7 @@ ms.locfileid: "71724096"
 2. 在 [規則]  中，選擇您是否要包含或排除使用者或群組。 選項包括：
 
     - **指派設定檔的條件**：包含符合您所輸入準則的使用者或群組。
-    - **不指派設定檔的條件**：排除您所輸入準則的使用者或群組。
+    - **不指派設定檔的條件**：排除符合您所輸入準則的使用者或群組。
 
 3. 在 [屬性]  中，選擇您的篩選條件。 選項包括： 
 

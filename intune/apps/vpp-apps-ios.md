@@ -1,7 +1,7 @@
 ---
-title: 管理 Apple 大量購買的應用程式
+title: 管理 Apple 大量採購的應用程式
 titleSuffix: Microsoft Intune
-description: 針對從 iOS 與 macOS App Store 大量採購的應用程式，了解如何將應用程式同步到 Microsoft Intune，然後管理及並追蹤其使用情況。
+description: 針對從 iOS 與 macOS App Store 大量採購的應用程式，了解如何將應用程式同步處理到 Microsoft Intune，然後管理及並追蹤其使用情況。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 51d45ce2-d81b-4584-8bc4-568c8c62653d
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dac7069e30c173d80f15977ba2f06fcabcb7179b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71724434"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785524"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 與 macOS 應用程式
 
@@ -47,7 +48,7 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ## <a name="user-licensing"></a>使用者授權
 
-當您將應用程式指派給使用者時，會使用一個應用程式授權，並與使用者建立關聯。 該應用程式最多可以在使用者擁有的 5 部裝置上執行 (受 Apple 有限控制)。
+當您將應用程式指派給使用者時，會使用一個應用程式授權，並與使用者建立關聯。 該應用程式最多可以在使用者擁有的 5 部裝置上執行 (該裝置受 Apple 有限控制)。
 
 當您將大量採購的應用程式指派給多位使用者時，每位終端使用者都必須具備有效和唯一的 Apple ID，才能存取 App Store。
 
@@ -90,10 +91,10 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
     - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
     - **國家/地區** - 選取 VPP 國家/地區市集。  Intune 會從指定的 VPP 國家/地區市集同步處理所有地區設定的 VPP 應用程式。
         > [!WARNING]  
-        > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步時的存放區 URL。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
+        > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步處理時的存放區 URL。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
 
     - **VPP 帳戶類型** - 請選擇 [商務]  或 [教育]  。
-    - **自動更新應用程式** - 從 [開啟]  或 [關閉]  進行選擇，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。 Apple VPP 應用程式的自動應用程式更新只會自動更新使用**必要**安裝用途部署的應用程式。 針對使用**可用**安裝用途部署的應用程式，自動更新會自動為系統管理員產生通知，通知已有可用的新版本應用程式。 此外，使用者會在公司入口網站中看到應用程式顯示為 [未安裝]，即使已安裝舊版的應用程式也一樣。 在此情況下，使用者可以在公司入口網站應用程式的 [應用程式詳細資料] 畫面上，按一下 [安裝]  來重新安裝應用程式，以安裝新版的應用程式。
+    - **自動更新應用程式** - 從 [開啟]  或 [關閉]  進行選擇，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。 Apple VPP 應用程式的自動應用程式更新只會自動更新使用**必要**安裝用途部署的應用程式。 針對使用**可用**安裝意圖部署的應用程式，自動更新會自動為 IT 系統管理員產生狀態訊息，通知已有可用的新版本應用程式。 透過選取應用程式、選取 [裝置安裝狀態]，然後檢查 [狀態詳細資料]，即可看到此狀態訊息。 此外，使用者會在公司入口網站中看到應用程式顯示為 [未安裝]，即使已安裝舊版的應用程式也一樣。 在此情況下，使用者可以在公司入口網站應用程式的 [應用程式詳細資料] 畫面上，按一下 [安裝]  來重新安裝應用程式，以安裝新版的應用程式。
 
         > [!NOTE]
         > 自動應用程式更新適用於 iOS 11.0 或 macOS 10.12 和更新版本的裝置和使用者授權應用程式。

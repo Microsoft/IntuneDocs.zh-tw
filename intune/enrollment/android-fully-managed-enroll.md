@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 1/15/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2abf391ddbdb1f7087cd06ed1865b3da8b155178
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 755aefb955c2d30652434f2bd2e91981145fc56f
+ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71723576"
+ms.lasthandoff: 10/16/2019
+ms.locfileid: "72505602"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>設定 Android Enterprise 完全受控裝置的 Intune 註冊 
 
@@ -61,7 +62,7 @@ Intune 可協助您將應用程式及設定部署至 Android Enterprise 裝置�
 > [!NOTE]
 > 如已定義 Azure AD 條件式存取原則使用「需要標記為合規的裝置」  控制項，並適用於**所有雲端應用程式**、**Android** 和**瀏覽器** - 您必須從此原則排除 **Microsoft Intune** 的雲端應用程式。 這是因為 Android 安裝程式程序在註冊期間會使用 Chrome 的索引標籤來驗證使用者。 如需詳細資訊，請參閱 [Azure AD 條件式存取文件](https://docs.microsoft.com/azure/active-directory/conditional-access/)。
 
-當此項設定為 [是]  時，會提供您 Intune 租用戶的註冊權杖 (隨機字串) 及 QR 代碼。 此單一註冊權杖對您所有的使用者都有效，而且不會到期。 視 Android OS 和裝置的版本而定，您可以使用權杖或 QR 代碼註冊 kiosk 裝置。
+當此項設定為 [是]  時，會提供您 Intune 租用戶的註冊權杖 (隨機字串) 及 QR 代碼。 此單一註冊權杖對您所有的使用者都有效，而且不會到期。 視裝置的 Android OS 和版本而定，您可以使用權杖或 QR 代碼來註冊裝置。
 
 ## <a name="enroll-the-fully-managed-devices"></a>註冊完全受控裝置
 您現在可以[註冊您的完全受控裝置](android-dedicated-devices-fully-managed-enroll.md)。

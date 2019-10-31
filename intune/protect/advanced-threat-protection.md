@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 09/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: shpate
@@ -15,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1e72e16eba8bb29adc7360db9e923a15d144b6e
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: e0ef623fef49fdf43efc80375716af711bdbcb3c
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350052"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681338"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制執行 Microsoft Defender ATP 的合規性  
 
@@ -56,6 +57,9 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 - 適用於 Enterprise Mobility + Security E3 和 Windows E5 (或 Microsoft 365 企業版 E5) 的授權租用戶
 - Microsoft Intune 環境，搭配已加入 Azure AD 且[受 Intune 管理的](../enrollment/windows-enroll.md) Windows 10 裝置
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 Microsoft Defender 資訊安全中心 (ATP 入口網站) 的存取權
+
+> [!NOTE]
+> Intune 應用程式防護原則不支援 Microsoft Defender ATP。
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>在 Intune 中啟用 Microsoft Defender ATP
 

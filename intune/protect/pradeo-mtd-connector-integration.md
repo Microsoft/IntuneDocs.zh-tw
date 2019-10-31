@@ -6,24 +6,28 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2018
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 82872ba6-80f8-4cc9-adf4-0ccd8ff26dd2
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 65d9844d7e0e56e46dc6373dfe63ec3e8b18fde3
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 32e67ac961f2831a881bc160e19cefdb75723ff0
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722042"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681259"
 ---
 # <a name="integrate-pradeo-mobile-threat-defense-with-intune"></a>將 Pradeo Mobile Threat Defense 與 Intune 整合
 
 完成下列步驟以將 Pradeo Mobile Threat Defense 解決方案與 Intune 整合。
+
+> [!NOTE]  
+> 此 Mobile Threat Defense 廠商不支援尚未註冊的裝置。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -86,4 +90,4 @@ Pradeo 應用程式授權程序如下：
 
 ## <a name="next-steps"></a>後續步驟
 
-- [設定 Pradeo 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [為已註冊的裝置安裝 Pradeo 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)

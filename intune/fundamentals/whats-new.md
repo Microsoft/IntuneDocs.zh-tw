@@ -6,9 +6,10 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 09/23/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 791ed23f-bd13-4ef0-a3dd-cd2d7332c5cc
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 571974e1736fb78ae633c02fcfd6e6233056379b
-ms.sourcegitcommit: 78f9750712c254d8b123ef15b74f30ca999aa128
+ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2019
-ms.locfileid: "71920140"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72786138"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -50,8 +51,170 @@ ms.locfileid: "71920140"
 ### Intune apps
 ### Monitor and troubleshoot
 ### Role-based access control
-
 -->  
+
+
+<!-- ########################## -->
+
+## <a name="week-of-october-21-2019"></a>2019 年 10 月 21 日當週
+
+### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>適用於 Windows 10 和更新版本裝置的新裝置韌體設定介面設定檔 <!-- 2266073 idready wnready -->
+
+在 Windows 10 和更新版本上，您可以建立裝置組態設定檔來控制設定和功能 (**裝置組態** > **設定檔** > **建立設定檔** > **Windows10 和更新版本** (針對平台))。 在此更新中，有新的裝置韌體設定介面設定檔類型，可讓 Intune 管理 UEFI (BIOS) 設定。
+
+如需這項功能的詳細資訊，請參閱[在 Microsoft Intune 中的 Windows 裝置上使用 DFCI 設定檔](../configuration/device-firmware-configuration-interface-windows.md)。
+
+適用於：
+
+- 支援韌體上的 Windows 10 RS5 (1809) 和更新版本
+
+## <a name="week-of-october-14-2019"></a>2019 年 10 月 14 日當週
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>應用程式管理 
+
+#### <a name="available-google-play-app-reporting-for-android-work-profiles----3041956-----"></a>報告 Android 工作設定檔的可用 Google Play 應用程式 <!-- 3041956   -->
+針對安裝在 Android Enterprise 工作設定檔、專用且完全受控的裝置上的可用應用程式，您可以檢視應用程式安裝狀態，以及受控 Google Play 應用程式的安裝版本。 如需詳細資訊，請參閱[如何監視應用程式保護原則](~/apps/app-protection-policies-monitor.md)、[使用 Intune 管理 Android 工作設定檔裝置](~/enrollment/android-enterprise-overview.md)及[受控的 Google Play 應用程式類型](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)。
+
+#### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>適用於 Windows 10 和 macOS (公開預覽) 的 Microsoft Edge 77 版和更新版本 <!-- 3872025, 4678761  -->
+Microsoft Edge 77 版和更新版本現已可部署至執行 Windows 10 和 macOS 的電腦。 公開預覽針對 Windows 10 提供 **Dev** 和 **Beta** 通道，以及針對 macOS 提供 **Beta** 通道。 部署僅限英文 (EN)，不過，終端使用者可以在瀏覽器中的 [設定]   > [語言]  下變更顯示語言。 Microsoft Edge 是一個 Win32 應用程式，安裝在系統內容和類似的架構 (x86 OS 上的 x86 應用程式，以及 x64 OS 上的 x64 應用程式) 上。 此外，瀏覽器的自動更新預設會 [開啟]  ，而且無法解除安裝 Microsoft Edge。 如需詳細資訊，請參閱[將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune](~/apps/apps-windows-edge.md) 和 [Microsoft Edge 文件](https://go.microsoft.com/fwlink/?linkid=2103823) \(英文\)。
+
+#### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>應用程式保護 UI 和 iOS 應用程式佈建 UI 的更新 <!-- 4102027, 4102029   -->
+在 Intune 中用來建立和編輯應用程式保護原則和 iOS 應用程式佈建設定檔的 UI 已更新。 UI 變更包括：
+- 使用壓縮成單一刀鋒視窗的精靈樣式格式簡化體驗。 
+- 針對建立流程的更新，以包含指派。
+- 檢視屬性 (建立新的原則之前) 或編輯屬性時所設定之所有內容的摘要頁面。 此外，當編輯屬性時，摘要只會顯示正在編輯的屬性類別中的項目清單。
+
+如需詳細資訊，請參閱[如何建立及指派應用程式保護原則](~/apps/app-protection-policies.md)與[使用 iOS 應用程式佈建設定檔](~/apps/app-provisioning-profile-ios.md)。
+
+#### <a name="intune-guided-scenarios----4850318-4831296-3610611----"></a>Intune 引導式案例 <!-- 4850318, 4831296, 3610611  -->
+Intune 現在提供引導式案例，協助您在 Intune 中完成一項特定工作或一組工作。 引導式案例是以一個端對端使用案例為中心的一系列自訂步驟 (工作流程)。 常見案例是根據組織中系統管理員、使用者或裝置所扮演的角色來定義。 這些工作流程通常需要一組仔細協調的設定檔、設定、應用程式和安全性控制項，以提供最佳的使用者體驗和安全性。 新的引導式案例包括：
+- [部署適用於行動裝置的 Microsoft Edge](~/fundamentals/guided-scenarios-edge.md)
+- [保護 Microsoft Office 行動應用程式](~/fundamentals/guided-scenarios-office-mobile.md) 
+- [雲端管理的新式桌面](~/fundamentals/guided-scenarios-cloud-managed-pc.md)
+
+如需詳細資訊，請參閱 [Intune 引導式案例概觀](guided-scenarios-overview.md)。
+
+#### <a name="additional-app-configuration-variable-available----4969237-----"></a>其他可用的應用程式設定變數 <!-- 4969237   -->
+建立應用程式設定原則時，您可以將 `AAD Device ID` 設定變數包含在您的組態設定中。 在 Intune 中，選取 [用戶端應用程式]   > [應用程式設定原則]   > [新增]  。 輸入設定原則詳細資料，然後選取 [組態設定]  以檢視 [組態設定]  刀鋒視窗。 如需詳細資訊，請參閱[適用於受控 Android Enterprise 裝置的應用程式設定原則 - 使用設定設計工具](~/apps/app-configuration-policies-use-android.md#use-the-configuration-designer)。
+
+
+#### <a name="create-groups-of-management-objects-called-policy-sets----3762880----"></a>建立稱為原則集合的管理物件群組 <!-- 3762880  -->
+原則集合可讓您建立現有管理實體的參考組合；這些實體必須以單一概念單元進行識別、設為目標及監視。 原則集合不會取代現有的概念或物件。 您可以繼續在 Intune 中指派個別物件，而且可以參考個別物件作為原則集合的一部分。 因此，對那些個別物件所做的任何變更都會反映在原則集合中。  在 Intune 中，您將選取 [原則集合]   > [建立]  建立新的原則集合。 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="ui-update-for-creating-and-editing-windows-10-update-rings-----4099089-----------"></a>建立和編輯 Windows 10 更新通道的 UI 更新  <!-- 4099089         -->
+我們已針對 Intune 更新[建立和編輯 Windows 10 更新通道的 UI 體驗](../protect/windows-update-for-business-configure.md#create-and-assign-update-rings)。 UI 的變更包括：  
+- 壓縮成單一刀鋒視窗的精靈樣式格式，與先前在設定更新通道時看到的刀鋒視窗蔓延不一樣。   
+- 在完成通道的初始設定之前，修改後的工作流程包含 [指派]。
+- [摘要] 頁面可用來檢查您所做的所有設定，然後再儲存和部署新的更新通道。 編輯更新通道時，摘要僅顯示在您所編輯的屬性類別內設定的項目清單。
+
+#### <a name="ui-update-for-creating-and-editing-ios-software-update-policy-----4099090---------"></a>用於建立和編輯 iOS 軟體更新原則的 UI 更新  <!-- 4099090       --> 
+我們已針對 Intune 更新[建立](../protect/software-updates-ios.md#configure-the-policy)和[編輯](../protect/software-updates-ios.md#edit-a-policy) iOS 軟體更新原則的 UI 體驗。  UI 的變更包括：  
+- 壓縮成單一刀鋒視窗的精靈樣式格式，與先前在設定更新原則時看到的刀鋒視窗蔓延不一樣。   
+- 在完成原則的初始設定之前，修改後的工作流程包含 [指派]。
+- 在儲存和部署新原則之前，您可以用來檢閱所有設定的 [摘要] 頁面。 編輯原則時，摘要僅顯示在您所編輯的屬性類別內設定的項目清單。
+
+#### <a name="engaged-restart-settings-are-removed-from-windows-update-rings------4464404---wnready-----"></a>Windows Update 通道的 [預約重新啟動] 設定已移除  <!--  4464404   WNReady   -->
+如先前所宣佈的那樣，Intune 的 Windows 10 更新通道現在[支援期限設定](../protect/windows-update-settings.md)，並且不再支援 [預約重新啟動]  。 當您在 Intune 中設定或管理更新通道時，將無法再使用 [預約重新啟動]  設定。  
+
+這種變更會與最近的 [Windows 服務變更](https://docs.microsoft.com//windows/whats-new/whats-new-windows-10-version-1903#servicing)一致，並且在執行 Windows 10 1903 或更高版本的裝置上，[期限]  取代了 [預約重新啟動]  設定。
+
+#### <a name="prevent-installation-of-apps-from-unknown-sources-on-android-enterprise-work-profile-devices----4760025-----"></a>防止在 Android Enterprise 工作設定檔裝置上安裝來自不明來源的應用程式 <!-- 4760025   -->
+在 Android Enterprise 工作設定檔裝置上，使用者無法從不明來源安裝應用程式。 在此更新中，有一個新的設定 - **禁止在個人設定檔中從不明來源安裝應用程式**。 根據預設，此設定可防止使用者從不明來源側載應用程式到裝置上的個人設定檔。
+
+若要查看您可以設定的設定，請前往[使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。
+
+適用於：
+- Android Enterprise 工作設定檔
+
+#### <a name="create-a-global-http-proxy-on-android-enterprise-device-owner-devices----4816339-----"></a>在 Android Enterprise 裝置擁有者裝置上建立全域 HTTP Proxy <!-- 4816339   -->
+在 Android Enterprise 裝置上，您可以設定全域 HTTP Proxy 以符合組織的網頁瀏覽標準 ([裝置組態]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  (針對平台) > [裝置擁有者] > [裝置限制]  (針對設定檔類型) > [連線]  )。 一旦設定之後，所有 HTTP 流量都會使用此 Proxy。
+
+若要設定此功能，並查看您設定的所有設定，請前往[使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。
+
+適用於：
+- Android Enterprise 裝置擁有者
+
+#### <a name="connect-automatically-setting-is-removed-in-wi-fi-profiles-on-android-device-administrator-and-android-enterprise----5021055-----"></a>Android 裝置系統管理員和 Android Enterprise 的 Wi-Fi 設定檔中已移除 [自動連線] 設定 <!-- 5021055   -->
+在 Android 裝置系統管理員和 Android Enterprise 裝置上，您可以建立 Wi-Fi 設定檔來設定不同的設定 ([裝置組態]   > [設定檔]   > [建立設定檔]   > [Android 裝置系統管理員]  或 [Android Enterprise]  (針對平台) > [Wi-Fi]  (針對設定檔類型))。 在此更新中，會移除 [自動連線]  設定，因為它[不受 Android 支援](https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork%28int%2c%20boolean%29) \(英文\)。 
+
+如果您在 Wi-Fi 設定檔中使用此設定，您可能已注意到 [自動連線]  無法使用。 您不需要採取任何動作，但請注意，Intune 使用者介面中已移除這項設定。
+
+若要查看目前的設定，請前往 [Android Wi-Fi 設定](../configuration/wi-fi-settings-android.md)或 [Android Enterprise Wi-Fi 設定](../configuration/wi-fi-settings-android-enterprise.md)。
+
+適用於：
+- Android 裝置管理員 
+- Android 企業
+
+
+#### <a name="new-device-configuration-settings-for-supervised-ios-and-ipados-devices----5199328-----"></a>受監督 iOS 和 iPadOS 裝置的新裝置組態設定 <!-- 5199328   -->
+在 iOS 和 iPadOS 裝置上，您可以建立設定檔以限制裝置上的功能和設定 ([裝置組態]   > [設定檔]   > [建立設定檔]   > [iOS/iPadOS]  (針對平台) > [裝置限制]  (針對設定檔類型))。 在此更新中，有您可以控制的新設定： 
+- 存取檔案應用程式中的網路磁碟機  
+- 存取檔案應用程式中的 USB 磁碟機 
+- Wi-Fi 一律開啟 
+
+若要查看這些設定，請前往[使用 Intune 來允許或限制功能的 iOS 裝置設定](../configuration/device-restrictions-ios.md)。
+
+適用於：
+- iOS 13.0 與更新版本
+- iPadOS 13.0 和更新版本
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="specify-which-android-device-operating-system-versions-enroll-with-work-profile-or-device-administrator-enrollment----4350697-----"></a>指定使用工作設定檔註冊或裝置系統管理員註冊進行註冊的 Android 裝置作業系統版本 <!-- 4350697   -->
+使用 Intune 裝置類型限制時，您可以使用裝置的 OS 版本來指定哪些使用者裝置將使用 Android Enterprise 工作設定檔註冊或 Android 裝置系統管理員註冊。  如需詳細資訊，請參閱[設定註冊限制](../enrollment/enrollment-restrictions-set.md)。
+
+#### <a name="windows-autopilot-deployment-reports----3856172---"></a>Windows Autopilot 部署報告 <!-- 3856172 -->
+新報告會詳細說明透過 Windows Autopilot 部署的每個裝置。 如需詳細資訊，請參閱 [Autopilot 部署報告](../enrollment/enrollment-autopilot.md#autopilot-deployments-report)。 我們正在將此功能推出給所有客戶，預計會在下周末完成。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-management"></a>裝置管理
+
+#### <a name="new-restrictions-for-renaming-windows-devices----3478938----"></a>重新命名 Windows 裝置的新限制 <!-- 3478938  -->
+重新命名 Windows 裝置時，您必須遵循新規則：
+- 15 個字元或更少 (必須小於或等於 63 個位元組，不包括尾端的 Null 字元)
+- 非 Null 或空字串
+- 允許的 ASCII：字母 (a-z, A-Z)、數字 (0-9) 和連字號
+- 允許的 Unicode：字元 >= 0x80，必須是有效的 UTF8，必須是 IDN 可映射 (也就是繼 RtlIdnToNameprepUnicode 之後；請參閱 RFC 3492)
+- 名稱不能僅包含數字
+- 名稱中不能有空格
+- 不允許的字元：{ | } ~ [ \ ] ^ ' : ; < = > ? & @ ! " # $ % ` ( ) + / , . _ *)
+
+ 如需詳細資訊，請參閱[在 Intune 中重新命名裝置](../remote-actions/device-rename.md)。
+
+### <a name="new-android-report-on-devices-overview-page----4924364---"></a>[裝置概觀] 頁面上的新 Android 報告 <!-- 4924364 -->
+[裝置概觀] 頁面的新報告會顯示每個裝置管理解決方案中已註冊的 Android 裝置數目。 此圖表顯示工作設定檔、完全受控、專用和裝置系統管理員註冊的裝置計數。 若要查看報告，請選擇 [Intune]   > [裝置]   > [概觀]  。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="device-security"></a>裝置安全性 
+
+#### <a name="pkcs-certificates-for-macos-----1333650---------"></a>適用於 macOS 的 PKCS 憑證  <!-- 1333650       -->
+您現在可以[搭配 macOS 使用 PKCS 憑證](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)。 您可以選取 [PKCS 憑證] 作為 macOS 的設定檔類型，並部署具有[自訂主體和主體別名欄位](../protect/certficates-pfx-configure.md#subject-name-format-for-macos)的使用者和裝置憑證。  
+
+macOS 的 PKCS 憑證也支援新的設定 [允許所有應用程式存取]  。 使用這項設定，您可以啟用所有相關聯的應用程式存取憑證的私密金鑰。  如需此設定的詳細資訊，請參閱位於 https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf 的 Apple 文件。
+
+####   <a name="derived-credentials-to-provision-ios-mobile-devices-with-certificates----------1736036-1736037-1772050-2777333-----------"></a>使用憑證佈建 iOS 行動裝置的衍生認證      <!--  1736036, 1736037, 1772050, 2777333         -->  
+Intune 支援使用[衍生認證](../protect/derived-credentials.md)作為驗證方法，以及適用於 iOS 裝置的 S/MIME 簽署和加密。 衍生認證是*國家標準暨技術研究院 (NIST) 800-157* 標準的實作，用於將憑證部署至裝置。  
+
+衍生認證仰賴個人識別驗證 (PIV) 或一般存取卡 (CAC)，如智慧卡。 若要取得其行動裝置的衍生認證，使用者必須從公司入口網站應用程式中啟動，並遵循您所使用之提供者獨有的註冊工作流程。  對於所有提供者來說，共同的要求是在電腦上使用智慧卡向衍生認證提供者進行驗證。 該提供者接著會將憑證發行至衍生自使用者智慧卡的裝置。  
+
+Intune 支援下列衍生認證提供者：   
+- DISA Purebred
+- Entrust Datacard
+- Intercede
+
+您可以使用衍生認證作為 VPN、Wi-Fi 和電子郵件的裝置組態設定檔的驗證方法。 您也可以使用它們進行應用程式驗證和 S/MIME 簽署和加密。  
+
+如需有關標準的詳細資訊，請參閱位於 www.nccoe.nist.gov 的 [PIV 衍生認證](https://www.nccoe.nist.gov/projects/building-blocks/piv-credentials) \(英文\)。
+
+#### <a name="use-graph-api-to-specify-a-on-premises-user-principal-name-as-a-variable-for-scep-certificates--------5437939----------"></a>使用圖形 API 指定內部部署使用者主體名稱作為 SCEP 憑證的變數    <!--  5437939        -->  
+當您使用 [Intune 圖形 API](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0) 時，您可以將 onPremisesUserPrincipalName 指定為 SCEP 憑證的主體別名 (SAN) 的變數。
+
+
 
 <!-- ########################## -->
 
@@ -367,7 +530,7 @@ Intune 現在支援同時管理 iOS 13 和 macOS Catalina 裝置。 如需詳細
 #### <a name="deadlines-replace-engaged-restart-settings-for-windows-update-rings------4464404----------"></a>Windows Update 通道的「預約重新啟動」已由「期限」取代   <!-- 4464404        -->
 為了具有與 [Windows 維護變更](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing)相同的功能，Intune 的 Windows 10 Update 通道現在[支援期限設定](../protect/windows-update-settings.md)。 「期限」  決定裝置何時安裝功能與安全性更新。  在執行 Windows 10 1903 或更新版本的裝置上，「期限」  會取代「預約重新啟動」  的設定。  未來「期限」  也會取代舊版 Windows 10 上的「預約重新啟動」  。  
 
-當您未設定「期限」  時，裝置會繼續使用其「預約重新啟動」  設定，不過在未來的更新中，[Intune 將會淘汰對預約重新啟動設定的支援](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-)。  
+當您未設定 [期限]  時，裝置會繼續使用其 [預約重新啟動]  設定，不過在未來的更新中，Intune 將會淘汰對預約重新啟動設定的支援。  
 
 規劃在您的所有 Windows 10 裝置上使用「期限」  。 當「期限」  的設定就緒之後，您可以將您 Intune 的「預約重新啟動」  設定變更為 [尚未設定]。 當設定為 [尚未設定] 時，Intune 會停止管理裝置上的這些設定，但不會從裝置中移除設定的最後一個組態。 因此，為「預約重新啟動」  設定的最後一個設定會在裝置上維持作用中設定，直到透過 Intune 以外的方法修改這些設定為止。 之後，當裝置的 Windows 版本變更時，或當 Intune 對「期限」  的支援擴充到裝置 Windows 版本時，裝置就會開始使用已準備好的新設定。
 

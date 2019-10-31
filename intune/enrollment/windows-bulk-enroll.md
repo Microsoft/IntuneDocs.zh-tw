@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 5/21/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: enrollment
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 1f39c02a-8d8a-4911-b4e1-e8d014dbce95
@@ -16,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ed71676b434dfe30c7591ad3a3391d2252c3275d
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722328"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585283"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -89,6 +90,8 @@ Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派�
 
 - 嘗試加入 Active Directory 網域或 Azure Active Directory 租用戶的佈建套件，如果未建立本機帳戶，當沒有網路連線而造成網域加入程序失敗時，會使得裝置無法使用。
 - 由佈建套件執行的指令碼是在系統環境中執行。 指令碼可以任意對裝置檔案系統與設定進行變更。 惡意或不良的指令碼可能會使裝置處於某種狀態，而只能透過重新安裝映像或進行抹除才能復原裝置。
+
+您可以在事件檢視器中的 **Provisioning-Diagnostics-Provider** 系統管理記錄檔中，檢查您套件中設定的成功/失敗。
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>大量註冊使用 Wi-Fi 
 

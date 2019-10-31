@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 10/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: bbc3ba4a-df48-4aeb-988b-69a177764e3a
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 624c6cec2a887396cb6ef6508ab26a16d72f8f7c
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: c0b5f087494e8033cb9645d0a08edd4e1c481a2c
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71725318"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584934"
 ---
 # <a name="use-ios-app-provisioning-profiles-to-prevent-your-apps-from-expiring"></a>使用 iOS 應用程式佈建設定檔以避免應用程式過期
 
@@ -44,14 +45,22 @@ ms.locfileid: "71725318"
 ## <a name="how-to-create-an-ios-mobile-app-provisioning-profile"></a>如何建立 iOS 行動應用程式佈建設定檔
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格上，選擇 [用戶端應用程式]  。
-1. 在 [用戶端應用程式]  工作負載中，選擇 [管理]   > [iOS 應用程式佈建設定檔]  。
-2. 在設定檔清單窗格中，選擇 [建立設定檔]  。
-3. 在 [建立設定檔]  窗格中，設定下列值︰
+2. 在 [Intune]  窗格中，選擇 [用戶端應用程式]   > [iOS 應用程式佈建設定檔]   > [建立設定檔]  。
+3. 在 [基本]  頁面上，新增下列值：
     - **名稱** - 提供此行動佈建設定檔的名稱。
     - [描述]  - 提供原則的描述 (選擇性)。
     - **上傳設定檔** - 選擇 [開啟]  圖示，然後選擇您從 [Apple 開發人員網站](https://developer.apple.com/) \(英文\) 下載的 Apple 行動組態設定檔檔案 (副檔名為 `.mobileprovision`)。
-4. 完成之後，請選擇 [建立]  。
+
+   [到期日]  將會填入您在上面新增的 Apple 行動組態設定檔檔案中的值。<br>
+
+   <img alt="Create profile - Basics" src="~/apps/media/app-provisioning-profile-ios/app-provisioning-profile-ios-01.png">
+
+4. 按一下 [下一步:  範圍標籤]。<br>
+   在 [範圍標籤]  頁面上，您可以選擇性地設定範圍標籤，以決定誰可以在 Intune 中查看 iOS 應用程式佈建設定檔。 如需範圍標籤的詳細資訊，請參閱[針對分散式 IT 使用角色型存取控制和範圍標籤](../fundamentals/scope-tags.md)。
+5. 按一下 [下一步:  指派]。<br>
+   [指派]  頁面可讓您將設定檔指派給使用者和裝置。 請務必注意不論裝置是否由 Intune 管理，您都可以將設定檔指派給該裝置。
+6. 按一下 [下一步:  檢閱 + 建立]，以檢閱您針對設定檔輸入的值。
+7. 完成後，請按一下 [建立]  ，在 Intune 中建立 iOS 應用程式佈建設定檔。 
 
 ## <a name="next-steps"></a>後續步驟
 

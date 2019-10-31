@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 9e9ef9f5-1215-4df1-b690-6b21a5a631f8
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cc4c301ebc4e8dc4a26a49957d344ad52316f66a
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 4be8c383ded85dbfa9cf1c1b293bb979201ee4ab
+ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036412"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72785672"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -126,3 +127,4 @@ ms.locfileid: "72036412"
 | **裝置製造商** | 指定以分號分隔的製造商清單。 避免在多個值的清單中有空格。 這些值不會區分大小寫。 「動作」  包括： <br><ul><li>**允許指定 (封鎖非指定)** - 僅有符合指定製造商的裝置可以使用應用程式。 會封鎖所有其他裝置。 </li></ul> <ul><li>**允許指定 (抹除非指定)** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> 如需使用此設定的詳細資訊，請參閱[條件式啟動動作](app-protection-policies-access-actions.md#android-policy-settings)。 |
 | **SafetyNet 裝置證明** | 應用程式保護原則支援 Google Play Protect 的部分 API。 特別的是，此設定會在終端使用者裝置上設定 Google 的 SafetyNet 證明。 指定 [基本完整性]  或是 [基本完整性和經認證的裝置]  。 [基本完整性]  會告訴您有關裝置的一般完整性。 Root 破解的裝置、模擬器、虛擬裝置，以及具有竄改跡象的裝置都無法通過基本完整性。 [基本完整性和經認證的裝置]  會告訴您有關裝置與 Google 服務的相容性。 只有經過 Google 認證且未修改的裝置可以通過這項檢查。 「動作」  包括： <br><ul><li>**警告** - 如果裝置不符合根據所設定值的 Google SafetyNet 證明掃描，使用者會看到通知。 此通知可以關閉。 </li></ul><ul><li>**封鎖存取** - 如果裝置不符合根據所設定值的 Google SafetyNet 證明掃描，使用者會遭到封鎖存取。 </li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> </li></ul> 如需此設定相關的常見問題集，請參閱[關於 MAM 和應用程式防護的常見問題集](mam-faq.md#app-experience-on-android)。 |
 | **對應用程式進行威脅掃描** | 應用程式保護原則支援 Google Play Protect 的部分 API。 此設定尤其可確保 Google 的驗證應用程式掃描已針對終端使用者裝置開啟。 如果設定，終端使用者將會遭到封鎖存取，直到他們在其 Android 裝置上開啟 Google 的應用程式掃描為止。 「動作」  包括： <br><ul><li>**警告** - 如果裝置上的 Google 驗證應用程式掃描未開啟，使用者會看到通知。 此通知可以關閉。 </li></ul><ul><li>**封鎖存取** - 如果裝置上的 Google 驗證應用程式掃描未開啟，使用者會遭到封鎖存取。 </li></ul></li></ul> Google 驗證應用程式掃描結果會顯示在主控台中的 [可能有害的應用程式]  報表。 |
+| **允許的裝置威脅等級上限** | 應用程式保護原則可以利用 Intune-MTD 連接器。 指定使用此應用程式可接受的最大威脅等級。 威脅取決於您在終端使用者裝置上選擇的 Mobile Threat Defense (MTD) 廠商應用程式。 指定 [安全]  、[低]  、[中]  或 [高]  。 [安全]  要求裝置上沒有威脅，而且是最嚴格的可設定值，而 [高]  基本上需要作用中的 Intune 對 MTD 連線。 「動作」  包括： <br><ul><li>[封鎖存取]  - 如果終端使用者裝置上由您選擇的 Mobile Threat Defense (MTD) 廠商應用程式所決定的威脅等級不符合此需求，將會封鎖使用者進行存取。</li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。</li></ul>如需使用此設定的詳細資訊，請參閱 (##針對已取消註冊裝置上的 MTD 設定 Intune)。 |

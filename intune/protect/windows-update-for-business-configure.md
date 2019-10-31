@@ -5,21 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2019
+ms.date: 10/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: coryfe
+ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa8cc396c05150006799c1e9b86ecb63351cdb36
-ms.sourcegitcommit: 45d7c76e760c5117bf134fb57f7e248e5b6c4ad5
+ms.openlocfilehash: 1d34e44c6e046ddbc9b47bbe90900f5992df9e85
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72314711"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72584568"
 ---
 # <a name="manage-software-updates-in-intune"></a>管理 Intune 中的軟體更新
 
@@ -63,17 +64,30 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 
 ## <a name="create-and-assign-update-rings"></a>建立及指派更新通道
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 選取 [軟體更新]   > [Windows 10 更新通道]   > 建立  。
-4. 輸入名稱、描述 (選擇性)，然後選擇 [設定]  。
-5. 在 [設定]  中，設定符合您業務需求的設定。 如需可用設定的相關資訊，請參閱 [Windows 更新設定](../windows-update-settings.md)。  
-6. 完成時，選取 [確定]  。 在 [建立更新通道]  中，選取 [建立]  。 新的更新響鈴會隨即顯示在更新響鈴清單中。
-7. 若要指派通道，請在更新通道清單中選取通道，然後在 [\<通道名稱>] 索引標籤上，選擇 [指派]  。
-8. 使用 [包含]  和 [排除]  索引標籤定義要獲指派 [通道] 的群組，然後選取 [儲存]  以完成指派。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後選取 [軟體更新]   > [Windows 10 更新通道]   > [建立]  。  
+
+2. 在 [基本] 索引標籤上，指定名稱、描述 (選擇性)，然後選取 [下一步]  。  
+
+   ![建立 Windows 10 更新通道工作流程](./media/windows-update-for-business-configure/basics-tab.png)
+
+3. 在 [更新通道設定]  中，設定符合您業務需求的設定。 如需可用設定的相關資訊，請參閱 [Windows 更新設定](windows-update-settings.md)。 設定 [更新]  和 [使用者體驗]  設定之後，請選取 [下一步]  。  
+
+4. 若要將標籤套用到更新通道，請在 [範圍標籤]  索引標籤上選取 [+ 選取範圍標籤]  以開啟 [選取標籤]  窗格。  
+
+   - 在 [選取標籤]  窗格上，選擇一或多個標籤，然後按一下 [選取]  以將它們新增到更新通道並返回 [範圍標籤]  窗格。  
+
+   當就緒時，請選取 [下一步]  以繼續到 [指派]  。 
+
+5. 在 [指派]  索引標籤上，選擇 [+ 選取要納入的群組]  ，然後將更新通道指派給一或多個群組。 使用 [+ 選取要排除的群組]  以微調指派。 選取 [下一步]  以繼續進行操作。  
+
+6. 在 [檢閱 + 建立]  索引標籤上，檢閱設定，並在準備儲存您的 Windows 10 更新原則時選取 [建立]  。 新的更新通道會隨即顯示在更新通道清單中。
 
 ## <a name="manage-your-windows-10-update-rings"></a>管理 Windows 10 更新通道
-在入口網站中，您可以選取 Windows 10 更新通道以開啟其 [概觀]  窗格。 您可以從此窗格檢視通道指派狀態，並採取其他動作來管理通道。 
+
+在入口網站中，您可以選取 Windows 10 更新通道以開啟其 [概觀]  窗格。 您可以從此窗格檢視通道指派狀態，並採取其他動作來管理通道。
+
 ### <a name="to-view-an-updates-rings-overview-pane"></a>若要檢視更新通道的 [概觀] 窗格： 
+
 1. 登入 Azure 入口網站。
 2. 瀏覽至 [Intune]   > [軟體更新]   > [Windows 10 更新通道]  。
 3. 選取您要檢視或管理的更新通道。  
@@ -88,18 +102,22 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 ![可執行的動作](./media/windows-update-for-business-configure/overview-actions.png)
 
 ### <a name="delete"></a>刪除  
+
 選取 [刪除]  可停止強制執行所選 Windows 10 更新通道的設定。 刪除通道會從 Intune 移除其設定，讓 Intune 不再適用，並強制執行這些設定。  
 
 從 Intune 刪除通道不會修改已獲指派更新通道之裝置上的設定。  相反地，裝置會保留其目前的設定。 裝置不會維持它們先前曾保存之設定的歷史記錄。 裝置也可以從維持作用中的額外更新通道接收設定。  
 
 #### <a name="to-delete-a-ring"></a>若要刪除通道  
+
 1. 檢視更新通道的 [概觀] 頁面時，選取 [刪除]  。  
 2. 選取 [確定]  。  
 
 ### <a name="pause"></a>暫停  
+
 選取 [暫停]  可以從您暫停通道起，防止獲指派的裝置接收功能更新或品質更新最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 在這次掃描後，您可以再一次暫停更新。 如果您繼續使用已暫停的更新通道，然後再次暫停該通道，則暫停期間會重設為 35 天。  
 
 #### <a name="to-pause-a-ring"></a>若要暫停通道  
+
 1. 檢視更新通道的 [概觀] 頁面時，選取 [暫停]  。  
 2. 選取 [功能]  或 [品質]  可暫停該類型的更新，然後選取 [確定]  。  
 3. 暫停一個更新類型之後，您可以再次選取 [暫停] 以暫停其他更新類型。  
@@ -110,22 +128,27 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 > 當您發出暫停命令時，裝置會在下次簽入服務時收到此命令。 也有可能在確認更新之前，就已經執行排定的更新。 此外，當您發出暫停命令時如果目標裝置已關閉，當您開啟裝置時，它可能會下載並安裝排定的更新，然後再去向 Intune 確認。
 
 ### <a name="resume"></a>繼續  
+
 當更新通道遭到暫停時，您可以選取 [繼續]  ，將該通道的功能與品質更新還原為作用中的作業。 繼續某個更新通道之後，您可以再次暫停該通道。  
 
 #### <a name="to-resume-a-ring"></a>若要繼續通道  
+
 1. 檢視已暫停之更新通道的 [概觀] 頁面時，選取 [繼續]  。  
 2. 從可用的選項中選取，以繼續執行 [功能]  或 [品質]  更新，然後選取 [確定]  。  
 3. 繼續一個更新類型之後，您可以再次選取 [繼續] 以繼續其他更新類型。  
 
 ### <a name="extend"></a>擴充  
+
 當更新通道遭到暫停時，您可以選取 [延長]  ，將該更新通道之功能與品質更新的暫停期間重設為 35 天。  
 
 #### <a name="to-extend-the-pause-period-for-a-ring"></a>若要延長通道的暫停期間  
+
 1. 檢視已暫停之更新通道的 [概觀] 頁面時，選取 [延長]  。 
 2. 從可用的選項中選取，以繼續執行 [功能]  或 [品質]  更新，然後選取 [確定]  。  
 3. 延長一個更新類型的暫停期間之後，您可以再次選取 [延長] 來延長其他更新類型。  
 
 ### <a name="uninstall"></a>解除安裝  
+
 Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫停的更新通道，解除安裝 (回復) 最新的*功能*更新或最新的*品質*更新。 解除安裝一個類型之後，您可以再解除安裝其他類型。 Intune 不支援或管理使用者解除安裝更新的能力。  
 
 > [!IMPORTANT] 
@@ -148,19 +171,21 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 
 - 若是功能更新，具體來說，您可以解除安裝功能更新的時間僅限於 2-60 天，這是更新通道的更新設定 [設定功能更新解除安裝期間 (2 到 60 天)]  所設定的。 若功能更新安裝的時間已超過所設定的解除安裝期間，您就無法復原已安裝在裝置上的功能更新。  
 
-  例如，假設更新通道具有 20 天的功能更新解除安裝期間。 在 25 天之後，您決定要復原上次的功能更新，並使用 [解除安裝] 選項。  已安裝功能更新超過 20 天的裝置無法解除安裝，因為它們已在維護時移除了必要的位元。 不過，僅安裝功能更新 19 天的裝置，只要它們在尚未超過 20 天的解除安裝期間成功簽入以接收解除安裝命令，就可以將更新解除安裝。  
+  例如，假設更新通道具有 20 天的功能更新解除安裝期間。 在 25 天之後，您決定要復原上次的功能更新，並使用 [解除安裝] 選項。  已安裝功能更新超過 20 天的裝置無法解除安裝，因為它們已在維護時移除了必要的位元。 不過，僅安裝功能更新 19 天的裝置，只要在尚未超過 20 天的解除安裝期間成功簽入以接收解除安裝命令，就可以解除安裝更新。  
 
 如需有關 Windows Update 原則的詳細資訊，請參閱 Windows 用戶端管理文件中的[更新 CSP](https://docs.microsoft.com/windows/client-management/mdm/update-csp)。  
 
 #### <a name="to-uninstall-the-latest-windows-10-update"></a>若要解除安裝最新的 Windows 10 更新  
+
 1. 檢視已暫停之更新通道的 [概觀] 頁面時，選取 [解除安裝]  。  
 2. 從可用的選項中選取，以解除安裝 [功能]  或 [品質]  更新，然後選取 [確定]  。  
 3. 觸發一個更新類型的解除安裝之後，您可以再次選取 [解除安裝] 以解除安裝剩餘的更新類型。  
 
 ## <a name="migrate-update-settings-to-the-azure-portal"></a>將更新設定移轉至 Azure 入口網站  
+
 Azure 傳統入口網站在裝置組態設定檔中也有一些其他 Windows 10 更新設定。 如果您在移轉至 Azure 入口網站時設定了這其中任何設定，則強烈建議您執行下列動作：  
 
-1. 在 Azure 入口網站上，以您需要的設定建立 Windows 10 更新響鈴。 Azure 入口網站已不再支援 [允許發行前版本功能]  設定，因其不再適用於最新的 Windows 10 組建。 當您建立更新響鈴時，可以設定另外三個設定，以及其他 Windows 10 更新設定。  
+1. 在 Azure 入口網站上，以您需要的設定建立 Windows 10 更新響鈴。 Azure 入口網站已不再支援 [允許發行前版本功能]  設定，因其不再適用於最新的 Windows 10 組建。 當您建立更新通道時，可以設定另外三個設定，以及其他 Windows 10 更新設定。  
 
    > [!NOTE]  
    > 移轉之後，在傳統入口網站中建立的 Windows 10 更新設定不會顯示在 Azure 入口網站中。 不過，系統會套用這些設定。 如果您移轉這當中的任何設定，並從 Azure 入口網站中編輯所移轉的原則，系統就會將這些設定從原則中移除。  
@@ -168,6 +193,7 @@ Azure 傳統入口網站在裝置組態設定檔中也有一些其他 Windows 10
 2. 刪除傳統入口網站中的更新設定。 移轉至 Azure 入口網站並將相同設定新增至更新通道之後，您必須在傳統入口網站中刪除這些設定，以避免任何可能發生的原則衝突。 例如，當相同的設定具有不同的設定值時，就會發生衝突。 您很難得知此狀況，因為在傳統入口網站中設定的設定不會顯示在 Azure 入口網站中。  
 
 ## <a name="next-steps"></a>後續步驟
+
 [Intune 支援的 Windows 更新設定](../windows-update-settings.md)  
 
 [更新的 Intune 合規性報表](../windows-update-compliance-reports.md)

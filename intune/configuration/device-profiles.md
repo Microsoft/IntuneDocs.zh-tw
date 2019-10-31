@@ -5,23 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: karthib
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afdb365d0ed88a58028287cc7010bb334e9001e
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 7c49445800f5d34fbb6ce0a845d4f29c3e587483
+ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036438"
+ms.lasthandoff: 10/22/2019
+ms.locfileid: "72749348"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中使用裝置設定檔將功能和設定套用至您的裝置
 
@@ -48,7 +49,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 這項功能支援：
 
-- Windows 10 及更新版本
+- Windows 10 1809 和更新版本 (在支援的韌體上)。
 
 ## <a name="certificates"></a>憑證
 
@@ -66,7 +67,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 ## <a name="custom-profile"></a>自訂設定檔
 
-[自訂設定](../custom-settings-configure.md)可讓系統管理員指派非 Intune 中內建的裝置設定。 您可以在 Android 裝置上輸入 OMA-URI 值。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。
+[自訂設定](custom-settings-configure.md)可讓系統管理員指派非 Intune 中內建的裝置設定。 您可以在 Android 裝置上輸入 OMA-URI 值。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。
 
 這項功能支援：
 
@@ -78,7 +79,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 ## <a name="delivery-optimization"></a>傳遞最佳化
 
-[傳遞最佳化](../delivery-optimization-windows.md) 提供傳遞軟體更新的更棒體驗。 這些設定將取代 [軟體更新]   > [Windows 10 更新通道]  設定。
+[傳遞最佳化](delivery-optimization-windows.md) 提供傳遞軟體更新的更棒體驗。 這些設定將取代 [軟體更新]   > [Windows 10 更新通道]  設定。
 
 使用這些設定來控制軟體更新如何下載到您組織中的裝置。 例如，您可以讓使用者取得其自己的更新，或在裝置設定檔中使用傳遞最佳化雲端服務取得更新。
 
@@ -88,12 +89,20 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 ## <a name="device-features"></a>裝置功能
 
-[裝置功能](../device-features-configure.md)控制 iOS 和 macOS 裝置上的功能，例如 AirPrint、通知和鎖定畫面訊息。
+[裝置功能](device-features-configure.md)控制 iOS 和 macOS 裝置上的功能，例如 AirPrint、通知和鎖定畫面訊息。
 
 這項功能支援：
 
 - iOS/iPadOS
 - macOS
+
+## <a name="device-firmware-configuration-interface"></a>裝置韌體設定介面
+
+[裝置韌體設定介面](device-firmware-configuration-interface-windows.md) (DFCI) 可讓系統管理員使用 Intune 啟用或停用 UEFI (BIOS) 設定。 使用這些設定來強化韌體層級的安全性，此做法通常會對惡意攻擊更具復原性。
+
+這項功能支援：
+
+- Windows 10 及更新版本
 
 ## <a name="device-restrictions"></a>裝置限制
 
@@ -210,9 +219,9 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 
 ## <a name="update-policies"></a>更新原則
 
-[iOS 更新原則](../software-updates-ios.md)示範如何建立及指派 iOS 原則，以將軟體更新安裝在 iOS 裝置上。 您也可以檢閱安裝狀態。
+[iOS 更新原則](../protect/software-updates-ios.md)示範如何建立及指派 iOS 原則，以將軟體更新安裝在 iOS 裝置上。 您也可以檢閱安裝狀態。
 
-如需 Windows 裝置上的更新原則，請參閱[傳遞最佳化](../delivery-optimization-windows.md)。 
+如需 Windows 裝置上的更新原則，請參閱[傳遞最佳化](delivery-optimization-windows.md)。 
 
 這項功能支援：
 
@@ -265,7 +274,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 
 ## <a name="manage-and-troubleshoot"></a>管理及疑難排解
 
-[管理您的設定檔](../device-profile-monitor.md)來檢查裝置的狀態，以及指派的設定檔。 也可藉由查看導致衝突的設定，以及包含這些設定的設定檔，以協助解決衝突。 [常見問題和解決方式](device-profile-troubleshoot.md)可協助系統管理員使用設定檔。 它會描述刪除設定檔時會發生什麼情況，哪些狀況會導致傳送通知至裝置，以及更多事項。
+[管理您的設定檔](device-profile-monitor.md)來檢查裝置的狀態，以及指派的設定檔。 也可藉由查看導致衝突的設定，以及包含這些設定的設定檔，以協助解決衝突。 [常見問題和解決方式](device-profile-troubleshoot.md)可協助系統管理員使用設定檔。 它會描述刪除設定檔時會發生什麼情況，哪些狀況會導致傳送通知至裝置，以及更多事項。
 
 ## <a name="next-steps"></a>後續步驟
 

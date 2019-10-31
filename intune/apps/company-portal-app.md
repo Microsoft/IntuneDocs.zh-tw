@@ -6,9 +6,10 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 10/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: dec6f258-ee1b-4824-bf66-29053051a1ae
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 419fd15f747c8b41377f3aca94c4b96d7c4910c1
-ms.sourcegitcommit: b8127c7a62d9ac4d0f768980fa1424567bb58733
+ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/15/2019
-ms.locfileid: "72350013"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585016"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -128,6 +129,14 @@ ms.locfileid: "72350013"
 - 接受 [預設]  以使用顯示的清單，或
 - 選擇 [自訂]  ，以自訂貴組織無法在受控 iOS 裝置上查看或執行的項目。 您可以使用 [Markdown](https://daringfireball.net/projects/markdown/) \(英文\) 來加入項目符號、粗體、斜體和連結。
 
+## <a name="company-portal-derived-credentials-for-ios-devices"></a>適用於 iOS 裝置的公司入口網站衍生認證
+Intune 支援個人識別驗證 (PIV) 和一般存取卡 (CAC) 衍生認證，與認證提供者 DISA Purebred、Entrust Datacard 和 Intercede 合作。 終端使用者將會完成其 iOS 裝置註冊後的其他步驟，以在公司入口網站應用程式中驗證其身分識別。 系統會先為您的租使用者設定認證提供者，並針對使用者或裝置將使用衍生認證的設定檔設為目標，以啟用衍生認證。
+
+> [!NOTE]
+> 使用者會根據您透過 Intune 指定的連結，看到衍生認證的相關指示。
+
+如需 iOS 裝置之衍生認證的詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](~/protect/derived-credentials.md)。
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司入口網站鍵盤快速鍵
 
 終端使用者可以在 Windows 公司入口網站中使用鍵盤快速鍵觸發導覽、應用程式與裝置動作。
@@ -171,21 +180,25 @@ ms.locfileid: "72350013"
 
 某些平台和設定不允許自助裝置動作。 下表提供自助動作的進一步詳細資料：
 
-|     平台    |    淘汰    |    抹除     |    重新命名<sup>(4)</sup>    |    同步    |    遠端鎖定    |    重設密碼    |    金鑰修復    |
-|------------------------|--------------------|--------------------|-----------------|-----------------|--------------------------|--------------------------|--------------------|
-|    Windows 10<sup>(3)</sup>    |    可用<sup>(1)</sup>    |    可用    |    可用    |    可用    |    僅限 Windows Phone    |    僅限 Windows Phone    |    NA    |
-|    iOS<sup>(3)</sup>    |    可用    |    可用    |    可用    |    可用    |    可用    |    可用    |    NA    |
-|    MacOS<sup>(3)</sup><sup>(5)</sup>    |    可用    |    NA    |    可用    |    可用    |    可用    |    NA    |    可用<sup>(2)</sup>    |
-|    Android<sup>(3)</sup>    |    可用<sup>(7)</sup>    |    可用<sup>(7)</sup>    |    可用    |    可用    |    可用    |    可用<sup>(6)</sup>    |    NA    |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
+| 淘汰 | 可用<sup>(1)</sup> | 可用<sup>(8)</sup> | 可用 | 可用<sup>(7)</sup> |
+| 抹除 | 可用 | 可用 | NA | 可用<sup>(7)</sup> |
+| 重新命名<sup>(4)</sup> | 可用 | 可用<sup>(8)</sup> | 可用 | 可用 |
+| 同步 | 可用 | 可用 | 可用 | 可用 |
+| 遠端鎖定 | 僅限 Windows Phone | 可用 | 可用 | 可用 |
+| 重設密碼 | 僅限 Windows Phone | 可用 | NA | 可用<sup>(6)</sup> |
+| 金鑰修復 | NA | NA | 可用<sup>(2)</sup> | NA |
+| 深色模式 | NA | 可用 | NA | NA |
 
-
-<sup>(1)</sup> 在已加入 Azure AD 的 Windows 裝置上，一律會封鎖淘汰。<br>
-<sup>(2)</sup> macOS 的個人金鑰復原只能透過「公司入口網站」網站執行。<br> 
+<sup>(1)</sup> 在已加入 Azure AD 的 Windows 裝置上，一律會封鎖**淘汰**。<br>
+<sup>(2)</sup> 只有透過 Web 入口網站才能使用 MacOS 的**金鑰復原**。<br>
 <sup>(3)</sup> 如果使用裝置註冊管理員註冊，則會停用所有遠端動作。<br>
-<sup>(4)</sup> 重新命名只會變更公司入口網站應用程式或網站中的裝置名稱，而非裝置上的裝置名稱。<br>
-<sup>(5)</sup> MacOS 裝置上無法使用遠端抹除。<br>
-<sup>(6)</sup> 在某些 Android 和 Android Enterprise 設定上不支援密碼重設。 如需詳細資訊，請參閱[在 Intune 中重設或移除裝置密碼](../remote-actions/device-passcode-reset.md)。<br>
-<sup>(7)</sup> 淘汰和抹除不適用於 Android Enterprise 裝置擁有者案例 (COPE、COBO、COSU)。<br> 
+<sup>(4)</sup> **重新命名**只會變更公司入口網站應用程式或網站中的裝置名稱，而非裝置上的裝置名稱。<br>
+<sup>(5)</sup> MacOS 裝置上無法使用**遠端抹除**。<br>
+<sup>(6)</sup> 在某些 Android 和 Android Enterprise 設定上不支援**密碼重設**。 如需詳細資訊，請參閱[在 Intune 中重設或移除裝置密碼](../remote-actions/device-passcode-reset.md)。<br>
+<sup>(7)</sup> **淘汰**和**抹除**不適用於 Android Enterprise 裝置擁有者案例 (COPE、COBO、COSU)。<br> 
+<sup>(8)</sup> **淘汰** (移除裝置) 和**重新命名**適用於所有類型的註冊。 使用者註冊不支援其他動作。<br> 
 
 ## <a name="next-steps"></a>後續步驟
 

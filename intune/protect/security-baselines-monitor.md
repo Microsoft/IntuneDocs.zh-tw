@@ -8,6 +8,7 @@ manager: dougeby
 ms.date: 06/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -15,12 +16,12 @@ ms.reviewer: joglocke
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b16b4ee95647b3bb182af075bbe7f7aad71351f0
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 9c4d47a11f07a2099d79f5ce4ce90795a087718b
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726800"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681468"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視安全性基準和設定檔  
 
@@ -59,7 +60,7 @@ Intune 提供數個用來監視安全性基準的選項。 您可以監視適用
 您可以按一下圖表，以鑽研及檢視具有各種狀態的裝置清單。 您接著可以從該清單選取個別裝置，以檢視有關個別裝置的詳細資料。 例如：
 - 選取 [裝置設定]  > 選取具有 [錯誤] 狀態的設定檔：
 
-  ![檢查裝置的狀態](./media/security-baselines-monitor/device-configuration-profile-list.png)
+  ![檢視設定檔的狀態](./media/security-baselines-monitor/device-configuration-profile-list.png)
 
 - 選取 [錯誤] 設定檔。 隨即會顯示該設定檔中的所有設定及其狀態。 現在，您可以捲動來尋找造成錯誤的設定：
 

@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 10/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: apps
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f81c5f82-5cfa-4b97-9f73-d6cf77c06896
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c2b20030bd6c7e1dc9108002cc43f105cb8c6784
-ms.sourcegitcommit: fca2670142c083d7562c0a36547a6a451863e315
+ms.openlocfilehash: 6df77d168bb8be3775c566f63833b46130515b36
+ms.sourcegitcommit: 5807f4db4a45a093ce2fd6cb0c480bec384ec1ff
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/08/2019
-ms.locfileid: "72036470"
+ms.lasthandoff: 10/19/2019
+ms.locfileid: "72601571"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
@@ -82,12 +83,12 @@ ms.locfileid: "72036470"
 
    > [!NOTE]
    > 若要讓 Intune 服務成功地將新的 APPX 檔案部署到裝置，您必須對 APPX 套件內 AppxManifest.xml 檔案中的 `Version` 字串進行遞增處理。
-    
+
 ## <a name="configure-a-self-updating-mobile-msi-app-to-ignore-the-version-check-process"></a>設定自行更新行動 MSI 應用程式略過版本檢查程序
 
-您可以設定已知的自行更新行動 MSI 應用程式略過版本檢查程序。 
+您可以設定已知的自行更新行動 MSI 應用程式略過版本檢查程序。
 
-應用程式開發人員會自動更新某些 MSI 安裝程式應用程式。 對於這些自動更新的 MSI 應用程式，您可以在 [應用程式資訊]  窗格中設定 [略過應用程式版本]  設定。 當您將此設定切換為 [是]  時，Microsoft Intune 不會強制執行 Windows 用戶端上安裝的應用程式版本。 
+應用程式開發人員或其他更新方法會自動更新某些 MSI 安裝程式應用程式。 對於這些自動更新的 MSI 應用程式，您可以在 [應用程式資訊]  窗格中設定 [略過應用程式版本]  設定。 當您將此設定切換為 [是]  時，Microsoft Intune 不會強制執行 Windows 用戶端上安裝的應用程式版本。
 
 這項功能對於不陷入競爭狀況很有用。 例如，本應該由應用程式開發人員自動更新的應用程式，卻由 Intune 來進行更新，這時候就會發生競爭狀況。 二者或許想在 Windows 用戶端上強制執行某一版的應用程式，這樣就會發生衝突。
 

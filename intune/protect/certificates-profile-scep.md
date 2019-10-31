@@ -5,10 +5,10 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
-ms.topic: article
-ms.prod: ''
+ms.date: 10/18/2019
+ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.reviewer: lacranda
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8e6b9f7d6aeda219af0f0cf3d0f5c34a3f03d258
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 4e28db0d24101ae65ff8c5e49febd0ff5dddc6e2
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722887"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585425"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中建立並指派 SCEP 憑證設定檔
 
@@ -50,7 +50,7 @@ ms.locfileid: "71722887"
 
    2. 在 [監視] 下方，憑證報告不適用於「裝置擁有者」SCEP 憑證設定檔。
    
-   3. 不支援透過 Intune 來撤銷由適用於「裝置擁有者」的 SCEP 憑證設定檔所佈建的憑證，但可透過外部程序或直接透過憑證授權單位來管理。
+   3. 您無法使用 Intune 撤銷由 SCEP 憑證設定檔為裝置擁有者所佈建的憑證。 您可以透過外部程序或直接使用憑證授權單位單位來管理撤銷。 
 
 6. 選取 [設定]  ，然後完成下列設定：
 
@@ -113,15 +113,13 @@ ms.locfileid: "71722887"
         - **{{DeviceName}}**
         - **{{FullyQualifiedDomainName}}** *(僅適用於 Windows 和已加入網域的裝置)*
         - **{{MEID}}**
-        
+
         您可以在文字方塊中指定這些變數，後接變數的文字。 例如，名為 *Device1* 的裝置一般名稱可以新增為 **CN={{DeviceName}}Device1**。
 
         > [!IMPORTANT]  
         > - 當您指定變數時，請將變數名稱括在大括弧 { } 中 (如範例所示)，以避免發生錯誤。  
         > - 裝置憑證的「主體」  或 *SAN* 中所使用裝置屬性 (例如 **IMEI**、**SerialNumber** 和 **FullyQualifiedDomainName**)，這些屬性可由具有裝置存取權的人員來偽造。
         > - 裝置必須支援憑證設定檔中指定的所有變數，才能在該裝置上安裝該設定檔。  例如，如果 SCEP 設定檔的主體名稱中使用 **{{IMEI}}** ，但該設定檔指派給沒有 IMEI 編號的裝置，則設定檔安裝將會失敗。  
- 
-
 
    - **主體別名**：  
      選取 Intune 在憑證要求中自動建立主體別名 (SAN) 的方式。 SAN 的選項取決於所選憑證類型 ([使用者]  或 [裝置]  )。  
@@ -198,15 +196,15 @@ ms.locfileid: "71722887"
      針對憑證的使用目的新增值。 在大部分情況下，憑證需要「用戶端驗證」  ，使用者或裝置才能向伺服器進行驗證。 您可以視需要新增其他金鑰使用方法。
 
    - **更新閾值 (%)** ：  
-     輸入裝置要求更新憑證之前，剩餘的憑證存留時間百分比。 例如，如果您輸入 20，則在憑證 80% 過期時會嘗試更新憑證，並繼續嘗試直到更新成功為止。 更新會產生新的憑證，而這會產生新的公開/私密金鑰組。
+     輸入裝置要求更新憑證之前，剩餘的憑證存留時間百分比。 例如，如果您輸入 20，則憑證會在 80% 過期時會嘗試更新。 系統會繼續嘗試更新，直到更新成功。 更新會產生新的憑證，而這會產生新的公開/私密金鑰組。
 
    - **SCEP 伺服器 URL**：  
-     輸入一或多個透過 SCEP 發行憑證的 NDES 伺服器 URL。 例如，輸入類似 *https://ndes.contoso.com/certsrv/mscep/mscep.dll* 的內容。 您可以視需要新增額外的 SCEP URL 來進行負載平衡，因為 URL 會隨機推送至具有設定檔的裝置。 如果其中一個 SCEP 伺服器不可用，則 SCEP 要求將會失敗，且可能會在後續裝置簽入中對已關閉的相同伺服器提出憑證要求。
+     輸入一或多個透過 SCEP 發行憑證的 NDES 伺服器 URL。 例如，輸入類似 *https://ndes.contoso.com/certsrv/mscep/mscep.dll* 的內容。 您可以視需要新增額外的 SCEP URL 來進行負載平衡，因為 URL 會隨機推送至具有設定檔的裝置。 如果其中一個 SCEP 伺服器不可用，則 SCEP 要求將會失敗，且可能會在稍後的裝置簽入中對已關閉的相同伺服器提出憑證要求。
 
 7. 選取 [確定]  ，然後選取 [建立]  。 設定檔隨即建立，並會出現在 [裝置設定 - 設定檔]  清單上。
 
 ### <a name="avoid-certificate-signing-requests-with-escaped-special-characters"></a>避免使用具有已逸出之特殊字元的憑證簽署要求
-當 SCEP 憑證要求包含具有一或多個下列特殊字元作為逸出字元的主體名稱 (CN) 時，有一個已知問題。 包含其中一個特殊字元作為逸出字元的主體名稱會導致 CSR 的主體名稱不正確，進而導致 Intune SCEP 挑戰驗證失敗且不會簽發任何憑證。  
+當 SCEP 和 PKCS 憑證要求包含具有一或多個下列特殊字元作為逸出字元的主體名稱 (CN) 時，有一個已知問題。 包含其中一個特殊字元作為逸出字元的主體名稱會導致 CSR 的主體名稱不正確。 不正確的主體名稱會導致 Intune SCEP 挑戰驗證失敗，且不會簽發任何憑證。
 
 特殊字元為：
 - \+

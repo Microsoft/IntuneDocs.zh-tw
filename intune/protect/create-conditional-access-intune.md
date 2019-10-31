@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 02/22/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
@@ -16,12 +17,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e27997b45f0a68f6eb9247c69fafc363787fb457
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: b775bb09c289733cdc2837984874b7c1c7e286bc
+ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71722588"
+ms.lasthandoff: 10/21/2019
+ms.locfileid: "72681376"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>建立裝置型條件式存取原則
 
@@ -61,7 +62,7 @@ ms.locfileid: "71722588"
 
     - **選取應用程式**：選取此選項，選擇 [選取]  ，然後使用應用程式清單來搜尋並選取您要保護的應用程式或服務。
     
-      ![建立新的條件式存取原則](./media/create-conditional-access-intune/create-ca-select-apps.png)
+      ![設定條件式存取原則的指派](./media/create-conditional-access-intune/create-ca-select-apps.png)
 
 7. 選取 [完成]  。
 8. 在 [指派]  底下，選取 [條件]  。
@@ -71,7 +72,7 @@ ms.locfileid: "71722588"
     - **用戶端應用程式**：選擇 [是]  以指定原則應套用至瀏覽器應用程式、行動裝置應用程式和桌面用戶端。 您也可以選取 [新式驗證用戶端]  \(例如 iOS 版 Outlook 或 Android 版 Outlook\) 和 [Exchange ActiveSync 用戶端]  。
     - **裝置狀態**：除非您選擇 [是]，並特別排除狀態「已加入裝置混合式 Azure AD」或「標示為符合規範的裝置」(或兩者)，否則，條件式存取原則將套用至所有裝置狀態。
     
-      ![建立新的條件式存取原則](./media/create-conditional-access-intune/create-ca-device-platforms.png)
+      ![設定條件式存取原則的條件](./media/create-conditional-access-intune/create-ca-device-platforms.png)
 
       > [!TIP]  
       > 如果您想要保護**新式驗證**用戶端和 **Exchange ActiveSync 用戶端**，請建立兩個不同的條件式存取原則，每個用戶端類型各一個。 雖然 Exchange ActiveSync 支援新式驗證，但 Exchange ActiveSync 支援的唯一條件是平台。 不支援其他條件 (包含多重要素驗證)。 若要有效地保護從 Exchange ActiveSync 存取 Exchange Online，請建立條件式存取原則，選取 [僅將原則套用至支援的平台]，來指定雲端應用程式 Office 365 Exchange Online 和用戶端應用程式 Exchange ActiveSync。
