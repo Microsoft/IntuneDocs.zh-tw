@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b61281b0e82bcb839efdc31726d398eea08c364f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502198"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810216"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>設定與 Intune 的 Lookout Mobile Endpoint Security 整合
 透過符合[必要條件](lookout-mobile-threat-defense-connector.md#prerequisites)的環境，您可以將 Lookout Mobile Endpoint Security 與 Intune 整合。 本文的資訊將引導您設定整合，並設定 Lookout 中的重要設定以便與 Intune 搭配使用。  
@@ -69,6 +69,9 @@ ms.locfileid: "72502198"
    收集此資訊之後，請連絡 Lookout 支援 (電子郵件︰enterprisesupport@lookout.com)。 Lookout 支援將與您的主要連絡人合作來登錄您的訂用帳戶，並使用您提供的資訊來建立 Lookout Enterprise 帳戶。  
 
 ## <a name="configure-your-lookout-subscription"></a>設定 Lookout 訂用帳戶  
+
+在 Lookout Enterprise 管理員主控台中完成下列步驟，會讓 Lookout Enterprise 的服務連線到已註冊 Intune 的裝置 (透過裝置合規性)，**以及**尚未註冊的裝置 (透過應用程式防護原則)。
+
 當 Lookout 支援建立您的 Lookout Enterprise 帳戶之後，Lookout 支援會傳送電子郵件給貴公司的主要連絡人，其中提供登入 URL 的連結： https://aad.lookout.com/les?action=consent 。 
 
 ### <a name="initial-sign-in"></a>初始登入  
@@ -110,20 +113,7 @@ ms.locfileid: "72502198"
 6. 選取 [建立連接器]  以完成連接器設定。 稍後，當您對結果感到滿意時，即可將註冊擴展到其他使用者群組。
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>設定 Intune 以使用 Lookout 作為 Mobile Threat Defense 提供者
-當您設定 Lookout MES 之後，必須在 Intune 中設定與 Lookout 的連線。  
-
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-
-2. 移至 [裝置合規性]   > [Mobile Threat Defense]  ，然後選取 [新增]  。
-
-3. 在 [新增連接器]  窗格上使用下拉式清單，然後選取 [Lookout for Work]  。  
-
-4. 選取 [建立]  。 當連接器建立與 Lookout MES 的聯繫之後，[連接器設定]  就會變成可用狀態。
-
-5. 將 [為 iOS 裝置啟用應用程式同步]  設定為 [開啟]  。 
-
-6. 選取 [儲存]  以完成設定。  Intune 和 Lookout MES 現已整合且可供使用。
-
+當您設定 Lookout MES 之後，必須[在 Intune 中設定與 Lookout 的連線](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)。  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Lookout MES 主控台中的其他設定
 以下是您可以在 Lookout MES 主控台中設定的其他設定。  
@@ -146,8 +136,6 @@ ms.locfileid: "72502198"
 
   ![顯示使用者帳戶喜好設定頁面的螢幕擷取畫面](./media/lookout-mtd-connector-integration/lookout-mtp-email-notifications.png)
 
-
-
 ## <a name="configure-threat-classifications"></a>設定威脅分類  
 Lookout Mobile Endpoint Security 會將各種類型的行動裝置威脅進行分類。 Lookout 威脅分類具有相關聯的預設風險層級。 隨時都能變更風險層級，以符合貴公司的需求。
 
@@ -167,4 +155,5 @@ Lookout Mobile Endpoint Security 會將各種類型的行動裝置威脅進行�
 
 ## <a name="next-steps"></a>後續步驟
 
-[設定 Lookout 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [針對尚未註冊的裝置設定 Lookout 行動應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [針對尚未註冊的裝置設定 Lookout 行動應用程式](~/protect/mtd-add-apps-unenrolled-devices.md)

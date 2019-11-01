@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1a1c03dc480ad66de22b4a5ee44a9b8c221980c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: edc884850b70ff7621224c5b01a68d016f27504e
+ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503384"
+ms.lasthandoff: 10/25/2019
+ms.locfileid: "72923383"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>設定 Android Enterprise 專用裝置的 Intune 註冊
 
@@ -78,7 +78,7 @@ Intune 可協助您將應用程式和設定部署至 Android Enterprise 專用�
 4. 在 [動態成員資格規則]  刀鋒視窗中填寫欄位，如下所示：
     - **新增動態成員資格規則**：簡易規則
     - **新增裝置，其中**：enrollmentProfileName
-    - 在中間方塊中，選擇 [比對]  。
+    - 在中間方塊中，選擇 [等於]  。
     - 在最後一個欄位中，輸入您稍早建立的註冊設定檔名稱。
     如需動態成員資格規則的詳細資訊，請參閱 [AAD 中群組的動態成員資格規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership)。 
 5. 選擇 [新增查詢]   > [建立]  。

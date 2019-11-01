@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9faf34a9b417962e412eaa730cf91cd821ff7eb6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0528ec962165f358b35afce98f58c8b9b4efe93c
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509629"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810333"
 ---
 # <a name="integrate-better-mobile-with-intune"></a>整合 Better Mobile 與 Intune
 
@@ -28,8 +28,7 @@ ms.locfileid: "72509629"
 
 ## <a name="before-you-begin"></a>開始之前
 
-> [!NOTE]
-> 下列步驟必須在 [Better Mobile 管理主控台](https://aad.bmobi.net)中完成。
+在 [Better Mobile 管理員主控台](https://aad.bmobi.net)中完成下列步驟，會讓 Better Mobile 的服務連線到已註冊 Intune 的裝置 (使用裝置合規性)，以及尚未註冊的裝置 (使用應用程式防護原則)。
 
 開始將 Better Mobile 與 Intune 整合之前，請確定您有下列項目：
 
@@ -76,4 +75,5 @@ Better Mobile 應用程式授權程序如下：
 
 ## <a name="next-steps"></a>後續步驟
 
-- [設定較佳的用戶端應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [針對已註冊的裝置設定 Better Mobile 行動應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [針對尚未註冊的裝置設定 Better Mobile 行動應用程式](~/protect/mtd-add-apps-unenrolled-devices.md)

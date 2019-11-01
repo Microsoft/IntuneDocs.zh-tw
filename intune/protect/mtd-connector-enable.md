@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/22/2019
+ms.date: 10/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e53f50c42e768eeb652a8602bea49c04d29364c7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4f917167baecc643e045610e86e582957e535978
+ms.sourcegitcommit: 3ace4cba6e2f6fefa9120be3807387a49b200c9b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504421"
+ms.lasthandoff: 10/23/2019
+ms.locfileid: "72810299"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune"></a>在 Intune 中啟用 Mobile Threat Defense 連接器
 
@@ -44,7 +44,7 @@ ms.locfileid: "72504421"
 若要檢視傳統條件式存取原則，請前往 [Azure](https://portal.azure.com/#home) 中的 [Azure Active Directory]   > [條件式存取]   > [傳統原則]  。
 
 
-## <a name="to-enable-the-mtd-connector"></a>啟用 MTD 連接器
+## <a name="to-enable-the-mobile-threat-defense-connector"></a>啟用 Mobile Threat Defense 連接器
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 
@@ -58,20 +58,23 @@ ms.locfileid: "72504421"
 
 7. 根據組織的需求來啟用切換選項。 可見的切換選項會根據 MTD 夥伴而不同。
 
-## <a name="mtd-toggle-options"></a>MTD 切換選項
+## <a name="mobile-threat-defense-toggle-options"></a>Mobile Threat Defense 切換選項
 
-您可以決定根據組織的需求必須啟用哪些 MTD 切換選項。 以下是更多詳細資料：
+您可以根據組織的需求決定需要啟用哪些 Mobile Threat Defense 切換選項。 以下是更多詳細資料：
 
-- **將 Android 4.1+ 裝置連線至 [MTD 合作夥伴名稱] for Work MTD**：當您啟用此選項時，可讓 Android 4.1+ 裝置將安全性風險回報給 Intune。
-  - **如果收不到任何資料，標記為不符合規範**：如果 Intune 沒有從 MTD 合作夥伴收到有關此平台上裝置的資料，則將此裝置視為不符合規範。
-<br></br>
-- **將 iOS 8.0+ 裝置連線至 [MTD 合作夥伴名稱] for Work MTD**：當您啟用此選項時，可讓 iOS 8.0+ 裝置將安全性風險回報給 Intune。
-  - **如果收不到任何資料，標記為不符合規範**：如果 Intune 沒有從 MTD 合作夥伴收到有關此平台上裝置的資料，則將此裝置視為不符合規範。
-<br></br>
+**MDM 合規性政策設定**
+- **將 Android 4.1+ 裝置連線至 *\<MTD 合作夥伴名稱>***：當您啟用此選項時，可讓 Android 4.1+ 裝置將安全性風險回報給 Intune。
+- **將 iOS 8.0+ 裝置連線至 *\<MTD 合作夥伴名稱>***：當您啟用此選項時，可讓 iOS 8.0+ 裝置將安全性風險回報給 Intune。
 - **啟用 iOS 裝置的應用程式同步**：允許此 Mobile Threat Defense 合作夥伴向 Intune 要求 iOS 應用程式的中繼資料，以針對威脅分析用途使用。
-
 - **封鎖不支援的 OS 版本**：如果裝置所執行的作業系統低於支援的最低版本，則將其封鎖。
 
+**應用程式防護原則設定**
+- **將 4.1 版和更新版本的 Android 裝置連線至 \<MTD 合作夥伴名稱>  ，以進行應用程式防護原則評估**：當您啟用此選項時，使用裝置威脅等級規則的應用程式防護原則會評估裝置，包括來自此連接器的資料。
+- **將 8.0 版和更新版本的 iOS 裝置連線至 \<MTD 合作夥伴名稱>  ，以進行應用程式防護原則評估**：當您啟用此選項時，使用裝置威脅等級規則的應用程式防護原則會評估裝置，包括來自此連接器的資料。
+
+若要深入了解如何將 Mobile Threat Defense 連接器用於 Intune 應用程式防護原則評估，請參閱[針對尚未註冊的裝置設定 Mobile Threat Defense](~/protect/mtd-enable-unenrolled-devices.md)。
+
+**一般共用設定**
 - **合作夥伴無回應前的天數**：Intune 將合作夥伴視為因連線中斷而無回應之前的閒置天數。 針對沒有回應的 MTD 合作夥伴，Intune 會忽略其合規性狀態。
 
 > [!IMPORTANT] 

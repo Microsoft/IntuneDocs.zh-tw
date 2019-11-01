@@ -9,6 +9,7 @@ manager: dougeby
 ms.date: 08/01/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
+ms.subservice: fundamentals
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 7fc95d17-098e-4da5-8a09-a96476569dd9
@@ -17,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c4d40d3f15fe23511f3f15f7c13181a0fa72f6b
-ms.sourcegitcommit: 88b6e6d70f5fa15708e640f6e20b97a442ef07c5
+ms.openlocfilehash: 91627a47f9dccfb436e64aaadeeb392648dff821
+ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/02/2019
-ms.locfileid: "71726514"
+ms.lasthandoff: 10/18/2019
+ms.locfileid: "72585303"
 ---
 # <a name="how-to-get-support-for-microsoft-intune"></a>如何取得 Microsoft Intune 支援  
 
@@ -82,12 +83,12 @@ Intune 的說明及支援體驗可以從 [Microsoft 365 裝置管理入口網站
   4. 選取 [Intune 說明及支援] 頁面的連結。
 
 > [!NOTE]  
-> 如果您的 Intune 執行個體裝載於 Azure Government 之類的政府計算雲端 (GCC) (也稱為主權雲端)，請參閱此文章稍後對於政府計算雲端的 Intune 支援。 Intune 的 [說明及支援]  體驗一直要到今年下半年才會在 GCC 上提供。 
+> 如果您的 Intune 執行個體裝載於如 Azure Government 之類的政府機構私人雲端 (也稱為主權雲端) 中，請參閱此文章章稍後的[適用於政府私人雲端的 Intune 支援](#intune-support-for-private-cloud-for-government)。 Intune 的 [說明及支援]  體驗要到今年下半年才會在政府私人雲端上提供使用。 
 
 
 當您開啟 [說明及支援]  時，入口網站會根據您是否有作用中的支援事件來顯示檢視，當您具有頂級支援時，還有一些額外的元素和選項：
 - **沒有任何作用中的支援事件**：您將看到 [需要協助嗎?]  頁面，如下列來自裝置管理儀表板的影像所示。  
-- **作用中的支援事件**：您將看到 [支援票證][](#view-support-cases) 頁面，其中會顯示您的作用中事件清單。  
+- **作用中的支援事件**：您將看到 [支援票證](#view-support-cases) 頁面，其中會顯示您的作用中事件清單。  
 - **頂級支援合約**：您的體驗會與前兩個選項相同，但您將在 [需要協助嗎?] 頁面上看到下列其他元素： 
   - 在**需要協助嗎?** 的頁面標題之後，您將看到頂級支援橫幅：  
     ![頂級支援橫幅](./media/get-support/premier-banner.png)
@@ -162,20 +163,20 @@ Intune 的說明及支援體驗可以從 [Microsoft 365 裝置管理入口網站
 
 當您使用左側瀏覽窗格的 [說明 + 支援]  ，或使用 Azure 入口網站右上角的 [?]  選項時，您會開啟 Azure 的 [說明 + 支援] 體驗，這與 Intune 的 [說明及支援] 體驗不同。  
 
-從 2019 年 4 月開始，除非您的訂用帳戶是在政府計算雲端 (GCC) 上，否則您無法存取 Azure 的 [說明 + 支援]  體驗來取得 Intune 的協助。  
+從 2019 年 4 月開始，除非您的訂用帳戶是位於政府機構的私人雲端上，否則您無法將存取 Azure 的 [說明 + 支援]  體驗來取得 Intune 上的協助。  
 
-如果您的 Intune 執行個體未在 GCC 上執行，瀏覽 Azure 的 [說明 + 支援]  會將您重新導向至 Intune 的 [說明及支援]  體驗，以建立及管理支援事件。  
+如果您的 Intune 執行個體未在政府的私人雲端上執行，瀏覽 Azure 的 [說明 + 支援]  會將您重新導向至 Intune 的 [說明及支援]  體驗，以建立及管理支援事件。  
 
 
-## <a name="intune-support-for-government-compute-cloud"></a>適用於政府計算雲端的 Intune 支援  
+## <a name="intune-support-for-private-cloud-for-government"></a>適用於政府私人雲端的 Intune 支援  
 
-當您的 Intune 訂用帳戶裝載於 Azure Government 之類的政府計算雲端 (GCC) (也稱為主權雲端) 時，您還無法存取較新的 Intune [說明及支援] 體驗。  請改用下列資訊來取得 Intune 的支援。 
+當您的 Intune 訂用帳戶裝載於如 Azure Government 的政府機構私人雲端 (也稱為主權雲端) 上時，您還無法存取較新的 Intune [說明及支援] 體驗。  請改用下列資訊來取得 Intune 的支援。 
 
 
 ### <a name="create-an-online-support-ticket"></a>建立線上支援票證 
 
 >[!IMPORTANT]    
-> 由於「說明及支援」  會轉換為尚未提供給 GCC 使用的新系統，因此，當您建立支援事件時，入口網站會識別使用 15 位數識別碼的支援案例。 建立 15 位數案例時，會建立該案例的鏡像以供 Microsoft 支援服務使用。 這個鏡像案例會建立於新的支援系統中、使用 8 位數案例識別碼，並由支援服務用來追蹤您支援事件的所有工作和通訊。 在建立 15 位數案例之後不久，您將會收到一封電子郵件，可識別支援服務所使用的 8 位數鏡像支援案例識別碼。  
+> 由於「說明及支援」  正在轉換至尚未提供給政府私人雲端使用的新系統，因此當您建立支援事件時，入口網站會識別使用 15 位數識別碼的支援案例。 建立 15 位數案例時，會建立該案例的鏡像以供 Microsoft 支援服務使用。 這個鏡像案例會建立於新的支援系統中、使用 8 位數案例識別碼，並由支援服務用來追蹤您支援事件的所有工作和通訊。 在建立 15 位數案例之後不久，您將會收到一封電子郵件，可識別支援服務所使用的 8 位數鏡像支援案例識別碼。  
 > 
 > 從 8 位數支援案例支援個人工作並進行通訊，而且只會使用 8 位數支援案例來記錄通訊並追蹤事件進度。 因此，您將收到來自該 8 位數支援案例的電子郵件更新，以用來做為您的案例-工作追蹤記錄。 不會在 15 位數支援事件中記錄任何詳細資料。 當支援終止且 8 位數支援案例關閉時，該狀態就會反映於您可在 Azure 入口網站中檢視的 15 位數支援案例。  您不應預期會對 15 位數支援案例進行任何其他更新或狀態變更。  
 > 
@@ -223,7 +224,7 @@ Intune 的說明及支援體驗可以從 [Microsoft 365 裝置管理入口網站
 2. 在 [說明 + 支援]  頁面上，您可以檢視 [最近的支援要求]  清單。
 
    > [!IMPORTANT]  
-   > 政府計算雲端客戶只能檢視 15 位數支援案例識別碼及事件狀態。 工作或警示的所有案例通訊和追蹤都會透過電子郵件傳送，並參考 8 位數支援案例識別碼，此識別碼會建立來作為從 Intune 主控台中開啟的支援案例鏡像。   
+   > 政府私人雲端客戶只能檢視 15 位數支援案例號碼，以及事件狀態。 工作或警示的所有案例通訊和追蹤都會透過電子郵件傳送，並參考 8 位數支援案例識別碼，此識別碼會建立來作為從 Intune 主控台中開啟的支援案例鏡像。   
 
 ## <a name="additional-resources"></a>其他資源  
 

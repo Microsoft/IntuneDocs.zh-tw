@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aecbcd91eef668ba2a92acfc9b42e6c68df3672a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 34a4c8adeef7e8b28c90ad38579f0f9ac7c4784d
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509431"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057533"
 ---
 # <a name="enable-lost-mode-on-ios-devices-with-intune"></a>使用 Intune 在 iOS 裝置上啟用遺失模式
 
@@ -43,8 +43,10 @@ ms.locfileid: "72509431"
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 3. 選取 [裝置]  ，然後選取 [所有裝置]  。
-4. 從您管理的裝置清單中，選擇 iOS 裝置，然後選擇 [...More] (...其他)  。 然後選擇 [遺失模式]  遠端動作。
-5. 在**遺失模式**中啟用這項功能。 然後，輸入要顯示的訊息及連絡人電話號碼。
+4. 從您管理的裝置清單中，選擇 iOS 裝置，然後選擇 [遺失模式 (僅受監督者)]  。
+5. 在 [遺失模式]  底下，選取 [啟用]  。
+6. 在 [要在鎖定畫面上顯示的訊息]  中，輸入要在裝置的鎖定畫面上顯示的訊息。
+7. 您可以選擇性地在 [要顯示的電話號碼]  方塊中輸入電話號碼。
 6. 按一下 [確定]  以儲存您的變更。
 
 當您啟用遺失模式時，就會封鎖裝置的所有用途。 使用者無法存取裝置，直到您停用遺失模式。 啟用遺失模式時，請使用 [[尋找裝置]](device-locate.md) 動作尋找裝置。

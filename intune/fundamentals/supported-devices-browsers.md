@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9fec08511303c15a7197014fd80834d95948191
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504879"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999671"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支援的作業系統與瀏覽器
 
@@ -89,6 +89,15 @@ ms.locfileid: "72504879"
 ### <a name="windows-pc-software-client"></a>Windows 電腦軟體用戶端
 
 [Intune 軟體用戶端](../manage-windows-pcs-with-microsoft-intune.md)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
+
+> [!Note]
+> Microsoft 宣告 Windows 7 支援將於 2020 年 1 月 14 日結束。 在這一天，Intune 也會淘汰執行 Windows 7 的裝置支援。
+
+> 如需詳細資訊，請參閱 [Intune 規劃變更：即將結束對 Windows 7 的支援](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+
+> Microsoft Intune 將在 2020 年 10 月 15 日淘汰對 Silverlight 型 Intune 主控台的支援。 此淘汰包括結束支援 Silverlight 主控台設定的電腦軟體用戶端 (也稱為「電腦代理程式」)
+
+> 如需詳細資訊，請參閱 [Microsoft Intune 終止支援 Silverlight 型系統管理主控台](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249) \(英文\)
 
 <!--  ### Exchange ActiveSync management
 
