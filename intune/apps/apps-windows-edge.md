@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 492feb3f2ef5f5bbbc1537d4c60ac12d5fd6bdcd
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585601"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892580"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune
 
@@ -94,7 +94,7 @@ ms.locfileid: "72585601"
 
 ## <a name="troubleshooting"></a>疑難排解
 **適用於 Windows 10 的 Microsoft Edge 77 版和更新版本：**<br>
-Intune 會使用 Intune 管理延伸模組來下載 Microsoft Edge 安裝程式，並將其部署至指派的 Windows 10 裝置，然後將部署設定傳達給 Microsoft Edge 安裝程式，以直接從 CDN 下載並安裝 Microsoft Edge 瀏覽器。 參考 [Intune 管理延伸模組的必要條件](~/apps/intune-management-extension.md#prerequisites)，以及存取 Azure 更新服務和 CDN 中所述的最佳做法，以確保您的網路設定允許 Windows 10 裝置存取這些位置。
+Intune 會使用 Intune 管理延伸模組來下載 Microsoft Edge 安裝程式，並將其部署至指派的 Windows 10 裝置，然後將部署設定傳達給 Microsoft Edge 安裝程式，以直接從 CDN 下載並安裝 Microsoft Edge 瀏覽器。 參考 [Intune 管理延伸模組的必要條件](~/apps/intune-management-extension.md#prerequisites)，以及存取 Azure 更新服務和 CDN 中所述的最佳做法，以確保您的網路設定允許 Windows 10 裝置存取這些位置。 此外，若要允許從 CDN 存取安裝檔案以安裝瀏覽器，您必須允許存取 Windows Update 端點。 如需詳細資訊，請參閱[管理適用於 Windows 10 版本 1809 的連線端點 – Windows Update](https://docs.microsoft.com/windows/privacy/manage-windows-1809-endpoints#windows-update)，以及 [Microsoft Intune 的網路端點](~/fundamentals/intune-endpoints.md)。
 
 ## <a name="next-steps"></a>後續步驟
 - [將應用程式指派給群組](~/apps/apps-deploy.md)

@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: f6f5414d-0e41-42fc-b6cf-e7ad76e1e06d
-ms.reviewer: heenamac
+ms.reviewer: altsou
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26ed23e4d9d267e37ba5088fa32234c27e3935b6
-ms.sourcegitcommit: 9a2ddcec73b37a118908b63d8e5252835f257618
+ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
+ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2019
-ms.locfileid: "72550815"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72892618"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -69,19 +69,28 @@ ms.locfileid: "72550815"
 
 ## <a name="exclude-groups-from-a-profile-assignment"></a>從設定檔指派排除群組
 
-Intune 裝置組態設定檔可讓您從原則指派排除群組。
+Intune 裝置組態設定檔可讓您從原則指派包含與排除群組。
 
-Intune 不會查看使用者對裝置群組關聯性。 包含使用者群組的同時排除裝置群組可能不會獲得您預期的結果。 在使用者群組對使用者群組與裝置群組對裝置群組案例中，排除的優先順序高於包含。
+最佳做法是特別針對您的使用者群組建立並指派原則。 此外，請特別針對您的裝置群組建立並指派不同原則。 如需群組的詳細資訊，請參閱[新增群組來組織使用者與裝置](../fundamentals/groups-add.md)。
 
-例如，您可以將裝置設定檔指派給 [所有公司使用者]  使用者群組，但排除 [資深管理層]  使用者群組中的成員。 由於這兩個群組都是使用者群組，因此，會從原則中排除 [資深管理層]  的所有成員，即使他們是 [所有公司使用者]  包含群組的成員也一樣。
+當您指派原則時，請在包含和排除群組時使用下表。 核取記號表示支援該指派：
 
-使用混合式群組時，包含的優先順序高於排除 (例如使用者群組對裝置群組，或裝置群組對使用者群組)。
+![從設定檔指派包含或排除群組所支援的選項](./media/device-profile-assign/include-exclude-user-device-groups.png)
 
-例如，您想要將裝置設定檔指派給組織中的所有使用者，但 Kiosk 裝置除外。 您包含**所有使用者**群組，但是排除**所有裝置**群組。 在此情況下，即使使用者的裝置位於 [所有裝置]  群組，所有使用者及其裝置還是會取得政策。
+### <a name="what-you-should-know"></a>您應該知道的事項
 
-排除只會查看群組的直接成員。 它不會包含與使用者相關聯的裝置。 不過，不含使用者的裝置無法取得原則。 發生此行為的原因是不含使用者的裝置與 [所有使用者]  群組沒有關聯性。
+- 在下列相同群組類型案例中，排除的優先順序高於包含：
 
-如果您包含**所有裝置**，並排除**所有使用者**，則所有裝置都會收到原則。 在此情況下，目的是要排除此原則中有相關聯使用者的裝置。 不過，它不會排除裝置，因為排除只會比對直屬群組成員。
+  - 包含使用者群組與排除使用者群組
+  - 包含裝置群組與排除裝置群組
+
+  例如，您可以將裝置設定檔指派給 [所有公司使用者]  使用者群組，但排除 [資深管理層]  使用者群組中的成員。 因為這兩個群組都是使用者群組，所以 [所有公司使用者]  會取得原則，但 [資深管理人員]  除外。
+
+- Intune 不會評估使用者對裝置群組關聯性。 如果您將原則指派給混合群組，結果可能不是您想要或預期的。
+
+  例如，您可以將裝置設定檔指派給 [所有使用者]  使用者群組，但排除 [所有個人裝置]  裝置群組。 在此混合群組原則指派中，[所有使用者]  會取得原則。 排除不適用。
+
+  因此，不建議將原則指派給混合群組。
 
 ## <a name="next-steps"></a>後續步驟
 

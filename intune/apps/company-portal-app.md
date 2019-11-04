@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/10/2019
+ms.date: 10/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dd48eea5ee09562590844e11ac372480c892a7af
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
+ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585016"
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "72999532"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -137,6 +137,10 @@ Intune 支援個人識別驗證 (PIV) 和一般存取卡 (CAC) 衍生認證，�
 
 如需 iOS 裝置之衍生認證的詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](~/protect/derived-credentials.md)。
 
+## <a name="dark-mode-for-ios-company-portal"></a>iOS 公司入口網站的深色模式
+
+iOS 公司入口網站可以使用深色模式。 使用者可以下載公司應用程式、管理其裝置，以及取得根據所選裝置設定色彩配置的 IT 支援。 iOS 公司入口網站會自動符合使用者的裝置設定，以深色或淺色模式顯示。 
+
 ## <a name="windows-company-portal-keyboard-shortcuts"></a>Windows 公司入口網站鍵盤快速鍵
 
 終端使用者可以在 Windows 公司入口網站中使用鍵盤快速鍵觸發導覽、應用程式與裝置動作。
@@ -180,25 +184,24 @@ Intune 支援個人識別驗證 (PIV) 和一般存取卡 (CAC) 衍生認證，�
 
 某些平台和設定不允許自助裝置動作。 下表提供自助動作的進一步詳細資料：
 
-|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup><sup>(5)</sup> | Android<sup>(3)</sup> |
+|  | Windows 10<sup>(3)</sup> | iOS/iPadOS<sup>(3)</sup> | MacOS<sup>(3)</sup> | Android<sup>(3)</sup> |
 |----------------------|--------------------------|-------------------|-----------------------------------|-------------------------|
-| 淘汰 | 可用<sup>(1)</sup> | 可用<sup>(8)</sup> | 可用 | 可用<sup>(7)</sup> |
-| 抹除 | 可用 | 可用 | NA | 可用<sup>(7)</sup> |
-| 重新命名<sup>(4)</sup> | 可用 | 可用<sup>(8)</sup> | 可用 | 可用 |
+| 淘汰 | 可用<sup>(1)</sup> | 可用 | 可用 | 可用<sup>(7)</sup> |
+| 抹除 | 可用 | 可用<sup>(5)</sup> | NA | 可用<sup>(7)</sup> |
+| 重新命名<sup>(4)</sup> | 可用 | 可用 | 可用 | 可用 |
 | 同步 | 可用 | 可用 | 可用 | 可用 |
 | 遠端鎖定 | 僅限 Windows Phone | 可用 | 可用 | 可用 |
-| 重設密碼 | 僅限 Windows Phone | 可用 | NA | 可用<sup>(6)</sup> |
+| 重設密碼 | 僅限 Windows Phone | 可用<sup>(8)</sup> | NA | 可用<sup>(6)</sup> |
 | 金鑰修復 | NA | NA | 可用<sup>(2)</sup> | NA |
-| 深色模式 | NA | 可用 | NA | NA |
 
 <sup>(1)</sup> 在已加入 Azure AD 的 Windows 裝置上，一律會封鎖**淘汰**。<br>
 <sup>(2)</sup> 只有透過 Web 入口網站才能使用 MacOS 的**金鑰復原**。<br>
 <sup>(3)</sup> 如果使用裝置註冊管理員註冊，則會停用所有遠端動作。<br>
-<sup>(4)</sup> **重新命名**只會變更公司入口網站應用程式或網站中的裝置名稱，而非裝置上的裝置名稱。<br>
-<sup>(5)</sup> MacOS 裝置上無法使用**遠端抹除**。<br>
+<sup>(4)</sup> **重新命名**只會變更公司入口網站應用程式或 Web 入口網站中的裝置名稱，而非裝置上的裝置名稱。<br>
+<sup>(5)</sup> 使用者註冊的 iOS 裝置上無法使用**抹除**。<br>
 <sup>(6)</sup> 在某些 Android 和 Android Enterprise 設定上不支援**密碼重設**。 如需詳細資訊，請參閱[在 Intune 中重設或移除裝置密碼](../remote-actions/device-passcode-reset.md)。<br>
 <sup>(7)</sup> **淘汰**和**抹除**不適用於 Android Enterprise 裝置擁有者案例 (COPE、COBO、COSU)。<br> 
-<sup>(8)</sup> **淘汰** (移除裝置) 和**重新命名**適用於所有類型的註冊。 使用者註冊不支援其他動作。<br> 
+<sup>(8)</sup> 使用者註冊的 iOS 裝置上無法使用 [重設密碼] **** 。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -17,24 +17,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b42642ec593112b0b247cd85b9230f68d6a803b8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490984"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73413866"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 使用 Microsoft Intune App Wrapping Tool for iOS 啟用內部 iOS 應用程式的 Intune 應用程式保護原則，而不需要變更應用程式本身的程式碼。
 
 此工具為 Mac OS 命令列應用程式，可會建立應用程式的包裝函式。 處理應用程式之後，將[應用程式保護原則](../apps/app-protection-policies.md)部署給它，即可變更應用程式的功能。
 
 若要下載此工具，請參閱 GitHub 上的 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios)。
-
-
 
 ## <a name="general-prerequisites-for-the-app-wrapping-tool"></a>App Wrapping Tool 的一般必要條件
 
@@ -74,6 +70,7 @@ ms.locfileid: "72490984"
 * 內部發佈佈建設定檔。
 
 ### <a name="steps-to-create-an-apple-developer-enterprise-account"></a>建立 Apple Developer Enterprise 帳戶的步驟
+
 1. 前往 [Apple Developer Enterprise Program 網站](https://developer.apple.com/programs/enterprise/)。
 
 2. 按一下頁面右上方的 [註冊]  。
@@ -86,11 +83,11 @@ ms.locfileid: "72490984"
 
 6. 使用您組織的資訊來填寫表單。 按一下 [繼續]  。 Apple 此時會連絡您，確認您已獲授權可註冊您的組織。
 
-8. 驗證之後，請按一下 [Agree to License]\(同意授權)  。
+7. 驗證之後，請按一下 [Agree to License]\(同意授權)  。
 
-9. 同意授權之後，即可透過**購買和啟動程式**來完成。
+8. 同意授權之後，即可透過**購買和啟動程式**來完成。
 
-10. 如果您是小組代理程式 (代表您組織加入 Apple Developer Enterprise Program 的人員)，請先邀請小組成員並指派角色以建置您的小組。 若要了解如何管理您的小組，請閱讀 [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) (管理開發人員帳戶小組) 的 Apple 文件。
+9. 如果您是小組代理程式 (代表您組織加入 Apple Developer Enterprise Program 的人員)，請先邀請小組成員並指派角色以建置您的小組。 若要了解如何管理您的小組，請閱讀 [Managing Your Developer Account Team](https://developer.apple.com/library/content/documentation/IDEs/Conceptual/AppDistributionGuide/ManagingYourTeam/ManagingYourTeam.html#//apple_ref/doc/uid/TP40012582-CH16-SW1) (管理開發人員帳戶小組) 的 Apple 文件。
 
 ### <a name="steps-to-create-an-apple-signing-certificate"></a>建立 Apple 簽署憑證的步驟
 
@@ -145,8 +142,6 @@ ms.locfileid: "72490984"
 
     ![iPhone 資訊 - SHA1 指紋字串](./media/app-wrapper-prepare-ios/iOS-signing-cert-9.png)
 
-
-
 ### <a name="steps-to-create-an-in-house-distribution-provisioning-profile"></a>建立內部發佈佈建設定檔的步驟
 
 1. 返回 [Apple Developer 帳戶入口網站](https://developer.apple.com/account/)，並使用組織 Apple 識別碼**登入**。
@@ -164,8 +159,6 @@ ms.locfileid: "72490984"
 6. 遵循將設定檔 (副檔名為 .mobileprovision) 下載至 macOS 電腦的步驟。
 
 7. 將檔案儲存至易記位置。 使用 App Wrapping Tool 時，這個檔案將作為 -p 參數。
-
-
 
 ## <a name="download-the-app-wrapping-tool"></a>下載 App Wrapping Tool
 
@@ -195,6 +188,7 @@ ms.locfileid: "72490984"
 ```
 
 ### <a name="command-line-parameters"></a>命令列參數
+
 使用 App Wrapping Tool 時，可以搭配下列命令列參數：
 
 |屬性|用法|
@@ -216,6 +210,7 @@ ms.locfileid: "72490984"
 |**-f**|(選擇性) `<Path to a plist file specifying arguments.>`：若選擇使用 plist 範本指定其餘的 IntuneMAMPackager 屬性 (例如 -i、-o、-p 等等)，請在 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 檔案之前設定此旗標。 請參閱＜使用 plist 輸入引數＞。 |
 
 ### <a name="use-a-plist-to-input-arguments"></a>使用 plist 輸入引數
+
 您可將所有命令引數放入 [plist](https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/PropertyLists/Introduction/Introduction.html) 檔案，即可輕鬆執行應用程式包裝工具。 Plist 是一種類似於 XML 的檔案格式，可讓您透過表單介面輸入命令列引數。
 
 在 IntuneMAMPackager/Contents/MacOS 資料夾中，使用文字編輯器或 Xcode 開啟 `Parameters.plist` {空白的 plist 範本)。 為下列金鑰輸入您的引數︰
@@ -236,7 +231,6 @@ ms.locfileid: "72490984"
 | 包含 Citrix XenMobile App SDK （僅限網路的 variant）|布林值|false| 與-citrix 相同|
 | 延伸模組佈建設定檔路徑 |字串陣列|empty| 應用程式的延伸模組佈建設定檔陣列。
 
-
 執行 IntuneMAMPackager 並指設定 plist 一個引數︰
 
 ```bash
@@ -255,19 +249,24 @@ ms.locfileid: "72490984"
 您現在可以將應用程式部署到使用者群組，並將應用程式保護原則的目標設定為該應用程式。 應用程式將會使用您指定的應用程式保護原則在裝置上執行。
 
 ## <a name="how-often-should-i-rewrap-my-ios-application-with-the-intune-app-wrapping-tool"></a>我應該多久一次，用 Intune App Wrapping Tool 來重新包裝我的 iOS 應用程式？
+
 會需要重新包裝應用程式的主要案例如下：
+
 * 應用程式本身發行了新版本。 舊版的應用程式已包裝並上傳至 Intune 主控台。
 * Intune App Wrapping Tool for iOS 發行了新版本，讓關鍵 Bug 獲得修正，或提供新的特定 Intune 應用程式保護原則功能。 這會透過 [Microsoft Intune App Wrapping Tool for iOS](https://github.com/msintuneappsdk/intune-app-wrapping-tool-ios) 的 GitHub 存放庫，每 6-8 週發生一次。
 
 在 iOS，雖然您可以使用和原來不同的憑證/佈建設定檔簽署應用程式，但如果新的佈建設定檔中不包含應用程式指定的權利，包裝會失敗。 使用 “-e” 命令列選項，從應用程式中移除任何遺失的權利，強行讓此案例的包裝不失敗，會造成應用程式功能中斷。
 
 重新包裝的幾種最佳做法包括：
+
 * 確保不同的佈建設定檔有全部過去佈建設定檔的所有必要權利。 
 
 ## <a name="error-messages-and-log-files"></a>錯誤訊息和記錄檔
+
 使用下列資訊對您使用 App Wrapping Tool 時所遇到的問題進行疑難排解。
 
 ### <a name="error-messages"></a>錯誤訊息
+
 若 App Wrapping Tool 無法成功完成，將會在主控台中顯示下列其中一則錯誤訊息：
 
 |錯誤訊息|詳細資訊|
@@ -291,6 +290,7 @@ ms.locfileid: "72490984"
 |警告：未指定 SHA1 憑證雜湊。 請確定您的已包裝應用程式已經簽署，然後再部署。|請務必在 –c 命令列旗標後指定有效的 SHA1 雜湊。 |
 
 ### <a name="log-files-for-the-app-wrapping-tool"></a>App Wrapping Tool 的記錄檔
+
 使用 App Wrapping Tool 包裝的應用程式會產生記錄，而這些記錄會寫入 iOS 用戶端裝置主控台。 當您的應用程式出現問題，需要判斷問題是否與 App Wrapping Tool 相關時，此資訊即能派上用場。 若要得到此資訊，請使用下列步驟：
 
 1. 藉由執行應用程式來重現問題。
@@ -310,7 +310,6 @@ ms.locfileid: "72490984"
 
     已包裝的應用程式也會提供使用者選項，在應用程式當機之後，直接從裝置透過電子郵件傳送記錄檔。 使用者可以將記錄檔傳送給您檢查，並視需要轉寄給 Microsoft。
 
-
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>憑證、佈建設定檔和驗證需求
 
 App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全部的功能。
@@ -321,8 +320,8 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 |iOS 簽署憑證|指定簽署憑證之前，請先確定其有效性。 工具在處理 iOS 應用程式時，不會檢查憑證是否已過期。 如果提供已過期憑證的雜湊，則工具會處理並簽署應用程式，但它無法在裝置上安裝。<br /><br />請確定為簽署已包裝應用程式提供的憑證，在佈建設定檔中有相符的項目。 工具不會驗證針對為簽署包裝應用程式所提供的憑證，佈建設定檔是否有相符的項目。|
 |驗證|裝置必須有 PIN，加密才能運作。 在部署已包裝應用程式的裝置上，點選裝置上的狀態列，將要求使用者使用工作或學校帳戶重新登入。 包裝應用程式中的預設原則為「重新啟動時驗證」  。 iOS 在處理任何外部通知 (例如來電) 時，會結束並重新啟動應用程式。
 
-
 ## <a name="setting-app-entitlements"></a>設定應用程式權利
+
 包裝應用程式之前，您可以授與*權利*，將超過應用程式一般所能執行的其他權限及功能提供給應用程式。 *權利檔案*還可在程式碼簽署期間，用於指定應用程式內的特殊權限 (例如共用金鑰鏈的存取權)。 某些稱為*功能*的應用程式服務，會在應用程式開發期間於 Xcode 內啟用。 啟用後，您的權利檔案中會反映這些功能。 如需權利和功能的詳細資訊，請參閱 iOS Developer Library 中的[新增功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/AddingCapabilities/AddingCapabilities.html)。 如需支援功能的完整清單，請參閱[支援的功能](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/SupportedCapabilities/SupportedCapabilities.html)。
 
 ### <a name="supported-capabilities-for-the-app-wrapping-tool-for-ios"></a>App Wrapping Tool for iOS 的支援功能
@@ -363,6 +362,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 3. 確定您已符合所有必要條件，然後再包裝應用程式。
 
 ### <a name="troubleshoot-common-errors-with-entitlements"></a>權利常見錯誤的疑難排解
+
 若 App Wrapping Tool for iOS 顯示權利錯誤，請嘗試下列疑難排解步驟。
 
 |問題|原因|解決方案|
@@ -371,6 +371,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 |佈建設定檔中遺失權利 (會列出遺失的權利)。 使用具有這些權利的佈建設定檔重新封裝應用程式。|在佈建設定檔中啟用的權利與在應用程式中啟用的功能不符。 與特定功能 (例如 [應用程式群組]、[金鑰鏈共用] 等等) 相關聯的識別碼也會不符。|一般而言，您可以建立新的佈建設定檔，並啟用與應用程式相同的功能。 當設定檔與應用程式之間的識別碼不符時，App Wrapping Tool 會更換識別碼 (如果可以)。 若在建立新的佈建設定檔之後繼續收到此錯誤，您可以嘗試使用 -e 參數移除應用程式的權利 (請參閱＜使用 -e 參數移除應用程式的權利＞一節)。|
 
 ### <a name="find-the-existing-entitlements-of-a-signed-app"></a>尋找已簽署應用程式的現有權利
+
 若要檢閱已簽署應用程式和佈建設定檔的現有權利：
 
 1. 找到 .ipa 檔案並將其副檔名變更為 .zip。
@@ -390,6 +391,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
     ```
 
 ### <a name="remove-entitlements-from-an-app-by-using-the-e-parameter"></a>使用 –e 參數移除應用程式的權利
+
 這個命令會移除應用程式中任何已啟用但不在權利檔案中的功能。 如果您移除的是應用程式正在使用的功能，可能會中斷您的應用程式。 例如若廠商生產的應用程式預設應具備所有功能，您可能會移除缺少的功能。
 
 ```bash
@@ -397,6 +399,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 ```
 
 ## <a name="security-and-privacy-for-the-app-wrapping-tool"></a>App Wrapping Tool 的安全性與隱私權
+
 當您使用 App Wrapping Tool 時，請使用下列安全性與隱私權的最佳作法。
 
 - 要簽署的憑證、佈建設定檔，以及您指定的企業營運系統應用程式，必須位在用以執行 App Wrapping Tool 的該部 macOS 電腦上。 若檔案使用 UNC 路徑，請確定這些路徑可從 macOS 電腦存取。 路徑必須透過 IPsec 或 SMB 簽章保護。
@@ -414,6 +417,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 - 當您從經過包裝的應用程式內監視裝置上的文件資料夾時，可能會出現一個名為 .msftintuneapplauncher 的資料夾。 若您變更或刪除此檔案，可能會影響受限應用程式正常運作。
 
 ## <a name="intune-app-wrapping-tool-for-ios-with-citrix-mdx-mvpn"></a>適用於 iOS 的 Intune App Wrapping Tool 含 Citrix MDX mVPN
+
 此功能是與適用於 iOS 之 Citrix MDX 應用程式封裝工具的整合。 此整合只是 Intune App Wrapping Tools 的額外選擇性命令列旗標 `-citrix`。
 
 ### <a name="requirements"></a>需求
@@ -424,6 +428,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 > 對 Intune 與 Citrix 整合的支援僅限 iOS 10+ 裝置。
 
 ### <a name="use-the--citrix-flag"></a>使用 `-citrix` 旗標
+
 只要執行您的一般應用程式封裝命令並附加 `-citrix` 旗標。 `-citrix` 旗標目前不接受任何引數。
 
 **使用方式格式**：
@@ -439,6 +444,7 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 ```
 
 ## <a name="getting-logs-for-your-wrapped-applications"></a>取得已包裝應用程式的記錄檔
+
 使用下列步驟，在疑難排解期間取得已包裝應用程式的記錄檔。
 
 1. 移至您裝置上的 iOS 設定應用程式，並選取您的 LOB 應用程式。

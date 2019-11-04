@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 10/30/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec6009096ac6ed39c8a217f8832661a575d83b78
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915710"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143035"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -42,7 +42,7 @@ ms.locfileid: "72915710"
   - **自動授與**：自動授與權限。
   - **自動拒絕**：自動拒絕權限。
 - **日期與時間變更**：選擇 [封鎖]  以防止使用者手動設定日期和時間。 [未設定]  會允許使用者在裝置上設定日期和時間。
-- **磁碟區變更**：選擇 [封鎖]  以防止使用者變更裝置的磁碟區。 [未設定]  會允許在裝置上使用音量設定。
+- **磁片區變更**： [封鎖] 會防止使用者變更裝置的磁片**區**，也會 mutes 主要磁片區。 [未設定]  會允許在裝置上使用音量設定。
 - **重設成出廠預設值**：選擇 [封鎖]  以防止使用者在裝置設定中使用重設成出廠預設值選項。 [未設定]  會允許使用者在裝置上使用此設定。
 - **安全開機**：選擇 [封鎖]  以防止使用者將裝置重新開機進入安全模式。 [未設定]  會允許使用者以安全模式重新啟動裝置。
 - **狀態列**：選擇 [封鎖]  以防止存取狀態列，包括通知和快速設定。 [未設定]  會允許使用者存取狀態列。

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,16 +15,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1f34e321476ea634030a5e602bc362d409eee8f5
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 2bfc49f772331113314e45bc49360b8435b88037
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785541"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889565"
 ---
-# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune"></a>在 Microsoft Intune 中，於 Windows 裝置上使用裝置韌體設定介面設定檔
+# <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>在 Microsoft Intune 中，於 Windows 裝置上使用裝置韌體設定介面設定檔 (公開預覽)
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
+> [!Note]
+> 每個[每月更新](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) \(英文\) 可能需要數天才會推出。 某些功能在首度發行時可能會花費數週的時間，而可能無法立即提供給所有客戶。
 
 當您使用 Intune 來管理 Autopilot 裝置時，您可以使用裝置韌體設定介面 (DFCI)，在註冊之後管理 UEFI (BIOS) 設定。 如需優點、案例和必要條件的概觀，請參閱 [DFCI 概觀](https://microsoft.github.io/mu/dyn/mu_plus/DfciPkg/Docs/Dfci_Feature/) \(英文\)。
 
@@ -167,15 +170,9 @@ Autopilot 部署設定檔會指派給 Azure AD 安全性群組。 請務必建�
 
 ### <a name="recover"></a>復原
 
-如果您抹除裝置，並在將 UEFI (BIOS) 功能表解除鎖定之前刪除 Autopilot 記錄，則功能表會保持鎖定。 Intune 無法傳送設定檔更新來將它解除鎖定。 若要將裝置解除鎖定，您可以：
+如果您抹除裝置，並在將 UEFI (BIOS) 功能表解除鎖定之前刪除 Autopilot 記錄，則功能表會保持鎖定。 Intune 無法傳送設定檔更新來將它解除鎖定。
 
-- **選項 1**：要求您的 CSP 或 OEM 直屬裝置廠商為裝置重新註冊 Autopilot。 在 Intune 中重新註冊裝置，以重新套用 Autopilot 和 DFCI 設定檔。
-
-  然後，使用[淘汰裝置](#retire) (在此文章中) 的步驟，將 UEFI 功能表解除鎖定。
-
-- **選項 2**：開啟 UEFI (BIOS) 功能表，然後選取復原選項。 確認裝置未註冊 DFCI 管理，並將功能表解除鎖定。 復原選項會保持所有 UEFI (BIOS) 設定為最後一個 Intune DFCI 設定檔中的值。
-
-  然後，使用[淘汰裝置](#retire) (在此文章中) 的步驟，將 UEFI 功能表解除鎖定。
+若要將裝置解除鎖定，請開啟 UEFI (BIOS) 功能表，然後從網路重新整理管理。 復原會將功能表解除鎖定，但所有 UEFI (BIOS) 設定都會保留為先前 Intune DFCI 設定檔中的值。
 
 ## <a name="end-user-impact"></a>使用者影響
 

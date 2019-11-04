@@ -6,44 +6,46 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/17/2019
+ms.date: 10/29/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ac77b590-a7ec-45a0-9516-ebf5243b6210
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4abc35b625b9aa072e38c02d2fc4160faa916fb3
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785744"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057573"
 ---
-# <a name="what-is-mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合是什麼？
-Intune 可整合來自 Mobile Threat Defense 廠商的資料，作為裝置合規性政策和裝置條件式存取規則的資訊來源。 您可以利用這項資訊，藉由封鎖遭入侵行動裝置的存取，來協助保護 Exchange 和 Sharepoint 等公司資源。
+# <a name="mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合
+
+Intune 可整合來自 Mobile Threat Defense (MTD) 廠商的資料，作為裝置合規性政策與裝置條件式存取規則的資訊來源。 您可以利用這項資訊，藉由封鎖遭入侵行動裝置的存取，來協助保護 Exchange 和 Sharepoint 等公司資源。
 
 Intune 可以使用此相同的資料，作為使用 Intune 應用程式防護原則尚未註冊之裝置的來源。 因此，系統管理員可以使用此資訊來協助保護[受 Microsoft Intune 保護的應用程式](~/apps/apps-supported-intune-apps.md)中的公司資料，發出封鎖或選擇性抹除。
 
-## <a name="what-problem-does-this-solve"></a>這會解決哪個問題？
-整合來自 Mobile Threat Defense 廠商的資訊可協助您保護公司資源，以防範影響行動平台的威脅。  
+## <a name="protect-corporate-resources"></a>保護公司資源
 
-一般而言，公司會主動保護電腦以防範弱點和攻擊，但行動裝置通常不受監視且未受保護。 雖然行動平台具有應用程式隔離和經審核的消費者 App Store 這類內建保護，但這些平台仍然容易受到複雜的攻擊。 隨著愈來愈多的員工使用工作用裝置來存取敏感性資訊，來自 Mobile Threat Defense 廠商的資訊可協助您保護裝置和資源，以防範愈來愈複雜的攻擊。  
+整合來自 MTD 廠商的資訊可協助您保護公司資源，以防範影響行動平台的威脅。  
 
-## <a name="how-do-the-intune-mobile-threat-defense-connectors-work"></a>Intune Mobile Threat Defense 連接器如何運作？
+一般而言，公司會主動保護電腦以防範弱點和攻擊，但行動裝置通常不受監視且未受保護。 雖然行動平台具有應用程式隔離和經審核的消費者 App Store 這類內建保護，但這些平台仍然容易受到複雜的攻擊。 隨著越來愈越的員工使用工作用裝置來存取敏感性資訊，來自 MTD 廠商的資訊可協助您保護裝置與資源，以防範越來越複雜的攻擊。
 
-Intune 使用 Mobile Threat Defense 連接器，在 Intune 與您選擇的 Mobile Threat Defense 廠商之間建立通訊通道。 Intune Mobile Threat Defense 合作夥伴提供直覺且易於部署的行動裝置應用程式。 這些應用程式可主動掃描並分析威脅資訊以與 Intune 共用。 Intune 可以使用此資料來進行報告或強制執行。  
+## <a name="intune-mobile-threat-defense-connectors"></a>Intune Mobile Threat Defense 連接器
 
-例如：已連線的 Mobile Threat Defense 應用程式會向 Mobile Threat Defense 廠商回報您網路上手機目前連線至易受中間人攻擊的網路。 這項資訊會分類為低、中或高的適當風險層級。 此風險層級接著可與您在 Intune 中設定的允許風險層級進行比較。 根據這項比較，您就可在裝置遭入侵時，撤銷對您所選特定資源的存取權。
+Intune 使用 Mobile Threat Defense 連接器，在 Intune 與您選擇的 MTD 廠商之間建立通訊通道。 Intune MTD 合作夥伴提供直覺且易於部署的行動裝置應用程式。 這些應用程式可主動掃描並分析威脅資訊以與 Intune 共用。 Intune 可以使用此資料來進行報告或強制執行。
 
-## <a name="what-data-does-intune-collect-for-mobile-threat-defense"></a>Intune 會收集哪些 Mobile Threat Defense 資料？
+例如：已連線的 MTD 應用程式會向 MTD 廠商回報您網路上手機目前連線至易受中間人攻擊的網路。 這項資訊會分類為低、中或高的適當風險層級。 此風險層級接著可與您在 Intune 中設定的允許風險層級進行比較。 根據這項比較，您就可在裝置遭入侵時，撤銷對您所選特定資源的存取權。
 
-如果啟用，Intune 會從個人和公司擁有的裝置收集應用程式清查資訊，供 Mobile Threat Defense (MTD) 提供者擷取，例如 Lookout for Work。 您可以收集 iOS 裝置使用者的應用程式清查。
+## <a name="data-that-intune-collects-for-mobile-threat-defense"></a>Intune 針對 Mobile Threat Defense 收集的資料
+
+如果啟用，Intune 會從個人與公司擁有的裝置收集應用程式清查資訊，供 MTD 提供者擷取，例如 Lookout for Work。 您可以收集 iOS 裝置使用者的應用程式清查。
 
 此服務為選擇性；預設不會共用應用程式清查資訊。 Intune 管理員必須在 Mobile Threat Defense 設定中啟用 **iOS 裝置的應用程式同步**，才能共用任何應用程式清查資訊。
 
@@ -77,8 +79,8 @@ Intune 使用 Mobile Threat Defense 連接器，在 Intune 與您選擇的 Mobil
 補救裝置時，會授與存取權︰<br>
 ![顯示授與 Mobile Threat Defense 存取權的影像](./media/mobile-threat-defense/MTD-image-4.png)
 
-> [!NOTE] 
-> 不支援搭配 Intune 使用多個 Mobile Threat Defense 供應商。 如果您啟用多個 MTD 連接器，系統會強制安裝所有 MTD 應用程式並掃描所有裝置是否有潛在威脅。
+> [!NOTE]
+> 您可以搭配單一 Intune 租用戶使用多個 Mobile Defense 廠商。 不過，當兩個或多個廠商設定為用於相同平台時，執行該平台的所有裝置都必須安裝每個 MTD 應用程式並掃描威脅。 若無法從任何已設定的應用程式提交掃描，會導致裝置被標示為不符合規範。 
 
 ## <a name="mobile-threat-defense-partners"></a>Mobile Threat Defense 合作夥伴
 

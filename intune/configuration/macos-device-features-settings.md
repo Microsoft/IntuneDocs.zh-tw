@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48cca2c894067439943bdfff33b953463e513490
-ms.sourcegitcommit: e9cf372711ff186ed468b01a9204631a139bd8e5
+ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72776917"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143151"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 裝置功能設定
 
@@ -129,7 +129,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定適用于：所有註冊類型 
 
-- **Sso 應用程式延伸模組類型**：選擇認證 SSO 應用程式延伸模組的類型。 當您儲存 SSO 應用程式擴充功能設定檔時，您無法變更 SSO 應用程式延伸模組類型。 選項包括：
+- **Sso 應用程式延伸模組類型**：選擇認證 SSO 應用程式延伸模組的類型。 選項包括：
 
   - **未設定**：未使用應用程式延伸模組。 若要停用 SSO 應用程式延伸模組，請將 SSO 應用程式擴充功能類型從**Kerberos**或**認證**切換為 [**未設定**]。
   - **認證**：使用可自訂的一般認證應用程式延伸模組來使用 SSO。 請確定您知道您組織的 SSO 應用程式擴充功能的延伸模組識別碼和小組識別碼。  
@@ -143,7 +143,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
   [找出您的小組識別碼](https://help.apple.com/developer-account/#/dev55c3c710c)（開啟 Apple 的網站）有詳細資訊。
 
-- **領域**：輸入您的 Kerberos 領域名稱。 領域名稱應為大寫，例如 `CONTOSO.COM`。 一般來說，您的領域名稱與您的 DNS 功能變數名稱相同，但全部大寫。
+- **領域**：輸入驗證領域的名稱。 領域名稱應為大寫，例如 `CONTOSO.COM`。 一般來說，您的領域名稱與您的 DNS 功能變數名稱相同，但全部大寫。
 - **網域**：輸入可以透過 SSO 驗證之網站的網域或主機名稱。 例如，如果您的網站 `mysite.contoso.com`，則 `mysite` 是主機名稱，而 `contoso.com` 則是功能變數名稱。 當使用者連線到這些網站的任何一個時，應用程式延伸模組會處理驗證挑戰。 此驗證可讓使用者使用臉部識別碼、Touch ID 或 Apple pincode/密碼來登入。
 
   - 單一登入應用程式延伸模組 Intune 設定檔中的所有網域都必須是唯一的。 即使您使用不同類型的 SSO 應用程式擴充功能，您也無法在任何登入應用程式延伸模組設定檔中重複網域。

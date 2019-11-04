@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 10/28/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3baa1972593c5d836c49905b59e9a28932329fbe
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506738"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057650"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>要在 Intune 中使用常見 iOS 功能用的 iOS 和 iPadOS 裝置設定
 
@@ -266,7 +266,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
   - **僅限特定網站** (僅適用於 Safari 網頁瀏覽器)：這些 URL 會新增至 Safari 瀏覽器的書籤。 使用者**只能**瀏覽這些網站；他們無法開啟任何其他網站。 只有在您知道使用者可以存取的確切 URL 清單時，才使用此選項。
 
     - **URL**：輸入您要允許的網站 URL。 例如，輸入 `https://www.contoso.com`。
-    - **書籤路徑**：輸入要儲存書籤的路徑。 例如，輸入 `/Contoso/Business Apps`。 如果您不新增路徑，書籤就會新增到裝置的預設書籤資料夾。
+    - **書簽路徑**： Apple 已變更此設定。 所有書簽都會進入 [**核准的網站**] 資料夾。 書簽不會進入您輸入的書簽路徑。
     - **標題**：輸入書籤的描述性標題。
 
     如果您未輸入任何 URL，則使用者除了 `microsoft.com`、`microsoft.net` 及 `apple.com` 之外，將無法存取任何網站。 這些 URL 是 Intune 自動允許的 URL。
@@ -280,7 +280,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定適用于：所有註冊類型
 
-- **Sso 應用程式延伸模組類型**：選擇認證 SSO 應用程式延伸模組的類型。 當您儲存 SSO 應用程式擴充功能設定檔時，您無法變更 SSO 應用程式延伸模組類型。 選項包括：
+- **Sso 應用程式延伸模組類型**：選擇認證 SSO 應用程式延伸模組的類型。 選項包括：
 
   - **未設定**：未使用應用程式延伸模組。 若要停用應用程式擴充功能，您可以將來自**Kerberos**或**認證**的 SSO 應用程式延伸模組類型切換為 [**未設定**]。
   - **認證**：使用可自訂的一般認證應用程式延伸模組來執行 SSO。 請確定您知道您組織的 SSO 應用程式擴充功能的延伸模組識別碼。

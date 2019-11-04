@@ -64,8 +64,14 @@
 ## [使用您的 iOS 裝置](using-your-iOS-device-with-intune.md)
 ### [iOS 裝置重設的效果](effects-of-device-reset-company-portal-ios.md)
 ### [安裝並登入公司入口網站](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
-### [註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
-### [註冊您組織提供的 iOS 裝置](enroll-your-device-dep-ios.md)
+### 註冊您的裝置
+#### [註冊 iOS 裝置](enroll-your-device-in-intune-ios.md)
+#### [註冊組織提供的 iOS 裝置](enroll-your-device-dep-ios.md)
+#### 使用衍生的認證進行註冊
+##### [使用 Entrust Datacard 註冊](enroll-ios-device-entrust-datacard.md)
+##### [使用 Intercede 註冊](enroll-ios-device-intercede.md)
+##### [使用 DISA Purebred 註冊](enroll-ios-device-disa-purebred.md)
+
 
 ### [在裝置上使用受管理的應用程式](use-managed-apps-on-your-device-ios.md)
 ### [設定或變更密碼](set-or-change-your-passcode-ios.md)

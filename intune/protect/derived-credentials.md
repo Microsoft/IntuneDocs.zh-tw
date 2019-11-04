@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 10/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4c42e5ef50f8a5a8514bc43670fc743f42b1b2d6
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 1716da820fd0d9a4b6d1bbc5024440cfb141c5a1
+ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585822"
+ms.lasthandoff: 10/24/2019
+ms.locfileid: "72889559"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>在 Microsoft Intune 中使用衍生認證
 
@@ -64,7 +64,7 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 - **Entrust Datacard**： https://www.entrustdatacard.com/
 - **Intercede**： https://www.intercede.com/
 
-如需使用不同簽發者的重要詳細資訊，請檢閱該簽發者的指引，包括簽發者終端使用者工作流程。 如需詳細資訊，請參閱此文章中的[規劃衍生認證](#plan-for-derived-credentials)。
+如需使用不同簽發者的重要詳細資訊，請檢閱該簽發者的指引<!-- , including the issuers end-user workflow-->。 如需詳細資訊，請參閱此文章中的[規劃衍生認證](#plan-for-derived-credentials)。
 
 > [!IMPORTANT]  
 > 如果您從租用戶刪除衍生認證簽發者，透過該簽發者所設定的衍生認證將無法再運作。  
@@ -101,11 +101,14 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 
 ### <a name="2-review-the-end-user-workflow-for-your-chosen-issuer"></a>2) 檢閱您所選簽發者的終端使用者工作流程
 
-以下是每個支援的合作夥伴的關鍵考量，以及該簽發者終端使用者工作流程的連結。  請熟悉此資訊，以確保您的 Intune 原則和設定不會封鎖使用者和裝置從該簽發者成功完成衍生認證的註冊。
+以下是每個支援合作夥伴的重要考慮事項<!--  , and links to that issuers end-user workflow -->。  請熟悉此資訊，以確保您的 Intune 原則和設定不會封鎖使用者和裝置從該簽發者成功完成衍生認證的註冊。
 
 #### <a name="disa-purebred"></a>DISA Purebred
 
-請檢閱 [DISA Purebred 的使用者工作流程](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred)。 此工作流程的主要需求包括：  
+了解終端使用者工作流程和重要需求：  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for DISA Purebred](https://docs.microsoft.com/intune-user-help/enroll-ios-device-disa-purebred). Key requirements for this workflow include:  
+-->
 
 - 使用者需要存取電腦或 KIOSK，讓他們可以使用智慧卡向簽發者驗證。 
 
@@ -120,8 +123,11 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 如需取得和設定 DISA Purebred 應用程式的資訊，請參閱此文章稍後的[部署 DISA Purebred 應用程式](#deploy-the-disa-purebred-app)。  
 
 #### <a name="entrust-datacard"></a>Entrust Datacard  
-請檢閱 [Entrust Datacard 的使用者工作流程](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust)。 此工作流程的主要需求包括： 
 
+了解終端使用者工作流程和重要需求：  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Entrust Datacard](https://docs.microsoft.com/intune-user-help/enroll-ios-device-entrust). Key requirements for this workflow include: 
+--> 
 - 使用者需要存取電腦或 KIOSK，讓他們可以使用智慧卡向簽發者驗證。 
 
 - 將註冊衍生認證的裝置必須安裝 Intune 公司入口網站應用程式。
@@ -129,8 +135,11 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 - 使用裝置相機來掃描 QR 代碼，以將驗證要求連結至行動裝置的衍生認證要求。
 
 #### <a name="intercede"></a>Intercede
-請檢閱 [Intercede 的使用者工作流程](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede)。 此工作流程的主要需求包括： 
 
+了解終端使用者工作流程和重要需求：  
+<!-- TEMP EDIT - preceeding line to be replaced with the following once user content is ready. 
+Review the [user workflow for Intercede](https://docs.microsoft.com/intune-user-help/enroll-ios-device-intercede). Key requirements for this workflow include: 
+-->
 - 使用者需要存取電腦或 KIOSK，讓他們可以使用智慧卡向簽發者驗證。 
 
 - 將註冊衍生認證的裝置必須安裝 Intune 公司入口網站應用程式。

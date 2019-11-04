@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 10/28/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f32637173ec6cf5f7c284a87193eafffb6a16e6c
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 0faa7c7ec70ce7647a6a91ae732d8b15878964b7
+ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786138"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057629"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -54,20 +54,90 @@ ms.locfileid: "72786138"
 -->  
 
 
-<!-- ########################## -->
+## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日當週
 
+### <a name="app-management"></a>應用程式管理 
+
+#### <a name="dark-mode-for-ios-company-portal----4911422---"></a>iOS 公司入口網站的深色模式 <!-- 4911422 -->
+iOS 公司入口網站可以使用深色模式。 使用者可以下載公司應用程式、管理其裝置，以及取得根據所選裝置設定色彩配置的 IT 支援。 iOS 公司入口網站會自動符合使用者的裝置設定，以深色或淺色模式顯示。 如需詳細資訊，請參閱[推出 iOS 版 Microsoft Intune 公司入口網站應用程式的深色模式](https://techcommunity.microsoft.com/t5/Enterprise-Mobility-Security/Introducing-dark-mode-on-Microsoft-Intune-Company-Portal-for-iOS/ba-p/918453) \(英文\)。 如需 iOS 公司入口網站的詳細資訊，請參閱[如何設定 Microsoft Intune 公司入口網站應用程式](~/apps/company-portal-app.md)。
+
+#### <a name="android-company-portal-enforced-minimum-app-version----2378776---"></a>Android 公司入口網站強制要求最低應用程式版本 <!-- 2378776 -->
+透過使用應用程式防護原則 [最低公司入口網站版本]  ，您可以指定在使用者裝置上強制要求公司入口網站的特定最低定義版本。 此條件式啟動設定可讓您將 [封鎖存取]  、[抹除資料]  或 [警告]  作為未符合值時的可能動作。 此值的可能格式遵循模式 [主要].[次要]  、[主要].[次要].[組建]  或 [主要].[次要].[組建].[修訂]  。 
+
+若已設定 [最低公司入口網站版本]  設定，將會影響公司入口網站 5.0.4560.0 版及未來任何版本的任何使用者。 此設定不會影響使用的公司入口網站版本是早於推出此功能版本的使用者。 在裝置上使用應用程式自動更新的使用者，可能會因為使用最新的公司入口網站版本，而不會看到此功能的任何對話。 此設定僅適用於 Android 已註冊與尚未註冊之裝置的應用程式防護。 如需詳細資訊，請參閱 [Android 應用程式防護原則設定 - 條件式啟動](~/apps/app-protection-policy-settings-android.md#conditional-launch)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+
+### <a name="microsoft-365-device-management"></a>Microsoft 365 裝置管理
+
+#### <a name="introducing-endpoint-security-node-in-microsoft-365-device-management-------5630102---"></a>推出 Microsoft 365 裝置管理中的端點安全性節點    <!-- 5630102 -->
+
+**端點安全性**節點現已在 Microsoft 365 裝置管理專家工作區 (https://devicemanagement.microsoft.com ) 中公開推出，它將各功能分組在一起，以保護端點，例如：
+
+- 安全性基準：預先設定的設定群組，可協助您套用 Microsoft 所建議的已知設定群組與預設值。
+
+- 安全性工作：利用 Microsoft Defender ATP 威脅與弱點管理 (TVM)，並使用 Intune 來修復端點弱點。
+
+- Microsoft Defender ATP：整合 Microsoft Defender 進階威脅防護 (ATP) 來協助防止安全性缺口。
+
+從其他適用的節點 (例如裝置) 仍然可以存取這些設定，不論您從哪裡存取與是否啟用這些功能，目前設定的狀態都會相同。
+
+如需這些改進的詳細資訊，請參閱 Microsoft 技術社群網站上的 [Intune 客戶成功部落格文章](https://aka.ms/Endpoint_security_node) \(英文\)。
+
+### <a name="device-management"></a>裝置管理
+
+#### <a name="intune-supports-ios-11-and-later----4665324----"></a>Intune 支援 iOS 11 與更新版本 <!-- 4665324  -->
+
+Intune 註冊與公司入口網站現在支援 iOS 11 版與更新版本。 不支援舊版。
+
+### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
+
+#### <a name="updated-support-experience------5012398---"></a>已更新支援體驗   <!-- 5012398 -->
+
+[取得 Intune 的協助和支援](get-support.md)的主控台內體驗已更新並簡化。  我們已改善主控台內常見問題的搜尋和意見反應，以及您用來連絡支援人員的工作流程。 當您建立支援問題時，您會看到回撥或電子郵件回覆的即時預估，且進階與統一支援客戶可以輕鬆地指定其問題的嚴重性，以協助更快取得支援。
+
+<!-- ########################## -->
 ## <a name="week-of-october-21-2019"></a>2019 年 10 月 21 日當週
 
-### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073-idready-wnready---"></a>適用於 Windows 10 和更新版本裝置的新裝置韌體設定介面設定檔 <!-- 2266073 idready wnready -->
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="microsoft-365-device-management"></a>Microsoft 365 裝置管理
 
-在 Windows 10 和更新版本上，您可以建立裝置組態設定檔來控制設定和功能 (**裝置組態** > **設定檔** > **建立設定檔** > **Windows10 和更新版本** (針對平台))。 在此更新中，有新的裝置韌體設定介面設定檔類型，可讓 Intune 管理 UEFI (BIOS) 設定。
+#### <a name="improved-administration-experience-in-microsoft-365-device-management"></a>已改善 Microsoft 365 裝置管理中的管理體驗
+
+現已在 Microsoft 365 裝置管理專家工作區 ([https://devicemanagement.microsoft.com](https://devicemanagement.microsoft.com)) 中推出重新整理且簡化的管理體驗，包括：
+
+- **已更新的導覽**：您會發現第一層導覽已簡化，並以邏輯方式將功能分組。
+- **新的平台篩選器**：您可以在 [裝置及應用程式] 頁面上選取單一平台，只顯示所選平台的原則與應用程式。
+- **新的首頁**：在新的首頁上快速查看服務健康情況、租用戶狀態、新聞等等。
+
+如需這些改進的詳細資訊，請參閱 Microsoft 技術社群網站上的 [Enterprise Mobility + Security 部落格文章](https://go.microsoft.com/fwlink/?linkid=2109094) \(英文\)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="app-management"></a>應用程式管理
+
+#### <a name="add-mobile-threat-defense-apps-to-unenrolled-devices----3005337---"></a>將 Mobile Threat Defense 應用程式新增至尚未註冊的裝置 <!-- 3005337 -->
+您可以建立會根據裝置健康情況，而封鎖或選擇性地抹除使用者公司資料的 Intune 應用程式防護原則。 裝置的健康情況是使用您選擇的 Mobile Threat Defense (MTD) 解決方案來判斷的。 此功能目前使用 Intune 已註冊的裝置作為裝置合規性設定。 透過此新功能，我們將來自 Mobile Threat Defense 廠商的威脅偵測，延伸到在尚未註冊的裝置上運作。 在 Android 上，此功能需要裝置上有最新版公司入口網站。 在 iOS 上，當應用程式整合最新的 Intune SDK (v 12.0.15+) 時，就可以使用此功能。 當第一個應用程式採用最新的 Intune SDK 時，我們會更新「新功能」主題。 其餘應用程式將會輪流推出。 如需詳細資訊，請參閱[使用 Intune 建立 Mobile Threat Defense 應用程式防護原則](~/protect/mtd-app-protection-policy.md)。
+
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices----2266073----"></a>適用於 Windows 10 和更新版本裝置的新裝置韌體設定介面設定檔 <!-- 2266073  -->
+
+在 Windows 10 和更新版本上，您可以建立裝置組態設定檔來控制設定和功能 (**裝置組態** > **設定檔** > **建立設定檔** > **Windows10 和更新版本** (針對平台))。 在此更新中，有新的裝置韌體設定介面設定檔類型，可讓 Intune 管理 UEFI (BIOS) 設定。 我們正在將此功能推出給所有客戶，預計會在下周末完成。
 
 如需這項功能的詳細資訊，請參閱[在 Microsoft Intune 中的 Windows 裝置上使用 DFCI 設定檔](../configuration/device-firmware-configuration-interface-windows.md)。
 
 適用於：
-
 - 支援韌體上的 Windows 10 RS5 (1809) 和更新版本
 
+### <a name="device-enrollment"></a>裝置註冊
+
+#### <a name="toggle-to-only-show-enrollment-status-page-on-devices-provisioned-by-out-of-box-experience-oobe---3959566--"></a>切換以在使用全新體驗 (OOBE) 佈建的裝置上僅顯示 [註冊狀態頁面] <!--3959566-->
+您現在可以選擇在 Autopilot OOBE 所佈建的裝置上只顯示 [註冊狀態頁面]。
+
+若要查看新的切換開關，請選擇 [Intune]   > [裝置註冊]   > [Windows 註冊]   > [註冊狀態頁面]   > [建立設定檔]   > [設定]   > [僅顯示由全新體驗 (OOBE) 佈建的裝置頁面]  。
+
+
+<!-- ########################## -->
 ## <a name="week-of-october-14-2019"></a>2019 年 10 月 14 日當週
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
@@ -77,7 +147,12 @@ ms.locfileid: "72786138"
 針對安裝在 Android Enterprise 工作設定檔、專用且完全受控的裝置上的可用應用程式，您可以檢視應用程式安裝狀態，以及受控 Google Play 應用程式的安裝版本。 如需詳細資訊，請參閱[如何監視應用程式保護原則](~/apps/app-protection-policies-monitor.md)、[使用 Intune 管理 Android 工作設定檔裝置](~/enrollment/android-enterprise-overview.md)及[受控的 Google Play 應用程式類型](~/apps/apps-add-android-for-work.md#managed-google-play-app-types)。
 
 #### <a name="microsoft-edge-version-77-and-later-for-windows-10-and-macos-public-preview----3872025-4678761----"></a>適用於 Windows 10 和 macOS (公開預覽) 的 Microsoft Edge 77 版和更新版本 <!-- 3872025, 4678761  -->
-Microsoft Edge 77 版和更新版本現已可部署至執行 Windows 10 和 macOS 的電腦。 公開預覽針對 Windows 10 提供 **Dev** 和 **Beta** 通道，以及針對 macOS 提供 **Beta** 通道。 部署僅限英文 (EN)，不過，終端使用者可以在瀏覽器中的 [設定]   > [語言]  下變更顯示語言。 Microsoft Edge 是一個 Win32 應用程式，安裝在系統內容和類似的架構 (x86 OS 上的 x86 應用程式，以及 x64 OS 上的 x64 應用程式) 上。 此外，瀏覽器的自動更新預設會 [開啟]  ，而且無法解除安裝 Microsoft Edge。 如需詳細資訊，請參閱[將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune](~/apps/apps-windows-edge.md) 和 [Microsoft Edge 文件](https://go.microsoft.com/fwlink/?linkid=2103823) \(英文\)。
+Microsoft Edge 77 版與更新版本將可部署至執行 Windows 10 與 macOS 的電腦。 
+
+>[!NOTE]
+>此功能的首度發行已延後到本月稍晚。
+
+公開預覽針對 Windows 10 提供 **Dev** 和 **Beta** 通道，以及針對 macOS 提供 **Beta** 通道。 部署僅限英文 (EN)，不過，終端使用者可以在瀏覽器中的 [設定]   > [語言]  下變更顯示語言。 Microsoft Edge 是一個 Win32 應用程式，安裝在系統內容和類似的架構 (x86 OS 上的 x86 應用程式，以及 x64 OS 上的 x64 應用程式) 上。 此外，瀏覽器的自動更新預設會 [開啟]  ，而且無法解除安裝 Microsoft Edge。 如需詳細資訊，請參閱[將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune](~/apps/apps-windows-edge.md) 和 [Microsoft Edge 文件](https://go.microsoft.com/fwlink/?linkid=2103823) \(英文\)。
 
 #### <a name="update-to-app-protection-ui-and-ios-app-provisioning-ui----4102027-4102029-----"></a>應用程式保護 UI 和 iOS 應用程式佈建 UI 的更新 <!-- 4102027, 4102029   -->
 在 Intune 中用來建立和編輯應用程式保護原則和 iOS 應用程式佈建設定檔的 UI 已更新。 UI 變更包括：

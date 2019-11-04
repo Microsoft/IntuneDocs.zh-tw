@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 03/28/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: a2675b1b601261e673923ab5e3ac41d0f3d83264
-ms.sourcegitcommit: 71b0cd7b81178e2f9e9f80830fa9a7985781628b
+ms.openlocfilehash: 0aa78ec17aba5deb0c914c3698676219f203b856
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73057313"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415094"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
 
@@ -105,7 +105,7 @@ Intune 將會在即將推出的版本中開始支援 Android 5.x (Lollipop) 與�
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 使用最新的 Intune App SDK 包裝您的應用程式。 您也可以設定 [需要最低 OS 版本 (僅警告)] 條件式啟動設定，以通知個人裝置的終端使用者進行升級。
 
-### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7----3042987---"></a>Intune 規劃變更：即將結束對 Windows 7 的支援 <!-- 3042987 -->
+### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune 規劃變更：即將結束對 Windows 7 的支援<!-- 3042987 -->
 如我們在 2018 年 9 月於 MC148476 所發佈並於 2019 年 3 月於 MC176794 中再次發佈的訊息，Windows 7 將在 2020 年 1 月 14 日結束其延伸支援。 屆時，Intune 將不再支援執行 Windows 7 的裝置，以便我們將精力專注在支援較新技術並提供絕佳的新終端使用者體驗。 在該日期之後，將無法再透過 Intune 取得可協助保護您 Windows 7 PC 的技術協助與自動更新。 Microsoft 強烈建議您在 2020 年 1 月之前升級到 Windows 10，以免發生不再提供所需服務或支援的情況。 在[這裡](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)閱讀更多有關 Windows 支援生命週期的資訊。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
