@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 10/31/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95cf688f3727f97aedd4126e00fa4dc4939ef6bc
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785513"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414683"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
 
@@ -167,7 +167,33 @@ ms.locfileid: "72785513"
   iOS 具有可能會影響此設定的內建安全性。 例如，iOS 可能會延遲觸發原則，視登入失敗次數而定。 它也可以考慮重複輸入相同的密碼一次。 Apple 的[iOS 安全性指南](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf)（開放 Apple 網站）是不錯的資源，並提供更多有關密碼的特定詳細資料。
   
 - **在螢幕鎖定最少幾分鐘後必須輸入密碼**<sup>1</sup>：輸入在使用者必須重新輸入密碼之前，裝置可閒置多久。 如果您輸入的時間比裝置上目前的設定還要長，則裝置會忽略您輸入的時間。 支援於 iOS 8.0 和更新版本的裝置。
-- **在停止活動最少幾分鐘後鎖定螢幕**<sup>1</sup>：輸入裝置上沒有任何活動時，最久會在幾分鐘後鎖定螢幕。 如果您輸入的時間比裝置上目前的設定還要長，則裝置會忽略您輸入的時間。 當設定為 [**立即**] 時，螢幕會根據裝置的最短時間鎖定。 在 iPhone 上，這是30秒。 在 iPad 上，這是兩分鐘。
+
+- **在停止活動最少幾分鐘後鎖定螢幕**<sup>1</sup>：輸入裝置上沒有任何活動時，最久會在幾分鐘後鎖定螢幕。
+
+  **iOS 選項**：  
+
+  - **未設定**（預設）： Intune 不會觸及這種設定。
+  - **立即**：在閒置30秒後鎖定螢幕。
+  - **1**：螢幕在閒置1分鐘後鎖定。
+  - **2**：停止活動2分鐘後的螢幕鎖定。
+  - **3**：在無活動3分鐘後鎖定螢幕。
+  - **4**：在無活動的4分鐘後鎖定螢幕。
+  - **5**：在無活動5分鐘後鎖定螢幕。
+    
+  **iPadOS 選項**：  
+
+  - **未設定**（預設）： Intune 不會觸及這種設定。
+  - **立即**：在閒置2分鐘後鎖定螢幕。
+  - **2**：停止活動2分鐘後的螢幕鎖定。
+  - **5**：在無活動5分鐘後鎖定螢幕。
+  - **10**：螢幕在閒置10分鐘後鎖定。
+  - **15**：在無活動15分鐘後鎖定螢幕。
+
+  如果某個值不適用於 iOS 或 iPadOS，則 Apple 會使用最接近的*最低*值。 例如，如果您輸入 `4` 分鐘，則 iPadOS 裝置會使用 `2` 分鐘。 如果您輸入 `10` 分鐘，則 iOS 裝置會使用 `5` 分鐘。 這是 Apple 的限制。
+  
+  > [!NOTE]
+  > 此設定的 Intune UI 不會區分 iOS 和 iPadOS 支援的值。 UI 可能會在未來的版本中更新。
+
 - **密碼到期 (天數)** ：輸入多少天後必須變更裝置密碼。
 - **不得重複使用以前用過的密碼**：輸入在舊密碼可以重新使用之前，必須使用新密碼的次數。
 - **TOUCH id 和臉部識別碼解除鎖定**：選擇 [**封鎖**] 以防止使用指紋或臉部來解除鎖定裝置。 [未設定]  會允許使用者使用這些方法將裝置解除鎖定。
