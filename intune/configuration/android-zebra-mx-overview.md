@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 13e5e7d49ec7e808f7cb5ba419dc881717539564
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
+ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496050"
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73182855"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>在 Microsoft Intune 中透過 Zebra 行動性延伸模組使用及管理 Zebra 裝置
 
@@ -30,7 +30,7 @@ ms.locfileid: "72496050"
 
 Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝置設定。 這些內建功能和設定可用來管理 Zebra Technologies 所製造的 Android 裝置，亦稱為「Zebra 裝置」。
 
-在 Android 裝置上，使用**行動性延伸模組 (MX)** 設定檔來自訂或新增更多的 Zebra 特定設定。
+在 Android 裝置上，使用 Zebra 的**行動性延伸模組 (MX)** 設定檔來自訂或新增更多的 Zebra 特定設定。
 
 本文說明如何在 Microsoft Intune 中使用 Zebra 裝置上的 Zebra 行動性延伸模組 (MX)。
 
@@ -52,6 +52,7 @@ Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝�
 - 請確定您具有來自 Zebra Technologies 的最新版本 StageNow 桌面應用程式。
 - 請務必檢閱 [Zebra's full MX feature matrix](http://techdocs.zebra.com/mx/compatibility) (Zebra 的完整 MX 功能矩陣) (開啟 Zebra 的網站)，以確認您所建立設定檔與裝置的 MX 版本、OS 版本及模型相容。
 - 某些裝置 (例如 TC20/25 裝置) 不支援 StageNow 中所有可用的 MX 功能。 請務必檢閱 [Zebra's feature matrixZebra](http://techdocs.zebra.com/mx/tc2x/) (Zebra 的功能矩陣) (開啟 Zebra 的網站)，以取得更新的支援資訊。
+
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>步驟 1：安裝最新的公司入口網站應用程式
 

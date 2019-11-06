@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb9fb439bd0bc59ae2c69ec966587d58c8c97bf4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510094"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414400"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "72510094"
 > [!WARNING]
 > Microsoft 宣告 [Windows 7 支援將於 2020 年 1 月 14 日結束](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。 在這一天，Intune 也會淘汰執行 Windows 7 的裝置支援。 Microsoft 強烈建議您移至 Windows 10，以防止任何服務或支援中斷。
 > 
-> 如需詳細資訊，請參閱[Intune 方案變更：即將結束對 Windows 7 的支援](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7-)。
+> 如需詳細資訊，請參閱 [Intune 規劃變更：即將結束對 Windows 7 的支援](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7)。
 
 > [!NOTE]
 > 您可以使用 Microsoft Intune 來管理 Windows 電腦，[其方式包括使用行動裝置管理 (MDM) 作為行動裝置來管理](../enrollment/windows-enroll.md)，或使用 Intune 軟體用戶端作為電腦來管理，如下所述。 不過，Microsoft 建議客戶如有可能盡量[使用 MDM 管理解決方案](../enrollment/windows-enroll.md)。 如需詳細資訊，請參閱[比較作為電腦或行動裝置來管理 Windows 電腦](pc-management-comparison.md) 
@@ -62,7 +62,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 |---------------|--------------------|
 |作業系統 | 執行 Windows 7 SP1 與 Windows 8.1 或更新版本的 Windows 裝置。 </br></br>**不支援家用版本。**|
 |系統管理權限|安裝用戶端軟體的帳戶必須擁有該裝置的本機系統管理員權限。|
-|Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。<br /><br />若要檢視電腦上的 Windows Installer 版本：<br /><br />  在電腦上，以滑鼠右鍵按一下 **%windir%\System32\msiexec.exe**，然後按一下 [內容]  。<br /><br />您可以從 Microsoft Developer Network (MSDN) 網站上的 [Windows Installer Redistributables (Windows Installer 可轉散發套件)](http://go.microsoft.com/fwlink/?LinkID=234258) 下載最新版的 Windows Installer。|
+|Windows Installer 3.1|電腦至少必須有 Windows Installer 3.1。<br /><br />若要檢視電腦上的 Windows Installer 版本：<br /><br />  在電腦上，以滑鼠右鍵按一下 **%windir%\System32\msiexec.exe**，然後按一下 [內容]  。<br /><br />您可以從 Microsoft Developer Network (MSDN) 網站上的 [Windows Installer Redistributables (Windows Installer 可轉散發套件)](https://go.microsoft.com/fwlink/?LinkID=234258) 下載最新版的 Windows Installer。|
 |移除不相容的用戶端軟體|安裝 Intune 用戶端軟體之前，請從該電腦解除安裝任何 Configuration Manager、Operations Manager 與 Service Manager 用戶端軟體。|
 
 ## <a name="deploying-the-intune-software-client"></a>部署 Intune 軟體用戶端
