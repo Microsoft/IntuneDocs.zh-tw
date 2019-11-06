@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a6b427552e545421e329b900833c889e67bf35
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d69bd040929da08d7d23db764c5b01f6aca6a9ea
+ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503034"
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73143183"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>設定註冊狀態頁面
  
@@ -191,7 +191,6 @@ ms.locfileid: "72503034"
 - 停用 ESP 設定檔並不會從裝置移除 ESP 原則，而且使用者在第一次登入裝置時，仍會取得 ESP。 停用 ESP 設定檔時，不會移除原則。 您必須部署 OMA-URI 以停用 ESP。 如需有關如何使用 OMA-URI 停用 ESP 的指示，請參閱上述。 
 - 擱置重新開機一律會造成逾時。 因為裝置需要重新開機，所以會發生逾時。 需要重新開機才有時間完成註冊狀態頁面中所追蹤的項目。 重新開機會導致註冊狀態頁面結束，而且在重新開機後，裝置將不會進入帳戶設定。  請考慮不需要重新開機進行應用程式安裝。 
 - 裝置設定期間的重新開機會強制使用者在轉換至帳戶設定階段之前輸入其認證。 重新開機期間不會保留使用者認證。 請讓使用者輸入其認證，然後註冊狀態頁面才能繼續。 
-- 使用 Windows Hello 企業版原則的 SCEP 憑證會導致逾時，因為使用者無法完成設定 Hello PIN，以允許 SCEP 憑證安裝的競爭。  無因應措施。 修正 ETA 為 2019 夏季。 
 - 在低於 1903 的 Windows 10 版本上進行 [新增工作和學校帳戶] 註冊期間，註冊狀態頁面一律會逾時。 註冊狀態頁面會等待 Azure AD 註冊完成。 Windows 10 1903 版和更新版本中已修正此問題。  
 - 使用 ESP 的混合式 Azure AD Autopilot 部署所花的時間超過 ESP 設定檔中所定義的逾時期間。 在混合式 Azure AD Autopilot 部署上，ESP 會花費 40 分鐘的時間，超過 ESP 設定檔中所設定的值。 此延遲使內部部署 AD 連接器有時間建立 Azure AD 的新裝置記錄。 
 - Windows 登入頁面未預先填入 Autopilot 使用者驅動模式中的使用者名稱。 如果在 ESP 的裝置設定階段期間重新開機：

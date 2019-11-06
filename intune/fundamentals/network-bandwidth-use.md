@@ -18,20 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a3ecf2872832af6199620863a05b4275731db5c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 0507d607bfac6c084f1ce0b1f59d7474810ec8b7
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505240"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415101"
 ---
 # <a name="intune-network-configuration-requirements-and-bandwidth"></a>Intune 網路設定需求與頻寬
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 您可以使用此資訊來了解 Intune 部署的頻寬需求。
 
 ## <a name="average-network-traffic"></a>平均網路流量
+
 此表格列出每個用戶端透過網路傳輸的一般內容的估計大小和頻率。
 
 > [!NOTE]
@@ -53,9 +52,11 @@ ms.locfileid: "72505240"
 |軟體發佈|不定<br /><br />大小依您部署的軟體而定。|**不定**<br /><br />視您何時部署軟體而定。|
 
 ## <a name="ways-to-reduce-network-bandwidth-use"></a>減少網路頻寬用量的方式
+
 您可以使用下列其中一或多種方法，減少 Intune 用戶端佔用的網路頻寬。
 
 ### <a name="use-a-proxy-server-to-cache-content-requests"></a>使用 Proxy 伺服器快取內容要求
+
 Proxy 伺服器可以快取內容來減少重複的下載，並減少網際網路內容佔用的網路頻寬。
 
 接收用戶端內容要求的快取 Proxy 伺服器可以擷取該內容，並快取網頁回應和下載。 伺服器會使用快取的資料回應用戶端的後續要求。
@@ -74,6 +75,7 @@ Proxy 伺服器可以快取內容來減少重複的下載，並減少網際網�
 如需有關如何使用 Proxy 伺服器快取內容的詳細資訊，請參閱您的 Proxy 伺服器解決方案的文件。
 
 ### <a name="use-background-intelligent-transfer-service-bits-on-computers"></a>在電腦上使用背景智慧型傳送服務 (BITS)
+
 您可以在自己設定的小時時間內，於 Windows 電腦上使用 BITS 以減少網路頻寬。 您可以在 Intune 代理程式原則的 [網路頻寬]  頁面中設定 BITS 原則。
 
 > [!NOTE]
@@ -82,14 +84,15 @@ Proxy 伺服器可以快取內容來減少重複的下載，並減少網際網�
 若要深入了解 BITS 和 Windows 電腦，請參閱 TechNet Library 中的[背景智慧型傳送服務](https://technet.microsoft.com/library/bb968799.aspx)。
 
 ### <a name="delivery-optimization"></a>傳遞最佳化
+
 傳遞最佳化讓您能夠使用 Intune，來減少您的 Windows 10 裝置下載應用程式和更新時的頻寬耗用量。 藉由使用自我組織的分散式快取，您可以從傳統伺服器和替代來源 (例如網路對等) 提取下載。
 
 若要查看傳遞最佳化所支援的 Windows 10 版本和內容類型的完整清單，請參閱[適用於 Windows 10 更新的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization#requirements) \(部分機器翻譯\) 一文。
 
 您可以[設定傳遞最佳化](../configuration/delivery-optimization-settings.md)作為裝置組態設定檔的一部分。
 
-
 ### <a name="use-branchcache-on-computers"></a>在電腦上使用 BranchCache
+
 Intune 用戶端可以使用 BranchCache 來減少廣域網路 (WAN) 流量。 下列作業系統支援 BranchCache：
 
 - Windows 7

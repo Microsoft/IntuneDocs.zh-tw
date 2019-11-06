@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 807b33867d827415165eb65d81b91683830735f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a1a3dcd7068a004f94b97b5ec6c43c609662a76d
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502864"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414568"
 ---
 # <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
  本主題說明使用已套用應用程式保護原則之應用程式時的使用者體驗。 只有在工作環境中使用應用程式時，才會套用應用程式保護原則；例如，當使用者使用工作帳戶來存取應用程式的情況，或是存取公司商務用 OneDrive 地點中所儲存檔案的情況。
 
@@ -35,7 +33,6 @@ ms.locfileid: "72502864"
 如果裝置**未註冊於 Intune 中**，會要求使用者在第一次使用應用程式時重新啟動應用程式。 必須先重新啟動，才會將應用程式保護原則套用到應用程式。
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
-
 
 <!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
@@ -56,8 +53,9 @@ ms.locfileid: "72502864"
 多重身分識別應用程式可讓使用者新增多個帳戶。  Intune 應用程式僅支援一個受控帳戶。  Intune 應用程式不會限制非受控帳戶的數目。
 
 當應用程式中有受控帳戶時：
-* 若使用者嘗試新增第二個受控帳戶，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
-* 若 IT 系統管理員對第二個現有帳戶新增原則，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
+
+- 若使用者嘗試新增第二個受控帳戶，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
+- 若 IT 系統管理員對第二個現有帳戶新增原則，系統會要求使用者選取要使用哪個受控帳戶。  另一個帳戶會移除。
 
 閱讀下列案例範例以深入了解如何處理多個使用者帳戶。
 
@@ -68,4 +66,5 @@ ms.locfileid: "72502864"
 如果您使用 iOS 裝置，則嘗試在該裝置上新增第二個工作帳戶時，會看到封鎖訊息。 帳戶隨即顯示，接著您可以選擇想要移除的帳戶。
 
 ## <a name="next-steps"></a>後續步驟
+
 [當 Android 應用程式交由應用程式防護原則管理時的行為](end-user-mam-apps-android.md)

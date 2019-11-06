@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2bd9fe52bcaa6295d452ade59d6c3c32e1e81a67
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999671"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415047"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支援的作業系統與瀏覽器
 
@@ -37,14 +37,14 @@ ms.locfileid: "72999671"
 
 您可以管理執行下列作業系統的裝置：
 
-[!INCLUDE [mdm-supported-devices](../../intune-classic/includes/mdm-supported-devices.md)]
+[!INCLUDE [mdm-supported-devices](../includes/mdm-supported-devices.md)]
 
 ### <a name="supported-samsung-knox-standard-devices"></a>支援的 Samsung Knox Standard 裝置
 
 若要避免導致 MDM 註冊失敗的 Knox 啟用錯誤，公司入口網站應用程式僅會在 MDM 註冊期間嘗試啟用 Samsung Knox (若[支援的 Knox 裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace) 中包含該裝置的話)。 如果裝置不支援 Samsung Knox 啟用，則會註冊為標準 Android 裝置。 相同 Samsung 裝置的某些型號可能支援 Knox，而其他則不支援。 在您購買及部署 Samsung 裝置之前，請先跟裝置轉銷商確認 Knox 相容性。
 
 > [!NOTE]
-> 註冊 Samsung Knox 裝置可能會需要[啟用針對 Samsung 伺服器的存取](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers) \(英文\)。 
+> 註冊 Samsung Knox 裝置可能會需要[啟用針對 Samsung 伺服器的存取](https://support.samsungknox.com/hc/articles/115013833108-Our-corporate-devices-are-behind-a-firewall-How-do-I-enable-Knox-Workspace-devices-to-contact-Samsung-servers) \(英文\)。
 
 下列 Samsung 裝置型號清單不支援 Knox。 適用於 Android 的公司入口網站應用程式會將它們註冊為原生 Android 裝置：
 
@@ -85,18 +85,17 @@ ms.locfileid: "72999671"
 | Galaxy V Plus | SM-G318HZ |
 | Galaxy Young 2 Duos | SM-G130BU |
 
-
 ### <a name="windows-pc-software-client"></a>Windows 電腦軟體用戶端
 
-[Intune 軟體用戶端](../manage-windows-pcs-with-microsoft-intune.md)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
+[Intune 軟體用戶端](manage-windows-pcs-with-microsoft-intune.md)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
 
 > [!Note]
 > Microsoft 宣告 Windows 7 支援將於 2020 年 1 月 14 日結束。 在這一天，Intune 也會淘汰執行 Windows 7 的裝置支援。
-
-> 如需詳細資訊，請參閱 [Intune 規劃變更：即將結束對 Windows 7 的支援](https://docs.microsoft.com/en-us/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
-
+>
+> 如需詳細資訊，請參閱 [Intune 規劃變更：即將結束對 Windows 7 的支援](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+>
 > Microsoft Intune 將在 2020 年 10 月 15 日淘汰對 Silverlight 型 Intune 主控台的支援。 此淘汰包括結束支援 Silverlight 主控台設定的電腦軟體用戶端 (也稱為「電腦代理程式」)
-
+>
 > 如需詳細資訊，請參閱 [Microsoft Intune 終止支援 Silverlight 型系統管理主控台](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249) \(英文\)
 
 <!--  ### Exchange ActiveSync management
@@ -107,24 +106,23 @@ You can manage [Exchange ActiveSync devices](../enrollment/device-enrollment.md#
 
 執行不同的系統管理工作時，您必須使用下列其中一個系統管理網站。
 
-- [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)
+- [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Azure 入口網站](https://portal.azure.com/)
 
 以下是這些入口網站支援的瀏覽器：
+
 - Microsoft Edge (最新版本)
 - Microsoft Internet Explorer 11
 - Safari (最新版本，僅限 Mac)
 - Chrome (最新版本)
 - Firefox (最新版本)
 
-
-
-
 ### <a name="intune-classic-portal"></a>Intune 傳統入口網站
 
 Intune 傳統入口網站僅用於管理已向 Intune 電腦軟體用戶端註冊的裝置 (https://manage.microsoft.com) )。 Intune 傳統入口網站需要 Silverlight 瀏覽器支援。
 
 下列 Silverlight 瀏覽器支援 Intune 主控台：
+
 - Internet Explorer 10 或更新版本
 - Google Chrome (42 版之前的版本)
 - 已啟用 Silverlight 的 Mozilla Firefox (早於 56 版的版本)

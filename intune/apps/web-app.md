@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6678b7c3519328623d9c0035c725af3877a36ba8
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6600c75ce3e6120143b17fb863670b2eb423a09f
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507065"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592046"
 ---
 # <a name="add-web-apps-to-microsoft-intune"></a>將 Web 應用程式新增至 Microsoft Intune
 
@@ -36,7 +36,7 @@ Intune 支援各種不同的應用程式類型，包括 Web 應用程式。 Web 
 Intune 會在使用者的裝置上建立 Web 應用程式捷徑。 針對 iOS 裝置，會新增 Web 應用程式的捷徑到主畫面。 針對 Android 裝置，會新增 Web 應用程式的捷徑到 Intune 公司入口網站應用程式小工具，而且使用者必須手動釘選該小工具。 針對 Windows 裝置，Web 應用程式的捷徑會放在 [開始] 功能表。
 
 > [!Note]
-> Android 工作設定檔裝置不支援 Web 應用程式。 使用者的裝置上必須安裝瀏覽器，以啟動網頁。
+> 使用者的裝置上必須安裝瀏覽器，以啟動網頁。
 
 ## <a name="add-a-web-app-to-intune"></a>將 Web 應用程式新增至 Intune
 您可以執行下列動作，將應用程式新增至 Intune 以作為該應用程式的網路捷徑：

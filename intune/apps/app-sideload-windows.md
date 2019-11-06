@@ -16,16 +16,14 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a89392dabe695cf49e989351cef822852676916
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7500000f8a34120e69c27ce01a6cfdb85f447abe
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507374"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414709"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 身為 Intune 管理員，您可以將企業營運 (LOB) 通用應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，包括公司入口網站應用程式。 若要將 .appx 應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，您可以使用來自您 Windows 裝置已經信任之公開憑證授權單位的程式碼簽署憑證，或者，您可以使用自己的憑證授權單位。
 
@@ -53,6 +51,7 @@ ms.locfileid: "72507374"
 ### <a name="upload-the-code-signing-certificate"></a>上傳程式碼簽署憑證
 
 如果您的 Windows 10 裝置尚未信任憑證授權單位，則在您簽署 appx 套件並將它上傳至 Intune 服務之後，您需要將程式碼簽署憑證上傳至 Intune 入口網站：
+
 1. 按一下 [用戶端應用程式]
 2. 按一下 [Windows 企業憑證]
 3. 選取程式碼簽署憑證底下的 [選取檔案]
@@ -77,6 +76,7 @@ Windows 8.1 Desktop/Windows 10 Desktop 與行動裝置版
 如果憑證期間已過期，則 appx 檔案可能會停止啟動。 您應該取得新的 .cer 檔案，並遵循指示以對每個部署的 appx 檔案進行程式碼簽署，並將所有 appx 檔案和更新的 .cer 檔案重新上傳至 Intune 入口網站的 [Windows 企業憑證] 區段。
 
 ## <a name="manually-deploy-windows-10-company-portal-app"></a>手動部署 Windows 10 公司入口網站應用程式
+
 如果您不想提供 Microsoft Store 的存取權限，即使您還沒有整合 Intune 與商務用 Microsoft Store (MSFB)，仍可直接從 Intune 手動部署 Windows 10 公司入口網站應用程式。 或者，如果您已整合，則可透過[使用 MSFB 部署應用程式](store-apps-windows.md)來部署公司入口網站應用程式。
 
  > [!NOTE]
@@ -100,9 +100,11 @@ Windows 8.1 Desktop/Windows 10 Desktop 與行動裝置版
 有關 Intune 如何處理通用應用程式的相依性，詳細資訊請參閱[透過 Microsoft Intune MDM 部署具相依性的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  
 
 ### <a name="how-do-i-update-the-company-portal-on-my-users-devices-if-they-have-already-installed-the-older-apps-from-the-store"></a>如果使用者已從市集安裝較舊的公司入口網站應用程式，我如何能更新他們裝置上的公司入口網站應用程式？
-如果您的使用者已經從市集安裝 Windows 8.1 或 Windows Phone 8.1 公司入口網站應用程式，則他們的裝置應該會自動更新到新版本，您或您的使用者不需要採取任何動作。 如果更新沒發生，請使用者確認他們已在其裝置上啟用自動更新市集應用程式。   
+
+如果您的使用者已經從市集安裝 Windows 8.1 或 Windows Phone 8.1 公司入口網站應用程式，則他們的裝置應該會自動更新到新版本，您或您的使用者不需要採取任何動作。 如果更新沒發生，請使用者確認他們已在其裝置上啟用自動更新市集應用程式。
 
 ### <a name="how-do-i-upgrade-my-sideloaded-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我側載的 Windows 8.1 公司入口網站應用程式升級至 Windows 10 公司入口網站應用程式？
+
 我們建議的移轉方式是刪除 Windows 8.1 公司入口網站應用程式的部署，做法是將部署動作設定為「解除安裝」。 完成後，可以使用任何上述選項部署 Windows 10 公司入口網站應用程式。  
 
 如果您需要側載應用程式，且您部署 Windows 8.1 公司入口網站時未使用 Symantec 憑證簽署它，請遵循之前「透過 Intune 直接部署」一節所述步驟完成升級。
@@ -110,6 +112,7 @@ Windows 8.1 Desktop/Windows 10 Desktop 與行動裝置版
 如果您需要側載應用程式，且您已使用 Symantec 程式碼簽署憑證簽署及部署 Windows 8.1 公司入口網站，請遵循下一節的步驟。  
 
 ### <a name="how-do-i-upgrade-my-signed-and-sideloaded-windows-phone-81-company-portal-app-or-windows-81-company-portal-app-to-the-windows-10-company-portal-app"></a>如何將我已簽署及側載的 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式，升級至 Windows 10 公司入口網站應用程式？
+
 我們建議的移轉方式是刪除 Windows Phone 8.1 公司入口網站應用程式或 Windows 8.1 公司入口網站應用程式的現有部署，做法是將部署動作設定為「解除安裝」。 完成後，便可以正常部署 Windows 10 公司入口網站應用程式。  
 
 否則，必須適當地更新及簽署 Windows 10 公司入口網站應用程式，以確保遵循升級方式。  

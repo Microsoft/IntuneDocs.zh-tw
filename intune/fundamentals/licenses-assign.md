@@ -16,24 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f09f4ba58e3da5821eea06fcfec6e55c9c007d44
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502714"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414082"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 無論您手動新增使用者，或是從內部部署 Active Directory 同步處理，您必須先指派 Intune 授權給每位使用者，使用者才能在 Intune 中註冊他們的裝置。 如需授權清單，請參閱[包含 Intune 的授權](../licenses.md)。
 
 ## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心指派 Intune 授權
 
-您可以使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
+您可以使用 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
 
-1. 使用租用戶系統管理員認證登入 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]   > [作用中使用者]  。
+1. 使用租用戶系統管理員認證登入 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]   > [作用中使用者]  。
 
 2. 選取您想要指派 Intune 使用者授權的使用者帳戶，然後選擇 [產品授權]   >  [編輯]  。
 
@@ -51,6 +49,7 @@ ms.locfileid: "72502714"
 您也可以使用 Azure Active Directory，將 Intune 授權指派給使用者。 如需詳細資訊，請參閱 [Azure Active Directory 中的授權使用者](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-group-assignment-azure-portal)一文。 
 
 ## <a name="use-school-data-sync-to-assign-licenses-to-users-in-intune-for-education"></a>使用「學校資料同步處理」將授權指派給 Intune 教育版中的使用者
+
 如果您是教育組織，則可以使用「學校資料同步處理」(SDS) 將 Intune 教育版授權指派給同步的使用者。 只要在設定 SDS 設定檔時，選取 [Intune 教育版] 核取方塊即可。  
 
 ![SDS 設定檔設定的螢幕擷取畫面](./media/licenses-assign/i4e-sds-profile-setup-setting.png)
@@ -62,6 +61,7 @@ ms.locfileid: "72502714"
 若要深入了解 SDS，請參閱此[學校資料同步處理概觀](https://support.office.com/article/Overview-of-School-Data-Sync-and-Classroom-f3d1147b-4ade-4905-8518-508e729f2e91)。
 
 ## <a name="how-user-and-device-licenses-affect-access-to-services"></a>使用者和裝置授權如何影響對服務的存取
+
 * 您指派使用者軟體授權的每位**使用者**，都可存取及使用線上服務和相關軟體 (包括 System Center 軟體) 來管理應用程式和最多 15 個 MDM 裝置。 Intune 電腦代理程式會針對每個使用者授權允許使用 5 個實體和 1 部虛擬機器。
 * 您可以單獨從使用者授權購買任何裝置的授權。 裝置授權不需要指派給裝置。 每部存取及使用線上服務與相關軟體 (包括 System Center 軟體) 的裝置都必須有裝置授權。
 * 如果裝置是由多個使用者使用，每個使用者都需要一個裝置軟體授權，或者所有使用者需要一個使用者軟體授權。
@@ -73,9 +73,6 @@ Intune 的購買方式決定訂用帳戶資訊：
 - 如果您透過 Enterprise 合約購買 Intune，則可以在大量授權入口網站的 [訂用帳戶]  下找到訂用帳戶資訊。
 - 如果您透過雲端解決方案提供者購買 Intune，則請洽詢您的轉售商。
 - 如果您使用 CC# 或 Invoice 購買 Intune，則授權會以使用者為基礎。
-
-
-
 
 ## <a name="use-powershell-to-selectively-manage-ems-user-licenses"></a>使用 PowerShell 來選擇性地管理 EMS 使用者授權
 使用 Microsoft Enterprise Mobility + Security (原稱為 Enterprise Mobility Suite) 的組織可能會有一些使用者只需要使用 EMS 套件中的 Azure Active Directory Premium 或 Intune 服務。 您可以使用 [Azure Active Directory PowerShell Cmdlet](https://msdn.microsoft.com/library/jj151815.aspx) 指派一項服務或其中一部分的服務。
@@ -97,7 +94,6 @@ Intune 的購買方式決定訂用帳戶資訊：
 
     $CustomEMS = New-MsolLicenseOptions -AccountSkuId "<TenantName>:EMS" -DisabledPlans INTUNE_A
     Set-MsolUserLicense -UserPrincipalName user@<TenantName>.onmicrosoft.com -AddLicenses <TenantName>:EMS -LicenseOptions $CustomEMS
-
 
 驗證：
 

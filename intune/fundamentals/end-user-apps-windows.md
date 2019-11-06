@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cd4dd270d276969d759bc9a9dccef80b281251
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: da2f080458df360667df235ff10cc8f750b049eb
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502920"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414585"
 ---
 # <a name="how-your-windows-users-get-their-apps"></a>Windows 使用者如何取得其應用程式
-
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
 
 使用這項資訊，了解您的使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。
 
@@ -39,5 +37,6 @@ ms.locfileid: "72502920"
 **未受管理的應用程式** - 可透過原則進行管理，以及未受 Intune 包裝或不包含 Intune App SDK。 應用程式保護原則不適用於這些應用程式。
 
 ## <a name="see-also"></a>請參閱
+
 [Android 使用者如何取得其應用程式](end-user-apps-android.md)
 [iOS 使用者如何取得其應用程式](end-user-apps-android.md)
