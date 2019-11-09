@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5776ebf3241968cca6da537bb58b7ab2a06f00ba
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 348768be4a42667f579df0ccb500434425258db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892547"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712858"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解
 
@@ -60,7 +60,7 @@ ms.locfileid: "72892547"
 此問題有幾種可能的解決方式：
 
 ##### <a name="remove-devices-that-were-enrolled"></a>移除已註冊的裝置
-1. 登入 [Azure 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。    
+1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。    
 2. 前往 [**使用者**]  >  [**所有使用者**]。    
 3. 選取受影響的使用者帳戶，然後按一下 [**裝置**]。    
 4. 選取任何未使用或不想要的裝置，然後按一下 [**刪除**]。 
@@ -70,12 +70,12 @@ ms.locfileid: "72892547"
 > [!NOTE]
 > 這個方法會增加所有使用者的裝置註冊限制，而不只是受影響的使用者。
 
-1. 登入 [Azure 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
+1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 移至 [**裝置註冊**]  >  [**註冊限制**]，然後選取 [**裝置限制**] [限制]。    
 3. 增加 [**裝置限制**] 的值。 
 
 ##### <a name="check-device-type-restrictions"></a>檢查裝置類型限制
-1. 使用全域管理員帳戶登入 [Intune 入口網站](https://portal.azure.com/?Microsoft_Intune=1&Microsoft_Intune_DeviceSettings=true&Microsoft_Intune_Enrollment=true&Microsoft_Intune_Apps=true&Microsoft_Intune_Devices=true#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。
+1. 使用全域系統管理員帳戶登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 移至 **裝置註冊**  > **註冊限制**，然後在 **裝置類型限制** 下選取**預設**限制。    
 3. 選取 [**平臺**]，然後選取 [**允許** **Windows （MDM）** ]。
 
@@ -219,7 +219,7 @@ ms.locfileid: "72892547"
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>大量註冊期間發生安裝程式失敗。
 
-**原因：** 個別布建套件的帳戶封裝（Package_GUID）中的 Azure AD 使用者帳戶不允許將裝置加入 Azure AD。 當您使用 Windows 設定設計工具（WCD）或「設定學校電腦」應用程式來設定布建套件時，系統會自動建立 Azure AD 這些帳戶，而這些帳戶接著會用來將裝置加入 Azure AD。
+**原因：** 個別布建套件的帳戶套件（Package_GUID）中的 Azure AD 使用者帳戶不允許將裝置加入 Azure AD。 當您使用 Windows 設定設計工具（WCD）或「設定學校電腦」應用程式來設定布建套件時，系統會自動建立 Azure AD 這些帳戶，而這些帳戶接著會用來將裝置加入 Azure AD。
 
 #### <a name="resolution"></a>解決方案
 1. 以系統管理員身分登入 [Azure 入口網站](https://portal.azure.com/)。    

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8f4e56340d871ea5e0bcec7e541a418c32d021d0
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c75029c60609b0383e2f647e5b94144d4186248c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73415642"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754870"
 ---
 # <a name="microsoft-edge-baseline-settings-for-intune"></a>Intune 的 Microsoft Edge 基準設定
 
@@ -68,7 +68,7 @@ ms.locfileid: "73415642"
 
 - **預設的 Adobe Flash 設定**  
   **預設**：啟用  
-  Microsoft Edge CSP：[瀏覽器/AllowFlash](https://docs.microsoft.coms/windows/client-management/mdm/policy-csp-browser#browser-allowflash)和[瀏覽器/AllowFlashClickToRun](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)  
+  Microsoft Edge CSP：[瀏覽器/AllowFlash](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflash)和[瀏覽器/AllowFlashClickToRun](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowflashclicktorun)  
 
   判斷「PluginsAllowedForUrls」或「PluginsBlockedForUrls」未涵蓋的網站是否可以自動執行 Adobe Flash 外掛程式。 
 

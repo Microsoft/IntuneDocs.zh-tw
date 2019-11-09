@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 164c34f4a46ca11e2788b72dee70bdd40c25e7f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493904"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755271"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -223,12 +223,12 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 - **控制中心通知** (僅限行動裝置)：[封鎖]  防止控制中心通知出現在裝置的鎖定畫面。 [未設定]  (預設) 讓使用者選擇哪些應用程式可在鎖定畫面上顯示通知。
 
-  [AboveLock/AllowActionCenterNotifications CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-abovelock#abovelock-allowactioncenternotifications)
+  [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **鎖定畫面圖片 URL** (僅限 Desktop)：輸入作為 Windows 鎖定畫面桌布使用之 JPG、JPEG 或 PNG 格式圖片的 URL。 例如，輸入 `https://contoso.com/image.png`。 這項設定會鎖定映像，且以後不能變更。
 - **使用者可設定的畫面逾時** (僅限行動裝置)：[允許]  讓使用者設定畫面逾時。 [未設定]  (預設) 不提供使用者此選項。
 
-  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-allowscreentimeoutwhilelockeduserconfig)
+  [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
 
 - **鎖定畫面上的 Cortana** (僅限 Desktop)：[封鎖]  會在裝置位於鎖定畫面上時防止使用者與 Cortana 互動。 [未設定]  (預設) 可與 Cortana 互動。
 
@@ -240,7 +240,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 - **畫面逾時** (僅限行動裝置)：設定螢幕從鎖定到關閉的持續時間 (秒)。 支援的值為 11-1800。 例如，輸入 `300` 將此逾時設為 5 分鐘。
 
-  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-screentimeoutwhilelocked)
+  [DeviceLock/ScreenTimeoutWhileLocked CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_ScreenTimeoutWhileLocked)
 
 ## <a name="messaging"></a>訊息傳送
 

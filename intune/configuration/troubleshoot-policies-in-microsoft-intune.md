@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/20/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e2e7dc729879eb6d16a4ab3555d8fe319501a53e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492131"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754941"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>針對 Intune 中的原則和設定檔進行疑難排解
 
@@ -32,11 +32,12 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 本文列出一些常見的疑難排解技術，並描述您可能會遇到的一些問題。
 
 ## <a name="check-tenant-status"></a>檢查租使用者狀態
+
 檢查[租使用者狀態](../fundamentals/tenant-status.md)，並確認訂用帳戶為作用中。 您也可以查看可能會影響您的原則或設定檔部署之作用中事件和建議的詳細資料。
 
 ## <a name="use-built-in-troubleshooting"></a>使用內建的疑難排解
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [疑難排解]  ：
+1. 在[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選取 [**疑難排解 + 支援**]：
 
     ![在 Intune 中，移至 [說明及支援]，然後選取 [疑難排解]](./media/troubleshoot-policies-in-microsoft-intune/help-and-support-troubleshoot.png)
 
@@ -102,7 +103,7 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>您不確定設定檔是否已正確套用
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [所有裝置]  > 選取裝置 > [裝置設定]  。 
 
     每部裝置都會列出其設定檔。 每個設定檔都有 [狀態]  。 狀態是將所有指派的設定檔 (包括硬體和 OS 的限制與需求) 全部一起考慮時所達成的情況。 可能的狀態包括：

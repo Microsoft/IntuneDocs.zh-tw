@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1eda7fef3ee9c2ca4e4a13d9b6effba2ed121b0e
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 27a020f4b45ae878718bed4ee6e230c3d288f260
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506950"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755410"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>您可以在 Intune 中使用之內建 iOS 應用程式的套件組合識別碼
 
@@ -55,6 +55,7 @@ ms.locfileid: "72506950"
 | com.apple.Keynote           | Keynote      | Apple     |
 | com.apple.mobilemail        | Mail         | Apple     |
 | com.apple.Maps              | 地圖         | Apple     |
+| .com. measure           | 度量      | Apple     |
 | com.apple.MobileSMS         | 訊息     | Apple     |
 | com.apple.Music             | 音樂        | Apple     |
 | com.apple.news              | 新聞         | Apple     |

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6dbe26dba4e78e9f5f29a5adedffa3de1df662a6
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73414683"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709742"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
 
@@ -417,6 +417,9 @@ ms.locfileid: "73414683"
 - **應用程式類型清單**：建立要顯示或隱藏的應用程式清單。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站有[內建的 apple 應用程式](https://support.apple.com/HT208094)清單。 選項包括：
 
   - **隱藏的應用程式**：輸入要對使用者隱藏的應用程式清單。 使用者將無法檢視或開啟這些應用程式。
+  
+    Apple 防止隱藏某些原生應用程式。 例如，您無法在裝置上隱藏**設定**或**錢包**應用程式。 [刪除內建的 Apple app](https://support.apple.com/HT208094)會列出可隱藏的應用程式。
+  
   - **顯示的應用程式**：輸入使用者可檢視及啟動的應用程式清單。 無法檢視或啟動其他應用程式。
 
 - **應用程式 url**：輸入您想要顯示或隱藏之應用程式的 [存放區應用程式 url]。 例如：

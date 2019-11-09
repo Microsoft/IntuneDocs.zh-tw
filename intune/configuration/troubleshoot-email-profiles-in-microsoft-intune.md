@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/17/2019
+ms.date: 11/05/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 101f414955a3b60d22003f61678854fecc16910d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 15c78d7e7f602b60b6e9f2cee365c9a02eb904df
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506574"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755013"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中有關電子郵件設定檔的常見問題和解決方式
 
@@ -32,7 +32,6 @@ ms.locfileid: "72506574"
 ## <a name="what-you-need-to-know"></a>您必須知道的事項
 
 - 已為註冊裝置的使用者部署電子郵件設定檔。 若要設定電子郵件設定檔，Intune 會在註冊期間，于使用者的電子郵件設定檔中使用 Azure Active Directory （AD）屬性。 [將電子郵件設定新增至裝置](email-settings-configure.md)可能是很好的資源。
-- 從 Configuration Manager 混合式遷移至 Intune 獨立部署之後，Configuration Manager 混合的電子郵件設定檔會在裝置上保留7天。 這是正常的現象。 如果您需要更快移除電子郵件設定檔，請洽詢[Intune 支援](../fundamentals/get-support.md)。
 - 針對 Android Enterprise，使用受控 Google Play 商店部署 Gmail 或 9 for Work。 [新增受控 Google Play 應用程式](../apps/apps-add-android-for-work.md)會列出步驟。
 - 適用于 iOS 和 Android 的 Microsoft Outlook 不支援電子郵件設定檔。 相反地，部署應用程式設定原則。 如需詳細資訊，請參閱[Outlook Configuration 設定](../apps/app-configuration-policies-outlook.md)。
 - 以裝置群組（而非使用者群組）為目標的電子郵件設定檔可能不會傳遞至裝置。 當裝置具有主要使用者時，裝置目標應該可以使用。 如果電子郵件設定檔包含使用者憑證，請務必以使用者群組為目標。
@@ -62,22 +61,10 @@ Samsung KNOX 不會使用主機名稱來識別設定檔。 建議您不要建立
 
 已自動設定電子郵件帳戶的使用者將無法從他們的裝置傳送圖片或影像。 如果未啟用 [允許從協力廠商應用程式傳送電子郵件]  ，就會發生此情況。
 
-### <a name="intune-solution"></a>Intune 解決方案
-
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]  。
+1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [**裝置**] > [**設定檔**]。
 3. 選取您的電子郵件設定檔 >**屬性**  > **設定**。
 4. 將 [**允許從協力廠商應用程式傳送電子郵件**] 設定設為 [**啟用**]。
-
-### <a name="configuration-manager-hybrid"></a>混合式 Configuration Manager
-
-1. 開啟 [Configuration Manager 主控台] > [資產與合規性]  。
-
-2. 展開 [概觀]   > [合規性設定]   > [公司資源存取]  ，並選取 [電子郵件設定檔]  。
-
-3. 以滑鼠右鍵按一下電子郵件設定檔，然後開啟 **[內容]** 。
-
-4. 選取 **[同步處理設定]** 索引標籤上的 **[允許從協力廠商應用程式傳送電子郵件]** 。
 
 ## <a name="next-steps"></a>後續步驟
 

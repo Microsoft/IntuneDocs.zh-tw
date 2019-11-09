@@ -5,24 +5,24 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: ''
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: ''
+ms.reviewer: jieyan
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3e5804b415d26b07944c500b0158cf84a2d4412c
-ms.sourcegitcommit: d1b36501186e867355843ddd67c795ade800b76a
+ms.openlocfilehash: 7f343ace48c917e65d9d59cd7c42c53e9b892968
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73182855"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756722"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>在 Microsoft Intune 中透過 Zebra 行動性延伸模組使用及管理 Zebra 裝置
 
@@ -52,7 +52,6 @@ Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝�
 - 請確定您具有來自 Zebra Technologies 的最新版本 StageNow 桌面應用程式。
 - 請務必檢閱 [Zebra's full MX feature matrix](http://techdocs.zebra.com/mx/compatibility) (Zebra 的完整 MX 功能矩陣) (開啟 Zebra 的網站)，以確認您所建立設定檔與裝置的 MX 版本、OS 版本及模型相容。
 - 某些裝置 (例如 TC20/25 裝置) 不支援 StageNow 中所有可用的 MX 功能。 請務必檢閱 [Zebra's feature matrixZebra](http://techdocs.zebra.com/mx/tc2x/) (Zebra 的功能矩陣) (開啟 Zebra 的網站)，以取得更新的支援資訊。
-
 
 ## <a name="step-1-install-the-latest-company-portal-app"></a>步驟 1：安裝最新的公司入口網站應用程式
 
@@ -134,8 +133,8 @@ Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝�
 
 在 Intune 中，建立裝置組態設定檔：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 **裝置** > **設定檔** > **建立設定檔**。
 3. 輸入下列內容：
 
     - **名稱**：為新的設定檔輸入描述性名稱。

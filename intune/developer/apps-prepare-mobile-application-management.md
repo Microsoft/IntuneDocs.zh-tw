@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba1ec201cdb7e44570b53ce831b4e5ae26504973
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413821"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635326"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -110,7 +110,7 @@ Intune SDK 開發小組會針對搭配原生 Android、iOS (Obj-C、Swift)、Xam
 |完整抹除應用程式資料|X|X|
 |在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意：** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」|X||
-|目標應用程式設定（或透過「MAM 通道」的應用程式設定）|X|X|
+|目標應用程式設定（或透過「MAM 通道」的應用程式設定）|X||
 |支援多重身分識別|X||
 |可自訂樣式 |X|||
 |使用 Citrix mVPN 的隨選應用程式 VPN 連線|X|X| 

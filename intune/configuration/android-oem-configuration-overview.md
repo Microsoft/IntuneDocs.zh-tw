@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eb992747765ea087d5ef536c2da7c444bfa2d987
-ms.sourcegitcommit: 4f979ba7030e72d820113fe23ac8521ddb2433bd
+ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72915735"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73756768"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企業裝置與 OEMConfig
 
@@ -80,8 +80,8 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 
 ## <a name="create-an-oemconfig-profile"></a>建立 OEMConfig 設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 **裝置** > **設定檔** > **建立設定檔**。
 3. 輸入下列內容：
 
     - **名稱**：為新的設定檔輸入描述性名稱。
@@ -108,11 +108,11 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
       - 許多設定都具有 OEM 提供的預設值。 若要查看是否有預設值，請將滑鼠停留在設定旁的資訊圖示上。 [工具提示] 會顯示該設定的預設值（如果適用的話），以及 OEM 提供的更多詳細資料。
 
       - 按一下 [**清除**] 會刪除設定檔中的設定。 如果設定不在設定檔中，當套用設定檔時，裝置上的值將不會變更。
-        
+
       - 如果您在設定設計工具中建立空的（未設定）組合，則會在切換至 JSON 編輯器時予以刪除。
 
     - **Json 編輯器**：當您選取此選項時，json 編輯器會開啟，其中包含內嵌在應用程式中的完整設定架構範本。 在編輯器中，使用不同設定的值自訂範本。 如果您使用設定**設計**工具來變更您的值，JSON 編輯器會以設定設計工具中的值來覆寫範本。
-    
+
       - 如果您要更新現有的設定檔，JSON 編輯器會顯示上次與設定檔一起儲存的設定。
 
       - OEMConfig 架構可能很大而且複雜。 如果您想要使用不同的編輯器來更新這些設定，請選取 [**下載 JSON 範本**] 按鈕。 使用您選擇的編輯器，將您的設定值新增至範本。 然後，將您已更新的 JSON 複製並貼到**JSON 編輯器**屬性中。
