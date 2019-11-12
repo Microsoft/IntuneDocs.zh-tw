@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 11/06/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 783ae8bf3216c514bac183ed1945c454cbaa1708
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413866"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713485"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -44,7 +44,7 @@ ms.locfileid: "73413866"
 
   * 輸入應用程式檔案的副檔名必須為 **.ipa** 或 **.app**。
 
-  * 輸入應用程式必須針對 iOS 10 或更新版本進行編譯。
+  * 輸入應用程式必須針對 iOS 11 或更新版本進行編譯。
 
   * 無法加密輸入應用程式。
 
@@ -289,26 +289,27 @@ ms.locfileid: "73413866"
 |您指定的輸入應用程式已包裝，且是最新的原則範本版本。|App Wrapping Tool 不會使用最新的原則範本版本重新包裝現有已經包裝的應用程式。|
 |警告：未指定 SHA1 憑證雜湊。 請確定您的已包裝應用程式已經簽署，然後再部署。|請務必在 –c 命令列旗標後指定有效的 SHA1 雜湊。 |
 
-### <a name="log-files-for-the-app-wrapping-tool"></a>App Wrapping Tool 的記錄檔
+### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>從裝置收集已包裝應用程式的記錄檔
+使用下列步驟，在疑難排解期間取得已包裝應用程式的記錄檔。
 
-使用 App Wrapping Tool 包裝的應用程式會產生記錄，而這些記錄會寫入 iOS 用戶端裝置主控台。 當您的應用程式出現問題，需要判斷問題是否與 App Wrapping Tool 相關時，此資訊即能派上用場。 若要得到此資訊，請使用下列步驟：
+1. 移至您裝置上的 iOS 設定應用程式，並選取您的 LOB 應用程式。
+2. 將 [診斷主控台]  切換為 [開啟]  。
+3. 啟動您的 LOB 應用程式。
+4. 按一下「開始使用」連結。
+5. 您現在可以透過電子郵件來共用記錄檔，或者將記錄檔複製到 OneDrive 位置。
+
+> [!NOTE]
+> 已針對使用 Intune App Wrapping Tool 版本 7.1.13 或更新版本包裝的應用程式啟用記錄功能。
+
+### <a name="collecting-crash-logs-from-the-system"></a>從系統收集損毀記錄檔
+
+您的應用程式可能會將有用的資訊記錄到 iOS 用戶端裝置主控台。 當您的應用程式出現問題，需要判斷問題是否與 App Wrapping Tool 或應用程式本身相關時，此資訊即能派上用場。 若要得到此資訊，請使用下列步驟：
 
 1. 藉由執行應用程式來重現問題。
 
 2. 遵照 [偵錯已部署的 iOS 應用程式](https://developer.apple.com/library/ios/qa/qa1747/_index.html)的 Apple 指示收集主控台輸出。
 
-3. 在主控台輸入下列指令碼，篩選應用程式限制輸出的已儲存記錄：
-
-    ```bash
-    grep “IntuneAppRestrictions” <text file containing console output> > <required filtered log file name>
-    ```
-
-    您可以將篩選過的記錄檔提交給 Microsoft。
-
-    > [!NOTE]
-    > 在記錄檔中，項目「組建版本」表示 Xcode 的組建版本。
-
-    已包裝的應用程式也會提供使用者選項，在應用程式當機之後，直接從裝置透過電子郵件傳送記錄檔。 使用者可以將記錄檔傳送給您檢查，並視需要轉寄給 Microsoft。
+已包裝的應用程式也會提供使用者選項，在應用程式當機之後，直接從裝置透過電子郵件傳送記錄檔。 使用者可以將記錄檔傳送給您檢查，並視需要轉寄給 Microsoft。
 
 ### <a name="certificate-provisioning-profile-and-authentication-requirements"></a>憑證、佈建設定檔和驗證需求
 
@@ -442,19 +443,6 @@ App Wrapping Tool for iOS 必須滿足此工具的一些需求，才能發揮全
 ```bash
 ./IntuneMAMPackager/Contents/MacOS/IntuneMAMPackager -i ~/Desktop/MyApp.ipa -o ~/Desktop/MyApp_Wrapped.ipa -p ~/Desktop/My_Provisioning_Profile_.mobileprovision -c 12A3BC45D67EF8901A2B3CDEF4ABC5D6E7890FAB  -v true -citrix
 ```
-
-## <a name="getting-logs-for-your-wrapped-applications"></a>取得已包裝應用程式的記錄檔
-
-使用下列步驟，在疑難排解期間取得已包裝應用程式的記錄檔。
-
-1. 移至您裝置上的 iOS 設定應用程式，並選取您的 LOB 應用程式。
-2. 將 [診斷主控台]  切換為 [開啟]  。
-3. 啟動您的 LOB 應用程式。
-4. 按一下「開始使用」連結。
-5. 您現在可以透過電子郵件來共用記錄檔，或者將記錄檔複製到 OneDrive 位置。
-
-> [!NOTE]
-> 已針對使用 Intune App Wrapping Tool 版本 7.1.13 或更新版本包裝的應用程式啟用記錄功能。
 
 ## <a name="see-also"></a>請參閱
 

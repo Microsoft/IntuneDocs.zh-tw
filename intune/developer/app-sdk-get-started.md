@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a6886060cce77004b107dac02ecea57f2090ac8f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503477"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592014"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -63,7 +63,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 如果未來您應用程式的深層連結有所變更，您將必須重新註冊應用程式。
 
 > [!NOTE]
-> 如果您使用新版 Intune App SDK 更新您的應用程式，請通知我們。
+> 如果您使用了新版 Intune App SDK 更新您的應用程式，必須通知我們。
 
 ## <a name="download-the-sdk-files"></a>下載 SDK 檔案
 
@@ -72,7 +72,7 @@ Intune App SDK 支援跨 iOS 和 Android 的類似案例，而且能為 IT 系�
 * [iOS 版 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-ios)
 * [Android 版 Intune App SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android)
 
-如果您的應用程式是 Xamarin 應用程式，請使用這項 SDK 變數：
+如果您的應用程式是 Xamarin 應用程式，請使用這項 SDK 變體：
 
 * [Intune App SDK Xamarin 繫結](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)
 
@@ -181,6 +181,9 @@ Intune|iOS|Android|說明|
 5. 在搜尋方塊中輸入 **Microsoft 行動應用程式管理**。
 6. 在 [委派權限]  下，選取 [DeviceManagementManagedApps.ReadWrite: Read and Write the User’s App Management Data] \(DeviceManagementManagedApps.ReadWrite：讀取和寫入使用者的應用程式管理資料\)  * 核取方塊。
 7. 按一下 [新增權限]  。
+
+> [!NOTE]
+> 如果您的應用程式限制您無法登入，因為存取此資源時發生錯誤： https://intunemam.microsoftonline.com ，您必須使用應用程式的用戶端識別碼來傳送附注給 msintuneappsdk@microsoft.com 。 這是今天的手動核准程式。
 
 ### <a name="badge-your-app-optional"></a>為應用程式加上徽章 (選擇性)
 
