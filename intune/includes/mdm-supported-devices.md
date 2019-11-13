@@ -1,24 +1,20 @@
 ---
-ms.openlocfilehash: 797d1c66c50bed91f58eab535696b34001fcb28d
-ms.sourcegitcommit: db68056e2db17dfdeaa216c684302567742e6416
+ms.openlocfilehash: a20d1df2bf1e5052bcb2d3d83e919e190f8d9175
+ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2019
-ms.locfileid: "71239588"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73445848"
 ---
 
 
 ### <a name="apple"></a>Apple
-- Apple iOS 10.0 及更新版本
+- Apple iOS 與 iPadOS 11.0 與更新版本
 - Mac OS X 10.12 及更新版本
 
 ### <a name="google"></a>Google
-- Android 4.4 及更新版本 (包括 Samsung Knox Standard 4.4 及更新版本)
-
-  您可以在 [Android 和 Samsung Knox Standard 原則設定](/intune/supported-devices-browsers#supported-samsung-knox-standard-devices)中，找到已驗證 Samsung Knox Standard 裝置的完整清單。
-
-
-- Android 企業[需求](https://support.google.com/work/android/answer/6174145?hl=en)。
+- Android 5.0 與更新版本 (包括 Samsung KNOX Standard 2.4 與更新版本：[需求](https://www.samsungknox.com/en/knox-platform/supported-devices/2.4+))
+- Android 企業：[需求](https://support.google.com/work/android/topic/9428066)
 
 ### <a name="microsoft"></a>Microsoft
 
@@ -26,18 +22,18 @@ ms.locfileid: "71239588"
 - Windows 10 (家用版、S、專業版、教育版和企業版)
 - Windows 10 Enterprise 2019 LTSC
 
-  如需有關管理執行 Windows 10 2019 LTSC 之裝置的詳細資訊，請參閱 [Windows 10 企業版 2019 LTSC 中的新功能](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/whats-new-windows-10-2019) \(部分機器翻譯\)
+  如需有關管理執行 Windows 10 2019 LTSC 之裝置的詳細資訊，請參閱 [Windows 10 企業版 2019 LTSC 中的新功能](https://docs.microsoft.com/windows/whats-new/ltsc/whats-new-windows-10-2019) \(部分機器翻譯\)
   
 - Windows 10 Mobile
 - Windows 10 IoT 企業版 (x86、x64)
 - Windows 10 IoT 行動裝置企業版
 - Windows Holographic for Business
 
-  如需管理執行 Windows Holographic for Business 之裝置的詳細資訊，請參閱 [Window Holographic for Business 支援](../windows-holographic-for-business.md)。
+  如需管理執行 Windows Holographic for Business 之裝置的詳細資訊，請參閱 [Window Holographic for Business 支援](../fundamentals/windows-holographic-for-business.md)。
 
 - Windows 10 Teams (Surface Hub)
 
-   如需有關管理執行 Windows 10 Teams 之裝置的詳細資訊，請參閱[使用 MDM 管理 Surface Hub](https://docs.microsoft.com/en-us/surface-hub/manage-settings-with-mdm-for-surface-hub) \(部分機器翻譯\)
+   如需有關管理執行 Windows 10 Teams 之裝置的詳細資訊，請參閱[使用 MDM 管理 Surface Hub](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub) \(部分機器翻譯\)
 - Windows Phone 8.1、Windows 8.1 RT、執行 Windows 8.1 (基本維護模式) 的電腦
 
 > [!NOTE]

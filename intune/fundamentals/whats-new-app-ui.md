@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 10/31/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7517a2b60c4b5a893b90b09be72ddb363f23552a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 85f9bb72c6c40c67874326b06ebd41286d2d7220
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509974"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73415145"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 
@@ -36,6 +36,23 @@ ms.locfileid: "72509974"
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+
+## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日當週  
+
+### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>改善了 Android 版公司入口網站應用程式中的檢查清單設計 <!-- 5550857 -->  
+Android 版公司入口網站應用程式中的設定檢查清單已更新為採用輕量設計與新圖示。 這些變更與針對 iOS 版公司入口網站應用程式所做的最新更新一致。 我們正在向所有客戶逐步推出應用程式更新，而且預計會在下週末完成。 針對已更新的註冊步驟，請參閱[使用 Android 工作設定檔註冊](/intune-user-help/enroll-device-android-work-profile)與[註冊您的 Android 裝置](/intune-user-help/enroll-device-android-company-portal)。  
+
+下列畫面顯示已更新的 Android 工作設定檔註冊檢查清單：
+
+|已更新|上一步|  
+|---|---|  
+|![公司入口網站中工作設定檔設定的範例影像，其中顯示簡化的檢查清單與新圖示。](./media/whats-new-app-ui/work-profile-checklist-1911.png)|![公司入口網站中先前工作設定檔設定的範例影像，其中顯示較繁複的檢查清單。](./media/whats-new-app-ui/work-profile-checklist-1904.png)|   
+
+下列畫面顯示已更新的 Android 裝置系統管理員註冊檢查清單：  
+
+|已更新|上一步|  
+|---|---|  
+|![公司入口網站中 Android 裝置系統管理員設定的範例影像，其中顯示簡化的檢查清單與新圖示。](./media/whats-new-app-ui/android-checklist-1911.png)|![公司入口網站中 Android 裝置系統管理員設定的範例影像，其中顯示較繁複的檢查清單。](./media/whats-new-app-ui/android-checklist-1904.png)|  
 
 ## <a name="week-of-september-9-2019"></a>2019 年 9 月 9 日當週
 
@@ -572,6 +589,6 @@ __改進後__ ![更新版本的載入畫面影像，現在會顯示安裝進度�
 
 
 ## <a name="see-also"></a>請參閱
-* [Microsoft Intune 部落格](http://go.microsoft.com/fwlink/?LinkID=273882)
+* [Microsoft Intune 部落格](https://go.microsoft.com/fwlink/?LinkID=273882)
 * [雲端平台藍圖](https://www.microsoft.com/cloud-platform/roadmap)
-* [Intune 的新功能](../whats-new.md)
+* [Intune 的新功能](whats-new.md)

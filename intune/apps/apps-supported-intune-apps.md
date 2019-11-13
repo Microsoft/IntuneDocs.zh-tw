@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24b69b6da846d54d4f45ede47c932574e006f99f
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 4e0cef06f2f939c996fe59d5b6acb10560125718
+ms.sourcegitcommit: e7798c9faa7b7471d0994de2dcd94c259ee8874c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72786024"
+ms.lasthandoff: 11/12/2019
+ms.locfileid: "73931016"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保護的應用程式  
 
@@ -53,7 +53,7 @@ ms.locfileid: "72786024"
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | 讓 Excel 試算表在您的平板電腦和手機上看起來比以往更棒。 讓您在編輯或建立試算表時，可確信試算表不論是在電腦、Mac、平板電腦還是手機上，都完全符合您想要的樣貌。 透過熟悉的 Office 外觀和操作，以及直覺式的觸控體驗，很快便能上手操作。<p><p>此應用程式可作為 Android 和 iOS 的多重身分識別應用程式。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.office.excel)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Microsoft Flow**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | 隨身攜帶 Microsoft Flow 的強大功能。 藉由 Flow，您可以在最愛的應用程式與服務之間建立自動化工作流程，來簡化業務、節省時間及以更有效率的方式工作。| [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.flow)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
 | **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | 提供一個使用 Intune 行動應用程式管理原則並由您公司 IT 系統管理員管理的網頁瀏覽解決方案。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
-| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing 可讓小型企業輕鬆建立具有專業外觀的估價單和發票、快速收款，以及節省時間。 不論您是在辦公桌前還是移動途中，Invoicing 都可讓您一方面掌握金錢動向，一方面快速建立並傳送發票、線上收款，以及減少花費在書面作業上的時間。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.invoice&hl=en)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
+| **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing 可讓小型企業輕鬆建立具有專業外觀的估價單和發票、快速收款，以及節省時間。 不論您是在辦公桌前還是移動途中，Invoicing 都可讓您一方面掌握金錢動向，一方面快速建立並傳送發票、線上收款，以及減少花費在書面作業上的時間。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala 是一個專為大型群組通訊及工作管理而設計的行動應用程式和服務。 Kaizala 可讓您與包括現場員工、廠商、合作夥伴及客戶在內的整個價值鏈輕鬆地連線並協調工作，不論他們身在何處。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer)、<br>[iOS Store 連結](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Microsoft Launcher (前身為 Arrow Launcher) 可以使用底色圖案、佈景主題色彩、圖示套件等將您的 Android 裝置個人化，以符合您的風格。 只要使用 Microsoft 帳戶或公司/學校帳戶，即可存取您個人化摘要中的行事曆、文件及最近活動。 您甚至可以開啟您 Windows 電腦上的相片、文件及網頁，在所有裝置上都保有高生產力。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  
 | **Microsoft 商務用 OneDrive**<p><img alt="Microsoft app - Microsoft OneDrive for Business icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-onedrive-for-business.png" width="100"> | 為您的公司檔案取得線上儲存空間，以與公司或學校的其他使用者共用及共同處理這些檔案。 此外，還可讓您在移動途中輕鬆存取個人和公司檔案。<p><p>此應用程式可作為 Android 和 iOS 的多重身分識別應用程式。 | [Android Store 連結](https://play.google.com/store/apps/details?id=com.microsoft.skydrive)、<br>[iOS Store 連結](https://itunes.apple.com/us/app/onedrive-cloud-storage-for/id477537958?mt=8) |  

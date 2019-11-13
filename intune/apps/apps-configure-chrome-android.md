@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b80b0dbd8128606db9220178baf0d05af1a3800
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2f667940cc238fe243b05c7ab6f1459f63f18faa
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498792"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635482"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>使用 Intune 設定適用於 Android 裝置的 Google Chrome 
 
@@ -37,7 +37,7 @@ ms.locfileid: "72498792"
 ## <a name="add-the-google-chrome-app-to-intune"></a>將 Google Chrome 應用程式新增至 Intune
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  ，然後新增 [受控 Google Play]  應用程式。
+2. 在 [Intune] 窗格中，選取 [用戶端應用程式] > [應用程式] > [新增]，然後新增 [受控 Google Play] 應用程式。
 3. 移至 [受控 Google Play]，使用 **Google Chrome** 進行搜尋並核准。
 
     ![搜尋及核准 Google Chrome](~/apps/media/apps-configure-chrome-android/search.png)
@@ -46,18 +46,18 @@ ms.locfileid: "72498792"
 
 如需將受控 Google Play 應用程式新增至 Intune 的其他相關詳細資料，請參閱[受控 Google Play 商店應用程式](~/apps/apps-add-android-for-work.md#managed-google-play-store-apps)。
 
-## <a name="add-an-app-configuration-policy-for-managed-android-enterprise-devices"></a>為受控 Android Enterprise 裝置新增應用程式設定原則
+## <a name="add-app-configuration-for-managed-ae-devices"></a>新增受控 AE 裝置的應用程式設定
 
-1. 從 [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) 窗格中，選取 [應用程式設定原則]   > [新增]  。
-2. 新增您的原則名稱，選擇 [裝置註冊類型] 下的 [受控裝置]  ，然後在 [平台] 下選擇 [Android]  。
+1. 從 [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) 窗格中，選取 [應用程式設定原則] > [新增]。
+2. 新增您的原則名稱，選擇 [裝置註冊類型] 下的 [受控裝置]，然後在 [平台] 下選擇 [Android]。
 
     ![新增 Google Chrome 設定原則](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. 按一下 [相關聯的應用程式]  ，然後選取 [Google Chrome]  。
+3. 按一下 [相關聯的應用程式]，然後選取 [Google Chrome]。
 
     ![在 [相關聯的應用程式] 底下選取 [Google Chrome]](~/apps/media/apps-configure-chrome-android/associated-app.png)
 
-4. 按一下 [組態設定]  ，選取 [使用組態設計工具]  ，然後按一下 [新增]  以選取設定金鑰。
+4. 按一下 [組態設定]，選取 [使用組態設計工具]，然後按一下 [新增] 以選取設定金鑰。
 
     ![新增 [使用組態設計工具]](~/apps/media/apps-configure-chrome-android/configuration.png)
 
@@ -73,7 +73,7 @@ ms.locfileid: "72498792"
 
     上述設定會建立書簽，並允許存取除了 `baidu.com`、`yahoo.com` 和 `chrome://` 以外的所有網站。
 
-5. 按一下 [確定]  與 [新增]  ，將您的設定原則新增至 Intune。
+5. 按一下 [確定] 與 [新增]，將您的設定原則新增至 Intune。
 6. 將此設定原則指派給使用者群組。 如需詳細資訊，請參閱[使用 Microsoft Intune 將應用程式指派給群組](~/apps/apps-deploy.md)。 
 
 ## <a name="verify-the-device-settings"></a>確認裝置設定

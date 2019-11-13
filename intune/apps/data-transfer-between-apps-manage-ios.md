@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db583b1fc89edf72f329a605cc86363593eaaa9d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: cdc849405b7404203faa6e86d3fed1ea8e35ec43
+ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497907"
+ms.lasthandoff: 11/01/2019
+ms.locfileid: "73414625"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
@@ -81,7 +81,7 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
    |ManageEngine Mobile Device Manager | IntuneMAMUPN | 字串 | %upn% |
 
 > [!NOTE]  
-> 針對 iOS 中的 Outlook 應用程式，如果您是搭配 [使用設定設計工具] 選項來部署應用程式組態原則，系統會針對該原則在幕後自動設定 IntuneMAMUPN 設定機碼。 如需詳細資料，請參閱[新的適用於 iOS 和 Android 的 Outlook 應用程式組態原則體驗 – 一般應用程式設定](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) \(英文\) 中的＜常見問題集＞小節。 
+> 針對 iOS 版 Outlook，如果您是搭配 [使用設定設計工具] 選項部署受控裝置應用程式組態原則，並啟用 [只允許公司或學校帳戶]  ，系統會針對該原則在幕後自動設定 IntuneMAMUPN 設定機碼。 如需詳細資料，請參閱[新的 iOS 與 Android 版 Outlook 應用程式組態原則體驗 – 一般應用程式設定](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/New-Outlook-for-iOS-and-Android-App-Configuration-Policy/ba-p/370481) \(英文\) 中的＜常見問題集＞小節。 
 
 
 ### <a name="example-2-end-user-experience"></a>範例 2：使用者體驗

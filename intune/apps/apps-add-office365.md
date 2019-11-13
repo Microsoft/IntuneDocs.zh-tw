@@ -1,12 +1,12 @@
 ---
-title: 使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
+title: 使用 Microsoft Intune 將 Office 365 應用程式新增至 Windows 10 裝置
 titleSuffix: ''
 description: 了解如何使用 Microsoft Intune 在 Windows 10 裝置上安裝 Office 365 應用程式。
 keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35545d6c01e3acf7e54c3b932a4450c93f3dd4a9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2cb247ec25b134fa9810a426be88b7fc90999394
+ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507321"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73635438"
 ---
-# <a name="assign-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置
+# <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式新增至 Windows 10 裝置
 
 您必須先將應用程式新增至 Intune，才可以指派、監視、設定或保護它們。 其中一種可用[應用程式類型](apps-add.md#app-types-in-microsoft-intune)是適用於 Windows 10 裝置的 Office 365 應用程式。 藉由在 Intune 中選取此應用程式類型，您可以指派 Office 365 應用程式，並將其安裝到您所管理且執行 Windows 10 的裝置。 若您擁有 Microsoft Project Online 桌面用戶端以及 Microsoft Visio Online 方案 2 的授權，則也可以指派並安裝這兩者的應用程式。 可用 Office 365 應用程式在 Azure 內 Intune 主控台上的應用程式清單中顯示為單一項目。
 
@@ -142,12 +142,60 @@ ms.locfileid: "72507321"
 
 ## <a name="finish-up"></a>完成
 
-當您完成時，在 [新增應用程式]  窗格中，選取 [新增]  。 您已建立的應用程式會顯示在應用程式清單中。
+當您完成時，在 [新增應用程式]  窗格中，選取 [新增]  。 您已建立的應用程式會顯示在應用程式清單中。 下一步是將應用程式指派給您選擇的群組。 如需詳細資訊，請參閱[將應用程式指派給群組](~/apps/apps-deploy.md)。
+
+## <a name="deployment-details"></a>部署詳細資料
+
+透過 [Office 設定服務提供者 (CSP)](https://docs.microsoft.com/windows/client-management/mdm/office-csp) \(部分機器翻譯\) 將 Intune 的部署原則指派給目標機器之後，終端裝置就會自動從 *officecdn.microsoft.com* 位置下載安裝套件。 您會看到兩個目錄出現在 *Program Files* 目錄中：
+
+![Program Files 目錄中的 Office 安裝套件](./media/apps-add-office365/office-folder.png)
+
+在 *Microsoft Office* 目錄下，會在安裝檔案儲存所在位置建立新資料夾：
+
+![Microsoft Office 目錄下新建立的資料夾](./media/apps-add-office365/created-folder.png)
+
+在 *Microsoft Office 15* 目錄底下，會儲存 Office 隨選即用安裝啟動器檔案。 如果需要指派類型，安裝將會自動啟動：
+
+![按一下以執行安裝啟動器檔案](./media/apps-add-office365/clicktorun-files.png)
+
+如果 O365 套件的指派已設定為 [必要]，則安裝將會處於無訊息模式。 安裝成功之後，將會刪除下載的安裝檔案。 如果指派已設定為 [可用]  ，Office 應用程式將會出現在公司入口網站應用程式中，讓終端使用者可以手動觸發安裝。
 
 ## <a name="troubleshooting"></a>疑難排解
 Intune 會使用 [Office 部署工具](https://docs.microsoft.com/DeployOffice/overview-of-the-office-2016-deployment-tool)來透過 [Office 365 CDN](https://docs.microsoft.com/office365/enterprise/content-delivery-networks)\(部分機器翻譯\) 將 Office 365 專業增強版下載並部署至您的用戶端電腦。 請參考[管理 Office 365 端點](https://docs.microsoft.com/office365/enterprise/managing-office-365-endpoints) \(部分機器翻譯\) 中概述的最佳做法，來確保您的網路設定能允許用戶端直接存取 CDN，而非透過中央 Proxy 路由 CDN 流量，以避免產生不必要的延遲。
 
 如果您遇到安裝或執行階段問題，請在目標裝置上執行 [Microsoft Office 365 支援及修復小幫手](https://diagnostics.office.com)。
+
+### <a name="additional-troubleshooting-details"></a>其他疑難排解詳細資料
+
+當您無法將 O365 應用程式安裝到裝置時，您必須識別問題是與 Intune 相關或與 OS/Office 相關。 如果您可以看到 [Microsoft Office]  與 [Microsoft Office 15]  兩個資料夾出現在裝置的 *Program Files* 目錄中，您可以確認 Intune 已成功起始部署。 如果您看不到出現在 *Program Files* 下的兩個資料夾，您應該確認下列情況：
+
+- 裝置已正確註冊到 Microsoft Intune。 
+- 裝置上有作用中的網路連線。 如果裝置處於飛航模式、已關閉或處於沒有服務的位置，則在建立網路連線之前，將不會套用原則。
+- 同時符合 Intune 與 Office 365 網路需求，而且可以根據下列文章來存取相關的 IP 範圍：
+
+  - [Intune 網路設定需求與頻寬](https://docs.microsoft.com/intune/network-bandwidth-use)
+  - [Office 365 URL 和 IP 位址範圍](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges)
+
+- 已將 O365 應用程式套件指派給正確的群組。 
+
+此外，監視 *C:\Program Files\Microsoft Office\Updates\Download* 目錄的大小。 從 Intune 雲端下載的安裝套件將會儲存在此位置。 如果大小沒有增加或增加非常緩慢，建議您仔細檢查網路連線與頻寬。
+
+一旦您確認 Intune 與網路基礎結構都如預期般運作，就應該從 OS 的觀點進一步分析問題。 請考慮下列情況：
+
+- 目標裝置必須在 Windows 10 Creators Update 或更新版本上執行。
+- Intune 部署應用程式時，不要開啟任何現有的 Office 應用程式。
+- 已從裝置正確移除 Office 現有的 MSI 版本。 Intune 使用與 Office MSI 不相容的 Office 隨選即用功能。 此文件會進一步說明這種行為：<br>
+  [同一部電腦上不能同時有使用「隨選即用」和 Windows Installer 安裝的 Office](https://support.office.com/article/office-installed-with-click-to-run-and-windows-installer-on-same-computer-isn-t-supported-30775ef4-fa77-4f47-98fb-c5826a6926cd)
+- 登入使用者應具有在裝置上安裝應用程式的權限。
+- 根據 Windows 事件檢視器記錄檔 [Windows 記錄]   -> [應用程式]  ，確認沒有任何問題。
+- 在安裝期間，擷取 Office 安裝詳細資訊記錄。 若要執行此動作，請依照下列步驟執行：<br>
+    1. 在目標機器上啟動 Office 安裝的詳細資訊記錄。 若要這樣做，請執行下列命令以修改登錄：<br>
+        `reg add HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /t REG_DWORD /d 3`<br>
+    2. 再次將 Office 365 套件部署到目標裝置。<br>
+    3. 等候大約 15 至 20 分鐘，然後移至 **%temp%** 資料夾和 **%windir%\temp** 資料夾，依 [修改日期]  進行排序，挑選已根據您的重現時間進行修改的 *{Machine Name}-{TimeStamp}.log* 檔案。<br>
+    4. 執行下列命令以停用詳細資訊記錄：<br>
+        `reg delete HKLM\SOFTWARE\Microsoft\ClickToRun\OverRide /v LogLevel /f`<br>
+        詳細資訊記錄可以提供安裝程序的進一步詳細資訊。
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>應用程式套件安裝期間發生的錯誤
 
