@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e2f654d9e505afba00a1a9090febe4c06ca77ff
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445332"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709481"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -49,7 +49,7 @@ Autopilot 部署類型有四種：
 
 您可以藉由匯入含 Windows Autopilot 裝置資訊的 CSV 檔案來新增它們。
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]   > [匯入]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]   > [匯入]  。
 
     ![Windows Autopilot 裝置的螢幕擷取畫面](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -71,7 +71,7 @@ Autopilot 部署類型有四種：
 
 ## <a name="create-an-autopilot-device-group"></a>建立 Autopilot 裝置群組
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [群組]   > [新增群組]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [群組]   > [新增群組]  。
 2. 在 [群組]  刀鋒視窗中：
     1. 針對 [群組類型]  ，請選擇 [安全性]  。
     2. 輸入**群組名稱**與**群組描述**。
@@ -88,7 +88,7 @@ Autopilot 部署類型有四種：
 
 ## <a name="create-an-autopilot-deployment-profile"></a>建立 Autopilot 部署設定檔
 Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個租用戶建立最多 350 個設定檔。
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
 2. 在 [基本]  頁面上，輸入**名稱**和選擇性的**描述**。
 
     ![[基本] 頁面的螢幕擷取畫面](./media/enrollment-autopilot/create-profile-basics.png)
@@ -134,7 +134,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 ## <a name="edit-an-autopilot-deployment-profile"></a>編輯 Autopilot 部署設定檔
 建立 Autopilot 部署設定檔之後，您可以編輯部署設定檔的某些部分。   
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]  。
 2. 在 [Windows 註冊]  下的 [Windows Autopilot]  區段中，選擇 [部署設定檔]  。
 3. 選取您想要編輯的設定檔。
 4. 按一下左邊的 [屬性]  ，變更部署設定檔的名稱或描述。 進行變更之後請按一下 [儲存]  。
@@ -155,7 +155,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 必要條件：已設定 Azure Active Directory 公司入口網站，並具有 Windows 10 1809 版或更新版本。
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]  > 選擇裝置 > [指派使用者]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]  > 選擇裝置 > [指派使用者]  。
 
     ![指派使用者的螢幕擷取畫面](./media/enrollment-autopilot/assign-user.png)
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899d667ca271ae5c3edced18fab8da987c49b2ca
-ms.sourcegitcommit: 85c894cb4df34a5ff558e3b45e28a8b91054d9e6
+ms.openlocfilehash: e9fe2b2174252aa1081eb311d79b4b5ba37f96f2
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73432539"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755356"
 ---
 # <a name="use-device-firmware-configuration-interface-profiles-on-windows-devices-in-microsoft-intune-public-preview"></a>在 Microsoft Intune 中，於 Windows 裝置上使用裝置韌體設定介面設定檔 (公開預覽)
 
@@ -77,19 +77,19 @@ Autopilot 部署設定檔會指派給 Azure AD 安全性群組。 請務必建�
 
 此設定檔包含您設定的 DFCI 設定。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定] > [設定檔] > [建立設定檔]。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
     - **名稱**：為設定檔輸入描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，一個良好的設定檔名稱是 **Windows：在 Windows 裝置上設定 DFCI 設定**。
     - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
-    - **平台**：選擇 [Windows 10 及更新版本]。
-    - **設定檔類型**：選取 [裝置韌體設定介面]。
+    - **平台**：選擇 [Windows 10 及更新版本]  。
+    - **設定檔類型**：選取 [裝置韌體設定介面]  。
 
 4. 設定這些設定：
 
     - **允許本機使用者變更 UEFI (BIOS) 設定**：選項包括：
-      - **僅未設定的設定**：「除非」是使用 Intune 明確設定為 [啟用] 或 [停用] 的設定，否則本機使用者可以變更任何設定。
+      - **僅未設定的設定**：「除非」  是使用 Intune 明確設定為 [啟用]  或 [停用]  的設定，否則本機使用者可以變更任何設定。
       - **無**：本機使用者不能變更任何 UEFI (BIOS) 設定，包括未顯示在 DFCI 設定檔中的設定。
 
     - **CPU 與 IO 虛擬化**：選項包括：
@@ -104,7 +104,7 @@ Autopilot 部署設定檔會指派給 Azure AD 安全性群組。 請務必建�
         - **未設定**：Intune 不會變更此功能，任何設定都會保持原狀。
         - **啟用**：啟用由 UEFI (BIOS) 管理的所有內建式麥克風和喇叭。 週邊設備 (如 USB 裝置) 不受影響。
         - **已停用**：停用由 UEFI (BIOS) 管理的所有內建式麥克風和喇叭。 週邊設備 (如 USB 裝置) 不受影響。
-    - **無線電波 (藍牙、Wi-Fi、NFC 等等。)**：選項包括：
+    - **無線電波 (藍牙、Wi-Fi、NFC 等等。)** ：選項包括：
         - **未設定**：Intune 不會變更此功能，任何設定都會保持原狀。
         - **啟用**：啟用由 UEFI (BIOS) 管理的所有內建無線電波。 週邊設備 (如 USB 裝置) 不受影響。
         - **已停用**：停用由 UEFI (BIOS) 管理的所有內建無線電波。 週邊設備 (如 USB 裝置) 不受影響。
@@ -121,15 +121,17 @@ Autopilot 部署設定檔會指派給 Azure AD 安全性群組。 請務必建�
         - **啟用**：UEFI (BIOS) 允許從內建網路介面開機。
         - **已停用**：UEFI (BIOS) 不允許從內建網路介面開機。
 
-5. 當您完成時，請選取 [確定] > [建立] 儲存變更。 就會建立設定檔，並顯示在清單中。
+5. 當您完成時，請選取 [確定]   > [建立]  儲存變更。 就會建立設定檔，並顯示在清單中。
 
 ## <a name="assign-the-profiles-and-reboot"></a>指派設定檔，然後重新開機
 
 建立設定檔之後，就[可以指派它](../configuration/device-profile-assign.md)。 請務必將設定檔指派給包含 DFCI 裝置的 Azure AD 安全性群組。
 
-下次裝置同步時，或裝置重新開機時，就會套用 DFCI 設定檔設定。 套用原則之後，請將裝置重新開機。
+當裝置執行 Windows Autopilot 時，DFCI 可能會在 [註冊狀態] 頁面中強制重新開機。 在這次重新開機期間，會向 Intune 註冊 UEFI。 
 
-當裝置執行 Windows 裝置安裝程式時，DFCI 可能會在 [註冊狀態] 頁面中強制重新開機。 安裝程式完成後，您可以藉由將裝置重新開機來確認 DFCI 設定為作用中。 然後，使用裝置製造商的指示來開啟 UEFI 功能表。
+如果您想要確認裝置已註冊，您可以再次將裝置重新開機，但不需要。 使用裝置製造商的指示來開啟 UEFI 功能表，然後確認 UEFI 現在已受管理。
+
+下次裝置與 Intune 同步時，Windows 會收到 DFCI 設定。 將裝置重新開機。 需要這個第三次重新開機，UEFI 才能從 Windows 接收 DFCI 設定。
 
 ## <a name="update-existing-dfci-settings"></a>更新現有 DFCI 設定
 
@@ -156,12 +158,12 @@ Autopilot 部署設定檔會指派給 Azure AD 安全性群組。 請務必建�
 
 當您準備好要淘汰裝置，並將它從管理系統釋放時，請將 DFCI 設定檔更新為您想要裝置在離開時具有的 UEFI (BIOS) 設定狀態。 您通常會想要啟用所有設定。 例如：
 
-1. 開啟您的 DFCI 設定檔 ([裝置設定] > [設定檔])。
-2. 將 [允許本機使用者變更 UEFI (BIOS) 設定] 設定變更為 [僅未設定的設定]。
-3. 將所有其他設定設定為 [未設定]。
+1. 開啟您的 DFCI 設定檔 ([裝置]   > [組態設定檔]  )。
+2. 將 [允許本機使用者變更 UEFI (BIOS) 設定]  設定變更為 [僅未設定的設定]  。
+3. 將所有其他設定設定為 [未設定]  。
 4. 儲存設定。
 
-這些步驟會將裝置的 UEFI (BIOS) 功能表解除鎖定。 這些值保持與設定檔 ([啟用] 或 [停用]) 的相同，不會設定為任何預設 OS 值。
+這些步驟會將裝置的 UEFI (BIOS) 功能表解除鎖定。 這些值保持與設定檔 ([啟用]  或 [停用]  ) 的相同，不會設定為任何預設 OS 值。
 
 您現在可以抹除裝置。 抹除裝置之後，請刪除 Autopilot 記錄。 刪除記錄可防止裝置在重新開機時自動重新註冊。
 

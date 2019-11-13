@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 11/08/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ac6da1b15d482d20340163b0bb79e88d74e8e375
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
+ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635346"
+ms.lasthandoff: 11/09/2019
+ms.locfileid: "73882502"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -53,12 +53,20 @@ ms.locfileid: "73635346"
 ### Role-based access control
 -->  
 
+## <a name="week-of-november-4-2019"></a>2019 年 11 月 4 日當週
+
+### <a name="device-security"></a>裝置安全性
+
+#### <a name="security-baselines-are-supported-on-microsoft-azure-government---4062552---"></a>Microsoft Azure Government 上支援安全性基準<!-- 4062552 -->
+
+*Microsoft Azure Government* 上裝載的 Intune 的執行個體現在可以使用[安全性基準](../protect/security-baselines.md)來協助您保護您的使用者與裝置。
+
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日當週
 
 ### <a name="app-management"></a>應用程式管理
 
 #### <a name="improved-checklist-design-in-company-portal-app-for-android---5550857---"></a>改善了 Android 版公司入口網站應用程式中的檢查清單設計<!-- 5550857 -->  
-Android 版公司入口網站應用程式中的設定檢查清單已更新為採用輕量設計與新圖示。 這些變更與針對 iOS 版公司入口網站應用程式所做的最新更新一致。 我們正在向所有客戶逐步推出應用程式更新，而且預計會在下週末完成。 如需變更項目的並列比較，請參閱[應用程式 UI 中的新功能](whats-new-app-ui.md)。 針對已更新的註冊步驟，請參閱[使用 Android 工作設定檔註冊](/intune-user-help/enroll-device-android-work-profile)與[註冊您的 Android 裝置](/intune-user-help/enroll-device-android-company-portal)。  
+Android 版公司入口網站應用程式中的設定檢查清單已更新為採用輕量設計與新圖示。 這些變更與針對 iOS 版公司入口網站應用程式所做的最新更新一致。 如需變更項目的並列比較，請參閱[應用程式 UI 中的新功能](whats-new-app-ui.md)。 針對已更新的註冊步驟，請參閱[使用 Android 工作設定檔註冊](/intune-user-help/enroll-device-android-work-profile)與[註冊您的 Android 裝置](/intune-user-help/enroll-device-android-company-portal)。  
 
 #### <a name="win32-apps-on-windows-10-s-mode-devices---3747604---"></a>Windows 10 S 模式裝置上的 Win32 應用程式<!-- 3747604 --> 
 您可以在 Windows 10 S 模式受控裝置上安裝並執行 Win32 應用程式。 若要這樣做，您可以使用 Windows Defender 應用程式控制 (WDAC) PowerShell 工具，為 S 模式建立一或多個補充原則。 使用「Device Guard 簽署入口網站」簽署補充原則，然後透過 Intune 上傳及散發原則。 在 Intune 中，只要選取 [用戶端應用程式]   > [Windows 10 S 補充原則]  就可以找到此功能。 如需詳細資訊，請參閱[在 S 模式裝置上啟用 Win32 應用程式](~/apps/apps-win32-s-mode.md)。
