@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57ae1b5a51533bf14d4299fcf0248564562289f7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
+ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507560"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592085"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理 Web 存取
 
@@ -179,7 +179,7 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 > [!NOTE]
 > 在管理 Microsoft Edge 的應用程式保護原則和應用程式設定中指定的相關聯應用程式中，請確定已設定下列資料保護原則設定：
 > - 將組織資料傳送至其他應用程式：**受原則管理的應用程式**
-> - 與受原則管理的瀏覽器共用 Web 內容：**需要**
+> - 限制使用其他應用程式的 Web 內容傳輸：**受原則管理的瀏覽器**
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>如何設定受保護瀏覽器的應用程式 Proxy 設定
 

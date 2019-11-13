@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2405036535cd6aef74e417f75e22725e1c34bbfa
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585796"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754832"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>使用 Microsoft Intune 將 Microsoft Edge 新增至 macOS 裝置
 
@@ -88,7 +88,7 @@ ms.locfileid: "72585796"
 > 目前，Apple 不會提供方法讓 Intune 在 macOS 裝置上解除安裝 Microsoft Edge。
 
 ## <a name="next-steps"></a>後續步驟
-- 若要了解如何在 macOS 裝置上設定 Microsoft Edge，請參閱[在 macOS 裝置上設定 Microsoft Edge](https://docs.microsoft.com/deployedge/configure-microsoft-edge#configure-microsoft-edge-on-mac)。
+- 若要了解如何在 macOS 裝置上設定 Microsoft Edge，請參閱[在 macOS 裝置上設定 Microsoft Edge](https://docs.microsoft.com/deployedge/configure-microsoft-edge-on-mac)。
 - 若要深入了解包含和排除使用者群組的應用程式指派，請參閱[包含與排除應用程式指派](~/apps/apps-inc-exl-assignments.md)。
 - [將應用程式指派給群組](~/apps/apps-deploy.md)
 

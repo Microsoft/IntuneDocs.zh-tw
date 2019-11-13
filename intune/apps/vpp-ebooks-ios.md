@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 022df428658a3c8791a07cbd797145bfe9a392bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ae29d2ee5add475db89f6895b22299793a94ac36
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496474"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984088"
 ---
 # <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 電子書
 
@@ -42,7 +42,6 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 ## <a name="before-you-start"></a>開始之前
 在開始之前，請從 Apple 取得 VPP 權杖，並將它上傳至您的 Intune 帳戶。 此外：
 
-* 您最多可以讓 256 個 VPP 權杖與 Intune 帳戶建立關聯。
 * 之前如有其他產品已使用過 VPP 權杖，您必須產生新的權杖來搭配 Intune 使用。
 * 每個權杖有效期限為一年。
 * Intune 預設與 Apple VPP 服務一天進行兩次同步處理。 您可以在任何時間啟動手動同步處理。

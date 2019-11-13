@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c388e632f545b48a18ef6ed7b76132c290f16a9e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
+ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813446"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73566187"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -166,8 +166,8 @@ Intune 支援屬性清單中的下列資料類型：
 ### <a name="tokens-used-in-the-property-list"></a>屬性清單中使用的權杖
 
 此外，Intune 支援屬性清單中的下列權杖類型︰
-- \{\{userprincipalname\}\}—例如， **John@contoso.com**
-- \{\{mail\}\}—例如， **John@contoso.com**
+- \{\{userprincipalname\}\}—例如，**John\@contoso.com**
+- \{\{mail\}\}—例如，**John\@contoso.com**
 - \{\{partialupn\}\}—例如，**John**
 - \{\{accountid\}\}—例如，**fc0dc142-71d8-4b12-bbea-bae2a8514c81**
 - \{\{deviceid\}\}—例如，**b9841cd9-9843-405f-be28-b2265c59ef97**

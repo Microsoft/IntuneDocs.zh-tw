@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/03/2017
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 706a4228-9bdf-41e0-b8d1-64c923dd2d2b
-ms.reviewer: heenamac
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9c1d6620c120a3102803c84270ac1880c6904320
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504719"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801616"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense 連接器與 Intune
 
@@ -36,9 +36,6 @@ ms.locfileid: "72504719"
 適用於 Android 及 iOS 的 Check Point SandBlast Mobile 應用程式可擷取檔案系統、網路堆疊，裝置和應用程式遙測 (如果可用)，然後將遙測資料傳送至 Check Point SandBlast Mobile 雲端服務，以評估裝置的行動威脅風險。
 
 Intune 裝置合規性原則包含以 Check Point SandBlast Mobile 風險評估為基礎的 Check Point SandBlast Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。 如果發現裝置不相容，則會封鎖使用者對 Exchange Online 和 SharePoint Online 這類公司資源的存取。 使用者也會從 Check Point SandBlast Mobile 應用程式收到指導方針，以解決問題並重新取得公司資源的存取權。
-
-<!-- ## Sample scenarios 
-closing syntax for comment above is missing. Please insert closing syntax at intended location. -->
 
 以下是一些常見的案例：
 
