@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 17dce8f7c5aa55a2044e663f724a5784cee8b375
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506690"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059334"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>在 Intune 中讓 Windows 10 和更新版本的裝置以 Kiosk 形式執行
 
@@ -32,7 +32,7 @@ ms.locfileid: "72506690"
 
 若要深入了解 Intune 中的 Windows kiosk 功能，請參閱[設定 Kiosk 設定](../kiosk-settings.md)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 - [建立設定檔](kiosk-settings.md#create-the-profile)。
 
@@ -40,6 +40,8 @@ ms.locfileid: "72506690"
 
   1. 建立此 kiosk 設定檔以在 kiosk 模式下執行裝置。
   2. 建立[裝置限制設定檔](device-restrictions-windows-10.md#microsoft-edge-browser)，並設定 Microsoft Edge 中允許的特定功能及設定。
+
+- 請確定本機系統上有任何檔案、腳本和快捷方式。 如需詳細資訊，包括其他 Windows 需求，請參閱[自訂和匯出開始](https://docs.microsoft.com/windows/configuration/customize-and-export-start-layout)配置。
 
 > [!IMPORTANT]
 > 請務必將此 kiosk 設定檔指派給與您 [Microsoft Edge 設定檔](device-restrictions-windows-10.md#microsoft-edge-browser)相同的裝置。
@@ -189,8 +191,10 @@ ms.locfileid: "72506690"
 
 - **允許下載資料夾的存取權**：選擇 [是]  以允許使用者存取 Windows 檔案總管中的 [下載] 資料夾。 根據預設，已停用對 [下載] 資料夾的存取權。 這項功能通常用於讓終端使用者存取從瀏覽器下載的項目。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
 您也可以為 [Android](device-restrictions-android.md#kiosk)、[Android 企業](device-restrictions-android-for-work.md#dedicated-device-settings)及 [Windows Holographic for Business](kiosk-settings-holographic.md) 裝置建立 Kiosk 設定檔。
+
+另請參閱 Windows 指引中的[設定單一應用程式 kiosk](https://docs.microsoft.com/windows/configuration/kiosk-single-app)或[設定多應用程式 kiosk](https://docs.microsoft.com/windows/configuration/lock-down-windows-10-to-specific-apps) 。

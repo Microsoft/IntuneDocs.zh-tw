@@ -2,8 +2,8 @@
 title: 針對 Microsoft Intune 中的軟體更新進行疑難排解 - Azure | Microsoft Docs
 description: 解決 Microsoft Intune 的軟體更新問題。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
 ms.date: 05/29/2019
 ms.topic: troubleshooting
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ad8d904f72df169eea136c625a2f44d645cafbc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 7da927754971fb66a5d8442d0cdf18e0ebfbcd4a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509768"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059084"
 ---
 # <a name="troubleshoot-software-updates-in-microsoft-intune"></a>Microsoft Intune 的軟體更新疑難排解
 
@@ -50,6 +50,6 @@ Microsoft Intune 用戶端可能會遇到一或多個下列徵兆：
 
 如果您執行 Windows 7，請確定已安裝下列更新︰[3050265 適用於 Windows 7 的 Windows Update 用戶端：2015 年 6 月](https://support.microsoft.com/kb/3050265) \(機器翻譯\)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 取得[來自 Microsoft 的支援說明](get-support.md)或使用[社群論壇](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)。

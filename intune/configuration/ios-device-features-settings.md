@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e3e0ea523d71ff036f1f23c9436c65e105328d8b
-ms.sourcegitcommit: 807ab3e35f4d9ffa18655410b7d61e5e772ab348
+ms.openlocfilehash: 381ceea979dedf9b33cb7ef9c47291e3ac6ce20c
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057650"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117904"
 ---
 # <a name="ios-and-ipados-device-settings-to-use-common-ios-features-in-intune"></a>要在 Intune 中使用常見 iOS 功能用的 iOS 和 iPadOS 裝置設定
 
@@ -33,7 +33,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 
 本文會列出這些設定，並說明每個設定的用途。 如需這些功能的詳細資訊，請移至[新增 iOS 或 macOS 裝置功能設定](../device-features-configure.md)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 [建立 iOS 裝置組態設定檔](../device-features-configure.md)。
 
@@ -296,7 +296,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 
 - **領域**：輸入您的 Kerberos 領域名稱。 領域名稱應為大寫，例如 `CONTOSO.COM`。 一般來說，您的領域名稱與您的 DNS 功能變數名稱相同，但全部大寫。
 
-- **網域**：輸入可以透過 SSO 驗證之網站的網域或主機名稱。 例如，如果您的網站 `mysite.contoso.com`，則 `mysite` 是主機名稱，而 `contoso.com` 則是功能變數名稱。 當使用者連線到這些網站的任何一個時，應用程式延伸模組會處理驗證挑戰。 此驗證可讓使用者使用臉部識別碼、Touch ID 或 Apple pincode/密碼來登入。
+- **網域**：輸入可以透過 SSO 驗證之網站的網域或主機名稱。 例如，如果您的網站是 `mysite.contoso.com`，則 `mysite` 是主機名稱，而 `contoso.com` 則是功能變數名稱。 當使用者連線到這些網站的任何一個時，應用程式延伸模組會處理驗證挑戰。 此驗證可讓使用者使用臉部識別碼、Touch ID 或 Apple pincode/密碼來登入。
 
   - 單一登入應用程式延伸模組 Intune 設定檔中的所有網域都必須是唯一的。 即使您使用不同類型的 SSO 應用程式擴充功能，您也無法在任何登入應用程式延伸模組設定檔中重複網域。
   - 這些網域不會區分大小寫。
@@ -305,7 +305,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
   - 設定機**碼**：輸入您想要新增的專案名稱，例如 `user name`。
   - **數值型別**：輸入資料的類型。 選項包括：
 
-    - 字串
+    - String
     - 布林值：在 [設定**值**] 中，輸入 `True` 或 `False`。
     - 整數：在 [設定**值**] 中，輸入數位。
     
@@ -322,11 +322,12 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
   > - 如果您要使用多個領域，請**啟用**此設定。 它會設定您輸入為預設領域的**領域**值。
   > - 如果您只有一個領域，請將它保留為 [**未設定**] （預設值）。
 
-- **主體名稱**（僅限 Kerberos）：輸入 Kerberos 主體的使用者名稱。 您不需要包含領域名稱。 例如，在 `user@contoso.com` 中，`user` 是主體名稱，而 `contoso.com` 是領域名稱。
+- **主體名稱**（僅限 Kerberos）：輸入 Kerberos 主體的使用者名稱。 您不需要包含領域名稱。 例如，在 `user@contoso.com`中，`user` 是主體名稱，而 `contoso.com` 是領域名稱。
 - **Active Directory 網站碼**（僅限 Kerberos）：輸入 Kerberos 延伸應使用之 Active Directory 網站的名稱。 您可能不需要變更此值，因為 Kerberos 延伸模組可能會自動找到 Active Directory 的網站碼。
 - 快取**名稱**（僅限 Kerberos）：輸入 Kerberos 快取的一般安全性服務（GSS）名稱。 您很可能不需要設定此值。
 - **應用程式**套件組合識別碼（僅限 Kerberos）：**新增**應在您的裝置上使用單一登入的應用程式套件組合識別碼。 這些應用程式會被授與 Kerberos 票證授權票證、驗證票證的存取權，以及向已獲授權存取的服務驗證使用者。
 - **網域領域對應**（僅限 Kerberos）：**新增**應對應至您領域的網域 DNS 尾碼。 當主機的 DNS 名稱不符合領域名稱時，請使用此設定。 您很可能不需要建立此自訂網域到領域的對應。
+- **PKINIT certificate** （僅限 Kerberos）：**選取**用於初始驗證（PKINIT）憑證的公開金鑰加密，而不需使用者互動即可用來更新 Kerberos 認證。 憑證應該是您先前新增至 Intune 的 PKCS 或 SCEP 憑證。
 
 ## <a name="wallpaper"></a>桌布
 
@@ -344,7 +345,7 @@ Intune 包含一些內建的設定，可讓 iOS 使用者在其裝置上使用�
 > [!TIP]
 > 若要在鎖定畫面與主畫面上顯示不同的影像，請使用鎖定畫面影像來建立設定檔。 然後使用主畫面影像建立另一個設定檔。 將兩個設定檔都指派給您的 iOS 使用者或裝置群組。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
 

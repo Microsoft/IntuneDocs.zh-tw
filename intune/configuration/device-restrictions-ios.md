@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 488794fdce8f6ebb074648c8e399cb2aecc73b25
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709742"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984130"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "73709742"
 > [!TIP]
 > 這些設定會使用 Apple 的 MDM 設定。 如需這些設定的詳細資訊，請參閱[apple 的行動裝置管理設定](https://support.apple.com/guide/mdm/welcome/web)（開啟 apple 的網站）。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 [建立裝置限制組態設定檔](../device-restrictions-configure.md)。
 
@@ -313,7 +313,7 @@ ms.locfileid: "73709742"
 - **Spotlight 搜尋傳回網際網路上的結果**：[封鎖]  可防止 Spotlight 傳回來自網際網路搜尋的任何結果。 [未設定]  (預設) 會允許 Spotlight 搜尋連線到網際網路以提供搜尋結果。
 
 - **Safari Cookie**：選擇裝置上處理 Cookie 的方式。 選項包括：
-  - Allow
+  - 允許
   - 封鎖所有 Cookie
   - 允許來自瀏覽網站的 Cookie
   - 允許來自目前網站的 Cookie
@@ -447,11 +447,20 @@ ms.locfileid: "73709742"
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>設定適用于：裝置註冊、自動裝置註冊（受監督）
 
+資料漫遊所需的附注（秘訣或重要注意事項，以協助客戶混淆）：此設定不會顯示在目標裝置的管理設定檔上。 這是因為這項設定會視為遠端裝置動作，而且每次裝置上的資料漫遊狀態變更時，Intune 服務都會再次遭到封鎖。 雖然它不在管理設定檔中，但如果在管理主控台中顯示為成功，它就會正常運作。 
 - **數據漫遊**：選擇 [封鎖]  以禁止透過行動電話通訊網路進行數據漫遊。 [未設定]  (預設) 允許裝置在行動電話通訊網路上時進行數據漫遊。
+
+  > [!IMPORTANT]
+  > 此設定會視為遠端裝置動作。 因此，此設定不會顯示在裝置上的管理設定檔中。 每次裝置上的資料漫遊狀態變更時，Intune 服務就會封鎖**資料漫遊**。 在 Intune 中，如果報告狀態顯示為 [成功]，則會知道它是否正常運作，即使該設定不會顯示在裝置的管理設定檔中也一樣。
+
 - **漫遊時進行全域背景擷取**：[封鎖]  會防止在透過行動電話通訊網路漫遊時使用全域背景擷取功能。 [未設定]  (預設) 允許裝置在行動電話通訊網路上漫遊時擷取資料 (例如電子郵件)。
 - **語音撥號**：選擇 [封鎖]  以防止使用者在裝置上使用語音撥號功能。 [未設定]  (預設) 允許在裝置上使用語音撥號功能。
 - **語音漫遊**：選擇 [封鎖]  以防止透過行動電話通訊網路進行語音漫遊。 [未設定]  (預設) 允許裝置在行動電話通訊網路上時進行語音漫遊。
 - **個人熱點**：[封鎖]  會在每次裝置同步處理時關閉使用者裝置上的個人熱點。這項設定可能與某些電訊廠商不相容。 [未設定]  (預設) 可讓個人熱點設定保持為使用者設定的預設值。
+
+  > [!IMPORTANT]
+  > 此設定會視為遠端裝置動作。 因此，此設定不會顯示在裝置上的管理設定檔中。 每次裝置上的個人熱點狀態變更時，Intune 服務就會封鎖**個人熱點**。 在 Intune 中，如果報告狀態顯示為 [成功]，則會知道它是否正常運作，即使該設定不會顯示在裝置的管理設定檔中也一樣。
+
 - **行動數據使用規則 (僅限受管理的應用程式)** ：定義受管理的應用程式可在行動電話通訊網路上使用的資料類型。 選項包括：
   - **封鎖使用行動數據**：針對 [所有受控應用程式]  或 [選擇特定應用程式]  封鎖行動數據的使用。
   - **漫遊時封鎖使用行動數據**：在漫遊時針對 [所有受控應用程式]  或 [選擇特定應用程式]  封鎖行動數據的使用。
@@ -612,7 +621,7 @@ ms.locfileid: "73709742"
 > 您必須先使用 Apple Configurator 工具或 Apple 裝置註冊方案，將裝置設為受監督模式，才可為 iOS 裝置設定 kiosk 模式。 請參閱 Apple 針對使用 Apple Configurator 工具的指南。
 > 如果您輸入的 iOS 應用程式在您指派設定檔之後安裝，則裝置在重新啟動之前將不會進入 kiosk 模式。
 
-## <a name="domains"></a>Domains
+## <a name="domains"></a>網域
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>設定適用于：裝置註冊、自動裝置註冊（受監督）
 
@@ -676,7 +685,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 > - 新增 Game Center 朋友
 > - Siri
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
 

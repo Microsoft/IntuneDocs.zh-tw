@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d0cff4ad624d35843f3388535b60549d1893eeb
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143151"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74117862"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 裝置功能設定
 
@@ -33,7 +33,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 本文會列出這些設定，並說明每個設定的用途。 同時也會列出使用終端機應用程式 (模擬器) 來取得 AirPrint 印表機之 IP 位址、路徑和連接埠的步驟。 如需裝置功能的詳細資訊，請移至[新增 iOS 或 macOS 裝置功能設定](device-features-configure.md)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 [建立 macOS 裝置組態設定檔](device-features-configure.md)。
 
@@ -144,7 +144,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
   [找出您的小組識別碼](https://help.apple.com/developer-account/#/dev55c3c710c)（開啟 Apple 的網站）有詳細資訊。
 
 - **領域**：輸入驗證領域的名稱。 領域名稱應為大寫，例如 `CONTOSO.COM`。 一般來說，您的領域名稱與您的 DNS 功能變數名稱相同，但全部大寫。
-- **網域**：輸入可以透過 SSO 驗證之網站的網域或主機名稱。 例如，如果您的網站 `mysite.contoso.com`，則 `mysite` 是主機名稱，而 `contoso.com` 則是功能變數名稱。 當使用者連線到這些網站的任何一個時，應用程式延伸模組會處理驗證挑戰。 此驗證可讓使用者使用臉部識別碼、Touch ID 或 Apple pincode/密碼來登入。
+- **網域**：輸入可以透過 SSO 驗證之網站的網域或主機名稱。 例如，如果您的網站是 `mysite.contoso.com`，則 `mysite` 是主機名稱，而 `contoso.com` 則是功能變數名稱。 當使用者連線到這些網站的任何一個時，應用程式延伸模組會處理驗證挑戰。 此驗證可讓使用者使用臉部識別碼、Touch ID 或 Apple pincode/密碼來登入。
 
   - 單一登入應用程式延伸模組 Intune 設定檔中的所有網域都必須是唯一的。 即使您使用不同類型的 SSO 應用程式擴充功能，您也無法在任何登入應用程式延伸模組設定檔中重複網域。
   - 這些網域不會區分大小寫。
@@ -153,7 +153,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
   - 設定機**碼**：輸入您想要新增的專案名稱，例如 `user name`。
   - **數值型別**：輸入資料的類型。 選項包括：
 
-    - 字串
+    - String
     - 布林值：在 [設定**值**] 中，輸入 `True` 或 `False`。
     - 整數：在 [設定**值**] 中，輸入數位。
     
@@ -179,12 +179,13 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 - **密碼最短使用期限**（僅限 Kerberos）：輸入在使用者可以變更密碼前，必須在網域上使用密碼的天數。 [**未設定**] （預設）不會強制執行最短的密碼使用期限，因此可以加以變更。
 - **密碼到期通知**（僅限 Kerberos）：輸入密碼到期的天數，讓使用者收到其密碼即將到期的通知。 [**未設定**] （預設）會使用 `15` 天。
 - **密碼到期** (僅 Kerberos)：輸入多少天後必須變更裝置密碼。 [**未設定**] （預設）表示使用者密碼永遠不會過期。
-- **主體名稱**（僅限 Kerberos）：輸入 Kerberos 主體的使用者名稱。 您不需要包含領域名稱。 例如，在 `user@contoso.com` 中，`user` 是主體名稱，而 `contoso.com` 是領域名稱。
+- **主體名稱**（僅限 Kerberos）：輸入 Kerberos 主體的使用者名稱。 您不需要包含領域名稱。 例如，在 `user@contoso.com`中，`user` 是主體名稱，而 `contoso.com` 是領域名稱。
 - **Active Directory 網站碼**（僅限 Kerberos）：輸入 Kerberos 延伸應使用之 Active Directory 網站的名稱。 您可能不需要變更此值，因為 Kerberos 延伸模組可能會自動找到 Active Directory 的網站碼。
 - 快取**名稱**（僅限 Kerberos）：輸入 Kerberos 快取的一般安全性服務（GSS）名稱。 您很可能不需要設定此值。  
 - **密碼需求訊息**（僅限 Kerberos）：輸入對使用者顯示之組織密碼需求的文字版本。 如果您不需要 Active Directory 的密碼複雜性需求，或未輸入最小密碼長度，則會顯示訊息。  
 - **應用程式**套件組合識別碼（僅限 Kerberos）：**新增**應在您的裝置上使用單一登入的應用程式套件組合識別碼。 這些應用程式會被授與 Kerberos 票證授權票證、驗證票證的存取權，以及向已獲授權存取的服務驗證使用者。
 - **網域領域對應**（僅限 Kerberos）：**新增**應對應至您領域的網域 DNS 尾碼。 當主機的 DNS 名稱不符合領域名稱時，請使用此設定。 您很可能不需要建立此自訂網域到領域的對應。
+- **PKINIT certificate** （僅限 Kerberos）：**選取**用於初始驗證（PKINIT）憑證的公開金鑰加密，而不需使用者互動即可用來更新 Kerberos 認證。 憑證應該是您先前新增至 Intune 的 PKCS 或 SCEP 憑證。
 
 ## <a name="associated-domains"></a>相關網域
 
@@ -222,7 +223,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 > [!TIP]
 > 若要進行疑難排解，請在您的 macOS 裝置上開啟 [**系統喜好**設定]  > **設定檔**。 確認您建立的設定檔位於 [裝置設定檔] 清單中。 如果列出，請確定**相關聯的網域**設定是在設定檔中，而且包含正確的應用程式識別碼和網域。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

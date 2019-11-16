@@ -3,8 +3,8 @@ title: 減少技術支援中心成本
 titleSuffix: Microsoft Intune
 description: 使用自助式密碼重設減少技術支援中心成本
 keywords: Azure Active Directory SSPR 密碼重設
-author: MandiOhlinger
-ms.author: mandia
+author: ErikjeMS
+ms.author: erikje
 manager: dougeby
 ms.date: 3/6/2018
 ms.topic: archived
@@ -15,16 +15,17 @@ ms.technology: ''
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1da1758dcc1743087191f69bd4d57bc113774d81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08dc14a3abed634721b39fedaae840e2b18c151b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509309"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058123"
 ---
 # <a name="reduce-help-desk-costs-with-self-service-password-reset"></a>使用自助式密碼重設減少技術支援中心成本
 
 您可以允許員工重設公司和學校帳戶密碼，而不需要技術支援中心的協助。 在下列情況下，建議使用這類型的自助式密碼重設：
+
 * 您的公司和學校使用 Azure Active Directory 作為公司和學校帳戶。
 * 您的員工和學生可以存取網際網路。
 * 您想要降低技術支援中心成本。
@@ -36,9 +37,10 @@ ms.locfileid: "72509309"
 3. 為供日後參考，請將[如何重設或變更密碼](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-update-your-own-password)的指示提供給員工和學生。
 4. [啟用自助式密碼重設](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 深入了解下列文章：
+
 * [密碼最佳做法](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords) 
 * [授權自助式密碼重設](https://docs.microsoft.com/azure/active-directory/active-directory-secure-passwords)
 
