@@ -7,14 +7,48 @@ ms.topic: include
 ms.date: 11/4/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: edef1f43caff97ab75aa3c58034ed4fc2dffd208
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
+ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73612015"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74125425"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
+
+### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 規劃變更：Windows 10 1703 版公司入口網站移出支援<!--5026679-->
+Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移出企業版與 EDU 版的服務。 從 2019 年 12 月 26 日開始，Intune 將會針對 RS2/RS1 的對應公司入口網站應用程式結束支援。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+未來，您將不會在特定版本的公司入口網站應用程式中看到新功能，不過我們會繼續支援此版本的公司入口網站應用程式到 2019 年 12 月 26 日，包括視需要為公司入口網站應用程式提供任何安全性更新。 不過，由於 Windows 10 1703 版在離開服務之後將無法再收到任何安全性更新，因此強烈建議您將 Windows 裝置更新為較新的 Windows 版本，並確定您使用的是最新的公司入口網站應用程式，以繼續取得新功能與其他功能。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+您採取的步驟取決於您環境的設定方式。 不過，一般而言，您應該識別有舊版 OS 和/或公司入口網站的裝置，並進行更新。 若要設定您的 Windows 10 更新通道，請登入 Intune-> 軟體更新 – Windows 10 更新通道。 最新的公司入口網站應用程式版本是 10.3.5601.0。 請引導您的使用者從 Microsoft Store 取得，以隨時掌握最新版本。 您也可以使用 Intune，透過[商務用 Microsoft Store](https://docs.microsoft.com/intune/windows-store-for-business)，在您的 Windows 裝置上安裝最新版本。
+
+#### <a name="additional-information"></a>其他資訊
+[使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式](https://docs.microsoft.com/intune/store-apps-company-portal-app)
+
+
+### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>採取動作：將 Microsoft Edge 用於受保護的 Intune 瀏覽器體驗<!--5728447-->
+隨著過去一年的分享，Microsoft Edge 行動裝置版本支援與 Managed Browser 相同的一組管理功能，同時提供更好的終端使用者體驗。 為了讓 Microsoft Edge 中提供的強大體驗得以實現，我們將會淘汰 Intune Managed Browser。 從 2020 年 1 月 27 日開始，Intune 將不再支援 Intune Managed Browser。  
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？ 
+從 2020 年 2 月 1 日開始，Google Play 商店或 iOS App Store 中將不再提供 Intune Managed Browser。 此時，您仍然可以將新的應用程式保護原則的目標設為 Intune Managed Browser，但新的使用者將無法下載 Intune Managed Browser 應用程式。 此外，在 iOS 上，向下推送至 MDM 註冊裝置的新 Web 剪輯，將會在 Microsoft Edge 中開啟，而不是在 Intune Managed Browser 中開啟。  
+
+從 2020 年 3 月 31 日起，將從 Azure 主控台移除 Intune Managed Browser。 這表示您將無法再為 Intune Managed Browser 建立新原則。 如果您已有現有的 Intune Managed Browser 原則，將不會受到影響。 Intune Managed Browser 將會顯示在主控台中，作為沒有圖示的 LOB 應用程式，而現有的原則仍會顯示為以應用程式為目標。 此時，我們也會在應用程式保護原則的 [資料保護] 區段中，移除將 Web 內容重新導向至 Intune Managed Browser 的選項。  
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？ 
+若要確保從 Intune Managed Browser 順利轉換到 Microsoft Edge，建議您主動執行下列步驟： 
+
+1. 使用應用程式保護原則 (亦稱為 MAM) 與應用程式組態設定，以適用於 iOS 與 Android 的 Microsoft Edge 為目標。 您也可以針對 Microsoft edge 重複使用您的 Intune Managed Browser 原則，只要將那些現有原則的目標設定為 Microsoft Edge。  
+2. 確定您環境中所有受 MAM 保護的應用程式的應用程式保護原則設定 [限制使用其他應用程式的 Web 內容傳輸] 設定為 [受原則管理的瀏覽器]。 
+3. 在受管理的應用程式組態設定 "com.microsoft.intune.useEdge" 設定為 True 的情況下以所有受 MAM 保護的項目為目標。 從下個月將推出的 1911 版開始，您只需要設定 [限制使用其他應用程式的 Web 內容傳輸] 設定以在您應用程式保護原則的 [資料保護] 區段中選取 [Microsoft Edge]，就可以完成步驟 2 與 3。 
+
+即將推出對 iOS 與 Android 上 Web 剪輯的支援。 當此支援發行時，您必須將預先存在的 Web 剪輯重定目標，以確保它們在 Microsoft Edge 中開啟，而不是在 Managed Browser 中開啟。 
+
+#### <a name="additional-information"></a>其他資訊
+請瀏覽我們的文件[搭配應用程式保護原則使用 Microsoft Edge](../apps/manage-microsoft-edge.md)以取得詳細資訊，或檢視我們的[支援部落格文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269) \(英文\)。
+
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>規劃變更：已更新在 Intune 中註冊 Android Enterprise 專用裝置的體驗<!--5198878-->
 在 Intune 的 11月或 1911 版本中，我們會將對 SCEP 裝置憑證部署的支援新增至 Android Enterprise 專用裝置，以啟用 Wi-Fi 設定檔的憑證型存取功能。 此變更也牽涉到在註冊 Android Enterprise 專用裝置流程的一些小幅變更。
