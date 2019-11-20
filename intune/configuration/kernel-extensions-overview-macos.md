@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e69f1b11833da0906aaf831f8bb82b04241e442f
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755181"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059363"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>在 Intune 中新增 macOS 核心延伸模組
 
@@ -41,7 +41,7 @@ ms.locfileid: "73755181"
 
 - 使用 Apple 的裝置註冊計劃（DEP）在 Intune 中註冊。 [自動註冊 macOS 裝置](../enrollment/device-enrollment-program-enroll-macos.md)有詳細資訊。
 
-  或
+  或者
 
 - 已在 Intune 中註冊「使用者核准的註冊」（Apple 的條款）。 [準備 MacOS High 中核心延伸模組的變更](https://support.apple.com/en-us/HT208019)（開啟 Apple 的網站）有詳細資訊。
 
@@ -67,8 +67,8 @@ Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂�
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 選取 **裝置** > **設定檔** > **建立設定檔**。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
     - **名稱**：為新的設定檔輸入描述性名稱。
@@ -83,6 +83,6 @@ Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂�
 
 設定檔隨即建立，並顯示在清單中。 請確認會[指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 建立設定檔之後，就可以指派它。 接下來，[指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。

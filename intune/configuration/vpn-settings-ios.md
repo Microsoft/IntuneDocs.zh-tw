@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,20 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6d7b831899a740e722560c509c4b09c31d2a42b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593778"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059807"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 裝置上的 VPN 設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
 Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這些設定可用來建立及設定您組織網路的 VPN 連線。 本文說明了這些設定。 其中一些設定僅適用於特定 VPN 用戶端，例如 Citrix、Zscaler 等。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 [建立裝置組態設定檔](vpn-settings-configure.md)。
 
@@ -73,7 +71,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
     > [!NOTE]
     > 如果使用者名稱和密碼用來作為 Cisco IPsec VPN 的驗證方法，它們必須透過自訂的 Apple Configurator 設定檔傳遞 SharedSecret。
 
-  - **衍生的認證**：如果未設定任何衍生認證簽發者，Intune 會提示您執行此動作。
+  - **衍生的認證**：使用衍生自使用者智慧卡的憑證。 如果未設定任何衍生認證簽發者，Intune 會提示您新增一個。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](../protect/derived-credentials.md)。
 
 - **排除的 URL** (僅限 Zscaler)：連線到 Zscaler VPN 時，所列出的 URL 可從 Zscaler 雲端外部存取。 
 
@@ -102,7 +100,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
   - 啟用 NAC 時，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
   - 裝置識別碼是設定檔的一部分，但它不會顯示在 Intune 中。 Microsoft 不會將此識別碼儲存在任何位置，也不會將它共用。
 
-  當 VPN 夥伴支援裝置識別碼時，VPN 用戶端 (例如 Citrix SSO) 可以取得該識別碼。 接著，它可以查詢 Intune 來確認裝置已註冊，以及 VPN 設定檔是否相容。
+  對於支援裝置識別碼的 VPN 合作夥伴，VPN 用戶端（例如 Citrix SSO）可以取得識別碼。 接著，它可以查詢 Intune 來確認裝置已註冊，以及 VPN 設定檔是否相容。
 
   - 若要移除此設定，請重新建立設定檔，但不要選取 [我同意]  。 然後，重新指派設定檔。
 
@@ -124,7 +122,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
       - **ECDSA384**
       - **ECDSA521**
 
-  - 使用者**名稱和密碼**（僅限使用者驗證）：當使用者連接到 VPN 時，系統會提示他們輸入其使用者名稱和密碼。
+  - 使用者**名稱和密碼**（僅限使用者驗證）：當使用者連線到 VPN 時，系統會提示他們提供其使用者名稱和密碼。
   - **共用密碼**（僅限電腦驗證）：可讓您輸入要傳送至 VPN 伺服器的共用密碼。
     - **共用密碼**：輸入共用密碼，也稱為預先共用金鑰（PSK）。 請確定值符合 VPN 伺服器上設定的共用密碼。
 
@@ -189,12 +187,15 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 - **隨選 VPN**：設定可控制 VPN 連線啟動時的條件式規則。 例如，建立一個只在裝置未連線到公司 Wi-Fi 網路時才使用 VPN 連線的條件。 或者，建立一個條件。 例如，若裝置無法存取所輸入 DNS 搜尋網域，則不會啟動 VPN 連線。
 
   - **SSID 或 DNS 搜尋網域**選取此條件是要使用無線網路 **SSID** 還是 **DNS 搜尋網域**。 選擇 [新增]  即可設定一或多個 SSID 或搜尋網域。
-  - **URL 字串探查**：選用。 請輸入規則用來作為測試的 URL。 如果具有此設定檔的裝置無須重新導向就能存取此 URL，則會啟動 VPN 連線。 而裝置會連線到目標 URL。 使用者不會看到 URL 字串探查網站。 URL 字串探查的其中一例就是稽核網頁伺服器的位址，此伺服器會在連線 VPN 之前先檢查裝置合規性。 另一種可能，是 URL 會先測試 VPN 連線到網站的能力，再將裝置透過 VPN 連線到目標 URL。
+  - **URL 字串探查**：選用。 請輸入規則用來作為測試的 URL。 如果裝置無須重新導向就能存取此 URL，則 VPN 連線已啟動。 而裝置會連線到目標 URL。 使用者不會看到 URL 字串探查網站。
+
+    例如，URL 字串探查是稽核網頁伺服器 URL，此伺服器會在連線 VPN 之前先檢查裝置合規性。 或者，URL 會先測試 VPN 連線到網站的能力，然後再透過 VPN 將裝置連接到目標 URL。
+.
   - **網域動作**：請選擇下列其中一個項目︰
     - 連線 (若需要)
     - 一律不連線
   - **動作**：請選擇下列其中一個項目︰
-    - 連線
+    - 將
     - 評估連線
     - 忽略
     - 中斷連線
@@ -207,7 +208,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 - **位址**：輸入 Proxy 伺服器的完整主機名稱 IP 位址。
 - **連接埠號碼**：輸入與 Proxy 伺服器相關聯的連接埠號碼。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 設定檔已建立，但還不會執行任何動作。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

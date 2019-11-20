@@ -1,11 +1,11 @@
 ---
 title: Windows Holographic Business 裝置設定 - Microsoft Intune - Azure | Microsoft Docs
-description: 了解及設定 Microsoft Intune 中適用於 Windows Holographic for Business 的裝置限制設定，包括取消註冊、地理位置、密碼、從 App Store 安裝應用程式、Microsoft Edge 中的 Cookie 和快顯、Windows Defender、搜尋、雲端與儲存體、藍牙連線能力、系統時間，以及 Azure 中的使用情況資料。
+description: 了解及設定 Microsoft Intune 中適用於 Windows Holographic for Business 的裝置限制設定，包括取消註冊、地理位置、密碼、從應用程式市集安裝應用程式、Microsoft Edge 中的 Cookie 和快顯、Microsoft Defender、搜尋、雲端與儲存體、藍牙連線能力、系統時間，以及 Azure 中的使用情況資料。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28a697b841d8b264a19d97059d272b7119bc7f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72493913"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059497"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 允許或限制功能的 Windows Holographic for Business 裝置設定
 
@@ -28,7 +28,7 @@ ms.locfileid: "72493913"
 
 這篇文章列出並說明您可以在 Windows Holographic for Business 裝置 (例如 Microsoft Hololens) 上控制的不同設定。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來允許或停用功能、控制安全性等。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 [建立裝置組態設定檔](device-restrictions-configure.md#create-the-profile)。
 
@@ -57,7 +57,7 @@ ms.locfileid: "72493913"
 - **密碼管理員**：啟用或停用 Microsoft Edge [密碼管理員] 功能。
 - **傳送不追蹤標頭**：設定 Microsoft Edge 瀏覽器，以傳送不追蹤標頭給使用者瀏覽的網站。
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen 篩選工具
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智慧型畫面
 
 - **適用於 Microsoft Edge 的 SmartScreen 篩選工具**：啟用 Microsoft Edge SmartScreen 以存取網站和檔案下載。
 
@@ -85,7 +85,7 @@ ms.locfileid: "72493913"
 
 Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置上 kiosk 應用程式外的任何功能。
 
-- **Kiosk 模式**：可識別原則支援的 Kiosk 模式類型。 這些選項包括：
+- **Kiosk 模式**：可識別原則支援的 Kiosk 模式類型。 選項包含：
 
   - **未設定** (預設)：不啟用 Kiosk 模式的原則。 
   - **單一應用程式 kiosk**：此設定檔可讓裝置只在單一應用程式上執行。 當使用者登入時，會啟動特定的應用程式。 此模式也會限制使用者開啟新的應用程式或變更執行中的應用程式。
@@ -107,6 +107,6 @@ Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置�
 
 - **共用使用量資料**：選取診斷資料提交層級。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

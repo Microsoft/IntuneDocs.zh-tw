@@ -5,7 +5,7 @@ description: 由 Intune 支援、用於管理 Microsoft Defender 進階威脅防
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa3cb3481de6e1fdc3790b7330ac521772e252be
-ms.sourcegitcommit: 5932da3ed8f52c7b0f0d71c1801f81c85952cf0c
+ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/25/2019
-ms.locfileid: "72923395"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74060058"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -48,7 +48,7 @@ ms.locfileid: "72923395"
     **預設值**：是
 
   - **剪貼簿行為** - *Settings/ClipboardSettings*  
-    選擇要在本機電腦和應用程式防護虛擬瀏覽器之間允許的複製與貼上動作。  這些選項包括：
+    選擇要在本機電腦和應用程式防護虛擬瀏覽器之間允許的複製與貼上動作。  選項包含：
     - 尚未設定  
     - 封鎖電腦與瀏覽器之間的複製和貼上-封鎖兩者。 資料無法在電腦與虛擬瀏覽器之間傳輸。  
     - 允許從瀏覽器複製並貼上至僅限電腦-資料無法從電腦傳輸到虛擬瀏覽器。
@@ -91,7 +91,7 @@ ms.locfileid: "72923395"
   **預設值**：封鎖 
 
 - **防止認證竊取類型**  
-  設定為 [啟用]  以[使用 Credential Guard 保護衍生的網域認證](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) \(部分機器翻譯\)。 Windows Defender Credential Guard 使用以虛擬化為基礎的安全性來隔離祕密，只有具特殊權限的系統軟體才能進行存取。 未經授權存取這些機密資料可能會導致認證竊取攻擊，例如傳遞雜湊或傳遞票證。 Windows Defender Credential Guard 會保護 NTLM 密碼雜湊、Kerberos 票證授權票證及應用程式儲存為網域認證的認證，以防止這些攻擊。  
+  設定為 [啟用]  以[使用 Credential Guard 保護衍生的網域認證](https://docs.microsoft.com/windows/security/identity-protection/credential-guard/credential-guard) \(部分機器翻譯\)。 Microsoft Defender Credential Guard 使用以虛擬化為基礎的安全性來隔離祕密，只有具特殊權限的系統軟體才能進行存取。 未經授權存取這些機密資料可能會導致認證竊取攻擊，例如傳遞雜湊或傳遞票證。 Microsoft Defender Credential Guard 會保護 NTLM 密碼雜湊、Kerberos 票證授權票證及應用程式儲存為網域認證的認證，以防止這些攻擊。  
 
   **預設值**：啟用
 
@@ -206,7 +206,7 @@ ms.locfileid: "72923395"
 
   若要檢查系統是否支援 Kernel DMA Protection，請再系統上執行 MSINFO32.exe，然後檢閱 [摘要] 頁面上的 [Kernel DMA Protection]  欄位。  
 
-  這些選項包括： 
+  選項包含： 
   -  - 登入或螢幕解除鎖定之後，允許隨時列舉具有 DMA 重新對應相容驅動程式的裝置。 具有 DMA 重新對應不相容驅動程式的裝置只有在使用者將畫面解除鎖定之後才會列舉
   -  - 將隨時列舉所有外部具 DMA 功能的 PCIe 裝置
   - *全部封鎖* - 登入或螢幕解除鎖定之後，允許隨時列舉具有 DMA 重新對應相容驅動程式的裝置。 具有 DMA 重新對應不相容驅動程式的裝置將無法隨時啟動並執行 DMA。
@@ -227,7 +227,7 @@ ms.locfileid: "72923395"
   - **已封鎖的硬體裝置識別碼**  
     只有在 [依裝置識別碼的硬體裝置安裝]  設定為 [封鎖硬體裝置安裝]  時，才能使用此設定。 若要設定此設定，請展開該選項並選取 [+ 新增]  ，然後指定您要封鎖的硬體裝置識別碼。  
 
-    **預設值**： PCI\CC_0C0A
+    **預設值**： PCI \ CC_0C0A
 
 - **封鎖直接記憶體存取**  
   [DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess) - 使用此原則設定來針對裝置上所有可熱插拔的 PCI 下游連接埠封鎖直接記憶體存取 (DMA)，直到使用者登入 Windows。 使用者登入後，Windows 就會列舉連接至隨插即用 PCI 連接埠的 PCI 裝置。 只要使用者鎖定電腦，在使用者再次登入之前，將會在沒有子裝置的隨插即用 PCI 連接埠上封鎖 DMA。 電腦解除鎖定時已列舉的裝置將繼續運作，直到遭拔除為止。 
@@ -281,7 +281,7 @@ ms.locfileid: "72923395"
   您也可以將現有的 EMET 設定 XML 檔案轉換並匯入到惡意探索保護設定 XML。
 
 - **封鎖惡意探索保護覆寫**  
-  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) – 設定為 [是]  以防止使用者變更 Windows Defender 資訊安全中心中的惡意探索保護設定區域。 若您停用或未設定此設定，本機使用者可以變更惡意探索保護設定區域。  
+  [WindowsDefenderSecurityCenter/DisallowExploitProtectionOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-windowsdefendersecuritycenter#windowsdefendersecuritycenter-disallowexploitprotectionoverride) \(部分機器翻譯\) - 設定為 [是]  以防止使用者變更 Microsoft Defender 資訊安全中心中的惡意探索保護設定區域。 若您停用或未設定此設定，本機使用者可以變更惡意探索保護設定區域。  
   **預設值**：是  
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender 防毒軟體  
@@ -289,17 +289,17 @@ ms.locfileid: "72923395"
 如需詳細資訊，請參閱 Windows 文件中的 [Policy CSP - Defender](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender) (原則 CSP - Defender)。
 
 - **掃描 Microsoft 網頁瀏覽器中所載入的指令碼**  
-  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) – 設定為 [是]  以允許 Windows Defender 指令碼掃描功能運作。  
+  [Defender/AllowScriptScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning) \(部分機器翻譯\) - 設定為 [是]  以允許 Microsoft Defender「指令碼掃描」功能。  
 
   **預設值**：是
 
 - **掃描內送郵件訊息**  
-  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) – 設定為 [是]  以允許 Windows Defender 掃描電子郵件。  
+  [Defender/AllowEmailScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning) \(部分機器翻譯\) - 設定為 [是]  以允許 Microsoft Defender 掃描電子郵件。  
 
   **預設值**：是
 
 - [Defender 範例提交同意]   
-  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) - 檢查 Windows Defender 中針對傳送資料的使用者同意層級。 如果已獲得必要的同意，Windows Defender 將會提交同意。 如果沒有 (而且指定了一律不再詢問使用者)，您可以啟動 UI，要求使用者同意 (當 [雲端提供的保護]  設定為 [是]*Yes* 時) 再傳送資料。  
+  [Defender/SubmitSamplesConsent](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-submitsamplesconsent) \(部分機器翻譯\) - 檢查 Microsoft Defender 中針對傳送資料的使用者同意層級。 如果已獲得必要的同意，Microsoft Defender 將會提交同意。 如果沒有 (而且指定了一律不再詢問使用者)，您可以啟動 UI，要求使用者同意 (當 [雲端提供的保護]  設定為 [是]*Yes* 時) 再傳送資料。  
 
   **預設**：自動傳送安全的範例
 
@@ -319,7 +319,7 @@ ms.locfileid: "72923395"
     **預設值**：是
 
 - **Defender 封鎖即時監視保護**  
-  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) – 當設定為 [是]  時，會啟用 Windows Defender 即時監視保護。  
+  [Defender/AllowOnAccessProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection) \(部分機器翻譯\) - 當設定為 [是]  時，會啟用 Microsoft Defender「即時監視保護」。  
 
   **預設值**：是
 
@@ -346,30 +346,30 @@ ms.locfileid: "72923395"
   **預設值**：上午 2 點
 
 - **雲端提供的保護**  
-  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) – 當設定為 [是]  時，Windows Defender 會將有關它發現之任何問題的資訊傳送給 Microsoft。 Microsoft 將分析該資訊、深入了解影響您與其他客戶的問題，並提供改善的解決方案。
+  [Defender/AllowCloudProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection) \(部分機器翻譯\) - 當設定為 [是]  時，Microsoft Defender 會將它所發現任何問題的相關資訊傳送給 Microsoft。 Microsoft 將分析該資訊、深入了解影響您與其他客戶的問題，並提供改善的解決方案。
 
   當此原則設定為 [是]  時，您可以使用 [Defender sample submission consent type]  \(Defender 樣本提交同意類型\) 讓使用者可以控制是否從其裝置傳送資訊。  
 
   **預設值**：是
 
 - **Defender 潛在的垃圾應用程式動作**  
-  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) – Windows Defender 防毒軟體可以識別並封鎖「潛在垃圾應用程式(PUA)」  ，並防止將它下載並安裝到您網路中的端點。 
+  [Defender/PUAProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection) \(部分機器翻譯\) - Microsoft Defender 防毒軟體可以識別並封鎖「潛在的垃圾應用程式 (PUA)」  ，防止將它下載並安裝到您網路中的端點。 
  
-  - 當設定為 [封鎖]  時，Windows Defender 會封鎖 PUA，而且會隨著其他威脅將其列在歷程記錄中。
-  - 當設定為 [稽核]  時，Windows defender 會偵測 PUA，但不會封鎖它們。 搜尋 [事件檢視器] 中由 Windows Defender 建立的事件，即可找到有關 Windows Defender 會對其採取動作之應用程式的相關資訊。  
+  - 當設定為 [封鎖]  時，Microsoft Defender 會封鎖 PUA，而且會隨著其他威脅將它們列在歷程記錄中。
+  - 當設定為 [稽核]  時，Microsoft Defender 會偵測 PUA，但不會封鎖它們。 搜尋 [事件檢視器] 中由 Microsoft Defender 建立的事件，即可找到那些應用程式 (Microsoft Defender 會採取動作) 的相關資訊。  
   - 當設定為 [裝置預設值]  時，會關閉 PUA 保護。  
  
   **預設值**：封鎖
 
 - **Defender 雲端延長逾時**  
-  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) - 指定 Windows Defender 防毒軟體在封鎖檔案前應等候雲端結果的額外時間上限。 Windows Defender 會等候的基底時間量是 10 秒。 您在這裡指定的任何額外時間 (最長 50 秒) 會加到那 10 秒。 在大部分情況下，掃描時間會少於時間上限。 延長的時間可讓雲端徹底調查可疑的檔案。  
+  [Defender/CloudExtendedTimeout](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudextendedtimeout) \(部分機器翻譯\) - 指定 Microsoft Defender 防毒軟體在封鎖檔案前應等候雲端結果的額外時間上限。 Microsoft Defender 會等候的基底時間量是 10 秒。 您在這裡指定的任何額外時間 (最長 50 秒) 會加到那 10 秒。 在大部分情況下，掃描時間會少於時間上限。 延長的時間可讓雲端徹底調查可疑的檔案。  
 
   根據預設，延長時間值是 0 (停用)。 Intune 建議您啟用此設定，並至少多指定 20 秒。  
  
   **預設**：0
 
 - **掃描封存檔**  
-  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) – 設定為 [是]   以讓 Windows Defender 掃描封存檔案。  
+  [Defender/AllowArchiveScanning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning) \(部分機器翻譯\) - 設定為 [是]  以讓 Microsoft Defender 掃描封存檔案。  
 
   **預設值**：是
 
@@ -381,17 +381,17 @@ ms.locfileid: "72923395"
   **預設值**：使用者定義
 
 - **行為監視**  
-  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) – 設定為 [是]  以開啟 Windows Defender 行為監視功能。 Windows Defender 行為監視感應器建於 Windows 10 中，這些感應器可以收集並處理作業系統的行為訊號，並將此感應器資料傳送至您私人獨立的 Microsoft Defender ATP 雲端執行個體。  
+  [Defender/AllowBehaviorMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring) \(部分機器翻譯\) - 設定為 [是]  以開啟 Microsoft Defender「行為監視」功能。 Microsoft Defender 行為監視感應器內嵌於 Windows 10 中，這些感應器可以收集並處理作業系統的行為訊號，並將此感應器資料傳送至您私人獨立的 Microsoft Defender ATP 雲端執行個體。  
 
   **預設值**：是
 
 - **掃描從網路資料夾中開啟的檔案**  
-  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) – 設定為 [是]  以讓 Windows Defender 掃描網路上的檔案。 使用者將無法從唯讀檔案移除偵測到的惡意程式碼。  
+  [Defender/AllowScanningNetworkFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles) \(部分機器翻譯\) - 設定為 [是]  以讓 Microsoft Defender 掃描網路上的檔案。 使用者將無法從唯讀檔案移除偵測到的惡意程式碼。  
 
   **預設值**：是
 
 - **Defender 雲端封鎖層級**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) – 使用此原則來決定 Windows Defender 防毒軟體封鎖及掃描可疑檔案的積極程度。 這些選項包括：
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) \(部分機器翻譯\) - 使用此原則來決定 Microsoft Defender 防毒軟體封鎖及掃描可疑檔案的積極程度。 選項包含：
 
   - 高 - 積極地封鎖未知的檔案，同時最佳化最佳化用戶端效能 (極可能發生誤判)
   - 極高 - 積極地封鎖未知的檔案，並套用額外的保護措施 (可能會影響用戶端效能)
@@ -400,24 +400,24 @@ ms.locfileid: "72923395"
   **預設值**：尚未設定
 
 - **即時監視**  
-  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) – 設定為 [是]  以允許 Windows Defender 即時監視。  
+  [Defender/AllowRealtimeMonitoring](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring) \(部分機器翻譯\) - 設定為 [是]  以允許 Microsoft Defender「即時監視」。  
 
   **預設值**：是
 
 - **掃描期間的 CPU 使用率限制**  
-  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) – 指定 Windows Defender 在掃描期間可以使用的最大平均 CPU 使用率百分比。  
+  [Defender/AvgCPULoadFactor](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-avgcpuloadfactor) \(部分機器翻譯\) - 指定 Microsoft Defender 在掃描期間可以使用的最大平均 CPU 使用率百分比。  
 
   **預設值**：50
 
 - **在完整掃描期間掃描對應的網路磁碟機**  
-  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) - 設定為 [是]  以讓 Windows Defender 掃描網路上的檔案。 使用者無法從唯讀檔案移除偵測到的惡意程式碼，
+  [Defender/AllowFullScanOnMappedNetworkDrives](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives) \(部分機器翻譯\) - 設定為 [是]  以讓 Microsoft Defender 掃描網路上的檔案。 使用者無法從唯讀檔案移除偵測到的惡意程式碼，
 
   此清單中的相關設定：*Defender/AllowScanningNetworkFiles*
 
   **預設值**：是
 
 - **禁止終端使用者存取 Defender**  
-  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) – 設定為 [是]  以禁止終端使用者在此裝置上存取 Windows Defender UI。  
+  [Defender/AllowUserUIAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess) \(部分機器翻譯\) - 設定為 [是]  以禁止終端使用者在其裝置上存取 Microsoft Defender UI。  
 
   **預設值**：是
 
@@ -426,7 +426,7 @@ ms.locfileid: "72923395"
 
   **預設值**：上午 2 點
 
-## <a name="windows-defender-firewall"></a>Windows Defender 防火牆
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 防火牆
 如需詳細資訊，請參閱 Windows 文件中的[防火牆 CSP](https://docs.microsoft.com/windows/client-management/mdm/firewall-csp) \(英文\)。
 
 - **刪除前的安全性關聯閒置時間** - *MdmStore/Global/SaIdleTime*   
@@ -560,29 +560,29 @@ ms.locfileid: "72923395"
 ## <a name="web--network-protection"></a>Web 與網路保護  
 
 - **網路保護類型**  
-  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)  - 此原則可讓您開啟 Windows Defender 惡意探索防護中的網路保護。 網路保護是 Windows Defender 惡意探索防護的一項功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。  
+  [Defender/EnableNetworkProtection](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection) \(部分機器翻譯\) - 此原則允許您開啟 Microsoft Defender「惡意探索防護」中的網路保護。 網路保護是 Microsoft Defender 惡意探索防護的一個功能，可防止使用任何應用程式的員工存取網路釣魚詐騙、裝載入侵程式網站及網際網路上的惡意內容。 這包括防止第三方瀏覽器連線到危險的網站。  
 
-  當設定為 [啟用]  或 [稽核模式]  時，使用者無法關閉網路保護，而且您可以使用 Windows Defender 資訊安全中心來檢視連線嘗試的相關資訊。  
+  當設定為 [啟用]  或 [稽核模式]  時，使用者無法關閉網路保護，而且您可以使用 Microsoft Defender 資訊安全中心來檢視連線嘗試的相關資訊。  
  
   - [啟用]  將會封鎖使用者與應用程式，使其無法連線到危險網域。  
   - [稽核模式]  不會封鎖使用者與應用程式，使其無法連線到危險網域。  
 
-  當設定為 [使用者定義]  時，系統不會封鎖使用者與應用程式，使其無法連線到危險網域，而且 Windows Defender 資訊安全中心不會有連線相關資訊。  
+  當設定為 [使用者定義]  時，系統不會封鎖使用者與應用程式，使其無法連線到危險網域，而且 Microsoft Defender 資訊安全中心不會有連線相關資訊。  
 
   **預設值**：稽核模式
 
 - **Microsoft Edge 需要 SmartScreen**  
-  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) - Microsoft Edge 預設會使用 Windows Defender SmartScreen (已開啟)，以保護使用者免於遭受潛在的網路釣魚詐騙和惡意軟體攻擊。 根據預設，會啟用此原則 (設定為 [是]  )，而且當啟用時，可以防止使用者關閉 Windows Defender SmartScreen。  當裝置的有效原則等於 [尚未設定] 時，使用者可以關閉 Windows Defender SmartScreen，這會讓裝置處於未受保護狀態。  
+  [Browser/AllowSmartScreen](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen) \(部分機器翻譯\) - Microsoft Edge 預設會使用 Microsoft Defender SmartScreen (已開啟)，以保護使用者免於遭受潛在的網路釣魚詐騙和惡意軟體攻擊。 根據預設，會啟用此原則 (設定為 [是]  )，而且當啟用時，可以防止使用者關閉 Microsoft Defender SmartScreen。  當裝置的有效原則等於 [未設定] 時，使用者可以關閉 Microsoft Defender SmartScreen，這會讓裝置處於未受保護狀態。  
 
   **預設值**：是
   
 - **封鎖惡意網站存取**  
-  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) - 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意網站的 Windows Defender SmartScreen 警告，讓使用者可以繼續前往該網站。 在啟用此原則的情況下 (設定為 [是]  )，Microsoft Edge 會防止使用者跳過該警告，而且會封鎖他們，使他們無法繼續瀏覽該網站。  
+  [Browser/PreventSmartScreenPromptOverride](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride) \(部分機器翻譯\) - 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意網站的 Microsoft Defender SmartScreen 警告，讓使用者可以繼續前往該網站。 在啟用此原則的情況下 (設定為 [是]  )，Microsoft Edge 會防止使用者跳過該警告，而且會封鎖他們，使他們無法繼續瀏覽該網站。  
 
   **預設值**：是
 
 - **封鎖未經驗證的檔案下載**  
-  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) - 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意檔案的 Windows Defender SmartScreen 警告，讓他們可以繼續下載未經驗證的檔案。 在啟用此原則的情況下 (設定為 [是]  )，使用者無法略過警告，而且無法下載未經驗證的檔案。  
+  [Browser/PreventSmartScreenPromptOverrideForFiles](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles) \(部分機器翻譯\)- 根據預設，Microsoft Edge 可讓使用者略過 (忽略) 有關潛在惡意檔案的 Microsoft Defender SmartScreen 警告，讓他們可以繼續下載未經驗證的檔案。 在啟用此原則的情況下 (設定為 [是]  )，使用者無法略過警告，而且無法下載未經驗證的檔案。  
 
   **預設值**：是
 

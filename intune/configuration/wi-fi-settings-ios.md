@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,24 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d88705cbce0d5045ba7f45baf80de7b6e5d383d3
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: dd37813e5ea0b6a64d7fae22cada06cccb01a942
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593774"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059225"
 ---
 # <a name="add-wi-fi-settings-for-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於 iOS 裝置的 Wi-Fi 設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 iOS 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、新增 PKS 或 SCEP 憑證等等。
+您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 iOS 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、新增 PKCS 或 SCEP 憑證等等。
 
 這些 Wi-Fi 設定分為兩種類別：基本設定和企業層級設定。
 
 本文說明了這些設定。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 [建立裝置設定檔](../device-profile-create.md)。
 
@@ -81,9 +79,9 @@ ms.locfileid: "72593774"
     - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 此憑證可讓用戶端信任無線網路存取伺服器的憑證。
 
     - **用戶端驗證**：選擇 [驗證方法]  。 選項包括：
-      
-      - **衍生的認證**：如果未設定任何衍生認證簽發者，Intune 會提示您執行此動作。
-      
+
+      - **衍生的認證**：使用衍生自使用者智慧卡的憑證。 如果未設定任何衍生認證簽發者，Intune 會提示您新增一個。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](../protect/derived-credentials.md)。
+
       - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
 
     - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
@@ -95,8 +93,8 @@ ms.locfileid: "72593774"
 
     - **用戶端驗證** - 選擇 [驗證方法]  。 選項包括：
 
-      - **衍生的認證**：如果未設定任何衍生認證簽發者，Intune 會提示您執行此動作。  
-      
+      - **衍生的認證**：使用衍生自使用者智慧卡的憑證。 如果未設定任何衍生認證簽發者，Intune 會提示您新增一個。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](../protect/derived-credentials.md)。
+
       - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 另請輸入：
         - **非 EAP 方法 (內部識別)** ：選擇驗證連線的方式。 請務必選擇與您的 Wi-Fi 網路設定相同的通訊協定。
 
@@ -115,8 +113,8 @@ ms.locfileid: "72593774"
 
     - **用戶端驗證** - 選擇 [驗證方法]  。 選項包括：
 
-      - **衍生的認證**：如果未設定任何衍生認證簽發者，Intune 會提示您執行此動作。  
-      
+      - **衍生的認證**：使用衍生自使用者智慧卡的憑證。 如果未設定任何衍生認證簽發者，Intune 會提示您新增一個。 如需詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](../protect/derived-credentials.md)。
+
       - **使用者名稱和密碼**：提示使用者輸入使用者名稱和密碼以驗證連線。 
 
       - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
@@ -128,7 +126,7 @@ ms.locfileid: "72593774"
   - **手動**：輸入 **Proxy 伺服器位址**作為 IP 位址，以及其**連接埠號碼**。
   - **自動**：使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 [Proxy 伺服器 URL]  (例如 `http://proxy.contoso.com`)。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 設定檔已建立，但它不會執行任何動作。 接者，請[指派此設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

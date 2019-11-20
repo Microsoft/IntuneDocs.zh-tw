@@ -1,11 +1,11 @@
 ---
-title: 使用公司入口網站在 Intune 註冊 macOS 裝置 | Microsoft Docs
-description: 描述如何使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
+title: 向 Intune 公司入口網站註冊您的 Mac |Microsoft Docs
+description: 瞭解如何使用公司入口網站應用程式在 Intune 中註冊您的 Mac。
 keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 10/03/2018
+ms.date: 11/14/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -15,93 +15,94 @@ ms.assetid: 3bb659cc-9b57-4d19-8631-2c26749fa71c
 searchScope:
 - User help
 ROBOTS: ''
-ms.reviewer: elocholi
+ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ee725d118353e18924858569ac861992d19f839a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506195"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098095"
 ---
-# <a name="enroll-your-macos-device-in-intune-with-the-company-portal-app"></a>使用公司入口網站應用程式在 Intune 中註冊 macOS 裝置
+# <a name="enroll-your-macos-device-using-the-company-portal-app"></a>使用公司入口網站應用程式註冊您的 macOS 裝置  
 
-使用 Intune 公司入口網站應用程式註冊您的 macOS 裝置，以安全地存取您組織的電子郵件、檔案和應用程式。
+使用 Intune 公司入口網站應用程式註冊您的 macOS 裝置，以安全地存取您的公司或學校電子郵件、檔案和應用程式。
 
-組織通常需要您讓裝置成為受控，才能存取其中的專屬資料。 裝置成為受控之後，組織可以透過其行動裝置管理提供者將原則和應用程式推送至裝置。 若要從您的裝置持續存取公司或學校資訊，您必須設定裝置以符合原則設定。  
+組織通常會要求您註冊您的裝置，才能存取專屬資料。 您的裝置註冊之後，它就變成「受控」  。 您的組織可以透過 Intune 等行動裝置管理 (MDM) 提供者將原則和應用程式指派給裝置。 若要從您的裝置持續存取公司或學校資訊，您必須設定裝置以符合您組織的原則設定。  
 
-本文說明適用於 macOS 的 Intune 公司入口網站應用程式如何協助您註冊、設定及維護裝置，以符合您組織的需求。  
-</br>
-> [!VIDEO https://www.youtube.com/embed/Pa2pfhwq_yk?rel=0]
+本文描述如何使用適用於 macOS 的公司入口網站應用程式來註冊、設定及維護裝置，以符合您組織的要求。  
+
 
 ## <a name="what-to-expect-from-the-company-portal-app"></a>公司入口網站應用程式的預期行為
 
-在初始設定期間，應用程式需要您向組織自我驗證。 應用程式接著會通知您必須進行的任何裝置設定。 例如，組織通常會設定您必須符合的密碼字元數下限或上限需求。    
+在初始設定期間，公司入口網站應用程式會要求您先登入並向您的組織驗證。 公司入口網站接著會通知您需要設定以符合組織需求的任何裝置設定。 例如，組織通常會設定您必須符合的密碼字元數下限或上限需求。    
 
-註冊裝置之後，公司入口網站應用程式會繼續確保您的裝置受到保護。 例如，如果您從未受信任的來源安裝應用程式，應用程式會提醒您有時會撤銷公司資料的存取權。 這類應用程式防護原則在組織中很常見，而且通常需要您解除安裝未受信任的應用程式，才能重新取得存取權。
+註冊裝置之後，公司入口網站一律會確保您的裝置會根據貴組織的需求受到保護。 例如，如果您安裝來自不受信任來源的應用程式，公司入口網站會發出警示，且可能會限制對您組織資源的存取。 這類應用程式保護原則是常見的。 若要重新取得存取權，您可能需要卸載不受信任的應用程式。 
 
-如果在註冊之後，您的組織強制執行新的安全性需求 (例如多重要素驗證)，公司入口網站應用程式會通知您。 您將有機會調整設定，以便繼續在裝置上工作。  
+如果在註冊之後，您的組織強制執行新的安全性需求 (例如多重要素驗證)，公司入口網站會通知您。 您將有機會調整設定，以便繼續在裝置上工作。  
 
 若要深入了解註冊，請參閱[當我安裝公司入口網站應用程式並註冊我的裝置時，會發生什麼情況？](what-happens-if-you-install-the-Company-Portal-app-and-enroll-your-device-in-intune-macos.md)  
 
-## <a name="get-your-device-managed"></a>讓您的裝置成為受控  
-使用下列步驟來註冊執行 macOS 10.12 和更新版本的 macOS 裝置。   
+## <a name="get-your-macos-device-managed"></a>讓您的 macOS 裝置受管理  
+使用下列步驟向您的組織註冊您的 macOS 裝置。 您的裝置必須執行 macOS 10.12 或更新版本。   
+
+> [!NOTE]
+> 在整個過程中，系統可能會提示您允許公司入口網站使用儲存在 keychain 中的機密資訊。 這些提示是 Apple 安全性的一部分。 當您收到提示時，請輸入您的登入 keychain 密碼，然後選取 [**永遠允許**]。 如果您按**enter**鍵或在鍵盤上**返回**，則提示會改為選取 [**允許**]，這可能會導致額外的提示。  
+
+### <a name="install-company-portal-app"></a>安裝公司入口網站應用程式  
+1. 移至 [[註冊我的 Mac](https://go.microsoft.com/fwlink/?linkid=853070)]。  
+2. 公司入口網站 .pkg 檔案將會下載。 開啟安裝程式，並繼續執行步驟。 
+3. 同意軟體授權合約。 
+4. 輸入您的裝置密碼或已註冊的指紋，以安裝軟體。  
+5. 開啟公司入口網站。 
+
+> [!IMPORTANT]
+> 「Microsoft 自動更新」可能會開啟以更新您的 Microsoft 軟體。 安裝所有更新之後，請開啟公司入口網站應用程式。 若要獲得最佳的安裝經驗，請安裝最新版的 Microsoft 自動更新和公司入口網站。  
 
 
-1. 若要存取公司入口網站，請在 __Safari__ 中開啟新視窗，然後前往 https://portal.manage.microsoft.com 。  
-
-2. 使用您的公司或學校帳戶登入公司入口網站。
-
-   [!INCLUDE [wit_nextref](includes/end-user-password-guidance.md)]
+### <a name="enroll-your-mac"></a>註冊您的 Mac  
 
 
-3. 移至頁面左上角，然後按一下 [功能表]   > [裝置]  。  
+1. 使用您的公司或學校帳戶登入公司入口網站。  
+2. 當應用程式開啟時，請選取 [**開始**]。  
+3. 檢查您的組織在您已註冊的裝置上[可以看到和不能看見的內容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。 接著，選取 [繼續]  。  
+4. 在 [**安裝管理設定檔**] 畫面上，選取 [**下載設定檔**]。   
 
-4. [裝置]  頁面會顯示受控裝置清單或橫幅。 您所看到的內容取決於是否已有受控裝置。 
-    * 若要新增未列出的裝置，請選取橫幅：[Tap here to tell us which device you're using or add a new device.] \(請點選這裡告訴我們您將使用的裝置或新增裝置。\) 
-    * 如果您沒有任何裝置，橫幅會顯示： **[You don't have any managed devices.Add this one by tapping here.] \(您沒有任何受控裝置。請點選這裡新增這部裝置。\)** 按一下橫幅以新增您的裝置。  
+    ![公司入口網站 [安裝管理設定檔] 畫面的範例螢幕擷取畫面，其中反白顯示 [下載設定檔] 按鈕。](./media/install-mgmt-profile-mac-1911.PNG)   
+5. 您裝置的系統喜好設定將會開啟。 選取 [**安裝**]，然後再次選取 [**安裝**]。 若出現提示，請輸入您的裝置密碼。  
 
-     ![[裝置] 頁面的螢幕擷取畫面，含有圍住橫幅選項的紅色方框以醒目提示要按下的位置。](./media/CP-enroll-MACOS-1808.png)  
-5. 完成符合您目前在公司入口網站中看到訊息的下列步驟。  
-    * 如果是第一次新增裝置，系統會提示您將公司入口網站應用程式下載到裝置。 按一下 [下載]  繼續。  
+    ![MacOS 系統喜好設定（安裝提示）的範例螢幕擷取畫面，反白顯示 [安裝] 按鈕。](./media/system-preference-install-1911.PNG)  
+6. 安裝設定檔之後，它會出現在 [**管理設定檔**] 底下的配置檔案清單中。  
 
-         ![下載 macOS 公司入口網站應用程式提示畫面的範例螢幕擷取畫面。 使用者可以選擇按一下提示畫面左下方的藍色 [下載] 按鈕，或右下方的灰色 [取消] 按鈕。](./media/CP-enroll-download-macOS-1808.png)  
+   ![MacOS 系統喜好設定 [設定檔] 畫面的範例螢幕擷取畫面，其中反白顯示已安裝的管理設定檔。](./media/system-preference-verify-1911.PNG)   
+7. 返回公司入口網站。   
+8. 您的組織可能會要求您更新您的裝置設定。 當您完成更新設定時，請選取 [**檢查設定**]。  
 
-    * 如果您已有受控 macOS 裝置，您會收到目前受控 macOS 裝置清單的提示。 選取 [My device isn't listed here] \(我的裝置未列於此處\)   > [下載]  ，將公司入口網站應用程式下載到您要新增的裝置。  
+    ![公司入口網站的範例螢幕擷取畫面，[更新裝置設定] 畫面，反白顯示 [檢查設定] 按鈕。](./media/update-settings-mac-1911.PNG)  
+9. 當安裝程式完成時，請選取 [**完成**]。  
 
-         ![下載 macOS 公司入口網站應用程式提示畫面的範例螢幕擷取畫面。 使用者可以選擇選取 [My device isn't listed here] \(我的裝置未列於此處\)，或頁面中間的特定裝置。 提示畫面左下方會顯示藍色 [下載] 按鈕，右下方會顯示灰色 [取消] 按鈕](./media/cp-mac-os-device-isnt-here-1808.png)  
 
-6. 您的裝置將確認可安全地開啟安裝檔案 **CompanyPortal.pkg**。 完成之後，請開啟安裝程式並完成安裝。  
+ ## <a name="troubleshooting-and-feedback"></a>疑難排解與意見反應   
 
-7. 安裝程式完成後，移至 [啟動控制板]  ，然後開啟 [公司入口網站]  。  
+如果您在註冊期間遇到問題，請移至 說明 ** > ** **傳送診斷報告**，將問題回報給 Microsoft 應用程式開發人員。 這是用來協助改善應用程式的資訊。 他們也會使用此資訊來協助解決問題（如果您的 IT 支援人員與他們聯繫以取得協助）。  
 
-8. 您的 macOS 裝置會提示您確認是否要開啟公司入口網站應用程式。 按一下 [開啟]  。  
+將問題回報給 Microsoft 之後，您可以將體驗的詳細資料傳送給您的 IT 支援人員。 選取 [**電子郵件詳細資料**]。 輸入您在電子郵件內文中遇到的內容。 若要尋找支援人員的電子郵件地址，請移至公司入口網站應用程式 >**連絡人**。 或檢查[公司入口網站網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
+ 
 
-   > [!TIP]
-   > Intune 需要存取您的電腦，藉此確定您的裝置具備足夠的安全性可存取您組織的資源。 如果您的電腦拒絕開啟公司入口網站應用程式，請[關閉閘道管理員](https://support.apple.com/HT202491)。 然後開啟應用程式。
+此外，Microsoft Intune 公司入口網站團隊也很樂意聽到您的意見反應。 前往 [說明 **] > ** **傳送意見**反應，分享您的想法和想法。  
 
-9. 您在公司入口網站應用程式中看到的第一個畫面，會提示您 [登入]  。 請使用您用來登入公司入口網站的相同公司或學校帳戶。
+## <a name="unverified-profiles"></a>未驗證的設定檔  
+當您在 [系統喜好設定]   > [設定檔]  中檢視已安裝的行動裝置管理 (MDM) 設定檔時，有些設定檔可能會顯示未驗證狀態。 只要管理設定檔顯示已驗證狀態，您就不需要擔心。  
 
-10. 公司入口網站會確認您的帳戶資訊，並顯示您的 [裝置註冊]  和 [裝置合規性]  狀態。 黃色三角形醒目提示您需要採取以保護學校或公司用 macOS 裝置的動作。 按一下 [開始]  開始註冊。 
-
-11. 如果出現提示，請鍵入您電腦的登入資訊。  
-
-註冊裝置管理可能需要幾分鐘的時間。 在此期間，您可以在裝置上執行其他事項。 完成公司存取設定之後，您會收到一則訊息，讓您知道已完成。  
-
-## <a name="unverified-profiles"></a>未驗證的設定檔
-當您檢視 macOS 裝置的已安裝行動裝置管理 (MDM) 設定檔時，有些設定檔可能會顯示 [未驗證]  狀態。 只要 [管理設定檔]  顯示 [已驗證]  狀態，您就不需要擔心。  
-
-管理設定檔定義 MDM 通道連線。 只要管理設定檔經過驗證，透過該通道遞送至電腦的任何其他設定檔就會繼承管理設定檔的安全性特性。
-
-此外，因為這些其他設定檔不需要個別驗證，所以可以更快速地產生和遞送至裝置。 
+管理設定檔定義 MDM 通道連線。 只要管理設定檔經過驗證，透過該通道傳遞至機器的任何其他設定檔就會繼承管理設定檔的安全性特性。  
 
 ## <a name="updating-the-company-portal-app"></a>更新公司入口網站應用程式
 
-更新公司入口網站應用程式的完成方式與任何其他 Office 應用程式一樣，都是透過 Microsoft AutoUpdate for Mac。 深入了解[更新 macOS 版的 Microsoft 應用程式](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)。  
+更新公司入口網站應用程式的完成方式與任何其他 Office 應用程式一樣，都是透過適用於 macOS 的 Microsoft AutoUpdate。 深入了解[更新 macOS 版的 Microsoft 應用程式](https://support.office.com/article/Check-for-Office-for-Mac-updates-automatically-bfd1e497-c24d-4754-92ab-910a4074d7c1)。  
 
 ## <a name="next-steps"></a>後續步驟  
-需要其他協助嗎？ 請向公司支援人員確認。 您可以在[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)中找到他們的連絡資訊。  
+是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
 
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 687505a3ca2bbdffd26e8870705971aafb4783d2
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754941"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059278"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>針對 Intune 中的原則和設定檔進行疑難排解
 
@@ -103,7 +103,7 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 ## <a name="youre-unsure-if-a-profile-is-correctly-applied"></a>您不確定設定檔是否已正確套用
 
-1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [所有裝置]  > 選取裝置 > [裝置設定]  。 
 
     每部裝置都會列出其設定檔。 每個設定檔都有 [狀態]  。 狀態是將所有指派的設定檔 (包括硬體和 OS 的限制與需求) 全部一起考慮時所達成的情況。 可能的狀態包括：
@@ -176,7 +176,7 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 若要解決這個問題，設定本機系統時間時請盡可能接近網際網路時間。 或者，將它設定為網路上網域控制站的時間。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 [有關電子郵件設定檔的常見問題和解決方式](../configuration/troubleshoot-email-profiles-in-microsoft-intune.md)
 

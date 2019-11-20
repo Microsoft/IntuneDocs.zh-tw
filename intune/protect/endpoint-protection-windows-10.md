@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中 Windows 10 裝置的保護設定 - Azure | Microsoft Docs
-description: 在 Microsoft Intune 中，於 Windows 10 裝置上，使用或設定 Endpoint Protection 設定以啟用 Windows Defender 功能，包括「應用程式防護」、「防火牆」、SmartScreen、加密和 BitLocker、「惡意探索防護」、「應用程式控制」、「資訊安全中心」，以及本機裝置上的安全性。
+description: 在 Microsoft Intune 中，於 Windows 10 裝置上，使用或設定端點保護設定以啟用 Microsoft Defender 功能，包括「應用程式防護」、「防火牆」、SmartScreen、加密和 BitLocker、「惡意探索防護」、「應用程式控制」、「資訊安全中心」，以及本機裝置上的安全性。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,30 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 40865dcca0b0109ae36f65b6691672c0035732b5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502277"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058419"
 ---
-# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>使用 Intune 保護裝置的 Windows 10 (及更新版本) 設定  
+# <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>使用 Intune 保護裝置的 Windows 10 (及更新版本) 設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]  
+Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描述您可以在 Windows 10 及更新版本裝置中啟用及設定的所有設定。 這些設定是為了控制安全性而在 Intune 的端點保護組態設定檔中建立，包括 BitLocker 和 Microsoft Defender。  
 
-Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描述您可以在 Windows 10 及更新版本裝置中啟用及設定的所有設定。 這些設定是為了控制安全性而在 Intune 的 Endpoint Protection 組態設定檔中建立，包括 BitLocker 和 Windows Defender。  
+若要設定 Microsoft Defender 防毒軟體，請參閱 [Windows 10 裝置限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
 
-若要設定 Windows Defender 防毒軟體，請參閱 [Windows 10 裝置限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
-
-## <a name="before-you-begin"></a>開始之前  
+## <a name="before-you-begin"></a>在您開始前  
 
 [建立 Endpoint Protection 裝置組態設定檔](endpoint-protection-configure.md)。  
 
 如需設定服務提供者（Csp）的詳細資訊，請參閱設定[服務提供者參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference)。  
 
-## <a name="windows-defender-application-guard"></a>Windows Defender 應用程式防護  
+## <a name="microsoft-defender-application-guard"></a>Microsoft Defender 應用程式防護  
 
-使用 Microsoft Edge 時，Windows Defender 應用程式防護可保護您的環境免受組織不信任之網站的影響。 當使用者瀏覽未列在隔離之網路界限中的網站時，這些網站將在 Hyper-V 虛擬瀏覽工作階段中開啟。 信任的網站是由網路界限定義，並在 [裝置設定] 中進行設定。  
+使用 Microsoft Edge 時，Microsoft Defender 應用程式防護可保護您的環境免受組織不信任之網站的影響。 當使用者瀏覽未列在隔離之網路界限中的網站時，這些網站將在 Hyper-V 虛擬瀏覽工作階段中開啟。 信任的網站是由網路界限定義，並在 [裝置設定] 中進行設定。  
 
 應用程式防護只適用於 Windows 10 (64 位元) 裝置。 使用此設定檔會安裝 Win32 元件，以啟動應用程式防護。  
 
@@ -122,7 +120,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   - **啟用** - 使用者可以將檔案從虛擬化瀏覽器下載到主機作業系統。  
   - **未設定** - 會將檔案保留在本機裝置上，而不將檔案下載到主機檔案系統。  
 
-## <a name="windows-defender-firewall"></a>Windows Defender 防火牆  
+## <a name="microsoft-defender-firewall"></a>Microsoft Defender 防火牆  
  
 ### <a name="global-settings"></a>全域設定  
 
@@ -162,7 +160,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   **預設**：未設定  
   防火牆 CSP： [MdmStore/Global/CRLcheck](https://go.microsoft.com/fwlink/?linkid=872548)  
 
-  選擇裝置驗證憑證撤銷清單的方式。 這些選項包括：  
+  選擇裝置驗證憑證撤銷清單的方式。 選項包含：  
   - **停用 CRL 驗證**  
   - **只有撤銷的憑證上的 CRL 驗證失敗**  
   - **因發生任何錯誤而導致 CRL 驗證失敗**。  
@@ -180,7 +178,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   **預設**：未設定  
   防火牆 CSP： [MdmStore/Global/EnablePacketQueue](https://go.microsoft.com/fwlink/?linkid=872551)  
 
-  指定接收端軟體縮放如何用於 IPsec 通道閘道情節的加密接收與純文字轉送。 此設定會確認保留封包順序。 這些選項包括：  
+  指定接收端軟體縮放如何用於 IPsec 通道閘道情節的加密接收與純文字轉送。 此設定會確認保留封包順序。 選項包含：  
   - **未設定**  
   - **停用所有封包佇列**  
   - **僅將輸入加密封包排入佇列**  
@@ -196,7 +194,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 #### <a name="general-settings"></a>一般設定  
 
-- **Windows Defender 防火牆**  
+- **Microsoft Defender 防火牆**  
   **預設**：未設定  
   防火牆 CSP： [os.enablefirewall](https://go.microsoft.com/fwlink/?linkid=872558)  
   
@@ -224,7 +222,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   **預設**：未設定  
   防火牆 CSP：[受防護](https://go.microsoft.com/fwlink/?linkid=872561)  
     - **未設定**  
-    - **封鎖**-當 Windows Defender 防火牆開啟且此設定設為 [*封鎖*] 時，不論其他原則設定為何，所有連入流量都會遭到封鎖。 
+    - **封鎖**-當 Microsoft Defender 防火牆開啟且此設定設為 [*封鎖*] 時，不論其他原則設定為何，所有連入流量都會被封鎖。 
     - **允許**-設定為 [*允許*] 時，會關閉此設定，並根據其他原則設定允許傳入流量。
 
 - **多點傳送廣播的單點回應**  
@@ -264,7 +262,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 #### <a name="rule-merging"></a>規則合併  
 
-- **來自本機存放區的授權應用程式 Windows Defender 防火牆規則**  
+- **來自本機存放區的授權應用程式 Microsoft Defender 防火牆規則**  
   **預設**：未設定  
   防火牆 CSP： [AuthAppsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872565)  
 
@@ -273,7 +271,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   - **允許** -
    選擇 [啟用] **** 可套用本機存放區中要辨識並強制執行的防火牆規則。  
 
-- **來自本機存放區的全域連接埠 Windows Defender 防火牆規則**  
+- **來自本機存放區的全域連接埠 Microsoft Defender 防火牆規則**  
   **預設**：未設定  
   防火牆 CSP： [GlobalPortsAllowUserPrefMerge](https://go.microsoft.com/fwlink/?linkid=872566)  
 
@@ -281,7 +279,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   - **封鎖**-已忽略且不會強制執行本機存放區中的全域埠防火牆規則。  
   - **允許** - 套用本機存放區中要辨識並強制執行的全域連接埠防火牆規則。  
 
-- **來自本機存放區的 Windows Defender 防火牆規則**  
+- **來自本機存放區的 Microsoft Defender 防火牆規則**  
   **預設**：未設定  
   防火牆 CSP： [AllowLocalPolicyMerge](https://go.microsoft.com/fwlink/?linkid=872567)  
 
@@ -422,7 +420,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   指定此規則的授權本機使用者清單。 若此規則適用于 Windows 服務，則無法指定授權使用者的清單。  
 
 
-## <a name="windows-defender-smartscreen-settings"></a>Windows Defender SmartScreen 設定  
+## <a name="microsoft-defender-smartscreen-settings"></a>Microsoft Defender SmartScreen 設定  
  
 裝置上必須安裝 Microsoft Edge。  
 
@@ -443,8 +441,6 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 ## <a name="windows-encryption"></a>Windows 加密  
  
 ### <a name="windows-settings"></a>Windows 設定  
-
-這些加密設定適用于所有版本的 Windows 10。  
 
 - **加密裝置**  
   **預設**：未設定  
@@ -479,7 +475,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   當設定為 [*封鎖*] 時，您可以進行下列設定：  
 
   - **允許標準使用者在 Azure AD Join 時啟用加密**  
-    *這項設定只適用于已加入 Azure Active Directory （Azure 形容詞）裝置，且取決於先前的設定，`Warning for other disk encryption`。*  
+    *此設定僅適用于已加入 Azure Active Directory （Azure 形容詞）裝置，並取決於先前的設定 `Warning for other disk encryption`。*  
     **預設**：未設定  
     BitLocker CSP： [AllowStandardUserEncryption](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#allowstandarduserencryption)
 
@@ -775,7 +771,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
     - **封鎖** - 封鎖在其他組織中設定之裝置的寫入權限。  
     - **未設定**-拒絕寫入權限。  
  
-## <a name="windows-defender-exploit-guard"></a>Windows Defender 惡意探索防護  
+## <a name="microsoft-defender-exploit-guard"></a>Microsoft Defender 惡意探索防護  
 
 使用[惡意探索保護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/exploit-protection)來管理及減少員工所使用應用程式的受攻擊面。  
 
@@ -825,7 +821,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **Office 應用程式啟動子處理序**  
   **預設**：未設定  
-  規則：[封鎖所有 Office 應用程式建立子進程](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes)  
+  規則：[禁止所有 Office 應用程式建立子處理序](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/attack-surface-reduction#block-all-office-applications-from-creating-child-processes) \(部分機器翻譯\)  
 
   - **未設定**  
   - **封鎖**-封鎖 Office 應用程式啟動子進程。  
@@ -971,21 +967,20 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
   此設定的目的是要保護使用者免于應用程式存取網路釣魚詐騙、惡意探索網站，以及網際網路上的惡意內容。 它也會防止協力廠商瀏覽器連接到危險的網站。  
 
-  - **未設定** - 停用此功能。 使用者和應用程式不會遭到封鎖而無法連接到危險的網域。 系統管理員無法在 Windows Defender 資訊安全中心看到此活動。  
-  - **啟用**-開啟網路保護，並封鎖使用者和應用程式，使其無法連線到危險的網域。 系統管理員可以在 Windows Defender 資訊安全中心看到此活動。  
-  - **僅限 Audit**：-使用者和應用程式不會遭到封鎖而無法連線到危險的網域。 系統管理員可以在 Windows Defender 資訊安全中心看到此活動。  
+  - **未設定** - 停用此功能。 使用者和應用程式不會遭到封鎖而無法連接到危險的網域。 系統管理員無法在 Microsoft Defender 資訊安全中心看到此活動。  
+  - **啟用**-開啟網路保護，並封鎖使用者和應用程式，使其無法連線到危險的網域。 系統管理員可以在 Microsoft Defender 資訊安全中心看到此活動。  
+  - **僅限 Audit**：-使用者和應用程式不會遭到封鎖而無法連線到危險的網域。 系統管理員可以在 Microsoft Defender 資訊安全中心看到此活動。  
 
 ### <a name="exploit-protection"></a>惡意探索保護  
- 
 
 - **上傳 XML**  
   **預設值**：*未設定*  
 
-  若要使用惡意探索保護來[保護裝置免于入侵](https://docs.microsoft.com/en-us/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，請建立 XML 檔案，其中包含您想要的系統和應用程式緩和設定。 有兩種方法可以建立 XML 檔案：  
+  若要使用惡意探索保護來[保護裝置免于入侵](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)，請建立 XML 檔案，其中包含您想要的系統和應用程式緩和設定。 有兩種方法可以建立 XML 檔案：  
 
   - *PowerShell* - 使用一或多個 *Get-ProcessMitigation*、*Set-ProcessMitigation* 和 *ConvertTo-ProcessMitigationPolicy* PowerShell Cmdlet。 Cmdlet 會設定安全防護功能設定，並匯出它們的 XML 表示法。  
 
-  - 「Windows Defender 資訊安全中心 UI」  - Windows Defender 資訊安全中心，按一下 [App 與瀏覽器控制]，然後捲動至結果畫面的底部，找到 [惡意探索保護]。 首先，使用 [系統設定] 與 [程式設定] 索引標籤來進行低風險的設定。 然後，在畫面底部找到 [匯出設定] 連結，匯出它們的 XML 表示。  
+  - 「Microsoft Defender 資訊安全中心 UI」  - Microsoft Defender 資訊安全中心，按一下 [應用程式與瀏覽器控制]，然後捲動至結果畫面的底部，找到 [惡意探索保護]。 首先，使用 [系統設定] 與 [程式設定] 索引標籤來進行低風險的設定。 然後，在畫面底部找到 [匯出設定] 連結，匯出它們的 XML 表示。  
 
 - **使用者編輯惡意探索保護介面**  
   **預設**：未設定  
@@ -995,9 +990,9 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   - **封鎖**-上傳可讓您設定記憶體、控制流程和原則限制的 XML 檔案。 XML 檔案中的設定可用來封鎖惡意探索應用程式。  
   - **未設定**-未使用任何自訂設定。  
 
-## <a name="windows-defender-application-control"></a>Windows Defender 應用程式控制  
+## <a name="microsoft-defender-application-control"></a>Microsoft Defender 應用程式控制  
 
-選擇需要進行審核的其他應用程式，或可由 Windows Defender 應用程式控制執行信任。 Windows 元件和所有 Windows 市集的應用程式都自動受信任執行。  
+選擇需要進行審核的其他應用程式，或可信任由 Microsoft Defender 應用程式控制執行。 Windows 元件和所有 Windows 市集的應用程式都自動受信任執行。  
 
 
 - **應用程式控制程式碼完整性原則**  
@@ -1012,9 +1007,9 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
  
   - **僅限 Audit** -不會封鎖應用程式。 所有事件都會記錄在本機用戶端的記錄中。  
 
-## <a name="windows-defender-credential-guard"></a>Windows Defender Credential Guard  
+## <a name="microsoft-defender-credential-guard"></a>Microsoft Defender Credential Guard  
 
-Windows Defender Credential Guard 可防止認證遭竊的攻擊。 它會隔離機密資料，因此只有特殊權限的系統軟體可以存取它們。  
+Microsoft Defender Credential Guard 可防止認證竊取攻擊。 它會隔離機密資料，因此只有特殊權限的系統軟體可以存取它們。  
 
 - **Credential Guard**  
   **預設值**：停用  
@@ -1036,19 +1031,19 @@ Windows Defender Credential Guard 可防止認證遭竊的攻擊。 它會隔離
   - **使用直接記憶體存取進行安全開機**  
     使用安全開機和直接記憶體存取 (DMA) 保護開啟 VBS。 DMA 保護需要硬體支援，而且只能在正確設定的裝置上啟用。  
 
-## <a name="windows-defender-security-center"></a>Windows Defender 資訊安全中心  
+## <a name="microsoft-defender-security-center"></a>Microsoft Defender 資訊安全中心  
 
-Windows Defender 資訊安全中心是以個別的應用程式或各個功能的處理序運行。 它會透過重要訊息中心顯示通知。 它充當收集器，或查看狀態及執行每項功能一些設定的單一位置。 詳細資訊請參閱 [Windows Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center) 文件。  
+Microsoft Defender 資訊安全中心是以個別的應用程式或各個功能的處理序運行。 它會透過重要訊息中心顯示通知。 它充當收集器，或查看狀態及執行每項功能一些設定的單一位置。 如需詳細資訊，請查看[Microsoft Defender](https://docs.microsoft.com/windows/threat-protection/windows-defender-security-center/windows-defender-security-center)檔。  
 
-### <a name="windows-defender-security-center-app-and-notifications"></a>Windows Defender 資訊安全中心應用程式和通知  
+### <a name="microsoft-defender-security-center-app-and-notifications"></a>Microsoft Defender 資訊安全中心應用程式和通知  
 
-封鎖使用者對「Windows Defender 資訊安全中心」應用程式之各種區域的存取。 隱藏區段也會封鎖相關通知。  
+封鎖使用者對「Microsoft Defender 資訊安全中心」應用程式之各種區域的存取。 隱藏區段也會封鎖相關通知。  
 
 - **病毒與威脅防護**  
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableVirusUI](https://go.microsoft.com/fwlink/?linkid=873662)  
 
-  設定終端使用者是否可以在 Windows Defender 資訊安全中心中查看 [病毒與威脅防護] 區域。 隱藏此區段也會封鎖與病毒和威脅防護相關的所有通知。  
+  設定終端使用者是否可以在 Microsoft Defender 資訊安全中心中查看 [病毒與威脅防護] 區域。 隱藏此區段也會封鎖與病毒和威脅防護相關的所有通知。  
 
   - **未設定**  
   - [隱藏]   
@@ -1057,7 +1052,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [HideRansomwareDataRecovery](https://go.microsoft.com/fwlink/?linkid=873664)  
 
-  設定終端使用者是否可以在 Windows Defender 資訊安全中心中查看勒索軟體保護區域。 隱藏此區段也會封鎖所有與勒索軟體保護相關的通知。  
+  設定終端使用者是否可以在 Microsoft Defender 資訊安全中心中查看勒索軟體保護區域。 隱藏此區段也會封鎖所有與勒索軟體保護相關的通知。  
 
   - **未設定**  
   - [隱藏]   
@@ -1066,7 +1061,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableAccountProtectionUI](https://go.microsoft.com/fwlink/?linkid=873666)  
 
-  設定終端使用者是否可以在 Windows Defender 資訊安全中心中查看 [帳戶保護] 區域。 隱藏此區段也會封鎖與帳戶保護相關的所有通知。  
+  設定終端使用者是否可以在 Microsoft Defender 資訊安全中心中查看 [帳戶保護] 區域。 隱藏此區段也會封鎖與帳戶保護相關的所有通知。  
 
   - **未設定**  
   - [隱藏]   
@@ -1075,7 +1070,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableNetworkUI](https://go.microsoft.com/fwlink/?linkid=873668)  
 
-  設定終端使用者是否可以在 Windows Defender 安全性中心內查看 [防火牆和網路保護] 區域。 隱藏此區段也會封鎖與防火牆和網路保護相關的所有通知。  
+  設定終端使用者是否可以在 Microsoft Defender 安全性中心內查看 [防火牆和網路保護] 區域。 隱藏此區段也會封鎖與防火牆和網路保護相關的所有通知。  
 
   - **未設定**  
   - [隱藏]   
@@ -1084,7 +1079,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableAppBrowserUI](https://go.microsoft.com/fwlink/?linkid=873669)  
 
-  設定終端使用者是否可以在 Windows Defender 安全性中心內查看應用程式和瀏覽器控制區域。 隱藏此區段也會封鎖與應用程式和瀏覽器控制項相關的所有通知。  
+  設定終端使用者是否可以在 Microsoft Defender 安全性中心內查看應用程式和瀏覽器控制區域。 隱藏此區段也會封鎖與應用程式和瀏覽器控制項相關的所有通知。  
 
   - **未設定**  
   - [隱藏]   
@@ -1093,7 +1088,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableDeviceSecurityUI](https://go.microsoft.com/fwlink/?linkid=873670)  
 
-  設定終端使用者是否可以在 Windows Defender 資訊安全中心中查看硬體保護區域。 隱藏此區段也會封鎖與硬體保護相關的所有通知。  
+  設定終端使用者是否可以在 Microsoft Defender 資訊安全中心中查看硬體保護區域。 隱藏此區段也會封鎖與硬體保護相關的所有通知。  
 
   - **未設定**  
   - [隱藏]   
@@ -1102,7 +1097,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableHealthUI](https://go.microsoft.com/fwlink/?linkid=873671)  
 
-  設定終端使用者是否可以在 Windows Defender 安全性中心內查看裝置效能和健全狀況區域。 隱藏此區段也會封鎖與裝置效能和健全狀況相關的所有通知。  
+  設定終端使用者是否可以在 Microsoft Defender 安全性中心內查看裝置效能和健全狀況區域。 隱藏此區段也會封鎖與裝置效能和健全狀況相關的所有通知。  
   
   - **未設定**  
   - [隱藏]   
@@ -1111,7 +1106,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableFamilyUI](https://go.microsoft.com/fwlink/?linkid=873673)  
 
-  設定終端使用者是否可以在 Windows Defender 安全性中心內查看 [系列選項] 區域。 隱藏此區段也會封鎖與系列選項相關的所有通知。  
+  設定終端使用者是否可以在 Microsoft Defender 安全性中心內查看 [系列選項] 區域。 隱藏此區段也會封鎖與系列選項相關的所有通知。  
   
   - **未設定**  
   - [隱藏]   
@@ -1120,7 +1115,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   **預設**：未設定  
   WindowsDefenderSecurityCenter CSP： [DisableNotifications](https://go.microsoft.com/fwlink/?linkid=873675)  
 
-  選擇要向終端使用者顯示的通知。 非重大通知包括 Windows Defender 防毒軟體活動摘要，包括掃描完成時的通知。 所有其他通知都被視為重大通知。  
+  選擇要向終端使用者顯示的通知。 非重大通知包括 Microsoft Defender 防毒軟體活動摘要，包括掃描完成時的通知。 所有其他通知都被視為重大通知。  
 
   - **未設定**  
   - **封鎖非重大通知**  
@@ -1160,7 +1155,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
 
 ### <a name="it-contact-information"></a>IT 連絡人資訊  
 
-提供要顯示在「Windows Defender 資訊安全中心」應用程式和應用程式通知中的 IT 連絡人資訊。  
+提供要顯示在「Microsoft Defender 資訊安全中心」應用程式和應用程式通知中的 IT 連絡人資訊。  
 
 您可以選擇 [Display in app and in notifications] \(在應用程式和通知中顯示)  、[Display only in app] \(只在應用程式中顯示)  、[Display only in notifications] \(只在通知中顯示)  或 [Don't display] \(不顯示)  。 輸入 **IT 組織名稱**，以及至少下列其中一個連絡選項：  
 
@@ -1313,7 +1308,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   - **強制登出** - 移除智慧卡時，使用者會自動登出。  
   - **若是遠端桌面服務工作階段則中斷連線** - 移除智慧卡會中斷工作階段的連線，但無需登出使用者。 此選項可讓使用者插入智慧卡並在稍後繼續工作階段，或在另一部配備智慧卡讀取器的電腦上，而不需要再次登入。 如果工作階段是本機，則此原則的功能與鎖定工作站相同。  
 
-#### <a name="display"></a>顯示  
+#### <a name="display"></a>顯示器  
 
 - **鎖定螢幕上的使用者資訊**  
   **預設**：未設定  
@@ -1334,7 +1329,7 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   - **啟用**-隱藏使用者名稱。  
   - **未設定**-顯示最後的使用者名稱。  
 
-- **在**登入時隱藏使用者名稱 
+- 在登入時**隱藏使用者名稱**
   **預設**：未設定  
   LocalPoliciesSecurityOptions CSP： [InteractiveLogon_DoNotDisplayUsernameAtSignIn](https://go.microsoft.com/fwlink/?linkid=867959)  
 
@@ -1640,7 +1635,241 @@ Windows Defender 資訊安全中心是以個別的應用程式或各個功能的
   - **自動**
   - **停用**
 
-## <a name="next-steps"></a>後續步驟
+## <a name="user-rights"></a>使用者權限
+
+- **存取認證管理員作為信任的呼叫者**  
+  **預設**：未設定  
+  CSP： [UserRights/AccessCredentialManagerAsTrustedCaller](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accesscredentialmanagerastrustedcaller)
+
+  在備份和還原作業期間，認證管理員會使用此使用者權限。 如果將這個許可權提供給其他實體，使用者儲存的認證可能會受到危害。
+  - **未設定**
+  - **允許**
+
+- **允許本機登入**  
+  **預設**：未設定  
+  CSP： [UserRights/AllowLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-allowlocallogon)
+
+  此使用者權限會決定哪些使用者可以登入電腦。
+  - **未設定**
+  - **允許**
+
+- **允許從網路存取**  
+  **預設**：未設定  
+  CSP： [UserRights/AccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-accessfromnetwork)
+
+  此使用者權限決定允許哪些使用者和群組透過網路連接到電腦。
+  - **未設定**
+  - **允許**
+
+- **作為作業系統的一部分**  
+  **預設**：未設定  
+  CSP： [UserRights/ActAsPartOfTheOperatingSystem](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-actaspartoftheoperatingsystem)
+
+  作為作業系統的一部分
+  - **未設定**
+  - **允許**  
+
+- **備份檔案和目錄**  
+  **預設**：未設定  
+  CSP： [UserRights/BackupFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-backupfilesanddirectories)
+
+  此使用者權限決定當備份檔案和目錄時，哪些使用者可以略過檔案、目錄、登錄和其他持續性物件的許可權。
+  - **未設定**
+  - **允許**
+
+- **變更系統時間**  
+  **預設**：未設定  
+  CSP： [UserRights/ChangeSystemTime](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-changesystemtime)
+
+  此使用者權限會決定哪些使用者和群組可以變更電腦內部時鐘的時間和日期。
+  - **未設定**
+  - **允許**
+
+- **建立全域物件**  
+  **預設**：未設定  
+  CSP： [UserRights/CreateGlobalObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createglobalobjects)
+
+  此安全性設定可決定使用者是否可以建立可供所有會話使用的全域物件。 可以建立全域物件的使用者可能會影響在其他使用者會話下執行的進程，這可能會導致應用程式失敗或資料損毀。
+  - **未設定**
+  - **允許**
+
+- **建立分頁檔**  
+  **預設**：未設定  
+  CSP： [UserRights/CreatePageFile](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpagefile)
+
+  此使用者權限會決定哪些使用者和群組可以呼叫內部 API，以建立和變更分頁檔案的大小。
+  - **未設定**
+  - **允許**
+
+- **建立永久共用物件**  
+  **預設**：未設定  
+  CSP： [UserRights/CreatePermanentSharedObjects](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createpermanentsharedobjects)
+
+  此使用者權限決定進程可以使用哪些帳戶來建立使用物件管理員的目錄物件。
+  - **未設定**
+  - **允許**
+
+- **建立符號連結**  
+  **預設**：未設定  
+  CSP： [UserRights/CreateSymbolicLinks](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createsymboliclinks)
+
+  此使用者權限決定使用者是否可以從其登入的電腦建立符號連結。
+  - **未設定**
+  - **允許**
+
+- **建立權杖**  
+  **預設**：未設定  
+  CSP： [UserRights/appserviceloginhandler.createtoken](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-createtoken)
+
+  此使用者權限決定可供進程用來建立權杖的使用者/群組，以便在進程使用內部 API 建立存取權杖時，用來取得任何本機資源的存取權。
+  - **未設定**
+  - **允許**
+
+- **偵錯程式**  
+  **預設**：未設定  
+    CSP： [UserRights/DebugPrograms](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-debugprograms)
+
+  此使用者權限決定哪些使用者可以將偵錯工具附加至任何進程或核心。
+  - **未設定**
+  - **允許**
+
+- **拒絕從網路存取**  
+  **預設**：未設定  
+  CSP： [UserRights/DenyAccessFromNetwork](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyaccessfromnetwork)
+
+  此使用者權限會決定哪些使用者無法透過網路存取電腦。
+  - **未設定**
+  - **允許**
+
+- **拒絕以服務方式登入**  
+  **預設**：未設定  
+  CSP： [UserRights/DenyLocalLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denylocallogon)
+
+  此安全性設定會決定哪些服務帳戶無法將進程註冊為服務。
+  - **未設定**
+  - **允許**
+
+- **拒絕透過遠端桌面服務登入**  
+  **預設**：未設定  
+  CSP： [UserRights/DenyRemoteDesktopServicesLogOn](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-denyremotedesktopserviceslogon)
+
+  此使用者權限決定禁止哪些使用者和群組以遠端桌面服務用戶端的身分登入。
+  - **未設定**
+  - **允許**
+
+- **啟用委派**  
+  **預設**：未設定  
+  CSP： [UserRights/EnableDelegation](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-enabledelegation)
+
+ 此使用者權限決定哪些使用者可以在使用者或電腦物件上設定 [受信任的委派] 設定。
+  - **未設定**
+  - **允許**
+
+- **產生安全性稽核**  
+  **預設**：未設定  
+  CSP： [UserRights/GenerateSecurityAudits](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-generatesecurityaudits)
+
+  此使用者權限決定進程可以使用哪些帳戶，將專案新增至安全性記錄檔。 安全性記錄檔用來追蹤未經授權的系統存取。
+  - **未設定**
+  - **允許**
+
+- **模擬用戶端**  
+  **預設**：未設定  
+  CSP： [UserRights/ImpersonateClient](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-impersonateclient)
+
+  將此使用者權限指派給使用者，可讓代表該使用者執行的程式模擬用戶端。 針對這種模擬要求此使用者權限，可防止未經授權的使用者將用戶端連線至他們所建立的服務，然後再模擬該用戶端，這樣可以將未經授權的使用者許可權提升至系統管理層級。
+  - **未設定**
+  - **允許**
+
+- **增加排程優先順序**  
+  **預設**：未設定  
+  CSP： [UserRights/IncreaseSchedulingPriority](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-increaseschedulingpriority)
+
+  此使用者權限會決定哪些帳戶可以使用具有另一個進程之寫入屬性存取權的進程，以增加指派給其他進程的執行優先權。
+  - **未設定**
+  - **允許**
+
+- **載入及卸載裝置驅動程式**  
+  **預設**：未設定  
+  CSP： [UserRights/LoadUnloadDeviceDrivers](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-loadunloaddevicedrivers)
+
+  此使用者權限決定哪些使用者可以動態載入和卸載設備磁碟機或其他程式碼到核心模式。
+  - **未設定**
+  - **允許**
+
+- **鎖定記憶體內部分頁**  
+  **預設**：未設定  
+  CSP： [UserRights/LockMemory](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-lockmemory)
+
+  此使用者權限會決定哪些帳戶可以使用處理序將資料保留在實體記憶體中，以防止系統將資料傳送到磁碟上的虛擬記憶體。
+  - **未設定**
+  - **允許**
+
+- **管理稽核和安全性記錄檔**  
+  **預設**：未設定  
+  CSP： [UserRights/ManageAuditingAndSecurityLog](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-manageauditingandsecuritylog)
+
+  此使用者權限會決定哪些使用者可以針對個別資源（例如檔案、Active Directory 物件和登錄機碼）指定物件存取的審核選項。
+  - **未設定**
+  - **允許**
+
+- **執行磁碟區維護工作**  
+  **預設**：未設定  
+  CSP： [UserRights/ManageVolume](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-managevolume)
+
+  此使用者權限會決定哪些使用者和群組可以在磁片區上執行維護工作，例如遠端磁碟重組。
+  - **未設定**
+  - **允許**
+
+- **修改韌體環境值**  
+  **預設**：未設定  
+  CSP： [UserRights/ModifyFirmwareEnvironment](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyfirmwareenvironment)
+
+  此使用者權限決定可以修改固件環境值的人員。
+  - **未設定**
+  - **允許**
+
+- **修改物件標籤**  
+  **預設**：未設定  
+  CSP： [UserRights/ModifyObjectLabel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-modifyobjectlabel)
+
+  此使用者權限會決定哪些使用者帳戶可以修改物件的完整性標籤，例如檔案、登錄機碼或其他使用者所擁有的進程。
+  - **未設定**
+  - **允許**
+
+- **設定檔單一處理序**  
+  **預設**：未設定  
+  CSP： [UserRights/ProfileSingleProcess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-profilesingleprocess)
+
+  此使用者權限決定哪些使用者可以使用效能監視工具來監視系統進程的效能。
+  - **未設定**
+  - **允許**
+
+- **遠端關機**  
+  **預設**：未設定  
+  CSP： [UserRights/RemoteShutdown](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-remoteshutdown)
+
+  此使用者權限決定允許哪些使用者將電腦從網路上的遠端位置關閉。 誤用此使用者權限可能會導致拒絕服務。
+  - **未設定**
+  - **允許**
+  
+- **還原檔案和目錄**  
+  **預設**：未設定  
+  CSP： [UserRights/RestoreFilesAndDirectories](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-restorefilesanddirectories)
+  
+  此使用者權限決定在還原備份檔案案和目錄時，哪些使用者可以略過檔案、目錄、登錄和其他持續性物件使用權限，並決定哪些使用者可以將任何有效的安全性主體設定為物件的擁有者。
+  - **未設定**
+  - **允許**
+  
+- **取得檔案或物件的擁有權**  
+  **預設**：未設定  
+  CSP： [UserRights/TakeOwnership](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-userrights#userrights-takeownership)
+
+  此使用者權限決定哪些使用者可以取得系統中任何安全物件的擁有權，包括 Active Directory 物件、檔案和資料夾、印表機、登錄機碼、進程和執行緒。
+  - **未設定**
+  - **允許**
+
+## <a name="next-steps"></a>接下來的步驟
 
 設定檔已建立，但還不會執行任何動作。 接下來，[指派設定檔](../configuration/device-profile-assign.md)並[監視其狀態](../configuration/device-profile-monitor.md)。  
 

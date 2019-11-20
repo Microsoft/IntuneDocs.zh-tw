@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中 Windows 10 的裝置限制設定 | Microsoft Docs
-description: 查看有關在 Windows 10 和更新版本的裝置上建立裝置限制的所有設定及其描述的清單。 使用組態設定檔中的這些設定，在 Microsoft Intune 中控制螢幕擷取畫面、密碼要求、kiosk 設定、商店中的應用程式、Microsoft Edge 瀏覽器、Windows Defender、雲端存取及開始功能表等。
+description: 查看有關在 Windows 10 和更新版本的裝置上建立裝置限制的所有設定及其描述的清單。 使用組態設定檔中的這些設定，在 Microsoft Intune 中控制螢幕擷取畫面、密碼要求、Kiosk 設定、市集中的應用程式、Microsoft Edge 瀏覽器、Microsoft Defender、雲端存取及開始功能表等。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/13/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 288ff693e7e46b7953cffad3d0a54b8621141373
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
-ms.translationtype: MTE75
+ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73755271"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059486"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "73755271"
 > [!Note]
 > 並非所有版本的 Windows 都提供全部選項。 若要查看支援的版本，請參閱 [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (原則 CSP) (開啟另一個 Microsoft 網站)。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 [建立裝置組態設定檔](device-restrictions-configure.md#create-the-profile)。
 
@@ -158,7 +158,7 @@ ms.locfileid: "73755271"
   - **隱私權**：[封鎖]  防止存取裝置設定應用程式的 [隱私權] 區域。 [未設定]  (預設) 允許存取。
   - **更新與安全性**：[封鎖]  防止存取裝置設定應用程式的 [更新與安全性] 區域。 [未設定]  (預設) 允許存取。
 
-## <a name="display"></a>顯示
+## <a name="display"></a>顯示器
 
 這些設定使用[顯示原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display)，它也會列出支援的 Windows 版本。
 
@@ -467,7 +467,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **意見反應與診斷**：定義此應用程式能否存取診斷資訊。
 - **與裝置同步** - 選擇此應用程式是否自動與未和該裝置直接配對的無線裝置共用及同步資訊。
 
-## <a name="personalization"></a>個人化
+## <a name="personalization"></a>Personalization
 
 這些設定使用[個人化原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)，它也會列出支援的 Windows 版本。
 
@@ -479,7 +479,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **預設印表機**：設定預設印表機。
 - **使用者存取新增新印表機**：允許或封鎖使用本機印表機。
 
-## <a name="privacy"></a>隱私權
+## <a name="privacy"></a>私密性
 
 這些設定使用[隱私權原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy)，它也會列出支援的 Windows 版本。
 
@@ -523,7 +523,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 - **共用使用方式資料**：選擇提交診斷資料的層級。 選項包括：
   - [未設定]  ：不共用任何資料。
-  - [安全性]  ：讓 Windows 更安全的必要資訊，包括已連線使用者體驗與遙測元件的設定、惡意軟體移除工具及 Windows Defender 的相關資料。
+  - **安全性**：讓 Windows 更安全的必要資訊，包括已連線使用者體驗與遙測元件的設定、惡意軟體移除工具及 Microsoft Defender 的相關資料。
   - [基本]  ：基本裝置資訊，包括品質相關資料、應用程式相容性、應用程式使用量資料和安全性層級的資料。
   - [增強]  ：額外的見解，包括：Windows、Windows Server、System Center 和應用程式的使用方式、執行方式、進階的可靠性資料，以及基本和安全性層級的資料。
   - [完整]  ：找出及協助修正問題的所有必要資料，加上安全性、基本和增強層級的資料。
@@ -562,7 +562,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   - **中**：針對成人內容進行中等程度的篩選。 不篩選有效的搜尋結果。
 - **在 [搜尋] 中顯示網頁搜尋結果**：設為 [封鎖]  時，使用者無法搜尋，且不會在 [搜尋] 中顯示網頁搜尋結果。 [未設定]  (預設) 讓使用者搜尋網頁，並在裝置上顯示結果。
 
-## <a name="start"></a>開始
+## <a name="start"></a>啟動
 
 這些設定使用[啟動原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start)，它也會列出支援的 Windows 版本。  
 
@@ -632,19 +632,19 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   - [隱藏]  ：隱藏捷徑，並停用設定應用程式的設定。
   - [顯示]  ：顯示捷徑，並停用設定應用程式的設定。
 
-## <a name="windows-defender-smart-screen"></a>Windows Defender SmartScreen 篩選工具
+## <a name="microsoft-defender-smart-screen"></a>Microsoft Defender 智慧型畫面
 
-- []**適用於 Microsoft Edge 的 SmartScreen**：[必要]  會關閉 Windows Defender SmartScreen，並防止使用者開啟它。 [未設定]  (預設) 開啟 SmartScreen。 可協助保護使用者免受潛在威脅，並防止使用者關閉它。
+- **適用於 Microsoft Edge 的 SmartScreen**：[需要]  會關閉 Microsoft Defender SmartScreen，並防止使用者開啟它。 [未設定]  (預設) 開啟 SmartScreen。 可協助保護使用者免受潛在威脅，並防止使用者關閉它。
 
-  Microsoft Edge 使用 Windows Defender SmartScreen (已開啟) 保護使用者免於潛在的網路釣魚詐騙和惡意軟體攻擊。
+  Microsoft Edge 會使用 Microsoft Defender SmartScreen (已開啟)，以保護使用者免於遭受潛在的網路釣魚詐騙和惡意軟體攻擊。
 
   [Browser/AllowSmartScreen CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-allowsmartscreen)
 
-- []**惡意網站存取**：[封鎖]  防止使用者略過 Windows Defender SmartScreen 篩選工具警告，並阻止他們進入網站。 [未設定]  (預設) 可讓使用者略過警告，繼續前往網站。
+- **惡意網站存取**：[封鎖]  會防止使用者略過 Microsoft Defender SmartScreen 篩選工具警告，並阻止他們進入網站。 [未設定]  (預設) 可讓使用者略過警告，繼續前往網站。
 
   [Browser/PreventSmartScreenPromptOverride CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverride)
 
-- []**未經驗證的檔案下載**：[封鎖]  會防止使用者略過 Windows Defender SmartScreen 篩選工具警告，並阻止他們下載未經驗證的檔案。 [未設定]  (預設) 可讓使用者略過警告，繼續下載未經驗證的檔案。
+- **未經驗證的檔案下載**：[封鎖]  會防止使用者略過 Microsoft Defender SmartScreen 篩選工具警告，並阻止他們下載未經驗證的檔案。 [未設定]  (預設) 可讓使用者略過警告，繼續下載未經驗證的檔案。
 
   [Browser/PreventSmartScreenPromptOverrideForFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-browser#browser-preventsmartscreenpromptoverrideforfiles)
 
@@ -833,9 +833,9 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   [Defender/ScheduleScanTime CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-schedulescantime)
 
 - []**偵測潛在的不必要應用程式**：選擇 Windows 用以偵測潛在不必要應用程式的保護層級。 選項包括：
-  - [未設定]  (預設)：已停用 Windows Defender 潛在的垃圾應用程式保護。
-  - [封鎖]  ：Windows Defender 偵測到潛在的垃圾應用程式，並封鎖偵測到的項目。 這些項目會和其他威脅一起顯示在歷程記錄中。
-  - [稽核]  ：Windows Defender 偵測到潛在的垃圾應用程式，但不採取任何行動。 您可以檢閱 Windows Defender 可能對其採取行動的應用程式相關資訊。 例如，在事件檢視器中搜尋 Windows Defender 建立的事件。
+  - **未設定** (預設)：已停用 Microsoft Defender 潛在的垃圾應用程式保護。
+  - **封鎖**：Microsoft Defender 偵測到潛在的垃圾應用程式，並封鎖偵測到的項目。 這些項目會和其他威脅一起顯示在歷程記錄中。
+  - **稽核**：Microsoft Defender 偵測到潛在的垃圾應用程式，但不採取任何動作。 您可以檢閱那些應用程式 (Microsoft Defender 會採取動作) 的相關資訊。 例如，在 [事件檢視器] 中搜尋由 Microsoft Defender 建立的事件。
 
   如需潛在垃圾應用程式的詳細資訊，請參閱[偵測及封鎖潛在的垃圾應用程式](https://docs.microsoft.com/windows/threat-protection/windows-defender-antivirus/detect-block-potentially-unwanted-apps-windows-defender-antivirus)。
 
@@ -850,16 +850,16 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   - **使用者定義**
   - **封鎖**
 
-  如果您的動作不可行，Windows Defender 會選擇最佳選項，以確保威脅已補救。 
+  如果您的動作不可行，Microsoft Defender 會選擇最佳選項，以確保威脅已補救。 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
-### <a name="windows-defender-antivirus-exclusions"></a>Windows Defender 防毒軟體排除
+### <a name="microsoft-defender-antivirus-exclusions"></a>Microsoft Defender 防毒軟體排除
 
 - **不進行掃描和即時保護的檔案和資料夾**：將一或多個 **C:\Path** 或 **%ProgramFiles%\Path\filename.exe** 等檔案與資料夾，新增至排除清單。 任何即時或已排程的掃描都不會包含這些檔案和資料夾。
 - **不進行掃描和即時保護的副檔名**：新增一或多個檔案副檔名，像是 **jpg** 或 **txt** 至排除清單中。 任何即時掃描或排定的掃描，都不會包含有這些副檔名的任何檔案。
 - **排除不進行掃描和即時保護的程序** - 新增一或多個類型為 **.exe**、 **.com** 或 **.scr** 等處理序至排除清單中。 任何即時或已排程的掃描都不會包含這些處理序。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 如需每項設定的其他技術詳細資料，以及支援哪些 Windows 版本，請參閱 [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (Windows 10 原則 CSP 參考)

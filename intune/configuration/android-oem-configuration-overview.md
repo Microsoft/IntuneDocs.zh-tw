@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8747f3dfa9169a4f1f2de9dcf45db0f5cccadd1
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73756768"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059636"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企業裝置與 OEMConfig
 
@@ -51,7 +51,7 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 > [!TIP]
 > 您只能將 OEMConfig 與支援這項功能的裝置搭配使用，並具有對應的 OEMConfig 應用程式。 請參閱您的 OEM 以取得特定的詳細資料。
 
-## <a name="before-you-begin"></a>開始之前
+## <a name="before-you-begin"></a>在您開始前
 
 使用 OEMConfig 時，請注意下列資訊：
 
@@ -80,8 +80,8 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 
 ## <a name="create-an-oemconfig-profile"></a>建立 OEMConfig 設定檔
 
-1. 登入[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 選取 **裝置** > **設定檔** > **建立設定檔**。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
     - **名稱**：為新的設定檔輸入描述性名稱。
@@ -141,7 +141,7 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 
 | OEM | 套件組合識別碼 | OEM 檔（如果有的話） |
 | --- | --- | ---|
-| Samsung | .com. knox. kpu | [Knox 服務外掛程式管理指南](https://docs.samsungknox.com/knox-service-plugin/admin-guide/welcome.htm) |
+| Samsung | .com. knox. kpu | [Knox 服務外掛程式管理指南](https://docs.samsungknox.com/knox-service-plugin/admin-guide/index.htm) |
 | Zebra 技術 | zebra. oemconfig common | [Zebra OEMConfig 總覽](http://techdocs.zebra.com/oemconfig ) |
 | Datalogic | datalogic. oemconfig | [Datalogic OEMConfig 的使用者檔](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell. oemconfig |  |
@@ -154,6 +154,6 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 > [!NOTE]
 > OEMConfig apps 必須在 Intune 內部上線，才能使用 OEMConfig 設定檔來設定。 一旦支援應用程式，您就不需要與 Microsoft 連線，就能在您的租使用者中設定它。 只要依照此頁面上的指示執行即可。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 - [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

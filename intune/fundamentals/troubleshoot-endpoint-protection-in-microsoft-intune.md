@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中常見的 Endpoint Protection 訊息 - Azure | Microsoft Docs
-description: 查看在 Microsoft Intune 中使用及疑難排解 Endpoint Protection 和 Windows Defender 時的常見訊息與可能的解決方案。
+description: 查看在 Microsoft Intune 中使用端點保護和 Microsoft Defender 及對他們進行疑難排解時的常見訊息與可能解決方案。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 11/13/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,20 +18,20 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e34e1cb30469593c8ec9e756659ad03589ae38bc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 819586a923f5c0f3a81a6d59c4a3895898182f6b
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509770"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059165"
 ---
 # <a name="endpoint-protection-issues-and-possible-solutions-in-microsoft-intune"></a>Microsoft Intune 中的 Endpoint Protection 問題和可能的解決方案
 
 本文將針對一些錯誤與警告列出並說明可能的原因及解決方案。 利用該資訊來協助解決使用 Endpoint Protection 時的問題。
 
-## <a name="windows-defender-error-codes"></a>Windows Defender 錯誤碼
+## <a name="microsoft-defender-error-codes"></a>Microsoft Defender 錯誤碼
 
-檢閱事件記錄檔和錯誤碼以[使用 Windows Defender AV 來進行問題的疑難排解](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus) \(部分機器翻譯\)。
+檢閱事件記錄檔和錯誤碼，以[針對 Microsoft Defender AV 的相關問題進行疑難排解](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/troubleshoot-windows-defender-antivirus) \(部分機器翻譯\)。
 
 ## <a name="common-intune-errors-and-possible-resolutions"></a>常見的 Intune 錯誤和可能的解決方式
 
@@ -48,7 +48,7 @@ ms.locfileid: "72509770"
 
 ### <a name="features-are-disabled"></a>功能已停用
 
-您可能會收到一則訊息，指出某些功能已停用。 如果系統管理員使用組態設定檔來停用 Intune Endpoint Protection 或 Windows Defender，可能就會產生這些訊息。 或者，終端使用者已在裝置上停用功能。 可能的訊息：
+您可能會收到一則訊息，指出某些功能已停用。 如果系統管理員使用組態設定檔來停用 Intune 端點保護或 Microsoft Defender，可能就會產生這些訊息。 或者，終端使用者已在裝置上停用功能。 可能的訊息：
 
 `Endpoint Protection disabled`  
 `Real-time protection disabled`  
@@ -61,20 +61,20 @@ ms.locfileid: "72509770"
 **可能的解決方案**：啟用這些功能。 如需指引，請參閱：
 
 - [新增 Endpoint Protection 設定](../protect/endpoint-protection-configure.md)
-- [Windows Defender 防毒軟體](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
+- [Microsoft Defender 防毒軟體](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)
 - [終端使用者：開啟即時保護以存取公司資源](/intune-user-help/turn-on-defender-windows)
 
 ### <a name="malware-definitions-out-of-date"></a>惡意程式碼定義已過期
 
 當裝置上的惡意程式碼定義過期達 14 天以上時，就會顯示此狀態。 例如，如果裝置中斷網際網路的連線，或惡意程式碼定義已過時，可能就會顯示此訊息。
 
-**可能的解決方案**：如果惡意程式碼定義已過期，請使用 [Windows Defender 防毒軟體](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)來更新定義。
+**可能的解決方案**：如果惡意程式碼定義已過期，請使用 [Microsoft Defender 防毒軟體](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)來更新定義。
 
 ### <a name="full-scan-overdue-or-quick-scan-overdue"></a>完整掃描逾期或快速掃描逾期
 
 已有 14 天未曾完成完整掃描或快速掃描。 如果在完整掃描期間重新啟動裝置，就會發生此情況。
 
-**可能的解決方案**：如果掃描已逾期，您可以執行一次性掃描或排程週期性掃描。 請參閱 [Windows Defender 防毒軟體](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。
+**可能的解決方案**：如果掃描已逾期，您可以執行一次性掃描或排程週期性掃描。 請參閱[Microsoft Defender 防毒軟體](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。
 
 ### <a name="another-endpoint-protection-application-running"></a>其他 Endpoint Protection 應用程式正在執行
 
@@ -82,6 +82,6 @@ ms.locfileid: "72509770"
 
 **可能的解決方案**：如果已安裝其他 Endpoint Protection 應用程式，且 Intune 偵測到該應用程式，則裝置可能會變得不穩定。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>接下來的步驟
 
 取得[來自 Microsoft 的支援說明](get-support.md)或使用[社群論壇](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune)。
