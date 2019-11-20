@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9625243698bffc93ed969a8c2e4b06b4f3093f4d
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: ff9a37a1dd815b6ec9d7522604796310e7f0b5ce
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72785524"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984114"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 與 macOS 應用程式
 
@@ -72,7 +72,6 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 * 每個權杖有效期限為一年。
 * Intune 預設與 Apple VPP 服務一天進行兩次同步處理。 您可以在任何時間啟動手動同步處理。
 * 開始搭配 Intune 使用 Apple VPP 之前，請移除任何以其他行動裝置管理 (MDM) 廠商所建立的現有 VPP 使用者帳戶。 基於安全性考量，Intune 不會把這些使用者帳戶同步處理到 Intune。 Intune 只會同步處理 Intune 所建立的 Apple VPP 服務資料。
-* Intune 支援新增最多 256 個 VPP 權杖。
 * Apple 的裝置註冊設定檔 (DEP) 方案會自動化行動裝置管理 (MDM) 註冊。 使用 DEP，您可以設定企業裝置，而不需要碰觸它們。 您可以使用與 Apple 之 VPP 搭配使用的相同方案代理程式帳戶來註冊 DEP 方案。 Apple 部署方案識別碼對 [Apple Deployment Programs](https://deploy.apple.com) 網站下所列的方案而言是唯一的，而且無法用來登入 iTunes 商店這類 Apple 服務。
 * 當您使用使用者授權模型指派 VPP 應用程式給使用者或裝置 (具有使用者親和性) 時，每個 Intune 使用者在裝置上接受 Apple 條款和條件時，都必須與唯一的 Apple ID 或電子郵件地址建立關聯。
 * 請確定當您為新 Intune 使用者設定裝置時，以該使用者的唯一 Apple ID 或電子郵件地址來進行設定。 Apple ID 或電子郵件地址和 Intune 使用者形成唯一的組合，並可以用於多達五部裝置。
@@ -89,6 +88,8 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 5. 在 [建立 VPP 權杖]  窗格上，指定下列資訊：
     - **VPP 權杖檔案** - 若您尚未註冊，請註冊商務大量採購方案或教育方案。 註冊之後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
     - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
+    - **從其他 MDM 中控制權杖** - 將此選項設定為 [是]  ，以允許從其他 MDM 將權杖重新指派給 Intune。
+    - **權杖名稱** - 用於設定權杖名稱的系統管理欄位。    
     - **國家/地區** - 選取 VPP 國家/地區市集。  Intune 會從指定的 VPP 國家/地區市集同步處理所有地區設定的 VPP 應用程式。
         > [!WARNING]  
         > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步處理時的存放區 URL。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
@@ -98,6 +99,9 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
         > [!NOTE]
         > 自動應用程式更新適用於 iOS 11.0 或 macOS 10.12 和更新版本的裝置和使用者授權應用程式。
+
+    - **我授與 Microsoft 傳送使用者及裝置資訊到 Apple 的權限。** - 您必須選取 [我同意]  才能繼續。 若要查看 Microisoft 將哪些資料傳送給 Apple，請參閱 [Intune 傳送至 Apple 的資料](~/protect/data-intune-sends-to-apple.md)。
+
 6. 完成之後，請選取 [建立]  。
 
 該權杖會顯示在權杖清單窗格內。

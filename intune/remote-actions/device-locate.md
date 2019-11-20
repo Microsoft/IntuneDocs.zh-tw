@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c438ebeaae8a7259efb74089f51a6ca92003cfea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 817f46558932c074abc37b45d2885496419a0db0
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509474"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712415"
 ---
 # <a name="locate-lost-or-stolen-ios-devices-with-intune"></a>使用 Intune 尋找遺失或遭竊的 iOS 裝置
 
@@ -41,7 +41,7 @@ ms.locfileid: "72509474"
 
 ## <a name="locate-a-lost-or-stolen-device"></a>尋找遺失或遭竊的裝置
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [裝置]  ，然後選取 [所有裝置]  。
 4. 從您管理的裝置清單中，選擇 iOS 裝置，然後選擇 [...More] (...其他)  。 然後選擇 [尋找裝置]  遠端動作。
 5. 找到位置後，其位置會顯示在 [尋找裝置]  中。

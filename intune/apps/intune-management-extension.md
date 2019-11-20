@@ -2,8 +2,8 @@
 title: 在 Microsoft Intune 中將 PowerShell 指令碼新增至 Windows 10 裝置 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中建立和執行 PowerShell 指令碼、將指令碼原則指派給 Azure Active Directory 群組、使用報告來監視指令碼，以及查看用於刪除您在 Windows 10 裝置上所新增指令碼的步驟。 另請參閱一些常見問題和解決方式。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Erikre
+ms.author: erikre
 manager: dougeby
 ms.date: 09/16/2019
 ms.topic: conceptual
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94653c51bccc59fde93fdacc16f2b83e7860346b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497801"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059714"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 的 Windows 10 裝置上使用 PowerShell 指令碼
 

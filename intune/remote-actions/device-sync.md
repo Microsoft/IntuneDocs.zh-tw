@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86dc2e26e3c4091785cb6462a84e75b770634881
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508562"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713443"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
@@ -38,8 +38,8 @@ ms.locfileid: "72508562"
 
 ## <a name="sync-a-device"></a>同步處理裝置
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 
-3. 在 [Intune]  中選取 [裝置]   > [所有裝置]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
+3. 選取 [裝置]   > [所有裝置]  。
 4. 在您管理的裝置清單中，選取裝置以開啟 [概觀]  窗格，然後選取 [同步處理]  。
 5. 選取 [是]  確認。
 

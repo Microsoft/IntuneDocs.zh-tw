@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d7ca53786d372f53d63388fef1179ca271fdb9d9
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: be6a254360d8e8e9ef1396515d261b6ff9077b87
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508596"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713116"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
@@ -57,10 +57,9 @@ ms.locfileid: "72508596"
 ## <a name="reset-a-passcode"></a>重設密碼
 
 
-1. 使用下列任一角色登入 [Azure 入口網站](https://portal.azure.com)：Azure Active Directory 全域管理員、Azure Active Directory Intune 服務管理員、技術服務人員或角色管理員。
-2. 選取 [所有服務]  ，篩選 [Intune]  ，然後選取 [Microsoft Intune]  。
-3. 選取 [裝置]  ，然後選取 [所有裝置]  。
-4. 從您管理的裝置清單中選取裝置，再選擇 [...More] (...其他)  。 然後選擇 [Remove passcode] (移除密碼)  裝置遠端動作。
+1. 使用下列任一角色登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)：Azure Active Directory 全域管理員、Azure Active Directory Intune 服務管理員、技術服務人員或角色管理員。
+2. 選取 [裝置]  ，然後選取 [所有裝置]  。
+3. 從您管理的裝置清單中選取裝置，再選擇 [...More] (...其他)  。 然後選擇 [Remove passcode] (移除密碼)  裝置遠端動作。
 
 ## <a name="reset-android-work-profile-passcodes"></a>重設 Android 工作設定檔密碼
 

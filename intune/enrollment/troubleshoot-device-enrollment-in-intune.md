@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f770db6927ed87786f7806e011cdc6cb9bae6b3f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509264"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713501"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -64,9 +64,9 @@ ms.locfileid: "72509264"
 
 請遵循以下步驟，檢查指派至使用者的裝置是否超過上限：
 
-1. 在 Intune 中，選擇 [裝置註冊]   > [註冊限制]   > [裝置限制]  。 請記下 [裝置限制]  欄中的值。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [註冊限制]   > [裝置限制]  。 請記下 [裝置限制]  欄中的值。
 
-2. 在 Intune 中，選擇 [使用者]  [所有使用者] >   > 選取使用者 > [裝置]  。 請記下裝置數目。
+2. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [使用者]   > [所有使用者]  > 選取使用者 > [裝置]  。 請記下裝置數目。
 
 3. 如果使用者註冊的裝置數目已經等於其裝置限制，在出現以下情況之前將無法再註冊任何裝置：
     - [移除現有的裝置](../remote-actions/devices-wipe.md)，或者

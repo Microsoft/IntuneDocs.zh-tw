@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4fcec6c264a97d710e3061c289d6898297ef61be
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999532"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199204"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -32,7 +32,7 @@ ms.locfileid: "72999532"
 使用者可以從 Microsoft Intune 公司入口網站存取公司資料及執行一般工作，例如註冊裝置、安裝應用程式，以及尋找向 IT 部門尋求協助的資訊。 此外，公司入口網站應用程式可讓使用者安全地存取公司資源。 公司入口網站應用程式提供數個不同的頁面，例如 [首頁]、[應用程式]、[應用程式詳細資料]、[裝置] 和 [裝置詳細資料]。 若要在公司入口網站中快速尋找應用程式，您可以在 [應用程式] 頁面上篩選應用程式。
 
 > [!IMPORTANT]
-> 若要支援 Google 的 Firebase 雲訊息傳遞 (FCM)，您必須將 Android 公司入口網站應用程式更新到最新的版本。 如需詳細資訊，請參閱新功能 - [將您的 Android 公司入口網站應用程式更新到最新的版本](../fundamentals/whats-new.md#update-your-android-company-portal-app-to-the-latest-version-)。
+> 若要支援 Google 的 Firebase 雲訊息傳遞 (FCM)，您必須將 Android 公司入口網站應用程式更新到最新的版本。  
 
 > [!Tip]
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。 請注意，使用者必須或指派 Intune 授權，才能存取「公司入口網站」網站。

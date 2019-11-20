@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 26d0f2cf08786a36f51982901094969d4d014755
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: bce5a89ecc49952f5c21536c429e9cd3309b13c3
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509380"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712264"
 ---
 # <a name="remotely-lock-devices-with-intune"></a>使用 Intune 從遠端鎖定裝置
 
@@ -49,7 +49,7 @@ ms.locfileid: "72509380"
 
 ## <a name="remote-lock-a-device"></a>遠端鎖定裝置
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [裝置]   > [所有裝置]  。
 4. 在裝置清單中選取裝置，然後選取 [遠端鎖定]  動作。
 

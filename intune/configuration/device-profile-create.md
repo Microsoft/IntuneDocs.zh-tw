@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 97227d5ca75b3584cb4e603a16601b2a22deb919
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 51ec328a60ef2737c776bf6cf5d4b8dc1b32460c
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681449"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755323"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
 
@@ -39,16 +39,16 @@ ms.locfileid: "72681449"
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 選取 [裝置設定]  。 下列選項可供您選擇：
+2. 選取 [裝置]   > [組態設定檔]  。 下列選項可供您選擇：
 
     - **概觀**：列出您的設定檔狀態，並在您指派給使用者和裝置的設定檔中提供其他詳細資料。
     - **管理**：建立裝置設定檔，上傳自訂 [PowerShell 指令碼](../apps/intune-management-extension.md)以在設定檔中執行，並使用 [eSIM](esim-device-configuration.md) 將行動數據方案新增至裝置。
     - **監視**：檢查設定檔的狀態為成功或失敗，另檢視您設定檔中的記錄。
     - **安裝**：新增 SCEP 或 PFX 憑證授權單位，或是在設定檔中啟用[電信費用管理](telecom-expenses-monitor.md)。
 
-3. 選取 [設定檔]   > [建立設定檔]  。 輸入下列內容：
+3. 選取 [建立設定檔]  。 輸入下列內容：
 
    - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好的設定檔名稱為**整個公司的 WP 電子郵件設定檔**。
    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。

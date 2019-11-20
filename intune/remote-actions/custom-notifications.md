@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 002989bd61167d6f0d20e2c5cb3fa80a4051a99c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: a8393bbc012861199bd99d97a62ab3e659c15d15
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508670"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713235"
 ---
 # <a name="send-custom-notifications-in-intune"></a>在 Intune 中傳送自訂通知  
 
@@ -69,7 +69,7 @@ ms.locfileid: "72508670"
 
 ## <a name="send-a-custom-notification-to-groups"></a>將自訂通知傳送至群組  
 
-1. 使用有權建立及傳送通知的帳戶登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後前往 [裝置]   > [傳送自訂通知]  。  
+1. 使用有權建立及傳送通知的帳戶登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後移至 [裝置]   > [傳送自訂通知]  。  
 
 2. 在 [基本] 索引標籤上指定下列各項，然後選取 [下一步]  以繼續。  
    - **標題** - 為此通知指定標題。 標題長度限制為 50 個字元。  
@@ -89,7 +89,7 @@ Intune 不會追蹤您傳送的自訂通知，裝置也不會在裝置的通知�
 
 ## <a name="send-a-custom-notification-to-a-single-device"></a>將自訂通知傳送至單一裝置  
 
-1. 使用有權建立及傳送通知的帳戶登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後移至 [裝置]   > [所有裝置]  。  
+1. 使用有權建立及傳送通知的帳戶登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後移至 [裝置]   > [所有裝置]  。  
 
 2. 選取您要傳送通知的目標裝置。  
 

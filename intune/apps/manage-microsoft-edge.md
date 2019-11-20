@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee68392feaa59ef5207edce75250e539407273b
-ms.sourcegitcommit: 8c25aeefb7cbc6444a8596af22fccd1c5426877a
+ms.openlocfilehash: 890709ccf176f2b0cc6c4a3af986d1bce642572d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72593700"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754416"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -106,7 +106,7 @@ SSO 要求裝置必須註冊 iOS 裝置的 Microsoft Authenticator 應用程式�
 7. 選取 [組態設定]  。 在 [設定]  刀鋒視窗上，您可以定義金鑰和值組來為 Microsoft Edge 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
 
     > [!NOTE]
-    > Microsoft Edge 使用與 Managed Browser 相同的金鑰和值組。 
+    > Microsoft Edge 使用與 Managed Browser 相同的金鑰和值組。 在 Android 上，必須使用應用程式保護原則將 Microsoft Edge 鎖定為目標，應用程式設定原則才會生效。
 
 8. 完成之後，請選取 [確定]  。
 9. 在 [新增設定原則]  刀鋒視窗上，選擇 [新增]  。<br>

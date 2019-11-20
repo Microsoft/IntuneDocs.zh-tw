@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83a9467065bb5c1d1cde2035df936541bb804ddc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: e3fb99a363bda762ccfb834388f3abb4ab80f81a
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503074"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709714"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>教學課程：使用 Apple Business Manager (ABM) 中的公司裝置註冊功能在 Intune 中註冊 iOS 裝置
 Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。 Intune 也支援 Apple 較舊的裝置註冊計劃 (DEP) 入口網站，但建議您使用 Apple Business Manager 重新開始。 使用 Microsoft Intune 和 Apple 公司裝置註冊，當使用者第一次開啟裝置時，就會自動安全地註冊裝置。 因此，您可以將裝置提供給許多使用者，而不必個別設定每部裝置。 
@@ -44,7 +44,7 @@ Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。
 
 您可以使用 ABM 或 DEP 入口網站來建立裝置註冊權杖。 您也可以使用該入口網站將裝置指派給 Intune 以便管理。
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]   > [新增]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]   > [新增]  。
 
 2. 藉由選取 [我同意]  來將權限授與 Microsoft，以將使用者和裝置資訊傳送給 Apple。
 
@@ -80,7 +80,7 @@ Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。
 ## <a name="create-an-apple-enrollment-profile"></a>建立 Apple 註冊設定檔
 安裝好權杖後，您可開始為公司擁有的 iOS 裝置建立註冊設定檔。 裝置註冊設定檔會定義要在註冊期間套用至裝置群組的設定。
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊計劃權杖]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]  。
 
 2. 選取您剛安裝的權杖，然後選擇 [設定檔]   > [建立設定檔]  。
 
@@ -118,13 +118,13 @@ Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。
 
 在您使用 ABM、ASM 或 DEP 入口網站設定註冊計劃權杖，並將該處的裝置指派到 MDM 伺服器後，就可以等候這些裝置同步到 Intune 服務，也可以手動同步。若未手動同步，裝置可能需要 24 小時才會顯示在 Azure 入口網站中。
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊計劃權杖]  > 在清單中選擇一個權杖 > [裝置]   > [同步]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]   > [同步]  。
 
 ## <a name="assign-an-enrollment-profile-to-ios-devices"></a>將註冊設定檔指派給 iOS 裝置
 
 必須先將註冊計劃設定檔指派至裝置，裝置才能註冊。 這些裝置會從 Apple 同步至 Intune，而且必須指派給 ABM、ASM 或 DEP 入口網站中適當的 MDM 伺服器權杖。
 
-1. 在 Azure 入口網站的 Intune 中，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊計劃權杖]  > 在清單中選擇您的權杖。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]  > 選擇清單中的權杖。
 2. 選擇 [裝置]  > 選擇清單中的裝置 > [指派設定檔]  。
 3. 在 [指派設定檔]  下，選擇裝置的設定檔 > [指派]  。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a19515e859f5e78f7611bbd10088aea5f7c44650
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: 50b91251572e45669f197df7ac4e5ff94caf47a1
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892618"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755330"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -41,8 +41,8 @@ ms.locfileid: "72892618"
 
 ## <a name="assign-a-device-profile"></a>指派裝置設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]  。 隨即列出所有設定檔。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]  。 隨即列出所有設定檔。
 3. 選取您想要指派的設定檔 > [指派]  。
 4. 選擇 [包含]  群組或 [排除]  群組，然後選取您的群組。 當您選取群組時，會選擇 Azure AD 群組。 若要選取多個群組，請按住 **Ctrl** 鍵，然後選取您的群組。
 
@@ -54,7 +54,7 @@ ms.locfileid: "72892618"
 
 當您指派設定檔時，您也可以**評估**有多少使用者受到影響。 此功能會計算使用者，但不會計算裝置。
 
-1. 在 Intune 中，選取 [裝置設定]   > [設定檔]  。
+1. 在系統管理中心內，選取 [裝置]   > [組態設定檔]  。
 2. 選取設定檔 > [指派]   > [評估]  。 此時會出現一個訊息，向您顯示此設定檔設定為目標的使用者人數。
 
 如果 [評估]  按鈕呈現灰色，請確認該設定檔已指派給一或多個群組。

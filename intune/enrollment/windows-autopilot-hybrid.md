@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab90dc9a95e461ad8c5913131a23a0355e9d072c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3724072144a78e1f4f5a17914eff941469e27242
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509215"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709587"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
@@ -42,7 +42,7 @@ ms.locfileid: "72509215"
 
 ## <a name="set-up-windows-10-automatic-enrollment"></a>設定 Windows 10 自動註冊
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)，然後在左窗格中選取 [Azure Active Directory]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後在左窗格中選取 [Azure Active Directory]  。
 
    ![Azure 入口網站](./media/windows-autopilot-hybrid/auto-enroll-azure-main.png)
 
@@ -107,7 +107,7 @@ ms.locfileid: "72509215"
 
 適用於 Active Directory 的 Intune 連接器必須安裝在執行 Windows Server 2016 或更新版本的電腦上。 該電腦也必須能夠存取網際網路和您的 Active Directory。 若要增加規模和可用性，或支援多個 Active Directory 網域，您可以在您的環境中安裝多個連接器。 建議在未執行任何其他 Intune 連接器的伺服器上安裝連接器。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器]   > [新增]  。 
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器]   > [新增]  。 
 2. 遵循指示下載連接器。
 3. 開啟下載的連接器安裝程式檔案 *ODJConnectorBootstrapper.exe* 以安裝連接器。
 4. 在安裝結束時，選取 [設定]  。
@@ -117,7 +117,7 @@ ms.locfileid: "72509215"
 7. 移至 [裝置註冊]   > [Windows 註冊]   > [適用於 Active Directory 的 Intune 連接器]  ，然後確認連接狀態為 [使用中]  。
 
 > [!NOTE]
-> 當您在連接器中登入之後，它可能需要數分鐘的時間才會顯示在 [Intune](https://aka.ms/intuneportal) 中。 只有在順利與 Intune 服務通訊時才會顯示。
+> 登入連接器之後，該連接器可能需要數分鐘的時間才會顯示在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內。 只有在順利與 Intune 服務通訊時才會顯示。
 
 ### <a name="turn-off-ie-enhanced-security-configuration"></a>關閉 IE 增強式安全性設定
 根據預設，Windows Server 已開啟 Internet Explorer 增強式安全性設定。 如果您無法登入適用於 Active Directory 的 Intune 連接器，則需針對管理員關閉 IE 增強式安全性設定。 [如何關閉 Internet Explorer 增強式安全性設定](https://blogs.technet.microsoft.com/chenley/2011/03/10/how-to-turn-off-internet-explorer-enhanced-security-configuration) \(英文\)
@@ -128,7 +128,7 @@ ms.locfileid: "72509215"
 
 
 ## <a name="create-a-device-group"></a>建立裝置群組
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [群組]   > [新增群組]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [群組]   > [新增群組]  。
 
 1. 在 [群組]  窗格中，執行下列動作：
 
@@ -183,7 +183,7 @@ ms.locfileid: "72509215"
 ## <a name="create-and-assign-an-autopilot-deployment-profile"></a>建立並指派 AutoPilot 部署設定檔
 Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [裝置註冊]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
 2. 在 [基本]  頁面上，輸入**名稱**和選擇性的**描述**。
 3. 若您想指派群組中所有的裝置自動轉換至 Autopilot，請將 [將所有目標裝置轉換至 Autopilot]  設為 [是]  。 指派群組中所有屬公司擁有的非 Autopilot 裝置都會向 Autopilot 部署服務註冊。 個人擁有的裝置將不會轉換成 Autopilot。 等候 48 小時讓註冊處理完畢。 當裝置取消註冊並重設時，Autopilot 將會自動註冊它。 在裝置使用此方式註冊完畢後，停用此選項或是移除設定檔指派也不會從 Autopilot 部署服務移除裝置。 您必須改為[直接移除裝置](enrollment-autopilot.md#delete-autopilot-devices)。
 4. 選取 [下一步]  。
@@ -200,7 +200,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 
 ## <a name="optional-turn-on-the-enrollment-status-page"></a>(選擇性) 開啟註冊狀態頁面
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置註冊]   > [Windows 註冊]   > [註冊狀態頁面]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [裝置註冊]   > [Windows 註冊]   > [註冊狀態頁面]  。
 1. 在 [註冊狀態頁面]  窗格中，選取 [預設]   > [設定]  。
 1. 在 [顯示應用程式和設定檔安裝進度]  方塊中，選取 [是]  。
 1. 視需要設定其他選項。
@@ -208,7 +208,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 
 ## <a name="create-and-assign-a-domain-join-profile"></a>建立並指派網域加入設定檔
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
 1. 輸入下列內容：
    - **名稱**：為新的設定檔輸入描述性名稱。
    - **描述**：輸入設定檔的描述。

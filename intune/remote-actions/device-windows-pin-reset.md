@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 445737a1b0a72e380844af6225cdb735cd3ec02c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1b2390462376c88129435de30eb98020563f3878
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509345"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713097"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 重設 Windows 裝置的密碼
 
@@ -64,11 +64,10 @@ ms.locfileid: "72509345"
 
 ## <a name="reset-the-passcode"></a>重設密碼
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。 
-2. 選取 [All services] (所有服務)  ，篩選 [Intune]  ，然後選取 [Microsoft Intune]  。
-3. 選取 [裝置]  ，然後選取 [所有裝置]  。
-4. 選取您要重設密碼的裝置。 在裝置屬性中，選取 [新密碼]  。
-5. 選取 [是]  確認。 密碼即產生，而且會在入口網站中顯示七天。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
+2. 選取 [裝置]  ，然後選取 [所有裝置]  。
+3. 選取您要重設密碼的裝置。 在裝置屬性中，選取 [新密碼]  。
+4. 選取 [是]  確認。 密碼即產生，而且會在入口網站中顯示七天。
 
 ## <a name="next-step"></a>後續步驟
 

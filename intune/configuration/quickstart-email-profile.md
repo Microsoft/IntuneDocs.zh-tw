@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 03/26/2019
+ms.date: 11/07/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4890410f5948cdc9bd1c6e3d85125d8e0713d9b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 2b2f1372a6d7ced09a9ebdfc11cbad69501827bc
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492323"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059317"
 ---
 # <a name="quickstart-create-an-email-device-profile-for-ios"></a>快速入門：建立 iOS 的電子郵件裝置設定檔
 
@@ -33,39 +33,40 @@ ms.locfileid: "72492323"
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
 
-請以全域管理員或 Intune 服務管理員身分登入 [Intune](https://aka.ms/intuneportal)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
+請以全域管理員或 Intune 服務管理員身分登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
 
 ## <a name="create-an-ios-email-profile"></a>建立 iOS 電子郵件設定檔
-1. 在 Intune 中，選取 [裝置設定]  ，然後選取 [設定檔]  。
-2. 選取 [建立設定檔]  。
-   
+
+1. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+
    ![建立 iOS 的電子郵件設定檔](./media/quickstart-email-profile/ios-create-profile.png)
 
-3. 在 [名稱]  下方，輸入新設定檔的描述性名稱。 在此範例中，輸入 **iOS require work email**。
-4. 輸入下列設定檔資訊：
-   - 針對 [描述]  ，輸入 **Require iOS devices to use work email**。
-   - 針對 [平台]  ，選取 [iOS]  。
-   - 針對 [設定檔類型]  ，選取 [電子郵件]  。
-    
-     ![建立用於 iOS 的電子郵件設定檔](./media/quickstart-email-profile/ios-email-profile-name.png)
+2. 在 [名稱]  下方，輸入新設定檔的描述性名稱。 在此範例中，輸入 **iOS require work email**。
+3. 輸入下列設定檔資訊：
+    - 針對 [描述]  ，輸入 **Require iOS devices to use work email**。
+    - 針對 [平台]  ，選取 [iOS]  。
+    - 針對 [設定檔類型]  ，選取 [電子郵件]  。
 
-5. 選取 [設定]  ，然後輸入下列設定 (保留其他設定的預設值)：
+        ![建立用於 iOS 的電子郵件設定檔](./media/quickstart-email-profile/ios-email-profile-name.png)
+
+4. 選取 [設定]  ，然後輸入下列設定 (保留其他設定的預設值)：
    - **電子郵件伺服器**：在本快速入門中，輸入 **outlook.office365.com**。 此設定指定 iOS 郵件應用程式將用來連線至電子郵件之電子郵件伺服器的 Exchange 位置 (URL)。
    - **帳戶名稱**：輸入**公司電子郵件**。
    - **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (Azure AD) 中取得的屬性。 Intune 會使用此名稱動態產生此設定檔的使用者名稱。 在本快速入門中，假設我們想要使用**使用者主體名稱**作為設定檔的使用者名稱 (例如 user1@contoso.com)。
    - **AAD 中的電子郵件地址屬性**：此設定是 Azure AD 中將用來登入 Exchange 的電子郵件地址。 在本快速入門中，選取 [使用者主體名稱]  。
    - **驗證方法**：在本快速入門中，選取 [使用者名稱和密碼]  。 (如果您已經設定 Intune 的憑證，則也可以選擇 [憑證]  )。
-    
-     ![建立用於 iOS 的電子郵件設定檔](./media/quickstart-email-profile/ios-email-profile.png)
 
-6. 選取 [確定]  。
-7. 選取 [建立]  。 新的設定檔會出現在已顯示儀表板的設定檔清單中，因此您可以監視如何將設定檔指派給 iOS 裝置和 iOS 使用者。
-8. 選取 [指派]  。
-9. 選取 [包含]  索引標籤，然後選取 [所有使用者和所有裝置]  。 
-10. 選取 [儲存]  。
+        ![建立用於 iOS 的電子郵件設定檔](./media/quickstart-email-profile/ios-email-profile.png)
+
+5. 選取 [確定]   > [建立]  。 新的設定檔會出現在已顯示儀表板的設定檔清單中，因此您可以監視如何將設定檔指派給 iOS 裝置和 iOS 使用者。
+6. 選取 [指派]  。
+7. 選取 [包含]  索引標籤，然後選取 [所有使用者和所有裝置]  。 
+8. 選取 [儲存]  。
 
 ## <a name="clean-up-resources"></a>清除資源
+
 如果您不想要使用為其他教學課程或測試建立的設定檔，則可以立即將其刪除。
+
 1. 在 Intune 中，選取 [裝置設定]  ，然後選取 [設定檔]  。
 2. 選取您所建立的測試設定檔：**iOS require work email**。
 3. 選取設定檔旁邊的省略符號 ( **...** )，然後選取 [刪除]  。

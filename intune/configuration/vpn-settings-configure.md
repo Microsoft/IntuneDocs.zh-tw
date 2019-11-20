@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5628ba39cafe38cc66827d69584d009c15326bd4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 59a1b5679b81a8de90e39d6ec13bbe87dac90947
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491760"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984177"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中建立 VPN 設定檔以連線到 VPN 伺服器
 
@@ -50,7 +50,7 @@ ms.locfileid: "72491760"
 |Check Point Capsule VPN|- Android<br/>- Android Enterprise 工作設定檔<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |Cisco AnyConnect|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS<br/>- macOS|
 |Cisco (IPSec)|iOS|
-|Citrix SSO|- Android<br/>- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
+|Citrix SSO|- Android<br/>- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- Android Enterprise 裝置擁有者 (完全受控)：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
 |自訂 VPN|- iOS<br/>- macOS|
 |F5 Access|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
 |IKEv2| - iOS<br/>- Windows 10|
@@ -68,8 +68,9 @@ ms.locfileid: "72491760"
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
-2. 輸入下列內容：
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+3. 輸入下列內容：
 
     - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好的設定檔名稱為**適用於整家公司的 VPN 設定檔**。
     - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
@@ -86,7 +87,7 @@ ms.locfileid: "72491760"
 
     - **設定檔類型**：選取 [VPN]  。
 
-3. 您可設定的設定會視您選擇的平台而不同。 如需每個平台的詳細設定，請參閱下列文章：
+4. 您可設定的設定會視您選擇的平台而不同。 如需每個平台的詳細設定，請參閱下列文章：
 
     - [Android 設定](vpn-settings-android.md)
     - [Android 企業設定](vpn-settings-android-enterprise.md)
@@ -96,7 +97,7 @@ ms.locfileid: "72491760"
     - [Windows 8.1 設定](vpn-settings-windows-8-1.md)
     - [Windows 10 設定](vpn-settings-windows-10.md) (包括 Windows Holographic for Business)
 
-4. 完成時，**建立**您的設定檔。
+5. 當您完成時，請選取 [確定]   > [建立]  儲存變更。
 
 設定檔隨即建立，並出現在設定檔清單上。 若要將此設定檔指派給群組，請參閱[指派裝置設定檔](device-profile-assign.md)。
 

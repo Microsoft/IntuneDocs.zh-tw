@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/05/2018
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 524f4cd77d85460940a885bc7950e7d476097e72
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3683d2aeada791c6ec827e915e02365a336e6045
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72496120"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059666"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔
 
@@ -37,50 +37,52 @@ ms.locfileid: "72496120"
 >
 > 此設定檔僅支援 Pulse Secure 和 Citrix 連線類型。
 
-
 ## <a name="step-1-create-a-vpn-profile"></a>步驟 1：建立 VPN 設定檔
 
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+3. 輸入下列內容：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選擇 [裝置設定]  。
-2. 在 [裝置設定]  窗格的 [管理]  區段下，選擇 [設定檔]  。
-2. 在設定檔清單窗格中，選擇 [建立設定檔]  。
-3. 在 [建立設定檔]  窗格中，輸入 VPN 設定檔的 [名稱]  和 [描述]  。
-4. 從 [平台]  下拉式清單中選擇 [Android]  。
-5. 從 [設定檔類型]  下拉式清單中選擇 [VPN]  。
-3. 選擇 [設定]   >  [設定]  ，然後依照[如何設定 VPN 設定](vpn-settings-configure.md)及 [Android 裝置的 Intune VPN 設定](vpn-settings-android.md)中的設定來設定 VPN 設定檔。
+    - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好設定檔名稱為**適用於整家公司的 Android 各個應用程式 VPN 設定檔**。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選取 [Android]  。
+    - **設定檔類型**：選取 [VPN]  。
+
+4. 選擇 [設定]   >  [設定]  ，然後依照[如何設定 VPN 設定](vpn-settings-configure.md)及 [Android 裝置的 Intune VPN 設定](vpn-settings-android.md)中的設定來設定 VPN 設定檔。
 
 請記下您在建立 VPN 設定檔時指定的 [連線名稱]  值。 下一個步驟將會需要這個名稱。 例如，**MyAppVpnProfile**。
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>步驟 2：建立自訂設定原則
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選擇 [裝置設定]  。
-2. 在 [裝置設定]  窗格的 [管理]  區段下，選擇 [設定檔]  。
-3. 在 [設定檔] 窗格中，按一下 [建立設定檔]  。
-4. 在 [建立設定檔]  窗格中，輸入自訂檔的 [名稱]  及 [描述]  。
-5. 從 [平台]  下拉式清單中選擇 [Android]  。
-6. 從 [設定檔類型]  下拉式清單中選擇 [自訂]  。
-7. 選擇 [設定]   >  [設定]  。
-3. 在 [Custom OMA-URI Settings] (自訂 OMA-URI 設定)  窗格中，選擇 [新增]  。
-    - 輸入設定名稱。
-    - 針對 [OMA-URI]  ，指定此字串： **./Vendor/MSFT/VPN/Profile/*Name*/PackageList**，其中 *Name* 是您在步驟 1 記下的連線名稱。 在此範例中，此字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList**。
-    - 針對 [資料類型]  ，請指定 [String]  。
-    - 針對 [值]  ，建立與設定檔建立關聯的套件清單 (以分號區隔)。 例如，如果您想要 Excel 和 Google Chrome 瀏覽器使用 VPN 連線，請輸入**com.microsoft.office.excel;com.android.chrome**。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+3. 輸入下列內容：
+
+    - **名稱**：為自訂設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好設定檔名稱為**適用於整家公司的自訂 OMA-URI Android VPN 設定檔**。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選取 [Android]  。
+    - **設定檔類型**：選取 [自訂]  。
+
+4. 選擇 [設定]   >  [設定]  。
+5. 在 [Custom OMA-URI Settings] (自訂 OMA-URI 設定)  窗格中，選擇 [新增]  。
+    - **名稱**：輸入設定的名稱。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **OMA-URI**：輸入 `./Vendor/MSFT/VPN/Profile/*Name*/PackageList`，其中 *Name* 是您在步驟 1 記下的連線名稱。 在此範例中，字串是 `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/PackageList`。
+    - **資料類型**：輸入**字串**。
+    - **值**：輸入要與設定檔建立關聯的套件清單 (以分號區隔)。 例如，如果想要 Excel 和 Google Chrome 瀏覽器使用 VPN 連線，請輸入 `com.microsoft.office.excel;com.android.chrome`。
 
 ![Android 個別應用程式 VPN 自訂原則範例](./media/android-pulse-secure-per-app-vpn/android_per_app_vpn_oma_uri.png)
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>將應用程式清單設定為封鎖清單或允許清單 (選用)
-  使用 [BLACKLIST]  值，即可指定「不可」  使用 VPN 連線的應用程式清單。 所有其他的應用程式都會透過 VPN 連線。
-或者，您可以使用 [WHITELIST]  值以指定應用程式清單，這些應用程式「可以」  使用 VPN 連線。 不在清單上的應用程式不會透過 VPN 連線。
-  1. 在 [Custom OMA-URI Settings] (自訂 OMA-URI 設定)  窗格中，選擇 [新增]  。
-  2. 輸入設定名稱。
-  3. 針對 [OMA-URI]  ，使用此字串： **./Vendor/MSFT/VPN/Profile/*Name*/Mode**，其中 *Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在這個範例中，字串會是 **./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode**。
-  4. 針對 [資料類型]  ，請指定 [String]  。
-  5. 針對 [值]  ，請輸入 [BLACKLIST]  或 [WHITELIST]  。
 
+使用 **BLACKLIST** 值，即可輸入「不可」  使用 VPN 連線的應用程式清單。 所有其他的應用程式都會透過 VPN 連線。 或者，您可以使用 **WHITELIST** 值以指定應用程式清單，這些應用程式「可以」  使用 VPN 連線。 不在清單上的應用程式不會透過 VPN 連線。
 
+1. 在 [Custom OMA-URI Settings] (自訂 OMA-URI 設定)  窗格中，選擇 [新增]  。
+2. 輸入設定名稱。
+3. 在 [OMA-URI]  中，輸入 `./Vendor/MSFT/VPN/Profile/*Name*/Mode`，其中 *Name* 是您在步驟 1 記下的 VPN 設定檔名稱。 在我們的範例中，字串是 `./Vendor/MSFT/VPN/Profile/MyAppVpnProfile/Mode`。
+4. 在 [資料類型]  中，輸入**字串**。
+5. 在 [值]  中，輸入 **BLACKLIST** 或 **WHITELIST**。
 
 ## <a name="step-3-assign-both-policies"></a>步驟 3：指派這兩項原則
 
-使用[如何指派裝置設定檔](device-profile-assign.md)中的指示，將兩個設定檔指派給必要的使用者或裝置。
+[指派這兩個裝置設定檔](device-profile-assign.md)給所需的使用者或裝置。

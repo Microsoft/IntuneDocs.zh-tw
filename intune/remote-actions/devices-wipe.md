@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbcc50d275a3d3e6a613640e96b363ce7608da81
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508578"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712192"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
@@ -53,7 +53,7 @@ ms.locfileid: "72508578"
 
 ### <a name="wiping-a-device"></a>抹除裝置
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [裝置]   > [所有裝置]  。
 4. 選取您要抹除的裝置名稱。
 5. 在顯示裝置名稱的窗格中，選取 [抹除]  。
@@ -146,7 +146,7 @@ ms.locfileid: "72508578"
 
 ### <a name="retire"></a>淘汰
 
-1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 在 [裝置]  窗格中，選取 [所有裝置]  。
 3. 選取您要淘汰的裝置名稱。
 4. 在顯示裝置名稱的窗格中，選取 [淘汰]  。 選取 [是]  確認。
@@ -157,12 +157,12 @@ ms.locfileid: "72508578"
 
 如果您想要從 Intune 入口網站移除裝置，則可以從特定的裝置窗格來刪除裝置。 下一次裝置簽入時，會移除裝置上所有的公司資料。
 
-1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]   > [所有裝置]  > 選擇您要刪除的裝置 > [刪除]  。
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>使用清除規則自動刪除裝置
 您可以將 Intune 設定為自動刪除看似非作用中、過時、或是沒有回應的裝置。 這些清除規則會持續監視您的裝置清查，以便您的裝置記錄保持最新狀態。 以這種方法刪除的裝置會從 Intune 管理移除。
-1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]   > [裝置清除規則]   > [確定]  。
 3. 在 [刪除已有如此多天未簽入的裝置]  方塊中，輸入介於 30 到 270 之間的數字。
 4. 選擇 [儲存]  。
@@ -185,7 +185,7 @@ ms.locfileid: "72508578"
 
 如果您想要完全移除由 Intune 管理的 Apple DEP 裝置，請遵循下列步驟：
 
-1. 登入 [Azure 入口網站中的 Intune](https://aka.ms/intuneportal)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [淘汰]  。
 ![淘汰的螢幕擷取畫面](./media/devices-wipe/retire.png)
 3. 請瀏覽 [deploy.apple.com](http://deploy.apple.com) 並依序號搜尋裝置。

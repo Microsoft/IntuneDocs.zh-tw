@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7f5a85896a2e6e7be845b2314c4f837dcaeb7b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f9cec7395fc766f6a937e6c43ef3a32fb21610be
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507028"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059979"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 10 範本設定群組原則設定
 
@@ -43,8 +43,8 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
 
 ## <a name="create-a-template"></a>建立範本
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
     - **名稱**：輸入設定檔的名稱。
@@ -59,7 +59,7 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
     > [!TIP]
     > Intune 中的 Windows 設定與您在本機群組原則編輯器 (`gpedit`) 中看到的內部部署群組原則路徑相互關聯。
 
-5. 根據預設，下拉式清單會顯示**所有產品**。 在清單中，您還可以將設定篩選為僅顯示 **Windows** 設定、僅顯示 **Office** 設定，或僅顯示 **Edge 77 版或更新版本**設定：
+5. 在下拉式清單內，選取 [所有產品]  。 在清單中，您還可以將設定篩選為僅顯示 **Windows** 設定、僅顯示 **Office** 設定，或僅顯示 **Edge 77 版或更新版本**設定：
 
     ![篩選清單，以顯示 Intune 中系統管理範本內的所有 Windows 或所有 Office 設定](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 

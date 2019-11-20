@@ -6,24 +6,24 @@ keywords: Saaswedo
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 05/09/2019
+ms.date: 11/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b7bf5802-4b65-4aeb-ac99-8e639dd89c2a
-ms.reviewer: sumitp
+ms.reviewer: davidra
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce9a6916cc77714a87aeac33555c0be1e59463f5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 20743d19ba101a9c400cb9f72dca59223254e6de
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506636"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755068"
 ---
 # <a name="set-up-a-telecom-expense-management-service-in-intune"></a>在 Intune 中設定電信費用管理服務
 
@@ -54,7 +54,7 @@ ms.locfileid: "72506636"
 
 ## <a name="prerequisites"></a>必要條件
 
-- Microsoft Intune 的訂用帳戶，以及存取 [Azure 入口網站](https://portal.azure.com)的權限
+- Microsoft Intune 的訂用帳戶，以及 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)的存取權
 - [Datalert](http://www.datalert.biz/) 的訂用帳戶 \(英文\) (開啟 Datalert 的網站)
 
 ## <a name="telecom-expense-management-providers"></a>電信費用管理提供者
@@ -109,9 +109,9 @@ Intune 可與下列電信費用管理提供者整合：
 
 完成步驟 1 之後，您的連線即會自動啟用。 在 Intune 中，連線狀態會顯示 [作用中]  。 若要確認狀態為作用中，請使用下列步驟：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 選取 [裝置設定]   > [電信費用管理]  。 尋找 [作用中]  連線狀態：
+2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [電信費用管理]  。 尋找 [作用中]  連線狀態：
 
    ![顯示 [使用中] Datalert 連線狀態的 Intune 頁面](./media/telecom-expenses-monitor/tem-azure-portal-enable-service.png)
 
@@ -138,7 +138,7 @@ Intune 可與下列電信費用管理提供者整合：
 
 下列步驟會新增 Datalert 應用程式。 我們在此範例中使用 iOS。 [新增應用程式](../apps/apps-add.md)與[使用範圍標籤](../fundamentals/scope-tags.md)提供更多有關這些步驟的具體資訊。
 
-1. 在 **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** 中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [應用程式]   > [所有應用程式]   > [新增]  。
 
 2. 選取您的 [應用程式類型]  。 例如，針對 iOS，選取 [Store 應用程式 - iOS]  。
 
@@ -156,7 +156,7 @@ Intune 可與下列電信費用管理提供者整合：
 
 #### <a name="assign-the-datalert-app-to-the-corporate-device-group"></a>將 Datalert 應用程式指派給公司裝置群組
 
-1. 在 [用戶端應用程式 - 應用程式]  中，選取您在上一個步驟中新增的 Datalert 應用程式。
+1. 在 [應用程式]   > [所有應用程式]  中，選取您在上一個步驟新增的 Datalert 應用程式。
 
 2. 選取 [指派]   > [加入群組]  。 選擇指派應用程式的方式。 [在 Intune 中將應用程式指派給群組](../apps/apps-deploy.md)提供更多有關這些設定的詳細資料。
 
@@ -183,7 +183,7 @@ Datalert 服務目前為作用中狀態。 它會開始監視數據使用量，�
 
 ## <a name="turn-off-the-datalert-service"></a>關閉 Datalert 服務
 
-1. 在 **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)** 中，選取 [裝置設定]   > [電信費用管理]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [租用戶系統管理]   > [連接器與權杖]   > [電信費用管理 ]  。
 2. 將 [啟用電信費用管理，並在裝置上封鎖超出設定之使用量配額的行動數據或漫遊數據]  設定為 [停用]  。
 3. [儲存]  變更。
 

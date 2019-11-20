@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 882c542d6a1d981b9924bb33eee40f03b41689f7
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999480"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984028"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的條件式啟動動作來選擇性地抹除資料
 
@@ -44,9 +44,6 @@ ms.locfileid: "72999480"
 7. 選取 [設定]  ，並輸入使用者必須符合以登入公司應用程式的 [值]  。 
 8. 選取使用者不符合您的需求時要採取的 [動作]  。 在某些情況下，您可以針對單一設定指定多個動作。 如需詳細資料，請參閱[如何建立及指派應用程式防護原則](app-protection-policies.md)。
 
->[!NOTE]
-> 若要使用 [裝置型號] 或 [裝置製造商]  設定，請輸入以分號分隔的裝置型號識別碼 (iOS) 或裝置製造商 (Android) 清單。 避免在多個值的清單中有空格。 這些值不會區分大小寫。 
-
 ## <a name="policy-settings"></a>原則設定 
 
 應用程式防護原則設定資料表包含 [設定]  、[值]  和 [動作]  資料行。
@@ -62,7 +59,7 @@ ms.locfileid: "72999480"
 - 裝置型號
 - 允許的裝置威脅等級上限
 
-若要使用 [裝置型號]  設定，請輸入以分號分隔的 iOS 型號識別碼清單。 您可以在 [HockeyApp 支援文件](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)中的 [裝置類型] 欄下方找到 iOS 機型識別碼。<br>
+若要使用 [裝置型號]  設定，請輸入以分號分隔的 iOS 型號識別碼清單。 這些值不會區分大小寫。 除了在 [裝置型號] 輸入的 Intune Reporting 內，您也可以在 [HockeyApp 的支援文件](https://support.hockeyapp.net/kb/client-integration-ios-mac-os-x-tvos/ios-device-types)或此[第三方 GitHub 存放庫](https://gist.github.com/adamawolf/3048717)中的 [裝置類型] 欄底下找到 iOS 型號識別碼。<br>
 範例輸入：*iPhone5,2; iPhone5,3*
 
 在使用者裝置上，Intune 用戶端將會根據應用程式防護原則在 Intune 中指定的裝置型號字串來進行簡單比對，藉以採取動作。 比對完全取決於裝置所報告的型號。 建議您 (即 IT 系統管理員) 根據各種不同的裝置製造商和型號，並以少數的使用者群組為目標測試此設定，以確保會出現預期的行為。 預設值是**未設定**。<br>
@@ -90,7 +87,7 @@ ms.locfileid: "72999480"
 
 透過使用 [最低公司入口網站版本]  ，您可以指定在終端使用者裝置上強制要求公司入口網站的特定最小定義版本。 此條件式啟動設定可讓您將值設定為 [封鎖存取]  、[抹除資料]  ，與 [警告]  ，作為未符合每個值時的可能動作。 此值的可能格式遵循模式 [主要].[次要]  、[主要].[次要].[組建]  或 [主要].[次要].[組建].[修訂]  。 由於某些使用者可能不想立即強制更新應用程式，[警告] 選項可能是此設定的理想選項。 Google Play 商店可以只傳送應用程式更新的差異位元組，但這可能仍然是大量資料，如果更新時使用者使用的是行動數據，他們可能不會想要使用這些資料。 強制更新並因此下載更新的應用程式，可能會在更新時產生未預期的行動數據費用。 若已設定 [最低公司入口網站版本]  設定，將會影響取得公司入口網站 5.0.4560.0 版及未來任何版本的任何使用者。 此設定不會影響使用的公司入口網站版本是早於推出此功能版本的使用者。 在裝置上使用應用程式自動更新的使用者，可能會因為使用最新的公司入口網站版本，而不會看到此功能的任何對話。 此設定僅適用於 Android 已註冊與尚未註冊之裝置的應用程式防護。
 
-若要使用 [裝置製造商]  設定，請輸入以分號分隔的 Android 製造商清單。 您可以在 [裝置設定] 下找到裝置的 Android 製造商。<br>
+若要使用 [裝置製造商]  設定，請輸入以分號分隔的 Android 製造商清單。 這些值不會區分大小寫。 除了 Intune Reporting，您也可以在 [裝置設定] 底下找到裝置的 Android 製造商。 <br>
 範例輸入：*製造商 A;製造商 B* 
 
 >[!NOTE]

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8961614a85992b927e31d590c7abadca75a85a6
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 75644ac4d8ccfb8a63e077f2b6625ac96364f5d7
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492856"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755204"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>使用 Intune 將電子郵件設定新增至裝置
 
@@ -39,8 +39,8 @@ Microsoft Intune 包含不同的電子郵件設定，可部署到您組織中的
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
     - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，良好的原則名稱是**適用於所有 Windows 裝置的電子郵件設定**。
@@ -71,7 +71,7 @@ Microsoft Intune 包含不同的電子郵件設定，可部署到您組織中的
 
 電子郵件設定檔會指派給裝置群組，而不是使用者群組。 您可以透過不同的方式從裝置移除電子郵件設定檔，即使裝置上只有一個電子郵件設定檔也一樣：
 
-- **選項 1**：開啟電子郵件設定檔 ([裝置設定]   > [設定檔]  )，然後選擇 [指派]  。 [包含]  索引標籤顯示獲指派設定檔的群組。 以滑鼠右鍵按一下群組 > [移除]  。 請務必**儲存**您的變更。
+- **選項 1**：開啟電子郵件設定檔 ([裝置]   > [組態設定檔]  > 選取設定檔)，然後選擇 [指派]  。 [包含]  索引標籤顯示獲指派設定檔的群組。 以滑鼠右鍵按一下群組 > [移除]  。 請務必**儲存**您的變更。
 
 - **選項 2**：[抹除或淘汰裝置](../remote-actions/devices-wipe.md)。 您可以使用這些動作選擇性或完全移除資料和設定。
 
@@ -103,4 +103,4 @@ Microsoft Intune 包含不同的電子郵件設定，可部署到您組織中的
 
 ## <a name="next-steps"></a>後續步驟
 
-一旦設定檔建立完成，它還不會執行任何動作。 接下來，[將設定檔指派給一些裝置](../device-profile-assign.md)。
+一旦設定檔建立完成，它還不會執行任何動作。 接下來，請[指派此設定檔](../device-profile-assign.md)。

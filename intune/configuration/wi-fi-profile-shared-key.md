@@ -1,11 +1,11 @@
 ---
-title: 建立包含預先共用金鑰的 WiFi 設定檔 - Microsoft Intune - Azure | Microsoft Docs
+title: 在 Microsoft Intune 中建立包含預先共用金鑰的 WiFi 設定檔 - Azure | Microsoft Docs
 description: 使用自訂設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔，在 Microsoft Intune 中取得 Android、Windows 和 EAP 型 Wi-Fi 設定檔的範例 XML 程式碼
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,21 +17,28 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 623c6652964ae5a4f16a9c689dda3aee99c50d31
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506505"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059832"
 ---
-# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key---intune"></a>使用自訂裝置設定檔建立包含預先共用金鑰的 Wi-Fi 設定檔 - Intune
+# <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>使用自訂裝置設定檔，在 Intune 中建立包含預先共用金鑰的 WiFi 設定檔
+
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-預先共用的金鑰 (PSK) 通常用來驗證 WiFi 網路或無線區域網路的使用者。 使用 Intune，您可以建立使用預先共用金鑰的 WiFi 設定檔。 若要建立設定檔，請使用 Intune 中的**自訂裝置設定檔**功能。 本文也包含如何建立 EAP 型 Wi-Fi 設定檔的一些範例。
+預先共用金鑰 (PSK) 通常用來驗證 WiFi 網路或無線區域網路的使用者。 使用 Intune，您可以建立使用預先共用金鑰的 WiFi 設定檔。 若要建立設定檔，請使用 Intune 中的**自訂裝置設定檔**功能。 本文也包含如何建立 EAP 型 Wi-Fi 設定檔的一些範例。
+
+這項功能支援：
+
+- Android
+- Windows
+- EAP 型 Wi-Fi
 
 > [!IMPORTANT]
->- 搭配 Windows 10 使用預先共用金鑰會導致在 Intune 中出現補救錯誤。 發生這種情況時，系統會將 Wi-Fi 設定檔適當地指派給裝置，而該設定檔將如預期般運作。
->- 如果您要匯出包含預先共用金鑰的 Wi-Fi 設定檔，請確定該檔案受到保護。 該金鑰會採用存文字格式，因此您需負責保護該金鑰。
+> - 搭配 Windows 10 使用預先共用金鑰會導致在 Intune 中顯示補救錯誤。 發生這種情況時，系統會將 Wi-Fi 設定檔適當地指派給裝置，而該設定檔將如預期般運作。
+> - 如果您要匯出包含預先共用金鑰的 Wi-Fi 設定檔，請確定該檔案受到保護。 該金鑰會採用存文字格式，因此您需負責保護該金鑰。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -41,32 +48,37 @@ ms.locfileid: "72506505"
 - PSK 需要 64 個十六進位數字的字串，或是 8 到 63 個可列印 ASCII 字元的複雜密碼。 不支援某些字元，例如星號 (*)。
 
 ## <a name="create-a-custom-profile"></a>建立自訂設定檔
-您可以為 Android、Windows 或 EAP 型 Wi-Fi 設定檔建立包含預先共用金鑰的自訂設定檔。 若要使用 Azure 入口網站建立設定檔，請參閱[建立自訂裝置設定](custom-settings-configure.md)。 當您建立裝置設定檔時，請選擇 [自訂]  您的裝置平台。 請勿選取 Wi-Fi 設定檔。 當您選擇自訂時，請務必： 
 
-1. 輸入設定檔的名稱和描述。
-2. 新增具有下列屬性的新 OMA-URI 設定： 
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+3. 輸入下列內容：
 
-   a. 輸入此 Wi-Fi 網路設定的名稱。
+    - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，**適用於 Android 裝置的自訂 OMA-URI Wi-Fi 設定檔設定**是良好原則名稱。
+    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+    - **平台**：選擇平台。
+    - **設定檔類型**：選取 [自訂]  。
 
-   b. (選擇性) 輸入 OMA-URI 設定的描述，或者保留空白。
+4. 在 [設定]  中，選取 [新增]  。 輸入具有下列屬性的新 OMA-URI 設定：
 
-   c. 將 [資料類型]  設定為 **String**。
+    1. **名稱**：輸入 OMA-URI 設定的名稱。
+    2. **描述**：輸入 OMA-URI 設定的描述。 這是選擇性設定，但建議執行。
+    3. **OMA-URI**：輸入下列其中一個選項：
 
-   d. **OMA-URI**：
+        - **適用於 Android**：`./Vendor/MSFT/WiFi/Profile/SSID/Settings`
+        - **適用於 Windows**：`./Vendor/MSFT/WiFi/Profile/SSID/WlanXml`
 
-   - **適用於 Android**：./Vendor/MSFT/WiFi/Profile/SSID/Settings
-   - **適用於 Windows**：./Vendor/MSFT/WiFi/Profile/SSID/WlanXml
+        > [!NOTE]
+        > 開頭務必包含點號字元。
 
-     > [!NOTE]
-     > 開頭務必包含點號字元。
+        SSID 是您要建立原則的 SSID。 例如，如果將 Wi-Fi 命名為 `Hotspot-1`，請輸入 `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`。
 
-     SSID 是您要建立原則的 SSID。 例如，如果將 Wi-Fi 命名為 `Hotspot-1`，請輸入 `./Vendor/MSFT/WiFi/Profile/Hotspot-1/Settings`。
+    4. **資料類型**：選取 [字串]  。
 
-   e. **值欄位**是貼上 XML 程式碼的位置。 請參閱本文中的範例。 更新每個值使符合您的網路設定。 程式碼的註解區段包含一些指標。
-3. 選取 [確定]  並儲存，然後指派原則。
+    5. **值**：貼上 XML 程式碼。 請參閱本文中的[範例](#android-or-windows-wi-fi-profile-example)。 更新每個值使符合您的網路設定。 程式碼的註解區段包含一些指標。
 
-    > [!NOTE]
-    > 此原則僅能指派給使用者群組。
+5. 當您完成時，請選取 [確定]   > [建立]  儲存變更。
+
+設定檔會顯示在設定檔清單中。 接著，請[指派此設定檔](../device-profile-assign.md)給使用者群組。 此原則僅能指派給使用者群組。
 
 每個裝置下一次簽入時，都會套用此原則，並在裝置上建立 Wi-Fi 設定檔。 然級裝置就可以自動連線到網路。
 
@@ -74,7 +86,7 @@ ms.locfileid: "72506505"
 
 下例包含 Android 或 Windows Wi-Fi 設定檔的 XML 程式碼。 提供此範例是為了顯示適當的格式，並提供更多的詳細資料。 它只是範例，不適合作為您環境的建議設定。
 
-### <a name="important-considerations"></a>重要考量
+### <a name="what-you-need-to-know"></a>您必須知道的事項
 
 - `<protected>false</protected>` 務必設定為 **false**。 設定為 **true** 時，可能會使裝置預期有加密的密碼，然後嘗試將它解密，而導致連線失敗。
 
@@ -127,7 +139,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 </WLANProfile>
 ```
 
-## <a name="eap-based-wi-fi-profile-example"></a>EAP 型 Wi-Fi 設定檔範例
+### <a name="eap-based-wi-fi-profile-example"></a>EAP 型 Wi-Fi 設定檔範例
 下例包含 EAP 型 Wi-Fi 設定檔的 XML 程式碼：提供此範例是為了顯示適當的格式，並提供更多的詳細資料。 它只是範例，不適合作為您環境的建議設定。
 
 
@@ -216,15 +228,15 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 您也可以從現有的 Wi-Fi 連線建立 XML 檔案。 在 Windows 電腦上，使用下列步驟：
 
 1. 為匯出的 Wi-Fi 設定檔建立本機資料夾，例如 c:\WiFi。
-2. 以系統管理員身分開啟命令提示字元 (以滑鼠右鍵按一下 `cmd` > [以系統管理員​​身分執行]  )
+2. 以系統管理員身分開啟命令提示字元 (以滑鼠右鍵按一下 `cmd` > [以系統管理員​​身分執行]  )。
 3. 執行 `netsh wlan show profiles`。 隨即列出所有設定檔的名稱。
 4. 執行 `netsh wlan export profile name="YourProfileName" folder=c:\Wifi`。 此命令會在 c:\Wifi 中建立名為 `Wi-Fi-YourProfileName.xml` 的檔案。
 
     - 如果您要匯出包含預先共用金鑰的 Wi-Fi 設定檔，請將 `key=clear` 新增至命令：
   
-      `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
+        `netsh wlan export profile name="YourProfileName" key=clear folder=c:\Wifi`
 
-      `key=clear` 會以純文字匯出金鑰，這是成功使用設定檔的必要條件。
+        `key=clear` 會以純文字匯出金鑰，這是成功使用設定檔的必要條件。
 
 在您擁有 XML 檔案之後，將 XML 語法複製並貼到 OMA-URI 設定 > [資料類型]  中。 [建立自訂設定檔](#create-a-custom-profile) (在本文中) 會列出步驟。
 
@@ -238,3 +250,7 @@ xmlns="http://www.microsoft.com/networking/WLAN/profile/v1">
 - 輪換金鑰 (密碼或複雜密碼) 時，預期停機時間並規劃您的部署。 請考慮在非工作時間推送新的 Wi-Fi 設定檔。 此外，警告使用者連線可能會受到影響。
 
 - 若要順利轉換，請確定終端使用者的裝置具有替代的網際網路連線。 例如，終端使用者必須能夠切換回來賓 WiFi (或某些其他 WiFi 網路)，或能夠使用行動數據連線來與 Intune 通訊。 當裝置更新公司的 WiFi 設定檔時，額外的連線可讓使用者接收原則更新。
+
+## <a name="next-steps"></a>後續步驟
+
+請務必[指派設定檔](device-profile-assign.md)並[監視](device-profile-monitor.md)其狀態。

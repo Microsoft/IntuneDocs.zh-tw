@@ -1,7 +1,7 @@
 ---
 title: 應用程式的資料傳輸原則例外狀況
 titleSuffix: Microsoft Intune
-description: 建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。
+description: 建立 Intune 應用程式保護原則 (APP) 資料傳輸原則的例外狀況。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6453f5b5886c5691383bc81fb76598146e884e0e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 18b1b8feda00f5c669b39bc365c637dcd3968078
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813345"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984079"
 ---
-# <a name="how-to-create-exceptions-to-the-intune-mobile-application-management-mam-data-transfer-policy"></a>如何建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況
+# <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>如何建立 Intune 應用程式保護原則 (APP) 資料傳輸原則的例外狀況
 
-身為系統管理員，您可以建立 Intune 行動應用程式管理 (MAM) 資料傳輸原則的例外狀況。 例外狀況可讓您明確選擇哪些未受管理的應用程式可以與受管理應用程式互相傳輸資料。 您的 IT 人員必須信任您包含在例外狀況清單中的非受控應用程式。 
+身為系統管理員，您可以建立 Intune 應用程式保護原則 (APP) 資料傳輸原則的例外狀況。 例外狀況可讓您明確選擇哪些未受管理的應用程式可以與受管理應用程式互相傳輸資料。 您的 IT 人員必須信任您包含在例外狀況清單中的非受控應用程式。 
 
 >[!WARNING] 
 > 您必須負責變更資料傳輸例外狀況原則。 新增項目到此原則允許未受管理的應用程式 (不由 Intune 管理的應用程式) 存取由受管理應用程式保護的資料。 對受保護資料的這種存取可能會導致資料安全性外洩。 請您只為您的組織必須使用但不支援 Intune 應用程式 (應用程式保護原則) 的應用程式新增資料傳輸例外狀況。 此外，也請只為您不認為是資料洩漏風險的應用程式新增例外狀況。
@@ -65,6 +65,8 @@ ms.locfileid: "72813345"
     <code>com.android.mms</code>
     
     <code>com.samsung.android.messaging</code>
+
+- Android **憑證安裝程式**範例：若要豁免原生 **憑證安裝程式** 應用程式，讓適用於 Android 的 Outlook 可以將 S/MIME 憑證 (以電子郵件附件的形式傳遞) 安裝到 Android 金鑰儲存區中，您必須為下列字串新增資料傳輸的例外狀況：<code>com.android.certinstaller</code>。 如需詳細資訊，請參閱[適用於 iOS 和 Android 的 Outlook 中敏感度標籤和保護](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)。
 
 ## <a name="next-steps"></a>後續步驟
 

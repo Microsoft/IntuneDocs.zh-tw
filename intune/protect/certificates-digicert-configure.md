@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/19/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc0194bfaf1ec5e3120b6bd30eb6b2eb82c6ec2d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: ca76ffe0c8fa42f1c2cf24fcdefd287140231220
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504722"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801630"
 ---
-# <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>針對 DigiCert PKI 平台設定 Intune 憑證連接器  
+# <a name="set-up-intune-certificate-connector-for-digicert-pki-platform"></a>針對 DigiCert PKI 平台設定 Intune 憑證連接器
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+使用 Intune 憑證連接器，以從 DigiCert PKI 平台向受 Intune 管理的裝置發出 PKCS 憑證。 您可以只搭配 DigiCert 憑證授權單位 (CA)，或同時搭配 DigiCert CA 和 Microsoft CA 來使用連接器。
 
-使用 Intune 憑證連接器，以從 DigiCert PKI 平台向受 Intune 管理的裝置發出 PKCS 憑證。 您可以只搭配 DigiCert 憑證授權單位 (CA)，或同時搭配 DigiCert CA 和 Microsoft CA 來使用連接器。  
-> [!TIP]  
+> [!TIP]
 > DigiCert 已收購 Symantec 的 Website Security 及相關 PKI 解決方案業務。 如需此變更的詳細資訊，請參閱 [Symantec 技術支援文章](https://support.symantec.com/en_US/article.INFO4722.html) \(英文\)。
 
 如果您已經使用 Intune 憑證連接器來透過 PKCS 或 System Center Endpoint Protection 發出來自 Microsoft CA 的憑證，您可以使用相同的連接器來設定和發出來自 DigiCert CA 的 PKCS 憑證。 當您完成支援 DigiCert CA 的設定之後，Intune 憑證連接器就可以發出下列憑證：
@@ -41,15 +40,16 @@ ms.locfileid: "72504722"
 
 如果您尚未安裝連接器，但計畫同時針對 Microsoft CA 和 DigiCert CA 使用它，請先完成 Microsoft CA 的連接器設定。 然後，返回本文，以將它設定為也支援 DigiCert。 如需憑證設定檔和連接器的詳細資訊，請參閱[在 Microsoft Intune 中設定裝置的憑證設定檔](certificates-configure.md)。  
 
-如果您只會搭配 DigiCert CA 使用連接器，則可使用本文中的指示來安裝連接器，然後加以設定。 
+如果您只會搭配 DigiCert CA 使用連接器，則可使用本文中的指示來安裝連接器，然後加以設定。
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>必要條件
+
 - **DigiCert CA 的有效訂用帳戶**：需要有訂用帳戶，才能從 DigiCert CA 取得登錄授權單位 (RA) 憑證。
 
-## <a name="install-the-digicert-ra-certificate"></a>安裝 DigiCert RA 憑證  
- 
+## <a name="install-the-digicert-ra-certificate"></a>安裝 DigiCert RA 憑證
+
 1. 將下列程式碼片段儲存在名為 **certreq.ini** 的檔案中，並視需要更新它 (例如：*CN 格式的主體名稱*)。
- 
+
         [Version] 
         Signature="$Windows NT$" 
         
@@ -81,7 +81,6 @@ ms.locfileid: "72504722"
 
 3. 在 [記事本] 中開啟 request.csr 檔案，然後複製下列格式的 CSR 內容：
 
-
         -----BEGIN NEW CERTIFICATE REQUEST-----
         MIID8TCCAtkCAQAwbTEMMAoGA1UEBhMDVVNBMQswCQYDVQQIDAJXQTEQMA4GA1UE
         …
@@ -92,11 +91,11 @@ ms.locfileid: "72504722"
 
 4. 登入 DigiCert CA，然後瀏覽至工作中的 [取得 RA 憑證]  。
 
-   a. 在文字方塊中，提供來自步驟 3 的 CSR 內容。 
+   a. 在文字方塊中，提供來自步驟 3 的 CSR 內容。
 
    b. 為憑證提供易記名稱。
 
-   c. 選取 [繼續]  。 
+   c. 選取 [繼續]  。
 
    d. 使用提供的連結來將 RA 憑證下載至您的本機電腦。
 
@@ -104,23 +103,23 @@ ms.locfileid: "72504722"
 
    a. 開啟 MMC 主控台。
 
-   b. 選取 [檔案]   > [新增或移除嵌入式管理單元]   > [憑證]   > [新增]  。 
+   b. 選取 [檔案]   > [新增或移除嵌入式管理單元]   > [憑證]   > [新增]  。
 
    c. 選取 [電腦帳戶]   > [下一步]  。
 
-   d. 選取 [本機電腦]   > [完成]  。 
+   d. 選取 [本機電腦]   > [完成]  。
 
    e. 在 [新增或移除嵌入式管理單元]  視窗中，選取 [確定]  。 展開 [憑證 (本機電腦)]   > [個人]   > [憑證]  。
 
-   f. 以滑鼠右鍵按一下 [憑證]  節點，然後選取 [所有工作]   > [匯入]  。  
+   f. 以滑鼠右鍵按一下 [憑證]  節點，然後選取 [所有工作]   > [匯入]  。
 
    g. 選取您從 DigiCert CA 所下載之 RA 憑證的位置，然後選取 [下一步]  。
 
-   h. 選取 [個人憑證存放區]   > [下一步]  。 
+   h. 選取 [個人憑證存放區]   > [下一步]  。
 
-   i. 選取 [完成]  ，以將 RA 憑證連同其私密金鑰一起匯入至 [本機電腦-個人]  存放區。  
+   i. 選取 [完成]  ，以將 RA 憑證連同其私密金鑰一起匯入至 [本機電腦-個人]  存放區。
 
-6. 匯出及匯入私密金鑰憑證： 
+6. 匯出及匯入私密金鑰憑證：
 
    a. 展開 [憑證 (本機電腦)]   > [個人]   > [憑證]  。
 
@@ -134,16 +133,17 @@ ms.locfileid: "72504722"
 
    f. 使用步驟 5 的程序，以將私密金鑰憑證匯入至 [本機電腦-個人]  存放區。
 
-   g. 記錄 RA 憑證指紋的複本，且不包含任何空格。 以下為指紋範例： 
+   g. 記錄 RA 憑證指紋的複本，且不包含任何空格。 以下為指紋範例：
 
         RA Cert Thumbprint: “EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5”
-    
+
     > [!NOTE]
-    > 如需從 DigiCert CA 取得 RA 憑證的協助，請連絡 [DigiCert 客戶支援](mailto:enterprise-pkisupport@digicert.com)。  
+    > 如需從 DigiCert CA 取得 RA 憑證的協助，請連絡 [DigiCert 客戶支援](mailto:enterprise-pkisupport@digicert.com)。
 
 ## <a name="prepare-to-install-intune-certificate-connector"></a>準備安裝 Intune 憑證連接器
-> [!TIP]  
-> 本節適用於您只會搭配 DigiCert CA 使用 Intune 憑證連接器的情況。 如果您是搭配 Microsoft CA 使用 Intune 憑證連接器，並且想要新增 DigiCert CA 支援，請直接跳到[設定連接器以支援 DigiCert](#configure-the-connector-to-support-digicert)。  
+
+> [!TIP]
+> 本節適用於您只會搭配 DigiCert CA 使用 Intune 憑證連接器的情況。 如果您是搭配 Microsoft CA 使用 Intune 憑證連接器，並且想要新增 DigiCert CA 支援，請直接跳到[設定連接器以支援 DigiCert](#configure-the-connector-to-support-digicert)。
 
 1. 從下列清單選擇其中一個 Windows 作業系統版本，並將它安裝於電腦上：
    * Windows Server 2012 R2 Datacenter
@@ -159,31 +159,31 @@ ms.locfileid: "72504722"
 
    a. 開啟 [控制台]   > [程式和功能]   > [開啟或關閉 Windows 功能]  。
 
-   b. 選取 [.NET Framework 3.5]  ，然後安裝它。  
+   b. 選取 [.NET Framework 3.5]  ，然後安裝它。
 
-## <a name="install-intune-certificate-connector-for-use-with-digicert"></a>安裝 Intune 憑證連接器以便與 DigiCert 搭配使用  
+## <a name="install-intune-certificate-connector-for-use-with-digicert"></a>安裝 Intune 憑證連接器以便與 DigiCert 搭配使用
 
-> [!TIP]  
-> 如果您是搭配 Microsoft CA 使用 Intune 憑證連接器，並且想要新增 DigiCert CA 支援，請直接跳到[設定連接器以支援 DigiCert](#configure-the-connector-to-support-digicert)。  
+> [!TIP]
+> 如果您是搭配 Microsoft CA 使用 Intune 憑證連接器，並且想要新增 DigiCert CA 支援，請直接跳到[設定連接器以支援 DigiCert](#configure-the-connector-to-support-digicert)。
 
 從 Intune 管理入口網站下載最新的 Intune 憑證連接器版本，並遵循下列指示。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。  
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 選取 [裝置設定]   > [憑證連接器]   > [+ 新增]  。  
+2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [憑證連接器]   > [+ 新增]  。
 
-3. 選取 [下載憑證連接器軟體]  。 將軟體儲存到您在安裝目標伺服器中所能存取的位置。  
+3. 針對 PKCS #12 的連接器按一下 [下載憑證連接器軟體]  ，並將該檔案儲存到要安裝連接器的伺服器所能存取位置。
 
    ![下載連接器軟體](./media/certificates-digicert-configure/connector-download.png)
-   
-4. 在您要安裝連接器的伺服器上，以提升的權限執行 **NDESConnectorSetup.exe**。 
 
-5. 在 [安裝選項]  頁面上，選取 [PFX 發佈]  。  
-   
+4. 在您要安裝連接器的伺服器上，以提升的權限執行 **NDESConnectorSetup.exe**。
+
+5. 在 [安裝選項]  頁面上，選取 [PFX 發佈]  。
+
    ![選取 [PFX 發佈]](./media/certificates-digicert-configure/digicert-ca-connector-install.png)
 
    > [!IMPORTANT]
-   > 如果您將使用 Intune 憑證連接器以發出來自 Microsoft CA 和 Symantec CA 的憑證，請選取 [SCEP 與 PFX 設定檔發佈]  。 
+   > 如果您將使用 Intune 憑證連接器以發出來自 Microsoft CA 和 Symantec CA 的憑證，請選取 [SCEP 與 PFX 設定檔發佈]  。
 
 6. 使用預設選取項目來完成連接器的設定。
 
@@ -197,7 +197,7 @@ ms.locfileid: "72504722"
 
         <add key="RACertThumbprint"
         value="EA7A4E0CD1A4F81CF0740527C31A57F6020C17C5"/>
-   
+
    b. 儲存並關閉檔案。
 
 2. 開啟 **services.msc**：
@@ -210,20 +210,18 @@ ms.locfileid: "72504722"
 
 ## <a name="set-up-the-intune-administrator-account"></a>設定 Intune 管理員帳戶  
 
-> [!TIP]  
-> 如果您是搭配 Microsoft CA 使用 Intune 憑證連接器，並且想要新增 DigiCert CA 支援，請直接跳到[建立受信任的憑證設定檔](#create-a-trusted-certificate-profile)。   
+> [!TIP]
+> 如果您是搭配 Microsoft CA 使用 Intune 憑證連接器，並且想要新增 DigiCert CA 支援，請直接跳到[建立受信任的憑證設定檔](#create-a-trusted-certificate-profile)。
  
-1. 從 **%ProgramFiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe** 開啟 NDES 連接器使用者介面。  
+1. 從 **%ProgramFiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe** 開啟 NDES 連接器使用者介面。
 
 2. 在 [註冊]  索引標籤上，選取 [登入]  。
 
 3. 提供您的 Intune 租用戶管理員認證。
 
 4. 選取 [登入]  ，然後選取 [確定]  以確認註冊成功。 您接著可以關閉 NDES 連接器使用者介面。
-   
+
    ![顯示 [已成功註冊] 訊息的 NDES 連接器介面](./media/certificates-digicert-configure/certificates-digicert-configure-connector-configure.png)
-
-
 
 ## <a name="create-a-trusted-certificate-profile"></a>建立受信任的憑證設定檔
 
@@ -231,36 +229,37 @@ ms.locfileid: "72504722"
 
 1. 從 DigiCert CA 取得受信任的根憑證：
 
-    a. 登入 DigiCert CA 管理入口網站。
+   a. 登入 DigiCert CA 管理入口網站。
 
-    b. 從 [Tasks]  \(工作\) 中選取 [Manage CAs]  \(管理 CA\)。 
+   b. 從 [Tasks]  \(工作\) 中選取 [Manage CAs]  \(管理 CA\)。
 
-    c. 從清單中選取適當的 CA。  
+   c. 從清單中選取適當的 CA。
 
-    d. 選取 [Download root certificate]  \(下載根憑證\) 以下載受信任的根憑證。
+   d. 選取 [Download root certificate]  \(下載根憑證\) 以下載受信任的根憑證。
 
 2. 在 Intune 入口網站中，建立受信任的憑證設定檔：
 
-   a. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+   a. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-   b. 選取 [裝置設定]   > [管理]   > [設定檔]   > [建立設定檔]  。
+   b. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 
-   c. 輸入受信任憑證設定檔的 [名稱]  和 [描述]  詳細資料。
+   c. 輸入下列內容：
 
-   d. 從 [平台]  下拉式清單中，選取此受信任憑證的裝置平台。
+      - 設定檔的 [名稱] 
+      - 選擇性設定 [描述] 
+      - 要部署設定檔的目標 [平台] 
+      - 將 [設定檔類型]  設為 [信任的憑證] 
 
-   e. 從 [設定檔類型]  下拉式清單中，選取 [受信任的憑證]  。
+   d. 選取 [設定]  ，然後瀏覽至先前匯出要與此憑證設定檔搭配使用的受信任根 CA 憑證 .cer 檔案，然後選取 [確定]  。
 
-   f. 瀏覽至您在上一個步驟中從 DigiCert CA 取得的受信任根 CA .cer 檔案，然後選取 [確定]  。
+   e. 僅適用於 Windows 8.1 與 Windows 10 裝置，請為來自以下位置的受信任憑證，選取 [目的地存放區]  ︰
+      - **電腦憑證存放區 - 根**
+      - **電腦憑證存放區 - 中繼**
+      - **使用者憑證存放區 - 中繼**
 
-   g. 僅針對 Windows 8.1 與 Windows 10 裝置，為來自以下位置的受信任憑證，選取目的地存放區：    
-      - **電腦憑證存放區 - 根**  
-      - **電腦憑證存放區 - 中繼**  
-      - **使用者憑證存放區 - 中繼** 
+   f. 當您完成時，請選取 [確定]  返回 [建立設定檔]  窗格，然後選取 [建立]  。  
 
-   h. 當您完成時，請選取 [確定]  返回 [建立設定檔]  窗格，然後選取 [建立]  。  
- 
-設定檔隨即會顯示於 [裝置設定 - 設定檔]  窗格的設定檔清單中，且設定檔類型為 [受信任的憑證]  。  請務必將此設定檔指派給將接收憑證的裝置。 若要將設定檔指派給群組，請參閱[指派裝置設定檔](../configuration/device-profile-assign.md)。
+  設定檔隨即會顯示於 [裝置設定 - 設定檔]  窗格的設定檔清單中，且設定檔類型為 [受信任的憑證]  。  請務必將此設定檔指派給將接收憑證的裝置。 若要將設定檔指派給群組，請參閱[指派裝置設定檔](../configuration/device-profile-assign.md)。
 
 
 ## <a name="get-the-certificate-profile-oid"></a>取得憑證設定檔 OID  
@@ -272,40 +271,40 @@ ms.locfileid: "72504722"
 3. 選取您要使用的憑證設定檔。
 4. 複製憑證設定檔 OID。 它看起來會與下列範例類似：
 
- 
        Certificate Profile OID = 2.16.840.1.113733.1.16.1.2.3.1.1.47196109 
- 
 
 > [!NOTE]
 > 如果您需要協助以取得憑證設定檔 OID，請連絡 [DigiCert 客戶支援](mailto:enterprise-pkisupport@digicert.com)。
 
 ## <a name="create-a-pkcs-certificate-profile"></a>建立 PKCS 憑證設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。  
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 移至 [裝置設定]   >  [設定檔]  ，然後選取 [建立設定檔]  。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 
-3. 輸入 PKCS 憑證設定檔的 [名稱]  和 [描述]  詳細資料。  
+3. 輸入下列內容：
 
-4. 從 [平台]  下拉式清單中，選取支援的裝置平台。
+   - 設定檔的 [名稱] 
+   - 選擇性設定 [描述] 
+   - 要部署設定檔的目標 [平台] 
+   - 將 [設定檔類型]  設為 [PKCS 憑證] 
 
-5. 從 [設定檔類型]  下拉式清單中，選取 [PKCS 憑證]  。
- 
-6. 在 [PKCS 憑證]  窗格中，使用下表中的值來設定參數。 需要這些值，才能透過 Intune 憑證連接器從 DigiCert CA 發出 PKCS 憑證。 
+4. 在 [PKCS 憑證]  窗格中，使用下表中的值來設定參數。 需要這些值，才能透過 Intune 憑證連接器從 DigiCert CA 發出 PKCS 憑證。
 
    |PKCS 憑證參數 | 值 | 說明 |
    | --- | --- | --- |
    | 憑證授權單位 | pki-ws.symauth.com | 此值必須為不含結尾斜線的 DigiCert CA 基礎服務 FQDN。 如果您不確定這是否為適用於您 DigiCert CA 訂用帳戶的正確基礎服務 FQDN，請連絡 DigiCert 客戶支援。 <br><br>「在從 Symantec 變更為 DigiCert 的情況下，此 URL 會維持不變」  。 <br><br> 如果此 FQDN 不正確，Intune 憑證連接器將不會從 DigiCert CA 發出 PKCS 憑證。| 
    | 憑證授權單位名稱 | Symantec | 此值必須為 **Symantec**字串。 <br><br> 如果對此值進行任何變更，Intune 憑證連接器將不會從 DigiCert CA 發出 PKCS 憑證。|
-   | 憑證範本名稱 | 來自 DigiCert CA 的憑證設定檔 OID。 例如：**2.16.840.1.113733.1.16.1.2.3.1.1.61904612**| 此值必須是從 DigiCert CA 憑證設定檔範本[在上一節中取得](#get-the-certificate-profile-oid)的憑證設定檔 OID。 <br><br> 如果 Intune 憑證連接器在 DigiCert CA 中找不到與此憑證設定檔 OID 相關聯的憑證範本，它將不會從 DigiCert CA 發出 PKCS 憑證。|  
+   | 憑證範本名稱 | 來自 DigiCert CA 的憑證設定檔 OID。 例如：**2.16.840.1.113733.1.16.1.2.3.1.1.61904612**| 此值必須是從 DigiCert CA 憑證設定檔範本[在上一節中取得](#get-the-certificate-profile-oid)的憑證設定檔 OID。 <br><br> 如果 Intune 憑證連接器在 DigiCert CA 中找不到與此憑證設定檔 OID 相關聯的憑證範本，它將不會從 DigiCert CA 發出 PKCS 憑證。|
 
-   ![CA 和憑證範本的選取項目](./media/certificates-digicert-configure/certificates-digicert-pkcs-example.png)  
+   ![CA 和憑證範本的選取項目](./media/certificates-digicert-configure/certificates-digicert-pkcs-example.png)
 
    > [!NOTE]
    > 適用於 Windows 平台的 PKCS 憑證設定檔不需要與受信任的憑證設定檔相關聯。 但這對於非 Windows 平台的設定檔 (例如 Android) 則是必要的。
-7. 完成設定檔的設定以符合您的商務需求，然後選取 [確定]  以儲存設定檔。 
 
-8. 選取 [指派]  ，然後設定將接收此設定檔的適當群組。 指派的群組中至少要有一個使用者或裝置。
+5. 完成設定檔的設定以符合商務需求，然後選取 [建立]  以儲存設定檔。
+
+6. 在新設定檔的 [概觀]  頁面上，選取 [指派]  ，然後設定將接收此設定檔的適當群組。 指派的群組中至少要有一個使用者或裝置。
  
 當您完成先前的步驟之後，Intune 憑證連接器會將來自 DigiCert CA 的 PKCS 憑證發給已指派群組中受 Intune 管理的裝置。 這些憑證將會在受 Intune 管理的裝置上，於 [目前使用者]  憑證存放區的 [個人]  存放區中提供使用。
 
@@ -314,7 +313,7 @@ ms.locfileid: "72504722"
 |屬性 | Intune 支援的格式 | DigiCert 雲端 CA 支援的格式 | result |
 | --- | --- | --- | --- |
 | 主體名稱 |Intune 僅支援下列三種格式的主體名稱： <br><br> 1.一般名稱 <br> 2.包括電子郵件的一般名稱 <br> 3.作為電子郵件的一般名稱 <br><br> 例如： <br><br> `CN = IWUser0 <br><br> E = IWUser0@samplendes.onmicrosoft.com` | DigiCert CA 支援更多屬性。  如果您想要選取更多屬性，就必須在 DigiCert 憑證設定檔範本中以固定值定義它們。| 我們使用來自 PKCS 憑證要求的一般名稱或電子郵件。 <br><br> 在 Intune 憑證設定檔和 DigiCert 憑證設定檔範本之間，若屬性選取項目中有任何差異，將導致不會從 DigiCert CA 發出任何憑證。|
-| SAN | Intune 僅支援下列 SAN 欄位值： <br><br> **AltNameTypeEmail** <br> **AltNameTypeUpn** <br> **AltNameTypeOtherName** (編碼值) | DigiCert 雲端 CA 也支援這些參數。 如果您想要選取更多屬性，就必須在 DigiCert 憑證設定檔範本中以固定值定義它們。 <br><br> **AltNameTypeEmail**：如果在 SAN 中找不到此類型，Intune 憑證連接器就會使用來自 **AltNameTypeUpn** 的值。  如果在 SAN 中也找不到 **AltNameTypeUpn**，則 Intune 憑證連接器會使用來自主體名稱的值 (若它為電子郵件格式)。  如果還是找不到此類型，Intune 憑證連接器就無法發出憑證。 <br><br> 範例： `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> **AltNameTypeUpn**：如果在 SAN 中找不到此類型，Intune 憑證連接器就會使用來自 **AltNameTypeEmail** 的值。 如果在 SAN 中也找不到 **AltNameTypeEmail**，則 Intune 憑證連接器會使用來自主體名稱的值 (若它為電子郵件格式)。 如果還是找不到此類型，Intune 憑證連接器就無法發出憑證。  <br><br> 範例： `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> **AltNameTypeOtherName**：如果在 SAN 中找不到此類型，Intune 憑證連接器就無法發出憑證。 <br><br> 範例： `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  請注意，此欄位的值必須為編碼格式 (十六進位值)，才能受 DigiCert CA 支援。 Intune 憑證連接器會先將此欄位中的所有值都轉換成 Base64 編碼，然後再提交憑證要求。 *Intune 憑證連接器並不會先驗證此值是否已進行編碼。* | 無 |
+| SAN | Intune 僅支援下列 SAN 欄位值： <br><br> **AltNameTypeEmail** <br> **AltNameTypeUpn** <br> **AltNameTypeOtherName** (編碼值) | DigiCert 雲端 CA 也支援這些參數。 如果您想要選取更多屬性，就必須在 DigiCert 憑證設定檔範本中以固定值定義它們。 <br><br> **AltNameTypeEmail**：如果在 SAN 中找不到此類型，Intune 憑證連接器就會使用來自 **AltNameTypeUpn** 的值。  如果在 SAN 中也找不到 **AltNameTypeUpn**，則 Intune 憑證連接器會使用來自主體名稱的值 (若它為電子郵件格式)。  如果還是找不到此類型，Intune 憑證連接器就無法發出憑證。 <br><br> 範例： `RFC822 Name=IWUser0@ndesvenkatb.onmicrosoft.com`  <br><br> **AltNameTypeUpn**：如果在 SAN 中找不到此類型，Intune 憑證連接器就會使用來自 **AltNameTypeEmail** 的值。 如果在 SAN 中也找不到 **AltNameTypeEmail**，則 Intune 憑證連接器會使用來自主體名稱的值 (若它為電子郵件格式)。 如果還是找不到此類型，Intune 憑證連接器就無法發出憑證。  <br><br> 範例： `Other Name: Principal Name=IWUser0@ndesvenkatb.onmicrosoft.com` <br><br> **AltNameTypeOtherName**：如果在 SAN 中找不到此類型，Intune 憑證連接器就無法發出憑證。 <br><br> 範例： `Other Name: DS Object Guid=04 12 b8 ba 65 41 f2 d4 07 41 a9 f7 47 08 f3 e4 28 5c ef 2c` <br><br>  DigiCert CA 僅支援欄位值為十六進位值的編碼格式。 Intune 憑證連接器會先將此欄位中的所有值都轉換成 Base64 編碼，然後再提交憑證要求。 *Intune 憑證連接器並不會先驗證此值是否已進行編碼。* | 無 |
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -322,7 +321,7 @@ ms.locfileid: "72504722"
 
 | 問題/錯誤訊息 | 解決步驟 |
 | --- | --- |
-| 無法在 NDES 連接器 UI 上使用 Intune 租用戶管理帳戶登入。 | 若未在 Intune 管理入口網站中啟用內部部署憑證連接器，就可能發生此情況。 若要解決此問題，請使用下列任一個程序： <br><br> 從 Silverlight UI： <br> 1.登入 [Intune 管理入口網站](https://admin.manage.microsoft.com)。 <br> 2.選取 [管理員]  。 <br> 3.選取 [行動裝置管理]   > [憑證連接器]  。 <br> 4.選取 [設定內部部署憑證連接器]  。 <br> 5.選取 [啟用憑證連接器]  核取方塊。 <br> 6.選取 [確定]  。 <br><br> 從 Azure 入口網站 UI： <br> 1.登入 [Azure 入口網站](https://portal.azure.com)。 <br> 2.移至 Microsoft Intune。 <br> 3.選取 [裝置設定]   > [憑證授權單位]  。 <br> 4.選取 [啟用]  。 <br><br> 從 Silverlight UI 或 Azure 入口網站完成上述步驟之後，請嘗試在 NDES 連接器 UI 中使用相同的 Intune 租用戶管理帳戶登入。 |
+| 無法在 NDES 連接器 UI 上使用 Intune 租用戶管理帳戶登入。 | 若未在 Microsoft Endpoint Manager 系統管理中心內啟用內部部署憑證連接器，就可能發生此情況。 解決此問題： <br><br> 1.登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 <br> 2.選取 [租用戶系統管理]   > [連接器與權杖]   > [憑證連接器]  。 <br> 3.找出憑證連接器，並確定其已啟用。 <br><br> 完成上述步驟之後，請嘗試在 NDES 連接器 UI 中使用相同的 Intune 租用戶管理帳戶登入。 |
 | 找不到 NDES 連接器憑證。 <br><br> System.ArgumentNullException:值不能是 Null。 | 如果 Intune 租用戶系統管理員帳戶從未登入 NDES 連接器 UI，Intune 憑證連接器便會顯示此錯誤。 <br><br> 如果此錯誤持續發生，請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 **services.msc**。 <br> 2.選取 [Intune 連接器服務]  。 <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]  。|
 | NDES 連接器 - IssuePfx - 一般例外狀況： <br> System.NullReferenceException：物件參考未設定成物件的執行個體。 | 這是暫時性的錯誤。 請重新啟動 Intune 服務連接器。 <br><br> 1.開啟 **services.msc**。 <br> 2.選取 [Intune 連接器服務]  。 <br> 3.以滑鼠右鍵按一下並選取 [重新啟動]  。 |
 | DigiCert 提供者 - 無法取得 DigiCert 原則。 <br><br>「作業已逾時。」 | Intune 憑證連接器在與 DigiCert CA 通訊期間，接收到作業逾時錯誤。 如果此錯誤持續發生，請提高連線逾時值，然後再試一次。 <br><br> 提高連線逾時： <br> 1.移至 NDES 連接器電腦。 <br>2.在 [記事本] 中開啟 **%ProgramFiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config** 檔案。 <br> 3.提高下列參數的逾時值： <br><br> `CloudCAConnTimeoutInMilliseconds` <br><br> 4.重新啟動 Intune 憑證連接器服務。 <br><br> 如果此問題持續發生，請連絡 DigiCert 客戶支援。 |
@@ -336,4 +335,3 @@ ms.locfileid: "72504722"
 ## <a name="next-steps"></a>後續步驟
 
 使用本文中的資訊以及[什麼是 Microsoft Intune 裝置設定檔？](../configuration/device-profiles.md)中的資訊，來管理您組織的裝置及裝置上的憑證。
-

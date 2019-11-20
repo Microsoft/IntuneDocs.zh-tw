@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/18/2019
+ms.date: 11/07/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b0f31add65063665da5a7961e2caf9eb30a847e2
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 3db085e6e88f8f57eb0276afa77290df8574568f
+ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72787884"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73801735"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -142,13 +142,14 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 > [!IMPORTANT]  
 > Microsoft Intune 憑證連接器無法安裝在發行憑證授權單位 (CA) 上，而必須安裝在不同的 Windows 伺服器上。  
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [憑證連接器]   > [新增]  。
-3. 下載連接器檔案，並將其儲存到要安裝連接器之伺服器所能存取的位置。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-    ![Microsoft Intune 憑證連接器下載](./media/certficates-pfx-configure/download-ndes-connector.png)
+2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [憑證連接器]   > [+ 新增]  。
+
+3. 針對 PKCS #12 的連接器按一下 [下載憑證連接器軟體]  ，並將該檔案儲存到要安裝連接器的伺服器所能存取位置。
+
+   ![Microsoft Intune 憑證連接器下載](./media/certficates-pfx-configure/download-ndes-connector.png)
  
-
 4. 下載完成後，請登入伺服器。 然後：
 
     1. 確定已安裝 .NET 4.5 Framework 或更高版本，這是 NDES 憑證連接器的必要項目。 Windows Server 2012 R2 及更新版本會自動隨附 .NET 4.5 Framework。
@@ -166,37 +167,44 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
 ## <a name="create-a-trusted-certificate-profile"></a>建立受信任的憑證設定檔
 
-1. 登入 [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [設定檔]   > [建立設定檔]  。
-    ![巡覽至 Intune 並建立受信任憑證的新設定檔](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 輸入下列內容：
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+
+   ![巡覽至 Intune 並建立受信任憑證的新設定檔](./media/certficates-pfx-configure/certificates-pfx-configure-profile-new.png)
+
+3. 輸入下列內容：
 
     - 設定檔的 [名稱] 
     - 可選擇性地設定說明
     - 要部署設定檔的目標 [平台] 
     - 將 [設定檔類型]  設為 [信任的憑證] 
 
-3. 移至 [設定]  ，並輸入先前匯出的根 CA 憑證 .cer 檔案。
+4. 選取 [設定]  ，並指定先前匯出的根 CA 憑證 .cer 檔案。
 
    > [!NOTE]
    > 視您在**步驟 2** 中選擇的平台而定，您可能會有選擇憑證 [目的地存放區]  的選項。
 
-   ![建立設定檔並上傳受信任的憑證](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png) 
+   ![建立設定檔並上傳受信任的憑證](./media/certficates-pfx-configure/certificates-pfx-configure-profile-fill.png)
 
-4. 選取 [確定]   > [建立]  儲存您的設定檔。
-5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](../configuration/device-profile-assign.md)。
+5. 選取 [確定]   > [建立]  儲存您的設定檔。
+
+6. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](../configuration/device-profile-assign.md)。
 
 ## <a name="create-a-pkcs-certificate-profile"></a>建立 PKCS 憑證設定檔
 
-1. 登入 [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [設定檔]   > [建立設定檔]  。
-2. 輸入下列內容：
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 選取並移至 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+
+3. 輸入下列內容：
 
     - 設定檔的 [名稱] 
     - 可選擇性地設定說明
     - 要部署設定檔的目標 [平台] 
     - 將 [設定檔類型]  設為 [PKCS 憑證] 
 
-3. 移至 [設定]  ，並設定適用於所選平台的屬性：  
+4. 選取 [設定]  ，並設定適用於所選平台的屬性：
    
    |設定     | 平台     | 詳細資料   |
    |------------|------------|------------|
@@ -212,8 +220,9 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
    |**允許所有應用程式存取私密金鑰** |macOS  |設定為 [啟用]  ，將 PKCS 憑證私密金鑰的存取權，授與為相關聯 Mac 裝置設定的應用程式。 <br><br> 如需此設定的詳細資訊，請參閱 Apple 開發人員文件中[組態設定檔參考](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) \(英文\) 的 *AllowAllAppsAccess* 憑證承載一節。 |
    |**根憑證**             |**-** Android 裝置系統管理員 <br> **-** Android Enterprise (裝置擁有者  、工作設定檔  ) |選取先前指派的根 CA 憑證設定檔。 |
 
-4. 選取 [確定]   > [建立]  儲存您的設定檔。
-5. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](../configuration/device-profile-assign.md)。
+5. 選取 [確定]   > [建立]  儲存您的設定檔。
+
+6. 若要將新的設定檔指派給一或多部裝置，請參閱[指派 Microsoft Intune 裝置設定檔](../configuration/device-profile-assign.md)。
 
    > [!NOTE]
    > 在具有 Android 企業設定檔的裝置上，使用 PKCS 憑證設定檔安裝的憑證不會顯示在裝置上。 若要確認憑證部署成功，請在 Intune 主控台中檢查設定檔的狀態。
@@ -262,7 +271,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
   - **{{DeviceName}}**
   - **{{FullyQualifiedDomainName}}** *(僅適用於 Windows 和已加入網域的裝置)*
   - **{{MEID}}**
-   
+
   您可以在文字方塊中指定這些變數，後接變數的文字。 例如，名為 *Device1* 的裝置一般名稱可以新增為 **CN={{DeviceName}}Device1**。
 
   > [!IMPORTANT]  
@@ -273,21 +282,25 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 
 
 ## <a name="whats-new-for-connectors"></a>連接器的新功能
-這兩個憑證連接器的更新會定期發行。 當我們更新連接器時，您可在此閱讀有關變更的資訊。 
+
+這兩個憑證連接器的更新會定期發行。 當我們更新連接器時，您可在此閱讀有關變更的資訊。
 
 「適用於 Microsoft Intune 的 PFX 憑證連接器」  [支援自動更新](#requirements)，而「Intune 憑證連接器」  則以手動方式更新。
 
-### <a name="may-17-2019"></a>2019 年 5 月 17 日  
+### <a name="may-17-2019"></a>2019 年 5 月 17 日
+
 - **適用於 Microsoft Intune 的 PFX 憑證連接器 - 6.1905.0.404 版**  
   此版本的變更：  
   - 已修正現有 PFX 憑證繼續重新處理而導致連接器停止處理新要求的問題。 
 
-### <a name="may-6-2019"></a>2019 年 5 月 6 日  
+### <a name="may-6-2019"></a>2019 年 5 月 6 日
+
 - **適用於 Microsoft Intune 的 PFX 憑證連接器 - 6.1905.0.402 版**  
   此版本的變更：  
   - 連接器的輪詢間隔已從 5 分鐘縮短為 30 秒。
  
-### <a name="april-2-2019"></a>2019 年 4 月 2 日  
+### <a name="april-2-2019"></a>2019 年 4 月 2 日
+
 - **Intune 憑證連接器 - 6.1904.1.0 版**  
   此版本的變更：  
   - 修正了使用全域系統管理員帳戶登入連接器之後，連接器無法向 Intune 註冊的問題。  

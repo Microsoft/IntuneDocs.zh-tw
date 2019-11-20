@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ada1f6e5292684803fbea40430cdd43d61796746
-ms.sourcegitcommit: 1a5b185acd27954b10b6d59409d82eb80fd71284
+ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2019
-ms.locfileid: "72681363"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73984187"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>在 Intune 中新增 iOS 軟體更新原則
 
@@ -28,7 +28,7 @@ ms.locfileid: "72681363"
 
 - iOS 10.3 和更新版本 (受監督)
 
-裝置大約每隔 8 小時簽入 Intune 一次。 若有更新可用，裝置將會下載更新並安裝，但限制時間除外。 更新裝置不需要任何使用者互動。 原則不會阻止使用者手動更新 OS。
+裝置大約每隔 8 小時簽入 Intune 一次。 若有更新可用，裝置將會下載更新並安裝，但限制時間除外。 雖然更新流程通常不會牽涉到任何使用者互動，但如果裝置有密碼，使用者就必須輸入密碼以開始軟體更新。 其適用於 iOS 10.3 和更新版本。 原則不會阻止使用者手動更新 OS。
 
 ## <a name="configure-the-policy"></a>設定原則
 

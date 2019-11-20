@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19f03ff1dbb91dcd4592f9f5dd9d8fcc7c6a111e
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
+ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813295"
+ms.lasthandoff: 11/08/2019
+ms.locfileid: "73844840"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -49,8 +49,8 @@ ms.locfileid: "72813295"
 - 整體裝置合規性
 - 每一政策的裝置合規性
 - 每一設定的裝置合規性
-- 裝置保護狀態
 - 威脅代理程式狀態
+- 裝置保護狀態
 
 ![儀表板影像顯示裝置合規性儀表板和不同的報告](./media/compliance-policy-monitor/idc-1.png)
 
@@ -58,7 +58,7 @@ ms.locfileid: "72813295"
 
 ### <a name="device-compliance-status-report"></a>裝置合規性狀態報告
 
-此圖表顯示所有 Intune 已註冊裝置的合規性狀態。 裝置合規性狀態會保留在兩個不同的資料庫中：Intune 和 Azure Active Directory。 
+[裝置合規性狀態]  圖表會顯示所有 Intune 已註冊裝置的合規性狀態。 裝置合規性狀態會保留在兩個不同的資料庫中：Intune 和 Azure Active Directory。
 
 > [!IMPORTANT]
 > Intune 會遵循裝置簽入排程，以符合裝置上的所有合規性評估。 [深入了解裝置簽入排程](../configuration/device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)。
@@ -97,7 +97,7 @@ ms.locfileid: "72813295"
 
 ![選擇 [不符合規範] 狀態](./media/compliance-policy-monitor/select-not-compliant-status.png)
 
-它會顯示該狀態之裝置的更多詳細資料，包括作業系統平台、上次簽入日期等。 
+該動作會開啟 [裝置合規性]  視窗，並在 [裝置狀態]  圖表中顯示裝置。 此圖表會顯示處於該狀態的裝置詳細資料，包括作業系統平台、上次簽入日期等。 
 
 ![儀表板影像顯示該特定狀態之裝置的更多詳細資料](./media/compliance-policy-monitor/drill-down-details.png)
 
@@ -107,20 +107,20 @@ ms.locfileid: "72813295"
 
 ![選取 [篩選] 和 [資料行] 以變更圖表中的結果](./media/compliance-policy-monitor/filter-columns.png)
 
-當您選取 [篩選]  按鈕時，[篩選] 飛出視窗隨即開啟並顯示更多選項，包括合規性狀態、破解的裝置等。 **套用**篩選以更新結果。
+當選取 [篩選]  按鈕時，[篩選] 快顯視窗隨即開啟並顯示更多選項，包括 [合規性]  狀態、[破解]  的裝置等。 **套用**篩選以更新結果。
 
 使用 [資料行]  屬性在圖表輸出中新增或移除資料行。 例如，[使用者主體名稱]  可能顯示裝置上註冊的電子郵件地址。 **套用**資料行以更新結果。
 
 #### <a name="device-details"></a>裝置詳細資訊
 
-在圖表中，選取特定裝置，然後選取 [裝置合規性]  ：
+在 [裝置詳細資料]  圖表內，選取特定裝置，然後選取 [裝置合規性]  ：
 
 ![選擇特定裝置，然後選擇 [裝置合規性] 以查看套用的合規性政策](./media/compliance-policy-monitor/see-policies-applied-specific-device.png)
 
-它會提供該裝置上套用之裝置合規性政策設定的更多詳細資料。 當您選取特定政策時，它會顯示該政策中的所有設定。
+Intune 會顯示該裝置上所套用裝置合規性原則設定的詳細資料。 當您選取特定政策時，它會顯示該政策中的所有設定。
 
 ### <a name="devices-without-compliance-policy"></a>沒有合規性政策的裝置
-在 [裝置合規性]   > [概觀]  中，此報告也會識別未獲指派任何合規性政策的裝置：
+在 [合規性狀態]  頁面上的 [原則合規性]  圖表旁，您可以選取 [沒有合規性原則的裝置]  磚，以針對未指派任何合規性原則的裝置檢視其相關資訊：
 
 ![查看沒有任何合規性政策的裝置](./media/compliance-policy-monitor/devices-without-policies.png)
 
@@ -130,7 +130,7 @@ ms.locfileid: "72813295"
 
 - 使用 [將未指派合規性政策的裝置標記為]  安全性設定，請務必識別沒有合規性政策的裝置。 接著，您可以將至少一個合規性原則指派給這些裝置。
 
-  您可以在 Intune 入口網站中設定安全性設定。 選取 [裝置合規性]   > [合規性政策設定]  。 接著，將 [將未指派合規性政策的裝置標記為]  設定為 [符合規範]  或 [不符合規範]  。 
+  您可以在 Intune 入口網站中設定安全性設定。 請移至 [裝置]   > [合規性原則]   > [合規性原則設定]  。 接著，將 [將未指派合規性政策的裝置標記為]  設定為 [符合規範]  或 [不符合規範]  。 
 
   深入了解 [Intune 服務中的安全性增強功能](https://blogs.technet.microsoft.com/intunesupport/2018/02/09/updated-upcoming-security-enhancements-in-the-intune-service/) \(英文\)。
 
@@ -138,19 +138,15 @@ ms.locfileid: "72813295"
 
 ### <a name="per-policy-device-compliance-report"></a>每一政策的裝置合規性報告
 
-[裝置合規性]   > [政策合規性]  報告會顯示所有政策，以及符合規範與不符合規範的裝置數目。 
+[原則合規性]  圖表會顯示原則，以及符合規範與不符合規範的裝置數目。 
 
 ![查看政策清單，以及該政策中符合規範的裝置數目與不符合規範的裝置數目比較](./media/compliance-policy-monitor/idc-8.png)
 
-當您選取特定政策時，您可以查看該合規性政策之每部目標裝置的 [合規性狀態]  、[使用者的電子郵件別名]  、[裝置型號]  及 [位置]  。
-
 ## <a name="setting-compliance-report"></a>設定相容性報表
 
-[裝置合規性]   > [設定合規性]  報告顯示每個合規性設定，以及每個合規性狀態中的裝置總數。 它會顯示所有合規性政策中的所有裝置合規性政策設定、套用政策設定的平台，以及不符合規範的裝置數目。
+[設定合規性]  圖表會顯示所有合規性原則中的所有裝置合規性原則設定、套用原則設定的平台，以及不符合規範的裝置數目。
 
 ![查看不同政策中的所有設定清單](./media/compliance-policy-monitor/idc-10.png)
-
-當您選取特定設定時，您可以查看該設定之每部目標裝置的 [合規性狀態]  、[使用者的電子郵件別名]  、[裝置型號]  及 [位置]  。
 
 > [!NOTE]
 > 原則可以指派給裝置，以及相同裝置上的使用者。 在某些情況下，裝置可能會在使用者登入之前進行同步處理，例如，當裝置重新開機時。 合規性可能會評估此使用者，並將裝置顯示為不符合規範。 此行為也可能會將系統帳戶顯示為不符合規範的使用者。
@@ -163,14 +159,14 @@ ms.locfileid: "72813295"
 
 這項功能包含在裝置狀態報告中：
 
-1. 選取 [裝置合規性]   > [原則]  。 會顯示原則清單，包括平台 (如果已指派原則) 以及更多詳細資料。
+1. 選取 [裝置]   > [合規性原則]   > [原則]  。 會顯示原則清單，包括平台 (如果已指派原則) 以及更多詳細資料。
 2. 選取一個原則 > [概觀]  ： 在此檢視中，原則指派會包含下列狀態：
 
-    - 成功：已套用原則
-    - 錯誤：原則無法套用。 訊息通常會顯示一個用來連結至說明的錯誤碼。 
-    - 衝突：兩個設定會套用至相同的裝置，且 Intune 無法解決衝突。 系統管理員應該檢閱。
-    - 擱置中：裝置尚未使用 Intune 簽入以接收原則。 
-    - 不適用：裝置無法接收原則。 例如，該原則更新了 iOS 11.1 的特定設定，但該裝置使用的是 iOS 10。 
+    - **成功**：已套用原則
+    - **錯誤**：原則無法套用。 訊息通常會顯示一個用來連結至說明的錯誤碼。 
+    - **衝突**：兩個設定會套用至相同的裝置，且 Intune 無法解決衝突。 系統管理員應該檢閱。
+    - **Pending**：裝置尚未使用 Intune 簽入以接收原則。 
+    - **不適用**：裝置無法接收原則。 例如，該原則更新了 iOS 11.1 的特定設定，但該裝置使用的是 iOS 10。 
 
 3. 若要在使用此原則的裝置上查看詳細資料，請選取其中一個狀態。 例如，選取 [成功]  。 在下一個視窗中會列出特定裝置詳細資料，包括裝置名稱與部署狀態。
 

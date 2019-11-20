@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8336f5b29cd21bb6875285177071542080eb95f3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509447"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713183"
 ---
 # <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>在 Intune 管理的 iOS 裝置上登出目前的使用者
 
@@ -41,9 +41,7 @@ ms.locfileid: "72509447"
 
 ## <a name="how-to-log-out-the-current-user"></a>如何登出目前的使用者
 
-1. 登入 Azure 入口網站。
-2. 選擇 [更多服務]   > [監視 + 管理]   > [Intune]  。
-3. 在 [Intune]  刀鋒視窗中，選擇 [裝置]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選取 [裝置]  。
 4. 在 [裝置和群組]  刀鋒視窗中選擇 [所有裝置]  。
 5. 從您管理的裝置清單中選擇 iOS 裝置，然後選擇 [登出目前的使用者]  裝置遠端動作。
 

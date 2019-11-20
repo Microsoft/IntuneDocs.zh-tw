@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ff1dc2565ef52f81619abe8f14e78c58da0fce7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 294f06b078b06cfba9376ba6db0eb42cb884e141
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72508626"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712315"
 ---
 # <a name="use-fresh-start-to-reset-windows-10-devices-with-intune"></a>透過 Intune 使用「重新開始」重設 Windows 10 裝置
 
@@ -30,7 +30,7 @@ ms.locfileid: "72508626"
 
 [全新開始]  裝置動作會移除安裝在執行 Windows 10 1703 版或更新版本之電腦上的任何應用程式。 [全新開始] 有利於移除一般新電腦會有的預先安裝 (OEM) 應用程式。 
 
-1. 登入 [Azure 入口網站](https://portal.azure.com) 並移至 > [Microsoft Intune]   > [裝置]   > [所有裝置]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選取 [裝置]   > [所有裝置]  。
 2. 從您管理的裝置清單中，選擇 Windows 10 電腦裝置。
 3. 按一下 [全新開始]  。 
 4. 選取 [保留此裝置上的使用者資料]  到：

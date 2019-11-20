@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/11/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: b399fba0-5dd4-4777-bc9b-856af038ec41
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d3cae06c3ce763fe8ca94bbed9bf35e8abef52c
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f0b5e67c433f2d3633219650f48307dccae196e9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502610"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713286"
 ---
 # <a name="app-based-conditional-access-with-intune"></a>搭配 Intune 使用以應用程式為基礎的條件式存取
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 [Intune 應用程式保護原則](../apps/app-protection-policy.md)可協助保護您已在 Intune 中註冊之裝置上的公司資料。 您也可以在未向 Intune 註冊管理之員工擁有的裝置上，使用應用程式保護原則。 在此情況下，即使您的公司未管理裝置，仍然需要確定公司資料和資源受到保護。
 
@@ -39,6 +37,7 @@ ms.locfileid: "72502610"
 當您只允許 Microsoft Outlook 應用程式存取 Exchange Online 時，可以封鎖 iOS 和 Android 上內建的郵件應用程式。 此外，您可以封鎖沒有套用 Intune 應用程式保護原則的應用程式，阻擋它們存取 SharePoint Online。
 
 ## <a name="prerequisites"></a>必要條件
+
 在您建立以應用程式為基礎的條件式存取原則之前，必須先擁有：
 
 - **Enterprise Mobility + Security (EMS)** 或 **Azure Active Directory (AD) Premium 訂用帳戶**
@@ -57,7 +56,7 @@ ms.locfileid: "72502610"
 在此範例中，管理員已經將應用程式保護原則套用至 Outlook 應用程式，接著套用條件式存取規則以將 Outlook 應用程式新增到可在存取公司電子郵件時使用之應用程式的核准清單中。
 
 > [!NOTE]
-> 下方的流程圖結構可以用於其他受管理的應用程式。
+> 下列流程圖可用於其他受控應用程式。
 
 ![說明以應用程式為基礎的條件式存取程序的流程圖](./media/app-based-conditional-access-intune/ca-intune-common-ways-3.png)
 

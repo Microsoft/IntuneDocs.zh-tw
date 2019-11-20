@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/22/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 271b49a4c927bccb5cd967ea99b0d7bd5c2bd515
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b7d09700847eae6a43111b0a4e865522f01862b9
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72492348"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73755158"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>使用 Intune 以專用 Kiosk 執行的 Windows 10 和 Windows Holographic for Business 裝置設定
 
@@ -39,8 +39,8 @@ Intune 會使用「組態設定檔」，依據貴組織的需求來建立和自�
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
    - **名稱**：為新的設定檔輸入描述性名稱。
@@ -60,7 +60,7 @@ Intune 會使用「組態設定檔」，依據貴組織的需求來建立和自�
       - [Windows 10 Kiosk 設定](kiosk-settings-windows.md)
       - [Windows Holographic for Business Kiosk 設定](kiosk-settings-holographic.md)
 
-5. 當您完成時，請選取 [確定]   > [建立]  儲存變更。 
+5. 當您完成時，請選取 [確定]   > [建立]  儲存變更。
 
 設定檔隨即建立，並顯示在設定檔清單中。 接下來，請[指派](device-profile-assign.md)此設定檔。
 

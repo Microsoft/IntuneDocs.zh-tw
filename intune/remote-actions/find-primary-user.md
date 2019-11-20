@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d6f594e20abf1a507d1d4e00641a4821fe1ba9b0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509340"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712254"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>尋找 Intune 裝置的主要使用者
 
@@ -30,7 +30,7 @@ ms.locfileid: "72509340"
 
 ## <a name="how-to-find-a-devices-primary-user"></a>如何尋找裝置的主要使用者
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]  > 選擇裝置。
 3. 在 [概觀]  頁面上，選擇 [查看更多]  ，您將會看到列出的主要使用者。
 

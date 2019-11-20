@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 22a957e6df2c7f9126cbe9f22c4f3a96213551d3
-ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
+ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72892580"
+ms.lasthandoff: 11/06/2019
+ms.locfileid: "73709912"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune
 
 您必須先將應用程式新增至 Intune，才可以部署、設定、監視或保護它們。 其中一個可用的[應用程式類型](~/apps/apps-add.md#app-types-in-microsoft-intune)是 Microsoft Edge 77 版和更新版本  。 藉由在 Intune 中選取此應用程式類型，您可以指派 Microsoft Edge *77 版和更新版本*，並將其安裝到您所管理且執行 Windows 10 的裝置。
 
 > [!IMPORTANT]
-> 此應用程式類型處於**公開預覽**，並提供 Windows 10 的開發人員和搶鮮版 (Beta) 通道。 部署僅限英文 (EN)，不過，終端使用者可以在瀏覽器中的 [設定]   > [語言]  下變更顯示語言。 Microsoft Edge 是一個 Win32 應用程式，安裝在系統內容和類似的架構 (x86 OS 上的 x86 應用程式，以及 x64 OS 上的 x64 應用程式) 上。 此外，Edge 的自動更新預設會 [開啟]  ，而且無法解除安裝 Edge。
+> 此應用程式類型處於**公開預覽**，並提供 Windows 10 的開發人員和搶鮮版 (Beta) 通道。 部署僅限英文 (EN)，不過，終端使用者可以在瀏覽器中的 [設定]   > [語言]  下變更顯示語言。 Microsoft Edge 是一個 Win32 應用程式，安裝在系統內容和類似的架構 (x86 OS 上的 x86 應用程式，以及 x64 OS 上的 x64 應用程式) 上。 Intune 會偵測任何預先存在的 Microsoft Edge 安裝。 如果其安裝在使用者內容中，則系統安裝將會加以覆寫。 如果是安裝在系統內容中，就會回報安裝成功。 此外，Microsoft Edge 的自動更新預設會 [開啟]  ，且無法解除安裝 Microsoft Edge。
 
 > [!NOTE]
 > Microsoft Edge *77 版和更新版本*也適用於 macOS。

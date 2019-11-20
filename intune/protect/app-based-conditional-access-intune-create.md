@@ -6,52 +6,65 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 02/22/2019
+ms.date: 11/06/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d1693515-de18-4553-91ef-801976cd3ec7
-ms.reviewer: chrisgre
+ms.reviewer: elocholi
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94e9fcc77f8260c4a63150b5d0aef033677c524a
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 465f8b0001e5e2a049a3ffe12469bdb5057854ec
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509683"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73712833"
 ---
 # <a name="set-up-app-based-conditional-access-policies-with-intune"></a>使用 Intune 設定以應用程式為基礎的條件式存取原則
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
 為屬於已核准應用程式清單之一部分的應用程式，設定以應用程式為基礎的條件式存取原則。 已核准應用程式清單包含 Microsoft 已測試的應用程式。
+
+需要先將 [Intune 應用程式防護原則](../apps/app-protection-policies.md)套用至應用程式，才能使用以應用程式為基礎的條件式存取原則。
 
 > [!IMPORTANT]
 > 本文將逐步解說新增以應用程式為基礎之條件式存取原則的步驟。 從核准的應用程式清單中新增應用程式 (例如 SharePoint Online、Microsoft Teams 和 Microsoft Exchange Online) 時，您可以使用相同的步驟。
 
 ## <a name="create-app-based-conditional-access-policies"></a>建立以應用程式為基礎的條件式存取原則
-條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。 這表示您不需要為了設定原則在 Intune 與 Azure AD 之間切換。
 
-> [!IMPORTANT]
-> 您需要有 Azure AD Premium 授權，才能從 Intune 入口網站建立條件式存取原則。
+條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。 因為其是相同節點，所以不需要為了設定原則而在 Intune 與 Azure AD 之間切換。
+
+必須擁有 Azure AD Premium 授權，才能從 Microsoft Endpoint Manager 系統管理中心建立條件式存取原則。
 
 ### <a name="to-create-an-app-based-conditional-access-policy"></a>建立以應用程式為基礎的條件式存取原則
 
-> [!IMPORTANT]
-> 您需要先將 [Intune 應用程式防護原則](../apps/app-protection-policies.md)套用至應用程式，才能使用以應用程式為基礎的條件式存取原則。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)
 
-1. 在 [Intune 儀表板]  中，選取 [條件式存取]  。
+2. 選取 [端點安全性]   > [條件式存取]   > [新增原則]  。
 
-2. 在 [原則]  窗格中，選擇 [新增原則]  來建立新的以應用程式為基礎的條件式存取原則。
+3. 輸入原則 [名稱]  ，然後在 [指派]  底下選取 [使用者和群組]  。 使用 [包含] 或 [排除] 選項來針對原則新增群組，並選取 [完成]  。
 
-4. 在您輸入原則名稱並在 [指派]  區段中設定可用的設定之後，接著選擇 [存取控制]  區段下的 [授與]  。
+4. 選取 [雲端應用程式或動作]  ，然後選擇要保護哪些應用程式。 例如，選擇 [選取應用程式]  ，然後選取 [Office 365 SharePoint Online]  和 [Office 365 Exchange Online]  。
 
-5. 依序選擇 [需要經過核准的用戶端應用程式]  、[選取]  和 [建立]  儲存新的原則。
+   按一下 [完成]  以儲存您的變更。
+
+5. 選取 [條件]   > [用戶端應用程式]  來將原則套用至應用程式和瀏覽器。 例如，選取 [是]  ，然後啟用 [瀏覽器]  和 [行動應用程式及桌面用戶端]  。
+
+   按一下 [完成]  以儲存您的變更。
+
+6. 在 [存取控制]  底下，選取 [授與]  以根據裝置合規性套用條件式存取。 例如，選取 [授與存取權]   > [裝置需要標記為合規]  。
+
+   選擇 [選取]  以儲存您的變更。
+
+7. 針對 [啟用原則]  ，選取 [開啟]  ，然後選取 [建立]  以儲存變更。
+
+
+
+
 
 ## <a name="next-steps"></a>後續步驟
 [封鎖沒有新式驗證的應用程式](app-modern-authentication-block.md)

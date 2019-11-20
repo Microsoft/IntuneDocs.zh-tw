@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99f27992009332a2a5fae0768225d8c69d3ac5ad
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
+ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509406"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73713436"
 ---
 # <a name="turn-on-ios-supervised-mode"></a>開啟 iOS 受監管模式
 
@@ -37,7 +37,7 @@ Intune 在 Apple [裝置註冊計劃 (DEP)](../enrollment/device-enrollment-prog
 
 ## <a name="turn-on-supervised-mode-during-enrollment"></a>在註冊期間開啟受監管模式
 
-在 Intune 中，您可以在[於 DEP 中建立 Apple 註冊設定檔](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)時為裝置開啟受監管模式。 在 [裝置管理設定]  下，選取 [受監督]  方塊。
+在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，您可以在[於 DEP 中建立 Apple 註冊設定檔](../enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)時為裝置開啟受監督模式。 在 [裝置管理設定]  下，選取 [受監督]  方塊。
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>在註冊之後開啟受監管模式
 

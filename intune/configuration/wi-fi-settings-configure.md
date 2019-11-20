@@ -5,22 +5,23 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a794d724fe162ad7d464760661fecb45bd874431
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 589fc32db22de02f70ba78f79ebb413a31e92f1d
+ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72506444"
+ms.lasthandoff: 11/07/2019
+ms.locfileid: "73754851"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 Wi-Fi 設定並在您的裝置上使用
 
@@ -49,8 +50,9 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
-2. 輸入下列內容：
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+3. 輸入下列內容：
 
     - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好的設定檔名稱為**整個公司的 WiFi 設定檔**。
     - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
@@ -70,7 +72,7 @@ Wi-Fi 設定檔支援下列裝置平台：
       > - 針對以專用裝置 (kiosk) 形式執行的 **Android 企業**裝置，您可以選擇 [僅限裝置擁有者]   > [Wi-Fi]  。
       > - 針對 **Windows 8.1 和更新版本**，您可以選擇 [Wi-Fi 匯入]  。 此選項可讓您以先前從不同裝置所匯出的 XML 檔案方式匯入 Wi-Fi 設定。
 
-3. 每個平台的部分 Wi-Fi 設定會不一樣。 若要查看特定平台的設定，請選擇您的平台：
+4. 每個平台的部分 Wi-Fi 設定會不一樣。 若要查看特定平台的設定，請選擇您的平台：
 
     - [Android](wi-fi-settings-android.md)
     - [Android 企業](wi-fi-settings-android-enterprise.md)，包括專用裝置
@@ -79,7 +81,7 @@ Wi-Fi 設定檔支援下列裝置平台：
     - [Windows 10 及更新版本](wi-fi-settings-windows.md)
     - [Windows 8.1 和更新版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
 
-4. 完成後，請選取 [建立設定檔]   > [建立]  。
+5. 完成後，請選取 [建立設定檔]   > [建立]  。
 
 此時會建立設定檔，並顯示在設定檔清單 ([裝置設定]   > [設定檔]  ) 中。
 

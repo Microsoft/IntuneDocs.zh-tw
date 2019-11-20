@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf2a8e55963dd3da98e20f5700a464d00c3c62a9
-ms.sourcegitcommit: 4bf23327af734a9811d555fbd566c31239e2acd6
+ms.openlocfilehash: d223fb0cac7ad7435366db70bbb5bf4117216aa0
+ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "72999473"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "73983973"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -50,7 +50,7 @@ ms.locfileid: "72999473"
 ### <a name="encryption"></a>加密
 | 設定 | 如何使用 | 預設值 |
 |------|------|------|
-| **加密組織資料** | 選擇 [需要]  ，在這個應用程式中啟用公司或學校資料的加密。 Intune 可搭配使用 OpenSSL 256 位元 AES 加密配置與 Android 金鑰儲存區系統，安全地加密應用程式資料。 資料會在檔案 I/O 工作期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。 新檔案將會以 256 位元的金鑰進行加密。 現有的 128 位元加密檔案將會針對 256 位元金鑰進行移轉嘗試，但該程序不一定會成功。 以 128 位元金鑰加密的檔案將會維持可讀取性。 <br><br> 加密方法符合 FIPS 140-2 規範。     |  **需要**|  
+| **加密組織資料** | 選擇 [需要]  ，在這個應用程式中啟用公司或學校資料的加密。 Intune 可搭配使用 OpenSSL 256 位元 AES 加密配置與 Android 金鑰儲存區系統，安全地加密應用程式資料。 資料會在檔案 I/O 工作期間，以同步方式加密。 裝置儲存空間上的內容將一律加密。 新檔案將會以 256 位元的金鑰進行加密。 現有的 128 位元加密檔案將會針對 256 位元金鑰進行移轉嘗試，但該程序不一定會成功。 以 128 位元金鑰加密的檔案將會維持可讀取性。 <br><br> 此加密方法已通過 FIPS 140-2 驗證；如需詳細資訊，請參閱 [OpenSSL FIPS Library and Android Guide](https://wiki.openssl.org/images/7/76/OpenSSL_FIPS_Library_and_Android_Guide.pdf) (OpenSSL FIPS Library 和 Android Guide)。     |  **需要**|  
 | <ul><ui>**加密已註冊之裝置上的組織資料** | 選取 [需要]  以強制在所有裝置上使用 Intune 應用程式層加密來加密組織資料。 選取 [不需要]  以不強制在所有已註冊的裝置上使用 Intune 應用程式層加密來加密組織資料。| **需要** |
 
 
@@ -124,7 +124,7 @@ ms.locfileid: "72999473"
 | **最低 OS 版本** | 指定要求使用此應用程式的最低 Android 作業系統。 「動作」  包括： <br><ul><li>**警告** - 如果裝置上的 Android 版本不符合需求，使用者將會看見通知。 此通知可以關閉。  </li></ul> <ul><li>**封鎖存取** - 如果裝置上的 Android 版本不符合需求，將會禁止使用者存取。</li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。  </li></ul> </li></ul>此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。 |
 | **最低應用程式版本** | 指定作業系統最小值。 「動作」  包括： <br><ul><li>**警告** - 如果裝置上的應用程式版本不符合需求，使用者會看見通知。 此通知可以關閉。</li></ul> <ul><li>**封鎖存取** - 如果裝置上的應用程式版本不符合需求，會封鎖使用者進行存取。 </li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> </li></ul> 因為應用程式之間通常會有不同的版本控制配置，所以請建立包含一個針對單一應用程式之最低應用程式版本的原則 (例如，「Outlook 版本原則」  )。<br><br> 此項目可以出現多次，每個執行個體支援不同的動作。<br><br> 此原則設定格式支援 major.minor、major.minor.build、major.minor.build.revision。<br><br> 此外，您可以設定終端使用者可從**何處**取得企業營運 (LOB) 應用程式的更新版本。 終端使用者將可在 [應用程式最小版本]  條件式啟動對話方塊中看見此功能，其將提示終端使用者更新為 LOB 應用程式的最小版本。 在 Android 上，此功能會使用公司入口網站。 若要設定終端使用者應該更新 LOB 應用程式的位置，應用程式需要使用金鑰 `com.microsoft.intune.myappstore` 傳送給它的受控[應用程式設定原則](app-configuration-policies-managed-app.md)。 傳送的值將定義終端使用者要從哪個存放區下載應用程式。 如果透過公司入口網站部署應用程式，則值必須為 `CompanyPortal`。 針對任何其他存放區，您必須輸入完整的 URL。 |
 | **最低修補程式版本** | 要求裝置具有由 Google 發行的最低 Android 安全性修補程式。  <br><ul><li>**警告** - 如果裝置上的 Android 版本不符合需求，使用者將會看見通知。 此通知可以關閉。  </li></ul> <ul><li>**封鎖存取** - 如果裝置上的 Android 版本不符合需求，將會禁止使用者存取。</li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。  </li></ul></li></ul> 此原則設定支援 *YYYY-MM-DD* 的日期格式。 |
-| **裝置製造商** | 指定以分號分隔的製造商清單。 避免在多個值的清單中有空格。 這些值不會區分大小寫。 「動作」  包括： <br><ul><li>**允許指定 (封鎖非指定)** - 僅有符合指定製造商的裝置可以使用應用程式。 會封鎖所有其他裝置。 </li></ul> <ul><li>**允許指定 (抹除非指定)** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> 如需使用此設定的詳細資訊，請參閱[條件式啟動動作](app-protection-policies-access-actions.md#android-policy-settings)。 |
+| **裝置製造商** | 指定以分號分隔的製造商清單。 這些值不會區分大小寫。 「動作」  包括： <br><ul><li>**允許指定 (封鎖非指定)** - 僅有符合指定製造商的裝置可以使用應用程式。 會封鎖所有其他裝置。 </li></ul> <ul><li>**允許指定 (抹除非指定)** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> 如需使用此設定的詳細資訊，請參閱[條件式啟動動作](app-protection-policies-access-actions.md#android-policy-settings)。 |
 | **SafetyNet 裝置證明** | 應用程式保護原則支援 Google Play Protect 的部分 API。 特別的是，此設定會在終端使用者裝置上設定 Google 的 SafetyNet 證明。 指定 [基本完整性]  或是 [基本完整性和經認證的裝置]  。 [基本完整性]  會告訴您有關裝置的一般完整性。 Root 破解的裝置、模擬器、虛擬裝置，以及具有竄改跡象的裝置都無法通過基本完整性。 [基本完整性和經認證的裝置]  會告訴您有關裝置與 Google 服務的相容性。 只有經過 Google 認證且未修改的裝置可以通過這項檢查。 「動作」  包括： <br><ul><li>**警告** - 如果裝置不符合根據所設定值的 Google SafetyNet 證明掃描，使用者會看到通知。 此通知可以關閉。 </li></ul><ul><li>**封鎖存取** - 如果裝置不符合根據所設定值的 Google SafetyNet 證明掃描，使用者會遭到封鎖存取。 </li></ul> <ul><li>**抹除資料** - 與應用程式建立關聯的使用者帳戶會從裝置抹除。 </li></ul> </li></ul> 如需此設定相關的常見問題集，請參閱[關於 MAM 和應用程式防護的常見問題集](mam-faq.md#app-experience-on-android)。 |
 | **需要對應用程式進行威脅掃描** | 應用程式保護原則支援 Google Play Protect 的部分 API。 此設定尤其可確保 Google 的驗證應用程式掃描已針對終端使用者裝置開啟。 如果設定，終端使用者將會遭到封鎖存取，直到他們在其 Android 裝置上開啟 Google 的應用程式掃描為止。 「動作」  包括： <br><ul><li>**警告** - 如果裝置上的 Google 驗證應用程式掃描未開啟，使用者會看到通知。 此通知可以關閉。 </li></ul><ul><li>**封鎖存取** - 如果裝置上的 Google 驗證應用程式掃描未開啟，使用者會遭到封鎖存取。 </li></ul></li></ul> Google 驗證應用程式掃描結果會顯示在主控台中的 [可能有害的應用程式]  報表。 |
 | **最低公司入口網站版本** | 透過使用 [最低公司入口網站版本]  ，您可以指定在終端使用者裝置上強制要求公司入口網站的特定最小定義版本。 此條件式啟動設定可讓您將值設定為 [封鎖存取]  、[抹除資料]  ，與 [警告]  ，作為未符合每個值時的可能動作。 此值的可能格式遵循模式 [主要].[次要]  、[主要].[次要].[組建]  或 [主要].[次要].[組建].[修訂]  。 由於某些使用者可能不想立即強制更新應用程式，[警告] 選項可能是此設定的理想選項。 Google Play 商店可以只傳送應用程式更新的差異位元組，但這可能仍然是大量資料，如果更新時使用者使用的是行動數據，他們可能不會想要使用這些資料。 強制更新並因此下載更新的應用程式，可能會在更新時產生未預期的行動數據費用。 如需詳細資訊，請參閱 [Android 原則設定](~/apps/app-protection-policies-access-actions.md#android-policy-settings)。 |
