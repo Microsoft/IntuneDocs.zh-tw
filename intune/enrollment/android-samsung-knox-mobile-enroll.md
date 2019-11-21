@@ -116,15 +116,15 @@ Associate a Knox license with this profile \(將 Knox 授權與此設定檔相�
 
 ## <a name="distribute-devices"></a>散發裝置
 
-在建立及指派 MDM 設定檔，關聯使用者名稱，並將裝置識別為公司所擁有的裝置之後，您便可以將裝置散發給使用者。
+在建立及指派 MDM 設定檔，關聯使用者名稱，並在 Intune 中將裝置識別為公司所擁有的裝置之後，您便可以將裝置散發給使用者。
 
 是否仍需要協助？ 請參閱完整的 [KME 使用者指南](https://docs.samsungknox.com/KME-Getting-Started/Content/get-started.htm) \(英文\)。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-- **裝置擁有者支援：**  - **裝置擁有者支援：** Intune 支援使用 KME 入口網站註冊專用且完全受控的裝置。 其他 Android Enterprise 裝置擁有者模式將在 Intune 中可用時受支援。
+- **裝置擁有者支援：** Intune 支援使用 KME 入口網站註冊專用且完全受控的裝置。 其他 Android Enterprise 裝置擁有者模式將在 Intune 中可用時受支援。
 
-- **不支援工作設定檔：** KME 是一種公司裝置註冊方法，在 Android 工作設定檔中註冊的裝置可確保工作和個人資料在個人裝置上是分開的。 因此，在 Intune 中不支援使用 KME 的工作設定檔裝置註冊。
+- **不支援工作設定檔：** KME 是一種企業裝置註冊方法，在 Android 工作設定檔中註冊的裝置可確保工作和個人資料在個人裝置上是分開的。 因此，在 Intune 中不支援使用 KME 將裝置註冊至工作設定檔。
 
 - **重設成出廠預設值以註冊 Android Enterprise：** 如果要重新安排已經設定的裝置，需要在向 Android Enterprise 註冊時，重設成出廠預設值。
 

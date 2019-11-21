@@ -80,7 +80,7 @@ ms.locfileid: "74059832"
 
 設定檔會顯示在設定檔清單中。 接著，請[指派此設定檔](../device-profile-assign.md)給使用者群組。 此原則僅能指派給使用者群組。
 
-每個裝置下一次簽入時，都會套用此原則，並在裝置上建立 Wi-Fi 設定檔。 然級裝置就可以自動連線到網路。
+每個裝置下一次簽入時，都會套用此原則，並在裝置上建立 Wi-Fi 設定檔。 然後裝置就可以自動連線到網路。
 
 ## <a name="android-or-windows-wi-fi-profile-example"></a>Android 或 Windows Wi-Fi 設定檔範例
 
