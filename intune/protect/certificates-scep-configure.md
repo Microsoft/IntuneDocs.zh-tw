@@ -115,7 +115,7 @@ Intune 支援使用簡單憑證註冊通訊協定 (SCEP) 來[驗證與您應用�
 
 ### <a name="access-your-issuing-ca"></a>存取您的發行 CA
 
-1. 使用具有充分權限管理 CA 的網域帳戶來登入您的發行 CA。
+1. 使用具有權限管理 CA 的網域帳戶來登入您的發行 CA。
 
 2. 開啟憑證授權單位 Microsoft Management Console (MMC)。 您可以**執行** 'certsrv.msc'，或在 [伺服器管理員]  中按一下 [工具]  ，然後按一下 [憑證授權單位]  。
 

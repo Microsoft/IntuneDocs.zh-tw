@@ -41,7 +41,7 @@ ms.locfileid: "72584950"
 
 ## <a name="before-you-start"></a>開始之前
 - 確定您已將 Intune 租用戶連線到受控 Google Play。  如需詳細資訊，請參閱[將您的 Intune 帳戶連結到受控 Google Play 帳戶](../enrollment/connect-intune-android-enterprise.md)。
-- 如果您想要註冊工作設定檔裝置，請確定您已在 Azure 入口網站的 [裝置註冊]  工作負載中設定 Intune 與 Android 工作設定檔以搭配使用。 如需詳細資訊，請參閱[註冊 Android 裝置](../enrollment/android-work-profile-enroll.md)。
+- 如果您想要註冊工作設定檔裝置，請確定您已在 Azure 入口網站的 [裝置註冊] 工作負載中，將 Intune 與 Android 工作設定檔設定為協同作業。  如需詳細資訊，請參閱[註冊 Android 裝置](../enrollment/android-work-profile-enroll.md)。
 
 >[!NOTE]
 >當您使用 Microsoft Intune 時，建議使用 Microsoft Edge 或 Google Chrome 瀏覽器。
@@ -80,7 +80,7 @@ ms.locfileid: "72584950"
 > [!IMPORTANT]
 > 下面提供的資訊是使用 Intune 新增受控 Google Play 應用程式的另一種方法，如上所述。
 
-1. 前往[受控 Google Play 商店](https://play.google.com/work)。 使用您用來設定 Intune 與 Android Enterprise 之間連線的相同帳戶進行登入。
+1. 前往[受控 Google Play 商店](https://play.google.com/work)。 使用與您用來設定 Intune 與 Android 企業間連線的相同帳戶進行登入。
 2. 搜尋市集並選取您要使用 Intune 指派的應用程式。
 3. 在顯示應用程式的頁面上，選取 [核准]  。  
     在下列範例中，已經選擇 Microsoft Excel 應用程式。
@@ -128,18 +128,18 @@ ms.locfileid: "72584950"
 
 ### <a name="managed-google-play-private-lob-app-publishing-using-the-google-developer-console"></a>使用 Google 開發人員主控台發佈受控 Google Play 私人 (LOB) 應用程式
 
-1. 使用您用來設定 Intune 與 Android Enterprise 之間連線的相同帳戶來登入 [Google Play 開發人員控制台](https://play.google.com/apps/publish)。  
+1. 使用與您用來設定 Intune 和 Android 企業間連線的相同帳戶來登入 [Google Play Developer Console](https://play.google.com/apps/publish)。  
     如果您是第一次登入，則必須註冊並支付費用，才能成為 Google 開發人員計劃的會員。
 2. 在主控台中，選取 [加入新的應用程式]  。
-3. 您可以透過用來將任何應用程式發行至 Google Play 商店的相同方式，來上傳及提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<組織名稱>) 使用此應用程式]  。
+3. 您可以用與發行應用程式至 Google Play 商店的相同方式，上傳並提供應用程式的相關資訊。 不過，您必須選取 [只讓我的組織 (<組織名稱>) 使用此應用程式]  。
 
     ![只將應用程式提供給您組織使用](./media/apps-add-android-for-work/restrict.png)
 
-    這項作業只會將應用程式提供給您的組織使用。 在公用 Google Play 商店上則不提供該應用程式。
+    這項作業會讓應用程式僅提供給您的組織使用。 在公用 Google Play 商店上則不提供該應用程式。
 
     如需如何上傳及發行 Android 應用程式的詳細資訊，請參閱 [Google Developer Console 說明](https://support.google.com/googleplay/android-developer/answer/113469)。
-4. 發佈您的應用程式之後，使用您用來設定 Intune 與 Android Enterprise 間連線的相同帳戶來登入[受控 Google Play 商店](https://play.google.com/work)。
-5. 在商店的 [應用程式]  節點中，確認您可以看見自已發行的應用程式。  
+4. 發佈您的應用程式之後，使用與您用來設定 Intune 與 Android 企業間連線的相同帳戶來登入[受控 Google Play 商店](https://play.google.com/work)。
+5. 在商店的 [應用程式]  節點中，確認您可以看見自己發行的應用程式。  
     應用程式會自動通過核准，以與 Intune 同步處理。
 
 ## <a name="managed-google-play-web-links"></a>受控 Google Play 網頁連結
@@ -170,7 +170,7 @@ ms.locfileid: "72584950"
 3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
 4. 在 [用戶端應用程式]  工作負載窗格的 [安裝]  底下，選取 [受控 Google Play]  。
 5. 在 [受控 Google Play]  窗格中，選擇 [重新整理]  。  
-    此頁面會更新上一次同步的時間和狀態。
+    此頁面會更新最近一次同步的時間和狀態。
 6. 在 [用戶端應用程式]  工作負載窗格中，選取 [應用程式]  。  
     隨即會顯示新的可用受控 Google Play 應用程式。
 
@@ -178,7 +178,7 @@ ms.locfileid: "72584950"
 
 當此應用程式顯示在 [用戶端應用程式]  工作負載窗格的 [應用程式授權]  節點中時，您就可以透過將應用程式指派給使用者群組，[如同指派任何其他應用程式一樣予以指派](/intune-azure/manage-apps/deploy-apps)。
 
-在您指派應用程式之後，它就會安裝 (或可供安裝) 在目標使用者的裝置上。 而不會要求裝置的使用者核准安裝。 如需 Android Enterprise 工作設定檔裝置的詳細資訊，請參閱[設定 Android Enterprise 工作設定檔裝置的註冊](../enrollment/android-work-profile-enroll.md)。 
+在您指派應用程式之後，它就會安裝 (或可供安裝) 在目標使用者的裝置上。 並且不會經過裝置使用者的核准。 如需 Android Enterprise 工作設定檔裝置的詳細資訊，請參閱[設定 Android Enterprise 工作設定檔裝置的註冊](../enrollment/android-work-profile-enroll.md)。 
 
 > [!NOTE] 
 > 只有已獲指派的應用程式才會顯示於終端使用者的受控 Google Play 商店中。 因此，這是系統管理員在使用受控 Google Play 設定應用程式時應採取的重要步驟。
@@ -195,18 +195,18 @@ ms.locfileid: "72584950"
 ## <a name="manage-android-enterprise-app-permissions"></a>管理 Android Enterprise 應用程式權限
 Android Enterprise 會要求您先在受控 Google Play Web 主控台中核准應用程式，然後才能利用 Intune 同步它們，並將它們指派給使用者。 由於 Android Enterprise 可讓您以無訊息模式自動將應用程式推送到使用者的裝置，因此，您必須代表您的所有使用者接受應用程式權限。 使用者在安裝應用程式時不會看到任何應用程式權限，因此請務必了解這些權限。
 
-當應用程式開發人員使用新版本應用程式更新權限時，即使您已核准先前的權限，也不會自動接受那些權限。 執行舊版本應用程式的裝置仍可以繼續使用該應用程式。 但是，在核准新的權限之前，不會升級應用程式。 在您核准應用程式的新權限之前，未安裝該應用程式的裝置不會安裝應用程式。 
+即使您已核准先前的權限，當應用程式開發人員使用新版本應用程式更新權限時，那些權限也不會自動接受。 執行舊版本應用程式的裝置仍可以繼續使用該應用程式。 但是，在核准新的權限之前，不會升級應用程式。 在您核准應用程式的新權限之前，未安裝該應用程式的裝置不會安裝應用程式。 
 
 ### <a name="update-app-permissions"></a>更新應用程式權限
 
-請定期造訪受管理的 Google Play 主控台來檢查新的權限。 您可以設定 Google Play 在需要新權限以使用核准的應用程式時，寄送電子郵件給您或其他使用者。 若您指派了應用程式，並發現它並未安裝在裝置上，請遵循下列步驟來檢查是否有新的權限：
+請定期造訪受控的 Google Play 主控台來檢查新的權限。 您可以設定當已核准的應用程式需要新權限時，讓 Google Play 寄送電子郵件給您或其他使用者。 若您指派了應用程式，並發現它並未安裝在裝置上，請遵循下列步驟來檢查是否有新的權限：
 
 1. 前往 [Google Play](https://play.google.com/work)。
 2. 使用您用來發行及核准應用程式的 Google 帳戶登入。
 3. 選取 [更新]  索引標籤，然後檢查任何應用程式是否需要更新。  
     任何列出的應用程式都需要新的權限，而且在套用新權限之前將不會指派。
 
-或者，您可以設定 Google Play，以每個應用程式為基礎，自動核准應用程式權限。
+或者，您可以設定讓 Google Play 針對每個應用程式，自動核准權限。
 
 ## <a name="additional-managed-google-play-app-reporting-for-android-enterprise-work-profile-devices"></a>Android Enterprise 工作設定檔裝置的其他受控 Google Play 應用程式報告
 
