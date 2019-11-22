@@ -54,7 +54,7 @@ Intune 包含裝置限制原則，可協助系統管理員控制 Android、iOS�
         - **macOS**
         - **Windows Phone 8.1**
         - **Windows 8.1 及更新版本**
-        - **Windows 10 及更新版本**
+        - **Windows 10 及以上版本**
 
     - **設定檔類型**：選取 [裝置限制]  。
 
