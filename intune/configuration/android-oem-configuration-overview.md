@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bacb7e26df8a5b0d6c7500b24a5e749a85ca62f2
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059636"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390846"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企業裝置與 OEMConfig
 
@@ -51,7 +51,7 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 > [!TIP]
 > 您只能將 OEMConfig 與支援這項功能的裝置搭配使用，並具有對應的 OEMConfig 應用程式。 請參閱您的 OEM 以取得特定的詳細資料。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 使用 OEMConfig 時，請注意下列資訊：
 
@@ -146,6 +146,11 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 | Datalogic | datalogic. oemconfig | [Datalogic OEMConfig 的使用者檔](https://datalogic.github.io/oemconfig/) |
 | Honeywell | honeywell. oemconfig |  |
 | Kyocera | jp kyocera. enterprisedeviceconfig |  |
+| Spectralink-條碼 | spectralink。 |  |
+| Spectralink-按鈕 | spectralink 按鈕 |  |
+| Spectralink-裝置 | spectralink. slnkdevicesettings  |  |
+| Spectralink-記錄 | spectralink. slnklogger |  |
+| Spectralink - VQO | spectralink. slnkvqo |  |
 
 -----------------
 
@@ -154,6 +159,6 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 > [!NOTE]
 > OEMConfig apps 必須在 Intune 內部上線，才能使用 OEMConfig 設定檔來設定。 一旦支援應用程式，您就不需要與 Microsoft 連線，就能在您的租使用者中設定它。 只要依照此頁面上的指示執行即可。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

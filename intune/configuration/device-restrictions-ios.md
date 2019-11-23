@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 391c5ac194d5dc7ddf492fe23907279cc4380d3d
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984130"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390849"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
 
@@ -34,7 +34,7 @@ ms.locfileid: "73984130"
 > [!TIP]
 > 這些設定會使用 Apple 的 MDM 設定。 如需這些設定的詳細資訊，請參閱[apple 的行動裝置管理設定](https://support.apple.com/guide/mdm/welcome/web)（開啟 apple 的網站）。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 [建立裝置限制組態設定檔](../device-restrictions-configure.md)。
 
@@ -130,9 +130,6 @@ ms.locfileid: "73984130"
     - iOS 11.3 與更新版本
 
 ## <a name="password"></a>密碼
-
-> [!NOTE]
-> 在未來的版本中，Intune UI 中的這些密碼設定會進行更新，以符合註冊類型。
 
 ### <a name="settings-apply-to-all-enrollment-types"></a>設定適用于：所有註冊類型
 
@@ -266,7 +263,7 @@ ms.locfileid: "73984130"
 - **所有購買專案都需要 ITunes Store 密碼**：**需要**使用者輸入每個應用程式內或 ITUNES 購買的 Apple ID 密碼。 [**未設定**] （預設）會允許購買，而不會每次都提示輸入密碼。
 - **應用程式內購買**：選擇 [封鎖]  以防止從市集進行應用程式內購買。 [未設定]  \(預設\) 會允許在正在執行的應用程式中進行市集購買。
 - **從 iBook Store 下載標記為成人作品的內容**：選擇 [封鎖]  以防止使用者從 iBook Store 下載標記為成人作品的媒體。 [未設定]  \(預設\) 會允許使用者下載「成人作品」類別的書籍。
-- **允許受管理的應用程式將連絡人寫入非受控連絡人帳戶**：當設定為 [**允許**] 時，受管理的應用程式（例如 Outlook 行動應用程式）可以將連絡人資訊（包括商務和公司連絡人）儲存或同步至內建的 iOS 連絡人相關. 當設定為 [**未設定**] （預設）時，受管理的應用程式無法將連絡人資訊儲存或同步至裝置上的內建 iOS 連絡人應用程式。
+- **允許受管理的應用程式將連絡人寫入非受控連絡人帳戶**：當設定為 [**允許**] 時，受管理的應用程式（例如 Outlook 行動裝置應用程式）可以將連絡人資訊（包括商務和公司連絡人）儲存或同步至內建的 iOS 連絡人應用程式。 當設定為 [**未設定**] （預設）時，受管理的應用程式無法將連絡人資訊儲存或同步至裝置上的內建 iOS 連絡人應用程式。
   
   若要使用此設定，請將 [在非受控應用程式中檢視公司文件]  設定設為 [封鎖]  。
 
@@ -313,7 +310,7 @@ ms.locfileid: "73984130"
 - **Spotlight 搜尋傳回網際網路上的結果**：[封鎖]  可防止 Spotlight 傳回來自網際網路搜尋的任何結果。 [未設定]  (預設) 會允許 Spotlight 搜尋連線到網際網路以提供搜尋結果。
 
 - **Safari Cookie**：選擇裝置上處理 Cookie 的方式。 選項包括：
-  - 允許
+  - Allow
   - 封鎖所有 Cookie
   - 允許來自瀏覽網站的 Cookie
   - 允許來自目前網站的 Cookie
@@ -321,16 +318,6 @@ ms.locfileid: "73984130"
 - **Safari JavaScript**：[封鎖]  可防止在裝置上執行瀏覽器中的 JavaScript。 [**未設定**] （預設）允許 JAVA 腳本。
 
 - **Safari 快顯視窗**：[封鎖]  來停用網頁瀏覽器中的快顯封鎖程式。 [**未設定**] （預設）會允許快顯封鎖程式。
-
-- **Siri 命令的伺服器端記錄**：當設定為 [**停**用] 時，就會關閉伺服器端 Siri 記錄。 它也可以防止在 Siri 伺服器上記錄使用者要求。 [**未設定**] （預設）會在伺服器端記錄 Siri 命令。 此設定不會相依于封鎖或未設定的 Siri 設定。
-
-  本功能適用於：  
-  - iOS 12.2 與更新版本
-
-  > [!NOTE]
-  > Apple 已淘汰**Siri 命令的伺服器端記錄**設定。 在即將發行的版本中，會從 Intune 主控台移除這項設定。
-  >
-  > 此設定目前不會影響裝置，即使設定顯示在管理入口設定檔中也一樣。 若要從任何原則中刪除此設定，請開啟原則，進行次要變更，然後儲存原則。 原則會更新，並從 [裝置] 中刪除設定。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>設定適用于：自動裝置註冊（受監督）
 
@@ -621,7 +608,7 @@ ms.locfileid: "73984130"
 > 您必須先使用 Apple Configurator 工具或 Apple 裝置註冊方案，將裝置設為受監督模式，才可為 iOS 裝置設定 kiosk 模式。 請參閱 Apple 針對使用 Apple Configurator 工具的指南。
 > 如果您輸入的 iOS 應用程式在您指派設定檔之後安裝，則裝置在重新啟動之前將不會進入 kiosk 模式。
 
-## <a name="domains"></a>網域
+## <a name="domains"></a>Domains
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>設定適用于：裝置註冊、自動裝置註冊（受監督）
 
@@ -685,7 +672,7 @@ iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Co
 > - 新增 Game Center 朋友
 > - Siri
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
 
