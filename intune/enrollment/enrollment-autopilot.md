@@ -76,9 +76,9 @@ Autopilot 部署類型有四種：
     1. 針對 [群組類型]  ，請選擇 [安全性]  。
     2. 輸入**群組名稱**與**群組描述**。
     3. 針對 [成員資格類型]  ，選擇 [已指派]  或是 [動態裝置]  。
-3. 如果您在上一步中針對 [成員資格類型]  選擇 [已指派]  ，則在 [群組]  刀鋒視窗中，請選擇 [成員]  並將 Autopilot 裝置設備新增至群組。
+3. 如果您在上一步中針對 [成員資格類型]  選擇 [已指派]  ，請在 [群組]  刀鋒視窗中選擇 [成員]  並將 Autopilot 裝置新增至群組。
     尚未註冊的 Autopilot 裝置為裝置名稱與序號相同的裝置。
-4. 如果針對上述的 [成員資格類型]  選擇 [動態裝置]  ，則在 [群組]  刀鋒視窗中，請選擇 [動態裝置成員]  ，然後在 [進階規則]  方塊中輸入下列任意一項代碼。 這些規則只會收集 Autopilot 裝置，因為其目標屬性僅由 Autopilot 裝置所擁有。 根據非 Autopilot 屬性建立群組，並無法保證包含在該群組中的裝置實際上會註冊至 Autopilot。
+4. 如果針對上述的 [成員資格類型]  選擇 [動態裝置]  ，請在 [群組]  刀鋒視窗中選擇 [動態裝置成員]  ，然後在 [進階規則]  方塊中輸入下列任意一項代碼。 這些規則只會收集 Autopilot 裝置，因為其目標屬性僅由 Autopilot 裝置所擁有。 根據非 Autopilot 屬性建立群組，並無法保證包含在該群組中的裝置實際上會註冊至 Autopilot。
     - 若要建立包含您所有 Autopilot 裝置的群組，請輸入：`(device.devicePhysicalIDs -any _ -contains "[ZTDId]")`
     - Intune 的群組標籤欄位會對應至 Azure AD 裝置上的 OrderID 屬性。 若要建立包含具特定群組標籤 (Azure AD 裝置 OrderID) 之所有 Autopilot 裝置的群組，您必須輸入：`(device.devicePhysicalIds -any _ -eq "[OrderID]:179887111881")`
     - 若建立的群組要包含具有特定採購單識別碼的所有 Autopilot 裝置，請鍵入：`(device.devicePhysicalIds -any _ -eq "[PurchaseOrderId]:76222342342")`
@@ -151,7 +151,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>將使用者指派給特定 Autopilot 裝置
 
-您可以將使用者指派給特定 Autopilot 裝置。 此指派會在 Windows 安裝期間的[設定公司商標](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)登入頁面上，預先填入 Azure Active Directory 中的使用者。 它也可讓您設定自訂問候語名稱。 它不會預先填入或修改 Windows 登入。 只有具授權的 Intune 使用者可以透過此方式指派。
+您可以將使用者指派給特定 Autopilot 裝置。 此指派會在 Windows 安裝期間，[公司自創的](https://docs.microsoft.com/azure/active-directory/fundamentals/customize-branding)登入頁面上，預先填入 Azure Active Directory 中的使用者。 它也可讓您設定自訂問候語名稱。 它不會預先填入或修改 Windows 登入。 只有具授權的 Intune 使用者可以透過此方式指派。
 
 必要條件：已設定 Azure Active Directory 公司入口網站，並具有 Windows 10 1809 版或更新版本。
 
@@ -183,7 +183,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 您必須刪除 Intune 裝置、Azure Active Directory 裝置及 Windows Autopilot 裝置記錄，才能將裝置完全從您的租用戶移除。 這全都可以從 Intune 執行：
 
-1. 如果裝置已在 Intune 中註冊，則必須先[從 Intune [所有裝置] 刀鋒視窗予以刪除](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)。
+1. 如果裝置已在 Intune 中註冊，則必須先[從 Intune [所有裝置] 刀鋒視窗刪除](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)。
 
 2. 若要刪除 Azure Active Directory 裝置中的裝置，請前往 [裝置]   > [Azure AD 裝置]  。
 
@@ -200,7 +200,8 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 ## <a name="windows-autopilot-for-existing-devices"></a>現有裝置的 Windows Autopilot
 
-您可以在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來群組 Windows 裝置。 交互識別碼是 Autopilot 設定檔的參數。 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) 會自動設為相等的 "OfflineAutopilotprofile-\<correlator ID\>"。 這會允許使用 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。
+您可以在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，以交互識別碼來將 Windows 裝置分組
+。 交互識別碼是 Autopilot 設定檔的參數。 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) 會自動設為相等的 "OfflineAutopilotprofile-\<correlator ID\>"。 這會允許使用 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。
 
 >[!WARNING] 
 > 因為交互識別碼並未在 Intune 中預先列出，裝置可能會回報任何其希望的交互識別碼。 若使用者建立與 Autopilot 或 Apple DEP 設定檔名稱相符的交互識別碼，則裝置會新增至任何根據 enrollmentProfileName 屬性的動態 Azure AD 裝置群組。 若要避免此衝突：

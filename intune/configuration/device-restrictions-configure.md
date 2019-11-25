@@ -78,7 +78,7 @@ Intune 包含裝置限制原則，可協助系統管理員控制 Android、iOS�
 
 ## <a name="next-steps"></a>後續步驟
 
-建立設定檔之後，就可以指派它。 接下來，[指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
+建立設定檔之後即可加以指派。 接下來，[指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
 
 <!--  Removing image as part of design review; retaining source until we known the disposition.
 
