@@ -27,7 +27,7 @@ ms.locfileid: "73445320"
 
 *此文章適用於執行 iOS 的裝置*
 
-在需要智慧卡進行驗證或加密和簽署的環境中，您現在可以使用 Intune，透過衍生自使用者智慧卡的憑證來佈建行動裝置。 該憑證稱為「衍生認證」。 Intune [支援數個衍生認證簽發者](#supported-issuers)，但您一次只能針對每個租用戶使用單一簽發者。
+在需要智慧卡進行驗證或加密和簽署的環境中，您現在可以使用 Intune，透過衍生自使用者智慧卡的憑證來佈建行動裝置。 該憑證稱為「衍生認證」  。 Intune [支援數個衍生認證簽發者](#supported-issuers)，但您一次只能針對每個租用戶使用單一簽發者。
 
 衍生認證是適用於衍生個人識別驗證 (PIV) 認證的國家標準暨技術研究院 (NIST) 指導方針實作，是特殊發行集 (SP) 800-157 的一部分。
 
@@ -35,7 +35,7 @@ ms.locfileid: "73445320"
 
 - Intune 管理員會將其租用戶設定為與支援的衍生認證簽發者搭配使用。 您不需要在衍生認證簽發者的系統中設定任何 Intune 特定設定。
 
-- Intune 管理員會指定衍生認證作為下列物件的驗證方法：
+- Intune 管理員會指定衍生認證作為下列物件的驗證方法：  
 
   - 常用的設定檔類型，例如 Wi-Fi、VPN 和電子郵件，其中包括 iOS 原生郵件應用程式
 
@@ -61,9 +61,9 @@ Intune 支援下列 OS 平台上的衍生認證：
 
 Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intune 與下列簽發者搭配使用：
 
-- **DISA Purebred**：https://cyber.mil/pki-pke/purebred/
-- **Entrust Datacard**：https://www.entrustdatacard.com/
-- **Intercede**：https://www.intercede.com/
+- **DISA Purebred**： https://cyber.mil/pki-pke/purebred/
+- **Entrust Datacard**： https://www.entrustdatacard.com/
+- **Intercede**： https://www.intercede.com/
 
 如需使用不同簽發者的重要詳細資訊，請檢閱該簽發者的指引<!-- , including the issuers end-user workflow-->。 如需詳細資訊，請參閱此文章中的[規劃衍生認證](#plan-for-derived-credentials)。
 
@@ -160,7 +160,7 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 
 在您建立需要使用衍生認證的原則之前，請先在 Intune 主控台中設定認證簽發者。 衍生認證簽發者是整個租用戶的設定。 租用戶一次只支援單一簽發者。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定] > [衍生認證]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [衍生認證]  。
 
    ![在主控台中設定衍生認證](./media/derived-credentials/configure-provider.png)
 
@@ -181,13 +181,13 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
    - 當目前的認證接近到期時，取得新的衍生認證。
    - 使用衍生認證搭配 Wi-Fi、VPN、電子郵件或應用程式驗證，以及 S/MIME 簽署和加密的原則。
 
-6. 準備好時，請選取 [儲存] 以完成衍生認證簽發者的設定。
+6. 準備好時，請選取 [儲存]  以完成衍生認證簽發者的設定。
 
-儲存設定之後，除了 [衍生認證簽發者] 以外，您可以對所有欄位進行變更。  若要變更簽發者，請參閱[變更衍生認證簽發者](#change-the-derived-credential-issuer)。
+儲存設定之後，除了 [衍生認證簽發者]  以外，您可以對所有欄位進行變更。  若要變更簽發者，請參閱[變更衍生認證簽發者](#change-the-derived-credential-issuer)。
 
 ## <a name="deploy-the-disa-purebred-app"></a>部署 DISA Purebred 應用程式
 
-本節僅適用於使用 DISA Purebred 時。
+本節僅適用於使用 DISA Purebred 時  。
 
 若要使用 **DISA Purebred** 作為 Intune 的衍生認證簽發者，您必須取得 DISA Purebred 應用程式，然後使用 Intune 將應用程式部署至裝置。 裝置使用者會在其裝置上使用應用程式，以向 DISA Purebred 要求衍生認證。
 
@@ -209,7 +209,7 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 - [S/MIME 簽署和加密](certificates-s-mime-encryption-sign.md)
 - [Wi-Fi](../configuration/wi-fi-settings-ios.md)
 
-  針對 Wi-Fi 設定檔，只有在 [EAP 類型] 設定為下列其中一個值時，才可以使用驗證方法：
+  針對 Wi-Fi 設定檔，只有在 [EAP 類型]  設定為下列其中一個值時，才可以使用驗證方法  ：
   - EAP – TLS
   - EAP-TTLS
   - PEAP
@@ -218,17 +218,17 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 
 針對網站和應用程式使用衍生認證進行憑證型驗證。 若要提供應用程式驗證的衍生認證，請在 Intune 主控台中執行下列步驟：  
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定] > [設定檔]，然後選取 [建立設定檔]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [設定檔]  ，然後選取 [建立設定檔]  。
 
-2. 在 [名稱] 下，針對設定檔輸入易記名稱。
+2. 在 [名稱]  下，針對設定檔輸入易記名稱。
 
-3. 針對 [平台]，選取 [iOS]。
+3. 針對 [平台]  ，選取 [iOS]  。
 
-4. 針對 [設定檔類型]，選取 [衍生認證]。
+4. 針對 [設定檔類型]  ，選取 [衍生認證]  。
 
-5. 選取 [確定]，然後按一下 [建立]。
+5. 選取 [確定]  ，然後按一下 [建立]  。
 
-6. 選取 [指派] 以選擇應接收原則的群組。
+6. 選取 [指派]  以選擇應接收原則的群組。
  
 使用者會根據您在設定衍生認證簽發者時所指定的設定，接收應用程式或電子郵件通知。 通知會通知使用者啟動公司入口網站，以便處理衍生認證原則。
 
@@ -252,15 +252,15 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 > [!IMPORTANT]  
 > 如果您刪除簽發者並立即重新設定相同的簽發者，您仍然必須更新設定檔和裝置，以使用來自該簽發者的衍生認證。 在您刪除簽發者之前取得的衍生認證已不再有效。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定] > [衍生認證]。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [衍生認證]  。
 
-2. 選取 [刪除] 以移除目前的衍生認證簽發者。
+2. 選取 [刪除]  以移除目前的衍生認證簽發者。
 
 3. 設定新的簽發者。
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>更新使用衍生認證的設定檔
 
-當您刪除簽發者，然後新增一個新的之後，請編輯每個使用衍生認證的設定檔。 即使您還原先前的簽發者，也適用此規則。 設定檔的任何編輯都會觸發更新，包括針對設定檔 [描述] 進行簡單編輯。
+當您刪除簽發者，然後新增一個新的之後，請編輯每個使用衍生認證的設定檔。 即使您還原先前的簽發者，也適用此規則。 設定檔的任何編輯都會觸發更新，包括針對設定檔 [描述]  進行簡單編輯。
 
 ### <a name="update-derived-credentials-on-devices"></a>更新裝置上的衍生認證
 
