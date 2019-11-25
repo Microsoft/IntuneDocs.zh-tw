@@ -2,10 +2,10 @@
 title: 在 Microsoft Intune 中依網路位置繫結 Android 裝置 - Azure | Microsoft Docs
 description: 在 Microsoft Intune 中為 Android 裝置建立或設定網路位置。 您可以依據裝置的網路位置將裝置標示為不符合規範。 如果裝置離開網路位置，您可以封鎖對公司資源的存取。
 keywords: ''
-author: MandiOhlinger
-ms.author: mandia
+author: Brenduns
+ms.author: brenduns
 manager: dougeby
-ms.date: 05/21/2018
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 648ccd889714c2ee4f7ee1fa04301490ad9fd001
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 847ab759b697d402acb07d9c8d83d3a3ef9aaef2
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749455"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74058158"
 ---
 # <a name="use-locations-network-fence-in-intune"></a>使用 Intune 中的位置 (網路範圍)
 
@@ -50,7 +50,7 @@ ms.locfileid: "72749455"
 
 ## <a name="create-a-location"></a>建立位置
 
-1. 在 Intune 中，選取 [裝置合規性]   > [位置]   > [建立]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [裝置]   > [合規性政策]   > [位置]   > [建立]  。
 
 2. 輸入下列內容：  
 
@@ -69,8 +69,7 @@ ms.locfileid: "72749455"
 
 ## <a name="create-the-location-compliance-policy"></a>建立位置合規性原則
 
-當您[建立合規性政策](create-compliance-policy.md)時，選取 [Android]  作為 [平台]  。 在 [位置]  中，您可以選擇一或多個新增的網路位置。 這些位置是您要為裝置建立之網路範圍的一部分。 
-
+當您[建立合規性政策](create-compliance-policy.md)時，選取 [Android]  作為 [平台]  。 在 [位置]  中，您可以選擇一或多個新增的網路位置。 這些位置是您要為裝置建立之網路範圍的一部分。
 
 ## <a name="configure-the-actions-for-noncompliance"></a>指定不符合規範時所採取的動作
 
@@ -83,5 +82,6 @@ ms.locfileid: "72749455"
 當裝置連線至您的位置時，裝置在公司入口網站應用程式中會顯示為符合規範。 當裝置未連線至您的其中一個位置時，裝置會顯示為不符合規範。
 
 ## <a name="next-steps"></a>後續步驟
+
 [監視裝置合規性原則](compliance-policy-monitor.md)  
 [開始使用合規性原則](device-compliance-get-started.md)

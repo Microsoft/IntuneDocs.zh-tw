@@ -253,7 +253,7 @@ ms.locfileid: "74390849"
 
   如需這兩項設定的詳細資訊，以及它們對 iOS 連絡人匯出同步處理的影響，請參閱[支援秘訣：搭配 IOS 原生連絡人應用程式使用 Intune 自訂設定檔設定](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453)。
 
--  ：[需要]  會強制將 AirDrop 考慮為未受管理的置放目標。 它會防止受管理應用程式使用 AirDrop 傳送檔案。 
+-  ：[需要] 會強制將 AirDrop 視為非受控的置放目標。  它會防止受管理應用程式使用 AirDrop 傳送檔案。 
 - **在公司應用程式中檢視非公司文件**：[封鎖]  會防止在公司應用程式中檢視非公司文件。 [未設定]  \(預設\) 會允許在受公司管理的應用程式中檢視任何文件。
 
   將設定為 [**封鎖**] 也會防止在 Outlook for iOS 中進行連絡人匯出同步處理。 如需詳細資訊，請參閱[支援提示：啟用與 IOS12 MDM 控制項的 Outlook IOS 連絡人同步處理](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453)。
@@ -384,7 +384,7 @@ ms.locfileid: "74390849"
 
 若要將應用程式新增至這些清單中，您可以：
 
-- [新增]  所需應用程式的 iTunes App Store URL。 例如，或要新增 [Microsoft 工作資料夾] 應用程式，請輸入 `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` 或 `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`。
+- [新增]  所需應用程式的 iTunes App Store URL。 例如，若要新增 Microsoft Work Folders 應用程式，請輸入 `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8` 或 `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`。
 
   若要尋找應用程式的 URL，請開啟 iTunes App Store，然後搜尋該應用程式。 例如，搜尋 `Microsoft Remote Desktop` 或 `Microsoft Word`。 選取應用程式，並複製 URL。
 

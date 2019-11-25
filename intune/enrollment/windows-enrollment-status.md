@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/28/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5e453002493e95bd5147cca115075a17a6e7a298
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 6f9c09105ab7286eb315c6bf0f04f1801706bfa8
+ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709319"
+ms.lasthandoff: 11/13/2019
+ms.locfileid: "74059712"
 ---
 # <a name="set-up-an-enrollment-status-page"></a>設定註冊狀態頁面
  
@@ -197,7 +197,7 @@ ms.locfileid: "73709319"
     - 使用者認證不會保留
     - 使用者必須再次輸入認證，才能從裝置設定階段繼續至帳戶設定階段
 - ESP 長時間停滯，或永遠不會完成「識別」階段。 Intune 會在識別階段計算 ESP 原則。 如果目前的使用者未獲指派 Intune 授權，裝置可能永遠不會完成計算 ESP 原則。  
-- 設定 Windows Defender 應用程式控制會導致在 Autopilot 期間提示重新開機。 設定 Windows Defender 應用程式 (AppLocker CSP) 需要重新開機。 設定此原則後，可能會導致裝置在 Autopilot 期間重新開機。 目前沒有任何方法可以抑制或延後重新開機。
+- 設定 Microsoft Defender 應用程式控制會導致在 Autopilot 期間提示重新開機。 設定 Microsoft Defender 應用程式 (AppLocker CSP) 需要重新開機。 設定此原則後，可能會導致裝置在 Autopilot 期間重新開機。 目前沒有任何方法可以抑制或延後重新開機。
 - 當 DeviceLock 原則 (https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock) 作為 ESP 設定檔的一部分啟用時，OOBE 或使用者桌面登入可能會因為兩個原因而意外失敗。
   - 如果裝置在結束 ESP 裝置設定階段之前未重新開機，系統可能會提示使用者輸入其 Azure AD 認證。 發生此提示時，使用者會看到 Windows 第一個登入動畫，而不是成功的自動登入。
   - 如果裝置在使用者輸入其 Azure AD 認證之後，但結束 ESP 裝置設定階段之前重新開機，則自動登入將會失敗。 發生此失敗的原因是 ESP 裝置設定階段永遠不會完成。 解決方法是重設裝置。

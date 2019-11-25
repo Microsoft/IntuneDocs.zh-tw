@@ -24,7 +24,7 @@ ms.lasthandoff: 10/16/2019
 ms.locfileid: "72510157"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 授權
-針對不同的客戶需求和組織規模，從適用於學校和小型企業的簡單易用管理體驗，到企業客戶所需的較進階功能，都有 Microsoft Intune 可供使用。 大多數包含 Microsoft Intune 的授權也會授與使用 System Center Configuration Manager 的權限，只要訂用帳戶保持作用中狀態即可。 
+針對不同的客戶需求和組織規模，從適用於學校和小型企業的簡單易用管理體驗，到企業客戶所需的較進階功能，都有 Microsoft Intune 可供使用。 大多數包含 Microsoft Intune 的授權也會授與使用 System Center Configuration Manager 的權限，只要訂用帳戶保持使用中的狀態即可。 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 下列授權包含 Intune：
