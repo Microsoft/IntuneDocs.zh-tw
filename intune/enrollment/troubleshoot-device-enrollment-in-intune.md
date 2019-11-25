@@ -33,14 +33,14 @@ ms.locfileid: "73713501"
 
 ## <a name="initial-troubleshooting-steps"></a>初始疑難排解步驟
 
-在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以閱讀有關那些設定需求︰
+在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以在下列網址中閱讀那些設定需求的相關資訊:
 
 - [準備在 Microsoft Intune 中註冊裝置](../fundamentals/setup-steps.md)
 - [設定 iOS 和 Mac 裝置管理](../ios-enroll.md)
 - [設定 Windows 裝置管理](windows-enroll.md)
 - [設定 Android 裝置管理](android-enroll.md) - 不需要其他步驟
 
-您也可以確認使用者裝置上的時間與日期是否設定正確：
+您也可以透過下列步驟確認使用者裝置上的時間與日期是否設定正確：
 
 1. 重新啟動裝置。
 2. 請務必將時間與日期設定成接近終端使用者時區的 GMT 標準時間 (+ 或 - 12 個小時)。
@@ -56,7 +56,7 @@ ms.locfileid: "73713501"
 所有的裝置平台都可能發生這些問題。
 
 ### <a name="device-cap-reached"></a>已到達裝置上限
-**問題**使用者於註冊期間收到錯誤 (例如「公司入口網站暫時無法使用」  )，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
+**問題：** 使用者於註冊期間收到錯誤 (例如「公司入口網站暫時無法使用」  )，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
 
 **解決方法：**
 
@@ -66,7 +66,7 @@ ms.locfileid: "73713501"
 
 1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [註冊限制]   > [裝置限制]  。 請記下 [裝置限制]  欄中的值。
 
-2. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [使用者]   > [所有使用者]  > 選取使用者 > [裝置]  。 請記下裝置數目。
+2. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [使用者]   > [所有使用者]  > 選取該使用者 > [裝置]  。 請記下裝置數目。
 
 3. 如果使用者註冊的裝置數目已經等於其裝置限制，在出現以下情況之前將無法再註冊任何裝置：
     - [移除現有的裝置](../remote-actions/devices-wipe.md)，或者
@@ -81,7 +81,7 @@ ms.locfileid: "73713501"
 > 當強制執行條件式存取原則讓特定使用者登入時，新增至裝置註冊管理員帳戶的使用者帳戶將無法完成註冊。
 
 ### <a name="company-portal-temporarily-unavailable"></a>公司入口網站暫時無法使用
-**問題**使用者在裝置上收到「公司入口網站暫時無法使用」  錯誤。
+**問題：** 使用者在裝置上收到「公司入口網站暫時無法使用」  錯誤。
 
 **解決方法：**
 
@@ -96,7 +96,7 @@ ms.locfileid: "73713501"
 5. 如果使用者成功登入，iOS 裝置會提示您安裝並註冊 Intune 公司入口網站應用程式。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
 
 ### <a name="mdm-authority-not-defined"></a>MDM 授權單位未定義
-**問題**使用者收到「MDM 授權單位未定義」  錯誤。
+**問題：** 使用者收到「MDM 授權單位未定義」  錯誤。
 
 **解決方法：**
 
@@ -131,12 +131,12 @@ ms.locfileid: "73713501"
         傳回結果之後，請尋找雲端使用者識別碼。  如果找不到任何識別碼，則不會授權使用者使用 Intune。
 
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
-**問題**您無法建立原則或註冊裝置。
+**問題：** 您無法建立原則或註冊裝置。
 
 **解決方法：** 在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)內，移除公司名稱中的特殊字元並儲存公司資訊。
 
 ### <a name="unable-to-sign-in-or-enroll-devices-when-you-have-multiple-verified-domains"></a>當您有多個已驗證的網域時，無法登入或註冊裝置
-**問題**當您將第二個已驗證的網域新增至您的 ADFS 時，可能會發生這個問題。 擁有第二個網域使用者主體名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
+**問題：** 當您將第二個已驗證的網域新增至您的 ADFS 時，可能會發生這個問題。 擁有第二個網域使用者主體名稱 (UPN) 尾碼的使用者可能無法登入入口網站或註冊裝置。
 
 
 <strong>解決方法：</strong>在下列情況下，Microsoft Office 365 客戶必須為每個尾碼部署個別的 AD FS 2.0 同盟服務執行個體：
@@ -155,12 +155,12 @@ ms.locfileid: "73713501"
 
 |錯誤訊息|問題|解決方案|
 |---|---|---|
-|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們擁有的授權類型，對於行動裝置管理授權單位而言並不正確。 例如，如果下列兩個條件都成立，他們就會看到此錯誤：<ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>如需詳細資訊，請參閱[將 Intune 授權指派給使用者帳戶](/intune/licenses-assign) \(英文\)。|
+|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們的行動裝置管理授權單位並未擁有正確的授權類型。 例如，如果下列兩個條件都成立，他們就會看到此錯誤：<ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>如需詳細資訊，請參閱[將 Intune 授權指派給使用者帳戶](/intune/licenses-assign) \(英文\)。|
 |**IT 系統管理員需要設定 MDM 授權單位**<br>您的 IT 管理員似乎尚未設定 MDM 授權單位。 向您的 IT 管理員尋求協助，或稍後再試。|尚未定義行動裝置管理授權單位。|尚未在 Intune 中設定行動裝置管理授權單位。 如需相關資訊，請參閱如何[設定行動裝置管理授權單位](/intune/mdm-authority-set)。|
 
 
 ### <a name="devices-fail-to-check-in-with-the-intune-service-and-display-as-unhealthy-in-the-intune-admin-console"></a>裝置無法使用 Intune 服務簽入，並在 Intune 管理主控台中顯示為「狀況不良」
-**問題**一些執行 Android 版本 4.4.x 和 5.x 的 Samsung 裝置可能會停止使用 Intune 服務來簽入。 如果裝置未簽入：
+**問題：** 一些執行 Android 版本 4.4.x 和 5.x 的 Samsung 裝置可能會停止使用 Intune 服務來簽入。 如果裝置未簽入：
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
@@ -209,7 +209,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
-**問題**使用者的 Android 裝置收到「設定檔安裝失敗」  錯誤。
+**問題：** 使用者的 Android 裝置收到「設定檔安裝失敗」  錯誤。
 
 **解決方法：**
 
@@ -273,11 +273,11 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 |APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 和[組織使用者和裝置](../fundamentals/groups-add.md)。|
 |AccountNotOnboarded|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需詳細資訊，請檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](../ios-enroll.md)。|
 |DeviceTypeNotSupported|使用者可能嘗試使用非 iOS 裝置進行註冊。 您嘗試註冊的行動裝置類型不受支援。<br /><br />確認裝置正在執行 iOS 8.0 版或更新版本。<br /><br />|確定您的使用者裝置正在執行 iOS 8.0 版或更新版本。|
-|UserLicenseTypeInvalid|裝置無法註冊，因為使用者帳戶還不是必要使用者群組的成員。<br /><br />|使用者必須是正確使用者群組的成員，才可以註冊裝置。 這則訊息表示他們擁有的授權類型，對於行動裝置管理授權單位而言並不正確。 例如，如果下列兩個條件都成立，他們就會看到此錯誤：<ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>如需詳細資訊，請檢閱下列文章：<br /><br />檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](../ios-enroll.md)，以及[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 和[組織使用者和裝置](../fundamentals/groups-add.md)，以取得如何設定使用者的資訊。|
+|UserLicenseTypeInvalid|裝置無法註冊，因為使用者帳戶還不是必要使用者群組的成員。<br /><br />|使用者必須是正確使用者群組的成員，才可以註冊裝置。 這則訊息表示他們的行動裝置管理授權單位並未擁有正確的授權類型。 例如，如果下列兩個條件都成立，他們就會看到此錯誤：<ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>如需詳細資訊，請檢閱下列文章：<br /><br />檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](../ios-enroll.md)，以及[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 和[組織使用者和裝置](../fundamentals/groups-add.md)，以取得如何設定使用者的資訊。|
 |MdmAuthorityNotDefined|尚未定義行動裝置管理授權單位。<br /><br />|尚未在 Intune 中設定行動裝置管理授權單位。<br /><br />檢閱[開始使用 Microsoft Intune 30 天試用版](../fundamentals/free-trial-sign-up.md)中＜步驟 6：註冊行動裝置並安裝應用程式＞一節中的項目 #1。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>裝置處於非使用狀態或管理主控台無法與它們通訊
-**問題︰** iOS 裝置未簽入 Intune 服務。 裝置必須定期簽入服務，才能維護受保護公司資源的存取權。 如果裝置未簽入：
+**問題︰** iOS 裝置未簽入 Intune 服務。 裝置必須定期簽入服務，才能維護對受保護公司資源的存取權。 如果裝置未簽入：
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
@@ -318,7 +318,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
-**問題**使用者的 iOS 裝置收到「設定檔安裝失敗」  錯誤。
+**問題：** 使用者的 iOS 裝置收到「設定檔安裝失敗」  錯誤。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
 
@@ -332,8 +332,8 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 5. 確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置不會出現在主控台
-**問題**使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>當使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置未出現在主控台
+**問題：** 使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
 
 - 您 Configuration Manager 網站中的 Microsoft Intune Connector 沒有和 Intune 服務通訊。
 - 資料探索管理員 (ddm) 元件或狀態管理員 (statmgr) 元件沒有處理來自 Intune 服務的訊息。
@@ -403,7 +403,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **錯誤訊息 2：** *我們無法管理您的裝置。如果您使用虛擬機器、擁有受限的序號，或是如果此裝置已指派給其他人，則可能發生此問題。了解如何解決這些問題或連絡您公司的支援人員。*
 
-**問題**此訊息可能是由於下列任何原因所造成：  
+**問題：** 此訊息可能是由於下列任何原因所造成：  
 - 未正確設定 macOS 虛擬機器 (VM)  
 - 您已啟用裝置限制，要求裝置必須屬公司擁有或已在 Intune 中註冊裝置序號  
 - 裝置已註冊並仍指派給 Intune 中的其他人  
@@ -423,12 +423,12 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 ### <a name="mobile-devices-disappear"></a>行動裝置消失
 
-**問題**成功向 Configuration Manager 註冊行動裝置之後，該裝置會從行動裝置集合中消失。 不過，裝置仍有管理設定檔並列於 CSS 閘道中。
+**問題：** 成功向 Configuration Manager 註冊行動裝置之後，該裝置會從行動裝置集合中消失。 不過，裝置仍有管理設定檔並列於 CSS 閘道中。
 
 **解決方法：** 發生這個問題的原因可能是：
 
 - 您具有移除非加入網域裝置的自訂處理序，或是
-- 使用者嘗試從訂用帳戶淘汰裝置。
+- 使用者嘗試從訂閱帳戶淘汰裝置。
 若要驗證及查看哪個處理序或使用者帳戶從 Configuration Manager 主控台移除裝置，請執行下列步驟。
 
 #### <a name="check-how-device-was-removed"></a>檢查裝置的移除方式
@@ -453,11 +453,11 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 |錯誤訊息|問題|解決方案|
 |---|---|---|
-|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們擁有的授權類型，對於行動裝置管理授權單位而言並不正確。 例如，如果下列兩個條件都成立，他們就會看到此錯誤： <ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>參閱[如何將 Intune 授權指派至使用者帳戶](../fundamentals/licenses-assign.md)的相關資訊。|
+|**IT 管理員需要指派存取權**<br>您的 IT 管理員未授與您使用此應用程式的存取權。 向您的 IT 管理員尋求協助，或稍後再試。|無法註冊裝置，因為使用者的帳戶沒有所需的授權。|使用者必須先獲指派所需的授權，才可以註冊其裝置。 這則訊息表示他們的行動裝置管理授權單位並未擁有正確的授權類型。 例如，如果下列兩個條件都成立，他們就會看到此錯誤： <ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>參閱[如何將 Intune 授權指派至使用者帳戶](../fundamentals/licenses-assign.md)的相關資訊。|
 
 ### <a name="the-machine-is-already-enrolled---error-hr-0x8007064c"></a>電腦已註冊 - 錯誤 hr 0x8007064c
 
-**問題**註冊失敗，並顯示「電腦已註冊」  錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
+**問題：** 註冊失敗，並顯示「電腦已註冊」  錯誤。 註冊記錄檔會顯示錯誤 **hr 0x8007064c**。
 
 發生這個失敗的原因可能是電腦：
 
@@ -492,7 +492,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 |0x80043002、0x80CF3002|帳戶處於維護模式。|您不能在帳戶處於維護模式時註冊新的用戶端電腦。 若要檢視您的帳戶設定，請登入您的帳戶。|
 |0x80043003、0x80CF3003|已刪除帳戶。|確認您的帳戶和 Intune 訂閱仍然有效。 若要檢視您的帳戶設定，請登入您的帳戶。|
 |0x80043005、0x80CF3005|已淘汰用戶端電腦。|等待幾個小時，並從電腦移除所有的舊版用戶端軟體，然後再次嘗試安裝用戶端軟體。|
-|0x80043006、0x80CF3006|已達到帳戶允許的基座數目上限。|貴組織必須購買額外的基座，您才可以在服務中註冊更多用戶端電腦。|
+|0x80043006、0x80CF3006|已達到帳戶允許的授權數目上限。|貴組織必須購買額外的授權額度，您才可以在服務中註冊更多用戶端電腦。|
 |0x80043007、0x80CF3007|在與安裝程式相同的資料夾中找不到憑證檔案。|在開始安裝之前先解壓縮所有檔案。 請勿重新命名或移動任何已解壓縮的檔案：所有檔案都必須位於同一個資料夾，否則安裝將會失敗。|
 |0x8024D015、0x00240005、0x80070BC2、0x80070BC9、0x80CFD015|由於用戶端電腦仍在等待重新啟動，因此無法安裝軟體。|重新啟動電腦，然後再次嘗試安裝用戶端軟體。|
 |0x80070032|用戶端電腦不符合安裝用戶端軟體的一或多個必要條件。|確定用戶端電腦已安裝所有必要更新，然後再次嘗試安裝用戶端軟體。|

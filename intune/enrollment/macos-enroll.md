@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/13/2018
+ms.date: 11/14/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbdef7cffa76beeb158c47ab3651d438de2d6ccc
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503165"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098197"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中設定 macOS 裝置的註冊
 
@@ -42,15 +42,16 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 - [設定 MDM 授權單位](../fundamentals/mdm-authority-set.md)
 - [建立群組](../fundamentals/groups-add.md)
 - [設定公司入口網站](../apps/company-portal-app.md)
-- 在 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)指派使用者授權
+- 在 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)指派使用者授權
 - [取得 Apple MDM Push Certificate](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## <a name="user-owned-macos-devices-byod"></a>使用者擁有的 macOS 裝置 (BYOD)
 
-您可以讓使用者註冊其個人裝置以便使用 Intune 來管理，這稱為「攜帶您自己的裝置」或 BYOD。 完成必要條件並指派使用者授權之後，您的使用者就可以透過執行下列動作來註冊其裝置：
+您可以讓使用者在 Intune 管理中註冊自己的個人裝置。 此即所謂的「攜帶您自己的裝置」或 BYOD。 完成必要條件並指派使用者授權之後，使用者即可透過下列動作註冊其裝置：
 - 移至[公司入口網站](https://portal.manage.microsoft.com)或
-- 下載「公司入口網站」應用程式。
-您也可以將線上註冊步驟的連結傳送給他們：[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
+- 在 [aka.ms/EnrollMyMac](https://aka.ms/EnrollMyMac) 下載 Mac 公司入口網站應用程式。
+
+您也可以向使用者傳送線上註冊步驟的連結：[在 Intune 註冊 macOS 裝置](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos)。
 
 如需其他使用者工作的資訊，請參閱下列文章：
 
@@ -77,12 +78,17 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 針對 VMware Fusion，您需要[編輯 .vmx 檔案](https://kb.vmware.com/s/article/1014782)，設定虛擬機器的硬體型號和序號。 建議您比對執行虛擬機器之裝置的硬體型號與您所建立之虛擬機器的硬體型號。 您可以在 **Apple 功能表** > [關於此 Mac]  [系統報表] >    > [模型識別碼]  中找到這個硬體型號。 
 
 ## <a name="user-approved-enrollment"></a>通過使用者核准的註冊
-
 「通過使用者核准」的註冊是一種 macOS 註冊，可讓您管理某些敏感的安全性設定。 如需詳細資訊，請參閱 [Apple 支援文件](https://support.apple.com/HT208019)。
 
-若要成為使用者核准，使用者必須在使用 [macOS 公司入口網站] 註冊之後，使用 [系統偏好設定] 手動提供核准。 針對 macOS 10.13.2 和更新版本的使用者，[macOS 公司入口網站] 提供進行此操作的指示。
+自 2019 年 11 月開始，所有新的使用者自有 macOS 註冊都會是「經使用者核准」，因為使用者必須手動安裝管理設定檔，才能成功註冊。 在[註冊流程](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)中，使用者會在 [系統喜好設定]   > [設定檔]  中安裝 Apple 管理設定檔。  macOS 公司入口網站應用程式會提供安裝管理設定檔的指示。
 
-若要了解裝置是否為「使用者核准」，請移至 Intune 入口網站並選取 [裝置]   > [所有裝置]  > 選擇裝置 > [硬體]  。 檢查 [使用者核准]  欄位。
+如果使用者未手動核准管理設定檔，則在 2019 年 11 月前註冊的裝置可能會是未經使用者核准。 不過，使用者可以回其並移至 [系統喜好設定]   > [設定檔]  > 選擇 [管理設定檔]   > [核准]  來核准管理設定檔。
+
+### <a name="find-out-if-a-device-is-user-approved"></a>找出裝置是否為「經使用者核准」
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [硬體]  。
+3. 勾選 [使用者核准的註冊]  欄位。
+
 
 ## <a name="next-steps"></a>後續步驟
 

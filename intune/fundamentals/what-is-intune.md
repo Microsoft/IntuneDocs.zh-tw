@@ -87,7 +87,7 @@ Intune 提供行動應用程式安全性的一種方式，是透過 **[應用程
 
 ## <a name="compliance-and-conditional-access"></a>合規性與條件式存取
 
-Intune 整合了 Azure AD，以啟用一組廣泛的存取控制案例。 例如，要求行動裝置必須符合 Intune 中定義的組織標準，才能存取網路資源 (例如電子郵件或 SharePoint)。 同樣地，您可以鎖定服務，使其僅適用於一組特定的行動應用程式。 例如，您可以鎖定 Exchange Online，使其僅供 Outlook 或 Outlook Mobile 存取。
+Intune 與 Azure AD 整合後，獲得了大量資料存取管控的相關案例。 例如，要求行動裝置必須符合 Intune 中定義的組織標準，才能存取網路資源 (例如電子郵件或 SharePoint)。 同樣地，您可以鎖定服務，使其僅適用於一組特定的行動應用程式。 例如，您可以鎖定 Exchange Online，使其僅供 Outlook 或 Outlook Mobile 存取。
 
 **線上資源** ：
 

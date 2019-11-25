@@ -4,17 +4,37 @@ description: 包含檔案
 author: ErikjeMS
 ms.service: microsoft-intune
 ms.topic: include
-ms.date: 11/4/2019
+ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 3d49d31ed08683508d3d231521e578688dd21bac
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74125425"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188416"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
+
+### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>更新 Intune Outlook 應用程式保護原則 (應用程式)<!--2576686-->
+如果在訊息中心收到 MC195618，您可能需要採取行動。 如 Microsoft 365 藍圖功能識別碼中所共用：56325 和 56326，iOS 和 Android 版的 Intune 和 Outlook 即將支援在郵件通知和行事曆提醒中限制敏感性資料。 因為這些改善功能，iOS 和 Android 版的 Outlook 將會移除對數個資料保護應用程式設定金鑰的支援，而這些都是您目前用來管理通知的金鑰。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+新功能雖尚未上市，但上市後，下列應用程式設定金鑰在 iOS 和 Android 版的 Outlook 中即不再發揮作用：
+- com.microsoft.outlook.Mail.NotificationsEnabled
+- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
+- com.microsoft.outlook.Calendar.NotificationsEnabled
+- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+針對此新功能。建議將 Intune 應用程式保護原則資料保護設定 [組織資料通知] 的值設定為 [封鎖組織資料]，。 自 2019 年 12 月 16 日開始，iOS 和 Android 版的 Outlook 即會實施 [組織資料通知] 資料保護設定，且不再支援前述金鑰。 設定此新設定可確保當不支援前述設定金鑰後，敏感性資料不會外洩。 此外，當資料保護設定 [組織資料通知] 設為 [封鎖組織資料]，並另行加上應用程式組態設定 [行事曆通知] 時，Outlook 會提供更細緻的服務。 應用程式保護原則設定與此應用程式組態設定的組合會在郵件通知中限制敏感性資訊，並同時在行事曆通知中公開敏感性資訊，所以使用者只要快速瀏覽通知或通知中心，即可獲知會議相關資訊。
+
+#### <a name="additional-information"></a>其他資訊
+如需應用程式設定和 Outlook 設定的詳細資訊，請參閱：
+- [Android 應用程式保護原則設定](../apps/app-protection-policy-settings-android.md)
+- [iOS 應用程式保護原則設定](../apps/app-protection-policy-settings-ios.md)
+- [部署 iOS 與 Android 版 Outlook 應用程式組態設定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(部分機器翻譯\)
+
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 規劃變更：Windows 10 1703 版公司入口網站移出支援<!--5026679-->
 Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移出企業版與 EDU 版的服務。 從 2019 年 12 月 26 日開始，Intune 將會針對 RS2/RS1 的對應公司入口網站應用程式結束支援。
@@ -33,14 +53,14 @@ Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移
 隨著過去一年的分享，Microsoft Edge 行動裝置版本支援與 Managed Browser 相同的一組管理功能，同時提供更好的終端使用者體驗。 為了讓 Microsoft Edge 中提供的強大體驗得以實現，我們將會淘汰 Intune Managed Browser。 從 2020 年 1 月 27 日開始，Intune 將不再支援 Intune Managed Browser。  
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？ 
-從 2020 年 2 月 1 日開始，Google Play 商店或 iOS App Store 中將不再提供 Intune Managed Browser。 此時，您仍然可以將新的應用程式保護原則的目標設為 Intune Managed Browser，但新的使用者將無法下載 Intune Managed Browser 應用程式。 此外，在 iOS 上，向下推送至 MDM 註冊裝置的新 Web 剪輯，將會在 Microsoft Edge 中開啟，而不是在 Intune Managed Browser 中開啟。  
+從 2020 年 2 月 1 日開始，Google Play 商店或 iOS App Store 中將不再提供 Intune Managed Browser。 此時，您仍然可以將新應用程式保護原則的目標設為 Intune Managed Browser，但新的使用者將無法下載 Intune Managed Browser 應用程式。 此外，在 iOS 上，向下推送至 MDM 註冊裝置的新 Web 剪輯，將會在 Microsoft Edge 中開啟，而不是在 Intune Managed Browser 中開啟。  
 
-從 2020 年 3 月 31 日起，將從 Azure 主控台移除 Intune Managed Browser。 這表示您將無法再為 Intune Managed Browser 建立新原則。 如果您已有現有的 Intune Managed Browser 原則，將不會受到影響。 Intune Managed Browser 將會顯示在主控台中，作為沒有圖示的 LOB 應用程式，而現有的原則仍會顯示為以應用程式為目標。 此時，我們也會在應用程式保護原則的 [資料保護] 區段中，移除將 Web 內容重新導向至 Intune Managed Browser 的選項。  
+從 2020 年 3 月 31 日起，將從 Azure 主控台移除 Intune Managed Browser。 這表示您將無法再為 Intune Managed Browser 建立新原則。 現有的 Intune Managed Browser 原則不會受到影響。 Intune Managed Browser 將會顯示在主控台中，作為沒有圖示的 LOB 應用程式，而現有的原則仍會顯示為以應用程式為目標。 此時，我們也會在應用程式保護原則的 [資料保護] 區段中，移除將 Web 內容重新導向至 Intune Managed Browser 的選項。  
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？ 
 若要確保從 Intune Managed Browser 順利轉換到 Microsoft Edge，建議您主動執行下列步驟： 
 
-1. 使用應用程式保護原則 (亦稱為 MAM) 與應用程式組態設定，以適用於 iOS 與 Android 的 Microsoft Edge 為目標。 您也可以針對 Microsoft edge 重複使用您的 Intune Managed Browser 原則，只要將那些現有原則的目標設定為 Microsoft Edge。  
+1. 使用應用程式保護原則 (亦稱為 MAM) 與應用程式組態設定，以適用於 iOS 與 Android 的 Microsoft Edge 為目標。 您也可以將現有原則的目標設定為 Microsoft Edge，以針對 Microsoft Edge 重複使用 Intune Managed Browser 原則。  
 2. 確定您環境中所有受 MAM 保護的應用程式的應用程式保護原則設定 [限制使用其他應用程式的 Web 內容傳輸] 設定為 [受原則管理的瀏覽器]。 
 3. 在受管理的應用程式組態設定 "com.microsoft.intune.useEdge" 設定為 True 的情況下以所有受 MAM 保護的項目為目標。 從下個月將推出的 1911 版開始，您只需要設定 [限制使用其他應用程式的 Web 內容傳輸] 設定以在您應用程式保護原則的 [資料保護] 區段中選取 [Microsoft Edge]，就可以完成步驟 2 與 3。 
 
@@ -48,7 +68,6 @@ Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移
 
 #### <a name="additional-information"></a>其他資訊
 請瀏覽我們的文件[搭配應用程式保護原則使用 Microsoft Edge](../apps/manage-microsoft-edge.md)以取得詳細資訊，或檢視我們的[支援部落格文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269) \(英文\)。
-
 
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>規劃變更：已更新在 Intune 中註冊 Android Enterprise 專用裝置的體驗<!--5198878-->
 在 Intune 的 11月或 1911 版本中，我們會將對 SCEP 裝置憑證部署的支援新增至 Android Enterprise 專用裝置，以啟用 Wi-Fi 設定檔的憑證型存取功能。 此變更也牽涉到在註冊 Android Enterprise 專用裝置流程的一些小幅變更。
@@ -65,23 +84,9 @@ Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移
 #### <a name="additional-information"></a>其他資訊
 [https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
-### <a name="plan-for-change-the-server-side-logging-for-siri-commands-setting-will-be-removed-from-the-intune-console----5468501--"></a>規劃變更：[Siri 命令的伺服器端記錄] 設定將會從 Intune 主控台移除 <!-- 5468501-->
-
-我們計畫在 Intune 服務的 11 月更新，移除 Intune 主控台中的 [Siri 命令的伺服器端記錄] 設定。 此變更與 Apple 已移除其設定相符。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-當 11 月更新或 1911 在 11 月中推出時，您會看到在 Intune 主控台中，已從 iOS 組態設定檔的 [裝置限制] 功能表 (內建應用程式) 中移除此設定。 它可能會出現在您的原則和目標裝置的管理設定檔中，但此設定不會影響您的裝置。 我們不預期對功能有太大的影響，因為它目前無法在裝置上執行，即使您在管理設定檔中看到此設定也一樣。
-
-您可以選擇下列兩個路徑之一：
-- 如果您想要從原則中刪除此設定，您可以移至具有此設定的設定檔，進行微幅編輯並儲存原則。 原則將會在後端重新計算，而且設定將會從您的原則中刪除。
-- 如果您選擇不要採取此動作，終端使用者將會在其裝置的管理設定檔中看到此設定，但設定不會有任何作用。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
-您可以根據上一節採取動作，或讓您的原則保持原狀。 當此變更推出時，我們將會更新 [新功能] 頁面與文件。
-
 ### <a name="end-of-support-for-legacy-pc-management"></a>結束對舊版電腦管理的支援
 
-自 2020 年 10 月 15 日起結束對舊版電腦管理的支援。 請將裝置升級至 Windows 10，並重新註冊為 MDM 裝置，讓 Intune 管理它們。
+自 2020 年 10 月 15 日起結束對舊版電腦管理的支援。 請將裝置升級至 Windows 10，並重新註冊為行動裝置管理 (MDM) 裝置，以繼續交由 Intune 管理。
 
 [深入了解](https://go.microsoft.com/fwlink/?linkid=2107122)
 
@@ -92,10 +97,10 @@ Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Andr
 由於 Google 的這些變更，Intune 使用者會受到下列方面的影響：  
 - Intune 僅支援執行 Android 10 與更新版本 (亦稱為 Android Q) 的裝置系統管理員受控 Android 裝置，且支援僅提供至 2020 年夏天。 這是下一個 Android 主要版本預計發行的日期。   
 - 在 2020 年夏天之後，將無法再全面管理執行 Android 10 或更新版本的裝置系統管理員受控裝置。       
-- 在 Android 10 以下的 Android 版本上，系統中仍有的裝置系統管理員管理的 Android 裝置將不會受到影響，而且可以繼續使用裝置系統管理員完全管理。    
-- 針對所有執行 Android 10 與更新版本的裝置，Google 已限制裝置系統管理員管理代理程式 (例如公司入口網站) 存取裝置識別碼資訊的能力。 這會影響裝置更新至 Android 10 或更新版本之後的下列 Intune 功能：  
+- 在 Android 10 以下的 Android 版本上，仍由裝置系統管理員管理的 Android 裝置不會受到影響，並可繼續由裝置系統管理員全權管理。    
+- 針對所有執行 Android 10 與更新版本的裝置，Google 已限制裝置系統管理員管理代理程式 (例如公司入口網站) 存取裝置識別碼資訊的能力。 當裝置更新至 Android 10 或更新版本之後，此限制會影響下列 Intune 功能：  
     - VPN 的網路存取控制將不再有效。   
-    - 透過 IMEI 或序號識別為公司擁有的裝置，將不會自動將裝置標示為公司擁有。  
+    - 透過 IMEI 或序號識別為公司擁有的裝置將不會自動將裝置標示為公司擁有。  
     - 在 Intune 中，IT 系統管理員再也看不到 IMEI 與序號。 
         > [!NOTE]
         > 這只會影響 Android 10 與更新版本的裝置系統管理員受控裝置，且不會影響受 Android Enterprise 管理的裝置。 
@@ -109,36 +114,11 @@ Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Andr
 - [Google's guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf) (Google 指南：從裝置系統管理員移轉到 Android Enterprise)
 - [Google's documentation on the plan to deprecate the device administrator API](https://developers.google.com/android/work/device-admin-deprecation) (Google 文件：裝置系統管理員 API 淘汰因應措施)
 
-### <a name="update-your-android-company-portal-app-to-the-latest-version---4536963--"></a>將您的 Android 公司入口網站應用程式更新到最新的版本 <!--4536963-->
-Intune 會定期發行 Android 公司入口網站應用程式更新。 在 2018 年 11 月，我們發行了公司入口網站更新，其中包括因應 Google 從其現有通知平台轉換到 Google Firebase 雲端傳訊 (FCM) 而做的後端切換參數準備。 當 Google 淘汰其現有通知平台並移轉到 FCM 時，終端使用者至少必須將其公司入口網站應用程式更新到 2018 年 11 月版本以繼續與 Google Play 商店通訊。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-我們的遙測指出您擁有「公司入口網站」版本比 5.0.4269.0 舊的裝置。 若未安裝此版本或更新版本的公司入口網站應用程式，則 IT 專業人員起始的裝置動作 (例如抹除、重設密碼、可用與必要應用程式安裝、憑證註冊) 可能無法如預期運作。 若您的裝置在 Intune 中以 MDM 方式註冊，您可以移至 [用戶端應用程式] – [探索到的應用程式] 來查看公司入口網站版本與使用者。 選取舊版的公司入口網站應用程式，可讓您查看哪些終端使用者有尚未更新公司入口網站應用程式的裝置。
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-要求尚未更新 Android 裝置的終端使用者透過 Google Play 更新公司入口網站應用程式。 若使用者未持續自動更新公司入口網站應用程式，請通知您的技術支援中心。 如需 Google FCM 平台與變更的詳細資訊，請參閱「額外資訊」  中的連結。
-
-#### <a name="additional-information"></a>其他資訊
-https://firebase.google.com/docs/cloud-messaging/
-
-
-### <a name="new-full-screen-experience-coming-to-intune---4593669--"></a>Intune 即將推出新的全螢幕體驗 <!--4593669-->
-我們即將在 Azure 入口網站推出更新後的 Intune 建立與編輯 UI 體驗。 這個新體驗將透過可容納在單一刀鋒視窗內的精靈樣式格式來簡化現有工作流程。 此更新將拋棄「刀鋒視窗擴展」或任何要求您向下切入至深層刀鋒視窗旅程圖的建立與編輯流程。 建立工作流程也會更新以包含指派 (應用程式指派除外)。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-Intune 全螢幕體驗將於接下來幾個月在 portal.azure.com 與 devicemanagement.microsoft.com 推出。 這個對 UI 的更新將會影響現有原則的功能與設定檔，但您將會看到稍微修改的工作流程。 例如，當您建立新原則時，您將能在建立此流程時設定一些指派，而不是在建立原則之後才設定指派。 請參閱「其他資訊」  的部落格文章，以取得螢幕擷取畫面，了解新體驗在主控台中看起來像什麼樣子。
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
-您不需要採取任何動作，但可以考慮視需要更新您的 IT 專業人員指導方針。 當 Azure 入口網站的 Intune 在各個刀鋒視窗推出此體驗時，我們將會更新我們的文件。
-
-#### <a name="additional-information"></a>其他資訊 
-https://aka.ms/intune_fullscreen
-
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>規劃變更：適用於 Android 的 Intune App SDK 與應用程式保護原則會在即將推出的版本中開始支援 Android 5.0 與更新版本 <!--4911065 -->
 Intune 將會在即將推出的版本中開始支援 Android 5.x (Lollipop) 與更新版本。 使用最新的 Intune App SDK 更新任何已包裝的應用程式，並更新您的裝置。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-如果您使用的不是或不打算使用 Android 版 SDK 或應用程式，則此變更不會影響您。 若您使用 Intune App SDK，請務必更新至最新版本，並一併將您的裝置更新為 Android 5.x 與更高版本。 若您不更新，應用程式就不會收到更新，且其體驗品質會隨著時間而降低。
+如果您使用的不是或不打算使用 Android 版 SDK 或應用程式，則此變更不會影響您。 若您使用 Intune App SDK，請務必更新至最新版本，並一併將您的裝置更新為 Android 5.x 與更高版本。 若不更新，則應用程式就不會收到更新，且其體驗品質會隨著時間而降低。
 
 在下面尋找執行 Android 4.x 版且在 Intune 中註冊的通用裝置清單。 若您有這類裝置，請採取適當步驟，以確定此裝置將支援 Android 5.0 版或更高版本，否則它會被支援 Android 5.0 版或更新版本的裝置所取代。 此清單並未包含所有可能需要評估的裝置：
 
@@ -171,3 +151,5 @@ Intune 將會在即將推出的版本中開始支援 Android 5.x (Lollipop) 與�
 - 將現有舊版 Intune 軟體用戶端受控裝置移轉到 Microsoft 建議的解決方案，以使用 MDM 管理來管理 Windows 10。 在 Azure 入口網站中使用適用於 Intune 的 MDM 管理來註冊所有 Windows 10 新電腦。
 
 如需詳細資訊，請參閱此[部落格文章](https://aka.ms/Windows7_Intune)。
+
+
