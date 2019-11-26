@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d75e75dbce2563aaf31edede8eeab7249aad8e19
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801784"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098214"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 
@@ -36,6 +36,20 @@ ms.locfileid: "73801784"
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日當週  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>從 Windows 公司入口網站應用程式啟動的 Web 應用程式<!-- 5030972 -->
+終端使用者現在可以直接從 Windows 公司入口網站應用程式啟動 Web 應用程式。 終端使用者可以選取 Web 應用程式，然後選擇 [以瀏覽器開啟]  選項。 已發佈的 Web URL 會直接在網頁瀏覽器中開啟。 此功能將於下周推出。 如需 Web 應用程式的詳細資訊，請參閱[將 Web 應用程式新增至 Microsoft Intune](~/apps/web-app.md)。
+
+![從 Windows 公司入口網站應用程式啟動的 Web 應用程式範例映像](./media/whats-new-app-ui/webapp-open-in-browser.png)  
+
+### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>已改善公司入口網站的 macOS 註冊體驗 <!-- 5074349 WNready -->  
+提供 macOS 註冊體驗的公司入口網站有更簡易註冊程序，其更貼近 iOS 版公司入口網站的註冊體驗。 裝置使用者現在會看到：  
+
+* 更時尚的使用者介面。  
+* 改善的註冊檢查清單。  
+* 更清楚的裝置註冊指示。  
+* 改善的疑難排解選項。  
 
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日當週  
 

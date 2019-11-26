@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/28/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30b5debc6e1ab113a08d8930f96f6cbc9bf12b48
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 62db99fc2e47bdfa1a767db3bb2916649dedc074
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509529"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164701"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>安裝內部部署 Intune Exchange 連接器
 為了協助保護對 Exchange 的存取，Intune 依賴一個內部部署元件，也就是 Microsoft Intune Exchange 連接器。 在 Intune 主控台的某些位置中，此連接器也稱為 *Exchange ActiveSync 內部部署連接器*。 
@@ -80,14 +80,15 @@ Intune 支援針對每個訂閱安裝多個 Intune Exchange 連接器。 如果�
 
 ## <a name="download-the-installation-package"></a>下載安裝套件
 
-1. 在可支援 Intune Exchange 連接器的 Windows 伺服器上，登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 使用在內部部署 Exchange Server 中擔任系統管理員，並且具備 Exchange Server 使用授權的帳戶。
+在可支援 Intune Exchange 連接器的 Windows 伺服器上：
 
-2. 移至 [Intune]   > [Exchange 存取]  。  
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。  使用在內部部署 Exchange Server 中擔任系統管理員，並且具備 Exchange Server 使用授權的帳戶。
+
+2. 選取 [租用戶系統管理]   > [Exchange 存取]  。  
 
 3. 在 [設定]  下，選擇 [Exchange ActiveSync 內部部署連接器]  ，然後選取 [新增]  。
 
 4. 在 [新增連接器]  頁面中，選取 [下載內部部署連接器]  。 Intune Exchange 連接器位於可開啟或儲存的壓縮 (.zip) 資料夾中。 在 [檔案下載]  對話方塊中，選擇 [儲存]  ，將壓縮資料夾儲存到安全的位置。
-
 
 ## <a name="install-and-configure-the-intune-exchange-connector"></a>安裝和設定 Intune Exchange 連接器
 
@@ -149,8 +150,6 @@ Intune 支援針對每個訂閱安裝多個 Intune Exchange 連接器。 如果�
 > [!NOTE]
 > 如果您安裝 Intune Exchange 連接器，而且稍後需要刪除 Exchange 連線，您必須從安裝 Intune Exchange 連接器的電腦解除安裝連接器。
 
-
-
 ## <a name="install-connectors-for-multiple-exchange-organizations"></a>為多個 Exchange 組織安裝連接器
 
 Intune 支援每個訂閱可以有多個 Intune Exchange 連接器。 針對具有多個 Exchange 組織的租用戶，您只能為每個 Exchange 組織設定一個連接器。 
@@ -161,52 +160,60 @@ Intune 支援每個訂閱可以有多個 Intune Exchange 連接器。 針對具�
 
 ## <a name="on-premises-intune-exchange-connector-high-availability-support"></a>內部部署 Intune Exchange 連接器高可用性支援  
 
-針對內部部署連接器，高可用性表示如果連接器所使用的 Exchange CAS 變成無法使用，連接器可以切換為使用該 Exchange 組織中其他的 CAS。 Exchange 連接器本身不支援高可用性。 如果連接器失敗，並沒有任何自動容錯移轉機制。 您必須[安裝新的連接器](#reinstall-the-intune-exchange-connector)來取代失敗的連接器。 
+針對內部部署連接器，高可用性表示如果連接器所使用的 Exchange CAS 變成無法使用，連接器可以切換為使用該 Exchange 組織中其他的 CAS。 Exchange 連接器本身不支援高可用性。 如果連接器失敗，並沒有任何自動容錯移轉機制。 您必須[安裝新的連接器](#reinstall-the-intune-exchange-connector)來取代失敗的連接器。
 
-為進行容錯移轉，連接器會使用指定的 CAS 建立與 Exchange 的連線。 然後它就會探索該 Exchange 組織的其他 CAS。 此探索可讓連接器容錯移轉到另一個 CAS (如果有的話)，直到有可用的主要 CAS 為止。 
+為進行容錯移轉，連接器會使用指定的 CAS 建立與 Exchange 的連線。 然後它就會探索該 Exchange 組織的其他 CAS。 此探索可讓連接器容錯移轉到另一個 CAS (如果有的話)，直到有可用的主要 CAS 為止。
 
-預設不會啟用其他 CAS 的探索。 如果您需要關閉容錯移轉：  
-1. 在安裝 Exchange 連接器的伺服器上，移至 **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**。 
+預設不會啟用其他 CAS 的探索。 如果您需要關閉容錯移轉：
+
+1. 在安裝 Exchange 連接器的伺服器上，移至 **%*ProgramData*%\Microsoft\Windows Intune Exchange Connector**。
+
 2. 使用文字編輯器，開啟 **OnPremisesExchangeConnectorServiceConfiguration.xml**。
-3. 將 **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** 變更為 **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>** 。  
- 
+
+3. 將 **\<IsCasFailoverEnabled>*true*\</IsCasFailoverEnabled>** 變更為 **\<IsCasFailoverEnabled>*false*\</IsCasFailoverEnabled>** 。
+
 ## <a name="performance-tune-the-exchange-connector-optional"></a>Exchange 連接器的效能調整 (選用)
 
-當 Exchange ActiveSync 支援 5,000 部以上的裝置時，您可以設定選用設定來改善連接器的效能。 您可以啟用 Exchange 以使用 PowerShell 命令執行空間的多個執行個體，進而提升效能。 
+當 Exchange ActiveSync 支援 5,000 部以上的裝置時，您可以設定選用設定來改善連接器的效能。 您可以啟用 Exchange 以使用 PowerShell 命令執行空間的多個執行個體，進而提升效能。
 
-在您進行此變更之前，請確認您用來執行 Exchange Connector 的帳戶並未用於其他 Exchange 管理用途。 Exchange 帳戶的執行空間數量有限，其中大部分將由連接器使用。 
+在您進行此變更之前，請確認您用來執行 Exchange Connector 的帳戶並未用於其他 Exchange 管理用途。 Exchange 帳戶的執行空間數量有限，其中大部分將由連接器使用。
 
-效能調整不適用於在較舊或較慢硬體上執行的連接器。  
+效能調整不適用於在較舊或較慢硬體上執行的連接器。
 
-若要提升 Exchange 連接器效能： 
+若要提升 Exchange 連接器效能：
 
-1. 在安裝連接器的伺服器上開啟連接器的安裝目錄。  預設位置為 *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*。 
+1. 在安裝連接器的伺服器上開啟連接器的安裝目錄。  預設位置為 *C:\ProgramData\Microsoft\Windows Intune Exchange Connector*。
+
 2. 編輯 *OnPremisesExchangeConnectorServiceConfiguration.xml* 檔案。
-3. 找出 **EnableParallelCommandSupport** 並將值設定為 **true**：  
-     
+
+3. 找出 **EnableParallelCommandSupport** 並將值設定為 **true**：
+
    \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
+
 4. 儲存檔案，然後重新啟動 Microsoft Intune Exchange Connector 服務。
 
 ## <a name="reinstall-the-intune-exchange-connector"></a>重新安裝 Intune Exchange 連接器
 
 您可能需要重新安裝 Intune Exchange 連接器。 由於只能有一個連接器連線到每個 Exchange 組織，因此如果您為組織安裝第二個連接器，您所安裝的新連接器就會取代原來的連接器。
 
-1. 若要安裝新的連接器，請依照[安裝和設定 Exchange 連接器](#install-and-configure-the-intune-exchange-connector)一節中的步驟進行。 
-2. 出現提示時，選取 [取代]  以安裝新的連接器。  
+1. 若要安裝新的連接器，請依照[安裝和設定 Exchange 連接器](#install-and-configure-the-intune-exchange-connector)一節中的步驟進行。
+
+2. 出現提示時，選取 [取代]  以安裝新的連接器。
    ![取代連接器的設定警告](./media/exchange-connector-install/prompt-to-replace.png)
 
 3. 繼續進行[安裝和設定 Exchange 連接器](#install-and-configure-the-intune-exchange-connector)一節中的步驟，並再次登入 Intune。
-4. 在最後一個視窗中，選取 [關閉]  以完成安裝。  
+
+4. 在最後一個視窗中，選取 [關閉]  以完成安裝。
    ![完成設定](./media/exchange-connector-install/successful-reinstall.png)
- 
 
 ## <a name="monitor-an-exchange-connector"></a>監視 Exchange Connector
 
-順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。 
+順利設定 Exchange Connector 之後，即可檢視連線和上次成功同步處理嘗試的狀態。
 
 若要驗證 Exchange 連接器的連線：
 
 1. 在 Intune 儀表板中，選擇 [Exchange 存取]  。
+
 2. 選取 [Exchange 內部部署存取]  來驗證每個 Exchange 連接器的連線狀態。
 
 您也可以查看上次嘗試同步作業成功的時間和日期。
@@ -219,13 +226,14 @@ Intune Exchange 連接器會定期自動同步處理 EAS 和 Intune 的裝置記
 
 - **快速同步處理**會定期執行，一天進行數次。 快速同步處理會針對 Intune 授權的使用者，和以內部部署 Exchange 條件式存取為目標且自上次同步處理之後已有所變更的使用者，擷取裝置資訊。
 
-- **完整同步處理**預設每天將執行一次。 完整同步處理會針對所有 Intune 授權的使用者和以內部部署 Exchange 條件式存取為目標的使用者，擷取裝置資訊。 完整同步處理還會擷取 Exchange Server 資訊，並確保 Intune 在 Azure 入口網站中指定的設定已在 Exchange Server 上更新。 
-
+- **完整同步處理**預設每天將執行一次。 完整同步處理會針對所有 Intune 授權的使用者和以內部部署 Exchange 條件式存取為目標的使用者，擷取裝置資訊。 完整同步處理還會擷取 Exchange Server 資訊，並確保 Intune 在 Azure 入口網站中指定的設定已在 Exchange Server 上更新。
 
 您可以透過使用 Intune 儀表板上的 [快速同步處理]  或 [完整同步處理]  選項，強制連接器執行同步處理：
 
    1. 在 Intune 儀表板中，選擇 [Exchange 存取]  。
+
    2. 選取 [Exchange 內部部署存取]  。
+
    3. 選取您想要同步處理的連接器，然後選擇 [快速同步處理]  或 [完整同步處理]  。
 
 ## <a name="next-steps"></a>後續步驟

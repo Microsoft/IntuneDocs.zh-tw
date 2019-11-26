@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3372fc83e467b08b479490b3707f2be03409156
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
+ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749334"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74164576"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>引導式案例 - 雲端管理的新式桌面
 
-現代化電腦是適用於資訊工作者最先進的生產力平台。 Office 365 專業增強版與 Windows 10 以及 Windows 10 與 Windows Defender 進階威脅防護是現代化電腦的核心元件。 
+現代化電腦是適用於資訊工作者最先進的生產力平台。 Office 365 專業增強版與 Windows 10 是具有 Windows 10 最新安全性基準和 Microsoft Defender 進階威脅防護的現代化電腦核心元件。 
 
 從雲端管理現代化電腦帶來網際網路遠端動作的另一層優點。 雲端管理利用內建的 Windows 行動裝置管理原則並去除對本機 Active Directory 群組原則的依賴。 
 
@@ -33,7 +33,7 @@ ms.locfileid: "72749334"
 
 ## <a name="prerequisites"></a>必要條件
 - [將 MDM 授權單位設定為 Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune)：行動裝置管理 (MDM) 授權單位設定會決定您管理裝置的方式。 身為 IT 系統管理員，您必須在使用者可以註冊裝置以進行管理之前，設定 MDM 授權單位。
-- 最低 M356 E3 (或 M365 E5 以獲得最佳安全性)
+- 最低 M365 E3 (或 M365 E5 以獲得最佳安全性)
 - Windows 10 1903 裝置 (已向 Windows Autopilot 註冊以獲得最佳終端使用者體驗)
 - 需要 Intune 管理員權限以完成此引導式案例：
   - 設定裝置設定讀取、建立、刪除、指派及更新
@@ -118,5 +118,5 @@ Windows Autopilot 會將設定新裝置的程序自動化，因此使用者可�
 
 ## <a name="next-steps"></a>後續步驟
 
-- 若您使用 Windows Defender 進階威脅防護，請建立 [Intune 合規性原則](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)以要求 Defender 威脅分析符合合規性。
+- 若正在使用 Microsoft Defender 進階威脅偵測，則請建立 [Intune 合規性政策](~/protect/advanced-threat-protection.md#create-and-assign-the-compliance-policy)以要求 Defender 威脅分析符合合規性。
 - 建立[裝置型條件式存取原則](~/protect/advanced-threat-protection.md#create-a-conditional-access-policy)以在裝置不符合 Intune 合規性時封鎖存取。

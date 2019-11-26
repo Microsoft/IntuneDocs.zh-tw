@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5eb5a8f462846afd97ae4ea84b7431ae147d918c
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
+ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709177"
+ms.lasthandoff: 11/15/2019
+ms.locfileid: "74098176"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -39,7 +39,7 @@ ms.locfileid: "73709177"
 
 有兩個因素會決定如何簡化 Windows 裝置註冊：
 
-- **您是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 隨附於企業行動力 + 安全性和其他授權計劃內。
+- **您是否有使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 隨附於企業行動力 + 安全性和其他授權計劃內。
 - **使用者會註冊哪些版本的 Windows 用戶端？** <br>加入工作或學校帳戶即可自動註冊 Windows 10 裝置。 較舊版本則必須使用公司入口網站應用程式進行註冊。
 
 ||**Azure AD Premium**|**其他 AD**|
@@ -64,7 +64,7 @@ Intune 在下列兩種裝置上可支援多個使用者：
 
 [!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
-## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>簡化 Windows 註冊，而不使用 Azure AD Premium
+## <a name="simplify-windows-enrollment-without-azure-ad-premium"></a>在沒有 Azure AD Premium 的情況下簡化 Windows 註冊
 若要簡化註冊，請建立網域名稱伺服器 (DNS) 別名 (CNAME 記錄類型)，將註冊要求重新導向至 Intune 伺服器。 否則，嘗試連線至 Intune 的使用者必須在註冊期間輸入 Intune 伺服器名稱。
 
 **步驟 1：建立 CNAME** (選用)<br>
@@ -117,6 +117,15 @@ EnterpriseEnrollment-s.manage.microsoft.com 是註冊慣用的 FQDN；但在過�
 > 如果您未啟用 Auto-MDM 註冊，但您的 Windows 10 裝置已加入至 Azure AD，則會在註冊之後於 Intune 主控台中顯示兩筆記錄。 停止方式是使用相同的帳戶確定具有加入 Azure AD 之裝置的使用者移至 [帳戶]   > [Access work or school] (存取工作或學校)  和 [連線]  。 
 
 如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](../fundamentals/end-user-educate.md)。
+
+## <a name="registration-and-enrollment-cnames"></a>登錄和註冊 CNAME
+Azure Active Directory 使用不同的 CNAME 註冊 iOS、Android 和 Windows 裝置。 Intune 條件式存取要求裝置必須註冊，也稱為「已加入工作場所」。 如果打算使用條件式存取，您也應該為所擁有的每個公司名稱設定 EnterpriseRegistration CNAME。
+
+| 類型 | 主機名稱 | 指向 | TTL |
+| --- | --- | --- | --- |
+| 名稱 | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 小時|
+
+如需裝置註冊的詳細資訊，請參閱 [Manage device identities using the Azure portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal) (使用 Azure 入口網站管理裝置身分識別)
 
 ## <a name="next-steps"></a>後續步驟
 

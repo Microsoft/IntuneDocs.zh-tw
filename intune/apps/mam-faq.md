@@ -40,7 +40,7 @@ MAM 可保護應用程式內組織的資料。 透過不需註冊的 MAM (MAM-WE
 Intune MAM 支援兩個組態︰
 - **Intune MDM + MAM**：IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。
 
-- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 來管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com)。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。
+- **不需註冊裝置的 MAM**：不需註冊裝置的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 來管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com)。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。
 
 
 ## <a name="app-protection-policies"></a>應用程式防護原則
@@ -75,9 +75,9 @@ Intune MAM 支援兩個組態︰
 
 **如果我想要搭配 Intune 應用程式防護啟用應用程式，但它並沒有使用支援的應用程式開發平台時該怎麼辦？**
 
-Intune SDK 開發小組會針對搭配原生 Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms 及 Cordova 平台所建置的應用程式，主動地進行測試並維護支援。 雖然有部分客戶成功搭配其他平台 (例如 React Native 和 NativeScript) 整合 Intune SDK，我們並沒有針對使用我們所不支援之平台的應用程式開發人員提供明確的指引或外掛程式。
+Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms 及 Cordova 平台所建置的應用程式，主動地進行測試並維護支援。 雖然有部分客戶成功搭配其他平台 (例如 React Native 和 NativeScript) 整合 Intune SDK，我們並沒有針對使用我們所不支援之平台的應用程式開發人員提供明確的指引或外掛程式。
 
-**Intune APP SDK 支援 Microsoft 驗證程式庫 (MSAL) 或社交帳戶？**<br></br>
+**Intune APP SDK 是否支援 Microsoft 驗證程式庫 (MSAL) 或社交帳戶？**<br></br>
 Intune APP SDK 會針對第一方及協力廠商 SDK 版本使用部分進階 ADAL 功能。 因此，MSAL 並不適用於我們的許多核心案例，例如向 Intune 應用程式防護服務進行驗證，以及條件式啟動。 有鑑於來自 Microsoft 身分識別小組的整體指示是要將所有 Microsoft Office 應用程式切換至 MSAL，Intune SDK 未來一定會需要支援它，但目前尚未有確切計畫。
 
 **使用 [Outlook 行動裝置應用程式 (英文)](https://products.office.com/outlook) 時有哪些其他需求？**
@@ -104,7 +104,7 @@ Intune APP SDK 會針對第一方及協力廠商 SDK 版本使用部分進階 AD
 Intune 會將應用程式中所有資料標示為「公司」或「個人」。 當資料來自公司地點時，會將資料視為「公司」資料。 針對 Office 應用程式，Intune 會將下列位置視為公司地點：電子郵件 (Exchange) 或雲端儲存體 (包含商務用 OneDrive 帳戶的 OneDrive 應用程式)。
 
 **使用商務用 Skype 有哪些其他需求？**<br></br>
-請參閱[商務用 Skyp](https://products.office.com/skype-for-business/it-pros) 授權需求。 如需商務用 Skype (SfB) 的混合式和內部部署設定，請分別參閱 [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) (正式推出適用於 SfB 和 Exchange 的混合式新式驗證) 和 [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910) (使用 AAD 啟用適用於 SfB 內部部署的新式驗證)。
+請參閱[商務用 Skype](https://products.office.com/skype-for-business/it-pros) 授權需求。 如需商務用 Skype (SfB) 的混合式和內部部署設定，請分別參閱 [Hybrid Modern Auth for SfB and Exchange goes GA](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Hybrid-Modern-Auth-for-SfB-and-Exchange-goes-GA/ba-p/134756) (正式推出適用於 SfB 和 Exchange 的混合式新式驗證) 和 [Modern Auth for SfB OnPrem with AAD](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Modern-Auth-for-SfB-OnPrem-with-AAD/ba-p/180910) (使用 AAD 啟用適用於 SfB 內部部署的新式驗證)。
 
 ## <a name="app-protection-features"></a>應用程式保護功能
 
@@ -122,19 +122,19 @@ Intune 會將應用程式中所有資料標示為「公司」或「個人」。 
 
 - **何時會提示使用者輸入 PIN？**<br></br> Intune 會在使用者要存取「公司」資料時，提示使用者提供應用程式 PIN。 在多重身分識別應用程式 (例如 Word/Excel/PowerPoint) 中，系統會在使用者嘗試開啟「公司」文件或檔案時提示他們提供 PIN。 在單一身分識別應用程式 (例如，使用 Intune App Wrapping Tool 管理的企業營運應用程式) 中，會在啟動時提示提供 PIN，因為 Intune App SDK 知道使用者一定是在「公司」環境中使用應用程式。
 
-- **使用者收到 Intune PIN 提示的頻率為何？**<br></br> IT 系統管理員可以在 Intune 管理主控台中定義 Intune 應用程式保護原則設定「重新檢查存取需求前的剩餘時間 (分鐘)」。 這項設定會指定多久之後要在裝置上檢查存取要求，並再次顯示應用程式 PIN 畫面。 不過，還有下列關於 PIN 的重要詳細資料會影響使用者收到通知的頻率： 
+- **使用者收到 Intune PIN 提示的頻率為何？**<br></br> IT 系統管理員可以在 Intune 管理主控台中定義 Intune 應用程式保護原則設定「重新檢查存取需求前等候時間 (分鐘)」。 這項設定會指定多久之後要在裝置上檢查存取要求，並再次顯示應用程式 PIN 畫面。 不過，還有下列關於 PIN 的重要詳細資料會影響使用者收到通知的頻率： 
 
   - **PIN會在相同發行者的應用程式間共用，以改進可用性：** 在 iOS 上，應用程式個人識別碼會在**相同應用程式發行者**的所有應用程式之間共用。 在 Android，一組應用程式 PIN 會在所有應用程式間共用。
-  - **裝置重新開機後「重新檢查存取需求前等候時間 (分鐘)」行為：** [PIN 計時器] 會追蹤非使用狀態的分鐘數，可判斷何時顯示下一個 Intune 應用程式個人識別碼。 在 iOS 上，PIN 計時器不會受到裝置重新開機的影響。 因此，裝置重新啟動不會影響使用者在使用 Intune PIN 原則的 iOS 應用程式中閒置的分鐘數。 在 Android 上，PIN 計時器會在裝置重新開機時重設。 因此，使用 Intune PIN 原則的 Android 應用程式可能會提示輸入應用程式 PIN，而不論**裝置重新開機之後**的「重新檢查存取需求前的剩餘時間 (分鐘)」設定值。  
-  - **與 PIN 相關的計時器過時性質：** 在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前的剩餘時間 (分鐘)」值時再度顯示。
+  - **裝置重新開機後「重新檢查存取需求前等候時間 (分鐘)」行為：** [PIN 計時器] 會追蹤非使用狀態的分鐘數，可判斷何時顯示下一個 Intune 應用程式個人識別碼。 在 iOS 上，PIN 計時器不會受到裝置重新開機的影響。 因此，裝置重新啟動不會影響使用者在使用 Intune PIN 原則的 iOS 應用程式中閒置的分鐘數。 在 Android 上，PIN 計時器會在裝置重新開機時重設。 因此，使用 Intune PIN 原則的 Android 應用程式可能會提示輸入應用程式 PIN，而不論**裝置重新開機之後**的「重新檢查存取需求前等候時間 (分鐘)」設定值。  
+  - **與 PIN 相關的計時器過時性質：** 在輸入 PIN 以存取應用程式 (應用程式 A) 之後，應用程式會離開裝置的前景 (主要輸入焦點)，而該組 PIN 的 PIN 計時器會重設。 由於計時器已經重設，共用這組 PIN 的任何應用程式 (應用程式 B) 都不會提示使用者輸入 PIN。 提示會在再次達到「重新檢查存取需求前等候時間 (分鐘)」值時再度顯示。
 
-若為 iOS 裝置，即使在不同發行者的應用程式之間共用 PIN，當非主要輸入焦點之應用程式的 [重新檢查存取需求前等候時間 (分鐘)]  值再次達到時，就會再度顯示提示。 例如，使用者有發行者 _X_ 的應用程式 _A_ 和發行者 _Y_ 的應用程式 _B_，而且這兩個應用程式共用相同的 PIN。 使用者將焦點放在應用程式 _A_ (前景)，並將應用程式 _B_ 最小化。 達到 [重新檢查存取需求前等候時間 (分鐘)]  值，而且使用者切換至應用程式 _B_ 之後，則需要 PIN。
+若為 iOS 裝置，即使在不同發行者的應用程式之間共用 PIN，當非主要輸入焦點之應用程式的 「重新檢查存取需求前等候時間 (分鐘)」  值再次達到時，就會再度顯示提示。 例如，使用者有發行者 _X_ 的應用程式 _A_ 和發行者 _Y_ 的應用程式 _B_，而且這兩個應用程式共用相同的 PIN。 使用者將焦點放在應用程式 _A_ (前景)，並將應用程式 _B_ 最小化。 達到 「重新檢查存取需求前等候時間 (分鐘)」  值，而且使用者切換至應用程式 _B_ 之後，則需要 PIN。
 
   >[!NOTE] 
-  > 為了提高驗證使用者存取需求的頻率 (亦即 PIN 提示)，尤其是經常使用的應用程式，建議您降低「重新檢查存取需求前的剩餘時間 (分鐘)」設定的值。 
+  > 為了提高驗證使用者存取需求的頻率 (亦即 PIN 提示)，尤其是經常使用的應用程式，建議您降低「重新檢查存取需求前等候時間 (分鐘)」設定的值。 
       
 - **Intune PIN 如何搭配使用 Outlook 和 OneDrive 的內建應用程式 PIN ？**<br></br>
-Intune PIN 會根據以閒置為基礎的計時器 (又稱為「重新檢查存取需求前的剩餘時間 (分鐘)」值) 運作。 因此，Intune PIN 提示會與 Outlook 和 OneDrive 的內建應用程式 PIN 提示分開顯示，後者預設通常與應用程式啟動相關。 如果使用者同時收到兩個 PIN 提示，預期的行為應該是優先使用 Intune PIN。 
+Intune PIN 會根據以閒置為基礎的計時器 (又稱為「重新檢查存取需求前等候時間 (分鐘)」值) 運作。 因此，Intune PIN 提示會與 Outlook 和 OneDrive 的內建應用程式 PIN 提示分開顯示，後者預設通常與應用程式啟動相關。 如果使用者同時收到兩個 PIN 提示，預期的行為應該是優先使用 Intune PIN。 
 
 - **PIN 安全嗎？**<br></br> PIN 是用來允許僅有正確的使用者可以存取應用程式中的組織資料。 因此，終端使用者必須使用他們的公司或學校帳戶登入，之後才能設定或重設其 Intune 應用程式 PIN。 這項驗證是由 Azure Active Directory 透過安全語彙基元交換來處理，且未向 Intune App SDK 公開。 從安全性角度來看，保護工作或學校資料的最佳方式是將資料加密。 加密與應用程式 PIN 無關，而是其本身的應用程式保護原則。
 
@@ -166,9 +166,9 @@ Intune 可以透過三種不同的方式抹除資料：完整的裝置抹除、M
 - **MAM 選擇性抹除發生的速度有多快？**<br></br> 如果使用者在起始選擇性抹除時正在使用應用程式，Intune App SDK 每隔 30 分鐘就會檢查來自 Intune MAM 服務的選擇性抹除要求。 它也會在使用者首次啟動應用程式並以其工作或學校帳戶登入時檢查選擇性抹除。
 
 **為什麼內部部署 (on-prem) 服務無法搭配受 Intune 保護的應用程式運作？**<br></br>
-Intune 應用程式保護取決於使用者的身分識別在應用程式與 Intune App SDK 之間保持一致。 保證一致的唯一方式是透過新式驗證。 有些案例中，應用程式可搭配內部部署組態運作，但是不一致也不保證。
+Intune 應用程式保護取決於使用者的身分識別在應用程式與 Intune App SDK 之間保持一致。 保證一致的唯一方式是透過新式驗證。 有些案例中，應用程式可搭配內部部署組態運作，但是不保證一定運作。
 
-**是否有安全的方式能夠從受管理的應用程式開啟網頁連結？**<br></br>
+**是否有安全的方式能夠從受控應用程式開啟網頁連結？**<br></br>
 可以！ IT 系統管理員可以針對 [Intune Managed Browser 應用程式](../apps/app-configuration-managed-browser.md)部署與設定應用程式保護原則，這是由 Microsoft Intune 開發的網頁瀏覽器，可輕鬆地利用 Intune 加以管理。 針對 Intune 受控應用程式，IT 系統管理員可以要求其中的所有網頁連結都必須使用 Managed Browser 應用程式來開啟。
 
 ## <a name="app-experience-on-android"></a>Android 上的應用程式體驗
@@ -181,15 +181,15 @@ Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存�
 
 處理不同類型的設定時，應用程式版本需求會優先，然後是 Android 作業系統版本需求和 Android 修補程式版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。
 
-**Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置通過 Google 適用於 Android 裝置的 SafetyNet 證明。將新 SafetyNet 證明結果傳送至服務的頻率為何？** <br><br> 新 Google Play 服務判斷將會依照 Intune 服務所決定的間隔報告給 IT 系統管理員。 進行服務呼叫的頻率已由於負載而節流處理，因此這個值會在內部維護，且無法設定。 將會根據條件式啟動時上次回報給 Intune 服務的結果，來採取任何 IT 系統管理員針對 Google SafetyNet 證明設定所設定的動作。 如果沒有任何資料，將會根據沒有其他的條件式啟動檢查失敗來允許存取，而 Google Play 服務用來判斷證明結果的「往返」動作將在後端開始，並在裝置未通過時以非同步方式提示使用者。 如果有過時的資料，將會根據上次回報的結果封鎖或允許存取，同樣地，Google Play 服務用來判斷證明結果的「往返」動作將會開始，並在裝置未通過時以非同步方式提示使用者。
+**Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置通過 Google 適用於 Android 裝置的 SafetyNet 證明。將新 SafetyNet 證明結果傳送至服務的頻率為何？** <br><br> 新 Google Play 服務判斷將會依照 Intune 服務所決定的間隔報告給 IT 系統管理員。 進行服務呼叫的頻率已由於負載而節流處理，因此這個值會在內部維護，且無法設定。 任何 IT 系統管理員針對 Google SafetyNet 證明設定所設定的動作，將會根據條件式啟動上次回報給 Intune 服務的結果來執行。 如果沒有任何資料，將會根據沒有其他的條件式啟動檢查失敗來允許存取，而 Google Play 服務用來判斷證明結果的「往返」動作將在後端開始，並在裝置未通過時以非同步方式提示使用者。 如果有過時的資料，將會根據上次回報的結果封鎖或允許存取，同樣地，Google Play 服務用來判斷證明結果的「往返」動作將會開始，並在裝置未通過時以非同步方式提示使用者。
 
 **Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置透過 Google 適用於 Android 裝置的 Verify Apps API 傳送訊號。終端使用者如何開啟應用程式掃描，讓它們不會因此而被封鎖存取？**<br><br> 有關如何執行這項操作的指示會因裝置而稍有差異。 一般程序包含前往 Google Play 商店，然後按一下 [我的應用程式與遊戲]  ，再按一下上次應用程式掃描結果，其會將您引導至「Play 安全防護」功能表。 確定 [掃描裝置中的安全性威脅]  的切換開關已切換為開啟。
 
 **Google 的 SafetyNet Attestation API 實際上會在 Android 裝置上檢查什麼項目？[檢查基本完整性] 與 [檢查基本完整性與經過認證的裝置] 的可設定值之間有何差異？** <br><br>
-Intune 會利用 Google Play Protect SafetyNet API，在我們現有 Root 破解偵測檢查中新增對已取消註冊裝置的檢查。 如果不想在 Root 破解的裝置上執行其應用程式，Google 已開發和維護這個 API 集合供 Android 應用程式採用。 例如，Android Pay 應用程式已併入此集合。 雖然 Google 不會公開共用所發生 Root 破解偵測檢查的全部內容，但我們預期這些 API 會偵測到其裝置遭到 Root 破解的使用者。 接著可防止這些使用者存取，或從其啟用原則的應用程式抹除其公司帳戶。 [檢查基本完整性] 會告訴您有關裝置的一般完整性。 Root 破解的裝置、模擬器、虛擬裝置，以及具有竄改跡象的裝置都無法通過基本完整性。 [檢查基本完整性與經認證的裝置] 會告訴您有關裝置與 Google 服務的相容性。 只有經過 Google 認證且未修改的裝置可以通過這項檢查。 將會失敗的裝置包括下列各項：
+Intune 會利用 Google Play Protect SafetyNet API，在我們現有 Root 破解偵測檢查中新增對已取消註冊裝置的檢查。 如果不想在 Root 破解的裝置上執行其應用程式，Google 已開發和維護這個 API 集合供 Android 應用程式採用。 例如，Android Pay 應用程式已併入此集合。 雖然 Google 不會公開共用所發生 Root 破解偵測檢查的全部內容，但我們預期這些 API 會偵測到其裝置遭到 Root 破解的使用者。 接著可防止這些使用者存取，或從其啟用原則的應用程式抹除其公司帳戶。 [檢查基本完整性] 會告訴您有關裝置的一般完整性。 Root 破解的裝置、模擬器、虛擬裝置，以及具有竄改跡象的裝置都無法通過基本完整性。 [檢查基本完整性與經認證的裝置] 會告訴您有關裝置與 Google 服務的相容性。 只有經過 Google 認證且未修改的裝置可以通過這項檢查。 下列裝置將無法通過：
 
 - 無法通過基本完整性的裝置
-- 其開機載入器已解除鎖定的裝置
+- 開機載入器已解除鎖定的裝置
 - 具有自訂系統映像/ROM 的裝置
 - 製造商未為其申請或通過 Google 認證的裝置 
 - 直接從 Android Open Source Program 來源檔案建置系統映像的裝置
@@ -205,11 +205,11 @@ Intune 會利用 Google Play Protect SafetyNet API，在我們現有 Root 破解
 
 ## <a name="app-experience-on-ios"></a>iOS 上的應用程式體驗
 **如果我將指紋或臉部新增至我的裝置，或是從中移除，會發生什麼情況？**<br></br>
-Intune 應用程式防護原則可控制應用程式只存取 Intune 授權使用者。 控制應用程式存取的其中一種方式，就是在支援裝置上要求 Apple 的 Touch ID 或 Face ID。 如果裝置的生物特徵辨識資料庫有任何變更，Intune 會實作一項行為，那就是 Intune 會在達到下次非使用狀態逾時值時，提示使用者輸入 PIN。 對生物特徵辨識資料所做的變更包括新增或移除指紋或臉部。 如果 Intune 使用者未設定 PIN，則會引導他們設定一個 Intune PIN。
+Intune 應用程式防護原則可控制應用程式只存取 Intune 授權使用者。 控制應用程式存取的其中一種方式，就是在支援裝置上要求 Apple 的 Touch ID 或 Face ID。 如果裝置的生物特徵辨識資料庫有任何變更，Intune 會在下次達到非使用狀態逾時值時，提示使用者輸入 PIN。 對生物特徵辨識資料所做的變更包括新增或移除指紋或臉部。 如果 Intune 使用者未設定 PIN，則會引導他們設定一個 Intune PIN。
 
 這樣做的用意是為了持續確保應用程式中的組織資料安全，並在應用程式層級受到保護。 此功能僅適用於 iOS，並需要整合 Intune APP SDK for iOS 9.0.1 版或更新版本的應用程式參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 這項整合會輪流發生並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。
   
-**我可以使用 iOS 共用延伸模組在不受管理的應用程式中開啟工作或學校資料，甚至可將資料傳輸原則設為 [僅限受管理的應用程式] 或 [沒有應用程式]。這樣不會泄露資料嗎？**<br></br>
+**我可以使用 iOS 共用延伸模組在不受控應用程式中開啟工作或學校資料，甚至可將資料傳輸原則設為 [僅限受控應用程式] 或 [沒有應用程式]。這樣不會泄露資料嗎？**<br></br>
 Intune 應用程式保護原則必須管理裝置才能控制 iOS 共用延伸模組。 因此，Intune _**會先加密「公司」資料，才會在應用程式之外共用**_ 。 您可以嘗試在受管理的應用程式外開啟「公司」檔案來加以驗證。 檔案應已加密且無法在受管理的應用程式之外開啟。
 
 **已設定給同一組應用程式和使用者的多個 Intune 應用程式保護存取設定，在 iOS 上如何運作？**<br></br>

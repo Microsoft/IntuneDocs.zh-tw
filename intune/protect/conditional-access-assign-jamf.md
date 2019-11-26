@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d3552eca925865eb3278b50490a6b70ee5807e2b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
+ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502443"
+ms.lasthandoff: 11/18/2019
+ms.locfileid: "74161601"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
 
@@ -37,12 +37,11 @@ ms.locfileid: "72502443"
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中設定裝置合規性原則
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後前往 [裝置合規性]   > [原則]  。 
-2. 如果您是使用先前建立的原則，請在主控台中選取該原則，然後移至此程序的下一個步驟。  
-   
-   選取 [建立原則]  ，然後指定包含 [平台]  為 **macOS** 的原則詳細資料。 設定 [設定]  和 [因不符合規範而採取的動作]  ，以符合您的組織需求，然後選取 [建立]  以儲存原則。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-3. 在原則的 [概觀]  窗格上，選取 [指派]  。 使用可用的選項來設定會收到此原則的 Azure Active Directory (Azure AD) 使用者與安全性群組。 Jamf 與 Intune 的整合不支援以裝置群組為目標的合規性政策。 
+2. 選取 [裝置]   > [合規性政策]  。 如果您是使用先前建立的原則，請在主控台中選取該原則，然後移至此程序的下一個步驟。 若要建立新原則，請選取 [建立原則]  ，然後指定 [平台]  為 [macOS]  的原則詳細資料。 設定 [設定]  和 [因不符合規範而採取的動作]  ，以符合您的組織需求，然後選取 [建立]  以儲存原則。
+
+3. 在原則的 [概觀]  窗格上，選取 [指派]  。 使用可用的選項來設定會收到此原則的 Azure Active Directory (Azure AD) 使用者與安全性群組。 Jamf 與 Intune 的整合不支援以裝置群組為目標的合規性政策。
 
 4. 當您選取 [儲存]  時，原則就會部署至使用者。  
 
@@ -103,7 +102,7 @@ ms.locfileid: "72502443"
 
 使用 Jamf Pro 主控台確認 Jamf Pro 和 Microsoft Intune 之間可順利通訊。 
 
-- 在 Jamf Pro 中，移至 [設定]   > [全域管理]   > [Microsoft Intune 整合]  ，然後選取 [測試]  。 
+- 在 Jamf Pro 中，移至 [設定]   > [全域管理]   > [Microsoft Intune 整合]  ，然後選取 [測試]  。
 
     主控台會顯示訊息，其中包含連線成功或失敗的資訊。  
 
@@ -112,7 +111,7 @@ ms.locfileid: "72502443"
 
 ## <a name="removing-a-jamf-managed-device-from-intune"></a>從 Intune 移除受控於 Jamf 的裝置
 
-您可以在 [所有裝置]  檢視中選取 [刪除]  ，以從 Intune 主控台移除 Jamf 受控裝置。 選取多個裝置，並按一下 [刪除]  ，即可啟用刪除大量裝置。
+若要移除 Jamf 受控裝置，請開啟 Microsoft Endpoint Manager 系統管理中心，然後選取 [裝置]   > [所有裝置]  選取該裝置，然後選取 [刪除]  。  選取多個裝置，並按一下 [刪除]  ，即可啟用刪除大量裝置。
 
 在 Jamf Pro 文件中取得如何[移除 Jamf 受控裝置](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information)的相關資訊。您也可以透過 [Jamf 支援](https://www.jamf.com/support/)提出支援票證，以取得其他支援。 
 

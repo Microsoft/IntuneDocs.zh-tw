@@ -6,28 +6,26 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 127dafcb-3f30-4745-a561-f62c9f095907
-ms.reviewer: stama
+ms.reviewer: demerson
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18da57282a190dec363e3dfbde5293f5228cb0b
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72504628"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188459"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版 Exchange Online Dedicated 建立條件式存取原則
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 本文將示範如何根據裝置合規性來設定 Exchange 內部部署的條件式存取。
 
@@ -46,7 +44,7 @@ ms.locfileid: "72504628"
 
 - 內部部署 Exchange 組織的連接器可以安裝在任何機器上，只要該機器能與 Exchange 伺服器通訊即可。
 
-- 此連接器支援 **Exchange CAS 環境**。 Intune 支援將連接器直接安裝於 Exchange CAS 伺服器上，但我們建議您將它安裝於不同的電腦上，因為連接器會在伺服器上造成額外負載。 設定連接器時，您必須將它設定成可以與其中一部 Exchange CAS 伺服器通訊。
+- 此連接器支援 **Exchange CAS 環境**。 Intune 支援將連接器直接安裝在 Exchange CAS 伺服器上。 因為連接器會對伺服器造成額外負載，所以建議將其安裝在另一部電腦上。 設定連接器時，您必須將它設定成可以與其中一部 Exchange CAS 伺服器通訊。
 
 - 必須以憑證式驗證或使用者認證項目來設定 **Exchange ActiveSync**。
 
@@ -60,7 +58,7 @@ ms.locfileid: "72504628"
 
 - 若裝置不符合條件式存取設定，就會在使用者登入時，對使用者顯示下列其中一則訊息：
   - 如果裝置未向 Intune 註冊，或未在 Azure Active Directory 中註冊，就會顯示一則訊息，其中包含如何安裝公司入口網站應用程式、註冊裝置及啟動電子郵件的指示。 此程序也會將裝置的 Exchange ActiveSync 識別碼與 Azure Active Directory 中的裝置記錄相關聯。
-  - 如果裝置不符合規範，就會顯示一則訊息，來將使用者引導至 Intune 公司入口網站或公司入口網站應用程式，以尋找問題的相關資訊與修正問題的方法。
+  - 如果裝置不相容，即會顯示一則訊息來將使用者導向 Intune 公司入口網站或公司入口網站應用程式。 使用者可在公司入口網站中找到問題的相關資訊及其補救方式。
 
 ### <a name="support-for-mobile-devices"></a>支援行動裝置
 
@@ -70,7 +68,7 @@ ms.locfileid: "72504628"
 - EAS 郵件用戶端 **Android 工作設定檔裝置：** Android 工作設定檔裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work for Android Enterprise**。 若要搭配 Android 工作設定檔使用條件式存取，除了必須部署 Gmail 或 Nine Work for Android Enterprise 應用程式的電子郵件設定檔之外，還必須將那些應用程式部署為必要安裝。
 
 > [!NOTE]
-> Android 與 iOS 版 Microsoft Outlook 不透過 Exchange 內部部署連接器支援。 若要利用 Azure Active Directory 條件式存取原則與 Intune 應用程式防護原則來保護您內部部署信箱的 iOS 與 Android 版 Outlook，請參閱[搭配 iOS 與 Android 版 Outlook 使用混合式現代化驗證](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) \(機器翻譯\)。 
+> Android 與 iOS 版 Microsoft Outlook 不透過 Exchange 內部部署連接器支援。 若要利用 Azure Active Directory 條件式存取原則與 Intune 應用程式防護原則來保護您內部部署信箱的 iOS 與 Android 版 Outlook，請參閱[搭配 iOS 與 Android 版 Outlook 使用混合式現代化驗證](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) \(機器翻譯\)。
 
 ### <a name="support-for-pcs"></a>對電腦的支援
 
@@ -80,19 +78,19 @@ Windows 8.1 及更新版本上原生的**郵件**應用程式 (在使用 Intune 
 
 在您可以使用下列程序來設定 Exchange 內部部署存取控制之前，您必須先為 Exchange 內部部署至少安裝並設定一個 [Intune 內部部署 Exchange 連接器](exchange-connector-install.md)。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 移至 [Exchange 存取]  ，然後選取 [Exchange 內部部署存取]  。 
+2. 移至 [租用戶系統管理]   > [Exchange 存取]  ，然後選取 [Exchange 內部部署存取]  。
 
 3. 在 [Exchange 內部部署存取]  窗格中選擇 [是]  ，以 [啟用 Exchange 內部部署存取控制]  。
 
-4. 在 [指派]  底下，選擇 [選取要納入的群組]  ，然後選取一或多個群組來設定存取。 
+4. 在 [指派]  底下，選擇 [選取要納入的群組]  ，然後選取一或多個群組來設定存取。
 
    已將適用於 Exchange 內部部署存取的條件式存取原則套用至您所選群組的成員。 接收到此原則的使用者必須先在 Intune 中註冊其裝置，並符合合規性設定檔的規範，才能存取 Exchange 內部部署。
 
-5. 若要排除群組，請選擇 [選取要排除的群組]  ，然後選取一或多個免套用下列需求的群組：註冊裝置，且符合合規性設定檔的規範，然後才能存取 Exchange 內部部署。 
+5. 若要排除群組，請選擇 [選取要排除的群組]  ，然後選取無須註冊裝置及符合合規性設定檔規範然後才能存取 Exchange 內部部署的一或多個群組。 
 
-6. 接下來，設定 Intune 內部部署 Exchange 連接器的設定。  在 [Exchange 存取]  窗格的 [設定]  底下，選取 [Exchange ActiveSync 內部部署連接器]  ，然後選取您要設定之 Exchange 組織的連接器。
+6. 接下來，設定 Intune 內部部署 Exchange 連接器的設定。  在 [Exchange 內部部署存取]  視窗的 [設定]  下，選取 [Exchange ActiveSync 內部部署連接器]  ，然後選取要設定的 Exchange 組織連接器。
 
 7. 如果使用者的裝置不符合規範，且他們想要存取 Exchange 內部部署，則在 [設定]  底下，選擇 [使用者通知]  ，以修改傳送給使用者的預設電子郵件訊息。 訊息範本會使用標記語言。  當您一邊鍵入訊息時，會一邊顯示訊息的預覽。
    > [!TIP]
@@ -120,6 +118,6 @@ Windows 8.1 及更新版本上原生的**郵件**應用程式 (在使用 Intune 
 
 接下來，建立合規性政策，並將它指派給 Intune 的使用者以評估其行動裝置，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="next-steps"></a>後續步驟
 
-[在 Microsoft Intune 中對 Intune 內部部署 Exchange 連接器進行疑難排解](https://support.microsoft.com/help/4471887) \(機器翻譯\)
+[在 Microsoft Intune 中對 Intune 內部部署 Exchange 連接器進行疑難排解](https://support.microsoft.com/help/4471887)

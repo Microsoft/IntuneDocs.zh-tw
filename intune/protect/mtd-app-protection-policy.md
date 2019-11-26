@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,19 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 15d986bc5017a44571c6194f9c6b53167b671349
-ms.sourcegitcommit: 06a1fe83fd95c9773c011690e8520733e1c031e3
+ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72794416"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188503"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense 應用程式防護原則
 
-> [!NOTE] 
-> 此文章適用於所有支援應用程式防護原則的行動威脅防護 (MTD) 合作夥伴：Better Mobile (Android)、Zimperium (iOS)、Lookout for Work (Android/iOS)。
+搭配 Mobile Threat Defense (MTD) 的 Intune 可協助偵測行動裝置上的威脅及評估風險。 您可以建立評估風險的 Intune 應用程式保護原則，以決定是否允許裝置存取公司資料。
 
-搭配 MTD 的 Intune 可協助您偵測行動裝置上的威脅及評估其風險。 您可以建立評估風險的 Intune 應用程式防護原則規則，來判斷裝置是否受允許存取公司資料。 
+
+> [!NOTE]
+> 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：
+>
+> - Better Mobile (Android)
+> - Zimperium (iOS)
+> - Lookout for Work (Android、iOS)。
 
 ## <a name="before-you-begin"></a>開始之前
 
@@ -42,38 +47,25 @@ ms.locfileid: "72794416"
 
 ## <a name="to-create-an-mtd-app-protection-policy"></a>建立 MTD 應用程式防護原則
 
-1. 移至 [Azure 入口網站](https://portal.azure.com/)，並使用您的 Intune 認證登入。
+使用此程序來[建立 iOS/iPadOS 或 Android 的應用程式保護原則](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)，然後在 [應用程式]  、[條件式啟動]  和 [指派]  頁面中使用下列資訊：
 
-2. 在 [Azure 儀表板]  中，選擇左功能表中的 [All services] (所有服務)  ，然後在文字方塊篩選中鍵入 **Intune**。
+- **應用程式**：選取所用的 Mobile Threat Defense 合作夥伴應用程式。
+- **條件式啟動**：在 [裝置狀況]  下，使用下拉式方塊選取 [允許的最高裝置威脅等級]  。
 
-3. 選擇 [Intune]  ，即會開啟 [Intune 儀表板]  。
+  威脅等級 [值]  的選項：
 
-4. 在 [Intune 儀表板]  上，選擇 [用戶端應用程式]  ，然後選擇 [管理]  區段下的 [應用程式防護原則]  。
+  - **安全**：這個層級最安全。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
+  - **低**︰如果只有低層級的威脅，則會將裝置評估為符合規範。 任何更高等級的威脅都會使裝置處於不相容狀態。
+  - **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
+  - **高**：這個層級最不安全。 這會允許所有威脅等級，並只使用 Mobile Threat Defense 作為回報之用。 裝置必須要有使用此裝置啟用的 MTD 應用程式。
 
-5. 選擇 [建立原則]  ，輸入**名稱**、**描述**，選取 [平台]  。 
+  [動作]  的選項：
 
-6. 在 [條件式啟動]  窗格中，於 [裝置狀況]  表格下，從 [裝置威脅允許上限]  底下的下拉式清單選擇 [行動裝置威脅等級]。
+  - **封鎖存取**
+  - **抹除資料**
 
-    a.  **安全**：這個層級最安全。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
+- **指派**：將原則指派給使用者群組。  透過 Intune 應用程式保護評估群組成員所用的裝置，以在目標應用程式上存取公司資料。
 
-    b.  **低**︰如果只有低層級的威脅，則會將裝置評估為符合規範。 任何更高等級的威脅都會使裝置處於不相容狀態。
-
-    c.  **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
-
-    d.  **高**：這個層級最不安全。 這會允許所有威脅等級，並只將 Mobile Threat Defense 用於回報用途。 裝置必須要有使用此裝置啟用的 MTD 應用程式。
-
-7. 按一下 [儲存]  兩次，然後選擇 [建立]  。
-
-## <a name="to-assign-an-mtd-app-protection-policy"></a>指派 MTD 應用程式防護原則
-
-若要將裝置合規性原則指派給使用者，請選擇您先前設定的原則。 現有的原則可以在 [裝置相容性 - 政策]  窗格中找到。
-
-1. 選擇您想要指派給使用者的原則，然後選擇 [指派]  。 這個動作會開啟窗格讓您選取 [Azure Active Directory 安全性群組]  ，並將它們指派給原則。
-
-2. 選擇 [選取要納入的群組]  會開啟顯示 Azure AD 安全性群組的窗格。 選擇 [選取]  會將原則部署給使用者。
-
-> [!NOTE] 
-> 您已對使用者套用此原則。 Intune 應用程式會評估原則目標使用者所使用的裝置，以在目標應用程式上存取公司資料。
 
 ## <a name="next-steps"></a>後續步驟  
 

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 11/13/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3cfcc4ac0c5125324102c55dc7bc887006df6b
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73801432"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199145"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中建立並指派 SCEP 憑證設定檔
 
@@ -49,14 +49,9 @@ ms.locfileid: "73801432"
 
    適用於「僅限裝置擁有者」  設定檔的 SCEP 憑證設定檔具有下列限制：
 
-   1. 不支援下列變數：
+   1. 在 [監視] 下方，憑證報告不適用於「裝置擁有者」SCEP 憑證設定檔。
 
-      - CN={{OnPrem_Distinguished_Name}}
-      - CN={{onPremisesSamAccountName}}
-
-   2. 在 [監視] 下方，憑證報告不適用於「裝置擁有者」SCEP 憑證設定檔。
-
-   3. 您無法使用 Intune 撤銷由 SCEP 憑證設定檔為裝置擁有者所佈建的憑證。 您可以透過外部程序或直接使用憑證授權單位單位來管理撤銷。 
+   2. 您無法使用 Intune 撤銷由 SCEP 憑證設定檔為裝置擁有者所佈建的憑證。 您可以透過外部程序或直接使用憑證授權單位單位來管理撤銷。 
 
 7. 選取 [設定]  ，然後完成下列設定：
 
@@ -115,12 +110,11 @@ ms.locfileid: "73801432"
 
         主體名稱格式的格式選項包括下列變數：
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** 或 **{{AzureADDeviceId}}** - 任一變數皆可用於以 Azure AD 識別碼識別裝置。
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**
@@ -157,12 +151,11 @@ ms.locfileid: "73801432"
 
         透過 [裝置]  憑證類型，您可以使用下列裝置憑證變數作為值：
 
-        - **{{AAD_Device_ID}}**
+        - **{{AAD_Device_ID}}** 或 **{{AzureADDeviceId}}** - 任一變數皆可用於以 Azure AD 識別碼來識別裝置。
         - **{{Device_Serial}}**
         - **{{Device_IMEI}}**
         - **{{SerialNumber}}**
         - **{{IMEINumber}}**
-        - **{{AzureADDeviceId}}**
         - **{{WiFiMacAddress}}**
         - **{{IMEI}}**
         - **{{DeviceName}}**

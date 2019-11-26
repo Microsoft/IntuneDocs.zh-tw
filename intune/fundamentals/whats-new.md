@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/08/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 37ed7bfd204289c963b8134252d9d76f2379ecba
-ms.sourcegitcommit: 768d581cb8bcc5fdcb8ade95d402b11223ab226c
+ms.openlocfilehash: 71045489ac703860073a3023e6d6170778117d33
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2019
-ms.locfileid: "73882502"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199282"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -52,6 +52,46 @@ ms.locfileid: "73882502"
 ### Monitor and troubleshoot
 ### Role-based access control
 -->  
+
+## <a name="week-of-november-18-2019"></a>2019 年 11 月 18 日當週
+
+### <a name="device-configuration"></a>裝置設定
+
+#### <a name="windows-10-feature-updates-public-preview---2384877---"></a>Windows 10 功能更新 (公開預覽)<!-- 2384877 -->
+
+您現在可以將 [Windows 10 功能更新](../protect/windows-update-for-business-configure.md#windows-10-feature-updates)部署至 Windows 10 裝置。 Windows 10 功能更新是新的軟體更新原則，可設定您想要裝置安裝並保持的 Windows 10 版本。 您可以使用此新原則類型以及現有的 Windows 10 更新通道。
+
+收到 Windows 10 功能更新原則的裝置會安裝所指定 Windows 版本，並在編輯或移除原則之前保持為該版本。 執行較新 Windows 版本的裝置仍會保持為其目前版本。 保持為特定 Windows 版本之裝置仍然可以從 Windows 10 更新通道安裝該版本的品質和安全性更新。
+
+自本週開始，會向租用戶推出此新的原則類型。 這項原則將於近日推出供租用戶使用。
+
+### <a name="monitor-and-troubleshoot"></a>監視及疑難排解
+
+#### <a name="updated-support-experience---5012398---"></a>已更新支援體驗<!-- 5012398 -->
+
+自即日起，會向租用戶推出針對[取得 Intune 說明及支援](get-support.md)之更新及簡化的主控台內體驗。 這項新體驗將於近日推出供您使用。
+
+我們已改善主控台內常見問題的搜尋和意見反應，以及您用於連絡支援人員的工作流程。 當您建立支援問題時，您會看到回撥或電子郵件回覆的即時預估，且進階與統一支援客戶可以輕鬆地指定其問題的嚴重性，以協助更快取得支援。
+
+## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日當週  
+
+### <a name="app-management"></a>應用程式管理  
+
+#### <a name="improved-macos-enrollment-experience-in-company-portal----5074349-wnready---"></a>已改善公司入口網站的 macOS 註冊體驗 <!-- 5074349 WNready -->  
+提供 macOS 註冊體驗的公司入口網站有更簡易註冊程序，其更貼近 iOS 版公司入口網站的註冊體驗。 裝置使用者現在會看到：  
+
+* 更時尚的使用者介面。  
+* 改善的註冊檢查清單。  
+* 更清楚的裝置註冊指示。  
+* 改善的疑難排解選項。  
+
+#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>從 Windows 公司入口網站應用程式啟動的 Web 應用程式<!-- 5030972 -->
+終端使用者現在可以直接從 Windows 公司入口網站應用程式啟動 Web 應用程式。 終端使用者可以選取 Web 應用程式，然後選擇 [以瀏覽器開啟]  選項。 已發佈的 Web URL 會直接在網頁瀏覽器中開啟。 此功能將於下周推出。 如需 Web 應用程式的詳細資訊，請參閱[將 Web 應用程式新增至 Microsoft Intune](~/apps/web-app.md)。  
+
+
+#### <a name="new-assignment-type-column-in-company-portal-for-windows-10----5459950-wnready---"></a>Windows 10 公司入口網站中新的指派類型資料行 <!-- 5459950 WNready -->
+公司入口網站 > [已安裝的應用程式]   > [指派類型]  資料行已重新命名為 [由您的組織要求]  。  使用者在該資料行下會看到 [是]  或 [否]  值，其表示應用程式為必要或是由其組織設為選擇性。 因為裝置使用者對可用應用程式的概念深感困惑，所以才有這些變更。 如需從公司入口網站安裝應用程式的詳細資訊，請參閱[在裝置上安裝和共用應用程式](/intune-user-help/install-apps-cpapp-windows)。 使用者如需設定公司入口網站應用程式的詳細資訊，請參閱[如何設定 Microsoft Intune 公司入口網站應用程式](~/apps/company-portal-app.md)。  
+
 
 ## <a name="week-of-november-4-2019"></a>2019 年 11 月 4 日當週
 
@@ -139,7 +179,7 @@ Intune 註冊與公司入口網站現在支援 iOS 11 版與更新版本。 不�
 
 ### <a name="device-configuration"></a>裝置設定
 
-#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices---2266073----"></a>適用於 Windows 10 和更新版本裝置的新裝置韌體設定介面設定檔<!-- 2266073  -->
+#### <a name="new-device-firmware-configuration-interface-profile-for-windows-10-and-later-devices-public-preview---2266073----"></a>適用於 Windows 10 和更新版本裝置的新裝置韌體設定介面設定檔 (公開預覽)<!-- 2266073  -->
 
 在 Windows 10 和更新版本上，您可以建立裝置組態設定檔來控制設定和功能 (**裝置組態** > **設定檔** > **建立設定檔** > **Windows10 和更新版本** (針對平台))。 在此更新中，有新的裝置韌體設定介面設定檔類型，可讓 Intune 管理 UEFI (BIOS) 設定。
 
@@ -516,7 +556,7 @@ Intune 現在支援同時管理 iOS 13 和 macOS Catalina 裝置。
 此設定會在 OS 磁碟機復原 (藉由使用 bootmgr 或 WinRE) 之後起始用戶端驅動的復原密碼重新整理，並在固定資料磁碟機上解除鎖定復原密碼。 此設定會重新整理所使用的特定復原密碼，而磁碟區上其他未使用的密碼則會保持不變。 如需詳細資訊，請參閱適用於 [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) \(部分機器翻譯\) 的 BitLocker CSP 文件。
 
 #### <a name="tamper-protection-for-windows-defender-antivirus---4705448----------"></a>適用於 Windows Defender 防毒軟體的防篡改保護<!-- 4705448        -->
-使用 Intune 來管理適用於 Windows Defender 防毒軟體的「防篡改保護」  。 當您使用 Windows 10 Endpoint Protection 的裝置組態設定檔時，將可在 Microsoft Defender 資訊安全中心群組內找到[適用於防篡改保護的設定](../protect/endpoint-protection-windows-10.md#windows-defender-security-center)。 您可以將 [防篡改保護] 設定為 [已啟用]  以開啟 [防篡改保護] 限制、設定 [已停用]  以關閉它們，或設定 [未設定]  以讓裝置保留目前設定。  
+使用 Intune 來管理適用於 Windows Defender 防毒軟體的「防篡改保護」  。 當您使用 Windows 10 Endpoint Protection 的裝置組態設定檔時，將可在 Microsoft Defender 資訊安全中心群組內找到[適用於防篡改保護的設定](../protect/endpoint-protection-windows-10.md#microsoft-defender-security-center)。 您可以將 [防篡改保護] 設定為 [已啟用]  以開啟 [防篡改保護] 限制、設定 [已停用]  以關閉它們，或設定 [未設定]  以讓裝置保留目前設定。  
 
 如需防篡改保護的詳細資訊，請參閱 Windows 文件中的[使用防篡改保護來防止安全性設定變更](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) \(部分機器翻譯\)。
 
@@ -658,7 +698,7 @@ Intune 現在支援安裝並使用多個[適用於 PKCS 作業的 Microsoft Intu
 
 - App Store、文件檢視、遊戲
   - App Store
-  - 偏激的 iTunes 音樂、播客或新聞內容
+  - 清晰的 iTunes 音樂、播客或新聞內容
   - 新增 Game Center 朋友
   - 多人遊戲
 - 內建應用程式
@@ -917,12 +957,12 @@ Android 和 iOS 裝置上的 Intune 應用程式防護原則 (APP) 現在可讓�
 - 相同的裝置群組
 - 單一裝置
 
-[在 Microsoft Intune 中透過 Zebra 行動延伸模組使用及管理 Zebra 裝置](../configuration/android-zebra-mx-overview.md)示範如何在 Intune 中使用 MX。
+[在 Microsoft Intune 中透過 Zebra 行動延伸模組使用及管理 Zebra 裝置示範](../configuration/android-zebra-mx-overview.md)，了解如何在 Intune 中使用 MX。
 
 適用於：Android
 
 #### <a name="some-kiosk-settings-on-ios-devices-are-set-using-block-replacing-allow---4404075----"></a>iOS 裝置上的某些 kiosk 設定是設定為使用 [封鎖] 來取代 [允許]<!-- 4404075  -->
-當您在 iOS 裝置上建立裝置限制設定檔時 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [iOS]  (平台) > [裝置限制]  (設定檔類型) > [Kiosk]  )，您會設定 [自動鎖定]  、[響鈴開關]  、[旋轉螢幕]  、[螢幕睡眠按鈕]  以及 [音量按鈕]  。
+當您在 iOS 裝置上建立裝置限制設定檔時 ([裝置設定]   >  [設定檔]   >  [建立設定檔]   >  [iOS] (平台)  [裝置限制]  (設定檔類型) > [Kiosk]  )，您可以設定 [自動鎖定]  、[響鈴開關]  、[旋轉螢幕]  、[螢幕睡眠按鈕]  以及 [音量按鈕]  。
 
 在這項更新中，這些值會是 [封鎖]  (封鎖功能) 和 [未設定]  (允許功能)。 若要查看設定，請前往[用以允許或限制功能的 iOS 裝置設定](../configuration/device-restrictions-ios.md#kiosk)。
 
@@ -971,7 +1011,7 @@ iOS 11.0 和更新版本可使用 Face ID。 若要查看這些設定，請前�
 MDM 安全性基準範本現已結束預覽狀態，現已正式運作 (GA)。 GA 範本會識別為「2019 年 5 月的 MDM 安全性基準」  。  這是一個新範本，不是預覽版的升級。  作為新範本，您將必須檢閱[它包含的設定](../protect/security-baseline-settings-mdm.md)，然後建立新設定檔以將範本部署至您的裝置。 其他安全性基準範本可以繼續保持預覽狀態。 如需可用基準的清單，請參閱[可用的安全性基準](../protect/security-baselines.md#available-security-baselines)。  
 
 除了成為新範本之外，「2019 年 5 月的 MDM 安全性基準」  範本還包含我們最近在「開發中」文章中宣佈的兩個設定：  
-- 鎖定畫面上：語音從鎖定的畫面啟用應用程式  
+- 鎖定畫面上：在鎖定畫面上啟動語音啟動應用程式  
 - DeviceGuard：在下次裝置重新開機時使用虛擬化型安全性 (VBS)。  
 
 「2019 年 5 月的 MDM 安全性基準」  也包括新增數個新設定、移除其他設定，以及修訂一個設定的預設值。 如需從預覽版到 GA 的變更詳細清單，請參閱＜新範本的變更內容＞  。

@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f6026cf3ef8d044c92680cf4c4c88ba55c9777e0
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
+ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713263"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74199175"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制執行 Microsoft Defender ATP 的合規性
 
@@ -31,7 +31,7 @@ ms.locfileid: "73713263"
 
 - **Intune 與 Microsoft Defender ATP 之間建立服務對服務連線**。 此連線可讓 Microsoft Defender ATP 從您使用 Intune 管理的 Windows 10 裝置收集機器風險的相關資料。
 - **使用裝置組態設定檔將裝置上線至 Microsoft Defender ATP**。 您會將裝置上線，將其設定為與 Microsoft Defender ATP 通訊，以及提供有助於評估其風險層級的資料。
-- **使用裝置合規性政策來設定您想要允許的風險層級**。 風險層級是由 Microsoft Defender ATP 回報。  超過允許之風險層級的裝置會被識別為不符合規範。
+- **使用裝置合規性政策來設定您想要允許的風險層級**。 風險層級是由 Microsoft Defender ATP 回報。 超過允許之風險層級的裝置會被識別為不符合規範。
 - **使用條件式存取原則**來防止使用者從不符合規範的裝置存取公司資源。
 
 當您將 Intune 與 Microsoft Defender 進階威脅防護 (ATP) 整合時，可以利用 ATP 的威脅與弱點管理 (TVM)，並[使用 Intune 來補救 TVM 識別出的端點弱點](atp-manage-vulnerabilities.md)。
@@ -62,7 +62,7 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 - [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) 和 Microsoft Defender 資訊安全中心 (ATP 入口網站) 的存取權
 
 > [!NOTE]
-> Intune 應用程式防護原則不支援 Microsoft Defender ATP。
+> iOS 和 Android 的 Intune 應用程式保護原則不支援 Microsoft Defender ATP。
 
 ## <a name="enable-microsoft-defender-atp-in-intune"></a>在 Intune 中啟用 Microsoft Defender ATP
 
@@ -70,7 +70,7 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 
 ### <a name="to-enable-defender-atp"></a>啟用 Defender ATP
 
-您只需要為每個租用戶啟用 Defender ATP 一次。 
+您只需要為每個租用戶啟用 Defender ATP 一次。
 
 1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
@@ -92,6 +92,8 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 
 > [!TIP]
 > 當您將新的應用程式整合到 Intune Mobile Threat Defense 並啟用 Intune 連線時，Intune 會在 Azure Active Directory 中建立傳統條件式存取原則。 您整合的每個 MTD 應用程式 (包括 [Defender ATP](advanced-threat-protection.md) 或任何其他 [MTD 合作夥伴](mobile-threat-defense.md#mobile-threat-defense-partners)) 都會建立新的傳統條件式存取原則。 這些原則可以忽略，但不應編輯、刪除或停用。
+>
+> 如已刪除傳統原則，則將需要刪除負責建立該原則的 Intune 連線，然後再次設定。 這會重新建立此傳統原則。 不支援將 MTD 應用程式傳統原則移轉至條件式存取的新原則類型。
 >
 > 適用於 MTD 應用程式的傳統條件式存取原則：
 >
@@ -130,7 +132,7 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
      [使用 System Center Configuration Manager 將 Windows 10 電腦上線](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints-sccm) \(部分機器翻譯\) 中有這些 Microsoft Defender ATP 設定的更多詳細資料。
 
 7. 選取 [確定]  ，然後選取 [建立]  以儲存您的變更，這會建立設定檔。
-8. [指派裝置組態設定檔](../configuration/device-profile-assign.md)給您要使用 Microsoft Defender ATP 評估的裝置。  
+8. [指派裝置組態設定檔](../configuration/device-profile-assign.md)給您要使用 Microsoft Defender ATP 評估的裝置。
 
 ## <a name="create-and-assign-the-compliance-policy"></a>建立及指派合規性政策
 

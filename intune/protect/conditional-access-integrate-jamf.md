@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/20/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39d687c8c9b75182ba0e7d4020c6b840c753a231
-ms.sourcegitcommit: a4c7339ec9ff5b1b846cb3cca887cf91b5cd4baa
+ms.openlocfilehash: 6615933f604f2ff4156885bc6559af7e46d4ccb2
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73627653"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188524"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
@@ -70,7 +70,7 @@ Jamf 和 Intune 必須能夠存取下列連接埠，才能正確整合：
 2. 使 Intune 與 Jamf Pro 整合。
 3. 在 Jamf Pro 中設定條件式存取。
 
-## <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中建立應用程式
+### <a name="create-an-application-in-azure-active-directory"></a>在 Azure Active Directory 中建立應用程式
 
 1. 在 [Azure 入口網站](https://portal.azure.com)中，移至 [Azure Active Directory]   > [應用程式註冊]  ，然後選取 [新增註冊]  。 
 
@@ -102,15 +102,17 @@ Jamf 和 Intune 必須能夠存取下列連接埠，才能正確整合：
     > [!NOTE]
     > 如果用戶端密碼到期，您必須在 Azure 中建立新的用戶端密碼，然後更新 Jamf Pro 中的條件式存取資料。 Azure 允許您同時啟用舊祕密與新金鑰，以避免服務中斷。
 
-## <a name="enable-intune-to-integrate-with-jamf-pro"></a>使 Intune 與 Jamf Pro 整合
+### <a name="enable-intune-to-integrate-with-jamf-pro"></a>使 Intune 與 Jamf Pro 整合
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後移至 [Microsoft Intune]   > [裝置相容性]   > [夥伴裝置管理]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 將您在先前程序期間儲存的應用程式識別碼貼上至 [Jamf Azure Active Directory 應用程式識別碼]  欄位，以啟用適用於 Jamf 的相容性連接器。
+2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [夥伴裝置管理]  。
 
-3. 選取 [儲存]  。
+3. 將在前一程序中儲存的應用程式識別碼貼入 [指定 Jamf 的 Azure Active Directory 應用程式識別碼]  欄位，以啟用 [Jamf 適用的合規性連接器]  。
 
-## <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中設定 Microsoft Intune 整合
+4. 選取 [儲存]  。
+
+### <a name="configure-microsoft-intune-integration-in-jamf-pro"></a>在 Jamf Pro 中設定 Microsoft Intune 整合
 
 1. 在 Jamf Pro 中，瀏覽至 [全域管理]   > [條件式存取]  。 按一下 [macOS Intune 整合]  索引標籤上的 [編輯]  按鈕。
 
@@ -125,17 +127,22 @@ Jamf 和 Intune 必須能夠存取下列連接埠，才能正確整合：
 設定 Intune 和 Jamf 之間的整合後，您需要[將合規性政策套用至 Jamf 受控裝置](conditional-access-assign-jamf.md)。
 
 
-## <a name="disconnect-jamf-pro-and-intune"></a>中斷 Jamf Pro 和 Intune 的連線 
+## <a name="disconnect-jamf-pro-and-intune"></a>中斷 Jamf Pro 和 Intune 的連線
 
-如果您不再使用 Jamf Pro 來管理組織中的 Mac，而且想要讓使用者受 Intune 管理，您必須移除 Jamf Pro 與 Intune 之間的連線。 使用 Jamf Pro 主控台來移除連線。 
+如果您不再使用 Jamf Pro 來管理組織中的 Mac，而且想要讓使用者受 Intune 管理，您必須移除 Jamf Pro 與 Intune 之間的連線。 使用 Jamf Pro 主控台來移除連線。
 
 1. 在 Jamf Pro 中，移至 [全域管理]   > [條件式存取]  。 在 [macOS Intune 整合]  索引標籤上，選取 [編輯]  。
+
 2. 清除 [啟用 macOS 的 Intune 整合]  核取方塊。
+
 3. 選取 [儲存]  。 Jamf Pro 會將您的設定傳送至 Intune，並終止整合。
-4. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 移至 [Microsoft Intune]   > [裝置合規性]   > [夥伴裝置管理]  ，確認狀態為目前為 [已終止]  。 
+
+4. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+5. 選取 [租用戶系統管理]   > [連接器與權杖]   > [夥伴裝置管理]  ，以驗證狀態現為 [已終止]  。
 
    > [!NOTE]
-   > 您組織的 Mac 裝置將會在主控台中顯示的日期 (3 個月) 移除。 
+   > 您組織的 Mac 裝置將會在主控台中顯示的日期 (3 個月) 移除。
 
 ## <a name="next-steps"></a>後續步驟
 

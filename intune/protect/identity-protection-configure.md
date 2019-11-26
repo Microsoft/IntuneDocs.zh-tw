@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/29/2019
+ms.date: 11/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,16 +15,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 333b94bf3226c99ed50c4b433f4b477814b8e4bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4fce03913042675588ea12e5399e6f5a1be04946
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509540"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188242"
 ---
 # <a name="use-windows-hello-for-business-on-windows-10-devices-with-microsoft-intune"></a>搭配 Microsoft Intune 在 Windows 10 裝置上使用 Windows Hello 企業版
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Windows Hello 企業版是一種能取代密碼、智慧卡及虛擬智慧卡來登入 Windows 裝置的方法。 Intune 包含內建設定，因此系統管理員可以設定及使用 Windows Hello 企業版。 例如，您可以使用這些設定來：
 
@@ -44,23 +42,33 @@ Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂�
 
 ## <a name="create-the-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [設定檔]   > [建立設定檔]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+
 3. 輸入下列內容：
 
-    - **名稱**：為新的設定檔輸入描述性名稱。
-    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
-    - **平台**：選取 [Windows 10 及更新版本]  。 只有執行 Windows 10 和更新版本的裝置支援 Windows Hello 企業版。
-    - **設定檔類型**：選取 [Identity Protection]  。
-    - **設定 Windows Hello 企業版**：選擇您想要如何設定 Windows Hello 企業版。 選項包括：
+   - **名稱**：為新的設定檔輸入描述性名稱。
+   - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
+   - **平台**：選取 [Windows 10 及更新版本]  。 只有執行 Windows 10 和更新版本的裝置支援 Windows Hello 企業版。
+   - **設定檔類型**：選取 [Identity Protection]  。
 
-        - **未設定**：在裝置上[佈建 Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) \(英文\)。 只將 Identity Protection 設定檔指派給使用者時，裝置內容預設為 [未設定]  。
-        - **已停用**：如果您不想要使用 Windows Hello 企業版，請選取此選項。 此選項會針對所有使用者停用 Windows Hello 企業版。
-        - **啟用**：選擇此選項以在 Intune 中[佈建](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)及設定 Windows Hello 企業版設定。 輸入您要設定的設定。 如需所有設定的清單及其用途，請參閱：
+4. 在 [Windows Hello 企業版]  窗格中，設定下列選項：
 
-            - [用以啟用 Windows Hello 企業版的 Windows 10 裝置設定](identity-protection-windows-settings.md)
+   - **設定 Windows Hello 企業版**：選擇希望如何設定 Windows Hello 企業版：
 
-4. 當您完成時，請選取 [確定]   > [建立]  儲存變更。
+     - **未設定** (預設值)：在裝置上[佈建 Windows Hello 企業版](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning) \(英文\)。 只將 Identity Protection 設定檔指派給使用者時，裝置內容預設為 [未設定]  。
+
+     - **已停用**：如果您不想要使用 Windows Hello 企業版，請選取此選項。 此選項會針對所有使用者停用 Windows Hello 企業版。
+
+     - **啟用**：選擇此選項以在 Intune 中[佈建](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-how-it-works-provisioning)及設定 Windows Hello 企業版設定。 輸入您要設定的設定。 如需所有設定的清單及其用途，請參閱[用以啟用 Windows Hello 企業版的 Windows 10 裝置設定](identity-protection-windows-settings.md)。
+
+   - **使用安全性金鑰登入**：讓 Windows Hello 安全性金鑰作為租用戶所有電腦的登入認證。
+
+     - **啟用**
+     - **未設定** (預設)
+
+5. 當您完成時，請選取 [確定]   > [建立]  儲存變更。
 
 設定檔隨即建立，並出現在設定檔清單中。 接下來，將此設定檔[指派](../configuration/device-profile-assign.md)給使用者和裝置群組以符合您的需求。
 
