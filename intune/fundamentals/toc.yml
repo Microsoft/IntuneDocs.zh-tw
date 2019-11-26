@@ -205,6 +205,10 @@
           href: use-docs.md
         - name: 取得支援
           href: get-support.md
+    - name: 報告
+      items:
+        - name: Intune 報告
+          href: reports.md
 - name: 參考
   items:
     - name: 錯誤碼與描述
