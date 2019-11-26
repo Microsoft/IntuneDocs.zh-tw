@@ -39,7 +39,7 @@ ms.locfileid: "74098176"
 
 有兩個因素會決定如何簡化 Windows 裝置註冊：
 
-- **您是否有使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 隨附於企業行動力 + 安全性和其他授權計劃內。
+- **您是否有使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 包含在企業行動力 + 安全性和其他授權計劃中。
 - **使用者會註冊哪些版本的 Windows 用戶端？** <br>加入工作或學校帳戶即可自動註冊 Windows 10 裝置。 較舊版本則必須使用公司入口網站應用程式進行註冊。
 
 ||**Azure AD Premium**|**其他 AD**|

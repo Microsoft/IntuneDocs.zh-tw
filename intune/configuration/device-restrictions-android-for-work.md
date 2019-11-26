@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/30/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 14fa330b0c158d98c96e0d151f8a4ec7d0c95b97
-ms.sourcegitcommit: c38a856725993a4473ada75e669a57f75ab376f8
+ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73143035"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390932"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -71,8 +71,8 @@ ms.locfileid: "73143035"
   - **延後**：更新會延後 30 天。 在 30 天結束時，Android 會提示使用者安裝更新。 裝置製造商或電訊廠商可能會防止 (豁免) 重要安全性更新被延後。 豁免的更新會向裝置上的使用者顯示系統通知。
   - **維護視窗**：在您於 Intune 中設定的每日維護視窗期間自動安裝更新。 系統會在 30 天內每天嘗試安裝，並可能因為沒有足夠的空間或電池電量而失敗。 在 30 天過後，Android 會提示使用者進行安裝。 此視窗也可用來安裝 Play 應用程式的更新。 針對 Kiosk 等專用裝置使用此選項，因為可以更新單一應用程式專用的裝置前景應用程式。
 
-- **通知視窗**：當設定為 [停用]  時，不會在裝置上顯示視窗通知，包括快顯通知、來電、外撥、系統警示和系統錯誤。 當設定為 [未設定]  時，則會使用作業系統預設，因此可能會顯示通知。
-- **略過第一次使用提示**：選擇 [啟用]  可在應用程式啟動時，隱藏或略過在應用程式中逐步執行教學課程或閱讀任何入門提示的建議。 當設定為 [未設定]  時，則會使用作業系統預設，因此可能會在應用程式啟動時顯示這些建議。
+- **通知視窗**：當設定為 [停用]  時，不會在裝置上顯示視窗通知，包括快顯通知、來電、去電、系統警示和系統錯誤。 當設定為 [未設定]  時，則會使用作業系統預設，因此可能會顯示通知。
+- **略過第一次使用提示**： [**啟用**] 會隱藏或略過應用程式中的建議，這些是逐步教學課程或應用程式啟動時的提示。 當設定為 [未設定]  時，則會使用作業系統預設，因此可能會在應用程式啟動時顯示這些建議。
 
 ### <a name="system-security-settings"></a>系統安全性設定
 
@@ -150,13 +150,16 @@ ms.locfileid: "73143035"
 
     啟用時，也請設定：
 
-    - **設定自訂螢幕保護裝置映射**：輸入自訂映射的 URL。 例如，輸入：
+    - **設定自訂螢幕保護裝置映射**：輸入自訂 PNG、JPG、JPEG、GIF、BMP、WebP 或 ICOIMAGE 的 URL。 例如，輸入：
 
       - `http://www.contoso.com/image.jpg`
       - `www.contoso.com/image.bmp`
-      - `https://www.contoso.com/image.html`
+      - `https://www.contoso.com/image.webp`
 
       如果您未輸入 URL，則會使用裝置的預設映射（如果有預設映射）。
+      
+      > [!TIP]
+      > 支援任何可轉換成點陣圖的檔案資源 URL。
 
     - **在關閉螢幕之前，裝置顯示幕幕保護的秒數**：選擇裝置顯示幕幕保護程式的時間長度。 輸入介於 0-9999999 秒之間的值。 預設值為 `0` 秒。 當保留空白或設為零（`0`）時，螢幕保護裝置會處於作用中狀態，直到使用者與裝置互動為止。
     - 在**顯示幕幕保護之前，裝置處於非使用狀態的秒數**：選擇裝置閒置多久之後，才會顯示幕保程式。 輸入介於 1-9999999 秒之間的值。 預設值為 `30` 秒。 您必須輸入大於零的數位（`0`）。
@@ -199,12 +202,14 @@ ms.locfileid: "73143035"
 
 ### <a name="users-and-accounts-settings"></a>使用者和帳戶設定
 
-- **新增使用者**：選擇 [封鎖]  以防止使用者新增新的使用者。 每位使用者在裝置上都有用於自訂主畫面、帳戶、應用程式和設定的個人空間。 [未設定]  會允許使用者將其他使用者新增到裝置。
-- **移除使用者**：選擇 [封鎖]  以防止使用者移除使用者。 [未設定]  會允許使用者將其他使用者從裝置移除。
-- **帳戶變更**：選擇 [封鎖]  以防止使用者修改帳戶。 [未設定]  會允許使用者在裝置上更新使用者帳戶。
+- **新增使用者**：選擇 [封鎖]  以防止使用者新增新的使用者。 每位使用者在裝置上都有用於自訂主畫面、帳戶、應用程式和設定的個人空間。 **未設定** (預設) 會允許使用者將其他使用者新增到裝置。
+- **移除使用者**：選擇 [封鎖]  以防止使用者移除使用者。 **未設定** (預設) 會允許使用者將其他使用者從裝置移除。
+- **帳戶變更**（僅限專用裝置）：選擇 [**封鎖**] 以防止使用者修改帳戶。 **未設定** (預設) 會允許使用者在裝置上更新使用者帳戶。
 
   > [!NOTE]
   > 裝置擁有者（完全受控）裝置不接受此設定。 如果您進行此設定，則會忽略此設定，而且不會有任何影響。
+
+- **個人 Google 帳戶**： [**封鎖**] 會防止使用者將其個人 Google 帳戶新增至裝置。 [**未設定**] （預設）可讓使用者新增其個人 Google 帳戶。
 
 ### <a name="applications"></a>應用程式
 
@@ -254,7 +259,7 @@ ms.locfileid: "73143035"
     - **連接埠號碼**：輸入 Proxy 伺服器使用的 TCP 連接埠號碼。 例如，輸入 `8080`。
     - **排除的主機**：輸入不會使用 proxy 的主機名稱或 IP 位址清單。 這份清單可以包含星號（`*`）萬用字元和多個以分號（`;`）分隔的主機，但不含空格。 例如，輸入 `127.0.0.1;web.contoso.com;*.microsoft.com`。
 
-  - **Proxy 自動**設定：輸入 proxy 自動設定腳本的**PAC URL** 。 例如，輸入 `https://proxy.contoso.com/proxy.pac`。
+  - **Proxy 自動**設定：輸入 Proxy 自動設定腳本的**PAC URL** 。 例如，輸入 `https://proxy.contoso.com/proxy.pac`。
 
     如需 PAC 檔案的詳細資訊，請參閱[Proxy 自動設定（PAC）](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)檔案（開啟非 Microsoft 網站）。
 
@@ -342,7 +347,7 @@ ms.locfileid: "73143035"
 - **對應用程式進行威脅掃描**：針對工作與個人設定檔，**要求**強制開啟 [驗證應用程式]  設定。
 
    > [!Note]
-   > 此設定僅適用於 Android O 或更新版本的裝置。
+   > 此設定僅適用於 Android 8 (Oreo) 或更新版本的裝置。
 
 - **防止從個人設定檔中的不明來源安裝應用程式**：根據設計，Android Enterprise 工作設定檔裝置無法從 Play Store 以外的來源安裝應用程式。 就本質而言，工作設定檔裝置的目標是雙重設定檔：
 

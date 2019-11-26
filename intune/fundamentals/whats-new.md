@@ -832,7 +832,7 @@ Managed Home Screen 應用程式現在可讓您存取 Google 的 Android Device 
 
 ### <a name="device-enrollment"></a>裝置註冊
 
-#### <a name="updates-for-enrollment-restrictions---2871968---"></a>註冊限制的更新<!-- 2871968 -->
+#### <a name="updates-for-enrollment-restrictions---2871968---"></a>更新註冊限制<!-- 2871968 -->
 新租用戶的「註冊限制」已更新成預設允許 Android Enterprise 公司設定檔。 現有租用戶將保持不變。 若要使用 Android Enterprise 公司設定檔，您仍然必須[將 Intune 帳戶連線至受控的 Google Play 帳戶](../enrollment/connect-intune-android-enterprise.md)。
 
 #### <a name="ui-updates-for-apple-enrollment-and-enrollment-restrictions--4089575-4089579----"></a>Apple 註冊和註冊限制的 UI 更新<!--4089575, 4089579  -->
@@ -863,7 +863,7 @@ Android Enterprise 註冊設定檔的圖示已變更。 若要查看新圖示，
 #### <a name="updated-ui-for-managing-security-baselines---4091125-------"></a>已更新用於管理安全性基準的 UI<!-- 4091125     -->
 我們已更新 Intune 主控台中安全性基準的[建立和編輯體驗](../protect/security-baselines.md#create-the-profile)。 這些變更包括：
 
-已壓縮成單一刀鋒視窗的更簡單精靈樣式格式。 在一個刀鋒視窗內操作即可。 這個新設計廢除了需要 IT 專業人員向下切入至數個個別窗格的刀鋒視窗擴展。  
+已壓縮成更簡單精靈樣式的單一刀鋒視窗格式。 在一個刀鋒視窗內操作即可。 這個新設計廢除了需要 IT 專業人員向下切入至數個個別窗格的刀鋒視窗擴展。  
 您現在可以在建立和編輯體驗中一併建立「指派」，而不需稍後返回來指派基準。 我們已新增設定摘要，可供您在建立新基準之前及在編輯現有基準時檢視。 編輯時，摘要只會顯示在目前編輯的一個屬性類別內設定的項目清單。
 
 <!-- ########################## -->
@@ -1108,7 +1108,7 @@ Windows 公司入口網站應用程式將新增標籤為 [裝置]  的頁面。 
 - **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - 用於 Android 企業完全受控案例。
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** - 協助您登入您的帳戶 (若您使用雙重要素驗證)。
 - **[Intune 公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - 用於應用程式保護原則 (APP) 與 Android 企業公司設定檔案例。
-- [受控家用案例](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - 用於 Android 企業專用/資訊站案例。
+- [受控主螢幕](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - 用於 Android 企業專用/資訊站案例。
 
 之前，IT 系統管理員需要在安裝期間於[受控 Google Play 商店](https://play.google.com/store/apps)中手動尋找及核准這些應用程式。 此變更移除了先前那些手動步驟，讓客戶可以更輕鬆、更快速地使用 Android 企業管理。
 

@@ -253,7 +253,7 @@ ms.locfileid: "74390849"
 
   如需這兩項設定的詳細資訊，以及它們對 iOS 聯絡資訊匯出同步處理的影響，請參閱[支援秘訣：搭配 IOS 原生聯絡資訊應用程式使用 Intune 自訂設定檔設定](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453)。
 
--  ：[需要] 會強制將 AirDrop 視為非受控的置放目標。  它會防止受管理應用程式使用 AirDrop 傳送檔案。 
+-  ：[需要] 會強制將 AirDrop 視為非受控的置放目標。  它會防止受控應用程式使用 AirDrop 傳送檔案。 
 - **在公司應用程式中檢視非公司文件**：[封鎖]  會防止在公司應用程式中檢視非公司文件。 [未設定]  \(預設\) 會允許在受公司管理的應用程式中檢視任何文件。
 
   將設定為 [**封鎖**] 也會防止在 Outlook for iOS 中進行連絡人匯出同步處理。 如需詳細資訊，請參閱[支援提示：啟用與 IOS12 MDM 控制項的 Outlook IOS 連絡人同步處理](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453)。
@@ -531,8 +531,8 @@ ms.locfileid: "74390849"
 
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>設定適用于：裝置註冊、自動裝置註冊（受監督）
 
-- **相片串流同步至 iCloud**：[未設定]  \(預設\) 可讓使用者在其裝置上啟用 [我的照片串流]  ，以允許將相片同步處理到 iCloud 並可在所有該使用者的裝置上使用。 [封鎖]  會防止相片串流同步到 iCloud。 封鎖這項功能可能會導致資料遺失。 
-- **iCloud 照片圖庫**：設定為 [封鎖]  以停止使用 iCloud 照片圖庫來將相片和影片儲存在雲端中。 所有尚未從 iCloud 照片圖庫完整下載到裝置的相片，都會從裝置中移除。 [未設定]  \(預設\) 可允許使用 iCloud 照片圖庫。
+- **照片串流同步至 iCloud**：[未設定]  \(預設\) 可讓使用者在其裝置上啟用 [我的照片串流]  ，以允許將照片同步處理到 iCloud 並可在所有該使用者的裝置上使用。 [封鎖]  會防止相片串流同步到 iCloud。 封鎖這項功能可能會導致資料遺失。 
+- **iCloud 照片圖庫**：設定為 [封鎖]  以停止使用 iCloud 照片圖庫來將照片和影片儲存在雲端中。 所有尚未從 iCloud 照片圖庫完整下載到裝置的照片，都會從裝置中移除。 [未設定]  \(預設\) 可允許使用 iCloud 照片圖庫。
 - **共享相片串流**：選擇 [封鎖]  來停用裝置上的 [iCloud 照片共享]  。 [未設定]  \(預設\) 可允許共享相片串流。
 - **遞交**： [**未設定**] （預設）可讓使用者在 iOS 裝置上啟動工作，然後繼續在另一部 ios 或 macOS 裝置上啟動的工作。 [封鎖]  會防止此遞交。
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0cf7d6f18b0d345a8c491984987b9ffa234d66e
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
-ms.translationtype: HT
+ms.openlocfilehash: e5e1e1de0c8ec80a390f76f5e8de3965d4f800a9
+ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059486"
+ms.lasthandoff: 11/19/2019
+ms.locfileid: "74188164"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -31,7 +31,7 @@ ms.locfileid: "74059486"
 > [!Note]
 > 並非所有版本的 Windows 都提供全部選項。 若要查看支援的版本，請參閱 [Policy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (原則 CSP) (開啟另一個 Microsoft 網站)。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 [建立裝置組態設定檔](device-restrictions-configure.md#create-the-profile)。
 
@@ -158,7 +158,7 @@ ms.locfileid: "74059486"
   - **隱私權**：[封鎖]  防止存取裝置設定應用程式的 [隱私權] 區域。 [未設定]  (預設) 允許存取。
   - **更新與安全性**：[封鎖]  防止存取裝置設定應用程式的 [更新與安全性] 區域。 [未設定]  (預設) 允許存取。
 
-## <a name="display"></a>顯示器
+## <a name="display"></a>顯示
 
 這些設定使用[顯示原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-display)，它也會列出支援的 Windows 版本。
 
@@ -213,9 +213,11 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
   此設定會在下一次抹除或重設裝置時生效。 和任何其他 Intune 設定相似，裝置必須向 Intune 註冊並由 Intune 管理才能接收組態設定。 然而一旦註冊並接收原則，然後重設裝置後，便會在下一次 Windows 設定期間時實行設定。
 
+  [TenantLockdown CSP](https://docs.microsoft.com/windows/client-management/mdm/tenantlockdown-csp)
+
 - **直接記憶體存取**：[封鎖]  會防止所有隨插即用 PCI 下游連接埠的直接記憶體存取 (DMA)，直到使用者登入 Windows 為止。 [啟用]  (預設值) 會允許存取 DMA，就算使用者未登入也一樣。
 
-  CSP：[DataProtection/AllowDirectMemoryAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
+  [DataProtection/AllowDirectMemoryAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-dataprotection#dataprotection-allowdirectmemoryaccess)
 
 - [結束來自工作管理員的處理序]  ：此設定會決定非系統管理員是否可以使用工作管理員結束工作。 [封鎖]  可防止標準使用者 (非系統管理員) 使用 [工作管理員] 來結束裝置上的處理序或工作。 [未設定]  (預設) 可讓標準使用者使用 [工作管理員] 結束處理序或工作。
 
@@ -467,7 +469,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **意見反應與診斷**：定義此應用程式能否存取診斷資訊。
 - **與裝置同步** - 選擇此應用程式是否自動與未和該裝置直接配對的無線裝置共用及同步資訊。
 
-## <a name="personalization"></a>Personalization
+## <a name="personalization"></a>個人化
 
 這些設定使用[個人化原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)，它也會列出支援的 Windows 版本。
 
@@ -479,7 +481,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **預設印表機**：設定預設印表機。
 - **使用者存取新增新印表機**：允許或封鎖使用本機印表機。
 
-## <a name="privacy"></a>私密性
+## <a name="privacy"></a>隱私權
 
 這些設定使用[隱私權原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-privacy)，它也會列出支援的 Windows 版本。
 
@@ -562,7 +564,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   - **中**：針對成人內容進行中等程度的篩選。 不篩選有效的搜尋結果。
 - **在 [搜尋] 中顯示網頁搜尋結果**：設為 [封鎖]  時，使用者無法搜尋，且不會在 [搜尋] 中顯示網頁搜尋結果。 [未設定]  (預設) 讓使用者搜尋網頁，並在裝置上顯示結果。
 
-## <a name="start"></a>啟動
+## <a name="start"></a>開始
 
 這些設定使用[啟動原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-start)，它也會列出支援的 Windows 版本。  
 
@@ -860,6 +862,6 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **不進行掃描和即時保護的副檔名**：新增一或多個檔案副檔名，像是 **jpg** 或 **txt** 至排除清單中。 任何即時掃描或排定的掃描，都不會包含有這些副檔名的任何檔案。
 - **排除不進行掃描和即時保護的程序** - 新增一或多個類型為 **.exe**、 **.com** 或 **.scr** 等處理序至排除清單中。 任何即時或已排程的掃描都不會包含這些處理序。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 如需每項設定的其他技術詳細資料，以及支援哪些 Windows 版本，請參閱 [Windows 10 Policy CSP Reference](https://docs.microsoft.com/windows/client-management/mdm/policy-configuration-service-provider) (Windows 10 原則 CSP 參考)

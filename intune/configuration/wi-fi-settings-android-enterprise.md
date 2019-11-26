@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 266786de3122f8886bb3ed310764459568e1df6a
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 04d35f49f9e07cb72a1fea92210b05e0a95ec256
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72585368"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390797"
 ---
-# <a name="add-wi-fi-settings-for-devices-running-android-enterprise-and-android-kiosk-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於執行 Android 企業和 Android kiosk 之裝置的 Wi-Fi 設定
+# <a name="add-wi-fi-settings-for-android-enterprise-dedicated-and-fully-managed-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用于 Android Enterprise 專用和完全受控裝置的 Wi-fi 設定
 
-您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 Android 企業與 Android 專用裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、使用預先共用金鑰等等。
+您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 Android 企業完全受控與專用裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、使用預先共用金鑰等等。
 
 本文說明了這些設定。 [在您的裝置上使用 Wi-Fi](wi-fi-settings-configure.md) 包含 Microsoft Intune 中 Wi-Fi 功能的詳細資訊。
 
@@ -35,7 +35,7 @@ ms.locfileid: "72585368"
 
 ## <a name="device-owner-only"></a>僅限裝置擁有者
 
-如果使用 Android 企業專用裝置作為 kiosk，請選取此選項。
+如果您要部署至 Android Enterprise 專用或完全受控裝置，請選取此選項。  Android 企業專用且完全受控的裝置目前支援 SCEP 憑證部署，但不支援 PKCS。
 
 ### <a name="basic"></a>基本
 
@@ -60,7 +60,7 @@ ms.locfileid: "72585368"
 
     - **伺服器信任** - **伺服器驗證的根憑證**：選擇現有受信任的根憑證設定檔。 當用戶端連線到網路時，系統會向伺服器出示此憑證，並用來驗證連線。
 
-    - **用戶端驗證** - **用戶端驗證的用戶端憑證 (身分識別憑證)** ：選擇 也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+    - **用戶端驗證** - **用戶端驗證的用戶端憑證 (身分識別憑證)** ：選擇也會部署到裝置的 SCEP 或用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
 
     - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
@@ -77,7 +77,7 @@ ms.locfileid: "72585368"
           - **Microsoft CHAP (MS-CHAP)**
           - **Microsoft CHAP 第 2 版 (MS-CHAP v2)**
 
-      - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+      - **憑證**：選擇也會部署到裝置的 SCEP 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
 
       - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
@@ -93,7 +93,7 @@ ms.locfileid: "72585368"
           - **無**
           - **Microsoft CHAP 第 2 版 (MS-CHAP v2)**
 
-      - **憑證**：選擇也會部署到裝置的 SCEP 或 PKCS 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
+      - **憑證**：選擇也會部署到裝置的 SCEP 用戶端憑證設定檔。 此憑證是裝置提供給伺服器以驗證連線的身分識別。
 
       - **識別隱私權 (外部識別)** ：指定回應 EAP 識別要求時所要傳送的文字。 此文字可以是任何值，例如 `anonymous`。 在驗證期間，一開始會先傳送此匿名識別，隨後以安全通道傳送真正的識別。
 
