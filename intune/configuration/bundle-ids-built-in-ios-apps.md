@@ -18,7 +18,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 27a020f4b45ae878718bed4ee6e230c3d288f260
 ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
-ms.translationtype: MTE75
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/07/2019
 ms.locfileid: "73755410"
@@ -45,38 +45,38 @@ ms.locfileid: "73755410"
 | com.apple.mobileme.fmip1    | 尋找 iPhone  | Apple     |
 | com.apple.gamecenter        | Game Center  | Apple     |
 | com.apple.mobilegarageband  | GarageBand   | Apple     |
-| com.apple.Health            | 健全狀況       | Apple     |
-| com.apple.Home              | 首頁         | Apple     |
-| com.apple.iBooks            | iBooks       | Apple     |
+| com.apple.Health            | 健康       | Apple     |
+| com.apple.Home              | 家庭         | Apple     |
+| com.apple.iBooks            | 書籍       | Apple     |
 | com.apple.iMovie            | iMovie       | Apple     |
 | com.apple.itunesconnect.mobile | iTunes Connect | Apple |
 | com.apple.MobileStore       | iTunes Store | Apple     |
 | com.apple.itunesu           | iTunes U     | Apple     |
 | com.apple.Keynote           | Keynote      | Apple     |
-| com.apple.mobilemail        | Mail         | Apple     |
+| com.apple.mobilemail        | 郵件         | Apple     |
 | com.apple.Maps              | 地圖         | Apple     |
 | .com. measure           | 度量      | Apple     |
 | com.apple.MobileSMS         | 訊息     | Apple     |
 | com.apple.Music             | 音樂        | Apple     |
 | com.apple.news              | 新聞         | Apple     |
-| com.apple.mobilenotes       | 附註        | Apple     |
-| com.apple.Numbers           | 數字      | Apple     |
-| com.apple.Pages             | 頁面        | Apple     |
+| com.apple.mobilenotes       | 備忘錄        | Apple     |
+| com.apple.Numbers           | Numbers      | Apple     |
+| com.apple.Pages             | Pages        | Apple     |
 | com.apple.mobilephone       | 電話        | Apple     |
 | com.apple.Photo-Booth       | Photo Booth  | Apple     |
-| com.apple.mobileslideshow   | 相片       | Apple     |
+| com.apple.mobileslideshow   | 照片       | Apple     |
 | com.apple.podcasts          | Podcast     | Apple     |
 | com.apple.reminders         | 提醒事項    | Apple     |
 | com.apple.mobilesafari      | Safari       | Apple     |
 | com.apple.Preferences       | 設定     | Apple     |
 | com.apple.SiriViewService   | Siri         | Apple     |
 | com.apple.stocks            | 股市       | Apple     |
-| com.apple.tips              | 秘訣         | Apple     |
-| com.apple.tv                | TV           | Apple     |
+| com.apple.tips              | 提示         | Apple     |
+| com.apple.tv                | 電視           | Apple     |
 | com.apple.videos            | 影片       | Apple     |
 | com.apple.VoiceMemos        | 語音備忘錄   | Apple     |
-| com.apple.Passbook          | Wallet       | Apple     |
-| com.apple.Bridge            | 觀看        | Apple     |
+| com.apple.Passbook          | 錢包       | Apple     |
+| com.apple.Bridge            | Watch        | Apple     |
 | com.apple.weather           | 天氣      | Apple     |      
 
 ## <a name="next-steps"></a>後續步驟
