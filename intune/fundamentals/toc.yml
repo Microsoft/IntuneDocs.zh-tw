@@ -16,6 +16,8 @@
           href: whats-new-app-ui.md
         - name: 正在開發的功能
           href: in-development.md
+        - name: 重要注意事項
+          href: 'whats-new.md#notices'
 - name: 快速入門
   items:
     - name: 免費試用 Intune
