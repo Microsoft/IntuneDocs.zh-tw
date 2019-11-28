@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a72d3a16c5180b51fcc019d726a498e0d15ad1d3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 08193aa329a1bee4e66638de5c0d7518d15db2a4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503398"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547917"
 ---
 # <a name="android-device-administrator-enrollment"></a>Android 裝置系統管理員註冊
 
@@ -47,8 +47,6 @@ Android 裝置系統管理員 (有時稱為「舊版」的 Android 管理，而�
 
 
 ## <a name="set-up-device-administrator-enrollment"></a>設定 Android 裝置系統管理員註冊
-
-Intune 預設允許使用裝置系統管理員功能來註冊 Android 裝置。
 
 1. 若要準備管理行動裝置，您必須將行動裝置管理 (MDM) 授權單位設定為 **Microsoft Intune**。 請參閱[設定 MDM 授權單](../fundamentals/mdm-authority-set.md)以取得相關指示。 此項目只會設定一次，也就是第一次為行動裝置管理設定 Intune 之時。
 2. 移至 [Intune]   > [裝置註冊]   > [Android 註冊]   > [具有裝置系統管理權限之個人及屬公司擁有的裝置]   > [使用裝置系統管理員來管理裝置]  。
