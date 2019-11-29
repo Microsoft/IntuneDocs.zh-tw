@@ -7,14 +7,23 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: b59419be9f381a1c646a7778b73ed172526f6ef6
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188416"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74309796"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
+
+### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8.1 終止支援<!--3544909-->
+Windows Phone 8.1 的 Microsoft 主要支援已於 2017 年 7 月終止，而且延伸支援已於 2019 年 6 月結束。 適用於 Windows Phone 8.1 的公司入口網站應用程式從 2017 年 10 月起就進入維持模式了。 Microsoft Intune 現在將於 2020 年 2 月 20 日終止對 Windows Phone 8.1 的支援。
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+2020 年 2 月 20 日之後，這些裝置將不會收到任何安全性更新，而且您將無法註冊任何新裝置。 現有的 Windows Phone 8.1 裝置會保持註冊 (原則、應用程式、報告)，但請注意，在此日期之後，將不會支援現有註冊的任何疑難排解，因為許多元件 (例如第三方憑證) 已結束對該平台的支援。 Intune 將會停止與 Intune 和 Windows Phone 8.1 的相容性測試。
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+您可以檢查您的 Intune 報告，查看哪些裝置或使用者可能會受到影響。 移至 [裝置] > [所有裝置]，然後依 OS 進行篩選。 您可以新增其他資料行，協助識別您組織中誰有執行 Windows Phone 8.1 的裝置。 要求使用者將其裝置升級至支援的 OS 版本。
 
 ### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>更新 Intune Outlook 應用程式保護原則 (應用程式)<!--2576686-->
 如果在訊息中心收到 MC195618，您可能需要採取行動。 如 Microsoft 365 藍圖功能識別碼中所共用：56325 和 56326，iOS 和 Android 版的 Intune 和 Outlook 即將支援在郵件通知和行事曆提醒中限制敏感性資料。 因為這些改善功能，iOS 和 Android 版的 Outlook 將會移除對數個資料保護應用程式設定金鑰的支援，而這些都是您目前用來管理通知的金鑰。

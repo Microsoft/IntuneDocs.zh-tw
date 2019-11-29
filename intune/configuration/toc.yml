@@ -14,7 +14,11 @@
     - name: 建立設定檔
       href: device-profile-create.md
     - name: Windows 上的系統管理範本
-      href: administrative-templates-windows.md
+      items:
+        - name: Windows 上的系統管理範本
+          href: administrative-templates-windows.md
+        - name: 使用系統管理範本更新 Office
+          href: administrative-templates-update-office.md
     - name: iOS 與 macOS 上的裝置功能
       href: device-features-configure.md
     - name: 限制裝置設定與功能
@@ -23,7 +27,7 @@
     - name: Windows 上的 BIOS 設定
       href: device-firmware-configuration-interface-windows.md
       displayName: 'DFCI, firmware'
-    - name: Updates
+    - name: 更新
       href: delivery-optimization-windows.md
       displayName: delivery optimization; updates
     - name: 升級版本和 S 模式
@@ -47,6 +51,8 @@
       items:
         - name: 使用預先共用金鑰的 Wi-Fi
           href: wi-fi-profile-shared-key.md
+        - name: 針對 Wi-Fi 進行疑難排解
+          href: troubleshoot-wi-fi-profiles.md
     - name: macOS 上的延伸模組
       href: kernel-extensions-overview-macos.md
     - name: 教育版使用測試應用程式
