@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/12/2019
+ms.date: 11/25/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 751ddfae96ebcd190d4d9ce2ca93bfccba972df5
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
-ms.translationtype: HT
+ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
+ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390849"
+ms.lasthandoff: 11/25/2019
+ms.locfileid: "74465647"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
 
@@ -245,15 +245,19 @@ ms.locfileid: "74390849"
 
 - **在非受控應用程式中檢視公司文件**：[封鎖]  會防止在非受控應用程式中檢視公司文件。 [未設定]  \(預設\) 會允許在任何應用程式中檢視公司文件。 例如，您想要防止使用者將檔案從 OneDrive 應用程式儲存至 Dropbox。 請將此設定設定為 [封鎖]  。 裝置收到原則後 (例如重新啟動後)，即不再允許儲存。
 
-  - **允許非受控應用程式從受管理的聯絡資訊帳戶讀取**：當設定為 [**允許**] 時，非受控應用程式（例如內建的 iOS 聯絡資訊應用程式）可以讀取和存取受管理應用程式（包括 Outlook 行動裝置應用程式）的連絡人資訊。 [未設定]  \(預設\) 會防止從裝置上的內建 [聯絡資訊] 應用程式讀取，包括移除重複項目。  
+
+  > [!NOTE]
+  > 當此設定遭到封鎖時，從 App Store 安裝的協力廠商鍵盤也會遭到封鎖。
+
+  - **允許非受控應用程式從受管理的連絡人帳戶讀取**：當設定為 [**允許**] 時，非受控應用程式（例如內建的 iOS 連絡人應用程式）可以讀取和存取受管理應用程式（包括 Outlook 行動裝置應用程式）的連絡人資訊。 [未設定]  \(預設\) 會防止從裝置上的內建 [聯絡資訊] 應用程式讀取，包括移除重複項目。  
   
-    此設定允許或防止讀取連絡人資訊。 它不會控制應用程式之間的同步處理聯絡資訊。
+    此設定允許或防止讀取連絡人資訊。 它不會控制應用程式之間的同步處理連絡人。
   
     若要使用此設定，請將 [在非受控應用程式中檢視公司文件]  設定設為 [封鎖]  。
 
-  如需這兩項設定的詳細資訊，以及它們對 iOS 聯絡資訊匯出同步處理的影響，請參閱[支援秘訣：搭配 IOS 原生聯絡資訊應用程式使用 Intune 自訂設定檔設定](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453)。
+  如需這兩項設定的詳細資訊，以及它們對 iOS 連絡人匯出同步處理的影響，請參閱[支援秘訣：搭配 IOS 原生連絡人應用程式使用 Intune 自訂設定檔設定](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Use-Intune-custom-profile-settings-with-the-iOS/ba-p/298453)。
 
--  ：[需要] 會強制將 AirDrop 視為非受控的置放目標。  它會防止受控應用程式使用 AirDrop 傳送檔案。 
+-  將 AirDrop 爲非受控的置放目標：[需要]  會強制將 AirDrop 考慮為未受管理的置放目標。 它會防止受控應用程式使用 AirDrop 傳送檔案。 
 - **在公司應用程式中檢視非公司文件**：[封鎖]  會防止在公司應用程式中檢視非公司文件。 [未設定]  \(預設\) 會允許在受公司管理的應用程式中檢視任何文件。
 
   將設定為 [**封鎖**] 也會防止在 Outlook for iOS 中進行連絡人匯出同步處理。 如需詳細資訊，請參閱[支援提示：啟用與 IOS12 MDM 控制項的 Outlook IOS 連絡人同步處理](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Enabling-Outlook-iOS-Contact-Sync-with-iOS12-MDM/ba-p/298453)。
@@ -263,7 +267,7 @@ ms.locfileid: "74390849"
 - **所有購買專案都需要 ITunes Store 密碼**：**需要**使用者輸入每個應用程式內或 ITUNES 購買的 Apple ID 密碼。 [**未設定**] （預設）會允許購買，而不會每次都提示輸入密碼。
 - **應用程式內購買**：選擇 [封鎖]  以防止從市集進行應用程式內購買。 [未設定]  \(預設\) 會允許在正在執行的應用程式中進行市集購買。
 - **從 iBook Store 下載標記為成人作品的內容**：選擇 [封鎖]  以防止使用者從 iBook Store 下載標記為成人作品的媒體。 [未設定]  \(預設\) 會允許使用者下載「成人作品」類別的書籍。
-- **允許受管理的應用程式將聯絡資訊寫入非受控聯絡資訊帳戶**：當設定為 [**允許**] 時，受管理的應用程式（例如 Outlook 行動裝置應用程式）可以將連絡人資訊（包括商務和公司聯絡資訊）儲存或同步至內建的 iOS 聯絡資訊應用程式。 當設定為 [**未設定**] （預設）時，受管理的應用程式無法將連絡人資訊儲存或同步至裝置上的內建 iOS 聯絡資訊應用程式。
+- **允許受管理的應用程式將連絡人寫入非受控連絡人帳戶**：當設定為 [**允許**] 時，受管理的應用程式（例如 Outlook 行動裝置應用程式）可以將連絡人資訊（包括商務和公司連絡人）儲存或同步至內建的 iOS 連絡人應用程式。 當設定為 [**未設定**] （預設）時，受管理的應用程式無法將連絡人資訊儲存或同步至裝置上的內建 iOS 連絡人應用程式。
   
   若要使用此設定，請將 [在非受控應用程式中檢視公司文件]  設定設為 [封鎖]  。
 
@@ -419,9 +423,9 @@ ms.locfileid: "74390849"
 
   您也可以先使用 iTunes 尋找應用程式，再使用 [複製連結]  工作來取得該應用程式的 URL。
   
-  如需尋找套件組合識別碼的詳細資訊，請參閱[如何尋找 iOS 應用程式的](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)套件組合識別碼。
+  如需尋找套裝組 ID的詳細資訊，請參閱[如何尋找 iOS 應用程式的](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)套裝組 ID。
 
-- **應用程式套件組合識別碼**：輸入您要之應用程式的應用程式[套件組合識別碼](bundle-ids-built-in-ios-apps.md)。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站有[內建的 apple 應用程式](https://support.apple.com/HT208094)清單。
+- **應用程式套裝組 ID**：輸入您要之應用程式的應用程式[套裝組 ID](bundle-ids-built-in-ios-apps.md)。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站有[內建的 apple 應用程式](https://support.apple.com/HT208094)清單。
 - **應用程式名稱**：輸入您要之應用程式的名稱。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站有[內建的 apple 應用程式](https://support.apple.com/HT208094)清單。
 - **發行者**：輸入您要之應用程式的發行者。
 
@@ -557,10 +561,10 @@ ms.locfileid: "74390849"
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>設定適用于：自動裝置註冊（受監督）
 
 - **應用程式名稱**：輸入您想要之應用程式的名稱。
-- **應用程式套件組合識別碼**：輸入您要之應用程式的[套件組合識別碼](bundle-ids-built-in-ios-apps.md)。
+- **應用程式套裝組 ID**：輸入您要之應用程式的[套裝組 ID](bundle-ids-built-in-ios-apps.md)。
 - **新增**：選取以建立您的應用程式清單。
 
-您也可以 [匯入]  具有應用程式名稱及其套件組合識別碼清單的 CSV 檔案。 或是 [匯出]  包含那些應用程式的現有清單。
+您也可以 [匯入]  具有應用程式名稱及其套裝組 ID清單的 CSV 檔案。 或是 [匯出]  包含那些應用程式的現有清單。
 
 ## <a name="kiosk"></a>Kiosk
 
@@ -570,7 +574,7 @@ ms.locfileid: "74390849"
   - **未設定** \(預設\)：不會套用 Kiosk 設定。 裝置不會以 Kiosk 模式執行。
   - **市集應用程式**：輸入 iTunes App Store 中某個應用程式的 URL。
   - **受控應用程式**：選擇您已新增至 Intune 的應用程式。
-  - **內建應用程式**：輸入內建應用程式的[套件組合識別碼](bundle-ids-built-in-ios-apps.md)。
+  - **內建應用程式**：輸入內建應用程式的[套裝組 ID](bundle-ids-built-in-ios-apps.md)。
 
 - **輔助觸控**：[需要]  在裝置上取得 [輔助觸控] 協助工具設定。 此功能可協助使用者進行對他們而言可能較為困難的螢幕手勢。 [未設定]  不會在 kiosk 模式中執行或啟用此功能。
 - **色彩對換**：[需要]  [色彩對換] 協助工具設定，讓視力受損的使用者可以變更顯示畫面。 [未設定]  不會在 kiosk 模式中執行或啟用此功能。
@@ -625,7 +629,7 @@ ms.locfileid: "74390849"
 
 ## <a name="settings-that-require-supervised-mode"></a>需要受監督模式的設定
 
-iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Configurator，在初始裝置安裝期間啟用。 一旦啟用受監督模式，Intune 即可設定裝置的下列功能：
+iOS 受監督模式只能透過 Apple 的裝置註冊計劃，或使用 Apple Configurator，在初始裝置設定期間啟用。 一旦啟用受監督模式，Intune 即可設定裝置的下列功能：
 
 - App Lock (單一應用程式模式) 
 - 全域 HTTP Proxy 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dbddb0fcecfd5a0b021346a3a20b3c7e4f696a49
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635326"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547693"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -78,14 +78,11 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 
 ### <a name="not-using-an-app-development-platform-listed-above"></a>不使用以上所列的應用程式開發平臺嗎？
 
-Intune SDK 開發小組會針對搭配原生 Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms 及 Cordova 平台所建置的應用程式，主動地進行測試並維護支援。 雖然有部分客戶成功搭配其他平台 (例如 React Native 和 NativeScript) 整合 Intune SDK，我們並沒有針對使用我們所不支援之平台的應用程式開發人員提供明確的指引或外掛程式。 
+Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms 及 Cordova 平台所建置的應用程式，主動地進行測試並維護支援。 雖然有部分客戶成功搭配其他平台 (例如 React Native 和 NativeScript) 整合 Intune SDK，我們並沒有針對使用我們所不支援之平台的應用程式開發人員提供明確的指引或外掛程式。 
 
 ## <a name="feature-comparison"></a>功能比較
 
 此表格列出您可以用於 App SDK 和 App Wrapping Tool 的設定。
-
-> [!NOTE]
-> 只有在使用 Intune 獨立版或 Intune (含 Configuration Manager) 時，才能使用 App Wrapping Tool。
 
 |功能|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|

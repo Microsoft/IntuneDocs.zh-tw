@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796439581ca0ae91e788a91ab0bc2ef8f6019626
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199348"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540727"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune 正在開發的項目 - 2019 年 12 月
 
@@ -181,34 +181,12 @@ Intune 正在為 iOS、iPadOS 和 macOS 裝置新增更多單一登入設定。 
 <!--## Device enrollment-->
 
 <!-- ***********************************************-->
-## <a name="device-management"></a>裝置管理
+<!--## Device management-->
 
-
-
-### <a name="edit-device-name-value-for-autopilot-devices---2640074----"></a>編輯 Autopilot 裝置的裝置名稱值<!-- 2640074  -->
-您將能夠編輯 Azure AD 已加入 Autopilot 裝置的裝置名稱值。 若要這麼做，請移至**Intune** > **裝置註冊** > **windows 註冊** > **windows Autopilot** > **裝置**> 選擇裝置 > 變更右窗格中的 **裝置名稱** 值>**儲存**。
-
-### <a name="edit-the-group-tag-value-for-autopilot-devices---4816775---"></a>編輯 Autopilot 裝置的群組標記值<!-- 4816775 -->
-您將能夠編輯 Autopilot 裝置的**群組標記**值：
-
-1. 選取  **Intune** > **裝置註冊** > **windows 註冊** > **windows Autopilot** > **裝置**。
-1. 選擇裝置。
-1. 在右側窗格中，變更 [群組]**標記**值。
-1. 選取 [儲存]  。
-
-### <a name="target-macos-user-groups-to-require-jamf-management---4061739---"></a>目標 macOS 使用者群組需要 Jamf 管理<!-- 4061739 -->
-您將能夠以特定使用者群組為目標，要求其 macOS 裝置受 Jamf 管理。 此目標可讓您將 Jamf 合規性整合套用至 macOS 裝置的子集，而其他裝置則會繼續由 Intune 管理。 目標也可讓您將使用者的裝置從一個行動裝置管理（MDM）系統逐漸遷移到另一個。
 
 <!-- ***********************************************-->
-## <a name="intune-apps"></a>Intune 應用程式
-
-### <a name="improved-macos-enrollment-experience-in-company-portal---5074349----"></a>改善公司入口網站中的 macOS 註冊體驗<!-- 5074349  -->
-MacOS 註冊體驗的公司入口網站將會有更簡單的註冊程式，以更密切地配合 iOS 註冊體驗的公司入口網站。 裝置使用者會看到：  
-
-* 輕巧的使用者介面。  
-* 改良的註冊檢查清單。  
-* 更清楚的指示，說明如何註冊其裝置。  
-* 改良的疑難排解選項。  
+<!--## Intune apps-->
+ 
 
 <!-- ***********************************************-->
 ## <a name="monitoring-and-troubleshooting"></a>監視和疑難排解
@@ -217,10 +195,8 @@ MacOS 註冊體驗的公司入口網站將會有更簡單的註冊程式，以�
 新的集中式審核記錄體驗會將所有類別的審核記錄收集到單一頁面中。 You'l 能夠篩選記錄檔，以取得您要尋找的資料。 若要查看 audit 記錄，請移至 [**租使用者管理**] > [ **audit logs**]。 如需詳細資訊，請參閱[Intune 中的 Audit 記錄即將進行的變更](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858)。
 
 <!-- ***********************************************-->
-## <a name="role-based-access-control"></a>以角色為基礎的存取控制
+<!--## Role-based access control-->
 
-### <a name="duplicate-custom-or-built-in-roles---1081938---"></a>重複的自訂或內建角色<!-- 1081938 -->
-您將能夠複製內建和自訂角色。 若要這麼做，請移至**Intune** > **角色** > **所有角色**> 挑選清單中的角色 >**重複**。 請務必輸入唯一的新名稱。
 
 <!-- ***********************************************-->
 
