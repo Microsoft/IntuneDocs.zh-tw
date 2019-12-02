@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/04/2019
+ms.date: 11/26/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1067c8ef23add50c921217b9e4b115346be2951
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4783d24e3fc25583a61f88c2e7375d4eed673186
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497038"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563475"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>針對應用程式安裝問題進行疑難排解
 
@@ -32,8 +32,8 @@ ms.locfileid: "72497038"
 
 Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程式疑難排解的詳細資料。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格上，選擇 [疑難排解]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 選取 [**疑難排解 + 支援**]。
 4. 按一下 [選取使用者]  來選取使用者以進行疑難排解。 [選取使用者]  窗格隨即顯示。
 5. 鍵入名稱或電子郵件地址來選取使用者。 按一下窗格底部的 [選取]  。 在 [疑難排解]  窗格中，會顯示使用者的疑難排解資訊。 
 6. 從 [裝置]  清單中選取要進行疑難排解的裝置。
@@ -57,12 +57,12 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 - 如果應用程式未顯示在公司入口網站中，請確定已使用**可用**的意圖部署應用程式，且使用者正在使用應用程式支援的裝置類型來存取公司入口網站。
 - 針對 Windows BYOD 裝置，使用者必須將工作帳戶新增至裝置。
 - 檢查使用者是否超過 AAD 裝置限制：
-  1. 流覽至 [ [Azure Active Directory 裝置設定](https://portal.azure.com/#blade/Microsoft_AAD_IAM/DevicesMenuBlade/DeviceSettings/menuId)]。
+  1. 流覽至 [ [Azure Active Directory 裝置設定](https://portal.azure.com/#pane/Microsoft_AAD_IAM/DevicesMenupane/DeviceSettings/menuId)]。
   2. 請記下 [**每位使用者的裝置數目上限**] 設定的值。
-  3. 流覽至 [ [Azure Active Directory 使用者](https://portal.azure.com/#blade/Microsoft_AAD_IAM/UsersManagementMenuBlade/AllUsers)]。
+  3. 流覽至 [ [Azure Active Directory 使用者](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)]。
   4. 選取受影響的使用者，然後按一下 [**裝置**]。
   5. 如果使用者超過設定的限制，則會刪除不再需要的任何過時記錄。
-- 針對 iOS DEP 裝置，請確定使用者已在 Intune 裝置總覽分頁中列為 [已**註冊使用者**]。 如果顯示的是 NA，則為 Intune 公司入口網站部署設定原則。 如需詳細資訊，請參閱[設定公司入口網站應用程式](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)。
+- 若是 iOS DEP 裝置，請確定使用者已在 [Intune 裝置] [總覽] 窗格中列為 [已**註冊使用者**]。 如果顯示的是 NA，則為 Intune 公司入口網站部署設定原則。 如需詳細資訊，請參閱[設定公司入口網站應用程式](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>針對 Win32 應用程式安裝進行疑難排解
 
@@ -75,7 +75,7 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 
 若要收集您的 Win32 應用程式安裝記錄，請先遵循[應用程式疑難排解詳細資料](troubleshoot-app-install.md#app-troubleshooting-details)一節中提供的步驟。 接著，請繼續進行下列步驟：
 
-1. 按一下 [安裝詳細資料]  刀鋒視窗上的 [收集記錄]  選項。
+1. 按一下 [安裝詳細資料]  窗格上的 [收集記錄]  選項。
 
     <image alt="Win32 app installation details - Collect log option" src="./media/troubleshoot-app-install/troubleshoot-app-install-04.png" width="500" />
 
