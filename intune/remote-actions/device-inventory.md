@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 918468bf8948ce54082f3fccc0325db07e116966
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713207"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564389"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -84,7 +84,7 @@ ms.locfileid: "73713207"
 |ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|Windows、iOS、Android|
 |註冊日期|裝置在 Intune 中註冊的日期與時間。|Windows、iOS、Android|
 |上次連絡時間|裝置最後連線至 Intune 的日期與時間。|Windows、iOS、Android|
-|啟用鎖定略過碼|此代碼可用來略過啟用鎖定。|Windows、iOS、Android|
+|啟用鎖定略過碼|此代碼可用來略過啟用鎖定。|iOS|
 |已註冊 Azure AD|若為 [是]  ，表示裝置已向 Azure Directory 註冊。|Windows、iOS、Android|
 |Intune 已註冊|若為 [是]  ，表示裝置已向 Intune 註冊|Windows、iOS、Android|
 |合規性|裝置的合規性狀態。|Windows、iOS、Android|
