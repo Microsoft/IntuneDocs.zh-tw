@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61957140fa8d942be0f3dca2543da2aed6183535
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7fe0bed94c66a1b82ed26bdbd43f68073223101e
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059265"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540687"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 Wi-Fi 設定並在您的裝置上使用
 
@@ -50,7 +50,7 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -63,7 +63,7 @@ Wi-Fi 設定檔支援下列裝置平台：
       - **iOS/iPadOS**
       - **macOS**
       - **Windows 8.1 及更新版本**
-      - **Windows 10 及更新版本**
+      - **Windows 10 及以上版本**
 
     - **設定檔類型**：選取 [Wi-Fi]  。
 
@@ -78,7 +78,7 @@ Wi-Fi 設定檔支援下列裝置平台：
     - [Android 企業](wi-fi-settings-android-enterprise.md)，包括專用裝置
     - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
-    - [Windows 10 及更新版本](wi-fi-settings-windows.md)
+    - [Windows 10 及以上版本](wi-fi-settings-windows.md)
     - [Windows 8.1 和更新版本](wi-fi-settings-import-windows-8-1.md)，包括 Windows Holographic for Business
 
 5. 完成後，請選取 [建立設定檔]   > [建立]  。
@@ -88,3 +88,5 @@ Wi-Fi 設定檔支援下列裝置平台：
 ## <a name="next-steps"></a>後續步驟
 
 設定檔已建立，但它不會執行任何動作。 接者，請[指派此設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
+
+[在 Intune 中針對 Wi-Fi 設定檔進行疑難排解](troubleshoot-wi-fi-profiles.md)。

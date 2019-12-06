@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b346f41f5198a4aabcb05dcdd4b35a8c56977f53
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: c420446d9293ae2a2d1905dcff218056e8e6c875
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059784"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540724"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  刀鋒視窗上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -39,7 +39,7 @@ ms.locfileid: "74059784"
 | **將組織資料備份至 Android 備份服務** | 選取 [封鎖]  ，防止此應用程式將公司或學校資料備份至 [Android 備份服務](https://developer.android.com/google/backup/index.html)。<br><br> 選取 [允許]  ，允許此應用程式備份公司或學校資料。| **允許** |
 | **將組織資料傳送至其他應用程式** | 指定可以接收這個應用程式資料的應用程式： <ul><li> **受原則管理的應用程式**：只允許傳送至其他受原則管理的應用程式。</li> <li>**所有應用程式**：允許傳送到任何應用程式。 </li> <li>**無**：不允許將資料傳送到任何應用程式 (包括其他受原則管理的應用程式)。</li></ul> <p>Intune 可預設應用程式和服務的豁免清單，允許資料傳送。 此外，如果您需要允許資料傳送至不支援 Intune 應用程式的應用程式，您可以建立您自己的豁免清單。 如需詳細資訊，請參閱[資料轉送豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。<p>此原則也適用於 Android 應用程式連結。  一般 Web 連結則是由 [在 Intune Managed Browser 中開啟應用程式連結]  原則設定所管理。<p><div class="NOTE"><p>注意</p><p>Intune 目前不支援 Android Instant Apps 功能。 Intune 會封鎖與此應用程式之間的任何資料連接。 如需詳細資訊，請參閱 Android 開發人員文件中的 [Android Instant Apps](https://developer.android.com/topic/instant-apps/index.html) \(英文\)。</p><p>如果 [將組織資料傳送至其他應用程式]  已設定為 [所有應用程式]  ，文字資料可能仍然可以透過 OS 共用傳送至剪貼簿。</p></div> | **所有應用程式** | 
 |<ul><ui>**選取要豁免的應用程式** | 當您針對上一個選項選取 [受原則管理的應用程式]  時，可以使用這個選項。 | |
-| **接收來自其他應用程式的資料** | 指定可將資料傳送至這個應用程式的應用程式： <ul><li>**受原則管理的應用程式**：只允許從其他受原則管理的應用程式傳送。</li><li>**所有應用程式**：不允許從任何應用程式傳送資料。</li><li>**無**：不允許從任何應用程式 (包括其他受原則管理的應用程式) 傳送資料。 </li></ul> <p>有一些 Intune 可以允許從中進行資料傳輸的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。 | **所有應用程式** |
+| **接收來自其他應用程式的資料** | 指定可將資料傳送至這個應用程式的應用程式： <ul><li>**受原則管理的應用程式**：只允許從其他受原則管理的應用程式傳送。</li><li>**所有應用程式**：允許從任何應用程式傳送資料。</li><li>**無**：不允許從任何應用程式 (包括其他受原則管理的應用程式) 傳送資料。 </li></ul> <p>有一些 Intune 可以允許從中進行資料傳輸的豁免應用程式和服務。 如需應用程式和服務的完整清單，請參閱[資料傳輸豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)。 | **所有應用程式** |
 | **儲存組織資料的複本** | 選擇 [封鎖]  ，在這個應用程式中停用 [另存新檔] 選項。 如果您想要允許使用 [另存新檔]，請選擇 [允許]  。 **注意︰** *Microsoft Excel、OneNote、PowerPoint 和 Word 支援此設定。協力廠商和 LOB 應用程式也可能支援此設定。*| **允許** |  
 |<ul><ui>**允許使用者儲存複本到指定的服務位置** |使用者可以儲存到幾個選取的服務 (商務用 OneDrive、SharePoint 和本機存放區)。 將會封鎖所有其他服務。  | **0 (已選取)** |
 | **限制其他應用程式之間的剪下、複製和貼上** | 指定何時剪下、複製和貼上動作可與這個應用程式搭配使用。 從下列選項進行選擇： <ul><li>**封鎖**：不允許在這個應用程式與任何其他應用程式之間進行剪下、複製和貼上動作。</li><li>**受原則管理的應用程式**：允許在這個應用程式與其他受原則管理的應用程式之間進行剪下、複製和貼上動作。</li><li>**具有貼上的受原則管理的應用程式**：允許在這個應用程式與其他受原則管理的應用程式之間進行剪下或複製。 允許將資料從任何應用程式貼入這個應用程式。</li><li>**任何應用程式**：不限制與這個應用程式之間的剪下、複製和貼上。 | **任何應用程式** |

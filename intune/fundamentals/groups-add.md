@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/13/2018
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,52 +18,92 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0702eebdd3899c6da527af0078e5e7d47cf95194
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
+ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72510245"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74261596"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>新增群組來組織使用者和裝置
-Intune 使用 Azure Active Directory (AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
+
+Intune 使用 Azure Active Directory (Azure AD) 群組來管理裝置和使用者。 身為 Intune 管理員，您可以設定群組符合組織的需求。 依地理位置、部門或硬體特性建立群組，來組織使用者或裝置。 使用群組管理大規模的工作。 例如，您可以為許多使用者設定原則，或將應用程式部署到一組裝置。
 
 您可以新增下列群組類型：
-- **指派的群組** - 將使用者或裝置手動新增至靜態群組
-- **動態群組** - (使用 Azure Active Directory Premium) 讓您動態建置以簡單或進階規則定義的使用者或裝置群組
+
+- **指派的群組**：將使用者或裝置手動新增至靜態群組。 
+- **動態群組** (需要 Azure AD Premium)：根據您建立的運算式，將使用者或裝置自動新增至使用者群組或裝置群組。
+
+  例如，在搭配經理職稱新增某個使用者時，系統會將該使用者自動新增至 [所有經理]  使用者群組。 或者，當裝置具有 iOS 裝置 OS 類型時，系統會將該裝置自動新增至 [所有 iOS 裝置]  裝置群組。
 
 ## <a name="add-a-new-group"></a>新增新的群組
 
 使用下列步驟建立新的群組。
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選擇 [群組]  ，然後在 [所有群組]  窗格中選擇 [新增群組]  。
-   ![選取了 [新增群組] 的 Azure 入口網站螢幕擷取畫面](./media/groups-add/groups-add-new.png)
-4. 針對 [群組類型]  ，請選擇下列其中一個選項：
-    - **安全性**：安全性群組是擴展使用者群組時可使用的良好資源。 由於安全性群組會定義誰可存取哪些資源，因此安全性群組可適當轉譯為 Intune 使用者群組。 從 Active Directory 同步至 Azure Active Directory 的安全性群組，或透過 Microsoft 365 系統管理中心或 Azure 入口網站直接在 Azure Active Directory 中建立的安全性群組，都可供您用來在 Intune 中建立使用者群組。
-    - **Office 365**
 
-5. 請鍵入新群組的 [名稱]  及 [描述]  。 這些屬性只會出現在管理入口網站，不會向使用者顯示。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [群組]   > [新增群組]  ：
 
-6. 選擇 [成員資格類型]  ：
-   - [已指派]  會建立以手動方式指派成員的群組。 深入了解 [Azure AD 指派的群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-create-azure-portal)。
-   - [動態使用者]  會建立以 [動態查詢]  定義的使用者群組。
-   - [動態裝置]  會建立以 [動態查詢]  定義的裝置群組。
+   ![已選取 [新增群組] 的 Azure 入口網站螢幕擷取畫面](./media/groups-add/groups-add-new.png)
 
-   ![Intune 群組屬性的螢幕擷取畫面](./media/groups-add/groups-add-properties.png)
+3. 在 [群組類型]  中，請選擇下列其中一個選項：
 
-   Azure AD 讓您根據定義成員資格的規則，建立動態群組。 深入了解[建立以屬性為基礎的動態群組](https://docs.microsoft.com/azure/active-directory/active-directory-groups-dynamic-membership-azure-portal)。
+    - **安全性**：安全性群組能定義可存取資源的人員，且建議用於您 Intune 中的群組。 例如，您可以建立使用者的群組，例如**所有 Charlotte 員工**或**Contoso 的所有女性**。 或者，您也可以建立裝置的群組，例如**所有 iOS 裝置**或**所有 Windows 10 學生裝置**。
 
-7. 您可以選取 [Enable Office features] (啟用 Office 功能)  讓使用者群組成員存取共用的 Office 365 應用程式。 深入了解 [Office 365 群組](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
-8. 選擇 [建立]  新增新的群組。
+        > [!TIP]
+        > 所建立的使用者和群組也會顯示在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)、Azure Active Directory 管理中心，以及 [Azure 入口網站中的 Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 之中。 在您的組織租用戶中，您可以在所有這些區域中建立及管理群組。
+        >
+        > 如果您的主要角色是裝置管理，我們建議您使用 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+    - **Office 365**：這些群組是設計來控制對 Office 365 資源的存取及共用它們。 例如，您可以建立 Office 365 群組來共用 Outlook 收件匣或行事曆。 如需詳細資訊，請參閱[了解 Office 365 群組](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+
+4. 為新群組輸入 [群組名稱]  與 [群組描述]  。 請明確描述並包含資訊，使其他人可以知道群組的用途。
+
+    例如，輸入**所有 Windows 10 學生裝置**作為群組名稱，然後輸入**由 Contoso 高中 9-12 年級的學生所使用的所有 Windows 10 裝置**作為群組描述。
+
+5. 輸入 [成員資格類型]  。 選項包括：
+
+    - **已指派**：系統管理員會將使用者或裝置手動指派至此群組，以及手動移除使用者或裝置。
+    - **動態使用者**：系統管理員會建立成員資格規則，以自動新增或移除成員。
+    - **動態裝置**：系統管理員會建立動態群組規則，以自動新增或移除裝置。
+
+        ![Intune 群組屬性的螢幕擷取畫面](./media/groups-add/groups-add-properties.png)
+
+    如需這些成員資格類型的詳細資訊，以及如何建立動態運算式，請參閱：
+
+    - [使用 Azure AD 建立基本群組並新增成員](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
+    - [Azure AD 中群組的動態成員資格規則](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership) \(部分機器翻譯\)
+
+    > [!NOTE]
+    > 在此系統管理中心中，當您建立使用者或群組時，您可能不會看到 **Azure Active Directory** 商標。 但那就是您正在使用的服務。
+
+6. 選擇 [建立]  新增新的群組。 您的群組會顯示於清單中。
+
+> [!TIP]
+> 您可以考慮一些您可以建立的其他動態使用者和裝置群組，例如：
+>
+> - Contoso 高中的所有學生
+> - 所有 Android Enterprise 裝置
+> - 所有 iOS 11 和較舊版本的裝置
+> - 行銷
+> - 人力資源
+> - 所有 Charlotte 員工
+> - 所有 WA 員工
 
 ## <a name="groups-and-policies"></a>群組和原則
 
-當您建立群組時，請考慮要如何套用[原則](../protect/device-compliance-get-started.md)。 例如，您可能會有裝置作業系統特定的原則、您組織中不同角色特定的原則，或您已於 Active Directory 中定義之組織單位特定的原則。 具有適用於 iOS、Android 和 Windows 的個別裝置群組，以及適用於每個組織角色的使用者群組可能會很有用。
+您組織資源的存取權是由您建立的使用者和群組所控制。
 
-您可能也想要建立套用至所有群組和裝置的預設原則，以建立組織的基本相容性需求。 然後，您可以針對最廣泛的使用者和裝置類別建立更具體的原則。 例如，您可以針對每個裝置作業系統建立電子郵件原則。
+當您建立群組時，請考慮您會如何套用[合規性原則](../protect/device-compliance-get-started.md)和[組態設定檔](../configuration/device-profiles.md)。 例如，您可能會有：
 
+- 針對某個裝置作業系統的特定原則。
+- 針對您組織中不同角色的特定原則。
+- 針對您在 Active Directory 中所定義之組織單位的特定原則。
 
+若要建立您組織的基本合規性需求，您可以建立適用於所有群組和裝置的預設原則。 然後，針對最廣泛的使用者和裝置類別建立更具體的原則。 例如，您可以針對每個裝置作業系統建立電子郵件原則。
+
+如需組態設定檔建議和指引，請參閱[指派原則至使用者群組或裝置群組](../configuration/device-profile-assign.md#user-groups-vs-device-groups)和[設定檔建議](../configuration/device-profile-create.md#recommendations)。
 
 ## <a name="see-also"></a>請參閱
-- [利用 Azure Active Directory 群組管理資源的存取權](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups)
-- [Azure 入口網站中的 Intune 傳統群組](groups-get-started.md)
+
+- [使用 Microsoft Intune 的角色型存取控制 (RBAC)](role-based-access-control.md)
+- [使用 Azure AD 群組來管理資源的存取權](https://docs.microsoft.com/azure/active-directory/active-directory-manage-groups) \(部分機器翻譯\)

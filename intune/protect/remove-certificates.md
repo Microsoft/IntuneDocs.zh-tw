@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: e00600abb8327623eff4efe8509670779710ab7d
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509026"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410181"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中移除 SCEP 和 PKCS 憑證
 
@@ -55,14 +55,17 @@ ms.locfileid: "72509026"
 - 從群組指派中移除憑證設定檔。
 
 在下列情況中，系統會撤銷 SCEP 憑證：
+
 - 系統管理員變更或更新 SCEP 設定檔。
 
 在下列情況中，系統會移除根憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[抹除](../remote-actions/devices-wipe.md#wipe)動作。
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+
 - 使用者遺失 Intune 授權。
 - 系統管理員撤銷 Intune 授權。
 - 系統管理員從 Azure AD 移除使用者或群組。
@@ -76,11 +79,13 @@ ms.locfileid: "72509026"
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，系統會移除根憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[抹除](../remote-actions/devices-wipe.md#wipe)動作。
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，PKCS 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+
 - 使用者遺失 Intune 授權。
 - 系統管理員撤銷 Intune 授權。
 - 系統管理員從 Azure AD 移除使用者或群組。
@@ -101,14 +106,17 @@ ms.locfileid: "72509026"
 - 從群組指派中移除憑證設定檔。
 
 在下列情況中，系統會撤銷 SCEP 憑證：
+
 - 系統管理員變更或更新 SCEP 設定檔。
 
 在下列情況中，系統會移除根憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[抹除](../remote-actions/devices-wipe.md#wipe)動作。
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+
 - 使用者遺失 Intune 授權。
 - 系統管理員撤銷 Intune 授權。
 - 系統管理員從 Azure AD 移除使用者或群組。
@@ -122,14 +130,17 @@ ms.locfileid: "72509026"
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，系統會移除 PKCS 憑證：
+
 - 從群組指派中移除憑證設定檔。
 
 在下列情況中，系統會移除根憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[抹除](../remote-actions/devices-wipe.md#wipe)動作。
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，PKCS 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+
 - 使用者遺失 Intune 授權。
 - 系統管理員撤銷 Intune 授權。
 - 系統管理員從 Azure AD 移除使用者或群組。
@@ -140,10 +151,12 @@ ms.locfileid: "72509026"
 ### <a name="scep-certificates"></a>SCEP 憑證
 
 在下列情況中，系統會撤銷「並」  移除 SCEP 憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[抹除](../remote-actions/devices-wipe.md#wipe)動作。
 
 在下列情況中，系統會撤銷 SCEP 憑證：
+
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 - 從 Azure AD 群組中移除裝置。
 - 從群組指派中移除憑證設定檔。
@@ -151,11 +164,13 @@ ms.locfileid: "72509026"
 - 系統管理員變更或更新 SCEP 設定檔。
 
 在下列情況中，系統會移除根憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[抹除](../remote-actions/devices-wipe.md#wipe)動作。
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+
 - 使用者遺失 Intune 授權。
 - 系統管理員撤銷 Intune 授權。
 - 系統管理員從 Azure AD 移除使用者或群組。
@@ -169,12 +184,14 @@ ms.locfileid: "72509026"
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，系統會移除根憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[抹除](../remote-actions/devices-wipe.md#wipe)動作。
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 
 在下列情況中，PKCS 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
 - 使用者遺失 Intune 授權。
+
 - 系統管理員撤銷 Intune 授權。
 - 系統管理員從 Azure AD 移除使用者或群組。
 - 系統管理員變更或更新 PKCS 設定檔。
@@ -190,15 +207,18 @@ ms.locfileid: "72509026"
 ### <a name="scep-certificates"></a>SCEP 憑證
 
 在下列情況中，系統會撤銷「並」  移除 SCEP 憑證：
+
 - 使用者取消註冊。
 - 系統管理員執行[淘汰](../remote-actions/devices-wipe.md#retire)動作。
 - 從 Azure AD 群組中移除裝置。
 - 從群組指派中移除憑證設定檔。
 
 在下列情況中，系統會撤銷 SCEP 憑證：
+
 - 系統管理員變更或更新 SCEP 設定檔。
 
 在下列情況中，SCEP 憑證會*保留*在裝置上 (未撤銷或移除憑證)：
+
 - 使用者遺失 Intune 授權。
 - 系統管理員撤銷 Intune 授權。
 - 系統管理員從 Azure AD 移除使用者或群組。
@@ -210,3 +230,6 @@ ms.locfileid: "72509026"
 
 macOS 不支援 PKCS 憑證。
 
+## <a name="next-steps"></a>後續步驟
+
+[使用憑證進行驗證](certificates-configure.md)

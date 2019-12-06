@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8e319c68abd8965b84323bc3b7a5451dee42bc2
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709183"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547940"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教學課程：使用 Autopilot 在 Intune 中註冊 Windows 裝置
 
@@ -60,9 +60,9 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 2. 儲存 CSV 檔案。
 
-3. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]   > [匯入]  。
+3. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\) > [匯入]  。
 
-    ![Windows Autopilot 裝置的螢幕擷取畫面](./media/tutorial-use-autopilot-enroll-devices/autopilot-import-device.png)
+    ![Windows Autopilot 裝置的螢幕擷取畫面](./media/enrollment-autopilot/autopilot-import-device.png)
 
 4. 在 [新增 Windows AutoPilot 裝置]  底下，瀏覽至您儲存的 CSV 檔案。
 
@@ -70,7 +70,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 5. 選擇 [匯入]  開始匯入裝置資訊。 匯入可能需要幾分鐘的時間。
 
-4. 匯入完成後，選擇 [裝置註冊]   > [Windows 註冊]   > [Windows Autopilot]   > [裝置]   > [同步處理]  。訊息會顯示正在進行同步處理。 程序可能需要幾分鐘才能完成，取決於您同步處理多少部裝置。
+4. 匯入完成之後，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\) > [同步]  。訊息會顯示正在進行同步處理。 程序可能需要幾分鐘才能完成，取決於您同步處理多少部裝置。
 
 5. 重新整理檢視可查看新的裝置。
 
@@ -90,7 +90,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 建立裝置群組之後，必須建立部署設定檔，才能設定 Autopilot 裝置。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置註冊]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
 2. 在 [基本]  頁面上，針對 [名稱]  輸入 *Autopilot 設定檔*。 針對 [描述]  輸入 *Autopilot 裝置的測試設定檔*。
 3. 把 [將所有目標裝置轉換為 Autopilot]  設為 [是]  。 此設定可確保清單中的所有裝置都會向 AutoPilot 部署服務註冊。 等候 48 小時讓註冊處理完畢。
 4. 選取 [下一步]  。
@@ -116,9 +116,9 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 
 1. 如果裝置已在 Intune 中註冊，則必須先[從 Azure Active Directory 入口網站中加以刪除](../remote-actions/devices-wipe.md#delete-devices-from-the-azure-active-directory-portal)。
 
-2. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]  。
+2. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\)。
 
-3. 在 [Windows Autopilot 裝置]  下，選擇您要刪除的裝置，然後選擇 [刪除]  。
+3. 選擇您要刪除的裝置，然後選擇 [刪除]  。
 
 4. 選擇 [是]  以確認刪除。 可能需要幾分鐘才能刪除。
 

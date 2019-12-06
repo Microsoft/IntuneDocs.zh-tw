@@ -5,22 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/20/2019
+ms.date: 1/14/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
+ms.reviewer: samyada
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84ef86a0b3c0ffbfffde572c9759c62645d57dc5
-ms.sourcegitcommit: 8c651a3ed1f358f19b65206a52f7808282de97c3
+ms.openlocfilehash: 844e93f3a063ae43342d2967cbd544f3ec425c21
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
-ms.locfileid: "73844840"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410154"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -56,7 +57,7 @@ ms.locfileid: "73844840"
 
 當您鑽研此報告時，您也可能會看到套用至特定裝置的任何特定合規性政策和設定，包括每個設定的合規性狀態。
 
-### <a name="device-compliance-status-report"></a>裝置合規性狀態報告
+### <a name="device-compliance-status"></a>裝置合規性狀態
 
 [裝置合規性狀態]  圖表會顯示所有 Intune 已註冊裝置的合規性狀態。 裝置合規性狀態會保留在兩個不同的資料庫中：Intune 和 Azure Active Directory。
 
@@ -119,7 +120,8 @@ ms.locfileid: "73844840"
 
 Intune 會顯示該裝置上所套用裝置合規性原則設定的詳細資料。 當您選取特定政策時，它會顯示該政策中的所有設定。
 
-### <a name="devices-without-compliance-policy"></a>沒有合規性政策的裝置
+### <a name="devices-without-compliance"></a>沒有合規性的裝置
+
 在 [合規性狀態]  頁面上的 [原則合規性]  圖表旁，您可以選取 [沒有合規性原則的裝置]  磚，以針對未指派任何合規性原則的裝置檢視其相關資訊：
 
 ![查看沒有任何合規性政策的裝置](./media/compliance-policy-monitor/devices-without-policies.png)
@@ -136,13 +138,13 @@ Intune 會顯示該裝置上所套用裝置合規性原則設定的詳細資料�
 
 - 使用者如果已獲指派任何類型的合規性政策，便不會出現在此報告中，不論是使用哪一種裝置平台。 例如，如果您已將 Windows 合規性政策指派給具有 Android 裝置的使用者，該裝置便不會出現在此報告中。 不過，Intune 會將該 Android 裝置視為不符合規範。 為了避免發生問題，建議您針對每個裝置平台建立原則，然後將它們部署至所有使用者。
 
-### <a name="per-policy-device-compliance-report"></a>每一政策的裝置合規性報告
+### <a name="per-policy-device-compliance"></a>每一政策的裝置合規性
 
 [原則合規性]  圖表會顯示原則，以及符合規範與不符合規範的裝置數目。 
 
 ![查看政策清單，以及該政策中符合規範的裝置數目與不符合規範的裝置數目比較](./media/compliance-policy-monitor/idc-8.png)
 
-## <a name="setting-compliance-report"></a>設定相容性報表
+### <a name="setting-compliance"></a>設定合規性
 
 [設定合規性]  圖表會顯示所有合規性原則中的所有裝置合規性原則設定、套用原則設定的平台，以及不符合規範的裝置數目。
 
@@ -152,6 +154,24 @@ Intune 會顯示該裝置上所套用裝置合規性原則設定的詳細資料�
 > 原則可以指派給裝置，以及相同裝置上的使用者。 在某些情況下，裝置可能會在使用者登入之前進行同步處理，例如，當裝置重新開機時。 合規性可能會評估此使用者，並將裝置顯示為不符合規範。 此行為也可能會將系統帳戶顯示為不符合規範的使用者。
 >
 > 這是多使用者 Windows 10 裝置的已知問題。 此行為的任何變更或更新，都會在[開發中](../fundamentals/in-development.md)和/或[新功能](../fundamentals/whats-new.md)中公告。
+
+## <a name="view-compliance-reports"></a>檢視合規性報告
+
+除了使用 [合規性狀態]  上的圖表之外，您也可以從系統管理中心的 [監視]  頁面檢視合規性報告。
+
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 選取 [裝置]   > [監視]  ，然後在 [合規性]  下方選取您想要檢視的報告。 一些可用的合規性報告包括：
+
+   - 裝置合規性
+   - 不符合規範的裝置
+   - 沒有合規性政策的裝置
+   - 設定合規性
+   - 原則合規性
+   - Windows 健康情況證明報表
+   - 威脅代理程式狀態
+
+如需報告的詳細資訊，請參閱 [Intune 報告](../fundamentals/reports.md)
 
 ## <a name="view-status-of-device-policies"></a>檢視裝置原則狀態
 

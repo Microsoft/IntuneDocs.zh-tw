@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 889b0a7562f1a663556e955271681e0747aeb3c4
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: c8c756ad2df00a97df7289491daf830e584c0045
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199175"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74410202"
 ---
 # <a name="enforce-compliance-for-microsoft-defender-atp-with-conditional-access-in-intune"></a>在 Intune 中使用條件式存取強制執行 Microsoft Defender ATP 的合規性
 
@@ -193,6 +193,12 @@ Microsoft Defender ATP 有助於解決此類安全性事件。
 2. 選取 [裝置]   > [監視]   > [原則合規性]  。
 
 3. 在清單中尋找您的 Microsoft Defender ATP 政策，並查看有哪些裝置是符合規範或不符合規範。
+
+您也可以使用位於相同位置，適用於不符合規範裝置的「作業」  報告：
+
+1. 選取 [裝置]   > [監視]   > [不合規的裝置]  。
+
+如需報告的詳細資訊，請參閱 [Intune 報告](../fundamentals/reports.md)。
 
 ## <a name="view-onboarding-status"></a>檢視上線狀態
 

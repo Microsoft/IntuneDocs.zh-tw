@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b9f9d6626d26e919efbd3a3d8b5dd735ecb7fb62
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199145"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390293"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中建立並指派 SCEP 憑證設定檔
 
@@ -53,6 +53,9 @@ ms.locfileid: "74199145"
 
    2. 您無法使用 Intune 撤銷由 SCEP 憑證設定檔為裝置擁有者所佈建的憑證。 您可以透過外部程序或直接使用憑證授權單位單位來管理撤銷。 
 
+   4. 針對 Android Enterprise 專用裝置，SCEP 憑證設定檔僅支援 Wi-Fi 網路設定和驗證。  Android Enterprise 專用裝置上的 SCEP 憑證設定檔並不支援 VPN 或應用程式驗證。   
+
+   
 7. 選取 [設定]  ，然後完成下列設定：
 
    - **憑證類型**：

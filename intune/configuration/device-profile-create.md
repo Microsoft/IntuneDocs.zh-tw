@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02603651587837211d9a67d7e4bbeb90cb358dc5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 0c4c995322234a4a2486d8e6c5e9efd88f78dd63
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059567"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390877"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 裝置設定檔可讓您新增設定項目並加以設定，然後再將這些設定推送至您組織中的裝置。 [使用裝置設定檔在裝置上套用功能和設定](device-profiles.md)則能提供更詳細的資料，包括您可以執行哪些作業。
 
@@ -39,7 +37,7 @@ ms.locfileid: "74059567"
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [組態設定檔]  。 下列選項可供您選擇：
 
@@ -60,7 +58,7 @@ ms.locfileid: "74059567"
        - **macOS**
        - **Windows Phone 8.1**
        - **Windows 8.1 及更新版本**
-       - **Windows 10 及更新版本**
+       - **Windows 10 及以上版本**
 
    - **設定檔類型**：選取您要建立的設定類型。 顯示的清單取決於您選擇的**平台**。
    - **設定**：下列文章會描述每個設定檔類型的設定︰
@@ -78,6 +76,7 @@ ms.locfileid: "74059567"
        - [Kiosk](kiosk-settings.md)
        - [PKCS 憑證](../protect/certficates-pfx-configure.md)
        - [PKCS 匯入憑證](../protect/certificates-imported-pfx-configure.md)
+       - [喜好設定檔案](preference-file-settings-macos.md)
        - [SCEP 憑證](../protect/certificates-scep-configure.md)
        - [信任的憑證](../protect/certificates-configure.md)
        - [更新原則](../software-updates-ios.md)
@@ -160,6 +159,32 @@ ms.locfileid: "74059567"
 Intune 會使用各種重新整理循環來檢查組態設定檔是否有更新。 如果裝置是最近註冊的，則簽入的執行頻率會更加頻繁。 [原則和設定檔重新整理循環](device-profile-troubleshoot.md#how-long-does-it-take-for-devices-to-get-a-policy-profile-or-app-after-they-are-assigned)列出預估的重新整理時間。
 
 使用者可以在任何時間開啟公司入口網站應用程式並同步處理裝置，以立即檢查是否有設定檔更新。
+
+## <a name="recommendations"></a>建議
+
+建立設定檔時，請考量下列建議：
+
+- 為您的原則命名，讓您知道它們是什麼，以及它們會做什麼。 所有[合規性政策](../protect/create-compliance-policy.md)和[組態設定檔](../configuration/device-profile-create.md)，都有一個選擇性的 [描述]  屬性。 在 [描述]  中，明確描述並包含資訊，使其他人可以知道原則的用途。
+
+  一些組態設定檔範例包括：
+
+  **設定檔名稱**：系統管理範本 - 適用於所有 Windows 10 使用者的 OneDrive 組態設定檔  
+  **設定檔描述**：OneDrive 系統管理範本設定檔，包含適用於所有 Windows 10 使用者的最低與基礎設定。 由 user@contoso.com 建立，以防止使用者將組織資料共用至個人 OneDrive 帳戶。
+
+  **設定檔名稱**：適用於所有 iOS 使用者的 VPN 設定檔  
+  **設定檔描述**：VPN 設定檔，包含讓所有 iOS 使用者連線到 Contoso VPN 的最低與基礎設定。 由 user@contoso.com 建立，讓使用者自動向 VPN 驗證，而不是提示使用者輸入其使用者名稱和密碼。
+
+- 藉由其工作來建立您的設定檔，例如，設定 Microsoft Edge 設定、啟用 Microsoft Defender 防毒程式設定、封鎖 iOS 越獄裝置等等。
+
+- 建立適用於特定群組的設定檔，例如，行銷、銷售、IT 系統管理員，或依地點或學校系統。
+
+- 將使用者原則與裝置原則分開。
+
+  例如，[Intune 中的系統管理範本](administrative-templates-windows.md)有數百個 ADMX 設定。 這些範本會顯示設定是否適用於使用者或裝置。 建立系統管理範本時，將您的使用者設定指派給使用者群組，並將您的裝置設定指派給裝置群組。
+
+  下列影像顯示可套用至使用者及/或套用至裝置的設定範例：
+
+  ![適用於使用者和裝置的 Intune 系統管理範本](./media/device-profile-create/setting-applies-to-user-and-device.png)
 
 ## <a name="next-steps"></a>後續步驟
 

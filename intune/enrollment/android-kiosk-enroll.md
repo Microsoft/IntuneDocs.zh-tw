@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c06fe931bf17b812def3f22b3d9a5d92d9933e2b
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
+ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709470"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74390713"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>設定 Android Enterprise 專用裝置的 Intune 註冊
 
@@ -101,6 +101,9 @@ Intune 可協助您將應用程式和設定部署至 Android Enterprise 專用�
 ## <a name="enroll-the-dedicated-devices"></a>註冊專用裝置
 
 您現在可以[註冊您的專用裝置](android-dedicated-devices-fully-managed-enroll.md)。
+
+> [!NOTE]
+> **Microsoft Intune** 應用程式會在註冊專用裝置期間自動安裝。  進行註冊需要此應用程式，您無法將它解除安裝。 
 
 ## <a name="managing-apps-on-android-enterprise-dedicated-devices"></a>管理 Android Enterprise 專用裝置上的應用程式
 

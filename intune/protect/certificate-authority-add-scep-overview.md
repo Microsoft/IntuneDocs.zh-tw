@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61771ce2b6179b2e74a4d13f72794ece97907034
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 9454353ec4f8291d4d8c0001cc977838ecec787b
+ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72502563"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74540805"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
@@ -57,7 +57,8 @@ API 提供於 [Intune SCEP API 公用 GitHub 存放庫](https://github.com/Micro
 
 下圖顯示協力廠商 SCEP 與 Intune 整合的詳細流程：
 
-![協力廠商憑證授權單位 SCEP 如何與 Microsoft Intune 整合](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
+> [!div class="mx-imgBorder"]
+> ![協力廠商憑證授權單位 SCEP 如何與 Microsoft Intune 整合](./media/certificate-authority-add-scep-overview/scep-certificate-vendor-integration.png)
 
 ## <a name="set-up-third-party-ca-integration"></a>設定協力廠商 CA 整合
 

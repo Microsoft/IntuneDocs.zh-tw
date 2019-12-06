@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7624800b1f53c6e8dcdf0b37f9e352deb47563a5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: c19d14b2f2cfa838d79af1c6fbb3c3500004e56e
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72497512"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74548033"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>將 Microsoft Store 應用程式新增至 Microsoft Intune
 
@@ -43,7 +43,7 @@ ms.locfileid: "72497512"
     - **名稱**：輸入要在公司入口網站中顯示的應用程式名稱。 您使用的任何應用程式名稱都必須是唯一的。 如果應用程式名稱重複，則使用者只會在公司入口網站看到一個名稱。
     - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
     - **發行者**：輸入應用程式發行者的名稱。
-    - **AppStore URL**：輸入您想要建立之應用程式的 App Store URL。
+    - **AppStore URL**：輸入您想要建立之應用程式的 App Store URL。 藉由在 [Microsoft Store](https://store.microsoft.com) 搜尋所需應用程式，即可找到 URL。 使用來自瀏覽器網址列的 URL。
     - **類別**：(選擇性) 選取一或多個內建的應用程式類別，或選取您建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：若要在使用者瀏覽應用程式時，於公司入口網站的主頁面上以醒目方式顯示應用程式套件，請選取此選項。
     - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。

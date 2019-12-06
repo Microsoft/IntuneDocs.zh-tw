@@ -5,22 +5,22 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 11/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
-ms.reviewer: aiwang
+ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53ac86ce88481176ab6f2472b1c0fbae8d3453c1
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
+ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199320"
+ms.lasthandoff: 11/21/2019
+ms.locfileid: "74291095"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 軟體更新
 
@@ -80,7 +80,7 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 
 ### <a name="create-and-assign-update-rings"></a>建立及指派更新通道
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心]( https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心]( https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [Windows]   > [Windows 10 更新通道]   > [建立]  。
 
@@ -208,17 +208,22 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 
 - 不同於使用 35 天後過期的更新通道「暫停」  ，Windows 10 功能更新原則仍然有效。 在修改或移除 Windows 10 功能更新原則之前，裝置都不會安裝新的 Windows 版本。 如果您編輯原則來指定較新的版本，則裝置就可以從該 Windows 版本安裝功能。
 
-> [!IMPORTANT]
-> 當在相同的裝置中同時部署「Windows 10 功能更新」  和「Windows 10 更新通道」  原則時，請檢閱更新通道的下列設定：
->
-> - [功能更新延遲期間 (天)]  必須設為 **0**
-> - 更新通道的功能更新必須為「正在執行」  。 不得為暫停。
+### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 功能更新的限制
 
-Windows Autopilot 不支援 Windows 10 功能更新。
+- 當您將「Windows 10 功能更新」  原則部署到同時也接收「Windows 10 更新通道」  原則的裝置時，請檢閱更新通道的下列設定：
+  - [功能更新延遲期間 (天)]  必須設為 **0**。
+  - 更新通道的功能更新必須為「正在執行」  。 不得為暫停。
+
+- Autopilot 不支援「Windows 10 功能更新」  原則。 Intune 不會將原則部署到：
+  - 由 Autopilot 佈建的裝置。
+  - 先前使用 Autopilot 佈建的裝置。
+
+  我們正在查看此限制，以確認未來是否可以支援它。
+
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>建立並指派 Windows 10 功能更新
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [Windows]   > [Windows 10 功能更新]   > [建立]  。
 

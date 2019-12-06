@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 454d23038a593829ea8a14929dc435e9f9ddb457
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: 8d24a858ec66433e72d63bea922eac0c4072a27c
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709481"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547764"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -49,7 +49,7 @@ Autopilot 部署類型有四種：
 
 您可以藉由匯入含 Windows Autopilot 裝置資訊的 CSV 檔案來新增它們。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]   > [匯入]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\) > [匯入]  。
 
     ![Windows Autopilot 裝置的螢幕擷取畫面](./media/enrollment-autopilot/autopilot-import-device.png)
 
@@ -65,7 +65,7 @@ Autopilot 部署類型有四種：
 
 3. 選擇 [匯入]  開始匯入裝置資訊。 匯入可能需要幾分鐘的時間。
 
-4. 匯入完成後，選擇 [裝置註冊]   > [Windows 註冊]   > [Windows Autopilot]   > [裝置]   > [同步處理]  。訊息會顯示正在進行同步處理。 程序可能需要幾分鐘才能完成，取決於有多少裝置正在進行同步處理。
+4. 部署完成之後，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\) > [同步]  。訊息會顯示正在進行同步處理。 程序可能需要幾分鐘才能完成，取決於有多少裝置正在進行同步處理。
 
 5. 重新整理檢視可查看新的裝置。
 
@@ -88,7 +88,7 @@ Autopilot 部署類型有四種：
 
 ## <a name="create-an-autopilot-deployment-profile"></a>建立 Autopilot 部署設定檔
 Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個租用戶建立最多 350 個設定檔。
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
 2. 在 [基本]  頁面上，輸入**名稱**和選擇性的**描述**。
 
     ![[基本] 頁面的螢幕擷取畫面](./media/enrollment-autopilot/create-profile-basics.png)
@@ -129,25 +129,35 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
     ![[檢閱] 頁面的螢幕擷取畫面](./media/enrollment-autopilot/create-profile-review.png)
 
 > [!NOTE]
-> Intune 將會定期檢查指派的群組中是否有新裝置，然後開始將設定檔指派給這些裝置的程序。 此程序可能需要幾分鐘的時間才能完成。 部署裝置之前，請確定此程序已完成。  您可以在 [裝置註冊]  > [Windows 註冊] >   [裝置] >   下檢查，此時應該會看到設定檔狀態從 [未指派] 變更為 [指派中]，最後變更為 [已指派]。
+> Intune 將會定期檢查指派的群組中是否有新裝置，然後開始將設定檔指派給這些裝置的程序。 此程序可能需要幾分鐘的時間才能完成。 部署裝置之前，請確定此程序已完成。  您可以在 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows Autopilot Deployment Program]  底下\) 下檢查，您應該會看到設定檔狀態從 [未指派] 變更為 [指派中]，最後變更為 [已指派]。
 
 ## <a name="edit-an-autopilot-deployment-profile"></a>編輯 Autopilot 部署設定檔
 建立 Autopilot 部署設定檔之後，您可以編輯部署設定檔的某些部分。   
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]  。
-2. 在 [Windows 註冊]  下的 [Windows Autopilot]  區段中，選擇 [部署設定檔]  。
-3. 選取您想要編輯的設定檔。
-4. 按一下左邊的 [屬性]  ，變更部署設定檔的名稱或描述。 進行變更之後請按一下 [儲存]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [部署設定檔]  。
+2. 選取您想要編輯的設定檔。
+3. 選取左邊的 [屬性]  ，變更部署設定檔的名稱或描述。 進行變更之後請按一下 [儲存]  。
 5. 按一下 [設定]  以變更 OOBE 設定。 進行變更之後請按一下 [儲存]  。
 
 > [!NOTE]
 > 設定檔的變更會套用至指派給該設定檔的裝置。 不過，更新的設定檔不會套用到已在 Intune 註冊的裝置，直到裝置已重設並重新註冊為止。
 
+## <a name="edit-autopilot-device-attributes"></a>編輯 Autopilot 裝置屬性
+上傳 Autopilot 裝置之後，您可以編輯裝置的特定屬性。
+
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選取 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\)。
+2. 選取您要編輯的裝置。
+3. 在畫面右邊的窗格中，您可以編輯裝置名稱、群組標籤或使用者易記名稱 (如果您已指派使用者)。
+4. 選取 [儲存]  。
+
+> [!NOTE]
+> 可以針對所有裝置設定裝置名稱，但會在已加入混合式 Azure AD 部署中予以忽略。 裝置名稱仍然是來自混合式 Azure AD 裝置的網域加入設定檔。
+
 ## <a name="alerts-for-windows-autopilot-unassigned-devices-----163236---"></a>Windows Autopilot 未指派裝置的警示  <!-- 163236 -->  
 
 警示會顯示有多少 Autopilot 程式裝置沒有 Autopilot 部署設定檔。 您可以使用警示中的資訊來建立設定檔，並加以指派至未指派的裝置。 當您按一下警示時，會看到 Windows Autopilot 裝置的完整清單，以及這些裝置的詳細資訊。
 
-若要查看未指派的裝置的警示，請[在 Azure 入口網站的 Intune 中](https://aka.ms/intuneportal)，選擇 [裝置註冊]   > [概觀]   > [未指派的裝置]  。  
+若要查看未指派裝置的警示，請在 [Azure 入口網站內的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置]   > [概觀]   > [註冊警示]   > [未指派的裝置]  。  
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>將使用者指派給特定 Autopilot 裝置
 
@@ -155,7 +165,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 必要條件：已設定 Azure Active Directory 公司入口網站，並具有 Windows 10 1809 版或更新版本。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置註冊]   > [Windows 註冊]   > [裝置]  > 選擇裝置 > [指派使用者]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\) > 選擇裝置 > [指派使用者]  。
 
     ![指派使用者的螢幕擷取畫面](./media/enrollment-autopilot/assign-user.png)
 
@@ -171,7 +181,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 ## <a name="autopilot-deployments-report"></a>Autopilot 部署報告
 您可以查看透過 Windows Autopilot 部署之每個裝置的詳細資料。
-若要查看該報告，請移至 [Intune]  ，然後在 [監視]  底下，選擇 [Autopilot 部署]  。
+若要查看報告，請移至 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [監視器]   > [Autopilot 部署]  。
 該資料會在部署後的 30 天內提供使用。
 
 
@@ -179,7 +189,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 您可以刪除未向 Intune 註冊的 Windows Autopilot 裝置：
 
-- 若要從 Windows Autopilot 中刪除裝置，請前往 [裝置註冊]   > Windows 註冊   > [裝置]  。 選擇您要刪除的裝置，然後選擇 [刪除]  。 刪除 Windows Autopilot 裝置可能需要幾分鐘的時間才會完成。
+- 將裝置從 Windows Autopilot 刪除，位置在 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\)。 選擇您要刪除的裝置，然後選擇 [刪除]  。 刪除 Windows Autopilot 裝置可能需要幾分鐘的時間才會完成。
 
 您必須刪除 Intune 裝置、Azure Active Directory 裝置及 Windows Autopilot 裝置記錄，才能將裝置完全從您的租用戶移除。 這全都可以從 Intune 執行：
 
@@ -187,7 +197,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 
 2. 若要刪除 Azure Active Directory 裝置中的裝置，請前往 [裝置]   > [Azure AD 裝置]  。
 
-3. 若要從 Windows Autopilot 中刪除裝置，請前往 [裝置註冊]   > Windows 註冊   > [裝置]  。 選擇您要刪除的裝置，然後選擇 [刪除]  。 刪除 Windows Autopilot 裝置可能需要幾分鐘的時間才會完成。
+3. 將裝置從 Windows Autopilot 刪除，位置在 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\)。 選擇您要刪除的裝置，然後選擇 [刪除]  。 刪除 Windows Autopilot 裝置可能需要幾分鐘的時間才會完成。
 
 ## <a name="using-autopilot-in-other-portals"></a>在其他入口網站中使用 Autopilot
 如果您對行動裝置管理不感興趣，則可以在其他入口網站中使用 Autopilot。 雖然可以選擇使用其他入口網站，我們建議您只使用 Intune 來管理 Autopilot 部署。 如果您使用 Intune 與另一個入口網站，Intune 將無法：  

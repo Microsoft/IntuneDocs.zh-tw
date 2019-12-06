@@ -18,20 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 99d946366724b03ecdf5c47d8ba7b1d820ed3055
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: 55fc7149d23336519af76c423862bd81f065b88f
+ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164724"
+ms.lasthandoff: 11/20/2019
+ms.locfileid: "74239224"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
 您可以設定 Intune 來註冊透過 Apple [裝置註冊計劃 (DEP)](https://deploy.apple.com) 購買的 iOS 裝置。 DEP 可讓您註冊大量裝置，而完全不需要接觸它們。 iPhone 與 iPad 等裝置可直接交付給使用者。 當使用者啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
 
-若要啟用 DEP 註冊，您要使用 Intune 與 Apple DEP 入口網站。 需要序號或採購單編號的清單，以將裝置指派給 Intune 進行管理。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。
-
-此外，DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)一起使用。
+若要啟用 DEP 註冊，您要使用 Intune 與 Apple DEP 入口網站。 需要序號或採購單編號的清單，以將裝置指派給 Intune 進行管理。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。 請注意，DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶一起使用。
 
 > [!NOTE]
 > DEP 會設定終端使用者無法移除的裝置設定。 因此，在[移轉至 DEP](../fundamentals/migration-guide-considerations.md) 之前，必須先抹除裝置，讓裝置回復為出廠 (全新) 狀態。

@@ -6,30 +6,31 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: d035ebf5-85f4-4001-a249-75d24325061a
-ms.reviewer: chrisbal
+ms.reviewer: tycast
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3683d2aeada791c6ec827e915e02365a336e6045
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 62f418e396c5030a47ea0bcb31914cd4e1069c40
+ms.sourcegitcommit: eb2e420b304c7da9d3be5ef49a676cba66766d2b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059666"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74319849"
 ---
 # <a name="use-a-microsoft-intune-custom-profile-to-create-a-per-app-vpn-profile-for-android-devices"></a>使用 Microsoft Intune 自訂設定檔來建立 Android 裝置的個別應用程式 VPN 設定檔
 
-[!INCLUDE[azure_portal](../includes/azure_portal.md)]
-
 您可以為 Intune 所管理的 Android 5.0 及更新版本裝置建立個別應用程式 VPN 設定檔。 首先，建立使用 Pulse Secure 或 Citrix 連線類型的 VPN 設定檔。 接著，建立將 VPN 設定檔與特定應用程式建立關聯的自訂設定原則。
+
+> [!NOTE]
+> 若要在 Android Enterprise 裝置上使用個別應用程式 VPN，您也可以使用這些步驟。 但是，建議您針對您的 VPN 用戶端應用程式使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)。
 
 在您將原則指派給 Android 裝置或使用者群組之後，使用者應該啟動 Pulse Secure 或 Citrix VPN 用戶端。 接著，VPN 用戶端 就只會允許來自指定應用程式的流量使用開啟的 VPN 連線。
 
@@ -39,7 +40,7 @@ ms.locfileid: "74059666"
 
 ## <a name="step-1-create-a-vpn-profile"></a>步驟 1：建立 VPN 設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -48,13 +49,13 @@ ms.locfileid: "74059666"
     - **平台**：選取 [Android]  。
     - **設定檔類型**：選取 [VPN]  。
 
-4. 選擇 [設定]   >  [設定]  ，然後依照[如何設定 VPN 設定](vpn-settings-configure.md)及 [Android 裝置的 Intune VPN 設定](vpn-settings-android.md)中的設定來設定 VPN 設定檔。
+4. 選擇 [設定]   >  [設定]  。 然後，設定 VPN 設定檔。 如需詳細資訊，請參閱[如何設定 VPN 設定](vpn-settings-configure.md)和 [Android 裝置的 Intune VPN 設定](vpn-settings-android.md)。
 
 請記下您在建立 VPN 設定檔時指定的 [連線名稱]  值。 下一個步驟將會需要這個名稱。 例如，**MyAppVpnProfile**。
 
 ## <a name="step-2-create-a-custom-configuration-policy"></a>步驟 2：建立自訂設定原則
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -75,7 +76,7 @@ ms.locfileid: "74059666"
 
 ### <a name="set-your-app-list-to-blacklist-or-whitelist-optional"></a>將應用程式清單設定為封鎖清單或允許清單 (選用)
 
-使用 **BLACKLIST** 值，即可輸入「不可」  使用 VPN 連線的應用程式清單。 所有其他的應用程式都會透過 VPN 連線。 或者，您可以使用 **WHITELIST** 值以指定應用程式清單，這些應用程式「可以」  使用 VPN 連線。 不在清單上的應用程式不會透過 VPN 連線。
+使用 **BLACKLIST** 值來輸入應用程式清單，這些應用程式「不可以」  使用 VPN 連線。 所有其他的應用程式都會透過 VPN 連線。 或者，使用 **WHITELIST** 值來輸入應用程式清單，這些應用程式「可以」  使用 VPN 連線。 不在清單上的應用程式不會透過 VPN 連線。
 
 1. 在 [Custom OMA-URI Settings] (自訂 OMA-URI 設定)  窗格中，選擇 [新增]  。
 2. 輸入設定名稱。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9cec7395fc766f6a937e6c43ef3a32fb21610be
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059979"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547978"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 10 範本設定群組原則設定
 
@@ -43,7 +43,7 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
 
 ## <a name="create-a-template"></a>建立範本
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -101,3 +101,5 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
 ## <a name="next-steps"></a>後續步驟
 
 範本已建立，但還不會執行任何動作。 接下來，[指派範本 (也稱為設定檔)](device-profile-assign.md) 並[監視其狀態](device-profile-monitor.md)。
+
+[使用系統管理範本更新 Office 365](administrative-templates-update-office.md)。

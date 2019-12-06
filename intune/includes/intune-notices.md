@@ -7,20 +7,35 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: fa2b1c5c9d267b9f860da2268d03c928ebf7693b
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74309796"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74549371"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
+
+### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>「Adobe Acrobat Reader for Intune」行動應用程式的已更新支援聲明<!--5746776-->
+我們在 8 月底於 MC188653 中分享了 Adobe Acrobat Reader for Intune 行動應用程式會在 2019 年 12 月 1 日終止生命週期，且 Adobe 已規劃在其主要 Acrobat Reader 應用程式中支援 Intune 的應用程式保護原則。 從那時起，我們收到客戶意見反應，我們需要提供更多時間來繼續讓 IT 系統管理員以 Adobe Acrobat Reader for Intune 為目標，以及讓終端使用者繼續使用它。 有鑑於 Adobe Acrobat Reader for Intune 在終端使用者裝置上有高使用量，以及其在企業案例中的重要性，我們想要確保任何體驗都符合您組織的應用程式保護需求。 
+
+雖然 Adobe Acrobat Reader for Intune 應用程式會繼續受支援，直到 2020 年 3 月 31 日為止，我們仍然建議您在原則中將一般的 Acrobat Reader 行動應用程式設為目標，因為 Acrobat Reader 行動應用程式支援應用程式保護原則，且已整合 Intune SDK。 
+
+#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+因為我們的報告指出您組織中的一或多個原則是以 Adobe Acrobat Reader for Intune 應用程式為目標，且/或您已收到我們先前的 EOL 通訊，所以傳送此訊息通知您。 
+
+#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+讓您的終端使用者和技術服務人員知道此變更。 您可以使用[公司入口網站的支援資訊功能](../apps/company-portal-app.md#support-information)，來建立 Intune 相關問題的通道。
+
+#### <a name="additional-information"></a>其他資訊
+https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
+
 
 ### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8.1 終止支援<!--3544909-->
 Windows Phone 8.1 的 Microsoft 主要支援已於 2017 年 7 月終止，而且延伸支援已於 2019 年 6 月結束。 適用於 Windows Phone 8.1 的公司入口網站應用程式從 2017 年 10 月起就進入維持模式了。 Microsoft Intune 現在將於 2020 年 2 月 20 日終止對 Windows Phone 8.1 的支援。
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-2020 年 2 月 20 日之後，這些裝置將不會收到任何安全性更新，而且您將無法註冊任何新裝置。 現有的 Windows Phone 8.1 裝置會保持註冊 (原則、應用程式、報告)，但請注意，在此日期之後，將不會支援現有註冊的任何疑難排解，因為許多元件 (例如第三方憑證) 已結束對該平台的支援。 Intune 將會停止與 Intune 和 Windows Phone 8.1 的相容性測試。
+2020 年 2 月 20 日之後，這些裝置將不會收到任何安全性更新，而且您將無法註冊任何新裝置。 現有的 Windows Phone 8.1 裝置會保持註冊 (原則、應用程式、報告)，但請注意，在此日期之後，將不會支援現有註冊的任何疑難排解，因為許多元件 (例如協力廠商憑證) 已結束對該平台的支援。 Intune 將會停止與 Intune 和 Windows Phone 8.1 的相容性測試。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 您可以檢查您的 Intune 報告，查看哪些裝置或使用者可能會受到影響。 移至 [裝置] > [所有裝置]，然後依 OS 進行篩選。 您可以新增其他資料行，協助識別您組織中誰有執行 Windows Phone 8.1 的裝置。 要求使用者將其裝置升級至支援的 OS 版本。
@@ -36,7 +51,7 @@ Windows Phone 8.1 的 Microsoft 主要支援已於 2017 年 7 月終止，而且
 - com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-針對此新功能。建議將 Intune 應用程式保護原則資料保護設定 [組織資料通知] 的值設定為 [封鎖組織資料]，。 自 2019 年 12 月 16 日開始，iOS 和 Android 版的 Outlook 即會實施 [組織資料通知] 資料保護設定，且不再支援前述金鑰。 設定此新設定可確保當不支援前述設定金鑰後，敏感性資料不會外洩。 此外，當資料保護設定 [組織資料通知] 設為 [封鎖組織資料]，並另行加上應用程式組態設定 [行事曆通知] 時，Outlook 會提供更細緻的服務。 應用程式保護原則設定與此應用程式組態設定的組合會在郵件通知中限制敏感性資訊，並同時在行事曆通知中公開敏感性資訊，所以使用者只要快速瀏覽通知或通知中心，即可獲知會議相關資訊。
+針對此新功能。建議將 Intune 應用程式保護原則資料保護設定 [組織資料通知] 的值設定為 [封鎖組織資料]，。 自 2019 年 12 月 16 日開始，iOS 和 Android 版的 Outlook 即會實施 [組織資料通知] 資料保護設定，且不再支援前述金鑰。 設定此新設定可確保當上述設定金鑰不再受支援時，敏感性資料不會外洩。 此外，當資料保護設定 [組織資料通知] 設為 [封鎖組織資料]，並另行加上應用程式組態設定 [行事曆通知] 時，Outlook 會提供更細緻的服務。 應用程式保護原則設定與此應用程式組態設定的組合會在郵件通知中限制敏感性資訊，並同時在行事曆通知中公開敏感性資訊，所以使用者只要快速瀏覽通知或通知中心，即可獲知會議相關資訊。
 
 #### <a name="additional-information"></a>其他資訊
 如需應用程式設定和 Outlook 設定的詳細資訊，請參閱：

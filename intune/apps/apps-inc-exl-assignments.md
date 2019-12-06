@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b47ecc2363244634cb355fdeaeb51074417322e4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
+ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507288"
+ms.lasthandoff: 11/26/2019
+ms.locfileid: "74547972"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune 的包含與排除應用程式指派
 
@@ -31,9 +31,20 @@ ms.locfileid: "72507288"
 
 若要設定應用程式的可用性，您可使用包含與排除群組指派的組合，指派包含與排除應用程式的使用者或裝置群組。 當您藉由包含大型群組提供應用程式，同時再透過排除較小的群組以縮減選取的使用者時，這項功能很有用。 較小的群組可能是測試群組或執行群組。 
 
-當您從應用程式指派排除群組時，必須只排除使用者群組或只排除裝置群組。 您無法排除使用者群組和裝置群組的混合。 
+最佳做法是特別針對您的使用者群組建立並指派應用程式，且針對裝置群組個別地指派。 如需群組的詳細資訊，請參閱[新增群組來組織使用者與裝置](~/fundamentals/groups-add.md)。  
 
-Intune 在排除群組時，不考慮使用者對裝置的關聯。 包含使用者群組的同時排除裝置群組，不可能產生您所要的結果。 包含會優先於排除。 例如，如果您將 iOS 應用程式的目標設定為**所有使用者**，然後排除**所有 iPad**，則最後的結果是任何使用 iPad 的使用者仍會取得該應用程式。 但若您的目標是讓**所有裝置**取得 iOS 應用程式，但要排除**所有 iPad**，部署就會成功。  
+包含或排除應用程式指派時，存在重要情節：
+
+- 在下列相同群組類型案例中，排除的優先順序高於包含：
+    - 指派應用程式時，包含使用者群組且排除使用者群組
+    - 指派應用程式時，包含裝置群組且排除裝置群組
+
+    例如，如果您將裝置群組指派給**所有公司使用者使用者**群組，但排除**資深管理人員**使用者群組中的成員，除了**資深管理人員**以外的**所有公司使用者**都會受到指派，因為這兩個群組都是使用者群組。
+- Intune 不會評估使用者對裝置群組關聯性。 如果您將應用程式指派給混合群組，結果可能不是您想要或預期的。
+
+    例如，如果您將裝置群組指派給**所有使用者**使用者群組，但排除**所有個人裝置**裝置群組。 在此混合群組應用程式指派中，**所有使用者**會取得應用程式。 排除不適用。
+
+因此，不建議將應用程式指派給混合群組。
 
 > [!NOTE]
 > 設定應用程式的群組指派時，[不適用]  類型已被排除群組功能所取代。 
@@ -41,7 +52,6 @@ Intune 在排除群組時，不考慮使用者對裝置的關聯。 包含使用
 > Intune 在主控台中提供預先建立的 [所有使用者]  和 [所有裝置]  群組。 群組提供您便利的最佳化選項。 強烈建議您使用這些群組針對所有使用者和所有裝置，而不是您自行建立的任何「所有使用者」或「所有裝置」群組。  
 >
 > Android 企業支援包含和排除群組。 您可以利用內建的 [所有使用者]  和 [所有裝置]  群組來進行 Android 企業應用程式指派。 
-
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>在指派應用程式時排除和包含群組 
 若要使用包含和排除指派將應用程式指派給群組：

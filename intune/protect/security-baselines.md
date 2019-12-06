@@ -5,23 +5,23 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/28/2019
+ms.date: 11/21/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: joglocke
+ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 53014376a7e220e975878031ffd759da40db7f6b
-ms.sourcegitcommit: 60f0ff6d2efbae0f2ce14b9a9f3f9267309e209b
+ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
+ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/01/2019
-ms.locfileid: "73413830"
+ms.lasthandoff: 11/22/2019
+ms.locfileid: "74409971"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -81,7 +81,7 @@ ms.locfileid: "73413830"
   > [!NOTE]
   > Microsoft Defender ATP 安全性基準已針對實體裝置最佳化，目前不建議用於虛擬機器 (VM) 或 VDI 端點。 特定基準設定可能會影響虛擬化環境上的遠端互動式工作階段。  如需詳細資訊，請參閱 Windows 文件中的[提高 Microsoft Defender ATP 安全性基準的合規性](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-machines-security-baseline) \(英文\)。
 
-- **Microsoft Edge 基準** 
+- **Microsoft Edge 基準**
   - [預覽：Microsoft Edge 基準](security-baseline-settings-edge.md)
 
 您可以繼續使用及編輯您以預覽範本為基礎建立的設定檔，即使已不提供該預覽設定檔來建立新設定檔也可以。
@@ -103,13 +103,15 @@ ms.locfileid: "73413830"
 
 ### <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，然後選取 [裝置安全性]   > [安全性基準]  以檢視可用基準清單。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 選取 [端點安全性]   > [安全性基準]  以檢視可用基準清單。
 
    ![選取要設定的安全性基準](./media/security-baselines/available-baselines.png)
 
-2. 選取您想要使用的基準，然後選取 [建立設定檔]  。
+3. 選取您想要使用的基準，然後選取 [建立設定檔]  。
 
-3. 在 [基本]  索引標籤上，指定下列屬性：
+4. 在 [基本]  索引標籤上，指定下列屬性：
 
    - **名稱**：輸入安全性基準設定檔的名稱。 例如，輸入 *Defender ATP 的標準設定檔*。
 
@@ -117,7 +119,7 @@ ms.locfileid: "73413830"
 
    選取 [下一個]  以移至下一個索引標籤。移至新索引標籤之後，您可以選取索引標籤名稱以返回先前已檢視的索引標籤。
 
-4. 在 [組態設定] 索引標籤上，檢視您選取之基準中可用的 [設定]  群組。 您可以展開群組以檢視該群組中的設定，以及基準中那些設定的預設值。 尋找特定設定：
+5. 在 [組態設定] 索引標籤上，檢視您選取之基準中可用的 [設定]  群組。 您可以展開群組以檢視該群組中的設定，以及基準中那些設定的預設值。 尋找特定設定：
    - 選取某個群組以展開及檢閱可用設定。
    - 使用 [搜尋]  列並指定可篩選檢視以僅顯示包含您的搜尋條件之群組的關鍵字。
 
@@ -125,13 +127,13 @@ ms.locfileid: "73413830"
 
    ![展開群組以檢視該群組的設定](./media/security-baselines/sample-list-of-settings.png)
 
-5. 在 [範圍標籤]  索引標籤上，選取 [選取範圍標籤]  以開啟 [選取標籤]  窗格並指派範圍標籤到設定檔。
+6. 在 [範圍標籤]  索引標籤上，選取 [選取範圍標籤]  以開啟 [選取標籤]  窗格並指派範圍標籤到設定檔。
 
-6. 在 [指派]  索引標籤上，選取 [選取要納入的群組]  並指派基準給一或多個群組。 使用 [選取要排除的群組]  以微調指派。
+7. 在 [指派]  索引標籤上，選取 [選取要納入的群組]  並指派基準給一或多個群組。 使用 [選取要排除的群組]  以微調指派。
 
    ![指派設定檔](./media/security-baselines/assignments.png)
 
-7. 當您準備好部署基準時，請移至 [檢閱 + 建立]  索引標籤並檢閱基準的詳細資料。 選取 [建立]  以儲存並部署設定檔。
+8. 當您準備好部署基準時，請移至 [檢閱 + 建立]  索引標籤並檢閱基準的詳細資料。 選取 [建立]  以儲存並部署設定檔。
 
    建立設定檔之後，它會被推送到指派的群組而且可能會立即套用。
 
@@ -140,7 +142,7 @@ ms.locfileid: "73413830"
 
    ![檢閱基準](./media/security-baselines/review.png)
 
-8. 建立設定檔之後，您可以透過移至 [裝置安全性]   > [安全性基準]  、選取您設定的基準類型，然後選取 [設定檔]  來編輯該設定檔。 從可用設定檔清單選取設定檔，然後選取 [內容]  。 您可以從所有可用設定索引標籤編輯設定，然後選取 [檢閱並儲存]  以認可您的變更。
+9. 建立設定檔之後，您可以透過移至 [裝置安全性]   > [安全性基準]  、選取您設定的基準類型，然後選取 [設定檔]  來編輯該設定檔。 從可用設定檔清單選取設定檔，然後選取 [內容]  。 您可以從所有可用設定索引標籤編輯設定，然後選取 [檢閱並儲存]  以認可您的變更。
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>變更設定檔的基準版本
 
@@ -160,25 +162,27 @@ ms.locfileid: "73413830"
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>變更設定檔的基準版本
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並選取 [裝置安全性]   > [安全性基準]  ，然後選取具有您要變更之設定檔的基準類型圖格。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
 
-2. 接著，選取 [設定檔]  ，然後選取您要編輯之設定檔的核取方塊，接著選取 [變更版本]  。
+2. 選取 [端點安全性]   > [安全性基準]  ，然後選取具有您要變更之設定檔的基準類型圖格。
+
+3. 接著，選取 [設定檔]  ，然後選取您要編輯之設定檔的核取方塊，接著選取 [變更版本]  。
 
    ![選取基準](./media/security-baselines/select-baseline.png)
 
-3. 在 [變更版本]  窗格上，使用 [選取要更新到的安全性基準]  下拉式清單，然後選取您要使用的版本執行個體。
+4. 在 [變更版本]  窗格上，使用 [選取要更新到的安全性基準]  下拉式清單，然後選取您要使用的版本執行個體。
 
    ![選取版本](./media/security-baselines/select-instance.png)
 
-4. 選取 [檢閱更新]  以下載 CSV 檔案，此檔案顯示設定檔目前執行個體版本與您選取之新版本之間的差異。 檢閱此檔案，以便您了解那些設定是新的，或移除了哪些設定，以及這些設定在已更新之設定檔中的預設值為何。
+5. 選取 [檢閱更新]  以下載 CSV 檔案，此檔案顯示設定檔目前執行個體版本與您選取之新版本之間的差異。 檢閱此檔案，以便您了解那些設定是新的，或移除了哪些設定，以及這些設定在已更新之設定檔中的預設值為何。
 
    當您就緒時，繼續到下一個步驟。
 
-5. 選擇 [選擇更新設定檔的方法]  兩個選項的其中一個：
+6. 選擇 [選擇更新設定檔的方法]  兩個選項的其中一個：
    - **接受基準變更但保留我的現有設定自訂** - 此選項會保留您對基準設定檔所做的自訂，並將其套用到您選取要使用的新版本。
    - **接受基準變更並捨棄現有的設定自訂** - 此選項會完全覆寫您的原始設定檔。 更新的設定檔將會為所有設定使用預設值。
 
-6. 選取 [提交]  。 設定檔會更新為選取的基準版本，而且在轉換完成後，基準會立即重新部署到指派的群組。
+7. 選取 [提交]  。 設定檔會更新為選取的基準版本，而且在轉換完成後，基準會立即重新部署到指派的群組。
 
 ### <a name="remove-a-security-baseline-assignment"></a>移除安全性基準指派
 
