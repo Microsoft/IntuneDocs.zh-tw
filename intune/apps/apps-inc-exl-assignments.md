@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f073c8ad7a8e087a791ee756683011fac6947162
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 40cbb62a620d6e174ab8acb76798ba53080b78cf
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547972"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563968"
 ---
 # <a name="include-and-exclude-app-assignments-in-microsoft-intune"></a>Microsoft Intune 的包含與排除應用程式指派
 
@@ -55,34 +55,34 @@ ms.locfileid: "74547972"
 
 ## <a name="include-and-exclude-groups-when-assigning-apps"></a>在指派應用程式時排除和包含群組 
 若要使用包含和排除指派將應用程式指派給群組：
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
-4. 在 [用戶端應用程式]  窗格中，選取 [應用程式]  。 已新增應用程式清單隨即顯示。
-5. 選取您要指派的應用程式。 儀表板會顯示應用程式的相關資訊。 
-6. 在功能表的 [管理]  區段中，選取 [指派]  。 
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]  。 已新增應用程式清單隨即顯示。
+3. 選取您要指派的應用程式。 儀表板會顯示應用程式的相關資訊。 
+4. 在功能表的 [管理]  區段中，選取 [指派]  。 
 
     ![在指派應用程式時包含應用程式指派](./media/apps-inc-exl-assignments/apps-inc-exl-01.png)
-7. 選取 [新增群組]  新增獲指派應用程式的使用者群組。 
-8. 從 [新增群組]  窗格中，從可用的指派類型中選取 [指派類型]  。
-9. 選取 [無論註冊與否均可使用]  為指派類型。
+
+5. 選取 [新增群組]  新增獲指派應用程式的使用者群組。 
+6. 從 [新增群組]  窗格中，從可用的指派類型中選取 [指派類型]  。
+7. 選取 [無論註冊與否均可使用]  為指派類型。
 
     ![Intune 應用程式指派 - 新增群組](./media/apps-inc-exl-assignments/apps-inc-exl-02.png)
-10. 選取 [包含的群組]  來選取您想要提供此應用程式的使用者群組。
+8. 選取 [包含的群組]  來選取您想要提供此應用程式的使用者群組。
 
     > [!NOTE]
     > 當您新增群組時，如果有任何其他群組已經包含於特定的指派類型，則會預先選取該應用程式，且無法修改為其他包含指派類型。 已經使用的群組無法當作包含的群組。
 
-11. 選取 [是]  向所有使用者提供此應用程式。
+9. 選取 [是]  向所有使用者提供此應用程式。
 
     ![Intune 應用程式指派 - 包含群組](./media/apps-inc-exl-assignments/apps-inc-exl-03.png)
-12. 選取 [確定]  來設定要包含的群組。
-13. 選取 [排除的群組]  來選取您不要提供此應用程式的使用者群組。 
-14. 選取要排除的群組。 這麼做會提供此應用程式給那些群組。
+10. 選取 [確定]  來設定要包含的群組。
+11. 選取 [排除的群組]  來選取您不要提供此應用程式的使用者群組。 
+12. 選取要排除的群組。 這麼做會提供此應用程式給那些群組。
 
     ![Intune 應用程式指派 - 排除群組](./media/apps-inc-exl-assignments/apps-inc-exl-04.png)
-15. 選取 [選取]  來完成您的群組選取項目。
-16. 在 [新增群組]  窗格中，選取 [確定]  。 應用程式 [指派]  清單隨即顯示。
-17. 按一下 [儲存]  啟用應用程式的群組指派。
+13. 選取 [選取]  來完成您的群組選取項目。
+14. 在 [新增群組]  窗格中，選取 [確定]  。 應用程式 [指派]  清單隨即顯示。
+15. 按一下 [儲存]  啟用應用程式的群組指派。
 
 當您進行群組指派時，已經指派的群組無法進行修改。 如果您要選取的群組目前無法使用，請先將應用程式從應用程式的指派清單移除。 
 

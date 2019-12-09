@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01866bba0ef47ac807b24a66f773e212c76ff7df
-ms.sourcegitcommit: 1cf063c98e1caae00a6e6fab821cc3254562bca9
+ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74291095"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691777"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 軟體更新
 
@@ -214,9 +214,7 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
   - [功能更新延遲期間 (天)]  必須設為 **0**。
   - 更新通道的功能更新必須為「正在執行」  。 不得為暫停。
 
-- Autopilot 不支援「Windows 10 功能更新」  原則。 Intune 不會將原則部署到：
-  - 由 Autopilot 佈建的裝置。
-  - 先前使用 Autopilot 佈建的裝置。
+- Windows 10 功能更新原則無法在全新體驗 (OOBE) 期間套用，而且只會在裝置完成佈建 (通常為一天) 之後、於第一次 Windows Update 掃描時套用。 此外，使用 AutoPilot 佈建的裝置不會接收到原則。
 
   我們正在查看此限制，以確認未來是否可以支援它。
 

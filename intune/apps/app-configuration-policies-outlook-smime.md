@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b2f483415d050486ae9979899d9308154a9b131
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74411355"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564195"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>使用 iOS 版 Outlook 設定 S/MIME
 
@@ -62,14 +62,14 @@ iOS 版 Outlook 支援兩種方式將憑證傳遞至裝置，使它們可用於 
 若要在端點管理員中設定 iOS 版 Outlook S/MIME (包括自動傳遞 iOS 版 Outlook 可以使用的 S/MIME 憑證)，請使用下列步驟：
 
 ### <a name="add-the-microsoft-outlook-app"></a>新增 Microsoft Outlook 應用程式
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 2. 將來自 App Store 的 Microsoft iOS 版 Outlook 應用程式新增至端點管理員，或從 Apple 大量採購方案同步處理 iOS 版 Outlook。 如需詳細資訊，請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](~/apps/store-apps-ios.md) 或[如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 和 macOS 應用程式](~/apps/vpp-apps-ios.md)。
 
 ### <a name="create-the-outlook-for-ios-smime-configuration-policy"></a>建立 iOS 版 Outlook S/MIME 設定原則
 
 下列步驟可讓您在端點管理員中建立和設定 iOS 版 Outlook S/MIME 原則。 這些設定提供簽署和加密憑證的自動傳遞。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選取 [應用程式]   > [應用程式設定原則]   > [新增]  。<br>
+1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並選取 [應用程式]   > [應用程式設定原則]   > [新增]  。<br>
 [新增設定原則]  窗格隨即顯示。
 2. 輸入設定原則的 [名稱]  和 [描述]  。
 3. 選取 [受控裝置]  作為 [裝置註冊類型]  。

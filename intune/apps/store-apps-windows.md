@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c19d14b2f2cfa838d79af1c6fbb3c3500004e56e
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 3c13d7960c0bb5c73908a0a574ab7d6c169d6460
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548033"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563428"
 ---
 # <a name="add-microsoft-store-apps-to-microsoft-intune"></a>將 Microsoft Store 應用程式新增至 Microsoft Intune
 
@@ -34,12 +34,10 @@ ms.locfileid: "74548033"
 ## <a name="add-an-app-to-intune"></a>將應用程式新增至 Intune
 您可以採取下列步驟，將 Microsoft 市集應用程式新增至 Intune：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
-4. 在 [用戶端應用程式]  工作負載窗格中的 [管理]  下，選取 [應用程式]  。
-5. 在 [應用程式]  窗格中，選取 [新增]  。
-6. 在 [新增應用程式]  窗格的 [應用程式類型]  中，選取 [Windows Phone 8.1]  ，然後選取 [應用程式資訊]  。
-7. 在 [應用程式資訊]  窗格中，新增應用程式資訊。 窗格中某些值會隨所選的應用程式自動填入︰
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
+3. 在 [新增應用程式]  窗格的 [應用程式類型]  中，選取 [Windows Phone 8.1]  ，然後選取 [應用程式資訊]  。
+4. 在 [應用程式資訊]  窗格中，新增應用程式資訊。 窗格中某些值會隨所選的應用程式自動填入︰
     - **名稱**：輸入要在公司入口網站中顯示的應用程式名稱。 您使用的任何應用程式名稱都必須是唯一的。 如果應用程式名稱重複，則使用者只會在公司入口網站看到一個名稱。
     - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
     - **發行者**：輸入應用程式發行者的名稱。
@@ -52,8 +50,8 @@ ms.locfileid: "74548033"
     - **擁有者**：(選擇性) 輸入此應用程式的擁有者名稱，例如「人力資源部門」  。
     - **附註**：(選擇性) 輸入要與此應用程式建立關聯的任何附註。
     - **標誌**：(選擇性) 上傳將與應用程式建立關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
-8. 選取 [確定]  。
-9. 選取 [新增]  。
+5. 選取 [確定]  。
+6. 選取 [新增]  。
 
 您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。 Microsoft Store 應用程式只能指派給指派類型為**可用於已註冊裝置**的群組 (使用者從公司入口網站應用程式或網站安裝應用程式)。
 

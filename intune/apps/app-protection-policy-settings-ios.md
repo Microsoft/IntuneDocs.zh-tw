@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7242b661668f994208aa36a8f9fc5d350623ccd
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390382"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781238"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-此文章說明 iOS 裝置的應用程式保護原則設定。 建立新原則時，您可以在 Azure 入口網站的 [設定]  刀鋒視窗上，為應用程式保護原則[設定](app-protection-policies.md)所述的原則設定。
+此文章說明 iOS 裝置的應用程式保護原則設定。 建立新原則時，您可以在 Azure 入口網站的 [設定]  窗格上，為應用程式保護原則[設定](app-protection-policies.md)所述的原則設定。
 
 原則設定有三個類別：「資料重新配置」  、「存取需求」  和「條件式啟動」  。 在本文中「受原則管理的應用程式」一詞是指設有應用程式保護原則的應用程式。
 
@@ -88,7 +88,7 @@ ms.locfileid: "74390382"
 | <ul><ui> **選取 PIN 長度下限** | 指定 PIN 序列的最小位數。  | **4**  |
 | <ul><ui> **Touch ID 而非 PIN 以進行存取 (iOS 8+)** | 選取 [允許]  ，允許使用者使用 [Touch ID](https://support.apple.com/HT201371) 而非 PIN 以進行應用程式存取。    | **允許**  |
 |<ul><ui><ul><ui>**逾時後以 PIN 覆寫 Touch ID**|  若要使用此設定，請選取 [需要]  ，然後設定非使用狀態逾時。  |**需要**  |
-| <ul><ui><ul><ui><ul><ui> **逾時 (非使用狀態分鐘數)** |  指定密碼或數字 (依設定) PIN 將會覆寫使用指紋的時間 (分鐘)。 此逾時值應該大於在 [重新檢查存取需求前的剩餘時間 (分鐘)] 下指定的值。  |**30**  |
+| <ul><ui><ul><ui><ul><ui> **逾時 (非使用狀態分鐘數)** |  指定密碼或數字 (依設定) PIN 將會覆寫使用指紋或臉部做為存取方法的時間 (分鐘)。 此逾時值應該大於在 [重新檢查存取需求前的剩餘時間 (分鐘)] 下指定的值。  |**30**  |
 | <ul><ui><ul><ui>**以 Face ID 而非 PIN 存取 (iOS 11+)** | 選取 [允許]  ，允許使用者使用臉部辨識技術來驗證 iOS 裝置使用者。 如果允許，則必須使用 Face ID 來存取具備 Face ID 功能裝置上的應用程式。    | **允許**  |
 | <ul><ui>**在數天後重設 PIN** | 選取 [是]  ，要求使用者在設定的一段時間 (以天為單位) 後變更其應用程式 PIN。  <br><br>當設定為 [是]  時，您可以接著設定需要重設 PIN 前的經過天數。 |**否**  |  
 | <ul><ui><ul><ui> **天數** | 設定需要重設 PIN 前的經過天數。  |**90**  |

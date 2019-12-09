@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d4ff9126fec182d1e0d2f3eb75297ede8a632e2e
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 83f0d980bc4fa1bfd0b48f87839fd6efa130aa70
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390713"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563867"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-dedicated-devices"></a>設定 Android Enterprise 專用裝置的 Intune 註冊
 
@@ -59,7 +59,7 @@ Intune 可協助您將應用程式和設定部署至 Android Enterprise 專用�
 
 您必須建立註冊設定檔，才能註冊您的專用裝置。 建立設定檔時，它會為您提供註冊權杖 (隨機字串) 和 QR 代碼。 視 Android OS 和裝置的版本而定，您可以使用權杖或 QR 代碼來[註冊專用裝置](#enroll-the-dedicated-devices)。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選擇 [裝置註冊]   > [Android 註冊]   > [公司擁有的專用裝置]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選擇 [裝置]   > [Android]   > [Android 註冊]   > [公司擁有的專用裝置]  。
 2. 選擇 [建立]  並填寫必要的欄位。
     - **名稱**：輸入將設定檔指派給動態裝置群組時，您要使用的名稱。
     - **權杖到期日**：權杖到期的日期。 Google 最多可強制執行 90 天。
@@ -92,7 +92,7 @@ Intune 可協助您將應用程式和設定部署至 Android Enterprise 專用�
 
 取代或撤銷權杖/QR 代碼不會對已註冊的裝置產生任何影響。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選擇 [裝置註冊]   > [Android 註冊]   > [公司擁有的專用裝置]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選擇 [裝置]   > [Android]   > [Android 註冊]   > [公司擁有的專用裝置]  。
 2. 選擇您想要使用的設定檔。
 3. 選擇 [權杖]  。
 4. 若要取代權杖，請選擇 [取代權杖]  。
