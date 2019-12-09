@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 12/03/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecde59d81ebeba7de64f2693eecb576faac6e722
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
+ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
-ms.locfileid: "74164707"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74784233"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune 
 
@@ -58,6 +58,8 @@ Intune 支援各種不同的應用程式類型。 每種應用程式類型的可
 | 受控的 Google Play 應用程式 | 市集應用程式  | [應用程式類型]  選取 [受控的 Google Play]  、搜尋應用程式，然後在 Intune 中選取該應用程式。 |
 | 適用於 Windows 10 的 Office 365 應用程式  | 市集應用程式 (Office 365) | [應用程式類型]  選取 [Office 365 套件]  下的 [Windows 10]  ，然後選取想要安裝的 Office 365 應用程式。  |
 | 適用於 macOS 的 Office 365 應用程式 | 市集應用程式 (Office 365) | [應用程式類型]  選取 [Office 365 套件]  下的 [macOS]  ，然後選取 Office 365 應用程式套件。 |
+| 適用於 Windows 10 的 Microsoft Edge 77 版和更新版本 | 市集應用程式 | [應用程式類型]  選取 [Microsoft Edge 77 版和更新版本]  下的 [Windows 10]  。 |
+| 適用於 macOS 的 Microsoft Edge 77 版和更新版本 | 市集應用程式 | [應用程式類型]  選取 [Microsoft Edge 77 版和更新版本]  下的 [macOS]  。 |
 | Android 企業營運 (LOB) 應用程式 | LOB 應用程式 | [應用程式類型]  選取 [企業營運]  應用程式，選取 [應用程式套件檔案]  ，然後輸入副檔名為 **.apk** 的 Android 安裝檔。  |
 | iOS LOB 應用程式 | LOB 應用程式 | [應用程式類型]  選取 [企業營運]  應用程式，選取 [應用程式套件檔案]  ，然後輸入副檔名為 **.ipa** 的 iOS 安裝檔。  |
 | Windows Phone LOB 應用程式 | LOB 應用程式 | [應用程式類型]  選取 [企業營運]  應用程式，選取 [應用程式套件檔案]  ，然後輸入副檔名為 **.xap** 的 Windows Phone 安裝檔。  |
@@ -72,7 +74,7 @@ Intune 支援各種不同的應用程式類型。 每種應用程式類型的可
 
 <sup>1</sup> 如需 Android Enterprise 和 Android 工作設定檔的詳細資訊，請參閱下面的[了解授權的應用程式](apps-add.md#understanding-licensed-apps)。
 
-您可以依序選取 [用戶端應用程式]   > [應用程式]   > [新增]  ，在 Microsoft Intune 中新增應用程式。 接著會顯示 [新增應用程式]  窗格，並可讓您選取 [應用程式類型]  。 
+您可以依序選取 [應用程式]   > [所有應用程式]   > [新增]  ，在 Microsoft Intune 中新增應用程式。 接著會顯示 [新增應用程式]  窗格，並可讓您選取 [應用程式類型]  。 
 
 >[!TIP]
 > LOB 應用程式是您從應用程式安裝檔新增的應用程式。 例如，若要安裝 iOS LOB 應用程式，您必須在 [新增應用程式]  窗格中將[應用程式類型]  選為 [企業營運應用程式]  來新增應用程式。 然後，選取應用程式套件檔案 (副檔名為 .ipa)。 這些類型的應用程式通常都是內部撰寫的。
@@ -127,7 +129,7 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 ### <a name="understanding-licensed-apps"></a>了解授權應用程式
 除了了解 Web 應用程式、市集應用程式和 LOB 應用程式之外，您也應了解大量採購方案應用程式和授權應用程式的目的地，例如： 
 - **Apple 商務用大量採購計劃 (iOS)** ：iOS App Store 可讓您針對要在公司內執行的應用程式購買多個授權。 購買多個複本有助於您在公司中有效率地管理應用程式。 如需詳細資訊，請參閱[管理 iOS 大量採購的應用程式](vpp-apps-ios.md)。
-- **Android 工作設定檔**：將應用程式指派給 Android 工作設定檔裝置的方式，與您將應用程式指派給標準 Android 裝置的方式不同。 您針對 Android 工作設定檔安裝的所有應用程式都是來自受控的 Google Play 商店。 您可以使用 Intune 來瀏覽所需的應用程式，並核准它們。 然後，該應用程式會出現在 Azure 入口網站的 [授權的應用程式]  節點中，而且您可以管理該應用程式的指派，如同其他應用程式一樣。
+- **Android 工作設定檔**：將應用程式指派給 Android 工作設定檔裝置的方式，與您將應用程式指派給標準 Android 裝置的方式不同。 您針對 Android 工作設定檔安裝的所有應用程式都是來自受控的 Google Play 商店。 您可以使用 Intune 來瀏覽所需的應用程式，並核准它們。 然後，該應用程式會出現在 Azure 入口網站的 [授權的應用程式]  節點中，接著您可以管理其指派對象，如同管理其他應用程式一般。
 - **商務用 Microsoft Store (Windows 10)** ：商務用 Microsoft Store 可讓您為組織個別或大量尋找及購買應用程式。 透過將市集連線至 Microsoft Intune，就可以在 Azure 入口網站中管理大量採購的應用程式。 如需詳細資訊，請參閱[從商務用 Microsoft Store 管理應用程式](windows-store-for-business.md)。
 
     > [!NOTE]
@@ -159,9 +161,8 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 
 當您將應用程式新增到 Intune 時，可以自由選取所需的類別。 使用平台特定的主題來新增應用程式及指派類別。 若要建立及編輯您自己的類別，請使用下列程序︰
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
-4. 在 [用戶端應用程式]  工作負載窗格的 [安裝]  下，選取 [應用程式類別]  。  
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 選取 [應用程式]   > [應用程式類別]  。  
     [應用程式類別]  窗格會顯示目前類別的清單。 
 5. 執行下列任一步驟：
     - 若要新增類別，請在 [建立類別]  窗格中，選取 [新增]  ，然後輸入類別的名稱。  
@@ -206,6 +207,8 @@ Intune 會根據下列條件，自動重新安裝、更新或移除必要的應�
 - [Windows LOB 應用程式](lob-apps-windows.md)
 - [適用於 Windows 10 的 Office 365 應用程式](apps-add-office365.md)
 - [適用於 macOS 的 Office 365 應用程式](apps-add-office365-macos.md)
+- [適用於 Windows 10 的 Microsoft Edge](apps-windows-edge.md)
+- [適用於 macOS 的 Microsoft Edge](apps-edge-macos.md)
 - [內建應用程式](apps-add-built-in.md)
 - [Android Enterprise 系統應用程式](apps-ae-system.md)
 - [Win32 應用程式](app-management.md)

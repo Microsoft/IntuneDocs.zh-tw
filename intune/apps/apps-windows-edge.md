@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af24b5fe33bc1e794529ef5a5ab6975eed4fb9cc
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b4839340ba1f3bad6f28a1120d882d0f600b1d44
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709912"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563570"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune
 
@@ -34,7 +34,7 @@ ms.locfileid: "73709912"
 > [!NOTE]
 > Microsoft Edge *77 版和更新版本*也適用於 macOS。
 > 
-> 您不能將 Microsoft Edge 的內建應用程式部署用於加入工作場所網路的電腦。 內建應用程式部署需要 Intune 管理延伸模組，這僅適用於已加入 AAD 的裝置。 您仍然可以使用上傳至**用戶端應用程式**的 *.msi* 來部署 Microsoft Edge *77 版和更新版本*，請參閱[將 Windows 企業營運應用程式新增至 Microsoft Intune](~/apps/lob-apps-windows.md)。
+> 您不能將 Microsoft Edge 的內建應用程式部署用於加入工作場所網路的電腦。 內建應用程式部署需要 Intune 管理延伸模組，這僅適用於已加入 AAD 的裝置。 您仍然可以使用上傳至**應用程式**的 *.msi* 來部署 Microsoft Edge *77 版和更新版本*，請參閱[將 Windows 企業營運應用程式新增至 Microsoft Intune](~/apps/lob-apps-windows.md)。
 
 ## <a name="prerequisites"></a>必要條件
 - 需要 Windows 10 RS2 和更新版本。
@@ -43,15 +43,15 @@ ms.locfileid: "73709912"
 ## <a name="configure-the-app-in-intune"></a>在 Intune 中設定應用程式
 您可以使用下列步驟，將 Microsoft Edge 77 版和更新版本新增至 Intune：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
 3. 在 [應用程式類型]  清單中的 [Microsoft Edge 77 版和更新版本]  底下，選取 [Windows 10]  。
 
 ## <a name="configure-app-information"></a>設定應用程式資訊
 在此步驟中，您要提供應用程式部署的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
 
-1. 按一下 [應用程式資訊]  以顯示 [應用程式資訊]  刀鋒視窗。
-2. 在 [應用程式資訊]  刀鋒視窗中，您會提供此應用程式部署的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
+1. 按一下 [應用程式資訊]  以顯示 [應用程式資訊]  窗格。
+2. 在 [應用程式資訊]  窗格中，您會提供此應用程式部署的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
     - **名稱**：輸入要顯示在公司入口網站中的應用程式名稱。 請確定所有名稱都是唯一的。 如果有重複的應用程式名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **描述**：輸入應用程式的描述。 例如，您可以在 [描述] 中列出目標使用者。
     - **發行者**：Microsoft 會顯示為發行者。
@@ -67,8 +67,8 @@ ms.locfileid: "73709912"
 ## <a name="configure-app-settings"></a>設定應用程式設定
 在此步驟中，設定應用程式的安裝選項。
 
-1. 接著，從 [新增應用程式]  刀鋒視窗選取 [應用程式設定]  。
-2. 在 [應用程式設定]  刀鋒視窗中，從 [通道]  清單中選取 [Beta]  或 [Dev]  ，以確定將從哪個 Edge 通道部署應用程式。
+1. 在 [新增應用程式]  窗格中，選取 [應用程式設定]  。
+2. 在 [應用程式設定]  窗格中，從 [通道]  清單中選取 [Beta]  或 [Dev]  ，以確定將從哪個 Edge 通道部署應用程式。
     - **搶鮮版 (Beta)** 頻道是最穩定的 Microsoft Edge 預覽體驗，也是在您組織內進行完整試驗的最佳選擇。 每隔六週進行重大更新，每個版本都會納入 Dev 通道的學習和改良功能。
     - **Dev** 通道已準備好取得 Windows、Windows Server 和 macOS 的企業意見反應。 它會每週更新，並包含最新的改良功能和修正程式。
 
@@ -85,7 +85,7 @@ ms.locfileid: "73709912"
 4.  按一下 [選取]   > [確定]  。
 
 ## <a name="add-the-app"></a>新增應用程式
-當您完成設定應用程式時，請從 [應用程式]  刀鋒視窗中選取 [新增]  。 
+當您完成設定應用程式時，請從 [新增應用程式]  窗格中選取 [新增]  。 
 
 您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。 
 

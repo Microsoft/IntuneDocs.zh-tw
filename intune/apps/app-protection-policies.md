@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 98976403d58c33f22f7ceeabec1d38f076f9bbe7
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592079"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563713"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -44,9 +44,9 @@ ms.locfileid: "73592079"
 當您建立適用於 iOS/iPadOS 和 Android 應用程式的應用程式保護原則時，您會遵循會產生新應用程式保護原則的新式 Intune 程序流程。
 
 ### <a name="create-an-iosipados-or-android-app-protection-policy"></a>建立 iOS/iPadOS 或 Android 應用程式保護原則
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 Intune 入口網站中，選擇 [用戶端應用程式]   > [應用程式保護原則]  。 此選取項目會開啟 [應用程式原則]  的詳細資料，讓您從中建立新的原則及編輯現有的原則。
-3. 選取 [建立原則]  然後選取 [iOS/iPadOS]  或 [Android]  。 隨即顯示 [建立原則]  刀鋒視窗。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 在 Intune 入口網站中，選擇 [應用程式]   > [應用程式保護原則]  。 此選取項目會開啟 [應用程式原則]  的詳細資料，讓您從中建立新的原則及編輯現有的原則。
+3. 選取 [建立原則]  然後選取 [iOS/iPadOS]  或 [Android]  。 隨即顯示 [建立原則]  窗格。
 4. 在 [基本]  頁面上，新增下列值：
 
     | 值 | 說明 |
@@ -57,7 +57,7 @@ ms.locfileid: "73592079"
 
     [平台]  值是根據您的上述選擇進行設定。
 
-    ![[建立原則] 刀鋒視窗 [基本] 頁面的螢幕擷取畫面](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
+    ![[建立原則] 窗格 [基本] 頁面的螢幕擷取畫面](~/apps/media/app-protection-policies/app-protection-add-policies-01.png)
 
 5. 按一下 [下一步]  以顯示 [應用程式]  頁面。<br>
     [應用程式]  頁面可讓您選擇要如何將此原則套用至不同裝置上的應用程式。 您必須新增至少一個應用程式。<p>
@@ -171,7 +171,7 @@ ms.locfileid: "73592079"
 
 因為 Intune 應用程式防護原則會以使用者的身分識別為目標，使用者的防護設定可以同時套用至已註冊 (MDM 受控) 和未註冊的裝置 (非 MDM)。 因此，您可以讓 Intune 應用程式防護原則以 Intune 已註冊或未註冊 iOS 及 Android 裝置為目標。 您可以有一個適用於非受控裝置的保護原則來提供嚴格的資料外洩防護 (DLP) 控制，並有另一個適用於 MDM 受控裝置的保護原則來提供可能較寬鬆的 DLP 控制。 如需這如何在個人 Android Enterprise 裝置上運作的詳細資訊，請參閱[應用程式保護原則與工作設定檔](android-deployment-scenarios-app-protection-work-profiles.md)。
 
-若要建立這些原則，請在 Intune 主控台中瀏覽至 [用戶端應用程式]   > [應用程式保護原則]  ，然後選取 [建立原則]  。 您也可以編輯現有的應用程式保護原則。 若要將應用程式保護原則同時套用至受控和非受控裝置，請瀏覽至 [應用程式]  頁面，並確認將 [鎖定所有裝置類型上的應用程式]  設定為 [是]  (預設值)。 如果您想要根據管理狀態進行更精細的指派，請將 [鎖定所有裝置類型上的應用程式]  設定為 [否]  。 
+若要建立這些原則，請在 Intune 主控台中瀏覽至 [應用程式]   > [應用程式保護原則]  ，然後選取 [建立原則]  。 您也可以編輯現有的應用程式保護原則。 若要將應用程式保護原則同時套用至受控和非受控裝置，請瀏覽至 [應用程式]  頁面，並確認將 [鎖定所有裝置類型上的應用程式]  設定為 [是]  (預設值)。 如果您想要根據管理狀態進行更精細的指派，請將 [鎖定所有裝置類型上的應用程式]  設定為 [否]  。 
 
 ### <a name="device-types"></a>裝置類型
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/08/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9561c50e21a9667ccec3f9de3627e7a933cf0736
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.openlocfilehash: 80d6068a17e1d278f9226e26c9efab24d597e52e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
-ms.locfileid: "72584985"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564257"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>為受控的 Android Enterprise 裝置新增應用程式設定原則
 
@@ -34,7 +34,7 @@ Microsoft Intune 中的應用程式設定原則能為受控 Android Enterprise �
 > [!NOTE]  
 > 並非每個應用程式都支援應用程式設定。 請連絡應用程式開發人員，以了解他們的應用程式是否支援應用程式設定原則。
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [用戶端應用程式]   > [應用程式設定原則]   >  [新增]  。
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [應用程式]   > [應用程式設定原則]   >  [新增]  。
 2. 輸入下列內容：
 
     - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，良好的原則名稱是**適用於整家公司的 Android Enterprise Nine Work 應用程式原則**。
@@ -73,7 +73,7 @@ Microsoft Intune 中的應用程式設定原則能為受控 Android Enterprise �
 | 帳戶識別碼 | fc0dc142-71d8-4b12-bbea-bae2a8514c81 |
 | Intune 裝置識別碼 | b9841cd9-9843-405f-be28-b2265c59ef97 |
 | Domain | contoso.com |
-| Mail | john@contoso.com |
+| 郵件 | john@contoso.com |
 | 部分 UPN | john |
 | 使用者識別碼 | 3ec2c00f-b125-4519-acf0-302ac3761822 |
 | 使用者名稱 | John Doe |
@@ -110,7 +110,7 @@ Microsoft Intune 中的應用程式設定原則能為受控 Android Enterprise �
 
 以使用裝置麥克風的應用程式為例。 系統會提示使用者授與應用程式使用麥克風的權限。
 
-1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [用戶端應用程式]   > [應用程式設定原則]   >  [新增]  。
+1. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [應用程式]   > [應用程式設定原則]   >  [新增]  。
 2. 輸入下列內容：
 
     - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，良好的原則名稱是**適用於整家公司的 Android Enterprise 提示權限應用程式原則**。

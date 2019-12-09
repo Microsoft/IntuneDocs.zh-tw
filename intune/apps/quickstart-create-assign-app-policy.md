@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/24/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bcda312274e78d327a3a515eb6c95454e38c96f1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 1800fa91ed5650fd57a31d24fdb3767a60dc5816
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507134"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563785"
 ---
 # <a name="quickstart-create-and-assign-an-app-protection-policy"></a>快速入門：建立並指派應用程式保護原則
 
@@ -43,7 +43,7 @@ ms.locfileid: "72507134"
 
 使用下列步驟來建立應用程式防護原則：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式]   > [應用程式防護原則]   > [建立原則]  。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [應用程式]   > [應用程式防護原則]   > [建立原則]  。 
 2. 輸入下列詳細資料： 
 
     - **名稱**：Windows 10 內容保護 
@@ -67,7 +67,7 @@ ms.locfileid: "72507134"
 
 使用下列步驟來指派應用程式防護原則：
 
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [Intune]   > [用戶端應用程式]   > [應用程式防護原則]  。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [Intune]   > [應用程式]   > [應用程式保護原則]  。 
 2. 選取您稍早建立的應用程式防護原則。 在此快速入門中，原則為 **Windows 10 內容保護**。
 3. 選取 [指派]  。
 4. 在 [包含]  索引標籤中，按一下 [選取要包含的群組]  。
@@ -83,7 +83,7 @@ ms.locfileid: "72507134"
 
 在此快速入門中，您已建立並指派應用程式防護原則。 已指派此原則的應用程式使用者將無法在已指派應用程式與裝置上其他非受控應用程式之間剪下、複製或貼上任何內容。 此保護類型將協助保護您組織的資料。 如需 Intune 應用程式防護原則的詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
 
-若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
+若要繼續參閱此 Intune 快速入門系列，請前往下一個快速入門。
 
 > [!div class="nextstepaction"]
 > [快速入門：建立並指派自訂角色](../fundamentals/create-custom-role.md)

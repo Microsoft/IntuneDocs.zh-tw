@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 30a1c9b1fddaa59d633c8dc969063b26b25097de
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
+ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74098176"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74558200"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -102,7 +102,7 @@ EnterpriseEnrollment-s.manage.microsoft.com 是註冊慣用的 FQDN；但在過�
 不支援使用 CNAME 設定以外的方法。 例如，不支援使用 Proxy 伺服器將 enterpriseenrollment.contoso.com/EnrollmentServer/Discovery.svc 重新導向至 enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc 或 manage.microsoft.com/EnrollmentServer/Discovery.svc。
 
 **步驟 2：驗證 CNAME** (選用)<br>
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Windows 註冊]   > [CNAME 驗證]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [CNAME 驗證]  。
 2. 在 [網域]  方塊中輸入公司網站，然後選擇 [測試]  。
 
 ## <a name="tell-users-how-to-enroll-windows-devices"></a>告訴使用者如何註冊 Windows 裝置

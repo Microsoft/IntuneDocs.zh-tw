@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11618d844fe7c4e190295ad06111ae0944deda95
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: d45455a97f8016527dce49839b5493f16b173d43
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507271"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563650"
 ---
 # <a name="add-android-enterprise-system-apps-to-microsoft-intune"></a>將 Android Enterprise 系統應用程式新增至 Microsoft Intune
 
@@ -33,8 +33,8 @@ ms.locfileid: "72507271"
 
 您可以採取下列步驟，從 Azure 入口網站將 Android Enterprise 系統應用程式新增至 Intune：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
 3. 在 [新增應用程式]  窗格中的可用 [其他]  類型底下，選取 [Android Enterprise 系統應用程式]  。
 4. 若要設定應用程式資訊，選取 [設定]  ，然後提供下列資訊：
     - **應用程式名稱**：輸入應用程式的名稱。

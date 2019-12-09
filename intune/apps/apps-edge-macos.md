@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6726f731fba5bc41893f999ac627bff9a8aca1e
-ms.sourcegitcommit: 1a7f04c80548e035be82308d2618492f6542d3c0
+ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73754832"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563578"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>使用 Microsoft Intune 將 Microsoft Edge 新增至 macOS 裝置
 
@@ -40,15 +40,15 @@ ms.locfileid: "73754832"
 ## <a name="add-microsoft-edge-to-intune"></a>將 Microsoft Edge 新增至 Intune
 您可以使用下列步驟，將 Microsoft Edge 77 版和更新版本新增至 Intune：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
 3. 在 [應用程式類型]  清單中的 [Microsoft Edge 77 版和更新版本]  底下，選取 [macOS]  。
 
 ## <a name="configure-app-information"></a>設定應用程式資訊
 在此步驟中，您要提供應用程式部署的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
 
-1. 按一下 [應用程式資訊]  以顯示 [應用程式資訊]  刀鋒視窗。
-2. 在 [應用程式資訊]  刀鋒視窗中，您會提供此應用程式部署的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
+1. 按一下 [應用程式資訊]  以顯示 [應用程式資訊]  窗格。
+2. 在 [應用程式資訊]  窗格中，您會提供此應用程式部署的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
     - **名稱**：輸入要顯示在公司入口網站中的應用程式名稱。 請確定所有名稱都是唯一的。 如果有重複的應用程式名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **描述**：輸入應用程式的描述。 例如，您可以在 [描述] 中列出目標使用者。
     - **發行者**：Microsoft 會顯示為發行者。
@@ -64,8 +64,8 @@ ms.locfileid: "73754832"
 ## <a name="configure-microsoft-edge-settings"></a>設定 Microsoft Edge 設定
 在此步驟中，設定應用程式的安裝選項。
 
-1. 接著，從 [新增應用程式]  刀鋒視窗選取 [應用程式設定]  。
-2. 在 [應用程式設定]  刀鋒視窗中，會自動選取 [搶鮮版 (Beta)]  通道，而且無法變更。
+1. 在 [新增應用程式]  窗格中，選取 [應用程式設定]  。
+2. 在 [應用程式設定]  窗格中，會自動選取 [搶鮮版 (Beta)]  通道，而且無法變更。
     - **搶鮮版 (Beta)** 通道是最穩定的 Microsoft Edge 預覽體驗，也是在您組織內進行完整試驗的最佳選擇。 每隔六週進行重大更新。
 
     > [!NOTE]
@@ -80,7 +80,7 @@ ms.locfileid: "73754832"
 4.  按一下 [選取]   > [確定]  。
 
 ## <a name="add-the-app"></a>新增應用程式
-當您完成設定時，請從 [應用程式]  刀鋒視窗中選取 [新增]  。 
+當您完成設定時，請從 [應用程式]  窗格中選取 [新增]  。 
 
 您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。 
 

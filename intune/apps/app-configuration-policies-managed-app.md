@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ddb9ec795b9cc8842cbc6c9d33897b5e0f45e88
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74548000"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564280"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -31,18 +31,15 @@ ms.locfileid: "74548000"
 
 即使在未註冊的裝置上，您仍然可以透過支援 Intune App SDK 的受管理應用程式使用應用程式設定原則。 
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 選擇 [用戶端應用程式]  工作負載。
-4. 選擇 [管理]  群組中的 [應用程式設定原則]  ，然後選擇 [新增]  。
-5. 使用下列詳細資料：
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]   > [受管理的應用程式]  。
+3. 使用下列詳細資料：
     - **名稱**  
       將在 Azure 入口網站中顯示的設定檔名稱。
     - **描述**  
       將在 Azure 入口網站中顯示的設定檔描述。
-    - **裝置註冊類型**  
-      選擇 [管理應用程式]  。
-6. 選取 [相關聯的應用程式]  來選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
-7. 對於應用程式支援的每個組態設定，請鍵入 [名稱]  和 [值]  ，然後選擇省略符號 ( **...** )。  
+4. 選擇 [選取公用應用程式]  或 [選取自訂應用程式]  來選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
+5. 對於應用程式支援的每個組態設定，請輸入 [名稱]  和 [值]  。  
     若要刪除設定，請選擇省略符號 ( **...** )，然後選取 [刪除]  。  
     
 啟用 Intune App SDK 的應用程式支援機碼值組中的設定。 請參閱每個應用程式的文件，以深入了解支援的機碼值設定。 請注意，您可以使用會動態填入應用程式所產生資料的權杖。 如需適用於 iOS 的 Outlook 應用程式設定原則設定的詳細資訊，請參閱[使用 Microsoft Intune 管理適用於 iOS 的 Outlook 應用程式](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx) \(機器翻譯\)。

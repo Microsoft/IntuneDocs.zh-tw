@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56814550cae814bd89d55a6f72df98dd24df4caf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507473"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564345"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的用戶端應用程式。 而這項功能還可以用於管理裝置與保護資料。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
+身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的用戶端應用程式。 而這項功能還可以用於管理裝置與保護資料。 系統管理員最優先的事項之一，是確保終端使用者能夠存取工作所需的應用程式。 這個目標不易達成，因為：
 - 裝置平台及應用程式類型有千百種。
 - 您可能需要同時管理公司裝置和使用者個人裝置上的應用程式。
 - 您必須確保網路和資料的安全。
@@ -45,7 +45,7 @@ MAM 可讓您管理和保護應用程式內的組織資料。 透過**沒有註�
 
 Intune MAM 支援兩個組態︰
 - **Intune MDM + MAM**：IT 系統管理員只能管理已在 Intune 行動裝置管理 (MDM) 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 若要使用 MDM + MAM 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。
-- **沒有裝置註冊的 MAM**：沒有裝置註冊的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。 如需有關 BYOD 與 Microsoft EMS 的詳細資訊，請參閱[使用 Microsoft Enterprise Mobility + Security (EMS) 啟用 BYOD 的技術決策](../fundamentals/byod-technology-decisions.md)。
+- **不需註冊裝置的 MAM**：不需註冊裝置的 MAM (或 MAM-WE) 允許 IT 系統管理員管理未在 Intune MDM 註冊之裝置上使用 MAM 與應用程式保護原則的應用程式。 這表示應用程式可由向協力廠商 EMM 提供者註冊之裝置上的 Intune 來管理。 若要使用 MAM-WE 管理應用程式，客戶應該在 Azure 入口網站中使用 Intune 主控台，網址為 [https://portal.azure.com](https://portal.azure.com )。 此外，向協力廠商企業行動管理 (EMM) 提供者註冊的裝置，或是完全不註冊 MDM 的裝置，也可使用 Intune 來管理應用程式。 如需有關 BYOD 與 Microsoft EMS 的詳細資訊，請參閱[使用 Microsoft Enterprise Mobility + Security (EMS) 啟用 BYOD 的技術決策](../fundamentals/byod-technology-decisions.md)。
 
 ## <a name="app-management-capabilities-by-platform"></a>各種平台的應用程式管理功能
 
@@ -76,14 +76,14 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 
 ## <a name="get-started"></a>開始使用
 
-您可以按照下列步驟，在 [用戶端應用程式]  工作負載中，找到與應用程式最相關的資訊：
+您可以按照以下步驟，在 [應用程式]  工作負載中找到與應用程式最密切相關的資訊：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Microsoft Intune]  窗格中，選取 [用戶端應用程式]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 選取 [應用程式]  。
 
-    ![[用戶端應用程式] 工作負載窗格](./media/app-management/apps-workload.png)
+    ![[應用程式] 工作負載窗格](./media/app-management/apps-workload.png)
 
-接下來四節會描述 [用戶端應用程式]  窗格中的可用選項。
+接下來的四個小節會描述 [應用程式]  窗格中可用的選項。
 
 ### <a name="manage"></a>管理
 - **應用程式**：選取此選項可新增、檢視、指派和監視您工作人員使用的應用程式。 如需詳細資訊，請參閱：

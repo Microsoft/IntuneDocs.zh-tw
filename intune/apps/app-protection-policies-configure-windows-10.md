@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0e1ff8fd39d301bd685e9806c319f49e9189d7f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 41c08d1912bf9c79507c2a6627205979504f340d
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507411"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564229"
 ---
 # <a name="get-ready-to-configure-app-protection-policies-for-windows-10"></a>準備好設定適用於 Windows 10 的應用程式保護原則 
 
@@ -33,13 +33,12 @@ ms.locfileid: "72507411"
 
 ## <a name="to-configure-the-mam-provider"></a>設定 MAM 提供者
 
-1. 登入 Azure 入口網站，然後選擇 [Azure Active Directory]  。
-
-2. 選擇 [管理]  群組中的 [行動性 (MDM 與 MAM)]  。
-
-3. 按一下 [Microsoft Intune]  。
-
-4. 在 [設定]  刀鋒視窗上的 [還原預設的 MAM URL]  群組中進行設定。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [所有服務]  ，然後選擇 [M365 Azure Active Directory]  來切換儀表板。
+3. 選取 [Azure Active Directory]  。
+4. 選擇 [管理]  群組中的 [行動性 (MDM 與 MAM)]  。
+5. 按一下 [Microsoft Intune]  。
+6. 在 [設定]  窗格上的 [還原預設的 MAM URL]  群組中進行設定。
 
    **MAM 使用者範圍**  
    使用 MAM 自動註冊來管理您員工之 Windows 裝置上的企業資料。 將會針對攜帶您自己的裝置案例設定 MAM 自動註冊。<ul><li>**無**<br>若所有使用者都不能在 MAM 中註冊，請選取此選項。</li><li>**部分**<br>選取包含將要在 MAM 中註冊之使用者的 Azure AD 群組。</li><li>**全部**<br>若所有使用者都可以在 MAM 中註冊，請選取此選項。</li></ul>
@@ -53,7 +52,7 @@ ms.locfileid: "72507411"
    **MAM 合規性 URL**  
    Microsoft Intune 不支援 MAM 合規性 URL。 此輸入方塊必須保留空白才能套用保護原則。 
 
-5. 按一下 **[儲存]** 。
+7. 按一下 **[儲存]** 。
 
 ## <a name="next-steps"></a>後續步驟
 

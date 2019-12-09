@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2ab21321b171c8fe8f5f9dab3032507c0e740cf
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059762"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563614"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>在 S 模式裝置上啟用 Win32 應用程式
 
@@ -58,7 +58,7 @@ ms.locfileid: "74059762"
 若要建立 Windows 10 S 模式補充原則，請使用下列步驟：
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [S 模式補充原則]   > [建立原則]  。
+2. 選取 [應用程式]   > [S 模式補充原則]   > [建立原則]  。
 3. 在新增**原則檔案**之前，您必須先建立並簽署它。 如需詳細資訊，請參閱：
     - [使用 PowerShell 工具建立 WDAC 原則，並將它轉換成二進位格式](https://go.microsoft.com/fwlink/?linkid=2095387)
     - [使用 Device Guard 簽署服務簽署](https://go.microsoft.com/fwlink/?linkid=2095629) **(建議)**

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ee3ecd64254c0e212ffc86155d677bf18ba647a
-ms.sourcegitcommit: f6b82c62af81a2643a1aaec774afa42d02eef352
+ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73566187"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564156"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -51,8 +51,7 @@ ms.locfileid: "73566187"
 ## <a name="create-an-app-configuration-policy"></a>建立應用程式設定原則
 
 1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 選擇 [用戶端應用程式]  工作負載。
-4. 選擇 [管理]  群組中的 [應用程式設定原則]  ，然後選擇 [新增]  。
+3. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]  。
 5. 使用下列詳細資料：
     - **名稱** - 在 Azure 入口網站中顯示的設定檔名稱。
     - **描述** - 在 Azure 入口網站中顯示的設定檔描述。
@@ -74,7 +73,7 @@ ms.locfileid: "73566187"
 13. 選取 [排除]  索引標籤。 
 14. 按一下 [選取要排除的群組]  以顯示相關的窗格。
 
-    ![[原則指派 - 選取要排除的群組] 刀鋒視窗的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+    ![[原則指派 - 選取要排除的群組] 窗格的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy03.png)
 15. 選擇您要排除的群組，然後按一下 [選取]  。
 
     >[!NOTE]
@@ -181,10 +180,9 @@ Intune 支援屬性清單中的下列資料類型：
 
 DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App Store 版本不相容。 不過，您可以使用下列步驟，將公司入口網站應用程式設定成支援 iOS DEP 裝置。
 
-1. 在 Azure 入口網站上的 Intune 中：
-    - 如有必要，請移至 [Intune]   > [用戶端應用程式]   > [應用程式]   > [新增]  來新增 Intune 公司入口網站。
-    - 移至 [用戶端應用程式]   > [應用程式設定原則]  ，以建立公司入口網站應用程式的應用程式設定原則。
-2. 使用以下 XML 建立應用程式設定原則。 如需如何建立應用程式設定原則和輸入 XML 資料的詳細資訊，請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)，或針對混合式 MDM，請參閱[在 System Center Configuration Manager 中使用應用程式設定原則將設定套用至 iOS 應用程式](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies) \(部分機器翻譯\)。
+1. 在 Intune 中，請移至 [Intune]   > [應用程式]   > [所有應用程式]   > [新增]  來視需要新增 Intune 公司入口網站應用程式。
+2. 移至 [應用程式]   > [應用程式設定原則]  ，以建立公司入口網站應用程式的應用程式設定原則。
+3. 使用以下 XML 建立應用程式設定原則。 如需如何建立應用程式設定原則和輸入 XML 資料的詳細資訊，請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)，或針對混合式 MDM，請參閱[在 System Center Configuration Manager 中使用應用程式設定原則將設定套用至 iOS 應用程式](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies) \(部分機器翻譯\)。
 
     ``` xml
     <dict>
@@ -202,7 +200,7 @@ DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App
 4. 告訴終端使用者在自動安裝公司入口網站應用程式時登入。
 
 ## <a name="monitor-ios--app-configuration-status-per-device"></a>監視每個裝置的 iOS 應用程式設定狀態 
-一旦指派設定原則，您可以監視每個受控裝置的 iOS 應用程式設定狀態。 從 Azure 入口網站的 [Microsoft Intune]  中，選取 [裝置]   > [所有裝置]  。 從受控裝置清單中，選取特定的裝置以顯示裝置的刀鋒視窗。 在裝置的刀鋒視窗中，選取 [應用程式設定]  。  
+一旦指派設定原則，您可以監視每個受控裝置的 iOS 應用程式設定狀態。 從 Azure 入口網站的 [Microsoft Intune]  中，選取 [裝置]   > [所有裝置]  。 從受控裝置清單中，選取特定的裝置以顯示該裝置的窗格。 在裝置的窗格中，選取 [應用程式設定]  。  
 
 ## <a name="additional-information"></a>其他資訊
 

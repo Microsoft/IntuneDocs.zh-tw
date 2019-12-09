@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36039334f7e93b66735e10d0ac2c5d80602e2b83
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: f0cd3dd71a5999b69e3f5c34ef4cc73fb3d6a938
+ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059861"
+ms.lasthandoff: 12/03/2019
+ms.locfileid: "74781153"
 ---
 # <a name="set-up-per-app-virtual-private-network-vpn-for-ios-devices-in-intune"></a>在 Intune 中設定 iOS 裝置的個別應用程式虛擬私人網路 (VPN)
 
@@ -37,6 +37,9 @@ ms.locfileid: "74059861"
 本文示範如何建立個別應用程式 VPN 設定檔，並將此設定檔指派給您的應用程式。 請使用這些步驟來為終端使用者建立順暢的個別應用程式 VPN 體驗。 針對大部分支援個別應用程式 VPN 的 VPN，使用者可以開啟應用程式，並自動連線到 VPN。
 
 某些 VPN 允許以使用者名稱和密碼驗證個別應用程式 VPN。 這表示使用者必須輸入使用者名稱和密碼才能連線到 VPN。
+
+> [!IMPORTANT]
+> 適用於 iOS 的 IKEv2 VPN 設定檔不支援個別應用程式 VPN。
 
 ## <a name="per-app-vpn-with-zscaler"></a>個別應用程式 VPN 與 Zscaler
 
@@ -66,7 +69,7 @@ Zscaler Private Access (ZPA) 與 Azure Active Directory (Azure AD) 整合以便�
 
 將 CA 發行的 VPN 伺服器根憑證匯入在 Intune 中建立的設定檔。 受信任的憑證設定檔會指示 iOS 裝置自動信任 VPN 伺服器顯示的 CA。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
     - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，良好設定檔名稱為**適用於整家公司的 iOS 受信任憑證 VPN 設定檔**。

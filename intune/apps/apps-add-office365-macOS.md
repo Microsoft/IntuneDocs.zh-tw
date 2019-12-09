@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 796b1709260c7f507e78aa8404129fa996b59088
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 01ca17c9f8e3fd86e12f225621e6dc0e07bb4acb
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72498807"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564085"
 ---
 # <a name="assign-office-365-to-macos-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 指派到 macOS 裝置
 
 此應用程式類型可讓您輕鬆地將 Office 365 2016 應用程式指派給 macOS 裝置。 這個應用程式類型可讓您安裝 Word、Excel、PowerPoint、Outlook 與 OneNote。 為了讓您保有最安全以及最新版的應用程式，這些應用程式也自帶 Microsoft AutoUpdate (MAU)。 您所要的多個應用程式在 Intune 主控台的應用程式清單中會顯示為一個應用程式。
 
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 在您開始將 Office 365 新增到 macOS 裝置之前，請先了解下列詳細資料：
 
@@ -41,14 +41,12 @@ ms.locfileid: "72498807"
 ## <a name="create-and-configure-the-app-suite"></a>建立並設定應用程式套件
 
 從**應用程式**窗格新增 Office 365。
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
-4. 在 [用戶端應用程式]  工作負載窗格中的 [管理]  下，選取 [應用程式]  。 
-5. 選取 [新增]  。
-6. 在 [應用程式類型]  清單的 [Office 365 套件]  群組中，選取 [macOS]  。
-7. 如需應用程式套件的相關資訊，請選取 [應用程式套件資訊]  。  
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
+3. 在 [應用程式類型]  清單的 [Office 365 套件]  群組中，選取 [macOS]  。
+4. 如需應用程式套件的相關資訊，請選取 [應用程式套件資訊]  。  
     這項資訊可協助您在 Intune 中識別應用程式套件，且能幫助使用者在公司入口網站中尋找應用程式套件。
-8. 輸入下列資訊：
+5. 輸入下列資訊：
     - **套件名稱**：輸入應用程式套件在公司入口網站中顯示的名稱。 請確定使用的所有套件名稱都是唯一的。 如果有重複的應用程式套件名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **套件描述**：輸入應用程式套件的描述。
     - **發行者**：Microsoft 會顯示為發行者。
@@ -60,8 +58,8 @@ ms.locfileid: "72498807"
     - **擁有者**：Microsoft 會顯示為擁有者。
     - **附註**：(選擇性) 輸入要與此應用程式建立關聯的任何附註。
     - **標誌**：當使用者瀏覽公司入口網站時，Office 365 標誌會隨應用程式一起顯示。
-9. 選取 [確定]  。
-10. 在 [新增應用程式]  窗格中，選取 [新增]  。  
+6. 選取 [確定]  。
+7. 在 [新增應用程式]  窗格中，選取 [新增]  。  
     套件會在應用程式清單中顯示為單一項目。
 
 ## <a name="configure-app-assignments"></a>設定應用程式指派

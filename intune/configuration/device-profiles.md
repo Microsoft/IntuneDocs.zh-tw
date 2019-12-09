@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f0dd9eddd986e6717e6bf706b02a7b06f712a032
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
+ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059902"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74694942"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中使用裝置設定檔將功能和設定套用至您的裝置
 
@@ -49,7 +49,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 這項功能支援：
 
-- Windows 10 1809 和更新版本 (在支援的韌體上)。
+- Windows 10 及更新版本
 
 ## <a name="certificates"></a>憑證
 
@@ -102,7 +102,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 這項功能支援：
 
-- Windows 10 及更新版本
+- Windows 10 1809 和更新版本 (在支援的韌體上)
 
 ## <a name="device-restrictions"></a>裝置限制
 

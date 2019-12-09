@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a89b94f098292bf44122d6d2d144c7f35967cd32
-ms.sourcegitcommit: 556b7ea2049014c9027f0e44affd3f301fab55fc
+ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73709457"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563832"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>將您的 Intune 帳戶連線到受控 Google Play 帳戶
 
@@ -36,13 +36,13 @@ ms.locfileid: "73709457"
 - **[Microsoft Intune](https://play.google.com/store/apps/details?id=com.microsoft.intune)** - 用於 Android 企業完全受控案例。
 - **[Microsoft Authenticator](https://play.google.com/store/apps/details?id=com.azure.authenticator)** - 協助您登入您的帳戶 (若您使用雙重要素驗證)。
 - **[Intune 公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)** - 用於應用程式保護原則 (APP) 與 Android 企業公司設定檔案例。
-- [受控家用案例](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - 用於 Android 企業專用/資訊站案例。
+- [受控主螢幕](https://play.google.com/store/apps/details?id=com.microsoft.launcher.enterprise) - 用於 Android 企業專用/資訊站案例。
 
 > [!NOTE]
 > 因為 Google 和 Microsoft 網域之間的互動，這個步驟可能需要調整瀏覽器設定。  請確定 "portal.azure.com" 和 "play.google.com" 位於您瀏覽器中相同的安全性區域。
 
 1. 如果尚未這麼做，請將[行動裝置管理授權單位](../fundamentals/mdm-authority-set.md)設定為 **Microsoft Intune**，以針對行動裝置管理做準備。
-2. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置註冊]   > [Android 註冊]   > [受控 Google Play]  。  如果您使用自訂的 Intune 管理員角色，則存取這個會需要組織讀取和更新的權限。
+2. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [Android]   > [Android 註冊]   > [受控的 Google Play]  。  如果您使用自訂的 Intune 管理員角色，則存取這個會需要組織讀取和更新的權限。
    
    ![Android 企業註冊畫面](./media/connect-intune-android-enterprise/android-work-bind.png)
 
@@ -64,7 +64,7 @@ ms.locfileid: "73709457"
 您可以關閉 Android Enterprise 註冊和管理。 若要這樣做，您必須先淘汰任何已註冊的 Android Enterprise 裝置，包括工作設定檔裝置、專用裝置及完全受控裝置。 然後，在 Intune 管理主控台中選擇 [中斷連線]  ，從註冊中移除所有已註冊的 Android Enterprise 工作設定檔裝置、專用裝置及完全受控裝置。 這也會移除受控 Google Play 帳戶與 Intune 之間的關聯。
 
 1. 以 Intune 管理員身分登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 選擇 [裝置註冊]   > [Android 註冊]   > [受控 Google Play]   > [中斷連線]  。
+2. 選擇 [裝置]   > [Android]   > [Android 註冊]   > [受控的 Google Play]   > [中斷連線]  。
 3. 選擇 [是]  以中斷連線，然後從 Intune 取消註冊所有的 Android 企業裝置。
 
 ## <a name="next-steps"></a>後續步驟

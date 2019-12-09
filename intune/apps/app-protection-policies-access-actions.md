@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/24/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5983742043dca9d07242315d4aaa97de2ead8d6
-ms.sourcegitcommit: a7c35efb31c4efd816bd4aba29240013965aee92
+ms.openlocfilehash: a0440e2d6f5890b20ccf020c40bb1037bcfcae38
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "73984028"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564127"
 ---
 # <a name="selectively-wipe-data-using-app-protection-policy-conditional-launch-actions-in-intune"></a>在 Intune 中使用應用程式防護原則的條件式啟動動作來選擇性地抹除資料
 
@@ -33,16 +33,16 @@ ms.locfileid: "73984028"
 
 ## <a name="create-an-app-protection-policy-using-conditional-launch-actions"></a>使用條件式啟動動作建立應用程式保護原則
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]   > [應用程式保護原則]  。
-4. 按一下 [新增原則]  (您也可以編輯現有的原則)。 
-5. 按一下 [設定必要設定]  ，以查看可針對原則設定的設定清單。 
-6. 藉由在 [設定] 窗格中向下捲動，您會看到標題為 [條件式啟動]  且具可編輯資料表的區段。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [應用程式保護原則]  。
+3. 按一下 [建立原則]  然後選取原則的裝置平台。 
+4. 按一下 [設定必要設定]  ，以查看可針對原則設定的設定清單。 
+5. 藉由在 [設定] 窗格中向下捲動，您會看到標題為 [條件式啟動]  且具可編輯資料表的區段。
 
     ![Intune 應用程式防護存取動作的螢幕擷取畫面](./media/app-protection-policies-access-actions/apps-selective-wipe-access-actions01.png)
 
-7. 選取 [設定]  ，並輸入使用者必須符合以登入公司應用程式的 [值]  。 
-8. 選取使用者不符合您的需求時要採取的 [動作]  。 在某些情況下，您可以針對單一設定指定多個動作。 如需詳細資料，請參閱[如何建立及指派應用程式防護原則](app-protection-policies.md)。
+6. 選取 [設定]  ，並輸入使用者必須符合以登入公司應用程式的 [值]  。 
+7. 選取使用者不符合您的需求時要採取的 [動作]  。 在某些情況下，您可以針對單一設定指定多個動作。 如需詳細資料，請參閱[如何建立及指派應用程式防護原則](app-protection-policies.md)。
 
 ## <a name="policy-settings"></a>原則設定 
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3fab0b14f8ed68d13021a0e141d5997532df2ec
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592085"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564334"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理 Web 存取
 
@@ -91,29 +91,28 @@ Managed Browser 現在是進行條件式存取的經過核准用戶端應用程�
 > [!TIP]  
 > 條件式存取是一項 Azure Active Directory (Azure AD) 技術。 從 *Intune* 存取的條件式存取節點，與從 *Azure AD* 存取的節點相同。  
 
-
-1. 在 Intune 入口網站中，選取 [條件式存取]   > [新原則]  。 
-2. 接下來，選取刀鋒視窗之 [存取控制]  區段中的 [授與]  。 
-3. 按一下 [需要經過核准的用戶端應用程式]  。 
-4. 按一下 [授與]  刀鋒視窗上的 [選取]  。 此原則必須指派給您只想要讓 Intune Managed Browser 應用程式存取的雲端應用程式。
-
-    ![Azure AD - Managed Browser 條件式存取原則](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
-
-5. 在 [指派]  區段中，選取 [條件]   > [用戶端應用程式]  。 即會顯示 [用戶端應用程式]  刀鋒視窗。
-6. 按一下 [設定]  下的 [是]  ，將原則套用至特定用戶端應用程式。
-7. 確認已選取 **Browser** 作為用戶端應用程式。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [條件式存取]   > [新增原則]  。
+3. 新增原則的 [名稱]  。 
+4. 在 [指派]  區段中，選取 [條件]   > [用戶端應用程式]  。 隨即顯示 [用戶端應用程式]  窗格。
+5. 按一下 [設定]  下的 [是]  ，將原則套用至特定用戶端應用程式。
+6. 確認已選取 **Browser** 作為用戶端應用程式。
 
     ![Azure AD - Managed Browser - 選取用戶端應用程式](./media/app-configuration-managed-browser/managed-browser-conditional-access-02.png)
 
     > [!NOTE]
     > 如果您想要限制哪些原生應用程式 (非瀏覽器應用程式) 可以存取這些雲端應用程式，則也可以選取 [行動裝置 App 及桌面用戶端]  。
 
-8. 在 [指派]  區段中，選取 [使用者和群組]  ，然後選擇您想要指派此原則的使用者或群組。 
+7. 按一下 [完成]   > [完成]  。
+8. 在 [指派]  區段中，選取 [使用者和群組]  ，然後選擇您想要指派此原則的使用者或群組。 按一下 [完成]  以關閉窗格。
+9. 在 [指派]  區段中，選取 [雲端應用程式或動作]  以選擇要使用此原則保護的應用程式。 按一下 [完成]  以關閉窗格。
+10. 選取窗格之 [存取控制]  區段中的 [授與]  。 
+11. 按一下 [授與存取]  ，然後按一下 [需要經過核准的用戶端應用程式]  。 
+12. 按一下 [授與]  窗格上的 [選取]  。 此原則必須指派給您只想要讓 Intune Managed Browser 應用程式存取的雲端應用程式。
 
-    > [!NOTE]
-    > 您也必須使用 Intune 應用程式防護原則瞄準使用者，才能讓使用者接收到應用程式設定原則。 如需建立 Intune 應用程式防護原則詳細資訊，請參閱[什麼是應用程式防護原則？](app-protection-policy.md)
+    ![Azure AD - Managed Browser 條件式存取原則](./media/app-configuration-managed-browser/managed-browser-conditional-access-01.png)
 
-9. 在 [指派]  區段中，選取 [雲端應用程式]  選擇要使用此原則保護的應用程式。
+
 
 設定上述原則之後，會強制使用者使用 Intune Managed Browser 存取您使用此原則保護的 Azure AD 已連線 Web 應用程式。 在此情況下，如果使用者嘗試使用非受控瀏覽器，則會注意到必須改為使用 Intune Managed Browser。
 
@@ -133,27 +132,28 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 >[!IMPORTANT]
 >如要套用應用程式設定，使用者的受保護瀏覽器或裝置上的另一個應用程式必須已受 [Intune 應用程式防護原則]( ../app-protection-policy.md)管理
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [管理] 清單的 [用戶端應用程式]  刀鋒視窗上，選擇 [應用程式設定原則]  。
-4. 在 [應用程式設定原則]  刀鋒視窗上，選擇 [新增]  。
-5. 在 [新增設定原則]  刀鋒視窗上，輸入應用程式組態設定的 [名稱]  和選擇性 [描述]  。
-6. 針對 [裝置註冊]  類型請選擇 [受管理的應用程式]  。
-7. 選擇 [Select the required apps] (選取必要的應用程式)  ，然後在 [目標 App]  刀鋒視窗上，選擇適用於 iOS、Android 或兩者的 **Managed Browser** 或 **Edge**。
-8. 選擇 [確定]  返回 [新增設定原則]  刀鋒視窗。
-9. 選擇 [組態設定]  。 在 [設定]  刀鋒視窗上，您可以定義金鑰和值組來為 Managed Browser 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
-10. 完成後，請選擇 [確定]  。
-11. 在 [新增設定原則]  刀鋒視窗上，選擇 [新增]  。
-12. 就會建立新設定，然後在 [應用程式設定]  刀鋒視窗上顯示。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [應用程式設定原則]   > [新增]   > [受管理的應用程式]  。
+3. 在 [建立應用程式設定原則]  窗格的 [基本]  頁面上，輸入應用程式組態設定的 [名稱]  和選擇性 [描述]  。
+4. 選擇 [選取公用應用程式]  ，然後選擇適用於 iOS、Android 或兩者的 [Managed Browser]  或 [邊緣]  。
+5. 按一下 [選取]  以返回 [建立應用程式設定原則]  窗格。
+6. 按一下 [下一步]  以顯示 [設定]  頁面。
+7. 在 [設定]  頁面上，您可以定義金鑰和值組以提供應用程式設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
+8. 按一下 [下一步]  以顯示 [指派]  頁面，然後按一下 [選取要包含的群組]  和/或 [選取要排除的群組]  。
+9. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。
+10. 在您檢閱應用程式設定原則之後，請按一下 [建立]  。
+
+新設定會隨即建立，然後顯示在 [應用程式設定原則]  窗格上。
 
 
 ## <a name="assign-the-configuration-settings-you-created"></a>指派您建立的組態設定
 
 您可以將設定指派給使用者的 Azure AD 群組。 如果該使用者已經安裝目標受保護的瀏覽器應用程式，則此應用程式是由您指定的設定管理。
 
-1. 在 Intune 行動應用程式管理儀表板的 [用戶端應用程式]  刀鋒視窗上，選擇 [應用程式設定原則]  。
+1. 在 Intune 行動應用程式管理儀表板的 [應用程式]  窗格上，選擇 [應用程式設定原則]  。
 2. 從應用程式設定清單，選取您要指派的設定。
-3. 在下一個刀鋒視窗上，選擇 [指派]  。
-4. 在 [指派]  刀鋒視窗上，選取您要指派應用程式設定的 Azure AD 群組，然後選擇 [確定]  。
+3. 在下一個窗格上，選擇 [指派]  。
+4. 在 [指派]  窗格上，選取您要指派應用程式設定的 Azure AD 群組，然後選擇 [確定]  。
 
 ## <a name="how-to-set-microsoft-edge-as-the-protected-browser-for-your-organization"></a>如何針對貴組織將 Microsoft Edge 設定為受保護的瀏覽器
 
@@ -170,7 +170,7 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 - 如果您的使用者下載了 Managed Browser **或** Microsoft Edge **其中之一**，則將啟動該瀏覽器應用程式。 
 - 如果您的使用者並未下載任一個瀏覽器應用程式，系統就會提示他們下載 Managed Browser。
 
-使用上述程序來建立 Microsoft Edge 應用程式設定。 選取 [組態]  刀鋒視窗上的 [組態設定]  時，提供下列金鑰和值組 (步驟 9)：
+使用上述程序來建立 Microsoft Edge 應用程式設定。 在選取 [設定]  窗格上的 [組態設定]  時 (步驟 9)，提供下列金鑰和值組：
 
 | 金鑰                              |  值   |
 |----------------------------------|----------|
@@ -188,7 +188,7 @@ Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( htt
 - 使用者下載並登入 Microsoft Outlook 應用程式。 自動套用 Intune 應用程式保護原則。 它們會加密已儲存的資料，並阻擋使用者將公司檔案傳輸至裝置上未受管理的應用程式或位置。 當使用者接著在 Outlook 中按一下內部網路網站的連結時，您可以指定用受保護的瀏覽器應用程式開啟該連結，不用其他瀏覽器。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的多重要素驗證和條件式存取進行驗證。 使用者以前從遠端找不到這個網站，現在不但可以存取，Outlook 中的連結也一如預期般運作。
 - 遠端使用者開啟受保護的瀏覽器應用程式，並瀏覽至使用內部 URL 的內部網路網站。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的多重要素驗證和條件式存取進行驗證。 使用者以前從遠端找不到這個網站，但現在可以存取。
 
-### <a name="before-you-start"></a>開始之前
+### <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 - 透過 Azure AD 應用程式 Proxy 設定內部應用程式。
   - 若要設定應用程式 Proxy 並發佈應用程式，請參閱[安裝程式文件](https://docs.microsoft.com/azure/active-directory/manage-apps/application-proxy)。 

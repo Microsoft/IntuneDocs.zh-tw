@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6a9c6b824f8d6369f7bf2d06b44fa8a20417d1c
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
+ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713145"
+ms.lasthandoff: 12/02/2019
+ms.locfileid: "74691789"
 ---
 # <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>使用 Apple Configurator 設定 iOS 裝置註冊
 
@@ -48,7 +48,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 裝置註冊設定檔會在註冊期間定義套用的設定。 這些設定只套用一次。 請遵循下列步驟建立註冊設定檔，使用 Apple Configurator 註冊 iOS 裝置。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [Apple Configurator]   > [設定檔]   > [建立]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [設定檔]   > [建立]  。
 
     ![建立 Apple Configurator 設定檔](./media/apple-configurator-enroll-ios/apple-config-create-profile.png)
 
@@ -88,7 +88,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
     DLXQPCWVGHMJ,device details
 
    了解[如何尋找 iOS 裝置序號](https://support.apple.com/HT204073)。
-2. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [Apple Configurator]   > [裝置]   > [新增]  。
+2. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [裝置]   > [新增]  。
 
 5. 選取 [註冊設定檔]  套用到要匯入的序號。 如果您希望新的序號詳細資料覆寫任何現有的詳細資料，請選擇 [覆寫現有識別碼的詳細資料]  。
 6. 在 [匯入裝置]  下，瀏覽至序號的 csv 檔案，並選取 [新增]  。
@@ -100,18 +100,18 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 - **AC 設定檔**
 
 #### <a name="assign-from-apple-configurator-devices"></a>從 Apple Configurator 裝置指派
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [Apple Configurator]   > [裝置]  > 選擇序號 > [指派設定檔]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [裝置]  > 選擇序號 > [指派設定檔]  。
 2. 在 [指派設定檔]  下，選取您要指派的 [新設定檔]  ，然後選取 [指派]  。
 
 #### <a name="assign-from-profiles"></a>從設定檔指派
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇設定檔。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇設定檔。
 2. 在設定檔中選擇 [指派的裝置]  ，然後選擇 [指派]  。
 3. 篩選尋找您想要指派給設定檔的裝置序號、選取裝置，然後選擇 [指派]  。
 
 ### <a name="export-the-profile"></a>匯出設定檔
 建立設定檔並指派序號之後，您必須從 Intune 匯出設定檔當作 URL。 然後將它匯入 Mac 的 Apple Configurator 部署裝置。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇要匯出的設定檔。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇要匯出的設定檔。
 2. 在設定檔中，選取 [匯出設定檔]  。
 3. 複製 [設定檔 URL]  。 然後，您可以在 Apple Configurator 中加以新增，以定義 iOS 裝置使用的 Intune 設定檔。
 
@@ -147,7 +147,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 ### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>將設定檔匯出為 iOS 裝置的 .mobileconfig
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇要匯出的設定檔 > [匯出設定檔]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇要匯出的設定檔 > [匯出設定檔]  。
 2. 在 [直接註冊]  下，選擇 [下載設定檔]  ，並儲存檔案。 註冊設定檔僅在兩週內有效，到期後您就必須重新建立。
 3. 將檔案傳輸到執行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 電腦，以直接推送為 iOS 裝置的管理設定檔。
 4. 利用下列步驟，使用 Apple Configurator 來準備裝置：

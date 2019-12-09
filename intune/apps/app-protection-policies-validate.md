@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.service: microsoft-intune
 ms.subservice: apps
 ms.localizationpriority: high
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b9dda9a1aa1e81b46533c1c15d996807984193d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: e9c3e775773ab08721cb3a65858f3d8c8402104f
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712948"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563746"
 ---
 # <a name="how-to-validate-your-app-protection-policy-setup-in-microsoft-intune"></a>如何在 Microsoft Intune 中驗證您的應用程式保護原則設定
 
@@ -43,8 +43,8 @@ ms.locfileid: "73712948"
 - 每個使用者之應用程式保護應用程式的狀態是否如同預期。 可能的應用程式狀態為 [已簽入]  和 [未簽入]  。
 
 ### <a name="user-app-protection-status"></a>使用者應用程式保護的狀態
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 選取 [用戶端應用程式]   >  [應用程式保護狀態]  ，然後選取 [指派的使用者]  圖格。 
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 選取 [應用程式]   >  [應用程式保護狀態]  ，然後選取 [指派的使用者]  圖格。 
 4. 在 [應用程式報告]  頁面上，選取 [選取使用者]  以顯示使用者與群組清單。 
 5. 從該清單搜尋並選取使用者，然後選擇 [選取使用者]  。 在 [應用程式報告]  窗格頂端，您可以看到使用者是否具備應用程式保護的授權。 您也可以看到使用者是否有 O365 授權，以及使用者所有裝置的應用程式狀態。
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 000b1d04dd3f520b55b1d33545a8803e23bf8965
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 26972bb034ea4cb65f1bf64c61c20395cf94dc36
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889583"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564177"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -42,9 +42,8 @@ ms.locfileid: "72889583"
 
 ## <a name="summary-view"></a>摘要檢視
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格上，選擇 [用戶端應用程式]  。
-4. 若要查看摘要檢視，在 [用戶端應用程式]  工作負載中的 [監視]  底下，選擇 [應用程式保護狀態]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+3. 選取 [應用程式]   > [監視]   > [應用程式保護狀態]  。
 
    ![[Intune 行動應用程式管理] 窗格的 [摘要] 圖格螢幕擷取畫面](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
@@ -78,7 +77,7 @@ ms.locfileid: "72889583"
 >[!NOTE]
 > [上次同步處理]  資料行代表主控台內使用者狀態報告與應用程式保護原則[可匯出的 .csv 報告](https://docs.microsoft.com/intune/app-protection-policies-monitor#export-app-protection-activities)兩者中相同的值。 差異在於兩個報告中，值之間的些許同步處理延遲。 
 >
-> [上次同步處理] 中參考的時間是 Intune 上次看到應用程式執行個體的時間。 當使用者啟動應用程式時，它可能會在啟動時通知 Intune 應用程式保護服務，取決於它上次的簽入時間。 請參閱[應用程式保護原則簽入的重試間隔時間](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery)。 如果使用者未在上次簽入間隔 (通常是 30 分鐘的主動使用) 之內使用該特定應用程式，而且他們啟動應用程式，則：
+> [上次同步處理] 中參考的時間是 Intune 上次看到應用程式執行個體的時間。 當使用者啟動應用程式時，它可能會在啟動時通知 Intune 應用程式保護服務，取決於它上次的簽入時間。 請參閱[應用程式保護原則簽入的重試間隔時間](~/apps/app-protection-policy-delivery.md)。 如果使用者未在上次簽入間隔 (通常是 30 分鐘的主動使用) 之內使用該特定應用程式，而且他們啟動應用程式，則：
 >
 > - 應用程式保護原則可匯出 .csv 報告有最新的時間，範圍介於 1 分鐘 (最小值) 到 30 分鐘 (最大值)。
 > - 使用者狀態報告將會立即有最新的時間。
@@ -104,7 +103,7 @@ ms.locfileid: "72889583"
 > 如果您搜尋的使用者沒有部署 MAM 原則，則會看見一則訊息，通知您該使用者不針對任何 MAM 原則。
 
 ### <a name="flagged-users"></a>標有旗標的使用者
-[詳細檢視] 會顯示錯誤訊息、發生錯誤時存取的應用程式、受影響的裝置作業系統平台和時間戳記。 此錯誤通常用於已進行越獄 (iOS) 或 Root (Android) 的裝置。 此外，這裡會報告具有透過「SafetyNet 裝置證明」條件式啟動檢查旗標之裝置的使用者，以及 Google 所報告的原因。 若要從報告中移除使用者，裝置本身的狀態必須已變更，這會在下一次根偵測檢查 (或越獄檢查/SafetyNet 檢查發生) 需要回報正面結果之後發生。 如果裝置已真正修復，則在刀鋒視窗重新載入時，將在 [標有旗標的使用者] 報告上進行重新整理。
+[詳細檢視] 會顯示錯誤訊息、發生錯誤時存取的應用程式、受影響的裝置作業系統平台和時間戳記。 此錯誤通常用於已進行越獄 (iOS) 或 Root (Android) 的裝置。 此外，這裡會報告具有透過「SafetyNet 裝置證明」條件式啟動檢查旗標之裝置的使用者，以及 Google 所報告的原因。 若要從報告中移除使用者，裝置本身的狀態必須已變更，這會在下一次根偵測檢查 (或越獄檢查/SafetyNet 檢查發生) 需要回報正面結果之後發生。 如果裝置已真正修復，則在窗格重新載入時，將會在 [標有旗標的使用者] 報表上進行重新整理。
 
 ### <a name="users-with-potentially-harmful-apps"></a>具潛在有害應用程式的使用者
 詳細的檢視會顯示：
@@ -121,14 +120,14 @@ ms.locfileid: "72889583"
 
 ## <a name="reporting-view"></a>報告檢視
 
-您可以在 [應用程式保護狀態]  刀鋒視窗頂端找到相同的報表。
+您可以在 [應用程式保護狀態]  窗格頂端找到相同的報表。
 
 > [!NOTE]
-> Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您可以藉由選取 [用戶端應用程式]   > [應用程式防護狀態]   > [應用程式防護報告：iOS、Android]  來存取這些欄位。 此外，這些參數會協助您設定適用於裝置製造商 (Android) 的 [允許]  清單、適用於裝置型號 (Android 和 iOS) 的 [允許]  清單，以及最低的 Android 安全性修補程式版本設定。 
+> Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您可以藉由選取 [應用程式]   > [應用程式保護狀態]   > [應用程式防護報告: iOS、Android]  來存取這些欄位。 此外，這些參數會協助您設定適用於裝置製造商 (Android) 的 [允許]  清單、適用於裝置型號 (Android 和 iOS) 的 [允許]  清單，以及最低的 Android 安全性修補程式版本設定。 
 
-還提供其他報表以協助您處理 MAM 原則合規性狀態。 若要檢視這些報表，請選取 [用戶端應用程式]   > [應用程式防護狀態]   > [報表]  。 
+還提供其他報表以協助您處理 MAM 原則合規性狀態。 若要檢視這些報表，請選取 [應用程式]   > [應用程式保護狀態]   > [報表]  。 
 
-[報表]  刀鋒視窗提供數個以使用者和應用程式為基礎的報表，包括：
+[報表]  窗格提供數個以使用者和應用程式為基礎的報表，包括：
 
 - **使用者報表**：此報表列出的資訊與您在上述 [詳細檢視](app-protection-policies-monitor.md#detailed-view) 區段下 [使用者狀態]  報表中所找到的資訊相同。
 
@@ -139,7 +138,7 @@ ms.locfileid: "72889583"
     - 使用者或目前不是由 MAM 原則設為目標的應用程式正在使用這些應用程式。
     - 所有的應用程式都已簽入，但未收到任何 MAM 原則。
 
-    ![使用者的 [應用程式報告] 刀鋒視窗螢幕擷取畫面，其中包含三個應用程式的詳細資料](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![使用者的 [應用程式報告] 窗格螢幕擷取畫面，其中包含三個應用程式的詳細資料](./media/app-protection-policies-monitor/MAM-reporting-4.png)
 
 - **使用者設定報告**：根據選取的使用者，此報表會提供使用者已收到的任何應用程式設定的相關詳細資料。
 - **應用程式設定報告**：根據選取的平台和應用程式，此報表會提供使用者已收到所選應用程式設定的相關詳細資料。

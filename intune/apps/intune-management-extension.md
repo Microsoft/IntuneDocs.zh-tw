@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d73d28f34258bce99199731579969604c0a3d97
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059714"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563470"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 的 Windows 10 裝置上使用 PowerShell 指令碼
 
@@ -62,7 +62,7 @@ Intune 管理延伸模組具有下列必要條件。 一旦符合這些必要條
     
     - 使用者使用自身 Azure AD 帳戶登入裝置，然後在 Intune 中註冊。
 
-  - 使用 Configuration Manager 和 Intune 共同管理的裝置。 請務必將 [用戶端應用程式]  工作負載設定為 [試驗 Intune]  或 [Intune]  。 如需指引，請參閱下列文章： 
+  - 使用 Configuration Manager 和 Intune 共同管理的裝置。 請務必將 [應用程式]  工作負載設定為 [試驗 Intune]  或 [Intune]  。 如需指引，請參閱下列文章： 
   
     - [什麼是共同管理](https://docs.microsoft.com/sccm/comanage/overview) 
     - [用戶端應用程式工作負載](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
@@ -73,8 +73,8 @@ Intune 管理延伸模組具有下列必要條件。 一旦符合這些必要條
 
 ## <a name="create-a-script-policy-and-assign-it"></a>建立並指派指令碼原則
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [裝置設定]   > [PowerShell 指令碼]   > [新增]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [PowerShell 指令碼]   > [新增]  。
 
     ![在 Microsoft Intune 中新增和使用 PowerShell 指令碼](./media/intune-management-extension/mgmt-extension-add-script.png)
 

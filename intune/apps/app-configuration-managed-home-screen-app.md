@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/23/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e97e88ad78e1b914543b7fa283f47863dce185fc
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: e86aeb3191c1cfdf2fc9dfab3a4474327b3fbb06
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813467"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74564218"
 ---
 # <a name="configure-the-microsoft-managed-home-screen-app-for-android-enterprise"></a>設定適用於 Android Enterprise 的 Microsoft Managed Home Screen 應用程式
 
@@ -31,12 +31,12 @@ Managed Home Screen 這個應用程式用於企業擁有的 Android Enterprise �
 
 ## <a name="when-to-configure-the-microsoft-managed-home-screen-app"></a>設定 Microsoft Managed Home Screen 應用程式的時機
 
-一般而言，如果您可以透過 [裝置設定] 來進行設定，就請在該處進行。 這樣做可以節省您的時間、盡可能減少失誤，並獲得較佳的 Intune 支援體驗。 不過，有些 Managed Home Screen 設定目前僅透過 Intune 主控台中的 [應用程式設定原則]  刀鋒視窗提供。 請使用這份文件了解如何使用設定設計工具或 JSON 指令碼來進行不同的設定。 
+一般而言，如果您可以透過 [裝置設定] 來進行設定，就請在該處進行。 這樣做可以節省您的時間、盡可能減少失誤，並獲得較佳的 Intune 支援體驗。 不過，有些 Managed Home Screen 設定目前僅透過 Intune 主控台中的 [應用程式設定原則]  窗格提供。 請使用這份文件了解如何使用設定設計工具或 JSON 指令碼來進行不同的設定。 
 
 > [!NOTE]
-> 目前可以 (並建議) 透過 [用戶端應用程式]  和 [裝置設定]  來設定允許列出的應用程式及釘選的 Web 連結。 如需 [裝置設定]  中會影響 Managed Home Screen 的設定完整清單，請參閱[專用裝置設定](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)。  
+> 目前可以 (並建議) 透過 [應用程式]  和 [裝置設定]  來設定允許列出的應用程式及釘選的 Web 連結。 如需 [裝置設定]  中會影響 Managed Home Screen 的設定完整清單，請參閱[專用裝置設定](../configuration/device-restrictions-android-for-work.md#dedicated-device-settings)。  
 
-首先，在 Azure 入口網站中瀏覽到 Intune 主控台，然後前往 [用戶端應用程式]   > [應用程式設定原則]  。 為執行 **Android** 的 [受控裝置]  新增設定原則，然後選擇 [Managed Home Screen]  作為建立關聯的應用程式。 按一下 [組態設定]  來進行其他可用的 Managed Home Screen 設定。 
+首先，瀏覽至 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)並選取 [應用程式]   > [應用程式設定原則]  。 為執行 **Android** 的 [受控裝置]  新增設定原則，然後選擇 [Managed Home Screen]  作為建立關聯的應用程式。 按一下 [組態設定]  來進行其他可用的 Managed Home Screen 設定。 
 
 ## <a name="choosing-a-configuration-settings-format"></a>選擇組態設定格式
 

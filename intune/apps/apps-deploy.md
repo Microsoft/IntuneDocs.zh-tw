@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c1e8e37a784ea39fbf1154321933673ed02eee33
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540755"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563986"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
@@ -55,13 +55,12 @@ ms.locfileid: "74540755"
 
 ## <a name="assign-an-app"></a>指派應用程式
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
-4. 在功能表的 [管理]  區段，選取 [應用程式]  。
-5. 在 [應用程式]  窗格中，選取您想要指派的應用程式。
-6. 在功能表的 [管理]  區段中，選取 [指派]  。
-7. 選取 [新增群組]  ，以開啟和應用程式相關的 [新增群組]  窗格。
-8. 針對特定的應用程式，選取 [指派類型]  ：
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]  。
+3. 在 [應用程式]  窗格中，選取您想要指派的應用程式。
+4. 在功能表的 [管理]  區段中，選取 [指派]  。
+5. 選取 [新增群組]  ，以開啟和應用程式相關的 [新增群組]  窗格。
+6. 針對特定的應用程式，選取 [指派類型]  ：
    - **適用於已註冊的裝置**：將應用程式指派給可從「公司入口網站」應用程式或網站安裝應用程式的使用者。
    - **無論註冊與否均可使用**：將此應用程式指派到其裝置未向 Intune 註冊的使用者群組。 使用者必須獲得 Intune 授權的指派，請參閱 [Intune 授權](../fundamentals/licenses.md)。
    - **必要**：此應用程式會安裝在所選群組中的裝置上。 在應用程式開始安裝之前，某些平台可能會有額外的提示以通知使用者。
@@ -76,13 +75,13 @@ ms.locfileid: "74540755"
      >
      > 針對 [適用於已註冊的裝置]  ：只有在已登入公司入口網站的使用者是註冊該裝置的主要使用者，且應用程式適用於該裝置的情況下，該應用程式才會顯示為可用。
 
-9. 若要選取受此應用程式指派影響的使用者群組，請選取 [包含的群組]  。
-10. 當您選取要包含的一個或多個群組之後，選取 [選取]  。
-11. 在 [指派]  窗格中，選取 [確定]  來完成包含群組選取項目。
-12. 如果您想要將任何使用者群組排除，使他們不受此應用程式指派影響，請選取 [排除群組]  。
-13. 如果您選擇要排除任何群組，請在 [選取群組]  中，選取 [選取]  。
-14. 在 [新增群組]  窗格中，選取 [確定]  。
-15. 在應用程式 [指派]  窗格中，選取 [儲存]  。
+7. 若要選取受此應用程式指派影響的使用者群組，請選取 [包含的群組]  。
+8. 當您選取要包含的一個或多個群組之後，選取 [選取]  。
+9. 在 [指派]  窗格中，選取 [確定]  來完成包含群組選取項目。
+10. 如果您想要將任何使用者群組排除，使他們不受此應用程式指派影響，請選取 [排除群組]  。
+11. 如果您選擇要排除任何群組，請在 [選取群組]  中，選取 [選取]  。
+12. 在 [新增群組]  窗格中，選取 [確定]  。
+13. 在應用程式 [指派]  窗格中，選取 [儲存]  。
 
 該應用程式現在已經指派給您所選取的群組。 如需包含和排除應用程式指派的詳細資訊，請參閱[包含與排除應用程式指派](apps-inc-exl-assignments.md)。
 

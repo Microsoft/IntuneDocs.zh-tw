@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b750c09207b1950aa27a5f2cae1267503537b6e7
-ms.sourcegitcommit: 01fb3d844958a0e66c7b87623160982868e675b0
+ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74199204"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563628"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -37,7 +37,7 @@ ms.locfileid: "74199204"
 > [!Tip]
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。 請注意，使用者必須或指派 Intune 授權，才能存取「公司入口網站」網站。
 
-您可以透過自訂公司入口網站，協助為終端使用者提供熟悉且實用的體驗。 若要這樣做，請在 Intune 入口網站中，選取 [用戶端應用程式]   > [商標和自訂]  ，然後進行必要設定。
+您可以透過自訂公司入口網站，協助為終端使用者提供熟悉且實用的體驗。 若要這樣做，請在 Intune 入口網站中，選取 [應用程式]   > [商標和自訂]  ，然後進行必要設定。
 
 當使用者從公司入口網站安裝 iOS 應用程式時，他們將會收到提示。 當 iOS 應用程式連結至 App Store、連結至大量採購方案 (VPP)，或連結至企業營運 (LOB) 應用程式時，就會發生這種情況。 提示可讓使用者接受此動作，或允許應用程式的管理。 提示將顯示您的公司名稱，或者，當您的公司名稱無法使用時，將顯示**公司入口網站**。 
 
@@ -92,7 +92,7 @@ ms.locfileid: "74199204"
 
 ### <a name="brand-image-for-company-portal"></a>公司入口網站的品牌影像
 
-顯示反映您公司品牌的品牌影像。 儲存變更之後，可以選擇刀鋒視窗頂端的 [在 Intune Web 入口網路中預覽您的設定]  來查看您的設定。 請注意，您只能在 iOS 裝置上預覽品牌影像，而無法在 Intune Web 入口網站中進行預覽。 
+顯示反映您公司品牌的品牌影像。 儲存變更之後，可以選擇窗格頂端的 [在 Intune Web 入口網路中預覽您的設定]  來查看您的設定。 請注意，您只能在 iOS 裝置上預覽品牌影像，而無法在 Intune Web 入口網站中進行預覽。 
 
 |欄位名稱|詳細資訊|
 |---|---|
@@ -150,7 +150,7 @@ iOS 公司入口網站可以使用深色模式。 使用者可以下載公司應
 | 區域 | 說明 | 鍵盤快速鍵 |
 |:------------------:|:--------------:|:-----------------:|
 | 導覽功能表 | 導覽 | Alt+M |
-|  | 首頁 | Alt+H |
+|  | 家庭 | Alt+H |
 |  | 所有應用程式 | Alt+A |
 |  | 已安裝的應用程式 | Alt+I |
 |  | 傳送意見反應 | Alt+F |

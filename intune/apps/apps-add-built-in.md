@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82a2414e7458d1eb0ce48c5afb8ac1bc9bddb636
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: a92699ccce4f0b2590e526b3442cd45bfda6407c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712927"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563608"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>將內建應用程式新增至 Microsoft Intune
 
@@ -37,24 +37,20 @@ ms.locfileid: "73712927"
 ## <a name="add-a-built-in-app"></a>新增內建應用程式
 
 若要將內建應用程式新增至 Microsoft Intune 的可用應用程式，請執行下列作業：
-1. 登入 Azure 入口網站。
-2. 若要顯示 [Microsoft Intune] 窗格，請選取 [更多服務]   > [監視 + 管理]   > [Intune]  。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
-4. 在 [用戶端應用程式]  窗格中的 [管理]  底下，選取 [應用程式]  。
-5. 選取 [新增]  。
-6. 在 [新增]  應用程式窗格中的 [應用程式類型]  清單中，選取 [內建應用程式]  。
-7. 選取 [選取應用程式]  。
-8. 在 [內建應用程式]  窗格中，選取您想要包含的應用程式。
-9. 在 [新增應用程式]  窗格中，選取 [新增]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
+3. 在 [新增]  應用程式窗格中的 [應用程式類型]  清單中，選取 [內建應用程式]  。
+4. 選取 [選取應用程式]  。
+5. 在 [內建應用程式]  窗格中，選取您想要包含的應用程式。
+6. 在 [新增應用程式]  窗格中，選取 [新增]  。
 
 
 ## <a name="configure-app-information"></a>設定應用程式資訊
 
 您可修改內建應用程式的相關資訊。 這項資訊可協助您在 Intune 中識別應用程式，並幫助使用者在公司入口網站中尋找應用程式。
-1. 在 [用戶端應用程式 - 應用程式]  窗格中，選取您想要修改的內建應用程式。  
-    即會顯示內建應用程式的窗格。
-2. 在 [管理]  底下，選取 [屬性]  選項。
-3. 若要修改內建應用程式資訊，請選取 [設定]  選項。
+1. 選取 [應用程式]   > [所有應用程式]  ，並選取您想要修改的內建應用程式。  
+   即會顯示內建應用程式的窗格。
+2. 選取 [屬性]   > [設定]  。
 4. 在 [應用程式資訊]  窗格中，您可修改下列資訊：
     - **名稱**：輸入將顯示在公司入口網站中的內建應用程式名稱。 確定您使用的所有名稱都是唯一的。 如果有重複的應用程式名稱，使用者只會在公司入口網站中看到其中一個應用程式。
     - **描述**：輸入應用程式的描述。 

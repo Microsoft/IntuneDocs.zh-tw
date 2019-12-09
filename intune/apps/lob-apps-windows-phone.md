@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/22/2019
+ms.date: 11/26/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1540abcc9ff7a5958da55154258e1fc1d9555dd
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: dd8025c18ef10580eb16883727bf08a316989d2e
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72507152"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563537"
 ---
 # <a name="add-a-windows-phone-line-of-business-app-to-microsoft-intune"></a>將 Windows Phone 企業營運應用程式新增至 Microsoft Intune
 
@@ -33,11 +33,9 @@ ms.locfileid: "72507152"
 
 ## <a name="step-1-specify-the-software-setup-file"></a>步驟 1：指定軟體安裝檔
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 在 [Intune]  窗格中，選取 [用戶端應用程式]  。
-4. 在 [用戶端應用程式]  工作負載中，選取 [管理]   > [應用程式]  。
-5. 從應用程式清單上方，選取 [新增]  。
-6. 在 [新增應用程式]  窗格中，選取 [企業營運應用程式]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
+3. 在 [新增應用程式]  窗格中，選取 [企業營運應用程式]  作為 [應用程式類型]  。
 
 ## <a name="step-2-configure-the-app-package-file"></a>步驟 2：設定應用程式套件檔案
 

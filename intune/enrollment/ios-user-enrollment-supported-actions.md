@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fcc5dea1a3f9e6a1f2bec877688962d7be70cc7c
-ms.sourcegitcommit: d2d18eef64bcf16eec1a48fcb67f1362537c0245
+ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73445302"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74562416"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 使用者註冊支援的 Intune 動作與選項
 
@@ -57,13 +57,18 @@ ms.locfileid: "73445302"
 - 遠端鎖定
 - 檢查狀態
 
+## <a name="app-deployment-options"></a>應用程式部署選項
+下列應用程式類型可以部署在使用者註冊裝置上：
+- 使用者授權大量採購方案 (VPP) 應用程式，包含自訂應用程式
+- 企業營運 (LOB) 應用程式
+- Web 應用程式
+
 ## <a name="other-supported-options"></a>其他支援的選項
 
 對於使用 Apple 使用者註冊所註冊的裝置，Intune 支援下列選項：
 - 個別應用程式 VPN。 此支援會排除 Safari 網域，因為使用者註冊不支援進行 Safari 設定。
 - WiFi 
 - 取消註冊後移除公司應用程式
-- 透過使用者授權的大量採購方案 (VPP) 進行應用程式部署
 - 越獄偵測
 
 下列是支援的限制：
@@ -94,9 +99,10 @@ ms.locfileid: "73445302"
 - 收集 UDID 與其他持續性裝置識別碼。
 - 使用者註冊支援註冊的每個裝置都擁有一個唯一的註冊識別碼，但在取消註冊之後，不會保存此識別碼。
 - 因為此限制的緣故，所以不支援下列 Intune 功能：
-- 使用序列名稱的主體名稱格式的 SCEP 使用者設定檔
+- 使用序號之主體名稱格式的 SCEP 使用者設定檔。
 - 裝置層級 VPN。
 - 裝置授權的 VPP 應用程式部署。
+- 將 App Store 應用程式安裝為受控應用程式。
 - 針對受控 APFS 磁碟區以外應用程式的 MDM 控制。
 - 應用程式保護原則仍然會套用到這些應用程式。 不過，您將無法接管管理或部署這些應用程式的受控版本，除非使用者從裝置上刪除它們。
 - 需要監督的動作、設定、設定和命令。 
