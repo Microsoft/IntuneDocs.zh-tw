@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 11/26/2019
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3afd51fe27feb0c058ba703ed11e4a15a5ea2f0d
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
+ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
-ms.locfileid: "72813421"
+ms.lasthandoff: 11/27/2019
+ms.locfileid: "74563420"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入門：新增並指派用戶端應用程式
 
-在此快速入門中，您將使用 Intune 新增用戶端應用程式，並將其指派給您公司的員工。 系統管理員最優先的事項之一，是確保使用者能夠存取工作所需的應用程式。 
+在此快速入門中，您將使用 Intune 新增用戶端應用程式，並將其指派給您公司的員工。 系統管理員最優先的事項之一，是確保終端使用者能夠存取工作所需的應用程式。 
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](../fundamentals/free-trial-sign-up.md)。
 
@@ -44,7 +44,7 @@ ms.locfileid: "72813421"
 您可以加入應用程式，讓 Intune 能夠管理應用程式的所有層面。 
 
 使用下列步驟將應用程式新增至 Intune：
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [應用程式]   > [所有應用程式]   > [新增]  。 
 2. 在 [應用程式類型]  下拉式方塊的 [Office 365 套件]  區段中，選取 **Windows 10**。
 3. 選取 [設定應用程式套件]  以選取要指派給 Intune 使用者的 Office 應用程式。
 4. 按一下 [確定]  以接受預設選取的應用程式。
@@ -68,9 +68,9 @@ ms.locfileid: "72813421"
 > 此快速入門是以此系列中的前幾個快速入門為基礎所建置的。 如需詳細資料，請參閱此快速入門中的[必要條件](quickstart-add-assign-app.md#prerequisites)。
 
 使用下列步驟將應用程式指派給群組：
-1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [用戶端應用程式]   > [應用程式]  。 
+1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [應用程式]   > [所有應用程式]  。 
 2. 選取您要指派給群組的應用程式。
-3. 按一下 [指派]   > [新增群組]  以顯示 [新增群組]  刀鋒視窗。
+3. 按一下 [指派]   > [新增群組]  以顯示 [新增群組]  窗格。
 4. 在 [指派類型]  下拉式方塊中，選取 [適用於已註冊的裝置]  。 
 5. 按一下 [包含的群組]   > [選取要包含的群組]   > [Contoso Testers]  。
 6. 按一下 [選取]   > [確定]   > [確定]   > [儲存]  以指派群組。
@@ -101,7 +101,7 @@ ms.locfileid: "72813421"
 
 在此快速入門中，您已將應用程式新增至 Intune、將應用程式指派給群組，並在已註冊的 Windows 10 Desktop 裝置上安裝應用程式。 如需在 Intune 中管理應用程式的詳細資訊，請參閱[什麼是 Microsoft Intune 應用程式管理？](app-management.md)
 
-若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
+若要繼續參閱此 Intune 快速入門系列，請前往下一個快速入門。
 
 > [!div class="nextstepaction"]
 > [快速入門：建立並指派應用程式保護原則](quickstart-create-assign-app-policy.md)
