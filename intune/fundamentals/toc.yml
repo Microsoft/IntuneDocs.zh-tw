@@ -31,6 +31,8 @@
       href: quickstart-create-custom-role.md
 - name: 教學課程
   items:
+    - name: 逐步解說 Microsoft 端點管理員中的 Intune
+      href: tutorial-walkthrough-endpoint-manager.md
     - name: 逐步解說 Azure 入口網站中的 Intune
       href: tutorial-walkthrough-intune-portal.md
 - name: 概念
@@ -53,7 +55,7 @@
           href: guided-scenarios-cloud-managed-pc.md
         - name: 保護 Microsoft Office 行動應用程式
           href: guided-scenarios-office-mobile.md
-    - name: 常見案例
+    - name: 常見的案例
       href: common-scenarios.md
     - name: 使用 EMS 的 BYOD 技術決策
       href: byod-technology-decisions.md
@@ -145,7 +147,7 @@
         - name: 支援的設定
           href: supported-devices-browsers.md
           items:
-            - name: 網路組態
+            - name: 網路設定
               href: network-bandwidth-use.md
             - name: 搭配 Intune 使用 Windows 10 VM
               href: windows-10-virtual-machines.md
@@ -157,7 +159,7 @@
           href: account-sign-up.md
         - name: 設定網域
           href: custom-domain-name-configure.md
-        - name: 加入使用者
+        - name: 新增使用者
           href: users-add.md
         - name: 新增群組
           href: groups-add.md
@@ -169,7 +171,7 @@
           href: mdm-authority-set.md
         - name: 管理角色
           items:
-            - name: 以角色為基礎的存取控制
+            - name: 角色型存取控制
               href: role-based-access-control.md
             - name: 將角色指派給使用者
               href: assign-role.md
@@ -211,7 +213,7 @@
       items:
         - name: Intune 報告
           href: reports.md
-- name: 參考
+- name: 參考資料
   items:
     - name: 錯誤碼與描述
       items:
@@ -219,7 +221,7 @@
           href: troubleshoot-company-resource-access-problems.md
 - name: 資源
   items:
-    - name: 封存
+    - name: Archive
       items:
         - name: 新功能封存
           items:
