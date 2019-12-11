@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: cd32943be10cfcaa2e839d8c27f8d9668f9289f4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510172"
 ---
 # <a name="keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune"></a>利用 Microsoft Intune 讓 Windows 電腦的軟體更新保持在最新狀態
@@ -44,7 +44,7 @@ Microsoft Intune 可協助您使用一些方式來保護受控的電腦，包括
 
 下列章節將協助您讓受控之電腦上的軟體保持在最新狀態。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 開始建立和核准軟體更新之前，請設定並部署原則到電腦上，控制安裝更新的時機和方式。
 
 ### <a name="to-configure-update-policy-settings"></a>若要設定更新原則設定

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: c8c5be1d7a02c2c8329afe05dcdce22f48c49d05
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503484"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-developer-guide"></a>Microsoft Intune App SDK for Android 開發人員指南
@@ -614,7 +614,7 @@ NotificationRestriction notificationRestriction =
     MAMPolicyManager.getPolicyForIdentity(notificationIdentity).getNotificationRestriction();
 ```
 
-如果 `BLOCKED` 限制，應用程式就不能針對與此原則相關聯的使用者顯示任何通知。 如果 `BLOCK_ORG_DATA`，應用程式必須顯示未包含組織資料的已修改通知。 如果 `UNRESTRICTED`，則允許所有通知。
+如果 `BLOCKED`限制，應用程式就不能針對與此原則相關聯的使用者顯示任何通知。 如果 `BLOCK_ORG_DATA`，應用程式必須顯示未包含組織資料的已修改通知。 如果 `UNRESTRICTED`，則允許所有通知。
 
 如果未叫用 `getNotificationRestriction`，MAM SDK 會盡力自動限制單一身分識別應用程式的通知。 如果已啟用自動封鎖，且已設定 `BLOCK_ORG_DATA`，則完全不會顯示通知。 如需更精細的控制，請檢查 `getNotificationRestriction` 的值，並適當地修改代理程式更新。
 

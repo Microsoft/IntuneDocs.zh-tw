@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9f52d3a7c40f27555a07682adf86b0339cef616
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 647e8869caf24638f6809479274dbf7a7b967b9e
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72491924"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946626"
 ---
 # <a name="android-enterprise-device-settings-to-configure-vpn-in-intune"></a>在 Intune 中設定 VPN 的 Android 企業裝置設定
 
@@ -31,6 +31,9 @@ ms.locfileid: "72491924"
 Intune 管理員可以建立 VPN 設定，並將其指派給 Android Enterprise 裝置。 
 
 若要深入瞭解 Intune 中的 VPN 設定檔，請參閱[vpn 設定檔](vpn-settings-configure.md)。
+
+> [!NOTE]
+> 若要設定「永遠開啟」 VPN，您需要建立 VPN 設定檔，並使用已設定的「永遠開啟」 VPN 設定來建立[裝置限制](device-restrictions-android-for-work.md#connectivity)設定檔。
 
 ## <a name="before-you-begin"></a>開始之前
 

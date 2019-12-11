@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2b26717e2e8beed2e92f47dca17cbea0ec47a82b
-ms.sourcegitcommit: 244a75622f9cebaaaf5b33aadd8931407a2e2e48
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74096752"
 ---
 # <a name="enable-code-integrity"></a>啟用程式碼完整性
@@ -38,6 +38,6 @@ ms.locfileid: "74096752"
 
 如果您是 Intune 管理員，而且想要深入瞭解 Intune 的裝置健康情況合規性設定，請參閱[在 intune 中為 Windows 10 裝置新增裝置合規性政策](https://docs.microsoft.com/intune/protect/compliance-policy-create-windows)。 如需瞭解您可以在 Intune 中採取之合規性動作的詳細資訊，請參閱[HEALTHATTESTATION CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results)。  
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

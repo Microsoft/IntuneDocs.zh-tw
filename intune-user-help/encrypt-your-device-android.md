@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506356"
 ---
 # <a name="encrypting-your-android-device"></a>加密 Android 裝置
@@ -45,7 +45,7 @@ ms.locfileid: "72506356"
     c. 請遵循畫面上的指示來設定您的螢幕鎖定。  
 
 2. 返回 [**鎖定畫面與安全性**]，然後選取 [**安全啟動**]。
-3. 選擇 [**裝置開啟時需要 PIN** **]  >  [確定]** 。
+3. 選擇 [**裝置開啟時需要 PIN** **] > [確定]** 。
 4. 輸入您的 PIN 以確認並加密您的裝置。
 5. 開啟公司入口網站或 Microsoft Intune 應用程式。
     * 公司入口網站使用者：選取您的裝置，然後點選 [檢查裝置設定]  。 
@@ -53,7 +53,7 @@ ms.locfileid: "72506356"
 
 執行 Android 4.4 和更早版本的裝置可能沒有**安全啟動**選項。 在此情況下，請完成下列步驟來加密您的裝置。
 
-1. 移至 [**設定**]  >  [**安全性** > **加密裝置**]。 螢幕標籤在 Android 裝置之間有所不同。 如果您沒有看到 [**加密裝置**] 選項，請簽入：
+1. 移至 [**設定**] > [**安全性** > **加密裝置**]。 螢幕標籤在 Android 裝置之間有所不同。 如果您沒有看到 [**加密裝置**] 選項，請簽入：
     * **儲存體** > **儲存體加密**
     * **儲存體** > **鎖定畫面和安全性** > **其他安全性設定** 
 

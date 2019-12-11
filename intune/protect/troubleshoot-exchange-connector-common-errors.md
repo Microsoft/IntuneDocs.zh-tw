@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b30a7e843850d6918abc2e76f84397a1f197516f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508852"
 ---
 # <a name="resolve-common-errors-for-the-intune-exchange-connector"></a>解決 Intune Exchange Connector 的常見錯誤
@@ -132,7 +132,7 @@ IOS 裝置無法在 Intune 中註冊，並會產生下列其中一個錯誤訊�
 
 1. 以系統管理員或 Administrators 群組成員的身分登入電腦。
 2. 執行**secpol.msc**以開啟本機安全性原則。
-3. 移至 **安全性設定**  > **本機原則**，然後選取 **使用者權限指派**。
+3. 移至 **安全性設定** > **本機原則**，然後選取 **使用者權限指派**。
 4. 在右側窗格中，連按兩下 [以服務方式登入]  。
 5. 選取 [**新增使用者或群組**]，將**WIEC_USER**新增至原則，然後選取 **[確定]** 兩次。
 

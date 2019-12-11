@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 26df7250aefa519c20708879b68af7c35113814f
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509871"
 ---
 # <a name="request-and-provide-remote-assistance-for-windows-pcs"></a>對 Windows 電腦要求及提供遠端協助
@@ -34,7 +34,7 @@ ms.locfileid: "72509871"
 Intune 可以使用另行購買的 [TeamViewer](https://www.teamviewer.com) 軟體，讓您為執行 Intune 軟體用戶端的使用者提供遠端協助。 使用者向 Microsoft Intune Center 要求協助時，您會收到警示通知、可以接受要求，然後提供協助。 這項功能會取代 Intune 中的現有 Windows 遠端協助功能。
 
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 請確認您具有下列必要條件，再開始建立並回應遠端協助要求︰
 

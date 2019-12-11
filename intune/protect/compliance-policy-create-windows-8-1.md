@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 3e074d922078a9772ca67a6ebd99948bc3e64601
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72813223"
 ---
 # <a name="windows-81-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Windows 8.1 設定將裝置標示為相容或不相容
@@ -88,7 +88,7 @@ Windows 8.1 電腦會傳回版本 **3**。 若針對 Windows 將 OS 版本規則
     - 小寫字母
     - 大寫字母
     - 符號
-    - 數字
+    - Numbers
 
     若設定較高的數目，使用者就必須建立較複雜的密碼。 對於使用 Microsoft 帳戶存取的裝置，若符合下列任一條件，相容性原則將無法正確進行評估：
 

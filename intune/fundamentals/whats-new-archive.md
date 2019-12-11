@@ -20,10 +20,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73635474"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 的新功能 - 前幾個月
@@ -120,7 +120,7 @@ Windows 更新通道設定中新增了兩項「使用者體驗設定」  ，可�
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---"></a>在 Windows 10 裝置合規性政策中檢查是否有 TPM 晶片組<!-- 3617671 -->
 
-此功能已被延後並規劃於未來發行。
+此功能已延遲，計劃稍後發布。
 
 #### <a name="updated-ui-changes-for-microsoft-edge-browser-on-windows-10-and-later-devices---3775833-----"></a>更新 Windows 10 及更新版本裝置上 Microsoft Edge 瀏覽器的 UI 變更<!-- 3775833   -->
 當您建立裝置組態設定檔時，您可以允許或限制 Windows 10 及更新版本裝置上的 Microsoft Edge 功能 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Windows 10 及更新版本]  平台 > [裝置限制]  設定檔類型 > [Microsoft Edge 瀏覽器]  )。 在此更新中，Microsoft Edge 設定會有更詳細的說明，因此更容易了解。
@@ -217,7 +217,7 @@ Intune 管理員可以指定 Intune 應用程式 [限制使用其他應用程式
 #### <a name="office-deployment-tool-odt-xml-for-office-proplus-deployment---3192477-----"></a>適用於 Office 專業增強版部署的 Office 部署工具 (ODT) XML<!-- 3192477   -->
 在 Intune 管理主控台中建立 Office 專業增強版的執行個體時，您將能夠提供 Office 部署工具 (ODT) XML。 如果現有 Intune UI 選項不符合您的需求，這可提高自訂能力。 如需詳細資訊，請參閱[使用 Microsoft Intune 將 Office 365 應用程式指派給 Windows 10 裝置](../apps/apps-add-office365.md)和 [Office 部署工具的設定選項](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool)。
 
-#### <a name="app-icons-will-now-be-displayed-with-an-automatically-generated-background---1429026----"></a>現在會以自動產生的背景來顯示應用程式圖示<!-- 1429026  -->
+#### <a name="app-icons-will-now-be-displayed-with-an-automatically-generated-background---1429026----"></a>現在將顯示帶有自動生成背景的應用程式圖標<!-- 1429026  -->
 在 Windows 公司入口網站應用程式中，現在會根據應用程式圖示主要色彩 (如果可偵測) 以自動產生的背景來顯示圖示。 適用時，此背景會取代先前在應用程式磚上顯示的灰色框線。 使用者會在公司入口網站 10.3.3451.0 以後版本中看到這項變更。
 
 #### <a name="install-available-apps-using-the-company-portal-app-after-windows-bulk-enrollment---2751523-----"></a>在 Windows 大量註冊之後使用公司入口網站應用程式安裝可用的應用程式<!-- 2751523   -->
@@ -520,7 +520,7 @@ Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Andr
 您可以從 Microsoft Intune 刪除受控的 Google Play 應用程式。 若要刪除受控的 Google Play 應用程式，請在 Azure 入口網站中開啟 Microsoft Intune，然後選取 [用戶端應用程式]   > [應用程式]  。 從應用程式清單，選取受控的 Google Play 應用程式右側的省略符號 (...)，然後從顯示的清單選取 [刪除]  。 當您從應用程式清單刪除受控 Google Play 應用程式時，會自動取消核准受控 Google Play 應用程式。
 
 #### <a name="managed-google-play-app-type---1352580---"></a>受控的 Google Play 應用程式類型<!-- 1352580 -->
-[受控的 Google Play]  應用程式類型可讓您將[受控 Google Play 應用程式](https://play.google.com/work/search?q=microsoft&c=apps)明確新增至 Intune。 身為 Intune 系統管理員，您現在可以在 Intune 中瀏覽、搜尋、核准、同步及指派已核准之受控的 Google Play 應用程式。  您不再需要另外瀏覽至受控的 Google Play 主控台，而且您不再需要重新驗證。  在 Intune 中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。 在 [應用程式類型]  清單中，選取 [受控的 Google Play]  作為應用程式類型。
+[受控的 Google Play]  應用程式類型可讓您將[受控的 Google Play 應用程式](https://play.google.com/work/search?q=microsoft&c=apps)特別新增至 Intune。 身為 Intune 系統管理員，您現在可以在 Intune 中瀏覽、搜尋、核准、同步及指派已核准之受控的 Google Play 應用程式。  您不再需要另外通過 Google Play 主控台瀏覽受控應用程式，而且您不再需要重新驗證。  在 Intune 中，選取 [用戶端應用程式]   > [應用程式]   > [新增]  。 在 [應用程式類型]  清單中，選取 [受控的 Google Play]  作為應用程式類型。
 
 #### <a name="default-android-pin-keyboard---3802457---"></a>預設 Android PIN 鍵盤<!-- 3802457 -->
 若終端使用者已在其 Android 裝置上設定 Intune 應用程式防護原則 (APP) PIN 且 PIN 類型為 [數值]，則現在會看到預設 Android 鍵盤，而不是先前所設計的固定 Android 鍵盤 UI。 這是為了在 Android 和 iOS 上使用預設鍵盤時能夠保持一致所做的變更，適用於 PIN 類型為 [數值] 及/或 [密碼]。 如需 Android 上終端使用者存取設定的詳細資訊，請參閱 [Android 存取需求](../apps/app-protection-policy-settings-android.md#access-requirements)。
@@ -2288,7 +2288,7 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 
 如果曾經啟動過，您的情況會隨您選擇的設定而異：
 
-| 設定 | 預設裝置類型限制中的 Android for Work 狀態 | 附註 |
+| 設定 | 預設裝置類型限制中的 Android for Work 狀態 | 備忘錄 |
 | --- | --- | --- |
 | **將所有裝置當成 Android 管理** | 封鎖 | 所有 Android 裝置都必須註冊，但不是 Android for Work。 |
 | **將支援的裝置當成 Android for Work 管理** | 允許 | 所有支援 Android for Work 的裝置都必須註冊 Android for Work。 |

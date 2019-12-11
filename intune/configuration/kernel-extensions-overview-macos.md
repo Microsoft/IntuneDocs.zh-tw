@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bce6b99723c5eada8f8f29e875a1df1daa02751a
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059363"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>在 Intune 中新增 macOS 核心延伸模組
@@ -41,7 +41,7 @@ ms.locfileid: "74059363"
 
 - 使用 Apple 的裝置註冊計劃（DEP）在 Intune 中註冊。 [自動註冊 macOS 裝置](../enrollment/device-enrollment-program-enroll-macos.md)有詳細資訊。
 
-  或者
+  或
 
 - 已在 Intune 中註冊「使用者核准的註冊」（Apple 的條款）。 [準備 MacOS High 中核心延伸模組的變更](https://support.apple.com/en-us/HT208019)（開啟 Apple 的網站）有詳細資訊。
 
@@ -83,6 +83,6 @@ Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂�
 
 設定檔隨即建立，並顯示在清單中。 請確認會[指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
-建立設定檔之後，就可以指派它。 接下來，[指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
+建立設定檔之後即可加以指派。 接下來，[指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。

@@ -17,10 +17,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058535"
 ---
 # <a name="device-management-overview"></a>裝置管理概觀
@@ -41,7 +41,7 @@ ms.locfileid: "74058535"
 
 Intune 隨附於 Microsoft Azure、Microsoft 365，並與 Azure Active Directory (Azure AD) 整合。 Azure AD 協助控制誰有權存取，以及可存取的內容。
 
-## <a name="microsoft-intune"></a>Microsoft Intune
+## <a name="microsoft-intune"></a>Microsoft Intune
 
 Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁有和個人行動裝置存取的專屬資料。 Intune 包含裝置和應用程式設定原則、軟體更新原則、安裝狀態 (圖表、資料表和報表)，以協助您保護及監視資料存取。
 
@@ -103,6 +103,6 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 - [管理群組和成員](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
 - [疑難排解](help-desk-operators.md)
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 當您準備好開始使用 MDM 或 MAM 解決方案時，您可以逐步執行不同的步驟來設定 Intune、註冊裝置，並開始建立原則。 [Mobile device management for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) (Microsoft 365 的行動裝置管理) 也是絕佳的資源。

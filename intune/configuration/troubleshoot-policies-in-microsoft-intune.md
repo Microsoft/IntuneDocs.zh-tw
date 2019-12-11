@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: a8768022872d32116add0ed4ea4caf1f8fcb800f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059278"
 ---
 # <a name="troubleshoot-policies-and-profiles-and-in-intune"></a>針對 Intune 中的原則和設定檔進行疑難排解
@@ -176,7 +176,7 @@ Microsoft Intune 包含一些內建的疑難排解功能。 使用這些功能�
 
 若要解決這個問題，設定本機系統時間時請盡可能接近網際網路時間。 或者，將它設定為網路上網域控制站的時間。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [有關電子郵件設定檔的常見問題和解決方式](../configuration/troubleshoot-email-profiles-in-microsoft-intune.md)
 

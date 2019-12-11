@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: ''
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 54995b54d7810c02c5a8b24e5ddff3fa1f08cb05
-ms.sourcegitcommit: 737ad6c675deedfc6009f792023ff95981b06582
+ms.openlocfilehash: 5519bdc405e725556db18d36fa98289c4edb5090
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
-ms.locfileid: "74117862"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992910"
 ---
 # <a name="macos-device-feature-settings-in-intune"></a>Intune 中的 macOS 裝置功能設定
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 例如，系統管理員可以新增 AirPrint 印表機、選擇使用者登入的方式、設定電源控制、使用單一登入驗證等。
 
@@ -33,7 +31,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 本文會列出這些設定，並說明每個設定的用途。 同時也會列出使用終端機應用程式 (模擬器) 來取得 AirPrint 印表機之 IP 位址、路徑和連接埠的步驟。 如需裝置功能的詳細資訊，請移至[新增 iOS 或 macOS 裝置功能設定](device-features-configure.md)。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 [建立 macOS 裝置組態設定檔](device-features-configure.md)。
 
@@ -85,7 +83,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 ## <a name="login-window"></a>登入視窗
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊 
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
 
 #### <a name="window-layout"></a>視窗版面配置
 
@@ -131,33 +129,40 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 - **Sso 應用程式延伸模組類型**：選擇認證 SSO 應用程式延伸模組的類型。 選項包括：
 
-  - **未設定**：未使用應用程式延伸模組。 若要停用 SSO 應用程式延伸模組，請將 SSO 應用程式擴充功能類型從**Kerberos**或**認證**切換為 [**未設定**]。
-  - **認證**：使用可自訂的一般認證應用程式延伸模組來使用 SSO。 請確定您知道您組織的 SSO 應用程式擴充功能的延伸模組識別碼和小組識別碼。  
+  - **未設定**：未使用應用程式延伸模組。 若要停用應用程式延伸模組，請將 SSO 應用程式延伸模組類型切換為 [**未設定**]。
+  - 重新**導向**：使用一般、可自訂的重新導向應用程式擴充功能，透過新式驗證流程執行 SSO。 請確定您知道您組織的應用程式擴充功能的延伸模組和小組識別碼。
+  - **認證**：使用可自訂的一般認證應用程式延伸模組，透過挑戰和回應驗證流程來執行 SSO。 請確定您知道您組織的 SSO 應用程式擴充功能的延伸模組識別碼和小組識別碼。  
   - **Kerberos**：使用 Apple 的內建 Kerberos 延伸模組，其包含在 macOS Catalina 10.15 和更新版本中。 此選項是**認證**應用程式延伸模組的 Kerberos 特定版本。
 
   > [!TIP]
-  > 使用**認證**類型，您可以新增自己的設定值，以通過延伸模組。 相反地，請考慮使用 Apple 在**Kerberos**類型中提供的內建設定。
+  > 使用 [重新**導向**] 和 [**認證**類型] 時，您可以新增自己的設定值來傳遞延伸模組。 如果您使用**認證**，請考慮使用 Apple 在**Kerberos**類型中提供的內建設定。
 
-- **延伸**模組識別碼（僅限認證）：輸入用來識別 SSO 應用程式延伸模組的套件組合識別碼，例如 `com.apple.ssoexample`。
-- **小組**識別碼（僅限認證）：輸入 SSO 應用程式延伸模組的小組識別碼。 小組識別碼是 Apple 產生的10個字元的 Alphanumerical （數位和字母）字串，例如 `ABCDE12345`。 
+- **延伸**模組識別碼（重新導向和認證）：輸入用來識別 SSO 應用程式延伸模組的套件組合識別碼，例如 `com.apple.ssoexample`。
+- **小組**識別碼（重新導向和認證）：輸入 SSO 應用程式擴充功能的小組識別碼。 小組識別碼是 Apple 產生的10個字元的 Alphanumerical （數位和字母）字串，例如 `ABCDE12345`。 
 
   [找出您的小組識別碼](https://help.apple.com/developer-account/#/dev55c3c710c)（開啟 Apple 的網站）有詳細資訊。
 
-- **領域**：輸入驗證領域的名稱。 領域名稱應為大寫，例如 `CONTOSO.COM`。 一般來說，您的領域名稱與您的 DNS 功能變數名稱相同，但全部大寫。
-- **網域**：輸入可以透過 SSO 驗證之網站的網域或主機名稱。 例如，如果您的網站是 `mysite.contoso.com`，則 `mysite` 是主機名稱，而 `contoso.com` 則是功能變數名稱。 當使用者連線到這些網站的任何一個時，應用程式延伸模組會處理驗證挑戰。 此驗證可讓使用者使用臉部識別碼、Touch ID 或 Apple pincode/密碼來登入。
+- **領域**（認證和 Kerberos）：輸入驗證領域的名稱。 領域名稱應為大寫，例如 `CONTOSO.COM`。 一般來說，您的領域名稱與您的 DNS 功能變數名稱相同，但全部大寫。
+
+- **網域**（認證和 Kerberos）：輸入可透過 SSO 進行驗證之網站的網域或主機名稱。 例如，如果您的網站是 `mysite.contoso.com`，則 `mysite` 是主機名稱，而 `contoso.com` 則是功能變數名稱。 當使用者連線到這些網站的任何一個時，應用程式延伸模組會處理驗證挑戰。 此驗證可讓使用者使用臉部識別碼、Touch ID 或 Apple pincode/密碼來登入。
 
   - 單一登入應用程式延伸模組 Intune 設定檔中的所有網域都必須是唯一的。 即使您使用不同類型的 SSO 應用程式擴充功能，您也無法在任何登入應用程式延伸模組設定檔中重複網域。
   - 這些網域不會區分大小寫。
 
-- **其他**設定（僅限認證）：輸入要傳遞至 SSO 應用程式延伸模組的其他延伸模組特定資料：
-  - 設定機**碼**：輸入您想要新增的專案名稱，例如 `user name`。
-  - **數值型別**：輸入資料的類型。 選項包括：
+- **Url** （僅限重新導向）：輸入您身分識別提供者的 URL 首碼，其代表重新導向應用程式延伸模組執行 SSO。 當使用者重新導向至這些 Url 時，SSO 應用程式延伸模組將會介入並提示 SSO。
 
-    - String
+  - Intune 單一登入應用程式延伸模組設定檔中的所有 Url 都必須是唯一的。 即使您使用不同類型的 SSO 應用程式擴充功能，您也無法在任何 SSO 應用程式延伸模組設定檔中重複網域。
+  - Url 的開頭必須是 HTTP://或 HTTPs://。
+
+- **其他**設定（重新導向和認證）：輸入其他延伸模組特定的資料，以傳遞至 SSO 應用程式延伸模組：
+  - 機**碼**：輸入您想要新增的專案名稱，例如 `user name`。
+  - **類型**：輸入資料的類型。 選項包括：
+
+    - 字串
     - 布林值：在 [設定**值**] 中，輸入 `True` 或 `False`。
     - 整數：在 [設定**值**] 中，輸入數位。
     
-  - 設定**值**：輸入資料。
+  - **值**：輸入資料。
   
   - **新增**：選取以新增您的設定金鑰。
 
@@ -179,13 +184,19 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 - **密碼最短使用期限**（僅限 Kerberos）：輸入在使用者可以變更密碼前，必須在網域上使用密碼的天數。 [**未設定**] （預設）不會強制執行最短的密碼使用期限，因此可以加以變更。
 - **密碼到期通知**（僅限 Kerberos）：輸入密碼到期的天數，讓使用者收到其密碼即將到期的通知。 [**未設定**] （預設）會使用 `15` 天。
 - **密碼到期** (僅 Kerberos)：輸入多少天後必須變更裝置密碼。 [**未設定**] （預設）表示使用者密碼永遠不會過期。
+- **密碼變更 URL** （僅限 Kerberos）：輸入使用者起始 Kerberos 密碼變更時所啟動的 URL。
 - **主體名稱**（僅限 Kerberos）：輸入 Kerberos 主體的使用者名稱。 您不需要包含領域名稱。 例如，在 `user@contoso.com`中，`user` 是主體名稱，而 `contoso.com` 是領域名稱。
+
+  > [!TIP]
+  > - 您也可以在主體名稱中使用變數，方法是輸入大括弧 `{{ }}`。 例如，若要顯示使用者名稱，請輸入 `Username: {{username}}`。 
+  > - 不過，由於變數不會在 UI 中驗證，而且會區分大小寫，因此請小心使用變數替代。 請務必輸入正確的資訊。
+  
 - **Active Directory 網站碼**（僅限 Kerberos）：輸入 Kerberos 延伸應使用之 Active Directory 網站的名稱。 您可能不需要變更此值，因為 Kerberos 延伸模組可能會自動找到 Active Directory 的網站碼。
 - 快取**名稱**（僅限 Kerberos）：輸入 Kerberos 快取的一般安全性服務（GSS）名稱。 您很可能不需要設定此值。  
 - **密碼需求訊息**（僅限 Kerberos）：輸入對使用者顯示之組織密碼需求的文字版本。 如果您不需要 Active Directory 的密碼複雜性需求，或未輸入最小密碼長度，則會顯示訊息。  
 - **應用程式**套件組合識別碼（僅限 Kerberos）：**新增**應在您的裝置上使用單一登入的應用程式套件組合識別碼。 這些應用程式會被授與 Kerberos 票證授權票證、驗證票證的存取權，以及向已獲授權存取的服務驗證使用者。
 - **網域領域對應**（僅限 Kerberos）：**新增**應對應至您領域的網域 DNS 尾碼。 當主機的 DNS 名稱不符合領域名稱時，請使用此設定。 您很可能不需要建立此自訂網域到領域的對應。
-- **PKINIT certificate** （僅限 Kerberos）：**選取**用於初始驗證（PKINIT）憑證的公開金鑰加密，而不需使用者互動即可用來更新 Kerberos 認證。 憑證應該是您先前新增至 Intune 的 PKCS 或 SCEP 憑證。
+- **PKINIT certificate** （僅限 Kerberos）：**選取**可用於 Kerberos 驗證的初始驗證（PKINIT）憑證的公開金鑰加密。 您可以從已在 Intune 中新增的[PKCS](../protect/certficates-pfx-configure.md)或[SCEP](../protect/certificates-scep-configure.md)憑證中進行選擇。 如需憑證的詳細資訊，請參閱[在 Microsoft Intune 中使用憑證進行驗證](../protect/certificates-configure.md)。
 
 ## <a name="associated-domains"></a>相關網域
 
@@ -202,7 +213,7 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 
 - **應用程式**識別碼：輸入要與網站產生關聯之應用程式的應用程式識別碼。 [應用程式識別碼] 包含 [team ID] 和 [套件組合識別碼]： `TeamID.BundleID`。
 
-  小組識別碼是 Apple 為您的應用程式開發人員產生的10個字元的 Alphanumerical （字母和數位）字串，例如 `ABCDE12345`。 [找出您的小組識別碼](https://help.apple.com/developer-account/#/dev55c3c710c)  （開啟 Apple 的網站）的詳細資訊。
+  小組識別碼是 Apple 為您的應用程式開發人員產生的10個字元的 Alphanumerical （字母和數位）字串，例如 `ABCDE12345`。 [找出您的小組識別碼](https://help.apple.com/developer-account/#/dev55c3c710c) （開啟 Apple 的網站）的詳細資訊。
 
   套件組合識別碼可唯一識別應用程式，而且通常會以反向功能變數名稱標記法來格式化。 例如，搜尋工具的配套識別碼是 `com.apple.finder`。 若要尋找套件組合識別碼，請使用終端機中的 AppleScript：
 
@@ -221,9 +232,9 @@ Intune 包含一些內建設定，用來自訂您 macOS 裝置上的功能。 �
 - **新增**：選取以新增您的應用程式和相關聯的網域。
 
 > [!TIP]
-> 若要進行疑難排解，請在您的 macOS 裝置上開啟 [**系統喜好**設定]  > **設定檔**。 確認您建立的設定檔位於 [裝置設定檔] 清單中。 如果列出，請確定**相關聯的網域**設定是在設定檔中，而且包含正確的應用程式識別碼和網域。
+> 若要進行疑難排解，請在您的 macOS 裝置上開啟 [**系統喜好**設定] > **設定檔**。 確認您建立的設定檔位於 [裝置設定檔] 清單中。 如果列出，請確定**相關聯的網域**設定是在設定檔中，而且包含正確的應用程式識別碼和網域。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

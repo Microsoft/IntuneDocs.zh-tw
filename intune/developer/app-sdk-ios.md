@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503446"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
@@ -232,7 +232,7 @@ MSAL-開發人員需要在 AAD 中以[此處](https://github.com/AzureAD/microso
 ### <a name="special-considerations-when-using-msal"></a>使用 MSAL 時的特殊考慮 
 
 1. **檢查您的 web 工作**-建議應用程式不要使用 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 做為任何應用程式起始 MSAL 互動式驗證作業的 web 工作。 如果基於某些原因，您的應用程式必須使用其中一個網站進行互動式 MSAL 驗證作業，則它也必須在應用程式的資訊 plist 中，將 `IntuneMAMSettings` 字典下的 `SafariViewControllerBlockedOverride` 設定為 `true`。 警告：這會關閉 Intune 的 SafariViewController 勾點以啟用驗證會話。 如果應用程式使用 SafariViewController 來查看公司資料，這會在應用程式的其他地方有風險資料流程失，因此應用程式不應該在任何一種資料檢視類型中顯示公司資料。
-2. **同時連結 ADAL 和 MSAL** -開發人員必須選擇在此案例中，讓 Intune 偏好透過 adal MSAL。 根據預設，如果這兩個版本都是在執行時間連結，Intune 就會偏好支援的 ADAL 版本為支援的 MSAL 版本。 Intune 只會偏好支援的 MSAL 版本，而當 Intune 的第一次驗證作業時，`IntuneMAMUseMSALOnNextLaunch` 會在 `NSUserDefaults` 中 `true`。 如果 `IntuneMAMUseMSALOnNextLaunch` `false` 或未設定，Intune 會回復為預設行為。 如其名所示，`IntuneMAMUseMSALOnNextLaunch` 的變更會在下次啟動時生效。
+2. **同時連結 ADAL 和 MSAL** -開發人員必須選擇在此案例中，讓 Intune 偏好透過 adal MSAL。 根據預設，如果這兩個版本都是在執行時間連結，Intune 就會偏好支援的 ADAL 版本為支援的 MSAL 版本。 Intune 只會偏好支援的 MSAL 版本，而當 Intune 的第一次驗證作業時，`IntuneMAMUseMSALOnNextLaunch` 會在 `NSUserDefaults`中 `true`。 如果 `IntuneMAMUseMSALOnNextLaunch` `false` 或未設定，Intune 會回復為預設行為。 如其名所示，`IntuneMAMUseMSALOnNextLaunch` 的變更會在下次啟動時生效。
 
 
 ## <a name="configure-settings-for-the-intune-app-sdk"></a>設定 Intune App SDK 的設定

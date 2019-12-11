@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059612"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>在 Microsoft Intune 中透過 Zebra 行動性延伸模組使用及管理 Zebra 裝置
@@ -47,7 +47,7 @@ Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝�
 >
 > 如需詳細資訊，請參閱在 Zebra 的網站上[鎖定您的裝置](https://developer.zebra.com/community/home/blog/2017/04/11/locking-down-your-device)。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 - 請確定您具有來自 Zebra Technologies 的最新版本 StageNow 桌面應用程式。
 - 請務必檢閱 [Zebra's full MX feature matrix](http://techdocs.zebra.com/mx/compatibility) (Zebra 的完整 MX 功能矩陣) (開啟 Zebra 的網站)，以確認您所建立設定檔與裝置的 MX 版本、OS 版本及模型相容。
@@ -159,7 +159,7 @@ Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝�
 - 建立已更新的 StageNow XML 檔，編輯現有的 Intune MX 設定檔，並上傳新的 StageNow XML 檔案。 這個新檔案會覆寫設定檔中的上一個原則，並取代先前的設定。
 - 建立新的 StageNow XML 檔案，以進行不同的設定、建立新的 Intune MX 設定檔、上傳新的 StageNow XML 檔，並將它指派給相同的群組。 已部署多個設定檔。 如果新的設定檔設定現有設定檔中已存在的設定，則會發生衝突。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 - [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 - [使用 StageNow 記錄針對 Zebra 裝置進行疑難排解](android-zebra-mx-logs-troubleshoot.md)。

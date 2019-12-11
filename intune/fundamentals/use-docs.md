@@ -12,10 +12,10 @@ ms.author: dougeby
 manager: dougeby
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 42e16be44dba539007967dd921da4c8d4f095ec4
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72504812"
 ---
 # <a name="using-the-intune-docs"></a>使用 Intune 文件
@@ -103,7 +103,7 @@ Intune 檔（例如 docs.microsoft.com 上的大部分內容）是 GitHub 上的
 > [!Note]  
 > 如果您不是 Microsoft 員工，大幅度參與則需簽署貢獻授權合約 (CLA)。 當參與符合閾值時，GitHub 會自動要求您簽署此合約。 您只需要簽署此合約一次。
 
-### <a name="tips"></a>秘訣
+### <a name="tips"></a>提示
 
 參與 Intune 檔時，請遵循下列一般指導方針：
 

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42ccb1d1654ba45b63672eebf00acd10fdc56a67
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 80da0e6952c5aaab6fa8146b2d91d32259966d5d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059334"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74691731"
 ---
 # <a name="windows-10-and-later-device-settings-to-run-as-a-kiosk-in-intune"></a>在 Intune 中讓 Windows 10 和更新版本的裝置以 Kiosk 形式執行
 
@@ -32,7 +32,7 @@ ms.locfileid: "74059334"
 
 若要深入了解 Intune 中的 Windows kiosk 功能，請參閱[設定 Kiosk 設定](../kiosk-settings.md)。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 - [建立設定檔](kiosk-settings.md#create-the-profile)。
 
@@ -83,16 +83,17 @@ ms.locfileid: "74059334"
 
     - **在閒置時間後重新整理瀏覽器**：輸入閒置時間量 (1-1440 分鐘)，在該時間之後 kiosk 瀏覽器會以全新狀態重新啟動。 閒置時間是自使用者上次互動之後所經過的分鐘數。 根據預設，此值是空的或空白，這表示沒有任何閒置逾時。
 
-    - **允許的網站**：使用此設定可允許開啟特定網站。 換句話說，使用此功能可在裝置上限制或防止網站。 例如，您可以允許開啟位於 `http://contoso.com*` 的所有網站。 預設會允許所有網站。
+    - **允許的網站**：使用此設定可允許開啟特定網站。 換句話說，使用此功能可在裝置上限制或防止網站。 例如，您可以允許開啟位於 `http://contoso.com` 的所有網站。 預設會允許所有網站。
 
-      若要允許特定網站，請上傳包含不同行上所允許網站清單的檔案。 如果您未新增檔案，則會允許所有網站。 Intune 支援以 `*` (星號) 作為萬用字元。
+      若要允許特定網站，請上傳包含不同行上所允許網站清單的檔案。 如果您未新增檔案，則會允許所有網站。 根據預設，Intune 支援萬用字元。 因此，當您輸入網域（例如 `sharepoint.com`）時，允許子域自動允許，例如 `contoso.sharepoint.com`、`my.sharepoint.com`等等。
 
       範例檔案應類以下列清單：
 
       `http://bing.com`  
       `https://bing.com`  
-      `http://contoso.com/*`  
-      `https://contoso.com/*`
+      `http://contoso.com`  
+      `https://contoso.com`  
+      `office.com`
 
     > [!NOTE]
     > 使用 Microsoft Kiosk 瀏覽器啟用自動登登的 Windows 10 Kiosk，必須使用商務用 Microsoft Store 的離線授權。 這項需求是因為自動登會使用沒有 Azure Active Directory （AD）認證的本機使用者帳戶。 因此，無法評估線上授權。 如需詳細資訊，請參閱[發佈離線應用程式](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)。
@@ -191,7 +192,7 @@ ms.locfileid: "74059334"
 
 - **允許下載資料夾的存取權**：選擇 [是]  以允許使用者存取 Windows 檔案總管中的 [下載] 資料夾。 根據預設，已停用對 [下載] 資料夾的存取權。 這項功能通常用於讓終端使用者存取從瀏覽器下載的項目。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

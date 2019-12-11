@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: af1c7d1f9d8236fd95413317acefbe8887d90f47
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507675"
 ---
 # <a name="device-encrypted-but-apps-say-otherwise"></a>裝置已加密，但應用程式不然
@@ -32,7 +32,7 @@ ms.locfileid: "72507675"
 
 ## <a name="add-a-startup-pin"></a>新增啟動 PIN
 
-某些 Android 裝置會要求您建立啟動 PIN 以確保裝置的安全。 此設定的位置會在您裝置的 [**設定**] 應用程式中。 設定的名稱和位置可能會有所不同。 例如，在 Samsung Galaxy S7 上，此設定稱為「**安全啟動**」。 若要啟用它並建立密碼，請移至 **設定**  >  **鎖定畫面與安全性**  > **安全啟動**。  
+某些 Android 裝置會要求您建立啟動 PIN 以確保裝置的安全。 此設定的位置會在您裝置的 [**設定**] 應用程式中。 設定的名稱和位置可能會有所不同。 例如，在 Samsung Galaxy S7 上，此設定稱為「**安全啟動**」。 若要啟用它並建立密碼，請移至 **設定** > **鎖定畫面與安全性** > **安全啟動**。  
 
 ## <a name="encrypt-the-entire-device"></a>加密整部裝置
 

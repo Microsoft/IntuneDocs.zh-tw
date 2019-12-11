@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/15/2019
+ms.date: 12/03/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d00ae284ff4ea911cecb571cfe765eafe32fac02
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72490468"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74784267"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 從 OData 摘要建立 Intune 報表
 
@@ -58,7 +58,7 @@ ms.locfileid: "72490468"
 2. 選取 [Microsoft Intune - 概觀]  刀鋒視窗右側 [其他工作]  下方的 [資料倉儲] 連結，以開啟 [Intune 資料倉儲]  窗格。
 3. 複製自訂摘要 URL。 例如：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. 開啟 Power BI Desktop。
-5. 從功能表列中，**選取 [** 檔案]  >  [**取得資料**]  >  [**Odata**摘要]。
+5. 從功能表列中，**選取 [** 檔案] > [**取得資料**] > [ **Odata**摘要]。
 6. 將您從先前步驟複製的自訂摘要 URL 貼入 [ **OData**摘要] 視窗的 [URL] 方塊中。
 7. 選取 [基本]  。
 
@@ -111,7 +111,7 @@ ms.locfileid: "72490468"
 3. 展開 [`ownerTypes`] 資料表，然後選取 [`ownerTypeName` 資料] 欄位。
 4. 將 [`onwerTypeName` 資料] 欄位從 [`ownerTypes`] 資料表拖曳至 [**篩選**] 窗格，並將它放在 [在**此頁面**上標記**新增資料欄位**] 方塊中的 [篩選] 區段底下。  
 
-   在 [`OwnerTypes`] 資料表下，有一個稱為 `OwnerTypeKey`that 的資料欄位，其中包含一個資料，即裝置是否為公司擁有或個人。 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
+   在 [`OwnerTypes`] 資料表下，有一個稱為 `OwnerTypeKey`的資料欄位，其中包含裝置是否為公司擁有或個人的資料。 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
 
 ![含有篩選的矩形式樹狀結構圖 - 支援資料表之間的關聯性](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 

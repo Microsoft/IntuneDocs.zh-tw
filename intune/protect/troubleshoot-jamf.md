@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 44733eb369e520d2d5f0ff548d4f1921abcb8758
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72503573"
 ---
 # <a name="troubleshoot-integration-of-jamf-pro-with-microsoft-intune"></a>針對 Jamf Pro 與 Microsoft Intune 的整合進行疑難排解
@@ -61,7 +61,7 @@ ms.locfileid: "72503573"
 |  **Mac 裝置在 Intune 中顯示為符合規範，但在 Azure 中不相容** | [裝置註冊問題](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **使用 Jamf 註冊的 Mac 裝置的 Intune 主控台中出現重複的專案** | [相同裝置的多個註冊](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **合規性政策無法評估裝置** | [原則目標裝置群組](#compliance-policy-fails-to-evaluate-the-device) |
-| **無法取得 Microsoft Graph API 的存取權杖** | 下列原因可能會適用： <br> [在 Azure 中 Jamf Pro 應用程式](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure)的 - 許可權 <br> [Jamf 或 Intune 的 -  過期授權](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [埠未開啟](#the-required-ports-arent-open-on-your-network)|
+| **無法取得 Microsoft Graph API 的存取權杖** | 下列原因可能會適用： <br> [在 Azure 中 Jamf Pro 應用程式](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure)的 -許可權 <br> [Jamf 或 Intune 的 - 過期授權](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [埠未開啟](#the-required-ports-arent-open-on-your-network)|
  
 
 ### <a name="devices-are-marked-as-unresponsive-in-jamf-pro"></a>Jamf Pro 中的裝置會標示為沒有回應  

@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058229"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 以針對 SCEP 將協力廠商 CA 新增至 Intune
@@ -115,7 +115,7 @@ IntuneScepServiceClient(
     Properties configProperties)
 ```
 
-描述：
+描述:
 
 具現化並設定 `IntuneScepServiceClient` 物件。
 
@@ -157,7 +157,7 @@ void ValidateRequest(
     String certificateRequest)
 ```
 
-描述：
+描述:
 
 驗證 SCEP 憑證要求。
 
@@ -194,7 +194,7 @@ void SendSuccessNotification(
     String certIssuingAuthority)
 ```
 
-描述：
+描述:
 
 通知 Intune 在處理 SCEP 要求的過程中建立了憑證。
 
@@ -233,7 +233,7 @@ void SendFailureNotification(
     String errorDescription)
 ```
 
-描述：
+描述:
 
 通知 Intune 在處理 SCEP 要求時發生錯誤。 不應該針對此類別的方法所擲回的例外狀況叫用這個方法。
 
@@ -267,7 +267,7 @@ void SetSslSocketFactory(
     SSLSocketFactory factory)
 ```
 
-描述：
+描述:
 
 使用這個方法來通知用戶端，它必須在與 Intune 通訊時，使用指定的 SSL 通訊端 Factory (而不是預設值)。
 
@@ -300,7 +300,7 @@ void SetSslSocketFactory(
 12. 確認已安裝之憑證的屬性符合 SCEP 設定檔中設定的屬性。
 13. 確認已核發的憑證正確地列在 Intune 主控台中
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 - [新增協力廠商 CA 概觀](certificate-authority-add-scep-overview.md)
 - [安裝 Intune](../fundamentals/setup-steps.md)

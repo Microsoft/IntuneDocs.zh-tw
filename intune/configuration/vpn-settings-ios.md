@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52fb1ea5077b424a1d3cf10812d8d9b5f79e4752
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: e45d51feb91e0e188971133185ac0f0f13e5b1f4
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059807"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781136"
 ---
 # <a name="add-vpn-settings-on-ios-devices-in-microsoft-intune"></a>在 Microsoft Intune 中設定 iOS 裝置上的 VPN 設定
 
 Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這些設定可用來建立及設定您組織網路的 VPN 連線。 本文說明了這些設定。 其中一些設定僅適用於特定 VPN 用戶端，例如 Citrix、Zscaler 等。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 [建立裝置組態設定檔](vpn-settings-configure.md)。
 
@@ -106,7 +106,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 
 ## <a name="ikev2-settings"></a>IKEv2 設定
 
-當您選擇 [連線**類型**]  > **IKEv2**時，就會套用這些設定。
+當您選擇 [連線**類型**] > **IKEv2**時，就會套用這些設定。
 
 - **遠端識別碼**：輸入 IKEv2 伺服器的網路 IP 位址、FQDN、USERFQDN 或 ASN1DN。 例如，輸入 `10.0.0.3` 或 `vpn.contoso.com`。 一般來說，您輸入的值與[**連接名稱**](#base-vpn-settings)相同（在本文中）。 但是，它會根據您的 IKEv2 伺服器設定而定。
 
@@ -136,8 +136,8 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
   - **中**（預設值）：每10分鐘傳送一則 keepalive 訊息。
   - **高**：每60秒傳送一則 keepalive 訊息。
 
-- **最小 tls 版本範圍**：輸入要使用的最低 tls 版本。 輸入 `1.0`、`1.1` 或 `1.2`。 如果保留空白，則會使用 `1.0` 的預設值。
-- **Tls 版本範圍上限**：輸入要使用的最大 tls 版本。 輸入 `1.0`、`1.1` 或 `1.2`。 如果保留空白，則會使用 `1.2` 的預設值。
+- **最小 tls 版本範圍**：輸入要使用的最低 tls 版本。 輸入 `1.0`、`1.1`或 `1.2`。 如果保留空白，則會使用 `1.0` 的預設值。
+- **Tls 版本範圍上限**：輸入要使用的最大 tls 版本。 輸入 `1.0`、`1.1`或 `1.2`。 如果保留空白，則會使用 `1.2` 的預設值。
 - 完整**轉寄**密碼：選取 [**啟用**] 以開啟完整轉寄密碼（PFS）。 PFS 是一種 IP 安全性功能，可降低工作階段金鑰遭到入侵時的影響。 **Disable** （預設值）不會使用 PFS。
 - **憑證撤銷檢查**：選取 [**啟用**] 以確保憑證不會被撤銷，然後才允許 VPN 連線成功。 這種檢查是最佳做法。 如果 VPN 伺服器在判斷憑證是否已撤銷之前超時，則會授與存取權。 [**停**用] （預設）不會檢查是否有已撤銷的憑證。
 
@@ -179,7 +179,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 
 ## <a name="automatic-vpn-settings"></a>自動 VPN 設定
 
-- **個別應用程式 VPN**：啟用個別應用程式 VPN。 允許 VPN 連線在特定應用程式開啟時自動觸發。 另請建立應用程式與此 VPN 設定檔的關聯。 如需詳細資訊，請參閱[為 iOS 設定個別應用程式 VPN 的指示](vpn-setting-configure-per-app.md)。
+- **個別應用程式 VPN**：啟用個別應用程式 VPN。 允許 VPN 連線在特定應用程式開啟時自動觸發。 另請建立應用程式與此 VPN 設定檔的關聯。 IKEv2 不支援個別應用程式 VPN。 如需詳細資訊，請參閱[為 iOS 設定個別應用程式 VPN 的指示](vpn-setting-configure-per-app.md)。 
   - **提供者類型**：僅適用於 Pulse Secure 和自訂 VPN。
   - 搭配 Pulse Secure 或自訂 VPN 使用 iOS **個別應用程式 VPN** 設定檔時，選擇應用程式層通道 (app-proxy) 或封包層通道 (packet-tunnel)。 若是應用程式層通道，請將 [ProviderType]  值設定為 [應用程式 Proxy]  ，若是封包層通道，則設定為 [封包通道]  。 如果您不確定要使用的值，請參閱您 VPN 提供者的文件。
   - **觸發此 VPN 的 Safari URL**：新增一或多個網站 URL。 在裝置上使用 Safari 瀏覽器瀏覽這些 URL 時，就會自動建立 VPN 連線。
@@ -190,12 +190,12 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
   - **URL 字串探查**：選用。 請輸入規則用來作為測試的 URL。 如果裝置無須重新導向就能存取此 URL，則 VPN 連線已啟動。 而裝置會連線到目標 URL。 使用者不會看到 URL 字串探查網站。
 
     例如，URL 字串探查是稽核網頁伺服器 URL，此伺服器會在連線 VPN 之前先檢查裝置合規性。 或者，URL 會先測試 VPN 連線到網站的能力，然後再透過 VPN 將裝置連接到目標 URL。
-.
+。
   - **網域動作**：請選擇下列其中一個項目︰
     - 連線 (若需要)
     - 一律不連線
   - **動作**：請選擇下列其中一個項目︰
-    - 將
+    - 連線
     - 評估連線
     - 忽略
     - 中斷連線
@@ -208,7 +208,7 @@ Microsoft Intune 包含許多 VPN 設定，可部署到您的 iOS 裝置。 這�
 - **位址**：輸入 Proxy 伺服器的完整主機名稱 IP 位址。
 - **連接埠號碼**：輸入與 Proxy 伺服器相關聯的連接埠號碼。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 設定檔已建立，但還不會執行任何動作。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 

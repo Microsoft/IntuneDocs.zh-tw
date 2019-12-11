@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1f90a5a13859ff19765e22444a84b9c11405af73
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059497"
 ---
 # <a name="windows-holographic-for-business-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 允許或限制功能的 Windows Holographic for Business 裝置設定
@@ -28,7 +28,7 @@ ms.locfileid: "74059497"
 
 這篇文章列出並說明您可以在 Windows Holographic for Business 裝置 (例如 Microsoft Hololens) 上控制的不同設定。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來允許或停用功能、控制安全性等。
 
-## <a name="before-you-begin"></a>在您開始前
+## <a name="before-you-begin"></a>開始之前
 
 [建立裝置組態設定檔](device-restrictions-configure.md#create-the-profile)。
 
@@ -85,7 +85,7 @@ ms.locfileid: "74059497"
 
 Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置上 kiosk 應用程式外的任何功能。
 
-- **Kiosk 模式**：可識別原則支援的 Kiosk 模式類型。 選項包含：
+- **Kiosk 模式**：可識別原則支援的 Kiosk 模式類型。 這些選項包括：
 
   - **未設定** (預設)：不啟用 Kiosk 模式的原則。 
   - **單一應用程式 kiosk**：此設定檔可讓裝置只在單一應用程式上執行。 當使用者登入時，會啟動特定的應用程式。 此模式也會限制使用者開啟新的應用程式或變更執行中的應用程式。
@@ -107,6 +107,6 @@ Kiosk 裝置通常會執行特定的應用程式。 使用者無法存取裝置�
 
 - **共用使用量資料**：選取診斷資料提交層級。
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。

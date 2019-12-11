@@ -5,7 +5,7 @@ description: 由 Intune 支援、用於管理 Microsoft Defender 進階威脅防
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 12/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7363682960cff6688e9727d2b6869b6bf357084
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: 85d0b28de6c133ece5116dd78b1646f497ff2f6b
+ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74060058"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74882332"
 ---
 # <a name="microsoft-defender-advanced-threat-protection-baseline-settings-for-intune"></a>Intune 的 Microsoft Defender 進階威脅防護基準設定
 
@@ -48,7 +48,7 @@ ms.locfileid: "74060058"
     **預設值**：是
 
   - **剪貼簿行為** - *Settings/ClipboardSettings*  
-    選擇要在本機電腦和應用程式防護虛擬瀏覽器之間允許的複製與貼上動作。  選項包含：
+    選擇要在本機電腦和應用程式防護虛擬瀏覽器之間允許的複製與貼上動作。  這些選項包括：
     - 尚未設定  
     - 封鎖電腦與瀏覽器之間的複製和貼上-封鎖兩者。 資料無法在電腦與虛擬瀏覽器之間傳輸。  
     - 允許從瀏覽器複製並貼上至僅限電腦-資料無法從電腦傳輸到虛擬瀏覽器。
@@ -206,7 +206,7 @@ ms.locfileid: "74060058"
 
   若要檢查系統是否支援 Kernel DMA Protection，請再系統上執行 MSINFO32.exe，然後檢閱 [摘要] 頁面上的 [Kernel DMA Protection]  欄位。  
 
-  選項包含： 
+  這些選項包括： 
   -  - 登入或螢幕解除鎖定之後，允許隨時列舉具有 DMA 重新對應相容驅動程式的裝置。 具有 DMA 重新對應不相容驅動程式的裝置只有在使用者將畫面解除鎖定之後才會列舉
   -  - 將隨時列舉所有外部具 DMA 功能的 PCIe 裝置
   - *全部封鎖* - 登入或螢幕解除鎖定之後，允許隨時列舉具有 DMA 重新對應相容驅動程式的裝置。 具有 DMA 重新對應不相容驅動程式的裝置將無法隨時啟動並執行 DMA。
@@ -391,7 +391,7 @@ ms.locfileid: "74060058"
   **預設值**：是
 
 - **Defender 雲端封鎖層級**  
-  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) \(部分機器翻譯\) - 使用此原則來決定 Microsoft Defender 防毒軟體封鎖及掃描可疑檔案的積極程度。 選項包含：
+  [Defender/CloudBlockLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-cloudblocklevel) \(部分機器翻譯\) - 使用此原則來決定 Microsoft Defender 防毒軟體封鎖及掃描可疑檔案的積極程度。 這些選項包括：
 
   - 高 - 積極地封鎖未知的檔案，同時最佳化最佳化用戶端效能 (極可能發生誤判)
   - 極高 - 積極地封鎖未知的檔案，並套用額外的保護措施 (可能會影響用戶端效能)
@@ -593,8 +593,18 @@ ms.locfileid: "74060058"
 - **設定 Windows Hello 企業版** - *TenantId/Policies/UsePassportForWork*    
   Windows Hello 企業版是一種能取代密碼、智慧卡及虛擬智慧卡來登入 Windows 的方法。  
 
-  - 當設定為 *[是]* 時，您會啟用此原則，且裝置會布建 Windows Hello 企業版。  
-  - 當設定為 [*未*設定] 時，基準不會影響裝置的原則設定。 這表示如果裝置上的 Windows Hello 企業版已停用，它就會保持停用狀態。 如果已啟用，則會保持啟用狀態。 
+
+  > [!IMPORTANT]
+  > 此設定的選項會反轉其隱含意義。 相反地，值為 *[是]* 並不會啟用 Windows Hello，而是會被視為*未設定*。 當此設定設為 [*未*設定] 時，會在接收此基準的裝置上啟用 Windows Hello。
+  >
+  > 下列說明已修訂以反映此行為。 在未來的此安全性基準更新中，將會修正設定的反轉。
+
+  - 當設定為 [*未*設定] 時，會啟用 windows hello，而裝置會布建 Windows Hello 企業版。
+  - 設定為 *[是]* 時，基準不會影響裝置的原則設定。 這表示如果裝置上的 Windows Hello 企業版已停用，它就會保持停用狀態。 如果已啟用，則會保持啟用狀態。
+  <!-- expected behavior 
+  - When set to *Yes*, you  enable this policy and the device provisions Windows Hello for Business.  
+  - When set to *Not configured*, the baseline does not affect the policy setting of the device. This means that if Windows Hello for Business is disabled on a device, it remains disabled. If its enabled, it remains enabled. 
+  -->
 
   您無法透過此基準停用 Windows Hello 企業版。 您可以在設定[windows 註冊](windows-hello.md)時停用 Windows Hello 企業版，或做為身分[識別保護](identity-protection-configure.md)裝置設定檔的一部分。  
 

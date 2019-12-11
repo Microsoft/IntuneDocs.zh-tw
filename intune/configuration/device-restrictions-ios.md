@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 12/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6fde277e16043662420864adcc0458e3dccad308
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 5f9a01adaa6f5ab59819c2924172c30a437ebd8c
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465647"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992911"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 此文章列出並描述您可以在 iOS 和 iPadOS 裝置上控制的各種不同設定。 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來允許或停用功能、設定密碼規則、允許或限制特定應用程式，以及執行其他作業。
 
@@ -52,7 +50,7 @@ ms.locfileid: "74465647"
 ### <a name="settings-apply-to-device-enrollment-automated-device-enrollment-supervised"></a>設定適用于：裝置註冊、自動裝置註冊（受監督）
 
 - **不信任的 TLS 憑證**：選擇 [封鎖]  來在裝置上防止未受信任的傳輸層安全性 (TLS) 憑證。 [未設定]  (預設) 會允許 TLS 憑證。
-- **允許無線 PKI 更新**：[允許]  會讓您的使用者在不將其裝置連線到電腦的情況下接收軟體更新。
+- **封鎖無線 PKI 更新**： [**封鎖**] 會防止使用者接收軟體更新，而不將其裝置連線到電腦。 [**未設定**] （預設）不會更新裝置上的此設定。
 - **限制廣告追蹤**：選擇 [限制]  以停用裝置廣告識別碼。 [未設定]  (預設) 會保持啟用此功能。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>設定適用于：自動裝置註冊（受監督）
@@ -95,7 +93,7 @@ ms.locfileid: "74465647"
 - **變更設定檔組態**：[封鎖]  可防止裝置上的組態設定檔變更。 [未設定]  (預設) 允許使用者安裝組態設定檔。
 - **啟用鎖定**：選擇 [允許]  以在受監督的 iOS 裝置啟用 [啟用鎖定]。 啟用鎖定能讓遺失或遭竊的裝置較難以重新啟動。
 - **防止移除應用程式**：選擇 [封鎖]  以防止使用者移除應用程式。 [未設定]  (預設) 允許使用者從裝置移除應用程式。
-- **防止 USB 受限模式**：選擇 [封鎖]  以停用受監督裝置上的 USB 受限模式。 USB 受限模式會防止 USB 周邊配件與已鎖定超過一小時的裝置交換資料。 [未設定]  (預設) 會允許 USB 受限模式。
+- **允許裝置鎖定時使用 usb 配件**： [**允許**] 可讓 usb 配件與已鎖定且已超過一小時的裝置交換資料。 [**未設定**] （預設）不會更新裝置上的 USB 受限模式。
 - **強制自動設定日期和時間**：[需要]  會強制受監督裝置自動設定日期和時間。 裝置的時區會在裝置具有行動數據連線或已啟用具位置服務之 Wi-Fi 的情況下更新。
 - **使學生在離開教室課程前需先取得允許**：[需要]  會強制註冊到使用教室應用程式之非受控課程的學生，需向教師要求允許離開課程。 [未設定]  (預設) 不會強制學生要求許可。
 

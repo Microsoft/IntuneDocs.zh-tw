@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 428da4581e9946b62bd6ee7c5f7d17d69f93ad9b
-ms.sourcegitcommit: ae6f2e7812e7fd36f2393b8f4b6cd8de63777b2c
+ms.openlocfilehash: 9742305905c5ba49930e13646bf13d8c248426b6
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592014"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899393"
 ---
 # <a name="get-started-with-the-microsoft-intune-app-sdk"></a>開始使用 Microsoft Intune App SDK
 
@@ -164,7 +164,7 @@ Intune|iOS|Android|說明|
 
   * 如果您要使用終端使用者帳戶來測試行動裝置上的應用程式，請務必在使用系統管理員帳戶登入之後，於 Microsoft 365 系統管理中心網站為該帳戶提供 Intune 授權 (請參閱[指派 Microsoft Intune 授權](../fundamentals/licenses-assign.md))。
 
-* **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](../apps/app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](../apps/app-protection-policy-settings-android.md)的描述。 如果您的應用程式已整合 Intune SDK，但尚未在 Azure 入口網站中列示為已設定目標的應用程式，您可以透過選取 [+ 更多應用程式] 選項，並在文字方塊中提供套件組合識別碼 (iOS) 或套件名稱 (Android)，以使用原則將它設定為目標。
+* **Intune 應用程式保護原則**：若要對應用程式測試所有 Intune 應用程式保護原則，您應該知道每個原則設定的預期行為。 請參閱 [iOS 應用程式保護原則](../apps/app-protection-policy-settings-ios.md)和 [Android 應用程式保護原則](../apps/app-protection-policy-settings-android.md)的描述。 如果您的應用程式已整合 Intune SDK，但未列在目標設為 apps 清單中，則在選取 [自訂應用程式] 時，您可以在文字方塊中指定應用程式的配套識別碼（iOS）或套件名稱（Android）。 
 
 * **疑難排解**︰如果您在手動測試應用程式的安裝使用者體驗時遇到任何問題，請參閱[針對應用程式安裝問題進行疑難排解](../apps/troubleshoot-app-install.md)。 
 

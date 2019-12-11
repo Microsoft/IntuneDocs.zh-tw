@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8eef3af9a82e7a61bc5200bf45143657072d6db7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508363"
 ---
 # <a name="upload-and-email-logs"></a>上傳與電子郵件記錄檔  
@@ -52,7 +52,7 @@ ms.locfileid: "72508363"
 ## <a name="upload-and-email-logs-from-microsoft-intune-app"></a>從 Microsoft Intune 應用程式上傳和電子郵件記錄檔   
 
 1. 在 Microsoft Intune 應用程式中，有兩種方式可以起始電子郵件支援。  
-    * 從主畫面：按**功能表** ** > ** 說明  > **取得支援**。  
+    * 從主畫面：按**功能表** ** > ** 說明 > **取得支援**。  
     * 從錯誤訊息 **：請按 [說明**] 或 [**傳送資訊**] （如果有的話）。  
 
     > [!NOTE]

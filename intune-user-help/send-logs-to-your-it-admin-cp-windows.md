@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 4ee2a83945e4b9e6c5509abff7c32605f64ca545
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508351"
 ---
 # <a name="email-your-company-support-about-problem-from-company-portal-for-windows"></a>針對 Windows 從公司入口網站以電子郵件傳送問題相關資訊給公司支援人員

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 04/19/2019
+ms.date: 12/03/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -19,12 +19,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d4193b3e43b7c406a1fb6c9c8d987caa6cbeea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 28ba1d2d50f366e5e34fae06ae188293dd0fb8b5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72501891"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74781204"
 ---
 # <a name="use-managed-apps-on-your-android-device"></a>在 Android 裝置上使用受管理的應用程式
 將受管理的應用程式設定成符合您組織的安全性需求，以及保護工作和學校資料。 這些應用程式會在您的裝置上提供給您自動安裝或使用。 
@@ -39,9 +39,7 @@ ms.locfileid: "72501891"
 組織可能會要求您使用受管理的應用程式來執行一些動作，例如開啟工作檔案或存取網頁連結。 如果您還沒有應用程式，您可能無法繼續執行工作。 某些受管理的應用程式可供您安裝，但並非必要。
 
 ## <a name="how-do-i-know-im-using-a-managed-app"></a>如何得知我正在使用受管理的應用程式？
-當您第一次在受管理的應用程式中存取工作或學校資料時，您會收到類似以下範例螢幕擷取畫面的訊息。 該訊息會提示您重新啟動應用程式以繼續。
-
-![使用者在其裝置上開啟受管理的應用程式時，所顯示的訊息螢幕擷取畫面。 訊息指出：「您的組織目前並未保護此應用程式中的資料。 您必須重新啟動應用程式，才能繼續進行」。後面接著 [確定] 按鈕。](./media/managed-apps-message.png)
+當您嘗試存取受管理應用程式中的工作或學校資料時，您會收到螢幕上的訊息，表示您的組織已保護該應用程式。 
 
 ## <a name="commonly-managed-apps"></a>經常受管理的應用程式  
 學校或工作場所中經常需要或可用的受管理應用程式範例包括：
