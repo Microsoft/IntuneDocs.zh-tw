@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b2dede228aadac2981c38d2842f5da1369933f86
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059882"
 ---
 # <a name="windows-10-and-windows-holographic-for-business-device-settings-to-run-as-a-dedicated-kiosk-using-intune"></a>使用 Intune 以專用 Kiosk 執行的 Windows 10 和 Windows Holographic for Business 裝置設定
@@ -39,7 +39,7 @@ Intune 會使用「組態設定檔」，依據貴組織的需求來建立和自�
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -71,5 +71,5 @@ Intune 會使用「組態設定檔」，依據貴組織的需求來建立和自�
 您可以針對執行下列平台的裝置建立 kiosk 設定檔：
 - [Android](device-restrictions-android.md#kiosk)
 - [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)
-- [Windows 10 及更新版本](kiosk-settings-windows.md)
+- [Windows 10 及以上版本](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)

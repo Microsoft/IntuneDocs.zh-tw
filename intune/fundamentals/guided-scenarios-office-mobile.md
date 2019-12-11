@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: 0be25b59c8e386f972a855712fc6ec3deccede86
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72585705"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>引導式案例 - 保護 Microsoft Office 行動應用程式 
@@ -112,7 +112,7 @@ Office 行動應用程式以及適用於行動裝置的 Microsoft Edge 都支援
 | 重新檢查存取需求前的經過時間 (非使用中狀態分鐘數) | 應用程式啟動後，如果原則受控應用程式非使用中的時間超過指定的閒置分鐘數，應用程式會提示您重新檢查存取要求 (亦即， PIN，條件式啟動設定)。 | 30 |
 | 列印組織資料 | 如果遭到封鎖，應用程式就無法列印受保護的資料。 | 封鎖 |
 | 在非受控瀏覽器中開啟原則受控應用程式連結 | 如果遭到封鎖，原則管理的應用程式連結就必須開啟受控瀏覽器。 | 封鎖 |
-| 將資料複製到非受控應用程式 | 如果遭到封鎖，受控資料會保留在受控應用程式中。 | Allow |
+| 將資料複製到非受控應用程式 | 如果遭到封鎖，受控資料會保留在受控應用程式中。 | 允許 |
 
 ## <a name="step-5---assignments"></a>步驟 5 - 指派
 

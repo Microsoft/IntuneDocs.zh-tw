@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059315"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中建立 VPN 設定檔以連線到 VPN 伺服器
@@ -68,7 +68,7 @@ ms.locfileid: "74059315"
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -83,7 +83,7 @@ ms.locfileid: "74059315"
       - **macOS**
       - **Windows Phone 8.1**
       - **Windows 8.1 及更新版本**
-      - **Windows 10 及更新版本**
+      - **Windows 10 及以上版本**
 
     - **設定檔類型**：選取 [VPN]  。
 

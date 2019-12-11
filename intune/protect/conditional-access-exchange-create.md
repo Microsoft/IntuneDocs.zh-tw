@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188459"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版 Exchange Online Dedicated 建立條件式存取原則
@@ -78,7 +78,7 @@ Windows 8.1 及更新版本上原生的**郵件**應用程式 (在使用 Intune 
 
 在您可以使用下列程序來設定 Exchange 內部部署存取控制之前，您必須先為 Exchange 內部部署至少安裝並設定一個 [Intune 內部部署 Exchange 連接器](exchange-connector-install.md)。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 移至 [租用戶系統管理]   > [Exchange 存取]  ，然後選取 [Exchange 內部部署存取]  。
 

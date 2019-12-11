@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 mr.reviewer: karthib
 ms.openlocfilehash: 45cdbfe98bca8f7b0e307ed47ad3f78193e6d04c
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74164579"
 ---
 # <a name="add-endpoint-protection-settings-in-intune"></a>在 Intune 中新增 Endpoint Protection 設定
@@ -41,7 +41,7 @@ ms.locfileid: "74164579"
 
 ## <a name="create-a-device-profile-containing-endpoint-protection-settings"></a>建立包含 Endpoint Protection 設定的裝置設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 
@@ -50,7 +50,7 @@ ms.locfileid: "74164579"
 4. 從 [平台]  下拉式清單中，選取要套用自訂設定的裝置平台。 您目前可選擇下列平台之一，進行裝置限制設定︰
 
    - **macOS**
-   - **Windows 10 及更新版本**
+   - **Windows 10 及以上版本**
 
 5. 從 [設定檔類型]  下拉式清單中，選擇 [Endpoint Protection]  。
 
@@ -79,7 +79,7 @@ Intune 可以管理的防火牆規則詳述於 Windows [防火牆設定服務提
 
 ### <a name="to-add-custom-firewall-rules-to-an-endpoint-protection-profile"></a>將自訂防火牆規則新增至 Endpoint Protection 設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 

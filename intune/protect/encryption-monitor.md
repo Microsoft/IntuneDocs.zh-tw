@@ -18,10 +18,10 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74164672"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>搭配 Intune 監視裝置加密
@@ -188,7 +188,7 @@ Intune 支援輪替和復原個人修復金鑰的多個選項。 輪替金鑰的
 
   若要輪替修復金鑰：
 
-  1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+  1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
   
   2. 選取 [裝置]   > [所有裝置]  。
   
@@ -216,7 +216,7 @@ Intune 支援輪替和復原個人修復金鑰的多個選項。 輪替金鑰的
 
 Intune 可讓您從 Intune 入口網站內存取 Azure AD 刀鋒視窗中的 BitLocker，以便檢視您 Windows 10 裝置的 BitLocker 金鑰識別碼與修復金鑰。 為了能夠存取，裝置必須將其金鑰委付給 Azure AD。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [所有裝置]  。
 

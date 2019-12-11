@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 1a94f3d175fe5c036c5e90635a66467263b23122
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72499127"
 ---
 # <a name="protecting-application-extensions"></a>保護應用程式延伸模組
@@ -33,7 +33,7 @@ ms.locfileid: "72499127"
 
 Outlook 增益集可讓您將熱門應用程式與電子郵件用戶端整合。 Web、Windows、Mac，以及 Android 和 iOS 版的 Outlook，皆提供 Outlook 增益集。 Intune APP SDK 與 Intune 應用程式保護原則不包含管理 Outlook 增益集的支援，但還有其他方法可以限制其使用。 因為增益集透過 Microsoft Exchange 進行管理，所以除非使用者的 Exchange 對使用者關閉了增益集，否則，使用者將可在 Outlook 與未受管理的增益集應用程式之間，共用資料與郵件。
 
-若想要停止讓使用者無法存取及安裝 Outlook 增益集 (如此會影響所有 Outlook 用戶端)，請務必在 Exchange 系統管理中心對角色進行下列變更︰
+若想要讓使用者無法存取及安裝 Outlook 增益集 (如此會影響所有 Outlook 用戶端)，請務必在 Exchange 系統管理中心對角色進行下列變更︰
 
 - 為避免使用者安裝 Office 市集增益集，請移除使用者的「我的市集」角色。
 - 為避免使用者側載增益集，請移除使用者的「我的自訂應用程式」角色。
@@ -59,17 +59,17 @@ Intune SDK 和 Intune 應用程式防護原則不包含管理 LinkedIn 帳戶連
 如果已為租用戶啟用 LinkedIn 整合，則當您組織中的使用者連線 LinkedIn 和 Microsoft 工作或學校帳戶時，他們有兩個選項： 
 
 - 他們可以提供在這兩個帳戶之間共用資料的權限。 這表示他們會提供權限讓 LinkedIn 帳戶與 Microsoft 工作或學校帳戶共用資料，以及讓 Microsoft 工作或學校帳戶與其 LinkedIn 帳戶共用資料。 與 LinkedIn 共用的資料會離開連線服務。 
-- 他們只能提供從 LinkedIn 帳戶共用資料到 Microsoft 工作及學校帳戶的權限
+- 他們提供只能從 LinkedIn 帳戶將資料與 Microsoft 工作及學校帳戶共用的權限
 
 如果使用者同意在帳戶之間共用資料，如同 Office 增益集一樣，LinkedIn 整合會使用現有的 Microsoft Graph API。 LinkedIn 整合只會使用可供 Office 增益集使用的 API 子集，並支援各種排除項目。
 
 
 |Microsoft Graph 權限  |說明  |
 |---------|---------|
-|[人員](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)的讀取權限     |可讓應用程式讀取與登入與使用者相關的人員評分清單。 清單可以包括本機連絡人、來自社交網路或貴組織目錄的連絡人，以及最近連絡過 (例如電子郵件與 Skype) 的人員。         |
+|[人員](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#people-permissions)的讀取權限     |可讓應用程式讀取與登入使用者相關的人員評分清單。 清單可以包括本機連絡人、來自社交網路或貴組織目錄的連絡人，以及最近連絡過 (例如電子郵件與 Skype) 的人員。         |
 |[行事曆](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#calendars-permissions)的讀取權限     |允許應用程式讀取使用者行事曆中的事件。 包含登入使用者行事曆中的會議、其時間、位置及出席者。         |
 |[使用者設定檔](https://developer.microsoft.com/graph/docs/concepts/permissions_reference#user-permissions)的讀取權限     |允許使用者登入應用程式，以及允許應用程式讀取登入之使用者的設定檔。 它也允許應用程式讀取登入之使用者的基本公司資訊。         |
-|Subscriptions     |未提供此範圍且尚未使用。 它包含使用者組織提供給 Microsoft 應用程式和服務 (例如 Office 365) 的訂閱。         |
+|訂閱     |未提供此範圍且尚未使用。 它包含使用者組織提供給 Microsoft 應用程式和服務 (例如 Office 365) 的訂閱。         |
 |深入資訊     |未提供此範圍且尚未使用。 它包含根據 Microsoft 服務的使用，與登入的使用者帳戶建立關聯的興趣。         |
 
 ### <a name="learn-more"></a>深入了解

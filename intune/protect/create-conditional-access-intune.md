@@ -18,10 +18,10 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fde15da898a70e9557aabb9ed7a7ae8324cfb304
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74188325"
 ---
 # <a name="create-a-device-based-conditional-access-policy"></a>建立裝置型條件式存取原則
@@ -35,7 +35,7 @@ ms.locfileid: "74188325"
 
 ## <a name="create-conditional-access-policy"></a>建立條件式存取原則
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [條件式存取]   > [原則]   > [新原則]  。
   ![建立新的條件式存取原則](./media/create-conditional-access-intune/create-ca.png)

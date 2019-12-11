@@ -16,10 +16,10 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509904"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入門：建立並指派自訂角色
@@ -74,7 +74,7 @@ ms.locfileid: "72509904"
 
 在此快速入門中，您已建立自訂安全性作業角色，並將它指派給群組。 如需 Intune 中角色的詳細資訊，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune](role-based-access-control.md)
 
-若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
+若要繼續參閱此 Intune 快速入門系列，請前往下一個快速入門。
 
 > [!div class="nextstepaction"]
 > [快速入門：建立 iOS 的電子郵件裝置設定檔](../configuration/quickstart-email-profile.md)

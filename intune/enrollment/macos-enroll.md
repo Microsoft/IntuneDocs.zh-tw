@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: 76ae5aea5deee7a590e24c3b2bb52f88125943e5
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/15/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74098197"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中設定 macOS 裝置的註冊
@@ -85,7 +85,7 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 如果使用者未手動核准管理設定檔，則在 2019 年 11 月前註冊的裝置可能會是未經使用者核准。 不過，使用者可以回其並移至 [系統喜好設定]   > [設定檔]  > 選擇 [管理設定檔]   > [核准]  來核准管理設定檔。
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>找出裝置是否為「經使用者核准」
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [硬體]  。
 3. 勾選 [使用者核准的註冊]  欄位。
 

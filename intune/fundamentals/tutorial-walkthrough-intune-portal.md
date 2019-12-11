@@ -19,10 +19,10 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 9197d4f96eae1041b00b07110ef421a12a4fe338
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712994"
 ---
 # <a name="tutorial-walkthrough-of-microsoft-intune-in-the-azure-portal"></a>教學課程：逐步解說 Azure 入口網站中的 Microsoft Intune
@@ -99,7 +99,7 @@ ms.locfileid: "73712994"
 
     ![[用戶端應用程式] 窗格的螢幕擷取畫面](./media/tutorial-walkthrough-intune-portal/tutorial-walkthrough-intune-portal-06.png)
 
-    身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的用戶端應用程式。 這項功能與管理裝置和保護資料一起存在。 系統管理員最優先的事項之一，是確保終端使用者能夠存取工作所需的應用程式。 此外，您也可能需要指派及管理未向 Intune 註冊之裝置上的應用程式。 Intune 提供各種功能，可協助您在所要的裝置上取得所需的應用程式。 如需新增和指派應用程式的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](../apps/apps-add.md) 和[使用 Microsoft Intune 將應用程式指派給群組](../apps/apps-deploy.md)。
+    身為 IT 系統管理員，您可以使用 Microsoft Intune 來管理公司員工使用的用戶端應用程式。 而這項功能還可以用於管理裝置與保護資料。 系統管理員最優先的事項之一，是確保終端使用者能夠存取工作所需的應用程式。 此外，您也可能需要指派及管理未向 Intune 註冊之裝置上的應用程式。 Intune 提供各種功能，可協助您在所要的裝置上取得所需的應用程式。 如需新增和指派應用程式的詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](../apps/apps-add.md) 和[使用 Microsoft Intune 將應用程式指派給群組](../apps/apps-deploy.md)。
 
 7. 從 [Intune](https://aka.ms/intuneportal) 中，選取 [條件式存取]  以顯示有關存取原則的詳細資料。
 
@@ -143,7 +143,7 @@ Azure 可讓您自訂和設定入口網站的顯示畫面。
 
 ### <a name="change-the-sidebar"></a>變更側邊欄
 
-Azure 入口網站左側的**側邊欄**會顯示所有可用 Azure 服務清單。 您可以從預設檢視變更此完整清單，以保留您最重要服務的持續性檢視。 下列資訊使用 Intune 作為要新增至清單頂端的服務範例。
+Azure 入口網站左側的**側邊欄**會顯示所有可用 Azure 服務清單。 您可以從預設檢視變更此完整清單，以便持續檢視對您最重要的服務。 下列資訊使用 Intune 作為要新增至清單頂端的服務範例。
 
 ![在 [More services] (更多服務) 清單中搜尋 Microsoft Intune 的使用者。](./media/tutorial-walkthrough-intune-portal/azure-add-intune1.png)
 
@@ -158,9 +158,9 @@ Azure 入口網站左側的**側邊欄**會顯示所有可用 Azure 服務清單
 
 ![泛型新儀表板的影像。 它會在左側顯示具有所有服務的側邊欄，然後在中央顯示主要儀表板。 儀表板修改按鈕會沿著上方，並且具有多個磚可以存取所有資源、快速入門教學課程、服務健全狀況和 Azure Marketplace。](./media/tutorial-walkthrough-intune-portal/azure-default-dashboard.png)
 
-若要修改目前儀表板，請選取 [編輯儀表板]  按鈕。 如果您不想要變更預設儀表板，也可以建立「新儀表板」  。 建立新的儀表板，即可透過「磚庫」  提供空白的私用儀表板，以讓您新增或重新排列磚。 您可以透過 [搜尋]  以及 [資源群組]  或 [標記]  ，依 [一般]  類別 [類型]  找到磚。
+若要修改目前儀表板，請選取 [編輯儀表板]  按鈕。 如果您不想要變更預設儀表板，也可以建立「新儀表板」  。 建立新的儀表板，即可透過「磚庫」  提供空白的私人儀表板，以讓您新增或重新排列磚。 您可以透過 [搜尋]  以及 [資源群組]  或 [標記]  ，依 [一般]  類別 [類型]  找到磚。
 
-您也可以透過任何**省略**按鈕以及選取 [釘選到儀表板]  ，直接將磚新增至儀表板。
+您也可以透過任何**省略**符號按鈕以及選取 [釘選到儀表板]  ，直接將磚新增至儀表板。
 
 ![[使用者和群組] > Intune 中的 [所有群組] 位置的特寫，其可在群組最右側顯示 [釘選到儀表板] 選項。](./media/tutorial-walkthrough-intune-portal/azure-pin-to-dashboard.png)
 

@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72509873"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>快速入門：在 Intune 中建立使用者並為他們指派授權
@@ -74,7 +74,7 @@ ms.locfileid: "72509873"
 
 您已在此快速入門中建立使用者並指 Intune 授權給他們。 如需如何將使用者新增至 Intune 的詳細資訊，請參閱[新增使用者並授與 Intune 系統管理權限](users-add.md)。
 
-若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
+若要繼續參閱此 Intune 快速入門系列，請前往下一個快速入門。
 
 > [!div class="nextstepaction"]
 > [快速入門：建立群組來管理使用者](../quickstart-create-group.md)

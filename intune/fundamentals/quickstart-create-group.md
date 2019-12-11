@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: 25acfc88b366d2da71c37d354a0238e4f1168325
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/23/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72813399"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入門：建立群組來管理使用者
@@ -63,7 +63,7 @@ ms.locfileid: "72813399"
 
 在此快速入門中，您已使用 Intune 根據現有的使用者建立群組。 如需將群組新增至 Intune 的詳細資訊，請參閱[新增群組來組織使用者和裝置](../groups-add.md)。
 
-若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
+若要繼續參閱此 Intune 快速入門系列，請前往下一個快速入門。
 
 > [!div class="nextstepaction"]
 > [快速入門：設定 Windows 10 裝置的自動註冊](../enrollment/quickstart-setup-auto-enrollment.md)

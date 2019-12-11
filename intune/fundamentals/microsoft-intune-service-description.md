@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b5d65882c3811b05f7f8f137f76dc919e18f0da5
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72505317"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服務描述
@@ -28,7 +28,7 @@ ms.locfileid: "72505317"
 Intune 是以雲端為基礎的企業行動管理 (EMM) 服務，可協助讓您的工作人員提高生產力，同時保護公司資料。 使用 Intune，您可以︰
 * 管理您的工作人員用來存取公司資料的行動裝置。
 * 管理您工作人員使用的用戶端應用程式。
-* 藉由協助控制您的工作人員存取並共用公司資訊的方式，保護您的公司資訊。
+* 透過管控您員工存取使用和分享公司資料的方式，來保護您公司資料的安全。
 * 確保裝置和應用程式都符合公司安全性需求。
 
 Intune 和 Azure Active Directory (Azure AD) 緊密整合以進行身分識別和存取控制，並和 Azure 資訊保護緊密整合以進行資料保護。 您也將它與 System Center Configuration Manager 整合，以擴充管理功能。

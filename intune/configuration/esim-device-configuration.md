@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: fbe2377bfd353dc00ddfdf53a6d091c486644194
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74059382"
 ---
 # <a name="configure-esim-cellular-profiles-in-intune---public-preview"></a>在 Intune 中設定 eSIM 行動數據設定檔 - 公開預覽
@@ -70,7 +70,7 @@ eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [
 
 行動數據啟用代碼是由您的電信業者提供的逗號分隔檔案 (csv)。 當您具有此檔案時，使用下列步驟將它新增至 Intune：
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [eSIM 行動數據設定檔]   > [新增]  。
 3. 選取具有您啟用代碼的 CSV 檔案。
 4. 按一下 [確定]  以儲存您的變更。
@@ -111,7 +111,7 @@ eSIM 是內嵌的 SIM 卡晶片，可讓您透過支援 eSIM 之裝置 (例如 [
 
 將設定檔指派給 Azure AD 群組，其中包含您的 eSIM 裝置。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [eSIM 行動數據設定檔]  。
 3. 在設定檔清單中，選取您要指派的 eSIM 行動數據訂用帳戶集區，然後選取 [指派]  。
 4. 選擇以 [包含]  群組或 [排除]  群組，然後選取群組。
@@ -129,7 +129,7 @@ eSIM 啟用代碼會使用一次。 Intune 在裝置上安裝啟用代碼之後�
 
 指派設定檔之後，您可以監視訂用帳戶集區的部署狀態。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [eSIM 行動數據設定檔]  。 您所有現有的 eSIM 行動數據訂用帳戶集區隨即列出。
 3. 選取訂用帳戶，然後檢閱 [部署狀態]  。
 

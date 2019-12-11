@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a9937fc25ffa3dc32c1addbf0acc2516000b055b
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: b957857702de10e10c581364f2c34c869026810d
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390889"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819757"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
@@ -69,6 +69,7 @@ ms.locfileid: "74390889"
   - [重設 Windows 10 的 PIN 碼](device-windows-pin-reset.md)
   - [Android 遠端控制](teamviewer-support.md)
   - [同步裝置](device-sync.md)
+  - [重新命名裝置](device-rename.md)
   - [傳送自訂通知](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android、iOS)
   - [BitLocker 金鑰輪替](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (僅限 Windows)
 

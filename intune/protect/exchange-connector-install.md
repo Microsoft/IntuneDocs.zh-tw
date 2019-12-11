@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 62db99fc2e47bdfa1a767db3bb2916649dedc074
-ms.sourcegitcommit: 15e099a9a1e18296580bb345610aee7cc4acd126
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74164701"
 ---
 # <a name="set-up-the-on-premises-intune-exchange-connector"></a>安裝內部部署 Intune Exchange 連接器
@@ -82,7 +82,7 @@ Intune 支援針對每個訂閱安裝多個 Intune Exchange 連接器。 如果�
 
 在可支援 Intune Exchange 連接器的 Windows 伺服器上：
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。  使用在內部部署 Exchange Server 中擔任系統管理員，並且具備 Exchange Server 使用授權的帳戶。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。  使用在內部部署 Exchange Server 中擔任系統管理員，並且具備 Exchange Server 使用授權的帳戶。
 
 2. 選取 [租用戶系統管理]   > [Exchange 存取]  。  
 

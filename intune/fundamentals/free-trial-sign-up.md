@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502876"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune
@@ -39,7 +39,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 ## <a name="sign-up-for-a-microsoft-intune-free-trial"></a>註冊 Microsoft Intune 免費試用
 
-免費試用 Intune 30 天。 如果您已經有工作或學校帳戶，請**登入**該帳戶，並將 Intune 新增您的訂閱。 否則，您可以**註冊**新帳戶供您的組織使用 Intune。
+免費試用 Intune 30 天。 如果您已經有工作或學校帳戶，請**登入**該帳戶，並將 Intune 新增至您的訂閱。 否則，您可以**註冊**新帳戶供您的組織使用 Intune。
 
 > [!IMPORTANT]
 > 註冊新帳戶後，無法合併現有的工作或學校帳戶。
@@ -48,7 +48,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
     ![Microsoft Intune 試用帳戶註冊網頁的螢幕擷取畫面](./media/free-trial-sign-up/account-sign-up-site-full-browser.png)
 
-    若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您在 [國家或地區]  下選取該地區設定。 Azure 會使用您的區域資訊來提供適當的服務。 稍後無法變更此設定。
+    若您大部分的 IT 作業與使用者分屬於不同的地區設定，建議您在 [國家或地區]  下選取該地區設定。 Azure 會使用您的區域資訊來提供適當的服務。 此設定將無法變更。
 
 2. 使用您的公司名稱後面接著 **.onmicrosoft.com** 來建立帳戶。 
 
@@ -122,7 +122,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 ## <a name="admin-experiences"></a>管理體驗
 
 您可能使用的有兩個入口網站：
-- Azure ([portal.azure.com](https://portal.azure.com)) 中的 Intune 儀表板是您可以瀏覽 [Intune 功能](what-is-intune.md)的位置。 一般是在 Intune 儀表板中執行工作。
+- Azure ([portal.azure.com](https://portal.azure.com)) 中的 Intune 儀表板是您可以瀏覽 [Intune 功能](what-is-intune.md)的位置。 工作一般會在 Intune 面板中執行。
 - Microsoft 365 系統管理中心 ([admin.microsoft.com](https://admin.microsoft.com)) 是您可以新增及管理使用者的位置，前提是您未使用 Azure Active Directory 進行此工作。 您也可以管理您帳戶的其他事宜，包括計費及支援。
 
 ## <a name="next-steps"></a>後續步驟

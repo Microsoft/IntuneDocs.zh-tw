@@ -18,17 +18,17 @@ search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 91f20411f668428c8bf3af8b0bd4ae6f4b0b545f
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73713516"
 ---
 # <a name="quickstart-enroll-your-windows-10-device"></a>快速入門：註冊您的 Windows 10 裝置
 
 在此快速入門中，您會先扮演 Intune 使用者角色並在 Microsoft Intune 中註冊您的 Windows 10 裝置。 然後，您會返回 Intune 並確認已註冊裝置。
 
-在 Microsoft Intune 中註冊您的裝置，可讓您的 Windows 10 裝置存取您組織的安全資料，包括電子郵件、檔案和其他資源。 這適用於 Windows 10 Desktop 和 Windows 10 Mobile 裝置。 註冊您的裝置能夠協助保護您和您的組織，並且協助保持區隔您的工作資料與個人資料。
+在 Microsoft Intune 中註冊您的裝置，可讓您的 Windows 10 裝置存取您組織的安全資料，包括電子郵件、檔案和其他資源。 這適用於 Windows 10 Desktop 和 Windows 10 Mobile 裝置。 註冊您的裝置能夠協助保護您和您的組織，並且協助區隔您的工作資料與個人資料。
 
 > [!TIP]
 > 了解當您[在 Intune 中註冊裝置](/intune-user-help/what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-windows)時會發生什麼事，以及那對[裝置上的資訊](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)有何意義。
@@ -105,7 +105,7 @@ ms.locfileid: "73713516"
 
 在此快速入門中，您已了解如何在 Intune 中註冊 Windows 10 裝置。 您可以了解跨所有平台註冊裝置的其他方式。 如需透過 Intune 使用裝置的詳細資訊，請參閱[使用受控裝置完成工作](/intune-user-help/use-managed-devices-to-get-work-done)。
 
-若要遵循此 Intune 快速入門系列，請繼續前往下一個快速入門。
+若要繼續參閱此 Intune 快速入門系列，請前往下一個快速入門。
 
 > [!div class="nextstepaction"]
 > [快速入門：為 Android 裝置設定必要的密碼長度](../quickstart-set-password-length-android.md)

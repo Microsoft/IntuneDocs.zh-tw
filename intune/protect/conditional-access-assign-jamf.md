@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: b09b30fd32caace9ed3259350c01548d5e5fae15
-ms.sourcegitcommit: 93265c2491058afde7168134075bed77031b9311
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/18/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74161601"
 ---
 # <a name="enforce-compliance-on-macs-managed-with-jamf-pro"></a>在使用 Jamf Pro 管理的 Mac 上強制執行合規性
@@ -37,7 +37,7 @@ ms.locfileid: "74161601"
 
 ## <a name="set-up-device-compliance-policies-in-intune"></a>在 Intune 中設定裝置合規性原則
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [合規性政策]  。 如果您是使用先前建立的原則，請在主控台中選取該原則，然後移至此程序的下一個步驟。 若要建立新原則，請選取 [建立原則]  ，然後指定 [平台]  為 [macOS]  的原則詳細資料。 設定 [設定]  和 [因不符合規範而採取的動作]  ，以符合您的組織需求，然後選取 [建立]  以儲存原則。
 

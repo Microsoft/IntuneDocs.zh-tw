@@ -19,10 +19,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 02d0fb91df07d8bba233a6f814ffcf36d408e95d
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73712375"
 ---
 # <a name="bypass-activation-lock-on-supervised-ios-devices-with-intune"></a>使用 Intune 在受監督的 iOS 裝置上略過啟用鎖定
@@ -59,7 +59,7 @@ Intune 可以要求執行 iOS 8.0 和更新版本之受監督裝置的啟用鎖�
 - 使用者可以獲得「尋找我的 iPhone」應用程式的安全性優點。
 - 您可以讓使用者執行工作，並使其知道在需要重新規劃裝置時，您可將裝置淘汰或解除鎖定。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 在您可以略過裝置上的啟用鎖定之前，必須先遵循下列指示啟用它：
 
 1. 使用[如何設定裝置限制設定](/intune-azure/configure-devices/how-to-configure-device-restrictions)中的資訊，來設定適用於 iOS 的 Intune 裝置限制設定檔。
