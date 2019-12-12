@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 8efb9dcf9129375252b5d9a7d1e6255dce39625c
-ms.sourcegitcommit: b5e719fb507b1bc4774674e76c856c435e69f68c
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/08/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "73801400"
 ---
 # <a name="android-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Android 設定將裝置標示為相容或不相容
@@ -149,7 +149,7 @@ ms.locfileid: "73801400"
 - **封鎖來自不明來源的應用程式**：
 
   - [未設定]  (預設  ) - 不會評估此設定是否符合規範。
-  - **封鎖**-封鎖具有**安全性 > 不明來源**已啟用來源的裝置（在 android 4.0 透過 android 7.x 支援 *。Android 8.0 和更新版本不支援)。
+  - **封鎖**-封鎖具有**安全性 > 不明來源**已啟用來源的裝置（在 android 4.0 透過 android 7.x 支援 *。Android 8.0 和更新版本不支援*)。
 
   若要側載應用程式，則必須允許未知的來源。 如果您不會側載 Android 應用程式，則將此功能設定為 [封鎖]  可啟用這項合規性政策。
 

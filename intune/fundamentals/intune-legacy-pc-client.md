@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 5ab1be3d34d52e824d1ff06124e28206fb7b07a1
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72510181"
 ---
 # <a name="intune-on-azure-console-and-legacy-intune-pc-client"></a>Azure 上的 Intune 主控台及舊版 Intune 電腦用戶端
@@ -63,7 +63,7 @@ Intune 電腦用戶端管理工作流程使用 [ Silverlight 型 Intune 系統�
 要從使用 Intune 電腦用戶端管理 Windows 10 裝置切換到使用 MDM 進行管理，請遵循下列步驟：
 
 1. 在 Silverlight 主控台中，執行 [選擇性抹除]  將裝置從電腦用戶端取消註冊。
-  ![Warning 快顯，並選取 [選擇性抹除裝置] 選項按鈕 ](./media/intune-legacy-pc-client/image02.png)
+  ![警告 快顯視窗，並選取 [選擇性抹除裝置] 選項按鈕](./media/intune-legacy-pc-client/image02.png)
 2. 使用 [MDM (和/或 Azure AD Join)](../enrollment/windows-enroll.md) 重新註冊該裝置。
 
 ## <a name="next-steps"></a>後續步驟

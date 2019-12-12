@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 0880d06e23b84c54cd6e24b6b61b5028c2a1d9bb
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72507135"
 ---
 # <a name="frequently-asked-questions-about-mam-and-app-protection"></a>MAM 和應用程式保護的相關常見問題
@@ -78,7 +78,7 @@ Intune MAM 支援兩個組態︰
 Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms 及 Cordova 平台所建置的應用程式，主動地進行測試並維護支援。 雖然有部分客戶成功搭配其他平台 (例如 React Native 和 NativeScript) 整合 Intune SDK，我們並沒有針對使用我們所不支援之平台的應用程式開發人員提供明確的指引或外掛程式。
 
 **Intune APP SDK 是否支援 Microsoft 驗證程式庫 (MSAL) 或社交帳戶？**<br></br>
-Intune APP SDK 會針對第一方及協力廠商 SDK 版本使用部分進階 ADAL 功能。 因此，MSAL 並不適用於我們的許多核心案例，例如向 Intune 應用程式防護服務進行驗證，以及條件式啟動。 有鑑於來自 Microsoft 身分識別小組的整體指示是要將所有 Microsoft Office 應用程式切換至 MSAL，Intune SDK 未來一定會需要支援它，但目前尚未有確切計畫。
+Intune APP SDK 會針對第一方及協力廠商 SDK 版本使用部分進階 ADAL 功能。 因此，MSAL 並不適用於我們的許多核心案例，例如向 Intune 應用程式防護服務進行驗證，以及條件式啟動。 Microsoft 身分識別小組的整體指示是要將所有 Microsoft Office 應用程式切換至 MSAL，因此 Intune SDK 未來遲早會需要支援它，但目前尚未有確切計畫。
 
 **使用 [Outlook 行動裝置應用程式 (英文)](https://products.office.com/outlook) 時有哪些其他需求？**
 
@@ -91,7 +91,7 @@ Intune APP SDK 會針對第一方及協力廠商 SDK 版本使用部分進階 AD
 
 **使用 [Word、Excel 與 PowerPoint](https://products.office.com/business/office) 應用程式時有哪些其他需求？**
 
-- 終端使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括可搭配[商務用 OneDrive](https://onedrive.live.com/about/business/) 使用的雲端儲存體帳戶。 Office 365 授權可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內根據這些[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
+- 終端使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括[商務用 OneDrive](https://onedrive.live.com/about/business/) 的雲端儲存體帳戶。 Office 365 授權可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內根據這些[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
 
 - 終端使用者必須有受控的位置，此位置是使用 [不可進行另存新檔] 應用程式保護原則設定下的細微另存新檔功能設定的。 例如，若受控位置是 OneDrive，則 [OneDrive](https://onedrive.live.com/about/) 應用程式應該在終端使用者的 Word、Excel 或 PowerPoint 應用程式中設定。
 
@@ -115,7 +115,7 @@ Intune 會將應用程式中所有資料標示為「公司」或「個人」。 
 多重身分識別支援允許公開發行同時包含「公司」與消費者對象的應用程式 (例如，Office 應用程式)，並且讓「公司」帳戶具有 Intune 應用程式保護功能。
 
 **Outlook 以及多重身分識別呢？**<br></br>
-因為 Outlook 有合併個人與「公司」電子郵件的電子郵件檢視，所以 Outlook 應用程式會在啟動時提示 Intune PIN。
+因為 Outlook 有合併個人與「公司」電子郵件的電子郵件檢視，所以 Outlook 應用程式會在啟動時提示輸入 Intune PIN。
 
 **什麼是 Intune 應用程式 PIN？**<br></br>
 個人識別碼 (PIN) 是一組密碼，用來驗證在應用程式中存取組織資料的是正確的使用者。
@@ -161,7 +161,7 @@ Intune 可以透過三種不同的方式抹除資料：完整的裝置抹除、M
 
 - **什麼是 MDM 選擇性抹除？**<br></br> 請參閱[移除裝置 - 淘汰](../remote-actions/devices-wipe.md#retire)，以閱讀移除公司資料的相關資訊。
 
-- **什麼是 MAM 選擇性抹除？**<br></br> MAM 選擇性抹除僅會從應用程式移除公司應用程式資料。 要求是使用 Intune Azure 入口網站來起始。 若要了解如何起始抹除要求，請參閱[如何只抹除應用程式中的公司資料](apps-selective-wipe.md)。
+- **什麼是 MAM 選擇性抹除？**<br></br> MAM 選擇性抹除僅會從應用程式移除公司應用程式資料。 該要求是使用 Intune Azure 入口網站來起始的。 若要了解如何起始抹除要求，請參閱[如何只抹除應用程式中的公司資料](apps-selective-wipe.md)。
 
 - **MAM 選擇性抹除發生的速度有多快？**<br></br> 如果使用者在起始選擇性抹除時正在使用應用程式，Intune App SDK 每隔 30 分鐘就會檢查來自 Intune MAM 服務的選擇性抹除要求。 它也會在使用者首次啟動應用程式並以其工作或學校帳戶登入時檢查選擇性抹除。
 
@@ -177,16 +177,16 @@ Intune 應用程式保護取決於使用者的身分識別在應用程式與 Int
 大部分的應用程式保護功能是內建在公司入口網站應用程式中。 雖然公司入口網站應用程式一律為必要，但也不需要註冊裝置。 若是 MAM-WE，終端使用者只需要在裝置上安裝公司入口網站應用程式即可。
 
 **已設定給同一組應用程式和使用者的多個 Intune 應用程式保護存取設定，在 Android 上如何運作？**<br></br>
-Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，封鎖會優先，然後是可以關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者進行修補程式升級的最低 Android 修補程式版本設定，將在封鎖使用者使其無法存取的最低 Android 修補程式版本設定之後套用。 因此，當情況是 IT 系統管理員將最低 Android 修補程式版本設定為 2018-03-01，最低 Android 修補程式版本 (僅警告) 設定為 2018-02-01 時，如果嘗試存取應用程式的裝置使用修補程式版本 2018-01-01，則因為導致封鎖存取的最低 Android 修補程式版本設定限制更多，而使得終端使用者將會被封鎖。 
+Intune 應用程式存取保護原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，封鎖會優先，然後是可以關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者進行修補程式升級的最低 Android 修補程式版本設定，將在封鎖使用者使其無法存取的最低 Android 修補程式版本設定之後套用。 因此，當情況是 IT 系統管理員將最低 Android 修補程式版本設定為 2018-03-01，最低 Android 修補程式版本 (僅警告) 設定為 2018-02-01 時，如果嘗試存取應用程式的裝置使用修補程式版本 2018-01-01，則因為導致封鎖存取的最低 Android 修補程式版本設定限制更多，而使得終端使用者將會被封鎖。 
 
 處理不同類型的設定時，應用程式版本需求會優先，然後是 Android 作業系統版本需求和 Android 修補程式版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。
 
 **Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置通過 Google 適用於 Android 裝置的 SafetyNet 證明。將新 SafetyNet 證明結果傳送至服務的頻率為何？** <br><br> 新 Google Play 服務判斷將會依照 Intune 服務所決定的間隔報告給 IT 系統管理員。 進行服務呼叫的頻率已由於負載而節流處理，因此這個值會在內部維護，且無法設定。 任何 IT 系統管理員針對 Google SafetyNet 證明設定所設定的動作，將會根據條件式啟動上次回報給 Intune 服務的結果來執行。 如果沒有任何資料，將會根據沒有其他的條件式啟動檢查失敗來允許存取，而 Google Play 服務用來判斷證明結果的「往返」動作將在後端開始，並在裝置未通過時以非同步方式提示使用者。 如果有過時的資料，將會根據上次回報的結果封鎖或允許存取，同樣地，Google Play 服務用來判斷證明結果的「往返」動作將會開始，並在裝置未通過時以非同步方式提示使用者。
 
-**Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置透過 Google 適用於 Android 裝置的 Verify Apps API 傳送訊號。終端使用者如何開啟應用程式掃描，讓它們不會因此而被封鎖存取？**<br><br> 有關如何執行這項操作的指示會因裝置而稍有差異。 一般程序包含前往 Google Play 商店，然後按一下 [我的應用程式與遊戲]  ，再按一下上次應用程式掃描結果，其會將您引導至「Play 安全防護」功能表。 確定 [掃描裝置中的安全性威脅]  的切換開關已切換為開啟。
+**Intune 應用程式防護原則提供一項功能，讓系統管理員要求終端使用者裝置透過 Google 適用於 Android 裝置的 Verify Apps API 傳送訊號。終端使用者如何開啟應用程式掃描，讓它們不會因此而被封鎖存取？**<br><br> 有關如何執行這項操作的指示會因裝置而稍有差異。 一般步驟是前往 Google Play 商店，然後按一下 [我的應用程式與遊戲]  ，再按一下上次應用程式掃描結果，其會將您引導至「Play 安全防護」功能表。 確定 [掃描裝置中的安全性威脅]  的切換開關已切換為開啟。
 
 **Google 的 SafetyNet Attestation API 實際上會在 Android 裝置上檢查什麼項目？[檢查基本完整性] 與 [檢查基本完整性與經過認證的裝置] 的可設定值之間有何差異？** <br><br>
-Intune 會利用 Google Play Protect SafetyNet API，在我們現有 Root 破解偵測檢查中新增對已取消註冊裝置的檢查。 如果不想在 Root 破解的裝置上執行其應用程式，Google 已開發和維護這個 API 集合供 Android 應用程式採用。 例如，Android Pay 應用程式已併入此集合。 雖然 Google 不會公開共用所發生 Root 破解偵測檢查的全部內容，但我們預期這些 API 會偵測到其裝置遭到 Root 破解的使用者。 接著可防止這些使用者存取，或從其啟用原則的應用程式抹除其公司帳戶。 [檢查基本完整性] 會告訴您有關裝置的一般完整性。 Root 破解的裝置、模擬器、虛擬裝置，以及具有竄改跡象的裝置都無法通過基本完整性。 [檢查基本完整性與經認證的裝置] 會告訴您有關裝置與 Google 服務的相容性。 只有經過 Google 認證且未修改的裝置可以通過這項檢查。 下列裝置將無法通過：
+Intune 會利用 Google Play Protect SafetyNet API，在我們現有 Root 破解偵測檢查中新增對已取消註冊裝置的檢查。 如果不想在 Root 破解的裝置上執行其應用程式，Google 已開發和維護這個 API 集合供 Android 應用程式採用。 例如，Android Pay 應用程式已採用此集合。 雖然 Google 不會公開共用所發生 Root 破解偵測檢查的全部內容，但我們預期這些 API 會偵測到其裝置遭到 Root 破解的使用者。 接著可防止這些使用者存取，或從其啟用原則的應用程式抹除其公司帳戶。 [檢查基本完整性] 會告訴您有關裝置的一般完整性。 Root 破解的裝置、模擬器、虛擬裝置，以及具有竄改跡象的裝置都無法通過基本完整性檢查。 [檢查基本完整性與經認證的裝置] 會告訴您有關裝置與 Google 服務的相容性。 只有經過 Google 認證且未修改的裝置可以通過這項檢查。 下列裝置將無法通過：
 
 - 無法通過基本完整性的裝置
 - 開機載入器已解除鎖定的裝置
@@ -213,13 +213,13 @@ Intune 應用程式防護原則可控制應用程式只存取 Intune 授權使�
 Intune 應用程式保護原則必須管理裝置才能控制 iOS 共用延伸模組。 因此，Intune _**會先加密「公司」資料，才會在應用程式之外共用**_ 。 您可以嘗試在受管理的應用程式外開啟「公司」檔案來加以驗證。 檔案應已加密且無法在受管理的應用程式之外開啟。
 
 **已設定給同一組應用程式和使用者的多個 Intune 應用程式保護存取設定，在 iOS 上如何運作？**<br></br>
-Intune 應用程式保護存取原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，其順序會是抹除、封鎖及可關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者更新其 iOS 版本的最低 iOS 作業系統設定，將在封鎖使用者使其無法存取的最低 iOS 作業系統設定之後套用。 因此，當情況是 IT 系統管理員將最低 iOS 作業系統設定為 11.0.0.0，最低 iOS 作業系統 (僅警告) 設定為 11.1.0.0 時，如果嘗試存取應用程式的裝置使用 iOS 10，則因為導致封鎖存取的最低 iOS 作業系統版本設定限制更多，而使得終端使用者將會被封鎖。
+Intune 應用程式存取保護原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，其順序會是抹除、封鎖及可關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者更新其 iOS 版本的最低 iOS 作業系統設定，將在封鎖使用者使其無法存取的最低 iOS 作業系統設定之後套用。 因此，當情況是 IT 系統管理員將最低 iOS 作業系統設定為 11.0.0.0，最低 iOS 作業系統 (僅警告) 設定為 11.1.0.0 時，如果嘗試存取應用程式的裝置使用 iOS 10，則因為導致封鎖存取的最低 iOS 作業系統版本設定限制更多，而使得終端使用者將會被封鎖。
 
 處理不同類型的設定時，Intune 應用程式 SDK 版本需求會優先，然後是應用程式版本需求，再然後是 iOS 作業系統版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。 我們建議您只針對必要的封鎖情況，在 Intune 產品小組的指導下，設定 Intune App SDK 版本需求。
 
 
 ## <a name="see-also"></a>請參閱
-- [實作您的 Intune 計劃](../fundamentals/planning-guide-onboarding.md)
+- [實施您的 Intune 計劃](../fundamentals/planning-guide-onboarding.md)
 - [Intune 測試與驗證](../fundamentals/planning-guide-test-validation.md)
 - [Microsoft Intune 中的 Android 行動應用程式管理原則設定](../apps/app-protection-policy-settings-android.md)
 - [iOS 行動應用程式管理原則設定](../apps/app-protection-policy-settings-ios.md)

@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508296"
 ---
 # <a name="sign-in-to-company-portal"></a>登入以公司入口網站  
@@ -40,7 +40,7 @@ ms.locfileid: "72508296"
 
 1. 在您的裝置上開啟應用程式，然後按 [登**入**]。  
 
-   [![Example 公司入口網站登入頁面的螢幕擷取畫面。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [![公司入口網站登入 頁面的範例螢幕擷取畫面。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. 輸入您的 [工作或學校帳戶]  ，然後點選 [下一步]  。
