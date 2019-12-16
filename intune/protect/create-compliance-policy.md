@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8452f9b56032864380ec703bfd444dc85ef129b
-ms.sourcegitcommit: 13fa1a4a478cb0e03c7f751958bc17d9dc70010d
+ms.openlocfilehash: ba6b8fb66d25af3833e55eebc12e8b6df2fb5ba5
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2019
-ms.locfileid: "74188270"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860225"
 ---
 # <a name="create-a-compliance-policy-in-microsoft-intune"></a>在 Microsoft Intune 中建立合規性政策
 
@@ -61,7 +61,7 @@ ms.locfileid: "74188270"
 
 ## <a name="create-the-policy"></a>建立政策
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [合規性政策]   > [建立原則]  。
 
@@ -78,7 +78,7 @@ ms.locfileid: "74188270"
      - **macOS**
      - **Windows Phone 8.1**
      - **Windows 8.1 及更新版本**
-     - **Windows 10 及更新版本**
+     - **Windows 10 及以上版本**
 
      針對 *Android Enterprise*，您接著必須選取**設定檔類型**：
      - **裝置擁有者**
@@ -90,7 +90,7 @@ ms.locfileid: "74188270"
      - [iOS/iPadOS](compliance-policy-create-ios.md)
      - [macOS](compliance-policy-create-mac-os.md)
      - [Windows Phone 8.1，Windows 8.1 和更新版本](compliance-policy-create-windows-8-1.md)
-     - [Windows 10 及更新版本](compliance-policy-create-windows.md)  
+     - [Windows 10 及以上版本](compliance-policy-create-windows.md)  
 
    - **位置** (Android 裝置系統管理員)  ：在您的原則中，您可以透過裝置的位置強制實行相容性。 從現有的位置中選擇。 還沒有位置？ 在 Intune 中[使用位置 (網路柵欄)](use-network-locations.md) 可提供一些指導。  
 
@@ -100,7 +100,7 @@ ms.locfileid: "74188270"
 
      例如，您正在使用 [位置] 功能，並在合規性政策中新增一個位置。 當您選取至少一個位置時，則會套用不符合規範的預設動作。 如果裝置未連線到所選取的位置，則會立即視為不符合規範。 您可以提供使用者寬限期，例如一天。
 
-   - **範圍 (標籤)** ：範圍標籤是將政策指派並篩選到特定群組 (例如銷售、人力資源、所有 US-NC 員工等等) 的絕佳方式。 新增設定之後，您也可以將範圍標籤新增至合規性政策。 [使用範圍標籤篩選政策](../fundamentals/scope-tags.md)是不錯的資源。
+   - **範圍 (標籤)** ：範圍標籤是將原則篩選到特定群組 (例如 `US-NC IT Team` 或 `JohnGlenn_ITDepartment`) 的絕佳方式。 新增設定之後，您也可以將範圍標籤新增至合規性政策。 [使用範圍標籤篩選政策](../fundamentals/scope-tags.md)是不錯的資源。
 
 4. 完成後，請選取 [確定]   > [建立]  以儲存變更。 政策隨即建立，並顯示在清單中。 接下來，將政策指派給您的群組。
 

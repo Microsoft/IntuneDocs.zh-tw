@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0718fae09228b9359b073901f3a344a09a6176e7
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 3fb5818609763753878fec7a84fd8c19eb154f88
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72509258"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955434"
 ---
 # <a name="terms-and-conditions-for-user-access"></a>使用者存取的條款及條件
 
@@ -46,31 +46,30 @@ ms.locfileid: "72509258"
 ## <a name="create-terms-and-conditions"></a>建立條款及條件
 完成下列步驟以建立條款及條件。 顯示名稱和描述是供系統管理使用，而條款屬性則會在公司入口網站中向使用者顯示。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 [Intune]  窗格上，選擇 [裝置註冊]   > [條款及條件]  。
-3. 選擇 **[建立]** 。
-4. 在 [基本]  頁面上，指定下列資訊：
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [租用戶系統管理]   > [條款及條件]  。
+2. 選擇 **[建立]** 。
+3. 在 [基本]  頁面上，指定下列資訊：
 
    - **名稱**：Azure 入口網站中條款的名稱。 使用者不會看見此名稱。
    - **描述**：可協助您在 Azure 入口網站中識別這組條款的選擇性詳細資料。
 
     ![顯示 Azure 入口網站中適用於條款及條件的 [基本] 頁面螢幕擷取畫面](./media/terms-and-conditions-create/terms-basics-page.png)
 
-5. 選擇 [下一步]  以移至 [條款]  頁面，並提供下列資訊：
+4. 選擇 [下一步]  以移至 [條款]  頁面，並提供下列資訊：
 
    - **標題**：使用者在公司入口網站 [摘要]  上方所看見的條款名稱。
    - **條款及條件**：使用者看到的條款及條件，他們必須接受或拒絕。
    - **條款摘要**：使用者在接受條款時，說明其意義的文字。 例如，「一旦註冊您的裝置，即表示您同意 Contoso 所訂的使用條款。 在繼續進行之前，請先仔細閱讀條款」。
 
-6. 選擇 [下一步]  以移至 [範圍標籤]  頁面。
+5. 選擇 [下一步]  以移至 [範圍標籤]  頁面。
 
-7. 選擇 [選取範圍標籤]  、選取您要指派給這些條款及條件的範圍標籤，然後選擇 [選取]  。 
+6. 選擇 [選取範圍標籤]  、選取您要指派給這些條款及條件的範圍標籤，然後選擇 [選取]  。 
 
-8. 選擇 [下一步]  以移至 [指派]  頁面，然後為 [指派給]  選擇下列其中一個選項：
+7. 選擇 [下一步]  以移至 [指派]  頁面，然後為 [指派給]  選擇下列其中一個選項：
     - **所有使用者**：選擇此選項，以將這些條款及條件指派給所有使用者。
     - **選取群組**：選擇此選項，在您藉由選擇 [選取要納入的群組]  來識別的群組中，將這些條款及條件指派給該群組中的每個人。
 
-9. 選擇 [下一步]   > [建立]  。
+8. 選擇 [下一步]   > [建立]  。
 
 ## <a name="see-how-terms-are-displayed-to-your-users"></a>了解條款對使用者的顯示方式
 下列範例在管理主控台和公司入口網站中顯示 [標題]  和[條款摘要]  。
@@ -84,8 +83,7 @@ ms.locfileid: "72509258"
 
 ## <a name="monitor-terms-and-conditions"></a>監視條款和條件
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 
-1. 在 [Intune] 窗格上，選擇 [裝置註冊]   > [條款及條件]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [租用戶系統管理]   > [條款及條件]  。
 2. 在條款及條件清單中，選擇您要檢視接受度的條款 > [接受度報告]  。
 
 ## <a name="work-with-multiple-versions-of-terms-and-conditions"></a>使用多個版本的條款和條件
@@ -95,12 +93,10 @@ ms.locfileid: "72509258"
 
 假如您只是修正錯字或變更格式，請保留目前的版本號碼。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [租用戶系統管理]   > [條款及條件]  > 選擇要修改的條款及條件 > [屬性]  。
 
-2. 在 [Intune] 窗格上，選擇 [裝置註冊]   > [條款及條件]  > 選擇您要修改的條款及條件 > [屬性]  。
+2. 在 [屬性]  窗格上，選擇 [條款及條件]  ，然後視需要修改 [標題]  、[條款摘要]  和 [條款及條件]  。 如果您的變更需要使用者重新接受新的條款，請選擇 [需要使用者重新接受並將版本號碼增加至] 
 
-4. 在 [屬性]  窗格上，選擇 [條款及條件]  ，然後視需要修改 [標題]  、[條款摘要]  和 [條款及條件]  。 如果您的變更需要使用者重新接受新的條款，請選擇 [需要使用者重新接受並將版本號碼增加至] 
-
-4. 選擇 [確定]   > [儲存]  。
+3. 選擇 [確定]   > [儲存]  。
 
 使用者只需要接受更新後的條款及條件一次。 具有多部裝置的使用者不需要在每部裝置上接受條款及條件。

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 460cabead711e6fa4559bcec39e556448cdf2237
-ms.sourcegitcommit: 2c8a41ee95a3fde150667a377770e51b621ead65
+ms.openlocfilehash: ebb17324355fff9631ef74a76388ef0ab797d437
+ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2019
-ms.locfileid: "73635357"
+ms.lasthandoff: 12/06/2019
+ms.locfileid: "74899135"
 ---
 # <a name="intune-guided-scenarios-overview"></a>Intune 引導式案例概觀 
 
@@ -33,7 +33,7 @@ ms.locfileid: "73635357"
 
 ## <a name="types-of-guided-scenarios"></a>引導式案例的類型 
 
-基於簡化目的，所有引導式案例都會省略複雜的範圍設定功能，例如範圍標籤<link>、排除群組，以及虛擬群組指派<link>。 由引導式案例所建立的所有資源，都會繼承完成該案例之系統管理員的每個範圍標籤。 特定案例會針對一般設定提供某種程度的自訂，以涵蓋密切相關的案例。 這些案例只會針對包含群組支援群組指派。 針對其他引導式案例，整個案例都會透過不提供任何自訂並自動產生新的群組以接收所有指派，來保證單一的一致性體驗。 在引導式案例完成之後，您便可以自行透過現有的原則、應用程式及設定檔工作負載來使用更複雜的指派。  
+基於簡化目的，所有引導式案例都會省略複雜的範圍設定功能，例如範圍標籤、排除群組，以及虛擬群組指派。 由引導式案例所建立的所有資源，都會繼承完成該案例之系統管理員的每個範圍標籤。 特定案例會針對一般設定提供某種程度的自訂，以涵蓋密切相關的案例。 這些案例只會針對包含群組支援群組指派。 針對其他引導式案例，整個案例都會透過不提供任何自訂並自動產生新的群組以接收所有指派，來保證單一的一致性體驗。 在引導式案例完成之後，您便可以自行透過現有的原則、應用程式及設定檔工作負載來使用更複雜的指派。  
 
 下列為引導式的案例： 
 - 部署適用於行動裝置的 Microsoft Edge 

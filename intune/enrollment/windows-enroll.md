@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f12feca6d43a4194e7c60639a93747c7f389f93
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: 0b84cd52dfe2eb6332ddbc89bc00a17ec3361b79
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558200"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000426"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -126,6 +126,15 @@ Azure Active Directory 使用不同的 CNAME 註冊 iOS、Android 和 Windows �
 | 名稱 | EnterpriseRegistration. company_domain.com | EnterpriseRegistration.windows.net | 1 小時|
 
 如需裝置註冊的詳細資訊，請參閱 [Manage device identities using the Azure portal](https://docs.microsoft.com/azure/active-directory/devices/device-management-azure-portal) (使用 Azure 入口網站管理裝置身分識別)
+
+## <a name="windows-10-auto-enrollment-and-device-registration"></a>Windows 10 自動註冊和裝置註冊
+雖然建立 CNAME DNS 項目並非必要，但 CNAME 記錄可以方便使用者進行註冊。 若找不到任何註冊 CNAME 記錄，將會提示使用者手動輸入 MDM 伺服器名稱 enrollment.manage.microsoft.tw。
+
+| 類型 | 主機名稱 | 指向 | TTL |
+| --- | --- | --- | --- |
+| CNAME | EnterpriseEnrollment.company_domain.com | EnterpriseEnrollment-s.manage.microsoft.tw | 1 小時|
+|CNAME | EnterpriseRegistration.company_domain.com | EnterpriseRegistration.windows.net | 1 小時 |
+
 
 ## <a name="next-steps"></a>後續步驟
 

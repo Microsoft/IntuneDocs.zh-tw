@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 275b3961e87f0d0eda8299337fe3fb7ac89ef03b
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261695"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860310"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -61,7 +61,7 @@ ms.locfileid: "74261695"
 
 當您建立或更新設定檔時，也可以將範圍標籤與適用性規則新增到設定檔。
 
-**範圍標籤**是將設定檔指派並篩選到特定群組 (例如人力資源或所有 US-NC 員工) 的絕佳方式。 如需詳細資訊，請參閱[針對分散式 IT 使用 RBAC 和範圍標籤](../fundamentals/scope-tags.md)。
+**範圍標籤**是將設定檔篩選到特定群組 (例如 `US-NC IT Team` 或 `JohnGlenn_ITDepartment`) 的絕佳方式。 如需詳細資訊，請參閱[針對分散式 IT 使用 RBAC 和範圍標籤](../fundamentals/scope-tags.md)。
 
 在 Windows 10 裝置上，您可以新增**適用性規則**，讓設定檔僅適用於特定 OS 版本或特定 Windows 版本。 [適用性規則](device-profile-create.md#applicability-rules)提供更多資訊。
 

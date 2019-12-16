@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0012a80f0e9ea60b41c94a582e42d5f647c6bbc2
-ms.sourcegitcommit: cdb2a484b059bd8d8c3985cde1e883c24a4c1cad
+ms.openlocfilehash: 30191aea892e8409bb6165034256a99f6f32a502
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2019
-ms.locfileid: "74239211"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955400"
 ---
 # <a name="enroll-devices-in-intune-by-using-a-device-enrollment-manager-account"></a>使用裝置註冊管理員帳戶在 Intune 中註冊裝置
 
@@ -46,7 +46,7 @@ DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制�
 
 ## <a name="add-a-device-enrollment-manager"></a>新增裝置註冊管理員
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]   > [裝置註冊管理員]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [註冊裝置]   > [裝置註冊管理員]  。
 
 2. 選取 [新增]  。
 
@@ -67,6 +67,6 @@ DEM 使用者帳戶及以 DEM 使用者帳戶註冊的裝置具有下列限制�
 
 **移除裝置註冊管理員**
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]  ，然後選擇 [裝置註冊管理員]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [註冊裝置]   > [裝置註冊管理員]  。
 2. 在 [裝置註冊管理員]  刀鋒視窗上，依序選取 DEM 使用者和 [刪除]  。
 

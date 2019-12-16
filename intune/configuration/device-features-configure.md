@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f02188e6dd6cea6048731d119f8f307224810dd9
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.openlocfilehash: d887c7bc3c7e9ea8b6719993b5ba4909e9c18ea8
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
-ms.locfileid: "74059954"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74992933"
 ---
 # <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中新增 iOS 或 macOS 裝置功能設定
-
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
 Intune 包含許多可協助系統管理員控制 iOS 和 macOS 裝置的功能和設定。 例如，系統管理員可以：
 
@@ -113,7 +111,7 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 ## <a name="login-items"></a>登入項目
 
-使用此功能，來選擇使用者登入裝置時所開啟的應用程式、自訂應用程式、檔案和資料夾。 
+使用此功能，來選擇使用者登入裝置時所開啟的應用程式、自訂應用程式、檔案和資料夾。
 
 如需可在 Intune 中設定的設定清單，請參閱 [macOS 上的登入項目](macos-device-features-settings.md#login-items)。
 
@@ -153,22 +151,29 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 這些設定會設定應用程式擴充功能，以便為您的 iOS、iPadOS 和 macOS 裝置啟用單一登入 (SSO)。 大部分的企業營運 (LOB) 應用程式和組織網站都需要某種程度的安全使用者驗證。 在許多情況下，驗證都會要求使用者重複輸入相同認證。 SSO 讓使用者在輸入其認證一次之後，就能存取應用程式和網站。 當使用者登入之後，即可自動存取應用程式和網站，或使用 Face ID、Touch ID 或 Apple 密碼來獲得存取權。
 
-在 Intune 中，使用這些設定來設定 Apple 的內建 Kerberos 擴充功能，或設定組織所建立的 SSO 應用程式擴充功能。 SSO 應用程式擴充功能會為您的使用者處理驗證。 這些設定會設定認證類型的 SSO 應用程式擴充功能，這些擴充功能是針對挑戰和回應驗證流程所設計的。 您可以在 Apple 所提供的 Kerberos 特定認證擴充功能和一般認證擴充功能之間進行選擇。
+在 Intune 中，使用這些設定來設定組織、識別提供者或 Apple 所建立的 SSO 應用程式延伸模組。 SSO 應用程式擴充功能會為您的使用者處理驗證。 這些設定會設定重新導向類型和認證類型的 SSO 應用程式延伸模組。
+
+- 重新導向類型是專為 OAuth 和 SAML2 等新式驗證通訊協定所設計。
+- 認證類型是專為挑戰和回應驗證流程所設計。 您可以在 Apple 所提供的 Kerberos 特定認證擴充功能和一般認證擴充功能之間進行選擇。
 
 如需可在 Intune 中設定的設定清單，請參閱 [iOS SSO 應用程式擴充功能](ios-device-features-settings.md#single-sign-on-app-extension)和 [macOS SSO 應用程式擴充功能](macos-device-features-settings.md#single-sign-on-app-extension)。
 
-如需開發 SSO 應用程式擴充功能的詳細資訊，請觀賞 Apple 網站上的[可擴充的企業 SSO](https://developer.apple.com/videos/play/tech-talks/301) \(英文\)。
+如需開發 SSO 應用程式擴充功能的詳細資訊，請觀賞 Apple 網站上的[可擴充的企業 SSO](https://developer.apple.com/videos/play/tech-talks/301) \(英文\)。 若要閱讀 Apple 的功能描述，請瀏覽[「單一登入延伸功能」承載資料設定](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web)。 
 
 > [!NOTE]
 > **單一登入應用程式擴充功能**與**單一登入**功能不同：
 >
-> - **單一登入應用程式擴充功能**設定適用於 iPadOS 13.0 (和更新版本) 及 iOS 13.0 (和更新版本)。 **單一登入**設定適用於 iPadOS 13.0 (和更新版本) 及 iOS 7.0 和更新版本。
-> - **單一登入應用程式擴充功能**會處理作業系統的驗證。 在**單一登入**中，特定的應用程式會處理驗證。
-> - 使用**單一登入應用程式擴充功能**時，使用者會以無訊息模式登入應用程式和網站，或是使用 Face ID、Touch ID，或是 Apple 的 PIN 碼或密碼來登入。 使用**單一登入**時，使用者會使用其他應用程式來登入應用程式和網站。
+> - **單一登入應用程式延伸模組**設定適用於 iPadOS 13.0 (和更新版本)、iOS 13.0 (和更新版本) 及 macOS 10.15 (和更新版本)。 **單一登入**設定適用於 iPadOS 13.0 (和更新版本) 及 iOS 7.0 和更新版本。
 >
->    **單一登入應用程式擴充功能**會使用 Apple 作業系統進行驗證。 因此，它可能會提供更好的使用者體驗。
+> - **單一登入應用程式延伸模組**設定會定義識別提供者或組織用於提供順暢企業登入體驗的延伸模組。 **單一登入**設定會定義當使用者存取伺服器或應用程式時的 Kerberos 帳戶資訊。
 >
-> - 從開發觀點來看，**單一登入應用程式擴充功能**可以使用任何類型的認證 SSO 驗證。 使用**單一登入**，您只能使用 Kerberos SSO 驗證。  
+> - **單一登入應用程式擴充功能**會使用 Apple 作業系統進行驗證。 因此，可能會提供比**單一登入**更好的終端使用者體驗。
+>
+> - 從開發觀點來看，透過**單一登入應用程式延伸模組**，您可以使用任何類型的重新導向 SSO 或認證 SSO 驗證。 使用**單一登入**，您只能使用 Kerberos SSO 驗證。
+>
+> - Kerberos **單一登入應用程式延伸模組**是由 Apple 所開發，並內建於 iOS 13.0+ 和 macOS 10.15+ 平台。 內建的 Kerberos 延伸模組可用來將使用者登入支援 Kerberos 驗證的原生應用程式和網站。 **單一登入**不是 Apple 的 Kerberos 實作。
+>
+> - 內建的 Kerberos **單一登入應用程式延伸模組**可處理網頁和應用程式的 Kerberos 挑戰，就像是**單一登入**一樣。 不過，內建的 Kerberos 延伸模組支援密碼變更，且在企業網路中的表現更佳。 當您決定要使用**單一登入應用程式延伸模組**或**單一登入**時，建議使用延伸模組，因為其效能和功能均已獲得改善。
 
 適用於：
 
@@ -200,7 +205,7 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -222,6 +227,6 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 ## <a name="next-steps"></a>後續步驟
 
-建立設定檔之後，就可以指派它。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
+建立設定檔之後即可加以指派。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
 檢視適用於 [iOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 裝置的所有裝置功能設定。

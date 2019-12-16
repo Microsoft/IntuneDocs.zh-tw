@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba3b145c3a48992b1e8a01ad2cee4be60646df6f
-ms.sourcegitcommit: b752acefec077c719e169e665c955adb944e85c6
+ms.openlocfilehash: 6dc2a0e54a9051cd5b9d9991a490a5f53dfbbbbb
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74781238"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955315"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -57,9 +57,9 @@ ms.locfileid: "74781238"
 ### <a name="functionality"></a>功能
 | 設定 | 如何使用 | 預設值 |
 |------|----------|-------|
-| **與原生連絡人應用程式同步應用程式** |  選取 [停用]  ，防止應用程式將資料儲存至裝置上的原生「連絡人」應用程式。 如果您選取 [啟用]  ，則應用程式可以將資料儲存至裝置上的原生「連絡人」應用程式。 <br><br>當您執行選擇性抹除以移除應用程式中的工作或學校資料時，會移除直接從應用程式同步到原生「連絡人」應用程式的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 Microsoft Outlook 應用程式。   | **啟用**  |
-| **列印組織資料** | 選取 [停用]  ，防止應用程式列印公司或學校資料。 如果您將此設定保留為 [啟用]  \(預設值\)，使用者將能夠匯出及列印所有組織資料。  | **啟用**  |
-| **與受原則管理的瀏覽器共用 Web 內容** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇： <ul><li>**受原則管理的瀏覽器**：只允許在受原則管理的瀏覽器中開啟 Web 內容。</li><li>**非受控瀏覽器**：只允許在 [非受控瀏覽器通訊協定]  設定中定義的非受控瀏覽器中開啟 Web 內容。 Web 內容在目標瀏覽器中將會是非受控。<br>**注意**：應用程式需要有 Intune SDK 11.0.9 版或更新版本。</li><li>**任何應用程式**：允許任何應用程式中的 Web 連結 </li></ul> 如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受控的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<br><br>**原則受控的瀏覽器**<br>如果您部署多個原則受控的瀏覽器，則只會啟動其中一個。  啟動順序依序為 Intune Managed Browser 和 Microsoft Edge。<p>如果原則受控的瀏覽器為必要的但尚未安裝，則會提示您的終端使用者安裝 Intune Managed Browser。<p>如果原則受控的瀏覽器為必要的，則 iOS 通用連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。 <p>**Intune 裝置註冊**<br>如果您使用 Intune 來管理裝置，請參閱＜透過 Microsoft Intune 使用受控瀏覽器原則管理網際網路存取＞。 <p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器整合了 Intune SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul><br>**注意**：Intune SDK 無法判斷目標應用程式是否為瀏覽器。  在 iOS 裝置上，不允許任何其他受控瀏覽器應用程式。    | **未設定**  |
+| **與原生連絡人應用程式同步應用程式** |  選取 [封鎖]  ，防止應用程式將資料儲存至裝置上的原生「連絡人」應用程式。 如果您選取 [允許]  ，則應用程式可以將資料儲存至裝置上的原生「連絡人」應用程式。 <br><br>當您執行選擇性抹除以移除應用程式中的工作或學校資料時，會移除直接從應用程式同步到原生「連絡人」應用程式的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 Microsoft Outlook 應用程式。   | **允許**  |
+| **列印組織資料** | 選取 [封鎖]  ，防止應用程式列印公司或學校資料。 如果您將此設定保留為 [允許]  (預設值)，則使用者將能夠匯出及列印所有組織資料。  | **允許**  |
+| **限制與其他應用程式的 Web 傳輸** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇： <ul><li>**任何應用程式**：允許任何應用程式中的 Web 連結。</li><li>**Intune Managed Browser**：只允許在 Intune Managed Browser 中開啟 Web 內容。 此瀏覽器為原則受控瀏覽器。</li><li>**Microsoft Edge**：只允許在 Microsoft Edge 中開啟 Web 內容。 此瀏覽器為原則受控瀏覽器。</li><li>**非受控瀏覽器**：只允許在 [非受控瀏覽器通訊協定]  設定中定義的非受控瀏覽器中開啟 Web 內容。 Web 內容在目標瀏覽器中將會是非受控。<br>**注意**：應用程式需要有 Intune SDK 11.0.9 版或更新版本。</li></ul> 如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受控的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<br><br>如果受控瀏覽器為必要但尚未安裝，則會提示終端使用者安裝 Microsoft Edge。<p>如果原則受控的瀏覽器為必要的，則 iOS 通用連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。 <p>**Intune 裝置註冊**<br>如果您使用 Intune 來管理裝置，請參閱＜透過 Microsoft Intune 使用受控瀏覽器原則管理網際網路存取＞。 <p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器整合了 Intune SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul><br>**注意**：Intune SDK 無法判斷目標應用程式是否為瀏覽器。  在 iOS 裝置上，不允許任何其他受控瀏覽器應用程式。    | **未設定**  |
 |<ul><ui>**非受控瀏覽器通訊協定** | 輸入單一非受控瀏覽器的通訊協定。 來自受原則管理之應用程式的 Web 內容 (http/https 連結) 將在任何支援此通訊協定的應用程式中開啟。 Web 內容在目標瀏覽器中將會是非受控。 <br><br>**注意**：只包含通訊協定前置詞。  如果您的瀏覽器需要 `mybrowser://www.microsoft.com` 格式的連結，請輸入 `mybrowser`。<br>連結將轉譯為：<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **空白**  |
 
 > [!NOTE]  

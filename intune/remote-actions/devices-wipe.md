@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ded91d72321257adc30d0321b5d01e74fa1d51a6
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
+ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73712192"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74991776"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
@@ -47,6 +47,8 @@ ms.locfileid: "73712192"
 
 [保留註冊狀態和使用者帳戶]  選項僅適用於 Windows 10 版本 1709 或更新版本。
 
+Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過關閉裝置來規避抹除動作。 受保護的抹除會繼續嘗試重設裝置，直到成功為止。 在某些設定中，此動作可能會讓裝置無法重新啟動。
+
 下次連線到 Intune 時，MDM 原則將會重新套用。
 
 在您將裝置給予新使用者之前重設裝置，或在裝置遺失或遭竊的情況下，抹除會十分有用。 請謹慎選取 [抹除]  。 裝置上的資料無法復原。
@@ -57,7 +59,7 @@ ms.locfileid: "73712192"
 3. 選取 [裝置]   > [所有裝置]  。
 4. 選取您要抹除的裝置名稱。
 5. 在顯示裝置名稱的窗格中，選取 [抹除]  。
-6. 在 Windows 10 的 1709 版或更新版本中，您也可以有 [Retain enrollment state and user account] (保留註冊狀態和使用者帳戶)  選項。 
+6. 在 Windows 10 1709 版或更新版本中，您還有 [Wipe device, but keep enrollment state and associated user account] \(抹除裝置，但保留註冊狀態和相關聯的使用者帳戶\)  選項。 
     
     |抹除期間保留 |不保留|
     | -------------|------------|
@@ -101,7 +103,7 @@ ms.locfileid: "73712192"
 |網頁連結|已移除。|已移除。|
 |未受管理的 Google Play 應用程式|應用程式和資料仍會保持安裝。 <br /> <br />會移除由應用程式本機儲存體內之行動應用程式管理 (MAM) 加密保護的公司應用程式資料。 應用程式外受 MAM 加密保護的資料，仍維持加密狀態且無法使用，但不會被移除。 |應用程式和資料仍會保持安裝。 <br /> <br />會移除由應用程式本機儲存體內之行動應用程式管理 (MAM) 加密保護的公司應用程式資料。 應用程式外受 MAM 加密保護的資料，仍維持加密狀態且無法使用，但不會被移除。|
 |非受控企業營運應用程式|應用程式和資料仍會保持安裝。|已解除安裝應用程式並移除應用程式的本機資料。 不會移除應用程式外的任何資料 (例如 SD 記憶卡)。|
-|受管理的 Google Play 應用程式|將會移除應用程式資料。 不會移除應用程式。 應用程式外受行動應用程式管理 (MAM) 加密保護的資料 (例如 SD 記憶卡)，仍維持加密狀態且無法使用，但不會移除。|將會移除應用程式資料。 不會移除應用程式。 應用程式外受 MAM 加密保護的資料 (例如 SD 記憶卡)，仍維持加密狀態，但不會移除。|
+|受控的 Google Play 應用程式|將會移除應用程式資料。 不會移除應用程式。 應用程式外受行動應用程式管理 (MAM) 加密保護的資料 (例如 SD 記憶卡)，仍維持加密狀態且無法使用，但不會移除。|將會移除應用程式資料。 不會移除應用程式。 應用程式外受 MAM 加密保護的資料 (例如 SD 記憶卡)，仍維持加密狀態，但不會移除。|
 |非受控企業營運應用程式|將會移除應用程式資料。 不會移除應用程式。 應用程式外受 MAM 加密保護的資料 (例如 SD 記憶卡)，仍維持加密狀態且無法使用，但不會移除。|將會移除應用程式資料。 不會移除應用程式。 應用程式外受 MAM 加密保護的資料 (例如 SD 記憶卡)，仍維持加密狀態且無法使用，但不會移除。|
 |設定|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|

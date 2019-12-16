@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ab720ffee3f468d3700558dfbde460ee8f712ea
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72505492"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955366"
 ---
 # <a name="categorize-devices-into-groups"></a>將裝置分類成群組
 
@@ -45,11 +45,10 @@ ms.locfileid: "72505492"
 ## <a name="how-to-configure-device-categories"></a>如何設定裝置類別
 
 ### <a name="step-1-create-device-categories-on-the-intune-blade-of-the-azure-portal"></a>步驟 1：在 Azure 入口網站的 [Intune] 刀鋒視窗中，建立裝置類別
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置註冊]  。
-2. 在 [裝置註冊]  刀鋒視窗中，選擇 [裝置類別]  。
-3. 在 [裝置類別]  頁面上，選擇 [建立]  以新增新的類別。
-4. 在 [建立裝置類別]  刀鋒視窗中，為新類別輸入 [名稱]  ，以及選用的 [描述]  。
-5. 完成之後，請選取 [建立]  。 您可以在類別清單中看到新類別。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [裝置類別]  。
+2. 在 [裝置類別]  頁面上，選擇 [建立]  以新增新的類別。
+3. 在 [建立裝置類別]  刀鋒視窗中，為新類別輸入 [名稱]  ，以及選用的 [描述]  。
+4. 完成之後，請選取 [建立]  。 您可以在類別清單中看到新類別。
 
 當您在步驟 2 中建立 Azure Active Directory (Azure AD) 安全性群組時，將會使用裝置類別名稱。
 
@@ -64,20 +63,16 @@ ms.locfileid: "72505492"
 
 ### <a name="view-the-categories-of-devices-that-you-manage"></a>檢視您管理的裝置類別
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [所有裝置]  。
 
-2. 在 [管理]  之下，選取 [所有裝置]  。
+2. 在裝置清單中，檢查 [裝置類別]  資料行。
 
-3. 在裝置清單中，檢查 [裝置類別]  資料行。
-
-如果未顯示 [裝置類別]  資料行，請選取 [資料行]  。 從清單中選擇 [裝置類別]  ，然後選取 [套用]  。
+如果未顯示 [裝置類別]  資料行，請選取 [資料行]   > [類別]   > [套用]  。
 
 ### <a name="change-the-category-of-a-device"></a>變更裝置類別
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選擇 [裝置]  。
-2. 在 [裝置]  刀鋒視窗的 [管理]  區段下，選擇 [所有裝置]  。
-3. 在裝置清單中，選擇您想要的裝置。 接著，在 [裝置內容] 刀鋒視窗的 [管理]  區段下，選擇 [內容]  。
-4. 在下一個刀鋒視窗中，您可將所選裝置的 [裝置類別]  變更為任一您先前設定的類別名稱。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [所有裝置]  > 選擇想要的裝置 > [屬性]  。
+2. 在下一個刀鋒視窗中，您可將所選裝置的 [裝置類別]  變更為任一您先前設定的類別名稱。
 
 ## <a name="after-you-configure-device-groups"></a>設定裝置群組之後
 

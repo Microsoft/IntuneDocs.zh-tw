@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 59edb9956ee117e0dbdb9d90a4fd4ef313fd5c66
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390468"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946677"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
@@ -90,13 +90,21 @@ Jamf 和 Intune 必須能夠存取下列連接埠，才能正確整合：
    > [!IMPORTANT]
    > 離開此頁面之前，複製用戶端密碼的值，並加以記錄以供稍後使用。 您將需要在後續程序中用到此值。 此值無法在未重新建立應用程式註冊的情況下再次使用。
 
-6. 選取 [管理]  下方的 [API 權限]  。 選取現有的權限，然後選取 [移除權限]  以刪除那些權限。 由於您將新增權限，因此必須先刪除所有的現有權限，而應用程式只有在具備單一必要權限時才能正常運作。
+6. 選取 [管理]  下方的 [API 權限]  。 
 
-7. 若要指派新的權限，請選取 [新增權限]  。 在 [要求 API 權限]  頁面上，選取 [Intune]  ，然後選取 [應用程式權限]  。 只選取 **update_device_attributes** 的核取方塊。
+7. 在 [API 權限] 頁面上，選取 [新增權限]  以新增權限。 在 [要求 API 權限]  頁面上，選取 [Intune]  ，然後選取 [應用程式權限]  。 只選取 **update_device_attributes** 的核取方塊。
 
-   選取 [新增權限]  以儲存此設定。
+8. 等候幾分鐘的時間，新的權限才會生效。 然後，選取 [授與  \<您的租用戶> 管理員同意]。 在新視窗中驗證帳戶，並遵循提示來授與應用程式存取權。  
 
-8. 在 [API 權限]  頁面上，選取 [代表 _\<您的租用戶>_ 授與管理員同意]  ，然後選取 [是]  。  成功註冊應用程式之後，API 權限應如下所示：
+9. 您可能需要等候另幾分鐘的時間，管理員同意才會生效。
+
+10. 按一下頁面頂端的 [重新整理]  按鈕，以重新整理頁面。 確認已為 **update_device_attributes** 權限授與管理員同意。 
+
+11. 選取 [...]  功能表，然後選取 [撤銷管理員同意]  ，以從 [User.Read]  權限移除管理員同意。
+
+12. 您也必須移除 [User.Read]  權限。 在 [User.Read]  選取 [...]  功能表，然後選取 [移除權限]  。 
+
+8. 成功註冊應用程式之後，API 權限應該只會包含一項稱為 **update_device_attributes** 的權限，且應如下所示：
 
    ![順利取得權限](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

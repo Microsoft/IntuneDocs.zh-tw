@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 8db05399c4a880d72d24cde885976309bf9a4fa7
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549371"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74828934"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
 
@@ -119,8 +119,8 @@ Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Andr
 
 #### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
 由於 Google 的這些變更，Intune 使用者會受到下列方面的影響：  
-- Intune 僅支援執行 Android 10 與更新版本 (亦稱為 Android Q) 的裝置系統管理員受控 Android 裝置，且支援僅提供至 2020 年夏天。 這是下一個 Android 主要版本預計發行的日期。   
-- 在 2020 年夏天之後，將無法再全面管理執行 Android 10 或更新版本的裝置系統管理員受控裝置。       
+- Intune 只能為執行 Android 10 和更新版本之裝置系統管理員受控的 Android 裝置提供完整支援，且支援僅提供至 2020 年度第 2 季。 在此期間過後，執行 Android 10 或更新版本之裝置系統管理員受控的裝置將無法再完全受控。 尤其受影響的裝置不會再收到新的密碼要求。
+    - 在此期間內，Samsung Knox 裝置不會受到影響，因為其透過 Intune 與 Knox 平台的整合來獲得延伸支援。 讓您有更多時間規劃裝置系統管理員管理的轉換。    
 - 在 Android 10 以下的 Android 版本上，仍由裝置系統管理員管理的 Android 裝置不會受到影響，並可繼續由裝置系統管理員全權管理。    
 - 針對所有執行 Android 10 與更新版本的裝置，Google 已限制裝置系統管理員管理代理程式 (例如公司入口網站) 存取裝置識別碼資訊的能力。 當裝置更新至 Android 10 或更新版本之後，此限制會影響下列 Intune 功能：  
     - VPN 的網路存取控制將不再有效。   
@@ -130,7 +130,7 @@ Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Andr
         > 這只會影響 Android 10 與更新版本的裝置系統管理員受控裝置，且不會影響受 Android Enterprise 管理的裝置。 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-為避免在 2020 年夏天即將來臨的功能減少，建議您執行下列動作：
+若要避免功能在 2020 年度第 3 季減少，建議您執行下列動作:
 - 不要在裝置系統管理員管理中上架新裝置。
 - 若裝置預期會收到 Android 10 的更新，請將它從裝置系統管理員管理移轉到 Android Enterprise 管理和/或應用程式保護原則。
 

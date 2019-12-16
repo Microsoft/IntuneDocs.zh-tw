@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a3081ece10bb25c6381f4a8f891152433bc9661
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564389"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819786"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -77,7 +77,7 @@ ms.locfileid: "74564389"
 |MEID|裝置的行動設備識別碼。|Windows、iOS、Android|
 |製造商|裝置的製造商。|Windows、iOS、Android|
 |型號|裝置的型號。|Windows、iOS、Android|
-|電話號碼|指派給裝置的手機號碼。|Windows、iOS、Android|
+|電話號碼|指派給裝置的手機號碼。|Windows、iOS、Android*|
 |訂閱電訊廠商|裝置的無線電訊廠商。|Windows、iOS、Android|
 |行動電話通訊技術|裝置使用的無線電話系統。|Windows、iOS、Android|
 |Wi-Fi MAC|裝置的媒體存取控制位址。|Windows、iOS、Android|
@@ -93,7 +93,7 @@ ms.locfileid: "74564389"
 |受監督|若為 [是]  ，表示系統管理員對裝置有加強的控制力。|Windows、iOS、Android|
 |已加密|若為 [是]  ，表示會加密儲存在裝置上的資料。|Windows、iOS、Android|
 
-
+\* 不適用於具有 Google 原則管理員的 Android，例如完全受控與專用裝置
 
 ## <a name="next-steps"></a>後續步驟
 看看您還可以怎麼使用 Intune [管理您的裝置](device-management.md)。

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c6b12bb0066c37eb470065a169a3ad7866c69a17
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 11b93d41ac09f637d6c75a3f2f4b7f4213cecec7
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503274"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74819772"
 ---
 # <a name="intune-enrollment-method-capabilities-for-windows-devices"></a>適用於 Windows 裝置的 Intune 註冊方法的功能
 [!INCLUDE[azure_portal](../includes/azure_portal.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "72503274"
 
 | **功能** | **[Azure AD 加入](windows-enroll.md#enable-windows-10-automatic-enrollment)**|**[Azure AD 加入 (使用 Autopilot) (使用者驅動模式)](enrollment-autopilot.md)** |**[Azure AD 加入 (使用 Autopilot) (自我部署模式)](enrollment-autopilot.md)** |**[大量](windows-bulk-enroll.md)**|**[DEM](device-enrollment-manager-enroll.md)** | **[BYOD](device-enrollment.md#bring-your-own-device)** | **[GPO](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy)** | **[共同管理](https://docs.microsoft.com/sccm/core/clients/manage/co-management-overview)** |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|條件式存取                                      |![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|
+|條件式存取                                      |![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)\*\*|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|
 |使用者與裝置建立關聯                    |![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|
 |需要 Azure AD Premium                               |![X](./media/enrollment-method-capab/xmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|
 |裝置可以評估 CA 所保護的資源             |![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|
@@ -54,6 +54,8 @@ ms.locfileid: "72503274"
 |支援在 Azure AD 加入之後自動註冊       |![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![核取記號](./media/enrollment-method-capab/checkmark.png)|![X](./media/enrollment-method-capab/xmark.png)|![X](./media/enrollment-method-capab/xmark.png)|
 
 \* Configuration Manager 中的用戶端應用程式工作負載必須移至 Intune Pilot 或 Intune。
+
+\** [裝置已針對條件式存取封鎖，但 Windows 10 1803+ 除外。](device-enrollment-manager-enroll.md)
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3d98a0e3c5bd2a5c11c9aa72d791306dfbe6578
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
+ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
-ms.locfileid: "72503293"
+ms.lasthandoff: 12/10/2019
+ms.locfileid: "74955468"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -85,9 +85,7 @@ ms.locfileid: "72503293"
 
 ### <a name="upload-a-csv-list-of-corporate-identifiers"></a>上傳公司識別碼的 .csv 清單
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，選擇 [裝置註冊]   > [公司裝置識別碼]   > [新增]   > [上傳 CSV 檔案]  。
-
-   ![反白顯示 [新增] 按鈕的公司裝置識別碼工作區](./media/corporate-identifiers-add/add-corp-id.png)
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [註冊裝置]   > [公司裝置識別碼]   > [新增]   > [上傳 CSV 檔案]  。
 
 2. 在 [新增識別碼]  刀鋒視窗中，指定識別碼類型：[IMEI]  或 [序號]  。
 
@@ -97,7 +95,7 @@ ms.locfileid: "72503293"
 
 ## <a name="manually-enter-corporate-identifiers"></a>手動輸入公司識別碼
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，選擇 [裝置註冊]   > [公司裝置識別碼]   > [新增]   > [手動輸入]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [註冊裝置]   > [公司裝置識別碼]   > [新增]   > [手動輸入]  。
 
 2. 在 [新增識別碼]  刀鋒視窗中，指定識別碼類型：[IMEI]  或 [序號]  。
 
@@ -111,7 +109,7 @@ ms.locfileid: "72503293"
 
 ## <a name="delete-corporate-identifiers"></a>刪除公司識別碼
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)，選擇 [裝置註冊]   > [公司裝置識別碼]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [註冊裝置]   > [公司裝置識別碼]  。
 2. 選取您想要刪除的裝置識別碼，然後選擇 [刪除]  。
 3. 確認刪除。
 
@@ -125,7 +123,7 @@ ms.locfileid: "72503293"
 裝置內容會顯示 Intune 中每筆裝置記錄的 [擁有權]  。 身為系統管理員，您可以將裝置指定為 [個人]  或 [公司]  。 當裝置的擁有權類型從 [個人] 變更為 [公司] 時，Intune 會刪除在過去 7 天內從該裝置收集的所有應用程式資訊。 如果適用的話，Intune 也會刪除所記錄的電話號碼。 
 
 **變更裝置擁有權：**
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)、移至 [裝置]  ，然後選擇裝置。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [所有裝置]  > 選擇裝置。
 2. 選擇 [內容]  。
 3. 將 [裝置擁有權]  指定為 [個人]  或 [公司]  。
 

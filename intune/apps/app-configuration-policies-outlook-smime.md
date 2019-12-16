@@ -16,16 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 348d1fe2fd236a2af11f7e58dc11530a5ce397bc
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c9572f4accb1be232d4667d99b98beff90d81379
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564195"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000409"
 ---
 # <a name="configure-smime-with-outlook-for-ios"></a>使用 iOS 版 Outlook 設定 S/MIME
 
 安全/多用途網際網路郵件延伸標準 (S/MIME) 為傳送至和來自 Exchange ActiveSync (EAS) 帳戶的電子郵件，提供額外一層安全性。 [Microsoft Outlook](https://aka.ms/omsmime) 可以利用 S/MIME，讓使用者能夠加密外寄訊息和附件，確保只有預期的收件者可以在使用 Office 365 帳戶時，讀取和存取訊息內容。 使用者也可以數位簽署訊息，這可讓收件者驗證傳送者的身分識別，並確認訊息未遭到竄改。 利用憑證可以做到此功能。 如需詳細資訊，請參閱[了解 S/MIME](https://docs.microsoft.com/previous-versions/tn-archive/aa995740(v=exchg.65)?redirectedfrom=MSDN) \(英文\)。
+
+> [!NOTE]
+> 此功能已延後，但即將發行。
 
 > [!NOTE]
 > 此主題描述如何透過 [Microsoft 端點管理員](https://go.microsoft.com/fwlink/?linkid=2109431)部署受信任的根憑證。 Microsoft 端點管理員是單一的整合式端點管理平台，可管理您的所有端點。 此 Microsoft 端點管理員系統管理中心整合 ConfigMgr 和 Microsoft Intune。
@@ -78,9 +81,6 @@ iOS 版 Outlook 支援兩種方式將憑證傳遞至裝置，使它們可用於 
 6. 按一下 [組態設定]  來新增組態設定。 
     - 選取 [組態設定格式]  旁的 [使用組態設計工具]  ，並接受預設設定。 如需詳細資訊，請參閱 [Microsoft Outlook 組態設定](~/apps/app-configuration-policies-outlook.md)。
 7. 按一下 [S/MIME]  來顯示 [Outlook S/MIME 設定]  。
-
-    ![iOS 版 Outlook S/MIME 設定的螢幕擷取畫面](./media/app-configuration-policies-outlook-smime/app-configuration-policies-outlook-smime-01.png)
-
 8. 將 [啟用 S/MIME]  設定為 [是]  。
 9. 將 [從 Intune 部署 S/MIME 憑證]  設定為 [是]  。
 10. 在 [憑證設定檔類型]  旁的 [簽署憑證]  下，選擇下列其中一個選項：

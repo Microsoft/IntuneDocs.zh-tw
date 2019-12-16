@@ -1,11 +1,11 @@
 ---
 title: Microsoft Intune 中的裝置合規性原則 - Azure | Microsoft Docs
-description: 使用裝置合規性政策入門、狀態和嚴重性等級的概觀、使用 InGracePeriod 狀態、使用條件式存取、處理未獲指派原則的裝置，以及 Azure 入口網站與 Microsoft Intune 傳統入口網站中的合規性差異
+description: 使用裝置合規性政策入門、狀態和嚴重性等級的概觀、使用 InGracePeriod 狀態、使用條件式存取，以及處理未獲指派原則的裝置。
 keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/05/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 967bf9937c71ff3ca7277f43fd969291eb5af6de
-ms.sourcegitcommit: c2e62f1ebdf75599c8e544287123c602f0f15f2b
+ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
+ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72749174"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74860290"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在裝置上設定規則可在您的組織中使用 Intune 存取資源
 
@@ -131,21 +131,6 @@ Intune 也包含一組內建的合規性政策設定。 下列內建政策會在
 - 如果條件式存取原則適用於使用者，就會封鎖裝置。
 - 公司入口網站應用程式會通知使用者任何合規性問題的相關事項。
 
-## <a name="azure-classic-portal-vs-azure-portal"></a>Azure 傳統入口網站與Azure 入口網站
-
-在 Azure 入口網站中使用裝置合規性原則時的主要差異：
-
-- 在 Azure 入口網站中，會針對每個支援的平台個別建立合規性原則
-- 在 Azure 傳統入口網站中，所有支援的平台會使用一個通用的合規性原則
-
-<!--- - In the Azure portal, you have the ability to specify actions and notifications that are initiated when a device is determined to be noncompliant. This ability does not exist in the Intune admin console.
-
-- In the Azure portal, you can set a grace period to allow time for the end-user to get their device back to compliance status before they completely lose the ability to get company data on their device. This is not available in the Intune admin console.--->
-
-在[傳統入口網站](https://manage.microsoft.com)中建立的裝置合規性原則不會出現在 [Azure 入口網站](https://portal.azure.com)中。 不過，它們仍會以使用者作為目標，並可透過傳統入口網站管理。
-
-若要在 Azure 入口網站中使用裝置合規性相關功能，您必須在 Azure 入口網站中建立新的裝置合規性原則。 若您在 Azure 入口網站中將某個裝置合規性原則指派給已從傳統入口網站獲指派裝置合規性原則的使用者，則來自 Azure 入口網站之裝置合規性原則的優先順序會高於在傳統入口網站中建立的原則。
-
 ## <a name="next-steps"></a>後續步驟
 
 - [建立政策](create-compliance-policy.md)並檢視必要條件。
@@ -158,6 +143,6 @@ Intune 也包含一組內建的合規性政策設定。 下列內建政策會在
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
   - [Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
   - [Windows 8.1 及更新版本](compliance-policy-create-windows-8-1.md)
-  - [Windows 10 及更新版本](compliance-policy-create-windows.md)
+  - [Windows 10 及以上版本](compliance-policy-create-windows.md)
 
 - 如需有關 Intune 資料倉儲政策實體的詳細資訊，請參閱[政策實體的參考](../reports-ref-policy.md)。

@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/22/2019
+ms.date: 12/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ad5c26770537ce6a285989f8ca3804277616419
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 77cf4745262346ec2f8bfb5d4d7e67e1ee5c5e07
+ms.sourcegitcommit: edd06a494a241d198ca9b0d3030c92195976e0d3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74540778"
+ms.lasthandoff: 12/11/2019
+ms.locfileid: "75000375"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -54,12 +54,42 @@ ms.locfileid: "74540778"
 -->  
 
 <!-- ########################## -->
+## <a name="week-of-december-9-2019"></a>2019 年 12 月 9 日當週
+
+#### <a name="migrating-to-microsoft-edge-for-managed-browsing-scenarios---5173762---"></a>移轉到 Microsoft Edge 以進行受控瀏覽案例<!-- 5173762 -->
+
+隨著 Intune Managed Browser 即將淘汰，我們對應用程式防護原則進行了變更，以簡化將使用者移至 Edge 所需的步驟。 我們已將應用程式防護原則設定 [限制使用其他應用程式的 Web 內容傳輸]  中的選項更新為下列其中一項：
+
+- 任何應用程式
+- Intune Managed Browser
+- Microsoft Edge
+- 非受控瀏覽器 
+
+當您選取 [Microsoft Edge]  時，終端使用者會看到條件式存取訊息，通知他們需要 Microsoft Edge才能進行受控瀏覽案例。 如果尚未使用其 AAD 帳戶下載和登入 Microsoft Edge，也會收到執行此作業的提示。  這相當於以啟用 MAM 的應用程式為目標，並將應用程式組態設定 `com.microsoft.intune.useEdge` 設定為 [True]  。 使用 [受原則管理的瀏覽器]  設定的現有應用程式防護原則現在會選取 **Intune Managed Browser**，且您不會看到任何行為變更。 這表示如果您已將應用程式組態設定 [useEdge]  設定為 [True]  ，則使用者會看到使用 Microsoft Edge 的訊息。 建議利用受控瀏覽案例的所有客戶，都將其應用程式防護原則更新為 [限制使用其他應用程式的 Web 內容傳輸]  ，以確保使用者無論在哪一個應用程式啟動連結，都能看到轉換至 Microsoft Edge 的適當指引。 
+
+<!-- ########################## -->
+## <a name="week-of-december-2-2019"></a>2019 年 12 月 2 日當週
+
+#### <a name="new-microsoft-endpoint-configuration-manager-co-management-licensing--5027281--"></a>新的 Microsoft Endpoint Configuration Manager 共同管理授權<!--5027281-->
+現在提供新的授權，可讓具有軟體保證的 Configuration Manager 客戶取得適用於 Windows 10 電腦的 Intune 共同管理功能，不需要購買額外的 Intune 授權，即可進行共同管理。 客戶不再需要將個別的 Intune/EMS 授權指派給其終端使用者，即可共同管理 Windows 10。
+- Configuration Manager 所管理並已註冊共同管理的裝置，與 Intune 獨立版 MDM 受控電腦幾乎有相同的權限。 不過，重設之後，則無法使用 Autopilot 來重新佈建些裝置。
+- 使用其他方式在 Intune 中註冊的 Windows 10 裝置需要完整的 Intune 授權。
+- 其他平台上的裝至仍然需要完整的 Intune 授權。
+
+如需詳細資訊，請參閱[授權條款](https://www.microsoft.com/en-us/Licensing/product-licensing/products)。
+
+
+<!-- ########################## -->
 ## <a name="week-of-november-18-2019-1911-service-release"></a>2019 年 11 月 18 日當週 (1911 服務版本)
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>應用程式管理
 
 #### <a name="smime-support-with-microsoft-outlook-for-ios---2669398-idready---"></a>搭配 iOS 版 Microsoft Outlook 的 S/MIME 支援<!-- 2669398 idready -->
+
+   > [!NOTE]
+   > 此功能已延後，但即將發行。
+
 Intune 支援在 iOS 裝置上傳遞可搭配 iOS 版 Microsoft Outlook 使用的 S/MIME 簽署和加密憑證。 如需相關資訊，請參閱[設定 iOS 版 Microsoft Outlook 的 S/MIME](~/apps/app-configuration-policies-outlook-smime.md)。
 
 #### <a name="ui-update-when-selectively-wiping-app-data---4102028---"></a>選擇性地抹除應用程式資料時的 UI 更新<!-- 4102028 -->

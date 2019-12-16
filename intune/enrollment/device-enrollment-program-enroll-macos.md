@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f41caddc7ab9cc09c8d5403f67b6112d58c3ffd
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713550"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832690"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用裝置註冊計劃或 Apple School Manager 自動註冊 macOS 裝置
 
@@ -61,7 +61,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 ### <a name="step-1-download-the-intune-public-key-certificate-required-to-create-the-token"></a>步驟 1： 下載建立權杖所需的 Intune 公開金鑰憑證
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]   > [新增]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [macOS]   > [macOS 註冊]   > [註冊方案權杖]   > [新增]  。
 
     ![取得註冊計劃權杖。](./media/device-enrollment-program-enroll-macos/image01.png)
 
@@ -103,7 +103,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 安裝權杖之後，您可以為裝置建立註冊設定檔。 裝置註冊設定檔會定義要在註冊期間套用至裝置群組的設定。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [macOS]   > [macOS 註冊]   > [註冊方案權杖]  。
 2. 選取權杖，選擇 [設定檔]  ，然後選擇 [建立設定檔]  。
 
     ![[建立設定檔] 螢幕擷取畫面。](./media/device-enrollment-program-enroll-macos/image04.png)
@@ -165,7 +165,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]  > [Apple 註冊]  > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]  > [同步]  。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-macos/image06.png)
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]  > [macOS]  > [macOS 註冊]  > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]  > [同步]  。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-macos/image06.png)
 
    為了符合 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
    - 完整同步處理每 7 天只能執行一次。 在完整同步期間，Intune 會擷取指派至已連線 Intune 之 Apple MDM 伺服器的序號完整更新清單。 若註冊計劃裝置從 Intune 入口網站刪除，但未從 DEP 入口網站中的 Apple MDM 伺服器解除指派，則在執行完整同步之前，該裝置都不會重新匯入 Intune。   
@@ -175,7 +175,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 必須先將註冊計劃設定檔指派至裝置，裝置才能註冊。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]  > 選擇清單中的權杖。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [macOS]   > [macOS 註冊]   > [註冊方案權杖]  > 在清單中選擇權杖。
 2. 選擇 [裝置]  > 選擇清單中的裝置 > [指派設定檔]  。
 3. 在 [指派設定檔]  下，選擇裝置的設定檔 > [指派]  。
 
@@ -183,7 +183,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 您可以針對使用特定權杖註冊的所有裝置，挑選要套用的預設 macOS 和 iOS 設定檔。 
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]  > 選擇清單中的權杖。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [macOS]   > [macOS 註冊]   > [註冊方案權杖]  > 在清單中選擇權杖。
 2. 選擇 [設定預設設定檔]  、在下拉式清單中選擇設定檔，然後選擇 [儲存]  。 此設定檔將套用到使用該權杖註冊的所有裝置。
 
 ## <a name="distribute-devices"></a>散發裝置

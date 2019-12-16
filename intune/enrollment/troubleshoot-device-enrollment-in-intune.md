@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 190322392909a14681a4b68a79d9a3537360206b
-ms.sourcegitcommit: 28622c5455adfbce25a404de4d0437fa2b5370be
+ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2019
-ms.locfileid: "73713501"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74832731"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -46,7 +46,7 @@ ms.locfileid: "73713501"
 2. 請務必將時間與日期設定成接近終端使用者時區的 GMT 標準時間 (+ 或 - 12 個小時)。
 3. 將「Intune 公司入口網站」解除安裝並重新安裝 (如果適用)。
 
-您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 提供有關收集記錄檔使用者指示之處如下：
+您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 有關使用者如何收集記錄檔之指示提供如下:
 
 - [將 Android 註冊錯誤傳送給 IT 系統管理員](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
 - [將 iOS 錯誤傳送給 IT 系統管理員](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
@@ -64,13 +64,13 @@ ms.locfileid: "73713501"
 
 請遵循以下步驟，檢查指派至使用者的裝置是否超過上限：
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [裝置註冊]   > [註冊限制]   > [裝置限制]  。 請記下 [裝置限制]  欄中的值。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [註冊限制]   > [裝置限制]  。 請記下 [裝置限制]  欄中的值。
 
 2. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [使用者]   > [所有使用者]  > 選取該使用者 > [裝置]  。 請記下裝置數目。
 
 3. 如果使用者註冊的裝置數目已經等於其裝置限制，在出現以下情況之前將無法再註冊任何裝置：
     - [移除現有的裝置](../remote-actions/devices-wipe.md)，或者
-    - 您[設定裝置限制](enrollment-restrictions-set.md)以增加裝置限制。
+    - 更改[裝置限制設定](enrollment-restrictions-set.md)以增加數目。
 
 若要避免到達裝置上限，請務必移除過期的裝置記錄。
 
@@ -103,7 +103,7 @@ ms.locfileid: "73713501"
 1. 確認已經[正確地設定](../fundamentals/mdm-authority-set.md) MDM 授權單位。
     
 2. 確認使用者的認證已正確地與 Azure Active Directory 同步。 您可以確認使用者的 UPN 是否符合 Microsoft 365 系統管理中心內的 Active Directory 資訊。
-    如果 UPN 與 Active Directory 資訊不符：
+    如果 UPN 與 Active Directory 資訊不符，則：
 
     1. 關閉本機伺服器上的 DirSync。
 
@@ -166,7 +166,7 @@ ms.locfileid: "73713501"
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
 - 受到條件式存取原則所保護的使用者可能會遺失對公司資源的存取。
 
-Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用 Intune 公司入口網站及其元件。 當公司入口網站處於已停用狀態時，就不能在背景中執行，而且無法連絡 Intune 服務。
+Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用 Intune 公司入口網站及其元件。 當公司入口網站處於已停用狀態時，就不能在背景中執行，而且無法與 Intune 服務取得聯絡。
 
 **解決方法 1：**
 
@@ -181,7 +181,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **解決方法 3：**
 
-如果解決方案 2 無法運作，請使用者遵循下列步驟，好讓 Smart Manager 排除公司入口網站應用程式：
+如果解決方案2 無效，請讓您的使用者遵循下列步驟，以使 Smart Manager 將公司入口網站應用程式排除
 
 1. 在裝置上啟動 Smart Manager 應用程式。
 
@@ -233,11 +233,11 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 使用者輸入其公司認證並被重新導向至同盟登入之後，可能仍看到遺漏憑證的錯誤。 在此情況下，錯誤可能表示您的 Active Directory 同盟服務 (AD FS) 伺服器遺失中繼憑證
 
-發生憑證錯誤是因為 Android 裝置需要中繼憑證包含在 [SSL Server Hello](https://technet.microsoft.com/library/cc783349.aspx) 中。 目前，預設的 AD FS 伺服器或 WAP - AD FS Proxy 伺服器安裝在對 SSL 用戶端 Hello 的 SSL 伺服器 Hello 回應中，只傳送 AD FS 服務 SSL 憑證。
+發生憑證錯誤是因為 Android 裝置需要 [SSL Server Hello](https://technet.microsoft.com/library/cc783349.aspx) 中具有中繼憑證。 目前，預設的 AD FS 伺服器或 WAP - AD FS Proxy 伺服器安裝在對 SSL 用戶端 Hello 的 SSL 伺服器 Hello 回應中，只傳送 AD FS 服務 SSL 憑證。
 
 若要修正問題，請按照下列步驟將憑證匯入 AD FS 伺服器或 Proxy 上的 Computers Personal Certificates：
 
-1. 在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始]   > [執行]   > **certlm.msc**，以啟動 [本機電腦憑證管理主控台]。
+1. 在 ADFS 和 Proxy 伺服器上，以滑鼠右鍵按一下 [開始]   > [執行]   > 輸入**certlm.msc**，以啟動 [本機電腦憑證管理主控台]。
 2. 展開 [個人]  並選擇 [憑證]  。
 3. 尋找您的 AD FS 服務通訊的憑證 (公開簽署的憑證)，然後按兩下來檢視其內容。
 4. 選擇 [憑證路徑]  索引標籤來查看憑證的父憑證。
@@ -253,7 +253,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **驗證憑證已正確安裝**：
 
-下列步驟僅描述可用來驗證憑證以正確安裝之數種方法和工具的其中一種。
+下列步驟僅描述數種可用來驗證憑證是否正確安裝之方法和工具的其中一種。
 
 1. 移至[免費的 Digicert 工具](ttps://www.digicert.com/help/)。
 2. 輸入您的 AD FS 伺服器的完整網域名稱 (例如，sts.contoso.com) 並選取 [檢查伺服器]  。
@@ -270,7 +270,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 |-------------|-----|----------|
 |NoEnrollmentPolicy|找不到註冊原則|請檢查所有註冊必要條件 (例如 APNs 憑證)，並確認已設定並啟用 [iOS as a platform]\(iOS 即平台)。 如需指示，請參閱[設定 iOS 和 Mac 裝置管理](../ios-enroll.md)。|
 |DeviceCapReached|已經註冊過多行動裝置。|使用者註冊其他行動裝置之前，必須先從公司入口網站移除其目前已註冊的其中一部行動裝置。 請參閱您所使用的裝置類型的指示：[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
-|APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 和[組織使用者和裝置](../fundamentals/groups-add.md)。|
+|APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 及[組織使用者和裝置](../fundamentals/groups-add.md)。|
 |AccountNotOnboarded|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需詳細資訊，請檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](../ios-enroll.md)。|
 |DeviceTypeNotSupported|使用者可能嘗試使用非 iOS 裝置進行註冊。 您嘗試註冊的行動裝置類型不受支援。<br /><br />確認裝置正在執行 iOS 8.0 版或更新版本。<br /><br />|確定您的使用者裝置正在執行 iOS 8.0 版或更新版本。|
 |UserLicenseTypeInvalid|裝置無法註冊，因為使用者帳戶還不是必要使用者群組的成員。<br /><br />|使用者必須是正確使用者群組的成員，才可以註冊裝置。 這則訊息表示他們的行動裝置管理授權單位並未擁有正確的授權類型。 例如，如果下列兩個條件都成立，他們就會看到此錯誤：<ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>如需詳細資訊，請檢閱下列文章：<br /><br />檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](../ios-enroll.md)，以及[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 和[組織使用者和裝置](../fundamentals/groups-add.md)，以取得如何設定使用者的資訊。|
@@ -283,7 +283,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
 - 受到條件式存取原則所保護的使用者可能會遺失對公司資源的存取。
 
-**解決方法：** 與您的使用者共用下列解決方法，協助他們重新取得公司資源的存取權。
+**解決方法：** 與您的終端使用者分享下列解決方法，協助他們重新取得公司資源的存取權。
 
 當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步以重新連線 (使用者會看到**正在嘗試同步...** 訊息)。
 
@@ -306,13 +306,13 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 ### <a name="verify-ws-trust-13-is-enabled"></a>確認已啟用 WS-Trust 1.3
 **問題**：裝置註冊計劃 (DEP) 無法註冊 iOS 裝置
 
-使用使用者親和性註冊 DEP 裝置必須啟用 WS-Trust 1.3 使用者名稱/混合端點，才能要求使用者權杖。 Active Directory 預設會啟用此端點。 若要取得已啟用的端點清單，請使用 Get-AdfsEndpoint PowerShell Cmdlet 並尋找 trust/13/UsernameMixed 端點。 例如：
+若要使用使用者親和性註冊 ，DEP 裝置必須啟用 WS-Trust 1.3 使用者名稱/混合端點，才能要求使用者權杖。 Active Directory 預設會啟用此端點。 若要取得已啟用的端點清單，請使用 Get-AdfsEndpoint PowerShell Cmdlet 並尋找 trust/13/UsernameMixed 端點。 例如：
 
       Get-AdfsEndpoint -AddressPath “/adfs/services/trust/13/UsernameMixed”
 
 如需詳細資訊，請參閱 [Get-AdfsEndpoint 文件 (英文)](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
-如需詳細資訊，請參閱[保護 Active Directory 同盟服務的最佳做法](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs)。 如需協助以判斷 WS-Trust 1.3 使用者名稱/混合是否已在識別身分同盟提供者中啟用：
+如需詳細資訊，請參閱[保護 Active Directory 同盟服務的最佳做法](https://technet.microsoft.com/windows-server-docs/identity/ad-fs/operations/best-practices-securing-ad-fs)。 如需協助判斷 WS-Trust 1.3 使用者名稱/混合是否已在識別身分同盟提供者中啟用：
 - 連絡 Microsoft 支援服務 (如果使用 ADFS)
 - 連絡您的識別協力廠商。
 
@@ -328,12 +328,12 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 3. 確認裝置尚未安裝管理設定檔。
 
-4. 巡覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後在系統提示時嘗試安裝設定檔。
+4. 瀏覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後在系統提示時嘗試安裝設定檔。
 
 5. 確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
 ### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>當使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置未出現在主控台
-**問題：** 使用者會註冊 iOS 裝置，但它不會出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
+**問題：** 使用者註冊了 iOS 裝置，但它未出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
 
 - 您 Configuration Manager 網站中的 Microsoft Intune Connector 沒有和 Intune 服務通訊。
 - 資料探索管理員 (ddm) 元件或狀態管理員 (statmgr) 元件沒有處理來自 Intune 服務的訊息。
@@ -346,7 +346,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 - ddm.log
 - statmgr.log
 
-很快就會新增和要在這些記錄檔中尋找哪些項目有關的範例。
+關於要在這些記錄檔中尋找哪些項目的範例很快就會新增。
 
 
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>使用者的 iOS 裝置卡在註冊畫面超過 10 分鐘
@@ -374,23 +374,23 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 4. 通知使用者重新開始註冊程序。
 
 #### <a name="determine-if-theres-something-wrong-with-the-vpp-token"></a>判斷 VPP 權杖是否有問題
-1. 移至 [Intune]   > [裝置註冊]   > [Apple 註冊]   > [註冊計劃權杖]  > 權杖名稱 > [設定檔]  > 設定檔名稱 > [管理]   > [內容]  。
-2. 檢閱內容以查看是否有任何錯誤類似如下：
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [註冊方案權杖]  > [權杖名稱] > [設定檔]  > [設定檔名稱] > [管理]   > [屬性]  。
+2. 檢閱內容，查看是否有任何類似如下的錯誤：
     - 此權杖已過期。
-    - 此權杖超出公司入口網站授權。
+    - 此權杖不在公司入口網站授權範圍。
     - 另一項服務正在使用此權杖。
     - 另一個租用戶正在使用此權杖。
     - 此權杖已被刪除。
 3. 修正權杖的問題。
 
 #### <a name="identify-which-devices-are-blocked-by-the-vpp-token"></a>識別被 VPP 權杖封鎖的裝置
-1. 移至 [Intune]   > [裝置註冊]   > [Apple 註冊]   > [註冊計劃權杖]  > 權杖名稱 > [裝置]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]  > [iOS 註冊]   > [註冊方案權杖]  > [權杖名稱] > [裝置]  。
 2. 依 [已封鎖]  篩選 [設定檔狀態]  資料行。
 3. 記下所有**已封鎖**裝置的序號。
 
 #### <a name="remotely-wipe-the-blocked-devices"></a>從遠端抹除已封鎖的裝置
 修正 VPP 權杖的問題之後，您必須抹除已封鎖的裝置。
-1. 移至 [Intune]   > [裝置]   > [所有裝置]   > [資料行]   > [序號]   > [套用]  。 
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [所有裝置]   > [資料行]   > [序號]   > [套用]  。 
 2. 針對每部已封鎖的裝置，在 [所有裝置]  清單中選擇它，然後選擇 [抹除]   > [是]  。
 
 #### <a name="tell-the-users-to-restart-the-enrollment-process"></a>通知使用者重新開始註冊程序
@@ -414,8 +414,8 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 - 如果您的組織開啟封鎖個人 macOS 裝置的註冊限制，您必須手動[新增個人裝置的序號](corporate-identifiers-add.md#manually-enter-corporate-identifiers)至 Intune。  
 - 如果裝置仍指派給 Intune 中的其他使用者，其先前的擁有者並未使用公司入口網站應用程式將它移除或重設。 若要從 Intune 清除過時的裝置記錄：  
 
-    1. 移至 [Azure 入口網站中的 Intune](https://portal.manage.microsoft.com)，並使用您的系統管理認證登入。
-    2. 移至 Intune > [裝置]   > [所有裝置]  。  
+    1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，使用您的系統管理認證登入。
+    2. 選擇 [裝置]   > [所有裝置]  。  
     3. 找到有註冊問題的裝置。 依裝置名稱或 MAC/硬體位址進行搜尋，以縮小結果的範圍。
     4. 選取裝置 > [刪除]  。 刪除與裝置建立關聯的所有其他項目。  
 
