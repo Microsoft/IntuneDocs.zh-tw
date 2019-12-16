@@ -20,16 +20,16 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: edc45fb3ddab43ef77a3f072c5a1a31f8f88c957
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72506102"
 ---
 # <a name="manage-apps-from-the-company-portal-website"></a>從公司入口網站管理應用程式 
 流覽[公司入口網站網站](https://portal.manage.microsoft.com)，以從您的組織中查看及管理應用程式。 
 
-## <a name="view-all-apps"></a>查看所有應用程式  
+## <a name="view-all-apps"></a>檢視所有應用程式  
 從功能表中選取 [**應用程式**]，以查看您的組織所提供的所有應用程式。 
 
    ![顯示精簡選項的公司入口網站網站 [應用程式] 頁面的螢幕擷取畫面。](./media/intune-view-apps-1907.png)  

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b38ab611ecf6a33c8cc48fa120751af8548a7f95
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 904c3d2267decdfa3929bf29376c05a995c77eb8
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390932"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946644"
 ---
 # <a name="android-enterprise-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定
 
@@ -31,6 +31,8 @@ ms.locfileid: "74390932"
 [建立裝置組態設定檔](device-restrictions-configure.md)。
 
 ## <a name="device-owner-only"></a>僅限裝置擁有者
+
+這些設定適用于 Android 企業註冊類型，Intune 會在其中控制整部裝置，例如 Android Enterprise 完全受控或專用裝置。
 
 ### <a name="general-settings"></a>一般設定
 
@@ -242,6 +244,7 @@ ms.locfileid: "74390932"
   > [!IMPORTANT]
   > - 您選擇的 VPN 用戶端必須安裝在裝置上，且它必須支援工作設定檔中的個別應用程式 VPN。 否則就會發生錯誤。 
   > - 您需要在**受控 Google Play 商店**中核准 VPN 用戶端應用程式、將應用程式同步處理至 Intune，以及將應用程式部署到裝置。 執行這項操作之後，使用者的工作設定檔中便已安裝應用程式。
+  > - 您仍然需要使用[vpn 設定檔](vpn-settings-android-enterprise.md)或透過[應用程式佈建檔](../apps/app-configuration-policies-use-android.md)來設定 vpn 用戶端。
   > - 搭配 F5 Access for Android 3.0.4 使用個別應用程式 VPN 時可能有已知的問題。 如需詳細資訊，請參閱 [F5 Access for Android 3.0.4 的 F5 版本資訊](https://support.f5.com/kb/en-us/products/big-ip_apm/releasenotes/related/relnote-f5access-android-3-0-4.html#relnotes_known_issues_f5_access_android) \(英文\)。
 
 - **鎖定模式**：選擇 [啟用]  以強制所有網路流量使用 VPN 通道。 如果未建立 VPN 連線，裝置將不會有網路存取。
@@ -264,6 +267,8 @@ ms.locfileid: "74390932"
     如需 PAC 檔案的詳細資訊，請參閱[Proxy 自動設定（PAC）](https://developer.mozilla.org/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_(PAC)_file)檔案（開啟非 Microsoft 網站）。
 
 ## <a name="work-profile-only"></a>僅限工作設定檔
+
+這些設定適用于 Android Enterprise 註冊類型，Intune 只會控制工作設定檔，例如個人或自備裝置（BYOD）上的 Android Enterprise 工作設定檔註冊。
 
 ### <a name="work-profile-settings"></a>工作設定檔設定
 

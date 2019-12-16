@@ -18,10 +18,10 @@ search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: e2909e7ad1ced9483a6cec58f1f3009f56946f5f
-ms.sourcegitcommit: 78cebd3571fed72a3a99e9d33770ef3d932ae8ca
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/13/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74058419"
 ---
 # <a name="windows-10-and-later-settings-to-protect-devices-using-intune"></a>使用 Intune 保護裝置的 Windows 10 (及更新版本) 設定
@@ -30,7 +30,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 若要設定 Microsoft Defender 防毒軟體，請參閱 [Windows 10 裝置限制](../configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus)。  
 
-## <a name="before-you-begin"></a>在您開始前  
+## <a name="before-you-begin"></a>開始之前  
 
 [建立 Endpoint Protection 裝置組態設定檔](endpoint-protection-configure.md)。  
 
@@ -44,7 +44,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
 
 - **應用程式防護**  
   **預設**：未設定  
-   應用程式防護 CSP：[設定/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
+   應用程式防護 CSP：[Settings/AllowWindowsDefenderApplicationGuard](https://docs.microsoft.com/windows/client-management/mdm/windowsdefenderapplicationguard-csp#allowwindowsdefenderapplicationguard)  
 
   - **為 Edge 啟用** - 開啟此功能，這會在 Hyper-V 虛擬化瀏覽容器中開啟未受信任的網站。  
   - **未設定**-任何網站（受信任和未受信任）都可以在裝置上開啟。  
@@ -160,7 +160,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   **預設**：未設定  
   防火牆 CSP： [MdmStore/Global/CRLcheck](https://go.microsoft.com/fwlink/?linkid=872548)  
 
-  選擇裝置驗證憑證撤銷清單的方式。 選項包含：  
+  選擇裝置驗證憑證撤銷清單的方式。 這些選項包括：  
   - **停用 CRL 驗證**  
   - **只有撤銷的憑證上的 CRL 驗證失敗**  
   - **因發生任何錯誤而導致 CRL 驗證失敗**。  
@@ -178,7 +178,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
   **預設**：未設定  
   防火牆 CSP： [MdmStore/Global/EnablePacketQueue](https://go.microsoft.com/fwlink/?linkid=872551)  
 
-  指定接收端軟體縮放如何用於 IPsec 通道閘道情節的加密接收與純文字轉送。 此設定會確認保留封包順序。 選項包含：  
+  指定接收端軟體縮放如何用於 IPsec 通道閘道情節的加密接收與純文字轉送。 此設定會確認保留封包順序。 這些選項包括：  
   - **未設定**  
   - **停用所有封包佇列**  
   - **僅將輸入加密封包排入佇列**  
@@ -495,28 +495,28 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
     **預設值**： XTS-AES 128 位  
    
     選擇作業系統磁碟機的加密方法。 建議您使用 XTS-AES 演算法。  
-    - **AES-CBC 128 位**  
-    - **AES-CBC 256 位**  
-    - **XTS-AES 128 位**  
-    - **XTS-AES 256 位**  
+    - **AES-CBC 128 位元**  
+    - **AES-CBC 256 位元**  
+    - **XTS-AES 128 位元**  
+    - **XTS-AES 256 位元**  
 
   - **固定式資料磁碟機的加密**  
     **預設值**： AES-CBC 128 位  
    
     選擇固定式 (內建) 資料磁碟機的加密方法。 建議您使用 XTS-AES 演算法。  
-    - **AES-CBC 128 位**  
-    - **AES-CBC 256 位**  
-    - **XTS-AES 128 位**  
-    - **XTS-AES 256 位**  
+    - **AES-CBC 128 位元**  
+    - **AES-CBC 256 位元**  
+    - **XTS-AES 128 位元**  
+    - **XTS-AES 256 位元**  
 
   - **抽取式磁碟機的加密**  
     **預設值**： AES-CBC 128 位  
 
     選擇抽取式資料磁碟機的加密方法。 如果抽取式磁碟機與不是執行 Windows 10 的裝置搭配使用，則建議您使用 AES-CBC 演算法。  
-    - **AES-CBC 128 位**  
-    - **AES-CBC 256 位**  
-    - **XTS-AES 128 位**  
-    - **XTS-AES 256 位**  
+    - **AES-CBC 128 位元**  
+    - **AES-CBC 256 位元**  
+    - **XTS-AES 128 位元**  
+    - **XTS-AES 256 位元**  
 
 ### <a name="bitlocker-os-drive-settings"></a>BitLocker 作業系統磁碟機設定  
 
@@ -636,7 +636,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
     - **備份修復密碼和金鑰封裝**  
     - **只備份修復密碼**  
 
-  - **用戶端驅動的修復密碼輪替**  
+  - **用戶端驅動的復原密碼旋轉**  
     **預設值**：為已加入 Azure AD 的裝置啟用金鑰輪替  
     BitLocker CSP： [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -733,7 +733,7 @@ Microsoft Intune 包含許多設定，可協助保護您的裝置。 本文描�
     - **備份修復密碼和金鑰封裝**  
     - **只備份修復密碼**  
 
-  - **用戶端驅動的修復密碼輪替**  
+  - **用戶端驅動的復原密碼旋轉**  
     **預設值**：為已加入 Azure AD 的裝置啟用金鑰輪替  
     BitLocker CSP： [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp)  
     
@@ -1308,7 +1308,7 @@ Microsoft Defender 資訊安全中心是以個別的應用程式或各個功能�
   - **強制登出** - 移除智慧卡時，使用者會自動登出。  
   - **若是遠端桌面服務工作階段則中斷連線** - 移除智慧卡會中斷工作階段的連線，但無需登出使用者。 此選項可讓使用者插入智慧卡並在稍後繼續工作階段，或在另一部配備智慧卡讀取器的電腦上，而不需要再次登入。 如果工作階段是本機，則此原則的功能與鎖定工作站相同。  
 
-#### <a name="display"></a>顯示器  
+#### <a name="display"></a>顯示  
 
 - **鎖定螢幕上的使用者資訊**  
   **預設**：未設定  
@@ -1869,7 +1869,7 @@ Microsoft Defender 資訊安全中心是以個別的應用程式或各個功能�
   - **未設定**
   - **允許**
 
-## <a name="next-steps"></a>接下來的步驟
+## <a name="next-steps"></a>後續步驟
 
 設定檔已建立，但還不會執行任何動作。 接下來，[指派設定檔](../configuration/device-profile-assign.md)並[監視其狀態](../configuration/device-profile-monitor.md)。  
 

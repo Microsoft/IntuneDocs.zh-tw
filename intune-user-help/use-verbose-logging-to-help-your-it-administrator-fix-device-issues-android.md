@@ -20,10 +20,10 @@ ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 2326aed90037fbcc6fc693bcdb67c86b57ed34a0
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72508014"
 ---
 # <a name="configure-logging-settings"></a>設定記錄設定
@@ -37,14 +37,14 @@ ms.locfileid: "72508014"
 詳細資訊記錄會記錄您在公司入口網站應用程式中採取的每個動作。 根據預設，它會在您的裝置上啟用。 若要在公司入口網站中關閉詳細資訊記錄：  
 
 1. 登入公司入口網站應用程式。
-2. 點一下 [**設定**]。
+2. 點選 [設定]  。
 3. 在 [**詳細資訊記錄**] 旁，將開關翻轉至 [**關閉**]。
 
 ## <a name="configure-microsoft-intune-app-logging"></a>設定 Microsoft Intune 應用程式記錄
 在 Microsoft Intune 應用程式中，您可以設定記錄檔詳細資料的層級。 層級的預設值為 [**重要**]。 若要調整記錄詳細資料：  
 
 1. 開啟 Microsoft Intune 應用程式。  
-2. 點一下 [**設定**]。  
+2. 點選 [設定]  。  
 3. 在 [**記錄層級詳細資料**] 底下，選取 [**詳細**資訊] 以增加記錄的詳細資料層級，或選取 [**關閉**] 以關閉記錄。  
 
 ## <a name="next-steps"></a>後續步驟  

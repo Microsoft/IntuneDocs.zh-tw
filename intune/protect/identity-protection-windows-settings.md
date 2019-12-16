@@ -17,10 +17,10 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
 ms.openlocfilehash: f49ea9e1e59fadcb90a773e362ec3ef41e25ab63
-ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/16/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "72502236"
 ---
 # <a name="windows-10-device-settings-to-enable-windows-hello-for-business-in-intune"></a>用以啟用 Intune 中 Windows Hello 企業版的 Windows 10 裝置設定
@@ -129,7 +129,7 @@ ms.locfileid: "72502236"
 
   **預設**：未設定
 
-- **使用安全性金鑰進行登入**  
+- **使用安全性金鑰登入**  
   此設定適用于執行 Windows 10 1903 版或更新版本的裝置。 使用它來管理使用 Windows Hello 安全性金鑰進行登入的支援。  
 
   - **已啟用**-使用者可以使用 Windows Hello 安全性金鑰做為以此原則為目標之電腦的登入認證。 

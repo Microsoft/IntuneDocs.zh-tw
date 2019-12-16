@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 12/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f3c6c029a5c5864eda46a68832b2f9f655553846
-ms.sourcegitcommit: 0d6f323152ec62f7d383891cce12ea0a4289cd8f
+ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
+ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2019
-ms.locfileid: "72889529"
+ms.lasthandoff: 12/09/2019
+ms.locfileid: "74946648"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Windows 10 及更新版本的設定將裝置標示為相容或不相容
 
@@ -161,6 +161,7 @@ ms.locfileid: "72889529"
 ### <a name="encryption"></a>加密
 
 - **裝置上的資料儲存區加密**：  
+  此設定適用于裝置上的所有磁片磁碟機。
   - [未設定]  (預設  )
   - [需要]  - 使用 [需要]  可將裝置上的資料儲存區加密。
 
@@ -196,9 +197,9 @@ ms.locfileid: "72889529"
 
 *Windows 10 Desktop 支援下列合規性設定。*
 
-- **Microsoft Defender 反惡意**代碼：  
+- **Microsoft Defender 反惡意程式碼**：  
   - [**未設定**] （*預設*）-Intune 不會控制服務，也不會變更現有的設定。
-  - [**需要**]-開啟 Microsoft Defender 反惡意程式碼服務，並防止使用者將其關閉。 
+  - [**需要**]-開啟 Microsoft Defender 反惡意程式碼服務，並防止使用者將其關閉。
 
 - **Microsoft Defender 反惡意程式碼最小版本**：  
   輸入 Microsoft Defender 反惡意程式碼服務允許的最低版本。 例如，輸入 `4.11.0.0`。 保留空白時，可以使用任何版本的 Microsoft Defender 反惡意程式碼服務。  
@@ -206,10 +207,12 @@ ms.locfileid: "72889529"
   *根據預設，不會設定任何版本*。
 
 - **Microsoft Defender 反惡意程式碼安全性情報最**新：  
-  控制裝置上的 Windows 安全性病毒和威脅防護更新。  
+  控制裝置上的 Windows 安全性病毒和威脅防護更新。
   - [**未設定**] （*預設*）-Intune 不會強制執行任何需求。
-  - **要求**-強制 Microsoft Defender 安全性情報為最新狀態。 
+  - **要求**-強制 Microsoft Defender 安全性情報為最新狀態。
 
+  [Defender/Health/SignatureOutOfDate CSP](https://docs.microsoft.com/windows/client-management/mdm/defender-csp)
+  
   如需詳細資訊，請參閱[Microsoft Defender 防毒軟體的安全性情報更新和其他 microsoft 反惡意](https://www.microsoft.com/en-us/wdsi/defenderupdates)代碼。
 
 - [即時保護]  ：  

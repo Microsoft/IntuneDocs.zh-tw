@@ -17,10 +17,10 @@ search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
 ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
+ms.lasthandoff: 12/05/2019
 ms.locfileid: "74540727"
 ---
 # <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune 正在開發的項目 - 2019 年 12 月
@@ -138,19 +138,19 @@ Intune 正在為 iOS、iPadOS 和 macOS 裝置新增更多單一登入設定。 
 您可以指定可在受控 Android 應用程式中使用的已核准鍵盤清單。 在受管理的應用程式中，系統會提示使用者切換到已安裝在其裝置上的其中一個已核准鍵盤，或視需要將其導向至 Google Play 商店以下載和設定其中一個已核准的鍵盤。 使用者只能在受管理的應用程式中編輯文字欄位（如果其現用鍵盤是其中一個已核准的鍵盤）。
 
 ### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>在 Windows 10 和更新版本的裝置上搭配使用 PKCS 憑證與 Wi-fi 設定檔<!-- 3246388  -->
-目前，您可以使用 SCEP 憑證來驗證 Windows Wi-fi 設定檔（**裝置**設定 > **設定檔** > **建立設定檔** > **Windows 10 和更新版本**（適用于平臺 > 的**wi-fi）** 配置檔案類型 > **Enterprise** > **EAP 類型**）。 您將可以搭配 Windows Wi-fi 設定檔使用 PKCS 憑證。 這項功能可讓使用者使用您租使用者中新的或現有的 PKCS 憑證設定檔來驗證 Wi-fi 設定檔。 
+目前，您可以使用 SCEP 憑證（**裝置**設定 > **設定檔**來驗證 windows wi-fi 設定檔， > 為配置檔案類型 > **Enterprise** > **EAP 類型**）的平臺 > **wi-fi** **建立設定檔** > **Windows 10 和更新版本**。 您將可以搭配 Windows Wi-fi 設定檔使用 PKCS 憑證。 這項功能可讓使用者使用您租使用者中新的或現有的 PKCS 憑證設定檔來驗證 Wi-fi 設定檔。 
 
 如需有關 Wi-fi 設定檔的詳細資訊，請參閱[在 Intune 中新增適用于 Windows 10 和更新版本裝置的 wi-fi 設定](../configuration/wi-fi-settings-windows.md)。
 
 適用於：
 - Windows 10 及更新版本
 
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>在 iOS 裝置上建立電子郵件裝置設定檔時的新 ExchangeActiveSync 設定<!-- 4892824  --> 
-在 iOS/iPadOS 裝置上，您可以在裝置設定檔中設定電子郵件連線能力（**裝置**設定 > **配置**檔 > 為平臺 >**電子郵件** **建立設定檔** > **iOS/iPadOS**適用于配置檔案類型）。 
+### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>在 iOS 裝置上建立電子郵件裝置組態設定檔時的新 Exchange ActiveSync 設定<!-- 4892824  --> 
+在 iOS/iPadOS 裝置上，您可以在裝置組態設定檔中設定電子郵件連線能力 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [iOS/iPadOS]  作為平台 > [電子郵件]  作為設定檔類型)。 
 
 將會提供新的 ExchangeActiveSync 設定，包括：
 - 選擇要同步（或封鎖同步處理）的服務，例如電子郵件、行事曆和連絡人。
-- 允許（或封鎖）使用者在其裝置上變更這些服務的同步設定。 
+- 允許 (或封鎖) 使用者在其裝置上變更這些服務的同步處理設定。 
 
 若要查看目前的設定，請移至[Intune 中 iOS 裝置的電子郵件設定檔設定](../configuration/email-settings-ios.md)。
 
@@ -159,7 +159,7 @@ Intune 正在為 iOS、iPadOS 和 macOS 裝置新增更多單一登入設定。 
 - iPadOS 13.0 和更新版本
 
 ### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>防止使用者將個人 Google 帳戶新增至 Android Enterprise 裝置擁有者和專用裝置<!-- 5353228  -->
-您將能夠防止使用者在 Android 企業裝置擁有者和專用裝置上建立個人 Google 帳戶（**裝置**設定 > **設定檔** > **建立設定檔** > **Android Enterprise** **僅限平臺 > 裝置擁有者 >** 配置檔案類型 >**使用者和帳戶設定**）的裝置限制。
+您將能夠防止使用者在 Android Enterprise 裝置擁有者和專用裝置上建立個人 Google 帳戶 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  作為平台 > [僅限裝置擁有者] > [裝置限制]  作為設定檔類型 > [使用者及帳戶]  設定)。
 
 若要查看您目前可以設定的設定，請參閱[使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。
 
@@ -167,8 +167,8 @@ Intune 正在為 iOS、iPadOS 和 macOS 裝置新增更多單一登入設定。 
 - Android Enterprise 裝置擁有者
 - Android Enterprise 專用裝置
 
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>IOS 裝置限制設定檔中已移除 Siri 命令的伺服器端記錄設定<!-- 5468501  -->
-在 iOS 裝置上，您可以建立裝置限制設定檔，以設定 Siri 命令的伺服器端記錄（**裝置**設定 > **配置**檔 > 為平臺**建立設定檔** > **iOS/iPadOS**> 配置檔案類型 >**內建應用程式**）的**裝置限制**。 將會移除**Siri 命令的伺服器端記錄**設定。
+### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Siri 命令的伺服器端記錄設定已從 iOS 裝置限制設定檔中移除<!-- 5468501  -->
+在 iOS 裝置上，您可以建立裝置限制設定檔，以設定 Siri 命令的伺服器端記錄（**裝置**設定 > **配置**檔 > 針對配置檔案類型 >**內建應用程式**的平臺 >**裝置限制** **建立設定檔** > **iOS/iPadOS** 。 將會移除**Siri 命令的伺服器端記錄**設定。
 
 此設定將會從 Intune 管理主控台移除。 即使已設定此設定的現有原則會繼續顯示設定，此設定對裝置沒有任何作用。 如果您想要從現有的原則中移除設定，請移至原則、進行次要編輯、儲存，然後將更新原則。
 
