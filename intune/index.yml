@@ -9,12 +9,12 @@ metadata:
   ms.author: dougeby
   manager: mtillman
   ms.date: 09/16/2019
-  ms.openlocfilehash: 94f010d249e5309604b3219670a74e8722464a38
-  ms.sourcegitcommit: f12bd2ce10b6241715bae2d2857f33c474287166
+  ms.openlocfilehash: 475898f58b77b9b13fe547547668aa67b9ecb965
+  ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/24/2019
-  ms.locfileid: "72892606"
+  ms.lasthandoff: 12/19/2019
+  ms.locfileid: "75207259"
 highlightedContent:
   items:
   - title: 什麼是 Intune？
@@ -32,9 +32,9 @@ highlightedContent:
   - title: 設定 Windows 10 裝置的自動註冊
     itemType: get-started
     url: ./enrollment/quickstart-setup-auto-enrollment.md
-  - title: 使用 Microsoft 建議設定保護 Windows 裝置
-    itemType: get-started
-    url: ./protect/security-baselines.md
+  - title: Intune 報告
+    itemType: overview
+    url: ./fundamentals/reports.md
 conceptualContent:
   items:
   - title: 規劃 Intune 採用
