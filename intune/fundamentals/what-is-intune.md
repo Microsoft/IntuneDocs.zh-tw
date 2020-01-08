@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3c03c67a99b78804c999250f8d1148a4b3d1d97
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6d24d1c7dbae12fb33ec277419b1bbfd47b46b07
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504759"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548050"
 ---
 # <a name="microsoft-intune-is-an-mdm-and-mam-provider-for-your-devices"></a>Microsoft Intune 是適用於您裝置的 MDM 和 MAM 提供者
 
@@ -34,7 +34,7 @@ Microsoft Intune 是以雲端為基礎的服務，著重於行動裝置管理 (M
 
 使用 Intune，您可以︰
 
-- 選擇使用 Intune 實現 100% 雲端，或者使用 Configuration Manager 和 Intune [共同管理](https://docs.microsoft.com/sccm/comanage/overview)。
+- 選擇使用 Intune 實現 100% 雲端，或者使用 Configuration Manager 和 Intune [共同管理](https://docs.microsoft.com/configmgr/comanage/overview)。
 - 在個人和組織擁有的裝置上設定規則和組態設定，以存取資料和網路。
 - 部署及驗證裝置上的應用程式 -- 內部部署和行動裝置。
 - 藉由控制使用者存取和共用資訊的方式來保護您的公司資訊。

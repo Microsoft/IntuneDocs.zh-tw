@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cf872387d6e6f4f91af9f074f54695b081b79119
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 63ebbc22c5452c99439d34813509b5652daef1f0
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74549105"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548095"
 ---
 # <a name="use-update-channel-and-target-version-settings-to-update-office-365-with-microsoft-intune-administrative-templates"></a>使用更新通道和目標版本設定，以 Microsoft Intune 來更新 Office 365 系統管理範本
 
@@ -35,7 +35,7 @@ ms.locfileid: "74549105"
 - Windows 10 及更新版本
 - Office 365
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 請務必針對您的 Office 應用程式[啟用 Office 365 專業增強版自動更新](https://docs.microsoft.com/deployoffice/configure-update-settings-for-office-365-proplus) \(部分機器翻譯\)。 您可以使用群組原則或 Intune Office 2016 ADMX 範本來執行此動作：
 
@@ -75,7 +75,7 @@ ms.locfileid: "74549105"
     ![系統管理範本 L_Updatebranch 登錄機碼範例](./media/administrative-templates-update-office/admx-update-branch-registry-key.png)
 
     > [!TIP]
-    > [使用 Configuration Manager 管理 Office 365 專業增強版](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) \(部份機器翻譯\) 會列出值及其意義。 登錄值是以選取的散發通道為基礎：
+    > [使用 Configuration Manager 管理 Office 365 專業增強版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) \(部份機器翻譯\) 會列出值及其意義。 登錄值是以選取的散發通道為基礎：
     >
     >- 每月通道                - value="Current"
     >- 每月通道 (已設定目標)     - value="Current"
@@ -95,7 +95,7 @@ ms.locfileid: "74549105"
     - `UpdateChannel`：根據已設定的設定而變更的動態索引鍵。
     - `CDNBaseUrl`：在裝置上安裝 Office 365 時設定。
 
-3. 查看 `UpdateChannel` 值。 此值會告訴您 Office 的更新頻率。 [使用 Configuration Manager 管理 Office 365 專業增強版](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager) \(部份機器翻譯\) 會列出值，以及它們所設定的內容。
+3. 查看 `UpdateChannel` 值。 此值會告訴您 Office 的更新頻率。 [使用 Configuration Manager 管理 Office 365 專業增強版](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel) \(部份機器翻譯\) 會列出值，以及它們所設定的內容。
 
     查看下列範例時，您會看到 `UpdateChannel` 設定為 `http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60`，即 [每月]  ：
 
@@ -173,7 +173,7 @@ ms.locfileid: "74549105"
 
 ## <a name="next-steps"></a>後續步驟
 
-[Office 365 用戶端的更新通道值](https://docs.microsoft.com/sccm/sum/deploy-use/manage-office-365-proplus-updates#change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager)
+[Office 365 用戶端的更新通道值](https://docs.microsoft.com/configmgr/sum/deploy-use/manage-office-365-proplus-updates#bkmk_channel)
 
 [Office 365 專業增強版的 Office 雲端原則服務概觀](https://docs.microsoft.com/deployoffice/overview-office-cloud-policy-service)
 

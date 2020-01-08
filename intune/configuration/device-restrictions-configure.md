@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 704da2ee4f0f2e6dce222c89704c83a35368c02c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059527"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206562"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定裝置限制設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 包含裝置限制原則，可協助系統管理員控制 Android、iOS、macOS 及 Windows 裝置。 這些限制可讓您控制廣泛的設定及功能，以保護您組織的資源。 例如，系統管理員可以：
 
@@ -40,7 +40,7 @@ Intune 包含裝置限制原則，可協助系統管理員控制 Android、iOS�
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 

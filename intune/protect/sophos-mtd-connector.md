@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8823aa8467ef380223a486874c68d52926db733
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
+ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503736"
+ms.lasthandoff: 01/01/2020
+ms.locfileid: "75564912"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense 與 Intune 的連接器
 您可以根據由 Sophos Mobile (與 Microsoft Intune 整合的 Mobile Threat Defense (MTD) 解決方案) 所進行的風險評量，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Sophos Mobile 應用程式之裝置所收集的遙測來評定的。
@@ -45,7 +45,7 @@ Intune 裝置合規性政策包含以 Sophos Mobile 風險評定為基礎的 Sop
 **補救後授與存取權**：  
 ![補救後授與存取權的概念影像](./media/sophos-mtd-connector/sophos_malicious_apps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權  
+### <a name="control-access-based-on-threat-to-network"></a>依據對網路的威脅性來控制存取  
 偵測中間人攻擊等網路威脅，並根據裝置風險保護對 Wi-Fi 網路的存取。  
 
 **封鎖透過 Wi-Fi 的網路存取**：  
@@ -54,7 +54,7 @@ Intune 裝置合規性政策包含以 Sophos Mobile 風險評定為基礎的 Sop
 **補救後授與存取權**：   
 ![補救後授與存取權](./media/sophos-mtd-connector/sophos_network_wifi_unblocked.png)  
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權  
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>依據對網路的威脅來控制對 SharePoint Online 的存取  
 偵測中間人攻擊等網路威脅，並根據裝置風險防止同步公司檔案。  
 
 **偵測到網路威脅時封鎖 SharePoint Online**：   
@@ -67,12 +67,12 @@ Intune 裝置合規性政策包含以 Sophos Mobile 風險評定為基礎的 Sop
 - Android 5.0 及更新版本
 - iOS 11.0 和更新版本
 
-## <a name="prerequisites"></a>必要條件  
+## <a name="prerequisites"></a>先決條件  
 - Azure Active Directory Premium
 - Microsoft Intune 訂閱 
 - Sophos Mobile Threat Defense 訂用帳戶
 
-如需詳細資訊，請參閱 [Sophos 網站](https://www.sophos.com/products/mobile-control)。  
+如需詳細資訊，請參閱 [Sophos 網站](https://www.sophos.com/en-us/products/mobile-control.aspx)。
 
 ## <a name="next-steps"></a>後續步驟  
 - [整合 Sophos 與 Intune](sophos-mtd-connector-integration.md)

@@ -17,22 +17,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85ba34cfec8ebe78d2574034967bd7ed76f3304e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 25983117864f44b8131fdc49e60b7d24048da9fe
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059556"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206647"
 ---
 # <a name="monitor-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視裝置設定檔
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 包含了一些功能以協助監視及管理您的裝置組態設定檔。 例如，您可以檢查設定檔的狀態、查看已指派的裝置，以及更新設定檔的內容。
 
 ## <a name="view-existing-profiles"></a>檢視現有的設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]  。
 
 所有您現有的設定檔都會列出，包含平台之類的詳細資料，並顯示該設定檔是否已指派給任何裝置。
@@ -65,7 +65,7 @@ Intune 包含了一些功能以協助監視及管理您的裝置組態設定檔�
     關閉 [使用者狀態]  詳細資料。
 
 5. 回到 [設定檔]  清單中，選取一個特定的設定檔。 您也可以變更現有的屬性：
-    - **屬性**：變更名稱或更新現有設定。
+    - [內容]  ：變更名稱或更新現有設定。
     - **指派**：包含或排除應該套用原則的裝置。 選擇 [選取的群組]  來選擇特定群組。
     - **裝置狀態**：其中列出指派給設定檔的裝置，而且它會顯示設定檔是否已成功部署。 您可以選取特定的裝置以取得更多詳細資料，包括安裝的應用程式。
     - **使用者狀態**：列出具有被此設定檔影響之裝置的使用者名稱，以及設定檔是否已成功部署。 您可以選取特定的使用者以取得更多詳細資料。

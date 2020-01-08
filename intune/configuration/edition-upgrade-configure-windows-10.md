@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3595e75a73868378c9c366de6c751c21a9151ae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 13fca4de8e36b1bdeb9026985e2eabd21e56e924
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059525"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206936"
 ---
 # <a name="upgrade-windows-10-editions-or-switch-out-of-s-mode-on-devices-using-microsoft-intune"></a>使用 Microsoft Intune 在裝置上升級 Windows 10 版本或切換移出 S 模式
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 作為行動裝置管理 (MDM) 解決方案的一部分，您可能會想要升級您的 Windows 10 裝置。 例如，您會想要將「Windows 10 專業版」裝置升級至「Windows 10 企業版」。 或者，您想要讓裝置切換移出 S 模式。
 
@@ -47,7 +47,7 @@ ms.locfileid: "74059525"
 > [!NOTE]
 > 如果您稍後移除原則指派，裝置上的 Windows 版本並不會還原。 裝置會繼續正常執行。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 在您升級裝置之前，請確定您已具備下列必要條件：
 
@@ -96,7 +96,7 @@ ms.locfileid: "74059525"
 
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 

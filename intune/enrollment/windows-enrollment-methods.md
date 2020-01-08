@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: ''
-ms.openlocfilehash: b6144767ee69de8c1ff14e5c189c078994a9dcf4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 060c3c00a228794d3f237a6362b048bf23e1a933
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819722"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547720"
 ---
 # <a name="intune-enrollment-methods-for-windows-devices"></a>適用於 Windows 裝置的 Intune 註冊方法
 
@@ -49,7 +49,7 @@ ms.locfileid: "74819722"
 系統管理員可以設定下列無需使用者互動的註冊方法：
 
 - [混合式 Azure AD Join](https://docs.microsoft.com/windows/client-management/mdm/enroll-a-windows-10-device-automatically-using-group-policy) 可讓系統管理員設定 Active Directory 群組原則，以自動註冊加入混合式 Azure AD 的裝置。 
-- [Configuration Manager 共同管理](https://docs.microsoft.com/sccm/comanage/overview)可讓系統管理員將其現有的 Configuration Manager 受控裝置註冊到 Intune 中，以獲得 Intune 和 Configuration Manager 的雙重效益。 
+- [Configuration Manager 共同管理](https://docs.microsoft.com/configmgr/comanage/overview)可讓系統管理員將其現有的 Configuration Manager 受控裝置註冊到 Intune 中，以獲得 Intune 和 Configuration Manager 的雙重效益。 
 - [裝置註冊管理員](device-enrollment-manager-enroll.md) (DEM) 是特殊的服務帳戶。 DEM 帳戶具有權限，可讓授權使用者註冊及管理公司擁有的多部裝置。 比方說，這些類型的裝置適合銷售點或公用程式應用程式，但對於需要存取電子郵件或公司資源的使用者而言則不適合。 此方法不允許使用條件式存取等功能。 
 - [大量註冊](../windows-bulk-enroll.md)可讓授權使用者將公司擁有的大量新裝置加入到 Azure Active Directory 和 Intune。 您可以使用 Windows 設定設計工具 (WCD) 應用程式來建立佈建套件。 然後，藉由在初始 Windows OOBE 體驗期間或從現有的 Windows 電腦使用 USB 媒體，您就可以安裝佈建套件，將裝置自動註冊到 Intune 中。 此方法不允許使用條件式存取。 
 - 您可以使用 Windows IoT 核心版儀表板來準備裝置，然後使用 Windows 設定設計工具來建立佈建套件，藉以完成[註冊 Windows IoT 核心版裝置](https://docs.microsoft.com/windows/iot-core/manage-your-device/intunedeviceenrollment) \(部分機器翻譯\)。 接著，它會在初始開機期間，使用 SD 記憶卡媒體來安裝佈建套件，自動向 Intune 註冊裝置。

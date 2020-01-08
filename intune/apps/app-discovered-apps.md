@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2e7c9824711ecbfb43a7c7dde71cc01b306b7fab
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899419"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205525"
 ---
 # <a name="intune-discovered-apps"></a>Intune 探索到的應用程式
 
@@ -54,7 +54,7 @@ Intune 也會提供在您的租用戶中個別裝置上探索到的應用程式�
 
 | 平台 | 針對個人擁有的裝置 | 針對公司擁有的裝置 | 重新整理週期 |
 |------------------------------------------------------------------------|----------------------------------|--------------------------------------------------|---------------------------------------|
-| Windows 10 (Win32 應用程式) 注意：[需要裝置上的 Intune 管理延伸模組](intune-management-extension.md) | 不適用 | 在新增移除程式清單中找到的所有 Win32 應用程式 | 裝置註冊後每 24 小時 |
+| Windows 10 (Win32 應用程式) 注意：[需要裝置上的 Intune 管理延伸模組](intune-management-extension.md) | 不適用 | 僅限受管理的應用程式 | 裝置註冊後每 24 小時 |
 | Windows 10 (現代化應用程式) | 僅限受控的現代化應用程式 | 安裝於裝置上的所有應用程式 | 裝置註冊後每 7 天 |
 | Windows 8.1 | 僅限受管理的應用程式 | 僅限受管理的應用程式 | 裝置註冊後每 7 天 |
 | Windows Phone 8 | 僅限受管理的應用程式 | 僅限受管理的應用程式 | 裝置註冊後每 7 天 |

@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02d1311be0943d93f80f2f5a1c3f421d476af1e5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059832"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206222"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>使用自訂裝置設定檔，在 Intune 中建立包含預先共用金鑰的 WiFi 設定檔
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 預先共用金鑰 (PSK) 通常用來驗證 WiFi 網路或無線區域網路的使用者。 使用 Intune，您可以建立使用預先共用金鑰的 WiFi 設定檔。 若要建立設定檔，請使用 Intune 中的**自訂裝置設定檔**功能。 本文也包含如何建立 EAP 型 Wi-Fi 設定檔的一些範例。
 
@@ -49,7 +49,7 @@ ms.locfileid: "74059832"
 
 ## <a name="create-a-custom-profile"></a>建立自訂設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 

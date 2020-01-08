@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ffabcace189efd60e9d532172ecd1f2a048eec2c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562416"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324860"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 使用者註冊支援的 Intune 動作與選項
 
@@ -38,7 +38,7 @@ ms.locfileid: "74562416"
 
 例如，假設您設定 [密碼到期]  設定，並將此原則推播至使用者註冊的裝置。 裝置上會發生下列狀況：
 - 會忽略 [密碼到期]  設定。
-- 不允許使用簡單密碼，例如 `1111` 或 `1234`。
+- 不允許使用簡單密碼，例如 `111111` 或 `123456`。
 - 強制使用 6 位數 PIN。
 
 ## <a name="administrator-remote-device-actions-and-options"></a>系統管理員遠端裝置動作和選項

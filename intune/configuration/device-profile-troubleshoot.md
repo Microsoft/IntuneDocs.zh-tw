@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d445b86359b2c5cde7b56a52a0cc6ee72a34c0ea
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832607"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206630"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>對於 Microsoft Intune 中的裝置原則和設定檔的常見疑問、問題和解決方式
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 獲得使用 Intune 中裝置設定檔與原則時的常見問題解答。 本文也列出簽入時間間隔、提供更多衝突的相關詳細資料等等。
 
@@ -140,7 +140,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
     - 允許自動連線到免費的 Wi-Fi 熱點
     - 允許 Wi-Fi 熱點回報
     - 允許抹除
-    - 允許藍芽
+    - 允許藍牙
     - 允許 NFC
     - 允許 Wi-Fi
 

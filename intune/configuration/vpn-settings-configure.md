@@ -15,16 +15,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fab50e0aefd926b4dc7a2b3559576642d5d6b79
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059315"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206273"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中建立 VPN 設定檔以連線到 VPN 伺服器
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 虛擬私人網路 (VPN) 為您的使用者提供安全的組織網路遠端存取。 裝置會使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 Microsoft Intune 中的 **VPN 設定檔**會將 VPN 設定指派給組織中的使用者與裝置，讓他們可以輕鬆且安全地連線到組織網路。
 
@@ -68,7 +68,7 @@ ms.locfileid: "74059315"
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 

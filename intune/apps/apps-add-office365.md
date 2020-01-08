@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73848ee8301362f14fe2866a57329425d5e5cfbe
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: b566dd58b01a411126ffabb46d526e4480c2ba0a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563668"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205967"
 ---
 # <a name="add-office-365-apps-to-windows-10-devices-with-microsoft-intune"></a>使用 Microsoft Intune 將 Office 365 應用程式新增至 Windows 10 裝置
 
@@ -197,7 +197,7 @@ Intune 會使用 [Office 部署工具](https://docs.microsoft.com/DeployOffice/o
 
 ## <a name="errors-during-installation-of-the-app-suite"></a>應用程式套件安裝期間發生的錯誤
 
-請參閱[如何啟用 Office 365 專業增強版 ULS 記錄](https://blogs.technet.microsoft.com/odsupport/2018/06/18/how-to-enable-office-365-proplus-uls-logging) \(英文\) 來取得如何檢視詳細資訊安裝記錄的相關資訊。
+請參閱[如何啟用 Office 365 專業增強版 ULS 記錄](/office/troubleshoot/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging) \(英文\) 來取得如何檢視詳細資訊安裝記錄的相關資訊。
 
 下表列出您可能會遇到的常見錯誤碼及其意義。
 
