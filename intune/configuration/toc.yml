@@ -9,6 +9,10 @@
   items:
     - name: 建立電子郵件裝置設定檔
       href: quickstart-email-profile.md
+- name: 教學課程
+  items:
+    - name: 建立系統管理範本
+      href: tutorial-walkthrough-administrative-templates.md
 - name: 操作指南
   items:
     - name: 建立設定檔
@@ -145,8 +149,6 @@
               href: vpn-settings-macos.md
             - name: Wi-Fi
               href: wi-fi-settings-macos.md
-            - name: 有線網路
-              href: wired-network-settings-macos.md
             - name: 自訂
               href: custom-settings-macos.md
         - name: Windows 10 及更新版本
