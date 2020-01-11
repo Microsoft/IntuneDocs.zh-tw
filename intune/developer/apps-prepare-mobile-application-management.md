@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 901eaafb24cda185540ffc4b1a56484042af74c1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74547693"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653932"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -105,7 +105,7 @@ Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamari
 |封鎖螢幕擷取 (僅限 Android)|X|X|
 |不註冊裝置的 MAM 支援|X|X|
 |完整抹除應用程式資料|X|X|
-|在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意：** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
+|在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」|X||
 |目標應用程式設定（或透過「MAM 通道」的應用程式設定）|X||
 |支援多重身分識別|X||

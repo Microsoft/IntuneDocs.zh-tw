@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8632f5b8df0f483de3bb4d06a6823639ba52c604
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 89f54111258b5e628d9f83c381fde146bf996216
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506706"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206324"
 ---
 # <a name="macos-device-settings-to-configure-and-use-kernel-extensions-in-intune"></a>在 Intune 中設定和使用核心延伸模組的 macOS 裝置設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 此文章列出並描述您可以在 macOS 裝置上控制的各種不同核心擴充功能設定。 作為行動裝置管理（MDM）解決方案的一部分，請使用這些設定來新增及管理裝置上的核心延伸模組。
 

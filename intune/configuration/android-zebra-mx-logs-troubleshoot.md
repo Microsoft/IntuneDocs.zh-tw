@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e7ed93c86d3fbe7ed7a6ac5d4b1a3494fb55f2bc
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2319fb0d1198289398912793e52482bf66d87173
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506983"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206834"
 ---
 # <a name="troubleshoot-and-see-potential-issues-on-android-zebra-devices-in-microsoft-intune"></a>在 Microsoft Intune 中疑難排解及查看 Android Zebra 裝置上的潛在問題
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 在 Microsoft Intune 中，您可以使用[Zebra 行動延伸模組（MX）來管理 Android Zebra 裝置](android-zebra-mx-overview.md)。 使用 Zebra 裝置時，您會在 StageNow 中建立設定檔以管理設定，並將其上傳至 Intune。 Intune 會使用 StageNow 應用程式，將設定套用到裝置上。 StageNow 應用程式也會在用來進行疑難排解的裝置上建立詳細的記錄檔。
 
