@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5accdf3699770444b7aafeb39d431755f9d3ba9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: a7eaf8e1cf17624491824ddf3f8911757eea9080
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501827"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857566"
 ---
 # <a name="using-your-windows-device-with-intune-company-portal"></a>搭配使用 Windows 裝置與 Intune 公司入口網站
 

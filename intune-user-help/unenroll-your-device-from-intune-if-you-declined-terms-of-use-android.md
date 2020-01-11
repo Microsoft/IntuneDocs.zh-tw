@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisbal
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 169007541bccfc3e26184ac71197265931afbfdd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f54f0d9453e93ad54a1d2a96ff25051f3d8bd3a1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508114"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857668"
 ---
 # <a name="remove-your-device-from-management-if-you-declined-terms-of-use"></a>如果您已拒絕「使用條款」，請從 Intune 移除您的裝置
 
@@ -38,7 +38,7 @@ ms.locfileid: "72508114"
 
 從 Intune 移除裝置並將公司入口網站應用程式解除安裝：
 
-1. 移至 [設定]  [安全性]&gt; [螢幕鎖定] **&amp;**  &gt; [裝置系統管理員]  。
+1. 前往 [**設定**] &gt; [**安全性 &amp; 螢幕鎖定**] &gt; [**裝置系統管理員**]。
 
     完成這個步驟後會立即取消註冊您的裝置。
 

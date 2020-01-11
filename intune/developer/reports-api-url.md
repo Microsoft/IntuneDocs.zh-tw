@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 170ed2fbf300299796401b10a906d875b6f50bf5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e19cc606792c59d2f5676aeca41d862308f1ab32
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490455"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654136"
 ---
 # <a name="intune-data-warehouse-api-endpoint"></a>Intune 資料倉儲 API 端點
 
@@ -78,7 +78,7 @@ URL 包含下列元素：
 > [!NOTE]
 > 篩選條件範例假設今天是 2019 年 2 月 21 日。
 
-|                             篩選                             |           效能最佳化           |                                          說明                                          |
+|                             篩選器                             |           效能最佳化           |                                          說明                                          |
 |:--------------------------------------------------------------:|:--------------------------------------------:|:---------------------------------------------------------------------------------------------:|
 |    `maxhistorydays=7`                                            |    完整                                      |    傳回 `DateKey` 在 20180214 和 20180221 之間的資料。                                     |
 |    `$filter=DateKey eq 20180214`                                 |    完整                                      |    傳回 `DateKey` 等於 20180214 的資料。                                                    |

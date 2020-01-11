@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2a1c279e4b5f915fcf8702ee1f7e5f6af9e79ac
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 522410f94905cd8445f19b8f47b4fe8dafb54245
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506012"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858908"
 ---
 # <a name="what-happens-if-you-install-the-company-portal-app-and-enroll-your-ios-device-in-intune"></a>如果您安裝公司入口網站應用程式並在 Intune 註冊您的 iOS 裝置，會發生什麼情況？
 

@@ -16,21 +16,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 455d69328f8b70b1de73067c6290b6955df1e710
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: aab4379e30397132cead64acbd8d43039b128e02
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506760"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206409"
 ---
 # <a name="email-profile-settings-in-microsoft-intune-for-devices-running-windows-phone-81"></a>在執行 Windows Phone 8.1 之裝置上的 Microsoft Intune 電子郵件設定檔設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 本文展示您可為執行 Windows Phone 8.1 之裝置設定的電子郵件設定檔設定。
 
+>[!IMPORTANT]
+>Windows Phone 8.1 的電子郵件設定檔也適用于 Windows 10 裝置。
 
-- **將所有設定只套用至 Windows Phone 8.1**：此設定可以在 Intune 傳統入口網站中設定。 在 Azure 入口網站中，此設定無法變更。 若此值設定為 [已設定]  ，則所有設定只會套用到 Windows Phone 8.1 裝置。 若設定為 [未設定]  ，則這些設定也會套用於 Windows 10 行動裝置。
 - **電子郵件伺服器** - Exchange 伺服器的主機名稱。
 - **帳戶名稱** - 在使用者裝置上顯示的電子郵件帳戶顯示名稱。
 - **AAD 的使用者名稱屬性** - 此為 Active Directory (AD) 或 Azure AD 中的屬性，可用以產生此電子郵件設定檔的使用者名稱。 選取 [主要 SMTP 位址]  ，例如 **user1@contoso.com** 或 [使用者主體名稱]  ，例如 **user1** 或 **user1@contoso.com** 。

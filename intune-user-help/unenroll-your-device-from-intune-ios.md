@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb8aa6213585af89c20c45f38e885644f65eab51
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: bd5384945158f3d0ef3035eaf9bc2f8375d8b153
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508088"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75859010"
 ---
 # <a name="remove-your-ios-device-from-intune"></a>從 Intune 移除 iOS 裝置
 
@@ -63,7 +63,7 @@ ms.locfileid: "72508088"
 
     - 只有公司入口網站應用程式或網站上不會再顯示為電子郵件設定的裝置。
 
-    - 已將應用程式解除安裝。 將會移除公司應用程式資料。
+    - 已解除安裝應用程式。 將會移除公司應用程式資料。
 
 ## <a name="removing-data-collected-by-the-company-portal-app"></a>移除公司入口網站應用程式所收集的資料
 

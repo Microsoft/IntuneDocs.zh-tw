@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80fd2d54a99bc3f4ab47f48f94eb14aa1a7f630c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 11037da11e6400f157aea6aa86c0c293c9818d31
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74126207"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855005"
 ---
 # <a name="install-and-share-apps-on-your-device"></a>在裝置上安裝和共用應用程式
 
@@ -37,11 +37,11 @@ ms.locfileid: "74126207"
     ![Windows 10 版公司入口網站應用程式首頁。](./media/RS1_AppDetailsPage_Installed_03.png)
 2. 從公司入口網站應用程式的下列區段尋找並安裝應用程式：  
 
-    * [首頁]  ：從您組織的精選應用程式清單中選取。  
-    * [全部顯示]  ：從 [首頁]   > [應用程式]  區段中，按一下 [全部顯示]  以檢視所有可用的應用程式。  
-    * [所有應用程式]  ：在瀏覽窗格中選取此頁面，以查看所有可用的應用程式，包括已安裝和精選應用程式。 查看、排序及篩選應用程式。 搜尋結果會依相關性自動排序。  
+    * **首頁**：從您組織的精選應用程式清單中選取。  
+    * **全部顯示**：從 [首頁]   > [應用程式]  區段中，按一下 [全部顯示]  以檢視所有可用的應用程式。  
+    * **所有應用程式**：在瀏覽窗格中選取此頁面，以查看所有可用的應用程式，包括已安裝和精選應用程式。 查看、排序及篩選應用程式。 搜尋結果會依相關性自動排序。  
     * **應用程式類別**：在流覽窗格中選取此頁面，以根據類型或功能來選擇應用程式。 應用程式會在 [類別]、[**教育**] 和 [產能 **] 等分類**下**排序。**  
-    * [搜尋應用程式]  ：此靜態搜尋列位於應用程式的瀏覽窗格中。 若要尋找可用的應用程式，請搜尋應用程式名稱或發行者。  
+    * **搜尋應用程式**：此靜態搜尋列位於應用程式的瀏覽窗格中。 若要尋找可用的應用程式，請搜尋應用程式名稱或發行者。  
 
 3. 選取應用程式。   
 4. 在應用程式的詳細資料頁面上，按一下 [安裝]  。 安裝完成後，會顯示 [已安裝]  狀態。  

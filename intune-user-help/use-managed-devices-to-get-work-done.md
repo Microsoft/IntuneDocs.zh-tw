@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca1776915d50858c28b43a49faa7c737c825c67d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2a49db70d6b29167184e50f3499985a46a48fda1
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72501849"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857617"
 ---
 # <a name="what-is-device-enrollment"></a>什麼是裝置註冊？
 若要從您的裝置存取公司或學校資源，您必須使用 Intune 公司入口網站應用程式或 Microsoft Intune 應用程式來註冊您的裝置。 

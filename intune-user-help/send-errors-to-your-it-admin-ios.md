@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81f90c8022fb471ffa8783d636c88ce67a296595
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e37a82fe3cca461e8384843dc0710cb00c36b79c
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502067"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858074"
 ---
 # <a name="send-errors-to-your-company-support-for-issues-with-your-ios-device"></a>針對 iOS 裝置問題將錯誤傳送給公司支援人員
 有時您可能會在於 iOS 裝置上使用公司入口網站應用程式時遇到錯誤。 當發生這種情況時，您可以透過電子郵件將錯誤相關詳細資料傳送給公司的支援人員。 這些詳細資料將提供為您進行問題疑難排解所需的內容。

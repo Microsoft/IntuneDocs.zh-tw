@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec3f1996052e31a70ca44c40c277a7c5ff93819a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 774c67b67094782d98e8ca325f092f8a5760dd2f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507985"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858925"
 ---
 # <a name="using-your-ios-device-with-intune-company-portal"></a>搭配使用 iOS 裝置與 Intune 公司入口網站
 本文列出 iOS 版公司入口網站特有的工作和資訊。 請利用它來協助您針對 iOS 裝置進行疑難排解和管理。 按一下任何連結可查看更多詳細資料、步驟和螢幕擷取畫面。

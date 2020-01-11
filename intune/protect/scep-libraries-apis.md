@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0a888e2087b98eeec82aeeb555677dddcb3eff4e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e9b44e50300c3bd034ca2bb3b0454a5ce953dc18
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058229"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206970"
 ---
 # <a name="use-apis-to-add-third-party-cas-for-scep-to-intune"></a>使用 API 以針對 SCEP 將協力廠商 CA 新增至 Intune
 
@@ -202,7 +202,7 @@ void SendSuccessNotification(
 
     - transactionId         SCEP 交易識別碼
     - certificateRequest    DER 編碼 PKCS #10 憑證要求以 Base64 編碼為字串
-    - certThumprint           已佈建憑證的指紋
+    - certThumprint 已布建憑證之指紋的 SHA1 雜湊
     - certSerialNumber        已佈建憑證的序號
     - certExpirationDate      已佈建憑證的到期日。 日期時間字串的格式應為 Web UTC 時間 (YYYY-MM-DDThh:mm:ss.sssTZD) ISO 8601。
     - certIssuingAuthority    核發憑證的授權單位名稱
