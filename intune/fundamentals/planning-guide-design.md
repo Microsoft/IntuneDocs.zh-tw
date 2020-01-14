@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24f15cb179dfc2b12b642f5f196d04dce58d4377
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5c18f3e8fb14d8592789b39856ec420790fad286
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505209"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547544"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -84,7 +84,7 @@ ms.locfileid: "72505209"
 
   - 您如何管理電腦和伺服器環境？
 
-  - 您使用的是 System Center Configuration Manager 嗎？ 您使用的是協力廠商的系統管理平台嗎？
+  - 您正在使用 Microsoft Endpoint Configuration Manager 嗎？ 您使用的是協力廠商的系統管理平台嗎？
 
 - **VPN 解決方案**
 
@@ -101,7 +101,7 @@ ms.locfileid: "72505209"
 | **SharePoint** | SharePoint 內部部署 | 不打算移至 SharePoint Online |  
 | **目前的 MDM** | Exchange ActiveSync |  |
 | **憑證解決方案** | Microsoft Server 2012 R2、AD 憑證服務 | 網站伺服器只使用 PKI |
-| **系統管理** | System Center Configuration Manager CB 1606 | 想要調查 Intune 混合式解決方案 |
+| **系統管理** | Configuration Manager CB 1606 | 想要調查 Intune 混合式解決方案 |
 | **VPN 解決方案** | Cisco AnyConnect |  |
 
 
@@ -109,7 +109,7 @@ ms.locfileid: "72505209"
 
 ## <a name="choose-an-intune-deployment-option"></a>選擇 Intune 部署選項
 
-Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服務在雲端中執行，混合式則是指整合 Intune 與 System Center Configuration Manager。 本指南主要用於獨立選項。 [決定哪一個選項符合您的商務需求](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
+Intune 提供兩種部署選項︰獨立和混合式。 獨立是指 Intune 服務在雲端中執行，混合式則是指整合 Intune 與 Configuration Manager。 本指南主要用於獨立選項。 [決定哪一個選項符合您的商務需求](https://docs.microsoft.com/configmgr/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)。
 
 > [!Important]
 >新混合式 MDM 客戶的上線功能已淘汰。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (從混合式行動裝置管理移到 Azure 上的 Intune) 部落格文章。
@@ -353,7 +353,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 - [商務用 iOS 大量採購方案 (VPP)](../apps/vpp-apps-ios.md)
 
-- [商務用 Microsoft 網上商店應用程式](../apps/windows-store-for-business.md)
+- [商務用 Microsoft Store 應用程式](../apps/windows-store-for-business.md)
 
 #### <a name="app-type-requirements"></a>應用程式類型需求
 
@@ -383,7 +383,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別應用程式保護原則需求。
-#### <a name="compliance-policies"></a>合規性政策
+#### <a name="compliance-policies"></a>相容性原則
 
 相容性原則決定裝置是否符合特定需求。 Intune 使用相容性原則判斷裝置視為相容或不相容。 相容性狀態也可用來限制或允許存取公司資源。 如果需要條件式存取，建議您設計[裝置合規性政策](../protect/device-compliance-get-started.md)。
 

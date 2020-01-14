@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19d02694ab5e53dc43e0861c6a427a044bf50648
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a01b6643de2dd75c41aec0806b97df6154d99a7a
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502646"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547763"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
@@ -34,7 +34,7 @@ ms.locfileid: "72502646"
 
 - **Intune 獨立版** - 雲端版管理解決方案，可透過 Azure 入口網站設定。 包含 Intune 提供的完整功能集。 [在 Intune 主控台中設定 MDM 授權單位](#set-mdm-authority-to-intune)。
 
-- **Intune 共同管理** - Windows 10 裝置的 Intune 雲端解決方案與 System Center Configuration Manager 整合版。 您可以使用 Configuration Manager 主控台設定 Intune。 [設定在 Intune 中自動註冊裝置](https://docs.microsoft.com/sccm/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune)。 
+- **Intune 共同管理** - Windows 10 裝置的 Intune 雲端解決方案與 Configuration Manager 整合版。 您可以使用 Configuration Manager 主控台設定 Intune。 [設定針對 Intune 自動註冊裝置](https://docs.microsoft.com/configmgr/comanage/tutorial-co-manage-clients#configure-auto-enrollment-of-devices-to-intune)。 
 
     > [!Important]
     >新混合式 MDM 客戶的上線功能已淘汰。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (從混合式行動裝置管理移到 Azure 上的 Intune) 部落格文章。
@@ -45,9 +45,9 @@ ms.locfileid: "72502646"
 
 ## <a name="set-mdm-authority-to-intune"></a>將 MDM 授權單位設為 Intune
 
-如果您尚未設定 MDM 授權單位，請遵循下列步驟。 若要從 SCCM 變更，請參閱[將混合式 MDM 使用者和裝置移轉至 Intune 獨立版](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa) \(部分機器翻譯\)。
+如果您尚未設定 MDM 授權單位，請遵循下列步驟。 若要從 SCCM 變更，請參閱[將混合式 MDM 使用者和裝置移轉至 Intune 獨立版](https://docs.microsoft.com/configmgr/mdm/deploy-use/migrate-hybridmdm-to-intunesa) \(部分機器翻譯\)。
 
-1. 在 [Azure 入口網站的 Intune](https://aka.ms/intuneportal) 中，選取橙色橫幅以開啟 [行動裝置管理授權單位]  設定。 只有在您尚未設定 MDM 授權單位時，才會顯示橙色橫幅。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選取橙色橫幅以開啟 [行動裝置管理授權單位]  設定。 只有在您尚未設定 MDM 授權單位時，才會顯示橙色橫幅。
 2. 在 [行動裝置管理授權單位]  下，從下列選項中選擇您的 MDM 授權單位：
    - **Intune MDM 授權單位**
    - **無**
@@ -101,7 +101,7 @@ MDM 授權單位無法變更回「未知」。 服務會使用 MDM 授權單位�
 
 - 使用者可以透過從裝置手動啟動服務簽入，來快速變更至新的 MDM 授權單位。 使用者可以使用公司入口網站應用程式並起始裝置合規性檢查，來輕鬆執行此變更。
 - 在變更 MDM 授權單位之後，若要在裝置簽入服務並完成同步處理後確認一切是否正常，請在 Configuration Manager 管理主控台中尋找裝置。 先前由 Intune 所管理的裝置，現在會在 Configuration Manager 主控台中顯示為受管理的裝置。    
-- 從 MDM 授權單位變更到裝置簽入服務這段期間，裝置會有一段過渡時間是處於離線狀態。 為了協助確保裝置在此期間能獲得保護並持續運作，下列設定檔會在裝置上保留最多七天 (或直到裝置與新的 MDM 授權單位連線，並接收會覆寫現有設定的新設定為止)：
+- 從 MDM 授權單位變更到裝置簽入服務這段期間，裝置會有一段過渡時間是處於離線狀態。 為了協助確保裝置在此過度期間能獲得保護並持續運作，下列設定檔將會在裝置上保留最多 7 天 (或直到裝置與新的 MDM 授權單位連線，並接收覆寫現有設定的新設定為止)：
   - 電子郵件設定檔
   - VPN 設定檔
   - 憑證設定檔

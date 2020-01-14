@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1d3a2ce9e5a31e989452141a094b70b5e75cf464
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409971"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548138"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -95,7 +95,7 @@ ms.locfileid: "74409971"
 - [移除基準指派](#remove-a-security-baseline-assignment) - 了解當您停止使用安全性基準管理設定時會發生什麼事。
 
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 - 若要在 Intune 中管理基準，您的帳戶必須擁有[原則和設定檔管理員](../fundamentals/role-based-access-control.md#built-in-roles)內建角色。
 
@@ -192,9 +192,9 @@ ms.locfileid: "74409971"
 
 ## <a name="co-managed-devices"></a>共同管理的裝置
 
-Intune 管理之裝置上的安全性基準類似使用 Configuration Manager 的共同受控裝置。 共同受控裝置會使用 System Center Configuration Manager 和 Microsoft Intune，同時管理 Windows 10 裝置。 它可讓您將現有的 Configuration Manager 投資雲端連結至 Intune 的優點。 如果您使用 Configuration Manager，同時也想擁有雲端的優點，則[共同管理概觀](https://docs.microsoft.com/sccm/comanage/overview) \(英文\) 會是一項絕佳資源。
+Intune 管理之裝置上的安全性基準類似使用 Configuration Manager 的共同受控裝置。 共同受控裝置會使用 Configuration Manager 和 Microsoft Intune，同時管理 Windows 10 裝置。 它可讓您將現有的 Configuration Manager 投資雲端連結至 Intune 的優點。 如果您使用 Configuration Manager，同時也想擁有雲端的優點，則[共同管理概觀](https://docs.microsoft.com/configmgr/comanage/overview) \(英文\) 會是一項絕佳資源。
 
-使用共同受控裝置時，您必須將**裝置設定**工作負載 (其設定) 切換至 Intune。 [裝置設定工作負載](https://docs.microsoft.com/sccm/comanage/workloads#device-configuration) \(英文\) 會提供詳細資訊。
+使用共同受控裝置時，您必須將**裝置設定**工作負載 (其設定) 切換至 Intune。 [裝置設定工作負載](https://docs.microsoft.com/configmgr/comanage/workloads#device-configuration) \(英文\) 會提供詳細資訊。
 
 ## <a name="q--a"></a>問答集
 

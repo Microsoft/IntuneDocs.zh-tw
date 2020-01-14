@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: shpate
-ms.openlocfilehash: 7ce6def40c6c0fff3a28f884c458220283979234
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: 001e68fdbab7074abb4e1bbefc697d3e34c47762
+ms.sourcegitcommit: 107fef144013b01ed768ca8973373f9cb3f0f7dc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465764"
+ms.lasthandoff: 01/06/2020
+ms.locfileid: "75683777"
 ---
 # <a name="integrate-windows-hello-for-business-with-microsoft-intune"></a>整合 Windows Hello 企業版與 Microsoft Intune  
 
@@ -53,9 +53,9 @@ Intune 以兩種方式與 Hello 企業版整合：
 
 ## <a name="create-a-windows-hello-for-business-policy"></a>建立 Windows Hello 企業版原則
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431 。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 移至 [裝置]  > [註冊]** > [註冊裝置]   > [Windows 註冊]   > [Windows Hello 企業版]  。 [Windows Hello 企業版] 窗格隨即開啟。
+2. 移至 [裝置]   >  [註冊]   > [註冊裝置]   > [Windows 註冊]   > [Windows Hello 企業版]  。 [Windows Hello 企業版] 窗格隨即開啟。
 
 3. 針對 [設定 Windows Hello 企業版]  ，從下列選項中選取：
 

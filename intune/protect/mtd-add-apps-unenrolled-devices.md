@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8dd7127594a0e23c85b9f8141ce6d398d9a447a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72794455"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545919"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>將 Mobile Threat Defense 應用程式新增至尚未註冊的裝置
 
@@ -34,7 +34,7 @@ ms.locfileid: "72794455"
 您也可以選擇使用 Intune 來新增和部署 Microsoft Authenticator 及 Mobile Threat Defense (MTD) 應用程式。
 
 > [!NOTE] 
-> 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：Better Mobile (Android)、Zimperium (iOS)、Lookout for Work (Android/iOS)。
+> 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：Better Mobile (Android)、Zimperium (Android、iOS)、Lookout for Work (Android/iOS)。
 > 
 > 針對尚未註冊的裝置，您**不需要 iOS 應用程式設定原則**，來為您搭配 Intune 使用的 iOS 應用程式設定 Mobile Threat Defense。 這是相較於 Intune 註冊裝置的主要差異。 
 
@@ -76,8 +76,8 @@ ms.locfileid: "72794455"
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>將 Zimperium 提供給使用者
-<!-- - **Android**
-  - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en) when completing the **Configure app information** section. -->
+- **Android**
+  - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](../apps/store-apps-android.md) 的指示。 當您完成＜設定應用程式資訊＞  一節時，請使用此 [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en)。
 - **iOS**
   - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](../apps/store-apps-ios.md) 的指示。 當您完成＜設定應用程式資訊＞  一節時，請使用此 [Zimperium - App Store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
  

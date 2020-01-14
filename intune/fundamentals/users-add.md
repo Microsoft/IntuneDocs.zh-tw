@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b5b469c759ac34a6d8de09163534a580346e48a1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b25b761b3857fdf91bbbe827d288d09e350a1a7a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415032"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206086"
 ---
 # <a name="add-users-and-grant-administrative-permission-to-intune"></a>新增使用者並授與 Intune 系統管理權限
 
@@ -57,22 +57,20 @@ ms.locfileid: "73415032"
 
 ### <a name="add-intune-users-in-the-azure-portal"></a>在 Azure 入口網站中新增 Intune 使用者
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [使用者]   > [所有使用者]  。
-3. 在系統管理中心，選取 [新增使用者]  。
-   ![[新增使用者] 的螢幕擷取畫面](./media/users-add/intune-add-user.png)
-4. 指定下列使用者詳細資訊：
-   - **名稱**
+1. 在 [Microsoft Endpoint Manager 系統管理中心中](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [使用者]   > [所有使用者]  。
+2. 在系統管理中心，選取 [新增使用者]  。
+3. 指定下列使用者詳細資訊：
+   - **Name**
    - **使用者名稱** - Azure Active Directory 入口網站中的新名稱 ![新增名稱和使用者名稱的螢幕擷取畫面](./media/users-add/intune-add-user-info.png) 選擇 [確定]  繼續。
-5. 或者，您也可以指定下列使用者內容：
+4. 或者，您也可以指定下列使用者內容：
    - **設定檔** - 工作資訊，包括 [職稱]  和 [部門] 
    - **群組** - 選取要為使用者新增的群組
    - **目錄角色** - 授與使用者系統管理權限，包括 Intune 服務管理員角色。
 
    選取 [建立]  ，將新的使用者新增至 Intune。
-6. 選取 [設定檔]  ，然後為新使用者選擇 [使用位置]  。 在為新的使用者指派 Intune 授權之前，需要使用位置。 選擇 [儲存]  繼續。
+5. 選取 [設定檔]  ，然後為新使用者選擇 [使用位置]  。 在為新的使用者指派 Intune 授權之前，需要使用位置。 選擇 [儲存]  繼續。
     ![使用位置的螢幕擷取畫面](./media/users-add/intune-add-user-loc.png)
-7. 選取 [授權]  ，然後選擇 [指派]  ，為這位使用者指派 Intune 授權。 需要有 Intune 授權，才能註冊裝置或存取公司資源。 選取 [產品]  ，依序選擇授權類型和 [選取]  ，然後選擇 [指派]  。
+6. 選取 [授權]  ，然後選擇 [指派]  ，為這位使用者指派 Intune 授權。 需要有 Intune 授權，才能註冊裝置或存取公司資源。 選取 [產品]  ，依序選擇授權類型和 [選取]  ，然後選擇 [指派]  。
 
 ## <a name="grant-admin-permissions"></a>授與系統管理員權限
 

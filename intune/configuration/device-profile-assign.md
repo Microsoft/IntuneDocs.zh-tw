@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune - Azure 中指派裝置設定檔 | Microsoft Docs
-description: 使用 Azure 入口網站將裝置設定檔和原則指派給使用者和裝置。 了解如何在 Microsoft Intune 的設定檔指派中排除群組。
+description: 使用 Microsoft Endpoint Manager 系統管理中心將裝置設定檔和原則指派給使用者和裝置。 了解如何在 Microsoft Intune 的設定檔指派中排除群組。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 651b02dc276ca2aa2003955e6aa7b0dfa6724a40
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860310"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206698"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -39,7 +39,7 @@ ms.locfileid: "74860310"
 
 ## <a name="assign-a-device-profile"></a>指派裝置設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]  。 隨即列出所有設定檔。
 3. 選取您想要指派的設定檔 > [指派]  。
 4. 選擇 [包含]  群組或 [排除]  群組，然後選取您的群組。 當您選取群組時，會選擇 Azure AD 群組。 若要選取多個群組，請按住 **Ctrl** 鍵，然後選取您的群組。

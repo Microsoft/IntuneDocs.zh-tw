@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cef30238a4470395ccf58cf4d0619db78dd85b5a
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 3da8e89679f974c7d91cf19ae37365f75217d153
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563470"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548020"
 ---
 # <a name="use-powershell-scripts-on-windows-10-devices-in-intune"></a>在 Intune 的 Windows 10 裝置上使用 PowerShell 指令碼
 
@@ -40,7 +40,7 @@ MDM 服務 (例如 Microsoft Intune) 可以管理執行 Windows 10 的行動裝�
 
 Intune 管理延伸模組可補充內建的 Windows 10 MDM 功能。 您可以建立要在 Windows 10 裝置上執行的 PowerShell 指令碼。 例如，建立執行進階裝置設定的 PowerShell 指令碼。 然後，將指令碼上傳至 Intune、將指令碼指派給 Azure Active Directory (AD) 群組，以及執行指令碼。 然後，您可以監視指令碼從開始到完成的執行狀態。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 Intune 管理延伸模組具有下列必要條件。 一旦符合這些必要條件，就會在 PowerShell 指令碼或 Win32 應用程式指派至使用者或裝置時，自動安裝 Intune 管理延伸模組。
 
@@ -64,9 +64,9 @@ Intune 管理延伸模組具有下列必要條件。 一旦符合這些必要條
 
   - 使用 Configuration Manager 和 Intune 共同管理的裝置。 請務必將 [應用程式]  工作負載設定為 [試驗 Intune]  或 [Intune]  。 如需指引，請參閱下列文章： 
   
-    - [什麼是共同管理](https://docs.microsoft.com/sccm/comanage/overview) 
-    - [用戶端應用程式工作負載](https://docs.microsoft.com/sccm/comanage/workloads#client-apps)
-    - [將 Configuration Manager 工作負載切換至 Intune](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads)
+    - [什麼是共同管理](https://docs.microsoft.com/configmgr/comanage/overview) 
+    - [用戶端應用程式工作負載](https://docs.microsoft.com/configmgr/comanage/workloads#client-apps)
+    - [如何將 Configuration Manager 工作負載切換至 Intune](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads)
   
 > [!TIP]
 > 請確定裝置均會[加入](https://docs.microsoft.com/azure/active-directory/user-help/user-help-join-device-on-network) \(部分機器翻譯\) 至 Azure AD。 只在 Azure AD 中[註冊](https://docs.microsoft.com/azure/active-directory/user-help/user-help-register-device-on-network) \(部分機器翻譯\) 的裝置將不會收到您的指令碼。
@@ -134,7 +134,7 @@ Intune 管理延伸模組具有下列必要條件。 一旦符合這些必要條
 
 ## <a name="intune-management-extension-logs"></a>Intune 管理延伸模組記錄
 
-用戶端電腦上的代理程式記錄通常位於 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以使用 [CMTrace.exe](https://docs.microsoft.com/sccm/core/support/tools) 來檢視這些記錄檔。 
+用戶端電腦上的代理程式記錄通常位於 `\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以使用 [CMTrace.exe](https://docs.microsoft.com/configmgr/core/support/cmtrace) 來檢視這些記錄檔。
 
 ![Microsoft Intune 中的 CMTrace 代理程式記錄螢幕擷取畫面或範例](./media/apps-win32-app-management/apps-win32-app-10.png)  
 

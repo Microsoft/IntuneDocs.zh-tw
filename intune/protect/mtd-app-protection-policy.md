@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48dc7de86965741d8ed42bd5a5f29f72ae66d4f3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188503"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545951"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense 應用程式防護原則
 
@@ -34,7 +34,7 @@ ms.locfileid: "74188503"
 > 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：
 >
 > - Better Mobile (Android)
-> - Zimperium (iOS)
+> - Zimperium (Android、iOS)
 > - Lookout for Work (Android、iOS)。
 
 ## <a name="before-you-begin"></a>開始之前
@@ -55,8 +55,8 @@ ms.locfileid: "74188503"
   威脅等級 [值]  的選項：
 
   - **安全**：這個層級最安全。 裝置不能在具有任何威脅的同時還能存取公司資源。 發現任何威脅時，即會將裝置評估為不相容。
-  - **低**︰如果只有低層級的威脅，則會將裝置評估為符合規範。 任何更高等級的威脅都會使裝置處於不相容狀態。
-  - **中**︰如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
+  - **低**：如果只有低層級的威脅，則會將裝置評估為符合規範。 任何更高等級的威脅都會使裝置處於不相容狀態。
+  - **中等**：如果在裝置上發現的威脅為低或中層級，則會將裝置評估為符合規範。 如果偵測到高層級的威脅，則會將裝置判斷為不相容。
   - **高**：這個層級最不安全。 這會允許所有威脅等級，並只使用 Mobile Threat Defense 作為回報之用。 裝置必須要有使用此裝置啟用的 MTD 應用程式。
 
   [動作]  的選項：

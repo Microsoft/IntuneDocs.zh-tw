@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e17972a3a87bd9c42db54753d4da3bb81703377
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563614"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75204896"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>在 S 模式裝置上啟用 Win32 應用程式
 
@@ -57,7 +57,7 @@ ms.locfileid: "74563614"
 
 若要建立 Windows 10 S 模式補充原則，請使用下列步驟：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [S 模式補充原則]   > [建立原則]  。
 3. 在新增**原則檔案**之前，您必須先建立並簽署它。 如需詳細資訊，請參閱：
     - [使用 PowerShell 工具建立 WDAC 原則，並將它轉換成二進位格式](https://go.microsoft.com/fwlink/?linkid=2095387)
@@ -68,7 +68,7 @@ ms.locfileid: "74563614"
     | 值 | 說明 |
     |--------------|------------------------------------------------|
     | 原則檔案 | 包含 WDAC 原則的檔案。 |
-    | 名稱 | 此原則的名稱。 |
+    | Name | 此原則的名稱。 |
     | 說明 | [選擇性] 此原則的描述。 |
 
 5. 按一下 [下一步:  範圍標籤]。<br>
@@ -91,7 +91,7 @@ ms.locfileid: "74563614"
 
 針對 S 模式報告原則，在 Intune 主控台中顯示的報告值：
 - **成功**：S 模式補充原則已生效。
-- **不明**：S 模式補充原則的狀態未知。
+- **未知**：S 模式補充原則的狀態未知。
 - **TokenError**：S 模式補充原則的結構良好，但授權權杖時發生錯誤。
 - **NotAuthorizedByToken**：權杖不會授權此 S 模式補充原則。
 - **PolicyNotFound**：找不到 S 模式補充原則。

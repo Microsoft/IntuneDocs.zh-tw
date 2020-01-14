@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/14/2018
+ms.date: 12/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 684e9602e66842e26a7f8e233a8cee6db73f132d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cddb9b74d9132ace07c17a3156e61148b720d66
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098197"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207174"
 ---
 # <a name="set-up-enrollment-for-macos-devices-in-intune"></a>在 Intune 中設定 macOS 裝置的註冊
 
@@ -33,7 +33,7 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 
 身為 Intune 系統管理員，您可以設定公司擁有 macOS 裝置與個人擁有 macOS 裝置 (「攜帶您自己的裝置」或 BYOD) 的註冊。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 請於設定 macOS 裝置註冊之前，先完成下列必要條件︰
 
@@ -78,11 +78,9 @@ Intune 可讓您管理 macOS 裝置，以為使用者提供公司電子郵件與
 針對 VMware Fusion，您需要[編輯 .vmx 檔案](https://kb.vmware.com/s/article/1014782)，設定虛擬機器的硬體型號和序號。 建議您比對執行虛擬機器之裝置的硬體型號與您所建立之虛擬機器的硬體型號。 您可以在 **Apple 功能表** > [關於此 Mac]  [系統報表] >    > [模型識別碼]  中找到這個硬體型號。 
 
 ## <a name="user-approved-enrollment"></a>通過使用者核准的註冊
-「通過使用者核准」的註冊是一種 macOS 註冊，可讓您管理某些敏感的安全性設定。 如需詳細資訊，請參閱 [Apple 支援文件](https://support.apple.com/HT208019)。
-
-自 2019 年 11 月開始，所有新的使用者自有 macOS 註冊都會是「經使用者核准」，因為使用者必須手動安裝管理設定檔，才能成功註冊。 在[註冊流程](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)中，使用者會在 [系統喜好設定]   > [設定檔]  中安裝 Apple 管理設定檔。  macOS 公司入口網站應用程式會提供安裝管理設定檔的指示。
-
-如果使用者未手動核准管理設定檔，則在 2019 年 11 月前註冊的裝置可能會是未經使用者核准。 不過，使用者可以回其並移至 [系統喜好設定]   > [設定檔]  > 選擇 [管理設定檔]   > [核准]  來核准管理設定檔。
+「通過使用者核准」的註冊是一種 macOS 註冊，可讓您管理某些敏感的安全性設定。 如需詳細資訊，請參閱 [Apple 支援文件](https://support.apple.com/HT208019)。  
+ 
+在 BYOD 註冊程序期間，系統會要求使用者手動核准 Apple 管理設定檔。 適用於 macOS 的公司入口網站應用程式中會提供指示。 雖然完成註冊不需要核准管理設定檔，但 Intune 會建議使用者核准的註冊。 如果使用者未在註冊期間核准設定檔，使用者可以前往 [系統偏好設定]   > [設定檔]  ，選擇管理設定檔，然後選取 [核准]  。    
 
 ### <a name="find-out-if-a-device-is-user-approved"></a>找出裝置是否為「經使用者核准」
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。

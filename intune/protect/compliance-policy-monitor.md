@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 947472c5e589cb443c9a15d20a732c299cc48b44
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74992994"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206069"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -36,9 +36,9 @@ ms.locfileid: "74992994"
 
 開啟 [Intune 裝置合規性儀表板]  ：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-2. 選取 [裝置合規性]   > [概觀]  。 [裝置合規性]  儀表板隨即開啟。
+2. 選取 [裝置]   > [概觀]   > [合規性狀態]  索引標籤。
 
 > [!IMPORTANT]
 > 裝置必須在 Intune 註冊才能接收裝置合規性政策。
@@ -151,13 +151,13 @@ Intune 會顯示該裝置上所套用裝置合規性原則設定的詳細資料�
 
 ## <a name="view-compliance-reports"></a>檢視合規性報告
 
-除了使用 [合規性狀態]  上的圖表之外，您也可以從系統管理中心的 [監視]  頁面檢視合規性報告。
+除了使用圖表上的 [合規性狀態]  ，您也可以移至 [報告]   > [裝置合規性]  。
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [監視]  ，然後在 [合規性]  下方選取您想要檢視的報告。 一些可用的合規性報告包括：
 
-   - 裝置合規性
+   - 裝置相容性
    - 不符合規範的裝置
    - 沒有合規性政策的裝置
    - 設定合規性
@@ -191,3 +191,7 @@ Intune 會顯示該裝置上所套用裝置合規性原則設定的詳細資料�
 - 若衝突的設定來自 Intune 設定原則與合規性原則，合規性原則中的設定仍優先於設定原則中的設定。 即使設定原則中的設定更為安全亦然。
 
 - 若您已部署多項合規性原則，Intune 會使用其中最安全的原則。
+
+## <a name="next-steps"></a>後續步驟
+
+[合規性政策概觀](device-compliance-get-started.md)

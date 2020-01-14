@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e8b3ee799374f4b3777f771d4bd6e186ddaeb55c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 371800b39e04695eadc906465fdb013488836df9
+ms.sourcegitcommit: 3189c3a82cfd1ff3a58153dfec2e12fae7b9bdc7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564030"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75622526"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -35,7 +35,7 @@ ms.locfileid: "74564030"
 > [!IMPORTANT]
 > 部署 Win32 應用程式時，請考慮只用 [Intune Management Extension](../apps/intune-management-extension.md)，特別是當您有多檔案型 Win32 應用程式安裝程式時。 若您在 AutoPilot 註冊期間混合 Win32 應用程式與企業營運系統應用程式安裝，應用程式安裝可能會失敗。  
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要使用 Win32 應用程式管理，請務必符合下列準則：
 
@@ -328,6 +328,9 @@ ms.locfileid: "74564030"
 
 Windows 10 1709 與更新版本的用戶端將會使用 Windows 10 用戶端上的傳遞最佳化元件來下載 Intune Win32 應用程式內容。 傳遞最佳化提供預設開啟的同儕節點對同儕節點功能。 傳遞最佳化可以由群組原則及透過 Intune 裝置設定進行設定。 如需詳細資訊，請參閱[適用於 Windows 10 的傳遞最佳化](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization) \(部分機器翻譯\)。 
 
+> [!NOTE]
+> 您也可以在 Configuration Manager 發佈點上安裝 Microsoft 已連線快取伺服器，來快取 Intune Win32 應用程式內容。 如需詳細資訊，請參閱 [Configuration Manager 中的 Microsoft 連線快取 - Intune Win32 應用程式的支援](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)。
+
 ## <a name="install-required-and-available-apps-on-devices"></a>在裝置上安裝必要和可用應用程式
 
 終端使用者會看到必要及可用應用程式安裝的 Windows 快顯通知。 下列影像顯示快顯通知範例，其中表示裝置必須重新啟動，才能完成應用程式安裝。 
@@ -375,7 +378,7 @@ Windows 10 1709 與更新版本的用戶端將會使用 Windows 10 用戶端上�
 > Intune 管理延伸模組所安裝的 Win32 應用程式不會在未註冊裝置上解除安裝。 系統管理員可以利用指派排除，來確保不會對 BYOD 裝置提供 Win32 應用程式。
 
 ## <a name="troubleshoot-win32-app-issues"></a>針對 Win32 應用程式問題進行疑難排解
-用戶端電腦上的代理程式記錄通常位於 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以利用 `CMTrace.exe` 檢視這些記錄檔。 *CMTrace.exe* 可從 [Configuration Manager 用戶端工具](https://docs.microsoft.com/sccm/core/support/tools)下載。 
+用戶端電腦上的代理程式記錄通常位於 `C:\ProgramData\Microsoft\IntuneManagementExtension\Logs`。 您可以利用 `CMTrace.exe` 檢視這些記錄檔。 如需詳細資訊，請參閱 [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace)。
 
 ![用戶端機器上代理程式記錄檔的螢幕擷取畫面](./media/apps-win32-app-management/apps-win32-app-10.png)    
 

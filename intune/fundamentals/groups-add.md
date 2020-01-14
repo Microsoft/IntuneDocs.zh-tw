@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e3219e32ef9bea838f0c19258d0b22a99083a12
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74261596"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75303067"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>新增群組來組織使用者和裝置
 
@@ -47,7 +47,7 @@ Intune 使用 Azure Active Directory (Azure AD) 群組來管理裝置和使用�
 
 3. 在 [群組類型]  中，請選擇下列其中一個選項：
 
-    - **安全性**：安全性群組能定義可存取資源的人員，且建議用於您 Intune 中的群組。 例如，您可以建立使用者的群組，例如**所有 Charlotte 員工**或**Contoso 的所有女性**。 或者，您也可以建立裝置的群組，例如**所有 iOS 裝置**或**所有 Windows 10 學生裝置**。
+    - **安全性**：安全性群組能定義可存取資源的人員，且建議用於您 Intune 中的群組。 例如，您可以建立使用者的群組，例如**所有 Charlotte 員工**或**遠端工作者**。 或者，您也可以建立裝置的群組，例如**所有 iOS 裝置**或**所有 Windows 10 學生裝置**。
 
         > [!TIP]
         > 所建立的使用者和群組也會顯示在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)、Azure Active Directory 管理中心，以及 [Azure 入口網站中的 Microsoft Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 之中。 在您的組織租用戶中，您可以在所有這些區域中建立及管理群組。

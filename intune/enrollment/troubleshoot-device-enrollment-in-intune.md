@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 79e1ba2441baa6773632c27f204bef01b015b990
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832731"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547809"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -113,7 +113,7 @@ ms.locfileid: "74832731"
 
     4. 重新開啟 DirSync，然後檢查使用者現在是否已正確地同步處理。
 
-3. 如果您使用 System Center Configuration Manager (含 Intune)，請確認使用者具有有效的雲端使用者識別碼：
+3. 如果您使用 Configuration Manager (含 Intune)，請確認使用者具有有效的雲端使用者識別碼：
 
     1. 開啟 SQL Management Studio。
 
@@ -332,7 +332,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 5. 確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-system-center-configuration-manager-with-intune"></a>當使用 System Center Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置未出現在主控台
+### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>當使用 Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置未出現在主控台
 **問題：** 使用者註冊了 iOS 裝置，但它未出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
 
 - 您 Configuration Manager 網站中的 Microsoft Intune Connector 沒有和 Intune 服務通訊。
@@ -419,7 +419,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
     3. 找到有註冊問題的裝置。 依裝置名稱或 MAC/硬體位址進行搜尋，以縮小結果的範圍。
     4. 選取裝置 > [刪除]  。 刪除與裝置建立關聯的所有其他項目。  
 
-## <a name="issues-when-using-system-center-configuration-manager-with-intune"></a>使用具有 Intune 的 System Center Configuration Manager 時發生問題
+## <a name="issues-when-using-configuration-manager-with-intune"></a>使用具有 Intune 的 Configuration Manager 時發生問題
 
 ### <a name="mobile-devices-disappear"></a>行動裝置消失
 
@@ -433,7 +433,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 #### <a name="check-how-device-was-removed"></a>檢查裝置的移除方式
 
-1. 在 Configuration Manager 系統管理主控台中，選取 [監視]  &gt; [系統狀態]  &gt; [狀態訊息查詢]  。
+1. 在 Configuration Manager 管理主控台中，選取 [監視]  &gt; [ 系統狀態]  &gt; [狀態訊息查詢]  。
 
 2. 以滑鼠右鍵按一下 [手動刪除的集合成員資源]  ，然後選取 [顯示訊息]  。
 

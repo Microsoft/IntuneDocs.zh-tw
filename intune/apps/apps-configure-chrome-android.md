@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c344a518890a2309a7805d61a5675e2646029bbb
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: c02ea34417073091e2f2841b363edfb9966ce558
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564051"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75205899"
 ---
 # <a name="configure-google-chrome-for-android-devices-using-intune"></a>使用 Intune 設定適用於 Android 裝置的 Google Chrome 
 
 您可以使用 Intune 應用程式設定原則來設定適用於 Android 裝置的 Google Chrome。 應用程式的設定可以自動套用。 例如，您可以特別設定您想要封鎖或允許的書籤和 URL。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 使用者的 Android Enterprise 裝置必須在 Intune 中註冊。 如需詳細資訊，請參閱[設定 Android Enterprise 工作設定檔裝置的註冊](~/enrollment/android-work-profile-enroll.md)。
 - Google Chrome 會新增為受控 Google Play 應用程式。 如需受控 Google Play 的相關詳細資訊，請參閱[將您的 Intune 帳戶連結到受控 Google Play 帳戶](~/enrollment/connect-intune-android-enterprise.md)。
@@ -48,12 +48,16 @@ ms.locfileid: "74564051"
 
 ## <a name="add-app-configuration-for-managed-ae-devices"></a>新增受控 AE 裝置的應用程式設定
 
-1. 從 [[Intune]](https://go.microsoft.com/fwlink/?linkid=2090973) 窗格中，選取 [應用程式設定原則]   > [新增]  。
-2. 新增您的原則名稱，選擇 [裝置註冊類型] 下的 [受控裝置]  ，然後在 [平台] 下選擇 [Android]  。
+1. 從 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選取 [應用程式]   > [應用程式設定原則]   > [新增]   > [受控裝置]  。
+2. 使用下列詳細資料：
+    - **名稱** - 在 Azure 入口網站中顯示的設定檔名稱。
+    - **描述** - 在 Azure 入口網站中顯示的設定檔描述。
+    - [裝置註冊類型]  - 此設定會設定為 [受控裝置]  。
+    - **平台** - 選取 [Android]  。
 
     ![新增 Google Chrome 設定原則](~/apps/media/apps-configure-chrome-android/add-policy.png)
 
-3. 按一下 [相關聯的應用程式]  ，然後選取 [Google Chrome]  。
+3. 按一下 [相關聯的應用程式]  ，以顯示 [相關聯的應用程式]  窗格。 尋找並選取 **Google Chrome**。 此清單包含[您已經使用 Intune 核准並同步處理的受控 Google Play 應用程式](~/apps/apps-add-android-for-work.md)。
 
     ![在 [相關聯的應用程式] 底下選取 [Google Chrome]](~/apps/media/apps-configure-chrome-android/associated-app.png)
 

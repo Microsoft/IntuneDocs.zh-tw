@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/26/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b712922824fa9d54f33fb43114e852fbeb52a81
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899422"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692114"
 ---
 # <a name="app-protection-policies-overview"></a>應用程式保護原則概觀
 
@@ -95,7 +95,7 @@ Intune 應用程式保護原則平台支援與 Office 行動應用程式平台�
 ### <a name="data-protection-with-app-protection-policies-app"></a>使用應用程式保護原則 (APP) 保護資料
 
 您可以使用應用程式保護原則來防止公司資料儲存到裝置的本機儲存體 (請參閱下圖)。 您也可以限制將資料移到其他未受應用程式保護原則保護的應用程式。 應用程式保護原則設定包括︰
-- 資料重新配置原則，例如 [不可進行另存新檔]  和 [限制剪下、複製及貼上]  。
+- 資料重新配置原則，如 [儲存組織資料複本]  和 [限制剪下、複製及貼上]  。
 - 存取原則設定，例如 [需要簡單 PIN 碼才可存取]  、[禁止受控應用程式在經 JB 或 Root 破解的裝置上執行]  。
 
 ![顯示公司資料正受原則保護的概念影像](./media/app-protection-policy/apps-with-protection-policies.png)
@@ -169,7 +169,7 @@ Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamari
 
 - 終端使用者必須擁有連結到其 Azure Active Directory 帳戶的 [Office 365 商務版或企業版](https://products.office.com/business/compare-more-office-365-for-business-plans)授權。 訂用帳戶必須包括行動裝置版 Office 應用程式，而且可以包括[商務用 OneDrive](https://onedrive.live.com/about/business/) 的雲端儲存體帳戶。 Office 365 授權可在 [Microsoft 365 系統管理中心](https://admin.microsoft.com)內根據這些[指示](https://support.office.com/article/Assign-or-remove-licenses-for-Office-365-for-business-997596b5-4173-4627-b915-36abac6786dc)指派。
 
-- 終端使用者必須有受控的位置，此位置是使用 [不可進行另存新檔] 應用程式保護原則設定下的細微另存新檔功能設定的。 例如，若受控位置是 OneDrive，則 [OneDrive](https://onedrive.live.com/about/) 應用程式應該在終端使用者的 Word、Excel 或 PowerPoint 應用程式中設定。
+- 使用者必須有受控的位置，此位置是使用 [儲存組織資料複本] 應用程式保護原則設定下的細微另存新檔功能所設定。 例如，若受控位置是 OneDrive，則 [OneDrive](https://onedrive.live.com/about/) 應用程式應該在終端使用者的 Word、Excel 或 PowerPoint 應用程式中設定。
 
 - 若受控位置是 OneDrive，則應用程式必須是部署到終端使用者之應用程式保護原則的目標。
 

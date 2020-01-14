@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a104b4d41a364c552a8ebac73ff3341af71d6d21
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564156"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547983"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -50,35 +50,35 @@ ms.locfileid: "74564156"
 
 ## <a name="create-an-app-configuration-policy"></a>建立應用程式設定原則
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-3. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]  。
-5. 使用下列詳細資料：
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]   > [受控裝置]  。
+3. 使用下列詳細資料：
     - **名稱** - 在 Azure 入口網站中顯示的設定檔名稱。
     - **描述** - 在 Azure 入口網站中顯示的設定檔描述。
-    - **裝置註冊類型** - 針對已在 Intune 註冊的裝置選擇 [受控裝置]  。
-6. 為 [平台]  選取 [iOS]  。
-7. 選擇 [相關聯的應用程式]  。 然後，在 [相關聯的應用程式]  窗格上，選擇要套用設定的受控應用程式，然後選取 [確定]  。
-8. 在 [新增設定原則]  窗格上，選擇 [組態設定]  。
-9. 選取 [組態設定格式]  。 選取下列其中一種方法來新增設定資訊：
+    - [裝置註冊類型]  - 此設定會設定為 [受控裝置]  。
+4. 為 [平台]  選取 [iOS]  。
+5. 選擇 [相關聯的應用程式]  。 然後，在 [相關聯的應用程式]  窗格上，選擇要套用設定的受控應用程式，然後選取 [確定]  。
+6. 選擇 [組態設定]  來顯示 [組態設定]  窗格。
+7. 選取 [組態設定格式]  。 選取下列其中一種方法來新增設定資訊：
     - **使用設定設計工具**
     - **輸入 XML 資料**<br><br>
     如需使用設定設計工具的詳細資料，請參閱[使用設定設計工具](#use-configuration-designer)。 如需輸入 XML 資料的詳細資料，請參閱[輸入 XML 資料](#enter-xml-data)。 
-10. 新增設定資訊之後，選擇 [確定]  ，然後選擇 [新增]  來新增設定原則。 即會顯示設定原則的概觀窗格。
-11. 選取 [指派]  來顯示包含與排除選項。 
+8. 新增設定資訊之後，選擇 [確定]  ，然後選擇 [新增]  來新增設定原則。 即會顯示設定原則的概觀窗格。
+9. 選取 [指派]  來顯示包含與排除選項。 
 
     ![[原則指派] [包含] 索引標籤的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-12. 選取 [包含]  索引標籤的 [所有使用者]  。
+10. 選取 [包含]  索引標籤的 [所有使用者]  。
 
     ![[原則指派 - 所有使用者] 下拉式選項的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-13. 選取 [排除]  索引標籤。 
-14. 按一下 [選取要排除的群組]  以顯示相關的窗格。
+11. 選取 [排除]  索引標籤。 
+12. 按一下 [選取要排除的群組]  以顯示相關的窗格。
 
     ![[原則指派 - 選取要排除的群組] 窗格的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy03.png)
-15. 選擇您要排除的群組，然後按一下 [選取]  。
+13. 選擇您要排除的群組，然後按一下 [選取]  。
 
     >[!NOTE]
     >新增群組時，如已包含任何其他群組用於指定的指派類型，就會預先選取且無法針對其他包含指派類型進行變更。 因此，已使用的該群組，不能用為排除的群組。
-16. 按一下 **[儲存]** 。
+14. 按一下 **[儲存]** 。
 
 ## <a name="use-configuration-designer"></a>使用設定設計工具
 
@@ -153,7 +153,7 @@ Intune 會驗證 XML 格式。 但 Intune 不會檢查 XML 屬性清單 (PList) 
 
 ### <a name="supported-xml-plist-data-types"></a>支援的 XML PList 資料類型
 
-Intune 支援屬性清單中的下列資料類型：
+Intune 支援內容清單中的下列資料類型：
 
 - &lt;integer&gt;
 - &lt;real&gt;
@@ -164,7 +164,7 @@ Intune 支援屬性清單中的下列資料類型：
 
 ### <a name="tokens-used-in-the-property-list"></a>屬性清單中使用的權杖
 
-此外，Intune 支援屬性清單中的下列權杖類型︰
+此外，Intune 也支援下列內容清單的權杖類型︰
 - \{\{userprincipalname\}\}—例如，**John\@contoso.com**
 - \{\{mail\}\}—例如，**John\@contoso.com**
 - \{\{partialupn\}\}—例如，**John**
@@ -182,7 +182,7 @@ DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App
 
 1. 在 Intune 中，請移至 [Intune]   > [應用程式]   > [所有應用程式]   > [新增]  來視需要新增 Intune 公司入口網站應用程式。
 2. 移至 [應用程式]   > [應用程式設定原則]  ，以建立公司入口網站應用程式的應用程式設定原則。
-3. 使用以下 XML 建立應用程式設定原則。 如需如何建立應用程式設定原則和輸入 XML 資料的詳細資訊，請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)，或針對混合式 MDM，請參閱[在 System Center Configuration Manager 中使用應用程式設定原則將設定套用至 iOS 應用程式](https://docs.microsoft.com/sccm/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies) \(部分機器翻譯\)。
+3. 使用以下 XML 建立應用程式設定原則。 如需如何建立應用程式設定原則和輸入 XML 資料的詳細資訊，請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)，或針對混合式 MDM，請參閱[在 Configuration Manager 中使用應用程式設定原則將設定套用至 iOS 應用程式](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies) \(部分機器翻譯\)。
 
     ``` xml
     <dict>

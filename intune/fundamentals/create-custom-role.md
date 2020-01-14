@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ca83287c58f8d2fb7c8eec5f8cc793e2c67b77a
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390710"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207412"
 ---
 # <a name="create-a-custom-role-in-intune"></a>在 Intune 中建立自訂角色
 
@@ -34,36 +34,30 @@ ms.locfileid: "74390710"
 
 ## <a name="to-create-a-custom-role"></a>建立自訂角色
 
-1. 使用您的 Intune 認證登入 [Azure 入口網站](https://portal.azure.com)。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [角色]   > [所有角色]   > [新增]  。
 
-2. 選擇左功能表中的 [All services] (所有服務)  ，然後在文字方塊篩選中鍵入 **Intune**。
+2. 在 [新增自訂角色]  刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]  。
 
-3. 選擇 [Intune]   > [角色]   > [所有角色]   > [新增]  。
+3. 在 [權限]  刀鋒視窗中，選擇此角色所要使用的權限。
 
-4. 在 [新增自訂角色]  刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]  。
+4. 在 [範圍 (標籤)]  刀鋒視窗中，選擇此角色的標籤。 這個角色可以存取也擁有這些標籤的資源。
 
-5. 在 [權限]  刀鋒視窗中，選擇此角色所要使用的權限。
+5. 完成後，選擇 [確定]  。
 
-6. 在 [範圍 (標籤)]  刀鋒視窗中，選擇此角色的標籤。 這個角色可以存取也擁有這些標籤的資源。
-
-7. 完成後，選擇 [確定]  。
-
-8. 在 [新增自訂角色]  刀鋒視窗中按一下 [建立]  。 新角色會顯示在 [Intune 角色 - 所有角色]  刀鋒視窗上的清單中。
+6. 在 [新增自訂角色]  刀鋒視窗中按一下 [建立]  。 新角色會顯示在 [Intune 角色 - 所有角色]  刀鋒視窗上的清單中。
 
 
 ## <a name="copy-a-role"></a>複製角色
 
 您也可以複製現有的角色。
 
-1. 使用您的 Intune 認證登入 [Azure 入口網站](https://portal.azure.com)，然後選取 [Intune]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [角色]   > [所有角色]  > 選取清單中的角色 > [複製]  。
 
-2. 選取 [角色]   > [所有角色]  > 選取清單中的角色 > [重複]  。
+2. 在 [角色重複]  底下，輸入名稱。 請務必使用唯一的名稱。
 
-3. 在 [角色重複]  底下，輸入名稱。 請務必使用唯一的名稱。
+3. 系統將會預先選取來自原始角色的所有權限和範圍標籤。 您可以接著變更重複角色的 [名稱]  、[描述]  、[權限]  ，以及 [範圍 (標籤)]  。
 
-4. 系統將會預先選取來自原始角色的所有權限和範圍標籤。 您可以接著變更重複角色的 [名稱]  、[描述]  、[權限]  ，以及 [範圍 (標籤)]  。
-
-5. 選取 [建立]  。 
+4. 選取 [建立]  。 
 
 ## <a name="next-steps"></a>後續步驟
 - [將角色指派給使用者](assign-role.md)

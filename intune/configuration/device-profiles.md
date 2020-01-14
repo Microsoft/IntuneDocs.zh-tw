@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 中的裝置功能和設定 - Azure | Microsoft Docs
-description: 各種 Microsoft Intune 裝置設定檔的概觀。 取得包括功能、限制、電子郵件、Wi-Fi、VPN、教育、憑證、升級 Windows 10、BitLocker 與 Microsoft Defender、Windows 資訊保護、系統管理範本，以及 Azure 入口網站自訂裝置組態設定等項目的資訊。 使用這些設定檔來管理及保護公司的資料和裝置。
+description: 各種 Microsoft Intune 裝置設定檔的概觀。 取得包括功能、限制、電子郵件、Wi-Fi、VPN、教育、憑證、升級 Windows 10、BitLocker 與 Microsoft Defender、Windows 資訊保護、系統管理範本，以及 Microsoft Endpoint Manager 系統管理中心中自訂裝置組態設定等項目的資訊。 使用這些設定檔來管理及保護公司的資料和裝置。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b74cdf29999bccdefaa94c84673b9ea89c335537
-ms.sourcegitcommit: 7001dc5a9cffeb2e161748f9e6dba126bf1cb06f
+ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74694942"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206613"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中使用裝置設定檔將功能和設定套用至您的裝置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設定和功能。 這些設定和功能會新增至「組態設定檔」。 您可以為不同的裝置和平台 (包括 iOS、Android 和 Windows) 建立設定檔。 然後，使用 Intune 套用或「指派」設定檔至裝置。
 

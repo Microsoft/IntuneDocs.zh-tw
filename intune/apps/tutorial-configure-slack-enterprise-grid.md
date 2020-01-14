@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b01c1444b44e3f5c66fc129f78f321c9c9f5aa
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563405"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206902"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教學課程：設定 Slack 以針對 EMM 和應用程式設定使用 Intune
 
@@ -37,7 +37,7 @@ Slack 是您可以與 Microsoft Intune 搭配使用的共同作業應用程式�
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](../fundamentals/free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
 - Azure Active Directory Premium ([免費試用](https://azure.microsoft.com/free/?WT.mc_id=A261C142F))
 - Intune 訂用帳戶 ([免費試用](../fundamentals/free-trial-sign-up.md))
@@ -48,32 +48,31 @@ Slack 是您可以與 Microsoft Intune 搭配使用的共同作業應用程式�
 遵循 [Slack 的指示](https://get.slack.help/hc/articles/115002579426-Enable-Enterprise-Mobility-Management-for-your-org#step-2:-turn-on-emm) \(英文\)，針對 Slack Enterprise Grid 方案開啟 EMM，並[連線 Azure Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/slack-tutorial) 作為您 Grid 方案的識別提供者 (IDP)。
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
-請以全域管理員或 Intune 服務管理員身分登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
+請以全域管理員或 Intune 服務管理員身分登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
 
 ## <a name="set-up-slack-for-emm-on-ios-devices"></a>在 iOS 裝置上設定 Slack for EMM
 將 iOS 應用程式「Slack for EMM」新增到您的 Intune 租用戶，並建立應用程式設定原則，讓貴組織的 iOS 使用者能夠使用 Intune 作為 EMM 提供者來存取 Slack。
 
 ### <a name="add-slack-for-emm-to-intune"></a>將 Slack for EMM 新增到 Intune
 在 Intune 中新增 Slack for EMM 作為受控的 iOS 應用程式，並指派您的 Slack 使用者。 應用程式是平台特定的，因此，您必須在 Android 裝置上為您的 Slack 使用者新增個別的 Intune 應用程式。
-1. 在 Intune 中，選取 [應用程式]   > [所有應用程式]   > [新增]  。
-2. 在 [應用程式類型] 下方，選取 [市集應用程式 - iOS]  。
-3. 選取 [Search the App Store]  \(搜尋應用程式市集\)。 輸入搜尋詞彙 "Slack for EMM"，然後選取該應用程式。
-4. 選取 [應用程式資訊]  ，並適當地設定任何變更。
-5. 選取 [新增]  。
-6. 在搜尋列中，輸入 "Slack for EMM"，然後選取您剛新增的應用程式。
-7. 從管理員中，選取 [指派]  。
-8. 選取 [新增群組]  。 根據您選擇來在開啟適用於 Slack 的 EMM 時受到影響的人員而定，在 [指派類型]  下方，您可能想要：
+1. 在系統管理中心中，選取 [應用程式]   > [所有應用程式]   > [新增]  。
+2. 在 [應用程式類型]  下方，選取 [iOS]  市集應用程式。
+3. 選取 [Search the App Store]  \(搜尋應用程式市集\)。 輸入搜尋詞彙 "Slack for EMM"，然後選取該應用程式。 按一下 [搜尋 App Store]  窗格中的 [選取]  。
+4. 選取 [應用程式資訊]  ，並適當地設定任何變更。 選取 [確定]  以設定您的應用程式資訊。
+5. 按一下 [加入]  。
+6. 選取 [指派]  。
+7. 按一下 [新增群組]  。 根據您選擇來在開啟適用於 Slack 的 EMM 時受到影響的人員而定，在 [指派類型]  下方，您可能想要：
     - 在選擇 [全部成員 (包括來賓)] 時，選取 [適用於已註冊的裝置]  ，或者
     - 在選擇 [全部成員 (不包括來賓)] 或 [選擇性] 時，選取 [無論註冊與否均可使用]  。
-9. 選取 [包含的群組]  ，並在 [讓所有使用者都可以使用這個應用程式] 下方，選取 [是]  。
-10. 按一下 [確定]  ，然後再按一次 [確定]  。
-11. 按一下 **[儲存]** 。
+8. 選取 [包含的群組]  ，並在 [讓所有使用者都可以使用這個應用程式]  下方，選取 [是]  。
+9. 按一下 [確定]  ，然後再按一下 [確定]  以新增群組。
+10. 按一下 **[儲存]** 。
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>針對 Slack for EMM 新增應用程式設定原則
 針對 Slack for EMM iOS 新增應用程式設定原則。 受控裝置的應用程式設定原則是平台特定的，因此，您需要在 Android 裝置上針對您的 Slack 使用者新增不同的原則。
-1. 在 Intune 中，選取 [應用程式]   > [應用程式設定原則]   > [新增]  。
-2. 在 [名稱] 中，輸入 Slack 應用程式設定原則測試。
-3. 在 [裝置註冊類型] 下方，選取 [受控裝置]  。
+1. 在系統管理中心中，選取 [應用程式]   > [應用程式設定原則]   > [新增]   > [受控裝置]  。
+2. 在 [名稱] 中，輸入「Slack 應用程式設定原則測試」。
+3. 在 [裝置註冊類型] 下方，確認已設定 [受控裝置]  。
 4. 在 [平台] 下方，選取 [iOS]  。
 5. 選取 [相關聯的應用程式]  。
 6. 在搜尋列中，輸入 "Slack for EMM"，然後選取該應用程式。
@@ -86,7 +85,7 @@ Slack 是您可以與 Microsoft Intune 搭配使用的共同作業應用程式�
 
 ### <a name="optional-create-an-ios-device-compliance-policy"></a>(選擇性) 建立 iOS 裝置合規性政策
 建立 Intune 裝置合規性政策來設定裝置必須符合才能視為合規的條件。 我們將會在本教學課程中，為 iOS 裝置建立裝置合規性政策。 合規性政策是平台特定的，因此，您需要在 Android 裝置上針對您的 Slack 使用者新增不同的原則。
-1. 在 Intune 中選取 [裝置合規性]   > [原則]   > [建立原則]  。
+1. 在系統管理中心中，選取 [裝置合規性]   > [原則]   > [建立原則]  。
 2. 在 [名稱] 中，輸入「iOS 合規性政策測試」。
 3. 在 [描述] 中，輸入「iOS 合規性政策測試」。
 4. 在 [平台] 下方，選取 [iOS]  。

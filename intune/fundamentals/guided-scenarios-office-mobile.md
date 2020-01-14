@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/16/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bd02e2b7f9582308109d1e6986d7e6a8014e5af7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585705"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691812"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>引導式案例 - 保護 Microsoft Office 行動應用程式 
 
@@ -46,7 +46,7 @@ Office 行動應用程式以及適用於行動裝置的 Microsoft Edge 都支援
 [Intune 應用程式保護原則](~/apps/app-protection-policy.md)可協助保護您已在 Intune 中註冊之裝置上的工作檔案。 您也可以在未向 Intune 註冊管理之員工擁有的裝置上，使用應用程式保護原則。 在此情況下，即使您的公司未管理裝置，仍然需要確定工作檔案和資源受到保護。
 
 您可以使用應用程式保護原則來防止使用者將工作檔案儲存在未受保護的位置。 您也可以限制將資料移到其他未受應用程式保護原則保護的應用程式。 應用程式保護原則設定包括︰
-- 資料重新配置原則，如 [不可進行另存新檔] 和 [限制剪下、複製及貼上]。
+- 資料重新配置原則，如 [儲存組織資料複本]  和 [限制剪下、複製及貼上]  。
 - 存取原則設定，需要簡單的 PIN 碼才能存取，並封鎖受管理的應用程式在已進行越獄或 Root 破解的裝置上執行。
 
 應用程式型條件式存取和用戶端應用程式管理會新增一個安全性層級，方法是確定只有支援 Intune 應用程式保護原則的用戶端應用程式才能存取 Exchange Online 和其他 Office 365 服務。
@@ -57,7 +57,7 @@ Office 行動應用程式以及適用於行動裝置的 Microsoft Edge 都支援
 
 ![Outlook 應用程式條件式存取程序流程](./media/guided-scenarios-office-mobile/guided-scenarios-office-mobile-02.png)
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 您將需要下列 Intune 系統管理員權限：
 

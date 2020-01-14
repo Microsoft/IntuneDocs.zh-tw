@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84f82cf2fde7d400e5531bac219b6cbb4877032f
-ms.sourcegitcommit: 960ffb2214c35d75ad219fa2571a999529a0abd4
+ms.openlocfilehash: 9571f7d0ae10f33007d5ae50b403580232c2e870
+ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74478922"
+ms.lasthandoff: 12/30/2019
+ms.locfileid: "75545920"
 ---
 # <a name="enable-the-mobile-threat-defense-connector-in-intune-for-unenrolled-devices"></a>在 Intune 中針對尚未註冊的裝置啟用 Mobile Threat Defense 連接器
 
 在 Mobile Threat Defense (MTD) 安裝期間，您已設定原則以在 Mobile Threat Defense 合作夥伴主控台中分類威脅，且已在 Intune 中建立應用程式防護原則。 如果您已在 MTD 夥伴主控台中設定 Intune 連接器，您現在可以啟用 MTD 合作夥伴應用程式的 MTD 連線。
 
 > [!NOTE]
-> 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：Better Mobile (Android)、Zimperium (iOS)、Lookout for Work (Android/iOS)。
+> 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：Better Mobile (Android)、Zimperium (Android/iOS)、Lookout for Work (Android/iOS)。
 
 ## <a name="classic-conditional-access-policies-for-mtd-apps"></a>適用於 MTD 應用程式的傳統條件式存取原則
 
@@ -56,17 +56,17 @@ ms.locfileid: "74478922"
 
 2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [Mobile Threat Defense]  。
 
-3. 在 [Mobile Threat Defense]  窗格中，選擇 [新增]  。
+3. 在 [行動裝置威脅防護]  窗格中，選擇 [新增]  。
 
 4. 從下拉式清單中選擇 MTD 解決方案作為**要設定的 Mobile Threat Defense 連接器**。
 
     <!-- ![MTD setup in Intune](PLACEHOLDER, need a new screenshot of this page) -->
 
-5. 根據組織的需求來啟用切換選項。 可見的切換選項會根據 MTD 夥伴而不同。
+5. 根據組織的需求啟用切換選項。 可見的切換選項會根據 MTD 夥伴而不同。
 
 ## <a name="mobile-threat-defense-toggle-options"></a>Mobile Threat Defense 切換選項
 
-您可以根據組織的需求決定需要啟用哪些 MTD 切換選項。 以下是更多詳細資料：
+您可以決定根據組織的需求必須啟用哪些 MTD 切換選項。 以下是更多詳細資料：
 
 **應用程式防護原則設定**
 

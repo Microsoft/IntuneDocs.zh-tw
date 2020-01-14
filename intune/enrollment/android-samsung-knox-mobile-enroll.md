@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5f290370dd6ec05677a7073d9ca3edd854c9aa5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505580"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75692152"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -42,7 +42,7 @@ ms.locfileid: "72505580"
 從參與 Knox 部署計畫的授權經銷商處購買裝置時，包含這些裝置的裝置識別碼 (序號與 IMEI) 清單將會自動新增至 Knox 入口網站。
 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要使用 KME 註冊至 Intune，您必須先遵循下列步驟，在 Samsung Knox 入口網站上註冊您的公司：
 1. [確認可在您的國家/地區取得 KME](https://www.samsungknox.com/en/solutions/it-solutions/knox-configure/available-countries) \(英文\)：在超過 55 個國家/地區都能取得 KME。 請確定您的部署國家/地區受到支援。
@@ -75,13 +75,13 @@ ms.locfileid: "72505580"
 
 ### <a name="for-android"></a>適用於 Android
 
-如需逐步指導方針，請參閱 [Samsung Knox 設定檔設定精靈](https://docs.samsungknox.com/KME-Getting-Started/Content/getting-started-wizard.htm) \(英文\) 的指示。
+如需逐步指導方針，請參閱 [Samsung 的建立設定檔](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm) \(英文\) 的指示。
 
 | MDM 設定檔欄位| 必要？ | 值 |
 |-------------------|-----------|-------|
 |MDM Server URI \(MDM 伺服器 URI\)     | 否        |將此留白。
 |設定檔名稱       | 是       |輸入您選擇的設定檔名稱。
-|描述        | 否        |輸入描述設定檔的文字。
+|description        | 否        |輸入描述設定檔的文字。
 |MDM Agent APK \(MDM 代理程式 APK\)      | 是       |https://aka.ms/intune_kme
 |以 Google 裝置擁有者來啟用此應用程式 | 否 | 針對 Android，將此選項保持未選取。 此選項僅適用於 Android 企業。
 |Skip Setup wizard \(略過設定精靈\)  | 否        |針對使用者選擇此選項以略過標準裝置設定提示。

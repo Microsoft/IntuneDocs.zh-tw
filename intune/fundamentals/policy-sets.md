@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/15/2019
+ms.date: 12/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e539f44fc9c9b4e7382368c0f3ad9f79bb1c98b1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585653"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206120"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>使用原則集合將管理物件集合組成群組
 
@@ -44,7 +44,7 @@ ms.locfileid: "72585653"
 - 應用程式設定原則
 - 應用程式防護原則
 - 裝置組態設定檔
-- 裝置相容性原則
+- 裝置合規性原則
 - 裝置類型限制
 - Windows AutoPilot 部署設定檔
 - 註冊狀態頁面
@@ -56,8 +56,8 @@ ms.locfileid: "72585653"
 
 ## <a name="how-to-create-a-policy-set"></a>如何建立原則集合
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 在 [Intune]  刀鋒視窗上，選擇 [原則集合]   > [原則集合]   > [建立]  。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [原則集]   > [原則集]   > [建立]  。
 3. 在 [基本]  頁面上，新增下列值：
     - **原則集合名稱**：為此原則集合提供名稱。
     - **描述**：選擇性地為原則集合提供描述。

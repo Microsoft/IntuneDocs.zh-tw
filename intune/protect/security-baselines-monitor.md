@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7b7f14e939e7241cd34c01d73e9af822dea7acdc
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
+ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410065"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75556397"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視安全性基準和設定檔
 
@@ -42,12 +42,16 @@ Intune 提供數個用來監視安全性基準的選項。 您可以監視適用
 - **裝置檢視** - 基準的每一個狀態類別中有多少部裝置的摘要。
 - **每個類別** - 此檢視顯示基準中的每個類別，並包含每個基準類別之每個狀態群組的裝置百分比。
 
-每部裝置都下列列其中一個狀態表示，而這些狀態同時用於「裝置」  檢視和「每個類別」  檢視：
+每部裝置都以下列其中一個狀態表示 (用於「裝置」  檢視和「每個類別」  檢視)：
 
 - **符合基準** - 基準中的所有設定都與所建議設定相符。
 - **不符合基準** - 基準中至少有一個設定與所建議設定不符。
-- **設定錯誤** - 至少有一個設定未正確設定。 此狀態意謂著設定處於衝突、錯誤或擱置狀態。
-- **不適用** - 至少有一個設定不適用，且不會套用。
+
+  > [!NOTE]
+  > 當您建立或編輯基準設定檔時，對預設值或組態設定所做的任何變更，都會造成「不符合基準」狀態出現。 如需判斷已變更之設定的說明，請連絡 Microsoft 支援服務。 
+
+- **設定錯誤** - 至少有一個設定未正確設定。 此狀態表示設定處於衝突、錯誤或擱置狀態。
+- **不適用** - 至少有一個設定不適用，且未套用。
 
 ### <a name="device-view"></a>裝置檢視
 

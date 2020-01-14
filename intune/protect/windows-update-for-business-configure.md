@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/20/2019
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a7c3398f28d7c396c873dd29f3e3fdd719c1a7c6
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691777"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207446"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 軟體更新
 
@@ -40,7 +40,7 @@ Intune 提供下列原則類型以管理更新：
 
 如需詳細資訊，請參閱[使用商務用 Windows Update 來管理更新](https://technet.microsoft.com/itpro/windows/manage/waas-manage-updates-wufb)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要在 Intune 中使用適用於 Windows 10 裝置的 Windows 更新，必須符合下列必要條件。
 
@@ -68,9 +68,6 @@ Intune 提供下列原則類型以管理更新：
   您可以手動設定 Windows 10 裝置的「診斷與使用狀況資料」  設定，或是使用適用於 Windows 10 與更新版本的 Intune 裝置限制設定檔。 如果您使用裝置限制設定檔，請至少將 [共用使用方式資料]  的[裝置限制設定](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)設定為 [基本]  。 當您設定適用於 Windows 10 或更新版本的裝置限制原則時，可以在 [報告和遙測]  類別底下找到此設定。
 
   如需有關裝置設定檔的詳細資訊，請參閱[設定裝置限制設定](../configuration/device-restrictions-configure.md)。
-
-- 如果您使用 Azure 傳統入口網站，請[將您的設定移轉到 Azure 入口網站](#migrate-update-settings-to-the-azure-portal)。
-
 
 ## <a name="windows-10-update-rings"></a>Windows 10 更新通道
 
@@ -124,7 +121,7 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 
 #### <a name="pause"></a>暫停
 
-選取 [暫停]  可以從您暫停通道起，防止獲指派的裝置接收功能更新或品質更新最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 在這次掃描後，您可以再一次暫停更新。
+選取 [暫停]  可以從您暫停通道起，防止獲指派的裝置接收功能更新或品質更新最多 35 天。 經過天數上限之後，暫停功能會自動過期，裝置將掃描 Windows Updates 尋找可用的更新。 進行此掃描之後，您可以再次暫停更新。
 如果您繼續使用已暫停的更新通道，然後再次暫停該通道，則暫停期間會重設為 35 天。
 
 ##### <a name="to-pause-a-ring"></a>若要暫停通道
@@ -227,7 +224,7 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 
 3. 在 [基本]  下，指定名稱、描述 (選擇性)，然後針對 [要部署的功能更新]  選取想要的 Windows 版本功能集，然後選取 [下一步]  。
 
-4. 在 [指派]  下，選擇 [+ 選取要納入的群組]  ，然後將更新通道指派給一或多個群組。 選取 [下一步]  以繼續進行操作。
+4. 在 [指派]  下，選擇 [+ 選取要包含的群組]  ，然後將功能更新部署指派給一或多個群組。 選取 [下一步]  以繼續進行操作。
 
 5. 在 [檢閱 + 建立]  下檢閱設定，並在準備儲存 Windows 10 功能更新原則時選取 [建立]  。  
 
@@ -240,17 +237,6 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 - 選取 [刪除]  以從 Intune 刪除原則，並從裝置中移除此原則。
 - 選取 [屬性]  以修改部署。  在 [屬性]  窗格中，選取 [編輯]  以開啟 [Deployment settings or Assignments] \(部署設定或指派\)  ，即可在此修改部署。
 - 選取 [End user update status] \(終端使用者更新狀態\)  以檢視原則的相關資訊。
-
-## <a name="migrate-update-settings-to-the-azure-portal"></a>將更新設定移轉至 Azure 入口網站
-
-Azure 傳統入口網站在裝置組態設定檔中也有一些其他 Windows 10 更新設定。 如果在移轉至 Azure 入口網站時設定了這些設定的任一項，則強烈建議執行下列動作：
-
-1. 在 Azure 入口網站上，以您需要的設定建立 Windows 10 更新響鈴。 Azure 入口網站已不再支援 [允許發行前版本功能]  設定，因其不再適用於最新的 Windows 10 組建。 當您建立更新通道時，可以設定另外三個設定，以及其他 Windows 10 更新設定。
-
-   > [!NOTE]
-   > 移轉之後，在傳統入口網站中建立的 Windows 10 更新設定不會顯示在 Azure 入口網站中。 不過，系統會套用這些設定。 如果您移轉這當中的任何設定，並從 Azure 入口網站中編輯所移轉的原則，系統就會將這些設定從原則中移除。
-
-2. 刪除傳統入口網站中的更新設定。 移轉至 Azure 入口網站並將相同設定新增至更新通道之後，您必須在傳統入口網站中刪除這些設定，以避免任何可能發生的原則衝突。 例如，當相同的設定具有不同的設定值時，就會發生衝突。 您很難得知此狀況，因為在傳統入口網站中設定的設定不會顯示在 Azure 入口網站中。
 
 ## <a name="next-steps"></a>後續步驟
 

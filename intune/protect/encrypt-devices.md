@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 12/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 13d6a2b9cdc8596c7f5cf81218377754e9412be1
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390315"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654255"
 ---
 # <a name="use-device-encryption-with-intune"></a>搭配 Intune 使用裝置加密
 
@@ -87,6 +87,10 @@ FileVault 是隨附於 macOS 的完整磁碟加密程式。 您可以使用 Intu
 
 在 Intune 使用 FileVault 來加密 macOS 裝置之後，您可以從任何裝置上的 Web 公司入口網站查看該裝置的個人修復金鑰。 在 Web 公司入口網站中，選擇已加密的 macOS 裝置，然後選擇 [取得修復金鑰] 作為遠端裝置動作。
 
+### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>從 MEM 加密的 macOS 裝置擷取個人修復金鑰
+
+終端使用者將能夠使用 iOS 公司入口網站應用程式來擷取其個人修復金鑰 (FileVault 金鑰)。 具有個人修復金鑰的裝置必須向 Intune 註冊，並透過 Intune 以 FileVault 加密。 終端使用者可以使用 iOS 公司入口網站應用程式，開啟包含 FileVault 個人修復金鑰的網頁。 您也可以透過選取 [裝置]   > 已加密且已註冊的 macOS 裝置   > [取得修復金鑰]  ，從 Intune 擷取修復金鑰。 
+
 ## <a name="bitlocker-encryption-for-windows-10"></a>適用於 Windows 10 的 BitLocker 加密
 
 使用 Intune 在執行 Windows 10 的裝置上設定 BitLocker 磁碟機加密。 接著，使用 Intune 加密報告來檢視這些裝置的加密詳細資料。 您也可以從裝置存取 BitLocker 的重要資訊，如同在 Azure Active Directory (Azure AD) 中找到的。
@@ -122,7 +126,7 @@ BitLocker 適用於執行 **Windows 10 或更新版本**的裝置。
 
 您可以使用 Intune 裝置動作來遠端輪替執行 Windows 10 1909 版或更新版本之裝置的 BitLocker 修復金鑰。
 
-#### <a name="prerequisites"></a>必要條件
+#### <a name="prerequisites"></a>先決條件
 
 裝置必須符合下列必要條件，以支援 BitLocker 修復金鑰的輪替：
 

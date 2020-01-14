@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 01/06/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ca087ec67542102a0cd3111d27a860500b23d3c4
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 442432e7638c69083dcad5abc571c00e4051553d
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547978"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731519"
 ---
 # <a name="use-windows-10-templates-to-configure-group-policy-settings-in-microsoft-intune"></a>在 Microsoft Intune 中使用 Windows 10 範本設定群組原則設定
 
@@ -43,7 +43,7 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
 
 ## <a name="create-a-template"></a>建立範本
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -52,16 +52,10 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
     - **平台**：選取 [Windows 10 及更新版本]  。
     - **設定檔類型**：選取 [系統管理範本]  。
 
-4. 選取 [建立]  。 在新視窗中，選取 [設定]  。 列出每項設定，且您可以使用上一個和下一個箭號來查看更多設定：
+4. 選取 [建立]  。 在新視窗中，選取下拉式清單，然後選取 [所有產品]  。 在清單中，您還可以將設定篩選為僅顯示 **Windows** 設定、僅顯示 **Office** 設定，或僅顯示 **Edge 77 版或更新版本**設定：
 
-    ![查看設定清單範例並使用上一個和下一個按鈕](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
-
-    > [!TIP]
-    > Intune 中的 Windows 設定與您在本機群組原則編輯器 (`gpedit`) 中看到的內部部署群組原則路徑相互關聯。
-
-5. 在下拉式清單內，選取 [所有產品]  。 在清單中，您還可以將設定篩選為僅顯示 **Windows** 設定、僅顯示 **Office** 設定，或僅顯示 **Edge 77 版或更新版本**設定：
-
-    ![篩選清單，以顯示 Intune 中系統管理範本內的所有 Windows 或所有 Office 設定](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
+    > [!div class="mx-imgBorder"]
+    > ![篩選清單，以顯示 Intune 中系統管理範本內的所有 Windows 或所有 Office 設定](./media/administrative-templates-windows/administrative-templates-choose-windows-office-all-products.png)
 
     > [!NOTE]
     > Microsoft Edge 設定可套用於：
@@ -70,6 +64,14 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
     > - Windows 10 RS4 與更新版本 (已安裝 [KB 4512509](https://support.microsoft.com/kb/4512509))
     > - Windows 10 RS5 與更新版本 (已安裝 [KB 4512534](https://support.microsoft.com/kb/4512534))
     > - Windows 10 19H1 與更新版本 (已安裝 [KB 4512941](https://support.microsoft.com/kb/4512941))
+
+5. 列出每項設定，且您可以使用上一個和下一個箭號來查看更多設定：
+
+    > [!div class="mx-imgBorder"]
+    > ![查看設定清單範例並使用上一個和下一個按鈕](./media/administrative-templates-windows/administrative-templates-sample-settings-list.png)
+
+    > [!TIP]
+    > Intune 中的 Windows 設定與您在本機群組原則編輯器 (`gpedit`) 中看到的內部部署群組原則路徑相互關聯。
 
 6. 選取任何設定。 例如，篩選 **Office**，然後選取 [啟用限制瀏覽]  。 設定的詳細描述會隨即顯示。 選擇 [已啟用]  、[已停用]  ，或將設定保留為 [尚未設定]  \(預設\)。 此詳細描述也會說明當您選擇 [已啟用]  、[已停用]  或 [尚未設定]  時所發生的情況。
 7. 按一下 [確定]  以儲存您的變更。
@@ -88,13 +90,15 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
 
 這些範本提供數百項設定。 若要更輕鬆地尋找特定設定，請使用內建功能：
 
-- 在您的範本中，選取 [設定]  、[狀態]  、[設定類型]  或 [路徑]  欄來排序清單。 例如，選取 [路徑]  資料行來查看 `Microsoft Excel` 路徑中的所有設定：
+- 在您的範本中，選取 [設定]  、[狀態]  、[設定類型]  或 [路徑]  欄來排序清單。 例如，選取 [路徑]  資料行，並使用 [下一步] 箭號來查看 `Microsoft Excel` 路徑中的設定：
 
-  ![按一下路徑，以顯示透過 Intune 中系統管理範本內的群組原則或 ADMX 路徑分組的所有設定](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
+  > [!div class="mx-imgBorder"]
+  > ![按一下路徑，以顯示透過 Intune 中系統管理範本內的群組原則或 ADMX 路徑分組的所有設定](./media/administrative-templates-windows/path-filter-shows-excel-options.png)
 
-- 在您的範本中，使用 [搜尋]  方塊來尋找特定設定。 您可以依設定標題 (或路徑) 搜尋。 例如，搜尋 `copy`。 這會顯示包含 `copy` 的所有設定：
+- 在您的範本中，使用 [搜尋]  方塊來尋找特定設定。 您可以依設定 (或路徑) 搜尋。 例如，搜尋 `copy`。 這會顯示包含 `copy` 的所有設定：
 
-  ![搜尋複本，以顯示 Intune 中系統管理範本內的所有 Windows 或所有 Office 設定](./media/administrative-templates-windows/search-copy-settings.png) 
+  > [!div class="mx-imgBorder"]
+  > ![搜尋複本，以顯示 Intune 中系統管理範本內的所有 Windows 或所有 Office 設定](./media/administrative-templates-windows/search-copy-settings.png) 
 
   在另一個範例中，搜尋 `microsoft word`。 您會看到可為 Microsoft Word 程式設定的所有設定。 搜尋 `explorer` 來查看您可以新增至範本的所有 Internet Explorer 設定。
 
@@ -103,3 +107,5 @@ Windows 設定類似於 Active Directory (AD) 中的群組原則 (GPO) 設定。
 範本已建立，但還不會執行任何動作。 接下來，[指派範本 (也稱為設定檔)](device-profile-assign.md) 並[監視其狀態](device-profile-monitor.md)。
 
 [使用系統管理範本更新 Office 365](administrative-templates-update-office.md)。
+
+[教學課程：使用雲端在具有 ADMX 範本和 Microsoft Intune 的 Windows 10 裝置上設定群組原則](tutorial-walkthrough-administrative-templates.md)

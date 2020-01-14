@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b17b87462b2c73e265f062c33a06a810e7c58bf8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cfa2c5366d1b38cf819cfc68840a29fad9002979
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504340"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548108"
 ---
 # <a name="data-security-and-sharing-in-intune"></a>Intune 中的資料安全性與共用
 
@@ -68,11 +68,11 @@ Intune 也會使用 RBAC 和 JiT 安全性等技術來支援事件，以確保�
 - [Google 傳送至 Intune 的資料](data-google-sends-to-intune.md)
 - [Jamf Pro 傳送至 Intune 的資料](data-jamf-sends-to-intune.md)
 
-### <a name="system-center-configuration-manager-data-sharing"></a>System Center Configuration Manager 資料共用
+### <a name="microsoft-endpoint-configuration-manager-data-sharing"></a>Microsoft Endpoint Configuration Manager 資料共用
 
-Microsoft Intune 不會與 System Center Configuration Manager 共用任何資料。 System Center Configuration Manager 是客戶直接部署、管理和操作的內部部署產品。 Configuration Manager 收集的診斷和使用方式資料僅用來改善未來版本的安裝體驗、品質及安全性。
+Microsoft Intune 不會與 Configuration Manager 共用任何資料。 Configuration Manager 是客戶直接部署、管理和操作的內部部署產品。 Configuration Manager 收集的診斷和使用方式資料僅用來改善未來版本的安裝體驗、品質及安全性。
 
-若要進一步了解，請參閱 [SCCM 的診斷和使用方式資料](https://docs.microsoft.com/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)。 
+若要深入了解，請參閱 [Configuration Manager 的診斷和使用方式資料](https://docs.microsoft.com/configmgr/core/plan-design/diagnostics/diagnostics-and-usage-data)。 
 
 
 ## <a name="next-steps"></a>後續步驟

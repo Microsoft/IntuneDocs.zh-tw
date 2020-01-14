@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f31e500b7a3383c5c0c53f1df72cb4a42660328f
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 4669d02f149e7f815ff94b4daa85c4c539c26c96
+ms.sourcegitcommit: 90369aef160945171435b03d82bae395609c7a62
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74284084"
+ms.lasthandoff: 12/26/2019
+ms.locfileid: "75500196"
 ---
 
 
@@ -34,7 +34,7 @@ ms.locfileid: "74284084"
 - Windows 10 Teams (Surface Hub)
 
    如需有關管理執行 Windows 10 Teams 之裝置的詳細資訊，請參閱[使用 MDM 管理 Surface Hub](https://docs.microsoft.com/surface-hub/manage-settings-with-mdm-for-surface-hub) \(部分機器翻譯\)
-- Windows Phone 8.1、Windows 8.1 RT、執行 Windows 8.1 (基本維護模式) 的電腦
+- Windows 10 1709 (RS3) 及更新版本、Windows Phone 8.1、Windows 8.1 RT、執行 Windows 8.1 (基本維護模式) 的電腦
 
 > [!NOTE]
 > 並非所有 Windows 版本都支援透過 MDM 來設定所有可用的作業系統功能。 請參閱 [Windows 設定服務提供者參考文件](https://docs.microsoft.com/windows/configuration/provisioning-packages/how-it-pros-can-use-configuration-service-providers) \(部分機器翻譯\)。每個 CSP 都會強調說明支援哪些 Windows 版本。

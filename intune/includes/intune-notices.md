@@ -7,21 +7,37 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 7373ca24c1ae1f439096d9bedcb8e81979c95586
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c64f9a6afc054a3d22518c4305bda62a36d67c7
+ms.sourcegitcommit: 8ab98c2773f112f5cf2d817c170633b15de3dec2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74828934"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75323098"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
+
+### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>更新的功能：Intune 即將推出新的 RBAC 角色<!--4253397-->
+在 1 月份的 Intune 服務更新中，我們計畫在 Intune 中推出新的安全性角色。 您在 Intune 中將會看到此角色被列為「端點安全性管理員」，且該角色是 Azure AD「安全性系統管理員」的延伸。
+ 
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
+目前，Azure AD 中有三個角色可供安全性專業人員使用：
+- Azure AD 中的安全性讀取者角色，可提供對 Intune 的唯讀存取權。
+- Azure AD 中的安全性操作員角色，可提供對 Intune 的唯讀存取權。
+- Azure AD 中的安全性系統管理員。 當 Intune 推出 1 月份更新時，除了對 Intune 的唯讀存取權之外，由端點安全性管理員角色所提供的新權限如下所示：
+    - 讀取、建立、更新、刪除及指派裝置合規性原則
+    - 讀取、刪除及更新受控裝置
+    - 讀取、建立、更新、刪除及指派安全性基準
+    - 讀取及更新安全性工作
+ 
+### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
+立即檢閱您的 Intune RBAC 角色。 如果您目前只有全域管理員作為角色，則不需要做任何變更。 如果您會使用角色，且您想要端點安全性管理員所提供的細微性，請在該角色可用時指派它。 請查看 Intune [[新功能]](../fundamentals/whats-new.md) 頁面以取得最新的 Intune 版本資訊。 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>「Adobe Acrobat Reader for Intune」行動應用程式的已更新支援聲明<!--5746776-->
 我們在 8 月底於 MC188653 中分享了 Adobe Acrobat Reader for Intune 行動應用程式會在 2019 年 12 月 1 日終止生命週期，且 Adobe 已規劃在其主要 Acrobat Reader 應用程式中支援 Intune 的應用程式保護原則。 從那時起，我們收到客戶意見反應，我們需要提供更多時間來繼續讓 IT 系統管理員以 Adobe Acrobat Reader for Intune 為目標，以及讓終端使用者繼續使用它。 有鑑於 Adobe Acrobat Reader for Intune 在終端使用者裝置上有高使用量，以及其在企業案例中的重要性，我們想要確保任何體驗都符合您組織的應用程式保護需求。 
 
 雖然 Adobe Acrobat Reader for Intune 應用程式會繼續受支援，直到 2020 年 3 月 31 日為止，我們仍然建議您在原則中將一般的 Acrobat Reader 行動應用程式設為目標，因為 Acrobat Reader 行動應用程式支援應用程式保護原則，且已整合 Intune SDK。 
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 因為我們的報告指出您組織中的一或多個原則是以 Adobe Acrobat Reader for Intune 應用程式為目標，且/或您已收到我們先前的 EOL 通訊，所以傳送此訊息通知您。 
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
@@ -34,36 +50,17 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 ### <a name="end-support-for-windows-phone-81--3544909--"></a>Windows Phone 8.1 終止支援<!--3544909-->
 Windows Phone 8.1 的 Microsoft 主要支援已於 2017 年 7 月終止，而且延伸支援已於 2019 年 6 月結束。 適用於 Windows Phone 8.1 的公司入口網站應用程式從 2017 年 10 月起就進入維持模式了。 Microsoft Intune 現在將於 2020 年 2 月 20 日終止對 Windows Phone 8.1 的支援。
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 2020 年 2 月 20 日之後，這些裝置將不會收到任何安全性更新，而且您將無法註冊任何新裝置。 現有的 Windows Phone 8.1 裝置會保持註冊 (原則、應用程式、報告)，但請注意，在此日期之後，將不會支援現有註冊的任何疑難排解，因為許多元件 (例如協力廠商憑證) 已結束對該平台的支援。 Intune 將會停止與 Intune 和 Windows Phone 8.1 的相容性測試。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 您可以檢查您的 Intune 報告，查看哪些裝置或使用者可能會受到影響。 移至 [裝置] > [所有裝置]，然後依 OS 進行篩選。 您可以新增其他資料行，協助識別您組織中誰有執行 Windows Phone 8.1 的裝置。 要求使用者將其裝置升級至支援的 OS 版本。
 
-### <a name="update-your-intune-outlook-app-protection-policies-app--2576686--"></a>更新 Intune Outlook 應用程式保護原則 (應用程式)<!--2576686-->
-如果在訊息中心收到 MC195618，您可能需要採取行動。 如 Microsoft 365 藍圖功能識別碼中所共用：56325 和 56326，iOS 和 Android 版的 Intune 和 Outlook 即將支援在郵件通知和行事曆提醒中限制敏感性資料。 因為這些改善功能，iOS 和 Android 版的 Outlook 將會移除對數個資料保護應用程式設定金鑰的支援，而這些都是您目前用來管理通知的金鑰。
-
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
-新功能雖尚未上市，但上市後，下列應用程式設定金鑰在 iOS 和 Android 版的 Outlook 中即不再發揮作用：
-- com.microsoft.outlook.Mail.NotificationsEnabled
-- com.microsoft.outlook.Mail.NotificationsEnabled.UserChangeAllowed
-- com.microsoft.outlook.Calendar.NotificationsEnabled
-- com.microsoft.outlook.Calendar.NotificationsEnabled.UserChangeAllowed
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-針對此新功能。建議將 Intune 應用程式保護原則資料保護設定 [組織資料通知] 的值設定為 [封鎖組織資料]，。 自 2019 年 12 月 16 日開始，iOS 和 Android 版的 Outlook 即會實施 [組織資料通知] 資料保護設定，且不再支援前述金鑰。 設定此新設定可確保當上述設定金鑰不再受支援時，敏感性資料不會外洩。 此外，當資料保護設定 [組織資料通知] 設為 [封鎖組織資料]，並另行加上應用程式組態設定 [行事曆通知] 時，Outlook 會提供更細緻的服務。 應用程式保護原則設定與此應用程式組態設定的組合會在郵件通知中限制敏感性資訊，並同時在行事曆通知中公開敏感性資訊，所以使用者只要快速瀏覽通知或通知中心，即可獲知會議相關資訊。
-
-#### <a name="additional-information"></a>其他資訊
-如需應用程式設定和 Outlook 設定的詳細資訊，請參閱：
-- [Android 應用程式保護原則設定](../apps/app-protection-policy-settings-android.md)
-- [iOS 應用程式保護原則設定](../apps/app-protection-policy-settings-ios.md)
-- [部署 iOS 與 Android 版 Outlook 應用程式組態設定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(部分機器翻譯\)
-
 
 ### <a name="intune-plan-for-change-windows-10-version-1703-company-portal-moving-out-of-support--5026679--"></a>Intune 規劃變更：Windows 10 1703 版公司入口網站移出支援<!--5026679-->
 Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移出企業版與 EDU 版的服務。 從 2019 年 12 月 26 日開始，Intune 將會針對 RS2/RS1 的對應公司入口網站應用程式結束支援。
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 未來，您將不會在特定版本的公司入口網站應用程式中看到新功能，不過我們會繼續支援此版本的公司入口網站應用程式到 2019 年 12 月 26 日，包括視需要為公司入口網站應用程式提供任何安全性更新。 不過，由於 Windows 10 1703 版在離開服務之後將無法再收到任何安全性更新，因此強烈建議您將 Windows 裝置更新為較新的 Windows 版本，並確定您使用的是最新的公司入口網站應用程式，以繼續取得新功能與其他功能。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
@@ -76,7 +73,7 @@ Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移
 ### <a name="take-action-use-microsoft-edge-for-your-protected-intune-browser-experience--5728447--"></a>採取動作：將 Microsoft Edge 用於受保護的 Intune 瀏覽器體驗<!--5728447-->
 隨著過去一年的分享，Microsoft Edge 行動裝置版本支援與 Managed Browser 相同的一組管理功能，同時提供更好的終端使用者體驗。 為了讓 Microsoft Edge 中提供的強大體驗得以實現，我們將會淘汰 Intune Managed Browser。 從 2020 年 1 月 27 日開始，Intune 將不再支援 Intune Managed Browser。  
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？ 
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？ 
 從 2020 年 2 月 1 日開始，Google Play 商店或 iOS App Store 中將不再提供 Intune Managed Browser。 此時，您仍然可以將新應用程式保護原則的目標設為 Intune Managed Browser，但新的使用者將無法下載 Intune Managed Browser 應用程式。 此外，在 iOS 上，向下推送至 MDM 註冊裝置的新 Web 剪輯，將會在 Microsoft Edge 中開啟，而不是在 Intune Managed Browser 中開啟。  
 
 從 2020 年 3 月 31 日起，將從 Azure 主控台移除 Intune Managed Browser。 這表示您將無法再為 Intune Managed Browser 建立新原則。 現有的 Intune Managed Browser 原則不會受到影響。 Intune Managed Browser 將會顯示在主控台中，作為沒有圖示的 LOB 應用程式，而現有的原則仍會顯示為以應用程式為目標。 此時，我們也會在應用程式保護原則的 [資料保護] 區段中，移除將 Web 內容重新導向至 Intune Managed Browser 的選項。  
@@ -96,13 +93,13 @@ Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移
 ### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>規劃變更：已更新在 Intune 中註冊 Android Enterprise 專用裝置的體驗<!--5198878-->
 在 Intune 的 11月或 1911 版本中，我們會將對 SCEP 裝置憑證部署的支援新增至 Android Enterprise 專用裝置，以啟用 Wi-Fi 設定檔的憑證型存取功能。 此變更也牽涉到在註冊 Android Enterprise 專用裝置流程的一些小幅變更。
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 如果您是環境中 Android Enterprise 專用裝置的管理員，您會在 11 月開始看到我們推出某些變更。
 
 - 針對新 Android Enterprise 專用裝置註冊：終端使用者會在註冊期間看到一組不同的裝置設定步驟。 註冊仍會以目前的啟動方式啟動 (使用 QR、NFC、零觸控或裝置識別碼)，但在 11 月的服務發行之後，將會有一個強制的應用程式安裝步驟。
 - 針對已註冊為專用裝置的現有 Android 裝置：Intune 將會開始自動在於 11 月初啟動的裝置上安裝 Microsoft Intune 應用程式。 您不需要採取任何動作。 應用程式會自動下載並安裝在裝置上。 
 
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>我該如何為此變更做準備？
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>如何為這項變更進行準備？
 您應該計畫更新您的終端使用者指導方針，並讓技術服務人員知道此變更。 按一下 [其他詳細資訊] 以取得更多詳細資料與螢幕擷取畫面。 當此變更開始推出時，我們將會更新 [新功能] 頁面。
 
 #### <a name="additional-information"></a>其他資訊
@@ -117,7 +114,7 @@ Windows 10 1703 版 (亦稱為 Windows 10，RS2) 已在 2019 年 10 月 8 日移
 ### <a name="decreasing-support-for-android-device-administrator"></a>減少 Android 裝置系統管理員的支援 
 Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Android 2.2 發行)，是一種管理 Android 裝置的方式。 不過，您現在可以在 [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) \(隨 Android 5.0 發行\) 中找到已改善的管理功能。 為了要移到現代化、更豐富且更安全的裝置管理，Google 在新的 Android 版本中減少了裝置系統管理員的支援。
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 由於 Google 的這些變更，Intune 使用者會受到下列方面的影響：  
 - Intune 只能為執行 Android 10 和更新版本之裝置系統管理員受控的 Android 裝置提供完整支援，且支援僅提供至 2020 年度第 2 季。 在此期間過後，執行 Android 10 或更新版本之裝置系統管理員受控的裝置將無法再完全受控。 尤其受影響的裝置不會再收到新的密碼要求。
     - 在此期間內，Samsung Knox 裝置不會受到影響，因為其透過 Intune 與 Knox 平台的整合來獲得延伸支援。 讓您有更多時間規劃裝置系統管理員管理的轉換。    
@@ -141,7 +138,7 @@ Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Andr
 ### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>規劃變更：適用於 Android 的 Intune App SDK 與應用程式保護原則會在即將推出的版本中開始支援 Android 5.0 與更新版本 <!--4911065 -->
 Intune 將會在即將推出的版本中開始支援 Android 5.x (Lollipop) 與更新版本。 使用最新的 Intune App SDK 更新任何已包裝的應用程式，並更新您的裝置。
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 如果您使用的不是或不打算使用 Android 版 SDK 或應用程式，則此變更不會影響您。 若您使用 Intune App SDK，請務必更新至最新版本，並一併將您的裝置更新為 Android 5.x 與更高版本。 若不更新，則應用程式就不會收到更新，且其體驗品質會隨著時間而降低。
 
 在下面尋找執行 Android 4.x 版且在 Intune 中註冊的通用裝置清單。 若您有這類裝置，請採取適當步驟，以確定此裝置將支援 Android 5.0 版或更高版本，否則它會被支援 Android 5.0 版或更新版本的裝置所取代。 此清單並未包含所有可能需要評估的裝置：
@@ -161,7 +158,7 @@ Intune 將會在即將推出的版本中開始支援 Android 5.x (Lollipop) 與�
 ### <a name="intune-plan-for-change-nearing-end-of-support-for-windows-7---3042987---"></a>Intune 規劃變更：即將結束對 Windows 7 的支援<!-- 3042987 -->
 如我們在 2018 年 9 月於 MC148476 所發佈並於 2019 年 3 月於 MC176794 中再次發佈的訊息，Windows 7 將在 2020 年 1 月 14 日結束其延伸支援。 屆時，Intune 將不再支援執行 Windows 7 的裝置，以便我們將精力專注在支援較新技術並提供絕佳的新終端使用者體驗。 在該日期之後，將無法再透過 Intune 取得可協助保護您 Windows 7 PC 的技術協助與自動更新。 Microsoft 強烈建議您在 2020 年 1 月之前升級到 Windows 10，以免發生不再提供所需服務或支援的情況。 在[這裡](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet)閱讀更多有關 Windows 支援生命週期的資訊。
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 您收到此訊息的原因，是因為您目前正在使用舊版的 Intune 電腦軟體代理程式來管理 Windows 7 電腦。 由於距離 Windows 7 延伸支援終止已不到一年，因此我們強烈建議您的組織儘快開始升級到 Windows 10。  
 
 電腦管理功能已直接內建到 Windows 10 作業系統中，因此您再也不需要安裝用戶端代理程式，例如適用於 Windows 7 的 Intune 軟體用戶端。 從 Windows 8.1 開始，Microsoft 使用行動裝置管理 (MDM) 架構來佈建、設定、更新及管理 Windows PC。 設定 Intune 之後，您可以透過 MDM 通道[向 Intune 註冊 Windows 10 電腦](..\windows-enroll.md)，以簡化 Windows 註冊。 我們建議您使用這個「無代理程式」MDM 管理解決方案來管理您的 Windows 10 電腦。

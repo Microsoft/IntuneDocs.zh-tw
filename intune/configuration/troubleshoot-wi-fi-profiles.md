@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 77f5787509438ec3280f29be8449d78979806042
-ms.sourcegitcommit: 16a9109b4028589c17695d41271ca4fee8b1d697
+ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74542659"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547970"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Wi-Fi 裝置組態設定檔進行疑難排解
 
@@ -236,7 +236,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
   - 確認完整憑證鏈中的所有必要憑證都在 Android 裝置上。 否則，Wi-Fi 設定檔無法安裝在裝置上。 如需詳細資訊，請參閱[遺漏的中繼憑證授權單位](https://developer.android.com/training/articles/security-ssl#MissingCa) (會開啟 Android 的網站)。
   - 使用關鍵字篩選 Omadmlog 以尋找資訊，例如在 Wi-Fi 設定檔中使用的憑證，以及設定檔是否成功套用。
 
-    例如，使用 [CMTrace](https://docs.microsoft.com/sccm/core/support/cmtrace) 讀取記錄。 使用搜尋字串來篩選 "wifimgr"：
+    例如，使用 [CMTrace](https://docs.microsoft.com/configmgr/core/support/cmtrace) 讀取記錄。 使用搜尋字串來篩選 "wifimgr"：
 
     > [!div class="mx-imgBorder"]
     > ![篩選 CMTrace 以尋找 Android 裝置上的 WiFiMgr 組態設定檔](./media/troubleshoot-wi-fi-profiles/cmtrace-filter-wifimgr.png)

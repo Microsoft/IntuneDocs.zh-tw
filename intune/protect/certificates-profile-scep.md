@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 321595a2ce8849b3d150b68f9dcc38dfda6ad940
-ms.sourcegitcommit: 2fddb293d37453736ffa54692d03eca642f3ab58
+ms.openlocfilehash: 88b7411095aee1b1d3a892ce4845812ceb1a9ac9
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74390293"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547066"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中建立並指派 SCEP 憑證設定檔
 
@@ -33,7 +33,7 @@ ms.locfileid: "74390293"
 
 ## <a name="create-a-scep-certificate-profile"></a>建立 SCEP 憑證設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 
@@ -77,7 +77,7 @@ ms.locfileid: "74390293"
      > 當產生的憑證簽署要求 (CSR) 中的主體名稱包含下列其中一個字元作為逸出字元 (以反斜線 \\ 開頭) 時，使用 SCEP 取得憑證有一個[已知問題](#avoid-certificate-signing-requests-with-escaped-special-characters)：
      > - \+
      > - ;
-     > - 、
+     > - ,
      > - =
 
      - **使用者憑證類型**
@@ -231,7 +231,7 @@ ms.locfileid: "74390293"
 
 特殊字元為：
 - \+
-- 、
+- ,
 - ;
 - =
 
@@ -275,7 +275,7 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 
 - 若要在裝置註冊之後快速將憑證發行至裝置，請將憑證設定檔指派到使用者群組，而不是裝置群組。 如果您將它指派至裝置群組，便必須先執行完整的裝置註冊，裝置才能接收原則。
 
-- 如果您針對 Intune 和 Configuration Manager 使用共同管理，請在 Configuration Manager 中，將資源存取原則的[工作負載滑桿設定為](https://docs.microsoft.com/sccm/comanage/how-to-switch-workloads) [Intune]  或 [試驗 Intune]  。 此設定可讓 Windows 10 用戶端啟動要求憑證的流程。
+- 如果您針對 Intune 和 Configuration Manager 使用共同管理，請在 Configuration Manager 中，將資源存取原則的[工作負載滑桿設定為](https://docs.microsoft.com/configmgr/comanage/how-to-switch-workloads) [Intune]  或 [試驗 Intune]  。 此設定可讓 Windows 10 用戶端啟動要求憑證的流程。
 
 - 雖然您會分別建立及指派受信任的憑證設定檔和 SCEP 憑證設定檔，但兩者都必須受指派。 如果裝置上未安裝這兩者，SCEP 憑證原則將會失敗。 請確定所有受信任根憑證設定檔都會部署到與 SCEP 設定檔相同的群組。
 

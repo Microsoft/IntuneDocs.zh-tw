@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 78f79a734d0a7b4901b2248b20abd9d304926dd2
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955502"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547823"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -144,7 +144,7 @@ ms.locfileid: "74955502"
 - 裝置已向 Windows Autopilot 註冊，但不是 Windows 設定中的 [僅限 MDM 註冊] 選項。
 - 裝置的 IMEI 編號列在 [裝置註冊]   > [[公司裝置識別碼](corporate-identifiers-add.md)]  (不支援 Windows Phone 8.1)。
 - 裝置透過[大量佈建套件](windows-bulk-enroll.md)註冊。
-- 裝置透過 GPO 註冊，或透過[從 SCCM 自動註冊以共同管理](https://docs.microsoft.com/sccm/comanage/quickstart-paths#bkmk_path1)方式註冊。
+- 裝置透過 GPO 註冊，或透過[從 Configuration Manager 自動註冊以共同管理](https://docs.microsoft.com/configmgr/comanage/quickstart-paths#bkmk_path1)方式註冊。
  
 Intune 會將下列註冊標示為公司。 但是，因為它們不會為 Intune 系統管理員提供每個裝置的控制，因此會遭到封鎖：
 - [自動 MDM 註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)，透過[在 Windows 安裝期間的 Azure Active Directory 加入](https://docs.microsoft.com/azure/active-directory/device-management-azuread-joined-devices-frx)\*。

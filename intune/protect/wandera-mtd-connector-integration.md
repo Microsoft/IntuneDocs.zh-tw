@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f42acb38d84394a6b61fa16072de6320b84a67b5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72681300"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207463"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>將 Wandera Mobile Threat Protection 與 Intune 整合  
 
@@ -56,29 +56,28 @@ Wandera Mobile Threat Defense 應用程式授權程序：
 設定 *EMM Connect* for Wandera 需要您必須同時在 Intune 與 Wandera 主控台中完成的一次性設定程序。 設定程序大約會花費 15 分鐘的時間。 您可以在不需要與您的 Wandera 技術帳戶或支援代表協調的情況下完成設定。  
 
 ### <a name="enable-support-for-wandera-in-intune"></a>在 Intune 中啟用 Wandera 支援
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並移至 [裝置合規性]   > [Mobile Threat Defense]  > 並選取 [新增]  。
 
-2. 在 [新增連接器]  頁面上，使用下拉式清單，並選取 [Wandera]  。 然後選取 [建立]  。  
-
-3. 在 Mobile Threat Defense 窗格上，從連接器清單選取 **Wandera** MTD 連接器以開啟 [編輯連接器]  窗格。 選取 [Open the Wandera admin console] \(開啟 Wandera 系統管理主控台\)  以開啟 [RADAR](https://radar.wandera.com/login) 這個 Wandera 系統管理主控台，然後登入。 
-
-4. 在 Wandera 主控台中，移至 [設定]   > [EMM Integration] \(EMM 整合\)  ，然後選取 [EMM Connect]  索引標籤。使用 [EMM Vendor] \(EMM 廠商\)  下拉式清單，並選取 [Microsoft Intune]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [Mobile Threat Defense]   > [新增]  。
+3. 在 [新增連接器]  頁面上，使用下拉式清單，並選取 [Wandera]  。 然後選取 [建立]  。  
+4. 在 Mobile Threat Defense 窗格上，從連接器清單選取 **Wandera** MTD 連接器以開啟 [編輯連接器]  窗格。 選取 [Open the Wandera admin console] \(開啟 Wandera 系統管理主控台\)  以開啟 [RADAR](https://radar.wandera.com/login) 這個 Wandera 系統管理主控台，然後登入。 
+5. 在 Wandera 主控台中，移至 [設定]   > [EMM Integration] \(EMM 整合\)  ，然後選取 [EMM Connect]  索引標籤。使用 [EMM Vendor] \(EMM 廠商\)  下拉式清單，並選取 [Microsoft Intune]  。
 
    ![選取 Intune](./media/wandera-mtd-connector-integration/set-up-intune-in-radar.png)
 
-5. 選取 [授與權限]  以開啟與 Intune 入口網站的連線。 使用您的 Intune 系統管理員認證登入，選取該核取方塊並**接受**權限要求。  
+6. 選取 [授與權限]  以開啟與 Intune 入口網站的連線。 使用您的 Intune 系統管理員認證登入，選取該核取方塊並**接受**權限要求。  
 
    ![接受權限](./media/wandera-mtd-connector-integration/permissions.png) 
 
-6. Wandera 會完成連線並讓您返回 RADAR 系統管理主控台。 視需要重複程序以**授與**額外設定存取權。  
+7. Wandera 會完成連線並讓您返回 RADAR 系統管理主控台。 視需要重複程序以**授與**額外設定存取權。  
 
    ![整合與權限](./media/wandera-mtd-connector-integration/integrations-and-permissions.png) 
 
-7. 在 RADAR 主控台中，複製出現在 [EMM Label] \(EMM 標籤\)  下的 **SyncOnly** 群組名稱。 您將使用此名稱來設定 Intune 中的群組以與 Wandera 同步。
+8. 在 RADAR 主控台中，複製出現在 [EMM Label] \(EMM 標籤\)  下的 **SyncOnly** 群組名稱。 您將使用此名稱來設定 Intune 中的群組以與 Wandera 同步。
 
    ![同步處理群組](./media/wandera-mtd-connector-integration/sync-group-name.png) 
 
-8. 返回 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 主控台，並編輯 Wandera MTD 連接器。 將可用切換參數設定為 [開啟]  ，然後**儲存** 設定。  
+9. 返回 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 主控台，並編輯 Wandera MTD 連接器。 將可用切換參數設定為 [開啟]  ，然後**儲存** 設定。  
 
    ![啟用 Wandera](./media/wandera-mtd-connector-integration/enable-wandera.png) 
 
@@ -94,15 +93,14 @@ Intune 與 Wandera 現在已連結。
 ### <a name="add-the-wandera-apps"></a>新增 Wandera 應用程式  
 在 Intune 中建立用戶端應用程式以部署 Wandera app 應用程式到 Android 與 iOS 裝置。 請參閱[新增 MTD 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)以了解 Wandera 應用程式的特定程序與自訂詳細資料。  
 
-建立應用程式之後，返回這裡以建立同步群組並指派應用程式。  
-
+建立應用程式之後，返回這裡以建立同步群組並指派應用程式。
 
 ### <a name="create-the-synchronization-group-and-assign-the-apps"></a>建立同步群組並指派應用程式
 
 1. 從 Wandera RADAR 取得 [EMM Label] \(EMM 標籤\)  下出現的 **SyncOnly** 群組名稱。 您可能已在步驟 7 中[在 Intune 中啟用 Wandera 支援](#enable-support-for-wandera-in-intune)時儲存此名稱。 使用此名稱作為 Intune 中 Wandera 同步的群組名稱。  
 
-2. 在 Intune 主控台中，移至 [群組]  並選取 [新增群組]  。 指定下列設定以設定將由 Wandera 使用的同步群組：
-   - **群組類型**：**安全性**
+2. 在 Endpoint Manager 系統管理中心內，移至 [群組]  ，然後選取 [新增群組]  。 指定下列設定以設定將由 Wandera 使用的同步群組：
+   - **群組類型**：**Security**
    - **群組名稱**：指定您從 Wandera RADAR 系統管理主控台擷取的 **SyncOnly** 名稱。
 
    ![設定同步群組](./media/wandera-mtd-connector-integration/configure-sync-group.png)
@@ -116,15 +114,11 @@ Intune 與 Wandera 現在已連結。
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>指派 Wandera 應用程式到同步群組  
 針對您為 iOS 與 Android 建立的 Wandera 應用程式重複下列程序。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並移至 [用戶端應用程式]   > [應用程式]  ，然後選取 Wandera 應用程式。  
-
-2. 選取 [指派]  ，然後選取 [新增群組]  。  
-
-3. 在 [新增群組]  窗格上，針對 [指派類型]  選取 [必要]  。
-
-4. 選取 [包含的群組]  ，然後選取 [選取要納入的群組]  。 指定您為 Wandera 同步建立的群組，然後按一下 [選取]   > [確定]   > [確定]  。 選取 [儲存]  以完成群組指派。  
- 
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]  ，然後選取 [Wandera] 應用程式。
+3. 選取 [指派]  ，然後選取 [新增群組]  。  
+4. 在 [新增群組]  窗格上，針對 [指派類型]  選取 [必要]  。
+5. 選取 [包含的群組]  ，然後選取 [選取要納入的群組]  。 指定您為 Wandera 同步建立的群組，然後按一下 [選取]   > [確定]   > [確定]  。 選取 [儲存]  以完成群組指派。 
 
 ## <a name="next-steps"></a>後續步驟  
-既然您已設定整合，您可以開始設定原則、設定進階條件式存取，以及在 Wandera 系統主控台中檢視報告。 若要深入了解如何管理及設定 Wandera，請參閱 Wandera 文件中的[支援中心開始使用指南](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) \(英文\)。  
- 
+既然您已設定整合，您可以開始設定原則、設定進階條件式存取，以及在 Wandera 系統主控台中檢視報告。 若要深入了解如何管理及設定 Wandera，請參閱 Wandera 文件中的[支援中心開始使用指南](https://radar.wandera.com/?return_to=https://wandera.force.com/Customer/s/getting-started) \(英文\)。 

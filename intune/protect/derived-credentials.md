@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/31/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4d0772f9a0afce0607d0193bfb82ea6bd22709d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73445320"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207193"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>在 Microsoft Intune 中使用衍生認證
 
@@ -47,7 +47,7 @@ ms.locfileid: "73445320"
 
 - 當應用程式或資源存取設定檔需要衍生認證時，裝置收到衍生的認證後，就會用於驗證和 S/MIME 簽署和加密。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 將您的租用戶設定為使用衍生認證之前，請先檢閱下列資訊。
 
@@ -160,28 +160,30 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 
 在您建立需要使用衍生認證的原則之前，請先在 Intune 主控台中設定認證簽發者。 衍生認證簽發者是整個租用戶的設定。 租用戶一次只支援單一簽發者。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [衍生認證]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [衍生認證]  。
 
-   ![在主控台中設定衍生認證](./media/derived-credentials/configure-provider.png)
+    > [!div class="mx-imgBorder"]
+    > ![在主控台中設定衍生認證](./media/derived-credentials/configure-provider.png)
 
-2. 針對衍生認證簽發者原則指定易記的**顯示名稱**。  您的裝置使用者不會看到此名稱。
+3. 針對衍生認證簽發者原則指定易記的**顯示名稱**。  您的裝置使用者不會看到此名稱。
 
-3. 針對**衍生認證簽發者**，請選取您為租使用者選擇的衍生認證簽發者：
+4. 針對**衍生認證簽發者**，請選取您為租使用者選擇的衍生認證簽發者：
    - DISA Purebred
    - Entrust Datacard
    - Intercede  
 
-4. 指定**衍生認證說明 URL** 以提供包含自訂指示的位置連結，以協助使用者取得貴組織的衍生認證。 這些指示應該專屬於您的組織，以及專屬於從所選簽發者取得認證所需的工作流程。 連結會出現在公司入口網站應用程式中，而且應該可從裝置存取。
+5. 指定**衍生認證說明 URL** 以提供包含自訂指示的位置連結，以協助使用者取得貴組織的衍生認證。 這些指示應該專屬於您的組織，以及專屬於從所選簽發者取得認證所需的工作流程。 連結會出現在公司入口網站應用程式中，而且應該可從裝置存取。
 
    如果您未指定自己的 URL，Intune 會提供無法涵蓋所有情節之一般詳細資料的連結。 針對您的環境，此一般指引可能不正確。
 
-5. 針對**通知類型**選取一或多個選項。 通知類型是您用來通知使用者有關下列情節的方法：
+6. 針對**通知類型**選取一或多個選項。 通知類型是您用來通知使用者有關下列情節的方法：
 
    - 向簽發者註冊裝置，以取得新的衍生認證。
    - 當目前的認證接近到期時，取得新的衍生認證。
    - 使用衍生認證搭配 Wi-Fi、VPN、電子郵件或應用程式驗證，以及 S/MIME 簽署和加密的原則。
 
-6. 準備好時，請選取 [儲存]  以完成衍生認證簽發者的設定。
+7. 準備好時，請選取 [儲存]  以完成衍生認證簽發者的設定。
 
 儲存設定之後，除了 [衍生認證簽發者]  以外，您可以對所有欄位進行變更。  若要變更簽發者，請參閱[變更衍生認證簽發者](#change-the-derived-credential-issuer)。
 
@@ -216,19 +218,20 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 
 ### <a name="use-derived-credentials-for-app-authentication"></a>使用衍生認證進行應用程式驗證
 
-針對網站和應用程式使用衍生認證進行憑證型驗證。 若要提供應用程式驗證的衍生認證，請在 Intune 主控台中執行下列步驟：  
+針對網站和應用程式使用衍生認證進行憑證型驗證。 傳遞衍生認證進行應用程式驗證：
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [設定檔]  ，然後選取 [建立設定檔]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
+3. 輸入下列設定：
 
-2. 在 [名稱]  下，針對設定檔輸入易記名稱。
+    - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，**iOS 裝置設定檔的衍生認證**是良好的設定檔名稱。
+    - **描述**：輸入描述來概述設定和其他重要的詳細資料。
+    - **平台**：選取 [iOS/iPadOS]  。
+    - **設定檔類型**：選取 [衍生認證]  。
 
-3. 針對 [平台]  ，選取 [iOS]  。
-
-4. 針對 [設定檔類型]  ，選取 [衍生認證]  。
-
-5. 選取 [確定]  ，然後按一下 [建立]  。
-
-6. 選取 [指派]  以選擇應接收原則的群組。
+4. 按一下 [確定]  以儲存您的變更。
+5. 完成時，選取 [確定]   > [建立]  以建立 Intune 設定檔。 完成時，您的設定檔會顯示在 [裝置 - 設定檔]  清單中。
+6. 選取您的新設定檔 > [指派]  。 選取應接收原則的群組。
  
 使用者會根據您在設定衍生認證簽發者時所指定的設定，接收應用程式或電子郵件通知。 通知會通知使用者啟動公司入口網站，以便處理衍生認證原則。
 
@@ -252,11 +255,10 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 > [!IMPORTANT]  
 > 如果您刪除簽發者並立即重新設定相同的簽發者，您仍然必須更新設定檔和裝置，以使用來自該簽發者的衍生認證。 在您刪除簽發者之前取得的衍生認證已不再有效。
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並前往 [裝置設定]   > [衍生認證]  。
-
-2. 選取 [刪除]  以移除目前的衍生認證簽發者。
-
-3. 設定新的簽發者。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [衍生認證]  。
+3. 選取 [刪除]  以移除目前的衍生認證簽發者。
+4. 設定新的簽發者。
 
 ### <a name="update-profiles-that-use-derived-credentials"></a>更新使用衍生認證的設定檔
 
@@ -268,4 +270,4 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 
 ## <a name="next-steps"></a>後續步驟
 
-[建立裝置組態設定檔](../configuration/device-profile-create.md)
+[建立裝置組態設定檔](../configuration/device-profile-create.md)。

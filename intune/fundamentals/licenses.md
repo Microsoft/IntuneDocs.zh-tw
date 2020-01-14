@@ -16,15 +16,15 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d7b8d96ae1582b5cb434c80d44ef55a31c4781b
-ms.sourcegitcommit: 0a85af9d584709ecc29062f91645a4c47a61ebb9
+ms.openlocfilehash: 23708968ac229c2721635d9fc31527558e9bd3d2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74882303"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547486"
 ---
 # <a name="microsoft-intune-licensing"></a>Microsoft Intune 授權
-針對不同的客戶需求和組織規模，從適用於學校和小型企業的簡單易用管理體驗，到企業客戶所需的較進階功能，都有 Microsoft Intune 可供使用。 大多數包含 Microsoft Intune 的授權也會授與使用 System Center Configuration Manager 的權限，只要訂用帳戶保持使用中的狀態即可。 
+針對不同的客戶需求和組織規模，從適用於學校和小型企業的簡單易用管理體驗，到企業客戶所需的較進階功能，都有 Microsoft Intune 可供使用。 大多數包含 Microsoft Intune 的授權也會授與使用 Microsoft Endpoint Configuration Manager 的權限，只要訂用帳戶保持使用中的狀態即可。 
 
 ## <a name="microsoft-intune"></a>Microsoft Intune
 下列授權包含 Intune：

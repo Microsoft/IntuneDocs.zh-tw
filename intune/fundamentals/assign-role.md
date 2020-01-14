@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d9e337d47757e3c5507c94433f90d5c2863bc1b0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c82805bf70259d43d738644e5663b93533bcb56a
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503019"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207157"
 ---
 # <a name="assign-a-role-to-an-intune-user"></a>將角色指派給 Intune 使用者
 
@@ -32,27 +32,23 @@ ms.locfileid: "72503019"
 - **全域管理員**
 - **Intune 服務管理員**
 
-1. 登入 [Azure 入口網站](https://portal.azure.com)。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [角色]   > [所有角色]  。
 
-2. 選擇 [All services] (所有服務)   > [Intune]  。 Intune 位於 [Monitoring + Management] (監視 + 管理)  區段。
+2. 在 [Intune 角色 - 所有角色]  刀鋒視窗上，選擇您想要指派的內建角色。
 
-3. 在 [Intune]  刀鋒視窗上，選擇 [角色]   > [所有角色]  。
+3. 在 [<*角色名稱*> - 概觀]  刀鋒視窗上，選擇 [管理]   > [指派]  。
 
-4. 在 [Intune 角色 - 所有角色]  刀鋒視窗上，選擇您想要指派的內建角色。
+4. 在自訂角色刀鋒視窗中，選擇 [指派]  。
 
-5. 在 [<*角色名稱*> - 概觀]  刀鋒視窗上，選擇 [管理]   > [指派]  。
+5. 在 [角色指派]  刀鋒視窗上，針對該指派輸入 [指派名稱]  及選擇性的 [指派描述]  。
 
-6. 在自訂角色刀鋒視窗中，選擇 [指派]  。
+6. 針對 [成員 (群組)]  ，選擇包含您要授與權限之使用者的群組。
 
-7. 在 [角色指派]  刀鋒視窗上，針對該指派輸入 [指派名稱]  及選擇性的 [指派描述]  。
+7. 針對 [範圍 (群組)]  ，選擇包含允許上述成員進行管理的使用者/裝置群組。
 
-8. 針對 [成員 (群組)]  ，選擇包含您要授與權限之使用者的群組。
+8. 針對 [範圍 (標籤)]  ，選擇將套用此角色指派的標籤。
 
-9. 針對 [範圍 (群組)]  ，選擇包含允許上述成員進行管理的使用者/裝置群組。
-
-10. 針對 [範圍 (標籤)]  ，選擇將套用此角色指派的標籤。
-
-11. 完成後，選擇 [確定]  。 新指派會隨即顯示在指派清單中。
+9. 完成後，選擇 [確定]  。 新指派會隨即顯示在指派清單中。
 
 
 ## <a name="next-steps"></a>後續步驟

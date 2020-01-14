@@ -16,12 +16,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0de98a0820e15a09c2b3724b216359580327259e
-ms.sourcegitcommit: ce518a5dfe62c546a77f32ef372f36efbaad473f
+ms.openlocfilehash: f1e493e0d2d562c0f69454d1999e82b528c724a2
+ms.sourcegitcommit: e4602481a25a5e12379f673dfe801c611f51c35b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/25/2019
-ms.locfileid: "74465716"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75731274"
 ---
 # <a name="intune-compliance-reports-for-updates"></a>更新的 Intune 合規性報表
 
@@ -51,7 +51,7 @@ ms.locfileid: "74465716"
 
 當您使用此解決方案時，可將商業識別碼部署至任何您以 Intune 管理、且要報告更新合規性的 Windows 10 裝置。  
 
-在 Intune 中，您會使用自訂原則的 OMA-URI 設定來設定商業識別碼。 請參閱 [Microsoft Intune 中 Windows 10 裝置的 Intune 原則設定](https://docs.microsoft.com/intune-classic/deploy-use/windows-10-policy-settings-in-microsoft-intune) \(部分機器翻譯\)。  
+在 Intune 中，您會使用自訂原則的 OMA-URI 設定來設定商業識別碼。 請參閱[在 Intune 中使用 Windows 10 裝置的自訂設定](../configuration/custom-settings-windows-10.md)。
 
 用於設定商業識別碼的 OMA-URI (區分大小寫) 路徑為： *./Vendor/MSFT/DMClient/Provider/MS DM Server/CommercialID*  
 

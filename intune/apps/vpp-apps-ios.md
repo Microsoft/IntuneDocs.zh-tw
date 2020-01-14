@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 12/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: eed0b8a74e69bc1552ae3e2badf485364ba37e94
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 01c95e1961871f33a3d8ed8c0b6c22502faca3a9
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563800"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654017"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 與 macOS 應用程式
 
@@ -95,12 +95,12 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
         > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步處理時的存放區 URL。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
 
     - **VPP 帳戶類型** - 請選擇 [商務]  或 [教育]  。
-    - **自動更新應用程式** - 從 [開啟]  或 [關閉]  進行選擇，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。 Apple VPP 應用程式的自動應用程式更新只會自動更新使用**必要**安裝用途部署的應用程式。 針對使用**可用**安裝意圖部署的應用程式，自動更新會自動為 IT 系統管理員產生狀態訊息，通知已有可用的新版本應用程式。 透過選取應用程式、選取 [裝置安裝狀態]，然後檢查 [狀態詳細資料]，即可看到此狀態訊息。 此外，使用者會在公司入口網站中看到應用程式顯示為 [未安裝]，即使已安裝舊版的應用程式也一樣。 在此情況下，使用者可以在公司入口網站應用程式的 [應用程式詳細資料] 畫面上，按一下 [安裝]  來重新安裝應用程式，以安裝新版的應用程式。
+    - **自動更新應用程式** - 從 [開啟]  或 [關閉]  進行選擇，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。 Apple VPP 應用程式的自動應用程式更新只會自動更新使用**必要**安裝用途部署的應用程式。 針對使用**可用**安裝意圖部署的應用程式，使用者會在公司入口網站中看到應用程式顯示為 [未安裝]，即使已安裝舊版的應用程式也一樣。 在此情況下，使用者可以在公司入口網站應用程式的 [應用程式詳細資料] 畫面上，按一下 [安裝]  來重新安裝應用程式，以安裝新版的應用程式。 請注意，對於使用者註冊的 iOS 裝置，終端使用者將會繼續查看公司入口網站內所有使用者授權的 VPP 應用程式。 
 
         > [!NOTE]
         > 自動應用程式更新適用於 iOS 11.0 或 macOS 10.12 和更新版本的裝置和使用者授權應用程式。
 
-    - **我授與 Microsoft 傳送使用者及裝置資訊到 Apple 的權限。** - 您必須選取 [我同意]  才能繼續。 若要查看 Microisoft 將哪些資料傳送給 Apple，請參閱 [Intune 傳送至 Apple 的資料](~/protect/data-intune-sends-to-apple.md)。
+    - **我授與 Microsoft 傳送使用者及裝置資訊到 Apple 的權限。** - 您必須選取 [我同意]  才能繼續。 若要檢閱 Microsoft 將哪些資料傳送給 Apple，請參閱 [Intune 傳送至 Apple 的資料](~/protect/data-intune-sends-to-apple.md)。
 
 6. 完成之後，請選取 [建立]  。
 

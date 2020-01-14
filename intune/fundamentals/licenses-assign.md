@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/31/2017
+ms.date: 12/12/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,30 +16,31 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dcdc2b69de52ea3bf23f4e3c5d11399b62bc8daa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9a62cc6ef2f1b3bd6f305fe6fa23a24f95d3dd37
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414082"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207346"
 ---
 # <a name="assign-licenses-to-users-so-they-can-enroll-devices-in-intune"></a>將授權指派給使用者，讓使用者可以在 Intune 中註冊裝置
 
 無論您手動新增使用者，或是從內部部署 Active Directory 同步處理，您必須先指派 Intune 授權給每位使用者，使用者才能在 Intune 中註冊他們的裝置。 如需授權清單，請參閱[包含 Intune 的授權](../licenses.md)。
 
-## <a name="assign-an-intune-license-in-the-microsoft-365-admin-center"></a>在 Microsoft 365 系統管理中心指派 Intune 授權
+> [!NOTE]
+> 已指派 Intune 應用程式保護原則但未向 Microsoft Intune 註冊其裝置的使用者，也需要 Intune 授權才能接收原則。 
 
-您可以使用 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
+## <a name="assign-an-intune-license-microsoft-endpoint-manager-admin-center"></a>指派 Intune 授權 Microsoft Endpoint Manager 系統管理中心
 
-1. 使用租用戶系統管理員認證登入 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]   > [作用中使用者]  。
+您可以使用 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)手動新增雲端式使用者，並將授權指派給雲端式使用者帳戶，以及從您的內部部署 Active Directory 同步處理至 Azure AD 的帳戶。
 
-2. 選取您想要指派 Intune 使用者授權的使用者帳戶，然後選擇 [產品授權]   >  [編輯]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [使用者]   > [所有使用者]  > 選擇使用者 > [授權]   > [指派]  。
 
-3. 將 [Intune]  或 [Enterprise Mobility + Security]  切換為 [開啟]  ，然後選擇 [儲存]  。
+2. 選擇 [Intune]   > [儲存]  的方塊。
 
-   ![Microsoft 365 系統管理中心產品授權區段的螢幕擷取畫面。](./media/licenses-assign/office-assign-license.png)
+   ![Microsoft 365 系統管理中心產品授權區段的螢幕擷取畫面。](./media/licenses-assign/mem-assign-license.png)
 
-4. 使用者帳戶現在已有使用服務並將裝置註冊接受管理所需的權限。
+3. 使用者帳戶現在已有使用服務並將裝置註冊接受管理所需的權限。
 
 > [!NOTE]
 > 使用者只有在使用 Intune 電腦用戶端註冊裝置之後，才會出現在傳統 Intune 入口網站中。 此外，您可以一次選取一組使用者來編輯，可以選取以新增或取代所有選取使用者的授權。

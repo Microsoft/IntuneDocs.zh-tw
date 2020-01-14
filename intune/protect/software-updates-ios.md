@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/19/2019
+ms.date: 12/18/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -13,12 +13,12 @@ ms.localizationpriority: high
 ms.technology: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f9750603d19d9b19697c7d2660351c4586432f6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bb146fdee7a1d7d770575334eeed84f73cda8894
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73984187"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207480"
 ---
 # <a name="add-ios-software-update-policies-in-intune"></a>在 Intune 中新增 iOS 軟體更新原則
 
@@ -32,8 +32,8 @@ ms.locfileid: "73984187"
 
 ## <a name="configure-the-policy"></a>設定原則
 
-1. 登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
-2. 選取 [軟體更新]   > [iOS 更新原則]   > [建立]  。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [裝置]   > [更新 iOS 的原則]   > [建立]  。
 3. 在 [基本]  索引標籤上，指定此原則的名稱、指定描述 (選擇性)，然後選取 [下一步]  。
 
    ![[基本] 索引標籤](./media/software-updates-ios/basics-tab.png) 
@@ -77,7 +77,7 @@ ms.locfileid: "73984187"
 ## <a name="edit-a-policy"></a>編輯原則
 您可以編輯現有的原則，包括變更受限時間：
 
-1. 在 [軟體更新]  中，選取 [更新 iOS 的原則]  ，然後選取您要編輯的原則。
+1. 選取 [裝置]   > [更新 iOS 的原則]  。 選取您要編輯的原則。
 
 2. 檢視原則 [屬性]  時，請選取您要修改之原則頁面的 [編輯]  。  
    ![編輯原則](./media/software-updates-ios/edit-policy.png)   

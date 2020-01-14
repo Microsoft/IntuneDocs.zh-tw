@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bce0e96ecdd4cf254273e26564b8cb132a6d2080
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: fd320dddeb7717461188bdb701044bf060e7d75e
+ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563865"
+ms.lasthandoff: 12/21/2019
+ms.locfileid: "75324877"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -34,7 +34,7 @@ Autopilot 部署類型有四種：
 - [使用者驅動模式](https://docs.microsoft.com/windows/deployment/windows-autopilot/user-driven)適用於傳統使用者。 
 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - [Intune 訂用帳戶](../fundamentals/licenses.md)
 - [已啟用 Windows 自動註冊](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium 訂用帳戶](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
@@ -49,11 +49,11 @@ Autopilot 部署類型有四種：
 
 您可以藉由匯入含 Windows Autopilot 裝置資訊的 CSV 檔案來新增它們。
 
-1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [裝置]  \(在 [Windows AutoPilot Deployment Program]  底下\) > [匯入]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [裝置]  (在 [Windows AutoPilot Deployment Program]   > [匯入]  底下)。
 
     ![Windows Autopilot 裝置的螢幕擷取畫面](./media/enrollment-autopilot/autopilot-import-device.png)
 
-2. 在 [新增 Windows Autopilot 裝置]  下，瀏覽至列出所要新增裝置的 CSV 檔案。 該 CSV 檔案應列出序號、Windows 產品識別碼、硬體雜湊、選擇性群組標籤與選擇性指派的使用者。 您最多可在清單中建立 500 個資料列。 使用下面顯示的標題和行格式：
+2. 在 [新增 Windows Autopilot 裝置]  下，瀏覽至列出所要新增裝置的 CSV 檔案。 該 CSV 檔案應列出序號、Windows 產品識別碼、硬體雜湊、選擇性群組標籤與選擇性指派的使用者。 您最多可在清單中建立 500 個資料列。 如需如何取得裝置資訊的相關資訊，請參閱[將裝置新增至 Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/add-devices#device-identification) \(部分機器翻譯\)。 使用下面顯示的標題和行格式：
 
     `Device Serial Number,Windows Product ID,Hardware Hash,Group Tag,Assigned User`</br>
     `<serialNumber>,<ProductID>,<hardwareHash>,<optionalGroupTag>,<optionalAssignedUser>`
@@ -208,7 +208,7 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 - 同步處理在另一個入口網站中進行的設定檔指派
 - 顯示在另一個入口網站中完成的裝置清單變更
 
-## <a name="windows-autopilot-for-existing-devices"></a>現有裝置的 Windows Autopilot
+## <a name="windows-autopilot-for-existing-devices"></a>適用於現有裝置的 Windows Autopilot
 
 您可以在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，以交互識別碼來將 Windows 裝置分組
 。 交互識別碼是 Autopilot 設定檔的參數。 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) 會自動設為相等的 "OfflineAutopilotprofile-\<correlator ID\>"。 這會允許使用 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。
