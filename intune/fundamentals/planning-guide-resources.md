@@ -17,12 +17,12 @@ ms.reviewer: jeffbu, cgerth
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a23409b03047cac8edb0a50ad5188e006d35049a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 23b7264f2b7c9be0805ae30afca5c8cb15b83482
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505155"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956255"
 ---
 # <a name="additional-resources-for-planning-your-intune-deployment"></a>規劃 Intune 部署的其他資源
 
@@ -46,11 +46,11 @@ ms.locfileid: "72505155"
 | | 相容性原則 | |
 | | 條件式存取原則|-|
 
-## <a name="further-reading"></a>進階閱讀
+## <a name="further-reading"></a>延伸閱讀
 
 請參閱 Intune 部署規劃、設計和實作程序期間可能有用之其他資訊的這些資源。
 
-- [Microsoft Intune 文件](http://docs.microsoft.com/intune/) - 一組完整的 Intune 文件。
+- [Microsoft Intune 文件](https://docs.microsoft.com/intune/) - 一組完整的 Intune 文件。
 
 - [Microsoft 信任中心](https://www.microsoft.com/TrustCenter) - 了解 Microsoft 在所有 Microsoft 雲端產品和服務中促進安全性、隱私權、合規性和透明度的方法。
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8657b6fa8110b4ea4bbf8ec0841d69197624dd9f
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 9b5f973e5ce169edcf6149b0588c905d8497cca2
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563713"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885750"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -51,7 +51,7 @@ ms.locfileid: "74563713"
 
     | 值 | 說明 |
     |--------------|------------------------------------------------|
-    | 名稱 | 此應用程式保護原則的名稱。 |
+    | Name | 此應用程式保護原則的名稱。 |
     | 說明 | [選擇性] 此應用程式保護原則的描述。 |
 
 
@@ -93,9 +93,6 @@ ms.locfileid: "74563713"
 
 9. 按一下 [下一步]  以顯示 [指派]  頁面。<br>
    [指派]  頁面可讓您將應用程式保護原則指派給使用者群組。
-   
-    >[!IMPORTANT]
-    > 如果您使用 Intune 和 Configuration Manager 來管理您的裝置，則只會將原則套用至您選取之群組中的直屬使用者。 而不會影響巢狀於您選取之群組中的子群組成員。
 
 10. 按一下 [下一步:  檢閱 + 建立]，以檢閱您為此應用程式保護原則輸入的值和設定。
 
@@ -186,7 +183,7 @@ ms.locfileid: "74563713"
 針對 iOS，需要額外的應用程式組態設定，才能將應用程式保護原則 (APP) 設定的目標設為 Intune 已註冊裝置上的應用程式：
 
 - **IntuneMAMUPN** 必須針對所有 MDM 受控應用程式進行設定。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
-- **IntuneMAMDeviceID** 必須針對所有協力廠商及企業營運 MDM 受控應用程式進行設定。 **IntuneMAMDeviceID** 應設為裝置識別碼權杖。 例如，`key=IntuneMAMDeviceID, value={{deviceID}}` 。 如需詳細資訊，請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
+- **IntuneMAMDeviceID** 必須針對所有協力廠商及企業營運 MDM 受控應用程式進行設定。 **IntuneMAMDeviceID** 應設為裝置識別碼權杖。 例如 `key=IntuneMAMDeviceID, value={{deviceID}}`。 如需詳細資訊，請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
 - 若只有設定 **IntuneMAMDeviceID**，則 Intune 應用程式會將裝置視為非受控。
 
 > [!NOTE]

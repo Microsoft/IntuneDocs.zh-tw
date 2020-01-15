@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86640c831e8836a72ad5a0a7d5023ff7d836a43a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801564"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886002"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>設定基礎結構以支援 SCEP 與 Intune
 
@@ -359,7 +359,7 @@ Microsoft Intune 憑證連接器會安裝在執行 NDES 服務的伺服器上。
 
 ### <a name="to-install-the-certificate-connector"></a>安裝憑證連接器
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [憑證連接器]   > [新增]  。
 
@@ -373,8 +373,7 @@ Microsoft Intune 憑證連接器會安裝在執行 NDES 服務的伺服器上。
 
    2. 執行安裝程式 (**NDESConnectorSetup.exe**)。 安裝程式也會安裝 NDES 和 IIS 憑證登錄點 (CRP) Web 服務的原則模組。 CRP Web 服務 *CertificateRegistrationSvc* 會在 IIS 中以應用程式的形式執行。
 
-      - 當您為獨立版 Intune 安裝 NDES 時，CRP 服務會自動與 Certificate Connector 一起安裝。
-      - 當您使用 Intune 搭配 Configuration Manager 時，將憑證註冊點安裝為 Configuration Manager 站台系統角色。
+      當您為獨立版 Intune 安裝 NDES 時，CRP 服務會自動與 Certificate Connector 一起安裝。
 
 5. 當系統提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]  ，並選取您在本文先前[在裝載 NDES 的伺服器上安裝並繫結憑證](#install-and-bind-certificates-on-the-server-that-hosts-ndes)程序中步驟 #3 期間在 NDES 伺服器上所安裝**用戶端驗證**憑證。
 

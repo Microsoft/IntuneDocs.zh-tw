@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4cfb0f69d74cc6146b2497cd53be3e123f79cc70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdcf88449a4f6ec0b3b352afb87ebcb5bd0b8389
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504352"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885737"
 ---
 # <a name="audit-export-or-delete-personal-data-in-intune"></a>在 Intune 中稽核、匯出或刪除個人資料
 
@@ -74,16 +74,6 @@ Intune 管理員可以使用稽核記錄來追蹤與個人資料相關的活動�
 ### <a name="delete-a-tenant-from-microsoft-intune"></a>從 Microsoft Intune 刪除租用戶
 
 如果 Intune 租用戶客戶取消其 Intune 帳戶，則會在客戶關閉 Intune 帳戶 180 天內刪除所有租用戶資料。 如果 AAD 租用戶與其他 Microsoft 企業訂用帳戶 (Azure、Office 365) 建立關聯，則只會刪除 Intune 客戶資料。 AAD 租用戶資源會保留以供其他訂用帳戶使用。 如果 Intune 帳戶是唯一與 AAD 租用戶建立關聯的訂用帳戶，則會刪除租用戶，並同時刪除所有資源和客戶資料。
-
-### <a name="delete-a-user-in-a-hybrid-mobile-device-management-mdm-environment"></a>刪除混合式行動裝置管理 (MDM) 環境中的使用者
-當您有混合式 MDM 環境 (與 Configuration Manager 整合的 Intune) 時，您必須完成下列動作 (依序) 才能完全刪除使用者，並將其從您的本機 Active Directory、Configuration Manager 和 Intune 中完全移除。
-
-1. 從您的本機 Active Directory (AD) 中刪除使用者。 這會防止使用者同步到 Azure AD，以及被 Configuration Manager 探索發現。 
-2. 從 Configuration Manager 主控台中刪除使用者，以從 Configuration Manager 中移除使用者和相關聯資料。 在主控台中，移至 [Asset and Compliance] \(資產與合規性\)   > [使用者]  ，以滑鼠右鍵按一下要刪除的使用者，然後按一下 [刪除]  。
-3. [從 AAD 中刪除使用者](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory#delete-a-user)，這會同時從 Azure Active Directory 和 Intune 中移除使用者和相關聯資料。 從 AAD 中刪除 (實刪除) 使用者時，Intune 會從 AAD 收到刪除訊號，然後自動開始從 Intune 服務中清除該使用者的所有個人資料。 使用者的資訊會在移除動作的 30 天內，從 Intune 服務中刪除。
-
-> [!Important]
->新混合式 MDM 客戶的上線功能已淘汰。 如需詳細資訊，請參閱 [Move from Hybrid Mobile Device Management to Intune on Azure](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Move-from-Hybrid-Mobile-Device-Management-to-Intune-on-Azure/ba-p/280150) (從混合式行動裝置管理移到 Azure 上的 Intune) 部落格文章。
 
 ## <a name="next-steps"></a>後續步驟
 

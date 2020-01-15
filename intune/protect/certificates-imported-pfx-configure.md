@@ -2,27 +2,27 @@
 title: 在 Microsoft Intune 中使用匯入的 PFX 憑證 - Azure | Microsoft Docs
 description: 搭配 Microsoft Intune 使用匯入的公開金鑰加密標準 (PKCS) 憑證，包括匯入憑證、設定憑證範本、安裝 Intune 匯入的 PFX 憑證連接器，以及建立匯入的 PKCS憑證設定檔。
 keywords: ''
-author: ralms
+author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: ''
-ms.reviewer: lacranda
+ms.reviewer: lacranda; rimarram
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d54c58523fdb44080b6c4210d639f9ad0ce476e2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801530"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886026"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用匯入的 PKCS 憑證
 
@@ -46,14 +46,17 @@ S/MIME 加密很具挑戰性，因為電子郵件是以特定憑證加密。 在
 
   如需連接器所存取之所有網路端點的詳細資訊，請參閱 [Intune 網路設定需求和頻寬](../fundamentals/network-bandwidth-use.md)。
 
-- **Windows Server**：  
+- **Windows 伺服器**：
+
   您會使用 Windows Server 來裝載適用於 Microsoft Intune 的 PFX 憑證連接器。  連接器是用來處理匯入至 Intune 之憑證的要求。
 
   Intune 支援在與*適用於 Microsoft Intune 的 PFX 憑證連接器*相同的伺服器上安裝 *Microsoft Intune 憑證連接器*。
 
   若要支援連接器，伺服器必須執行 .NET 4.6 Framework 或更高版本。 當您開始安裝連接器時，如果未安裝 .NET 4.6 Framework，連接器安裝將會自動安裝。
 
-- **Visual Studio 2015 或更新版本** (選擇性)：您可以使用 Visual Studio 來建置協助程式 PowerShell 模組，並使用 Cmdlet 將 PFX 憑證匯入至 Microsoft Intune。 若要取得協助程式 PowerShell Cmdlet，請參閱 [GitHub 中的 PFXImport PowerShell 專案](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell) \(英文\)。
+- **Visual Studio 2015 或更新版本** (選擇性)：
+
+  您可以使用 Visual Studio 來建置協助程式 PowerShell 模組，並使用 Cmdlet 將 PFX 憑證匯入至 Microsoft Intune。 若要取得協助程式 PowerShell Cmdlet，請參閱 [GitHub 中的 PFXImport PowerShell 專案](https://github.com/microsoft/Intune-Resource-Access/tree/develop/src/PFXImportPowershell) \(英文\)。
 
 ## <a name="how-it-works"></a>運作方式
 
@@ -65,7 +68,7 @@ S/MIME 加密很具挑戰性，因為電子郵件是以特定憑證加密。 在
 
 ## <a name="download-install-and-configure-the-pfx-certificate-connector-for-microsoft-intune"></a>為 Microsoft Intune 下載、安裝並設定 PFX 憑證連接器
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [租用戶系統管理]   > [連接器與權杖]   > [憑證連接器]   > [新增]  。
 
@@ -143,15 +146,14 @@ PowerShell 模組提供了使用 Windows 密碼編譯建立金鑰的方法。 �
 
 下列程序會使用 PowerShell Cmdlet 作為如何匯入 PFX 憑證的範例。 視您的需求而定，您可以挑選不同的選項。
 
-這些選項包括：  
-- 預期的用途 (根據標籤將憑證分組)：  
+這些選項包括：
+
+- 預期的用途 (根據標籤將憑證分組)：
   - 未指派
   - smimeEncryption
   - smimeSigning
 
-- 填補配置：  
-  - pkcs1
-  - oaepSha1
+- 填補配置：
   - oaepSha256
   - oaepSha384
   - oaepSha512
@@ -190,7 +192,7 @@ PowerShell 模組提供了使用 Windows 密碼編譯建立金鑰的方法。 �
 
 將憑證匯入至 Intune 之後，請建立 **PKCS 匯入憑證**設定檔，並將它指派給 Azure Active Directory 群組。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 

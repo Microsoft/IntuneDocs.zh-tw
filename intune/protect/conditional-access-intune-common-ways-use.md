@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d30749a7eaa3d516bef2f2acff3e010d69db1c0e
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 92e6aa1a66429c6407556444e903c158aff9dfa0
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547047"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885988"
 ---
 # <a name="what-are-common-ways-to-use-conditional-access-with-intune"></a>搭配 Intune 使用條件式存取的常見方式為何？
 
@@ -86,14 +86,6 @@ Intune 與 Mobile Threat Defense 整合在以裝置風險為基礎的條件式�
 - **已加入內部部署 AD 網域：** 此選項通常是由已採用透過 AD 群組原則或 Configuration Manager 來管理其電腦的組織所使用。
 
 - **已加入 Azure AD 網域和 Intune 管理：** 此案例適用於想要成為雲端優先 (也就是主要使用雲端服務，並以減少使用內部部署基礎結構為目標) 或僅限雲端 (沒有內部部署基礎結構) 的組織。 Azure AD Join 適用於混合式環境，可讓您同時存取雲端與內部部署應用程式與資源。 裝置會加入 Azure AD 並向 Intune 註冊；這可在存取公司資源時作為條件式存取準則使用。
-
-- **已加入 AD 網域和 Configuration Manager：** 截至最新分支，除了作為加入網域的電腦之外，Configuration Manager 還提供可評估特定合規性準則的條件式存取功能：
-
-  - 電腦是否加密？
-
-  - 是否已安裝反惡意程式碼？ 是否為最新狀態？
-
-  - 裝置是否已進行越獄或破解？
 
 #### <a name="bring-your-own-device-byod"></a>攜帶您自己的裝置 (BYOD)
 

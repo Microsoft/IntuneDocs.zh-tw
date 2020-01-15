@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b4661b151493eb68cc6f71a5a77bd023ac27b826
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 331d4d312541f587077c70e19634e331f9ddc21e
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810216"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956341"
 ---
 # <a name="set-up-lookout-mobile-endpoint-security-integration-with-intune"></a>設定與 Intune 的 Lookout Mobile Endpoint Security 整合
 透過符合[必要條件](lookout-mobile-threat-defense-connector.md#prerequisites)的環境，您可以將 Lookout Mobile Endpoint Security 與 Intune 整合。 本文的資訊將引導您設定整合，並設定 Lookout 中的重要設定以便與 Intune 搭配使用。  
 
 > [!IMPORTANT]
-> 尚未與 Azure AD 租用戶建立關聯的現有 Lookout Mobile Endpoint Security 租用戶無法用來整合 Azure AD 與 Intune。 請與 Lookout 支援部門連絡，以建立新的 Lookout Mobile Endpoint Security 租用戶。 請使用新的租用戶來連接 Azure AD 使用者。
+> 尚未與 Azure AD 租用戶相關聯的現有 Lookout 行動端點安全性租用戶無法用於與 Azure AD 和 Intune 的整合。 請連絡 Lookout 支援，以建立新的 Lookout 行動端點安全性租用戶。 請使用新的租用戶來連接 Azure AD 使用者。
 
 ## <a name="collect-azure-ad-information"></a>收集 Azure AD 資訊  
 若要將 Lookout 與 Intune 整合，您需將 Lookout Mobility Endpoint Security 租用戶關聯至 Azure Active Directory (AD) 訂用帳戶。
@@ -45,7 +45,7 @@ ms.locfileid: "72810216"
   您會在 Azure AD 中建立此選擇性使用者群組，以包含不應有權存取 Lookout 主控台中數個與設定和註冊相關模組的使用者。 相反地，這些使用者均具備 Lookout 主控台中**安全性原則**模組的唯讀存取權。 使用者必須是此選擇性群組或必要「完整權限」  群組的成員，才能登入 Lookout 主控台。
 
  > [!TIP] 
- > 如需權限的詳細資訊，請參閱 Lookout 網站上的[這篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
+ > 如需權限的詳細資訊，請閱讀 Lookout 網站上的[這篇文章](https://personal.support.lookout.com/hc/articles/114094105653)。
 
 ### <a name="collect-information-from-azure-ad"></a>收集來自 Azure AD 的資訊 
 
@@ -77,7 +77,7 @@ ms.locfileid: "72810216"
 ### <a name="initial-sign-in"></a>初始登入  
 首次登入 Lookout MES 主控台會顯示同意頁面 (https://aad.lookout.com/les?action=consent) 。 Azure AD 全域管理員只需登入並**接受**。 後續登入不會要求使用者具備這個等級的 Azure AD 權限。 
 
- 隨即顯示同意頁面。 選擇 [接受]  以完成註冊。 
+ 隨即會顯示同意頁面。 選擇 [接受]  完成註冊。 
    ![首次登入 Lookout 主控台的頁面螢幕擷取畫面](./media/lookout-mtd-connector-integration/lookout_mtp_initial_login.png)
 
 當您接受並同意之後，即會將您重新導向至 Lookout 主控台。
@@ -108,12 +108,12 @@ ms.locfileid: "72810216"
 
 5. 選取 [錯誤管理]  、指定應收到錯誤報表的電子郵件地址，然後選取 [儲存變更]  。
  
-   ![Intune 連接器之 [錯誤管理] 頁面的螢幕擷取畫面](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
+   ![Intune 連接器錯誤管理頁面的螢幕擷取畫面](./media/lookout-mtd-connector-integration/lookout-mtp-connector-error-notifications.png)
 
 6. 選取 [建立連接器]  以完成連接器設定。 稍後，當您對結果感到滿意時，即可將註冊擴展到其他使用者群組。
 
 ## <a name="configure-intune-to-use-lookout-as-a-mobile-threat-defense-provider"></a>設定 Intune 以使用 Lookout 作為 Mobile Threat Defense 提供者
-當您設定 Lookout MES 之後，必須[在 Intune 中設定與 Lookout 的連線](https://docs.microsoft.com/en-us/intune/protect/mtd-connector-enable)。  
+當您設定 Lookout MES 之後，必須[在 Intune 中設定與 Lookout 的連線](~/protect/mtd-connector-enable.md)。  
 
 ## <a name="additional-settings-in-the-lookout-mes-console"></a>Lookout MES 主控台中的其他設定
 以下是您可以在 Lookout MES 主控台中設定的其他設定。  
@@ -123,7 +123,7 @@ ms.locfileid: "72810216"
 
 - 針對 [已中斷連線狀態]  ，指定在將未連線的裝置標示為已中斷連線之前的天數。  
 
-  已中斷連線的裝置會視為不相容，而且根據 Intune 條件式存取原則，將無法存取您的公司應用程式。 您可以指定 1 到 90 天之間的值。
+  已中斷連線的裝置會視為不相容，而且根據 Intune 條件式存取原則，將無法存取您的公司應用程式。 您可以指定介於 1 與 90 天之間的值。
 
   ![Lookout [系統] 模組上的 [註冊設定]](./media/lookout-mtd-connector-integration/lookout-console-enrollment-settings.png)
 
@@ -144,7 +144,7 @@ Lookout Mobile Endpoint Security 會將各種類型的行動裝置威脅進行�
 >[!IMPORTANT]
 > 風險層級對於 Mobile Endpoint Security 而言很重要，因為 Intune 整合會在執行階段，根據這些風險層級來計算裝置合規性。  
 > 
-> Intune 管理員可在原則中設定規則，以判斷裝置的現行威脅最低層級為何 (**高**、**中**或**低**) 時，要將其識別為不相容。 Lookout Mobile Endpoint Security 中的威脅分類原則會直接在 Intune 中驅動裝置合規性計算。  
+> 如果裝置具有最少層級為 [高]  、[中]  或 [低]  的使用中威脅，則 Intune 系統管理員會在原則中設定將裝置識別為不符合規範的規則。 Lookout Mobile Endpoint Security 中的威脅分類原則會直接在 Intune 中驅動裝置合規性計算。  
 
 ## <a name="monitor-enrollment"></a>監視註冊
 完成設定之後，Lookout Mobile Endpoint Security 就會開始輪詢 Azure AD，以找出對應至指定註冊群組的裝置。  您可以移至 Lookout MES 主控台中的 [裝置]  來尋找已註冊裝置的相關資訊。  
