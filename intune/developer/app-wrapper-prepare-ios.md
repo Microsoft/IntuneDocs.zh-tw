@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c0fac5e9d34890272253eaefd82ed13dc1014ba0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 62ee300b7357132e6f9e18ef4528110dfc988dc3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713485"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653660"
 ---
 # <a name="prepare-ios-apps-for-app-protection-policies-with-the-intune-app-wrapping-tool"></a>使用 Intune App Wrapping Tool 準備應用程式保護原則的 iOS 應用程式
 
@@ -269,7 +269,7 @@ ms.locfileid: "73713485"
 
 若 App Wrapping Tool 無法成功完成，將會在主控台中顯示下列其中一則錯誤訊息：
 
-|錯誤訊息|詳細資訊|
+|錯誤訊息|更多資訊|
 |-----------------|--------------------|
 |您必須指定有效的 iOS 佈建設定檔。|您的佈建設定檔可能無效。 請確認您具備裝置正確的權限，且您已將設定檔的目標設定在開發或散發。 您的佈建設定檔也可能過期。|
 |請指定有效的輸入應用程式名稱。|請確定您指定的輸入應用程式名稱正確。|
@@ -287,7 +287,7 @@ ms.locfileid: "73713485"
 |您指定的輸入應用程式未簽署。 請指定有效的已簽署應用程式。|應用程式包裝工具需要已簽署的應用程式。 請參閱您的開發人員文件，了解如何簽署已包裝的應用程式。|
 |您指定的輸入應用程式必須為 .ipa 或 .app 格式。|應用程式包裝工具只接受 .app 和 .ipa 副檔名。 請確定您的輸入檔副檔名有效，且已經編譯為 .app 或 .ipa 檔案。|
 |您指定的輸入應用程式已包裝，且是最新的原則範本版本。|App Wrapping Tool 不會使用最新的原則範本版本重新包裝現有已經包裝的應用程式。|
-|警告：未指定 SHA1 憑證雜湊。 請確定您的已包裝應用程式已經簽署，然後再部署。|請務必在 –c 命令列旗標後指定有效的 SHA1 雜湊。 |
+|WARNING：未指定 SHA1 憑證雜湊。 請確定您的已包裝應用程式已經簽署，然後再部署。|請務必在 –c 命令列旗標後指定有效的 SHA1 雜湊。 |
 
 ### <a name="collecting-logs-for-your-wrapped-applications-from-the-device"></a>從裝置收集已包裝應用程式的記錄檔
 使用下列步驟，在疑難排解期間取得已包裝應用程式的記錄檔。

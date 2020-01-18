@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 961c081b17d380bd00965708b6acd57b8059b2e0
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: fbe2c7933d0d012a7c85df4e9c5b6e8e94fc9805
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506315"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856797"
 ---
 # <a name="enroll-your-organization-provided-macos-device-in-management"></a>在管理中註冊組織提供的 macOS 裝置
 
@@ -52,11 +52,11 @@ ms.locfileid: "72506315"
 4. 選取您的 Wi-Fi 網路。 您必須具有網際網路連線才能繼續設定。 如果未看到您的網路，或者您需要透過有線網路連線，請按一下 [其他網路選項]  。 完成後，請按一下 [繼續]  。  
 
    ![macOS 裝置設定助理 [選取您的 Wi-Fi 網路] 畫面的螢幕擷取畫面，其中顯示可供選擇的可用網路清單。 也會顯示 [其他網路選項] 按鈕、[上一步] 按鈕和 [繼續] 按鈕。](./media/macos-dep-wifi-1808.png)  
-5. 連線到 Wi-Fi 後，[遠端管理]  畫面隨即出現。 遠端管理可讓組織的系統管理員使用公司所需的帳戶、設定、應用程式及網路，從遠端設定您的裝置。 請完整閱讀遠端管理說明，以協助您了解裝置受控的方式。 然後按一下 **[繼續]** 。  
+5. 連線到 Wi-Fi 後，[遠端管理]  畫面隨即出現。 遠端管理可讓組織的系統管理員使用公司所需的帳戶、設定、應用程式及網路，從遠端設定您的裝置。 請完整閱讀遠端管理說明，以協助您了解裝置受控的方式。 然後按一下 [繼續]  。  
 
    ![macOS 裝置設定助理 [遠端管理] 畫面的螢幕擷取畫面，內含說明遠端管理的文字以及取得詳細資訊的文件連結。 也會顯示 [上一步] 按鈕和 [繼續] 按鈕。](./media/macos-dep-remote-management-1-1808.png)  
 6. 出現提示時，請使用您的公司或學校帳戶登入。 經過驗證之後，您的裝置會安裝管理設定檔。 設定檔會設定組織的資源，並可讓您進行存取。  
-7. 閱讀 Apple 資料與隱私權圖示的相關資訊，讓您稍後在收集個人資訊時能夠識別。 然後按一下 **[繼續]** 。  
+7. 閱讀 Apple 資料與隱私權圖示的相關資訊，讓您稍後在收集個人資訊時能夠識別。 然後按一下 [繼續]  。  
 
    ![macOS 裝置設定助理 [資料與隱私權] 畫面的螢幕擷取畫面，其中顯示兩個人握手的圖例，並描述 Apple 對個人資訊的使用方式。 也會顯示 [上一步] 和 [繼續] 按鈕。](./media/macos-dep-apple-data-privacy-1808.png)  
 8. 註冊裝置後，您可能還需要完成其他步驟。 您看到的步驟視組織自訂設定體驗的方式而定。 它可能需要您：

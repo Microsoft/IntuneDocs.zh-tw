@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser; intune-azure
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64612aa8a1d427284778a9aa43b966b05cb0a15f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: dc36e2d53282b8f40f0250f40cb2f01ec920d936
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502108"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858207"
 ---
 # <a name="reset-device-from-the-company-portal-app"></a>從公司入口網站應用程式重設裝置  
 
@@ -33,7 +33,7 @@ ms.locfileid: "72502108"
 當您重設裝置之後，它就不會再出現在公司入口網站中。 其現有的應用程式和檔案將會清除，並會還原為其預設的設定。  
 
 
-1. 開啟公司入口網站。  
+1. 開啟 [公司入口網站]。  
 2. 在 [我的裝置]  下，選取要重設的裝置。   
 
     ![公司入口網站應用程式、主畫面、反白顯示 [我的裝置] 區段的範例螢幕擷取畫面。](./media/1802-cp-app-windows-home.png)  

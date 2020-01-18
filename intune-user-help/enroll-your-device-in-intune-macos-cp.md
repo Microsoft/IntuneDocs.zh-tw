@@ -5,7 +5,7 @@ keywords: Mac OS X, macOS, OS X
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 12/16/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: kakyker
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: ba285fc9de58b3fb739a16722e0e05e36e840e87
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e04950a67938d883b0762c03efa371fcb74d0731
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098095"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855471"
 ---
 # <a name="enroll-your-macos-device-using-the-company-portal-app"></a>使用公司入口網站應用程式註冊您的 macOS 裝置  
 
@@ -56,7 +56,7 @@ ms.locfileid: "74098095"
 2. 公司入口網站 .pkg 檔案將會下載。 開啟安裝程式，並繼續執行步驟。 
 3. 同意軟體授權合約。 
 4. 輸入您的裝置密碼或已註冊的指紋，以安裝軟體。  
-5. 開啟公司入口網站。 
+5. 開啟 [公司入口網站]。 
 
 > [!IMPORTANT]
 > 「Microsoft 自動更新」可能會開啟以更新您的 Microsoft 軟體。 安裝所有更新之後，請開啟公司入口網站應用程式。 若要獲得最佳的安裝經驗，請安裝最新版的 Microsoft 自動更新和公司入口網站。  
@@ -67,18 +67,17 @@ ms.locfileid: "74098095"
 
 1. 使用您的公司或學校帳戶登入公司入口網站。  
 2. 當應用程式開啟時，請選取 [**開始**]。  
-3. 檢查您的組織在您已註冊的裝置上[可以看到和不能看見的內容](what-info-can-your-company-see-when-you-enroll-your-device-in-intune.md)。 接著，選取 [繼續]  。  
-4. 在 [**安裝管理設定檔**] 畫面上，選取 [**下載設定檔**]。   
+3. 檢查您的組織在您已註冊的裝置上可以看到和不能看見的內容。 接著，選取 [繼續]  。
+4.  若出現提示，請在 [**安裝管理設定檔**] 畫面上輸入您的裝置密碼。
 
-    ![公司入口網站 [安裝管理設定檔] 畫面的範例螢幕擷取畫面，其中反白顯示 [下載設定檔] 按鈕。](./media/install-mgmt-profile-mac-1911.PNG)   
-5. 您裝置的系統喜好設定將會開啟。 選取 [**安裝**]，然後再次選取 [**安裝**]。 若出現提示，請輸入您的裝置密碼。  
+    ![公司入口網站的範例螢幕擷取畫面，[安裝管理設定檔] 畫面，反白顯示密碼提示。](./media/install-management-profile-macos-1912.PNG)   
+5. 在 [**確認裝置管理**] 畫面上，選取 [**開啟系統偏好**設定]。  
 
-    ![MacOS 系統喜好設定（安裝提示）的範例螢幕擷取畫面，反白顯示 [安裝] 按鈕。](./media/system-preference-install-1911.PNG)  
-6. 安裝設定檔之後，它會出現在 [**管理設定檔**] 底下的配置檔案清單中。  
-
-   ![MacOS 系統喜好設定 [設定檔] 畫面的範例螢幕擷取畫面，其中反白顯示已安裝的管理設定檔。](./media/system-preference-verify-1911.PNG)   
-7. 返回公司入口網站。   
-8. 您的組織可能會要求您更新您的裝置設定。 當您完成更新設定時，請選取 [**檢查設定**]。  
+    ![[確認裝置管理] 畫面的範例螢幕擷取畫面，反白顯示 [開啟系統喜好設定] 按鈕。](./media/confirm-device-management-macos-1912.PNG)  
+6. 您裝置的系統喜好設定將會開啟。 從 [裝置設定檔] 清單中選取 [**管理設定檔**]，然後選取 [**核准** > **核准**]。  
+    ![[系統偏好設定]、[管理設定檔] 畫面的範例螢幕擷取畫面，反白顯示 [核准] 按鈕。](./media/management-profile-approve-macos-1912.PNG)   
+1. 返回公司入口網站，然後選取 [**繼續**]。    
+2. 您的組織可能會要求您更新您的裝置設定。 當您完成更新設定時，請選取 [**檢查設定**]。  
 
     ![公司入口網站的範例螢幕擷取畫面，[更新裝置設定] 畫面，反白顯示 [檢查設定] 按鈕。](./media/update-settings-mac-1911.PNG)  
 9. 當安裝程式完成時，請選取 [**完成**]。  
@@ -88,7 +87,7 @@ ms.locfileid: "74098095"
 
 如果您在註冊期間遇到問題，請移至 說明 ** > ** **傳送診斷報告**，將問題回報給 Microsoft 應用程式開發人員。 這是用來協助改善應用程式的資訊。 他們也會使用此資訊來協助解決問題（如果您的 IT 支援人員與他們聯繫以取得協助）。  
 
-將問題回報給 Microsoft 之後，您可以將體驗的詳細資料傳送給您的 IT 支援人員。 選取 [**電子郵件詳細資料**]。 輸入您在電子郵件內文中遇到的內容。 若要尋找支援人員的電子郵件地址，請移至公司入口網站應用程式 >**連絡人**。 或檢查[公司入口網站網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
+將問題回報給 Microsoft 之後，您可以將體驗的詳細資料傳送給您的 IT 支援人員。 選取 [**電子郵件詳細資料**]。 輸入您在電子郵件內文中遇到的內容。 若要尋找支援人員的電子郵件地址，請移至公司入口網站應用程式 >**連絡人**。 或是查看[公司入口網站網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
  
 
 此外，Microsoft Intune 公司入口網站團隊也很樂意聽到您的意見反應。 前往 [說明 **] > ** **傳送意見**反應，分享您的想法和想法。  

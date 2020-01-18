@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 962e66a9fdf6d8abcf6855f645775026ee4db850
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d3d9473b68f0420670130203409abf477355d93f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508849"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885524"
 ---
 # <a name="troubleshoot-the-intune-exchange-connector"></a>為 Intune Exchange Connector 進行疑難排解
 
@@ -40,7 +40,7 @@ ms.locfileid: "72508849"
   - 您是第一次設定連接器嗎？ 
   - 連接器是否正常運作，然後失敗？
   - 如果運作正常，Intune 環境、Exchange 環境或執行連接器軟體的電腦上發生哪些變更？
-- 什麼是 MDM 授權單位？ 如果 System Center Configuration Manager，您會使用哪個版本的 Configuration Manager？
+- 什麼是 MDM 授權單位？
 - 您使用哪一版的 Exchange？
 
 ### <a name="use-powershell-to-get-more-data-on-exchange-connector-issues"></a>使用 PowerShell 取得 Exchange Connector 問題的更多資料
@@ -68,7 +68,7 @@ ms.locfileid: "72508849"
 - **帳戶權限**：在 [Microsoft Intune Exchange Connector] 對話方塊中，確定已指定具有適當權限的使用者帳戶執行[必要的 Windows PowerShell Exchange Cmdlet](exchange-connector-install.md#exchange-cmdlet-requirements)。
 - **通知電子郵件訊息**：啟用通知並指定通知帳戶。
 - **用戶端存取伺服器同步**處理：設定 Exchange connector 時，請指定對裝載 Exchange connector 的伺服器具有最低網路延遲的 ca。 CAS 與 Exchange Connector 之間的通訊延遲，可能會延遲裝置探索，尤其是在使用 Exchange Online Dedicated 時。
-- **同步處理排程**：新註冊裝置的使用者在取得存取權時，可能會因 Exchange Connector 與 Exchange CAS 同步處理而延遲。 完整同步會一天執行一次，而差異 (快速) 同步則會一天執行多次。 您可以[手動強制執行快速同步或完整同步](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)將延遲降到最低。
+- **同步處理排程**：新註冊裝置的使用者在取得存取權時，可能會因 Exchange Connector 與 Exchange CAS 同步而延遲。 完整同步會一天執行一次，而差異 (快速) 同步則會一天執行多次。 您可以[手動強制執行快速同步或完整同步](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync)將延遲降到最低。
 
 ## <a name="next-steps"></a>後續步驟
 下列文章可協助解決常見的問題和特定錯誤：

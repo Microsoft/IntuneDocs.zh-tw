@@ -5,7 +5,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,21 +17,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93b48fd5f6482669da923e4c15dcb09c7d328197
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 38f9c9721942b4c9754d4e99e4e91d751ceedcf3
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503446"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75653779"
 ---
 # <a name="microsoft-intune-app-sdk-for-ios-developer-guide"></a>Microsoft Intune App SDK for iOS 開發人員指南
 
 > [!NOTE]
 > 請考慮閱讀 [Intune App SDK 快速入門指南](app-sdk-get-started.md)一文，其中說明如何在每個支援的平台上進行整合準備。
 
-Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 併入原生 iOS 應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式， IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
+Microsoft Intune App SDK for iOS 可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 併入原生 iOS 應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式。 IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 * 您需要執行 OS X 10.8.5 或更新版本的 Mac OS 電腦，且該電腦必須已安裝 Xcode 9 或更新版本。
 
@@ -106,14 +106,14 @@ Intune App SDK for iOS 的目標是以最少的程式碼變更，將管理功能
 
     ![Intune App SDK iOS：連結的架構和程式庫](./media/app-sdk-ios/intune-app-sdk-ios-linked-frameworks-and-libraries.png)
 
-    將 `-force_load {PATH_TO_LIB}/libIntuneMAM.a` 加入下列任一項中，並以 Intune App SDK 位置取代 `{PATH_TO_LIB}` ：
+    將 `-force_load {PATH_TO_LIB}/libIntuneMAM.a` 新增至下列任一項中，並以 Intune App SDK 位置取代 `{PATH_TO_LIB}` ：
    * 專案的 `OTHER_LDFLAGS` 組建組態設定。
    * Xcode UI 的 [Other Linker Flags] \(其他連結器旗標\)  。
 
      > [!NOTE]
-     > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案]  功能表中選擇 [取得資訊]  。 從 [資訊]  視窗的 [一般]  區段中，複製並貼上 [位置]  資訊 (路徑)。
+     > 若要尋找 `PATH_TO_LIB`，請選取 `libIntuneMAM.a` 檔案，然後從 [檔案]  功能表中選擇 [取得資訊]  。 從 [資訊]  視窗的 [一般]  區段，複製並貼上 [位置]  資訊 (路徑) 。
 
-     藉由拖曳 「Build Phases」 (建置階段)  的 「Copy Bundle Resources」 (複製配套資源)  下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
+     拖曳 [Build Phases] (建置階段)  的 [Copy Bundle Resources] (複製配套資源)  下的資源配套，將 `IntuneMAMResources.bundle` 資源配套新增至專案。
 
      ![Intune App SDK iOS：複製配套資源](./media/app-sdk-ios/intune-app-sdk-ios-copy-bundle-resources.png)
          
@@ -190,7 +190,7 @@ Intune App SDK 可以針對其驗證和條件式啟動案例，使用[Azure Acti
 
 **選項 2-** 或者，您也可以遵循[這些指示](https://github.com/AzureAD/microsoft-authentication-library-for-objc#installation)，將您的應用程式連結到 MSAL 的二進位檔。
 
-1. 如果您的應用程式未定義任何 Keychain 存取群組，請加入應用程式的配套識別碼作為第一個群組。
+1. 如果您的應用程式未定義任何 Keychain 存取群組，請新增應用程式的配套識別碼作為第一個群組。
 
 2. 透過將 `com.microsoft.adalcache` 新增到 Keychain 存取群組以啟用 ADAL/MSAL 單一登入 (SSO)。
 
@@ -254,12 +254,12 @@ ADALCacheKeychainGroupOverride | 字串  | 指定要用於 ADAL/MSAL 快取而�
 AppGroupIdentifiers | 字串陣列  | 應用程式之權利 com.apple.security.application-groups 區段中的應用程式群組陣列。 | 如果應用程式使用應用程式群組，則為必要項。 |
 ContainingAppBundleId | 字串 | 指定含有應用程式之擴充功能的配套識別碼。 | 對 IOS 擴充功能而言為必要項。 |
 DebugSettingsEnabled| 布林值 | 如果設定為 [是]，則可以套用 [設定] 配套內的測試原則。 啟用這個設定時，*不*應該提供應用程式。 | 選擇性。 預設為 [否]。 |
-AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL/MSAL 快取中沒有可用的身分識別有效權杖，除非應用程式也已經將 MAMPolicyRequired 設為 [是]，否則註冊嘗試會失敗而不提示輸入認證。 | 選擇性。 預設為 [否]。 |
-MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意事項︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 | 選擇性。 預設為 [否]。 |
-MAMPolicyWarnAbsent | 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否將在啟動期間警告使用者。 <br><br> 注意事項︰使用者在關閉警告之後，仍可在沒有原則的情況下使用應用程式。 | 選擇性。 預設為 [否]。 |
+AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL/MSAL 快取中沒有身分識別的有效權杖，除非應用程式也已經將 MAMPolicyRequired 設定為 [是]，否則註冊嘗試會以無訊息方式失敗且不提示輸入認證。 | 選擇性。 預設為 [否]。 |
+MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意：MAMPolicyRequired 設定為 YES 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 | 選擇性。 預設為 [否]。 |
+MAMPolicyWarnAbsent | 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否將在啟動期間警告使用者。 <br><br> 附註：在關閉警告之後，將仍允許使用者在沒有原則的情況下使用應用程式。 | 選擇性。 預設為 [否]。 |
 MultiIdentity | 布林值| 指定應用程式是否為多重身分識別感知。 | 選擇性。 預設為 [否]。 |
 SafariViewControllerBlockedOverride | 布林值| 停用 Intune 的 SafariViewController 勾點，以透過 SFSafariViewController、SFAuthSession 或 ASWebAuthSession 啟用 MSAL auth。 | 選擇性。 預設為 [否]。 警告：如果使用不當，可能會導致資料洩漏。 只有在絕對必要時才啟用。 如需詳細資訊，請參閱[使用 MSAL 時的特殊考慮](#special-considerations-when-using-msal)。  |
-SplashIconFile~ipad <br>IntuneMAMSettings | 字串  | 指定 Intune 啟動顯示 (啟動) 畫面的圖示檔。 | 選擇性。 |
+SplashIconFile <br>IntuneMAMSettings | 字串  | 指定 Intune 啟動顯示 (啟動) 畫面的圖示檔。 | 選擇性。 |
 SplashDuration | 數字 | Intune 啟動畫面將於應用程式啟動時顯示的最短時間 (以秒為單位)。 預設為 1.5。 | 選擇性。 |
 BackgroundColor| 字串| 指定 Intune SDK UI 元件的背景色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。   | 選擇性。 預設為系統背景色彩，在不同版本的 iOS 及根據 iOS 深色模式設定時可能會有所不同。 |
 ForegroundColor| 字串| 指定 Intune SDK UI 元件的前景色彩，例如文字色彩。 接受格式為 #XXXXXX 的十六進位 RGB 字串，其中 X 的範圍可以是 0-9 或 A-F。 可能會省略井字號。  | 選擇性。 預設為 [系統磁碟區標] 色彩，這可能會隨著 ios 版本和 iOS 深色模式設定而有所不同。 |
@@ -334,8 +334,8 @@ WebViewHandledURLSchemes | 字串陣列 | 指定您應用程式的 WebView 所�
 
 設定  | 類型  | 定義 |
 --       |  --   |   --       |  
-AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 注意：若找不到受控識別，或 ADAL/MSAL 快取中沒有身分識別的有效權杖，除非應用程式也已經將 MAMPolicyRequired 設定為 [是]，否則註冊嘗試會失敗而不提示輸入認證。 |
-MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 注意︰MAMPolicyRequired 設為 [是] 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 |
+AutoEnrollOnLaunch| 布林值| 指定如果偵測到現有的受管理身分識別，而且其尚未註冊，應用程式是否要在啟動時嘗試自動註冊。 預設為 [否]。 <br><br> 附註：若找不到受控識別，或 ADAL/MSAL 快取中沒有身分識別的有效權杖，除非應用程式也已經將 MAMPolicyRequired 設定為 [是]，否則註冊嘗試會以無訊息方式失敗且不提示輸入認證。 |
+MAMPolicyRequired| 布林值| 指定應用程式在沒有 Intune 應用程式保護原則時，是否無法予以啟動。 預設為 [否]。 <br><br> 附註：MAMPolicyRequired 設定為 YES 時，無法將應用程式提交至 App Store。 當 MAMPolicyRequired 設定為 [是] 時，AutoEnrollOnLaunch 也應該設定為 [是]。 |
 
 如果您針對應用程式選擇此選項，則不需要在註冊後處理重新啟動您的應用程式。
 
@@ -559,7 +559,7 @@ SUBQUERY (
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.url" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.plain-text" ||
         ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.image" ||
-        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data
+        ANY $attachment.registeredTypeIdentifiers UTI-CONFORMS-TO "com.microsoft.intune.mam.public.data"
     ).@count > 0
 ).@count > 0
 ```
@@ -599,11 +599,11 @@ Intune 系統管理員可以透過 Intune Azure 入口網站和 Intune Graph API
 
 根據預設，Intune App SDK for iOS 會收集下列事件類型的相關遙測：
 
-* **應用程式啟動**：協助 Microsoft Intune 依管理類型了解啟用 MAM 的應用程式使用量 (含 MDM 的 MAM、不含 MDM 註冊的 MAM 等)。
+* **應用程式啟動**：協助 Microsoft Intune 依管理類型 (含 MDM 的 MAM、不含 MDM 註冊的 MAM 等) 了解啟用 MAM 功能的應用程式使用情況。
 
-* **註冊呼叫**：協助 Microsoft Intune 了解從用戶端起始的註冊呼叫成功率和其他效能標準。
+* **註冊呼叫**：協助 Microsoft Intune 了解從用戶端起始的註冊呼叫成功率和其他效能計量。
 
-* **Intune 動作**：為了協助診斷問題並確定 Intune 功能，我們會收集 Intune SDK 動作的相關資訊。
+* **Intune 動作**：為了協助診斷問題並確保 Intune 功能，我們會收集 Intune SDK 動作的相關資訊。
 
 > [!NOTE]
 > 如果您選擇不要將 Intune App SDK 遙測資料從您的行動應用程式傳送至 Microsoft Intune，您必須停用 Intune App SDK 遙測擷取。 在 IntuneMAMSettings 字典中將 `MAMTelemetryDisabled` 屬性設定為 [是]。
@@ -620,17 +620,17 @@ SDK 預設會將原則套用至應用程式整體。 多重身分識別是 MAM �
 
 身分識別就是帳戶的使用者名稱 (例如 user@contoso.com)。 開發人員可以設定應用程式在下列層級的身分識別：
 
-* **處理序身分識別**：設定整個處理序的身分識別，並且主要用於單一身分識別應用程式。 這個身分識別會影響所有工作、檔案和 UI。
+* **處理序身分識別**：設定全處理序的身分識別，並主要用於單一身分識別應用程式。 這個身分識別會影響所有工作、檔案和 UI。
 
-* **UI 身分識別**：判斷在主要執行緒上將哪些原則套用至 UI 工作，例如剪下/複製/貼上、PIN、驗證和資料共用。 UI 身分識別不會影響檔案工作，例如加密和備份。
+* **UI 身分識別**：決定在主要執行緒的 UI 工作 (例如剪下/複製/貼上、PIN、驗證和資料共用) 上套用的原則。 UI 身分識別不會影響檔案工作，例如加密和備份。
 
-* **執行緒身分識別**：影響在目前執行緒上套用哪些原則。 這個身分識別會影響所有工作、檔案和 UI。
+* **執行緒身分識別**：影響在目前執行緒上套用的原則。 這個身分識別會影響所有工作、檔案和 UI。
 
 不論使用者是否受管理，應用程式都必須負責適當地設定身分識別。
 
 在任何時間，每個執行緒都會有 UI 工作和檔案工作的有效身分識別。 這是用來確認應該套用哪些原則 (如果有的話) 的身分識別。 如果身分識別是 [沒有身分識別]，或使用者未受管理，則不會套用任何原則。 下列圖表顯示如何決定有效的身分識別。
 
-  ![Intune 應用程式 SDK iOS：身分識別判斷流程](./media/app-sdk-ios/ios-thread-identities.png)
+  ![Intune App SDK iOS：身分識別判斷流程](./media/app-sdk-ios/ios-thread-identities.png)
 
 ### <a name="thread-queues"></a>執行緒佇列
 

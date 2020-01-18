@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/18/2019
+ms.date: 12/31/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68a44027c14e0a52d72fc032a6ab42413fa8df96
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f82549cfbdd3c987b2f51f4d90b9c18cce8c25be
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508296"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857798"
 ---
 # <a name="sign-in-to-company-portal"></a>登入以公司入口網站  
 
@@ -40,7 +40,7 @@ ms.locfileid: "72508296"
 
 1. 在您的裝置上開啟應用程式，然後按 [登**入**]。  
 
-   [![公司入口網站登入 頁面的範例螢幕擷取畫面。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
+   [![公司入口網站登入頁面的範例螢幕擷取畫面。](/intune-user-help/media/intune-ios-cp-signin-1908.png)](/intune-user-help/media/intune-ios-cp-signin-lightbox-1908.png#lightbox)  
 
 
 2. 輸入您的 [工作或學校帳戶]  ，然後點選 [下一步]  。
@@ -56,6 +56,7 @@ ms.locfileid: "72508296"
    ![執行驗證程序之後，公司入口網站應用程式會登入，並顯示載入列。](/intune-user-help/media/cp_ios_aad_signin_after_1804_004.png)
 
 ## <a name="sign-in-with-certificate-based-authentication"></a>使用憑證式驗證登入
+如果您的組織允許以憑證為基礎的驗證，而且您有可供使用的憑證，您將只會看到此登入選項。  
 
 1. 在您的裝置上開啟「公司入口網站」應用程式。  
 

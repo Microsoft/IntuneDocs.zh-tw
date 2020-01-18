@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 829d8f6b2691f91c14029e4f29e2ef11b070e596
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 83048061cc7b3e1aaeb09ff54dec819720f2571f
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059612"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206817"
 ---
 # <a name="use-and-manage-zebra-devices-with-zebra-mobility-extensions-in-microsoft-intune"></a>在 Microsoft Intune 中透過 Zebra 行動性延伸模組使用及管理 Zebra 裝置
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝置設定。 這些內建功能和設定可用來管理 Zebra Technologies 所製造的 Android 裝置，亦稱為「Zebra 裝置」。
 
@@ -133,7 +133,7 @@ Intune 包含一組豐富的功能，包括管理應用程式，以及設定裝�
 
 在 Intune 中，建立裝置組態設定檔：
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 

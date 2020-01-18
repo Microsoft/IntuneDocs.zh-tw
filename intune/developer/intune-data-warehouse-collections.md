@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 42d07f02e76669c735d09b5d7843a4102dd0f835
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 7ceaf5c62f34cc248813a064de9e8e3710797779
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899235"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547925"
 ---
 # <a name="intune-data-warehouse-collections"></a>Intune 資料倉儲集合
 
@@ -36,9 +36,9 @@ ms.locfileid: "74899235"
 |:--------------------------:|:-------------------------------------------------------------------------------------:|:------------------------------------:|
 | AppKey                     | 應用程式的唯一識別碼。                                                         | 123                                  |
 | ApplicationId              | 應用程式的唯一識別碼 - 類似 AppKey，但此金鑰是自然的。        | b66bc706-ffff-7437-0340-032819502773 |
-| 修訂                   | 管理員在上傳二進位檔期間提及的版本。                   | 2                                    |
+| 修訂版                   | 管理員在上傳二進位檔期間提及的版本。                   | 2                                    |
 | 標題                      | 應用程式的標題。                                                                     | Excel                                |
-| 發佈者                  | 應用程式的發行者。                                                                 | Microsoft                            |
+| 發行者                  | 應用程式的發行者。                                                                 | Microsoft                            |
 | UploadState                | 應用程式的上傳狀態。                                                              | 1                                    |
 | AppTypeKey                 | 下節會說明的 AppType 參考。                            | 1                                    |
 | VppProgramTypeKey          | 後文會說明的 VppProgramType 參考。                                        | 30876                                |
@@ -61,7 +61,7 @@ ms.locfileid: "74899235"
 
 ### <a name="example"></a>範例
 
-| AppTypeID |                名稱               |                     說明                     |
+| AppTypeID |                Name               |                     說明                     |
 |:---------:|:---------------------------------:|:---------------------------------------------------:|
 | 0         | Android 市集應用程式               | Android 市集應用程式。                             |
 | 1         | Android LOB 應用程式                 | Android 企業營運應用程式。                  |
@@ -163,7 +163,7 @@ ms.locfileid: "74899235"
 |:---------:|:---------------------------------------------------------------------------------------------:|:--------:|
 | DateKey   | 資料倉儲中記錄裝置組態設定檔簽入的日期索引鍵。 | 20160703 |
 | Pending   | 處於擱置狀態的唯一裝置數目。                                                    | 123      |
-| 已成功 | 處於成功狀態的唯一裝置數目。                                                    | 12       |
+| 成功 | 處於成功狀態的唯一裝置數目。                                                    | 12       |
 | 錯誤     | 處於錯誤狀態的唯一裝置數目。                                                      | 10       |
 | Failed    | 處於失敗狀態的唯一裝置數目。                                                     | 2        |
 
@@ -174,7 +174,7 @@ ms.locfileid: "74899235"
 |------------|----------------------------------------------------------------------------------------------|-----------|
 | DateKey  | 將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。  | 20160703  |
 | Pending  | 處於擱置狀態的唯一使用者數目。  | 123  |
-| 已成功  | 處於成功狀態的唯一使用者數目。  | 12  |
+| 成功  | 處於成功狀態的唯一使用者數目。  | 12  |
 | 錯誤  | 處於錯誤狀態的唯一使用者數目。  | 10  |
 | Failed  | 處於失敗狀態的唯一使用者數目。  | 2  |
 
@@ -203,14 +203,14 @@ ms.locfileid: "74899235"
 | deviceRegistrationStateName | 註冊狀態                                                                  |
 |    NotRegistered                     |    未註冊                                                                                                                                                                  |
 |    已登錄                        |       已登錄                                                                                                                                                                   |
-|    Revoked                           |       此狀態表示 IT 系統管理員已封鎖用戶端，而且該用戶端可被解除封鎖。 裝置在被抹除或淘汰之後，也可能會處於 Revoked 狀態。        |
+|    已撤銷                           |       此狀態表示 IT 系統管理員已封鎖用戶端，而且該用戶端可被解除封鎖。 裝置在被抹除或淘汰之後，也可能會處於 Revoked 狀態。        |
 |    KeyConflict                       |    索引碼衝突                                                                                                                                                                    |
 |    ApprovalPending                   |    擱置核准                                                                                                                                                                |
 |    CertificateReset                  |    重設憑證                                                                                                                                                               |
 |    NotRegisteredPendingEnrollment    |    未註冊、擱置註冊                                                                                                                                               |
 |    Unknown                           |    未知的狀態                                                                                                                                                                   |
 
-## <a name="devices"></a>裝置
+## <a name="devices"></a>devices
 **Devices** 實體會列出管理下的所有已註冊裝置及其對應的屬性。
 
 |          屬性          |                                                                                       說明                                                                                      |
@@ -263,7 +263,7 @@ ms.locfileid: "74899235"
 
 ### <a name="example"></a>範例
 
-| deviceTypeID |        名稱       |                      說明                      |
+| deviceTypeID |        Name       |                      說明                      |
 |:------------:|:-----------------:|:-----------------------------------------------------:|
 | -1           | 無法使用   | 裝置類型無法使用。                     |
 | 0            | 桌面           | Windows 桌面裝置                              |
@@ -300,7 +300,7 @@ ms.locfileid: "74899235"
 
 ### <a name="example"></a>範例
 
-| enrollmentTypeID |                名稱                |                                        說明                                       |
+| enrollmentTypeID |                Name                |                                        說明                                       |
 |:----------------:|:----------------------------------:|:----------------------------------------------------------------------------------------:|
 | 0                | Unknown                            | 未收集註冊類型                                                      |
 | 1                | UserEnrollment                     | 透過 BYOD 通道的使用者驅動註冊。                                           |
@@ -518,14 +518,14 @@ ms.locfileid: "74899235"
 
 ### <a name="example"></a>範例
 
-| ManagementAgentTypeID |                名稱               |                                  說明                                 |
+| ManagementAgentTypeID |                Name               |                                  說明                                 |
 |:---------------------:|:---------------------------------:|:----------------------------------------------------------------------------:|
 | 1                     | EAS                               | 透過 Exchange Active Sync 管理的裝置                         |
 | 2                     | MDM                               | 使用 MDM 代理程式管理的裝置                                   |
 | 3                     | EasMdm                            | 由 Exchange Active Sync 和 MDM 代理程式管理的裝置        |
 | 4                     | IntuneClient                      | 由 Intune 電腦代理程式管理的裝置                               |
 | 5                     | EasIntuneClient                   | 由 Exchange Active Sync 與 Intune 電腦代理程式管理的裝置 |
-| 8                     | ConfigManagerClient               | 由 System Center Configuration Manager 代理程式管理的裝置     |
+| 8                     | ConfigManagerClient               | 由 Configuration Manager 代理程式管理的裝置     |
 | 10                    | ConfigurationManagerClientMdm     | 由 Configuration Manager 和 MDM 管理的裝置。                    |
 | 11                    | ConfigurationManagerCLientMdmEas  | 裝置是由 Configuration Manager、MDM 及 Exchange Active Sync 管理。               |
 | 16                    | Unknown                           | 未知的管理代理程式類型                                              |
@@ -543,7 +543,7 @@ ms.locfileid: "74899235"
 
 ### <a name="example"></a>範例
 
-| managementStateID |      名稱      |                                                   說明                                                   |
+| managementStateID |      Name      |                                                   說明                                                   |
 |:-----------------:|:--------------:|:---------------------------------------------------------------------------------------------------------------:|
 | 0                 | 受管理        | 受管理，且沒有擱置的遠端動作。                                                                       |
 | 1                 | RetirePending  | 該裝置有擱置的淘汰命令。                                                             |
@@ -612,7 +612,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 |:---------:|:-----------------------------------------------------------------------------------------------:|:---------------------:|
 | DateKey   | 資料倉儲中記錄裝置組態設定檔簽入的日期索引鍵。 | 20160703              |
 | Pending   | 處於擱置狀態的唯一裝置數目。                                                    | 123                   |
-| 已成功 | 處於成功狀態的唯一裝置數目。                                                    | 12                    |
+| 成功 | 處於成功狀態的唯一裝置數目。                                                    | 12                    |
 | PolicyKey | 原則索引鍵，可以與 Policy 聯結以取得 policyName。                                  | Windows 10 基準 |
 | 錯誤     | 處於錯誤狀態的唯一裝置數目。                                                      | 10                    |
 | Failed    | 處於失敗狀態的唯一裝置數目。                                                     | 2                     |
@@ -634,7 +634,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 | PolicyKey     | 原則索引鍵，可以與 Policy 聯結以取得 policyName。                                | Windows 10 基準         |
 | PolicyTypeKey | 原則索引鍵類型，可以與 PolicyType 聯結以取得原則類型名稱。             | Windows 10 合規性原則 |
 | Pending       | 處於擱置狀態的唯一裝置數目。                                                    | 123                         |
-| 已成功     | 處於成功狀態的唯一裝置數目。                                                    | 12                          |
+| 成功     | 處於成功狀態的唯一裝置數目。                                                    | 12                          |
 | 錯誤         | 處於錯誤狀態的唯一裝置數目。                                                      | 10                          |
 | Failed        | 處於失敗狀態的唯一裝置數目。                                                     | 2                           |
 
@@ -654,7 +654,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 |:---------:|:---------------------------------------------------------------------------------------------:|:-------------------:|
 | DateKey   | 資料倉儲中記錄裝置組態設定檔簽入的日期索引鍵。 | 20160703            |
 | Pending   | 處於擱置狀態的唯一裝置數目。                                                    | 123                 |
-| 已成功 | 處於成功狀態的唯一裝置數目。                                                    | 12                  |
+| 成功 | 處於成功狀態的唯一裝置數目。                                                    | 12                  |
 | PolicyKey | 原則索引鍵，可以與 Policy 聯結以取得 policyName。                                | Windows 10 基準 |
 | 錯誤     | 處於錯誤狀態的唯一裝置數目。                                                      | 10                  |
 
@@ -667,7 +667,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 |    termsAndCondidionsId    |    此 termsAndConditions 項目的識別碼    |    276edcb7-7440-4339-b6c5-8b6fc556fee6    |
 |    termsAndConditionsVersion    |    此條款及條件項目的版本    |    1    |
 |    名稱    |    此 termsAndConditions 項目的名稱。        |    Intune 使用規定     |
-|    描述    |    這些條款及條件的描述。     |         |
+|    description    |    這些條款及條件的描述。     |         |
 |    title    |    這些條款及條件的標題。     |    裝置管理公司原則        |
 |    summaryOfTerms    |    提供給使用者的條款摘要。     |    我同意這些條款及條件。    |
 |    termsAndConditionsBodyText    |    這些條款及條件的內文。       |    「裝置加密」  強制使用 6 位數 PIN    |
@@ -678,7 +678,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 ## <a name="userdeviceassociations"></a>userDeviceAssociations
 **UserDeviceAssociation** 實體包含您組織中的使用者裝置關聯。
 
-|        名稱        |                                             說明                                            |     範例     |
+|        Name        |                                             說明                                            |     範例     |
 |:------------------:|:--------------------------------------------------------------------------------------------------:|:---------------:|
 | UserKey            | 資料倉儲中使用者的唯一識別碼。   (Surrogate 索引鍵)。                            | 123             |
 | DeviceKey          | 資料倉儲中裝置的唯一識別碼。                                             | 123             |
@@ -686,7 +686,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 | IsDeleted          | 指出使用者已取消註冊該裝置，且目前已沒有該關聯。 | True/False      |
 | EndedDateTimeUTC   | IsDeleted 變更為 True 的 UTC 日期和時間。                                               | 6/23/2017 0:00  |
 
-## <a name="users"></a>使用者
+## <a name="users"></a>users
 **user** 實體會列出您的企業中具有所指派授權的所有 Azure Active Directory (Azure AD) 使用者。
 
 **user** 實體集合會包含使用者資料。 這些資料列包含資料收集期間的使用者狀態，即使使用者已經被移除。 例如，某個使用者可能在上個月內被新增到 Intune 然後又被移除。 雖然此使用者在報告期間並不存在，但使用者和狀態仍會存在於上個月的資料中。 您可以建立一個報告，其中顯示使用者的歷程記錄在您資料中出現的期間。
@@ -724,7 +724,7 @@ MobileAppInstallState 實體代表行動應用程式在被指派至包含裝置�
 
 ### <a name="example"></a>範例
 
-|             VppProgramID             |         名稱        | 說明                |
+|             VppProgramID             |         Name        | 說明                |
 |:------------------------------------:|:-------------------:|----------------------------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft           | Microsoft 的 VPP 方案。 |
 | 00000000-0000-0000-0000-000000000000 | 尚未提供 | 預設值，無 VPP。   |

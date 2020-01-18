@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7f395a9cedc72a8184cfe3e29d6fcd3117a1473d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6b75712cf05626999c09e8d74fd28252666313c4
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72980354"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857869"
 ---
 # <a name="install-mobile-threat-defense"></a>安裝 Mobile Threat Defense   
 
@@ -39,7 +39,7 @@ ms.locfileid: "72980354"
 
 * 應用程式名稱  
 * 應用程式識別碼：在 Google Play 中識別應用程式的唯一名稱。  
-* 應用程式版本和短的版本號碼：應用程式的特定版本號碼。  
+* 應用程式版本和簡短版本號碼：應用程式的特定版本號碼。  
 * 應用程式套件組合和動態大小：應用程式在您的裝置上使用的空間量。 
 
 

@@ -5,7 +5,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/03/2019
+ms.date: 12/04/2019
 ms.topic: article
 ms.prod: ''
 ms.service: microsoft-intune
@@ -18,19 +18,21 @@ ROBOTS: ''
 ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 822d995443ca23eac7f96f8314f9926804e0be24
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 1e7831712b4c07d015aa0f587ff6ba6183940897
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508512"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855231"
 ---
 # <a name="get-a-recovery-key-for-a-macos-device"></a>取得 macOS 裝置的修復金鑰
 
 使用公司入口網站網站來取得已鎖定 macOS 裝置的修復金鑰。 如果您忘記您的裝置密碼，您可以從其他裝置登入公司入口網站以取得金鑰。  
 
-此選項僅適用于您的組織使用 FileVault 加密的裝置。 其不適用於您個人加密的裝置。
+## <a name="get-recovery-key-from-company-portal-website"></a>從公司入口網站網站取得修復金鑰
+
+此選項適用于您的組織使用 FileVault 加密的裝置。 其不適用於您個人加密的裝置。
 
 1. 在任何裝置上，登入[公司入口網站網站](https://portal.manage.microsoft.com)，然後選取 [>**裝置**]**功能表**按鈕。  
 2. 選取加密的 macOS 裝置。  
@@ -45,6 +47,19 @@ ms.locfileid: "72508512"
     基於安全性理由，金鑰會在五分鐘後消失。 若要再次查看金鑰，請選取 [**取得修復金鑰**]。
 
 如果找不到金鑰，但您的裝置已正確加密，請洽詢您組織的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。  
+
+## <a name="get-recovery-key-from-company-portal-app-for-ios"></a>從適用于 iOS 的公司入口網站應用程式取得修復金鑰
+
+您可以使用適用于 iOS 的公司入口網站應用程式來抓取您的個人修復金鑰（FileVault 金鑰）。 具有個人修復金鑰的裝置必須向 Intune 註冊，並透過 Intune 以 FileVault 加密。 您個人加密的裝置無法使用此選項。 
+
+使用公司入口網站應用程式，您可以開啟 Safari web view 並取出您的個人修復金鑰。 
+
+1. 開啟 [公司入口網站]。
+2. 按一下 [**取得修復金鑰**]。
+
+    ![IOS 公司入口網站應用程式的螢幕擷取畫面，顯示修復金鑰](./media/get-recovery-key-cpweb-02.png)  
+
+公司入口網站網站會在 Safari web view 中開啟，並顯示金鑰。 
 
 ## <a name="it-pro-support"></a>IT 專業人員支援
 

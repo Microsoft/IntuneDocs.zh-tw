@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/03/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36407bda1f74d0c4601f78cedc2af5426e944fee
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503428"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654068"
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -50,7 +50,7 @@ ms.locfileid: "72503428"
 
 ### <a name="example"></a>範例
 
-| deviceTypeID  | 名稱 | 說明 |
+| deviceTypeID  | Name | 說明 |
 |---------|------------|--------|
 | 0 |桌面 |Windows Desktop 裝置 |
 | 1 |WindowsRT |WindowsRT 裝置 |
@@ -184,7 +184,7 @@ ms.locfileid: "72503428"
 
 ### <a name="example"></a>範例
 
-| managementStateID  | 名稱 | 說明 |
+| managementStateID  | Name | 說明 |
 |---------|------------|--------|
 | 0 |受管理 | 使用無擱置遠端動作進行管理。 |
 | 1 |RetirePending | 該裝置有擱置的淘汰命令。 |
@@ -211,17 +211,17 @@ ms.locfileid: "72503428"
 
 ### <a name="example"></a>範例
 
-| ManagementAgentTypeID  | 名稱 | 說明 |
+| ManagementAgentTypeID  | Name | 說明 |
 |---------|------------|--------|
 | 1 |EAS | 透過 Exchange Active Sync 管理的裝置 |
 | 2 |MDM | 使用 MDM 代理程式管理的裝置 |
 | 3 |EasMdm | 由 Exchange Active Sync 和 MDM 代理程式管理的裝置 |
 | 4 |IntuneClient | Intune 電腦代理程式管理的裝置 |
 | 5 |EasIntuneClient | 由 Exchange Active Sync 與 Intune 電腦代理程式管理的裝置 |
-| 8 |ConfigManagerClient | 由 System Center Configuration Manager 代理程式管理的裝置 |
+| 8 |ConfigManagerClient | 由 Configuration Manager 代理程式管理的裝置 |
 | 16 |Unknown | 未知的管理代理程式類型 |
 
-## <a name="devices"></a>裝置
+## <a name="devices"></a>devices
 
 **devices** 實體會列出管理下的所有已註冊裝置及其對應的屬性。
 

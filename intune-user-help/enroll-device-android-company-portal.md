@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5baf0e9079cc148101a68e5cd2d3a4ed500f567f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: e0a2297509d6077d6508adaab96ae6eb3cf9b28f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414790"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856729"
 ---
 # <a name="enroll-your-device-with-company-portal"></a>使用公司入口網站來註冊您的裝置  
 註冊您個人或公司擁有的 Android 裝置，以安全地存取公司電子郵件、應用程式和資料。 公司入口網站支援執行 Android 4.4 及更新版本的 Android 裝置 (包括 Samsung Knox)。  
@@ -91,7 +91,7 @@ ms.locfileid: "73414790"
 
 ## <a name="next-steps"></a>後續步驟  
 
-嘗試安裝學校或公司應用程式之前，請移至 [**設定**] [ > ] [**安全性**]，然後開啟 [**未知來源**]。 如果您未在嘗試安裝應用程式之前開啟此選項，則會看到下列訊息：「已封鎖安裝。 基於安全性理由，您的裝置設定成封鎖安裝從未知來源取得的應用程式。」 您可以在訊息上按 [**設定**]，直接移至 [**未知來源**]。  
+嘗試安裝學校或公司應用程式之前，請移至 [**設定**] [ > ] [**安全性**]，然後開啟 [**未知來源**]。 如果您不開啟此選項，您在嘗試安裝應用程式時將會看到下列訊息：「已封鎖安裝。 基於安全性理由，您的裝置設定成封鎖安裝從未知來源取得的應用程式。」 您可以在訊息上按 [**設定**]，直接移至 [**未知來源**]。  
 
 > [!Note]
 > 如果您的組織使用電信費用管理軟體，您需要完成幾個額外步驟，裝置才會完全註冊。 如需詳細資訊，請參閱[這裡](enroll-your-device-with-telecom-expense-management-android.md)。

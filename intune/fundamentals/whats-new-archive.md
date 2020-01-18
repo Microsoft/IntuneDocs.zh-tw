@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6a6b5585501851bb52db70ca222f8cfff7ad0597
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 4a9454d11fd1209e715cbcb1e9d2ce7aae4a003c
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73635474"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75886062"
 ---
 # <a name="whats-new-in-the-microsoft-intune---previous-months"></a>Microsoft Intune 的新功能 - 前幾個月
 
@@ -84,18 +84,18 @@ iOS **協力廠商鍵盤**設定的 Intune 應用程式防護原則 (APP) 支援
 若要查看這些設定，請前往 [macOS 裝置功能設定](../configuration/macos-device-features-settings.md)。
 
 #### <a name="configure-wifi-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode--3041940----"></a>在以多應用程式 kiosk 模式執行的 Android Enterprise 裝置擁有者專用裝置上設定 WiFi<!--3041940  -->
-當以多應用程式 kiosk 模式的專用裝置執行時，可啟用 Android Enterprise 裝置擁有者的設定。 在此更新中，使用者可以設定並連線到 WiFi 網路 ([Intune]   > [裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  ，平台 > [僅限裝置擁有者]、[裝置限制]  ，設定檔類型 > [專用裝置]   > [Kiosk 模式]  ：[多應用程式]   > [Wi-Fi 設定]  )。
+當以多應用程式 kiosk 模式的專用裝置執行時，可啟用 Android Enterprise 裝置擁有者的設定。 在此更新中，使用者可以設定並連線到 WiFi 網路 ([Intune]   > [裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  平台 > [僅限裝置擁有者]、[裝置限制]  設定檔類型 > [專用裝置]   > [Kiosk 模式：   多應用程式] > [WiFi 設定]  )。
 
 若要查看您可以設定的所有設定，請前往[允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。
 
-適用於：執行多應用程式 Kiosk 模式的 Android Enterprise 專用裝置
+適用於：以多應用程式 kiosk 模式執行的 Android Enterprise 專用裝置
 
 #### <a name="configure-bluetooth-and-pairing-on-android-enterprise-device-owner-dedicated-devices-running-in-multi-app-kiosk-mode---3041941----"></a>在以多應用程式 kiosk 模式執行的 Android Enterprise 裝置擁有者專用裝置上設定藍牙和配對<!-- 3041941  -->
-當以多應用程式 kiosk 模式的專用裝置執行時，可啟用 Android Enterprise 裝置擁有者的設定。 在此更新中，終端使用者可以啟用藍牙，並透過藍牙配對裝置 ([Intune]   > [裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  ，平台 > [僅限裝置擁有者]、[裝置限制]  ，設定檔類型 > [專用裝置]   > [Kiosk 模式]  ：[多應用程式]   > [藍牙設定]  )。
+當以多應用程式 kiosk 模式的專用裝置執行時，可啟用 Android Enterprise 裝置擁有者的設定。 在此更新中，終端使用者可以啟用藍牙，並透過藍牙配對裝置 ([Intune]   > [裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  平台 > [僅限裝置擁有者]、[裝置限制]  設定檔類型 > [專用裝置]   > [Kiosk 模式  ：  多應用程式] > [藍牙設定]  )。
 
 若要查看您可以設定的所有設定，請前往[允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。
 
-適用於：執行多應用程式 Kiosk 模式的 Android Enterprise 專用裝置
+適用於：以多應用程式 kiosk 模式執行的 Android Enterprise 專用裝置
 
 #### <a name="create-and-use-oemconfig-device-configuration-profiles-in-intune---3305883----"></a>在 Intune 中建立和使用 OEMConfig 裝置組態設定檔<!-- 3305883  -->
 在此更新中，Intune 支援透過 OEMConfig 設定 Android Enterprise 裝置。 具體來說，您可以建立裝置組態設定檔，並使用 OEMConfig 將設定套用到 Android Enterprise 裝置 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  平台)。
@@ -116,7 +116,7 @@ Windows 更新通道設定中新增了兩項「使用者體驗設定」  ，可�
 
 此更新包含新的密碼設定、允許完全受控的裝置對 Google Play 商店中應用程式進行完整存取等。 若要查看目前的設定清單，請前往[允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。 
 
-適用於：Android Enterprise 完全受控裝置
+適用於：完全受控的 Android Enterprise 裝置
 
 #### <a name="check-for-a-tpm-chipset-in-a-windows-10-device-compliance-policy---3617671---"></a>在 Windows 10 裝置合規性政策中檢查是否有 TPM 晶片組<!-- 3617671 -->
 
@@ -127,7 +127,7 @@ Windows 更新通道設定中新增了兩項「使用者體驗設定」  ，可�
 
 若要查看這些功能，請前往 [Microsoft Edge 瀏覽器裝置限制設定](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)。
 
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="expanded-support-for-android-enterprise-fully-managed-devices--preview-----3903241-3903244-3903246-----"></a>擴充完全受控的 Android Enterprise 裝置支援 (預覽)<!--   3903241, 3903244, 3903246   -->
 仍在公開預覽階段，我們已擴充完全受控的 Android Enterprise 裝置支援 (2019 年 1 月首次宣告)，包括：
@@ -195,7 +195,7 @@ Windows 更新通道設定中新增了兩項「使用者體驗設定」  ，可�
 安全性基準監視中已新增[每個類別的檢視](../protect/security-baselines-monitor.md#per-category-view) (安全性基準仍在預覽階段)。 每個類別的檢視會顯示基準中每個類別，以及落入該類別中每個狀態群組的裝置百分比。 您現在可以查看不符合每個類別、設定錯誤或不適用的裝置數目。
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="role-based-access-control"></a>以角色為基礎的存取控制
+### <a name="role-based-access-control"></a>角色型存取控制
 
 #### <a name="scope-tags-for-apple-vpp-tokens--2371886----"></a>Apple VPP 權杖的範圍標籤<!--2371886  -->
 您現在可以將範圍標籤新增至 Apple VPP 權杖。 只有獲派相同範圍標籤的使用者，才能存取具有該標籤的 Apple VPP 權杖。 使用該權杖購買的 VPP 應用程式和電子書會繼承其範圍標籤。 如需範圍標籤的詳細資訊，請參閱[使用 RBAC 和範圍標籤](scope-tags.md)。
@@ -235,7 +235,7 @@ Microsoft Teams 應用程式可加入作為 Office 專業增強版應用程式�
 
 若要查看所有 kiosk 設定的清單和描述，請參閱[在 Intune 中讓 Windows 10 及更新版本裝置設定以 kiosk 形式執行](../configuration/kiosk-settings-windows.md)。
 
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="operational-logs-also-show-details-on-non-compliant-devices---4063755----"></a>作業記錄也會顯示不符合規範裝置的相關詳細資料<!-- 4063755  -->
 將 Intune 記錄路由傳送到 Azure 監視器功能時，您也可以路由傳送作業記錄。 在此更新中，作業記錄也會提供不符合規範裝置的相關資訊。
@@ -285,7 +285,7 @@ Intune 主控台不再支援檢視和管理使用 Intune 連接器連線到 Exch
 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="role-based-access-control"></a>以角色為基礎的存取控制
+### <a name="role-based-access-control"></a>角色型存取控制
 
 #### <a name="granting-intune-read-only-access-to-some-azure-active-directory-roles---3637917----"></a>Intune 唯讀存取權將授與某些 Azure Active Directory 角色<!-- 3637917  -->
 Intune 唯讀存取權已授與下列 Azure Active Directory 角色。 透過 Azure AD 角色授與的權限會取代透過 Intune 角色型存取控制 (RBAC) 授與的權限。
@@ -354,7 +354,7 @@ Intune macOS 公司入口網站現在支援 macOS 的深色模式。 當您在 m
 
 如需使用 PowerShell 的詳細資料，請參閱 [Intune 中的 PowerShell 指令碼](../apps/intune-management-extension.md)。
 
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="macos-users-are-prompted-to-update-their-password---1873216---"></a>macOS 使用者會收到更新其密碼的提示<!-- 1873216 -->
 Intune 將在 macOS 裝置上強制執行 **ChangeAtNextAuth** 設定。 此設定會影響具有合規性密碼原則或裝置限制密碼設定檔的終端使用者和裝置。 終端使用者會收到一次更新其密碼的提示。 每當使用者第一次執行需要驗證的工作時 (例如登入裝置)就會發生此提示。 當使用者執行任何需要系統管理權限的工作時 (例如要求 keychain 存取權)，也會收到更新其密碼的提示。
@@ -371,7 +371,7 @@ macOS
 - macOS
 
 #### <a name="intune-conditional-access-ui-update---2432313-----"></a>Intune 條件式存取 UI 更新<!-- 2432313   -->
-我們已改善 Intune 主控台中的條件式存取 UI。 這些地方包括：
+我們已改善 Intune 主控台中的條件式存取 UI。 它們包括：
 - 以 Azure Active Directory 中的刀鋒視窗取代 Intune [條件式存取]  刀鋒視窗。 這確保您可以從 Intune 主控台存取[條件式存取](../protect/conditional-access.md) (仍是 Azure AD 技術) 的完整設定和組態。 
 - 我們已將 [內部部署存取]  刀鋒視窗重新命名為 [Exchange 存取]  ，並將 [Exchange 服務連接器]  設定重新放置到此重新命名的刀鋒視窗。  這項變更會整合您[設定和監視 Exchange Online 和內部部署相關詳細資料](../protect/exchange-connector-install.md)的位置。  
 
@@ -394,7 +394,7 @@ macOS
 - [Microsoft Edge 瀏覽器裝置限制](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
 - [我的最愛和搜尋裝置限制](../configuration/device-restrictions-windows-10.md##favorites-and-search)
 
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="new-device-restriction-settings-for-ios-and-macos-devices---3448774-----"></a>iOS 和 macOS 裝置的新裝置限制設定<!-- 3448774   -->
 您可以在執行 iOS 和 macOS 的裝置上限制一些設定和功能 ([裝置設定]   > [設定檔]   > [新增設定檔]   > [iOS]  或 [macOS]  平台 > [裝置限制]  設定檔類型)。 此更新會新增您可以控制的更多功能和設定，包括在 macOS 裝置上設定螢幕使用時間，變更 eSIM 設定和行動數據方案等。 此外，您也可在 macOS 裝置上對使用者延遲顯示軟體更新，以及封鎖內容快取。
@@ -437,7 +437,7 @@ Android 企業
 
 其行為完全一樣。 明確說來：
 
-- iOS 11.4.1 及較舊版本：[封鎖]  可防止終端使用者在裝置設定中設定自己的限制。 
+- iOS 11.4.1 和更早版本：[封鎖]  可防止終端使用者在裝置設定中設定自己的限制。 
 - iOS 12.0 和更新版本：[封鎖]  可防止終端使用者在裝置設定中設定自己的 [螢幕使用時間]  ，包括內容與隱私權限制。 升級為 iOS 12.0 的裝置不會再於裝置設定中看到 [限制] 索引標籤。 這些設定位於 [螢幕使用時間]  中。 
 
 如需這些設定的清單，請參閱 [iOS 裝置限制](../configuration/device-restrictions-ios.md#general)。
@@ -540,7 +540,7 @@ Intune 中的系統管理範本 ([裝置設定]   > [系統管理範本]  ) 目�
 
 若要深入了解這項功能，請前往[設定群組原則設定的 Windows 10 範本](../configuration/administrative-templates-windows.md)。
 
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="use-smime-to-encrypt-and-sign-multiple-devices-for-a-user---1333642---"></a>使用 S/MIME 加密和簽署使用者的多部裝置<!-- 1333642 -->
 此更新包括使用新匯入之憑證設定檔的 S/MIME 電子郵件加密 ([裝置設定]   > [設定檔]   > [建立設定檔]  > 選取平台 > [PKCS imported certificate] \(PKCS 匯入的憑證\)  設定檔類型)。 在 Intune 中，您可以匯入 PFX 格式的憑證。 Intune 接著可以將這些相同的憑證提供給單一使用者所註冊的多個裝置。 這也包括：
@@ -550,7 +550,7 @@ Intune 中的系統管理範本 ([裝置設定]   > [系統管理範本]  ) 目�
 - 在其他平台上，您可能需要手動設定郵件應用程式來啟用 S/MIME。  
 - 支援 S/MIME 加密的電子郵件應用程式可能會以 MDM 無法支援的方式來處理 S/MIME 電子郵件加密的憑證擷取 (例如從其發行者的憑證存放區中讀取)。
 如需這項功能的詳細資訊，請參閱 [S/MIME 電子郵件簽署和加密概觀](../protect/certificates-s-mime-encryption-sign.md)。
-其支援：Windows、Windows Phone 10、macOS、iOS、Android
+支援於：Windows、Windows Phone 10、macOS、iOS、Android
 
 #### <a name="new-options-to-automatically-connect-and-persist-rules-when-using-dns-settings-on-windows-10-and-later-devices---1333665-2999078---"></a>在 Windows 10 及更新版裝置上使用 DNS 設定時自動連線且持續規則的新選項<!-- 1333665, 2999078 -->
 在 Windows 10 及更新版本裝置上，您可以建立 VPN 組態設定檔，其中包含可用以解析網域 (例如 contoso.com) 的 DNS 伺服器清單。 此更新包含可用於名稱解析的新設定 ([裝置設定]   > [設定檔]   > [建立設定檔]  > 針對平台選擇 [Windows 10 及更新版本]  > 針對設定檔類型選擇 [VPN]  > [DNS 設定]   >[新增]  )： 
@@ -565,7 +565,7 @@ Intune 中的系統管理範本 ([裝置設定]   > [系統管理範本]  ) 目�
 #### <a name="manage-windows-holographic-for-business-devices-used-by-multiple-users---1907917-1063203---"></a>管理多位使用者所使用的 Windows Holographic for Business 裝置<!-- 1907917, 1063203 -->
 您目前可以使用自訂的 OMA-URI 設定，在 Windows 10 和 Windows Holographic for Business 裝置上設定共用的電腦設定。 在此更新中，會新增設定檔來設定共用的裝置設定 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Windows 10 及更新版本]   > [共用的多重使用者裝置]  )。
 若要深入了解這項功能，請前往[管理共用裝置的 Intune 設定](../configuration/shared-user-device-settings.md)。
-適用對象：Windows 10 及更新版本、Windows Holographic for Business
+適用於：Windows 10 及更新版本、Windows Holographic for Business
 
 #### <a name="new-windows-10-update-settings--2626030--2512994----"></a>新的 Windows 10 更新設定<!--2626030  2512994  -->
 針對 [Windows 10 更新通道](../protect/windows-update-for-business-configure.md)，您可以設定：
@@ -607,7 +607,7 @@ Intune 中的系統管理範本 ([裝置設定]   > [系統管理範本]  ) 目�
 #### <a name="new-setting-to-end-processes-in-task-manager-on-windows-10-devices---3285177---"></a>Windows 10 裝置上工作管理員中用來結束處理序的新設定<!-- 3285177 --> 
 此更新包含使用 Windows 10 裝置上的工作管理員來結束處理序的新設定。 您可以使用裝置組態設定檔 ([裝置設定]   > [設定檔]   > [建立設定檔]  > 在 [平台]  中選擇 [Windows 10]  > 在 [設定檔類型]  中選擇 [裝置限制]   > [一般]  設定)，來選擇允許或阻止此設定。
 若要查看這些設定，請前往 [Windows 10 裝置限制設定](../configuration/device-restrictions-windows-10.md)。
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="use-microsoft-recommended-settings-with-security-baselines-public-preview---2055484-----"></a>使用針對安全性基準的 Microsoft 建議設定 (公開預覽)<!-- 2055484   -->
 
@@ -617,7 +617,7 @@ Intune 會和其他著重安全性的服務整合，包含 Windows Defender ATP 
 
 若要深入了解安全性基準，請參閱[在 Intune 中建立 Windows 10 安全性基準](../protect/security-baselines-monitor.md)。
 
-此功能適用於：Windows 10 和更新版本
+本功能適用於：Windows 10 及更新版本
 
 #### <a name="non-administrators-can-enable-bitlocker-on-windows-10-devices-joined-to-azure-ad---2147379-----"></a>非系統管理員可在已加入 Azure AD 的 Windows 10 裝置上啟用 BitLocker<!-- 2147379   -->
 當您在 Windows 10 裝置上啟用 BitLocker 設定 ([裝置設定]   > [設定檔]   > [建立設定檔]   > 針對平台選擇 [Windows 10 及更新版本]  > 針對設定檔類型選擇 [Endpoint Protection]  > [Windows 加密]  ) 時，您會新增 BitLocker 設定。
@@ -627,13 +627,13 @@ Intune 會和其他著重安全性的服務整合，包含 Windows Defender ATP 
 若要查看設定，請前往[適用於 Windows 10 的 Endpoint Protection 設定](../protect/endpoint-protection-windows-10.md#windows-encryption)。
 
 #### <a name="check-for-configuration-manager-compliance---2192052--eepublished----"></a>檢查 Configuration Manager 合規性<!-- 2192052  eepublished  -->
-此更新會包括新的 System Center Configuration Manager 合規性設定 ([裝置相容性]   > [原則]   > [建立原則]   > [Windows 10 及更新版本]   > [Configuration Manager 合規性]  )。 Configuration Manager 會將訊號傳送至 Intune 合規性。 您可以使用此設定來要求所有傳回的 Configuration Manager 訊號都需是「符合規範」。
+此更新會包括新的 Configuration Manager 合規性設定 ([裝置合規性]   > [原則]   > [建立原則]   > [Windows 10 及更新版本]   > [Configuration Manager 合規性]  )。 Configuration Manager 會將訊號傳送至 Intune 合規性。 您可以使用此設定來要求所有傳回的 Configuration Manager 訊號都需是「符合規範」。
 
 例如，您需要在裝置上安裝所有軟體更新。 在 Configuration Manager 中，此要求將會對應「已安裝」狀態。 如果裝置上的任何程式處於未知狀態，則裝置在 Intune 中就不會符合規範。
 
 [Configuration Manager 合規性](../protect/compliance-policy-create-windows.md#configuration-manager-compliance)描述了這項設定。
 
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="customize-wallpaper-on-supervised-ios-devices-using-a-device-configuration-profile---2809324-----"></a>使用裝置組態設定檔自訂受監督 iOS 裝置上的背景圖案<!-- 2809324   -->
 當您建立 iOS 裝置的裝置組態設定檔時，您可以自訂某些功能 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [iOS]  平台 > [裝置功能]  設定檔類型)。 此更新包括新的**桌布**設定，可讓系統管理員在主畫面或鎖定畫面上使用 .png、.jpg 或 .jpeg 影像。 這些桌布設定只會套用至受監督的裝置。 
@@ -695,7 +695,7 @@ Intune 具有內建稽核記錄，可在進行變更時追蹤事件。 此更新
 [將記錄資料傳送至 Intune 中的儲存體、事件中樞或記錄分析](../review-logs-using-azure-monitor.md)提供這項功能的詳細資訊。
 
 #### <a name="skip-more-setup-assistant-screens-on-an-ios-dep-device---2687509----"></a>在 iOS DEP 裝置上略過更多設定助理畫面<!-- 2687509  -->
-除了您目前可以跳過的畫面，還能設定 iOS DEP 裝置，在使用者註冊裝置時跳過設定助理中的下列畫面：顯示色調、隱私權、Android 移轉、主畫面按鈕、iMessage & FaceTime、上線、Watch 移轉、外觀、螢幕使用時間、軟體更新、SIM 卡設定。
+除了您目前可以略過的畫面之外，當使用者註冊裝置時，您還可以將 iOS DEP 裝置設定為略過 [設定助理] 中的下列畫面：顯示色調、隱私權、Android 移轉、首頁按鈕、iMessage 和 FaceTime、上架、Watch 移轉、外觀、螢幕使用時間、軟體更新、SIM 卡設定。
 若要選擇要略過的畫面，請前往 [裝置註冊]   > [Apple 註冊]   > [註冊方案權杖]  > 選擇權杖 > [設定檔]  > 選擇設定檔 > [屬性]   > [設定助理自訂]  > 針對任何您想要略過的畫面選擇 [隱藏]  > [確定]  。
 如果您建立新的設定檔或編輯設定檔，則所選略過畫面需要與 Apple MDM 伺服器同步處理。 使用者可以發出裝置的手動同步處理，這樣在取得設定檔變更時才不會有延遲。
 
@@ -703,7 +703,7 @@ Intune 具有內建稽核記錄，可在進行變更時追蹤事件。 此更新
 針對未註冊之無註冊應用程式防護原則 (APP-WE) 部署案例中的 Android 裝置，您現在可以使用受控的 Google Play，將市集應用程式和 LOB 應用程式部署給使用者。 具體來說，您可以為終端使用者提供應用程式目錄和安裝體驗，藉由允許從不明來源進行安裝，就不再需要終端使用者放寬其裝置的安全性狀態。 此外，此部署案例將提供已改善的使用者體驗。
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
-### <a name="role-based-access-control"></a>以角色為基礎的存取控制
+### <a name="role-based-access-control"></a>角色型存取控制
 
 #### <a name="scope-tags-for-apps---1081941---"></a>應用程式的範圍標籤<!-- 1081941 -->
 您可以建立範圍標籤，限制對角色和應用程式的存取。 您可以將範圍標籤新增至應用程式，僅限具有角色並同時獲派該範圍標籤的人員才能存取應用程式。 目前無法將範圍標籤指派給從受控 Google Play 加入至 Intune 的應用程式，或是使用 Apple 大量採購方案 (VPP) 購買的應用程式 (已規劃於未來提供支援)。 如需詳細資訊，請參閱[使用範圍標籤篩選原則](scope-tags.md)。
@@ -718,7 +718,7 @@ Intune 具有內建稽核記錄，可在進行變更時追蹤事件。 此更新
 
 #### <a name="updates-for-application-transport-security---748318---"></a>更新 Application Transport Security<!-- 748318 -->
 
-Microsoft Intune 支援傳輸層安全性 (TLS) 1.2+ 來提供業界領先的加密功能，以確保 Intune 預設更安全，並可搭配 Microsoft Office 365 等其他 Microsoft 服務使用。 為了符合此需求，iOS 和 macOS 公司入口網站將會強制執行 Apple 的更新 Application Transport Security (ATS) 需求，這些需求也要求使用 TLS 1.2+。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 此變更會影響使用 iOS 和 macOS 公司入口網站應用程式的 Intune 客戶。 如需詳細資訊，請參閱 [Intune 支援小組部落格](https://aka.ms/compportalats) \(英文\)。
+Microsoft Intune 支援傳輸層安全性 (TLS) 1.2+ 來提供業界領先的加密功能，以確保 Intune 預設更安全，並可搭配 Microsoft Office 365 等其他 Microsoft 服務使用。 為了符合此需求，iOS 和 macOS 公司入口網站將會強制執行 Apple 的更新 Application Transport Security (ATS) 需求，這些需求也要求使用 TLS 1.2+。 ATS 可用來對透過 HTTPS 通訊的所有應用程式強制執行更嚴格的安全性。 此變更會影響使用 iOS 和 macOS 公司入口網站應用程式的 Intune 客戶。 如需詳細資訊，請參閱 [Intune 支援小組部落格](https://aka.ms/compportalats) \(英文\)。
 
 #### <a name="the-intune-app-sdk-will-support-256-bit-encryption-keys---1832174---"></a>Intune App SDK 將支援 256 位元的加密金鑰<!-- 1832174 -->
 適用於 Android 的 Intune App SDK 現在會在應用程式保護原則啟用加密時，使用 256 位元的加密金鑰。 SDK 將繼續提供 128 位元金鑰的支援，以取得與使用較舊 SDK 版本之內容和應用程式的相容性。
@@ -762,7 +762,7 @@ Windows 10 RS3 和更新版本的用戶端，將會使用 Windows 10 用戶端�
 - PowerApps (Android、iOS)
 - Flow (Android、iOS)
 
-使用應用程式保護原則來保護公司資料，並以和其他 Intune 原則受管理的應用程式相同的方式控制這些應用程式的資料傳輸。 注意：如果 Flow 在主控台中尚不可見，您會在建立或編輯應用程式保護原則時新增 Flow。 若要這麼做，請使用 [+ 更多應用程式]  選項，然後在輸入欄位中指定 Flow 的 [應用程式識別碼]  。 針對 Android，請使用 *com.microsoft.flow*，而針對 iOS 則請使用 *com.microsoft.procsimo*。
+使用應用程式保護原則來保護公司資料，並以和其他 Intune 原則受管理的應用程式相同的方式控制這些應用程式的資料傳輸。 附註：如果 Flow 在主控台中尚不可見，您可在建立或編輯應用程式保護原則時新增 Flow。 若要這麼做，請使用 [+ 更多應用程式]  選項，然後在輸入欄位中指定 Flow 的 [應用程式識別碼]  。 針對 Android，請使用 *com.microsoft.flow*，而針對 iOS 則請使用 *com.microsoft.procsimo*。
 
 
 ### <a name="device-configuration"></a>裝置設定
@@ -790,16 +790,16 @@ Citrix 已發行 Citrix Gateway 更新以允許 Intune 中 iOS 的 Citrix SSO �
 此更新包含適用於 iOS 和 macOS 裝置，與 iOS 12 所發行的新設定：
 
 **iOS 設定**： 
-- 一般：防止移除應用程式 (僅受監督)
-- 一般：封鎖 USB 受限模式 (僅監督)
-- 一般：強制自動設定日期和時間 (僅受監督)
-- 密碼：防止自動填滿密碼 (僅受監督)
-- 密碼：防止近接要求密碼 (僅受監督)
-- 密碼：防止共用密碼 (僅受監督)
+- 一般：封鎖應用程式移除 (僅限受監督)
+- 一般：封鎖 USB 限制模式 (僅限受監督)
+- 一般：強制自動日期和時間 (僅限受監督)
+- 密碼：封鎖密碼自動填入 (僅限受監督)
+- 密碼：封鎖密碼鄰近性要求 (僅限受監督)
+- 密碼：封鎖密碼共用 (僅限受監督)
 
 **macOS 設定**： 
 - 密碼：封鎖密碼自動填入
-- 密碼：防止近接要求密碼
+- 密碼：封鎖密碼鄰近性要求
 - 密碼：封鎖密碼共用
 
 若要深入了解這些設定，請參閱 [iOS](../configuration/device-restrictions-ios.md) 和 [macOS](../configuration/device-restrictions-macos.md) 裝置限制設定。
@@ -953,7 +953,7 @@ Android 及 iOS 裝置上適用於 Web 內容的應用程式原則設定會進�
 - 目前，您可以在相同的裝置上建立多個 Kiosk 設定檔。 透過此更新，Intune 針對每部裝置都只會支援單一 Kiosk 設定檔。 如果您仍需要在單一裝置上有多個 Kiosk 設定檔，則可以使用自訂 URI。
 - 在 [多應用程式 kiosk]  設定檔中，您可以針對應用程式格線中的 [[開始] 功能表配置]  選取應用程式磚大小和順序。 如果您想要取得更多自訂項目，您可以繼續上傳 XML 檔案。
 - [Kiosk 瀏覽器] 設定會移至 [Kiosk]  設定中。 目前，[Kiosk 網頁瀏覽器]  設定在 Azure 入口網站中具有自己的類別。
-適用對象：Windows 10 和更新版本
+適用於：Windows 10 及更新版本
 
 #### <a name="pin-prompt-when-you-change-fingerprints-or-face-id-on-an-ios-device----2637704----"></a>當您變更 iOS 裝置上的指紋或 Face ID 時會收到輸入 PIN 的提示 <!-- 2637704  -->
 現在，當使用者在其 iOS 裝置上進行生物特徵辨識變更之後，會收到輸入 PIN 的提示。 這包括變更已註冊的指紋或 Face ID。 提示時間取決於 [重新檢查存取需求前的剩餘時間 (分鐘)]  逾時的設定方式。  若未設定任何 PIN，則系統會提示使用者設定一個。 
@@ -980,9 +980,9 @@ Intune 中的 PowerShell 指令碼可以鎖定至 AAD 裝置安全性群組。
 #### <a name="new-required-password-type-default-setting-for-android-android-enterprise---2649963---"></a>適用於 Android、Android Enterprise 的新「必要密碼類型」預設設定<!-- 2649963 -->
 當您建立新的合規性原則 (針對 [平台] > [系統安全性]，選擇 [Intune]   > [裝置合規性]   > [原則]   > [建立原則]   > [Android]  或 [Android Enterprise]  ) 時，[必要密碼類型]  的預設值會變更：
 
-從裝置預設變更為至少包含數字
+從：裝置預設為：至少包含數字
 
-套用至：Android、Android Enterprise
+適用於：Android、Android Enterprise
 
 若要查看這些設定，請瀏覽 [Android](../protect/compliance-policy-create-android.md) 和 [Android Enterprise](../protect/compliance-policy-create-android-for-work.md)。
 
@@ -1027,7 +1027,7 @@ Azure Active Directory 具備您可以改使用的條款功能，而無須使用
 - 您現在可以為非工作時間發生的重新啟動設定重新啟動警告提示，可支援 BYOD 案例。
 
 #### <a name="group-windows-autopilot-enrolled-devices-by-correlator-id---2075110---"></a>透過交互識別碼群組 Windows Autopilot 註冊裝置<!-- 2075110 -->
-Intune 現在支援在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來為 Windows 裝置分組。 交互識別碼是 Autopilot 設定檔的參數。 Intune 會自動將 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) 設為相等的 "OfflineAutopilotprofile-<correlator ID>"。 這會允許透過離線 Autopilot 註冊的 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。 如需詳細資訊，請參閱[現有裝置的 Windows Autopilot](../enrollment/enrollment-autopilot.md#windows-autopilot-for-existing-devices)。
+Intune 現在支援在透過 Configuration Manager 使用[適用於現有裝置的 Autopilot](https://techcommunity.microsoft.com/t5/Windows-IT-Pro-Blog/New-Windows-Autopilot-capabilities-and-expanded-partner-support/ba-p/260430)註冊時，使用交互識別碼來為 Windows 裝置分組。 交互識別碼是 Autopilot 設定檔的參數。 Intune 會自動將 [Azure AD 裝置屬性 enrollmentProfileName](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-dynamic-membership#rules-for-devices) 設為相等的 "OfflineAutopilotprofile-<correlator ID>"。 這會允許透過離線 Autopilot 註冊的 enrollmentprofileName 屬性，根據交互識別碼建立任意 Azure AD 動態群組。 如需詳細資訊，請參閱[適用於現有裝置的 Windows Autopilot](../enrollment/enrollment-autopilot.md#windows-autopilot-for-existing-devices)。
 
 #### <a name="intune-app-protection-policies---2984657---"></a>Intune 應用程式防護原則<!-- 2984657 -->
 Intune 應用程式保護原則可讓您為 Intune 保護的應用程式 (如 Microsoft Outlook 和 Microsoft Word) 設定各種資料保護設定。 我們已變更這些設定的外觀與風格 ([iOS](../apps/app-protection-policy-settings-ios.md) 和 [Android](../apps/app-protection-policy-settings-android.md))，以便輕鬆找到個別設定。 原則設定有三個類別：
@@ -1226,13 +1226,13 @@ Intune 現在支援將 macOS 裝置註冊到 Apple 裝置註冊計劃 (DEP) 中�
 #### <a name="new-user-experience-update-for-the-company-portal-website--2000968---"></a>對於公司入口網站的新使用者體驗更新<!--2000968 -->
 我們已依據客戶的意見反應，新增功能至公司入口網站。 您將能於裝置上體驗現有功能和可用性等方面的重大改善。 網站的各個區域 (例如裝置詳細資料、意見反應和支援，以及裝置概觀) 已獲得全新的現代化回應式設計。 此外還包括：
 
-- 簡化所有裝置平台中的工作流程
-- 改善裝置識別和註冊流程
-- 更有用的錯誤訊息
+- 已簡化所有裝置平台上的工作流程
+- 已改進裝置識別和註冊流程
+- 更多實用的錯誤訊息
 - 讓語言更容易使用，讓技術專業術語更少
 - 能夠共用應用程式的直接連結
 - 已改進大型應用程式目錄的效能
-- 增加所有使用者的協助工具  
+- 已增加適用於所有使用者的協助工具  
 
 已更新 [Intune 公司入口網站文件](https://docs.microsoft.com/intune-user-help/using-the-intune-company-portal-website)，以反映這些變更。 若要檢視應用程式增強功能的範例，請參閱 [Intune 終端使用者應用程式的 UI 更新](../whats-new-app-ui.md)。  
 
@@ -1241,7 +1241,7 @@ Intune 現在支援將 macOS 裝置註冊到 Apple 裝置註冊計劃 (DEP) 中�
 #### <a name="enhanced-jailbreak-detection-in-compliance-reporting---2198738---"></a>相容性報告中增強的越獄偵測<!-- 2198738 -->
 增強的破解偵測設定狀態現在會顯示在管理主控台的所有合規性報告中。
 
-### <a name="role-based-access-control"></a>以角色為基礎的存取控制
+### <a name="role-based-access-control"></a>角色型存取控制
 
 #### <a name="scope-tags-for-policies--1081974---"></a>原則的範圍標籤<!--1081974 -->
 您可以[建立範圍標籤](scope-tags.md)，限制對 Intune 資源的存取。 將範圍標籤新增至角色指派，然後將範圍標籤新增至設定檔。 此角色只能存取設定檔具有相符範圍標籤 (或無範圍標籤) 的資源。
@@ -1267,13 +1267,13 @@ Microsoft Intune 可讓 macOS LOB 應用程式部署為**必要**或**註冊可�
 #### <a name="updated-intune-app-sdk-for-android-is-now-available---2744271--"></a>目前提供已更新且適用於 Android 的 Intune App SDK<!-- 2744271-->
 已提供適用於 Android 的 Intune App SDK 的更新版本，以支援 Android P 版本。 如果您是應用程式開發人員，並使用適用於 Android 的 Intune SDK，則必須安裝 Intune App SDK 的更新版本，以確保 Android 應用程式中的 Intune 功能在 Android P 裝置上可以繼續如預期般運作。 這個版本的 Intune App SDK 提供了一個執行 SDK 更新的內建外掛程式。 您不需要重寫任何已整合的現有程式碼。 如需詳細資訊，請參閱[適用於 Android 的 Intune SDK](https://github.com/msintuneappsdk/ms-intune-app-sdk-android) \(英文\)。 如果您使用 Intune 舊的徽章樣式，建議您使用 [公事包] 圖示。 如需商標詳細資料，請參閱[此 GitHub 存放庫](https://github.com/msintuneappsdk/intune-app-partner-badge) \(英文\)。
 
-#### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式中的更多同步機會  
+#### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>有更多機會可以在 Windows 公司入口網站應用程式中執行同步處理  
 Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始] 功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 [同步此裝置]  。 公司入口網站會開啟至 **[設定]** 頁面並起始您的同步。若要查看新功能，請參閱 [UI 的新功能](../whats-new-app-ui.md)。   
 
-#### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式的新瀏覽體驗  
+#### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>新的 Windows 公司入口網站應用程式瀏覽體驗  
 現在，在 Windows 版公司入口網站應用程式中瀏覽或搜尋應用程式時，您可以切換現有的 [磚]  檢視和新增的 [詳細資料]  檢視。 新的檢視會列出應用程式詳細資料，例如名稱、發佈者、發佈日期，以及安裝狀態。  
 
-[應用程式]  頁面的 [已安裝]  檢視可讓您查看有關已完成和進行中之應用程式安裝的詳細資料。 若要查看新檢視的外觀，請參閱 [UI 的新功能](../whats-new-app-ui.md)。  
+[應用程式]  頁面的 [已安裝]  檢視可讓您查看已完成和進行中的應用程式安裝詳細資料。 若要查看新檢視的外觀，請參閱 [UI 的新功能](../whats-new-app-ui.md)。  
 
 #### <a name="improved-company-portal-app-experience-for-device-enrollment-managers"></a>已改善裝置註冊管理員的公司入口網站應用程式體驗  
 當裝置註冊管理員 (DEM) 登入 Windows 版公司入口網站應用程式時，應用程式現在只會列出 DEM 目前執行中的裝置。 這項改善會減少之前應用程式在嘗試顯示所有 DEM 註冊裝置時所發生的逾時。  
@@ -1283,7 +1283,7 @@ Intune IT 系統管理員可以透過 Intune 應用程式防護原則，強制�
 - 針對未指定的裝置，封鎖其存取應用程式的能力。
 - 或是針對未指定的裝置，選擇性地抹除該裝置上的公司資料。 
 
-若沒有符合原則需求，使用者將無法存取目標應用程式。 根據設定的不同，系統可能會封鎖該使用者，或選擇性地抹除其位於應用程式內的公司資料。 在 iOS 裝置上，此功能需要應用程式 (亦即，WXP、Outlook、Managed Browser、Yammer) 的參與來就地整合 Intune App SDK，以在目標應用程式中強制執行此功能。 此整合會以輪流的方式發生，並取決於特定的應用程式小組。 在 Android 上，此功能需要有最新版的公司入口網站。 
+若沒有符合原則需求，使用者將無法存取目標應用程式。 根據設定的不同，系統可能會封鎖該使用者，或選擇性地抹除其位於應用程式內的公司資料。 在 iOS 裝置上，此功能需要應用程式 (亦即，WXP、Outlook、Managed Browser、Yammer) 的參與來就地整合 Intune App SDK，以在目標應用程式中強制執行此功能。 這項整合會輪流發生並取決於特定的應用程式小組。 在 Android 上，此功能需要有最新版的公司入口網站。 
 
 在使用者裝置上，Intune 用戶端將會根據應用程式防護原則 Intune 刀鋒視窗中所指定字串來進行簡單比對，藉以採取動作。 這會完全取決於裝置報告的值。 因此，我們會建議 IT 系統管理員確定預期的行為是正確無誤的。 這可透過針對小型的使用者群組，在各種不同的裝置製造商和型號上測試此設定來達成。 在 Microsoft Intune 中，選取 [用戶端應用程式]   > [應用程式保護原則]  來檢視及新增應用程式保護原則。 如需有關應用程式保護原則的詳細資訊，請參閱[什麼是應用程式保護原則](../apps/app-protection-policy.md)與[在 Intune 中使用應用程式防護原則的存取動作選擇性地抹除資料](../apps/app-protection-policies-access-actions.md)。
 
@@ -1354,11 +1354,11 @@ Intune 目前支援[使用 Active Directory 憑證服務的 SCEP 要求](../prot
 - 不適用。同時顯示了顯示不同平台裝置計數的影像。 例如，如果您要查看 iOS 設定檔，新的磚會顯示同時指派給此設定檔的非 iOS 裝置計數。 請參閱[裝置合規性原則](../protect/compliance-policy-monitor.md#view-status-of-device-policies)。
 
 #### <a name="device-compliance-supports-3rd-party-anti-virus-solutions---2325484---"></a>裝置相容性支援協力廠商防毒解決方案<!-- 2325484 -->
-當您建立裝置合規性原則 ([裝置合規性]   > [原則]   > [建立原則]   >  [平台：Windows 10 和更新版本]   > [設定]   > [系統安全性]  ) 時，有一些新的 [裝置安全性](../protect/compliance-policy-create-windows.md)  選項： 
+當您建立裝置合規性政策時 ([裝置合規性]   > [原則]   > [建立原則]   > [平台:  Windows 10 和更新版本] > [設定]   > [系統安全性]  )，有新的 [[裝置安全性](../protect/compliance-policy-create-windows.md)]  選項： 
 - **防毒**：當設定為 [必要]  時，您可以使用向 Windows 資訊安全中心註冊的防毒解決方案 (例如 Symantec 和 Windows Defender) 來檢查合規性。 
 - **反間諜功能**：當設定為 [必要]  時，您可以使用向 Windows 資訊安全中心註冊的防毒解決方案 (例如 Symantec 和 Windows Defender) 來檢查合規性。 
 
-適用對象：Windows 10 和更新版本 
+適用於：Windows 10 及更新版本 
 
 ### <a name="device-enrollment"></a>裝置註冊
 
@@ -1463,7 +1463,7 @@ AutoPilot 部署設定檔可以指派給包含 AutoPilot 裝置的 Azure AD 群�
 #### <a name="set-compliance-by-device-location---851881----"></a>依裝置位置設定相容性<!-- 851881 ! -->
 在某些情況下，您可能會想要依網路連線將公司資源的存取限制於特定的位置。 您現在可以依據裝置的 IP 位址建立合規性原則 ([裝置合規性]   > [位置]  )。 如果裝置移出該 IP 範圍，則該裝置將會無法存取公司資源。
 
-適用對象：公司入口網站應用程式已更新的 6.0 和更新版本的 Android 裝置
+適用於：公司入口網站應用程式已更新的 Android 裝置 6.0 和更新版本
 
 #### <a name="prevent-consumer-apps-and-experiences-on-windows-10-enterprise-rs4-autopilot-devices---1621980---"></a>防止 Windows 10 企業版 RS4 AutoPilot 裝置上的消費者應用程式和體驗<!-- 1621980 -->
 您將能夠防止在「Windows 10 企業版 RS4 AutoPilot」裝置上安裝消費者應用程式和體驗。 若要查看此功能，請移至 [Intune]   > [裝置設定]   > [設定檔]   > [建立設定檔]   > [平台]   = [Windows 10 或更新版本]   > [設定檔類型]   = [裝置限制]   > [設定]   > [Windows 焦點]   > [消費者功能]  。 
@@ -1477,7 +1477,7 @@ AutoPilot 部署設定檔可以指派給包含 AutoPilot 裝置的 Azure AD 群�
 #### <a name="management-name-field-will-be-editable---1875989---"></a>管理名稱欄位將可以編輯<!-- 1875989 -->
 您目前可在裝置的 [屬性]  刀鋒視窗上編輯管理名稱欄位。 如果要編輯此欄位，請選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [屬性]  。 您可以使用管理名稱欄位來唯一識別裝置。
 
-#### <a name="new-all-devices-filter-device-category---1878520---"></a>新的所有裝置篩選條件：裝置類別<!-- 1878520 -->
+#### <a name="new-all-devices-filter-device-category---1878520---"></a>[新增全部] 裝置篩選條件：裝置類別<!-- 1878520 -->
 您現在可以依裝置類別篩選 [所有裝置]  清單。 若要這樣做，請選擇 [裝置]   > [所有裝置]   > [篩選]   > [裝置類別]  。
 
 #### <a name="use-teamviewer-to-screen-share-ios-and-macos-devices---1985547---"></a>使用 TeamViewer 來共用 iOS 和 MacOS 裝置的螢幕畫面<!-- 1985547 -->
@@ -1503,7 +1503,7 @@ AutoPilot 部署設定檔可以指派給包含 AutoPilot 裝置的 Azure AD 群�
 在受 Microsoft Intune MDM 管理的裝置上，應用程式安裝有時可能會失敗。 當這些應用程式安裝失敗時，使用者可能無法輕易地了解失敗的原因，或是對問題進行疑難排解。 我們正在推出應用程式疑難排解功能的公開預覽。 您將會在每個個別裝置的底下看到名為 [受控應用程式]  的新節點。 這會列出透過 Intune MDM 傳遞的應用程式。 在該節點中，您將會看到應用程式安裝狀態的清單。 如果您選取個別的應用程式，將會看到針對該特定應用程式的疑難排解檢視。 在疑難排解檢視中，您將會看到應用程式的端對端生命週期，例如針對該應用程式進行建立、修改、設為目標，以及傳遞至裝置的時間。 此外，如果應用程式安裝沒有成功，系統將會針對導致該錯誤的原因為您顯示錯誤碼及協助訊息。 
 
 #### <a name="intune-app-protection-policies-and-microsoft-edge---1818968---"></a>Intune 應用程式保護原則和 Microsoft Edge<!-- 1818968 -->
-適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器現在支援 Microsoft Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 應用程式的 iOS 和 Android 裝置使用者，將會受到 Intune 的保護。 在 iOS 裝置上，[要求受控瀏覽器的 Web 內容]  原則可讓使用者開啟受控 Microsoft Edge 中的連結。
+適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器現可支援 Microsoft Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 應用程式的 iOS 和 Android 裝置使用者，將會受到 Intune 的保護。 在 iOS 裝置上，[要求受控瀏覽器的 Web 內容]  原則可讓使用者開啟受控 Microsoft Edge 中的連結。
 
 <!-- ########################## -->
 ## <a name="may-2018"></a>2018 年 5 月
@@ -1512,7 +1512,7 @@ AutoPilot 部署設定檔可以指派給包含 AutoPilot 裝置的 Azure AD 群�
 
 #### <a name="configuring-your-app-protection-policies---2144597-part-2---"></a>設定應用程式保護原則<!-- 2144597 Part 2 -->
 
-在 Azure 入口網站，不用移至 Intune 應用程式保護服務刀鋒視窗，您現在只需移至 Intune。 目前在 Intune 中只有一個應用程式保護原則的位置。 請注意，所有應用程式保護原則都在 Intune [應用程式保護原則]  底下的 [行動應用程式]  刀鋒視窗上。 這項整合有助於簡化雲端管理系統管理。 請記住，所有應用程式保護原則都已經在 Intune 中，而您可以修改任何先前已設定的原則。 Intune 應用程式原則保護 (APP) 和條件式存取 (CA) 原則現在在 [條件式存取]  下，這可以在 [Microsoft Intune]  刀鋒視窗的 [管理]  區段找到，或在 [Azure Active Directory]  刀鋒視窗的 [安全性]  區段找到。 如需有關修改條件式存取原則詳細資訊，請參閱 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 如需其他資訊，請參閱[什麼是應用程式保護原則？](../apps/app-protection-policy.md)
+在 Azure 入口網站，不用移至 Intune 應用程式保護服務刀鋒視窗，您現在只需移至 Intune。 目前在 Intune 中只有一個應用程式保護原則的位置。 請注意，所有應用程式保護原則都在 Intune [應用程式保護原則]  底下的 [行動應用程式]  刀鋒視窗上。 這項整合有助於簡化雲端管理系統管理。 請記住，所有應用程式保護原則都已經在 Intune 中，而您可以修改任何先前已設定的原則。 Intune 應用程式原則保護 (APP) 和條件式存取 (CA) 原則現在在 [條件式存取]  下，這可以在 [Microsoft Intune]  刀鋒視窗的 [管理]  區段找到，或在 [Azure Active Directory]  刀鋒視窗的 [安全性]  區段找到。 如需有關修改條件式存取原則詳細資訊，請參閱 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 如需詳細資訊，請參閱[什麼是應用程式保護原則？](../apps/app-protection-policy.md)
 
 ### <a name="device-configuration"></a>裝置設定
 
@@ -1549,13 +1549,13 @@ Microsoft Intune 將可讓您從 Azure 入口網站安裝 macOS LOB 應用程式
 
 #### <a name="update-where-to-configure-your-app-protection-policies---2144597---"></a>更新應用程式保護原則的設定位置<!-- 2144597 -->
 
-在 Azure 入口網站的 Microsoft Intune 服務內，我們會暫時將您從 [Intune 應用程式防護]  服務刀鋒視窗重新導向至 [行動應用程式]  刀鋒視窗。 請注意，您所有的應用程式防護原則都已經在 Intune 中應用程式組態底下的 [行動應用程式]  刀鋒視窗上。 若前往 Intune 應用程式防護，您就會直接前往 Intune。 在 2018 年 4 月，我們將停止重新導向，並完全移除 [Intune 應用程式防護]  服務刀鋒視窗，如此一來 Intune 中的應用程式防護原則只會有一個位置。 
+在 Microsoft Intune 服務的 Azure 入口網站中，我們將暫時將您從 [Intune 應用程式防護]  服務刀鋒視窗重新導向至 [行動應用程式]  刀鋒視窗。 請注意，您所有的應用程式防護原則都已經在 Intune 中應用程式組態底下的 [行動應用程式]  刀鋒視窗上。 若前往 Intune 應用程式防護，您就會直接前往 Intune。 在 2018 年 4 月，我們將停止重新導向，並完全移除 [Intune 應用程式防護]  服務刀鋒視窗，如此一來 Intune 中的應用程式防護原則只會有一個位置。 
 
 **此變更會對我造成什麼影響？**
 這項變更會影響 Intune 獨立部署客戶和混合部署 (Intune 搭配 Configuration Manager) 客戶。 此整合將有助於簡化您的雲端管理。
 
 **我需要為這項變更做什麼準備？**
-請將 [Intune]  標記為我的最愛，而不是 [Intune 應用程式防護]  服務刀鋒視窗，並確定您熟悉 Intune 內 [行動應用程式]  刀鋒視窗中的應用程式保護原則工作流程。 在短時間內，我們會進行重新導向，然後就會移除 [應用程式保護]  刀鋒視窗。 請記住，所有應用程式保護原則都已經在 Intune 中，而您可以修改任何條件式存取原則。 如需有關修改條件式存取原則詳細資訊，請參閱 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 如需其他資訊，請參閱[什麼是應用程式保護原則？](../apps/app-protection-policy.md) 
+請將 [Intune]  標記為我的最愛，而不是 [Intune 應用程式防護]  服務刀鋒視窗，並確定您已熟悉 Intune 中 [行動應用程式]  刀鋒視窗中的應用程式防護原則工作流程。 我們會進行重新導向一段時間，然後便會移除 [應用程式防護]  刀鋒視窗。 請記住，所有應用程式保護原則都已經在 Intune 中，而您可以修改任何條件式存取原則。 如需有關修改條件式存取原則詳細資訊，請參閱 [Azure Active Directory 中的條件式存取](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)。 如需詳細資訊，請參閱[什麼是應用程式保護原則？](../apps/app-protection-policy.md) 
 
 ### <a name="device-configuration"></a>裝置設定
 
@@ -1578,7 +1578,7 @@ Microsoft Intune 將可讓您從 Azure 入口網站安裝 macOS LOB 應用程式
 
 #### <a name="new-printer-settings-for-education-profiles---1308900---"></a>教育版設定檔的新印表機設定<!-- 1308900 -->
 
-教育版設定檔的新設定位於 [印表機]  類別下：[印表機]  、[預設印表機]  、[Add new printers]  (新增印表機)。
+教育版設定檔的新設定位於 [印表機]  類別下：[印表機]  、[預設印表機]  、[新增印表機]  。
 
 #### <a name="show-caller-id-in-personal-profile---android-enterprise-work-profile--1098984---"></a>在個人的設定檔中顯示呼叫者識別碼 - Android Enterprise 工作設定檔<!--1098984 -->
 在裝置上使用個人設定檔時，終端使用者可能無法從工作連絡人看到呼叫者識別碼詳細資料。 
@@ -1597,14 +1597,14 @@ Microsoft Intune 將可讓您從 Azure 入口網站安裝 macOS LOB 應用程式
 - **Windows Defender Credential Guard**：開啟搭載虛擬化安全性的 Credential Guard。 若同時啟用了**安全開機的平台安全性層級**與**虛擬化安全性**，啟用此功能將有助於在下次重新開機時保護認證。 這些選項包括：
   - **已停用**：若先前開啟 Credential Guard 時也啟用了 [在不含鎖定情況下啟用]  選項，將會從遠端關閉 Credential Guard。
 
-  - **Enabled with UEFI lock** (啟用並鎖定 UEFI)：確保無法使用登錄機碼或群組原則停用 Credential Guard。 若要在使用此設定後停用 Credential Guard，必須將群組原則設為 [已停用]。 接著移除每位真實存在之使用者每部電腦的安全性功能。 下列步驟會清除 UEFI 中保存的設定。 只要 UEFI 設定持續存在，就會啟用 Credential Guard。
+  - **在包含 UEFI 鎖定的情況下啟用**：確保無法使用登錄機碼或群組原則停用 Credential Guard。 若要在使用此設定後停用 Credential Guard，必須將群組原則設為 [已停用]。 接著移除每位真實存在之使用者每部電腦的安全性功能。 下列步驟會清除 UEFI 中保存的設定。 只要 UEFI 設定持續存在，就會啟用 Credential Guard。
 
   - **在不含鎖定情況下啟用**：允許使用群組原則從遠端停用 Credential Guard。 使用此設定的裝置至少必須執行 Windows 10 (1511 版)。
 
 設定 Credential Guard 時會自動啟用下列相關技術： 
 
-- **啟用虛擬化安全性 (VBS)** ：於下次重新開機時開啟虛擬化安全性 (VBS)。 虛擬化安全性使用 Windows Hypervisor 支援安全性服務，需要安全開機功能。
-- **安全開機與直接記憶體存取 (DMA)** ：開啟安全開機的 VBS 及直接記憶體存取。 DMA 保護需要硬體支援，而且只可在設定正確的裝置上啟用。 
+- **啟用虛擬化安全性 (VBS)** ：在下次重新開機期間開啟虛擬化安全性 (VBS)。 虛擬化安全性使用 Windows Hypervisor 支援安全性服務，需要安全開機功能。
+- **使用直接記憶體存取 (DMA) 進行安全開機**：透過安全開機和直接記憶體存取開啟 VBS。 DMA 保護需要硬體支援，而且只可在設定正確的裝置上啟用。 
 
 #### <a name="use-a-custom-subject-name-on-scep-certificate---2064190---"></a>在 SCEP 憑證上使用自訂主體名稱<!-- 2064190 -->
 您可以使用在 SCEP 憑證設定檔中，使用自訂主體常見的名稱 **OnPremisesSamAccountName**。 例如，您可以使用 `CN={OnPremisesSamAccountName})`。
@@ -1618,7 +1618,7 @@ Microsoft Intune 將可讓您從 Azure 入口網站安裝 macOS LOB 應用程式
 
 #### <a name="use-cisco-anyconnect-client-for-ios---1333708---"></a>使用適用於 iOS 的 Cisco AnyConnect 用戶端<!-- 1333708 -->
 
-當您建立適用於 iOS 的新 VPN 設定檔時，現在有兩個選項：[Cisco AnyConnect]  和 [Cisco Legacy AnyConnect]  。 Cisco AnyConnect 設定檔支援 4.0.7x 和較新版本。 現有的 iOS Cisco AnyConnect VPN 設定檔會標記為 **Cisco Legacy AnyConnect**，但仍會繼續以目前的方式搭配 Cisco AnyConnect 4.0.5x 和較舊版本運作。
+針對 iOS 建立新的 VPN 設定檔時，現在有兩個選項：**Cisco AnyConnect** 和 **Cisco Legacy AnyConnect**。 Cisco AnyConnect 設定檔支援 4.0.7x 和較新版本。 現有的 iOS Cisco AnyConnect VPN 設定檔會標記為 **Cisco Legacy AnyConnect**，但仍會繼續以目前的方式搭配 Cisco AnyConnect 4.0.5x 和較舊版本運作。
 
 > [!NOTE]
 > 這項變更只適用於 iOS。 Android、Android Enterprise 工作設定檔及 macOS 平台仍然只有一個 Cisco AnyConnect 選項。
@@ -1636,7 +1636,7 @@ macOS High Sierra 10.13.2 引進了「使用者核准的」MDM 註冊概念。 �
 
 #### <a name="updated-help-experience-in-company-portal-app-for-android---1631531---"></a>更新 Android 版公司入口網站應用程式的說明體驗<!-- 1631531 -->
 我們已更新 Android 公司入口應用程式的說明體驗，以符合 Android 平台的最佳做法。 現在，當使用者在應用程式中遇到問題時，可以點選 [功能表]   > [說明]  ，然後：
-- 向 Microsoft 傳送診斷記錄。
+- 將診斷記錄上傳到 Microsoft。
 - 傳送描述問題和事件識別碼的電子郵件給公司支援人員。  
 
 若要了解已更新的說明體驗，請參閱[使用電子郵件來傳送記錄](/intune-user-help/send-logs-to-your-it-admin-by-email-android)和[將錯誤傳送給 Microsoft](/intune-user-help/send-logs-to-microsoft-android)。
@@ -1682,7 +1682,7 @@ Intune 系統管理員可以[刪除 Autopilot 裝置](../enrollment/enrollment-a
 
 #### <a name="test-the-company-portal-for-macos-on-virtual-machines---2216679---"></a>在虛擬機器上測試適用於 macOS 的公司入口網站<!-- 2216679 -->
 
-我們已發佈指導，協助 IT 系統管理員在 Parallels Desktop 與 VMware Fusion 之虛擬機器上的 macOS 中測試公司入口網站應用程式。 深入了解如何[虛擬 macOS 機器進行測試](../enrollment/macos-enroll.md#enroll-virtual-macos-machines-for-testing)。
+我們已發佈相關指引，可協助 IT 系統管理員在 Parallels Desktop 和 VMware Fusion 的虛擬機器上測試適用於 macOS 的公司入口網站應用程式。 深入了解如何[虛擬 macOS 機器進行測試](../enrollment/macos-enroll.md#enroll-virtual-macos-machines-for-testing)。
 
 ### <a name="intune-apps"></a>Intune 應用程式
 
@@ -1705,18 +1705,18 @@ Intune 系統管理員可以[刪除 Autopilot 裝置](../enrollment/enrollment-a
 
 #### <a name="improved-device-tiles-in-the-windows-10-company-portal--2213364---"></a>已改良 Windows 10 公司入口網站中的裝置磚<!--2213364 -->
 
-這些磚在更新之後將更方便視障使用者使用，而且可以為螢幕閱讀工具提供更好的效能。
+針對視力比較弱的使用者，我們已將磚更新為更容易存取，且螢幕閱讀工具的執行效果更好。
 
 #### <a name="send-diagnostic-reports-in-company-portal-app-for-macos---2216677---"></a>傳送適用於 macOS 的公司入口網站應用程式的診斷報表<!-- 2216677 -->
 我們已更新適用於 macOS 的公司入口網站應用程式，以改善使用者報告 Intune 相關錯誤的方法。 您的員工可以透過公司入口網站應用程式，進行下列作業：
 
 - 將診斷報告直接上傳給 Microsoft 開發人員小組。
-- 透過電子郵件將事件識別碼傳送給 IT 支援小組。
+- 透過電子郵件，將事件識別碼傳送給公司的 IT 支援小組。
 
 如需詳細資訊，請參閱[傳送 macOS 的錯誤](/intune-user-help/send-errors-macos)。
 
 #### <a name="intune-adapts-to-fluent-design-system-in-the-company-portal-app-for-windows-10---1195010---"></a>Intune 採用 Company Portal for Windows 10 應用程式中的 Fluent Design System<!-- 1195010 -->
-Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) \(Fluent Design System 的瀏覽檢視\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 我們仍持續努力為 Intune 建立適應性更好、更彈性、更直觀及更加容易上手的體驗，而這只是好幾個更新中的第一個。 若要查看更新後的外觀，請參閱[應用程式 UI 的新功能](../whats-new-app-ui.md)。
+Intune Company Portal for Windows 10 應用程式已更新 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 我們仍持續努力為 Intune 建立適應性更好、更彈性、更直觀及更加容易上手的體驗，而這只是好幾個更新中的第一個。 若要查看更新後的外觀，請參閱[應用程式 UI 的新功能](../whats-new-app-ui.md)。
 
 <!-- ########################## -->
 ## <a name="march-2018"></a>2018 年 3 月
@@ -1799,7 +1799,7 @@ Intune 系統管理員可以設定這些設定，以啟用共用。 將裝置與
 
 #### <a name="configure-gatekeeper-to-control-macos-app-download-source---1690459---"></a>設定閘道管理員以控制 macOS 應用程式下載來源<!-- 1690459 -->
 
-您可以藉由控制可下載應用程式的位置，以設定 Gatekeeper 來為您的裝置提供應用程式安全防護。 您可以設定下列下載來源：[Mac App Store]  、[Mac App Store 和已識別的開發人員]  或 [任何位置]  。 您可以藉由按住 Control 並同時按一下來覆寫這些 Gatekeeper 控制措施，以設定使用者是否可以安裝應用程式。
+您可以藉由控制可下載應用程式的位置，以設定 Gatekeeper 來為您的裝置提供應用程式安全防護。 您可以設定下列下載來源：**Mac App Store**、**Mac App Store 和已識別的開發人員**或**任何位置**。 您可以藉由按住 Control 並同時按一下來覆寫這些 Gatekeeper 控制措施，以設定使用者是否可以安裝應用程式。
 
 您可以在**裝置設定** -> **建立設定檔** -> **macOS** -> **Endpoint Protection** 中找到這些設定。
 
@@ -1823,7 +1823,7 @@ Intune 系統管理員可以設定這些設定，以啟用共用。 將裝置與
 
 在您的 [裝置設定] 中，可以檢視更詳細的錯誤碼和錯誤訊息。 這項改良的報告功能會顯示設定、這些設定的狀態，以及有關疑難排解的詳細資料。
 
-##### <a name="more-information"></a>詳細資訊
+##### <a name="more-information"></a>更多資訊
 
 - 封鎖所有連入連線
 
@@ -1852,7 +1852,7 @@ Intune 可讓您控制[管理軟體更新](../protect/windows-update-for-busines
 
 ### <a name="new-windows-defender-exploit-guard-settings---1631893---"></a>新的 Windows Defender 惡意探索防護設定<!-- 1631893 -->
 
-有六項新的 [攻擊面縮減] 設定和擴充的 [受控資料夾存取權: 資料夾保護] 功能可用。 這些設定位在：Device configuration\Profiles\
+有六項新的 [攻擊面縮減] 設定和擴充的 [受控資料夾存取權: 資料夾保護] 功能可用。 這些設定位於：Device configuration\Profiles\
 建立 profile\Endpoint protection\Windows Defender 惡意探索防護。
 
 #### <a name="attack-surface-reduction"></a>攻擊表面縮減
@@ -1863,7 +1863,7 @@ Intune 可讓您控制[管理軟體更新](../protect/windows-update-for-busines
 |從 Windows 本機安全性授權子系統設立認證竊取旗標|啟用、稽核、未設定|從 Windows 本機安全性授權子系統設立認證竊取旗標 (lsass.exe)。|
 |從 PSExec 和 WMI 命令建立處理程序|封鎖、稽核、未設定|封鎖源自 PSExec 和 WMI 命令的處理程序建立。|
 |從 USB 執行的不受信任和不帶正負號的處理程序|封鎖、稽核、未設定|封鎖從 USB 執行的不受信任和不帶正負號的處理程序。|
-|不符合普遍性、存留期或受信任清單條件的可執行檔|封鎖、稽核、未設定|封鎖執行可執行檔，除非它們符合普遍性、存留期或受信任清單的條件。|
+|不符合普遍性、存留期或受信任清單條件的可執行檔|封鎖、稽核、未設定|封鎖可執行檔執行，除非它們符合普遍性、存留期或信任的清單準則。|
 
 #### <a name="controlled-folder-access"></a>受控資料夾存取權
 
@@ -1878,7 +1878,7 @@ Intune 可讓您控制[管理軟體更新](../protect/windows-update-for-busines
 
 ### <a name="azure-active-directory-web-sites-can-require-the-intune-managed-browser-app-and-support-single-sign-on-for-the-managed-browser-public-preview---710595---"></a>Azure Active Directory 網站可以要求使用 Intune Managed Browser 應用程式，並支援 Managed Browser (公開預覽) 的單一登入<!-- 710595 -->
 
-使用 Azure Active Directory (Azure AD) 時，您現在可在行動裝置上限制只有 Intune Managed Browser 應用程式可以存取網站。 在 Managed Browser 中，網站資料會受到保護，而且會與使用者個人資料分開管理。 此外，針對受 Azure AD 保護的網站，Managed Browser 也支援單一登入功能。 當使用者登入 Managed Browser，或在裝置上搭配使用 Managed Browser 與受 Intune 管理的其他應用程式時，即可在不需輸入認證的情況下，讓 Managed Browser 存取受 Azure AD 保護的公司網站。 這項功能適用於 Outlook Web Access (OWA) 和 SharePoint Online 等網站，以及透過 Azure App Proxy 存取的內部網路資源等其他公司網站。 如需詳細資訊，請參閱[什麼是 Azure Active Directory 條件式存取中的存取控制？](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-controls) \(部分機器翻譯\)。
+使用 Azure Active Directory (Azure AD) 時，您現在可在行動裝置上限制只有 Intune Managed Browser 應用程式可以存取網站。 在 Managed Browser 中，網站資料會受到保護，而且會與使用者個人資料分開管理。 此外，Managed Browser 將針對受 Azure AD 保護的網站支援單一登入。 登入 Managed Browser，或是在裝置上具有由 Intune 所管理另一個應用程式時使用 Managed Browser 之際，將能讓使用者在無需輸入其認證的情況下，允許 Managed Browser 存取受 Azure AD 保護的公司網站。 這項功能適用於 Outlook Web Access (OWA) 和 SharePoint Online 等網站，以及其他如透過 Azure App Proxy 所存取內部網路資源的企業網站。 如需詳細資訊，請參閱[什麼是 Azure Active Directory 條件式存取中的存取控制？](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-controls) \(部分機器翻譯\)。
 
 #### <a name="company-portal-app-for-android-visual-updates--976944---"></a>Android 版公司入口網站的視覺效果更新<!--976944 -->
 
@@ -1904,9 +1904,9 @@ Intune 可讓您控制[管理軟體更新](../protect/windows-update-for-busines
 
 #### <a name="new-windows-defender-application-guard-settings---1631890---"></a>新的 Windows Defender 應用程式防護設定<!-- 1631890 -->
 
-- **啟用圖形加速**：系統管理員可以啟用「Windows Defender 應用程式防護」的虛擬圖形處理器。 此設定可讓 CPU 將圖形轉譯卸載至 vGPU。 使用圖形運算密集的網站或觀賞容器內的影片時，這可以改善效能。
+- **啟用圖形加速**：系統管理員能夠啟用 Windows Defender 應用程式防護的虛擬圖形處理器。 此設定可讓 CPU 將圖形轉譯卸載至 vGPU。 使用圖形運算密集的網站或觀賞容器內的影片時，這可以改善效能。
 
-- **SaveFilestoHost**：系統管理員可以讓檔案經由在容器中執行的 Microsoft Edge 到主機檔案系統。 開啟這個功能可讓使用者從容器中的 Microsoft Edge 將檔案下載到主機檔案系統。
+- **SaveFilestoHost**：系統管理員可以讓檔案從容器中執行的 Microsoft Edge 傳遞到主機檔案系統。 開啟這個功能可讓使用者從容器中的 Microsoft Edge 將檔案下載到主機檔案系統。
 
 #### <a name="mam-protection-policies-targeted-based-on-management-state---1665993---"></a>根據管理狀態將 MAM 保護原則設為目標<!-- 1665993 -->
 您可以根據裝置管理狀態將 MAM 原則設為目標：
@@ -1925,7 +1925,7 @@ Intune 可讓您控制[管理軟體更新](../protect/windows-update-for-busines
 我們努力讓使用者對其資料和隱私權有更多的控制，因此我們發佈了文件更新，說明如何檢視及移除公司入口網站應用程式儲存在本機的資料。 您可以在下列位置找到這些更新：
 
 - **Android**：[如何從 Intune 移除 Android 裝置](/intune-user-help/unenroll-your-device-from-intune-android)
-- **Android (如果使用者已拒絕使用規定)** [移除裝置管理 (如果您已拒絕「使用規定」)](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
+- **Android (如果使用者已拒絕使用條款)** ：[如果您已拒絕「使用條款」，請移除您的裝置](/intune-user-help/unenroll-your-device-from-intune-if-you-declined-terms-of-use-android)
 - **iOS**：[從 Intune 移除 iOS 裝置](/intune-user-help/unenroll-your-device-from-intune-ios)
 - **Windows**：[從 Intune 移除 Windows 裝置](/intune-user-help/unenroll-your-device-from-intune-windows)
 
@@ -1986,8 +1986,8 @@ PrinterOn 的無線行動列印方案，可讓使用者隨時隨地透過安全�
 
 #### <a name="new-privacy-settings-for-device-restrictions--1308926---"></a>裝置限制的新隱私權設定<!--1308926 -->
 裝置現在有[兩項新的隱私權設定](../configuration/device-restrictions-windows-10.md#privacy)可用：
-- **發佈使用者活動**：設定此項以**封鎖**防止共用體驗以及在工作切換器中探索最近使用的資源。
-- **僅限本機活動**：設定此項以**封鎖**防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。
+- **發佈使用者活動**：將此項設定為 [封鎖]  以防止共用體驗以及在工作切換器中探索最近使用的資源。
+- **僅限本機活動**：將此項設定為 [封鎖]  以防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。
 
 #### <a name="new-settings-for-the-microsoft-edge-browser--1469166---"></a>Microsoft Edge 瀏覽器的新設定<!--1469166 -->
 現在使用 Microsoft Edge 瀏覽器的裝置有[兩項新設定](../configuration/device-restrictions-windows-10.md#microsoft-edge-browser)可用：[我的最愛檔案路徑]  和 [我的最愛的變更]  。
@@ -2037,7 +2037,7 @@ Surface Hub 會使用資源帳戶驗證 Skype/Exchange 以加入會議。
 |從 Windows 本機安全性授權子系統設立認證竊取旗標|啟用、稽核、未設定|從 Windows 本機安全性授權子系統設立認證竊取旗標 (lsass.exe)。|
 |從 PSExec 和 WMI 命令建立處理程序|封鎖、稽核、未設定|封鎖源自 PSExec 和 WMI 命令的處理程序建立。|
 |從 USB 執行的不受信任和不帶正負號的處理程序|封鎖、稽核、未設定|封鎖從 USB 執行的不受信任和不帶正負號的處理程序。|
-|不符合普遍性、存留期或受信任清單條件的可執行檔|封鎖、稽核、未設定|封鎖執行可執行檔，除非它們符合普遍性、存留期或受信任清單的條件。|
+|不符合普遍性、存留期或受信任清單條件的可執行檔|封鎖、稽核、未設定|封鎖可執行檔執行，除非它們符合普遍性、存留期或信任的清單準則。|
 
 ##### <a name="controlled-folder-access"></a>受控資料夾存取權
 
@@ -2108,23 +2108,23 @@ Windows 10 相容性設定的新增項目現在已可供使用，但需要防火
 
 #### <a name="conditional-access-policies-for-intune-is-only-available-from-the-azure-portal----1737088-1634311---"></a>Intune 的條件式存取原則只能從 Azure 入口網站使用 <!-- 1737088 1634311 -->
 
-自此版開始，您必須在 [Azure 入口網站](https://portal.azure.com)的 **Azure Active Directory** > **條件式存取**中設定及管理您的條件式存取原則。 為了方便起見，您也可以在 [Intune]   > [條件式存取]  ，從 Azure 入口網站的 Intune 存取此刀鋒視窗。
+從這個版本開始，您必須在 [Azure 入口網站](https://portal.azure.com)，從 [Azure Active Directory]   > [條件式存取]  設定及管理您的條件式存取原則。 為了方便起見，您也可以從 Azure 入口網站中的 Intune 存取此刀鋒視窗，位置是 [Intune]   > [條件式存取]  。
 
 #### <a name="updates-to-compliance-emails--1637547---"></a>更新相容性電子郵件<!--1637547 -->
 
-當傳送電子郵件回報不相容的裝置時，電子郵件會包含不相容之裝置的詳細資料。
+當傳送電子郵件以報告不符合規範的裝置時，會包含不符合規範之裝置的相關詳細資料。
 
 ### <a name="intune-apps"></a>Intune 應用程式
 
 #### <a name="new-functionality-for-the-resolve-action-for-android-devices--1583480--"></a>Android 裝置的「解決」動作新功能<!--1583480-->
 
-Android 版公司入口網站應用程式正在擴充 [更新裝置設定]  的「解決」動作，以解決[裝置加密問題](/intune-user-help/encrypt-your-device-android)。
+Android 公司入口網站應用程式將**更新裝置設定**的「解決」動作擴充為解決[裝置加密問題](/intune-user-help/encrypt-your-device-android)。
 
 #### <a name="remote-lock-available-in-company-portal-app-for-windows-10--676506--"></a>Windows 10 版公司入口網站應用程式提供遠端鎖定<!--676506-->
 使用者現在可以從 Windows 10 的公司入口網站應用程式遠端鎖定其裝置。 這不會顯示在他們正使用的本機裝置上。
 
 #### <a name="easier-resolution-of-compliance-issues-for-the-company-portal-app-for-windows-10--676546--"></a>Windows 10 版公司入口網站應用程式更容易解決相容性問題<!--676546-->
-使用 Windows 裝置的終端使用者將可在公司入口網站應用程式中點選不相容的原因。 如此一來，系統會盡可能將使用者直接移至設定應用程式的正確位置，以修正問題。
+使用 Windows 裝置的終端使用者將可在公司入口網站應用程式中點選不相容的原因。 在可能的情況下，這將會將他們帶到 [設定] 應用程式中的正確位置以修正該問題。
 
 <!-- ########################## -->
 ## <a name="december-2017"></a>2017 年 12 月
@@ -2231,7 +2231,7 @@ Surface Hub 會使用資源帳戶向 Skype/Exchange 進行驗證以加入會議�
 ### <a name="intune-apps"></a>Intune 應用程式
 
 
-### <a name="role-based-access-control"></a>以角色為基礎的存取控制
+### <a name="role-based-access-control"></a>角色型存取控制
 
 #### <a name="a-new-entity-collection-named-current-user-is-limited-to-currently-active-user-data---1667026---"></a>名為 Current User 之新實體集合限於目前作用中的使用者資料<!-- 1667026 -->
 
@@ -2305,7 +2305,7 @@ Intune 支援從 Android 平台獨立管理 Android for Work 裝置的註冊。 
 
 ### <a name="text-protocol-allowed-from-managed-apps---1414050----"></a>允許來自受控應用程式的文字通訊協定<!-- 1414050  -->
 
-受 Intune App SDK 管理的應用程式可以傳送簡訊。
+Intune App SDK 管理的應用程式可傳送 SMS 訊息。
 
 
 ### <a name="app-install-report-updated-to-include-install-pending-status---1249446---"></a>已更新應用程式安裝報表，以包含安裝擱置中狀態<!-- 1249446 -->  
@@ -2333,8 +2333,6 @@ Azure 入口網站中現在提供新的程序和工具，以將使用者和其�
 - 將原則與設定檔從 Configuration Manager 主控台複製到 Azure 入口網站的 Intune
 - 將使用者子集移至 Azure 入口網站的 Intune，同時將其餘部分保留在混合式 MDM 中
 - 將裝置移轉至 Azure 入口網站的 Intune 但不需要重新註冊
-
-如需詳細資料，請參閱[將混合式 MDM 使用者和裝置移轉至 Intune 獨立版](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa)。
 
 ### <a name="on-premises-exchange-connector-high-availability-support----676614---"></a>內部部署 Exchange Connector 高可用性支援 <!-- 676614 -->
 在 Exchange Connector 使用指定的 Client Access Server (CAS) 建立與 Exchange 的連線之後，連接器現在便能夠探索其他 CAS。 如果無法使用主要的 CAS，連接器將容錯移轉至另一個 CAS (如果有的話)，直到有可用的主要 CAS 為止。 如需詳細資訊，請參閱[內部部署 Exchange Connector 高可用性支援](../protect/exchange-connector-install.md#on-premises-intune-exchange-connector-high-availability-support)。
@@ -2396,10 +2394,10 @@ Intune 稽核會提供與 Intune 相關的變更作業記錄。  擷取所有建
 [稽核] 位在**監視器**群組下。 每個工作負載都有 [稽核記錄檔]  功能表項目。
 
 ### <a name="company-portal-app-for-macos-is-available--1541700--"></a>macOS 版公司入口網站應用程式已推出<!--1541700-->
-macOS 版 Intune 公司入口網站有已經最佳化的更新體驗，可完全顯示使用者註冊之所有裝置所需的所有資訊與合規性通知。 此外，「Intune 公司入口網站」部署至裝置之後，適用於 macOS 的 Microsoft AutoUpdate 會提供其更新。 您可以透過從 macOS 裝置登入「Intune 公司入口網站」來下載新的 macOS 版「Intune 公司入口網站」。
+macOS 上的 Intune 公司入口網站的體驗已有更新，可針對使用者所有已註冊的裝置，以最佳方式清楚地顯示使用者所需的所有資訊與合規性通知。 此外，「Intune 公司入口網站」部署至裝置之後，適用於 macOS 的 Microsoft AutoUpdate 會提供其更新。 您可以從 macOS 裝置登入 Intune 公司入口網站，以下載適用於 macOS 的新 Intune 公司入口網站。
 
 ### <a name="microsoft-planner-is-now-part-of-the-mobile-app-management-mam-list-of-approved-apps----1248473---"></a>Microsoft Planner 現在是已核准應用程式的行動裝置應用程式管理 (MAM) 清單的一部分 <!-- 1248473 -->
-iOS 版和 Android 版的 Microsoft Planner 應用程式現在是行動裝置應用程式管理 (MAM) 已核准的應用程式的一部分。 可以透過 Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，將應用程式設定至所有租用戶。
+適用於 iOS 和 Android 的 Microsoft Planner 應用程式，現已是行動裝置應用程式管理 (MAM) 的核准應用程式之一。 可以透過 Azure 入口網站中的 [Intune 應用程式防護] 刀鋒視窗，將應用程式設定至所有租用戶。
 - 深入了解[已核准應用程式的 MAM 清單](https://www.microsoft.com/cloud-platform/microsoft-intune-apps)。
 
 ### <a name="per-app-vpn-requirement-update-frequency-on-ios-devices-----1547061---"></a>iOS 裝置上個別應用程式 VPN 的需求更新頻率  <!-- 1547061 -->  
@@ -2524,7 +2522,7 @@ Kiosk 模式具有下列要求：
 將設定檔推送到裝置後，下一個步驟則取決於設定檔設定。  若設定為自動連線，就會在下次需要網路時這麼做。  若設定為手動連線，使用者就必須手動啟用連線。  
 
 ### <a name="access-to-managed-app-logs-for-ios---1469920---"></a>存取 iOS 的受控應用程式記錄檔<!-- 1469920 -->
-安裝 Managed Browser 的使用者現在可以檢視所有 Microsoft 所發行應用程式的管理狀態，並傳送記錄檔來針對受管理的 iOS 應用程式進行疑難排解。
+安裝 Managed Browser 的終端使用者現在已可檢視所有 Microsoft 發行之應用程式的管理狀態，並傳送記錄檔來為受管理的 iOS 應用程式進行疑難排解。
 
 深入了解如何在 iOS 裝置上的 Managed Browser 啟用疑難排解模式，請參閱 [How to access to managed app logs using the Managed Browser on iOS](../apps/app-configuration-managed-browser.md#how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios) (如何在 iOS 上使用 Managed Browser 存取受管理應用程式記錄檔)。
 
@@ -2571,10 +2569,10 @@ Intune 早已開始整合應用程式和裝置管理的 IT 系統管理員體驗
 Windows 10 版「公司入口網站」應用程式中的 [設定] 頁面已更新，以使設定和預期的使用者動作在所有設定中更加一致。 它也已更新為符合其他 Windows 應用程式的配置。 您可以在 [應用程式 UI 中的新增功能](../whats-new-app-ui.md) 頁面中找到之前/之後影像。
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-windows-10-devices--1337920--"></a>通知終端使用者可看到哪些 Windows 10 裝置資訊<!--1337920-->
-我們在 Windows 10 版公司入口網站應用程式的 [裝置詳細資料] 畫面新增了 [擁有權類型]  。 如此一來，使用者就能夠直接從 Intune 終端使用者文件的此頁面，了解有關隱私權的更多資訊。他們也能夠在 [關於]  畫面上找到此資訊。
+我們已將 [擁有權類型]  新增至 Windows 10 版公司入口網站應用程式的 [裝置詳細資料] 畫面。 這樣可讓使用者直接從此頁面從 Intune 終端使用者文件尋找有關隱私權的詳細資訊。使用者也可以在 [關於]  畫面上找到此資訊。
 
 ### <a name="feedback-prompts-for-the-company-portal-app-for-android--1165249--"></a>Android 版公司入口網站應用程式的意見反應提示<!--1165249-->
-Android 版公司入口網站應用程式現在會要求使用者意見反應。 此意見反應將直接傳送給 Microsoft，並讓使用者有機會在公開的 Google Play 商店中檢閱應用程式。 意見反應並不是必要的，可以輕鬆地關閉，讓使用者可以繼續使用應用程式。
+Android 版公司入口網站應用程式現在會要求終端使用者提供意見反應。 此意見反應會直接傳給至 Microsoft，並讓使用者得以在公開的 Google Play 商店上評論應用程式。 意見反應並非必要，使用者可以輕易地將之關閉，以繼續使用應用程式。
 
 <!-- #### Update to what device details an organization can see 1616825
 The Company Portal app for Android can now use geofencing to protect access to company resources. It uses network details such as IP address, default gateway address, and Domain Name System (DNS) to determine whether to allow access to protected company resources.-->
@@ -2582,18 +2580,18 @@ The Company Portal app for Android can now use geofencing to protect access to c
 ### <a name="helping-your-users-help-themselves-with-the-company-portal-app-for-android---1573324-1573150-1558616-1564878---"></a>協助您的使用者自助使用 Android 版公司入口網站應用程式<!-- 1573324, 1573150, 1558616, 1564878 -->
 
 Android 版公司入口網站應用程式新增了終端使用者指示，能幫助他們了解，並盡可能自行解決新的使用案例。
-- 如果終端使用者已經達到可新增裝置數目的上限，將會被引導至 [Azure Active Directory 入口網站](https://account.activedirectory.windowsazure.com/r/#/profile)以移除裝置。
-- 有提供步驟協助終端使用者[修正 Samsung Knox 裝置的啟動錯誤](https://go.microsoft.com/fwlink/?linkid=859718)或[關閉省電模式](/intune-user-help/power-saving-mode-android)。 如果這些解決方案都無法解決他們的問題，我們會提供如何[向 Microsoft 提交記錄](/intune-user-help/send-logs-to-microsoft-android)的說明。
+- 如果使用者已達可新增裝置的數目上限，系統會引導他們前往 [Azure Active Directory 網站](https://account.activedirectory.windowsazure.com/r/#/profile)移除裝置。
+- 有提供步驟協助終端使用者[修正 Samsung Knox 裝置的啟動錯誤](https://go.microsoft.com/fwlink/?linkid=859718)或[關閉省電模式](/intune-user-help/power-saving-mode-android)。 如果這些解決方案都無法解決他們的問題，我們會提供[向 Microsoft 提交記錄檔](/intune-user-help/send-logs-to-microsoft-android)的說明。
 
 ### <a name="new-resolve-action-available-for-android-devices---1583480---"></a>Android 裝置提供新的「解決」動作<!-- 1583480 -->
 
-Android 公司入口網站應用程式在 [更新裝置設定]  頁面中推出「解決」動作。 選取此選項會直接將使用者引導至造成裝置不相容的設定。 Android 版公司入口網站應用程式目前在[裝置密碼](/intune-user-help/set-your-pin-or-password-android)、[USB 偵錯](/intune-user-help/you-need-to-turn-off-usb-debugging-android)和[未知來源](/intune-user-help/you-need-to-turn-off-unknown-sources-android)設定支援此動作。
+Android 版公司入口網站應用程式的 [更新裝置設定]  頁面上新增了「解決」動作。 選取此選項會將終端使用者直接帶到造成裝置不符合規範的設定。 Android 版公司入口網站應用程式目前在[裝置密碼](/intune-user-help/set-your-pin-or-password-android)、[USB 偵錯](/intune-user-help/you-need-to-turn-off-usb-debugging-android)和[未知來源](/intune-user-help/you-need-to-turn-off-unknown-sources-android)設定支援此動作。
 
 ### <a name="device-setup-progress-indicator-in-android-company-portal---1565657---"></a>Android 版公司入口網站中的裝置設定進度列指示器<!-- 1565657 -->
-Android 版公司入口網站應用程式會顯示使用者註冊其裝置時的裝置設定進度列指示器。 指示器會顯示新的狀態，從「正在設定您的裝置...」開始，然後依序是「正在註冊您的裝置...」、「正在完成註冊您的裝置...」、「正在完成設定您的裝置...」。
+Android 版公司入口網站應用程式會在使用者註冊其裝置時，顯示裝置設定進度列指示器。 指示器會顯示新的狀態，從開始到結束依序為「正在設定您的裝置...」、「正在註冊您的裝置...」、「即將完成註冊您的裝置...」及「即將完成設定您的裝置...」。
 
 ### <a name="certificate-based-authentication-support-on-the-company-portal-for-ios--1029830--"></a>支援 iOS 版公司入口網站的憑證式驗證<!--1029830-->
-我們已新增支援 iOS 版公司入口網站應用程式的憑證式驗證 (CBA)。 使用 CBA 的使用者可輸入其使用者名稱，然後點選 [Sign in with a certificate] (使用憑證登入) 連結。 Android 和 Windows 版公司入口網站應用程式已支援 CBA。 若要深入了解，請參閱[登入公司入口網站應用程式](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal)頁面。
+我們已新增 iOS 版公司入口網站應用程式的憑證式驗證 (CBA) 支援。 使用 CBA 的使用者可輸入其使用者名稱，然後點選 [Sign in with a certificate] (使用憑證登入) 連結。 Android 版和 Windows 版公司入口網站應用程式皆已經支援 CBA。 您可以在[登入公司入口網站應用程式](https://docs.microsoft.com/intune-user-help/sign-in-to-the-company-portal)頁面上深入了解。
 
 ### <a name="apps-that-are-available-with-or-without-enrollment-can-now-be-installed-without-being-prompted-for-enrollment---1334712---"></a>需要或無須註冊而提供的應用程式現在可以直接安裝，而不會提示註冊。<!-- 1334712 -->
 
@@ -2636,7 +2634,7 @@ Intune 現在可使用 [TeamViewer](https://www.teamviewer.com) 軟體 (需另�
 ### <a name="the-enabledisable-button-is-removed-from-the-intune-certificate-authority-page-of-the-intune-azure-portal----1400455---"></a>[啟用/停用] 按鈕已從 Intune Azure 入口網站的 [Intune 憑證授權單位] 頁面移除 <!-- 1400455 -->
  我們正在消除設定 Intune 上憑證連接器的多餘步驟。 目前，您會下載憑證連接器，然後在 Intune 主控台中啟用它。 不過，如果您在 Intune 主控台中停用連接器，連接器會繼續發出憑證。
 
-#### <a name="how-does-this-affect-me"></a>此變更對我造成什麼影響？
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
 從 10 月開始，[啟用/停用] 按鈕不會再出現在 Azure 入口網站的 [憑證授權單位] 頁面上。 連接器功能將保持不變。 憑證仍會部署到在 Intune 中註冊的裝置。 您可以繼續下載並安裝憑證連接器。 若要停止發出憑證，您現在要解除安裝憑證連接器而非將它停用。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
@@ -2698,15 +2696,15 @@ Intune 現在可使用 [TeamViewer](https://www.teamviewer.com) 軟體 (需另�
 
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal--1490692--"></a>對公司入口網站中裝置安裝工作流程的改善<!--1490692-->
-我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 您可以在[應用程式 UI 的新功能](whats-new-app-ui.md#week-of-october-2-2017)頁面中，查看這些變更。
+我們已經改善 Android 版公司入口網站應用程式中的裝置設定工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 您可以在[應用程式 UI 中的新功能](whats-new-app-ui.md#week-of-october-2-2017)頁面上查看這些變更。
 
 ### <a name="improved-guidance-around-the-request-for-access-to-contacts-on-android-devices--1484985--"></a>已改善在 Android 裝置上要求存取連絡人的相關指引<!--1484985-->
 
-Android 版公司入口網站應用程式通常會要求使用者接受「連絡人」權限。 如果使用者拒絕此存取權，系統現在會顯示應用程式內通知，提醒他們授與此權限以進行條件式存取。 
+Android 版公司入口網站應用程式通常會要求使用者接受「連絡人」的使用權限。 如果使用者拒絕此存取權，系統現在會顯示應用程式內通知，提醒他們授與此權限以進行條件式存取。 
 
 ### <a name="secure-startup-remediation-for-android--1490712--"></a>Android 的安全啟動修復<!--1490712-->
 
-如果使用者是使用 Android 裝置，可以點選公司入口網站應用程式中的不相容原因。 如此一來，系統會盡可能將使用者直接移至設定應用程式的正確位置，以修正問題。 
+使用 Android 裝置的使用者將能夠點選公司入口網站應用程式中的非合規性原因。 在可能的情況下，這將會將他們帶到 [設定] 應用程式中的正確位置以修正該問題。 
 
 ### <a name="additional-push-notifications-for-end-users-on-the-company-portal-app-for-android-oreo--1475932--"></a>在 Android Oreo 版公司入口網站應用程式上新增終端使用者的推播通知<!--1475932-->
 
@@ -2716,28 +2714,28 @@ Android 版公司入口網站應用程式通常會要求使用者接受「連絡
 
 ### <a name="new-behaviors-for-the-company-portal-app-for-android-with-work-profiles---1485783---"></a>Android 版公司入口網站應用程式使用工作設定檔的新行為<!-- 1485783 -->
 
-當您使用工作設定檔註冊 Android for Work 裝置時，是由工作設定檔中的公司入口網站應用程式來執行裝置上的管理工作。 
+當您使用工作設定檔註冊 Android for Work 裝置時，在該裝置上執行管理工作的是工作設定檔中的公司入口網站應用程式。 
 
-除非您使用個人設定檔中啟用 MAM 的應用程式，否則 Android 公司入口網站應用程式不再有任何用途。 為了改善工作設定檔的體驗，Intune 會在成功註冊工作設定檔後，自動隱藏個人的公司入口網站應用程式。
+除非您使用的是個人設定檔中已啟用 MAM 的應用程式，否則 Android 版公司入口網站將不再提供任何用途。 為了改善工作設定檔體驗，Intune 將會在順利註冊工作設定檔之後，自動隱藏個人的公司入口網站應用程式。
 
-您可以隨時啟用個人設定檔中的 Android 公司入口網站應用程式，方法是瀏覽 [Play Store 中的公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)，然後點選 [啟用]  。
+您可以隨時在個人設定檔中啟用 Android 版公司入口網站應用程式，方法是瀏覽至 [Play 商店中的「公司入口網站」](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)，然後點選 [啟用]  。
 
 ### <a name="company-portal-for-windows-81-and-windows-phone-81-moving-to-sustaining-mode--1428681--"></a>Windows 8.1 版和 Windows Phone 8.1 版的公司入口網站已移至維持模式<!--1428681-->
 
-自 2017 年 10 月起，Windows 8.1 和 Windows Phone 8.1 公司入口網站應用程式將會移至維持模式。 這表示這些平台將會繼續支援應用程式和現有的案例 (例如註冊和合規性)。 這些應用程式仍可透過現有的發行通道 (例如 Microsoft 市集) 下載取得。 
+從 2017 年 10 月開始，Windows 8.1 版和 Windows Phone 8.1 版的公司入口網站應用程式將會移至維持模式。 這表示這些平台的應用程式與現有的案例 (例如註冊和合規性) 將會繼續被支援。 這些應用程式將可透過現有的發行管道 (例如 Microsoft Store) 繼續進行下載。 
 
-一旦進入維持模式，這些應用程式就僅會接收重大安全性更新。 但是，將不會針對這些應用程式發行額外的更新或功能。 如需新功能，建議您將裝置更新為 Windows 10 或 Windows 10 行動裝置版。 
+一旦進入維持模式，這些應用程式就僅會接收重大安全性更新。 未來將不會針對這些應用程式發行其他的更新或功能。 如需新功能，建議您將裝置更新為 Windows 10 或 Windows 10 行動裝置版。 
 
 
 ### <a name="block-unsupported-samsung-knox-device-enrollment----1490695---"></a>封鎖不支援的 Samsung Knox 裝置註冊 <!-- 1490695 -->
 
-公司入口網站應用程式只會嘗試註冊支援的 Samsung Knox 裝置。 為了避免 Knox 啟用錯誤而導致 MDM 註冊失敗，如果裝置出現在 [Samsung 發佈的裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中，則系統只會嘗試進行裝置註冊。 有些 Samsung 裝置型號可能支援 Knox，而有些不支援。 在您購買及部署之前，請先跟裝置轉銷商確認 KNOX 相容性。 您可以在 [Android 和 Samsung Knox Standard 原則設定](supported-devices-browsers.md#intune-supported-web-browsers)中找到已驗證裝置的完整清單。
+公司入口網站應用程式只會嘗試註冊支援的 Samsung KNOX 裝置。 為了避免 Knox 啟用錯誤而導致 MDM 註冊失敗，如果裝置出現在 [Samsung 發佈的裝置清單](https://www.samsungknox.com/knox-supported-devices/knox-workspace)中，則系統只會嘗試進行裝置註冊。 有些 Samsung 裝置型號可能支援 Knox，而有些不支援。 在您購買並部署之前，請先向裝置經銷商確認 KNOX 相容性。 您可以在 [Android 和 Samsung Knox Standard 原則設定](supported-devices-browsers.md#intune-supported-web-browsers)中找到已驗證裝置的完整清單。
 
 ### <a name="end-of-support-for-android-43-and-lower---1171126-1326920---"></a>終止支援 Android 4.3 與較舊版本<!-- 1171126, 1326920 -->
 受管理的應用程式和 Android 公司入口網站應用程式需要 Android 4.4 及更新版本才能存取公司資源。 今年 12 月會強制淘汰所有已註冊的裝置，以致無法存取公司資源。 如果您使用不含 MDM 的應用程式保護原則，應用程式就不會接收更新，其體驗品質會隨著時間而降低。
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-on-enrolled-devices--1165314--"></a>通知終端使用者可在已註冊裝置上看到哪些裝置資訊<!--1165314-->
-針對所有公司入口網站應用程式的 [裝置詳細資料] 畫面，我們會新增 [擁有權類型]  。 如此一來，使用者就能夠直接從[公司可以看到哪些資訊？](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)一文中，了解隱私權的詳細資訊。 在不久的將來，這項功能就會跨所有公司入口網站應用程式推出。 iOS 的這項功能已於 [9 月](#september-2017)推出。
+我們正將 [擁有權類型]  加入到所有公司入口網站應用程式的 [裝置詳細資料] 畫面。 這樣可讓使用者直接從[我的公司可以看到哪些資訊？](/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune)文章深入了解隱私權的詳細資訊。 在不久的將來，這項功能就會推出到所有公司入口網站應用程式。 我們已在 [9 月](#september-2017)針對 iOS 宣佈此功能。
 
 <!-- ########################## -->
 ## <a name="september-2017"></a>2017 年 9 月
@@ -2746,14 +2744,14 @@ Android 版公司入口網站應用程式通常會要求使用者接受「連絡
 Intune 支援 iOS 11。 這項資訊之前已在 [Intune 支援部落格](https://blogs.technet.microsoft.com/intunesupport/2017/09/12/support-tip-intune-support-for-ios-11/)宣布過。
 
 ### <a name="end-of-support-for-ios-80---1164477---"></a>針對 iOS 8.0 終止支援<!-- 1164477 -->
-受管理的應用程式和 iOS 公司入口網站應用程式需要 iOS 9.0 及更新版本才能存取公司資源。 今年 9 月前未更新的裝置將不再能存取公司入口網站或這些應用程式。 
+受管理的應用程式與 iOS 版公司入口網站應用程式需要 iOS 9.0 與更新版本才能存取公司資源。 今年 9 月前未更新的裝置將不再能存取公司入口網站或這些應用程式。 
 
 ### <a name="refresh-action-added-to-the-company-portal-app-for-windows-10--1132468--"></a>重新整理動作已新增至 Windows 10 版公司入口網站應用程式<!--1132468-->
 Windows 10 公司入口網站應用程式可讓使用者提取以重新整理，或按桌上型電腦的 F5，重新整理應用程式中的資料。
 
 ### <a name="inform-end-users-what-device-information-can-be-seen-for-ios--739894--"></a>通知終端使用者可看到哪些 iOS 裝置資訊<!--739894-->
 
-我們在 iOS 的公司入口網站應用程式 [裝置詳細資料] 畫面新增了 [擁有權類型]  。 如此一來，使用者就能夠直接從 Intune 終端使用者文件的此頁面，了解有關隱私權的更多資訊。他們也能夠在 [關於] 畫面上找到這項資訊。
+我們在 iOS 的公司入口網站應用程式 [裝置詳細資料] 畫面新增了 [擁有權類型]  。 這樣可讓使用者直接從此頁面從 Intune 終端使用者文件尋找有關隱私權的詳細資訊。他們也可以在 [關於] 畫面上找到此資訊。
 
 ### <a name="allow-end-users-to-access-the-company-portal-app-for-android-without-enrollment---1169910---"></a>允許終端使用者存取 Android 版公司入口網站應用程式，而不需要註冊<!---1169910--->
 
@@ -2762,11 +2760,11 @@ Windows 10 公司入口網站應用程式可讓使用者提取以重新整理，
 
 ### <a name="easier-to-understand-phrasing-for-the-company-portal-app-for-android---1396349---"></a>Android 版公司入口網站應用程式中更易了解的措辭<!---1396349--->  
 
-Android 公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在 [Intune 終端使用者應用程式](whats-new-app-ui.md#week-of-september-11-2017)頁面上找到範例影像。
+Android 版公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在我們的 [Intune 終端使用者應用程式 UI 更新](whats-new-app-ui.md#week-of-september-11-2017)頁面找到範例影像。
 
 ### <a name="windows-10-company-portal-app-added-to-windows-information-protection-allow-policy---677129---"></a>Windows 10 公司入口網站應用程式已新增到 Windows 資訊保護允許原則<!-- 677129 -->
 
-Windows 10 公司入口網站應用程式已經更新，以支援 Windows 資訊保護 (WIP)。 此應用程式可以加入到 WIP 允許原則。 透過這項變更，此應用程式將不再需要新增至 [豁免]  清單。
+Windows 10 公司入口網站應用程式已更新，現在支援 Windows 資訊保護 (WIP)。 此應用程式可以加入到 WIP 允許原則。 有了此變更，您再也不需要將應用程式加入到[豁免]  清單。
 
 
 <!-- ########################## -->
@@ -2815,7 +2813,7 @@ macOS 版公司入口網站應用程式現已作為 Enterprise Mobility + Securi
 
 
 ### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users---621669---"></a>Android 公司入口網站使用者和應用程式保護原則使用者的新登入體驗<!-- 621669 -->
-終端使用者現在可以使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置以及檢視 IT 連絡人資訊，而不需要註冊其 Android 裝置。 此外，如果終端使用者已使用由 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，則終端使用者無法再收到註冊裝置的提示。
+使用者現在可以使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置及檢視 IT 連絡人資訊，而無需註冊其 Android 裝置。 此外，如果使用者已使用受 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，使用者不會再收到註冊裝置的提示。
 
 ### <a name="new-setting-in-the-android-company-portal-app-to-toggle-battery-optimization--1405990--"></a>Android 公司入口網站應用程式中用來切換電池最佳化的新設定<!--1405990-->
 適用於 Android 的公司入口網站應用程式中的 [設定]  頁面，具有新的設定，可讓使用者輕鬆關閉公司入口網站及 Microsoft Authenticator 應用程式的電池最佳化功能。 設定中所顯示的應用程式名稱，會依管理公司帳戶的應用程式而有所不同。 建議使用者關閉電池最佳化功能，以提升同步電子郵件與資料的公司應用程式效能。 
@@ -2890,8 +2888,8 @@ Intune 可以透過將公司裝置 IMEI 編號列入允許清單，來限制個�
 
 ### <a name="additional-help-desk-troubleshooting-details-----applies-to-1263399-1326964-1341642----"></a>其他技術支援中心疑難排解詳細資料<!---  Applies to 1263399, 1326964, 1341642 --->
 Intune 已更新疑難排解顯示，並新增至針對系統管理員和技術服務人員所提供的資訊。 您現在可以看到 [指派]  表格，其中根據群組成員資格來摘要說明所有使用者指派。 此清單包括：
-- 行動裝置應用程式
-- 合規性政策
+- 行動應用程式
+- 相容性原則
 - 組態設定檔
 
 此外，[裝置]  資料表現在會包含 [Azure AD 聯結類型]  和 [符合 Azure AD 規範]  資料行。 如需詳細資訊，請參閱[協助使用者針對問題進行疑難排解](../help-desk-operators.md)。
@@ -2994,7 +2992,7 @@ Windows 10 的公司入口網站應用程式將包含之前尚未確定或註冊
 除非您在訊息中心收到的一系列訊息中，有要求您採取動作來移轉群組的訊息，否則現有的客戶目前不需採取任何動作。 您可能也會收到訊息中心通知，說明因為我們這一端有錯誤而使移轉需要較長的時間。 我們會努力繼續移轉任何受影響的客戶。
 
 ### <a name="improvements-to-the-app-tiles-in-the-company-portal-app-for-ios"></a>iOS 版公司入口網站應用程式中應用程式磚的增強功能
-我們已更新首頁上應用程式磚的設計，以反映您為公司入口網站設定的商標色彩。 如需詳細資訊，請參閱[應用程式 UI 的新功能](whats-new-app-ui.md)。
+我們已更新首頁上應用程式磚的設計，以反映您針對公司入口網站所設定的商標色彩。 如需詳細資訊，請參閱[應用程式 UI 的新功能](whats-new-app-ui.md)。
 
 ### <a name="account-picker-now-available-for-the-company-portal-app-for-ios"></a>iOS 版公司入口網站應用程式現在有帳戶選擇器可供使用
 如果 iOS 裝置的使用者使用其工作或學校帳戶登入其他 Microsoft 應用程式，當他們登入公司入口網站時，可能會看到新的帳戶選擇器。 如需詳細資訊，請參閱[應用程式 UI 的新功能](whats-new-app-ui.md)。
@@ -3003,7 +3001,7 @@ Windows 10 的公司入口網站應用程式將包含之前尚未確定或註冊
 ## <a name="may-2017"></a>2017 年 5 月
 
 ### <a name="change-your-mdm-authority-without-unenrolling-managed-devices--1103950--"></a>在不取消註冊受控裝置的情況下變更 MDM 授權單位<!--1103950-->
-您現在可以在不需要連絡 Microsoft 支援服務的情況下變更 MDM 授權單位，且不需要取消註冊並重新註冊您現有的受管理裝置。 在 Configuration Manager 主控台中，您可以將 [MDM 授權單位](/sccm/mdm/deploy-use/change-mdm-authority)從 [設定為 Configuration Manager] \(混合式\) 變更為 [Microsoft Intune] \(獨立\)，反之亦然。
+您現在可以在不需要連絡 Microsoft 支援服務的情況下變更 MDM 授權單位，且不需要取消註冊並重新註冊您現有的受管理裝置。 在 Configuration Manager 主控台中，您可以將 [MDM 授權單位] 從 [設定為 Configuration Manager (混合式)] 變更為 [Microsoft Intune (獨立)]，反之亦然。
 
 
 ### <a name="improved-notification-for-samsung-knox-startup-pins--1087143--"></a>已改善 Samsung Knox 啟動 PIN 的通知<!--1087143-->
@@ -3107,7 +3105,7 @@ Intune 現在可以設定 Play 商店中支援受控設定選項的 Android 應�
 
   這項新的 Android for Work 裝置限制原則現在可讓您在所管理的 Android for Work 裝置上管理密碼和工作設定檔設定。
 
-- **允許工作和個人設定檔間的資料共用**<!-- 1045102 -->
+- **允許工作與個人設定檔之間的資料共用**<!-- 1045102 -->
 
 Android for Work 裝置限制設定檔現在有新的選項，可協助您設定工作和個人設定檔之間的資料共用。
 

@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/25/2019
+ms.date: 01/06/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7e2bd869f898bbe7f894cfd9e9c767c8b42e9c4
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e151481b090e1e666bfdb2759015adde6f1d66a9
+ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74465643"
+ms.lasthandoff: 01/07/2020
+ms.locfileid: "75691853"
 ---
 # <a name="bundle-ids-for-built-in-ios-apps-you-can-use-in-intune"></a>您可以在 Intune 中使用之內建 iOS 應用程式的套件組合識別碼
 
@@ -29,9 +29,9 @@ ms.locfileid: "74465643"
 
 ## <a name="bundle-ids"></a>套件組合識別碼
 
-| 套件組合識別碼                   | 應用程式名稱     | 發佈者 |
+| 套件組合識別碼                   | 應用程式名稱     | 發行者 |
 |-----------------------------|--------------|-----------|
-| .com. store             | App Store    | Apple     |
+| com.apple.AppStore          | App Store    | Apple     |
 | com.apple.calculator        | 計算機   | Apple     |
 | com.apple.mobilecal         | 行事曆     | Apple     |
 | com.apple.camera            | 相機       | Apple     |

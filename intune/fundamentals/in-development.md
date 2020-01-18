@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 11/19/2019
+ms.date: 01/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04b284a62076122cec70b6b455151a0377470521
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 01ea2f75d166e5cc6aef4b890dba5722a74c1f61
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74540727"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827814"
 ---
-# <a name="in-development-for-microsoft-intune---december-2019"></a>Microsoft Intune 正在開發的項目 - 2019 年 12 月
+# <a name="in-development-for-microsoft-intune---january-2020"></a>Microsoft Intune 正在開發的項目 - 2020 年 1 月
 
-為了協助您整備及規劃，此頁面會列出正在開發，但尚未發行的 Intune UI 更新及功能。 除了此頁面上的資訊：
+為了協助您整備及規劃，此頁面會列出正在開發，但尚未發行的 Intune UI 更新及功能。 除了此頁面上的資訊： 
 
 - 若我們預期您將需要在變更前先行採取動作，我們會在 Office 訊息中心發佈輔助性貼文。
 - 當功能進入生產環境時，不論是預覽或正式推出，功能描述都會從這個頁面移至[新](whats-new.md)功能。
@@ -58,47 +58,24 @@ ms.locfileid: "74540727"
 <!-- ***********************************************-->
 ## <a name="app-management"></a>應用程式管理
 
-### <a name="ios-user-licensed-vpp-apps---5619268-idready---"></a>iOS 使用者授權的 VPP 應用程式<!-- 5619268 idready -->
-對於使用者註冊 iOS 裝置，使用者將不會再看到部署為 [可用] 的裝置授權 VPP 應用程式。 不過，終端使用者將會繼續查看公司入口網站內所有使用者授權的 VPP 應用程式。 如需與 VPP 應用程式相關的詳細資訊，請參閱[如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 和 macOS 應用程式](~/apps/vpp-apps-ios.md)。
-
-### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745-idready---"></a>從記憶體加密的 macOS 裝置取出個人修復金鑰<!-- 4851745 idready -->
-使用者將能夠使用 iOS 公司入口網站應用程式來取出其個人修復金鑰（FileVault 金鑰）。 具有個人修復金鑰的裝置必須向 Intune 註冊，並透過 Intune 以 FileVault 加密。 使用 iOS 公司入口網站應用程式，使用者可以開啟 Safari web view 並取出其個人的修復金鑰。 在 Intune 中，選取 **裝置** > 已*加密且已註冊的 MacOS 裝置* > **取得修復金鑰**。 如需 FileVault 的詳細資訊，請參閱[FileVault encryption For macOS](~/protect/encrypt-devices.md#filevault-encryption-for-macos)。
-
-### <a name="microsoft-app-icons-update--4677605--"></a>Microsoft 應用程式圖示更新<!--4677605-->
-應用程式保護原則和應用程式設定原則的應用程式目標窗格中，用於 Microsoft 應用程式的圖示將會更新。
-
-### <a name="smime-support-for-microsoft-outlook-mobile---2669398----"></a>Microsoft Outlook Mobile 的 S/MIME 支援<!-- 2669398  -->
-Intune 將支援提供可與 iOS 和 Android 上的 Outlook Mobile 搭配使用的 S/MIME 簽署和加密憑證。 如需相關資訊，請參閱[iOS 裝置的電子郵件設定](~/configuration/email-settings-ios.md)和[Android 裝置的電子郵件設定](~/configuration/email-settings-android.md)。
-
-### <a name="custom-settings-support-for-macos-applications---4736278----"></a>MacOS 應用程式的自訂設定支援<!-- 4736278  -->
-Intune 將支援自訂設定，可讓您將特定的索引鍵和值新增至現有的喜好設定屬性清單（. plist）檔案，以設定 macOS 應用程式和裝置。 並非所有應用程式都支援受控喜好設定，而在某些情況下，只能管理特定的設定。 這些設定只會透過裝置通道進行部署。 您應該只上傳以裝置通道設定為目標的屬性清單檔案或 .xml 檔案。
-
 ### <a name="display-notifications-for-the-company-portal-app-on-windows---1808082----"></a>在 Windows 上顯示公司入口網站應用程式的通知<!-- 1808082  -->
-我們會更新 Windows 裝置上的公司入口網站應用程式，以向使用者顯示快顯通知，即使應用程式關閉也是一樣。 只有在安裝狀態為 [已完成] 或 [失敗] 時，更新才會顯示可用應用程式的通知。 公司入口網站應用程式不會顯示必要應用程式的通知。
+我們會更新 Windows 裝置上的公司入口網站應用程式，以向使用者顯示快顯通知，即使應用程式關閉也是一樣。 只有在安裝狀態為 [已完成] 或 [失敗] 時，更新才會顯示可用應用程式的通知。 公司入口網站應用程式不會顯示必要應用程式的通知。 
 
 ### <a name="display-installation-status-messages-for-the-company-portal-app---2514416----"></a>顯示公司入口網站應用程式的安裝狀態訊息<!-- 2514416  -->
 公司入口網站應用程式會向終端使用者顯示額外的應用程式安裝狀態訊息。 下列條件將適用于新的 Win32 相依性功能：
 - 應用程式無法啟動。 不符合系統管理員所定義的相依性。
 
-### <a name="configure-app-notification-content-for-organization-accounts---2576686---"></a>設定組織帳戶的代理程式更新內容<!-- 2576686 -->
-Android 和 iOS 裝置上的 Intune 應用程式可讓您控制組織帳戶的代理程式更新內容。 這項功能將需要應用程式的支援，而且可能無法供所有啟用應用程式的應用程式使用。 如需有關應用程式的詳細資訊，請參閱[什麼是應用程式保護原則？](../apps/app-protection-policy.md)
+### <a name="retarget-web-clips-to-microsoft-edge-on-ios-devices---5455276-idready---"></a>在 iOS 裝置上將 web 剪輯的目標重定為 Microsoft Edge<!-- 5455276 idready -->
+在 iOS 裝置上作為固定 web 應用程式的 web 剪輯必須更新。 如果需要在受保護的瀏覽器中開啟，新部署的 web 剪輯會在 Microsoft Edge 中開啟，而不是 Intune Managed Browser。 您必須重新置放既有的 web 剪輯，以確保它們在 Microsoft Edge 中開啟，而不是 Managed Browser。 
+
+### <a name="user-experience-change-when-adding-apps-to-intune---4705829-idready---"></a>將應用程式新增至 Intune 時的使用者體驗變更<!-- 4705829 idready -->
+透過 Intune 新增應用程式時，您會看到新的使用者體驗。 此體驗會提供您先前使用的相同設定和詳細資料，但新的體驗會遵循類似 wizard 的程式，再將應用程式新增至 Intune。 此新體驗也會在新增應用程式之前提供審查頁面。 從 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選取 [應用程式]   > [所有應用程式]   > [新增]  。 如需詳細資訊，請參閱[將應用程式新增至 Microsoft Intune](~/apps/apps-add.md)。
+
+#### <a name="require-win32-apps-to-restart----3136567--"></a>需要 Win32 應用程式重新開機 <!-- 3136567-->
+您可以要求 Win32 應用程式必須在成功安裝後重新開機。 此外，您也可以選擇必須重新開機之前的時間量（寬限期）。
 
 <!-- ***********************************************-->
 ## <a name="device-configuration"></a>裝置設定
-
-### <a name="block-users-from-configuring-certificate-credentials-in-the-managed-keystore-on-android-enterprise-device-owner-devices---3311998-idready---"></a>禁止使用者在 Android Enterprise 裝置擁有者裝置上的受控金鑰儲存區中設定憑證認證<!-- 3311998 idready -->
-在 Android Enterprise 裝置擁有者裝置上，將會有新的設定，可封鎖使用者在受控金鑰存放區中設定其憑證認證（**裝置**設定 > **配置**檔 > **建立設定檔** > **Android Enterprise** for platform >**裝置擁有者，僅 >** 配置檔案類型 >**使用者 + 帳戶**）的裝置限制。
-
-若要查看目前的設定，請前往[使用 Intune 允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。
-
-適用於：
-- Android Enterprise 裝置擁有者，包括專用且完全受控的裝置
-
-### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686-idready---"></a>適用于 macOS 裝置的有線網路裝置設定設定檔<!-- 3508686 idready -->
-在 macOS 裝置上，未來的更新將會包含新的裝置設定設定檔，其會設定有線網路（**裝置**設定 > **配置**檔 > 為平臺 >**有線網路**配置檔案類型）**建立設定檔** > **macOS** 。 使用此功能來建立 802.1 x 設定檔以管理有線網路，並將這些有線網路部署至您的 macOS 裝置。
-
-適用於：
-- macOS
 
 ### <a name="add-automatic-proxy-settings-to-wi-fi-profiles-for-android-enterprise-work-profiles---4490822-idready---"></a>將自動 proxy 設定新增至 Android Enterprise 工作設定檔的 Wi-fi 設定檔<!-- 4490822 idready -->
 在 Android Enterprise 工作設定檔裝置上，您可以建立 Wi-fi 設定檔。 當您選擇 Wi-fi 企業類型時，您也可以輸入在 Wi-fi 網路上使用的可延伸驗證通訊協定（EAP）類型。
@@ -110,100 +87,83 @@ Android 和 iOS 裝置上的 Intune 應用程式可讓您控制組織帳戶的�
 適用於：
 - Android Enterprise 工作設定檔
 
-### <a name="enable-network-access-control-nac-with-cisco-anyconnect-vpn-on-ios-devices---4860111-idready---"></a>在 iOS 裝置上使用 Cisco AnyConnect VPN 啟用網路存取控制（NAC）<!-- 4860111 idready -->
-在 iOS 裝置上，您可以建立 VPN 設定檔，並使用不同的連線類型，包括 Cisco AnyConnect （**裝置**設定 > **設定檔** > **為平臺**> **VPN** **建立 > 配置**檔案類型 > **Cisco AnyConnect** for connection type）。 
-
-在未來的更新中，您將能夠啟用具有 Cisco AnyConnect 的網路存取控制（NAC）。 若要使用此功能：
-
-1. 在[Cisco Identity Services 引擎系統管理員指南](https://www.cisco.com/c/en/us/td/docs/security/ise/2-1/admin_guide/b_ise_admin_guide_21/b_ise_admin_guide_20_chapter_01000.html)中，使用將**MICROSOFT INTUNE 設定為 MDM 伺服器**中的步驟，在 Azure 中設定 Cisco IDENTITY Services 引擎（ISE）。
-2. 在 Intune 裝置設定檔中，選取 [**啟用網路存取控制（NAC）** ] 設定。
-
-若要查看所有可用的 VPN 設定，請移至[在 iOS 裝置上設定 VPN 設定](../configuration/vpn-settings-ios.md)。
+### <a name="wired-network-device-configuration-profiles-for-macos-devices---3508686----"></a>適用于 macOS 裝置的有線網路裝置設定設定檔<!-- 3508686  -->
+將會提供新的 macOS 裝置設定設定檔 **，以設定**有線網路（**裝置**設定 > **配置**檔 >  > 為平臺 >**有線網路** **設定設定檔**類型）。 使用此功能來建立 802.1 x 設定檔以管理有線網路，並將這些有線網路部署至您的 macOS 裝置。
 
 適用於：
-- iOS
-
-### <a name="updated-single-sign-on-experience-for-apps-and-websites-on-your-ios-ipados-and-macos-devices---4999578-idready---"></a>已在您的 iOS、iPadOS 和 macOS 裝置上更新應用程式和網站的單一登入體驗<!-- 4999578 idready -->
-Intune 正在為 iOS、iPadOS 和 macOS 裝置新增更多單一登入設定。 目前，您可以在 Intune 中設定認證 SSO 應用程式延伸模組和 Apple 內建 Kerberos 延伸模組。 在未來的更新中，您將能夠設定由貴組織或由您的身分識別提供者所撰寫的重新導向 SSO 應用程式延伸模組。 
-
-使用這些設定，針對使用新式驗證方法（例如 OAuth 和 SAML2）的應用程式和網站，設定順暢的單一登入體驗。 
-
-若要查看您可以設定的 SSO 應用程式延伸模組設定，請移至[macOS](../configuration/macos-device-features-settings.md#single-sign-on-app-extension)上的 [IOS 和 sso] 上的 [ [sso](../configuration/ios-device-features-settings.md#single-sign-on-app-extension) ]。
-
-適用於：
-- iOS/iPadOS
 - macOS
 
-### <a name="require-use-of-approved-keyboards-on-android--4761794-idready---"></a>需要在 Android 上使用已核准的鍵盤<!--4761794 IDready -->
-您可以指定可在受控 Android 應用程式中使用的已核准鍵盤清單。 在受管理的應用程式中，系統會提示使用者切換到已安裝在其裝置上的其中一個已核准鍵盤，或視需要將其導向至 Google Play 商店以下載和設定其中一個已核准的鍵盤。 使用者只能在受管理的應用程式中編輯文字欄位（如果其現用鍵盤是其中一個已核准的鍵盤）。
+### <a name="vpn-profiles-with-ikev2-vpn-connections-can-use-always-on-with-ios-devices----1947932-idready---"></a>具有 IKEv2 VPN 連線的 VPN 設定檔可以搭配 iOS 裝置使用 always on <!-- 1947932 idready -->
+在 iOS 裝置上，您可以建立使用 IKEv2 連線的 VPN 設定檔（**裝置**設定 > **配置**檔 > **建立**設定檔 > **iOS/iPadOS**用於平臺 > **VPN**以進行配置檔案類型）。 在未來的更新中，您可以使用 IKEv2 設定「永遠開啟」。 當設定時，IKEv2 VPN 設定檔會自動連線，並保持連接（或快速重新連接） VPN。 即使在網路之間移動或重新開機裝置，它仍會保持連線。
 
-### <a name="use-pkcs-certificates-with-wi-fi-profiles-on-windows-10-and-later-devices---3246388----"></a>在 Windows 10 和更新版本的裝置上搭配使用 PKCS 憑證與 Wi-fi 設定檔<!-- 3246388  -->
-目前，您可以使用 SCEP 憑證（**裝置**設定 > **設定檔**來驗證 windows wi-fi 設定檔， > 為配置檔案類型 > **Enterprise** > **EAP 類型**）的平臺 > **wi-fi** **建立設定檔** > **Windows 10 和更新版本**。 您將可以搭配 Windows Wi-fi 設定檔使用 PKCS 憑證。 這項功能可讓使用者使用您租使用者中新的或現有的 PKCS 憑證設定檔來驗證 Wi-fi 設定檔。 
+在 iOS 上，always on VPN 僅限於 IKEv2 設定檔。
 
-如需有關 Wi-fi 設定檔的詳細資訊，請參閱[在 Intune 中新增適用于 Windows 10 和更新版本裝置的 wi-fi 設定](../configuration/wi-fi-settings-windows.md)。
-
-適用於：
-- Windows 10 及更新版本
-
-### <a name="new-exchangeactivesync-settings-when-creating-an-email-device-configuration-profile-on-ios-devices---4892824----"></a>在 iOS 裝置上建立電子郵件裝置組態設定檔時的新 Exchange ActiveSync 設定<!-- 4892824  --> 
-在 iOS/iPadOS 裝置上，您可以在裝置組態設定檔中設定電子郵件連線能力 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [iOS/iPadOS]  作為平台 > [電子郵件]  作為設定檔類型)。 
-
-將會提供新的 ExchangeActiveSync 設定，包括：
-- 選擇要同步（或封鎖同步處理）的服務，例如電子郵件、行事曆和連絡人。
-- 允許 (或封鎖) 使用者在其裝置上變更這些服務的同步處理設定。 
-
-若要查看目前的設定，請移至[Intune 中 iOS 裝置的電子郵件設定檔設定](../configuration/email-settings-ios.md)。
-
-適用於：
-- iOS 13.0 與更新版本
-- iPadOS 13.0 和更新版本
-
-### <a name="prevent-users-from-adding-personal-google-accounts-to-android-enterprise-device-owner-and-dedicated-devices---5353228----"></a>防止使用者將個人 Google 帳戶新增至 Android Enterprise 裝置擁有者和專用裝置<!-- 5353228  -->
-您將能夠防止使用者在 Android Enterprise 裝置擁有者和專用裝置上建立個人 Google 帳戶 ([裝置設定]   > [設定檔]   > [建立設定檔]   > [Android Enterprise]  作為平台 > [僅限裝置擁有者] > [裝置限制]  作為設定檔類型 > [使用者及帳戶]  設定)。
-
-若要查看您目前可以設定的設定，請參閱[使用 Intune 來允許或限制功能的 Android Enterprise 裝置設定](../configuration/device-restrictions-android-for-work.md)。
-
-適用於：
-- Android Enterprise 裝置擁有者
-- Android Enterprise 專用裝置
-
-### <a name="server-side-logging-for-siri-commands-setting-is-removed-in-ios-device-restrictions-profile---5468501----"></a>Siri 命令的伺服器端記錄設定已從 iOS 裝置限制設定檔中移除<!-- 5468501  -->
-在 iOS 裝置上，您可以建立裝置限制設定檔，以設定 Siri 命令的伺服器端記錄（**裝置**設定 > **配置**檔 > 針對配置檔案類型 >**內建應用程式**的平臺 >**裝置限制** **建立設定檔** > **iOS/iPadOS** 。 將會移除**Siri 命令的伺服器端記錄**設定。
-
-此設定將會從 Intune 管理主控台移除。 即使已設定此設定的現有原則會繼續顯示設定，此設定對裝置沒有任何作用。 如果您想要從現有的原則中移除設定，請移至原則、進行次要編輯、儲存，然後將更新原則。
-
-若要查看您可以設定的設定，請參閱[使用 Intune 透過 iOS 與 iPadOS 裝置設定來允許或限制功能](../configuration/device-restrictions-ios.md)。
+若要查看您目前可以設定的 IKEv2 設定，請前往[在 Microsoft Intune 中於 iOS 裝置上新增 VPN 設定](../configuration/vpn-settings-ios.md#ikev2-settings)。
 
 適用於：
 - iOS
 
-<!-- ***********************************************-->
-<!--## Device enrollment-->
+### <a name="improved-user-interface-experience-when-creating-configuration-profiles-on-ios-and-macos-devices---5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984-idready---"></a>改善在 iOS 和 macOS 裝置上建立設定設定檔時的使用者介面體驗<!-- 5569008-5569039-5569057-5569110-5569116-5569131-5569139-5569153-5859984 idready -->
+當您建立 iOS 或 macOS 裝置的設定檔時，將會更新 [端點管理] 系統管理中心的體驗。 這項變更會影響下列裝置設定設定檔（**裝置** ** > 設定設定檔 > ** **建立**適用于平臺的設定檔 > **iOS**或**macOS** ）：
+
+- Custom： iOS、macOS
+- 裝置功能： iOS、macOS
+- 裝置限制：iOS、macOS
+- 端點保護：macOS
+- 延伸模組： macOS
+- 喜好設定檔案： macOS
+
+### <a name="improved-user-interface-experience-when-creating-oemconfig-configuration-profiles-on-android-enterprise-devices---5568645-idready----"></a>改善在 Android Enterprise 裝置上建立 OEMConfig 設定設定檔時的使用者介面體驗<!-- 5568645 idready  -->
+當您建立或編輯 Android 企業裝置的 OEMConfig 設定檔時，會更新端點管理系統管理中心的體驗。 更新的體驗將會提供您一眼就設定的設定摘要。 此變更會影響 OEMConfig 裝置設定設定檔  （裝置 ** > 設定設定檔，**  > 為配置檔案類型**建立配置**檔 > **Android Enterprise**的平臺 > **OEMConfig** 。
+
+本功能適用於：
+- Android 企業 
 
 <!-- ***********************************************-->
-<!--## Device management-->
+## <a name="device-enrollment"></a>裝置註冊
 
+### <a name="block-android-enrollments-by-device-manufacturer--5197392-idready--"></a>封鎖裝置製造商的 Android 註冊<!--5197392 idready-->
+您將能夠根據裝置的製造商來封鎖裝置的註冊。 這適用于 Android 裝置系統管理員和 Android Enterprise 工作設定檔裝置。 若要查看註冊限制，請移至[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)> **裝置** > **註冊限制**。
+
+
+
+<!-- ***********************************************-->
+## <a name="device-management"></a>裝置管理
+
+
+### <a name="new-information-in-device-details---4471759-5604099----"></a>裝置詳細資料中的新資訊<!-- 4471759 5604099  -->
+下列資訊會新增至裝置的 **[總覽**] 頁面：
+- 記憶體容量（裝置上的實體記憶體數量）
+- 儲存體容量（裝置上的實體儲存體數量） 
+- CPU 處理器類型和速度
+- RAM 和處理器資料
 
 <!-- ***********************************************-->
 <!--## Intune apps-->
  
 
 <!-- ***********************************************-->
-## <a name="monitoring-and-troubleshooting"></a>監視和疑難排解
 
-### <a name="centralized-audit-logs--5603185-5697164--"></a>集中式審核記錄<!--5603185, 5697164-->
-新的集中式審核記錄體驗會將所有類別的審核記錄收集到單一頁面中。 You'l 能夠篩選記錄檔，以取得您要尋找的資料。 若要查看 audit 記錄，請移至 [**租使用者管理**] > [ **audit logs**]。 如需詳細資訊，請參閱[Intune 中的 Audit 記錄即將進行的變更](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Upcoming-change-to-Audit-logs-in-Intune/ba-p/1015858)。
-
-<!-- ***********************************************-->
-<!--## Role-based access control-->
+<!--
+## Monitoring and troubleshooting
+-->
 
 
 <!-- ***********************************************-->
+## <a name="role-based-access-control"></a>角色型存取控制
 
+### <a name="new-intune-built-in-role-endpoint-security-manager--4253397-idready--"></a>新的 Intune 內建角色端點安全性管理員<!--4253397 idready-->
+將會提供新的 Intune 內建角色：「端點安全性管理員」。 這個新角色可讓系統管理員完整存取 Intune 中的端點管理員節點，以及僅供存取其他區域。 角色是 Azure AD 的「安全性系統管理員」角色的擴充。 如果您目前只有全域管理員做為角色，則不需要進行任何變更。 如果您使用角色，而您想要端點安全性管理員所提供的資料細微性，請在可用時指派該角色。 如需內建角色的詳細資訊，請參閱[角色型存取控制](role-based-access-control.md)。
+
+### <a name="intune-roles-user-interface-changes-coming--5801612-idready--"></a>Intune 角色使用者介面變更即將推出<!--5801612 idready-->
+[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)系統管理中心的使用者介面 > **租使用者管理** > **角色**將會變更為更方便使用且直覺化的設計。 這種體驗會提供您現在所使用的相同設定和詳細資料，但新的體驗會採用類似 wizard 的進程。
+
+
+<!-- ***********************************************-->
 ## <a name="security"></a>安全性
 
-### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529-idready---"></a>使用 PKCS 憑證設定檔搭配憑證來布建裝置<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529 IDready -->
-您將能夠使用 PKCS 憑證設定檔，將憑證發行至裝置，並在我們目前的使用者憑證支援上擴充。 以裝置為基礎的憑證將支援 Android、iOS 和 Windows 平臺，並可用於 Wi-fi 和 VPN 設定檔。
+### <a name="derived-credentials-support-on-android-cobo-devices--4839592--"></a>Android COBO 裝置上的衍生認證支援<!--4839592-->
+您將能夠在 Android Enterprise 完全受控裝置上使用衍生的認證。 將包含支援來抓取 Entrust Datacard、調解和 DISA Purebred 的衍生認證。 您將能夠使用衍生的認證來進行應用程式驗證、Wi-fi、VPN 或 S/MIME 簽署及/或使用支援的應用程式加密。 
 
 <!-- ***********************************************-->
 ## <a name="notices"></a>通知

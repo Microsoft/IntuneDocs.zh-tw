@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/02/2019
+ms.date: 01/09/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ed04c1bf135793da9cece9debc2c7cdd481601a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d226a5b8ee448b7b168a03fe6b8a1c63bc1be432
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74691682"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827780"
 ---
 # <a name="add-a-property-list-file-to-macos-devices-using-microsoft-intune"></a>使用 Microsoft Intune 將屬性清單檔案新增至 macOS 裝置
 
@@ -53,6 +53,16 @@ ms.locfileid: "74691682"
 - **喜好設定功能變數名稱**：屬性清單檔案通常用於網頁瀏覽器（microsoft Edge）、 [Microsoft Defender Advanced 威脅防護](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-atp-mac)及自訂應用程式。 當您建立喜好設定網域時，也會建立配套識別碼。 輸入套件組合識別碼，例如 `com.company.application`。 例如，輸入 `com.Contoso.applicationName`、`com.Microsoft.Edge` 或 `com.microsoft.wdav`。
 - **屬性清單**檔案：選取與您的應用程式相關聯的屬性清單檔案。 請確定它是 `.plist` 或 `.xml` 檔案。 例如，上傳 `YourApp-Manifest.plist` 或 `YourApp-Manifest.xml` 檔案。
 - 檔案**內容**：顯示內容清單檔案中的重要資訊。 如果您需要變更金鑰資訊，請在另一個編輯器中開啟清單檔案，然後在 Intune 中重新上傳該檔案。
+
+請確定您的檔案格式正確。 檔案應該只有索引鍵值組，不應包裝在 `<dict>`、`<plist>`或 `<xml>` 標記中。 例如，您的屬性清單檔案應該類似下列檔案：
+
+```xml
+<key>SomeKey</key>
+<string>someString</string>
+<key>AnotherKey</key>
+<false/>
+...
+```
 
 選取 [確定]   > [建立]  儲存您的變更。 設定檔隨即建立，並顯示在設定檔清單中。
 

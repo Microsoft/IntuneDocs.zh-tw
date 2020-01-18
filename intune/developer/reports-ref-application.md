@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 01/02/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a8fa34673340e4adca7b64707d8c79d4808460
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 2c87d9b423eeb96acbc984040ef49e44c1853a18
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74290953"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654238"
 ---
 # <a name="reference-for-application-entities"></a>應用程式實體的參考
 
@@ -69,7 +69,7 @@ ms.locfileid: "74290953"
 
 ### <a name="example"></a>範例
 
-| AppTypeID  | 名稱 | 說明 |
+| AppTypeID  | Name | 說明 |
 |---------|------------|--------|
 | 0 |Android 市集應用程式 | Android 市集應用程式。 |
 | 1 |Android LOB 應用程式 | Android 企業營運應用程式。 |
@@ -98,7 +98,7 @@ ms.locfileid: "74290953"
 
 ### <a name="example"></a>範例
 
-| VppProgramID  | 名稱 | 說明 |
+| VppProgramID  | Name | 說明 |
 |---------|------------|--------|
 | 3DDA2474-470B-4503-9830-2665C21C1945 | Microsoft | Microsoft 的 VPP 方案。 |
 | 00000000-0000-0000-0000-000000000000 | 尚未提供 | 預設值為 [無 VPP]。 |
@@ -114,7 +114,7 @@ ms.locfileid: "74290953"
 |---------|------------|
 | deviceKey | 這是包含 Intune 裝置識別碼的裝置資料表參考。 |
 | dateKey | 表示清查當日的日期資料表參考。 |
-| applicationName | 應用程式的名稱。 |
+| applicationName | 應用程式名稱。 |
 | applicationVersion | 應用程式的版本。 |
 | bundleSize | 以位元組為單位的應用程式大小。 |
 

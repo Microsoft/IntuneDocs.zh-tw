@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc29a7a5026691371370b167a4445bfd70cc76bd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 37fa650fb8c742b1f1b0cfbf154fe8cf63d35c89
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489796"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206460"
 ---
 # <a name="microsoft-intune-windows-phone-81-device-restriction-settings"></a>Microsoft Intune Windows Phone 8.1 裝置限制設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows Phone 8.1 的裝置進行設定。
 
@@ -72,7 +72,7 @@ ms.locfileid: "72489796"
 
 從 [[Windows Phone 市集]](https://www.microsoft.com/store/apps/windows-phone) 頁面中，搜尋您想要使用的應用程式。
 
-開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以在允許或封鎖的應用程式清單中使用這個 URL。
+開啟應用程式的頁面，然後將 URL 複製到剪貼簿。 您現在可以在允許或封鎖的應用程式清單中使用這個複製的網址作為 URL。
 
 範例：在市集中搜尋 Skype 應用程式。 您使用的 URL 是 `http://www.windowsphone.com/store/app/skype/c3f8e570-68b3-4d6a-bdbb-c0a3f4360a51`。
 

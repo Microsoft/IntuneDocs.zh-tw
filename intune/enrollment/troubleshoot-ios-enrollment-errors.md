@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46b46cd4a407df686e094198c588371ed4a01bb6
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9bca046302b221b934d0802c0bf637aced2cec3f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832582"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885926"
 ---
 # <a name="troubleshoot-ios-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 iOS 裝置註冊問題進行疑難排解
 
 本文可協助 Intune 系統管理員瞭解並疑難排解在 Intune 中註冊 iOS 裝置時的問題。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 開始進行疑難排解之前，請務必收集一些基本資訊。 此資訊可協助您進一步瞭解問題，並縮短尋找解決方案的時間。
 
@@ -40,7 +40,7 @@ ms.locfileid: "74832582"
 - 哪個平臺（Android、iOS、Windows）有問題？
 - 有多少使用者受到影響？ 所有使用者都會受到影響，還是只有部分？
 - 有多少裝置受到影響？ 所有裝置是否受到影響，或只是部分？
-- 什麼是 MDM 授權單位？ 如果 System Center Configuration Manager，您使用的是哪一版的 Configuration Manager？
+- 什麼是 MDM 授權單位？
 - 如何執行註冊？ 它是「攜帶您自己的裝置」（BYOD）或 Apple 裝置註冊計劃（DEP）與註冊設定檔嗎？
 
 ## <a name="error-messages"></a>錯誤訊息
@@ -186,7 +186,7 @@ ms.locfileid: "74832582"
 **原因：** Apple Push Notification Service （APNs）憑證遺失、無效或已過期。
 
 #### <a name="resolution"></a>解決方案
-確認已將有效的 APNs 憑證新增至 Intune。 如需詳細資訊，請參閱[設定 iOS 與 Mac 裝置管理](https://docs.microsoft.com/intune-classic/deploy-use/set-up-ios-and-mac-management-with-microsoft-intune)。 
+確認已將有效的 APNs 憑證新增至 Intune。 如需詳細資訊，請參閱[設定 iOS 註冊](ios-enroll.md)。
 
 ### <a name="accountnotonboarded"></a>AccountNotOnboarded
 
@@ -199,7 +199,6 @@ ms.locfileid: "74832582"
 > 請確定您已更新 APNs 憑證。 請勿取代 APNs 憑證。 如果您取代憑證，就必須在 Intune 中重新註冊所有 iOS 裝置。 
 
 - 若要在 Intune 獨立版中更新 APNs 憑證，請參閱[更新 APPLE MDM push certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate)。
-- 若要使用 Configuration Manager 更新 Intune 混合式中的 APNs 憑證，請參閱[使用 System Center Configuration Manager 和 Microsoft Intune 設定 iOS 混合式裝置管理](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac)。
 - 若要更新 Office 365 中的 APNs 憑證，請參閱[建立適用于 iOS 裝置的 Apns 憑證](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7)。
 
 ### <a name="xpc_type_error-connection-invalid"></a>XPC_TYPE_ERROR 連接無效
@@ -230,7 +229,7 @@ iPhone mobileassetd[83] <Notice>: 0x1a49aebc0 Client connection: XPC_TYPE_ERROR 
 #### <a name="resolution"></a>解決方案
 
 1. 編輯註冊設定檔。 您可以對設定檔進行任何變更。 其目的是要更新設定檔的修改時間。
-2. 同步處理 DEP 受控裝置：在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [註冊方案權杖]  > 選擇權杖 > [立即同步處理]  。 同步處理要求會傳送至 Apple。
+2. 同步處理 DEP 管理的裝置：在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [註冊方案權杖]  > 選擇權杖 > [立即同步]  。 同步處理要求會傳送至 Apple。
 
 ### <a name="dep-enrollment-stuck-at-user-login"></a>DEP 註冊停滯于使用者登入
 當您開啟已指派註冊設定檔的 DEP 管理裝置時，在您輸入認證後的初始安裝程式將會變棒。

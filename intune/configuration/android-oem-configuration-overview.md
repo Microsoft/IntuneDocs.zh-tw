@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 075e7a99f72de30e83447a2869154859e33356b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e514c10ea61bb12ef3c4626b077aa105b66866f1
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74390846"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75206868"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中使用和管理 Android 企業裝置與 OEMConfig
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 在 Microsoft Intune 中，您可以使用 OEMConfig 來新增、建立和自訂 Android 企業裝置的 OEM 特定設定。 OEMConfig 通常用來設定未內建在 Intune 中的設定。 不同的原始設備製造商（OEM）包含不同的設定。 可用的設定取決於 OEM 在其 OEMConfig 應用程式中包含的內容。
 
@@ -60,7 +60,7 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 - Oem 可以隨時更新其支援的功能和架構，並將新的應用程式上傳至 Google Play。 Intune 一律會從 Google Play 同步處理最新版本的 OEMConfig 應用程式。 Intune 不會維護較舊版本的架構或應用程式。 如果您遇到版本衝突，建議您聯繫 OEM 以取得詳細資訊。
 - 將一個 OEMConfig 設定檔指派給裝置。 如果將多個設定檔指派給相同的裝置，您可能會看到不一致的行為。 OEMConfig 模型只支援每個裝置一個原則。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 若要在您的裝置上使用 OEMConfig，請確定您具有下列需求：
 
@@ -80,7 +80,7 @@ OEMConfig 原則是一種特殊類型的裝置設定原則，類似于[應用程
 
 ## <a name="create-an-oemconfig-profile"></a>建立 OEMConfig 設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2965d6a017d92bd4535a29a2257c0cac5e6deaf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 2774a4f4c571b8a965c9ec47376a671df2dbf006
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506356"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856677"
 ---
 # <a name="encrypting-your-android-device"></a>加密 Android 裝置
 
@@ -48,7 +48,7 @@ ms.locfileid: "72506356"
 3. 選擇 [**裝置開啟時需要 PIN** **] > [確定]** 。
 4. 輸入您的 PIN 以確認並加密您的裝置。
 5. 開啟公司入口網站或 Microsoft Intune 應用程式。
-    * 公司入口網站使用者：選取您的裝置，然後點選 [檢查裝置設定]  。 
+    * 公司入口網站使用者：選取您的裝置並點選 [檢查裝置設定]  。 
     * Microsoft Intune 使用者：您必須等到頁面更新之後，您的加密狀態應該會變更為 [符合規範]。  
 
 執行 Android 4.4 和更早版本的裝置可能沒有**安全啟動**選項。 在此情況下，請完成下列步驟來加密您的裝置。
@@ -59,7 +59,7 @@ ms.locfileid: "72506356"
 
 2. 遵循螢幕上的指示操作。 在加密期間，您的裝置可能會重新啟動數次。
 3. 開啟公司入口網站或 Microsoft Intune 應用程式。
-    * 公司入口網站使用者：選取您的裝置，然後點選 [檢查裝置設定]  。  
+    * 公司入口網站使用者：選取您的裝置並點選 [檢查裝置設定]  。  
     * Microsoft Intune 使用者：您必須等到頁面更新之後，您的加密狀態應該會變更為 [符合規範]。
 
 ## <a name="troubleshoot"></a>疑難排解  

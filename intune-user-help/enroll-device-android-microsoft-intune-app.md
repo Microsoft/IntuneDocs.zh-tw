@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: esmich
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81c842eb27b1b9131c164ced5aeed86a78a37353
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 02aab98bf74664cbdb8c7d7dccbfadba701b59f6
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506285"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75856780"
 ---
 # <a name="enroll-your-corporate-device-with-the-microsoft-intune-app"></a>使用 Microsoft Intune 應用程式註冊您的公司裝置
 
@@ -45,7 +45,7 @@ ms.locfileid: "72506285"
 
 1. 開啟新裝置或恢復出廠預設值之裝置的電源。  
 2. 在 [歡迎使用]  畫面上選取您的語言。   若您收到指示，要求您使用 QR 代碼或 NFC 註冊，請遵循以下符合該方法的步驟。  
-     * NFC：輕觸針對程式設計師裝置提供支援的 NFC 裝置，來連線到您組織的網路。 遵循畫面上的提示。 當您到達 Chrome 的服務條款畫面時，請繼續前往步驟 5。  
+     * NFC：針對程式設計師裝置輕觸您支援 NFC 的裝置，來連線到您組織的網路。 遵循畫面上的提示。 當您到達 Chrome 的服務條款畫面時，請繼續前往步驟 5。  
 
      * QR 代碼：完成 [QR 代碼註冊](#qr-code-enrollment)中的步驟。  
 
@@ -54,7 +54,7 @@ ms.locfileid: "72506285"
 3. 連線到 Wi-Fi 並點選 [下一步]  。 遵循符合您註冊方法的步驟。 
 
     * 權杖：當您到達 Google 登入畫面時，請完成[權杖註冊](#token-enrollment)中的步驟。  
-    * Google Zero Touch：在您連線到 Wi-Fi 後，組織將會重新辨識您的裝置。 繼續前往步驟 4 並遵循畫面上的提示，直到安裝完成。    
+    * Google Zero Touch：在您連線到 Wi-Fi 後，您的組織將能辨識您的裝置。 繼續前往步驟 4 並遵循畫面上的提示，直到安裝完成。    
  
        ![Google 條款畫面的範例影像 (若您使用 Google Zero Touch 的話)，其中已醒目提示 [接受並繼續] 按鈕。](./media/google-zero-touch-intune-app-01.png)   
    

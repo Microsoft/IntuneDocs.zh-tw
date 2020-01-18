@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: chrisgre
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2a1d025620e37009ce283510fc8f71b6fb90993f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 12b8fcc5c8514dbcc4c649d1c1113dca0ea51d64
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72500188"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858357"
 ---
 # <a name="your-computer-is-already-enrolled"></a>您的電腦已註冊
 
@@ -38,6 +38,6 @@ ms.locfileid: "72500188"
 
 3. 按照提示將電腦連結到您的使用者帳戶。
 
-若要取消註冊裝置，請依據所擁有的裝置類型是 [Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md) 來使用相關指示。
+如果您想要將裝置取消註冊，請依您所擁有的裝置類型使用相關指示：[Android](unenroll-your-device-from-intune-android.md)、[iOS](unenroll-your-device-from-intune-ios.md) 或 [Windows](unenroll-your-device-from-intune-windows.md)。
 
 是否仍需要協助？ 請連絡您公司的支援人員。 如需連絡資訊，請查看[公司入口網站](https://go.microsoft.com/fwlink/?linkid=2010980)。

@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 86aeb2b54d45f111864d71e65b8c90fce7205868
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 86c158f73d820fa2e719fe92b884c77f315fcb94
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508034"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858806"
 ---
 # <a name="windows-device-enrollment-in-intune-company-portal"></a>在 Intune 公司入口網站中註冊 Windows 裝置  
 
@@ -62,8 +62,8 @@ ms.locfileid: "72508034"
 
 4. 若您的版本是  
 
-    * __1607 或更新版本__：請使用 [[設定]   > [帳戶]   > [存取公司或學校帳戶]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)來註冊您的裝置。   
-    * __1511 或先前版本__：請使用 [[設定]   > [帳戶]   > [您的帳戶]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)來註冊您的裝置。  
+    * __1607 或更新版本__：請使用 [[設定]   > [帳戶]   > [存取公司或學校]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)來註冊您的裝置。   
+    * __1511 或更舊版本__：請使用 [[設定]   > [帳戶]   > [您的帳戶]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)來註冊您的裝置。  
 
 ### <a name="windows-10-mobile-devices"></a>Windows 10 Mobile 裝置
 
@@ -72,8 +72,8 @@ ms.locfileid: "72508034"
 3. 在__裝置資訊__下方，尋找「版本」  。  
 4. 若您的版本是  
 
-    * __1607 或更新版本__：請使用 [[設定]   > [存取公司或學校帳戶]  ](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device) 路線來註冊您的裝置。   
-    * __1511 或先前版本__：請使用 [[設定]   > [帳戶]  ](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device) 路線來註冊您的裝置。  
+    * __1607 或更新版本__：請使用 [[設定]   > [存取公司或學校]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1607-and-later-device)來註冊您的裝置。   
+    * __1511 或更舊版本__：請使用 [[設定]   > [帳戶]  路線](enroll-windows-10-device.md#enroll-windows-10-version-1511-and-earlier-device)來註冊您的裝置。  
 
 ## <a name="enroll-non-windows-10-devices"></a>註冊非 Windows 10 裝置  
 使用下列文章來透過公司入口網站註冊其他支援的 Windows 裝置：   

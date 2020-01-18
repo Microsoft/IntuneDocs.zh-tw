@@ -16,16 +16,16 @@ search.appverid: MET150
 ms.reviewer: tycast
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 122872eff92a37c8724fd4a853091e51a0a54c66
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f2bee04eabb7036d9a28ac628175b27f763d0ccb
+ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506523"
+ms.lasthandoff: 12/19/2019
+ms.locfileid: "75207055"
 ---
 # <a name="windows-10-and-windows-holographic-device-settings-to-add-vpn-connections-using-intune"></a>要使用 Intune 新增 VPN 連線的 Windows 10 和 Windows Holographic 裝置設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+
 
 您可以使用 Microsoft Intune 新增和設定裝置的 VPN 連線。 本文列出並描述建立虛擬私人網路 (VPN) 時常用的設定和功能。 這些 VPN 設定和功能用於 Intune 中推送或部署到裝置的裝置組態設定檔。
 
@@ -47,9 +47,9 @@ ms.locfileid: "72506523"
 - **連線名稱**：輸入此連線的名稱。 終端使用者瀏覽其裝置的可用 VPN 連線清單時，使用者會看到此名稱。
 - **伺服器**：新增裝置要連線的一或多部 VPN 伺服器。 當您新增伺服器時，要輸入下列資訊：
   - **描述**：為伺服器輸入描述性名稱，例如 **Contoso VPN 伺服器**
-  - **IP 位址或 FQDN**：輸入裝置所連線之 VPN 伺服器的 IP 位址或完整網域名稱 (FQDN)，例如 **192.168.1.1** 或 **vpn.contoso.com**
-  - **預設伺服器**：啟用此伺服器作為裝置所要連線的預設伺服器。 只設定一部伺服器為預設。
-  - **匯入**：瀏覽至內含伺服器清單並以逗點分隔 (格式為：描述, IP 位址或 FQDN, 預設伺服器) 的檔案。 選擇 [確定]  ，以將這些伺服器匯入**伺服器**清單。
+  - **IP 位址或 FQDN**：輸入裝置所連線 VPN 伺服器的 IP 位址或完整網域名稱 (FQDN)，例如 **192.168.1.1** 或 **vpn.contoso.com**
+  - **預設伺服器**：啟用此伺服器作為裝置用來建立連線的預設伺服器。 只設定一部伺服器為預設。
+  - **匯入**：瀏覽至內含伺服器清單並以逗點分隔的檔案 (格式為：描述, IP 位址或 FQDN, 預設伺服器)。 選擇 [確定]  ，以將這些伺服器匯入**伺服器**清單。
   - **匯出**：將伺服器清單匯出成逗點分隔值 (csv) 檔案
 
 - **將 IP 位址註冊到內部 DNS**：選取 [啟用]  將 Windows 10 VPN 設定檔設定為動態註冊 IP 位址 (指派給具有內部 DNS 的 VPN 介面)。 選取 [停用]  ，不要動態註冊 IP 位址。
@@ -76,7 +76,7 @@ ms.locfileid: "72506523"
   - **驗證方法**：選取您要讓 VPN 伺服器驗證使用者的方法。 使用 [憑證]  可提供增強的功能，例如零觸控體驗、隨選 VPN 和個別應用程式 VPN。
   - **在每次登入時記住認證**：選擇此選項以快取驗證認證。
   - **自訂 XML**：輸入可設定 VPN 連線的任何自訂 XML 命令。
-  - **EAP Xml**：輸入可設定 VPN 連線的任何 EAP XML 命令
+  - **EAP XML** ：輸入可設定 VPN 連線的任何 EAP XML 命令
 
 ### <a name="pulse-secure-example"></a>Pulse Secure 範例
 
@@ -115,7 +115,7 @@ ms.locfileid: "72506523"
 - **將 WIP 或應用程式與此 VPN 建立關聯**：若您只希望某些應用程式使用 VPN 連線，可啟用此設定。 選項包括：
 
   - **將 WIP 與此連線建立關聯**：輸入**此連線的 WIP 網域**
-  - **將應用程式與此連線建立關聯**：您可以**限制這些應用程式的 VPN 連線**，然後新增**相關聯的應用程式**。 您輸入的應用程式會自動使用 VPN 連線。 應用程式類型會決定應用程式識別碼。 若為通用 app，請輸入套件系列名稱。 若為傳統型應用程式，請輸入應用程式的檔案路徑。
+  - **將應用程式與此連線建立關聯**：您可以**限制這些應用程式的 VPN 連線**，然後新增**相關聯的應用程式**。 您輸入的應用程式會自動使用 VPN 連線。 應用程式識別碼是由應用程式類型來決定。 若為通用 app，請輸入套件系列名稱。 若為傳統型應用程式，請輸入應用程式的檔案路徑。
   >[!IMPORTANT]
   >我們建議您為所建立的每個應用程式 VPN 保護所有的應用程式清單。 如果未經授權的使用者變更這個清單，而您將其匯入到個別應用程式的 VPN 應用程式清單中，則您可能會將 VPN 存取權授權給不應該存取的應用程式。 保護應用程式清單的方法之一是使用存取控制清單 (ACL)。
 
@@ -123,11 +123,11 @@ ms.locfileid: "72506523"
 
 ## <a name="conditional-access"></a>條件式存取
 
-- **此 VPN 連線的條件式存取**：從用戶端啟用裝置合規性流程。 啟用時，VPN 用戶端會與 Azure Active Directory (AD) 通訊，以取得要用於驗證的憑證。 VPN 應該設定成使用憑證驗證，而且 VPN 伺服器必須信任 Azure AD 所傳回的伺服器。
+- **此 VPN 連線的條件式存取**：從用戶端啟用裝置相容性流程。 啟用時，VPN 用戶端會與 Azure Active Directory (AD) 通訊，以取得要用於驗證的憑證。 VPN 應該設定成使用憑證驗證，而且 VPN 伺服器必須信任 Azure AD 所傳回的伺服器。
 
-- **使用其他憑證的單一登入 (SSO)** ：針對裝置合規性，使用與 VPN 驗證憑證不同的憑證來進行 Kerberos 驗證。 輸入具有下列設定的憑證：
+- **使用其他憑證的單一登入 (SSO)** ：針對裝置相容性，使用與 VPN 驗證憑證不同的憑證來進行 Kerberos 驗證。 輸入具有下列設定的憑證：
 
-  - **名稱**：擴充金鑰使用方法 (EKU) 的名稱
+  - **名稱**：擴充金鑰使用方式 (EKU) 的名稱
   - **物件識別碼**：EKU 的物件識別碼
   - **簽發者雜湊**：SSO 憑證的指紋
 
@@ -152,20 +152,20 @@ ms.locfileid: "72506523"
   - **網域**：輸入完整網域名稱 (FQDN) 或要套用規則的 DNS 尾碼。 您也可以在開頭輸入句號 (.) 作為 DNS 尾碼。 例如，輸入 `contoso.com` 或 `.allcontososubdomains.com`。
   - **DNS 伺服器**：輸入用來解析網域的 IP 位址或 DNS 伺服器。 例如，輸入 `10.0.0.3` 或 `vpn.contoso.com`。
   - **Proxy**：輸入用來解析網域的 Web Proxy 伺服器。 例如，輸入 `http://proxy.com`。
-  - **自動連線**：若 [已啟用]  ，裝置就會在連線至您輸入的網域 (例如 `contoso.com`) 時，自動連線至 VPN。 若為 [未設定]  (預設)，則裝置不會自動連線到 VPN
+  - **自動連線**：若為 [已啟用]  ，則裝置會在連線到您所輸入的網域 (例如 `contoso.com`) 時，自動連線至 VPN。 若為 [未設定]  (預設)，則裝置不會自動連線到 VPN
   - **永續性**：若設定為 [已啟用]  ，此規則會保留在名稱解析原則表格 (NRPT) 中，直到手動從裝置移除規則為止，即使在 VPN 中斷連線後也一樣。 若設定為 [未設定]  (預設)，則當 VPN 中斷連線時，就會從裝置移除 VPN 設定檔中的 NRPT 規則。
 
 ## <a name="proxy-settings"></a>Proxy 設定
 
 - **自動設定指令碼**：使用檔案設定 Proxy 伺服器。 輸入包含設定檔的 **Proxy 伺服器 URL** (例如 `http://proxy.contoso.com`)。
-- **位址**：輸入 Proxy 伺服器位址 (例如 IP 位址或 `vpn.contoso.com`)
-- **連接埠號碼**：輸入 Proxy 伺服器使用的 TCP 連接埠號碼
-- **本機位址不使用 Proxy 伺服器**：如果您不想針對本機位址使用 Proxy 伺服器，則選擇 [啟用]。 這項設定適用於您的 VPN 伺服器需要 Proxy 伺服器進行連線時。
+- **位址**：輸入 Proxy 伺服器位址，例如 IP 位址或 `vpn.contoso.com`
+- **連接埠號碼**：輸入 Proxy 伺服器使用的 TCP 通訊埠號碼
+- **本機位址不使用 Proxy**：如果您不想針對本機位址使用 Proxy 伺服器，則選擇 [啟用]。 這項設定適用於您的 VPN 伺服器需要 Proxy 伺服器進行連線時。
 
 ## <a name="split-tunneling"></a>分割通道
 
-- **分割通道**：**啟用**或**停用**以讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
-- **此 VPN 連線的分割通道路徑**：新增協力廠商 VPN 提供者的選擇性路由。 為每個連線輸入目的地首碼及首碼大小。
+- **分割通道**：[啟用]  或 [停用]  ，讓裝置依據流量決定所要使用的連線。 例如，旅館中的使用者使用 VPN 連線存取工作檔案，但使用旅館的標準網路進行一般的網頁瀏覽。
+- **此 VPN 連線的分割通道路由**：新增協力廠商 VPN 提供者的選擇性路由。 為每個連線輸入目的地首碼及首碼大小。
 
 ## <a name="trusted-network-detection"></a>受信任的網路偵測
 

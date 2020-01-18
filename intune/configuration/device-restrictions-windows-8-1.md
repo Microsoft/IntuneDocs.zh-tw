@@ -1,12 +1,12 @@
 ---
-title: 執行 Windows 8.1 之裝置的 Microsoft Intune 裝置限制設定
+title: Microsoft Intune 中的 Windows 8.1 裝置限制設定 - Azure | Microsoft Docs
 titleSuffix: ''
 description: 了解執行 Windows 8.1 的裝置上可用以控制裝置設定與功能的 Intune 設定。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 3/6/2018
+ms.date: 12/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,19 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0df55e79dbc54926c0507889620f2667d7b8bd7b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 82eaf1bc2c0737e1cc54751ff6fb5751227d180c
+ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72489841"
+ms.lasthandoff: 12/20/2019
+ms.locfileid: "75302973"
 ---
-# <a name="microsoft-intune-windows-81-and-later-device-restriction-settings"></a>Microsoft Intune Windows 8.1 和更新版本的裝置限制設定
+# <a name="microsoft-intune-windows-81-device-restriction-settings"></a>Microsoft Intune Windows 8.1 裝置限制設定
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
-本文將說明所有的 Microsoft Intune 裝置限制設定，讓您可以為執行 Windows 8.1 和更新版本的裝置進行設定。
-
+此文章將說明可以針對執行 Windows 8.1 的裝置進行設定的 Microsoft Intune 裝置限制設定。
 
 ## <a name="general"></a>一般
 
@@ -48,8 +45,6 @@ ms.locfileid: "72489841"
 如果您針對 Windows 8.1 裝置啟用此設定，則裝置的所有使用者必須都具有 Microsoft 帳戶。
 為了讓加密能運作，裝置必須符合 [Microsoft InstantGo](https://blogs.windows.com/windowsexperience/2014/06/19/instantgo-a-better-way-to-sleep/#IBHULcTfI4PokO8X.97) 硬體認證需求。
 當您在裝置上強制加密時，就只能從使用者 Microsoft 帳戶存取修復金鑰，該帳戶是從其 OneDrive 帳戶進行存取的。 您無法代表使用者修復此金鑰。 
-
-
 
 ## <a name="browser"></a>瀏覽器
 - **自動填滿** - 讓使用者可變更瀏覽器中的自動完成設定。
@@ -75,3 +70,7 @@ ms.locfileid: "72489841"
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 - **工作資料夾 URL** - 此設定會設定工作資料夾的 URL，允許跨裝置同步處理文件。
 - **在沒有 Microsoft 帳戶的情況下存取 Windows Mail 應用程式** - 讓您可在沒有 Microsoft 帳戶的情況下，存取 Windows Mail 應用程式。
+
+## <a name="next-steps"></a>後續步驟
+
+在[Windows 10 和更新版本](device-restrictions-windows-10.md)上建立裝置限制設定檔。

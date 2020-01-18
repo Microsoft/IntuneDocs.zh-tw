@@ -16,13 +16,13 @@ searchScope:
 - User help
 ROBOTS: ''
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0cc2f84ad73c86a823984e6caa11dad5d4aec8a8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: f056b44301c1d0f94dde2dbb6202ed7c78e90fbf
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72507819"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857354"
 ---
 # <a name="resolve-a-threat-found-by-lookout-for-work"></a>解決 Lookout for Work 應用程式找到的威脅  
 
@@ -52,7 +52,7 @@ Lookout for Work 應用程式是 Mobile Threat Defender 服務，可在您的 An
 
 如果您安裝的應用程式經 Lookout for Work 判斷會造成威脅，您會收到類似下面螢幕擷取畫面中所示的訊息。  
 
-![透過 Lookout for Work 應用程式介面顯示 Lookout 病毒警示訊息的範例螢幕擷取畫面。 顯示三個按鈕：[關閉]、[其他資訊] 和 [解除安裝]。](./media/lookout-virus-alert-android.png)  
+![透過 Lookout for Work 應用程式介面顯示 Lookout 病毒警示訊息的範例螢幕擷取畫面。 顯示三個按鈕：[關閉]、[其他資訊] 及 [解除安裝]。](./media/lookout-virus-alert-android.png)  
 
 若要重新取得失去的公司電子郵件和資料存取權，請解除安裝有問題的應用程式。 只要應用程式在您的裝置上，您將無法存取公司資源。    
 

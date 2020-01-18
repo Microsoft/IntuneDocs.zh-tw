@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: arnab
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5665ae7d8093decc8ef2ea4ab1911b27e20e25dd
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: edea807b8c71f519c28f19b0343fa8ea0977712a
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505784"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855141"
 ---
 # <a name="how-to-set-the-amount-of-time-before-your-android-device-locks-its-screen"></a>如何設定 Android 裝置鎖定其螢幕前的時間量
 
@@ -32,17 +32,17 @@ ms.locfileid: "72505784"
 
 ## <a name="native-non-samsung-knox-device"></a>原生 (非 Samsung Knox) 裝置
 
-1. 在裝置的 [設定]  中，點選 [安全性]  &gt; [Automatically Lock (自動鎖定)]  &#40;在某些裝置上，這會顯示為 [Lock phone after (在下列時間後鎖定電話)])  。
+1. 在裝置上的 [Settings]  \(設定\) 中，點選 [Security]  \(安全性\) &gt; [Automatically Lock]  \(自動鎖定\) (在某些裝置上，這會顯示為 [Lock phone after]  \(在下列時間後鎖定電話\))。
 
-    如果未顯示 [Automatically Lock (自動鎖定)]  &#40;在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])  ，請確定您已在 [設定]  &gt; [螢幕鎖定]  &gt; [密碼]  下設定有效的密碼。
+    如果未顯示 [Automatically Lock]  \(自動鎖定\) (在某些裝置上會顯示為 [Lock phone after]  \(在下列時間後鎖定電話\))，請確定您在 [Settings]  \(設定\) &gt; [Screen Lock]  \(螢幕鎖定\) &gt; [Password]  \(密碼\) 下已設定有效的密碼。
 
 2. 選取密碼逾時值。
 
 ## <a name="samsung-knox-device"></a>Samsung Knox 裝置
 
-1. 在裝置上的 [設定]  ，點選 [Lock screen and security (鎖定畫面及安全性) ]  &gt; [Lock automatically (自動鎖定)]  。
+1. 在裝置上的 [Settings]  \(設定\) 中，點選 [Lock screen and security]  \(鎖定畫面及安全性\) &gt; [Lock automatically]  \(自動鎖定\)。
 
-    如果未顯示 [Lock automatically (自動鎖定)]  &#40;在某些裝置上，是 [Lock phone after (在下列時間後鎖定電話)])  ，請確定您已在 [設定]  &gt; [螢幕鎖定]  &gt; [密碼]  下設定有效的密碼。
+    如果未顯示 [Lock automatically]  \(自動鎖定\) (在某些裝置上會顯示為 [Lock phone after]  \(在下列時間後鎖定電話\))，請確定您在 [Settings]  \(設定\) &gt; [Screen Lock]  \(螢幕鎖定\) &gt; [Password]  \(密碼\) 下已設定有效的密碼。
 
 2. 選取密碼逾時值。
 

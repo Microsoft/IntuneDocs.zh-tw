@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: jieyang
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64911ea9b1b1d3c619a82eac9dc78e4e78a53e9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 4540c4d58bebcbec06e73eaf51d91d6685d0243b
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508137"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75858993"
 ---
 # <a name="remove-your-windows-device-from-management"></a>從管理移除您的 Windows 裝置
 
@@ -61,7 +61,7 @@ ms.locfileid: "72508137"
 
 3. 選取 [移除]  。  
 
-    ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，首頁。 裝置操作功能表會顯示頁面的 [我的裝置]**** 區段，並顯示 [重新命名]、[移除] 和 [檢查存取權] 等動作。](./media/1809_DeviceContextMenu_Windows_CP.png)  
+    ![Windows 版公司入口網站應用程式的範例螢幕擷取畫面，首頁。 裝置操作功能表會顯示頁面的 [我的裝置] 區段，並顯示 [重新命名]、[移除] 和 [檢查存取權] 等動作。](./media/1809_DeviceContextMenu_Windows_CP.png)  
 
 5. 在確認中，按一下 [深入了解]  閱讀您的公司和學校資源存取權可能會有什麼變更。 若要確認裝置移除，請選取 [移除]  。   
 
@@ -93,8 +93,8 @@ ms.locfileid: "72508137"
 
 公司入口網站會將兩種資料儲存在您的 Windows 裝置上：
 
-- **診斷記錄檔**：Microsoft 收集的標準應用程式活動資料。 這會在您解除安裝公司入口網站應用程式時自動清除。 例如，應用程式活動資料是關於應用程式開啟或應用程式當機時間長度的資料。
-- **應用程式快取**：應用程式運作所需的特定支援檔案，例如圖示和設定。
+- **診斷記錄**：Microsoft 所收集的標準應用程式活動資料。 這會在您解除安裝公司入口網站應用程式時自動清除。 例如，應用程式活動資料是關於應用程式開啟或應用程式當機時間長度的資料。
+- **應用程式快取**：應用程式運作所需的支援檔案，例如圖示和設定。
 
 若要刪除已儲存的記錄檔和快取，請完成下列其中一個步驟：
 

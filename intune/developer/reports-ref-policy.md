@@ -6,7 +6,7 @@ keywords: Intune 資料倉儲
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/03/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64fc1bab596715be80fd3a91c003cac1176fe787
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1fe4fabc86e7be647fa161d68fe8a4fe35e9eb6b
+ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490268"
+ms.lasthandoff: 01/03/2020
+ms.locfileid: "75654119"
 ---
 # <a name="reference-for-policy-entities"></a>原則實體的參考
 
@@ -67,7 +67,7 @@ ms.locfileid: "72490268"
 | dateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。 |20160703 |
 | 暫止 |處於擱置狀態的唯一裝置數目。 |123 |
 | 成功 |處於成功狀態的唯一裝置數目。 |12 |
-| 錯誤 |處於錯誤狀態的唯一裝置數目。 |10 |
+| error |處於錯誤狀態的唯一裝置數目。 |10 |
 | 操作 |處於失敗狀態的唯一裝置數目。 |2 |
 
 **deviceConfigurationProfileUserActivity** 實體列出每日處於成功、暫止、失敗或錯誤狀態的**使用者**數目。 此數目會反映指派給實體的裝置組態設定檔。 例如，如果**使用者**的所有指派原則都處於成功狀態，則會將該天的成功計數器向上加一。 如果使用者獲指派兩個設定檔，一個處於成功狀態，另一個則處於錯誤狀態，會計算處於錯誤狀態的使用者。  **deviceConfigurationProfileUserActivity** 實體列出過去 30 天內的某一天，有多少使用者處於哪種狀態。
@@ -77,7 +77,7 @@ ms.locfileid: "72490268"
 | dateKey |將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。 |20160703 |
 | 暫止 |處於擱置狀態的唯一使用者數目。 |123 |
 | 成功 |處於成功狀態的唯一使用者數目。 |12 |
-| 錯誤 |處於錯誤狀態的唯一使用者數目。 |10 |
+| error |處於錯誤狀態的唯一使用者數目。 |10 |
 | 操作 |處於失敗狀態的唯一使用者數目。 |2 |
 
 ## <a name="policytypeactivities"></a>policyTypeActivities
@@ -91,7 +91,7 @@ ms.locfileid: "72490268"
 | policyTypeKey |原則索引鍵類型，可以與 [原則類型] 聯結以取得原則類型名稱。 |Windows 10 合規性原則 |
 | 暫止 |處於擱置狀態的唯一裝置數目。 |123 |
 | 成功 |處於成功狀態的唯一裝置數目。 |12 |
-| 錯誤 |處於錯誤狀態的唯一裝置數目。 |10 |
+| error |處於錯誤狀態的唯一裝置數目。 |10 |
 | 操作 |處於失敗狀態的唯一裝置數目。 |2 |
 
 ## <a name="compliance-policy"></a>相容性原則
@@ -111,7 +111,7 @@ ms.locfileid: "72490268"
 |compliant      |一或多項管理員設為目標的裝置合規性政策已成功套用的裝置數目。 |4083 |
 |inGracePeriod      |不合規但仍在管理員定義之寬限期內的裝置數目。 |57|
 |nonCompliant      |管理員設為目標的裝置合規性政策無法套用，或使用者未予以遵循的裝置數目。|43 |
-|錯誤      |無法與 Intune 或 Azure AD 通訊且傳回錯誤訊息的裝置數目。 |3|
+|error      |無法與 Intune 或 Azure AD 通訊且傳回錯誤訊息的裝置數目。 |3|
 
 ### <a name="compliancepolicystatusdeviceperpolicyactivities"></a>compliancePolicyStatusDevicePerPolicyActivities 
 
@@ -129,7 +129,7 @@ ms.locfileid: "72490268"
 |compliant      |一或多項管理員設為目標的裝置合規性政策已成功套用的裝置數目。 |45|
 |inGracePeriod      |不合規但仍在管理員定義之寬限期內的裝置數目。 |3|
 |nonCompliant      |管理員設為目標的裝置合規性政策無法套用，或使用者未予以遵循的裝置數目。|7|
-|錯誤      |無法與 Intune 或 Azure AD 通訊且傳回錯誤訊息的裝置數目。 |3|
+|error      |無法與 Intune 或 Azure AD 通訊且傳回錯誤訊息的裝置數目。 |3|
 
 ### <a name="policyplatformtypes"></a>policyPlatformTypes
 
@@ -150,9 +150,9 @@ ms.locfileid: "72490268"
 |---------|---------|---------|
 |dateKey|將裝置組態設定檔簽入記錄在資料倉儲中的日期索引鍵。|20160703|
 |暫止|處於擱置狀態的唯一裝置數目。|123|
-|已成功|處於成功狀態的唯一裝置數目。|12|
+|成功|處於成功狀態的唯一裝置數目。|12|
 |policyKey|policyKey，可以與 policy 聯結以取得 policyName。|Windows 10 基準|
-|錯誤|處於錯誤狀態的唯一裝置數目。|10|
+|error|處於錯誤狀態的唯一裝置數目。|10|
 |操作|處於失敗狀態的唯一裝置數目。|2|
 
 ### <a name="policyuseractivities"></a>policyUserActivities
@@ -166,5 +166,5 @@ ms.locfileid: "72490268"
 |  暫止  |                         處於擱置狀態的唯一裝置數目。                          |         123         |
 | 成功 |                         處於成功狀態的唯一裝置數目。                          |         12          |
 | policyKey |                 policyKey，可以與 policy 聯結以取得 policyName。                 | Windows 10 基準 |
-|   錯誤   |                          處於錯誤狀態的唯一裝置數目。                           |         10          |
+|   error   |                          處於錯誤狀態的唯一裝置數目。                           |         10          |
 

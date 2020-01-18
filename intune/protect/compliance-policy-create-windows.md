@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 60a87340c1a275b8fb878ef2f3891cca23fc9c85
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 0ca5d475f92cbe3298689273dcdf0da1644078b2
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946648"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75547039"
 ---
 # <a name="windows-10-and-later-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 Windows 10 及更新版本的設定將裝置標示為相容或不相容
 
@@ -44,7 +44,7 @@ ms.locfileid: "74946648"
 ### <a name="windows-health-attestation-service-evaluation-rules"></a>Windows 健康情況證明服務評估規則
 
 - **要求 BitLocker**：  
-   Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用可信賴平臺模組（TPM）來協助保護 Windows 作業系統和使用者資料。 即使該電腦處於無人看管、遺失或遭竊的情況，它也能協助確保電腦不受竄改。 如果電腦配備相容的 TPM，BitLocker 會使用 TPM 來鎖定可保護資料的加密金鑰。 因此，必須等到 TPM 驗證電腦的狀態之後，才能存取金鑰。  
+   Windows BitLocker 磁碟機加密會加密儲存在 Windows 作業系統磁碟區上的所有資料。 BitLocker 使用可信賴平臺模組（TPM）來協助保護 Windows 作業系統和使用者資料。 即使該電腦處於無人看管、遺失或遭竊的情況，它也能協助確保電腦不受竄改。 如果電腦配備相容的 TPM，BitLocker 就會使用 TPM 來鎖定保護資料的加密金鑰。 因此，必須等到 TPM 驗證電腦的狀態之後，才能存取金鑰。  
 
    - [未設定]  (預設  ) - 不會評估此設定是否符合規範。
    - [需要]  - 裝置可以保護儲存在磁碟機上的資料，使其在系統關閉或是休眠時免於未經授權的存取。  
@@ -65,7 +65,7 @@ ms.locfileid: "74946648"
 其他資源：
 
 - 如需健康情況證明服務運作方式的詳細資訊，請參閱[健康情況證明 CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp)。
-- [Support Tip: Using Device Health Attestation Settings as Part of Your Intune Compliance Policy](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643) (支援提示：使用裝置健康情況證明設定，作為您 Intune 合規性政策的一部分)。
+- [支援提示：使用裝置健康情況證明設定作為您 Intune 合規性原則的一部分](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Using-Device-Health-Attestation-Settings-as-Part-of/ba-p/282643) \(英文\)。
 
 ## <a name="device-properties"></a>裝置內容
 
@@ -102,9 +102,9 @@ ms.locfileid: "74946648"
 
 僅適用於執行 Windows 10 和更新版本的共同受控裝置。 僅 Intune 的裝置會傳回無法使用的狀態。
 
-- **需要 System Center Configuration Manager 的裝置合規性**：  
+- **需要 Configuration Manager 的裝置相容性**：  
   - [未設定]  (預設  ) - Intune 不會針對合規性檢查任何 Configuration Manager 設定。
-  - [需要]  - 需要 System Center Configuration Manager 中的所有設定 (設定項目) 符合規範。  
+  - **需要** - 需要 Configuration Manager 中的所有設定 (設定項目) 符合規範。  
 
     例如，您需要在裝置上安裝所有軟體更新。 在 Configuration Manager 中，此要求將會對應「已安裝」狀態。 如果裝置上的任何程式處於未知狀態，則裝置在 Intune 中就不會符合規範。
 
@@ -229,7 +229,7 @@ ms.locfileid: "74946648"
   使用此設定，以採用來自防禦威脅服務的風險評估作為合規性的條件。 選擇允許的最高威脅層級：
   - [未設定]  (預設  )  
   - [清除]  - 此選項最安全，因為裝置不能有任何威脅。 若裝置上偵測到任何等級的威脅，便會評估為不相容。
-  - [低]  - 若只有低等級的威脅，會將裝置評估為符合規範。 任何更高等級的威脅都會使裝置處於不相容狀態。
+  - [低]  - 若只有低等級的威脅，會將裝置評估為符合規範。 任何較高等級的威脅會使裝置變成不符合規範的狀態。
   - [中]  - 如果裝置上的現有威脅是低等級或中等級，會將裝置評估為符合規範。 若在裝置上偵測到高等級的威脅，便會判斷為不相容。
   - [高]  - 此選項最不安全，且允許所有威脅等級。 如果此解決方案只用於報告用途，則此設定可能很實用。
   

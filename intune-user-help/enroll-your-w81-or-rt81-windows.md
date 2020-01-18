@@ -18,13 +18,13 @@ ROBOTS: ''
 ms.reviewer: priyar
 ms.suite: ems
 ms.custom: intune-enduser
-ms.collection: M365-identity-device-management
-ms.openlocfilehash: 085ec1f329eb9b423797a110ada53eb7693edf6f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.collection: ''
+ms.openlocfilehash: 6fb6c1295947b9f51ef861b1fcc6582c6690137f
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506132"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75855419"
 ---
 # <a name="how-to-enroll-your-windows-81-or-windows-rt-81-device-in-intune"></a>如何在 Intune 註冊 Windows 8.1 或 Windows RT 8.1 裝置  
 
@@ -33,7 +33,7 @@ ms.locfileid: "72506132"
 
 註冊 Windows 8.1 或 Windows RT 8.1 裝置：  
 
-1. 在裝置上點選 [設定]  &gt; [電腦設定]  &gt; [網路]  &gt; [工作場所]  。  
+1. 在裝置上，點選 [設定]  &gt; [電腦設定]  &gt; [網路]  &gt; [工作場所]  。  
 
     ![nav-to-workplace](./media/W81-1-workplacejoin.png)  
 
