@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 745534f2c65bc9585ab4639f9d5a6d101638c5f9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a44f26c15a93f9384bb85b65da5a6c1ecaff0564
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509841"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036559"
 ---
 # <a name="resolve-group-policy-objects-gpo-and-microsoft-intune-policy-conflicts"></a>解決群組原則物件 (GPO) 和 Microsoft Intune 原則衝突
 
@@ -111,7 +111,7 @@ WMI filters selectively apply GPOs to computers that satisfy the conditions of a
 
     - For GPOs that should apply only to PCs that you do not want to manage by using Intune, apply the filter **WindowsIntunePolicyEnabled=0**.
 
-For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](http://go.microsoft.com/fwlink/?LinkId=177883). --->
+For more information about how to apply WMI filters in Group Policy, see the blog post [Security Filtering, WMI Filtering, and Item-level Targeting in Group Policy Preferences](https://go.microsoft.com/fwlink/?LinkId=177883). --->
 
 
 您可以僅將 GPO 套用至所選 GPO 之群組原則管理主控台內 **[安全性篩選]** 區域中指定的安全性群組。 依預設，GPO 會套用至 *[已驗證的使用者]* 。
