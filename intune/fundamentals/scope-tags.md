@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6b92dca399afeb035bf58d998efdd469318de389
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e1f81d26227bb206aa55ca495f4a4ee5e8ae9907
+ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72504952"
+ms.lasthandoff: 12/31/2019
+ms.locfileid: "75548118"
 ---
 # <a name="use-role-based-access-control-rbac-and-scope-tags-for-distributed-it"></a>針對分散式 IT 使用角色型存取控制 (RBAC) 和範圍標籤
 
@@ -39,14 +39,15 @@ ms.locfileid: "72504952"
 ## <a name="default-scope-tag"></a>預設範圍標籤
 預設範圍標籤會自動新增至所有支援範圍標記的未標記物件。
 
-預設範圍標籤功能與 System Center Configuration Manager 中的安全性範圍功能類似。 
+預設範圍標籤功能與 Microsoft Endpoint Configuration Manager 中的安全性範圍功能類似。 
 
 ## <a name="to-create-a-scope-tag"></a>建立範圍標籤
 
-1. 在 Intune 中，選擇 [角色]   > [範圍 (標籤)]   > [建立]  。
+1. 在[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)系統管理中心中，選擇 [**租使用者管理**] > [**角色**] > **範圍（標記）**  > [**建立**]。
 
     ![建立範圍標籤的螢幕擷取畫面。](./media/scope-tags/create-scope-tag.png)
 
+2. 提供 [名稱]  和選擇性的 [描述]  。
 3. 如果您想要在特定群組中的所有裝置，請選擇 [**將範圍標籤指派給選取群組中的所有裝置**]。
     1. 在 [**選取要包含的群組**] 頁面中，選擇包含您要指派此範圍標籤的裝置所屬的群組。
     2. 選擇 [選取]  。
@@ -54,10 +55,7 @@ ms.locfileid: "72504952"
 
 ## <a name="to-assign-a-scope-tag-to-a-role"></a>將範圍標籤指派給角色
 
-1. 在 Intune 中，選擇 [角色]   > [所有角色]  > 選擇角色 > [指派]   > [指派]  。
-
-    ![將範圍指派給角色的螢幕擷取畫面。](./media/scope-tags/assign-scope-to-role.png)
-
+1. 在[Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)系統管理中心中，選擇 **[租使用者管理**] > [**角色**] > [**所有角色**] > 選擇角色 >**指派** > **指派**。
 2. 提供**作業名稱**與**描述**。
 3. 選擇 [成員 (群組)]   > [新增]  > 選擇您希望作為此指派一部分的群組 > [選取]   > [確定]  。 此群組中的使用者將有權管理範圍（群組）中的使用者/裝置。
 
@@ -81,9 +79,7 @@ ms.locfileid: "72504952"
 
 針對支援範圍標記的物件，範圍標籤通常會出現在 [**屬性**] 底下。 例如，若要將範圍標籤指派給設定設定檔，請遵循下列步驟：
 
-1. 在 Intune 中，選擇 [裝置設定]   > [設定檔]  > 選擇設定檔。
-
-    ![選取設定檔的螢幕擷取畫面。](./media/scope-tags/choose-profile.png)
+1. 在 [ [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)] 中，選擇 [**裝置**] > [設定配置**檔**] > 選擇設定檔。
 
 2. 選擇 [屬性]   > [範圍 (標籤)]   > [新增]  。
 

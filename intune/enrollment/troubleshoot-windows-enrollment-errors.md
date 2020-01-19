@@ -17,18 +17,18 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46012b11cdb458243658e858b53c2dfb1a69dc88
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 0d5c6db598a7f64f75f6f5a8e0cf25b8e4b81465
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991793"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885879"
 ---
 # <a name="troubleshoot-windows-device-enrollment-problems-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Windows 裝置註冊問題進行疑難排解
 
 本文可協助 Intune 系統管理員瞭解並疑難排解在 Intune 中註冊 Windows 裝置時的問題。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 開始進行疑難排解之前，請務必收集一些基本資訊。 此資訊可協助您進一步瞭解問題，並縮短尋找解決方案的時間。
 
 收集與問題相關的下列資訊：
@@ -40,7 +40,7 @@ ms.locfileid: "74991793"
 - 哪個平臺（Android、iOS、Windows）有問題？
 - 有多少使用者受到影響？ 所有使用者都會受到影響，還是只有部分？
 - 有多少裝置受到影響？ 所有裝置是否受到影響，或只是部分？
-- 什麼是 MDM 授權單位？ 如果 System Center Configuration Manager，您使用的是哪一版的 Configuration Manager？
+- 什麼是 MDM 授權單位？
 - 如何執行註冊？ 它是「攜帶您自己的裝置」（BYOD）或 Apple 裝置註冊計劃（DEP）與註冊設定檔嗎？
 
 ## <a name="error-messages"></a>錯誤訊息
@@ -107,7 +107,6 @@ ms.locfileid: "74991793"
 
 **原因：** 下列其中一個條件成立：
 - 不同的使用者已在 Intune 中註冊裝置，或已將裝置加入至 Azure AD。 若要判斷是否為這種情況，請移至 [**設定**] > [**帳戶**] > [**公司存取**]。 尋找與下列類似的訊息：「系統上的另一個使用者已連線至公司或學校。 請移除該公司或學校的連線，然後再試一次。」    
-- 電腦上已安裝 Configuration Manager 用戶端代理程式。    
 
 #### <a name="resolution"></a>解決方案
 
@@ -118,9 +117,6 @@ ms.locfileid: "74991793"
 2. 移至 [**設定**] > [**帳戶**] > [**公司存取**]，然後移除工作或學校帳戶。
 3. 登出 Windows，然後使用您的帳戶登入。    
 4. 在 Intune 中註冊裝置，或將裝置加入至 Azure AD。 
-
-##### <a name="remove-the-configuration-manager-client"></a>移除 Configuration Manager 用戶端
-移除 Configuration Manager 用戶端，然後再次註冊裝置。
 
 
 
@@ -142,7 +138,7 @@ ms.locfileid: "74991793"
 
 #### <a name="resolution"></a>解決方案
 
-若要修正此問題，請使用下列其中一種方法： 
+若要修正此問題，請使用下列任一種方法： 
  
 ##### <a name="assign-a-valid-license-to-the-user"></a>指派有效的授權給使用者
 移至[Microsoft 365 系統管理中心](https://portal.office.com/adminportal/home)，然後將 Intune 或 Office 365 授權指派給使用者。
@@ -160,7 +156,7 @@ ms.locfileid: "74991793"
 
 **原因：** 當您嘗試將 Windows 10 電腦加入 Azure AD，而且下列兩個條件都成立時，就會發生此錯誤： 
 - Azure 中已啟用 MDM 自動註冊。    
-- Intune 電腦用戶端（Intune PC 代理程式）或 Configuration Manager 用戶端代理程式已安裝在 Windows 10 電腦上。
+- Windows 10 電腦上已安裝 Intune 電腦用戶端（Intune PC 代理程式）。
 
 #### <a name="resolution"></a>解決方案
 使用下列其中一個方法來解決此問題：
@@ -171,7 +167,7 @@ ms.locfileid: "74991793"
 3. 將 [ **MDM 使用者範圍**] 設定為 [**無**]，然後按一下 [**儲存**]。    
      
 ##### <a name="uninstall"></a>解除安裝
-卸載電腦上的 Intune 電腦用戶端或 Configuration Manager 用戶端代理程式。    
+從電腦卸載 Intune 電腦用戶端代理程式。    
 
 ### <a name="the-software-cannot-be-installed"></a>無法安裝軟體。
 
@@ -205,16 +201,9 @@ ms.locfileid: "74991793"
 #### <a name="resolution"></a>解決方案
 若要在獨立的 Intune 環境中修正此問題，請遵循下列步驟： 
  
-1. 在[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [**裝置**] > **註冊限制**] > 選擇 [裝置類型] [限制]。    
+1. 在[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [**裝置**] > **註冊限制** > 選擇 [裝置類型] [限制]。    
 2. 選擇 **屬性** > **編輯** （在 **平臺設定** 旁） >**允許** **Windows （MDM）** 。    
 3. 按一下 [**審核] + [儲存**]。    
- 
-若要在具有 Intune 和 Configuration Manager 的混合式 MDM 中修正此問題，請遵循下列步驟： 
-1. 開啟 Configuration Manager 主控台。    
-2. 選取 [系統**管理**]，然後選取 [**雲端服務**]。    
-3. 以滑鼠右鍵按一下 [ **Microsoft Intune 訂**用帳戶]，然後選取 [**設定 > Windows 的平臺**]。    
-4. 勾選 **啟用 Windows 註冊** ** > 套用** > **確定**。  
-
 
 ### <a name="a-setup-failure-has-occurred-during-bulk-enrollment"></a>大量註冊期間發生安裝程式失敗。
 
@@ -335,7 +324,7 @@ Registering your device for mobile management (Previous step failed)
 
 #### <a name="resolution"></a>解決方案
 
-1. 在[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [>**裝置**] > **windows** > **windows 裝置**]。
+1. 在[Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [>**裝置**] > **windows** > **windows 裝置**。
 2. 選取發生問題的裝置 > 按一下最右側的省略號（...）。
 3. 選取 [**取消指派使用者**]，並等候進程完成。
 4. 請先確認已指派混合式 Azure AD Autopilot 設定檔，再重新嘗試 OOBE。
@@ -389,4 +378,4 @@ Description:
 - [查看 Microsoft Intune 支援小組部落格](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess) \(英文\)
 - [查看 Microsoft Enterprise Mobility 與安全性小組部落格](https://techcommunity.microsoft.com/t5/Azure-Active-Directory-Identity/Announcing-the-public-preview-of-Azure-AD-group-based-license/ba-p/245210) \(英文\)
 - [取得 Microsoft Intune 支援](../fundamentals/get-support.md)
-- [尋找共同管理註冊錯誤](https://docs.microsoft.com/sccm/comanage/how-to-monitor#enrollment-errors)
+- [尋找共同管理註冊錯誤](https://docs.microsoft.com/configmgr/comanage/how-to-monitor#enrollment-errors)
