@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4637a4f9f137e9db665d72118fd7a97d7a9f75a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510127"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956233"
 ---
 # <a name="plan-communications"></a>規劃溝通
 
@@ -62,4 +62,4 @@ Intune 提供可用來向使用者宣導註冊裝置的其他資源：
 
 - [如何指導使用者使用 Microsoft Intune](end-user-educate.md)中詳述行動裝置作業系統平台註冊步驟。
 - [IT 系統管理員的 Intune 裝置註冊](../enrollment/device-enrollment.md)說明如何在 Intune 中註冊 Android、iOS 和 Mac 裝置。
-- 與您的 Android、 iOS 和 Windows 使用者共用[公司入口網站應用程式 URL](http://go.microsoft.com/fwlink/?LinkID=396941)。 此 URL 會重新導向至 Android、iOS 和 Windows 裝置上列出的適當公司入口網站應用程式。
+- 與您的 Android、 iOS 和 Windows 使用者共用公司入口網站應用程式。

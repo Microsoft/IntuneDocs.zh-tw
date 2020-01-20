@@ -17,12 +17,12 @@ ms.reviewer: spshumwa
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8b2ce91cea1fdef211a8e6a9dc1c19086f355385
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9cbdd99dfb7b42677048b4f214e7de537db0edda
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72585283"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925830"
 ---
 # <a name="bulk-enrollment-for-windows-devices"></a>Windows 裝置的大量註冊
 
@@ -95,7 +95,7 @@ Azure AD 使用者是這些裝置上的標準使用者，並且會接收指派�
 
 ### <a name="bulk-enrollment-with-wi-fi"></a>大量註冊使用 Wi-Fi 
 
-大量註冊的裝置無法使用指派給使用者的憑證及 Wi-Fi 部署。 您必須使用[裝置層級憑證](../protect/certificates-configure.md)，才能管理這些連線。 
+未使用開放式網路時，您必須使用[裝置層級憑證](../protect/certificates-configure.md)來起始連線。 大量註冊的裝置無法使用指派給使用者的憑證來存取網路。 
 
 ### <a name="conditional-access"></a>條件式存取
 使用大量註冊來註冊的 Windows 裝置無法使用條件式存取。

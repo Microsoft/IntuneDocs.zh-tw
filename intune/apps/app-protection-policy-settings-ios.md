@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f8bcced82eb367bb8028f62de5cefcee0a5f85dd
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 33efbc661392354076db3a2e0eab8540f90e9645
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691906"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920100"
 ---
 # <a name="ios-app-protection-policy-settings"></a>iOS 應用程式保護原則設定
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -60,7 +60,7 @@ ms.locfileid: "75691906"
 | **與原生連絡人應用程式同步應用程式** |  選取 [封鎖]  ，防止應用程式將資料儲存至裝置上的原生「連絡人」應用程式。 如果您選取 [允許]  ，則應用程式可以將資料儲存至裝置上的原生「連絡人」應用程式。 <br><br>當您執行選擇性抹除以移除應用程式中的工作或學校資料時，會移除直接從應用程式同步到原生「連絡人」應用程式的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 Microsoft Outlook 應用程式。   | **允許**  |
 | **列印組織資料** | 選取 [封鎖]  ，防止應用程式列印公司或學校資料。 如果您將此設定保留為 [允許]  (預設值)，則使用者將能夠匯出及列印所有組織資料。  | **允許**  |
 | **限制與其他應用程式的 Web 傳輸** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇： <ul><li>**任何應用程式**：允許任何應用程式中的 Web 連結。</li><li>**Intune Managed Browser**：只允許在 Intune Managed Browser 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**Microsoft Edge**：只允許在 Microsoft Edge 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**非受控瀏覽器**：只允許在 [非受控瀏覽器通訊協定]  設定中定義的非受控瀏覽器中開啟 Web 內容。 Web 內容在目標瀏覽器中將會是非受控。<br>**注意**：應用程式需要有 Intune SDK 11.0.9 版或更新版本。</li></ul> 如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受控的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<br><br>如果受控瀏覽器為必要但尚未安裝，則會提示終端使用者安裝 Microsoft Edge。<p>如果原則受控的瀏覽器為必要的，則 iOS 通用連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。 <p>**Intune 裝置註冊**<br>如果您使用 Intune 來管理裝置，請參閱＜透過 Microsoft Intune 使用受控瀏覽器原則管理網際網路存取＞。 <p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器整合了 Intune SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul><br>**注意**：Intune SDK 無法判斷目標應用程式是否為瀏覽器。  在 iOS 裝置上，不允許任何其他受控瀏覽器應用程式。    | **未設定**  |
-|<ul><ui>**非受控瀏覽器通訊協定** | 輸入*單一*非受控瀏覽器的通訊協定。 來自受原則管理之應用程式的 Web 內容 (http/https 連結) 將在任何支援此通訊協定的應用程式中開啟。 Web 內容在目標瀏覽器中將會是非受控。 <br><br>僅當您想要與未使用 Intune 應用程式保護原則啟用的特定瀏覽器共用受保護的內容時，才應該使用這項功能。 您必須與瀏覽器供應商聯繫，以判斷所需的瀏覽器所支援的通訊協定。<br><br>**注意**：只包含通訊協定前置詞。  如果您的瀏覽器需要 `mybrowser://www.microsoft.com` 格式的連結，請輸入 `mybrowser`。<br>連結將轉譯為：<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **空白**  |
+|<ul><ui>**非受控瀏覽器通訊協定** | 輸入*單一*非受控瀏覽器的通訊協定。 來自受原則管理之應用程式的 Web 內容 (http/https 連結) 將在任何支援此通訊協定的應用程式中開啟。 Web 內容在目標瀏覽器中將會是非受控。 <br><br>僅當您想要與未使用 Intune 應用程式防護原則啟用的特定瀏覽器共用受保護的內容時，才應該使用這個功能。 您必須與瀏覽器供應商聯繫，以判斷所需的瀏覽器所支援的通訊協定。<br><br>**注意**：只包含通訊協定前置詞。  如果您的瀏覽器需要 `mybrowser://www.microsoft.com` 格式的連結，請輸入 `mybrowser`。<br>連結將轉譯為：<br><ul><li>`http://www.microsoft.com` > `mybrowser://www.microsoft.com`</li><li>`https://www.microsoft.com` > `mybrowsers://www.microsoft.com`</li></ul> | **空白**  |
 
 > [!NOTE]  
 > 沒有資料保護設定可以控制 iOS 裝置上的 Apple 受控開啟方式功能。 若要使用管理 Apple「開啟於」，請參閱[使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)。

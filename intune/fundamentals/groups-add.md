@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fe37ac412d01d3032685a0e66827d20e13b0db64
-ms.sourcegitcommit: 42183c87b137710b8529049f8710d47127e99900
+ms.openlocfilehash: 237eca2f8e00f00fda5fa3cf401be87de9602743
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/20/2019
-ms.locfileid: "75303067"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956269"
 ---
 # <a name="add-groups-to-organize-users-and-devices"></a>新增群組來組織使用者和裝置
 
@@ -54,7 +54,7 @@ Intune 使用 Azure Active Directory (Azure AD) 群組來管理裝置和使用�
         >
         > 如果您的主要角色是裝置管理，我們建議您使用 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
-    - **Office 365**：這些群組是設計來控制對 Office 365 資源的存取及共用它們。 例如，您可以建立 Office 365 群組來共用 Outlook 收件匣或行事曆。 如需詳細資訊，請參閱[了解 Office 365 群組](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
+    - **Office 365**：透過授與成員存取共用信箱、行事曆、檔案、SharePoint 網站等，來提供共同作業的機會。 此選項也可讓您將群組的存取權授與組織外的人員。 如需詳細資訊，請參閱[了解 Office 365 群組](https://support.office.com/article/learn-about-office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)。
 
 4. 為新群組輸入 [群組名稱]  與 [群組描述]  。 請明確描述並包含資訊，使其他人可以知道群組的用途。
 

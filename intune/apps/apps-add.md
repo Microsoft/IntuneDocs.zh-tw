@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/03/2019
+ms.date: 01/10/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ef9548a77a3a745eda24b927118d1447d5afd1f0
-ms.sourcegitcommit: 78faf608510fbaca09bc410d63df1aa5254dee45
+ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/03/2019
-ms.locfileid: "74784233"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956190"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune 
 
@@ -164,7 +164,7 @@ Intune 受控應用程式也可以在無需註冊之下啟用應用程式保護�
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [應用程式]   > [應用程式類別]  。  
     [應用程式類別]  窗格會顯示目前類別的清單。 
-5. 執行下列任一步驟：
+5. 請執行下列其中一個動作：
     - 若要新增類別，請在 [建立類別]  窗格中，選取 [新增]  ，然後輸入類別的名稱。  
     名稱只能以一種語言輸入，而且 Intune 不會加以翻譯。
     - 若要編輯類別，請選取類別旁的省略符號 ( **...** )，然後選取 [釘選至儀表板]  或 [刪除]  。
@@ -189,7 +189,7 @@ Intune 會根據下列條件，自動重新安裝、更新或移除必要的應�
 
 ## <a name="app-installation-errors"></a>應用程式安裝錯誤
 
-如需有關 Intune 應用程式安裝錯誤的詳細資料，請參閱[應用程式安裝錯誤](troubleshoot-app-install.md#app-installation-errors)。
+如需有關 Intune 應用程式安裝錯誤的詳細資料，請參閱[應用程式安裝錯誤](troubleshoot-app-install.md)。
 
 ## <a name="next-steps"></a>後續步驟
 
@@ -211,4 +211,4 @@ Intune 會根據下列條件，自動重新安裝、更新或移除必要的應�
 - [適用於 macOS 的 Microsoft Edge](apps-edge-macos.md)
 - [內建應用程式](apps-add-built-in.md)
 - [Android Enterprise 系統應用程式](apps-ae-system.md)
-- [Win32 應用程式](app-management.md)
+- [Win32 應用程式](~/apps/apps-win32-app-management.md)

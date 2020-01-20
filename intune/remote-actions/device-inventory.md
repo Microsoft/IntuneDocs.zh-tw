@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 94c38aaf28440511720280a3c5a1ebda5b9f2ab1
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74819786"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75756029"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -33,7 +33,7 @@ ms.locfileid: "74819786"
 
 ## <a name="view-the-device-details"></a>檢視裝置詳細資料
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [裝置]   > [所有裝置]  > 選取其中一個列出的裝置以開啟其詳細資料：
 
    - [概觀]  會顯示裝置名稱，並列出該裝置的一些重要屬性，包括它是否為「攜帶您自己的裝置」(BYOD) 裝置、簽入時間等。 您可以在裝置上執行下列動作：
@@ -59,7 +59,7 @@ ms.locfileid: "74819786"
 
 |詳細資料|說明|平台| 
 |--------------|----------------------|----|  
-|名稱|裝置的名稱。|Windows、iOS|
+|Name|裝置的名稱。|Windows、iOS|
 |管理名稱|裝置名稱只會用於主控台中。 變更此名稱不會變更裝置上的名稱。|Windows、iOS|
 |UDID|裝置的唯一裝置識別碼。|Windows、iOS|
 |Intune 裝置識別碼|可唯一識別裝置的 GUID。|Windows、iOS|
@@ -83,7 +83,7 @@ ms.locfileid: "74819786"
 |Wi-Fi MAC|裝置的媒體存取控制位址。|Windows、iOS、Android|
 |ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|Windows、iOS、Android|
 |註冊日期|裝置在 Intune 中註冊的日期與時間。|Windows、iOS、Android|
-|上次連絡時間|裝置最後連線至 Intune 的日期與時間。|Windows、iOS、Android|
+|上次連絡|裝置最後連線至 Intune 的日期與時間。|Windows、iOS、Android|
 |啟用鎖定略過碼|此代碼可用來略過啟用鎖定。|iOS|
 |已註冊 Azure AD|若為 [是]  ，表示裝置已向 Azure Directory 註冊。|Windows、iOS、Android|
 |Intune 已註冊|若為 [是]  ，表示裝置已向 Intune 註冊|Windows、iOS、Android|
@@ -94,6 +94,9 @@ ms.locfileid: "74819786"
 |已加密|若為 [是]  ，表示會加密儲存在裝置上的資料。|Windows、iOS、Android|
 
 \* 不適用於具有 Google 原則管理員的 Android，例如完全受控與專用裝置
+
+> [!Note]  
+> 系統不會清查 Android Enterprise 專用或完全受控裝置上的電話號碼。
 
 ## <a name="next-steps"></a>後續步驟
 看看您還可以怎麼使用 Intune [管理您的裝置](device-management.md)。

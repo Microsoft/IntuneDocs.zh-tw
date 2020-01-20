@@ -16,12 +16,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ca0983b7b637b7e85bef97cd77e6c870c4e43eb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: c705e8863ef4e01906a773d528f9ae2f40461c71
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510023"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885846"
 ---
 # <a name="basic-setup"></a>基本設定
 
@@ -74,9 +74,9 @@ Intune 需要 Azure Active Directory (AAD) 作為身分識別和使用者分組�
 
 ### <a name="task-3-set-your-mdm-authority-to-intune"></a>工作 3：將 MDM 授權單位設定為 Intune
 
-您可以透過 Azure 入口網站或 Configuration Manager 最新分支主控台來管理 Intune。 除非您需要整合 Intune 與 Configuration Manager 最新分支部署，否則，建議您從 [Azure 入口網站](https://portal.azure.com)管理 Intune。
+我們建議您使用 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)來管理 Intune。
 
-將 MDM 授權單位設定為 **Intune**以啟用 Intune Azure 入口網站。 使用其他 MDM 授權單位可讓 Intune 將 MDM 管理移交至其他 Microsoft 管理主控台。 這種情況並不常見。
+將 MDM 授權單位設定為 [Intune]  。 使用其他 MDM 授權單位可讓 Intune 將 MDM 管理移交至其他 Microsoft 管理主控台。 這種情況並不常見。
 
 > [!IMPORTANT]
 > 如果您是第一次將行動裝置管理移交至 Intune，應該將 MDM 授權單位設定為 Intune。

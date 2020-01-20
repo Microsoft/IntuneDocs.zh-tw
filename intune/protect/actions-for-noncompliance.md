@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9e3867bfc2de29c059766e134bd0d2c8801e1c70
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 50478ecb615cf39bba0a205cb06f83e47728e366
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712915"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827831"
 ---
 # <a name="automate-email-and-add-actions-for-noncompliant-devices-in-intune"></a>在 Intune 中將電子郵件自動化，並為不符合規範的裝置新增動作
 
@@ -62,11 +62,11 @@ ms.locfileid: "73712915"
 
 若要傳送電子郵件給您的使用者，請建立通知訊息範本。 裝置不符合規範時，您在範本中輸入的詳細資料會顯示在傳送給您使用者的電子郵件裡。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [合規性原則]   > [通知]   > [建立通知]  。
 3. 在 [基本]  底下，指定下列資訊：
 
-   - **名稱**
+   - **Name**
    - **主旨**
    - **Message**
 
@@ -91,9 +91,9 @@ ms.locfileid: "73712915"
 
 當您建立裝置合規性政策時，Intune 會針對不符合規範自動建立動作。 如果裝置不符合合規性政策，此動作會將其標記為不符合規範。 您可以自訂將裝置標記為不符合規範的時間長度。 該動作無法移除。
 
-您也可以在建立合規性政策或更新現有政策時新增另一個動作。
+除了將裝置標示為不符合規範的預設動作之外，您可以在建立合規性原則，或是更新現有原則時新增選擇性的動作。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [合規性原則]   > [原則]  ，選取其中一個原則，然後選取 [內容]  。
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f11ccb51e08e96595dfcb9118c1f479f1b0fc3de
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692114"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956324"
 ---
 # <a name="app-protection-policies-overview"></a>應用程式保護原則概觀
 
@@ -133,11 +133,11 @@ MDM 解決方案會藉由提供下列各項來增加價值：
 
 ## <a name="apps-you-can-manage-with-app-protection-policies"></a>您可以使用應用程式保護原則管理的應用程式
 
-與 [Intune App SDK](../developer/app-sdk.md) 整合或由 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) 包裝的應用程式，都可以使用應用程式保護原則加以管理。 查看已使用這些工具建置並可供公開使用的 [Microsoft Intune 受保護應用程式](apps-supported-intune-apps.md)官方清單。
+與 [Intune SDK](../developer/app-sdk.md) 整合或由 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) 包裝的應用程式，都可以使用 Intune 應用程式防護原則加以管理。 查看已使用這些工具建置並可供公開使用的 [Microsoft Intune 受保護應用程式](apps-supported-intune-apps.md)官方清單。
 
 Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms 及 Cordova 平台所建置的應用程式，主動地進行測試並維護支援。 雖然有部分客戶成功搭配其他平台 (例如 React Native 和 NativeScript) 整合 Intune SDK，我們並沒有針對使用我們所不支援之平台的應用程式開發人員提供明確的指引或外掛程式。
 
-[Intune App SDK](../developer/app-sdk.md) 會針對第 1 方和第 3 方版本的 SDK，使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL) \(部分機器翻譯\) 中一些先進的新式驗證功能。 因此，[Microsoft 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) \(部分機器翻譯\) (MSAL) 並不適用於我們許多的核心案例，例如向 Intune 應用程式防護服務進行驗證，以及條件式啟動。 有鑑於來自 Microsoft 身分識別小組的整體指示是要將所有 Microsoft Office 應用程式切換至 MSAL，[Intune App SDK](../developer/app-sdk.md) 未來一定會需要支援它，但目前尚未有確切計畫。
+[Intune SDK](../developer/app-sdk.md) 會針對第 1 方和第 3 方版本的 SDK，使用 [Azure Active Directory 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) \(部分機器翻譯\) (ADAL) 中一些先進的新式驗證功能。 因此，[Microsoft 驗證程式庫](https://docs.microsoft.com/azure/active-directory/develop/reference-v2-libraries) \(部分機器翻譯\) (MSAL) 並不適用於我們許多的核心案例，例如向 Intune 應用程式防護服務進行驗證，以及條件式啟動。 Microsoft 身分識別小組的整體指示是要將所有 Microsoft Office 應用程式切換至 MSAL，因此 [Intune SDK](../developer/app-sdk.md) 未來遲早會需要支援它，但目前尚未有確切計畫。
 
 ## <a name="end-user-requirements-to-use-app-protection-policies"></a>使用應用程式防護原則的終端使用者需求
 
@@ -198,7 +198,7 @@ Office 所需的受控位置 (例如 OneDrive)。 Intune 會將應用程式中�
 
 ### <a name="multi-identity"></a>多重身分識別
 
-多重身分識別支援可讓應用程式支援多個對象。 這些對象同時是「公司」使用者和「個人」使用者。 公司和學校帳戶是由「公司」對象使用，而個人帳戶則會針對消費者對象使用 (例如 Microsoft Office 使用者)。 支援多重身分識別的應用程式可公開發行，其中應用程式防護原則只適用於在公司和學校 (「公司」) 內容中使用應用程式的情況。 多重身分識別支援使用 [Intune App SDK](../developer/app-sdk.md) 僅將應用程式防護原則套用至已登入應用程式之公司或學校帳戶的功能。 如果個人帳戶已登入應用程式，就不會更動資料。
+多重身分識別支援可讓應用程式支援多個對象。 這些對象同時是「公司」使用者和「個人」使用者。 公司和學校帳戶是由「公司」對象使用，而個人帳戶則會針對消費者對象使用 (例如 Microsoft Office 使用者)。 支援多重身分識別的應用程式可公開發行，其中應用程式防護原則只適用於在公司和學校 (「公司」) 內容中使用應用程式的情況。 多重身分識別支援使用 [Intune SDK](../developer/app-sdk.md) 僅將應用程式防護原則套用至已登入應用程式之公司或學校帳戶的功能。 如果個人帳戶已登入應用程式，就不會更動資料。
 
 舉一個個人內容的範例，想像有一個使用者在 Word 中開始一個新文件，這會被系統視為「個人」內容，因此不會套用 Intune 應用程式防護原則。 當該使用者把文件儲存到「公司」OneDrive 帳戶上時，系統便會把該文件視為「公司」內容，並套用 Intune 應用程式防護原則。
 
@@ -213,7 +213,7 @@ Outlook 具有「個人」和「公司」電子郵件的合併電子郵件檢視
 個人識別碼 (PIN) 是一組密碼，用來驗證在應用程式中存取組織資料的是正確的使用者。
 
 **PIN 提示**<br>
-Intune 會在使用者要存取「公司」資料時，提示使用者提供應用程式 PIN。 在多重身分識別應用程式 (例如 Word、Excel 或 PowerPoint) 中，系統會在使用者嘗試開啟「公司」文件或檔案時提示他們提供 PIN。 在單一身分識別應用程式 (例如使用 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) 管理的企業營運應用程式) 中，系統會在啟動時提示提供 PIN，因為 [Intune App SDK](../developer/app-sdk.md) 知道使用者在該應用程式中的體驗一律會是「公司」。
+Intune 會在使用者要存取「公司」資料時，提示使用者提供應用程式 PIN。 在多重身分識別應用程式 (例如 Word、Excel 或 PowerPoint) 中，系統會在使用者嘗試開啟「公司」文件或檔案時提示他們提供 PIN。 在單一身分識別應用程式 (例如使用 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) 管理的企業營運應用程式) 中，系統會在啟動時提示提供 PIN，因為 [Intune SDK](../developer/app-sdk.md) 知道使用者在該應用程式中的體驗一律會是「公司」。
 
 **PIN 提示，或公司認證提示，頻率**<br>
 IT 系統管理員可以在 Intune 管理主控台中定義 Intune 應用程式防護原則設定 [重新檢查存取需求前的剩餘時間 (分鐘)]  。 這項設定會指定多久之後要在裝置上檢查存取要求，並再次顯示應用程式 PIN 畫面或公司認證提示。 不過，還有下列關於 PIN 的重要詳細資料會影響使用者收到通知的頻率：
@@ -231,13 +231,22 @@ IT 系統管理員可以在 Intune 管理主控台中定義 Intune 應用程式�
 Intune PIN 會根據以閒置為基礎的計時器 ( [重新檢查存取需求前的剩餘時間 (分鐘)]  的值) 運作。 因此，Intune PIN 提示會與 Outlook 和 OneDrive 的內建應用程式 PIN 提示分開顯示，後者預設通常與應用程式啟動相關。 如果使用者同時收到兩個 PIN 提示，預期的行為應該是優先使用 Intune PIN。
 
 **Intune PIN 安全性**<br>
-PIN 是用來允許僅有正確的使用者可以存取應用程式中的組織資料。 因此，終端使用者必須使用他們的公司或學校帳戶登入，之後才能設定或重設其 Intune 應用程式 PIN。 這個驗證是由 Azure Active Directory 透過安全性權杖交換來處理，且未向 [Intune App SDK](../developer/app-sdk.md) 公開。 從安全性角度來看，保護工作或學校資料的最佳方式是將資料加密。 加密與應用程式 PIN 無關，而是其本身的應用程式保護原則。
+PIN 是用來允許僅有正確的使用者可以存取應用程式中的組織資料。 因此，終端使用者必須使用他們的公司或學校帳戶登入，之後才能設定或重設其 Intune 應用程式 PIN。 這個驗證是由 Azure Active Directory 透過安全性權杖交換來處理，且未向 [Intune SDK](../developer/app-sdk.md) 公開。 從安全性角度來看，保護工作或學校資料的最佳方式是將資料加密。 加密與應用程式 PIN 無關，而是其本身的應用程式保護原則。
 
-**Intune PIN - 防範暴力密碼破解攻擊**<br>
-做為應用程式 PIN 原則的一部份，IT 系統管理員可以設定在鎖定應用程式之前，使用者可以嘗試驗證其 PIN 的次數上限。 當嘗試次數達到上限之後，[Intune App SDK](../developer/app-sdk.md) 可以抹除應用程式中的「公司」資料。
-  
+**防範暴力密碼破解攻擊，以及 Intune PIN**<br>
+做為應用程式 PIN 原則的一部份，IT 系統管理員可以設定在鎖定應用程式之前，使用者可以嘗試驗證其 PIN 的次數上限。 當嘗試次數達到上限之後，[Intune SDK](../developer/app-sdk.md) 可以抹除應用程式中的「公司」資料。
+
+**Intune PIN 和選擇性抹除**<br>
+在 iOS 上，應用程式層級 PIN 資訊會儲存在於具有相同發行者的應用程式之間共用的鑰匙串中，例如所有第一方 Microsoft 應用程式。 此 PIN 資訊也會繫結至使用者帳戶。 對某個應用程式進行選擇性抹除，應該不會影響到另一個不同的應用程式。 
+
+例如，已登入的使用者針對 Outlook 所設定的 PIN 會儲存在共用的鑰匙串中。 當使用者登入 OneDrive (也是由 Microsoft 所發行) 時，他們將會看到和 Outlook 相同的 PIN，因為它會使用相同的共用鑰匙串。 登出 Outlook 或抹除 Outlook 中的使用者資料時，Intune SDK 並不會清除鑰匙串，因為 OneDrive 可能仍然在使用該 PIN。 因此，選擇性抹除並不會清除共用鑰匙串，包括 PIN 在內。 此行為會維持不變，即使裝置上只存在來自某個發行者的單一應用程式。 
+
+由於 PIN 是儲存在具有相同發行者的應用程式之間，如果對單一應用程式進行抹除，Intune SDK 並無法知道裝置上是否還有其他具有相同發行者的應用程式。 因此 Intune SDK 不會清除 PIN，因為它可能仍然由其他應用程式使用。 預期的情況是，該應用程式 PIN 於未來會隨著 OS 清理之類的作業，在移除來自該發行者的最後一個應用程式時一起抹除。
+ 
+如果您觀察到 PIN 在某些裝置上被抹除，很可能發生下列情況：由於 PIN 會繫結至身分識別，如果使用者在抹除後使用不同的帳戶登入，系統將會提示他們輸入新的 PIN。 不過，如果他們是使用先前的現有帳戶登入，便能使用儲存在鑰匙串中的 PIN 來登入。
+
 **在同一個發行者的應用程式上設定 PIN 兩次？**<br>
-MAM (在 iOS 上) 目前允許應用程式層級 PIN 包含英數字元與特殊字元 (稱為「密碼」)，這需要應用程式 (亦即 WXP、Outlook、Managed Browser、Yammer) 參與以整合[適用於 iOS 的 Intune APP SDK](../developer/app-sdk-ios.md)。 如果沒有，密碼設定將不會正確地針對目標應用程式強制執行。 這是在「適用於 iOS 7.1.12 版的 Intune SDK」中推出的功能 。
+MAM (在 iOS 上) 目前允許應用程式層級 PIN 包含英數字元與特殊字元 (稱為「密碼」)，這需要應用程式 (亦即 WXP、Outlook、Managed Browser、Yammer) 參與以整合[適用於 iOS 的 Intune SDK](../developer/app-sdk-ios.md)。 如果沒有，密碼設定將不會正確地針對目標應用程式強制執行。 這是在「適用於 iOS 7.1.12 版的 Intune SDK」中推出的功能 。
 
 為了支援此功能，並確保對其他版本「適用於 iOS 的 Intune SDK」的回溯相容性，7.1.12 及更新版本中的所有 PIN (不論數字或密碼)，都與先前 SDK 版本中的數字 PIN 分開處理。 因此，如果裝置上有來自同一個發行者的多個應用程式，且其使用的「適用於 iOS 的 Intune SDK」有 7.1.12 之前和 7.1.12 之後的版本，則這些應用程式必須設定兩次 PIN。 這兩個 PIN (針對每個應用程式) 沒有任何關係 (亦即，它們必須遵守套用至應用程式的應用程式保護原則)。 確切地說，只有  當應用程式 A 和 B 套用相同的原則 (相對於 PIN) 時，使用者才需要設定相同的 PIN 兩次。 
 
@@ -261,6 +270,8 @@ IT 系統管理員可以部署要求將應用程式資料加密的應用程式�
 
 針對由 [Intune App Wrapping Tool](../developer/apps-prepare-mobile-application-management.md) 管理的企業營運應用程式，所有的應用程式資料都將視為「公司」資料。
 
+### <a name="selective-wipe"></a>選擇性抹除
+
 **從遠端抹除資料**<br>
 Intune 可以用三種不同的方式抹除應用程式資料： 
 - 完整裝置抹除
@@ -269,10 +280,10 @@ Intune 可以用三種不同的方式抹除應用程式資料：
 
 如需 MDM 遠端抹除的詳細資訊，請參閱[使用抹除或淘汰來移除裝置](../remote-actions/devices-wipe.md)。 如需使用 MAM 選擇性抹除的詳細資訊，請參閱[淘汰動作](../remote-actions/devices-wipe.md#retire)和[如何只抹除應用程式中的公司資料](apps-selective-wipe.md)。
 
-[抹除](../remote-actions/devices-wipe.md)會移除**裝置**的所有使用者資料和設定，方法是將裝置還原為其原廠預設設定。 並從 Intune 移除裝置。
+[完整裝置抹除](../remote-actions/devices-wipe.md)會移除**裝置**的所有使用者資料和設定，方法是將裝置還原為其原廠預設設定。 並從 Intune 移除裝置。
 
   >[!NOTE]
-  > 抹除只能在已向 Intune 行動裝置管理 (MDM) 註冊的裝置上執行。
+  > 完整裝置抹除，以及 MDM 的選擇性抹除只能在已向 Intune 行動裝置管理 (MDM) 註冊的裝置上執行。
 
 **適用於 MDM 的選擇性抹除**<br>
 請參閱[移除裝置 - 淘汰](../remote-actions/devices-wipe.md#retire)，以閱讀移除公司資料的相關資訊。
@@ -280,24 +291,20 @@ Intune 可以用三種不同的方式抹除應用程式資料：
 **適用於 MAM 的選擇性抹除**<br>
 MAM 選擇性抹除僅會從應用程式移除公司應用程式資料。 該要求是使用 Intune Azure 入口網站來起始的。 若要了解如何起始抹除要求，請參閱[如何只抹除應用程式中的公司資料](apps-selective-wipe.md)。
 
-如果使用者在起始選擇性抹除時正在使用應用程式，[Intune App SDK](../developer/app-sdk.md) 每隔 30 分鐘就會檢查來自 Intune MAM 服務的選擇性抹除要求。 它也會在使用者首次啟動應用程式並以其工作或學校帳戶登入時檢查選擇性抹除。
+如果使用者在起始選擇性抹除時正在使用應用程式，[Intune SDK](../developer/app-sdk.md) 每隔 30 分鐘就會檢查來自 Intune MAM 服務的選擇性抹除要求。 它也會在使用者首次啟動應用程式並以其工作或學校帳戶登入時檢查選擇性抹除。
 
 **當內部部署 (on-prem) 服務無法搭配受 Intune 保護的應用程式運作時**<br>
-Intune 應用程式防護會取決於使用者的身分識別，以在應用程式與 [Intune App SDK](../developer/app-sdk.md) 之間保持一致。 保證一致的唯一方式是透過新式驗證。 有些案例中，應用程式可搭配內部部署組態運作，但是不保證一定運作。
+Intune 應用程式防護會取決於使用者的身分識別，以在應用程式與 [Intune SDK](../developer/app-sdk.md) 之間保持一致。 保證一致的唯一方式是透過新式驗證。 有些案例中，應用程式可搭配內部部署組態運作，但是不保證一定運作。
 
 **從受控應用程式開啟網頁連結的安全方式**<br>
 IT 系統管理員可以針對 [Intune Managed Browser 應用程式](app-configuration-managed-browser.md)部署與設定應用程式保護原則，這是由 Microsoft Intune 開發的網頁瀏覽器，可輕鬆地利用 Intune 加以管理。 針對 Intune 受控應用程式，IT 系統管理員可以要求其中的所有網頁連結都必須使用 Managed Browser 應用程式來開啟。
-
-## <a name="examples-of-app-protection-policies"></a>應用程式防護原則的範例
-
-若要深入了解應用程式防護原則範例，並查看每個應用程式防護原則設定的詳細資訊，請參閱 [Android 應用程式防護原則設定](app-protection-policy-settings-android.md)與 [iOS 應用程式防護原則設定](app-protection-policy-settings-ios.md)。
 
 ## <a name="app-protection-experience-for-ios-devices"></a>iOS 裝置的應用程式防護體驗
 
 ### <a name="device-fingerprint-or-face-ids"></a>裝置指紋或 Face ID 
 Intune 應用程式防護原則可控制應用程式只存取 Intune 授權使用者。 控制應用程式存取的其中一種方式，就是在支援裝置上要求 Apple 的 Touch ID 或 Face ID。 如果裝置的生物特徵辨識資料庫有任何變更，Intune 會在下次達到非使用狀態逾時值時，提示使用者輸入 PIN。 對生物特徵辨識資料所做的變更包括新增或移除指紋或臉部。 如果 Intune 使用者未設定 PIN，則會引導他們設定一個 Intune PIN。
  
-此程序的用意是為了持續確保應用程式內組織資料的安全，並在應用程式層級受到保護。 此功能僅適用於 iOS，並需要整合 Intune APP SDK for iOS 9.0.1 版或更新版本的應用程式參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 這項整合會輪流發生並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。
+此程序的用意是為了持續確保應用程式內組織資料的安全，並在應用程式層級受到保護。 此功能僅適用於 iOS，並需要整合「適用於 iOS 的 Intune SDK」9.0.1 版或更新版本之應用程式的參與。 您必須整合此 SDK，才能針對目標應用程式強制執行該行為。 這項整合會輪流發生並取決於特定的應用程式小組。 參與的一些應用程式包括 WXP、Outlook、Managed Browser 和 Yammer。
   
 ### <a name="ios-share-extension"></a>iOS 共用延伸模組
 您可以使用 iOS 共用延伸模組在非受控應用程式中開啟公司或學校資料，即使在資料傳輸原則已設定為 [僅限受控應用程式]  或 [沒有應用程式]  的情況下也可以。 Intune 應用程式保護原則必須管理裝置才能控制 iOS 共用延伸模組。 因此，Intune _**會先加密「公司」資料，才會在應用程式之外共用**_ 。 您可以嘗試在受控應用程式外開啟「公司」檔案來驗證此加密行為。 檔案應已加密且無法在受管理的應用程式之外開啟。
@@ -305,12 +312,12 @@ Intune 應用程式防護原則可控制應用程式只存取 Intune 授權使�
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>相同應用程式和使用者集合的多個 Intune 應用程式防護存取設定
 Intune 應用程式防護存取原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，其順序會是抹除、封鎖及可關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者更新其 iOS 版本的最低 iOS 作業系統設定，將在封鎖使用者使其無法存取的最低 iOS 作業系統設定之後套用。 因此，當情況是 IT 系統管理員將最低 iOS 作業系統設定為 11.0.0.0，最低 iOS 作業系統 (僅警告) 設定為 11.1.0.0 時，如果嘗試存取應用程式的裝置使用 iOS 10，則因為導致封鎖存取的最低 iOS 作業系統版本設定限制更多，而使得終端使用者將會被封鎖。
 
-處理不同類型的設定時，Intune 應用程式 SDK 版本需求會優先，然後是應用程式版本需求，再然後是 iOS 作業系統版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。 我們建議您只針對必要的封鎖情況，在 Intune 產品小組的指導下，設定 Intune App SDK 版本需求。
+處理不同類型的設定時，Intune SDK 版本需求會優先，然後是應用程式版本需求，最後才是 iOS 作業系統版本需求。 接著會以相同順序檢查所有類型之設定的任何警告。 我們建議您只針對必要的封鎖情況，在 Intune 產品小組的指導下，設定 Intune SDK 版本需求。
 
 ## <a name="app-protection-experience-for-android-devices"></a>Android 裝置的應用程式防護體驗
 
 ### <a name="company-portal-app-and-intune-app-protection"></a>公司入口網站應用程式和 Intune 應用程式防護
-大部分的應用程式保護功能是內建在公司入口網站應用程式中。 雖然公司入口網站應用程式一律為必要，但也不需要註冊裝置。 針對沒有註冊的行動應用程式管理 (MAM-WE)，終端使用者只需要在裝置上安裝公司入口網站應用程式即可。
+大部分的應用程式保護功能是內建在公司入口網站應用程式中。 雖然公司入口網站應用程式一律為必要，但也_不需要_註冊裝置。 針對沒有註冊的行動應用程式管理 (MAM-WE)，終端使用者只需要在裝置上安裝公司入口網站應用程式即可。
 
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>相同應用程式和使用者集合的多個 Intune 應用程式防護存取設定
 Intune 應用程式防護存取原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，封鎖會優先，然後是可以關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者進行修補程式升級的最低 Android 修補程式版本設定，將在封鎖使用者使其無法存取的最低 Android 修補程式版本設定之後套用。 因此，當情況是 IT 系統管理員將最低 Android 修補程式版本設定為 2018-03-01，最低 Android 修補程式版本 (僅警告) 設定為 2018-02-01 時，如果嘗試存取應用程式的裝置使用修補程式版本 2018-01-01，則因為導致封鎖存取的最低 Android 修補程式版本設定限制更多，而使得終端使用者將會被封鎖。 
@@ -344,6 +351,10 @@ Intune 會利用 Google Play Protect SafetyNet API，在我們現有 Root 破解
 ## <a name="next-steps"></a>後續步驟
 
 [如何使用 Microsoft Intune 建立及部署應用程式保護原則](app-protection-policies.md)
+
+[搭配 Microsoft Intune 的可用 Android 應用程式防護原則設定](app-protection-policy-settings-android.md)
+
+[搭配 Microsoft Intune 的可用 iOS 應用程式防護原則設定](app-protection-policy-settings-ios.md)
 
 ## <a name="see-also"></a>請參閱
 協力廠商應用程式 (例如 Salesforce 行動應用程式) 可以特定方式與 Intune 搭配使用來保護公司資料。 若要深入了解 Salesforce 應用程式與 Intune 搭配使用的特定方式 (包括 MDM 應用程式組態設定)，請參閱 [Salesforce 應用程式和 Microsoft Intune](https://gallery.technet.microsoft.com/Salesforce-App-and-Intune-c47d44ee/file/188000/1/Salesforce%20App%20and%20Intune%20for%20external.pdf) \(英文\)。

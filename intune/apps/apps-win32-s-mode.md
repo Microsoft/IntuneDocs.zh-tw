@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/08/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4b2a6019a0af33cd227d88444bb5ddda5bc22715
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: a3074b30921a4daba7469e670a17ad29ee1edc00
+ms.sourcegitcommit: 8f56220e7cafc5bc43135940575a9acb5afde730
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204896"
+ms.lasthandoff: 01/09/2020
+ms.locfileid: "75827797"
 ---
 # <a name="enable-win32-apps-on-s-mode-devices"></a>在 S 模式裝置上啟用 Win32 應用程式
 
@@ -45,7 +45,7 @@ ms.locfileid: "75204896"
    - 您可以透過建立 Windows 10 S 模式補充原則，將簽署的補充原則上傳至 Intune (請參閱下文)。
 3. 您可以透過 Intune 允許 Win32 應用程式目錄：
    - 您會建立目錄檔案 (每個應用程式 1 個)，並使用 DGSS 或其他憑證基礎結構來簽署它們。
-   - 您可以使用 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)，將已簽署的目錄封裝到 *.intunewin* 檔案中。 如需詳細資訊，請參閱 [Win32 應用程式管理 - 準備要上傳的 Win32 應用程式內容](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload)。
+   - 您可以使用 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730)，將已簽署的目錄封裝到 *.intunewin* 檔案中。 使用 [Microsoft Win32 內容準備工具](https://go.microsoft.com/fwlink/?linkid=2065730) \(英文\) 來建立類別目錄檔案時，並沒有任何命名限制。 從特定的來源資料夾和安裝檔產生 *.intunewin* 檔案時，您可以使用 -a cmdline 選項來提供僅包含類別目錄檔案的個別資料夾。 如需詳細資訊，請參閱 [Win32 應用程式管理 - 準備要上傳的 Win32 應用程式內容](~/apps/apps-win32-app-management.md#prepare-the-win32-app-content-for-upload)。
    - Intune 會套用已簽署的應用程式目錄，以使用 [Intune 管理延伸模組](~/apps/intune-management-extension.md)，在 S 模式裝置上安裝 Win32 應用程式。
 
 > [!NOTE]

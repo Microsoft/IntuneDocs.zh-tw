@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d843cf707cf182655d0044dde289caca730ccd6b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: a6f57783b0878cd25e6c7eacdf4b32e462790916
+ms.sourcegitcommit: 5db0769274d788a1218dca3ad90d8649927becb4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72810310"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75925799"
 ---
 # <a name="integrate-zimperium-with-intune"></a>將 Zimperium 與 Intune 整合
 
@@ -31,7 +31,7 @@ ms.locfileid: "72810310"
 
 ## <a name="before-you-begin"></a>開始之前
 
-在 [Zimperium MTD 主控台](https://www.zimperium.com/platform)中執行下列步驟，會讓 Lookout 的服務連線到已註冊 Intune 的裝置 (使用裝置合規性)，以及尚未註冊的裝置 (使用應用程式防護原則)。
+下列步驟是在 [Zimperium MTD 主控台](https://www.zimperium.com/platform) \(英文\) 中執行，且會針對已註冊 Intune 的裝置 (使用裝置合規性) 及未註冊的裝置 (使用應用程式防護原則) 啟用對 Zimperium 服務的連線。
 
 開始將 Zimperium 與 Intune 整合之前，請確定您有下列訂閱和認證：
 
@@ -39,7 +39,7 @@ ms.locfileid: "72810310"
 
 - 可授與下列權限的 Azure Active Directory 全域管理員管理員認證：
 
-  - 登入及讀取使用者設定檔
+  - 登入和讀取使用者設定檔
 
   - 以登入的使用者身分存取目錄
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c447c67e631365e831f033c2811c36d936f2e85
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547983"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885761"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -182,7 +182,7 @@ DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App
 
 1. 在 Intune 中，請移至 [Intune]   > [應用程式]   > [所有應用程式]   > [新增]  來視需要新增 Intune 公司入口網站應用程式。
 2. 移至 [應用程式]   > [應用程式設定原則]  ，以建立公司入口網站應用程式的應用程式設定原則。
-3. 使用以下 XML 建立應用程式設定原則。 如需如何建立應用程式設定原則和輸入 XML 資料的詳細資訊，請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)，或針對混合式 MDM，請參閱[在 Configuration Manager 中使用應用程式設定原則將設定套用至 iOS 應用程式](https://docs.microsoft.com/configmgr/mdm/deploy-use/configure-ios-apps-with-app-configuration-policies) \(部分機器翻譯\)。
+3. 使用以下 XML 建立應用程式設定原則。 如需如何建立應用程式設定原則和輸入 XML 資料的詳細資訊，請參閱[為受控的 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
 
     ``` xml
     <dict>

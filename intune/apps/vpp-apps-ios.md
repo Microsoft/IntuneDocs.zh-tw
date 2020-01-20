@@ -18,101 +18,110 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01c95e1961871f33a3d8ed8c0b6c22502faca3a9
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 0bc511669ec8a88523581b3afbcca161d5208934
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654017"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956212"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 與 macOS 應用程式
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple 可讓您針對要在公司內的 iOS 與 macOS 裝置上執行的應用程式購買多個授權。 購買多個複本有助於您在公司中有效率地管理應用程式。
+Apple 讓您使用 [Apple Business Manager](https://business.apple.com/) 或 [Apple School Manager](https://school.apple.com/)，針對您想要在組織中用於 iOS 和 macOS 裝置上的應用程式購買多個授權。 您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。 購買應用程式授權可協助您有效地管理公司內的應用程式，並保留對已購買之應用程式的擁有權和控制。 
 
-Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多個應用程式複本：
+Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的應用程式：
 
-- 從應用程式市集報告授權資訊。
-- 追蹤您已經使用多少個授權。
-- 協助您不要安裝超過擁有數目的應用程式複本。
+- 同步您從 Apple Business Manager 所下載的位置權杖。
+- 追蹤有多少已購買的應用程式可供使用及已經使用。
+- 協助您安裝所擁有之最大授權數量的應用程式。
 
-您可以使用兩種方法來指派大量採購的應用程式：
+此外，針對從 Apple Business Manager 所購買的書籍，您可以使用 Intune 來針對 iOS 裝置進行同步處理、管理及指派。 如需詳細資訊，請參閱[如何管理透過大量採購方案購買的 iOS 電子書](vpp-ebooks-ios.md)。
 
-## <a name="device-licensing"></a>裝置授權
+## <a name="what-are-location-tokens"></a>什麼是位置權杖？
+位置權杖也稱為大量採購方案 (VPP) 權杖。 這些權杖是用來指派及管理使用 Apple Business Manager 購買的授權。 內容管理員可以購買及指派授權，並在 Apple Business Manager 與他們具授權的位置權杖相關聯。 接著會從 Apple Business Manager 下載這些位置權杖，並在 Microsoft Intune 中上傳它們。 Microsoft Intune 支援針對每個租用戶上傳多個位置權杖。 每個權杖有效期限為一年。
 
-當您將一個應用程式指派給多部裝置時，會使用一個應用程式授權，並與您指派的目標裝置保持關聯。
+## <a name="how-are-purchased-apps-licensed"></a>已購買之應用程式的授權方式為何？
+可以使用 Apple 針對 iOS 和 macOS 裝置所提供的兩種授權類型，來將已購買的應用程式指派給群組。
 
-當您將大量採購的應用程式指派給一部裝置時，裝置的終端使用者不需要提供 Apple ID 來存取市集。
+|   | 裝置授權 | 使用者授權 |
+|-----|------------------|----------------|
+| **App Store 登入** | 不需要。 | 在系統提示登入 App Store 時，每個使用者都必須使用唯一的 Apple ID。 |
+| **裝置設定封鎖對 App Store 的存取** | 可以使用公司入口網站來安裝及更新應用程式。 | 加入 Apple VPP 的邀請需要 App Store 的存取權。 如果您已經設定原則來停用 App Store，則 VPP 應用程式的使用者授權將無法運作。 |
+| **自動應用程式更新** | 由 Intune 系統管理員在 [Apple VPP 權杖] 設定中設定，其中應用程式的 [指派類型]  為 [需要]  。 <br> <br> 如果 [指派類型]  為 [適用於已註冊的裝置]  ，便可以從公司入口網站安裝可用的應用程式更新。 | 由使用者在個人的 App Store 設定中設定。 這無法由 Intune 系統管理員管理。 |
+| **使用者註冊** | 不支援。 | 透過使用受控 Apple ID 來支援。 |
+| **書籍** | 不支援。 | 支援。 |
+| **已使用授權** | 每個裝置 1 個授權。 授權會與裝置建立關聯。 | 1 個授權可用於使用相同個人 Apple ID 的 5 個裝置。 授權會與使用者建立關聯。 <br> <br> 在 Intune 中與個人 Apple ID 和受控 Apple ID 建立關聯的使用者會耗用 2 個應用程式授權。|
+| **授權移轉** | 應用程式可以透過無訊息方式從使用者授權移轉為裝置授權。 | 應用程式無法從裝置授權移轉為使用者授權。 |
 
-## <a name="user-licensing"></a>使用者授權
+> [!NOTE]  
+> 公司入口網站不會在「使用者註冊」裝置上顯示裝置授權的應用程式，因為在「使用者註冊」裝置上只能安裝使用者授權的應用程式。
 
-當您將應用程式指派給使用者時，會使用一個應用程式授權，並與使用者建立關聯。 該應用程式最多可以在使用者擁有的 5 部裝置上執行 (該裝置受 Apple 有限控制)。
+## <a name="what-app-types-are-supported"></a>支援哪些應用程式類型？
+您可以使用 Apple Business Manager 來購買並散發公用及私人應用程式。
+- **市集應用程式：** 內容管理員可以使用 Apple Business Manager 來購買 App Store 中所提供的免費和付費應用程式。
+- **自訂應用程式：** 內容管理員也可以使用 Apple Business Manager 來購買以私人方式向您的組織提供的自訂應用程式。 這些應用程式會由與您直接合作的開發人員，針對您組織的特定需求量身打造。 深入了解[如何散發自訂應用程式](https://developer.apple.com/business/custom-apps/) \(英文\)。
 
-當您將大量採購的應用程式指派給多位使用者時，每位終端使用者都必須具備有效和唯一的 Apple ID，才能存取 App Store。
+## <a name="prerequisites"></a>先決條件
+- 適用於您組織的 [Apple Business Manager](https://business.apple.com/) 或 [Apple School Manager](https://school.apple.com/) 帳戶。 
+- 已指派至一或多個位置權杖之已購買的應用程式授權。 
+- 已下載的位置權杖。 
 
-此外，針對從 Apple 大量採購方案 (VPP) 市集購買的書籍，您可以使用 Intune 來進行同步處理、管理及指派至 iOS 裝置。 如需詳細資訊，請參閱[如何管理透過大量採購方案購買的 iOS 電子書](vpp-ebooks-ios.md)。
+> [!IMPORTANT]
+> - 單一位置權杖同時只能搭配單一裝置管理解決方案使用。 開始搭配 Intune 使用已購買的應用程式之前，請撤銷並移除搭配其他行動裝置管理 (MDM) 廠商使用的任何現有位置權杖。 
+> - 單一位置權杖僅支援同時搭配單一 Intune 用戶端使用。 請勿將相同的權杖重複用於多個 Intune 租用戶。
+> - 根據預設，Intune 每天會將位置權杖與 Apple 同步兩次。 您可以隨時從 Intune 起始手動同步處理。
+> - 在您將位置權杖匯入到 Intune 之後，請不要將相同的權杖匯入到任何其他裝置管理解決方案。 這樣做會導致授權指派與使用者記錄遺失。
 
-## <a name="manage-volume-purchased-apps-for-ios-and-macos-devices"></a>管理大量採購的 iOS 與 macOS 裝置應用程式
+## <a name="migrate-from-volume-purchase-program-vpp-to-apps-and-books"></a>從大量採購方案 (VPP) 移轉至「App 及書籍」
+如果您的組織尚未移轉至 Apple Business Manager 或 Apple School Manager，請檢閱 [Apple 針對移轉至 [App 及書籍] 的指引](https://support.apple.com/HT208257)，再繼續於 Intune 中管理已購買的應用程式。
 
-### <a name="supports-apple-volume-purchase-program-volume-purchased-apps"></a>支援 Apple 大量採購方案大量採購的應用程式
+> [!IMPORTANT]
+> - 為了獲得最佳的移轉體驗，請針對每個位置僅移轉單一 VPP 購買者。 如果每個購買者都移轉到唯一位置，所有的授權 (包括已指派和未指派的授權) 都會移轉至 [App 及書籍]。
+> - 請不要刪除 Intune 中的現有舊版 VPP 權杖，或是 Intune 中與現有舊版 VPP 權杖相關聯的應用程式和指派。 這些動作將需要在 Intune 中重新建立所有應用程式指派。
 
-請透過[商務 Apple 大量採購方案](https://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](https://volume.itunes.apple.com/us/store)，購買多份 iOS 與 macOS 應用程式授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。
+在 Apple Business Manager 或 Apple School Manager 中將現有的已購買 VPP 內容和權杖移轉至 [App 及書籍] 的步驟如下：
 
-### <a name="supports-business-to-business-volume-purchased-apps"></a>支援企業對企業大量採購的應用程式
+1. 邀請 VPP 購買者加入您的組織，並引導每個使用者選取唯一的位置。 
+2. 在繼續之前，請確定組織內的所有 VPP 購買者都已完成步驟 1。
+3. 確認所有已購買的應用程式和授權都已經移轉至 Apple Business Manager 或 Apple School Manager 中的 [App 及書籍]。
+4. 透過移至 [Apple Business (或 School) Manager]   > [設定]   > [App 及書籍]   > [我的伺服器權杖]  來下載新的位置權杖。
+5. 透過移至 Microsoft 端點管理員系統管理中心中的 [租用戶系統管理]   > [連接器與權杖]   > [Apple VPP 權杖]  並同步權杖來更新位置權杖。
 
-此外，協力廠商開發人員也可以私下將應用程式散發給 App Store Connect 中所指定的授權企業大量採購方案成員。 這些企業 VPP 成員可以登入大量採購方案 App Store，並購買其應用程式。 終端使用者所購買的企業 VPP 應用程式將與其 Intune 租用戶同步。
-
-## <a name="before-you-start"></a>在您開始使用 Intune 之前
-在開始之前，您必須從 Apple 取得 VPP 權杖，並將它上傳至您的 Intune 帳戶。 此外，您還應該了解下列準則︰
-
-* 您可以讓多個 VPP 權杖與 Intune 帳戶建立關聯。
-* 之前如有其他產品已使用過 VPP 權杖，您必須產生新的權杖來搭配 Intune 使用。
-* 每個權杖有效期限為一年。
-* Intune 預設與 Apple VPP 服務一天進行兩次同步處理。 您可以在任何時間啟動手動同步處理。
-* 開始搭配 Intune 使用 Apple VPP 之前，請移除任何以其他行動裝置管理 (MDM) 廠商所建立的現有 VPP 使用者帳戶。 基於安全性考量，Intune 不會把這些使用者帳戶同步處理到 Intune。 Intune 只會同步處理 Intune 所建立的 Apple VPP 服務資料。
-* Apple 的裝置註冊設定檔 (DEP) 方案會自動化行動裝置管理 (MDM) 註冊。 使用 DEP，您可以設定企業裝置，而不需要碰觸它們。 您可以使用與 Apple 之 VPP 搭配使用的相同方案代理程式帳戶來註冊 DEP 方案。 Apple 部署方案識別碼對 [Apple Deployment Programs](https://deploy.apple.com) 網站下所列的方案而言是唯一的，而且無法用來登入 iTunes 商店這類 Apple 服務。
-* 當您使用使用者授權模型指派 VPP 應用程式給使用者或裝置 (具有使用者親和性) 時，每個 Intune 使用者在裝置上接受 Apple 條款和條件時，都必須與唯一的 Apple ID 或電子郵件地址建立關聯。
-* 請確定當您為新 Intune 使用者設定裝置時，以該使用者的唯一 Apple ID 或電子郵件地址來進行設定。 Apple ID 或電子郵件地址和 Intune 使用者形成唯一的組合，並可以用於多達五部裝置。
-* VPP 權杖只支援一次用於一個 Intune 帳戶。 請勿將相同的 VPP 權杖重複用於多個 Intune 租用戶。
-
->[!IMPORTANT]
->在您將 VPP 權杖匯入到 Intune 之後，請不要將相同的權杖匯入到任何其他裝置管理解決方案。 這樣做會導致授權指派與使用者記錄遺失。
-
-## <a name="to-get-and-upload-an-apple-vpp-token"></a>取得並上傳 Apple VPP 權杖
+## <a name="upload-an-apple-vpp-or-location-token"></a>上傳 Apple VPP 或位置權杖
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [租用戶系統管理]   > [連接器與權杖]   > [Apple VPP 權杖]  。
 4. 在 VPP 權杖清單窗格上，選取 [建立]  。
 5. 在 [建立 VPP 權杖]  窗格上，指定下列資訊：
-    - **VPP 權杖檔案** - 若您尚未註冊，請註冊商務大量採購方案或教育方案。 註冊之後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
-    - **Apple ID** - 輸入與大量採購方案相關聯之帳戶的 Apple ID。
-    - **從其他 MDM 中控制權杖** - 將此選項設定為 [是]  ，以允許從其他 MDM 將權杖重新指派給 Intune。
+    - **VPP 權杖檔案** - 如果您尚未這麼做，請註冊 Apple Business Manager 或 Apple School Manager。 註冊之後，請下載您帳戶的 Apple VPP 權杖，然後在這裡選取它。
+    - **Apple ID** - 輸入與已上傳的權杖相關聯之帳戶的受控 Apple ID。
+    - **從其他 MDM 中控制權杖** - 將此選項設定為 [是]  ，以允許從其他 MDM 解決方案將權杖重新指派給 Intune。
     - **權杖名稱** - 用於設定權杖名稱的系統管理欄位。    
     - **國家/地區** - 選取 VPP 國家/地區市集。  Intune 會從指定的 VPP 國家/地區市集同步處理所有地區設定的 VPP 應用程式。
         > [!WARNING]  
-        > 變更國家/地區，將會更新應用程式中繼資料，並且為使用此權杖建立的應用程式，更新下次與 Apple 服務同步處理時的存放區 URL。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
+        > 變更國家/地區將會針對搭配此權杖所建立的應用程式，在下次與 Apple 服務進行更新時更新應用程式中繼資料和 App Store URL。 如果應用程式不存在於新的國家/地區市集，即不會更新應用程式。
 
     - **VPP 帳戶類型** - 請選擇 [商務]  或 [教育]  。
-    - **自動更新應用程式** - 從 [開啟]  或 [關閉]  進行選擇，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。 Apple VPP 應用程式的自動應用程式更新只會自動更新使用**必要**安裝用途部署的應用程式。 針對使用**可用**安裝意圖部署的應用程式，使用者會在公司入口網站中看到應用程式顯示為 [未安裝]，即使已安裝舊版的應用程式也一樣。 在此情況下，使用者可以在公司入口網站應用程式的 [應用程式詳細資料] 畫面上，按一下 [安裝]  來重新安裝應用程式，以安裝新版的應用程式。 請注意，對於使用者註冊的 iOS 裝置，終端使用者將會繼續查看公司入口網站內所有使用者授權的 VPP 應用程式。 
-
-        > [!NOTE]
-        > 自動應用程式更新適用於 iOS 11.0 或 macOS 10.12 和更新版本的裝置和使用者授權應用程式。
+    - **自動更新應用程式** - 從 [開啟]  或 [關閉]  進行選擇，以啟用自動更新。 若啟用，Intune 會偵測應用程式市集內的 VPP 應用程式更新，並在裝置簽入時將更新自動推送至裝置。 
+        
+        > [!NOTE] 
+        > Apple VPP 應用程式的自動應用程式更新只會自動更新使用**必要**安裝用途部署的應用程式。 針對使用**可用**安裝意圖部署的應用程式，自動更新會自動為 IT 系統管理員產生狀態訊息，通知已有可用的新版本應用程式。 透過選取應用程式、選取 [裝置安裝狀態]，然後檢查 [狀態詳細資料]，即可看到此狀態訊息。  
 
     - **我授與 Microsoft 傳送使用者及裝置資訊到 Apple 的權限。** - 您必須選取 [我同意]  才能繼續。 若要檢閱 Microsoft 將哪些資料傳送給 Apple，請參閱 [Intune 傳送至 Apple 的資料](~/protect/data-intune-sends-to-apple.md)。
 
-6. 完成之後，請選取 [建立]  。
+6. 完成之後，請選取 [建立]  。 該權杖會顯示在權杖清單窗格內。
 
-該權杖會顯示在權杖清單窗格內。
+## <a name="synchronize-a-vpp-token"></a>同步 VPP 權杖
+您可以在 Intune 中針對選取的權杖選擇 [同步]  ，來同步您已購買之應用程式的應用程式名稱、中繼資料和授權資訊。
 
-您可以隨時選擇 [立即同步處理]  ，使用 Intune 同步處理 Apple 所儲存的資料。
-
-## <a name="to-assign-a-volume-purchased-app"></a>指派大量採購應用程式
+## <a name="assign-a-volume-purchased-app"></a>指派大量採購應用程式
 
 1. 選取 [應用程式]   > [所有應用程式]  。
 2. 在應用程式窗格清單上，選擇您要指派的應用程式，然後選擇 [指派]  。
-3. 在 [應用程式名稱] - [指派]  窗格上，選擇 [新增群組]  ，然後在 [新增群組]  窗格中選擇 [指派類型]  ，選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
+3. 在 [應用程式名稱]   - [指派]  窗格上，選擇 [新增群組]  ，然後在 [新增群組]  窗格中選擇 [指派類型]  ，選擇要指派該應用程式的 Azure AD 使用者或裝置群組。
 5. 針對您選取的每個群組，選擇下列設定：
     - **類型** - 選擇應用程式會是 [可用]  (終端使用者可以從公司入口網站安裝應用程式) 或 [必要]  (終端使用者的裝置會自動安裝應用程式)。
     - **授權類型** - 選擇 [使用者授權]  或 [裝置授權]  。
@@ -128,7 +137,7 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 | # | 案例                                | 邀請加入 Apple VPP 方案                              | 應用程式安裝提示 | 提示輸入 Apple ID |
 |---|--------------------------------------------------|-------------------------------------------------------------------------------------------------|---------------------------------------------|-----------------------------------|
-| 1 | BYOD – 授權的使用者                             | Y                                                                                               | Y                                           | Y                                 |
+| 1 | BYOD – 授權的使用者 (非「使用者註冊裝置」裝置)                             | Y                                                                                               | Y                                           | Y                                 |
 | 2 | 公司 – 授權的使用者 (不受監督的裝置)     | Y                                                                                               | Y                                           | Y                                 |
 | 3 | 公司 – 授權的使用者 (受監督的裝置)         | Y                                                                                               | N                                           | Y                                 |
 | 4 | BYOD – 授權的裝置                           | N                                                                                               | Y                                           | N                                 |
@@ -138,21 +147,21 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 | 8 | Kiosk 模式 (受監督的裝置) – 授權的使用者   | --- | ---                                          | ---                                |
 
 > [!Note]  
-> 不建議將 VPP 應用程式指派給使用 VPP 使用者授權的 Kiosk 模式裝置。
+> 不建議將 VPP 應用程式指派給使用使用者授權的 Kiosk 模式裝置。
 
 ## <a name="revoking-app-licenses"></a>撤銷應用程式授權
 
 您可以根據指定的裝置、使用者或應用程式，撤銷所有相關聯的 iOS 或 macOS 大量採購方案 (VPP) 應用程式授權。  但 iOS 和 macOS 平台之間有一些差異。 
 
-### <a name="revoking-app-licenses-on-ios"></a>撤銷 iOS應用程式授權
-當應用程式不再指派給使用者時，您可以通知他們。 但是，撤銷應用程式授權將不會從該裝置解除安裝相關聯的 VPP 應用程式。 若要解除安裝 VPP 應用程式，並回收指派給使用者或裝置的應用程式授權，您必須將指派動作變更為 [解除安裝]  。 當您移除已指派給使用者的應用程式，Intune 會回收使用者或裝置授權，並從裝置解除安裝應用程式。 回收的授權計數將會反映在 Intune 之 [應用程式]  工作負載中的 [授權的應用程式]  節點。 一旦解除安裝 VPP 應用程式並回收應用程式授權，您可以選擇將應用程式授權指派給其他使用者或裝置。
-
-
-### <a name="revoking-app-licenses-on-macos"></a>撤銷 macOS應用程式授權
-撤銷應用程式授權不會從該裝置解除安裝 VPP 應用程式。 當您撤銷已指派給使用者的應用程式授權，Intune 會回收使用者或裝置授權。 具有已撤銷授權的 macOS 應用程式仍可在裝置上使用，但必須等到將授權重新指派給使用者或裝置之後，才能更新。 根據 Apple，這類應用程式會在 30 天的寬限期後移除。 不過，Apple 不會提供 Intune 使用 [解除安裝]  指派動作來移除應用程式的方法。 但是，您可以選擇將已回收的應用程式授權指派給其他使用者或裝置。
+|   | iOS | macOS |
+|-----|------------------|----------------|
+| **移除應用程式指派** | 當您移除已指派給使用者的應用程式，Intune 會回收使用者或裝置授權，並從裝置解除安裝應用程式。 | 當您移除已指派給使用者的應用程式授權時，Intune 會回收該使用者或裝置授權。 該應用程式不會從裝置解除安裝。 |
+| **撤銷應用程式授權** | 撤銷應用程式授權會從使用者或裝置回收應用程式授權。 您必須將指派變更為 [解除安裝]  來從裝置移除應用程式。 | 撤銷應用程式授權會從使用者或裝置回收應用程式授權。 具有已撤銷授權的 macOS 應用程式仍可在裝置上使用，但必須等到將授權重新指派給使用者或裝置之後，才能更新。 根據 Apple，這類應用程式會在 30 天的寬限期後移除。 不過，Apple 不會提供讓 Intune 使用 [解除安裝] 指派動作來移除應用程式的方法。
 
 >[!NOTE]
->當員工離職且不再屬於 AAD 群組時，Intune 會擷取 iOS 與 macOS 使用者授權的 VPP 應用程式授權。
+> - 當員工離職且不再屬於 AAD 群組時，Intune 會回收應用程式授權。
+> - 將 [解除安裝]  意圖指派給已購買的應用程式時，Intune 會同時回收授權並解除安裝應用程式。
+> - 從 Intune 管理移除裝置時，並不會回收應用程式授權。 
 
 ## <a name="deleting-vpp-tokens"></a>刪除 VPP 權杖
 <!-- 820879 -->  
@@ -166,7 +175,7 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ## <a name="renewing-app-licenses"></a>更新應用程式授權
 
-您可以透過從 Apple 大量採購方案入口網站下載新的權杖並在 Intune 中更新現有權杖，來更新 Apple VPP 權杖。
+您可以透過從 Apple Business Manager 或 Apple School Manager 下載新的權杖並在 Intune 中更新現有權杖，來更新 Apple VPP 權杖。
 
 ## <a name="deleting-a-vpp-app"></a>刪除 VPP 應用程式
 
@@ -181,13 +190,14 @@ Microsoft Intune 可透過下列方式協助您管理透過此計畫購買的多
 
 ## <a name="additional-information"></a>其他資訊
 
-當具有合格裝置的使用者第一次嘗試將 VPP 應用程式安裝至裝置時，系統會要求他們加入 Apple 大量採購方案。 他們必須加入，應用程式安裝才會繼續執行。 對於加入 Apple 大量採購方案的邀請，需要使用者能夠在 iOS 或 macOS 裝置上使用 App Store 應用程式。 如果您已經設定停用 App Store 應用程式的原則，則 VPP 應用程式以使用者為基礎的授權將無法運作。 解決方法是移除原則以允許 App Store 應用程式，或是使用以裝置為基礎的授權。
-
 Apple 提供建立和更新 VPP 權杖的直接協助。 如需詳細資訊，請參閱 Apple 文件中的 [ Distribute content to your users with the Volume Purchase Program (VPP)](https://go.microsoft.com/fwlink/?linkid=2014661) (使用大量採購計劃 (VPP) 發佈內容給使用者)。 
 
 如果 Intune 入口網站中指出**已指派給外部 MDM**，您 (系統管理員) 必須先從協力廠商 MDM 移除 VPP 權杖，才能在 Intune 中使用 VPP 權杖。
 
 ## <a name="frequently-asked-questions"></a>常見問題集
+
+### <a name="how-many-tokens-can-i-upload"></a>我可以上傳幾個權杖？
+您可以在 Intune 中上傳最多 3,000 個權杖。
 
 ### <a name="how-long-does-the-portal-take-to-update-the-license-count-once-an-app-is-installed-or-removed-from-the-device"></a>在裝置上安裝或移除應用程式之後，入口網站需要多久的時間才能更新授權計數？
 在安裝或解除安裝應用程式之後的幾小時內，應該就會更新授權。 請注意，如果使用者從裝置移除應用程式，該授權仍然會指派給該使用者或裝置。
@@ -195,9 +205,9 @@ Apple 提供建立和更新 VPP 權杖的直接協助。 如需詳細資訊，�
 ### <a name="is-it-possible-to-oversubscribe-an-app-and-if-so-in-what-circumstance"></a>是否可以過度訂閱某個應用程式，如果可以，是在怎樣的情況下？
 是。 Intune 系統管理員可以過度訂閱應用程式。 例如，如果系統管理員購買 100 份 XYZ 應用程式的授權，然後將該應用程式的對象設為一個有 500 個成員的群組。 前 100 個成員 (使用者或裝置) 將會獲得授權指派，其餘成員的授權指派則會失敗。
 
-### <a name="how-frequently-does-intune-sync-vpp-tokens-with-apple"></a>Intune 將 VPP 權杖與 Apple 同步處理的頻率為何？
-Intune 會每天兩次與 Apple 同步處理 VPP 權杖和授權。 Intune 系統管理員可以在 [應用程式]   > [Apple VPP 權杖]  底下起始手動同步處理。
 
 ## <a name="next-steps"></a>後續步驟
 
 請參閱[如何監視應用程式](apps-monitor.md)，以取得協助您監視應用程式指派的資訊。
+
+請參閱[如何對應用程式進行疑難排解](~/apps/troubleshoot-app-install.md)，來取得對應用程式相關問題進行疑難排解的相關資訊。

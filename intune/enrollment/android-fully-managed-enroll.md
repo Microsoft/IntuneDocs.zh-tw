@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5cd8c1a1d17ca38c42b6ed6821d20367b147ad6
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: d8397dea1dca97122aac6716ee3d51295b913538
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74562372"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885946"
 ---
 # <a name="set-up-intune-enrollment-of-android-enterprise-fully-managed-devices"></a>設定 Android Enterprise 完全受控裝置的 Intune 註冊 
 
@@ -36,7 +36,7 @@ Intune 可協助您將應用程式及設定部署至 Android Enterprise 裝置�
 
 ## <a name="technical-requirements"></a>技術需求
 
-您必須擁有 Intune 獨立租用戶才能管理 Android Enterprise 完全受控裝置。 在混合 (連接 Configuration Manager) 模式或舊版 Silverlight 管理主控台中，皆無法使用完全受控裝置管理。
+您必須擁有 Intune 獨立租用戶才能管理 Android Enterprise 完全受控裝置。 舊版 Silverlight 管理主控台中並無法使用完全受控裝置管理。
 
 裝置必須符合下列需求，才能作為 Android Enterprise 完全受控裝置管理：
 

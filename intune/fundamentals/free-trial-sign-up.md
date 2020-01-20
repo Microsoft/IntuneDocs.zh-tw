@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/02/2019
+ms.date: 01/09/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b1264f5113ded280ed9d5cb9b9d4ece8e0187fe7
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
+ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502876"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75839250"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune
 
@@ -31,7 +31,7 @@ Microsoft Intune 透過管理裝置和應用程式來協助您保護員工的公
 
 Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，提供行動裝置管理 (MDM) 與行動應用程式管理 (MAM)。 使用 Intune，您可以確保正確設定、存取及更新員工的公司資源 (資料、裝置和應用程式)，以符合您公司的合規性原則和需求。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 設定 Microsoft Intune 之前，請先檢閱下列需求：
 
 - [支援的作業系統與瀏覽器](supported-devices-browsers.md)
@@ -100,7 +100,7 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 如上所述，如果您的組織本身有您想要使用，但不含 **.onmicrosoft.com** 的自訂網域，您可以在 Microsoft 365 系統管理中心進行變更。 您可以透過下列步驟，新增、驗證及設定您的自訂網域名稱。  
 
 > [!IMPORTANT]
-> 您無法重新命名或移除網域名稱中「初始的」  **onmicrosoft.com**。 但是，您可以新增、驗證或移除 Intune 使用的「自訂」  網域名稱，以利企業識別。 如需詳細資訊，請參閱[設定自訂網域名稱](custom-domain-name-configure.md)。
+> 您無法重新命名或移除網域名稱中「初始的」  **onmicrosoft.com** 部分。 但是，您可以新增、驗證或移除 Intune 使用的「自訂」  網域名稱，以利企業識別。 如需詳細資訊，請參閱[設定自訂網域名稱](custom-domain-name-configure.md)。
 
 1. 前往 [Microsoft 365 系統管理中心](https://admin.microsoft.com)並使用您的系統管理員帳戶登入。
 

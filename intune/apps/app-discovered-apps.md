@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e96f46dc0e79de3fc78739c246abdc0b9e52702
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: f368f5f15f71246a2899f2acb7a791d65df26c99
+ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205525"
+ms.lasthandoff: 01/10/2020
+ms.locfileid: "75857038"
 ---
 # <a name="intune-discovered-apps"></a>Intune 探索到的應用程式
 
@@ -67,6 +67,7 @@ Intune 也會提供在您的租用戶中個別裝置上探索到的應用程式�
 > [!NOTE]
 > - Windows 10 已加入混合式 Azure AD 的裝置 (如 Configuration Manager 的應用程式管理工作負載中所示) 目前不會根據上述排程，透過 Intune 管理擴充功能 (IME) 來收集應用程式清查。 若要減緩此問題，應將 Configuration Manager 中的應用程式管理工作負載切換至 Intune，以便將 IME 安裝於裝置上 (Win32 清查和 PowerShell 部署都需要 IME)。 請注意，此行為的任何變更或更新，都會在[開發中](../fundamentals/in-development.md)和/或[新功能](../fundamentals/whats-new.md)中公告。
 > - 在 2019 年 11 月前註冊之個人擁有的 macOS 裝置可能會繼續顯示裝置上安裝的所有應用程式，直到該裝置再次註冊為止。
+> - Android Enterprise 完全受控和專用並不會顯示探索到的應用程式。
 
 已探索的應用程式數目可能不符合應用程式安裝狀態計數。 不一致的可能性包括：
 

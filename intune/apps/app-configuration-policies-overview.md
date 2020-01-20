@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 479d88c09f48acbbfaedf1f4c69546b7f52dfbf1
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692198"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885800"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
@@ -93,7 +93,7 @@ ms.locfileid: "75692198"
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>非受控裝置上的 iOS 設定
 
-您可以在非受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。
+您可以在非受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。 除了下列步驟之外，您可以使用 Microsoft Edge 來存取受控應用程式記錄。 如需詳細資訊，請參閱[在 iOS 上使用 Microsoft Edge 來存取受控應用程式記錄檔](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)。
 
 1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Intune Managed Browser**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
 2. 啟動 **Intune Managed Browser** 並從導覽列中選取 [關於]   > [intunehelp]  。
@@ -162,7 +162,7 @@ ms.locfileid: "75692198"
     
 ## <a name="graph-api-support-for-app-configuration"></a>應用程式設定的圖形 API 支援
 
-您可以使用圖形 API 來完成應用程式設定工作。 如需詳細資料，請參閱 [Graph API Reference MAM Targeted Config](https://graph.microsoft.io/docs/api-reference/beta/api/intune_mam_targetedmanagedappconfiguration_create) (以圖形 API 參考 MAM 為目標的設定)。
+您可以使用圖形 API 來完成應用程式設定工作。 如需詳細資料，請參閱 [Graph API Reference MAM Targeted Config](https://docs.microsoft.com/graph/api/resources/intune-shared-targetedmanagedappconfiguration?view=graph-rest-beta) (以圖形 API 參考 MAM 為目標的設定)。如需 Intune 和 Graph 的詳細資訊，請參閱[在 Microsoft Graph 中使用 Intune](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-beta) \(英文\)。
 
 ## <a name="troubleshooting"></a>疑難排解
 

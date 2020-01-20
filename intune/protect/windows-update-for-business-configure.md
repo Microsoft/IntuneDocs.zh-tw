@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 01/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad630eb34b296d7ab77081a1e3063db8dffc64f9
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207446"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956277"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 軟體更新
 
@@ -63,7 +63,7 @@ Intune 提供下列原則類型以管理更新：
   > - Windows 10 Mobile  
   > - Windows 10 企業版 LTSC。 商務用 Windows Update (WUfB) 目前不支援「長期服務通道」  版本。 規劃使用替代的修補方法，例如 WSUS 或 Configuration Manager。
 
-- 在 Windows 裝置上，[意見反應與診斷]   > [診斷與使用方式資料]  必須設定為 [基本]  、[增強]  或 [完整]  。  
+- 在 Windows 裝置上，[意見反應與診斷]   > [診斷與使用方式資料]  必須設定為 [基本]  、[增強]  或 [完整]  。
 
   您可以手動設定 Windows 10 裝置的「診斷與使用狀況資料」  設定，或是使用適用於 Windows 10 與更新版本的 Intune 裝置限制設定檔。 如果您使用裝置限制設定檔，請至少將 [共用使用方式資料]  的[裝置限制設定](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)設定為 [基本]  。 當您設定適用於 Windows 10 或更新版本的裝置限制原則時，可以在 [報告和遙測]  類別底下找到此設定。
 
@@ -215,6 +215,10 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 
   我們正在查看此限制，以確認未來是否可以支援它。
 
+> [!IMPORTANT]
+> 若要搭配 Intune 使用「功能更新」原則，裝置必須開啟遙測，並具有[「基本」  ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)的最低設定。 遙測是作為[裝置限制原則](../configuration/device-restrictions-configure.md)的一部分，在 [報告和遙測]  底下設定。
+>
+> 接收「功能更新」原則，且將遙測設定為 [未設定]  (代表它已關閉) 的裝置，可能會安裝比在「功能更新」原則中所定義的 Windows 版本還要新的版本。 隨著此功能即將正式推出，我們也正在檢閱要求遙測的必要條件。
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>建立並指派 Windows 10 功能更新
 
@@ -245,4 +249,3 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 [更新的 Intune 合規性報表](../windows-update-compliance-reports.md)
 
 [針對 Windows 10 更新通道進行疑難排解](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046) \(英文\)
-

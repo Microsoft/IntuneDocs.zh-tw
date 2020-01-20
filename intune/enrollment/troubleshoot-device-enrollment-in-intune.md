@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 48ad9ffe32dc7493195ec161e070734776381427
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
+ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547809"
+ms.lasthandoff: 01/11/2020
+ms.locfileid: "75885953"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -56,7 +56,7 @@ ms.locfileid: "75547809"
 所有的裝置平台都可能發生這些問題。
 
 ### <a name="device-cap-reached"></a>已到達裝置上限
-**問題：** 使用者於註冊期間收到錯誤 (例如「公司入口網站暫時無法使用」  )，而且 Configuration Manager 上的 DMPdownloader.log 包含錯誤 **DeviceCapReached**。
+**問題：** 使用者在註冊時接收到錯誤 (例如 [公司入口網站暫時無法使用]  )。
 
 **解決方法：**
 
@@ -113,23 +113,6 @@ ms.locfileid: "75547809"
 
     4. 重新開啟 DirSync，然後檢查使用者現在是否已正確地同步處理。
 
-3. 如果您使用 Configuration Manager (含 Intune)，請確認使用者具有有效的雲端使用者識別碼：
-
-    1. 開啟 SQL Management Studio。
-
-    2. 連線到適當的 DB。
-
-    3. 開啟資料庫資料夾，然後尋找並開啟 **CM_DBName** 資料夾，其中 DBName 是客戶資料庫的名稱。
-
-    4. 選擇頂端的 [新增查詢]  並執行下列查詢：
-
-        - 查看所有使用者：`select * from [CM_ DBName].[dbo].[User_DISC]`
-
-        - 若要查看特定使用者，請使用下列查詢；其中 %testuser1% 是所要查閱使用者之 username@domain.com 的預留位置：`select * from [CM_ DBName].[dbo].[User_DISC] where User_Principal_Name0 like '%testuser1%'`
-
-        撰寫查詢之後，請選擇 [!Execute]  。
-        傳回結果之後，請尋找雲端使用者識別碼。  如果找不到任何識別碼，則不會授權使用者使用 Intune。
-
 ### <a name="unable-to-create-policy-or-enroll-devices-if-the-company-name-contains-special-characters"></a>如果公司名稱包含特殊字元，就無法建立原則或註冊裝置
 **問題：** 您無法建立原則或註冊裝置。
 
@@ -144,7 +127,7 @@ ms.locfileid: "75547809"
 - 在其組織中有多個提供使用者 UPN 尾碼的頂層網域 (例如 @contoso.com 或 @fabrikam.com)。
 
 
-[AD FS 2.0 的彙總套件](http://support.microsoft.com/kb/2607496)可搭配 <strong>SupportMultipleDomain</strong> 參數運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
+[AD FS 2.0 的彙總套件](https://support.microsoft.com/kb/2607496)可搭配 <strong>SupportMultipleDomain</strong> 參數運作來啟用 AD FS 伺服器，以支援這個案例，而不需要額外的 AD FS 2.0 伺服器。 如需詳細資訊，請參閱[這個部落格](https://blogs.technet.microsoft.com/abizerh/2013/02/05/supportmultipledomain-switch-when-managing-sso-to-office-365/)。
 
 
 ## <a name="android-issues"></a>Android 的問題
@@ -332,23 +315,6 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 5. 確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
-### <a name="enrolled-ios-device-doesnt-appear-in-console-when-using-configuration-manager-with-intune"></a>當使用 Configuration Manager (含 Intune) 時，已註冊的 iOS 裝置未出現在主控台
-**問題：** 使用者註冊了 iOS 裝置，但它未出現在 Configuration Manager 管理主控台。 裝置並未指出它已註冊。 可能的原因：
-
-- 您 Configuration Manager 網站中的 Microsoft Intune Connector 沒有和 Intune 服務通訊。
-- 資料探索管理員 (ddm) 元件或狀態管理員 (statmgr) 元件沒有處理來自 Intune 服務的訊息。
-- 您可能已從一個帳戶下載 MDM 憑證，然後將其用於另一個帳戶。
-
-
-**解決方法：** 檢閱下列記錄檔以尋找可能的錯誤：
-
-- dmpdownloader.log
-- ddm.log
-- statmgr.log
-
-關於要在這些記錄檔中尋找哪些項目的範例很快就會新增。
-
-
 ### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>使用者的 iOS 裝置卡在註冊畫面超過 10 分鐘
 
 **問題**：註冊裝置時可能會卡在兩個畫面：
@@ -418,36 +384,6 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
     2. 選擇 [裝置]   > [所有裝置]  。  
     3. 找到有註冊問題的裝置。 依裝置名稱或 MAC/硬體位址進行搜尋，以縮小結果的範圍。
     4. 選取裝置 > [刪除]  。 刪除與裝置建立關聯的所有其他項目。  
-
-## <a name="issues-when-using-configuration-manager-with-intune"></a>使用具有 Intune 的 Configuration Manager 時發生問題
-
-### <a name="mobile-devices-disappear"></a>行動裝置消失
-
-**問題：** 成功向 Configuration Manager 註冊行動裝置之後，該裝置會從行動裝置集合中消失。 不過，裝置仍有管理設定檔並列於 CSS 閘道中。
-
-**解決方法：** 發生這個問題的原因可能是：
-
-- 您具有移除非加入網域裝置的自訂處理序，或是
-- 使用者嘗試從訂閱帳戶淘汰裝置。
-若要驗證及查看哪個處理序或使用者帳戶從 Configuration Manager 主控台移除裝置，請執行下列步驟。
-
-#### <a name="check-how-device-was-removed"></a>檢查裝置的移除方式
-
-1. 在 Configuration Manager 管理主控台中，選取 [監視]  &gt; [ 系統狀態]  &gt; [狀態訊息查詢]  。
-
-2. 以滑鼠右鍵按一下 [手動刪除的集合成員資源]  ，然後選取 [顯示訊息]  。
-
-3. 選擇適當的時間/日期或 [過去 12 小時]。
-
-4. 尋找有問題的裝置並檢閱裝置的移除方式。 下列範例顯示帳戶 SCCMInstall 已透過未知的應用程式刪除裝置。
-
-    ![裝置刪除診斷的螢幕擷取畫面](./media/troubleshoot-device-enrollment-in-intune/CM_With_Intune_Unknown_App_Deleted_Device.jpg)
-
-5. 檢查 Configuration Manager 未排定任何可能會自動清除非網域、行動或相關裝置的工作、指令碼或其他處理序。
-
-### <a name="other-ios-enrollment-errors"></a>其他 iOS 註冊錯誤
-
-[Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune) (針對 Microsoft Intune 中的 iOS 裝置註冊問題進行疑難排解) 這份文件提供 iOS 註冊錯誤清單。
 
 ## <a name="pc-issues"></a>電腦問題
 

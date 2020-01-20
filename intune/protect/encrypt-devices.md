@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 26013ab06cabdfd64ec3cd34254e3cfa2bb2428d
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
+ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654255"
+ms.lasthandoff: 01/08/2020
+ms.locfileid: "75755996"
 ---
 # <a name="use-device-encryption-with-intune"></a>搭配 Intune 使用裝置加密
 
@@ -38,6 +38,8 @@ Intune 也提供內建的[加密報告](encryption-monitor.md)，該報告會提
 ## <a name="filevault-encryption-for-macos"></a>MacOS 的 FileVault 加密
 
 使用 Intune 在執行 macOS 的裝置上設定 FileVault 磁碟加密。 然後，使用 Intune 加密報告來檢視這些裝置的加密詳細資料，並管理 FileVault 加密裝置的修復金鑰。
+
+請注意，若要讓 FileVault 在裝置上運作，需要使用者核准的裝置註冊。 使用者必須從系統偏好設定中手動核准管理設定檔，系統才會將註冊視為使用者核准。 
 
 FileVault 是隨附於 macOS 的完整磁碟加密程式。 您可以使用 Intune，在執行 **macOS 10.13 或更新版本**的裝置上設定 FileVault。
 
@@ -72,14 +74,7 @@ FileVault 是隨附於 macOS 的完整磁碟加密程式。 您可以使用 Intu
 
 7. 完成其餘 [FileVault 設定](endpoint-protection-macos.md#filevault)以符合您的商務需求，然後選取 [確定]  。
 
-   > [!IMPORTANT]
-   > 將 [停用登出時的提示]  設定設為 [啟用]  時，有一個已知問題。 當設為 [啟用]  時，[允許略過的次數]  設定必須設為一個值，而不得設為 [未設定]  。 如果設為 [未設定]  ，設定檔就會在裝置上失敗。 在此情況下，裝置會將其 [設定檔狀態摘要]  回報成 [錯誤]  ，且沒有進一步詳細資料。
-   >
-   > 當 [停用登出時的提示]  設為 [未設定]  時，[允許略過的次數]  可以是 [未設定]  或有某個值。
-   >
-   > 在未來的更新中將會解決此問題。
-
-8. 完成其他組態設定，然後儲存設定檔。  
+  8. 完成其他組態設定，然後儲存設定檔。  
 
 ### <a name="manage-filevault"></a>管理 FileVault
 

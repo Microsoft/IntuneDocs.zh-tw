@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/09/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2bb9d921f30e343b309be60438f5318d7c66518
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 311941c3981e5883d392359dc0919bb85156c4be
+ms.sourcegitcommit: fb72b19986f34907d228c856d2e6949751ec02a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692250"
+ms.lasthandoff: 01/13/2020
+ms.locfileid: "75920098"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -62,6 +62,15 @@ ms.locfileid: "75692250"
 #### <a name="smime-support-for-microsoft-outlook-for-ios---2669398---"></a>iOS 版 Microsoft Outlook 的 S/MIME 支援<!-- 2669398 -->
 Intune 支援在 iOS 裝置上傳遞可搭配 iOS 版 Microsoft Outlook 使用的 S/MIME 簽署和加密憑證。 如需詳細資訊，請參閱[適用於 iOS 和 Android 的 Outlook 中敏感度標籤和保護](https://aka.ms/omsmime)。
 
+#### <a name="cache-win32-app-content-using-microsoft-connected-cache-server---6030314---"></a>使用 Microsoft 連線快取伺服器來快取 Win32 應用程式內容<!-- 6030314 -->
+您可以在 Configuration Manager 發佈點上安裝 Microsoft 連線快取伺服器，來快取 Intune Win32 應用程式內容。 如需詳細資訊，請參閱 [Configuration Manager 中的 Microsoft 連線快取 - Intune Win32 應用程式的支援](https://docs.microsoft.com/configmgr/core/plan-design/hierarchy/microsoft-connected-cache#bkmk_intune)。
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### <a name="role-based-access-control"></a>角色型存取控制
+
+#### <a name="windows-10-administrative-templates-admx-profiles-now-support-scope-tags---5137390-wnready--"></a>Windows 10 系統管理範本 (ADMX) 設定檔現已支援範圍標籤 <!--5137390 wnready-->
+您現在可以將範圍標籤指派至系統管理範本設定檔 (ADMX)。 若要這麼做，請移至 [Intune]   > [裝置]   > [組態設定檔]  > 在清單中選擇系統管理範本設定檔 > [屬性]   > [範圍標籤]  。 如需範圍標籤的詳細資訊，請參閱[將範圍標籤指派至其他物件](../fundamentals/scope-tags.md#assign-scope-tags-to-other-objects)。
+
 <!-- ########################## -->
 ## <a name="week-of-december-30-2019"></a>2019 年 12 月 30 日當週
 
@@ -71,8 +80,8 @@ Intune 支援在 iOS 裝置上傳遞可搭配 iOS 版 Microsoft Outlook 使用�
 #### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices---4851745---"></a>從 MEM 加密的 macOS 裝置取出個人修復金鑰<!-- 4851745 -->
 終端使用者可以使用 iOS 公司入口網站應用程式來取出其個人修復金鑰 (FileVault 金鑰)。 具有個人修復金鑰的裝置必須向 Intune 註冊，並透過 Intune 以 FileVault 加密。 使用 iOS 公司入口網站應用程式，終端使用者可以按一下 [取得修復金鑰]  ，在其加密的 macOS 裝置上取出其個人修復金鑰。 您也可以透過選取 [裝置]   > *已加密且已註冊的 macOS 裝置* > [取得修復金鑰]  從 Intune 擷取修復金鑰。 如需有關 FileVault 的詳細資訊，請參閱 [macOS 的 FileVault 加密](~/protect/encrypt-devices.md#filevault-encryption-for-macos)。
 
-#### <a name="ios-user-licensed-vpp-apps---5619268---"></a>iOS 使用者授權的 VPP 應用程式<!-- 5619268 -->
-針對使用者已註冊的 iOS 裝置，將不再向終端使用者顯示已部署的可用裝置授權 VPP 應用程式。 不過，終端使用者將會繼續查看公司入口網站內所有使用者授權的 VPP 應用程式。 如需與 VPP 應用程式相關的詳細資訊，請參閱[如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 和 macOS 應用程式](~/apps/vpp-apps-ios.md)。
+#### <a name="ios-and-ipados-user-licensed-vpp-apps---5619268---"></a>iOS 和 iPadOS 使用者授權的 VPP 應用程式<!-- 5619268 -->
+針對使用者已註冊的 iOS 和 iPadOS 裝置，將不再向使用者顯示已部署為可用的新建裝置授權 VPP 應用程式。 不過，終端使用者將會繼續查看公司入口網站內所有使用者授權的 VPP 應用程式。 如需與 VPP 應用程式相關的詳細資訊，請參閱[如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 和 macOS 應用程式](~/apps/vpp-apps-ios.md)。
 
 <!-- ########################## -->
 ## <a name="week-of-december-23-2019"></a>2019 年 12 月 23 日當週
@@ -181,6 +190,9 @@ Intune 已新增更多 iOS、iPadOS 和 macOS 裝置的單一登入 (SSO) 設定
 
 #### <a name="use-pkcs-certificate-profiles-to-provision-devices-with-certificates---2317124-2317130-2317139-2340517-2340528-2340529----"></a>使用 PKCS 憑證設定檔，搭配憑證來佈建裝置<!-- 2317124, 2317130, 2317139, 2340517, 2340528, 2340529  -->
 當與 Wi-Fi 和 VPN 的設定檔相關聯時，您現在可以使用 PKCS 憑證設定檔，將憑證發行至執行 Android for Work、iOS 和 Windows 的裝置  。 先前這三個平台僅支援以使用者型憑證，且裝置型支援僅限於 macOS。
+
+> [!NOTE]
+> 不支援搭配 Wi-Fi 設定檔使用 PKCS 憑證設定檔。 當您使用 [EAP 類型](../configuration/wi-fi-settings-windows.md#enterprise-profile)時，請改為使用 SCEP 憑證設定檔。
 
 若要使用裝置型憑證，同時[為支援的平台建立 PKCS 憑證設定檔](../protect/certficates-pfx-configure.md#create-a-pkcs-certificate-profile)，請選取 [設定]  。 您現在會看到 [憑證類型]  的設定，其支援 [裝置] 或 [使用者] 的選項。
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4e1ee8ae54d81a050f3c8983269f40e8f61b5e75
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
+ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955468"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "75956305"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -120,7 +120,7 @@ ms.locfileid: "74955468"
 
 ## <a name="change-device-ownership"></a>變更裝置擁有權
 
-裝置內容會顯示 Intune 中每筆裝置記錄的 [擁有權]  。 身為系統管理員，您可以將裝置指定為 [個人]  或 [公司]  。 當裝置的擁有權類型從 [個人] 變更為 [公司] 時，Intune 會刪除在過去 7 天內從該裝置收集的所有應用程式資訊。 如果適用的話，Intune 也會刪除所記錄的電話號碼。 
+裝置內容會顯示 Intune 中每筆裝置記錄的 [擁有權]  。 身為系統管理員，您可以將裝置指定為 [個人]  或 [公司]  。 當裝置的擁有權類型從 [公司] 變更為 [個人] 時，Intune 會刪除在過去 7 天內從該裝置收集的所有應用程式資訊。 如果適用的話，Intune 也會刪除所記錄的電話號碼。 
 
 **變更裝置擁有權：**
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [所有裝置]  > 選擇裝置。
