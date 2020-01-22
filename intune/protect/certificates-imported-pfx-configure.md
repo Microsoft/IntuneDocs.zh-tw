@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c33f4429c86160bbf180c8102e2dc7532bbd80e
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 1bad86e561c8695d58296c8f473815a203ef210a
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886026"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258484"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用匯入的 PKCS 憑證
 
@@ -134,7 +134,7 @@ PowerShell 模組提供了使用 Windows 密碼編譯建立金鑰的方法。 �
    > [!TIP]
    > 當您匯入 PFX 憑證時，必須再次選取您所使用的提供者。 雖然支援使用不同的提供者，但您可以使用 **Microsoft 軟體金鑰儲存體提供者**。 金鑰名稱也作為範例提供，且您可以使用您選擇的不同金鑰名稱。
 
-   如果您想要從您的工作站匯入憑證，可以使用下列命令將此金鑰匯出至檔案：  `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path to write to>"`
+   如果您想要從您的工作站匯入憑證，可以使用下列命令將此金鑰匯出至檔案：  `Export-IntunePublicKey -ProviderName "<ProviderName>" -KeyName "<KeyName>" -FilePath "<File path\Filename.PFX>"`
 
    您必須為 Microsoft Intune 在裝載 PFX 憑證連接器的伺服器上匯入私密金鑰，才能順利處理匯入的 PFX 憑證。
 

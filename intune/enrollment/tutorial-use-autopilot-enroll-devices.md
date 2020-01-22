@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: bc781ea72b54468b21fb70e60e334f1c8d8832ea
-ms.sourcegitcommit: 23e9c48348a6eba494d072a2665b7481e5b5c84e
+ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/26/2019
-ms.locfileid: "74547940"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036548"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教學課程：使用 Autopilot 在 Intune 中註冊 Windows 裝置
 
@@ -33,8 +33,8 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 您將在本教學課程中了解如何：
 > [!div class="checklist"]
 > * 將裝置新增至 Intune
-> * 建立 AutoPilot 裝置群組
-> * 建立 AutoPilot 部署設定檔
+> * 建立 Autopilot 裝置群組
+> * 建立 Autopilot 部署設定檔
 > * 指派 AutoPilot 部署設定檔至裝置群組
 > * 將 Windows 裝置散發給使用者
 
@@ -43,9 +43,9 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 如需 Autopilot 的優點、案例和必要條件的概觀，請參閱 [Windows AutoPilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - [設定 Windows 自動註冊](../quickstart-setup-auto-enrollment.md)
-- [Azure Active Directory Premium 訂用帳戶](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
+- [Azure Active Directory Premium 訂用帳戶](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](https://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
 
 ## <a name="add-devices"></a>新增裝置
