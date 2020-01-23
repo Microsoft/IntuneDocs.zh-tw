@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 75a875fc3ff11eb1e3befad425c16a710544f781
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fdd97e69c97df5a266e147381d94b3d4419bab34
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509873"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036576"
 ---
 # <a name="quickstart-create-a-user-in-intune-and-assign-them-a-license"></a>快速入門：在 Intune 中建立使用者並為他們指派授權
 
@@ -50,11 +50,11 @@ ms.locfileid: "72509873"
 
 ## <a name="assign-a-license-to-the-user"></a>指派授權給使用者
 
-建立使用者之後，必須使用 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給他們。 如果您未指派授權給使用者，他們將無法在 Intune 中註冊裝置。 
+建立使用者之後，必須使用 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)將 Intune 授權指派給他們。 如果您未指派授權給使用者，他們將無法在 Intune 中註冊裝置。 
 
 將 Intune 授權指派給使用者：
 
-1. 使用與您用來登入 Intune 相同的認證登入 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)。
+1. 使用與您用來登入 Intune 相同的認證登入 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)。
 2. 選擇 [使用者]   > [作用中使用者]  > 選擇您剛才建立的使用者。
 3. 在 [產品授權]  旁，選取 [編輯]  。
 4. 在 [位置]  下，選擇使用者的位置。
@@ -68,7 +68,7 @@ ms.locfileid: "72509873"
 
 ## <a name="clean-up-resources"></a>清除資源
 
-如果您不再需要此使用者，您可以巡覽至 [Microsoft 365 系統管理中心](http://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]   > [作用中使用者]   > 「選擇清單中的使用者」   > [刪除使用者]   > [刪除使用者]   > [確認變更]   > [關閉]  來刪除使用者。
+如果您不再需要此使用者，您可以巡覽至 [Microsoft 365 系統管理中心](https://go.microsoft.com/fwlink/p/?LinkId=698854)，然後選擇 [使用者]   > [作用中使用者]   > 「選擇清單中的使用者」   > [刪除使用者]   > [刪除使用者]   > [確認變更]   > [關閉]  來刪除使用者。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 67ff4f0cbe11c24c03b504968735e0a68d54f12d
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692165"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125325"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保護的應用程式  
 
@@ -45,6 +45,7 @@ ms.locfileid: "75692165"
 
 | 應用程式標題 | 應用程式描述和資訊 | 所支援平台的 App Store 連結 |
 |-------------------------------------------------|-------------------------|---------------------------------------------|
+| **Field Service Mobile**<p><img alt="Microsoft app - Field Service Mobile icon" src="./media/apps-supported-intune-apps/icon-m-field-service-mobile.png" width="100"> | Dynamics 365 for Field Service 提供跨平台、多裝置的 Field Service Mobile 應用程式，其特別針對現場服務工作者的需求而打造。 健全的離線功能可讓現場服務工作者在沒有網際網路連線的情況下造訪遠端目的地時，繼續存取其所需的資料並與之互動。 現場服務工作者可以定期將資料同步處理至伺服器，以便在適當的情況下採取或開始執行適當的動作，藉此讓後台系統得知在現場執行的工作。 行動應用程式可完全自訂和擴充，讓任何組織都能使應用程式成為自有品牌、定義現場服務工作者可以存取哪些類型的資料，還有其他更多功能。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.d365.fs.mobile)、[App Store 連結 (iOS)](https://apps.apple.com/us/app/field-service-mobile/id1414669075) |
 | **Microsoft Azure 資訊保護檢視器**<p><img alt="Microsoft app - Microsoft Azure Information Protection Viewer icon" src="./media/apps-supported-intune-apps/icon-m-azure-information-protection-viewer.png" width="100"> | 使用「AIP 檢視器 應用程式」來安全地與其他人共同作業。 檢視其他人已與您共用的受保護檔案 (授權限保護的電子郵件訊息、PDF 檔案、圖片、文字檔)。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.ipviewer)、[App Store 連結 (iOS)](https://itunes.apple.com/us/app/rms-sharing/id689516635?mt=8) |
 | **Microsoft Bookings**<p><img alt="Microsoft app - Microsoft Bookings icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-bookings.png" width="100"> | Microsoft Bookings 是一個約會排程應用程式，可協助您記錄預約、員工及客戶的情況。 您將永不錯過約會，並可減少爽約的情況。<p>藉由 Bookings 應用程式，您可以：<br><ul><li>檢視和管理行事曆</li><li>建立預約或對現有進行中的預約進行變更</li><li>查看員工成員的即時可用性</li><li>既快速又輕鬆地回應客戶</li><li>快速取得您下一個預約所在位置的指示</li><li>管理客戶清單</li></ul> | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.exchange.bookings)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/microsoft-bookings/id1065657468?mt=8) |  
 | **Microsoft Cortana**<p><img alt="Microsoft app - Microsoft Cortana icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-cortana.png" width="100"> | 透過個人助理 Cortana，以快速、輕鬆且有趣的方式處理工作和生活上的事務。 將這個聰明的數位助理帶入您的手機，以隨時隨地在所有的裝置上協助您追蹤最重要的事情。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.cortana)、<br>[App Store 連結 (iOS)](https://apps.apple.com/us/app/cortana/id1054501703)

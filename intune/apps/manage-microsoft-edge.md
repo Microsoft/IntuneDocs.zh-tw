@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 304a6a60ea8dbfa98e62eb8e52a69e14af795746
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
+ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548008"
+ms.lasthandoff: 01/17/2020
+ms.locfileid: "76258509"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -205,7 +205,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 |    機碼    |    值    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
-|    'com.microsoft.intune.SohwIndustryNews'    |    **True** 將會在 Microsoft Edge 行動版的新索引標籤頁面上顯示產業新聞。<p>**False** (預設) 將會隱藏新索引標籤頁面中的產業新聞。    |
+|    com.microsoft.intune.ShowIndustryNews    |    **True** 將會在 Microsoft Edge 行動版的新索引標籤頁面上顯示產業新聞。<p>**False** (預設) 將會隱藏新索引標籤頁面中的產業新聞。    |
 
 ## <a name="configure-managed-bookmarks-for-microsoft-edge"></a>設定 Microsoft Edge 的受控書籤
 
@@ -217,6 +217,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 - 使用者無法刪除或修改這些書籤。
 - 這些書籤會顯示在清單頂端。 使用者所建立的書籤都會顯示在這些書籤下方。
 - 如果您已啟用應用程式 Proxy 重新導向，即可使用應用程式 Proxy Web 應用程式的內部或外部 URL 來新增這些應用程式 Proxy Web 應用程式。
+- 確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http://** 或 **https://** 的前置詞。
 
 您可以使用下列金鑰/值組來設定受控書籤：
 
@@ -243,7 +244,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 ### <a name="url-formats-for-allowed-and-blocked-site-list"></a>適用於允許和封鎖網站清單的 URL 格式 
 您可以使用各種不同 URL 格式來建置您的允許/封鎖網站清單。 下表會詳細說明這些允許的模式。 在開始之前有一些注意事項： 
-- 確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http** 或 **https** 的前置詞。
+- 確定您在清單中輸入 UTL 時，已在所有 URL 中加上 **http://** 或 **https://** 的前置詞。
 - 您可以根據下列許可模式清單中的規則，來使用萬用字元符號 (\*)。
 - 萬用字元只能比對主機名稱的整個元件 (以句點分隔) 或路徑的整個部分 (以正斜線分隔)。 例如，**不**支援 `http://*contoso.com`。
 - 您可以在位址中指定連接埠號碼。 如不指定連接埠號碼，會使用下列值：

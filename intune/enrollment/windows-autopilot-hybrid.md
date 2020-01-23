@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc618f2502647ba33a16cff4305b9f4671e05996
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: d87a4b5d46a5f0d40cebe3dbcaff211ff508d667
+ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558192"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76125305"
 ---
 # <a name="deploy-hybrid-azure-ad-joined-devices-by-using-intune-and-windows-autopilot"></a>使用 Intune 和 Windows Autopilot 部署混合式 Azure AD 聯結裝置
 您可以使用 Intune 和 Windows Autopilot 來設定混合式 Azure Active Directory (Azure AD) 聯結裝置。 若要這樣做，請遵循本文中的步驟。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 成功設定您的[混合式 Azure AD 聯結裝置](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan)。 請務必使用 Get-MsolDevice Cmdlet 來[驗證您的裝置註冊](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-managed-domains#verify-the-registration)。
 
@@ -209,17 +209,30 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。
 ## <a name="create-and-assign-a-domain-join-profile"></a>建立並指派網域加入設定檔
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
-1. 輸入下列內容：
+2. 輸入下列內容：
    - **名稱**：為新的設定檔輸入描述性名稱。
    - **描述**：輸入設定檔的描述。
    - **平台**：選取 [Windows 10 及更新版本]  。
    - **設定檔類型**：選取 [網域加入 (預覽)]  。
-1. 選取 [設定]  ，然後提供 [電腦名稱前置詞]  、[網域名稱]  以及 (選擇性) [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的 [組織單位]  。 
+3. 選取 [設定]  ，然後提供 [電腦名稱前置詞]  、[網域名稱]  。
+4. (選擇性) 提供 [DN 格式](https://docs.microsoft.com/windows/desktop/ad/object-names-and-identities#distinguished-name)的 [組織單位]  (OU)。 選項包含：
+   - 提供一個 OU，您已在其中將控制權委派給執行 Intune 連接器的 Windows 2016 裝置。
+   - 提供一個 OU，您已在其中將控制權委派給內部部署 Active Directory 中的根電腦。
+   - 如果您將此項保留空白，則會在 Active Directory 預設容器中建立電腦物件 (如果您從未進行[變更](https://support.microsoft.com/en-us/help/324949/redirecting-the-users-and-computers-containers-in-active-directory-dom)，則 CN=Computers)。
+   
+   以下是一些有效的範例：
+   - OU=Level 1,OU=Level2,DC=contoso,DC=com
+   - OU=Mine,DC=contoso,DC=com
+   
+   以下是一些無效的範例：
+   - CN=Computers,DC=contoso,DC=com (您無法指定容器，而是將此值保留空白以使用網域的預設值)
+   - OU=Mine (您必須透過 DC= attributes 指定網域)
+     
    > [!NOTE]
    > 不要為 [組織單位]  中的值使用引號。
-1. 選取 [確定]   > [建立]  。  
+5. 選取 [確定]   > [建立]  。  
     設定檔隨即建立，並顯示在清單中。
-1. 若要指派設定檔，請遵循[指派裝置設定檔](../configuration/device-profile-assign.md#assign-a-device-profile)下的步驟，並將設定檔指派到在[建立裝置群組](windows-autopilot-hybrid.md#create-a-device-group)這個步驟使用的相同群組
+6. 若要指派設定檔，請遵循[指派裝置設定檔](../configuration/device-profile-assign.md#assign-a-device-profile)下的步驟，並將設定檔指派到在[建立裝置群組](windows-autopilot-hybrid.md#create-a-device-group)這個步驟使用的相同群組
    - 部署多個網域加入設定檔
    
      a. 建立動態群組，其中包含具有特定 Autopilot 部署設定檔的所有 Autopilot 裝置，然後輸入 (device.enrollmentProfileName -eq "Autopilot Profile Name")。 
