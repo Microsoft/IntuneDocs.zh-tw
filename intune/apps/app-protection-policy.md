@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f1563c092d8dd4c34e4a18caea56910267eb623
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956324"
+ms.locfileid: "76036641"
 ---
 # <a name="app-protection-policies-overview"></a>應用程式保護原則概觀
 
@@ -184,7 +184,7 @@ Office 所需的受控位置 (例如 OneDrive)。 Intune 會將應用程式中�
 
 ## <a name="app-protection-global-policy"></a>應用程式保護的全域原則
 
-如果 OneDrive 系統管理員瀏覽至 **admin.office.com** 並選取 [裝置]  存取，他們可以設定 OneDrive 和 SharePoint 用戶端應用程式的 [行動應用程式管理]  控制項。 
+如果 OneDrive 系統管理員瀏覽至 **admin.onedrive.com** 並選取 [裝置]  存取，他們可以設定 OneDrive 和 SharePoint 用戶端應用程式的 [行動應用程式管理]  控制項。 
 
 這些設定會開放給 OneDrive 管理主控台使用，可設定稱為**全域**原則的特殊 Intune 應用程式保護原則。 此全域原則適用於租用戶中的所有使用者，且無法控制原則目標。 
 
@@ -317,7 +317,7 @@ Intune 應用程式防護存取原則，在使用者嘗試從其公司帳戶存�
 ## <a name="app-protection-experience-for-android-devices"></a>Android 裝置的應用程式防護體驗
 
 ### <a name="company-portal-app-and-intune-app-protection"></a>公司入口網站應用程式和 Intune 應用程式防護
-大部分的應用程式保護功能是內建在公司入口網站應用程式中。 雖然公司入口網站應用程式一律為必要，但也_不需要_註冊裝置。 針對沒有註冊的行動應用程式管理 (MAM-WE)，終端使用者只需要在裝置上安裝公司入口網站應用程式即可。
+大部分的應用程式保護功能是內建在公司入口網站應用程式中。 雖然公司入口網站應用程式一律為必要，但也不需要註冊裝置。 針對沒有註冊的行動應用程式管理 (MAM-WE)，終端使用者只需要在裝置上安裝公司入口網站應用程式即可。
 
 ### <a name="multiple-intune-app-protection-access-settings-for-same-set-of-apps-and-users"></a>相同應用程式和使用者集合的多個 Intune 應用程式防護存取設定
 Intune 應用程式防護存取原則，在使用者嘗試從其公司帳戶存取目標應用程式時，會以特定順序套用在終端使用者裝置上。 一般情況下，封鎖會優先，然後是可以關閉的警告。 例如，如果適用於特定的使用者/應用程式，警告使用者進行修補程式升級的最低 Android 修補程式版本設定，將在封鎖使用者使其無法存取的最低 Android 修補程式版本設定之後套用。 因此，當情況是 IT 系統管理員將最低 Android 修補程式版本設定為 2018-03-01，最低 Android 修補程式版本 (僅警告) 設定為 2018-02-01 時，如果嘗試存取應用程式的裝置使用修補程式版本 2018-01-01，則因為導致封鎖存取的最低 Android 修補程式版本設定限制更多，而使得終端使用者將會被封鎖。 
