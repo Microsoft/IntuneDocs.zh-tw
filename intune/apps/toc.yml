@@ -43,11 +43,11 @@
               href: store-apps-ios.md
             - name: Windows Phone 8.1 市集應用程式
               href: store-apps-windows-phone-8-1.md
-            - name: Windows 應用程式
+            - name: Windows 市集應用程式
               href: store-apps-windows.md
             - name: 商務用 Microsoft Store 應用程式
               href: windows-store-for-business.md
-            - name: 受管理的 Google Play 應用程式
+            - name: 受控的 Google Play 應用程式
               href: apps-add-android-for-work.md
         - name: Office 365 套件
           items:
@@ -133,8 +133,6 @@
               href: manage-microsoft-edge.md
             - name: 設定 Outlook
               href: app-configuration-policies-outlook.md
-            - name: 為 Outlook 設定 S/MIME
-              href: app-configuration-policies-outlook-smime.md
             - name: 設定 Android 版 Google Chrome
               href: apps-configure-chrome-android.md
         - name: 大量採購應用程式與書籍
@@ -190,6 +188,8 @@
           href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
         - name: 針對應用程式安裝問題進行疑難排解
           href: troubleshoot-app-install.md
+        - name: 應用程式安裝錯誤參考
+          href: app-install-error-codes.md
         - name: 行動應用程式管理疑難排解
           href: troubleshoot-mam.md
         - name: 檢閱應用程式保護記錄

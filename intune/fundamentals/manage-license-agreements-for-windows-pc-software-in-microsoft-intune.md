@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ab5e5d3e645410b876a5d3d0be0eafed9c790780
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 831a22dfb6eebfe74b9886a1c83560f68a11c04e
+ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502648"
+ms.lasthandoff: 01/15/2020
+ms.locfileid: "76036585"
 ---
 # <a name="manage-license-agreements-for-windows-pc-software-in-microsoft-intune"></a>在 Microsoft Intune 中管理 Windows 電腦軟體的授權合約
 
@@ -51,7 +51,7 @@ Microsoft Intune 可讓您新增及管理透過 Microsoft 大量授權合約購�
 > 您必須使用 Intune Windows 電腦用戶端至少管理一部 Windows 電腦，[授權]  工作區才會顯示在管理員主控台中。
 
 ## <a name="add-microsoft-volume-licensing-agreements"></a>新增 Microsoft 大量授權合約
-Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟體的授權資訊。 您可以藉由提供相符的合約編號組，將 Microsoft 大量授權合約新增至 Intune。 合約或授權編號必須符合正確的授權或註冊編號。 當您購買授權合約時，即可從 [大量授權服務中心 (VLSC)](http://go.microsoft.com/fwlink/?LinkID=223842)取得合約編號組。
+Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟體的授權資訊。 您可以藉由提供相符的合約編號組，將 Microsoft 大量授權合約新增至 Intune。 合約或授權編號必須符合正確的授權或註冊編號。 當您購買授權合約時，即可從 [大量授權服務中心 (VLSC)](https://go.microsoft.com/fwlink/?LinkID=223842)取得合約編號組。
 
 1. 在 [Microsoft Intune 管理主控台](https://admin.manage.microsoft.com/)中，選擇 **[授權]** 。
 
@@ -77,11 +77,11 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
         您可以根據使用 VLSC 所登錄的組織類型，透過將合約組新增為下列其中一種格式的純文字文件，來建立這個檔案。 一行只能指定一個合約編號組。
 
-        - **Open Value 客戶：** *合約編號*、*重複的合約編號*、*合約名稱*
+        - **Open Value 客戶：** 合約編號  、重複的合約編號  、合約名稱 
 
-        - **Open 客戶：** *授權編號*、*相關的授權編號*、*合約名稱*
+        - **Open 客戶：** 授權編號  、相關的授權編號  、合約名稱 
 
-        - **Select 與 Enterprise 客戶：** *合約編號*、*相關的註冊編號*、*合約名稱*
+        - **Select 和 Enterprise 客戶：** 合約編號  、相關的註冊編號  、合約名稱 
 
         當您新增新合約時，[新增合約]  表單會提示您瀏覽這個檔案。
 
@@ -116,7 +116,7 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 
 **[所有合約]** 檢視隨即顯示，且 Intune 將會連線到 Microsoft VLSC，以驗證您所提供的合約編號組。
 
-當您在 Intune 中新增授權合約之後，若要更新大量授權資訊，請在 **[授權概觀]** 頁面中選擇 **[立即重新整理]** 。 這個動作會從 [Microsoft 大量授權服務中心 (VLSC)](http://go.microsoft.com/fwlink/?LinkId=223842)擷取目前的授權資訊。
+當您在 Intune 中新增授權合約之後，若要更新大量授權資訊，請在 **[授權概觀]** 頁面中選擇 **[立即重新整理]** 。 這個動作會從 [Microsoft 大量授權服務中心 (VLSC)](https://go.microsoft.com/fwlink/?LinkId=223842)擷取目前的授權資訊。
 
 > [!IMPORTANT]
 > 在您重新整理大量授權資訊之前，[合約概觀]  頁面上的合約清單和權限資訊中可能會顯示不同的資訊。
@@ -182,8 +182,8 @@ Intune 大量授權合約提供透過 Microsoft 大量授權合約購買之軟�
 |                            |                                                                                                                                                                                                                                                                                                                                                                          |
 |----------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |            工作            |                                                                                                                                                                                 詳細資料                                                                                                                                                                                  |
-|   建立授權群組   |                                                            在 <strong>[授權]</strong> 工作區的 <strong>[概觀]</strong> 頁面上，從 <strong>[工作]</strong> 功能表選擇 <strong>[建立授權群組]</strong>。 <strong>注意：</strong>您可以建立總數高達 500 個的授權群組。                                                             |
+|   建立授權群組   |                                                            在 <strong>[授權]</strong> 工作區的 <strong>[概觀]</strong> 頁面上，從 <strong>[工作]</strong> 功能表選擇 <strong>[建立授權群組]</strong>。 <strong>注意︰</strong>您可以建立總數高達 500 個的授權群組。                                                             |
 |   重新命名授權群組   |                                                                                                      在 <strong>[授權]</strong> 工作區中，選擇授權群組，然後從 <strong>[工作]</strong> 功能表選擇 <strong>[編輯授權群組]</strong>。                                                                                                       |
-|   刪除授權群組   |                                 在 <strong>[授權]</strong> 工作區中，選擇授權群組，然後從 <strong>[工作]</strong> 功能表選擇 <strong>[刪除授權群組]</strong>。 <strong>提示：</strong>已刪除之群組中的所有授權都會移到 [未指派的合約] 授權群組中。                                 |
-| 刪除授權合約 | 在 <strong>[授權]</strong> 工作區中，選擇合約，然後選擇 <strong>[刪除]</strong>。 <strong>提示：</strong>在刪除大量授權合約之後，若要更新授權資訊，請在 <strong>[授權概觀]</strong> 頁面上或特定授權群組的 <strong>[一般]</strong> 索引標籤上，選擇 <strong>[立即重新整理]</strong>。 |
+|   刪除授權群組   |                                 在 <strong>[授權]</strong> 工作區中，選擇授權群組，然後從 <strong>[工作]</strong> 功能表選擇 <strong>[刪除授權群組]</strong>。 <strong>提示：</strong>已刪除群組中的所有授權都會移到 [<strong>未指派的合約</strong>] 授權群組中。                                 |
+| 刪除授權合約 | 在 <strong>[授權]</strong> 工作區中，選擇合約，然後選擇 <strong>[刪除]</strong>。 <strong>提示：</strong>在刪除大量授權合約之後，若要更新授權資訊，請在 [授權概觀] 頁面上或特定授權群組的 [一般] 索引標籤上，選擇 [立即重新整理]。 |
 

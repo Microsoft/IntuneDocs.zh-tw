@@ -33,8 +33,8 @@
           href: device-supervised-mode.md
         - name: 清除 macOS 裝置
           href: device-erase.md
-        - name: 略過啟用鎖定
-          href: device-activation-lock-bypass.md
+        - name: 停用啟用鎖定
+          href: device-activation-lock-disable.md
     - name: 使用者動作
       items:
         - name: 將目前使用者登出

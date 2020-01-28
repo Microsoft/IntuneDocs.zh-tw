@@ -19,12 +19,12 @@ ms.reviewer: japoehlm
 ms.suite: ems
 ms.custom: intune-enduser
 ms.collection: ''
-ms.openlocfilehash: 039ec17b1a56a7339f2159d7af6ad1bd9280bf63
-ms.sourcegitcommit: caee3c3fa77586314aa8040b0caf32a0527b669e
+ms.openlocfilehash: 6c1b6417489d1443596113a18476b9cbc8f3832e
+ms.sourcegitcommit: 8cc3eca2bce847b0c2b40d8531698e21df848878
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75855505"
+ms.lasthandoff: 01/14/2020
+ms.locfileid: "75951464"
 ---
 # <a name="enroll-your-organization-provided-ios-device-in-management"></a>在管理中註冊組織提供的 iOS 裝置
 
@@ -44,11 +44,7 @@ ms.locfileid: "75855505"
 
 1. 開啟 iOS 裝置。
 2. 選取 [語言]  後，將裝置連上 Wi-Fi。
-3. 在 [Set up iOS device] (設定 iOS 裝置)  畫面上，選擇您是否想要：
-   - **設定為新的裝置**
-   - **從 iCloud 備份還原**
-   - **從 iTunes 備份還原**
-
+3. 在 [設定 iOS 裝置]  畫面上，選擇 [設定為新裝置]  。  
 4. 連接到 Wi-Fi 後，即會出現 [設定]  畫面。 它會顯示： **[您的公司] 將會自動設定裝置。**
 
    **設定可讓 [您的公司] 無線管理此裝置。系統管理員可協助您設定電子郵件和網路帳戶、安裝和設定應用程式，以及遠端管理設定。系統管理員可以停用功能、安裝和移除應用程式、監視和限制您的網際網路流量，以及從遠端清除此裝置。**
