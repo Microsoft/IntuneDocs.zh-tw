@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d697b2b0bc3fa5ffea4f8e8ff15cd7c62af3ad30
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547947"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517553"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -42,11 +42,11 @@ ms.locfileid: "75547947"
 - **App Store** (僅限行動裝置版)：**未設定** (預設) 允許終端使用者在行動裝置上存取 App store。 [封鎖]  ：防止使用 App store。
 - **自動更新來自市集的應用程式**：**未設定** (預設) 允許自動更新從 Microsoft Store 安裝的應用程式。 [封鎖]  ：防止自動安裝更新。
 - **安裝信任的應用程式**：選擇是否可以安裝非 Microsoft Store 應用程式，也稱為側載。 側載是安裝、然後執行或測試未經 Microsoft Store 認證的應用程式。 例如，僅公司內部使用的應用程式。 選項包括：
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
   - **封鎖**：防止側載。 無法安裝非 Microsoft Store 應用程式。
   - **允許**：允許側載。 可以安裝非 Microsoft Store 應用程式。
 - **開發人員解除鎖定**：允許 Windows 開發人員設定，例如允許終端使用者修改側載應用程式。 選項包括：
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
   - **封鎖**：防止開發人員模式和側載應用程式。
   - **允許**：允許開發人員模式和側載應用程式。
 
@@ -58,13 +58,13 @@ ms.locfileid: "75547947"
 - **將應用程式資料安裝在系統磁碟區**：[封鎖]  會阻止應用程式將資料儲存在裝置的系統磁碟區上。 [未設定]  (預設) 允許應用程式將資料儲存在系統磁碟區。
 - **將應用程式安裝在系統磁碟機**：[封鎖]  會防止應用程式安裝在裝置的系統磁碟機上。 [未設定]  (預設) 允許應用程式安裝在系統磁碟機上。
 - **遊戲 DVR** (僅限桌面版)：[封鎖]  會停用 Windows 遊戲錄影和廣播。 [未設定]  (預設) 允許遊戲錄影和廣播。
-- **僅限存放區的應用程式**：此設定會決定使用者從 Microsoft Store 以外的位置安裝應用程式時的使用者體驗。 選項包括：
+- **僅限來自 Store 的應用程式**：此設定會決定使用者從 Microsoft Store 以外位置安裝應用程式時的使用者體驗。 選項包括：
 
-  - [**未設定**] （預設）：允許使用者從 Microsoft Store 以外的地方安裝應用程式，包括其他原則設定中定義的應用程式。  
+  - **未設定** (預設值)：允許使用者從 Microsoft Store 以外位置安裝應用程式，包括其他原則設定中定義的應用程式。  
   - **任何位置**：關閉應用程式建議，並允許使用者從任何位置安裝應用程式。  
-  - **僅限商店**：強制終端使用者只從 Microsoft Store 安裝應用程式。
-  - **建議**：從 Microsoft Store 中提供的 web 安裝應用程式時，使用者會看到一則訊息，建議他們從商店下載。  
-  - **偏好存放區**：當使用者從 Microsoft Store 以外的地方安裝應用程式時，會發出警告。
+  - **僅限 Store**：強制終端使用者只從 Microsoft Store 安裝應用程式。
+  - **建議**：從 Microsoft Store 中提供的網頁安裝應用程式時，使用者會看到一則訊息，建議其從市集下載。  
+  - **優先使用 Store**：當使用者從 Microsoft Store 以外位置安裝應用程式時，會發出警告。
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
@@ -87,7 +87,7 @@ ms.locfileid: "75547947"
 - [Wi-Fi 原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-wifi)
 
 - **行動數據頻道**：當終端使用者連線到行動電話通訊網路時，選擇是否讓終端使用者使用資料，例如瀏覽網頁。 選項包括：
-  - **未設定**（預設）： Intune 不會變更或更新此設定。 終端使用者可以關閉它。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。 終端使用者可以關閉它。
   - **封鎖**：不允許行動數據頻道。 終端使用者可以開啟它。
   - **允許 (無法編輯)** ：允許行動數據頻道。 終端使用者無法關閉它。
 
@@ -139,24 +139,24 @@ ms.locfileid: "75547947"
 ## <a name="control-panel-and-settings"></a>控制台和設定
 
 - **設定應用程式**：[封鎖]  防止終端使用者存取 Windows 設定應用程式。 [未設定]  (預設) 可讓使用者在裝置中開啟設定應用程式。
-  - **系統**：[封鎖]  防止存取 [設定] 應用程式的 [系統] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+  - **系統**：[封鎖]  防止存取 [設定] 應用程式的 [系統] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
     - **修改電源與睡眠設定** (僅限桌面版)：[封鎖]  防止終端使用者變更裝置上的電源及睡眠設定。 [未設定]  (預設) 可讓使用者變更電源與睡眠設定。
-  - **裝置**：[封鎖]  防止存取裝置 [設定] 應用程式的 [裝置] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **網路網際網路**：[封鎖]  防止存取裝置 [設定] 應用程式的 [網路與網際網路] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **個人化**：[封鎖]  防止存取裝置 [設定] 應用程式的 [個人化] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **應用程式**：[封鎖]  防止存取裝置 [設定] 應用程式的 [應用程式] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **帳戶**：[封鎖]  防止存取裝置 [設定] 應用程式的 [帳戶] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **時間與語言**：[封鎖]  防止存取裝置 [設定] 應用程式的 [時間與語言] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-    - **修改系統時間**：[封鎖]  防止終端使用者變更裝置的日期和時間設定。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 使用者可以變更這些設定。
-    - **修改地區設定** (僅限桌面版)：[封鎖]  防止終端使用者變更裝置上的地區設定。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 使用者可以變更這些設定。
-    - **修改語言設定 (僅限桌面版)** ：[封鎖]  防止終端使用者變更裝置上的電源及睡眠設定。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 使用者可以變更這些設定。
+  - **裝置**：[封鎖]  防止存取裝置 [設定] 應用程式的 [裝置] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **網路網際網路**：[封鎖]  防止存取裝置 [設定] 應用程式的 [網路與網際網路] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **個人化**：[封鎖]  防止存取裝置 [設定] 應用程式的 [個人化] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **應用程式**：[封鎖]  防止存取裝置 [設定] 應用程式的 [應用程式] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **帳戶**：[封鎖]  防止存取裝置 [設定] 應用程式的 [帳戶] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **時間與語言**：[封鎖]  防止存取裝置 [設定] 應用程式的 [時間與語言] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+    - **修改系統時間**：[封鎖]  防止終端使用者變更裝置的日期和時間設定。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 使用者可以變更這些設定。
+    - **修改地區設定** (僅限桌面版)：[封鎖]  防止終端使用者變更裝置上的地區設定。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 使用者可以變更這些設定。
+    - **修改語言設定 (僅限桌面版)** ：[封鎖]  防止終端使用者變更裝置上的電源及睡眠設定。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 使用者可以變更這些設定。
 
       [設定原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-settings)
 
-  - **遊戲**：[封鎖]  防止存取裝置 [設定] 應用程式的 [遊戲] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **輕鬆存取**：[封鎖]  防止存取裝置 [設定] 應用程式的 [輕鬆存取] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **隱私權**：[封鎖]  防止存取裝置 [設定] 應用程式的 [隱私權] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-  - **更新與安全性**：[封鎖]  防止存取裝置 [設定] 應用程式的 [更新與安全性] 區域。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+  - **遊戲**：[封鎖]  防止存取裝置 [設定] 應用程式的 [遊戲] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **輕鬆存取**：[封鎖]  防止存取裝置 [設定] 應用程式的 [輕鬆存取] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **隱私權**：[封鎖]  防止存取裝置 [設定] 應用程式的 [隱私權] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+  - **更新與安全性**：[封鎖]  防止存取裝置 [設定] 應用程式的 [更新與安全性] 區域。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 
 ## <a name="display"></a>顯示
 
@@ -178,31 +178,31 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 這些設定使用[體驗原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-experience)，它也會列出支援的 Windows 版本。 
 
-- **螢幕擷取** (僅限行動裝置版)：[封鎖]  防止終端使用者在裝置上取得螢幕擷取畫面。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **複製並貼上 (僅限行動裝置版)** ：[封鎖]  防止終端使用者在裝置的應用程式之間使用複製並貼上。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **手動取消註冊**：[封鎖]  防止終端使用者使用裝置上的工作場所控制台刪除工作場所帳戶。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **螢幕擷取** (僅限行動裝置版)：[封鎖]  防止終端使用者在裝置上取得螢幕擷取畫面。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **複製並貼上 (僅限行動裝置版)** ：[封鎖]  防止終端使用者在裝置的應用程式之間使用複製並貼上。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **手動取消註冊**：[封鎖]  防止終端使用者使用裝置上的工作場所控制台刪除工作場所帳戶。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 
   如果電腦已加入 Azure AD，且啟用自動註冊，則不會套用此原則設定。
 
-- **手動安裝根憑證** (僅限行動裝置版)：[封鎖]  防止終端使用者手動安裝根憑證及中繼 CAP 憑證。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **相機**：[封鎖]  防止終端使用者在裝置上使用相機。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **手動安裝根憑證** (僅限行動裝置版)：[封鎖]  防止終端使用者手動安裝根憑證及中繼 CAP 憑證。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **相機**：[封鎖]  防止終端使用者在裝置上使用相機。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 
   [相機 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-camera)
 
-- **OneDrive 檔案同步**：[封鎖]  防止終端使用者將裝置中的檔案同步至 OneDrive。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **抽取式存放裝置**：[封鎖]  防止終端使用者使用外部存放裝置，如裝置的 SD 卡。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **地理位置**：[封鎖]  防止終端使用者啟用裝置的位置服務。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **網際網路共用**：[封鎖]  防止裝置共用網際網路連線。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **重設手機**：[封鎖]  防止終端使用者在裝置上抹除或執行原廠重設。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **USB 連線**：[封鎖]  防止透過裝置的 USB 連線存取外部存放裝置。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 這項設定不會影響 USB 充電。
-- **防竊模式** (僅限行動裝置版)：[封鎖]  防止終端使用者選取裝置的防竊模式喜好設定。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **OneDrive 檔案同步**：[封鎖]  防止終端使用者將裝置中的檔案同步至 OneDrive。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **抽取式存放裝置**：[封鎖]  防止終端使用者使用外部存放裝置，如裝置的 SD 卡。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **地理位置**：[封鎖]  防止終端使用者啟用裝置的位置服務。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **網際網路共用**：[封鎖]  防止裝置共用網際網路連線。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **重設手機**：[封鎖]  防止終端使用者在裝置上抹除或執行原廠重設。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **USB 連線**：[封鎖]  防止透過裝置的 USB 連線存取外部存放裝置。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 這項設定不會影響 USB 充電。
+- **防竊模式** (僅限行動裝置版)：[封鎖]  防止終端使用者選取裝置的防竊模式喜好設定。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 - **Cortana**：[封鎖]  會停用裝置的 Cortana 語音助理。 Cortana 關閉時，使用者仍可搜尋，在裝置上尋找項目。 [未設定]  (預設) 允許 Cortana。
 - **錄音** (僅限行動裝置版)：[封鎖]  防止終端使用者在裝置上使用裝置錄音機。 [未設定]  (預設) 允許應用程式的錄音功能。
-- **修改裝置名稱** (僅限行動裝置版)：[封鎖]  防止終端使用者變更裝置名稱。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **新增佈建套件**：[封鎖]  防止執行階段設定代理程式在裝置上安裝佈建套件。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **移除佈建套件**：[封鎖]  防止執行階段設定代理程式移除裝置上的佈建套件。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **裝置探索**：[封鎖]  防止其他裝置找到此裝置。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **工作切換器** (僅限行動裝置版)：[封鎖]  防止在裝置上切換工作。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **修改裝置名稱** (僅限行動裝置版)：[封鎖]  防止終端使用者變更裝置名稱。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **新增佈建套件**：[封鎖]  防止執行階段設定代理程式在裝置上安裝佈建套件。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **移除佈建套件**：[封鎖]  防止執行階段設定代理程式移除裝置上的佈建套件。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **裝置探索**：[封鎖]  防止其他裝置找到此裝置。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **工作切換器** (僅限行動裝置版)：[封鎖]  防止在裝置上切換工作。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 - **SIM 卡錯誤對話方塊** (僅限行動裝置版)：[封鎖]  在沒有偵測到 SIM 卡情況下會顯示於裝置上的錯誤訊息。 [未設定]  (預設) 會顯示錯誤訊息。
 - **Ink 工作區**：選擇使用者是否以及如何存取 Ink 工作區。 選項包括：
   - **未設定** (預設值)：啟用 Ink 工作區，並允許使用者在鎖定畫面上使用它。
@@ -231,6 +231,9 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   [AboveLock/AllowActionCenterNotifications CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#AboveLock_AllowActionCenterNotifications)
 
 - **鎖定畫面圖片 URL (僅限桌面版)** ：輸入 JPG、JPEG 或 PNG 格式圖片的 URL，這些圖片會作為 Windows 鎖定畫面桌布使用。 例如，輸入 `https://contoso.com/image.png`。 這項設定會鎖定映像，且以後不能變更。
+
+  [個人化/LockScreenImageUrl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+
 - **使用者可設定的畫面逾時 (僅限行動裝置版)** ：[允許]  可讓使用者設定畫面逾時。 [未設定]  (預設) 不提供使用者此選項。
 
   [DeviceLock/AllowScreenTimeoutWhileLockedUserConfig CSP](https://msdn.microsoft.com/ie/dn904962(v=vs.94)#DeviceLock_AllowScreenTimeoutWhileLockedUserConfig)
@@ -379,7 +382,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **允許 JavaScript**：[是]  (預設) 允許在 Microsoft Edge 瀏覽器中執行 JavaScript 等指令碼。 [否]  防止在瀏覽器中執行 Java 指令碼。
 - **使用者可以安裝延伸模組**：[是]  (預設) 允許終端使用者在裝置上安裝 Microsoft Edge 延伸模組。 [否]  會防止安裝。
 - **允許側載開發人員延伸模組**：[是]  (預設) 會使用 OS 預設值，這可能會允許側載。 側載會安裝並執行未經驗證的延伸模組。 [否]  防止 Microsoft Edge使用 [載入延伸模組]  功能側載。 它不會防止使用 PowerShell 等其他方式側載延伸模組。
-- **必要的延伸模組**：選擇 Microsoft Edge 中的終端使用者無法關閉哪些延伸模組。 輸入套件系列名稱，然後選取 [新增]  。 [尋找每個應用程式 VPN 的套件系列名稱（PFN）](https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn)提供一些指引。
+- **必要的延伸模組**：選擇 Microsoft Edge 中的終端使用者無法關閉哪些延伸模組。 輸入套件系列名稱，然後選取 [新增]  。 [尋找每個應用程式 VPN 的套件系列名稱 (PFN)](https://docs.microsoft.com/configmgr/protect/deploy-use/find-a-pfn-for-per-app-vpn) 提供一些指引。
 
   您也可以**匯入** CSV 檔案，其中包含套件系列名稱。 或者，[匯出]  您輸入的套件系列名稱。
 
@@ -400,7 +403,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 這些設定使用 [DeviceLock 原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock)，它也會列出支援的 Windows 版本。
 
-- **密碼**：**需要**使用者輸入密碼才可存取該裝置。 [未設定]  (預設) 允許不用密碼存取裝置。 僅適用于本機帳戶。 網域帳戶密碼仍然由 Active Directory （AD）和 Azure AD 設定。
+- **密碼**：**需要**使用者輸入密碼才可存取該裝置。 [未設定]  (預設) 允許不用密碼存取裝置。 僅適用於本機帳戶。 網域帳戶密碼仍然由 Active Directory (AD) 和 Azure AD 設定。
 
   - **必要的密碼類型**：選擇密碼的類型。 選項包括：
     - **未設定**：密碼可以包含數字和字母。
@@ -411,7 +414,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
     > [!IMPORTANT]
     > 在 Windows 桌面上變更密碼需求時，使用者會在下次登入時受到影響，因為此時裝置會從閒置變成作用中。 系統仍會提示密碼符合需求的使用者變更其密碼。
     
-  - **登入失敗幾次後即抹除裝置**：抹除裝置之前，輸入允許的驗證失敗數目，上限為 11。 您輸入的有效數字視版本而定。 [DeviceLock/MAXDEVICEPASSWORDFAILEDATTEMPTS CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts)會列出支援的值。 `0` (零) 可停用裝置抹除功能。
+  - **登入失敗幾次後即抹除裝置**：抹除裝置之前，輸入允許的驗證失敗數目，上限為 11。 您輸入的有效號碼視版本而定。 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) 會列出支援的值。 `0` (零) 可停用裝置抹除功能。
 
     此設定因版本不同也會有不同影響。 如需此設定的特定詳細資訊，請參閱 [DeviceLock/MaxDevicePasswordFailedAttempts CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-maxdevicepasswordfailedattempts) \(英文\)。
 
@@ -420,21 +423,21 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   - **避免重複使用以前用過的密碼**：輸入不得重複使用的舊密碼，從 1 到 24。 列如，輸入 `5` 讓使用者無法將新密碼設定為其目前密碼或之前使用過的四個密碼之一。
   - **裝置從閒置狀態回復時需要密碼** (行動裝置和全像攝影)：選擇 [需要]  ，使用者必須輸入密碼，才能在閒置後解除鎖定裝置。 [未設定]  (預設) 當裝置從閒置狀態恢復時不需要 PIN 或密碼。
   - **簡單密碼**：設定為 [封鎖]  時，使用者將無法建立 `1234` 或 `1111` 之類的簡單密碼。 設定為 [未設定]  (預設) 讓使用者建立類似 `1234` 或 `1111` 的密碼。 這項設定也會允許或封鎖使用 Windows 圖片密碼。
-- **在 AADJ 期間的自動加密**：[封鎖]  防止當裝置加入 Azure AD，並準備裝置進行初次使用時啟動自動 BitLocker 裝置加密。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 請參閱 [BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
+- **在 AADJ 期間的自動加密**：[封鎖]  防止當裝置加入 Azure AD，並準備裝置進行初次使用時啟動自動 BitLocker 裝置加密。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 請參閱 [BitLocker 裝置加密](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10#bitlocker-device-encryption)。
 
   [Security/PreventAutomaticDeviceEncryptionForAzureADJoinedDevices CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-security#security-preventautomaticdeviceencryptionforazureadjoineddevices)
 
-- **聯邦資訊處理標準 (FIPS) 原則**：[允許]  會使用聯邦資訊處理標準 (FIPS) 原則，該標準是美國政府針對加密、雜湊和簽署提出的標準。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 作業系統預設值可能不會使用 FIPS。
+- **聯邦資訊處理標準 (FIPS) 原則**：[允許]  會使用聯邦資訊處理標準 (FIPS) 原則，該標準是美國政府針對加密、雜湊和簽署提出的標準。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 作業系統預設值可能不會使用 FIPS。
 
   [Cryptography/AllowFipsAlgorithmPolicy CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-cryptography#cryptography-allowfipsalgorithmpolicy)
 
-- **Windows Hello 裝置驗證**：[允許]  使用者使用 Windows Hello 隨附裝置，例如手機、健身手環或 IoT 裝置登入 Windows 10 電腦。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 作業系統預設值可能會阻止 Windows Hello 隨附裝置向 Windows 驗證。
+- **Windows Hello 裝置驗證**：[允許]  使用者使用 Windows Hello 隨附裝置，例如手機、健身手環或 IoT 裝置登入 Windows 10 電腦。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 作業系統預設值可能會阻止 Windows Hello 隨附裝置向 Windows 驗證。
 
   [Authentication/AllowSecondaryAuthenticationDevice CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-authentication#authentication-allowsecondaryauthenticationdevice)
 
 - **Web 登入**：啟用非 ADFS (Active Directory 同盟服務) 同盟提供者的 Windows 登入支援，例如安全性聲明標記語言 (SAML)。 SAML 使用安全權杖，提供網頁瀏覽器單一登入 (SSO) 體驗。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
   - **啟用**：啟用 Web 認證提供者進行登入。
   - **Disabled**：停用 Web 認證提供者進行登入。
 
@@ -491,7 +494,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **輸入個人化**：[封鎖]  防止使用語音聽寫以及和 Cortana 及其他使用 Microsoft 雲端式語音辨識的應用程式通話。 此功能已停用，且使用者不能啟用線上語音辨識使用設定。 [未設定]  (預設) 可讓使用者選擇。 如果您允許這些服務，Microsoft 可能會收集語音資料來 改善服務。
 - **自動接受配對及隱私權使用者同意提示**：選擇 [允許]  ，讓 Windows 在執行應用程式時，自動接受配對及隱私權同意訊息。 [未設定]  (預設) 會在開啟應用程式時，防止自動接受配對及隱私權使用者同意視窗。
 - **發佈使用者活動**：[封鎖]  防止共用體驗，以及在活動摘要中探索最近使用的資源。 [未設定]  (預設) 啟用這項功能讓應用程式可以發佈終端使用者活動。
-- **僅限本機活動**：[封鎖]  可防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **僅限本機活動**：[封鎖]  可防止共用體驗，以及僅根據本機活動，在工作切換器中探索最近使用的資源。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 
 您可以設定可供裝置上所有應用程式存取的資訊。 您也可以使用**個別應用程式隱私權例外狀況**，以個別應用程式為基礎來定義例外狀況。
 
@@ -536,7 +539,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   [System/AllowTelemetry CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-system#system-allowtelemetry)
 
 - **將 Microsoft Edge 瀏覽資料傳送到 Microsoft 365 Analytics** ：若要使用這項功能，請將 [共用使用方式資料]  設定為 [增強]  或 [完整]  。 此功能控制 Microsoft Edge 針對具有設定商業識別碼的企業裝置傳送至 Microsoft 365 Analytics 的資料。 選項包括：
-  - **未設定**： Intune 不會變更或更新此設定。 作業系統預設可能不會傳送任何流覽歷程記錄資料。
+  - **未設定**：Intune 不會變更或更新此設定。 作業系統預設可能不會傳送任何瀏覽歷程記錄資料。
   - **僅傳送內部網路資料**：允許系統管理員傳送內部網路資料歷程記錄
   - **僅傳送網際網路資料**：允許系統管理員傳送網際網路資料歷程記錄
   - **傳送內部網路與網際網路資料**：允許系統管理員傳送內部網路與網際網路資料歷程記錄
@@ -591,11 +594,11 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 - **使用者磚**：[封鎖]  會隱藏使用者磚，使其不顯示在 [開始] 功能表中。 [未設定]  (預設) 會顯示使用者磚，並設定下列設定：
   - **鎖定**：[封鎖]  會隱藏 [鎖定]  選項，使其不顯示在 [開始] 功能表的使用者磚中。 [未設定]  (預設) 會顯示 [鎖定]  選項。
   - **登出**：[封鎖]  會隱藏 [登出]  選項，使其不顯示在 [開始] 功能表的使用者磚中。 [未設定]  (預設) 會顯示 [登出]  選項。
-- **關機**：[封鎖]  會隱藏 [更新並關機]  和 [關機]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **睡眠**：[封鎖]  會隱藏 [睡眠]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **休眠**：[封鎖]  會隱藏 [休眠]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **切換帳戶**：[封鎖]  會隱藏 [切換帳戶]  選項，使其不顯示在 [開始] 功能表的使用者磚中。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
-- **重新啟動選項**：[封鎖]  會隱藏 [更新並重新啟動]  和 [重新啟動]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **關機**：[封鎖]  會隱藏 [更新並關機]  和 [關機]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **睡眠**：[封鎖]  會隱藏 [睡眠]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **休眠**：[封鎖]  會隱藏 [休眠]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **切換帳戶**：[封鎖]  會隱藏 [切換帳戶]  選項，使其不顯示在 [開始] 功能表的使用者磚中。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
+- **重新啟動選項**：[封鎖]  會隱藏 [更新並重新啟動]  和 [重新啟動]  選項，使其不顯示在 [開始] 功能表的 [電源] 按鈕中。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 - **[開始] 上的 [文件]** ：隱藏或顯示 Windows [開始] 功能表中的 [文件] 資料夾。 選項包括：
   - **未設定** (預設值)：不強制任何設定。 使用者選擇顯示或隱藏捷徑。
   - **隱藏**：隱藏捷徑，並停用 [設定] 應用程式的設定。
@@ -659,9 +662,9 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 - **Windows 焦點**：[封鎖]  會關閉鎖定畫面、Windows 提示、Microsoft 消費者功能，以及其他相關功能的 Windows 焦點。 如果您的目標是要將裝置網路流量降到最低，請將此設為 [封鎖]  。 [未設定]  (預設) 允許 Windows 焦點功能，並可由終端使用者控制。 啟用時，您也可以允許或封鎖下列設定：
 
-  - **鎖定畫面上的 Windows 焦點**：[封鎖]  會阻止 Windows 焦點在裝置鎖定畫面上顯示資訊。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+  - **鎖定畫面上的 Windows 焦點**：[封鎖]  會阻止 Windows 焦點在裝置鎖定畫面上顯示資訊。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
   - **Windows 焦點中的第三方建議**：[封鎖]  會阻止 Windows 焦點建議不是由 Microsoft 發佈的內容。 [未設定]  (預設) 允許來自 Windows 焦點功能 (例如鎖定畫面焦點、[開始] 功能表中所建議應用程式及 Windows 提示) 中協力廠商軟體發行者的應用程式及內容建議。
-  - **消費者功能**：[封鎖]  會關閉通常僅供消費者使用的體驗，例如開始建議、成員資格通知、應用程式安裝後的全新體驗及重新導向磚。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+  - **消費者功能**：[封鎖]  會關閉通常僅供消費者使用的體驗，例如開始建議、成員資格通知、應用程式安裝後的全新體驗及重新導向磚。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
   - **Windows 提示**：[封鎖]  會停用快顯的 Windows 提示。 [未設定]  (預設) 允許顯示 Windows 提示。
   - **控制中心的 Windows 焦點**：[封鎖]  防止控制中心顯示 Windows 焦點通知。 [未設定]  (預設) 可能會在控制中心顯示通知，建議可協助使用者在 Windows 提高生產力的應用程式或功能。
   - **Windows 焦點個人化**：[封鎖]  防止 Windows 使用診斷資料為使用者提供自訂的體驗。 [未設定]  (預設) 可讓 Microsoft 使用診斷資料提供個人化的建議、提示，並針對使用者需求提供量身打造的 Windows。
@@ -673,67 +676,67 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 - **即時監視**：[啟用]  會開啟即時掃描來掃描是否有惡意程式碼、間諜軟體和其他垃圾軟體。 終端使用者無法關閉它。 
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟這項功能，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會開啟這項功能，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowRealtimeMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowrealtimemonitoring)
 
 - **行為監視**：[啟用]  會開啟行為監視，並檢查裝置上是否有某些已知模式的可疑活動。 使用者無法關閉行為監視。 
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟行為監視，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會開啟行為監視，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowBehaviorMonitoring CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowbehaviormonitoring)
 
 - **網路檢查系統 (NIS)** ：NIS 可協助保護裝置免於遭受網路型入侵。 它會使用 Microsoft Endpoint Protection 中心提供之已知弱點的病毒碼，協助偵測及阻擋惡意流量。
 
-  [**啟用**] 會開啟網路保護和網路封鎖。 終端使用者無法關閉它。 啟用時，使用者會被封鎖而無法連線到已知的弱點。
+  [啟用]  會開啟網路保護和網路封鎖。 終端使用者無法關閉它。 啟用時，使用者會被封鎖而無法連線到已知的弱點。
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟 NIS，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會開啟 NIS，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/EnableNetworkProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-enablenetworkprotection)
 
-- **掃描所有下載**： [**啟用**] 會開啟此設定，而 Defender 會掃描從網際網路下載的所有檔案。 使用者無法關閉此設定。 
+- **掃描所有下載**：[啟用]  會開啟此設定，而 Defender 會掃描從網際網路下載的所有檔案。 使用者無法關閉此設定。 
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟此設定，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會開啟此設定，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowIOAVProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowioavprotection)
 
 - **掃描 Microsoft 網頁瀏覽器中所載入的指令碼**：[啟用]  允許 Defender 掃描在 Internet Explorer 中使用的指令碼。 使用者無法關閉此設定。 
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟此設定，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會開啟此設定，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowScriptScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscriptscanning)
 
 - **Defender 的終端使用者存取**：[封鎖]  會向終端使用者隱藏 Microsoft Defender 使用者介面。 也會隱藏所有 Microsoft Defender 通知。
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您封鎖設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統允許使用者存取 Microsoft Defender UI，並可讓使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您封鎖設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統允許使用者存取 Microsoft Defender UI，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   變更此設定後，要在使用者電腦下次重新啟動時才會生效。
 
   [Defender/AllowUserUIAccess CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowuseruiaccess)
 
-- **安全情報更新間隔（以小時為單位）** ：輸入 Defender 檢查新安全性情報的間隔，從0-24。 選項包括：
+- **安全情報更新間隔 (以小時為單位)** ：輸入 Defender 檢查新安全情報的間隔，從 0 到 24。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。 作業系統預設可能每8小時檢查一次更新。
-  - 不**檢查**： Defender 不會檢查是否有新的安全情報更新。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。 作業系統預設可能每 8 小時檢查一次更新。
+  - **不檢查**：Defender 不會檢查是否有新的安全情報更新。
   - [1-24]  ：`1` 為每小時檢查一次、`2` 為每兩小時檢查一次、`24` 為每天檢查一次等等。
   
   [Defender/SignatureUpdateInterval CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-signatureupdateinterval)
   
 - **監視檔案和程式活動**：允許 Defender 監視裝置上的檔案和程式活動。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。 作業系統預設值可能會監視所有檔案。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。 作業系統預設可能會監視所有檔案。
   - **已停用監視**
   - **監視所有檔案**
   - **僅監視傳入檔案**
@@ -746,61 +749,61 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   [Defender/DaysToRetainCleanedMalware CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-daystoretaincleanedmalware)
 
 - **掃描期間的 CPU 使用率限制**：讓您限制掃描可以使用的 CPU 資源數量 (從 `0` 至 `100`)。
-- **掃描**封存檔案： [**啟用**] 會開啟 Defender，使其掃描封存檔案（例如 Zip 或 Cab 檔案）。 使用者無法關閉此設定。
+- **掃描封存檔**：[啟用]  會開啟 Defender，使其掃描封存檔案 (例如 Zip 或 Cab 檔案)。 使用者無法關閉此設定。
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟此掃描，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會開啟此掃描，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowArchiveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowarchivescanning)
 
-- **掃描內送郵件訊息**：[啟用]  允許 Defender 在電子郵件訊息到達裝置的時候掃描它們。 啟用時，引擎會剖析信箱和郵件檔案，以分析郵件內文和附件。 您可以掃描 .pst （Outlook）、.dbx、mbx、MIME （Outlook Express）和 BinHex （Mac）格式。
+- **掃描內送郵件訊息**：[啟用]  允許 Defender 在電子郵件訊息到達裝置的時候掃描它們。 啟用時，引擎會剖析信箱和郵件檔案，以分析郵件內文和附件。 您可以掃描 .pst (Outlook)、.dbx、.mbx、MIME (Outlook Express) 和 BinHex (Mac) 格式。
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會關閉此掃描，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會關閉此掃描，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowEmailScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowemailscanning)
 
-- 在**完整掃描期間掃描卸載式磁片磁碟機**： [**啟用**] 會在完整掃描期間開啟 Defender 抽取式磁碟磁碟機掃描。 使用者無法關閉此設定。
+- **在完整掃描期間掃描抽取式磁碟機**：[啟用]  會在完整掃描期間開啟 Defender 抽取式磁碟機掃描。 使用者無法關閉此設定。
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 可讓 Defender 掃描卸載式磁片磁碟機（例如 USB 記憶杆），並允許使用者變更此設定。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統可讓 Defender 掃描抽取式磁碟機 (例如 USB 隨身碟)，並允許使用者變更此設定。
 
-  在快速掃描期間，可能仍會掃描卸載式磁片磁碟機。
+  在快速掃描期間，可能仍會掃描抽取式磁碟機。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowFullScanRemovableDriveScanning CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanremovabledrivescanning)
 
 - **在完整掃描期間掃描對應的網路磁碟機**：[啟用]  讓 Defender 掃描相對應網路磁碟機上的檔案。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。 使用者無法關閉此設定。
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 會開啟這項功能，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會開啟這項功能，並允許使用者進行變更。
 
   在快速掃描期間，可能仍會掃描對應的網路磁碟機機。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowFullScanOnMappedNetworkDrives CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowfullscanonmappednetworkdrives)
 
-- **掃描從網路資料夾中開啟的**檔案： [**啟用**] 會掃描從網路資料夾或共用網路磁碟機機（例如從 UNC 路徑存取的檔案）開啟的檔案。 使用者無法關閉此設定。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
+- **掃描從網路資料夾中開啟的檔案**：[啟用]  會讓 Defender 掃描從網路資料夾或共用網路磁碟機開啟的檔案，例如從 UNC 路徑存取的檔案。 使用者無法關閉此設定。 如果磁碟機上的檔案是唯讀，則 Defender 無法移除在其中發現的任何惡意程式碼。
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會掃描從網路資料夾中開啟的檔案，並允許使用者進行變更。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統會掃描從網路資料夾中開啟的檔案，並允許使用者進行變更。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowScanningNetworkFiles CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowscanningnetworkfiles)
 
 - **雲端保護**：[啟用]  會開啟 Microsoft Active Protection Service 以從您管理的裝置接收惡意程式碼活動的相關資訊。 使用者無法變更此設定。 
 
-  當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [**未設定**]，則 Intune 會將設定保留在先前設定的狀態。 根據預設，OS 允許 Microsoft Active Protection Service 接收資訊，並允許使用者變更此設定。
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您啟用此設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前設定的狀態。 根據預設，作業系統允許 Microsoft Active Protection Service 接收資訊，並允許使用者變更此設定。
 
-  Intune 不會關閉這項功能。 若要停用它，請使用自訂 URI。
+  Intune 不會關閉這項功能。 若要停用，請使用自訂 URI。
 
   [Defender/AllowCloudProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowcloudprotection)
 
 - **在提交範例之前提示使用者**：控制是否將可能需要進一步分析的潛在惡意檔案，自動傳送給 Microsoft。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。 作業系統預設值可能會自動傳送安全的範例。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。 作業系統預設可能會自動傳送安全的範例。
   - **一律提示**
   - **在傳送個人資料之前提示**
   - **永不傳送資料**
@@ -826,10 +829,10 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   > 這項設定可能會和 [執行每日快速掃描的時間]  設定衝突。 一些建議：  
   >
   > - 如果您想要排程每日快速掃描和每週完整掃描，則：
-  >   1. 設定**執行每日快速掃描**設定的時間。
-  >   2. 設定要**執行的系統掃描類型**，以進行完整掃描。
+  >   1. 設定 [執行每日快速掃描的時間]  設定。
+  >   2. 設定 [要執行的系統掃描類型]  ，以進行完整掃描。
   > 
-  > - 如果您每天只想要一次快速掃描（沒有完整掃描），請使用 [設定：**時間] 來執行每日快速掃描**或**要執行的系統掃描類型**。 例如，若要在每個星期二早上 6 點執行快速掃描，請設定 [要執行的系統掃描類型]  設定。
+  > - 如果您每日只想要一次快速掃描 (不進行完整掃描)，請使用下列其中一項設定：**執行每日快速掃描的時間**或**要執行的系統掃描類型**。 例如，若要在每個星期二早上 6 點執行快速掃描，請設定 [要執行的系統掃描類型]  設定。
   > 
   > - 請不要同時設定 [執行每日快速掃描的時間]  並將 [要執行的系統掃描類型]  設為 [快速掃描]  。 這些設定可能會衝突，導致掃描無法執行。
 
@@ -846,9 +849,17 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
   [Defender/PUAProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-puaprotection)
 
-- **提交範例同意**：目前此設定不會有任何影響。 請勿使用此設定。 它可能會在未來的版本中移除。
+- **提交同意範例**：目前此設定不會有任何影響。 請勿使用此設定。 未來的版本可能會移除這個設定。
 
-- **對偵測到的惡意程式碼威脅採取的動作**：選擇您想要如何處理惡意程式碼執行緒。 [**未設定**] （預設）可讓 Microsoft Defender 選擇最佳選項。 當設定為 [啟用]  時，可選擇您希望 Defender 針對它偵測到的每種威脅等級 (低、中、高及嚴重) 所採取的動作。 選項包括：
+- **存取保護時**：[封鎖]  會防止掃描已存取或已下載的檔案。 終端使用者無法開啟該設定。
+
+  當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 如果您封鎖設定，然後將其變更回 [未設定]  ，則 Intune 會將設定保留在先前作業系統設定的狀態。 根據預設，作業系統會啟用這項功能，並允許使用者進行變更。
+
+  Intune 不會開啟這項功能。 若要啟用，請使用自訂 URI。
+
+  [Defender/AllowOnAccessProtection CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-allowonaccessprotection)
+
+- **對偵測到的惡意程式碼威脅採取的動作**：請選擇您想要如何處理惡意程式碼執行緒。 [未設定]  (預設) 可讓 Microsoft Defender 選擇最佳選項。 當設定為 [啟用]  時，可選擇您希望 Defender 針對它偵測到的每種威脅等級 (低、中、高及嚴重) 所採取的動作。 選項包括：
   
   - **清除**
   - **隔離**
@@ -857,7 +868,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
   - **使用者定義**
   - **封鎖**
 
-  如果您的動作不可行，Microsoft Defender 會選擇最佳選項，以確保威脅已補救。 
+  如果您的動作不可行，則 Microsoft Defender 會選擇最佳選項，以確保已修復威脅。 
 
   [Defender/ThreatSeverityDefaultAction CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-defender#defender-threatseveritydefaultaction)
 
@@ -871,81 +882,81 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 ### <a name="battery"></a>電池
 
-- **開啟節能的電池計量**：當裝置使用電池電源時，請輸入電池計量等級，以從0-100 開啟節能功能。 輸入表示電池計量層級的百分比值。 預設值為 70%。 設定為70% 時，當電池的電量為70% 或更低時，會開啟 [節能]。
+- **開啟節能程式的電池電量**：當裝置使用電池電力時，請輸入電池電量等級，以從 0 到 100 開啟節能程式。 輸入表示電池電量等級的百分比值。 預設值為 70%。 設定為 70% 時，當電池的電量為 70% 或更低時，會開啟節能程式。
 
   [Power/EnergySaverBatteryThresholdOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdonbattery)
 
-- **蓋子關閉（僅限**行動裝置）：當裝置使用電池電力時，請選擇當蓋關閉時要執行的動作。 選項包括：
+- **關閉上蓋 (僅限行動裝置版)** ：當裝置使用電池電力時，請選擇關閉上蓋時要執行的動作。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
-  - **無動作**：裝置會保持開啟狀態，並繼續使用電池電源。
-  - **睡眠**：裝置進入睡眠模式，並使用少量的電池計量。 電腦仍在開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體（RAM）中。
-  - **休眠**：裝置進入睡眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
-  - **關機**：裝置關閉。 開啟的應用程式和檔案會關閉而不儲存。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
+  - **不進行動作**：裝置會保持開啟狀態，並繼續使用電池電力。
+  - **睡眠**：裝置進入睡眠模式，並使用少量的電池電量。 電腦仍然開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體 (RAM) 中。
+  - **休眠**：裝置進入休眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
+  - **關機**：裝置關機。 開啟的應用程式和檔案會關閉而不儲存。
 
   [Power/SelectLidCloseActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactiononbattery)
 
-- **電源按鈕**：當裝置使用電池電力時，選擇 [電源] 按鈕時所發生的情況。 選項包括：
+- **電源按鈕**：當裝置使用電池電力時，選擇當選取 [電源] 按鈕時要執行的動作。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
-  - **無動作**：裝置會保持開啟狀態，並繼續使用電池電源。
-  - **睡眠**：裝置進入睡眠模式，並使用少量的電池計量。 電腦仍在開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體（RAM）中。
-  - **休眠**：裝置進入睡眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
-  - **關機**：裝置關閉。 開啟的應用程式和檔案會關閉而不儲存。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
+  - **不進行動作**：裝置會保持開啟狀態，並繼續使用電池電力。
+  - **睡眠**：裝置進入睡眠模式，並使用少量的電池電量。 電腦仍然開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體 (RAM) 中。
+  - **休眠**：裝置進入休眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
+  - **關機**：裝置關機。 開啟的應用程式和檔案會關閉而不儲存。
 
   [Power/SelectPowerButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactiononbattery)
 
-- **睡眠按鈕**：當裝置使用電池電力時，選擇 [睡眠] 按鈕時所發生的情況。 選項包括：
+- **[睡眠] 按鈕**：當裝置使用電池電力時，選擇當選取 [睡眠] 按鈕時要執行的動作。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
-  - **無動作**：裝置會保持開啟狀態，並繼續使用電池電源。
-  - **睡眠**：裝置進入睡眠模式，並使用少量的電池計量。 電腦仍在開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體（RAM）中。
-  - **休眠**：裝置進入睡眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
-  - **關機**：裝置關閉。 開啟的應用程式和檔案會關閉而不儲存。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
+  - **不進行動作**：裝置會保持開啟狀態，並繼續使用電池電力。
+  - **睡眠**：裝置進入睡眠模式，並使用少量的電池電量。 電腦仍然開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體 (RAM) 中。
+  - **休眠**：裝置進入休眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
+  - **關機**：裝置關機。 開啟的應用程式和檔案會關閉而不儲存。
 
   [Power/SelectSleepButtonActionOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactiononbattery)
 
-- **混合式睡眠**：當裝置使用電池電源時，[**停**用] 會防止裝置進入混合式睡眠模式。 在混合式睡眠模式中，開啟的應用程式和檔案會儲存在隨機存取記憶體（RAM）和硬碟上。 它會使用少量的電池計量。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **交互式睡眠**：當裝置使用電池電力時，[停用]  會防止裝置進入交互式睡眠模式。 在交互式睡眠模式中，開啟的應用程式和檔案會儲存在隨機存取記憶體 (RAM) 和硬碟上。 會使用少量的電池電量。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 
   [Power/TurnOffHybridSleepOnBattery CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeponbattery)
 
 ### <a name="pluggedin"></a>PluggedIn
 
-- **開啟節能的電池計量**：當裝置插入電源時，請輸入電池計量等級，以從0-100 開啟節能功能。 輸入表示電池計量層級的百分比值。 預設值為 70%。 設定為70% 時，當電池的電量為70% 或更低時，會開啟 [節能]。
+- **開啟節能程式的電池電量**：當裝置插入電源時，請輸入電池電量等級，以從 0 到 100 開啟節能程式。 輸入表示電池電量等級的百分比值。 預設值為 70%。 設定為 70% 時，當電池的電量為 70% 或更低時，會開啟節能程式。
 
   [Power/EnergySaverBatteryThresholdPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-energysaverbatterythresholdpluggedin)
 
-- **蓋子關閉（僅限**行動裝置）：當裝置插入電源時，選擇要在蓋子關閉時執行的動作。 選項包括：
+- **關閉上蓋 (僅限行動裝置版)** ：當裝置插入電源時，請選擇關閉上蓋時要執行的動作。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
-  - **無動作**：裝置會保持開啟。
-  - **睡眠**：裝置進入睡眠模式。 電腦仍在開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體（RAM）中。
-  - **休眠**：裝置進入睡眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
-  - **關機**：裝置關閉。 開啟的應用程式和檔案會關閉而不儲存。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
+  - **不進行動作**：裝置會保持開啟。
+  - **睡眠**：裝置進入睡眠模式。 電腦仍然開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體 (RAM) 中。
+  - **休眠**：裝置進入休眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
+  - **關機**：裝置關機。 開啟的應用程式和檔案會關閉而不儲存。
   
     [Power/SelectLidCloseActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectlidcloseactionpluggedin)
   
-- **電源按鈕**：當裝置插入時，選擇 [電源] 按鈕時所發生的情況。 選項包括：
+- **電源按鈕**：當裝置插入電源時，選擇當選取 [電源] 按鈕時要執行的動作。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
-  - **無動作**：裝置會保持開啟。
-  - **睡眠**：裝置進入睡眠模式。 電腦仍在開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體（RAM）中。
-  - **休眠**：裝置進入睡眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
-  - **關機**：裝置關閉。 開啟的應用程式和檔案會關閉而不儲存。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
+  - **不進行動作**：裝置會保持開啟。
+  - **睡眠**：裝置進入睡眠模式。 電腦仍然開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體 (RAM) 中。
+  - **休眠**：裝置進入休眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
+  - **關機**：裝置關機。 開啟的應用程式和檔案會關閉而不儲存。
 
   [Power/SelectPowerButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectpowerbuttonactionpluggedin)
 
-- **睡眠按鈕**：當裝置插入電源時，選擇 [睡眠] 按鈕時所發生的情況。 選項包括：
+- **[睡眠] 按鈕**：當裝置插入電源時，選擇當選取 [睡眠] 按鈕時要執行的動作。 選項包括：
 
-  - **未設定**（預設）： Intune 不會變更或更新此設定。
-  - **無動作**：裝置會保持開啟。
-  - **睡眠**：裝置進入睡眠模式。 電腦仍在開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體（RAM）中。
-  - **休眠**：裝置進入睡眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
-  - **關機**：裝置關閉。 開啟的應用程式和檔案會關閉而不儲存。
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。
+  - **不進行動作**：裝置會保持開啟。
+  - **睡眠**：裝置進入睡眠模式。 電腦仍然開啟，而開啟的應用程式和檔案則儲存在隨機存取記憶體 (RAM) 中。
+  - **休眠**：裝置進入休眠模式。 開啟的應用程式和檔案會儲存在硬碟上，而裝置會關閉。
+  - **關機**：裝置關機。 開啟的應用程式和檔案會關閉而不儲存。
 
   [Power/SelectSleepButtonActionPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-selectsleepbuttonactionpluggedin)
 
-- **混合式睡眠**：當裝置插入電源時，[**停**用] 會防止裝置進入混合式睡眠模式。 在混合式睡眠模式中，開啟的應用程式和檔案會儲存在隨機存取記憶體（RAM）和硬碟上。 當設定為 [**未設定**] （預設）時，Intune 不會變更或更新此設定。
+- **交互式睡眠**：當裝置插入電源時，[停用]  會防止裝置進入交互式睡眠模式。 在交互式睡眠模式中，開啟的應用程式和檔案會儲存在隨機存取記憶體 (RAM) 和硬碟上。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。
 
   [Power/TurnOffHybridSleepPluggedIn CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-power#power-turnoffhybridsleeppluggedin)
 
