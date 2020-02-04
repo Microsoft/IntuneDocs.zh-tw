@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: e745290991da4d80c7e3839250edbfdd64ef1b7a
-ms.sourcegitcommit: 01c57ac880dcb5f474908977c89810f5bedaf326
+ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75760956"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912622"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
 
@@ -23,7 +23,7 @@ ms.locfileid: "75760956"
 目前，Azure AD 中有三個角色可供安全性專業人員使用：
 - Azure AD 中的安全性讀取者角色，可提供對 Intune 的唯讀存取權。
 - Azure AD 中的安全性操作員角色，可提供對 Intune 的唯讀存取權。
-- Azure AD 中的安全性系統管理員。 當 Intune 推出 1 月份更新時，除了對 Intune 的唯讀存取權之外，由端點安全性管理員角色所提供的新權限如下所示：
+- Azure AD 中的安全性系統管理員。 當 Intune 推出 1 月份更新時，除了對 Intune 的唯讀權限之外，還有端點安全性管理員角色提供的新權限，如下所示：
     - 讀取、建立、更新、刪除及指派裝置合規性原則
     - 讀取、刪除及更新受控裝置
     - 讀取、建立、更新、刪除及指派安全性基準
@@ -51,7 +51,7 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 Windows Phone 8.1 的 Microsoft 主要支援已於 2017 年 7 月終止，而且延伸支援已於 2019 年 6 月結束。 適用於 Windows Phone 8.1 的公司入口網站應用程式從 2017 年 10 月起就進入維持模式了。 Microsoft Intune 現在將於 2020 年 2 月 20 日終止對 Windows Phone 8.1 的支援。
 
 #### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
-2020 年 2 月 20 日之後，這些裝置將不會收到任何安全性更新，而且您將無法註冊任何新裝置。 現有的 Windows Phone 8.1 裝置會保持註冊 (原則、應用程式、報告)，但請注意，在此日期之後，將不會支援現有註冊的任何疑難排解，因為許多元件 (例如協力廠商憑證) 已結束對該平台的支援。 Intune 將會停止與 Intune 和 Windows Phone 8.1 的相容性測試。
+2020 年 2 月 20 日之後，這些裝置將不會收到任何安全性更新，而且您將無法註冊任何新裝置。 現有的 Windows Phone 8.1 裝置會保持在註冊狀態 (原則、應用程式、報告)，但請注意，在此日期之後，將不再支援現有註冊的任何疑難排解，原因是許多元件 (例如協力廠商憑證) 已終止對該平台的支援。 Intune 將會停止與 Intune 和 Windows Phone 8.1 的相容性測試。
 
 #### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
 您可以檢查您的 Intune 報告，查看哪些裝置或使用者可能會受到影響。 移至 [裝置] > [所有裝置]，然後依 OS 進行篩選。 您可以新增其他資料行，協助識別您組織中誰有執行 Windows Phone 8.1 的裝置。 要求使用者將其裝置升級至支援的 OS 版本。
@@ -72,25 +72,11 @@ Windows Phone 8.1 的 Microsoft 主要支援已於 2017 年 7 月終止，而且
 2. 確定您環境中所有受 MAM 保護的應用程式的應用程式保護原則設定 [限制使用其他應用程式的 Web 內容傳輸] 設定為 [受原則管理的瀏覽器]。 
 3. 在受管理的應用程式組態設定 "com.microsoft.intune.useEdge" 設定為 True 的情況下以所有受 MAM 保護的項目為目標。 從下個月將推出的 1911 版開始，您只需要設定 [限制使用其他應用程式的 Web 內容傳輸] 設定以在您應用程式保護原則的 [資料保護] 區段中選取 [Microsoft Edge]，就可以完成步驟 2 與 3。 
 
-即將推出對 iOS 與 Android 上 Web 剪輯的支援。 當此支援發行時，您必須將預先存在的 Web 剪輯重定目標，以確保它們在 Microsoft Edge 中開啟，而不是在 Managed Browser 中開啟。 
+即將推出對 iOS 與 Android 上 Web 剪輯的支援。 當此支援發行後，您必須為預先存在的 Web 剪輯重定目標，以確保其在 Microsoft Edge 中開啟，而不是在 Managed Browser 中開啟。 
 
 #### <a name="additional-information"></a>其他資訊
-請瀏覽我們的文件[搭配應用程式保護原則使用 Microsoft Edge](../apps/manage-microsoft-edge.md)以取得詳細資訊，或檢視我們的[支援部落格文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269) \(英文\)。
+如需詳細資訊，請參閱我們的[搭配應用程式保護原則使用 Microsoft Edge](../apps/manage-microsoft-edge.md) 相關文件，或我們的[支援部落格文章](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Use-Microsoft-Edge-for-your-Protected-Intune-Browser-Experience/ba-p/1004269)。
 
-### <a name="plan-for-change-updated-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--5198878--"></a>規劃變更：已更新在 Intune 中註冊 Android Enterprise 專用裝置的體驗<!--5198878-->
-在 Intune 的 11月或 1911 版本中，我們會將對 SCEP 裝置憑證部署的支援新增至 Android Enterprise 專用裝置，以啟用 Wi-Fi 設定檔的憑證型存取功能。 此變更也牽涉到在註冊 Android Enterprise 專用裝置流程的一些小幅變更。
-
-#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
-如果您是環境中 Android Enterprise 專用裝置的管理員，您會在 11 月開始看到我們推出某些變更。
-
-- 針對新 Android Enterprise 專用裝置註冊：終端使用者會在註冊期間看到一組不同的裝置設定步驟。 註冊仍會以目前的啟動方式啟動 (使用 QR、NFC、零觸控或裝置識別碼)，但在 11 月的服務發行之後，將會有一個強制的應用程式安裝步驟。
-- 針對已註冊為專用裝置的現有 Android 裝置：Intune 將會開始自動在於 11 月初啟動的裝置上安裝 Microsoft Intune 應用程式。 您不需要採取任何動作。 應用程式會自動下載並安裝在裝置上。 
-
-#### <a name="what-can-i-do-to-prepare-for-this-change"></a>如何為這項變更進行準備？
-您應該計畫更新您的終端使用者指導方針，並讓技術服務人員知道此變更。 按一下 [其他詳細資訊] 以取得更多詳細資料與螢幕擷取畫面。 當此變更開始推出時，我們將會更新 [新功能] 頁面。
-
-#### <a name="additional-information"></a>其他資訊
-[https://aka.ms/Dedicated_devices_enrollment](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="end-of-support-for-legacy-pc-management"></a>結束對舊版電腦管理的支援
 
@@ -106,7 +92,7 @@ Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Andr
 - Intune 只能為執行 Android 10 和更新版本之裝置系統管理員受控的 Android 裝置提供完整支援，且支援僅提供至 2020 年度第 2 季。 在此期間過後，執行 Android 10 或更新版本之裝置系統管理員受控的裝置將無法再完全受控。 尤其受影響的裝置不會再收到新的密碼要求。
     - 在此期間內，Samsung Knox 裝置不會受到影響，因為其透過 Intune 與 Knox 平台的整合來獲得延伸支援。 讓您有更多時間規劃裝置系統管理員管理的轉換。    
 - 在 Android 10 以下的 Android 版本上，仍由裝置系統管理員管理的 Android 裝置不會受到影響，並可繼續由裝置系統管理員全權管理。    
-- 針對所有執行 Android 10 與更新版本的裝置，Google 已限制裝置系統管理員管理代理程式 (例如公司入口網站) 存取裝置識別碼資訊的能力。 當裝置更新至 Android 10 或更新版本之後，此限制會影響下列 Intune 功能：  
+- 針對所有執行 Android 10 與更新版本的裝置，Google 已限制裝置系統管理員管理代理程式 (例如公司入口網站) 存取裝置識別碼資訊的能力。 當裝置更新為 Android 10 或更新版本之後，此限制會影響下列 Intune 功能：  
     - VPN 的網路存取控制將不再有效。   
     - 透過 IMEI 或序號識別為公司擁有的裝置將不會自動將裝置標示為公司擁有。  
     - 在 Intune 中，IT 系統管理員再也看不到 IMEI 與序號。 
@@ -156,8 +142,8 @@ Intune 將會在即將推出的版本中開始支援 Android 5.x (Lollipop) 與�
 - 在 2020 年 1 月 14 日之前規劃並升級 Windows 7 至 Windows 10。
 - 探索 [Windows 10 部署支援](https://docs.microsoft.com/windows/deployment/)以深入了解如何將現有的 Windows 7 電腦群升級到 Windows 10。
 - 透過 FastTrack 檢閱[電腦 App 保證](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1)方案，以解決 Microsoft 應用程式相容性問題。
-- 將現有舊版 Intune 軟體用戶端受控裝置移轉到 Microsoft 建議的解決方案，以使用 MDM 管理來管理 Windows 10。 在 Azure 入口網站中使用適用於 Intune 的 MDM 管理來註冊所有 Windows 10 新電腦。
+- 將現有的舊版 Intune 軟體用戶端受控裝置轉換到 Microsoft 建議的解決方案，以使用 MDM 管理來管理 Windows 10。 在 Azure 入口網站中使用適用於 Intune 的 MDM 管理來註冊所有 Windows 10 新電腦。
 
-如需詳細資訊，請參閱此[部落格文章](https://aka.ms/Windows7_Intune)。
+如需詳細資訊，請參閱[這裡的部落格文章](https://aka.ms/Windows7_Intune)。
 
 

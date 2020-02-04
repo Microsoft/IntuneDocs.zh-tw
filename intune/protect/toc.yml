@@ -1,4 +1,4 @@
-- name: 使用 Intune 保護資料和裝置
+- name: 使用 Intune 保護資料與裝置
   href: index.yml
 - name: 概觀
   expanded: true
@@ -56,7 +56,7 @@
           href: create-compliance-policy.md
         - name: 依據位置的合規性
           href: use-network-locations.md
-        - name: 不符合標準時所採取的動作
+        - name: 處理不相容狀況的動作
           href: actions-for-noncompliance.md
         - name: 監視裝置合規性
           href: compliance-policy-monitor.md
@@ -225,6 +225,20 @@
           href: troubleshoot-conditional-access.md
         - name: 疑難排解憑證連接器
           href: troubleshoot-certificate-connector-events.md
+        - name: 針對 SCEP 憑證設定檔進行疑難排解
+          items:
+            - name: 針對 SCEP 憑證設定檔進行疑難排解
+              href: troubleshoot-scep-certificate-profiles.md
+            - name: 部署設定檔到裝置
+              href: troubleshoot-scep-certificate-profile-deployment.md
+            - name: 裝置與 NDES 的通訊
+              href: troubleshoot-scep-certificate-device-to-ndes.md
+            - name: NDES 作業
+              href: troubleshoot-scep-certificate-ndes-policy-module.md
+            - name: 憑證傳遞到裝置
+              href: troubleshoot-scep-certificate-delivery.md
+            - name: 憑證部署的報告
+              href: troubleshoot-scep-certificate-reporting.md
         - name: Exchange Connector 疑難排解
           items:
             - name: Exchange Connector 疑難排解
@@ -267,7 +281,7 @@
           href: compliance-policy-create-windows-8-1.md
         - name: 合規性政策設定 - Windows Phone 8.1
           href: compliance-policy-create-windows-8-1.md
-    - name: 錯誤碼與描述
+    - name: 錯誤碼與說明
       items:
         - name: 軟體更新錯誤
           href: software-update-agent-error-codes.md
