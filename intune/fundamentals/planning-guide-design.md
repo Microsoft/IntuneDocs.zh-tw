@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8452f840fb269505656bf6594d3e5c196b4d7a06
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885789"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886736"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -308,7 +308,10 @@ Wi-Fi 設定檔用來自動將行動裝置連線到無線網路。 Intune 支援
 
 下例是 Wi-Fi 設定檔的設計︰
 
-| **類型** | **設定檔名稱** | **裝置平台** | **使用案例** | | Wi-Fi | 亞洲 Wi-Fi 設定檔 | Android | 公司、BYOD 亞洲區域 | | Wi-Fi | 北美洲 Wi-Fi 設定檔 | Android、iOS、Windows 10 Mobile | 公司、BYOD 北美洲區域 |
+| **類型** | **設定檔名稱** | **裝置平台** | **使用案例** |
+|:---:|:---:|:---:|:---:|
+| Wi-Fi | 亞洲 Wi-Fi 設定檔 | Android | 公司、BYOD 亞洲地區|
+| Wi-Fi | 北美地區 Wi-Fi 設定檔 | Android、iOS、Windows 10 Mobile | 公司、BYOD 北美地區 |
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別 Wi-Fi 設定檔需求。
 

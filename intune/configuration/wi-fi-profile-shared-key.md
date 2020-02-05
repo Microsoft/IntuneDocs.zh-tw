@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5a65000d46941876b95e0b110d21f2dfb900ca33
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206222"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886711"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>使用自訂裝置設定檔，在 Intune 中建立包含預先共用金鑰的 WiFi 設定檔
 
@@ -32,7 +32,7 @@ ms.locfileid: "75206222"
 
 這項功能支援：
 
-- Android
+- Android 裝置管理員
 - Windows
 - EAP 型 Wi-Fi
 

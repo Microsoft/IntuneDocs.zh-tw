@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c31dd652022ae0d394ab2229a0c25b362ad8574d
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 6ebcb81cd0f186a3fd23e0701d12ea871eab129a
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563578"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912564"
 ---
 # <a name="add-microsoft-edge-to-macos-devices-using-microsoft-intune"></a>使用 Microsoft Intune 將 Microsoft Edge 新增至 macOS 裝置
 
@@ -34,7 +34,7 @@ ms.locfileid: "74563578"
 > [!NOTE]
 > Microsoft Edge *77 版和更新版本的*也適用於 Windows 10。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - macOS 裝置必須執行 macOS 10.12 或更新版本，才能安裝 Microsoft Edge。
 
 ## <a name="add-microsoft-edge-to-intune"></a>將 Microsoft Edge 新增至 Intune
@@ -65,11 +65,15 @@ ms.locfileid: "74563578"
 在此步驟中，設定應用程式的安裝選項。
 
 1. 在 [新增應用程式]  窗格中，選取 [應用程式設定]  。
-2. 在 [應用程式設定]  窗格中，會自動選取 [搶鮮版 (Beta)]  通道，而且無法變更。
-    - **搶鮮版 (Beta)** 通道是最穩定的 Microsoft Edge 預覽體驗，也是在您組織內進行完整試驗的最佳選擇。 每隔六週進行重大更新。
+2. 在 [應用程式設定]  窗格中，從 [通道]  清單中選取 [穩定]  、[Beta]  或 [Dev]  ，以判定將從哪個 Edge 通道部署應用程式。
+
+    - [穩定]  通道是在企業環境中廣泛部署的建議通道。 其會每六週更新一次，每個版本都會納入 Beta 通道的改良功能。
+    - [Beta]  通道是最穩定的 Microsoft Edge 預覽體驗，也是在您組織內進行完整試驗的最佳選擇。 每隔六週進行重大更新，每個版本都會納入 Dev 通道的學習和改良功能。
+    - **Dev** 通道已準備好取得 Windows、Windows Server 和 macOS 的企業意見反應。 它會每週更新，並包含最新的改良功能和修正程式。
 
     > [!NOTE]
     > Microsoft Edge 瀏覽器標誌是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的標誌。
+
 3.  選取 [確定]  。
 
 ## <a name="select-scope-tags-optional"></a>選取範圍標籤 (選擇性)

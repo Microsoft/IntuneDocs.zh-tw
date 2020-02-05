@@ -7,30 +7,14 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 9aa82268fb02f5124e48eb303f19cf32be02c284
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912622"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966348"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
-
-### <a name="updated-feature-new-rbac-role-coming-to-intune--4253397--"></a>更新的功能：Intune 即將推出新的 RBAC 角色<!--4253397-->
-在 1 月份的 Intune 服務更新中，我們計畫在 Intune 中推出新的安全性角色。 您在 Intune 中將會看到此角色被列為「端點安全性管理員」，且該角色是 Azure AD「安全性系統管理員」的延伸。
- 
-#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
-目前，Azure AD 中有三個角色可供安全性專業人員使用：
-- Azure AD 中的安全性讀取者角色，可提供對 Intune 的唯讀存取權。
-- Azure AD 中的安全性操作員角色，可提供對 Intune 的唯讀存取權。
-- Azure AD 中的安全性系統管理員。 當 Intune 推出 1 月份更新時，除了對 Intune 的唯讀權限之外，還有端點安全性管理員角色提供的新權限，如下所示：
-    - 讀取、建立、更新、刪除及指派裝置合規性原則
-    - 讀取、刪除及更新受控裝置
-    - 讀取、建立、更新、刪除及指派安全性基準
-    - 讀取及更新安全性工作
- 
-### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-立即檢閱您的 Intune RBAC 角色。 如果您目前只有全域管理員作為角色，則不需要做任何變更。 如果您會使用角色，且您想要端點安全性管理員所提供的細微性，請在該角色可用時指派它。 請查看 Intune [[新功能]](../fundamentals/whats-new.md) 頁面以取得最新的 Intune 版本資訊。 
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>「Adobe Acrobat Reader for Intune」行動應用程式的已更新支援聲明<!--5746776-->
 我們在 8 月底於 MC188653 中分享了 Adobe Acrobat Reader for Intune 行動應用程式會在 2019 年 12 月 1 日終止生命週期，且 Adobe 已規劃在其主要 Acrobat Reader 應用程式中支援 Intune 的應用程式保護原則。 從那時起，我們收到客戶意見反應，我們需要提供更多時間來繼續讓 IT 系統管理員以 Adobe Acrobat Reader for Intune 為目標，以及讓終端使用者繼續使用它。 有鑑於 Adobe Acrobat Reader for Intune 在終端使用者裝置上有高使用量，以及其在企業案例中的重要性，我們想要確保任何體驗都符合您組織的應用程式保護需求。 

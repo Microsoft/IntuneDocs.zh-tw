@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 50973d883a3d31089e16dca5a9021643a821a3fb
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036634"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517451"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Wandera Mobile Threat Defense 與 Intune 的連接器  
 
@@ -48,7 +48,7 @@ Intune 中的合規性原則包括以 Wandera 風險評定為基礎的 MTD  規�
 - Android 5.0 及更新版本  
 - iOS 10.2 與更新版本  
 
-如需有關平台與裝置的詳細資訊，請參閱 [Wandera 網站](https://www.wandera.com/classic-help-center/) \(英文\)。
+如需有關平台與裝置的詳細資訊，請參閱 [Wandera 網站](https://www.wandera.com/mobile-threat-defense/) \(英文\)。
 
 ## <a name="prerequisites"></a>先決條件  
 
