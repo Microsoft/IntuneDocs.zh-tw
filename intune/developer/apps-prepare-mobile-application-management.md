@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a8b5b323c4bb80cd15bf9c6c8f0f7a8be577d6bf
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
+ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653932"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912670"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -41,7 +41,6 @@ App Wrapping Tool 主要用於**內部**企業營運 (LOB) 應用程式。 此�
 ### <a name="reasons-to-use-the-app-wrapping-tool"></a>使用 App Wrapping Tool 的原因
 
 * 您的應用程式沒有內建資料保護功能
-* 您的應用程式很簡單
 * 您的應用程式部署於內部
 * 您沒有 App 原始程式碼的存取權限
 * 您未開發應用程式
@@ -63,7 +62,6 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 ### <a name="reasons-to-use-the-sdk"></a>使用 SDK 的理由
 
 * 您的應用程式沒有內建資料保護功能
-* 您的應用程式很複雜且包含許多體驗
 * 您的應用程式部署在公開應用程式商店 (例如 Google Play 或 Apple 的 App Store)
 * 您是應用程式開發人員並且擁有使用 SDK 的技術背景
 * 您的應用程式有其他的 SDK 整合
@@ -76,13 +74,13 @@ App SDK 的設計主要是針對 Apple App Store 或 Google Play Store 中具有
 |**iOS**|是 - 使用 [Intune App SDK Xamarin 繫結](app-sdk-xamarin.md)。|否|
 |**Android**| 是 - 使用 [Intune App SDK Xamarin 繫結](app-sdk-xamarin.md)。|否|
 
-### <a name="not-using-an-app-development-platform-listed-above"></a>不使用以上所列的應用程式開發平臺嗎？
+## <a name="not-using-an-app-development-platform-listed-above"></a>不是使用上列應用程式開發平台嗎？
 
 Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamarin、Xamarin.Forms 及 Cordova 平台所建置的應用程式，主動地進行測試並維護支援。 雖然有部分客戶成功搭配其他平台 (例如 React Native 和 NativeScript) 整合 Intune SDK，我們並沒有針對使用我們所不支援之平台的應用程式開發人員提供明確的指引或外掛程式。 
 
 ## <a name="feature-comparison"></a>功能比較
 
-此表格列出您可以用於 App SDK 和 App Wrapping Tool 的設定。
+如果應用程式是使用 App SDK 或 App Wrapping Tool，則其設定如此表格所列。 有些功能需要應用程式開發人員在 Intune SDK 的基本整合之外套用一些邏輯，因此，如果應用程式使用 App Wrapping Tool，就不會啟用那些功能。 
 
 |功能|App SDK|App Wrapping Tool|
 |-----------|---------------------|-----------|
@@ -97,7 +95,7 @@ Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamari
 |允許指紋而非 PIN|X|X|
 |允許臉部辨識而非 PIN (僅限 iOS)|X|X|
 |需要公司認證才能存取|X|X|
-|設定 PIN 過期|X|X|
+|設定 PIN 到期日|X|X|
 |封鎖受管理的應用程式在已進行 JB 或 Root 破解的裝置上執行|X|X|
 |加密應用程式資料|X|X|
 |在指定的分鐘數之後重新檢查存取需求|X|X|
@@ -107,7 +105,7 @@ Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamari
 |完整抹除應用程式資料|X|X|
 |在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
 |避免「另存新檔」|X||
-|目標應用程式設定（或透過「MAM 通道」的應用程式設定）|X||
+|目標應用程式組態 (或透過「MAM 通道」設定應用程式)|X|X|
 |支援多重身分識別|X||
 |可自訂樣式 |X|||
 |使用 Citrix mVPN 的隨選應用程式 VPN 連線|X|X| 
@@ -117,8 +115,13 @@ Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamari
 |需要最低的作業系統|X|X|
 |需要最低的 Android 安全性修補程式版本 (僅 Android)|X|X|
 |需要最低的 Intune SDK for iOS (僅限 iOS)|X|X|
-|SafetyNet 裝置證明（僅限 Android）|X|X|
-|對應用程式進行威脅掃描（僅限 Android）|X|X|
+|SafetyNet 裝置證明 (僅限 Android)|X|X|
+|對應用程式進行威脅掃描 (僅限 Android)|X|X|
+|需要最高 Mobile Threat Defense 廠商裝置風險等級|X||
+|設定組織帳戶的應用程式通知內容|X|X|
+|需要使用核准的鍵盤 (僅限 Android)|X|X|
+|需要應用程式保護原則 (條件式存取)|X||
+|需要經過核准的用戶端應用程式 (條件式存取)|X||
 
 ## <a name="next-steps"></a>後續步驟
 

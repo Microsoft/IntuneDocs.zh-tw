@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: aa8d4fd8dabd862899cab116c61d4ae4584d398c
-ms.sourcegitcommit: 7cc45ef52dda08479bc6bdff7d11d2f6c0e7b93b
+ms.openlocfilehash: 10f3d4c54d9a8fcb797ae3359b1a833ac9080548
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/06/2019
-ms.locfileid: "74899384"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912694"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -32,7 +32,7 @@ ms.locfileid: "74899384"
 ## <a name="overview"></a>概觀
 [Intune App SDK Xamarin 繫結](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)可讓您在以 Xamarin 建置的 iOS 和 Android 應用程式中啟用 [Intune 應用程式保護原則](../apps/app-protection-policy.md)。 繫結可讓開發人員輕鬆將 Intune 應用程式內的保護功能建置到以 Xamarin 為基礎的應用程式中。
 
-「Microsoft Intune App SDK Xamarin 繫結」可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 合併至以 Xamarin 開發的應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式， IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
+「Microsoft Intune App SDK Xamarin 繫結」可讓您將 Intune 應用程式保護原則 (也稱為 APP 或 MAM 原則) 合併至以 Xamarin 開發的應用程式中。 啟用 MAM 的應用程式是與 Intune App SDK 整合的應用程式。 IT 系統管理員可在 Intune 主動管理應用程式時，將應用程式保護原則部署至行動應用程式。
 
 ## <a name="whats-supported"></a>支援的項目
 
@@ -52,14 +52,25 @@ ms.locfileid: "74899384"
 
 使用「Intune App SDK Xamarin 繫結」建置的 Xamarin 應用程式現在於 Intune 行動裝置管理 (MDM) 已註冊裝置和未註冊裝置上，都可接收 Intune 應用程式保護原則。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-檢閱[授權條款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 列印並保留一份授權條款供您備查。 下載並使用「Intune App SDK Xamarin 繫結」即表示您同意這些授權條款。 若貴用戶不同意這些授權條款，請不要使用「軟體」。
+檢閱[授權條款](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/blob/master/Microsoft%20License%20Terms%20Intune%20App%20SDK%20Xamarin%20Component.pdf)。 列印並保留一份授權條款供您備查。 下載並使用「Intune App SDK Xamarin 繫結」即表示您同意這些授權條款。 如果您不接受這些條款，請不要使用此軟體。
 
 Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.microsoft.com/documentation/articles/active-directory-authentication-libraries/) \(部分機器翻譯\) 進行其[驗證](https://azure.microsoft.com/documentation/articles/active-directory-authentication-scenarios/) \(部分機器翻譯\) 與條件式啟動情節，在這些情況下，必須為應用程式設定 [Azure Active Directory](https://azure.microsoft.com/documentation/articles/active-directory-whatis/)。 
 
 如果您的應用程式已設定為使用 ADAL 或 MSAL，且具有自己的自訂用戶端識別碼來用以向 Azure Active Directory 進行驗證，則請務必遵循步驟為 Intune 行動應用程式管理 (MAM) 服務提供您的 Xamarin 應用程式權限。 使用[開始使用 Intune SDK 指南](app-sdk-get-started.md)的＜[將您的應用程式存取權授與 Intune 應用程式保護服務](app-sdk-get-started.md#give-your-app-access-to-the-intune-app-protection-service-optional)＞一節中的指示。
 
+## <a name="security-considerations"></a>安全性考量
+
+若要防止潛在的詐騙、資訊洩漏和權限提升攻擊：
+
+* 確保 Xamarin 應用程式開發是在安全的工作工作站上進行。
+* 確保繫結來自有效的 Microsoft 來源：
+  * [MS Intune App SDK NuGet 設定檔](https://www.nuget.org/profiles/msintuneappsdk) \(英文\)
+  * [Intune App SDK Xamarin GitHub 存放庫](https://github.com/msintuneappsdk/intune-app-sdk-xamarin) \(英文\)
+* 將您專案的 NuGet 設定設為信任已簽署、未修改的 NuGet 套件。
+如需詳細資訊，請參閱[安裝已簽署的套件](https://docs.microsoft.com/nuget/consume-packages/installing-signed-packages)。
+* 保護包含 Xamarin 應用程式的輸出目錄。 考慮針對輸出使用使用者層級目錄。
 
 
 ## <a name="enabling-intune-app-protection-polices-in-your-ios-mobile-app"></a>在 iOS 行動應用程式中啟用 Intune 應用程式保護原則
@@ -94,7 +105,7 @@ Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.micros
        string enrolledAccount = IntuneMAMEnrollmentManager.Instance.EnrolledAccount;
       ```      
 ### <a name="sample-applications"></a>範例應用程式
-強調 Xamarin 中 MAM 功能的範例應用程式可在[GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios)上取得。
+強調 Xamarin.iOS 應用程式中 MAM 功能的應用程式範例可在 [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) \(英文\) 找到。
 
 > [!NOTE] 
 > 沒有 iOS 的 Remapper。 整合到 Xamarin.Forms 應用程式應該與一般 Xamarin.iOS 專案相同。 
@@ -109,9 +120,9 @@ Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.micros
 整合 Intune App SDK 的完整概觀位於 [Microsoft Intune App SDK for Android 開發人員指南](app-sdk-android.md)。 當您閱讀本指南並整合 Intune App SDK 與 Xamarin 應用程式時，下列各節旨在強調以 Java 開發的原生 Android 應用程式與以 C# 開發的 Xamarin 應用程式兩者之間差異。 這些區段應該視為補充，無法取代閱讀完整的指南。
 
 #### <a name="remapper"></a>Remapper
-從1.4428.1 版本開始，您可以將 `Microsoft.Intune.MAM.Remapper` 封裝新增到 Xamarin Android 應用程式中，做為執行 MAM 類別、方法和系統服務取代的[組建工具](app-sdk-android.md#build-tooling)。 如果包含 Remapper，就會在建立應用程式時自動執行已重新命名方法和 MAM 應用程式區段的 MAM 對等取代部分。
+從 1.4428.1 版開始，您可以將 `Microsoft.Intune.MAM.Remapper` 套件新增至 Xamarin.Android 應用程式，作為[建置工具](app-sdk-android.md#build-tooling)來執行 MAM 類別、方法和系統服務取代。 如果包含 Remapper，就會在建立應用程式時自動執行已重新命名方法和 MAM 應用程式區段的 MAM 對等取代部分。
 
-若要從 ification 由 Remapper 排除類別，可以將下列屬性新增至您的專案 `.csproj` 檔案。
+若要使用 Remapper 排除來自 MAM-ification 的類別，您可以將下列屬性新增到專案 `.csproj` 檔案。
 
 ```xml
   <PropertyGroup>
@@ -120,13 +131,13 @@ Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.micros
 ```
 
 > [!NOTE]
-> 此時，Remapper 的問題會導致無法在 Xamarin Android 應用程式中進行偵測。 建議手動整合，以在解決此問題之前，先對應用程式進行 debug。
+> Remapper 目前會防止在 Xamarin. Android 應用程式中進行偵錯。 建議進行手動整合，以對您的應用程式進行偵錯。
 
 #### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重新命名的方法](app-sdk-android.md#renamed-methods)
 在許多情況下，Android 類別中可用的方法已在 MAM 取代類別中被標示為完稿。 在此情況下，MAM 取代類別會提供您應該覆寫且具有類似名稱的方法 (名稱具有 `MAM` 尾碼)。 例如，當衍生自 `MAMActivity`，而不是覆寫 `OnCreate()` 然後呼叫 `base.OnCreate()` 時，`Activity` 必須覆寫 `OnMAMCreate()` 並呼叫 `base.OnMAMCreate()`。
 
 #### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 應用程式](app-sdk-android.md#mamapplication)
-您的應用程式必須定義 `Android.App.Application` 類別。 如果手動整合 MAM，它必須繼承自 `MAMApplication`。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
+您的應用程式必須定義 `Android.App.Application` 類別。 如果手動整合 MAM，其必須繼承自 `MAMApplication`。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
 
 ```csharp
     [Application]
@@ -185,7 +196,7 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 針對 `Xamarin.Forms` 應用程式，`Microsoft.Intune.MAM.Remapper` 套件會透過將 `MAM` 類別插入到常用 `Xamarin.Forms` 類別的類別階層，自動執行 MAM 類別取代。 
 
 > [!NOTE]
-> 除了完成以上詳述的 Xamarin.Android 整合，也要進行 Xamarin.Forms 整合。 Remapper 的行為不同于 Xamarin 應用程式，因此仍需要進行手動 MAM 更換。
+> 除了完成以上詳述的 Xamarin.Android 整合，也必須進行 Xamarin.Forms 整合。 針對 Xamarin 應用程式，Remapper 的行為有所不同，因此必須完成手動 MAM 取代。
 
 一旦 Remapper 新增至您的專案，您必須執行 MAM 對等取代。 例如，`FormsAppCompatActivity` 和 `FormsApplicationActivity` 可以繼續用於您提供的應用程式，假設 `OnCreate` 和 `OnResume` 的覆寫分別取代為 MAM 對等項目 `OnMAMCreate` 和 `OnMAMResume`。
 
@@ -209,11 +220,11 @@ IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();
 > Remapper 會重寫 Visual Studio 用於 IntelliSense 自動完成的相依性。 因此，新增 Remapper 時您可能需要重新載入並重建專案，IntelliSense 才能正確識別變更。
 
 #### <a name="troubleshooting"></a>疑難排解
-* 如果您的應用程式在啟動時遇到空白的白色畫面，則您可能需要強制在主執行緒上執行導覽呼叫。
-* Intune SDK Xamarin 系結不支援使用跨平臺架構（例如 MvvmCross）的應用程式，因為 MvvmCross 與 Intune MAM 類別之間發生衝突。 雖然有些客戶在將應用程式移至單純的 Xamarin 後可能已成功整合，但我們不會為使用 MvvmCross 的應用程式開發人員提供明確的指導方針或外掛程式。
+* 如果您的應用程式在啟動時遇到空白的白色畫面，您可能需要在主執行緒上強制執行導覽呼叫。
+* Intune SDK Xamarin 繫結不支援使用跨平台架構 (例如 MvvmCross) 的應用程式，因為 MvvmCross 與 Intune MAM 類別之間的衝突。 雖然有些客戶在將應用程式移至純 Xamarin.Forms 後已成功整合，但我們不會為使用 MvvmCross 的應用程式開發人員提供明確的指導方針或外掛程式。
 
 ### <a name="company-portal-app"></a>公司入口網站應用程式
-Intune SDK Xamarin 系結會依賴裝置上的[公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal)Android 應用程式是否存在，以啟用應用程式保護原則。 公司入口網站會從 Intune 服務擷取應用程式保護原則。 應用程式初始化時，它會載入原則和程式碼，以從公司入口網站強制執行該原則。 使用者不需要登入。
+Intune SDK Xamarin 繫結必須仰賴裝置上的[公司入口網站](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal) Android 應用程式來啟用應用程式保護原則。 公司入口網站會從 Intune 服務擷取應用程式保護原則。 應用程式初始化時，它會載入原則和程式碼，以從公司入口網站強制執行該原則。 使用者不需要登入。
 
 > [!NOTE]
 > 當 **Android** 裝置上沒有公司入口網站應用程式時，由 Intune 管理的應用程式會具有和不支援 Intune 應用程式保護原則的一般應用程式相同的行為。
@@ -221,7 +232,7 @@ Intune SDK Xamarin 系結會依賴裝置上的[公司入口網站](https://play.
 對於沒有裝置註冊的應用程式保護，使用者「不」 __ 需要使用公司入口網站應用程式註冊裝置。
 
 ### <a name="sample-applications"></a>範例應用程式
-著重于在 Xamarin 和 Xamarin 中進行 MAM 功能的範例應用程式。您可以在[GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps)上取得表單應用程式。
+強調 Xamarin.Android 和 Xamarin.Forms 應用程式中 MAM 功能的應用程式範例可在 [GitHub](https://github.com/msintuneappsdk/Taskr-Sample-Intune-Xamarin-Android-Apps) \(英文\) 找到。
 
 ## <a name="support"></a>支援
 如果您的組織是現有 Intune 客戶，請與您的 Microsoft 支援代表合作以建立支援票證，並[在 GitHub 問題頁面](https://github.com/msintuneappsdk/intune-app-sdk-xamarin/issues)上建立問題。 我們會儘快提供協助。 

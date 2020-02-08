@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5381d139247424d976b6b510d62681f623203a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: ac63ef1f35e7b4730e275c6c9e566c53463c72ce
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72490516"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754791"
 ---
 # <a name="how-to-use-azure-ad-to-access-the-intune-apis-in-microsoft-graph"></a>如何在 Microsoft Graph 中使用 Azure AD 存取 Intune API
 
@@ -62,7 +62,7 @@ ms.locfileid: "72490516"
 
 註冊應用程式以使用 Microsoft Graph API：
 
-1. 使用系統管理認證登入[Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 。
+1. 使用系統管理員認證登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973)。
 
     您可以視需要使用以下項目：
     - 租用戶管理帳戶。
@@ -90,15 +90,15 @@ ms.locfileid: "72490516"
 
     1. 記下 [應用程式識別碼]  值。
 
-    2. 選擇 [設定]  &gt; [API 存取權]  &gt; [必要權限]  。
+    2. 選擇 [設定]  &gt; [API 存取]  &gt; [必要權限]  。
 
     <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
-6. 從 [必要權限]  刀鋒視窗中，選擇 [新增]  &gt; [加入 API 存取權]  &gt; [選取 API]  。
+6. 從 [必要權限]  刀鋒視窗中，選擇 [新增]  &gt; [加入 API 存取權]  &gt;[選取 API]  。
 
     <img src="../media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
-7. 從 [選取API]  刀鋒視窗中，選擇 [Microsoft Graph]  &gt; [選取]  。  [啟用存取]  刀鋒視窗即會開啟，並列出可供您應用程式使用的權限範圍。
+7. 從 [選取 API]  刀鋒視窗中，選擇 [Microsoft Graph]  &gt; [選取]  。  [啟用存取]  刀鋒視窗即會開啟，並列出可供您應用程式使用的權限範圍。
 
     <img src="../media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
@@ -128,7 +128,7 @@ ms.locfileid: "72490516"
 
   2. 將 `availableToOtherTenants` 的值變更為 `true`。
 
-  3. 儲存您的變更。
+  3. 儲存變更。
 
 ## <a name="intune-permission-scopes"></a>Intune 權限範圍
 
@@ -185,7 +185,7 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 
 ### <a name="cfg-ro"></a>DeviceManagementConfiguration.Read.All
 
-- **啟用存取**設定：__讀取 Microsoft Intune 裝置設定和原則__
+- **啟用存取**設定：__讀取 Microsoft Intune 裝置設定及原則__
 
 - 允許下列實體內容和狀態的讀取存取權：
   - 裝置設定
@@ -194,7 +194,7 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 
 ### <a name="cfg-ra"></a>DeviceManagementConfiguration.ReadWrite.All
 
-- **啟用存取**設定：__讀取和寫入 Microsoft Intune 裝置設定和原則__
+- **啟用存取**設定：__讀取及寫入 Microsoft Intune 裝置設定和原則__
 
 - 可允許與 __DeviceManagementConfiguration.Read.All__ 相同的作業
 
@@ -240,7 +240,7 @@ __讀取 Microsoft Intune 設定__ | DeviceManagementServiceConfig.Read.All
 
 - 此外，也允許下列遠端動作：
   - 尋找裝置
-  - 略過啟用鎖定
+  - 停用啟用鎖定
   - 要求遠端協助
 
 ### <a name="rac-ro"></a>DeviceManagementRBAC.Read.All

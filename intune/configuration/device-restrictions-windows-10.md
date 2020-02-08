@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81da5ca8e7eaa76f9a6705cc9e3c816234c461db
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
-ms.translationtype: HT
+ms.openlocfilehash: 0dd1ecb5666b8bbb8b26a001be56372d86839f31
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517553"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812321"
 ---
 # <a name="windows-10-and-newer-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 Windows 10 (和更新版本) 裝置設定
 
@@ -39,8 +39,11 @@ ms.locfileid: "76517553"
 
 這些設定使用 [ApplicationManagement 原則 CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement)，它也會列出支援的 Windows 版本。
 
-- **App Store** (僅限行動裝置版)：**未設定** (預設) 允許終端使用者在行動裝置上存取 App store。 [封鎖]  ：防止使用 App store。
-- **自動更新來自市集的應用程式**：**未設定** (預設) 允許自動更新從 Microsoft Store 安裝的應用程式。 [封鎖]  ：防止自動安裝更新。
+- **應用程式市集** (僅限行動裝置)：[封鎖]  會防止使用者在行動裝置上存取應用程式市集。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會允許使用者存取應用程式市集。
+- **自動更新來自市集的應用程式**：[封鎖]  會防止自動從 Microsoft Store 安裝更新。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會允許自動更新從 Microsoft Store 安裝的應用程式。
+
+  [ApplicationManagement/AllowAppStoreAutoUpdate CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowappstoreautoupdate) \(部分機器翻譯\)
+
 - **安裝信任的應用程式**：選擇是否可以安裝非 Microsoft Store 應用程式，也稱為側載。 側載是安裝、然後執行或測試未經 Microsoft Store 認證的應用程式。 例如，僅公司內部使用的應用程式。 選項包括：
   - **未設定** (預設值)：Intune 不會變更或更新此設定。
   - **封鎖**：防止側載。 無法安裝非 Microsoft Store 應用程式。
@@ -51,16 +54,36 @@ ms.locfileid: "76517553"
   - **允許**：允許開發人員模式和側載應用程式。
 
   [啟用您的裝置用於開發](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)有這項功能的詳細資訊。
+  
+  [ApplicationManagement/AllowAllTrustedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowalltrustedapps) \(部分機器翻譯\)
 
-- **共用的使用者應用程式資料**：選擇 [允許]  ，則應用程式資料可供相同裝置的不同使用者共用，也可與該應用程式的其他執行個體共用。 [未設定]  (預設) 防止與相同應用程式的其他使用者及其他執行個體共用資料。
-- **僅使用私人市集**：[允許]  僅允許從私人市集下載應用程式，不會從包括零售目錄在內的公用儲存區下載應用程式。 [未設定]  (預設) 只允許從私人市集下載應用程式，不得從公用市集下載。
-- **啟動來自市集的應用程式**：[封鎖]  會停用預先安裝於裝置上，或是從 Microsoft Store 下載的所有應用程式。 [未設定]  (預設) 允許開啟這些應用程式。
-- **將應用程式資料安裝在系統磁碟區**：[封鎖]  會阻止應用程式將資料儲存在裝置的系統磁碟區上。 [未設定]  (預設) 允許應用程式將資料儲存在系統磁碟區。
-- **將應用程式安裝在系統磁碟機**：[封鎖]  會防止應用程式安裝在裝置的系統磁碟機上。 [未設定]  (預設) 允許應用程式安裝在系統磁碟機上。
-- **遊戲 DVR** (僅限桌面版)：[封鎖]  會停用 Windows 遊戲錄影和廣播。 [未設定]  (預設) 允許遊戲錄影和廣播。
+- **共用的使用者應用程式資料**：選擇 [允許]  ，則應用程式資料可供相同裝置的不同使用者共用，也可與該應用程式的其他執行個體共用。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會防止與相同應用程式的其他使用者及其他執行個體共用資料。
+
+  [ApplicationManagement/AllowSharedUserAppData CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowshareduserappdata) \(部分機器翻譯\)
+
+- **僅使用私人市集**：[允許]  僅允許從私人市集下載應用程式，不會從包括零售目錄在內的公用儲存區下載應用程式。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會允許從私人市集和公用市集下載應用程式。
+
+  [ApplicationManagement/RequirePrivateStoreOnly CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-requireprivatestoreonly) \(部分機器翻譯\)
+
+- **啟動來自市集的應用程式**：[封鎖]  會停用預先安裝於裝置上，或是從 Microsoft Store 下載的所有應用程式。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會允許開啟這些應用程式。
+
+  [ApplicationManagement/DisableStoreOriginatedApps CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-disablestoreoriginatedapps) \(部分機器翻譯\)
+
+- **將應用程式資料安裝在系統磁碟區**：[封鎖]  會阻止應用程式將資料儲存在裝置的系統磁碟區上。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會允許應用程式將資料儲存在系統磁碟區。
+
+  [ApplicationManagement/RestrictAppDataToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictappdatatosystemvolume) \(部分機器翻譯\)
+
+- **將應用程式安裝在系統磁碟機**：[封鎖]  會防止應用程式安裝在裝置的系統磁碟機上。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會允許應用程式安裝在系統磁碟機。
+
+  [ApplicationManagement/RestrictAppToSystemVolume CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-restrictapptosystemvolume) \(部分機器翻譯\)
+
+- **遊戲 DVR** (僅限桌面版)：[封鎖]  會停用 Windows 遊戲錄影和廣播。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，OS 可能會允許遊戲錄影和廣播。
+
+  [ApplicationManagement/AllowGameDVR CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-allowgamedvr) \(部分機器翻譯\)
+
 - **僅限來自 Store 的應用程式**：此設定會決定使用者從 Microsoft Store 以外位置安裝應用程式時的使用者體驗。 選項包括：
 
-  - **未設定** (預設值)：允許使用者從 Microsoft Store 以外位置安裝應用程式，包括其他原則設定中定義的應用程式。  
+  - **未設定** (預設值)：Intune 不會變更或更新此設定。 根據預設，OS 可能會允許使用者從 Microsoft Store 以外的位置安裝應用程式，包括其他原則設定中定義的應用程式。  
   - **任何位置**：關閉應用程式建議，並允許使用者從任何位置安裝應用程式。  
   - **僅限 Store**：強制終端使用者只從 Microsoft Store 安裝應用程式。
   - **建議**：從 Microsoft Store 中提供的網頁安裝應用程式時，使用者會看到一則訊息，建議其從市集下載。  
@@ -68,11 +91,11 @@ ms.locfileid: "76517553"
 
   [SmartScreen/EnableAppInstallControl CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-smartscreen#smartscreen-enableappinstallcontrol)
 
-- **由使用者控制安裝**：設定為 [未設定]  (預設) 時，Windows Installer 會阻止使用者變更通常保留給系統管理員的安裝選項，例如，進入安裝檔案的目錄。 [封鎖]  允許使用者變更這些安裝選項，並略過一些 Windows Installer 安全性功能。
+- **由使用者控制安裝**：[封鎖]  會防止使用者變更通常保留給系統管理員的安裝選項，例如輸入目錄以安裝檔案。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，Windows Installer 可能會防止使用者變更這些安裝選項，並略過一些 Windows Installer 安全性功能。
 
   [ApplicationManagement/MSIAllowUserControlOverInstall CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msiallowusercontroloverinstall) \(英文\)
 
-- **以較高的權限安裝應用程式**：設定為 [未設定]  (預設) 時，系統會在安裝系統管理員未部署或提供的程式時套用目前使用者的權限。 [封鎖]  會指示 Windows Installer 在系統上安裝任何程式時使用較高的權限。 這些權限會延伸至所有程式。
+- **以較高的權限安裝應用程式**：[封鎖]  會指示 Windows Installer 在系統上安裝任何程式時使用較高的權限。 這些權限會延伸至所有程式。 當設定為 [未設定]  (預設) 時，Intune 不會變更或更新此設定。 根據預設，系統可能會在安裝系統管理員未部署或提供的程式時，套用目前使用者的權限。 
 
   [ApplicationManagement/MSIAlwaysInstallWithElevatedPrivileges CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-applicationmanagement#applicationmanagement-msialwaysinstallwithelevatedprivileges) \(英文\)
 
@@ -232,7 +255,7 @@ GDI DPI 縮放比例會讓非 DPI 感知的應用程式變成依監視器 DPI �
 
 - **鎖定畫面圖片 URL (僅限桌面版)** ：輸入 JPG、JPEG 或 PNG 格式圖片的 URL，這些圖片會作為 Windows 鎖定畫面桌布使用。 例如，輸入 `https://contoso.com/image.png`。 這項設定會鎖定映像，且以後不能變更。
 
-  [個人化/LockScreenImageUrl CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/personalization-csp)
+  [個人化/LockScreenImageUrl CSP](https://docs.microsoft.com/windows/client-management/mdm/personalization-csp)
 
 - **使用者可設定的畫面逾時 (僅限行動裝置版)** ：[允許]  可讓使用者設定畫面逾時。 [未設定]  (預設) 不提供使用者此選項。
 
