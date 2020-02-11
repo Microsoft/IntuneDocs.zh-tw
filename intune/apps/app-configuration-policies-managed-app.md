@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68032f47be043e8c49b6ad922392d14549293c35
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564280"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755556"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -33,16 +33,29 @@ ms.locfileid: "74564280"
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]   > [受管理的應用程式]  。
-3. 使用下列詳細資料：
-    - **名稱**  
-      將在 Azure 入口網站中顯示的設定檔名稱。
-    - **描述**  
-      將在 Azure 入口網站中顯示的設定檔描述。
+3. 在 [基本]  頁面上，設定下列詳細資料：
+    - **名稱**：將在 Azure 入口網站中顯示的設定檔名稱。
+    - **描述**：將在 Azure 入口網站中顯示的設定檔描述。
+    - **裝置註冊類型**：已選取受控應用程式。
 4. 選擇 [選取公用應用程式]  或 [選取自訂應用程式]  來選擇您要設定的應用程式。 從應用程式清單中選取您已經使用 Intune 核准並同步處理的應用程式。
-5. 對於應用程式支援的每個組態設定，請輸入 [名稱]  和 [值]  。  
+5. 按一下 [下一步]  以顯示 [設定]  頁面。
+6. 對於應用程式支援的每個組態設定，請輸入 [名稱]  和 [值]  。 
+
+   啟用 Intune App SDK 的應用程式支援機碼值組中的設定。 請參閱每個應用程式的文件，以深入了解支援的機碼值設定。 請注意，您可以使用會動態填入應用程式所產生資料的權杖。 如需詳細資訊，請參閱[使用權杖的設定值](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens)。 如需適用於 iOS 的 Outlook 應用程式設定原則設定的詳細資訊，請參閱[使用 Microsoft Intune 管理適用於 iOS 的 Outlook 應用程式](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx) \(機器翻譯\)。
+
     若要刪除設定，請選擇省略符號 ( **...** )，然後選取 [刪除]  。  
-    
-啟用 Intune App SDK 的應用程式支援機碼值組中的設定。 請參閱每個應用程式的文件，以深入了解支援的機碼值設定。 請注意，您可以使用會動態填入應用程式所產生資料的權杖。 如需適用於 iOS 的 Outlook 應用程式設定原則設定的詳細資訊，請參閱[使用 Microsoft Intune 管理適用於 iOS 的 Outlook 應用程式](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx) \(機器翻譯\)。
+
+7. 按一下 [下一步]  以顯示 [指派]  頁面。
+8. 按一下 [選取要納入的群組]  。
+9. 在 [選取要納入的群組]  窗格中選取群組，然後按一下 [選取]  。
+10. 按一下 [選取要排除的群組]  以顯示相關的窗格。
+11. 選擇您要排除的群組，然後按一下 [選取]  。
+
+    >[!NOTE]
+    >新增群組時，如已包含任何其他群組用於指定的指派類型，就會預先選取且無法針對其他包含指派類型進行變更。 因此，已使用的該群組，不能用為排除的群組。
+
+12. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。
+13. 按一下 [建立]  以將應用程式設定原則新增至 Intune。
 
 ## <a name="configuration-values-for-using-tokens"></a>使用權杖的設定值
 
@@ -57,7 +70,6 @@ Intune 支援組態設定中的下列權杖類型。 不支援其他自訂的索
 - \{\{userid\}\} - 例如，3ec2c00f-b125-4519-acf0-302ac3761822
 - \{\{username\}\} - 例如，John Doe
 - \{\{PrimarySMTPAddress\}\} - 例如，testuser@ad.domain.com
-
 
 > [!Note]  
 > \{\{ 和 \}\} 字元僅供權杖類型使用，絕不能用於其他用途。

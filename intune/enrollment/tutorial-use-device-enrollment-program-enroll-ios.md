@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 Customer intent: As an Intune admin, I want to set up the Apple's corporate device enrollment features so that corporate devices can automatically enroll in Intune.
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 56b8ab9507acda8fc1145bd65c4438da838dd806
-ms.sourcegitcommit: fc4b38660129d615068f34ad4b96b900d73f7b53
+ms.openlocfilehash: f5599e7ea8c9a26c4624f98133db566fb07c89af
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74558176"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971788"
 ---
 # <a name="tutorial-use-apples-corporate-device-enrollment-features-in-apple-business-manager-abm-to-enroll-ios-devices-in-intune"></a>教學課程：使用 Apple Business Manager (ABM) 中的公司裝置註冊功能在 Intune 中註冊 iOS 裝置
 Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。 Intune 也支援 Apple 較舊的裝置註冊計劃 (DEP) 入口網站，但建議您使用 Apple Business Manager 重新開始。 使用 Microsoft Intune 和 Apple 公司裝置註冊，當使用者第一次開啟裝置時，就會自動安全地註冊裝置。 因此，您可以將裝置提供給許多使用者，而不必個別設定每部裝置。 
@@ -34,7 +34,7 @@ Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](../fundamentals/free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - 在 [Apple School Manager](https://business.apple.com) 或 [Apple 裝置註冊計劃](http://deploy.apple.com)中購買的裝置
 - 設定[行動裝置管理授權單位](../fundamentals/mdm-authority-set.md)
 - 取得 [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -67,7 +67,7 @@ Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。
 
 8. 針對 [選擇動作]  選擇 [Assign to Server] (指派給伺服器))  ，然後選擇指定給 Microsoft Intune 的 &lt;伺服器名稱&gt;，再選擇 [確定]  。 Apple 入口網站會將指定的裝置指派給 Intune 伺服器以便管理 ，然後顯示 [指派完成]  。
 
-   在 Apple 入口網站中，移至 [部署計劃]  &gt; [裝置註冊計劃]  &gt; [檢視指派歷程記錄]  查看裝置及其 MDM 伺服器指派的清單。
+   在 Apple 入口網站中，移至 [部署計劃]  &gt; [裝置註冊計劃]  &gt; [檢視指派歷程記錄]  以查看裝置與其 MDM 伺服器指派的清單。
 
 9. 在 Azure 入口網站的 Intune 中，提供用來建立此權杖的 Apple ID 供日後參考。
 
@@ -90,7 +90,7 @@ Apple Business Manager 中的裝置註冊功能簡化了註冊裝置的程序。
 
 5. 決定您希望裝置使用或不使用 [使用者親和性]  來註冊。 使用者親和性專用於特定使用者要使用的裝置。 若您的使用者要使用公司入口網站進行像是安裝應用程式等服務，選擇 [使用使用者親和性來註冊]  。 如果您的使用者不需要公司入口網站，或您想要針對許多使用者佈建裝置，請選擇 [不使用使用者親和性來註冊]  。
 
-6. 如果您選擇使用使用者親和性來註冊，請決定要使用公司入口網站還是 Apple Setup Assistant 進行驗證。 如果您想要使用 Multi-factor Authentication，允許使用者第一次登入時變更密碼，或提示使用者在註冊期間重設其過期的密碼，請在 [使用公司入口網站，而非 Apple Setup Assistant 進行驗證]  下選擇 [是]  。 如果您想要使用 Apple 所提供透過 Apple Setup Assistant 進行的基本 HTTP 驗證，請選擇 [否]  。 如果選擇 [是]  ，且希望公司入口網站應用程式自動在終端使用者的裝置上更新，則請透過 Apple 的大量採購方案 (VPP)，將公司入口網站另行部署為這些使用者的必要應用程式。
+6. 如果您選擇使用使用者親和性來註冊，請決定要使用公司入口網站還是 Apple Setup Assistant 進行驗證。 如果您想要使用 Multi-factor Authentication，允許使用者第一次登入時變更密碼，或提示使用者在註冊期間重設其過期的密碼，請在 [使用公司入口網站，而非 Apple Setup Assistant 進行驗證]  下選擇 [是]  。 如果您想要使用 Apple 所提供透過 Apple Setup Assistant 進行的基本 HTTP 驗證，請選擇 [否]  。 如果選擇 [是]  ，且您希望公司入口網站應用程式自動在終端使用者的裝置上更新，請透過 Apple 的大量採購方案 (VPP)，將公司入口網站另行部署為這些使用者的必要應用程式。
 
 7. 如果您選擇使用「使用者親和性」和「使用公司入口網站進行驗證」來註冊，請決定是否要使用 Apple 大量採購方案 (VPP) 安裝公司入口網站。 如果您使用 VPP 權杖安裝公司入口網站，您的使用者不須輸入 Apple ID 和密碼，即可在註冊期間從應用程式市集下載公司入口網站。 在 [使用 VPP 安裝公司入口網站]  下，選擇 [使用權杖：]  ，以選取具有公司入口網站免費授權的 VPP 權杖。 如果您不想要使用 VPP 部署公司入口網站，請在 [使用 VPP 安裝公司入口網站]  下，選擇 [不要使用 VPP]  。 
 

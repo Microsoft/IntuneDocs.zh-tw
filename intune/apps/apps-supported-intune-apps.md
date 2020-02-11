@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c199964409a91aa6f5b75ae067968e37c1b1a189
-ms.sourcegitcommit: 822a70c61f5d644216ccc401b8e8949bc39e8d4a
+ms.openlocfilehash: 5c916e5cfb09da50bfcbfbe2ac4b094172357e80
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76125325"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812391"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保護的應用程式  
 
@@ -53,7 +53,7 @@ ms.locfileid: "76125325"
 | **Microsoft Edge**<p><img alt="Microsoft app - Microsoft Edge icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-edge.png" width="100"> | Microsoft Edge 可為 Windows 10 使用者建立一個跨裝置的持續瀏覽體驗。 內容和資料會在背景中以無縫接軌的方式同步，因此使用者可以跨裝置瀏覽，而不會有任何遺漏。 熟悉的 Microsoft Edge 功能 (例如「中心」) 可讓使用者有條理地組織網頁來避免雜亂無章，讓他們在移動途中更容易尋找、檢視及管理其內容。 Microsoft Edge 專為 Windows 10 使用者而設計，可讓他們以所需的方式隨時隨地瀏覽網頁，而不會中斷其流程。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.emmx&hl=en_US)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/microsoft-edge/id1288723196?mt=8) |  
 | **Microsoft Excel**<p><img alt="Microsoft app - Microsoft Excel icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-excel.png" width="100"> | 讓 Excel 試算表在您的平板電腦和手機上看起來比以往更棒。 讓您在編輯或建立試算表時，可確信試算表不論是在電腦、Mac、平板電腦還是手機上，都完全符合您想要的樣貌。 透過熟悉的 Office 外觀和操作，以及直覺式的觸控體驗，很快便能上手操作。<p><p>此應用程式可作為 Android 和 iOS 的多重身分識別應用程式。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.office.excel)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/microsoft-excel/id586683407?mt=8) |  
 | **Power Automate**<p><img alt="Microsoft Flow icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-flow.png" width="100"> | 隨身攜帶 Power Automate 的強大功能。 使用 Power Automate，您可以在最愛的應用程式與服務之間建立自動化工作流程，來簡化業務、節省時間及以更有效率的方式工作。| [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.flow)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/microsoft-flow/id1094928825) |  
-| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | 提供一個使用 Intune 行動應用程式管理原則並由您公司 IT 系統管理員管理的網頁瀏覽解決方案。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
+| **Microsoft Intune Managed Browser**<p><img alt="Microsoft app - Microsoft Intune Managed Browser icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-intune-managed-browser.png" width="100"> | 提供一個使用 Intune 行動應用程式管理原則並由您公司 IT 系統管理員管理的網頁瀏覽解決方案。<p>**注意：** 即將淘汰 Intune Managed Browser。 請使用 Microsoft Edge 來取得受保護的 Intune 瀏覽器體驗。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.intune.mam.managedbrowser)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/microsoft-intune-managed-browser/id943264951?mt=8) |   
 | **Microsoft Invoicing**<p><img alt="Microsoft app - Microsoft Invoicing icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-invoicing.png" width="100"> | Microsoft Invoicing 可讓小型企業輕鬆建立具有專業外觀的估價單和發票、快速收款，以及節省時間。 不論您是在辦公桌前還是移動途中，Invoicing 都可讓您一方面掌握金錢動向，一方面快速建立並傳送發票、線上收款，以及減少花費在書面作業上的時間。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.dynamics.ProjectMadeira)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/microsoft-invoicing/id1145475572?mt=8) |  
 | **Microsoft Kaizala**<p><img alt="Microsoft app - Microsoft Kaizala icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-kiazala.png" width="100"> | Microsoft Kaizala 是一個專為大型群組通訊及工作管理而設計的行動應用程式和服務。 Kaizala 可讓您與包括現場員工、廠商、合作夥伴及客戶在內的整個價值鏈輕鬆地連線並協調工作，不論他們身在何處。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.mobile.polymer)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/in/app/microsoft-kaizala/id1112208399) |  
 | **Microsoft Launcher**<p><img alt="Microsoft app - Microsoft Launcher icon" src="./media/apps-supported-intune-apps/icon-m-microsoft-launcher.png" width="100"> | Microsoft Launcher (前身為 Arrow Launcher) 可以使用底色圖案、佈景主題色彩、圖示套件等將您的 Android 裝置個人化，以符合您的風格。 只要使用 Microsoft 帳戶或公司/學校帳戶，即可存取您個人化摘要中的行事曆、文件及最近活動。 您甚至可以開啟您 Windows 電腦上的相片、文件及網頁，在所有裝置上都保有高生產力。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.microsoft.launcher) |  

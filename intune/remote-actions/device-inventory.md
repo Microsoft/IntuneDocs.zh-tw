@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ce3f73834ffdc2648dae345f8fa2a8233d2bb8c9
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75756029"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754196"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -84,7 +84,7 @@ ms.locfileid: "75756029"
 |ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|Windows、iOS、Android|
 |註冊日期|裝置在 Intune 中註冊的日期與時間。|Windows、iOS、Android|
 |上次連絡|裝置最後連線至 Intune 的日期與時間。|Windows、iOS、Android|
-|啟用鎖定略過碼|此代碼可用來略過啟用鎖定。|iOS|
+|啟用鎖定略過碼|此代碼可用來停用啟用鎖定。|iOS|
 |已註冊 Azure AD|若為 [是]  ，表示裝置已向 Azure Directory 註冊。|Windows、iOS、Android|
 |Intune 已註冊|若為 [是]  ，表示裝置已向 Intune 註冊|Windows、iOS、Android|
 |合規性|裝置的合規性狀態。|Windows、iOS、Android|
@@ -92,8 +92,6 @@ ms.locfileid: "75756029"
 |EAS 啟用識別碼|裝置的 Exchange ActiveSync 識別碼。|Windows、iOS、Android|
 |受監督|若為 [是]  ，表示系統管理員對裝置有加強的控制力。|Windows、iOS、Android|
 |已加密|若為 [是]  ，表示會加密儲存在裝置上的資料。|Windows、iOS、Android|
-
-\* 不適用於具有 Google 原則管理員的 Android，例如完全受控與專用裝置
 
 > [!Note]  
 > 系統不會清查 Android Enterprise 專用或完全受控裝置上的電話號碼。

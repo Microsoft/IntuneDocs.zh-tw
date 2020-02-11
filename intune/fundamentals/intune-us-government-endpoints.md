@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 02c1508dd3eb9c8a8932c1504c6f4d0a53c5a0d5
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: dfa93bb758447c872d172ded7706fd7507a42f11
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207378"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966278"
 ---
 # <a name="us-government-endpoints-for-microsoft-intune"></a>Microsoft Intune 的美國政府端點
 
@@ -61,7 +61,7 @@ ms.locfileid: "75207378"
 - ADRS：https:\//enterpriseregistration.microsoftonline.us
 
 ## <a name="windows-push-notification-services"></a>Windows 推播通知服務
-在使用行動裝置管理 (MDM) 所管理的 Intune 受控裝置上，需要有 Windows 推播通知服務 (WNS) 才能進行裝置動作和其他立即活動。 如需詳細資訊，請參閱[支援 WNS 流量的企業防火牆和 Proxy 設定](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config) ()
+在使用行動裝置管理 (MDM) 所管理的 Intune 受控裝置上，需要有 Windows 推播通知服務 (WNS) 才能執行裝置動作與其他立即活動。 如需詳細資訊，請參閱[支援 WNS 流量的企業防火牆和 Proxy 設定](https://docs.microsoft.com/windows/uwp/design/shell/tiles-and-notifications/firewall-allowlist-config) ()
 
 ## <a name="apple-device-network-information"></a>Apple 裝置網路資訊
 

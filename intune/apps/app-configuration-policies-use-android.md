@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ec80922cf2539fdbacb572fd96c5a5e45549b5c3
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: b30da567d1a25028c51cf8268eab9613a7c3b8af
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204999"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755437"
 ---
 # <a name="add-app-configuration-policies-for-managed-android-enterprise-devices"></a>為受控的 Android Enterprise 裝置新增應用程式設定原則
 
@@ -34,21 +34,43 @@ Microsoft Intune 中的應用程式設定原則能為受控 Android Enterprise �
 > [!NOTE]  
 > 並非每個應用程式都支援應用程式設定。 請連絡應用程式開發人員，以了解他們的應用程式是否支援應用程式設定原則。
 
-1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選取 [應用程式]   > [應用程式設定原則]   >  [新增]   > [受控裝置]  。
-2. 新增下列屬性：
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]   > [受控裝置]  。 請注意，您可以在 [受控裝置]  和 [受管理的應用程式]  之間選擇。 如需詳細資訊，請參閱[支援應用程式設定的應用程式](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration)。
+3. 在 [基本]  頁面上，設定下列詳細資料：
+    - **名稱** - 在 Azure 入口網站中顯示的設定檔名稱。
+    - **描述** - 在 Azure 入口網站中顯示的設定檔描述。
+    - [裝置註冊類型]  - 此設定會設定為 [受控裝置]  。
+4. 選取 [Android Enterprise]  作為 [平台]  。
+5. 按一下 [目標應用程式]  旁邊的 [選取應用程式]  。 [相關聯的應用程式]  窗格隨即顯示。 
+6. 在 [相關聯的應用程式]  窗格上，選擇要與設定原則相關聯的受控應用程式，然後按一下 [確定]  。
+7. 按一下 [下一步]  以顯示 [設定]  頁面。
+8. 按一下 [新增]  以顯示 [新增權限]  窗格。
+9. 按一下您覆寫的權限。 授與的權限將會覆寫所選應用程式的 [預設應用程式權限] 原則。
+10. 針對每個權限設定 [權限狀態]  。 您可以選擇 [提示]  、[自動授與]  或 [自動拒絕]  。 如需權限的詳細資訊，請參閱[使用 Intune，透過 Android Enterprise 設定將裝置標示為相容或不相容](~/protect/compliance-policy-create-android-for-work.md)。
+11. 在下拉式方塊中，選取 [組態設定格式]  。 選取下列其中一種方法來新增設定資訊：
+    - **使用設定設計工具**
+    - **輸入 JSON 資料**<br><br>
+    如需使用設定設計工具的詳細資料，請參閱[使用設定設計工具](#use-the-configuration-designer)。 如需輸入 XML 資料的詳細資料，請參閱[輸入 JSON 資料](#enter-json-data)。 
+12. 按一下 [下一步]  以顯示 [指派]  頁面。
+13. 在 [指派給]  旁邊的下拉式方塊中，選取 [選取的群組]  、[所有使用者]  、[所有裝置]  ，或 [所有使用者和所有裝置]  來指派應用程式設定原則。
 
-    - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，良好的原則名稱是**適用於整家公司的 Android Enterprise Nine Work 應用程式原則**。
-    - **描述**：輸入設定檔的描述。 這是選擇性設定，但建議執行。
-    - **裝置註冊類型**：此設定已設定為 [受控裝置]  。
-    - **平台**：選取 [Android]  。
+    ![[原則指派] [包含] 索引標籤的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy01.png)
 
-3. 選取 [相關聯的應用程式]  。 選擇將關聯此應用程式設定原則的 Android 應用程式。 從[您已經使用 Intune 核准並同步處理的受控 Google Play 應用程式](~/apps/apps-add-android-for-work.md)的清單中選取。
-4. 選取 [權限]  。 您可以透過下列方式設定組態：
+14. 在下拉式方塊中，選取 [所有使用者]  。
 
-    - [設定設計工具](#use-the-configuration-designer)
-    - [JSON 編輯器](#enter-the-json-editor)
+    ![[原則指派 - 所有使用者] 下拉式選項的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy02.png)
 
-5. 選取 [確定]   > [新增]  。
+15. 按一下 [選取要排除的群組]  以顯示相關的窗格。
+
+    ![[原則指派 - 選取要排除的群組] 窗格的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
+16. 選擇您要排除的群組，然後按一下 [選取]  。
+
+    >[!NOTE]
+    >新增群組時，如已包含任何其他群組用於指定的指派類型，就會預先選取且無法針對其他包含指派類型進行變更。 因此，已使用的該群組，不能用為排除的群組。
+
+17. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。
+18. 按一下 [建立]  以將應用程式設定原則新增至 Intune。
 
 ## <a name="use-the-configuration-designer"></a>使用設定設計工具
 
@@ -92,7 +114,7 @@ Microsoft Intune 中的應用程式設定原則能為受控 Android Enterprise �
    > 只允許搭配多身分識別使用已設定的組織帳戶時，您必須使用 Android 版 Outlook 2.2.222 與更新版本、Android 版 Word、Excel、PowerPoint 16.0.9327.1000 與更新版本，或 Android 版 OneDrive 5.28 與更新版本。<p></p>
    > 身為 Microsoft Intune 管理員，您可以控制要新增至受控裝置上 Microsoft Office 應用程式的使用者帳戶。 您可以僅允許組織使用者帳戶進行存取，並封鎖已註冊裝置上的個人帳戶。 支援的應用程式會處理應用程式設定和移除，並封鎖未經核准的帳戶。<p></p>
 
-## <a name="enter-the-json-editor"></a>進入 JSON 編輯器
+## <a name="enter-json-data"></a>輸入 JSON 資料
 
 應用程式 (例如套件組合類型的應用程式) 上的某些組態設定無法使用設定設計工具來設定。 請使用 JSON 編輯器來設定那些值。 安裝應用程式時，會自動將設定值提供給應用程式。
 

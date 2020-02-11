@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 01/17/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d73cc367e6c3308b34c2d2dd14c9fed94d80ba74
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d9b06043dd10f92b6176d4b2e9f90f1b7c87aac9
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72813399"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76540942"
 ---
 # <a name="quickstart-create-a-group-to-manage-users"></a>快速入門：建立群組來管理使用者
 
@@ -34,24 +34,25 @@ ms.locfileid: "72813399"
 >[!NOTE]
 >Intune 會在主控台中提供預先建立的 [所有使用者]  和 [所有裝置]  群組，附有內建的最佳化方便您使用。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
+- Microsoft Intune 訂用帳戶 - [註冊免費試用帳戶](../fundamentals/free-trial-sign-up.md)。
 - 若要完成此快速入門，您必須[建立使用者](quickstart-create-user.md)。
 
-## <a name="sign-in-to-intune"></a>登入 Intune
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>在 Microsoft 端點管理員中登入 Intune
 
-請以[全域管理員或 Intune 服務管理員](users-add.md#types-of-administrators)身分登入 [Intune 入口網站](https://aka.ms/intuneportal)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
+以[全域管理員或 Intune 服務管理員身分](users-add.md#types-of-administrators)登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 如果您已建立 Intune 試用版訂閱，則用來建立訂閱的帳戶是全域管理員。
 
 ## <a name="create-a-group"></a>建立群組
 
 您將會建立稍後要用於此快速入門系列的群組。 建立群組：
 
-1. 開啟 [Microsoft Intune]  窗格之後，選取 [群組]   > [新增群組]  。
+1. 當您開啟 [Microsoft 端點管理員]  後，請選取 [群組]   > [新增群組]  。
 2. 在 [群組類型]  下拉式方塊中，選取 [安全性]  。
 3. 在 [群組名稱]  欄位中，輸入新群組的名稱 (例如 **Contoso 測試人員**)。
-4. 新增群組的 [描述]  。
+4. 新增該群組的 [群組描述]  。
 5. 將 [成員資格類型]  設定為 [已指派]  。 
-6. 按一下 [成員]  ，然後從清單中選取群組的一或多個成員。
+6. 在 [成員]  下，從清單中選取連結並針對群組新增一或多個成員。
 
     ![在 Microsoft Intune 中建立群組的螢幕擷取畫面](./media/quickstart-create-group/quickstart-use-groups-01.png)
 

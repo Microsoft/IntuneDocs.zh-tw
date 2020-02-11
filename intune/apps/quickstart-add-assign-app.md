@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d09857c4e5b63947a6e3b3140f673f0887f7f920
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 40337b3c45885dacf486173814044a27b7f3f6cc
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563420"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755063"
 ---
 # <a name="quickstart-add-and-assign-a-client-app"></a>快速入門：新增並指派用戶端應用程式
 
@@ -31,7 +31,7 @@ ms.locfileid: "74563420"
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](../fundamentals/free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 若要完成此快速入門，您必須[建立使用者](../fundamentals/quickstart-create-user.md)、[建立群組](../fundamentals/quickstart-create-group.md)並[註冊裝置](../quickstart-setup-auto-enrollment.md)。
 
@@ -45,20 +45,18 @@ ms.locfileid: "74563420"
 
 使用下列步驟將應用程式新增至 Intune：
 1. 在 [Intune](https://aka.ms/intuneportal) 中，選取 [應用程式]   > [所有應用程式]   > [新增]  。 
-2. 在 [應用程式類型]  下拉式方塊的 [Office 365 套件]  區段中，選取 **Windows 10**。
-3. 選取 [設定應用程式套件]  以選取要指派給 Intune 使用者的 Office 應用程式。
-4. 按一下 [確定]  以接受預設選取的應用程式。
-5. 選取 [應用程式套件資訊]  。
-6. 輸入 **Microsoft Office 365 應用程式套件**作為 [套件名稱]  。
-7. 輸入 **Microsoft Office 365 應用程式套件**作為 [套件描述]  。
-8. 按一下 [將此顯示為公司入口網站中的精選應用程式]  旁的 [是]  。
-9. 按一下 [確定]  。
-
-    ![新增應用程式資訊的螢幕擷取畫面](./media/quickstart-add-assign-app/quickstart-add-assign-app-01.png)
-
-10. 選取 [應用程式套件設定]  。
-11. 在 [更新通道]  下拉式方塊中，選取 [每月]  。
-12. 按一下 [確定]   > [新增]  。
+2. 選取 [選取應用程式類型]  窗格 [Office 365 套件]  區段中的 [Windows 10]  。
+3. 按一下 [選取]  。 [新增應用程式]  步驟隨即顯示。
+4. 確認 [應用程式套件資訊]  頁面中的預設詳細資料。
+5. 按一下 [下一步]  以顯示 [設定應用程式套件]  頁面。
+6. 在 [更新通道]  旁邊，從下拉式方塊選取 [每月]  。
+7. 確認 [設定應用程式套件]  頁面中剩餘的預設詳細資料。
+8. 按一下 [下一步]  以顯示 [範圍標籤]  頁面。
+9. 按一下 [選取範圍標籤]  來選擇性地為應用程式新增範圍標籤。 如需詳細資訊，請參閱[針對分散式 IT 使用角色型存取控制 (RBAC) 和範圍標籤](~/fundamentals/scope-tags.md)。
+10. 按一下 [下一步]  以顯示 [指派]  頁面。
+11. 為應用程式選取群組指派。 如需詳細資訊，請參閱[新增群組來組織使用者與裝置](~/fundamentals/groups-add.md)。 
+12. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。 檢閱您針對應用程式所輸入的值和設定。
+13. 當您完成時，請按一下 [建立]  以將應用程式新增到 Intune。
 
 ## <a name="assign-the-app-to-a-group"></a>將應用程式指派給群組
 

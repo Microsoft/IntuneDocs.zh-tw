@@ -6,7 +6,7 @@ keywords: Intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c5616b27b97d5623958ec872390e2a6de79db3c5
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563442"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754995"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>將 iOS 市集應用程式新增至 Microsoft Intune
 
@@ -43,14 +43,18 @@ ms.locfileid: "74563442"
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
-3. 在 [應用程式類型]  清單中的 [市集應用程式]  類型下，選取 [iOS]  。
-4. 選取 [Search the App Store]  \(搜尋應用程式市集\)。
-5. 在 [搜尋 App Store]  窗格中，選取 App Store 國家/地區設定。
-6. 在 [搜尋]  方塊中輸入應用程式的名稱 (或部分名稱)。  
+3. 在 [選取應用程式類型]  窗格中，在可用的 [市集應用程式]  類型下，選取 [iOS Store 應用程式]  。
+4. 按一下 [選取]  。<br>
+   [新增應用程式]  步驟隨即顯示。
+5. 選取 [Search the App Store]  \(搜尋應用程式市集\)。
+6. 在 [搜尋 App Store]  窗格中，選取 App Store 國家/地區設定。
+7. 在 [搜尋]  方塊中輸入應用程式的名稱 (或部分名稱)。  
     Intune 會搜尋市集，並傳回一份相關的結果清單。
-7. 在結果清單中，選取您想要的應用程式，然後再選取 [選取]  。
-8. 在 [新增應用程式]  窗格中，選擇 [應用程式資訊]  來設定應用程式。
-9. 在 [應用程式資訊]  窗格中，新增應用程式資訊。 窗格中某些值會隨所選的應用程式自動填入︰
+8. 在結果清單中，選取您想要的應用程式，然後再選取 [選取]  。<br>
+
+   [應用程式資訊]  頁面將會顯示在 [新增應用程式]  窗格中。 可能的話，系統將會根據您從市集中選取的應用程式新增應用程式資訊。
+
+9. 在 [應用程式資訊]  頁面中，新增應用程式詳細資料。 窗格中某些值會隨所選的應用程式自動填入︰
     - **名稱**：輸入要在公司入口網站中顯示的應用程式名稱。 您使用的任何應用程式名稱都必須是唯一的。 如果應用程式名稱重複，則使用者只會在公司入口網站看到一個名稱。
     - **描述**：輸入應用程式的描述。 使用者會在公司入口網站上看到這項描述。
     - **發行者**：輸入應用程式發行者的名稱。
@@ -65,10 +69,14 @@ ms.locfileid: "74563442"
     - **擁有者**：(選擇性) 輸入此應用程式的擁有者名稱，例如「人力資源部門」  。 此欄位只有系統管理員可以看到，並不會對您的使用者顯示。
     - **附註**：(選擇性) 輸入要與此應用程式建立關聯的任何附註。 這個欄位只有系統管理員看得到，使用者看不到。
     - **標誌**：(選擇性) 上傳將與應用程式建立關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
-10. 選取 [確定]  。
-11. 選取 [新增]  。
+10. 按一下 [下一步]  以顯示 [範圍標籤]  頁面。
+11. 按一下 [選取範圍標籤]  來選擇性地為應用程式新增範圍標籤。 如需詳細資訊，請參閱[針對分散式 IT 使用角色型存取控制 (RBAC) 和範圍標籤](~/fundamentals/scope-tags.md)。
+12. 按一下 [下一步]  以顯示 [指派]  頁面。
+13. 為應用程式選取群組指派。 如需詳細資訊，請參閱[新增群組來組織使用者與裝置](~/fundamentals/groups-add.md)。 
+14. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。 檢閱您針對應用程式所輸入的值和設定。
+15. 當您完成時，請按一下 [建立]  以將應用程式新增到 Intune。
 
-您建立的應用程式即會顯示在應用程式清單中，而您可從中將該應用程式指派給所選的群組。
+您所建立之應用程式的 [概觀]  刀鋒視窗隨即顯示。
 
 ## <a name="next-steps"></a>後續步驟
 

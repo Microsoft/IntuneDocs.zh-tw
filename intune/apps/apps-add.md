@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7170f723707ef709ef464b35bc3f6d3297341cf1
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 099d68568cd920c9ae3f328b4e9fba95424e46fd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956190"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755267"
 ---
 # <a name="add-apps-to-microsoft-intune"></a>將應用程式新增至 Microsoft Intune 
 
@@ -74,10 +74,10 @@ Intune 支援各種不同的應用程式類型。 每種應用程式類型的可
 
 <sup>1</sup> 如需 Android Enterprise 和 Android 工作設定檔的詳細資訊，請參閱下面的[了解授權的應用程式](apps-add.md#understanding-licensed-apps)。
 
-您可以依序選取 [應用程式]   > [所有應用程式]   > [新增]  ，在 Microsoft Intune 中新增應用程式。 接著會顯示 [新增應用程式]  窗格，並可讓您選取 [應用程式類型]  。 
+您可以依序選取 [應用程式]   > [所有應用程式]   > [新增]  ，在 Microsoft Intune 中新增應用程式。 [選取應用程式類型]  窗格隨即顯示，並可讓您選取 [應用程式類型]  。 
 
 >[!TIP]
-> LOB 應用程式是您從應用程式安裝檔新增的應用程式。 例如，若要安裝 iOS LOB 應用程式，您必須在 [新增應用程式]  窗格中將[應用程式類型]  選為 [企業營運應用程式]  來新增應用程式。 然後，選取應用程式套件檔案 (副檔名為 .ipa)。 這些類型的應用程式通常都是內部撰寫的。
+> LOB 應用程式是您從應用程式安裝檔新增的應用程式。 例如，若要安裝 iOS LOB 應用程式，您必須在 [選取應用程式類型]  窗格中選取 [企業營運應用程式]  作為 [應用程式類型]  。 然後，選取應用程式套件檔案 (副檔名為 .ipa)。 這些類型的應用程式通常都是內部撰寫的。
 
 ## <a name="assess-app-requirements"></a>評估應用程式需求
 身為 IT 管理員，您必須判斷您的群組必須使用哪些應用程式，還必須判斷每個群組和子群組所需要的功能。 您必須針對每個應用程式判斷所需的平台、需要該應用程式的使用者群組、要套用至那些群組的設定原則，以及要套用的保護原則。  

@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 501bfcbef0dd46f6021fc5db16cf3b9e2f2cd0c0
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
+ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75886002"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76966380"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>設定基礎結構以支援 SCEP 與 Intune
 
@@ -378,6 +378,32 @@ Microsoft Intune 憑證連接器會安裝在執行 NDES 服務的伺服器上。
 5. 當系統提示您提供憑證連接器的用戶端憑證時，請選擇 [選取]  ，並選取您在本文先前[在裝載 NDES 的伺服器上安裝並繫結憑證](#install-and-bind-certificates-on-the-server-that-hosts-ndes)程序中步驟 #3 期間在 NDES 伺服器上所安裝**用戶端驗證**憑證。
 
    選取用戶端驗證憑證之後，您會回到 [Microsoft Intune Certificate Connector 的用戶端憑證]  介面。 雖然不會顯示您選取的憑證，但請選取 [下一步]  以檢視該憑證的屬性。 選取 [下一步]  [安裝]  。
+
+> [!NOTE]
+> 啟動 Intune 憑證連接器之前，必須對 GCC High 租用戶進行下列變更。
+> 
+> 對下列兩個設定檔進行編輯，這會更新 GCC High 環境的服務端點。 請注意，這些更新會將 URI 從尾碼 **.com** 變更為 **.us**。 總共有三個 URI 更新：NDESConnectorUI.exe.config 組態檔中有兩個更新，而 NDESConnector.exe.config 檔案中有一個更新。
+> 
+> - 檔案名稱：<install_Path>\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config
+> 
+>   範例：(%programfiles%\Microsoft Intune\NDESConnectorUI\NDESConnectorUI.exe.config)
+>   ```
+>    <appSettings>
+>        <add key="SignInURL" value="https://portal.manage.microsoft.us/Home/ClientLogon"/>
+>        <add key="LocationServiceEndpoint" value="RestUserAuthLocationService/RestUserAuthLocationService/ServiceAddresses"/>
+>        <add key="AccountPortalURL" value="https://manage.microsoft.us"/>
+>    </appSettings>
+>   ```
+> 
+> - 檔案名稱：<install_Path>\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config
+>
+>   範例：(%programfiles%\Microsoft Intune\NDESConnectorSvc\NDESConnector.exe.config)
+>    ```
+>    <appSettings>
+>        <add key="BaseServiceAddress" value="https://manage.microsoft.us/" />
+>    ```
+>
+> 如果這些編輯未完成，GCC High 租用戶將會收到錯誤：「拒絕存取」「您未獲授權檢視此頁面。」
 
 6. 在精靈完成後，但在關閉精靈之前，按一下 [啟動 Certificate Connector UI]  。
 

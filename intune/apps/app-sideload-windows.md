@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/06/2020
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -16,16 +16,16 @@ ms.assetid: e44f1756-52e1-4ed5-bf7d-0e80363a8674
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4a4c6d40dc729fb72210c455c7819baaf89de3b
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 03b8f050dc6232b87d1149aff0a93cd7b06839cd
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691834"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755403"
 ---
 # <a name="sign-line-of-business-apps-so-they-can-be-deployed-to-windows-devices-with-intune"></a>簽署企業營運應用程式以使用 Intune 將它們部署到 Windows 裝置
 
-身為 Intune 管理員，您可以將企業營運 (LOB) 通用應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，包括公司入口網站應用程式。 若要將 .appx 應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，您可以使用來自您 Windows 裝置已經信任之公開憑證授權單位的程式碼簽署憑證，或者，您可以使用自己的憑證授權單位。
+身為 Intune 管理員，您可以將企業營運 (LOB) 通用應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，包括公司入口網站應用程式。 若要將 *.appx* 應用程式部署到 Windows 8.1 Desktop 和 Windows 10 Desktop 與行動裝置版的裝置，您可以使用來自您 Windows 裝置已經信任之公開憑證授權單位的程式碼簽署憑證，或者，您可以使用自己的憑證授權單位。
 
  > [!NOTE]
  > Windows 8.1 Desktop 需要有企業原則，才能啟用側載或使用側載金鑰 (針對已加入網域的裝置自動啟用)。 如需詳細資訊，請參閱 [Windows 8 側載](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/) \(英文\)。
@@ -52,10 +52,11 @@ ms.locfileid: "75691834"
 
 如果您的 Windows 10 裝置尚未信任憑證授權單位，則在您簽署 appx 套件並將它上傳至 Intune 服務之後，您需要將程式碼簽署憑證上傳至 Intune 入口網站：
 
-1. 按一下 [用戶端應用程式]
-2. 按一下 [Windows 企業憑證]
-3. 選取程式碼簽署憑證底下的 [選取檔案]
-4. 選取您的 .cer 檔案，然後按一下 [上傳]
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 按一下 [租用戶系統管理]   > [連接器與權杖]   > [Windows Enterprise 憑證]  。
+3. 選取 [程式碼簽署憑證檔案]  底下的檔案。
+4. 選取您的 *.cer* 檔案，然後按一下 [開啟]  。
+5. 按一下 [上傳]  來將憑證檔案新增到 Intune。
 
 現在，任何 Windows 10 Desktop 與行動裝置版的裝置 (Intune 服務已在其中部署 appx) 都將自動下載對應的企業憑證，並將允許應用程式在安裝後啟動。
 
@@ -94,7 +95,7 @@ Windows 8.1 Desktop/Windows 10 Desktop 與行動裝置版
       ![已建好 Dependencies 資料夾並存有 APPXBUN 檔案的圖片](./media/app-sideload-windows/Win10CP-Dependencies-save.png)
    2. 將 9 個相依性套件放在 Dependencies 資料夾中。  
       如果相依性套件未依如此方式放置，Intune 將無法在套件上傳期間辨識及上傳這些項目，而導致上傳失敗並出現下列錯誤。  
-      ![錯誤訊息 - 必須提供 Windows 應用程式相依性。](./media/app-sideload-windows/Win10CP-error-message.png)
+      <img alt="Error message - The Windows app dependency must be provided." src="./media/app-sideload-windows/Win10CP-error-message.png" width="200">
 6. 返回 Intune，將公司入口網站應用程式上傳為新應用程式。 針對所需的目標使用者群，將其部署為必要的應用程式。  
 
 有關 Intune 如何處理通用應用程式的相依性，詳細資訊請參閱[透過 Microsoft Intune MDM 部署具相依性的 appxbundle](https://blogs.technet.microsoft.com/configmgrdogs/2016/11/30/deploying-an-appxbundle-with-dependencies-via-microsoft-intune-mdm/)。  

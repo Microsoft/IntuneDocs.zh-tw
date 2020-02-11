@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cb98ee2974cefeebb90689207388d5fe9229dad2
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
+ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036652"
+ms.lasthandoff: 02/04/2020
+ms.locfileid: "76977796"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -158,6 +158,13 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
 警示會顯示有多少 Autopilot 程式裝置沒有 Autopilot 部署設定檔。 您可以使用警示中的資訊來建立設定檔，並加以指派至未指派的裝置。 當您按一下警示時，會看到 Windows Autopilot 裝置的完整清單，以及這些裝置的詳細資訊。
 
 若要查看未指派裝置的警示，請在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [概觀]   > [註冊警示]   > [未指派的裝置]  。  
+
+## <a name="autopilot-deployments-report"></a>Autopilot 部署報告
+您可以查看透過 Windows Autopilot 部署之每個裝置的詳細資料。
+若要查看報告，請移至 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選擇 [裝置]   > [監視器]   > [Autopilot 部署]  。
+該資料會在部署後的 30 天內提供使用。
+
+此報告為預覽狀態。 目前只有新的 Intune 註冊事件才會觸發裝置部署記錄。 這表示此報告不會選擇任何不會觸發新的 Intune 註冊的部署。 這包括維護註冊的任何一種重設，以及 Autopilot 服務周全方式的使用者部分。
 
 ## <a name="assign-a-user-to-a-specific-autopilot-device"></a>將使用者指派給特定 Autopilot 裝置
 

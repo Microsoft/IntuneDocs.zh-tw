@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d7a166e97cb9161df7c6d024e200adec0974715
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: c3deb9f3c96a4c2c2de72b7016aca855f679bbd7
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204964"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755117"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
@@ -34,48 +34,64 @@ ms.locfileid: "75204964"
 > [!IMPORTANT]
 > 當使用具有 *.msi* 副檔名的安裝檔案部署 Win32 應用程式時，請考慮使用 [Intune 管理延伸模組](../apps/intune-management-extension.md)。 若您在 AutoPilot 註冊期間混合 Win32 應用程式與企業營運系統應用程式安裝，應用程式安裝可能會失敗。  
 
-## <a name="step-1-specify-the-software-setup-file"></a>步驟 1：指定軟體安裝檔
+## <a name="select-the-app-type"></a>選取應用程式類型
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
-3. 在 [新增應用程式]  窗格中，選取 [企業營運應用程式]  作為 [應用程式類型]  。
+3. 在 [選取應用程式類型]  窗格中，在 [其他]  應用程式類型底下，選取 [企業營運應用程式]  。
+4. 按一下 [選取]  。 [新增應用程式]  步驟隨即顯示。
 
-## <a name="step-2-configure-the-app-package-file"></a>步驟 2：設定應用程式套件檔案
+## <a name="step-1---app-information"></a>步驟 1 - 應用程式資訊
 
-1. 在 [新增應用程式]  窗格中，選取 [應用程式套件檔案]  。
+### <a name="select-the-app-package-file"></a>選取應用程式套件檔案
+
+1. 在 [新增應用程式]  窗格中，按一下 [選取應用程式套件檔案]  。 
 2. 在 [應用程式套件檔案]  窗格中，選取 [瀏覽] 按鈕。 然後選取副檔名為 **.msi**、 **.appx** 或 **.appxbundle** 的 Windows 安裝檔案。
+   應用程式詳細資料隨即顯示。
 
     > [!NOTE]
     > Windows 應用程式的副檔名包含 **.msi**、 **.appx**、 **.appxbundle**、 **.msix**、 和 **.msixbundle**。  
 
-1. 完成後，按一下 [確定]  。
+3. 當您完成時，請選取 [應用程式套件檔案]  窗格上的 [確定]  來新增應用程式。
 
+### <a name="set-app-information"></a>設定應用程式資訊
 
-## <a name="step-3-configure-app-information"></a>步驟 3：設定應用程式資訊
-
-1. 在 [新增應用程式]  窗格中，選取 [應用程式資訊]  。
-2. 在 [應用程式資訊]  窗格中，設定下列資訊。 窗格中某些值可能會自動填入。
+1. 在 [應用程式資訊]  頁面中，新增應用程式的詳細資料。 窗格中某些值會隨著所選的應用程式自動填入。
     - **名稱**：輸入在公司入口網站中顯示的應用程式名稱。 確定您使用的所有應用程式名稱都是唯一的。 如果有重複的應用程式名稱，只有一個應用程式會出現在公司入口網站中。
     - **描述**：輸入應用程式的描述。 此描述會出現在公司入口網站上。
     - **發行者**：輸入應用程式發行者的名稱。
-    - **略過應用程式版本**：如果應用程式開發人員會自動更新應用程式，請設定為 [是]  。 此選項只適用於行動裝置的 .msi 應用程式。
+    - **最基本的作業系統**：從清單中，選擇能夠安裝應用程式的最基本作業系統版本。 若將應用程式指派給安裝舊版作業系統的裝置，就不會進行安裝。
     - **類別**：選取一或多個內建的應用程式類別，或選取您建立的類別。 類別可以讓使用者在瀏覽公司入口網站時，更輕鬆地找到應用程式。
     - **將此顯示為公司入口網站中的精選應用程式**：當使用者瀏覽應用程式時，在公司入口網站的主頁面上，以突顯的方式顯示應用程式。
-    - **資訊 URL**：(選擇性) 輸入包含應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
-    - **隱私權 URL**：(選擇性) 輸入包含應用程式隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
-    - **命令列引數**：(選擇性) 輸入任何您想要在 .msi 檔案執行時套用的命令列引數。  **/q** 就是一個例子。 因為系統會自動使用 msiexec 命令或引數，例如 **/i** 或 **/x**，所以請不藥包含在內。 如需詳細資訊，請參閱[命令列選項](https://docs.microsoft.com/windows/desktop/Msi/command-line-options)。 如果 .MSI 檔案需要其他命令列選項，請考慮使用 [Win32 應用程式管理](app-management.md)。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 此 URL 會出現在公司入口網站上。
+    - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 此 URL 會出現在公司入口網站上。
     - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
     - **擁有者**：(選擇性) 輸入此應用程式之擁有者的名稱。 **人力資源部門**就是一個例子。
     - **附註**：輸入要與此應用程式建立關聯的任何附註。
     - **標誌**：上傳與應用程式相關聯的圖示。 這是使用者瀏覽公司入口網站時，會隨應用程式一起顯示的圖示。
-3. 完成後，按一下 [確定]  。
+2. 按一下 [下一步]  以顯示 [範圍標籤]  頁面。
 
-## <a name="step-4-finish-up"></a>步驟 4：完成
+## <a name="step-2---select-scope-tags-optional"></a>步驟 2 - 選取範圍標籤 (選擇性)
+您可以使用範圍標籤來決定可在 Intune 中看見用戶端應用程式資訊的人員。 如需範圍標籤的完整詳細資料，請參閱[針對分散式 IT 使用角色型存取控制和範圍標籤](../fundamentals/scope-tags.md)。
 
-1. 在 [新增應用程式]  窗格中，確認您所設定的應用程式資訊正確無誤。
-2. 選取 [新增]  ，將應用程式上傳至 Intune。
+1. 按一下 [選取範圍標籤]  來選擇性地為應用程式新增範圍標籤。 
+2. 按一下 [下一步]  以顯示 [指派]  頁面。
 
-## <a name="step-5-update-a-line-of-business-app"></a>步驟 5：更新企業營運應用程式
+## <a name="step-3---assignments"></a>步驟 3 - 指派
+
+1. 為應用程式選取 [必要]  、[適用於已註冊的裝置]  ，或 [解除安裝]  群組指派。 如需詳細資訊，請參閱[新增群組來組織使用者和裝置](~/fundamentals/groups-add.md)和[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
+2. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。 
+
+## <a name="step-4---review--create"></a>步驟 4 - 檢閱 + 建立
+
+1. 檢閱您針對應用程式所輸入的值和設定。
+2. 當您完成時，請按一下 [建立]  以將應用程式新增到 Intune。
+
+    企業營運應用程式的 [概觀]  刀鋒視窗隨即顯示。
+
+您所建立的應用程式現在會出現在應用程式清單中。 在清單中，您可以將應用程式指派給您選擇的群組。 如需協助，請參閱[如何將應用程式指派給群組](apps-deploy.md)。
+
+## <a name="update-a-line-of-business-app"></a>更新企業營運應用程式
 
 [!INCLUDE [shared-proc-lob-updateapp](../includes/shared-proc-lob-updateapp.md)]
 

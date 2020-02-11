@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4246dab0cf22053d76fdd50f99de53e827332a23
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547823"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971865"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -73,7 +73,7 @@ ms.locfileid: "75547823"
     > [!IMPORTANT]
     > Android Enterprise (工作設定檔) 和 Android 裝置系統管理員平台具有下列行為：
     > - 如果同時針對相同的群組允許這兩個平台，則在使用者裝置支援的情況下，系統會搭配工作設定檔註冊該使用者，否則會以 DA 的形式註冊他們。 
-    > - 如果同時針對群組允許這兩個平台，並針對特定及非重疊版本進行微調，則使用者將會接收到針對其 OS 版本所定義的註冊流程。 
+    > - 如果同時針對群組允許這兩個平台，並針對特定與非重疊版本進行微調，則使用者將會接收到針對其 OS 版本所定義的註冊流程。 
     > - 如果同時允許這兩個平台，但針對相同的版本進行封鎖，則系統會將使用具有已封鎖版本之裝置的使用者從 Android 裝置系統管理員註冊流程中移除，並封鎖其註冊能力，然後提示以要求登出。 
     >
     > 值得注意的是，除非已在 [Android 註冊] 中完成適當的必要條件，否則工作設定檔和裝置系統管理員註冊都會無法正常執行。 
@@ -82,12 +82,13 @@ ms.locfileid: "75547823"
    > Windows 10 不會在註冊期間提供修訂編號，所以舉例來說，如果您輸入 10.0.17134.100 而裝置為 10.0.17134.174，則裝置在註冊期間將會被封鎖。
 
 6. 在 [個人所擁有]  底下，針對您想要允許作為個人擁有裝置的平台，選擇 [允許]  。
-7. 選擇 [下一步]  以移至 [指派]  頁面。
-8. 選擇 [選取要納入的群組]  ，然後使用搜尋方塊來尋找您想要納入此限制的群組。 限制只適用於指派的群組。 如果限制不指派給至少一個群組，就不會產生任何效果。 然後選擇 [選取]  。 
+7. 在 [裝置製造商]  下，輸入您要封鎖的製造商清單 (以逗號分隔)。
+8. 選擇 [下一步]  以移至 [指派]  頁面。
+9. 選擇 [選取要納入的群組]  ，然後使用搜尋方塊來尋找您想要納入此限制的群組。 限制只適用於指派的群組。 如果限制不指派給至少一個群組，就不會產生任何效果。 然後選擇 [選取]  。 
     ![選擇平台設定的螢幕擷取畫面](./media/enrollment-restrictions-set/select-groups.png)
-9. 選取 [下一步]  以移至 [檢閱 + 建立]  頁面。
-10. 選取 [建立]  以建立限制。
-11. 新建立的限制優先順序剛好在預設值前。 您可以[變更優先順序](#change-enrollment-restriction-priority)。
+10. 選取 [下一步]  以移至 [檢閱 + 建立]  頁面。
+11. 選取 [建立]  以建立限制。
+12. 新建立的限制優先順序剛好在預設值前。 您可以[變更優先順序](#change-enrollment-restriction-priority)。
 
 
 ## <a name="create-a-device-limit-restriction"></a>建立裝置限制的限制

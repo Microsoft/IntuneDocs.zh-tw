@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d1624117cc87c5cf3971f9cfb541106c700d4ffd
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 11f194d702d0de123ec010409874eb40ab38a9fa
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75204930"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971820"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  窗格上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
 原則設定分為三類：資料保護設定、存取需求和條件式啟動。 在本文中「受原則管理的應用程式」  一詞是指設有應用程式保護原則的應用程式。
 
 > [!IMPORTANT]
-> 裝置上需要有 Intune 公司入口網站，才能在 Android 裝置上接收應用程式保護原則。 如需詳細資訊，請參閱 [Intune 公司入口網站存取應用程式需求](../fundamentals/end-user-mam-apps-android.md)。
+> Android 裝置上需要有 Intune 公司入口網站，才能接收應用程式保護原則。 如需詳細資訊，請參閱 [Intune 公司入口網站存取應用程式需求](../fundamentals/end-user-mam-apps-android.md)。
 
 ## <a name="data-protection"></a>資料保護 
 ### <a name="data-transfer"></a>資料轉送

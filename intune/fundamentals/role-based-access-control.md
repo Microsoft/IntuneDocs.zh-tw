@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4a03366037f9b0eced70f0375b3f4b39401e3141
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 8441a93a34af68a680aec2f48b3a5375fa74558c
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509819"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754298"
 ---
 # <a name="role-based-access-control-rbac-with-microsoft-intune"></a>使用 Microsoft Intune 的角色型存取控制 (RBAC)
 
@@ -39,7 +39,7 @@ ms.locfileid: "72509819"
 您可以同時使用內建角色和自訂角色。 內建角色涵蓋一些常見的 Intune 案例。 您可以使用所需的一組確切權限[建立自己的自訂角色](create-custom-role.md)。 有數個 Azure Active Directory 角色具備 Intune 的權限。
 若要查看角色，請選擇 [Intune]   > [角色]   > [所有角色]  > 選擇角色。 您會看到下列頁面：
 
-- **屬性**：角色的名稱、描述、類型、指派和範圍標籤。 
+- [內容]  ：角色的名稱、描述、類型、指派和範圍標籤。 
 - **權限**：列出定義角色具有哪些權限的完整切換集。
 - **指派**：定義哪些使用者可以存取哪些使用者/裝置的[角色指派]( assign-role.md)清單。 一個角色可以有多個指派，而一個使用者可以位於多個指派中。
 
@@ -52,6 +52,7 @@ ms.locfileid: "72509819"
 - **應用程式管理員**：管理行動及受控應用程式、可以讀取裝置資訊，並可檢視裝置組態設定檔。
 - **Intune 角色管理員**：管理自訂的 Intune 角色，以及為內建的 Intune 角色新增指派。 這是唯一可為系統管理員指派權限的 Intune 角色。
 - **學校管理員**：管理 [Intune 教育版](../introduction-intune-education.md)中的 Windows 10 裝置。
+- **端點安全性管理員**：管理安全性與合規性功能，例如安全性基準、裝置合規性、條件式存取與 Microsoft Defender ATP。
 
 ### <a name="custom-roles"></a>自訂角色
 您可以使用自訂權限來建立自己的角色。 如需自訂角色的詳細資訊，請參閱[建立自訂角色](create-custom-role.md)。
@@ -62,7 +63,7 @@ ms.locfileid: "72509819"
 | 全域管理員 | 讀取/寫入 | 讀取/寫入 |
 | Intune 服務管理員 | 讀取/寫入 | 讀取/寫入 |
 | 條件式存取管理員 | 無 | 無 |
-| 安全性系統管理員 | 唯讀 | 唯讀 |
+| 安全性系統管理員 | 唯讀 (端點安全性節點的完整系統管理權限) | 唯讀 |
 | 安全性操作員 | 唯讀 | 唯讀 |
 | 安全性讀取者 | 唯讀 | 唯讀 |
 | 合規性管理員 | 無 | 唯讀 |
@@ -86,7 +87,7 @@ ms.locfileid: "72509819"
 您可以將自訂角色和內建角色指派給您的使用者。 使用者必須具備 Intune 授權，才能獲指派 Intune 角色。
 若要查看角色指派，請選擇 [Intune]   > [角色]   > [所有角色]  > 選擇角色 > 選擇指派。 您會看到下列頁面：
 
-- **屬性**：指派的名稱、描述、角色、成員、範圍和標籤。
+- [內容]  ：指派的名稱、描述、角色、成員、範圍和標籤。
 - **成員**：已列出 Azure 安全性群組中所有使用者都有權管理 [範圍 (群組)] 中列出的使用者/裝置。
 - **範圍 (群組)** ：這些 Azure 安全性群組中所有使用者/裝置都可由 [成員] 中的使用者管理。
 - **[範圍 (標籤)](scope-tags.md)** ：[成員] 中使用者可以查看具有相同範圍標籤的資源。

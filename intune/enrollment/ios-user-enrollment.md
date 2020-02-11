@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d77a275e3a48845f56b22ecc21b75f664ea619c5
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691733"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76754609"
 ---
 # <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>設定 iOS 與 iPadOS 使用者註冊 (預覽)
 
@@ -34,7 +34,7 @@ ms.locfileid: "74691733"
 > [!NOTE]
 > Intune 中對 Apple 使用者註冊的支援目前為預覽狀態。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - [行動裝置管理 (MDM) 授權單位](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - [受控 Apple ID](https://support.apple.com/guide/apple-business-manager/mdm1c9622977/web)。
@@ -54,23 +54,14 @@ ms.locfileid: "74691733"
 
 3. 選取 [下一步]  。
 
-4. 您可以在 [設定]  頁面中，選擇讓使用者自行選擇要使用的註冊類型。 或者，您可以設定預設值。
+4. 在 [設定]  頁面上，選取下列其中一個 [註冊類型]  選項：
 
     ![設定頁面](./media/ios-user-enrollment/settings-page.png)
 
-    - 如果您想要讓此設定檔中的所有使用者都使用使用者註冊，請遵循下列步驟：
-        1. 若要 [要求使用者選取裝置類型]  ，請選取 [未設定]  。
-        2. 針對 [預設註冊類型]  ，請選取 [使用者註冊]  。
-    - 如果您想要讓此設定檔中的所有使用者都使用裝置註冊，請遵循下列步驟：
-        1. 若要 [要求使用者選取裝置類型]  ，請選取 [未設定]  。
-        2. 針對 [預設註冊類型]  ，請選取 [裝置註冊]  。
-    - 如果您想要此群組中的所有使用者自行選擇要使用的註冊類型，請為 [要求使用者選取裝置類型]  選取 [必要]  。 當使用者註冊裝置時，系統會提供選項，讓他們選擇 [我擁有此裝置]  或 [(公司) 擁有此裝置]  。 如果選擇前者，就會使用使用者註冊來註冊裝置。 如果選擇後者，就會使用裝置註冊來註冊裝置。 如果使用者選擇 [我擁有此裝置]  ，系統將會提供另一個選項，讓他們選擇要保護整部裝置，或只保護工作相關的應用程式與資料。 終端使用者選擇是否擁有裝置時，只會決定要在裝置上實作哪一種註冊類型。 Intune 中的「裝置擁有權」屬性並不會反映這個使用者選擇項目。 如需要使用者體驗相關詳細資訊，請參閱[設定 iOS 裝置對公司資源的存取](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) \(部分機器翻譯\)。
+    - **裝置註冊**：此設定檔中的所有使用者都將使用 [裝置註冊]。
+    - **使用者註冊**：此設定檔中的所有使用者都將使用 [使用者註冊]。
+    - **根據使用者的選擇來決定**：此群組中的所有使用者都可以選擇要使用的註冊類型。 當使用者註冊其裝置時，他們會看到可選擇 [我擁有此裝置]  或 [(公司) 擁有此裝置]  的選項。 如果選擇後者，就會使用裝置註冊來註冊裝置。 如果使用者選擇 [我擁有此裝置]  ，系統將會提供另一個選項，讓他們選擇要保護整部裝置，或只保護工作相關的應用程式與資料。 終端使用者選擇是否擁有裝置的動作會決定要在其裝置上實作的註冊類型。 Intune 中的「裝置擁有權」屬性也會反映這個使用者選擇項目。 如需要使用者體驗相關詳細資訊，請參閱[設定 iOS 裝置對公司資源的存取](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) \(部分機器翻譯\)。
     
-    > [!NOTE]
-    > 下列注意事項並不準確且將從 UI 中移除。
-    > 「若要讓條件式存取在以使用者註冊為目標的裝置運作，您必須針對此使用者群組將 Azure Authenticator 應用程式推送為必要應用程式，以啟用單一登入和 Workplace Join。」
-    > 身為系統管理員，您不需要執行任何動作，就可以將 Authenticator 應用程式推播給使用者。 您的使用者將會在公司入口網站內獲得指示，安裝 Authenticator 應用程式以完成使用者註冊程序，並確保這些情節功能都能正常運作。
-
 5. 選取 [下一步]  。
 
 6. 在 [指派]  頁面上，選擇包含您要將此設定檔指派給他的使用者在內的使用者群組。 您可以選擇指派設定檔給所有使用者或特定群組。 所選群組中的所有使用者都將會使用上述選擇的註冊類型。 使用者註冊案例不支援裝置群組，因為該功能是以使者身分識別為基礎，而非裝置。 您可以選擇指派設定檔給所有使用者或特定群組。

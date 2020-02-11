@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e990cd94c0f8622d07e59b4130566a1dc2953a1c
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 15d6a67cb41455a1e3c0830e9ed242bfa52b0269
+ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563986"
+ms.lasthandoff: 02/01/2020
+ms.locfileid: "76912653"
 ---
 # <a name="assign-apps-to-groups-with-microsoft-intune"></a>使用 Microsoft Intune 將應用程式指派給群組
 
@@ -132,7 +132,7 @@ ms.locfileid: "74563986"
 在 Intune 主控台中發出 APP 選擇性抹除時，系統會自動將公司帳戶從 Play Store 應用程式中移除，而使用者將無法繼續在 Play Store 應用程式目錄中看見公司應用程式。 從裝置移除公司帳戶之後，已從 Play Store 安裝的應用程式將會在裝置上保持安裝且不會解除安裝。 
 
 ## <a name="app-uninstall-setting-for-ios-managed-apps"></a>適用於 iOS 受控應用程式的應用程式解除安裝設定
-針對 iOS 裝置，您可以選擇從 Intune 取消註冊裝置，或使用 [移除裝置時解除安裝]  設定來移除管理設定檔時，受控應用程式會發生什麼情況。 只有在已註冊裝置且將應用程式安裝為受控之後，才會將此設定套用至應用程式。 無法為 Web 應用程式或網頁連結設定此設定。 
+針對 iOS 裝置，您可以選擇從 Intune 取消註冊裝置，或使用 [移除裝置時解除安裝]  設定來移除管理設定檔時，受控應用程式會發生什麼情況。 只有在已註冊裝置且將應用程式安裝為受控之後，才會將此設定套用至應用程式。 無法為 Web 應用程式或網頁連結設定此設定。 在由應用程式選擇性抹除進行淘汰之後，系統只會移除由行動應用程式管理 (MAM) 所保護的資料。
 
 系統會針對新指派預先填入設定的預設值，如下所示：
 

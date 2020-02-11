@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/19/2019
+ms.date: 01/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 252af3c7447b59ee6aaeb4cb05bed0579ae8af4c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206698"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812377"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -31,7 +31,11 @@ ms.locfileid: "75206698"
 本文說明如何指派設定檔，並包含有關在設定檔上使用範圍標籤的一些資訊。
 
 > [!NOTE]  
-> 當設定檔已移除或不再指派給裝置時，設定可能會保留現有的值。 此設定不會還原為預設值。 若要將設定變更為不同的值，請建立新的設定檔並加以指派。
+> 當設定檔已移除或不再指派給裝置時，可能會發生不同的情況，視設定檔中的設定而定。 這些設定是以 CSP 為基礎，而每個 CSP 可以不同的方式來處理設定檔移除。 例如，設定可能會維持現有的值，而不會還原回預設值。 此行為是由作業系統中的每個 CSP 所控制。 如需 Windows CSP 的清單，請參閱[設定服務提供者 (CSP) 參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) \(部分機器翻譯\)。
+>
+> 若要將設定變更為不同的值，請建立新的設定檔，將設定設為 [未設定]  ，然後指派設定檔。 套用至裝置之後，使用者應該可以控制將設定變更為其慣用的值。
+>
+> 進行這些設定時，建議您部署到試驗群組。 如需更多 Intune 首度發行建議，請參閱[建立首度發行計畫](../fundamentals/planning-guide-rollout-plan.md)。
 
 ## <a name="before-you-begin"></a>開始之前
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/23/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d5a3204721a0d40cfb5bf729ca17ef8e4ded1f0f
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 0d4bbd0a5b57391edad726c7e936d0072a791673
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885761"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755760"
 ---
 # <a name="add-app-configuration-policies-for-managed-ios-devices"></a>為受控的 iOS 裝置新增應用程式設定原則
 
@@ -51,34 +51,39 @@ ms.locfileid: "75885761"
 ## <a name="create-an-app-configuration-policy"></a>建立應用程式設定原則
 
 1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-2. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]   > [受控裝置]  。
-3. 使用下列詳細資料：
+2. 選擇 [應用程式]   > [應用程式設定原則]   > [新增]   > [受控裝置]  。 請注意，您可以在 [受控裝置]  和 [受管理的應用程式]  之間選擇。 如需詳細資訊，請參閱[支援應用程式設定的應用程式](~/apps/app-configuration-policies-overview.md#apps-that-support-app-configuration)。
+3. 在 [基本]  頁面上，設定下列詳細資料：
     - **名稱** - 在 Azure 入口網站中顯示的設定檔名稱。
     - **描述** - 在 Azure 入口網站中顯示的設定檔描述。
     - [裝置註冊類型]  - 此設定會設定為 [受控裝置]  。
-4. 為 [平台]  選取 [iOS]  。
-5. 選擇 [相關聯的應用程式]  。 然後，在 [相關聯的應用程式]  窗格上，選擇要套用設定的受控應用程式，然後選取 [確定]  。
-6. 選擇 [組態設定]  來顯示 [組態設定]  窗格。
-7. 選取 [組態設定格式]  。 選取下列其中一種方法來新增設定資訊：
+4. 選取 [iOS/iPadOS]  作為 [平台]  。
+5. 按一下 [目標應用程式]  旁邊的 [選取應用程式]  。 [相關聯的應用程式]  窗格隨即顯示。 
+6. 在 [目標應用程式]  窗格上，選擇要與設定原則相關聯的受控應用程式，然後按一下 [確定]  。
+7. 按一下 [下一步]  以顯示 [設定]  頁面。
+8. 在下拉式方塊中，選取 [組態設定格式]  。 選取下列其中一種方法來新增設定資訊：
     - **使用設定設計工具**
     - **輸入 XML 資料**<br><br>
     如需使用設定設計工具的詳細資料，請參閱[使用設定設計工具](#use-configuration-designer)。 如需輸入 XML 資料的詳細資料，請參閱[輸入 XML 資料](#enter-xml-data)。 
-8. 新增設定資訊之後，選擇 [確定]  ，然後選擇 [新增]  來新增設定原則。 即會顯示設定原則的概觀窗格。
-9. 選取 [指派]  來顯示包含與排除選項。 
+9. 按一下 [下一步]  以顯示 [指派]  頁面。
+10. 在 [指派給]  旁邊的下拉式方塊中，選取 [選取的群組]  、[所有使用者]  、[所有裝置]  ，或 [所有使用者和所有裝置]  來指派應用程式設定原則。
 
     ![[原則指派] [包含] 索引標籤的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy01.png)
-10. 選取 [包含]  索引標籤的 [所有使用者]  。
+
+11. 在下拉式方塊中，選取 [所有使用者]  。
 
     ![[原則指派 - 所有使用者] 下拉式選項的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy02.png)
-11. 選取 [排除]  索引標籤。 
+
 12. 按一下 [選取要排除的群組]  以顯示相關的窗格。
 
     ![[原則指派 - 選取要排除的群組] 窗格的螢幕擷取畫面](./media/app-configuration-policies-use-ios/app-config-policy03.png)
+
 13. 選擇您要排除的群組，然後按一下 [選取]  。
 
     >[!NOTE]
     >新增群組時，如已包含任何其他群組用於指定的指派類型，就會預先選取且無法針對其他包含指派類型進行變更。 因此，已使用的該群組，不能用為排除的群組。
-14. 按一下 **[儲存]** 。
+
+14. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。
+15. 按一下 [建立]  以將應用程式設定原則新增至 Intune。
 
 ## <a name="use-configuration-designer"></a>使用設定設計工具
 

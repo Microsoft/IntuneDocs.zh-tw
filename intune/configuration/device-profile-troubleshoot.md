@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 01/28/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,16 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 95186e4d1e54737ffeaa5e4c9728d188c2f867d6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206630"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812352"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>對於 Microsoft Intune 中的裝置原則和設定檔的常見疑問、問題和解決方式
-
-
 
 獲得使用 Intune 中裝置設定檔與原則時的常見問題解答。 本文也列出簽入時間間隔、提供更多衝突的相關詳細資料等等。
 
@@ -83,6 +81,8 @@ Intune 會通知裝置使用 Intune 服務簽入。 通知時間各不相同，�
 裝置可在收到簽入通知時簽入 Intune，或在其排定簽入時間簽入。 當您對目標裝置或使用者執行鎖定、密碼重設、應用程式指派、設定檔指派或原則指派等動作時，則 Intune 會立即通知裝置簽入以接收這些更新。
 
 修訂公司入口網站應用程式中的連絡資訊等其他變更，不會立即對裝置傳送通知。
+
+原則或設定檔中的設定會在每次簽入時套用。 [Windows 10 MDM 原則重新整理部落格文章](https://www.petervanderwoude.nl/post/windows-10-mdm-policy-refresh/) \(英文\) 可能是很好的資源。
 
 ## <a name="if-multiple-policies-are-assigned-to-the-same-user-or-device-how-do-i-know-which-settings-gets-applied"></a>如果有多個原則指派到同一個使用者或同一部裝置，如何得知會套用哪些設定？
 

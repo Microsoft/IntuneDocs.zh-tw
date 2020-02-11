@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/09/2020
+ms.date: 01/16/2020
 ms.topic: quickstart
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 35dd017eaa2dd3cd6c17dc611aaa9d457b18aca2
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: e1baf0b4273a9074ac7172c08240a8e3c3a9d7fa
+ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839250"
+ms.lasthandoff: 01/23/2020
+ms.locfileid: "76541110"
 ---
 # <a name="quickstart-try-microsoft-intune-for-free"></a>快速入門：免費試用 Microsoft Intune
 
 Microsoft Intune 透過管理裝置和應用程式來協助您保護員工的公司資料。 在此快速入門中，您將建立免費訂用帳戶，以在測試環境中試用 Intune。
 
-Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，提供行動裝置管理 (MDM) 與行動應用程式管理 (MAM)。 使用 Intune，您可以確保正確設定、存取及更新員工的公司資源 (資料、裝置和應用程式)，以符合您公司的合規性原則和需求。
+Intune 從透過 Microsoft 端點管理員系統管理中心管理的安全雲端式服務，提供行動裝置管理 (MDM) 與行動應用程式管理 (MAM)。 使用 Intune，您可以確保正確設定、存取及更新員工的公司資源 (資料、裝置和應用程式)，以符合您公司的合規性原則和需求。
 
 ## <a name="prerequisites"></a>先決條件
 設定 Microsoft Intune 之前，請先檢閱下列需求：
@@ -60,27 +60,31 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
     ![帳戶資訊的影像](./media/free-trial-sign-up/intune-end-of-sign-up-process.png) 
 
-## <a name="sign-in-to-the-azure-portal"></a>登入 Azure 入口網站
+## <a name="sign-in-to-intune-in-the-microsoft-endpoint-manager"></a>在 Microsoft 端點管理員中登入 Intune
 
-1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com** 。 
-2. 使用上述步驟中提供給您的認證登入。
+如果您還沒有登入入口網站，請完成下列步驟：
 
-    ![Azure 入口網站登入頁面的影像](./media/free-trial-sign-up/azure-portal-signin.png)
+1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://devicemanagement.microsoft.com** 。 
+2. 使用在上述步驟中取得的使用者識別碼來登入 ( *yourID@yourdomain* .onmicrosoft.com)。
 
-3. 若要在 Azure 入口網站中檢視 Microsoft Intune，請從頁面左側邊欄選取 [所有服務]  。
-4. 在篩選方塊中，搜尋並選取 **Microsoft Intune**。
-5. 選取**星狀**以將 Intune 新增至我的最愛服務清單底部，然後開啟 Intune 儀表板。
+    ![入口網站登入頁面的影像](./media/free-trial-sign-up/azure-portal-signin.png)
 
 當您註冊試用版時，您也會收到電子郵件訊息，其中包含您在註冊程序期間提供的帳戶資訊和電子郵件地址。 本電子郵件可確認您的試用版是使用中的狀態。
 
 > [!TIP]
-> 使用 Azure 入口網站時，在一般模式下使用瀏覽器可能會獲得更好的結果，而不是私用模式。
+> 使用 Microsoft 端點管理員時，在一般模式下使用瀏覽器可能會獲得更好的結果，而不是私密模式。
 
-## <a name="set-the-mdm-authority-to-intune"></a>將 MDM 授權單位設定為 Intune
+## <a name="confirm-the-mdm-authority-in-intune"></a>在 Intune 中確認 MDM 授權單位
 
-在登入 Azure 入口網站並選取 Intune 後，您可能會看到橙色橫幅，指出您尚未設定 MDM 授權單位。 行動裝置管理 (MDM) 授權單位設定會決定您管理裝置的方式。 在使用者可以註冊裝置以進行管理之前，必須先設定 MDM 授權單位。
+根據預設，當您建立免費試用時，會設定 MDM 授權單位。 您可以透過使用下列步驟來確認是否已設定 MDM 授權單位：
 
-若要將 MDM 授權單位設定為 Intune，請執行下列步驟。
+1. 如果您尚未登入，請登入 Microsoft 端點管理員。
+2. 按一下 [租用戶系統管理]  。
+3. 檢視租用戶詳細資料。 **MDM 授權單位**應該已設定為 **Microsoft Intune**。
+
+如果登入 Microsoft 端點管理員之後，您看到橙色橫幅指出您尚未設定 MDM 授權單位，您可以在此時啟動它。 行動裝置管理 (MDM) 授權單位設定會決定您管理裝置的方式。 在使用者可以註冊裝置以進行管理之前，必須先設定 MDM 授權單位。
+
+### <a name="to-set-the-mdm-authority-to-intune-follow-these-steps"></a>若要將 MDM 授權單位設定為 Intune，請執行下列步驟：
 
 1. 開啟新的瀏覽器視窗，然後在網址列中輸入 **https://portal.azure.com** 。 
 2. 選擇 [所有服務]   > [Microsoft Intune]  。
@@ -121,9 +125,9 @@ Intune 從透過 Microsoft Azure 入口網站管理的安全雲端式服務，�
 
 ## <a name="admin-experiences"></a>管理體驗
 
-您可能使用的有兩個入口網站：
-- Azure ([portal.azure.com](https://portal.azure.com)) 中的 Intune 儀表板是您可以瀏覽 [Intune 功能](what-is-intune.md)的位置。 工作一般會在 Intune 面板中執行。
-- Microsoft 365 系統管理中心 ([admin.microsoft.com](https://admin.microsoft.com)) 是您可以新增及管理使用者的位置，前提是您未使用 Azure Active Directory 進行此工作。 您也可以管理您帳戶的其他事宜，包括計費及支援。
+您會最常使用的入口網站有兩個：
+- Microsoft 端點管理員系統管理中心 ([https://devicemanagement.microsoft.com/](https://devicemanagement.microsoft.com/)) 可讓您探索 [Intune 的功能](what-is-intune.md)。 這是系統管理員使用 Intune 的地方。
+- Microsoft 365 系統管理中心 ([https://admin.microsoft.com](https://admin.microsoft.com)) 是您可以新增及管理使用者的位置，前提是您未使用 Azure Active Directory 進行此工作。 您也可以管理您帳戶的其他事宜，包括計費及支援。
 
 ## <a name="next-steps"></a>後續步驟
 

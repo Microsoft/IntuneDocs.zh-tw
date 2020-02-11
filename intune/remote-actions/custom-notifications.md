@@ -18,18 +18,37 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d42651b11891f3d830c0d90e70a9ecd98ea5bfb7
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036604"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517474"
 ---
 # <a name="send-custom-notifications-in-intune"></a>在 Intune 中傳送自訂通知  
 
 使用 Microsoft Intune 將自訂通知傳送給受控 iOS 和 Android 裝置的使用者。 這些訊息會在使用者裝置上顯示為來自公司入口網站應用程式與來自 Microsoft Intune 應用程式的標準推播通知，與裝置上其他應用程式通知的出現方式一樣。 macOS 和 Windows 裝置均不支援 Intune 自訂通知。   
 
 自訂通知訊息包含簡短的標題和訊息本文，長度為 500 個字元或更少。 這些訊息可以針對任何一般通訊目的來自訂。
+
+### <a name="what-the-notification-looks-like-on-an-ios-device"></a>通知在 iOS 裝置上的外觀
+
+如果您已在 iOS 裝置上開啟公司入口網站應用程式，則通知類似下列螢幕擷取畫面：
+
+> [!div class="mx-imgBorder"]
+> ![公司入口網站 iOS 測試通知](./media/custom-notifications/105046-1.png)
+
+如果裝置已鎖定，則通知類似下列螢幕擷取畫面：
+
+> [!div class="mx-imgBorder"]
+> ![鎖定的裝置 iOS 測試通知](./media/custom-notifications/105046-2.png)
+
+### <a name="what-the-notification-looks-like-on-an-android-device"></a>通知在 Android 裝置上的外觀
+
+如果您已在 Android 裝置上開啟公司入口網站應用程式，則通知類似下列螢幕擷取畫面：
+
+> [!div class="mx-imgBorder"]
+> ![Android 測試通知](./media/custom-notifications/105046-3.png)
 
 ## <a name="common-scenarios-for-sending-custom-notifications"></a>傳送自訂通知的常見案例  
 

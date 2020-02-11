@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800193921e608a0d0c29dad5cf85b8781e715441
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885800"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812468"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
@@ -95,8 +95,8 @@ ms.locfileid: "75885800"
 
 您可以在非受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。 除了下列步驟之外，您可以使用 Microsoft Edge 來存取受控應用程式記錄。 如需詳細資訊，請參閱[在 iOS 上使用 Microsoft Edge 來存取受控應用程式記錄檔](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)。
 
-1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Intune Managed Browser**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
-2. 啟動 **Intune Managed Browser** 並從導覽列中選取 [關於]   > [intunehelp]  。
+1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Microsoft Edge**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
+2. 啟動 [Microsoft Edge]  並從導覽列中選取 [關於]   > [intunehelp]  。
 3. 按一下 [開始使用]  。
 4. 按一下 [共用記錄]  。
 5. 使用您選擇的電子郵件應用程式傳送記錄給您自己，方便您在自己的電腦上檢視。 
@@ -139,8 +139,8 @@ ms.locfileid: "75885800"
 
 您可以在受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。
 
-1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Intune Managed Browser**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
-2. 啟動 **Intune Managed Browser** 並從導覽列中選取 [關於]   > [intunehelp]  。
+1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Microsoft Edge**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
+2. 啟動 [Microsoft Edge]  並從導覽列中選取 [關於]   > [intunehelp]  。
 3. 按一下 [開始使用]  。
 4. 按一下 [共用記錄]  。
 5. 使用您選擇的電子郵件應用程式傳送記錄給您自己，方便您在自己的電腦上檢視。 

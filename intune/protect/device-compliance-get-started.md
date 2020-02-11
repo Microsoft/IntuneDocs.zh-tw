@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 83b8c48d2bb594ca8b9c527d78922332e582363f
-ms.sourcegitcommit: 66e284fe092e19c1da72b4b770e45bf25ac7910c
+ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74860290"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812177"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在裝置上設定規則可在您的組織中使用 Intune 存取資源
 
@@ -92,6 +92,10 @@ Intune 也包含一組內建的合規性政策設定。 下列內建政策會在
   - **不符合規範**：開啟安全性功能
 
   如果裝置未獲指派合規性政策，則預設會將此裝置視為不符合規範。 如果您搭配合規性政策使用條件式存取，建議您將預設設定變更為 [不符合規範]  。 如果使用者因為未指派政策而不符合規範，[公司入口網站應用程式](../apps/company-portal-app.md)就會顯示 `No compliance policies have been assigned`。
+
+
+> [!NOTE]
+> Intune 已暫時停用 iOS 裝置的增強型越獄偵測。
 
 - **加強的越獄偵測**：啟用時，此設定會使 iOS 裝置更頻繁地使用 Intune 來簽入。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
 

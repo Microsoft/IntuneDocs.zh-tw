@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 93570bc9dab20801ea6681f6a142de62990a1c57
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712966"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755029"
 ---
 # <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式
 
@@ -56,7 +56,7 @@ ms.locfileid: "73712966"
     您必須針對 x86、x64 及 ARM 架構完成此動作：<br> 
     選取 1507 作為最低 OS 版本時有 9 個必要的架構套件、選取 1511 時有 12 個套件，而選取 1607 時有 15 個套件。 
 
-8. 在 Azure 入口網站的 Microsoft Intune 中，將公司入口網站應用程式上傳為新的應用程式。 您必須在 [新增應用程式]  窗格中選取 [企業營運應用程式] 作為 [應用程式類型]  來新增應用程式。 然後，選取應用程式套件檔案 (副檔名為 .AppxBundle)。
+8. 在 Azure 入口網站的 Microsoft Intune 中，將公司入口網站應用程式上傳為新的應用程式。 您必須在 [選取應用程式類型]  窗格中選取 [企業營運應用程式] 作為 [應用程式類型]  來新增應用程式。 然後，選取應用程式套件檔案 (副檔名為 .AppxBundle)。
 
 9. 在 [選取相依性應用程式檔案]  底下，按住 Shift 鍵並選取您在步驟 7 中下載的所有相依性，然後確認 [已新增]  資料行會針對您所需的架構顯示 [是]  。
 

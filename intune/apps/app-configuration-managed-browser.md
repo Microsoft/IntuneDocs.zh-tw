@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/27/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 52f907b8762322684ec9e21910745a197c3dbe4e
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564334"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812507"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理 Web 存取
 
@@ -36,6 +36,9 @@ ms.locfileid: "74564334"
 - 單一登入
 - 應用程式組態設定
 - Azure 應用程式 Proxy 整合
+
+> [!IMPORTANT]
+> 即將淘汰 Intune Managed Browser。 請使用 Microsoft Edge 來取得受保護的 Intune 瀏覽器體驗。 
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge 支援
 
@@ -172,7 +175,7 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 
 使用上述程序來建立 Microsoft Edge 應用程式設定。 在選取 [設定]  窗格上的 [組態設定]  時 (步驟 9)，提供下列金鑰和值組：
 
-| 金鑰                              |  值   |
+| 機碼                              |  值   |
 |----------------------------------|----------|
 | **com.microsoft.intune.useEdge** | **true** |
 
@@ -219,9 +222,9 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
-|                                金鑰                                |                                                           值                                                            |
+|                                機碼                                |                                                           值                                                            |
 |-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|
-| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效的 URL。 基於安全性考量，會封鎖不正確的 URL。<br>範例： `https://www.bing.com` |
+| <strong>com.microsoft.intune.mam.managedbrowser.homepage</strong> | 指定有效的 URL。 基於安全性考量，會封鎖不正確的 URL。<br>範例：`https://www.bing.com` |
 
 ## <a name="how-to-configure-bookmarks-for-a-protected-browser"></a>如何設定受保護瀏覽器的書籤
 
@@ -233,7 +236,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
-|                                金鑰                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
+|                                機碼                                 |                                                                                                                                                                                                                                                         值                                                                                                                                                                                                                                                          |
 |--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <strong>com.microsoft.intune.mam.managedbrowser.bookmarks</strong> | 此設定值是一份書籤。 每個書籤的組成都是書籤標題加書籤 URL。 請使用 <strong>&#124;</strong> 字元分隔標題和 URL。<br><br>範例：<br> <code>Microsoft Bing&#124;https://www.bing.com</code><br><br>若要設定多個書籤，請以雙引號字元 <strong>&#124;&#124;</strong> 分隔每組配對。<br><br>範例：<br> <code>Bing&#124;https://www.bing.com&#124;&#124;Contoso&#124;https://www.contoso.com</code> |
 
@@ -241,7 +244,7 @@ Outlook 必須設定啟用以下設定的應用程式保護原則：**限制 Web
 
 使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
-|金鑰|值|
+|機碼|值|
 |-|-|
 |從下列選項進行選擇：<br><ul><li>指定允許的 URL (僅允許這些 URL；不能存取其他站台)：<br> **com.microsoft.intune.mam.managedbrowser.AllowListURLs**<br><br></li><li>指定封鎖的 URL (可以存取所有其他網站)：<br>**com.microsoft.intune.mam.managedbrowser.BlockListURLs**</li></ul>|金鑰的相對應值為 URL 清單。 您可以以單一值的方式，輸入想要允許或封鎖的所有 URL，並使用縱線 **&#124;** 字元分隔。<br><br>範例：<br><br><code>URL1&#124;URL2&#124;URL3</code><br><code>http://*.contoso.com/*&#124;https://*.bing.com/*&#124;https://expenses.contoso.com</code>|
 
@@ -307,7 +310,7 @@ Microsoft Edge 行動企業體驗的基石是雙重身分識別模型，這表�
 
 使用程序來建立 Managed Browser 或 Microsoft Edge 應用程式設定，提供下列金鑰和值組：
 
-| 金鑰                                                                | 值                                                 |
+| 機碼                                                                | 值                                                 |
 |--------------------------------------------------------------------|-------------------------------------------------------|
 | **com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock** | **False** 會封鎖這些平順轉換的發生 |
 

@@ -16,19 +16,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b7b77c4f0127c9ee16b255d0e0e28622b85c323b
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
+ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907248"
+ms.lasthandoff: 01/22/2020
+ms.locfileid: "76517536"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-**重新啟動**裝置動作會導致您選擇的裝置重新啟動。 重新啟動時不會自動通知裝置擁有者，所以他們可能會遺失工作。
+[重新啟動]  裝置動作會導致您選擇的裝置重新啟動 (在 5 分鐘內)。 重新啟動時不會自動通知裝置擁有者，所以他們可能會遺失工作。
 
 ## <a name="supported-platforms"></a>支援的平台
 
@@ -44,7 +44,7 @@ ms.locfileid: "74907248"
 
 ## <a name="restart-a-device"></a>重新啟動裝置
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [裝置]   > [所有裝置]  。
 4. 在您管理的裝置清單中，選取裝置 > [重新啟動]   > [是]  。
 

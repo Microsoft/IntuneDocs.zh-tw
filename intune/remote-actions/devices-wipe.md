@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2d9fbbbb80cf25861b2e0afbf3d01cfca3ece5fd
-ms.sourcegitcommit: df8e2c052fafb2d5d4e9b4fcd831ae0ecf7f8d16
+ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
+ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74991776"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76812466"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
@@ -55,7 +55,7 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 
 ### <a name="wiping-a-device"></a>抹除裝置
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [裝置]   > [所有裝置]  。
 4. 選取您要抹除的裝置名稱。
 5. 在顯示裝置名稱的窗格中，選取 [抹除]  。
@@ -88,7 +88,7 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 
 |資料類型|iOS|
 |-------------|-------|
-|Intune 安裝的公司應用程式和相關資料|**使用公司入口網站安裝的應用程式：** 針對已釘選到管理設定檔的應用程式，會移除所有應用程式資料與應用程式。 這些應用程式包括原本從 App Store 安裝，以及之後以公司應用程式受控的應用程式。 <br /><br /> **使用行動裝置應用程式管理及從 App Store 安裝的 Microsoft 應用程式：** 針對不受「公司入口網站」管理的應用程式，會移除由應用程式本機儲存體內之行動應用程式管理 (MAM) 加密保護的公司應用程式資料。 應用程式外受 MAM 加密保護的資料，仍維持加密狀態且無法使用，但不會被移除。 不會移除個人應用程式資料和應用程式。|
+|Intune 安裝的公司應用程式和相關資料|**使用公司入口網站安裝的應用程式：** 針對已釘選到管理設定檔的應用程式，會移除所有應用程式資料與應用程式。 這些應用程式包括原本從 App Store 安裝並於稍後作為公司應用程式進行管理的應用程式，除非應用程式設定為不在移除裝置時解除安裝。 <br /><br /> **使用行動裝置應用程式管理及從 App Store 安裝的 Microsoft 應用程式：** 針對不受「公司入口網站」管理的應用程式，會移除由應用程式本機儲存體內之行動應用程式管理 (MAM) 加密保護的公司應用程式資料。 應用程式外受 MAM 加密保護的資料，仍維持加密狀態且無法使用，但不會被移除。 不會移除個人應用程式資料和應用程式。|
 |設定|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|
@@ -109,7 +109,7 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|
 |憑證設定檔設定|憑證會予以撤銷，但不會移除。|憑證會予以移除及撤銷。|
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|
-|電子郵件|N/A (Android 裝置不支援電子郵件設定檔)|經由 Intune 佈建的電子郵件設定檔已移除。 已刪除裝置上的快取電子郵件。|
+|電子郵件|N/A (Android 裝置不支援電子郵件設定檔)|已移除經由 Intune 佈建的電子郵件設定檔。 已刪除裝置上的快取電子郵件。|
 |Azure AD 退出|已移除 Azure AD 記錄。|已移除 Azure AD 記錄。|
 
 ### <a name="android-work-profile"></a>Android 工作設定檔
@@ -136,7 +136,7 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 
 |資料類型|Windows 8.1 (MDM) 和 Windows RT 8.1|Windows RT|Windows Phone 8.1 和 Windows Phone 8|Windows 10|
 |-------------|----------------------------------------------------------------|--------------|-----------------------------------------|--------|
-|Intune 安裝的公司應用程式和相關資料|會撤銷受 EFS 保護之檔案的索引鍵。 使用者無法開啟檔案。|不會移除公司應用程式。|原本透過公司入口網站安裝的應用程式將會解除安裝。 將會移除公司應用程式資料。|已將應用程式解除安裝。 已移除側載金鑰。<br>針對 Windows 10 版本 1703 (Creators Update) 和更新版本，不會移除 Office 365 ProPlus 應用程式。 Intune 管理延伸模組所安裝的 Win32 應用程式不會在未註冊裝置上解除安裝。 系統管理員可以利用指派排除，來確保不會對 BYOD 裝置提供 Win32 應用程式。|
+|Intune 安裝的公司應用程式和相關資料|會撤銷受 EFS 保護之檔案的索引鍵。 使用者無法開啟檔案。|不會移除公司應用程式。|原本透過公司入口網站安裝的應用程式將會解除安裝。 將會移除公司應用程式資料。|已解除安裝應用程式。 已移除側載金鑰。<br>針對 Windows 10 版本 1703 (Creators Update) 和更新版本，不會移除 Office 365 ProPlus 應用程式。 Intune 管理延伸模組所安裝的 Win32 應用程式不會在未註冊裝置上解除安裝。 系統管理員可以利用指派排除，來確保不會對 BYOD 裝置提供 Win32 應用程式。|
 |設定|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|由 Intune 原則所設定的設定不再是強制性。 使用者可以變更這些設定。|
 |Wi-Fi 及 VPN 設定檔設定|已移除。|已移除。|不支援。|已移除。|
 |憑證設定檔設定|憑證會予以移除及撤銷。|憑證會予以移除及撤銷。|不支援。|憑證會予以移除及撤銷。|
@@ -148,7 +148,7 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 
 ### <a name="retire"></a>淘汰
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 在 [裝置]  窗格中，選取 [所有裝置]  。
 3. 選取您要淘汰的裝置名稱。
 4. 在顯示裝置名稱的窗格中，選取 [淘汰]  。 選取 [是]  確認。
@@ -159,7 +159,7 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 
 如果您想要從 Intune 入口網站移除裝置，則可以從特定的裝置窗格來刪除裝置。 下一次裝置簽入時，會移除裝置上所有的公司資料。
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]   > [所有裝置]  > 選擇您要刪除的裝置 > [刪除]  。
 
 ### <a name="automatically-delete-devices-with-cleanup-rules"></a>使用清除規則自動刪除裝置
@@ -187,7 +187,7 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 
 如果您想要完全移除由 Intune 管理的 Apple DEP 裝置，請遵循下列步驟：
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [淘汰]  。
 ![淘汰的螢幕擷取畫面](./media/devices-wipe/retire.png)
 3. 請瀏覽 [deploy.apple.com](http://deploy.apple.com) 並依序號搜尋裝置。

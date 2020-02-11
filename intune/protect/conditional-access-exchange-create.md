@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 01/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 644297777e8a103d6ffdc5f025ebf8f29591fda8
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d04897d38c1b46f27fe86e72ecfa6856aa9eece2
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74188459"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755632"
 ---
 # <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版 Exchange Online Dedicated 建立條件式存取原則
 
@@ -37,7 +37,7 @@ ms.locfileid: "74188459"
 
 - 您的 Exchange 版本為 **Exchange 2010 SP1 或更新版本**。 支援 Exchange 伺服器用戶端存取伺服器 (CAS) 陣列。
 
-- 您已安裝並使用 [Exchange Active Sync 內部部署 Exchange 連接器](exchange-connector-install.md)，可將 Intune 連線至內部部署 Exchange。
+- 您已安裝並使用 [Exchange ActiveSync 內部部署 Exchange 連接器](exchange-connector-install.md)，可將 Intune 連線至內部部署 Exchange。
 
     >[!IMPORTANT]  
     >Intune 支援每個訂閱有多個內部部署 Exchange 連接器。  不過，每個內部部署 Exchange 連接器均專屬於單一 Intune 租用戶，無法與任何其他租用戶搭配使用。  如果您有多個內部部署 Exchange 組織，則可以為每個 Exchange 組織設定個別的連接器。
@@ -84,40 +84,57 @@ Windows 8.1 及更新版本上原生的**郵件**應用程式 (在使用 Intune 
 
 3. 在 [Exchange 內部部署存取]  窗格中選擇 [是]  ，以 [啟用 Exchange 內部部署存取控制]  。
 
+   > [!div class="mx-imgBorder"]
+   > ![Exchange 內部部署存取畫面的範例螢幕擷取畫面](./media/conditional-access-exchange-create/exchange-on-premises-access.png)
+
 4. 在 [指派]  底下，選擇 [選取要納入的群組]  ，然後選取一或多個群組來設定存取。
 
    已將適用於 Exchange 內部部署存取的條件式存取原則套用至您所選群組的成員。 接收到此原則的使用者必須先在 Intune 中註冊其裝置，並符合合規性設定檔的規範，才能存取 Exchange 內部部署。
 
-5. 若要排除群組，請選擇 [選取要排除的群組]  ，然後選取無須註冊裝置及符合合規性設定檔規範然後才能存取 Exchange 內部部署的一或多個群組。 
+   > [!div class="mx-imgBorder"]
+   > ![選取要包含的群組](./media/conditional-access-exchange-create/select-groups.png)
 
-6. 接下來，設定 Intune 內部部署 Exchange 連接器的設定。  在 [Exchange 內部部署存取]  視窗的 [設定]  下，選取 [Exchange ActiveSync 內部部署連接器]  ，然後選取要設定的 Exchange 組織連接器。
+5. 若要排除群組，請選擇 [選取要排除的群組]  ，然後選取無須註冊裝置及符合合規性設定檔規範然後才能存取 Exchange 內部部署的一或多個群組。
 
-7. 如果使用者的裝置不符合規範，且他們想要存取 Exchange 內部部署，則在 [設定]  底下，選擇 [使用者通知]  ，以修改傳送給使用者的預設電子郵件訊息。 訊息範本會使用標記語言。  當您一邊鍵入訊息時，會一邊顯示訊息的預覽。
+   選取 [儲存]  以儲存您的設定，然後返回 [Exchange 存取]  窗格。
+
+6. 接下來，設定 Intune 內部部署 Exchange 連接器的設定。 在主控台中，選取 [租用戶系統管理]   > [Exchange 存取]  > [Exchange ActiveSync 內部部署連接器]  ，然後選取您要設定的 Exchange 組織連接器。
+
+7. 針對 [使用者通知]  ，選取 [編輯]  以開啟 [編輯組織]  工作流程，您可以在其中修改「使用者通知」  訊息。
+
+   > [!div class="mx-imgBorder"]
+   > ![針對通知編輯組織工作流程的範例螢幕擷取畫面](./media/conditional-access-exchange-create/edit-organization-user-notification.png)
+
+   修改傳送給使用者的預設電子郵件訊息，如果使用者的裝置不符合規範，且他們想要存取 Exchange 內部部署，就會收到此訊息。 訊息範本會使用標記語言。 您也可以在輸入時看到訊息外觀的預覽
+
+   選取 [檢閱並儲存]  ，然後選取 [儲存]  來儲存您的編輯，以完成 Exchange 內部部署存取的設定。
+
    > [!TIP]
    > 若要深入了解標記語言，請參閱 Wikipedia 上的這篇[文章](https://en.wikipedia.org/wiki/Markup_language)。
- 
-   選取 [確定]  來儲存您的編輯，以完成 Exchange 內部部署存取的設定。
 
-8. 接下來，選取 [進階 Exchange Active Sync 存取設定]  以開啟 [進階 Exchange ActiveSync 存取設定]  窗格，您可以在其中設定裝置存取規則：  
+8. 接下來，選取 [進階 Exchange ActiveSync 存取設定]  以開啟 [進階 Exchange ActiveSync 存取設定]  工作流程，您可以在其中設定裝置存取規則。
+
+   > [!div class="mx-imgBorder"]
+   > ![針對進階設定編輯組織工作流程的範例螢幕擷取畫面](./media/conditional-access-exchange-create/edit-organization-advanced-settings.png)
 
    - 針對 [非受控裝置存取]  ，為來自不受條件式存取或其他規則影響之裝置的存取，設定全域預設規則：
 
      - **允許存取**：所有裝置皆可立即存取 Exchange 內部部署。 如果擁有裝置的使用者屬於您在上一個程序中設定為包含的群組，則當裝置稍後被評估為不符合合規性政策的規範或未向 Intune 註冊時，即會予以封鎖。
 
-     - **封鎖存取**和**隔離**：立即封鎖所有裝置存取 Exchange 內部部署。 如果擁有裝置的使用者屬於您在上一個程序中設定為包含的群組中，則在該裝置向 Intune 註冊且評估為符合規範之後，即可存取。 
+     - **封鎖存取**和**隔離**：立即封鎖所有裝置存取 Exchange 內部部署。 如果擁有裝置的使用者屬於您在上一個程序中設定為包含的群組中，則在該裝置向 Intune 註冊且評估為符合規範之後，即可存取。
 
        「未」  執行 Samsung Knox Standard 的 Android 裝置不支援此設定，且一律會遭到封鎖。
 
-   -  針對 [裝置平台例外]  選取 [新增]  ，然後視您的環境需要指定平台詳細資料。 
-   
+   - 針對 [裝置平台例外]  選取 [新增]  ，然後視您的環境需要指定詳細資料。
+
       若將 [非受控裝置存取]  設定設為 [已封鎖]  ，即使已有封鎖它們的平台例外狀況，仍允許已註冊且符合規範的裝置。  
-   
-   選取 [確定]  以儲存您的編輯。
 
-9. 選取 [儲存]  以儲存 Exchange 條件式存取原則。
+9. 選取 [確定]  以儲存您的編輯。
 
-接下來，建立合規性政策，並將它指派給 Intune 的使用者以評估其行動裝置，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
+10. 選取 [檢閱並儲存]  ，然後選取 [儲存]  以儲存 Exchange 條件式存取原則。
 
 ## <a name="next-steps"></a>後續步驟
+
+接下來，建立合規性政策，並將它指派給 Intune 的使用者以評估其行動裝置，請參閱[開始使用裝置合規性](device-compliance-get-started.md)。
 
 [在 Microsoft Intune 中對 Intune 內部部署 Exchange 連接器進行疑難排解](https://support.microsoft.com/help/4471887)

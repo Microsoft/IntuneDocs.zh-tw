@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/14/2020
+ms.date: 01/29/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc9dd03714e24dae4b0c7afe9206c6a8d7d36c13
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
+ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956277"
+ms.lasthandoff: 01/30/2020
+ms.locfileid: "76886793"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 軟體更新
 
@@ -205,20 +205,22 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 
 - 不同於使用 35 天後過期的更新通道「暫停」  ，Windows 10 功能更新原則仍然有效。 在修改或移除 Windows 10 功能更新原則之前，裝置都不會安裝新的 Windows 版本。 如果您編輯原則來指定較新的版本，則裝置就可以從該 Windows 版本安裝功能。
 
+### <a name="prerequisites-for-windows-10-feature-updates"></a>Windows 10 功能更新的先決條件
+
+若要在 Intune 中使用 Windows 10 功能更新，必須符合下列先決條件。
+
+- 裝置必須已在 Intune MDM 中註冊，而且必須已加入 Azure AD 或已註冊 Azure AD。
+- 若要搭配 Intune 使用「功能更新」原則，裝置必須開啟遙測，並具有[「基本」  ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)的最低設定。 遙測是作為[裝置限制原則](../configuration/device-restrictions-configure.md)的一部分，在 [報告和遙測]  底下設定。
+  
+  接收「功能更新」原則，且將遙測設定為 [未設定]  (代表它已關閉) 的裝置，可能會安裝比在「功能更新」原則中所定義的 Windows 版本還要新的版本。 隨著此功能即將正式推出，我們也正在檢閱要求遙測的必要條件。
+
 ### <a name="limitations-for-windows-10-feature-updates"></a>Windows 10 功能更新的限制
 
 - 當您將「Windows 10 功能更新」  原則部署到同時也接收「Windows 10 更新通道」  原則的裝置時，請檢閱更新通道的下列設定：
   - [功能更新延遲期間 (天)]  必須設為 **0**。
   - 更新通道的功能更新必須為「正在執行」  。 不得為暫停。
 
-- Windows 10 功能更新原則無法在全新體驗 (OOBE) 期間套用，而且只會在裝置完成佈建 (通常為一天) 之後、於第一次 Windows Update 掃描時套用。 此外，使用 AutoPilot 佈建的裝置不會接收到原則。
-
-  我們正在查看此限制，以確認未來是否可以支援它。
-
-> [!IMPORTANT]
-> 若要搭配 Intune 使用「功能更新」原則，裝置必須開啟遙測，並具有[「基本」  ](../configuration/device-restrictions-windows-10.md#reporting-and-telemetry)的最低設定。 遙測是作為[裝置限制原則](../configuration/device-restrictions-configure.md)的一部分，在 [報告和遙測]  底下設定。
->
-> 接收「功能更新」原則，且將遙測設定為 [未設定]  (代表它已關閉) 的裝置，可能會安裝比在「功能更新」原則中所定義的 Windows 版本還要新的版本。 隨著此功能即將正式推出，我們也正在檢閱要求遙測的必要條件。
+- Windows 10 功能更新原則無法在 Autopilot 全新體驗 (OOBE) 期間套用，而且只會在裝置完成佈建 (通常為一天) 之後、於第一次 Windows Update 掃描時套用。
 
 ### <a name="create-and-assign-windows-10-feature-updates"></a>建立並指派 Windows 10 功能更新
 
@@ -242,10 +244,12 @@ Intune 系統管理員可以使用 [解除安裝]  ，針對作用中或已暫�
 - 選取 [屬性]  以修改部署。  在 [屬性]  窗格中，選取 [編輯]  以開啟 [Deployment settings or Assignments] \(部署設定或指派\)  ，即可在此修改部署。
 - 選取 [End user update status] \(終端使用者更新狀態\)  以檢視原則的相關資訊。
 
+## <a name="validation-and-reporting-for-windows-10-updates"></a>Windows 10 更新的驗證和報告
+
+針對 Windows 10 更新通道與 Windows 10 功能更新，請使用[更新的 Intune 合規性報告](../windows-update-compliance-reports.md)來監視裝置的更新狀態。 此解決方案搭配您的 Azure 訂用帳戶使用[更新合規性](https://docs.microsoft.com/windows/deployment/update/update-compliance-monitor) \(部分機器翻譯\)。
+
 ## <a name="next-steps"></a>後續步驟
 
 [Intune 支援的 Windows 更新設定](../windows-update-settings.md)
-
-[更新的 Intune 合規性報表](../windows-update-compliance-reports.md)
 
 [針對 Windows 10 更新通道進行疑難排解](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Windows-10-Update-Ring-Policies/ba-p/714046) \(英文\)

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 01/22/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0e57aa0546950a12cdb2d4a2e3c8ed721bfc24b8
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
+ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564145"
+ms.lasthandoff: 01/26/2020
+ms.locfileid: "76755386"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 將受控 Google Play 應用程式新增至 Android Enterprise 裝置
 
@@ -59,19 +59,41 @@ ms.locfileid: "74564145"
 1. 直接在 Intune 主控台中：在 Intune 內裝載的檢視中瀏覽及核准商店應用程式。 這會在 Intune 主控台中直接開啟，而不需要您使用不同的帳戶重新驗證。
 1. 在受控 Google Play 主控台中：您可以選擇直接開啟受控 Google Play 主控台，並在該處核准應用程式。 如需詳細資訊，請參閱[與 Intune 同步受控 Google Play 應用程式](apps-add-android-for-work.md#sync-a-managed-google-play-app-with-intune)。  這要求您必須使用您用來將 Intune 租用戶連線到受控 Google Play 的帳戶進行個別登入。
 
-
 ### <a name="add-a-managed-google-play-store-app-directly-in-the-intune-console"></a>在 Intune 主控台中直接新增受控 Google Play 商店應用程式
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
-3. 在 [應用程式類型]  下拉式清單方塊中，選取 [受控的 Google Play]  。
-4. 選取 [受控的 Google Play - 開啟]  來開啟受控 Google Play 目錄。
-5. 在 Google Play 目錄中，選取 [搜尋 Play Store]  。
-6. 使用搜尋方塊來搜尋您要管理的應用程式。
-7. 按一下 [核准]  來在受控 Google Play 中核准該應用程式，然後按一下 [核准]  來接受應用程式權限。
-8. 在 [核准設定] 視窗中選取 [在應用程式要求新權限時保持核准]  ，然後按一下 [儲存]  。 如果您不選擇此選項，當應用程式開發人員發佈新的更新時，您便必須手動核准任何新的權限。 這會導致應用程式的安裝和更新停止，直到權限被核准為止。 基於此原因，建議選取自動核准新權限的選項。 
-9. 按一下 [確定]  以包含您已核准的應用程式。
-10. 按一下 [應用程式]  窗格上的 [同步]  ，以與受控的 Google Play 服務進行同步處理。
+3. 在 [選取應用程式類型]  窗格中，在可用的 [市集應用程式]  類型下，選取 [受控 Google Play 應用程式]  。
+4. 按一下 [選取]  。 [受控的 Google Play]  應用程式市集隨即顯示。
+
+    > [!NOTE]
+    > 您的 Intune 租用戶帳戶必須連線到您的 Android Enterprise 帳戶以瀏覽受控 Google Play 商店應用程式。 如需詳細資訊，請參閱[將您的 Intune 帳戶連結到受控 Google Play 帳戶](../enrollment/connect-intune-android-enterprise.md)。
+
+5. 選取應用程式以檢視應用程式詳細資料。
+6. 在顯示應用程式的頁面上，按一下 [核准]  。 應用程式視窗隨即開啟，要求您授權讓應用程式執行各種作業。
+7. 選取 [核准]  接受應用程式權限，並繼續作業。
+8. 在 [核准設定]  索引標籤中選取 [在應用程式要求新權限時保持核准]  ，然後按一下 [完成]  。 
+
+    > [!IMPORTANT]
+    > 如果您不選擇此選項，當應用程式開發人員發佈新的更新時，您便必須手動核准任何新的權限。 這會導致應用程式的安裝和更新停止，直到權限被核准為止。 基於此原因，建議選取自動核准新權限的選項。 
+
+9. 按一下 [選取]  來選取應用程式。
+10. 按一下刀鋒視窗頂端的 [同步]  ，以與受控 Google Play 服務同步應用程式。
+11. 按一下 [重新整理]  以更新應用程式清單並顯示新增的應用程式。
+
+### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>新增其他應用程式設定到受控 Google Play 商店應用程式
+1. 如果您需要新增其他應用程式詳細資料，請從應用程式清單選取應用程式。
+2. 按一下 [屬性]   > [應用程式資訊]  旁邊的 [編輯]  。 [應用程式資訊]  頁面隨即顯示。
+3. 在 [應用程式資訊]  頁面中，新增應用程式詳細資料：
+    - **類別**：(選擇性) 選取一或多個內建的應用程式類別，或選取您建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
+    - **將此顯示為公司入口網站中的精選應用程式**：若要在使用者瀏覽應用程式時，於公司入口網站的主頁面上以醒目方式顯示應用程式套件，請選取此選項。
+    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
+    - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
+    - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
+    - **擁有者**：(選擇性) 輸入此應用程式的擁有者名稱，例如「人力資源部門」  。
+    - **附註**：(選擇性) 輸入要與此應用程式建立關聯的任何附註。
+4. 按一下 [檢閱並儲存]  來檢視 [檢閱並儲存]  頁面。 
+5. 完成後，請按一下 [儲存]  來在 Intune 中更新應用程式。
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>在受控 Google Play 主控台中新增受控 Google Play 商店應用程式 (替代方法)
 如果您希望將受控 Google Play 應用程式與 Intune 同步處理，而不是使用 Intune 直接新增，請使用下列步驟。
@@ -81,7 +103,7 @@ ms.locfileid: "74564145"
 
 1. 前往[受控 Google Play 商店](https://play.google.com/work)。 使用與您用來設定 Intune 與 Android 企業間連線的相同帳戶進行登入。
 2. 搜尋市集並選取您要使用 Intune 指派的應用程式。
-3. 在顯示應用程式的頁面上，選取 [核准]  。  
+3. 在顯示應用程式的頁面上，按一下 [核准]  。  
     在下列範例中，已經選擇 Microsoft Excel 應用程式。
 
     ![受控 Google Play 商店中的 [核准] 按鈕](./media/apps-add-android-for-work/approve.png)
@@ -109,20 +131,22 @@ ms.locfileid: "74564145"
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
-3. 在 [應用程式類型]  下拉式清單方塊中，選取 [受控的 Google Play]  。
-4. 選取 [受控的 Google Play - 開啟]  來開啟受控 Google Play 目錄。
-5. 在 Google Play 目錄中，選取 [私人應用程式]  。
-6. 按一下 [+]  按鈕以新增應用程式
-7. 針對應用程式提交應用程式標題與 APK 套件
-8. 按一下 [建立] 
-9. 如果您已完成新增應用程式，請關閉 [受控的 Google Play] 窗格
-10. 按一下 [應用程式]  窗格上的 [同步]  ，以與受控的 Google Play 服務進行同步處理。 請注意，私人應用程式可能需要數分鐘，才能進行同步。如果它並未在您第一次執行同步時出現，請等候數分鐘，然後起始新的同步。
+3. 在 [選取應用程式類型]  窗格中，在可用的 [市集應用程式]  類型下，選取 [受控 Google Play 應用程式]  。
+4. 按一下 [選取]  。 [受控的 Google Play]  應用程式市集隨即在 Intune 內顯示。
+5. 在 Google Play 視窗中選取 [私人應用程式]  (位於「鎖頭」  圖示旁邊)。 
+6. 按一下右下方的 **"+"** 按鈕來新增應用程式。
+7. 新增應用程式 [標題]  ，然後按一下 [上傳 APK]  來新增 APK 應用程式套件。
+8. 按一下 [建立]  。
+9. 如果您已完成新增應用程式，請關閉 [受控的 Google Play] 窗格。
+10. 按一下 [應用程式]  窗格上的 [同步]  ，以與受控的 Google Play 服務進行同步處理。 
+
+    > [!NOTE]
+    > 私人應用程式可能需要數分鐘，才能進行同步。如果應用程式並未在您第一次執行同步時出現，請等候數分鐘，然後起始新的同步。
 
 如需受控 Google Play 私人應用程式的詳細資訊 (包括常見問題集)，請參閱 Google 的支援文章： https://support.google.com/googleplay/work/answer/9146439
 
->[!NOTE]
+>[!IMPORTANT]
 >使用此方法新增的私人應用程式絕對不能設為公用。 只有在您確定此應用程式對於您的組織一律是私人時，才使用此發佈選項。
-  
 
 ### <a name="managed-google-play-private-lob-app-publishing-using-the-google-developer-console"></a>使用 Google 開發人員主控台發佈受控 Google Play 私人 (LOB) 應用程式
 
@@ -151,13 +175,17 @@ ms.locfileid: "74564145"
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。
-3. 在 [應用程式類型]  下拉式清單方塊中，選取 [受控的 Google Play]  。
-4. 選取 [受控的 Google Play - 開啟]  來開啟受控 Google Play 目錄。
-5. 在 Google Play 目錄中，選取 [Web 應用程式]  。
-6. 按一下 [+]  按鈕以新增應用程式
-7. 輸入必要的資訊，然後按一下 [建立] 
-8. 如果您已完成新增應用程式，請關閉 [受控的 Google Play] 窗格
-9. 按一下 [應用程式]  窗格上的 [同步]  ，以與受控的 Google Play 服務進行同步處理。 請注意，私人應用程式可能需要數分鐘，才能進行同步。如果它並未在您第一次執行同步時出現，請等候數分鐘，然後起始新的同步。
+3. 在 [選取應用程式類型]  窗格中，在可用的 [市集應用程式]  類型下，選取 [受控 Google Play 應用程式]  。
+4. 按一下 [選取]  。 [受控的 Google Play]  應用程式市集隨即在 Intune 內顯示。
+5. 在 Google Play 視窗中選取 [Web 應用程式]  (位於「地球」  圖示旁邊)。
+6. 按一下右下方的 **"+"** 按鈕來新增應用程式。
+7. 新增應用程式 [標題]  、Web 應用程式 [URL]  ，選取應用程式的顯示方式，然後選取應用程式圖示。
+8. 按一下 [建立]  。
+9. 如果您已完成新增應用程式，請關閉 [受控的 Google Play] 窗格。
+10. 按一下 [應用程式]  窗格上的 [同步]  ，以與受控的 Google Play 服務進行同步處理。 
+
+    > [!NOTE]
+    > Web 應用程式可能需要數分鐘，才能進行同步。如果應用程式並未在您第一次執行同步時出現，請等候數分鐘，然後起始新的同步。
 
 ## <a name="sync-a-managed-google-play-app-with-intune"></a>使用 Intune 同步處理受控 Google Play 應用程式
 
