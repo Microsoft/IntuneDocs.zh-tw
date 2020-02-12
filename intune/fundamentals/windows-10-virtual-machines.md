@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9afaf2c8a63bfaed1fdb593baf42c8fa258d7893
-ms.sourcegitcommit: 1a22b8b31424847d3c86590f00f56c5bc3de2eb5
+ms.openlocfilehash: 486ca7eae1b1e8b016f44c735ec04a23145421a8
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/21/2019
-ms.locfileid: "74263113"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124974"
 ---
 # <a name="using-windows-10-virtual-machines-with-intune"></a>搭配 Intune 使用 Windows 10 虛擬機器
 
@@ -33,7 +33,7 @@ Intune 支援搭配特定限制管理執行 Windows 10 企業版的虛擬機器�
 
 ## <a name="enrollment"></a>註冊
 - 我們不建議搭配 Intune 管理隨選、工作階段主機虛擬機器。 必須在建立每個 VM 時註冊它。 此外，定期刪除 VM 將會在 Intune 中留下孤立的裝置記錄，直到將它們[清除](../remote-actions/devices-wipe.md#automatically-delete-devices-with-cleanup-rules)為止。 
-- 不支援 Windows Autopilot 自我部署模式，因為它需要信賴平台模組 (TPM)。 
+- 不支援 Windows Autopilot 自我部署與白手套部署類型，因為其需要實體信賴平台模組 (TPM)。 
 - 在只能使用 RDP 存取的 VM (例如裝載在 Azure 上的 VM) 上，不支援全新體驗 (OOBE) 註冊。 這些限制代表：
     - 不支援 Windows Autopilot 和商業 OOBE。
     - 不支援裝置內容原則的 [註冊狀態頁面] 選項。

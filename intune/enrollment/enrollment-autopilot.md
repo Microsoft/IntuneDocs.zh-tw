@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9da7acfc34dbd25902fc6fb9617ba395216a9b3
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: 4f97c4c56073044e79b5251dc83c54decb5c9c55
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977796"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124838"
 ---
 # <a name="enroll-windows-devices-in-intune-by-using-the-windows-autopilot"></a>使用 Windows Autopilot 在 Intune 中註冊 Windows 裝置  
 Windows Autopilot 簡化了在 Intune 中註冊裝置的程序。 建置和維護自訂的作業系統映像需要許多時間。 您也可能會花時間將這些自訂的作業系統映像套用至新的裝置，以在送交使用者之前，先將它們做好使用的準備。 使用 Microsoft Intune 和 Autopilot，您可以將新的裝置提供給使用者而不需要建置、維護及套用自訂作業系統映像至裝置。 當您使用 Intune 來管理 Autopilot 裝置時，可以在裝置註冊之後管理原則、設定檔、應用程式等。 如需優點、案例和必要條件的概觀，請參閱 [Windows Autopilot 概觀](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot)。
@@ -100,6 +100,9 @@ Autopilot 部署設定檔會用來設定 Autopilot 裝置。 您可以為每個�
     - **自我部署 (預覽)** ：(需要 Windows 10 1809 版或更新版本) 具有此設定檔的裝置不會與註冊裝置的使用者建立關聯。 不需要使用者認證，也能註冊裝置。 當裝置沒有與其建立關聯的使用者時，則不會套用以使用者為基礎的合規性政策。 使用自我部署模式時，只會套用以裝置為目標的合規性政策。
 
     ![[OOBE] 頁面的螢幕擷取畫面](./media/enrollment-autopilot/create-profile-outofbox.png)
+
+   > [!NOTE]
+   > 選取的部署模式目前不支援變暗或呈現陰影的選項。
 
 6. 在 [加入Azure AD]  方塊中，選擇 [已加入 Azure AD]  。
 7. 設定下列選項：

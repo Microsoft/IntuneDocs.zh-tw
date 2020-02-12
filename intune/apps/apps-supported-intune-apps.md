@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5c916e5cfb09da50bfcbfbe2ac4b094172357e80
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 28357a87ca429f808da1cfa063307f24e7c3ed7c
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812391"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124908"
 ---
 # <a name="microsoft-intune-protected-apps"></a>受 Microsoft Intune 保護的應用程式  
 
@@ -95,6 +95,7 @@ ms.locfileid: "76812391"
 | **PrinterOn for Microsoft**<p><img alt="Partner app - PrinterOn for Microsoft icon" src="./media/apps-supported-intune-apps/icon-p-printeron.png" width="100"> | PrinterOn 的無線行動列印解決方案可讓使用者隨時隨地透過安全網路進行遠端列印。| [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.printeron.droid.phone)、<br>[App Store 連結 (iOS)](https://itunes.apple.com/us/app/printeron-for-microsoft/id1258715414?mt=8) | 
 | **Qlik Sense Mobile**<p><img alt="Partner app - Qlik Sense Mobile icon" src="./media/apps-supported-intune-apps/icon-p-qlik.png" width="100"> | Qlik Sense 是一種市場領先的新一代應用程式，適用於自助導向的分析。 Qlik 的專利技術可讓使用者輕鬆地結合來自許多不同來源的資料並自由探索，而不會有查詢型工具的限制。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.qlik.qliksense.mobile)、<br>[App Store 連結 (iOS)](https://apps.apple.com/us/app/qlik-sense-mobile/id1217049362) | 
 | **SAP Fiori**<p><img alt="Partner app - SAP Fiori icon" src="./media/apps-supported-intune-apps/icon-p-sap-fiori.png" width="100"> | 藉由使用適用於 iPhone 和 iPad 的 SAP Fiori 用戶端行動應用程式來隨時隨地追蹤最常見的商務工作，提升您每天的生產力。 使用這個適用於超過 750 個 SAP Fiori 應用程式 Web 版本的增強型行動執行階段，來提供具有增強型附件處理和全螢幕操作功能的下一層級行動體驗。 此外，還能存取客戶以 SAP Fiori 服務建置並已可支援 Intune 行動應用程式管理的自訂 SAP Fiori 行動應用程式。 | [App Store 連結 (iOS)](https://itunes.apple.com/us/app/sap-fiori-client/id824997258?mt=8) |  
+| **適用於 Intune 的 Smartcrypt**<p><img alt="Partner app - Smartcrypt for Intune icon" src="./media/apps-supported-intune-apps/icon-p-smartcrypt.png" width="100"> | 適用於 Intune 的 Smartcrypt 是專為在 Intune 環境中作業的現有 PKWARE 客戶所設計。 Smartcrypt 可讓您隨時隨地完成工作。 它快速、安全又容易使用，讓您不論在任何地方都能維持高生產力。 如果您不確定您是否有 Smartcrypt，請洽詢貴公司的 IT 系統管理員。 透過 Smartcrypt，您可以：使用 Smartkeys 加密及解密檔案、利用 X.509 數位憑證來解密封存、建立及管理 Smartkeys、使用 X.509 數位憑證執行資料的數位簽署及驗證、使用強式複雜密碼加密 (包括 AE2) 來加密及解密檔案、以現有的 Active Directory 認證登入、建立及檢視未加密的 zip 封存。 Smartcrypt 在資料核心強化資料，進而消除使用、共用或儲存資料所在位置的弱點。 在將近 30 年來，PKWARE 將加密及壓縮軟體提供給超過 30,000 個企業客戶與超過 200 個政府機關。 適用於 iOS 和 Android。 | [App Store 連結 (iOS)](https://apps.apple.com/app/smartcrypt-for-intune/id1489232256) |  
 | **Speaking Email**<p><img alt="Partner app - Speaking Email icon" src="./media/apps-supported-intune-apps/icon-p-speaking-email-icon.png" width="100">   | 在您處於移動狀態時為您讀出電子郵件來節省您的時間。 專為在駕駛時安全使用而設計的語音命令和簡單手勢可讓您在移動中進行封存、標幟，或甚至是回覆。<p>智慧型內容偵測會略過免責聲明、回覆標頭及電子郵件簽章，而只讀出內容以避免產生混亂。<p>員工可以透過 Intune 登入來存取 Office 365 Exchange 電子郵件。 | [App Store 連結 (iOS)](https://itunes.apple.com/app/apple-store/id991406423?ct=intune) | 
 | **Synergi Life**<p><img alt="Partner app - Synergi Life icon" src="./media/apps-supported-intune-apps/icon-p-synergi-life.png" width="100"> | 「Synergi Life 行動應用程式」是 Synergi Life 的延伸模組，可讓使用者使用其手機來拍攝快照和錄製語音，隨時隨地輕鬆建立觀察和事件報告。<p>Synergi Life (以前稱為 Synergi) 是一個適用於風險與 QHSE 管理的完整商務解決方案，可管理所有不一致、事件、風險、風險分析、稽核、評量及改進建議。<p>若要使用「Synergi Life 行動應用程式」，您必須是 Synergi Life 風險與 QHSE 管理系統的已授權使用者，並且具備必要的後端授權軟體和服務。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.dnv.mobilesolutions.synergimobile.uibase)、[App Store 連結 (iOS)](https://itunes.apple.com/us/app/synergi-life/id641181737)  |  
 | **Tact for Intune**<p><img alt="Partner app - Tact for Intune icon" src="./media/apps-supported-intune-apps/icon-p-tact-icon.png" width="100"> | Tact for Intune 是第一個 CRM 與業務助理，可將來自 Salesforce.com、電子郵件、行事曆、地圖和其他日常工具的資料整合成交談式且人性化的體驗。 透過 AI 技術，Tact 可自動化銷售人員的管理工作、將 CRM 與其他資料來源整合成單一管理平台，並發送情報至每個賣方，以便採取高效能的行為。 企業現在可以透過 Tact for Intune 確保在應用程式層的企業級安全性，從而提高賣方生產力、獲得更豐富的客戶資料以及採用更好的 CRM。 | [Google Play 連結 (Android)](https://play.google.com/store/apps/details?id=com.tactile.tact)、[App Store 連結 (iOS)](https://apps.apple.com/us/app/tact-for-intune/id1477117416?mt=8)  |  

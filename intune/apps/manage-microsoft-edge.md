@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e64741a92804ec4149b654480166720ff3092e35
-ms.sourcegitcommit: 665be113b593c3bc7d46b99599e720f781037dcf
+ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/17/2020
-ms.locfileid: "76258509"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125008"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -285,16 +285,27 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 |    機碼    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock'    |    **True** 會造成受限制的連結直接在 InPrivate 瀏覽中開啟。<p>**False** (預設) 會為使用者提供選項，以使用 InPrivate 瀏覽或其個人 (MSA) 帳戶開啟受限制的連結。    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** (預設值) 會允許 Microsoft Edge 將使用者轉換至其個人內容以開啟封鎖的網站。<p>**Block** 會防止 Microsoft Edge 轉換使用者。 使用者只會看見說明他們嘗試存取的網站已被封鎖的訊息。    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>直接在 InPrivate 索引標籤頁面中開啟受限制的連結
 
-您可以設定受限制的連結是否應直接在 InPrivate 瀏覽中開啟，以提供使用者更順暢的瀏覽體驗。 這可讓使用者免於必須轉換到其個人內容以瀏覽網站的步驟。 InPrivate 瀏覽會被視為非受控，因此使用者在使用 InPrivate 瀏覽模式時將無法存取。 
+您可以設定受限制的連結是否應直接在 InPrivate 瀏覽中開啟，以提供使用者更順暢的瀏覽體驗。 這可讓使用者免於必須轉換到其個人內容以瀏覽網站的步驟。 InPrivate 瀏覽會被視為非受控，因此使用者在使用 InPrivate 瀏覽模式時將無法存取。
 
 |    機碼    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** 會允許 Microsoft Edge 將使用者轉換至其個人內容以開啟被封鎖的網站。<p>**Block** 會防止 Microsoft Edge 轉換使用者。 使用者只會看見說明他們嘗試存取的網站已被封鎖的訊息。    |
 
+## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>停用 Microsoft Edge 提示以儲存密碼
+
+|    機碼    |    值    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** 會造成受限制的連結直接在 InPrivate 瀏覽中開啟。<p>**False** (預設) 會為使用者提供選項，以使用 InPrivate 瀏覽或其個人 (MSA) 帳戶開啟受限制的連結。    |
+
+根據預設，iOS 上的 Microsoft Edge 提供將您的使用者密碼儲存至鑰匙圈的選項。 如果要為您的組織停用此提示，請設定下列設定：
+
+|    機碼    |    值    |
+|-----------|-------------|
+|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    **password** 將會停用儲存密碼提示。    |
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>在 iOS 上使用 Microsoft Edge 來存取受控應用程式記錄檔 
 

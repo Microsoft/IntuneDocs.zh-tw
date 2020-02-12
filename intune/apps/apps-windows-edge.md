@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/21/2020
+ms.date: 02/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa0156d059513a2586eb7d8866d23508be0af10c
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: 8d5082376c42ff3b92e3979a53b6deac3e59c88e
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886676"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075802"
 ---
 # <a name="add-microsoft-edge-for-windows-10-to-microsoft-intune"></a>將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune
 
 您必須先將應用程式新增至 Intune，才可以部署、設定、監視或保護它們。 其中一個可用的[應用程式類型](~/apps/apps-add.md#app-types-in-microsoft-intune)是 Microsoft Edge 77 版和更新版本  。 藉由在 Intune 中選取此應用程式類型，您可以指派 Microsoft Edge *77 版和更新版本*，並將其安裝到您所管理且執行 Windows 10 的裝置。
 
 > [!IMPORTANT]
-> 此應用程式類型處於**公開預覽**狀態，並提供 Windows 10 的穩定、Beta 和 Dev 通道。 部署僅限英文 (EN)，不過，終端使用者可以在瀏覽器中的 [設定]   > [語言]  下變更顯示語言。 Microsoft Edge 是一個 Win32 應用程式，安裝在系統內容和類似的架構 (x86 OS 上的 x86 應用程式，以及 x64 OS 上的 x64 應用程式) 上。 Intune 會偵測任何預先存在的 Microsoft Edge 安裝。 如果其安裝在使用者內容中，則系統安裝將會加以覆寫。 如果是安裝在系統內容中，就會回報安裝成功。 此外，Microsoft Edge 的自動更新預設會 [開啟]  ，且無法解除安裝 Microsoft Edge。
+> 此應用程式類型處於**公開預覽**狀態，並提供 Windows 10 的穩定、Beta 和 Dev 通道。 部署僅限英文 (EN)，不過，終端使用者可以在瀏覽器中的 [設定]   > [語言]  下變更顯示語言。 Microsoft Edge 是一個 Win32 應用程式，安裝在系統內容和類似的架構 (x86 OS 上的 x86 應用程式，以及 x64 OS 上的 x64 應用程式) 上。 Intune 會偵測任何預先存在的 Microsoft Edge 安裝。 如果其安裝在使用者內容中，則系統安裝將會加以覆寫。 如果是安裝在系統內容中，就會回報安裝成功。 此外，Microsoft Edge 的自動更新預設會 [開啟]  。
 
 > [!NOTE]
 > Microsoft Edge *77 版和更新版本*也適用於 macOS。
@@ -92,6 +92,28 @@ ms.locfileid: "76886676"
 
 > [!NOTE]
 > 目前，如果您取消指派 Microsoft Edge 的部署，它會保留在裝置上。
+
+## <a name="uninstall-the-app"></a>解除安裝應用程式
+
+當您需要將 Microsoft Edge 從使用者的裝置解除安裝時，請使用下列步驟。
+
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+2. 選取 [應用程式]   > [所有應用程式]   > [Microsoft Edge]  應用程式 > [指派]   > [新增群組]  。
+3. 在 [新增群組]  窗格中，選取 [解除安裝]  。
+
+    > [!NOTE]
+    > 如果 Intune 先前已透過 [適用於已註冊的裝置]  或使用相同部署的 [必要]  指派將應用程式安裝到裝置上，所選群組內的裝置會將應用程式解除安裝。
+4. 選取 [包含的群組]  ，以選取受此應用程式指派影響的使用者群組。
+5. 選取您要套用解除安裝指派的群組。
+6. 在 [選取群組]  窗格上，按一下 [選取]  。
+7. 在 [指派]  窗格上，按一下 [確定]  以設定指派。
+8. 如果您想要將任何使用者群組排除，使他們不受此應用程式指派影響，請選取 [排除群組]  。
+9. 如果您選擇要排除任何群組，請在 [選取群組]  中，選取 [選取]  。
+10. 在 [新增群組]  窗格中，選取 [確定]  。
+11. 在應用程式 [指派]  窗格中，選取 [儲存]  。
+
+> [!IMPORTANT]
+> 若要成功解除安裝應用程式，請務必先移除安裝的成員或群組指派，再將其指派為要解除安裝。 如果群組同時指派給安裝應用程式與解除安裝應用程式，應用程式將會保留而不會移除。
 
 ## <a name="troubleshooting"></a>疑難排解
 **適用於 Windows 10 的 Microsoft Edge 77 版和更新版本：**<br>

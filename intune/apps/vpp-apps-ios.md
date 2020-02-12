@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0bc511669ec8a88523581b3afbcca161d5208934
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956212"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051621"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 與 macOS 應用程式
 
@@ -130,6 +130,11 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 
 >[!NOTE]
 >可用的部署用途不支援裝置群組，僅支援使用者群組。 顯示的應用程式清單與權杖建立關聯。 如果您的應用程式與多個 VPP 權杖建立關聯，您會看到相同的應用程式顯示多次；針對每個權杖各一次。
+
+> [!NOTE]  
+> Intune (或任何其他 MDM) 實際上不會安裝 VPP 應用程式。 相反地，Intune 會連線到您的 VPP 帳戶，並告訴 Apple 要將哪些應用程式授權指派給哪些裝置。 從該處，所有實際安裝都會在 Apple 與裝置之間處理。
+> 
+> [Apple MDM 通訊協定參考，第 135 頁](https://developer.apple.com/business/documentation/MDM-Protocol-Reference.pdf) \(英文\)
 
 ## <a name="end-user-prompts-for-vpp"></a>VPP 的終端使用者提示
 

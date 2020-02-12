@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 02/03/2020
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2f46b8c7f0f57ab7831d6487495946aa9326b2d5
-ms.sourcegitcommit: 24487f078349795922dc497c952e8358cf767a1a
+ms.openlocfilehash: dc2e77db1aa322eb70c64d82ddca238f49b39fb2
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "76977779"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125025"
 ---
 # <a name="whats-new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -34,7 +34,7 @@ ms.locfileid: "76977779"
 >
 > - 第 1 天：亞太地區 (APAC)
 > - 第 2 天：歐洲、中東、非洲 (EMEA)
-> - 第 3 天：北美
+> - 第 3 天：北美洲
 > - 第 4 天+：Intune 政府版
 >
 > 某些功能可能會在數週內推出，且不會在第一週就提供給所有客戶。
@@ -60,32 +60,20 @@ ms.locfileid: "76977779"
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>應用程式管理
 
+#### <a name="microsoft-edge-version-77-and-later-on-windows-10-devices---5843584---"></a>Windows 10 裝置上的 Microsoft Edge 77 版與更新版本<!-- 5843584 -->
+Intune 現在支援解除安裝 Windows 10 裝置上的 Microsoft Edge 77 版與更新版本。 如需詳細資訊，請參閱[將適用於 Windows 10 的 Microsoft Edge 新增至 Microsoft Intune](~/apps/apps-windows-edge.md)。
+
 #### <a name="company-portal-app-improved-performance---6178652---"></a>公司入口網站應用程式已改進效能<!-- 6178652 -->
 公司入口網站應用程式已更新，以支援使用 ARM64 處理器之裝置 (例如 Surface Pro X) 的效能改進。先前，公司入口網站在模擬的 ARM32 模式中運作。 現在，公司入口網站應用程式會針對 ARM64 以原生方式編譯。 如需公司入口網站應用程式的詳細資訊，請參閱[如何設定 Microsoft Intune 公司入口網站應用程式](~/apps/company-portal-app.md)。
+
+#### <a name="screen-removed-from-company-portal-android-work-profile-enrollment--6103987---"></a>已從公司入口網站 Android 工作設定檔註冊移除畫面<!--6103987 -->
+我們已從公司入口網站中的 Android 工作設定檔註冊流程移除 [下一步是什麼?]  畫面，以簡化使用者體驗。 移至[使用 Android 工作設定檔註冊](/intune-user-help/enroll-device-android-work-profile)，以查看已更新的 Android 工作設定檔註冊流程。  
 
 <!-- ########################## -->
 ## <a name="week-of-january-27-2020"></a>2020 年 1 月 27 日當週
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### <a name="app-management"></a>應用程式管理
-
-#### <a name="new-setting-to-remove-specific-windows-built-in-apps---6184390---"></a>移除特定 Windows 內建應用程式的新設定<!-- 6184390 -->
-使用新的 Windows 10 裝置設定原則設定，您可以移除下列 Windows 內建應用程式：
-
-- 混合實境檢視器
-- MSN 天氣
-- 應用程式安裝程式
-- Microsoft 訣竅
-- 我的 Office
-- Microsoft Solitaire Collection 
-- 行動方案
-- 意見反應中樞 
-- Xbox 
-- Groove 音樂
-- 郵件
-- 行事曆
-
-在 Microsoft Endpoint Manager 系統管理中心內，選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。 然後，請選取 [Windows 10 及更新版本]  作為 [平台]  。 選取 [裝置限制]  作為 [設定檔類型]  。 在 [裝置限制]  窗格中，選取 [App Store]  。 在 [移除內建應用程式]  旁的窗格底部，選取 [移除]  。 如需內建應用程式的詳細資訊，請參閱[將內建應用程式新增至 Microsoft Intune](~/apps/apps-add-built-in.md)。
 
 #### <a name="intune-support-for-additional-microsoft-edge-version-77-deployment-channel-for-macos---5983950----"></a>適用於 macOS 其他 Microsoft Edge 77 版部署通道的 Intune 支援<!-- 5983950  -->
 Microsoft Intune 現在支援適用於 macOS 的 Microsoft Edge 應用程式的其他 [穩定]  部署通道。 [穩定]  通道是在企業環境中廣泛部署 Microsoft Edge 的建議通道。 其會每六週更新一次，每個版本都會納入來自 [Beta]  通道的改良功能。 除了 [穩定]  與 [Beta]  通道，Intune 也支援 [Dev]  通道。 公開預覽提供適用於 macOS 的 Microsoft Edge 77 版與更新版本的 [穩定] 與 [Dev] 通道。 瀏覽器的自動更新預設為 [開啟]。 如需詳細資訊，請參閱[使用 Microsoft Intune 將 Microsoft Edge 新增至 macOS 裝置](~/apps/apps-edge-macos.md)。

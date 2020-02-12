@@ -6,7 +6,7 @@ keywords: ''
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2019
+ms.date: 02/07/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a3b391bb4ab064c080083e2c31dc28483f6d419a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74098214"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77125042"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 
@@ -36,9 +36,14 @@ ms.locfileid: "74098214"
 
 <!---End-user messaging for accounts 1573558, 1712; changes to be made for other platforms for 1801 Users of the Company Portal website, will be blocked from taking actions that require write access to your tenant. They will see appropriate error messaging explaining that their account is under maintenance. Similar changes are coming to the Company Portal apps for Android, iOS, macOS, and Windows soon. ![Error message that occurs during account move](./media/whats-new-app-ui/account-move-rom-iwp-user-1712.png)--->
 
+## <a name="week-of-february-3-2020"></a>2020 年 2 月 3 日當週
+
+### <a name="screen-removed-from-company-portal-android-work-profile-enrollment---6103987---"></a>已從公司入口網站 Android 工作設定檔註冊移除畫面 <!--6103987 -->
+我們已從公司入口網站中的 Android 工作設定檔註冊流程移除 [下一步是什麼?]  畫面，以簡化使用者體驗。 移至[使用 Android 工作設定檔註冊](/intune-user-help/enroll-device-android-work-profile)，以查看已更新的 Android 工作設定檔註冊流程。  
+
 ## <a name="week-of-november-11-2019"></a>2019 年 11 月 11 日當週  
 
-#### <a name="web-apps-launched-from-the-windows-company-portal-app---5030972---"></a>從 Windows 公司入口網站應用程式啟動的 Web 應用程式<!-- 5030972 -->
+### <a name="web-apps-launched-from-the-windows-company-portal-app----5030972---"></a>從 Windows 公司入口網站應用程式啟動的 Web 應用程式 <!-- 5030972 -->
 終端使用者現在可以直接從 Windows 公司入口網站應用程式啟動 Web 應用程式。 終端使用者可以選取 Web 應用程式，然後選擇 [以瀏覽器開啟]  選項。 已發佈的 Web URL 會直接在網頁瀏覽器中開啟。 此功能將於下周推出。 如需 Web 應用程式的詳細資訊，請參閱[將 Web 應用程式新增至 Microsoft Intune](~/apps/web-app.md)。
 
 ![從 Windows 公司入口網站應用程式啟動的 Web 應用程式範例映像](./media/whats-new-app-ui/webapp-open-in-browser.png)  
@@ -167,13 +172,13 @@ iOS 版公司入口網站註冊畫面和步驟，為了配合 Apple iOS 12.2 中
 
 您會看到的更新包括：  
 
-- 簡化所有裝置平台中的工作流程
-- 改善裝置識別和註冊流程
-- 更有用的錯誤訊息
+- 已簡化所有裝置平台上的工作流程
+- 已改進裝置識別和註冊流程
+- 更多實用的錯誤訊息
 - 讓語言更容易使用，讓技術專業術語更少
 - 能夠共用應用程式的直接連結
 - 已改進大型應用程式目錄的效能
-- 增加所有使用者的協助工具  
+- 已增加適用於所有使用者的協助工具  
 
 |已更新|上一步|
 |---|---|
@@ -183,15 +188,15 @@ iOS 版公司入口網站註冊畫面和步驟，為了配合 Apple iOS 12.2 中
 ## <a name="week-of-july-16-2018"></a>2018 年 7 月 16 日當週  
 
 ### <a name="more-opportunities-to-sync-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式中的更多同步機會   
-Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果同步裝置並取得公司資源存取權是您唯一的工作，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始]  功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 **[同步此裝置]** 。 公司入口網站會開啟至 **[設定]** 頁面並起始您的同步。  
+Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作列和 [開始] 功能表起始同步。 如果您的工作只是同步裝置並存取公司資源，這項功能特別有用。 若要存取這項新功能，請以滑鼠右鍵按一下已釘選到工作列或 [開始]  功能表的公司入口網站圖示。 在功能表選項 (也稱為捷徑清單) 中，選取 **[同步此裝置]** 。 公司入口網站會開啟至 **[設定]** 頁面並起始您的同步。  
 
 ![裝置桌面上 Windows 工作列的螢幕擷取畫面。 按一下公司入口網站應用程式的程式圖示之後，顯示含有 [釘選到工作列]、[關閉視窗] 和 [同步此裝置] 動作等選項的功能表。](./media/whats-new-app-ui/sync-device-from-start-menu-1807.png)  
 
-### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>Windows 版公司入口網站應用程式的新瀏覽體驗  
+### <a name="new-browsing-experiences-in-the-company-portal-app-for-windows"></a>新的 Windows 公司入口網站應用程式瀏覽體驗  
 
 現在，在 Windows 版公司入口網站應用程式中瀏覽或搜尋應用程式時，您可以切換現有的 [磚]  檢視和新的 [詳細資料]  檢視。 此新的檢視會列出應用程式詳細資料，例如名稱、發行者、發行日期及安裝狀態。  
 
-[應用程式]  頁面的 [已安裝]  檢視可讓您查看有關已完成和進行中之應用程式安裝的詳細資料。  
+[應用程式]  頁面的 [已安裝]  檢視可讓您查看已完成和進行中的應用程式安裝詳細資料。  
 
 顯示 [磚] 檢視的範例螢幕擷取畫面：  
  
@@ -203,7 +208,7 @@ Windows 版公司入口網站應用程式現在可讓您直接從 Windows 工作
 
 ## <a name="week-of-april-23-2018"></a>2018 年 4 月 23 日當週
 ### <a name="updated-navigation-view-in-the-company-portal-app-for-windows-10----1195010---"></a>更新 Windows 10 版公司入口網站應用程式的導覽檢視 <!-- 1195010 -->
-Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluent Design System's navigation view](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics) \(Fluent Design System 的瀏覽檢視\)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
+Intune Company Portal for Windows 10 應用程式已更新 [Fluent Design System 的瀏覽檢視](https://docs.microsoft.com/windows/uwp/design/basics/navigation-basics)。 您會發現應用程式側邊多了一個垂直靜態清單，列有最上層的所有頁面。 按一下任何連結都能快速檢視及來回切換頁面。 這是您將看到數個更新其中的第一個，我們正繼續努力建立更彈性、更易用且更熟悉的 Intune 體驗。 
 
 ![顯示 Fluent Design 瀏覽檢視之公司入口網站應用程式儀表板的螢幕擷取畫面](./media/whats-new-app-ui/1804_WindowsCP_Fluent_01.png)
 
@@ -262,7 +267,7 @@ Windows 10 版的 Intune 公司入口網站應用程式已更新為使用 [Fluen
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 版公司入口網站 2.9.0 版中裝置設定工作流程的改善 <!-- 1417174 -->
 
-我們已改善 iOS 版公司入口網站應用程式中的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
+我們已經改進了 iOS 版公司入口網站應用程式的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
 
 > [!NOTE]
 > 我們會將您在 Azure 入口網站中設定的公司名稱用於 [Microsoft Intune]   > [用戶端應用程式]   > [公司入口網站品牌]   > [公司名稱]  。 如果您沒有設定此值，我們將使用在 [Azure Active Directory]   > [屬性]   > [名稱]  中設定的租用戶名稱。 如果您尚未在 [公司入口網站品牌] 中設定公司名稱，且不希望顯示您的租用戶名稱，建議您在 [公司入口網站品牌] 索引標籤中設定公司名稱。如果您不希望在公司入口網站的標頭中顯示此字串，則可以取消選取 [在標誌旁顯示公司名稱] 核取方塊。
@@ -310,7 +315,7 @@ iOS 使用者也會收到這項變更，因為也會使用公司入口網站作�
 ## <a name="week-of-october-2-2017"></a>2017 年 10 月 2 日當週
 
 ### <a name="improvements-to-device-setup-workflow-in-company-portal----1490692---"></a>對公司入口網站中裝置安裝工作流程的改善 <!-- 1490692 -->
-我們已改善 Android 版公司入口網站應用程式中的裝置安裝工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
+我們已經改善 Android 版公司入口網站應用程式中的裝置設定工作流程。 我們採用您公司專屬的語言、對使用者來說更簡單明瞭，並盡量將可以合併的畫面合併。 
 
 |之前|在|
 |---|---|
@@ -465,7 +470,7 @@ __從另一部裝置登入時的新登入體驗__
 
 ### <a name="improvements-to-app-syncing-with-windows-10-creators-update---676505--"></a>透過 Windows 10 Creators Update 改善應用程式同步處理 <!--676505-->
 
-Windows 10 版公司入口網站應用程式現在會針對具有 Windows 10 Creators Update (版本 1703) 之裝置的應用程式安裝要求，自動初始化同步處理。 這會減少應用程式安裝在「待同步」狀態期間出現拖延的問題。 此外，使用者將能夠從應用程式內手動起始同步。
+Windows 10 版公司入口網站應用程式現在會針對具有 Windows 10 Creators Update (版本 1703) 之裝置的應用程式安裝要求，自動初始化同步處理。 這會減少應用程式安裝在「待同步」狀態期間出現拖延的問題。 此外，使用者將能從應用程式內手動起始同步處理。
 
 ![Windows 10 公司入口網站應用程式的影像，在其中從公司入口網站應用程式市集下載 Microsoft Word 的作業處於擱置狀態。](./media/whats-new-app-ui/w10_download_pending_after_1706.png)
 

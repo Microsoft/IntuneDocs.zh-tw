@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/10/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,29 +15,26 @@ ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: kerimh
-ms.openlocfilehash: 44078f61e4f1939b1f0b15b3dde5ac54938ffbc3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9fb4aab6b02c6ad6a5d2f18ca9d15beafc12d58a
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059967"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124804"
 ---
 # <a name="delivery-optimization-settings-in-microsoft-intune"></a>Microsoft Intune 中的傳遞最佳化設定
 
-使用 Intune，您可以使用 Windows 10 裝置的傳遞最佳化設定，以減少這些裝置下載應用程式和更新時的頻寬耗用量。 傳遞最佳化會設定為裝置組態設定檔的一部分。  
+使用 Intune，您可以為 Windows 10 裝置使用傳遞最佳化設定，以減少那些裝置下載應用程式與更新時的頻寬耗用量。 設定傳遞最佳化作為裝置組態設定檔的一部分。  
 
 本文描述如何設定傳遞最佳化設定，作為裝置組態設定檔的一部分。 在您建立設定檔之後，接著會將該設定檔指派或部署到您的 Windows 10 裝置。 
 
-如需 Intune 支援的傳遞最佳化設定清單，請參閱 [Intune 的傳遞最佳化設定](../delivery-optimization-settings.md)。  
+若要檢視 Intune 支援的傳遞最佳化設定清單，請參閱 [Intune 的傳遞最佳化設定](../delivery-optimization-settings.md)。  
 
 若要了解 Windows 10 上的傳遞最佳化，請參閱 Windows 文件中的[傳遞最佳化更新](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization)。  
 
-> [!NOTE]
-> **軟體更新 - Windows 10 更新通道**已由**傳遞最佳化**設定取代。 您現有的更新通道可以變更為使用 [傳遞最佳化]  設定。 [將現有的更新通道移轉至傳遞最佳化](#move-existing-update-rings-to-delivery-optimization) (在本文中)
-
 ## <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 
@@ -54,11 +51,16 @@ ms.locfileid: "74059967"
 
 設定檔隨即建立並顯示在清單中。 接下來，[指派設定檔](device-profile-assign.md)，然後[監視其狀態](device-profile-monitor.md)。
 
-## <a name="move-existing-update-rings-to-delivery-optimization"></a>將現有的更新通道移轉至傳遞最佳化
+<!-- ## Move existing update rings to delivery optimization
 
-**傳遞最佳化**設定取代了**軟體更新 - Windows 10 更新通道**。 您輕鬆就能將現有的更新通道變更為使用**傳遞最佳化**設定。 若要在建立傳遞最佳化設定檔時維持相同的設定，請使用相同的「傳遞最佳化下載模式」  ，然後設定與您所使用項目相同的設定。 不過，您可以選擇重新設定傳遞最佳化設定，以利用傳遞最佳化設定檔可管理的完整其他設定。
+**Delivery optimization** settings replace **Software updates – Windows 10 Update Rings**. Your existing update rings can be easily changed to use the **Delivery optimization** settings. To maintain the same settings when you create a delivery optimization profile, use the same *Delivery optimization download mode* and then set the same settings as you already use. However, you can choose to reconfigure delivery optimization settings to take advantage of the full range of addition settings that the Delivery Optimization profile can manage. 
+-->
 
-1. 建立傳遞最佳化組態設定檔：
+## <a name="remove-delivery-optimization-from-windows-10-update-rings"></a>從 Windows 10 更新通道移除傳遞最佳化
+
+傳遞最佳化先前設定為軟體更新通道的一部分。 從 2019 年 2 月開始，傳遞最佳化設定已設定為傳遞最佳化裝置組態設定檔的一部分，其中包括的其他設定會影響裝置的軟體更新傳遞。 如果您還沒有這麼做，請透過將傳遞最佳化設定設定為 [未設定]  以將其從您的更新通道移除，然後使用傳遞最佳化設定檔來管理較大範圍的可用選項。
+
+1. 建立傳遞最佳化裝置組態設定檔：
 
     1. 在 Microsoft Endpoint Manager 系統管理中心內，選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
     2. 輸入下列內容：

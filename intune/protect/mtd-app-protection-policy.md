@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc873079d9a139edfa2217d97806afe0c5bbf28
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: 7279921719677fce0845517aefc5958f57ce13cb
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545951"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075700"
 ---
 # <a name="create-mobile-threat-defense-app-protection-policy-with-intune"></a>使用 Intune 建立 Mobile Threat Defense 應用程式防護原則
 
@@ -49,7 +49,7 @@ ms.locfileid: "75545951"
 
 使用此程序來[建立 iOS/iPadOS 或 Android 的應用程式保護原則](../apps/app-protection-policies.md#app-protection-policies-for-iosipados-and-android-apps)，然後在 [應用程式]  、[條件式啟動]  和 [指派]  頁面中使用下列資訊：
 
-- **應用程式**：選取所用的 Mobile Threat Defense 合作夥伴應用程式。
+- **應用程式**：選取要作為應用程式保護原則目標的應用程式。 針對此功能集，將會根據來自您所選 Mobile Threat Defense 廠商的裝置風險評量，封鎖或選擇性抹除這些應用程式。 
 - **條件式啟動**：在 [裝置狀況]  下，使用下拉式方塊選取 [允許的最高裝置威脅等級]  。
 
   威脅等級 [值]  的選項：

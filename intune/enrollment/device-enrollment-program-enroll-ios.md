@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 05/07/2019
+ms.date: 02/04/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,31 +18,33 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 39775f3acf1a1c3da7c836afe1699958560d509a
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: b3fe6d1e2a0dcdeafad56d3facccb96f5d0721e4
+ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691841"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77074660"
 ---
 # <a name="automatically-enroll-ios-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置
 
-您可以設定 Intune 來註冊透過 Apple [裝置註冊計劃 (DEP)](https://deploy.apple.com) 購買的 iOS 裝置。 DEP 可讓您註冊大量裝置，而完全不需要接觸它們。 iPhone 與 iPad 等裝置可直接交付給使用者。 當使用者啟動裝置時，會以預先設定的設定來執行設定助理，並註冊裝置以接受管理。
+您可以設定 Intune 來註冊透過 Apple [裝置註冊計劃 (DEP)](https://deploy.apple.com) 購買的 iOS 裝置。 DEP 可讓您註冊大量裝置，而完全不需要接觸它們。 iPhone、iPad 與 MacBook 等裝置可直接交付給使用者。 當使用者開啟裝置電源時，會以預先設定的設定來執行設定助理 (包括 Apple 產品的典型全新體驗)，並註冊裝置以接受管理。
 
-若要啟用 DEP 註冊，您要使用 Intune 與 Apple DEP 入口網站。 需要序號或採購單編號的清單，以將裝置指派給 Intune 進行管理。 您可以建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。 請注意，DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶一起使用。
+若要啟用 DEP 註冊，您可以同時使用 Intune 與 Apple Business Manager (ABM) 或 Apple School Manager (ASM) 入口網站。 需要序號或採購單編號的清單，以在 ABM/ASM 中將裝置指派給 Intune 進行管理。 您可以在 Intune 中建立 DEP 註冊設定檔，其中包含已在註冊期間套用至裝置的設定。 請注意，DEP 註冊不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)帳戶一起使用。
 
 > [!NOTE]
 > DEP 會設定終端使用者無法移除的裝置設定。 因此，在[移轉至 DEP](../fundamentals/migration-guide-considerations.md) 之前，必須先抹除裝置，讓裝置回復為出廠 (全新) 狀態。
 
 ## <a name="dep-and-the-company-portal"></a>DEP 與公司入口網站
 
-DEP 註冊與公司入口網站應用程式的 App Store 版本不相容。 您可以為使用者提供 DEP 裝置上公司入口網站應用程式的存取權。 若要授與存取權，請使用 DEP 設定檔中的 [使用 VPP 安裝公司入口網站]  ，將應用程式推送至裝置。 如需詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)。
+DEP 註冊與公司入口網站應用程式的 App Store 版本不相容。 您可以為使用者提供 DEP 裝置上公司入口網站應用程式的存取權。 您可以提供此存取權，讓使用者選擇他們要在其裝置上使用的公司應用程式，或使用新式驗證來完成註冊程序。 
 
- 您可以在已向 DEP 註冊的裝置上安裝公司入口網站應用程式。 若要這樣做，請在已套用[應用程式設定原則](../apps/app-configuration-policies-use-ios.md)的情況下透過 Intune 部署公司入口網站應用程式。
+若要在註冊期間啟用新式驗證，請使用 DEP 設定檔中的 [使用 VPP 安裝公司入口網站]  將應用程式推送至裝置。 如需詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)。
+
+若要讓公司入口網站自動更新，並在已向 DEP 註冊的裝置上提供公司入口網站應用程式，請透過 Intune 將公司入口網站應用程式部署為必要的大量採購方案 (VPP) 應用程式，並套用[應用程式設定原則](../apps/app-configuration-policies-use-ios.md)。
 
 ## <a name="what-is-supervised-mode"></a>何謂受監督模式？
 
-Apple 在 iOS 5 中引進受監督模式。 處於受監督模式的 iOS 裝置可以透過更多控制進行管理。 因此，它特別適用於公司擁有的裝置。 Intune 支援針對受監督模式設定裝置，以作為 Apple 裝置註冊方案 (DEP) 的一部分。
+Apple 在 iOS 5 中引進受監督模式。 您可以使用更多控制措施管理受監督模式中的 iOS 裝置，例如封鎖螢幕畫面擷取及封鎖從 App Store 安裝應用程式。 因此，它特別適用於公司擁有的裝置。 Intune 支援針對受監督模式設定裝置，以作為 Apple 裝置註冊方案 (DEP) 的一部分。
 
 iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新版本中，應一律監督 DEP 設定裝置。 在未來的 iOS 版本中，將會忽略 DEP is_supervised 旗標。
 
@@ -54,7 +56,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - [Apple 的裝置註冊計劃](http://deploy.apple.com)中所購買的裝置
 - [行動裝置管理 (MDM) 授權單位](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
@@ -63,7 +65,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 
 您必須先從 Apple 取得 DEP 權杖 (.p7m) 檔案，才能為 iOS 裝置註冊 DEP。 此權杖可讓 Intune 同步貴公司所擁有的 DEP 裝置資訊。 它也允許 Intune 將註冊設定檔上傳至 Apple，並將這些設定檔指派給裝置。
 
-您可以使用 Apple DEP 入口網站建立 DEP 權杖。 您也可以使用 DEP 入口網站將裝置指派給 Intune 以便管理。
+您可以使用 Apple Business Manager 或 Apple School Manager 入口網站來建立權杖。 您也可以使用 ABM/ASM 入口網站將裝置指派給 Intune 進行管理。
 
 > [!NOTE]
 > 若在移轉至 Azure 之前從 Intune 傳統入口網站刪除了權杖，Intune 可能會還原已刪除的 Apple DEP 權杖。 您可以從 Azure 入口網站再次刪除該 DEP 權杖。
@@ -101,7 +103,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 
 8. 針對 [選擇動作]  選擇 [Assign to Server] (指派給伺服器))  ，然後選擇指定給 Microsoft Intune 的 &lt;伺服器名稱&gt;，再選擇 [確定]  。 Apple 入口網站會將指定的裝置指派給 Intune 伺服器以便管理 ，然後顯示 [指派完成]  。
 
-   在 Apple 入口網站中，移至 [部署計劃]  &gt; [裝置註冊計劃]  &gt; [檢視指派歷程記錄]  查看裝置及其 MDM 伺服器指派的清單。
+   在 Apple 入口網站中，移至 [部署計劃]  &gt; [裝置註冊計劃]  &gt; [檢視指派歷程記錄]  以查看裝置與其 MDM 伺服器指派的清單。
 
 ### <a name="step-3-save-the-apple-id-used-to-create-this-token"></a>步驟 3： 儲存用以建立此權杖的 Apple ID。
 
@@ -137,7 +139,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 4. 選取 [下一步:  裝置管理設定]。
 
 5. 針對 [使用者親和性]  ，為具備此設定檔的裝置選擇需要或不需要由指派的使用者來進行註冊。
-    - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 如果使用 ADFS 並且註冊設定檔將 [不向設定輔助程式驗證，而向公司入口網站驗證]  設定為 [否]  ，則需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints) [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
+    - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 如果使用 ADFS，而且註冊設定檔將 [不向設定輔助程式驗證，而向公司入口網站驗證]  設定為 [否]  ，則需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints) [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
     - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 針對不會存取本機使用者資料的裝置，請使用此選項。 公司入口網站應用程式之類的應用程式無法運作。
 
@@ -241,7 +243,7 @@ iOS 11 中對非監督式 DEP 裝置的支援已淘汱。 在 iOS 11 與更新�
 ## <a name="sync-managed-devices"></a>同步受管理裝置
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]  > [iOS]  > [iOS 註冊]  > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]  > [同步]  。![[註冊計劃裝置] 節點與 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image06.png)
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]  > [iOS]  > **[iOS 註冊]** > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]  > [同步]  。![[註冊計劃裝置] 節點與 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image06.png)
 
    為了遵循 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
    - 完整同步處理每 7 天只能執行一次。 在完整同步期間，Intune 會擷取指派至已連線 Intune 之 Apple MDM 伺服器的序號完整更新清單。 如果從 Intune 入口網站刪除 DEP 裝置，則應該從 DEP 入口網站中的 Apple MDM 伺服器取消指派 DEP 裝置。 如果未解除指派，則在執行完整同步之前，不會將它重新匯入至 Intune。   
