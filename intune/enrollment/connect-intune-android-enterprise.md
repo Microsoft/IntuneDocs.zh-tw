@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b2c6463ddce7d04168e1929414faf441ae415837
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 581d88e49391bc874625e9c84318c039706b0c1b
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563832"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124821"
 ---
 # <a name="connect-your-intune-account-to-your-managed-google-play-account"></a>將您的 Intune 帳戶連線到受控 Google Play 帳戶
 
@@ -55,7 +55,7 @@ ms.locfileid: "74563832"
     > [!Note]
     > 若您使用 Microsoft Edge 瀏覽器，請按一下右上角的 [登入]  來登入您的 Google 帳戶。
 
-6. 提供您的公司名稱作為**組織名稱**。 針對**企業行動管理 (EMM) 提供者**，應該顯示 **Microsoft Intune**。
+6. 提供您的公司名稱作為 [組織名稱]  。 針對**企業行動管理 (EMM) 提供者**，應該顯示 **Microsoft Intune**。
 
 7. 同意 Android 合約，然後選擇 [確認]  。 您的要求將會被處理。
 
@@ -69,4 +69,4 @@ ms.locfileid: "74563832"
 
 ## <a name="next-steps"></a>後續步驟
 
-連線至受控 Google Play 帳戶之後，您可以[設定 Android Enterprise 工作設定檔裝置](android-work-profile-enroll.md)、[設定 Android Enterprise 專用裝置](android-kiosk-enroll.md)，以及[設定 Android Enterprise 完全受控裝置](android-kiosk-enroll.md)
+連線至受控 Google Play 帳戶之後，您可以[設定 Android Enterprise 工作設定檔裝置](android-work-profile-enroll.md)、[設定 Android Enterprise 專用裝置](android-kiosk-enroll.md)，以及[設定 Android Enterprise 完全受控裝置](android-fully-managed-enroll.md)

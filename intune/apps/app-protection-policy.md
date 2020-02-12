@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, get-started, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3c340ffaacad303c4ff395c84d92e3907e42a521
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: e0f36e648c404858332245c5b1b457c9f6824614
+ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036641"
+ms.lasthandoff: 02/03/2020
+ms.locfileid: "76971888"
 ---
 # <a name="app-protection-policies-overview"></a>應用程式保護原則概觀
 
@@ -82,7 +82,7 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 Intune 應用程式保護原則平台支援與 Office 行動應用程式平台支援，在針對 Android 和 iOS 上是一致的。 如需詳細資料，請參閱 [Office 系統需求](https://products.office.com/office-system-requirements#coreui-contentrichblock-9r05pwg)的**行動應用程式**一節。
 
 > [!IMPORTANT]
-> 裝置上需要有 Intune 公司入口網站，才能在 Android 上接收 [應用程式保護原則]。 如需詳細資訊，請參閱 [Intune 公司入口網站存取應用程式需求](../fundamentals/end-user-mam-apps-android.md#access-apps)。
+> Android 裝置上需要有 Intune 公司入口網站，才能接收應用程式保護原則。 如需詳細資訊，請參閱 [Intune 公司入口網站存取應用程式需求](../fundamentals/end-user-mam-apps-android.md#access-apps)。
 
 ## <a name="how-app-protection-policies-protect-app-data"></a>應用程式保護原則如何保護應用程式資料
 
