@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c120fab1da43230888866cba9d818d7b433b711e
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: dbefd797fead7113045ee7e7655b715a0b4961fd
+ms.sourcegitcommit: 32391f74241ee3289a76ccd5319fe700b800d427
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755284"
+ms.lasthandoff: 02/07/2020
+ms.locfileid: "77075819"
 ---
 # <a name="intune-standalone---win32-app-management"></a>Intune Standalone - Win32 應用程式管理
 
@@ -204,7 +204,7 @@ ms.locfileid: "76755284"
         2. 在您設定好需求規則之後，請選取 [確定]  。
 2. 按一下 [下一步]  以顯示 [偵測規則]  頁面。   
 
-### <a name="step-4-detection-rules"></a>步驟 4：偵測規則
+## <a name="step-4-detection-rules"></a>步驟 4：偵測規則
 
 1. 在 [偵測規則]  頁面中，設定偵測應用程式是否存在的規則：
     
@@ -268,7 +268,7 @@ ms.locfileid: "76755284"
 
 2. 在您新增規則之後，請選取 [下一步]  以顯示 [相依性]  頁面。
 
-### <a name="step-5-dependencies"></a>步驟 5：相依性
+## <a name="step-5-dependencies"></a>步驟 5：相依性
 
 應用程式相依性是必須先安裝才能安裝 Win32 應用程式的應用程式。 您可以要求將其他應用程式安裝為相依性。 具體來說，裝置必須安裝相依的應用程式，才能安裝 Win32 應用程式。 最多可以有 100 個相依性，其中包括任何內含相依性的相依性，以及應用程式本身。 只有在將 Win32 應用程式新增並上傳至 Intune 之後，才能新增 Win32 應用程式相依性。 一旦新增您的 Win32 應用程式之後，您會在 Win32 應用程式的窗格上看到 [相依性]  選項。 
 
@@ -300,7 +300,7 @@ ms.locfileid: "76755284"
 ## <a name="step-6---select-scope-tags-optional"></a>步驟 6 - 選取範圍標籤 (選擇性)
 您可以使用範圍標籤來決定可在 Intune 中看見用戶端應用程式資訊的人員。 如需範圍標籤的完整詳細資料，請參閱[針對分散式 IT 使用角色型存取控制和範圍標籤](../fundamentals/scope-tags.md)。
 
-1. 按一下 [選取範圍標籤]  來選擇性地為應用程式新增範圍標籤。 
+1. 按一下 [選取範圍標籤]  以選擇性地為應用程式新增範圍標籤。 
 2. 按一下 [下一步]  以顯示 [指派]  頁面。
 
 ## <a name="step-7---assignments"></a>步驟 7 - 指派
