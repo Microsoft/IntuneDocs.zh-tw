@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/13/2020
+ms.date: 02/04/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f99479200e66b080e107475f0a031c5756da6051
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: HT
+ms.openlocfilehash: dc252068d963d75bf6ade79852d6ba01bda8800b
+ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754570"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77051604"
 ---
 # <a name="ios-and-ipados-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 iOS 和 iPadOS 裝置設定
 
@@ -420,8 +420,6 @@ ms.locfileid: "76754570"
   若要尋找應用程式的 URL，請開啟 iTunes App Store，然後搜尋該應用程式。 例如，搜尋 `Microsoft Remote Desktop` 或 `Microsoft Word`。 選取應用程式，並複製 URL。
 
   您也可以先使用 iTunes 尋找應用程式，再使用 [複製連結]  工作來取得該應用程式的 URL。
-  
-  如需尋找套裝組 ID的詳細資訊，請參閱[如何尋找 iOS 應用程式的](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app)套裝組 ID。
 
 - **應用程式套件組合識別碼**：輸入您要之應用程式的應用程式[搭售方案識別碼](bundle-ids-built-in-ios-apps.md)。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站會提供[內建 Apple 應用程式](https://support.apple.com/HT208094)清單。
 - **應用程式名稱**：輸入您要之應用程式的名稱。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站會提供[內建 Apple 應用程式](https://support.apple.com/HT208094)清單。
@@ -559,7 +557,9 @@ ms.locfileid: "76754570"
 
 ## <a name="autonomous-single-app-mode"></a>自發性單一應用程式模式
 
-使用這些設定來設定 iOS 裝置在自發性單一應用程式模式中執行指定的應用程式。 設定此模式並執行應用程式時，裝置會被鎖定。 它只能執行該應用程式。 例如，新增能讓使用者在裝置上接受測驗的應用程式。 當應用程式的動作完成時，或當您移除此原則時，裝置就會回到其正常狀態。
+使用這些設定，將 iOS/iPadOS 裝置設定為在自發性單一應用程式模式中執行特定應用程式。 當設定好此模式且使用者啟動其中一個已設定的應用程式時，裝置就會鎖定於該應用程式。 應用程式/工作切換會停用，直到使用者結束允許的應用程式為止。
+
+例如，在學校或大學環境中，新增可讓使用者在裝置上測試的應用程式。 或者，將裝置鎖定於公司入口網站應用程式，直到終端使用者進行驗證為止。 當使用者完成應用程式動作，或當您移除此原則時，裝置就會回到其正常狀態。
 
 ### <a name="settings-apply-to-automated-device-enrollment-supervised"></a>設定適用於：自動裝置註冊 (受監督)
 
