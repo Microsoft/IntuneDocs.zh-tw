@@ -7,14 +7,29 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: 6064fb657454106a8a7213e0bbbcecdcef765857
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 4e93cb7f2d503704251b16d1af03924358020d4e
+ms.sourcegitcommit: 1aaff35fddb3d06458d739968d28971fed0bb2ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966348"
+ms.lasthandoff: 02/12/2020
+ms.locfileid: "77156291"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
+
+### <a name="plan-for-change-change-in-experience-when-enrolling-android-enterprise-dedicated-devices-in-intune--6114580--"></a>規劃變更：變更在 Intune 中註冊 Android Enterprise 專用裝置的體驗<!--6114580-->
+我們已在十一月版本中說明我們已將對 SCEP 憑證部署的支援新增至 Android Enterprise 專用裝置，以啟用 Wi-Fi 設定檔的憑證型存取功能。 此變更牽涉到 Android Enterprise 專用裝置的一些微幅註冊流程變更。 在即將推出的三月服務更新或 2003 中，有一些需要您注意的進一步變更。
+
+#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
+如果您是環境中 Android Enterprise 專用裝置的管理員，您將會在三月開始看到我們推出一些變更。
+- 針對在 2019 年 11 月 22 日之前註冊的現有 Android 專用裝置，或 1911 服務更新：這些裝置上已安裝 Microsoft Intune 應用程式。 在三月的 Intune 服務中推出後端變更之後，將會開始套用部署至裝置並與 Wi-Fi 設定檔相關聯的 SCEP 憑證。
+- 針對在 2019 年 11 月 22 日之後且此變更在三月推出之前註冊的裝置：這些裝置上已安裝 Microsoft Intune 應用程式。 將會繼續套用部署至裝置並與 Wi-Fi 設定檔相關聯的 SCEP 憑證。
+- 針對變更在三月中推出之後的新 Android Enterprise 專用裝置註冊：終端使用者會在註冊期間看到一組不同的裝置設定步驟。 註冊仍會以目前的啟動方式啟動 (使用 QR、NFC、零接觸或裝置識別碼)，但將不會有強制應用程式安裝步驟。 相反地，Microsoft Intune 應用程式將會自動安裝在裝置上。 此外，終端使用者將不需要在流程期間點選 [啟用 Intune 代理程式]。 與 WiFi 設定檔相關聯的 SCEP 憑證可以部署到這些裝置。
+
+#### <a name="what-can-i-do-to-prepare-for-this-change"></a>如何為這項變更進行準備？
+您可以更新終端使用者指導方針，並讓技術服務人員知道此變更。 我們將更新 [新功能] 頁面，並在此變更開始推出時，透過「訊息中心」通知您。
+
+#### <a name="additional-information"></a>其他資訊
+[Android Enterprise 專用裝置中的 SCEP 憑證支援](https://aka.ms/Dedicated_devices_enrollment)
 
 ### <a name="updated-support-statement-for-adobe-acrobat-reader-for-intune-mobile-app--5746776--"></a>「Adobe Acrobat Reader for Intune」行動應用程式的已更新支援聲明<!--5746776-->
 我們在 8 月底於 MC188653 中分享了 Adobe Acrobat Reader for Intune 行動應用程式會在 2019 年 12 月 1 日終止生命週期，且 Adobe 已規劃在其主要 Acrobat Reader 應用程式中支援 Intune 的應用程式保護原則。 從那時起，我們收到客戶意見反應，我們需要提供更多時間來繼續讓 IT 系統管理員以 Adobe Acrobat Reader for Intune 為目標，以及讓終端使用者繼續使用它。 有鑑於 Adobe Acrobat Reader for Intune 在終端使用者裝置上有高使用量，以及其在企業案例中的重要性，我們想要確保任何體驗都符合您組織的應用程式保護需求。 

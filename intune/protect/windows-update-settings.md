@@ -15,12 +15,12 @@ ms.reviewer: aiwang
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f3359bc5544b3a353271ea17083c8c3acb49742
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 06982bdf0aff1870f1a759f68bc6cdd48227a3cf
+ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
 ms.translationtype: MTE75
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72584461"
+ms.lasthandoff: 02/11/2020
+ms.locfileid: "77124991"
 ---
 # <a name="windows-update-settings-for-intune"></a>適用於 Intune 的 Windows Update 設定  
 
@@ -34,7 +34,7 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
 - **維護通道**  
   **預設**：半年通道  
-  Windows Update CSP： [Update/BranchReadinessLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel)  
+  Windows Update CSP：[Update/BranchReadinessLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-branchreadinesslevel)  
 
   設定裝置接收 Windows 更新的通道 (分支)。 在更新傳遞之前，不同的通道可以使用不同的延遲期。  
 
@@ -56,21 +56,21 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
  
 - **Microsoft 產品更新**  
   **預設**：允許  
-  Windows Update CSP： [Update/AllowMUUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice)
+  Windows Update CSP：[Update/AllowMUUpdateService](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowmuupdateservice)
 
-  - **允許**-選取 [*允許*] 以從 Microsoft Update 掃描應用程式更新。  
-  - [**封鎖**]-選取 [封鎖] 以防止掃描應用程式更新。  
+  - **允許** - 選取 [允許]  以掃描來自 Microsoft Update 的應用程式更新。  
+  - **封鎖** - 選取 [封鎖] 以防止掃描應用程式更新。  
 
 - **Windows 驅動程式**  
   **預設**：允許  
-  Windows Update CSP： [Update/ExcludeWUDriversInQualityUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate)  
+  Windows Update CSP：[Update/ExcludeWUDriversInQualityUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-excludewudriversinqualityupdate)  
 
-  - **允許**-在更新期間選取 [*允許*包含 Windows Update 驅動程式]。  
-  - [**封鎖**]-選取 [封鎖] 以防止掃描驅動程式。  
+  - **允許** - 選取 [允許]  以在更新期間包含 Windows Update 驅動程式。  
+  - **封鎖** - 選取 [封鎖] 以防止掃描驅動程式。  
 
 - **品質更新延遲期間 (天)**  
   **預設**：0  
-  Windows Update CSP： [Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays)  
+  Windows Update CSP：[Update/DeferQualityUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferqualityupdatesperiodindays)  
 
   指定品質更新的延遲天數 (從 0 到 30)。 這段期間會加上您選取之維護通道的任何延遲期間。 延遲期間的開始時間是裝置接收原則的時候。  
 
@@ -78,20 +78,20 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
 - **功能更新延遲期間 (天)**  
   **預設**：0  
-  Windows Update CSP： [Update/PauseFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)  
+  Windows Update CSP：[Update/PauseFeatureUpdatesPeriodInDays](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-deferfeatureupdatesperiodindays)  
 
   指定功能更新的延遲天數。 這段期間會加上您選取之維護通道的任何延遲期間。 延遲期間的開始時間是裝置接收原則的時候。  
 
   支援的延遲期間：  
 
-  - *Windows 1709 和更新版本*-0 到365天  
+  - *Windows 1709 版與更新版本* - 0 到 365 天  
   - Windows 1703 版  - 0 到 180 天  
 
   「功能更新」通常是 Windows 的新功能。  
 
 - **設定功能更新解除安裝期間 (2 - 60 天)**  
   **預設**：10  
-  Windows Update CSP： [Update/ConfigureFeatureUpdateUninstallPeriod](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configurefeatureupdateuninstallperiod)  
+  Windows Update CSP：[Update/ConfigureFeatureUpdateUninstallPeriod](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configurefeatureupdateuninstallperiod)  
 
   設定在經過多少時間之後無法解除安裝功能更新。  
 
@@ -105,7 +105,7 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
 - **自動更新行為**  
   **預設**：在維護時間自動安裝  
-  Windows Update CSP： [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
+  Windows Update CSP：[Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
   選擇要如何安裝自動更新和何時重新啟動裝置 (如有需要)。  
 
@@ -119,11 +119,11 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
     - **使用中時數開始** - 指定針對因安裝更新而抑制重新啟動的開始時間。  
       **預設**：上午 8 點  
-      Windows Update CSP： [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
+      Windows Update CSP：[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
   
     - **使用中時數結束** - 指定針對因安裝更新而抑制重新開機的結束時間。  
       **預設**：下午 5 點  
-      Windows Update CSP： [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
+      Windows Update CSP：[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
 
   - **在維護期間自動安裝並重新啟動**：當裝置未在使用中或以電池電源執行時自動下載更新，然後在自動維護期間安裝。 當需要重新啟動時，裝置會在未使用時重新啟動。 (這是非受控裝置的預設設定)。  
 
@@ -131,14 +131,14 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
     - **使用中時數開始** - 指定針對因安裝更新而抑制重新啟動的開始時間。  
       **預設**：上午 8 點  
-      Windows Update CSP： [Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
+      Windows Update CSP：[Update/ActiveHoursStart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursstart)  
   
     - **使用中時數結束** - 指定針對因安裝更新而抑制重新開機的結束時間。  
       **預設**：下午 5 點  
-      Windows Update CSP： [Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
+      Windows Update CSP：[Update/ActiveHoursEnd](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-activehoursend)  
 
   - **在排定的時間自動安裝並重新啟動** - 指定安裝的日期和時間。 如果未指定，則會在每日早上 3 點執行安裝，接著在 15 分鐘的倒數後重新啟動。 登入的使用者可以延遲倒數計時和重新啟動。   
-  Windows Update CSP： [Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
+  Windows Update CSP：[Update/AllowAutoUpdate](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-allowautoupdate)  
 
     此選項支援其他設定。  
 
@@ -158,7 +158,7 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
 - **重新啟動檢查**  
   **預設**：允許  
-  Windows Update CSP： [Update/SetEDURestart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setedurestart)  
+  Windows Update CSP：[Update/SetEDURestart](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setedurestart)  
 
   若要在重新啟動裝置時略過這些檢查，請選取 [略過]  。 
   
@@ -170,84 +170,84 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
 - **封鎖使用者使其無法暫停 Windows 更新**  
   **預設**：允許  
-  Windows Update CSP： [Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)  
+  Windows Update CSP：[Update/SetDisablePauseUXAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisablepauseuxaccess)  
 
-  - **允許**-允許裝置使用者暫停安裝更新。  
-  - [**封鎖**]-防止裝置使用者暫停更新的安裝。  
+  - **允許** - 允許裝置使用者暫停安裝更新。  
+  - **封鎖** - 防止裝置使用者暫停更新的安裝。  
 
 - **禁止使用者掃描 Windows 更新**  
   **預設**：允許  
-  Windows Update CSP： [Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
+  Windows Update CSP：[Update/SetDisableUXWUAccess](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-setdisableuxwuaccess) 
 
-  - **允許**-允許裝置使用者使用 Windows Update 掃描來尋找和下載更新，以及安裝功能。
-  - **封鎖**-防止裝置使用者存取 Windows Update 掃描、下載更新以及安裝功能。  
+  - **允許** - 允許裝置使用者使用 Windows Update 來掃描以尋找並下載更新，以及安裝功能。
+  - **封鎖** - 防止裝置使用者存取 Windows Update 掃描、下載更新以及安裝功能。  
 
 - **要求使用者需取得核准才能在非上班時間重新開機**  
-  **預設**：未設定  
-  Windows Update CSP： [Update/AutoRestartRequiredNotificationDismissal](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
+  **預設**：尚未設定  
+  Windows Update CSP：[Update/AutoRestartRequiredNotificationDismissal](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-autorestartrequirednotificationdismissal)
   
   - **未設定**  
   - **必要** - 要求使用者核准裝置在非上班時間重新啟動。  
    
 - **使用可關閉的提醒，在必要的自動重新開機之前提醒使用者 (小時)**  
   **預設**：4  
-  Windows Update CSP： [Update/ScheduleRestartWarning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)  
+  Windows Update CSP：[Update/ScheduleRestartWarning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-schedulerestartwarning)  
 
   指定要在自動重新啟動前，提前多少時間向使用者顯示有關該重新啟動的可關閉通知。 支援 **2**、**4**、**8**、**12** 或 **24** 小時的值。  
   
-  當您清除預設值時，此設定會變成 [*未設定*]。  
+  當您清除預設值時，此設定會變成 [未設定]  。  
 
 - **使用永久提醒，在必要的自動重新開機之前提醒使用者 (分鐘)**  
   **預設**：15  
-  Windows Update CSP： [Update/ScheduleImminentRestartWarning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)  
+  Windows Update CSP：[Update/ScheduleImminentRestartWarning](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-scheduleimminentrestartwarning)  
 
   指定要在自動重新啟動前，提前多少時間向使用者顯示有關該重新啟動的不可關閉警告。 支援 **15**、**30** 或 **60** 分鐘的值。  
 
-  當您清除預設值時，此設定會變成 [*未設定*]。  
+  當您清除預設值時，此設定會變成 [未設定]  。  
 
 - **變更更新通知層級**  
   **預設**：使用預設 Windows Update 通知  
-  Windows Update CSP： [Update/UpdateNotificationLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
+  Windows Update CSP：[Update/UpdateNotificationLevel](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-updatenotificationlevel)
   
   指定使用者看到的 Windows Update 通知層級。 此設定不會控制如何及何時下載並安裝更新。  
 
   支援的選項：
   - **未設定**
   - **使用預設 Windows Update 通知**
-  - **關閉所有通知，但不包含重新開機警告**
-  - **關閉所有通知，包括重新開機警告**  
+  - **關閉重新啟動警告以外的所有通知**
+  - **關閉包括重新啟動警告的所有通知**  
 
 - **使用期限設定**  
-  **預設**：未設定  
+  **預設**：尚未設定  
  
   允許使用者使用期限設定。  
 
   - **未設定**
   - **允許**
 
-  設為 [*允許*] 時，您可以設定下列期限設定：
+  設定為 [允許]  時，您可以設定下列期限設定：
 
   - **功能更新的期限**  
-    **預設值**：*未設定*  
-    Windows Update CSP： [Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
+    **預設**：*未設定*  
+    Windows Update CSP：[Update/ConfigureDeadlineForFeatureUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforfeatureupdates)  
 
-    指定使用者已自動在裝置上安裝功能更新的天數（2-30）。
+    指定使用者在其裝置上自動安裝功能更新之前的天數 (2-30)。
 
   - **品質更新的期限**  
-    **預設值**：*未設定*  
-    Windows Update CSP： [Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
+    **預設**：*未設定*  
+    Windows Update CSP：[Update/ConfigureDeadlineForQualityUpdates](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlineforqualityupdates)
 
-    指定自動在裝置上安裝品質更新之前，使用者的天數（2-30）。
+    指定使用者在其裝置上自動安裝品質更新之前的天數 (2-30)。
 
   - **寬限期**  
-    **預設值**：*未設定*Windows Update CSP： [Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
+    **預設值**：*未設定* Windows Update CSP：[Update/ConfigureDeadlineGracePeriod]( https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinegraceperiod)
 
-    指定在期限後的最少天數，直到自動重新開機為止（2-7）。
+    指定在期限之後直到自動重新啟動之間的天數下限 (2-7)。
 
-  - **期限前自動重新開機**  
-    **預設值**：是 Windows Update CSP： [Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
+  - **在期限前自動重新開機**  
+    **預設值**：是 Windows Update CSP：[Update/ConfigureDeadlineNoAutoReboot](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-update#update-configuredeadlinenoautoreboot)
 
-    指定裝置是否應該在期限前自動重新開機。
+    指定裝置是否應在期限之前自動重新開機。
     - **是**
     - **否**
 
@@ -255,4 +255,4 @@ Update 設定可控制裝置將下載的位元和時機。 如需每個設定之
 
 [傳遞最佳化] 不再是 [軟體更新] 下 [Windows 10 更新通道] 的其中一項設定。 現在會透過裝置設定來設定傳遞最佳化。 不過，您仍然可以在主控台中使用先前的設定。 您可以將先前的設定編輯為「未設定」  來移除這些設定，但無法修改這些設定。 
 
-若要避免新原則與舊原則之間的衝突，請參閱[從現有更新通道移動到傳遞最佳化](../configuration/delivery-optimization-windows.md#move-existing-update-rings-to-delivery-optimization)，然後將您的設定移至傳遞最佳化設定檔。
+若要避免新原則與舊原則之間的衝突，請參閱[從 Windows 10 更新通道移除傳遞最佳化](../configuration/delivery-optimization-windows.md#remove-delivery-optimization-from-windows-10-update-rings)，然後將您的設定移至傳遞最佳化設定檔。
