@@ -100,7 +100,7 @@
     - name: 設定 macOS 註冊
       href: macos-enroll.md
       items:
-        - name: 裝置註冊計劃或 Apple School Manager
+        - name: 自動的裝置註冊
           href: device-enrollment-program-enroll-macos.md
     - name: 未完成的註冊報告
       href: enrollment-report-company-portal-abandon.md

@@ -9,7 +9,7 @@
     - name: 裝置管理概觀
       href: what-is-device-management.md
       displayName: teamviewer
-    - name: 新功能
+    - name: 新增功能
       href: whats-new.md
       items:
         - name: 應用程式 UI 中的新功能
@@ -55,7 +55,7 @@
           href: guided-scenarios-cloud-managed-pc.md
         - name: 保護 Microsoft Office 行動應用程式
           href: guided-scenarios-office-mobile.md
-    - name: 常見的案例
+    - name: 常見案例
       href: common-scenarios.md
     - name: 使用 EMS 的 BYOD 技術決策
       href: byod-technology-decisions.md
@@ -127,7 +127,7 @@
               href: end-user-mam-apps-ios.md
             - name: 如何取得 Android 應用程式
               href: end-user-apps-android.md
-            - name: 如何取得 iOS 應用程式
+            - name: 如何取得 iOS/iPadOS 應用程式
               href: end-user-apps-ios.md
             - name: 如何取得 Windows 應用程式
               href: end-user-apps-windows.md
@@ -147,7 +147,7 @@
         - name: 支援的設定
           href: supported-devices-browsers.md
           items:
-            - name: 網路設定
+            - name: 網路組態
               href: network-bandwidth-use.md
             - name: 搭配 Intune 使用 Windows 10 VM
               href: windows-10-virtual-machines.md
@@ -159,7 +159,7 @@
           href: account-sign-up.md
         - name: 設定網域
           href: custom-domain-name-configure.md
-        - name: 新增使用者
+        - name: 加入使用者
           href: users-add.md
         - name: 新增群組
           href: groups-add.md
@@ -201,10 +201,6 @@
           href: tenant-status.md
         - name: 協助使用者疑難排解問題
           href: help-desk-operators.md
-        - name: Intune 活動的稽核記錄
-          href: monitor-audit-logs.md
-        - name: 透過 Azure 監視器檢閱記錄
-          href: review-logs-using-azure-monitor.md
         - name: 使用 Intune 文件
           href: use-docs.md
         - name: 取得支援
@@ -213,15 +209,19 @@
       items:
         - name: Intune 報告
           href: reports.md
-- name: 參考資料
+        - name: Intune 活動的稽核記錄
+          href: monitor-audit-logs.md
+        - name: 透過 Azure 監視器檢閱記錄
+          href: review-logs-using-azure-monitor.md
+- name: 參考
   items:
-    - name: 錯誤碼與描述
+    - name: 錯誤碼與說明
       items:
         - name: 公司資源存取問題的疑難排解
           href: troubleshoot-company-resource-access-problems.md
 - name: 資源
   items:
-    - name: Archive
+    - name: 封存
       items:
         - name: 新功能封存
           items:
@@ -233,7 +233,7 @@
           href: ui-changes.md
         - name: Intune 傳統群組
           href: groups-get-started.md
-        - name: iOS 教育設定
+        - name: iOS/iPadOS 教育設定
           items:
             - name: iPad
               href: education-settings-configure-ios.md

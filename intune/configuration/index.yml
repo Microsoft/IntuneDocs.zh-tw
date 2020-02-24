@@ -11,13 +11,13 @@ metadata:
   ms.collection: collection
   author: dougeby
   ms.author: dougeby
-  ms.date: 09/16/2019
-  ms.openlocfilehash: afd555e5f245ee9bc28bd21268ae64ae69afbad3
-  ms.sourcegitcommit: 9013f7442bbface78feecde2922e8e546a622c16
+  ms.date: 02/18/2020
+  ms.openlocfilehash: d6404a4c77507374b5e8759ba2078e541cde35d8
+  ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 10/16/2019
-  ms.locfileid: "72492547"
+  ms.lasthandoff: 02/20/2020
+  ms.locfileid: "77511046"
 landingContent:
 - title: 將設功能和設定套用至裝置
   linkLists:
@@ -27,7 +27,7 @@ landingContent:
       url: device-profiles.md
   - linkListType: quickstart
     links:
-    - text: 建立 iOS 的電子郵件裝置設定檔
+    - text: 建立 iOS/iPadOS 的電子郵件裝置設定檔
       url: quickstart-email-profile.md
   - linkListType: how-to-guide
     links:
@@ -69,11 +69,11 @@ landingContent:
       url: wi-fi-settings-configure.md
     - text: 控制共用電腦或多重使用者裝置上的存取權、帳戶與電源功能
       url: shared-user-device-settings.md
-- title: iOS 的設定
+- title: iOS/iPadOS 的設定
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 新增 iOS 裝置功能設定
+    - text: 新增 iOS/iPadOS 裝置功能設定
       url: device-features-configure.md
     - text: 設定裝置限制設定
       url: device-restrictions-configure.md
@@ -81,7 +81,7 @@ landingContent:
       url: email-settings-configure.md
     - text: 建立 VPN 設定檔以連線到 VPN 伺服器
       url: vpn-settings-configure.md
-    - text: 建立 iOS 裝置的個別應用程式 VPN 設定檔
+    - text: 建立 iOS/iPadOS 裝置的個別應用程式 VPN 設定檔
       url: vpn-setting-configure-per-app.md
     - text: 在您的裝置上新增並使用 Wi-Fi 設定
       url: wi-fi-settings-configure.md
@@ -89,7 +89,7 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 新增 iOS 裝置功能設定
+    - text: 新增 iOS/iPadOS 裝置功能設定
       url: device-features-configure.md
     - text: 設定裝置限制設定
       url: device-restrictions-configure.md
@@ -137,7 +137,7 @@ landingContent:
       url: device-restrictions-android.md
     - text: Android 企業
       url: device-restrictions-android-for-work.md
-    - text: iOS
+    - text: iOS/iPadOS
       url: ios-device-features-settings.md
     - text: macOS
       url: macos-device-features-settings.md
