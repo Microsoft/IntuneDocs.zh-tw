@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09b4cfad0490f35a85e4c72b937b2ba5c0472030
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74564345"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414691"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -51,7 +51,7 @@ Intune MAM 支援兩個組態︰
 
 Intune 提供各種功能，可協助您在所要的裝置上取得所需的應用程式並執行。 下表提供應用程式管理功能的摘要。
 
-|  | Android/Android Enterprise | iOS | macOS | Windows 10 | Windows Phone 8.1 |
+|  | Android/Android Enterprise | iOS/iPadOS | macOS | Windows 10 | Windows Phone 8.1 |
 |-------------------------------------------------------------------------------------|---------|-----|-------|------------|-------------------|
 | 新增應用程式並指派給裝置與使用者 | 是 | 是 | 是 | 是 | 是 |
 | 指派應用程式給未向 Intune 註冊的裝置 | 是 | 是 | 否 | 否 | 否 |
@@ -98,7 +98,7 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
   - [應用程式保護原則](app-protection-policies.md)。
 - **應用程式選擇性抹除**：選取此選項，從選取的使用者裝置只移除公司資料。 如需詳細資訊，請參閱：
   - [應用程式選擇性抹除](apps-selective-wipe.md)。
-- **iOS 應用程式佈建設定檔**：iOS 應用程式包含佈建設定檔和由憑證所簽署的程式碼。 憑證過期之後便無法再次執行應用程式。 Intune 為您提供了可以主動將新的佈建設定檔原則指派給有應用程式即將到期的裝置。 如需詳細資訊，請參閱：
+- **iOS 應用程式佈建設定檔**：iOS/iPadOS 應用程式包含由憑證所簽署的佈建設定檔與程式碼。 憑證過期之後便無法再次執行應用程式。 Intune 為您提供了可以主動將新的佈建設定檔原則指派給有應用程式即將到期的裝置。 如需詳細資訊，請參閱：
   - [iOS 應用程式佈建設定檔](app-provisioning-profile-ios.md)。
 
 如需本節的詳細資訊，請參閱[管理應用程式](app-management.md)。
@@ -115,7 +115,7 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 如需本節的詳細資訊，請參閱[監視應用程式](apps-monitor.md)。
 
 ### <a name="set-up"></a>設定
-- **iOS VPP 權杖**：套用並檢視您的 iOS 大量採購方案 (VPP) 授權。 如需詳細資訊，請參閱：
+- **iOS VPP 權杖**：套用並檢視您的 iOS/iPadOS 大量採購方案 (VPP) 授權。 如需詳細資訊，請參閱：
   - [iOS 大量採購應用程式](vpp-apps-ios.md)
 - **Windows 企業憑證**：套用或檢視程式碼簽署憑證的狀態，此憑證可用來將企業營運應用程式發佈到您的受控 Windows 裝置。
 - **Windows Symantec 憑證**：套用或檢視 Symantec 程式碼簽署憑證的狀態，將 XAP 和 WP8.x appx 檔案發佈至 Windows 10 行動裝置版裝置時需要此憑證。

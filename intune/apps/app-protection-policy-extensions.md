@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1ff4fcd7d1b2115c4fbe0bc00759ef3d60482904
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: e568bb5520b4f8cc242cb58a1ee48e8729f4e387
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692109"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414601"
 ---
 # <a name="protecting-application-extensions"></a>保護應用程式延伸模組
 
@@ -31,7 +31,7 @@ ms.locfileid: "75692109"
 
 ## <a name="add-ins-for-outlook-app"></a>Outlook 應用程式增益集
 
-Outlook 增益集可讓您將熱門應用程式與電子郵件用戶端整合。 Web、Windows、Mac，以及 Android 和 iOS 版的 Outlook，皆提供 Outlook 增益集。 Intune APP SDK 與 Intune 應用程式保護原則不包含管理 Outlook 增益集的支援，但還有其他方法可以限制其使用。 因為增益集透過 Microsoft Exchange 進行管理，所以除非使用者的 Exchange 對使用者關閉了增益集，否則，使用者將可在 Outlook 與未受管理的增益集應用程式之間，共用資料與郵件。
+Outlook 增益集可讓您將熱門應用程式與電子郵件用戶端整合。 Web、Windows、Mac，以及 Android 和 iOS/iPadOS 版的 Outlook，皆提供 Outlook 增益集。 Intune APP SDK 與 Intune 應用程式保護原則不包含管理 Outlook 增益集的支援，但還有其他方法可以限制其使用。 因為增益集透過 Microsoft Exchange 進行管理，所以除非使用者的 Exchange 對使用者關閉了增益集，否則，使用者將可在 Outlook 與未受管理的增益集應用程式之間，共用資料與郵件。
 
 若想要讓使用者無法存取及安裝 Outlook 增益集 (如此會影響所有 Outlook 用戶端)，請務必在 Exchange 系統管理中心對角色進行下列變更︰
 

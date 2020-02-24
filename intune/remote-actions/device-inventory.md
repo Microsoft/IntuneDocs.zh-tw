@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11e3465c583197582a545cdd6f4b71bc8d24e115
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754196"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413750"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -73,25 +73,25 @@ ms.locfileid: "76754196"
 |安全性修補等級|適用於裝置的安全性修補等級。|Android|
 |儲存空間總計|裝置上的儲存空間總計 (GB)。|Windows、iOS|
 |可用儲存空間|裝置上的未使用儲存空間總計 (GB)。|Windows、iOS|
-|IMEI|裝置的國際行動設備識別碼。|Windows、iOS、Android|
-|MEID|裝置的行動設備識別碼。|Windows、iOS、Android|
-|製造商|裝置的製造商。|Windows、iOS、Android|
-|型號|裝置的型號。|Windows、iOS、Android|
-|電話號碼|指派給裝置的手機號碼。|Windows、iOS、Android*|
-|訂閱電訊廠商|裝置的無線電訊廠商。|Windows、iOS、Android|
-|行動電話通訊技術|裝置使用的無線電話系統。|Windows、iOS、Android|
-|Wi-Fi MAC|裝置的媒體存取控制位址。|Windows、iOS、Android|
-|ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|Windows、iOS、Android|
-|註冊日期|裝置在 Intune 中註冊的日期與時間。|Windows、iOS、Android|
-|上次連絡|裝置最後連線至 Intune 的日期與時間。|Windows、iOS、Android|
+|IMEI|裝置的國際行動設備識別碼。|Windows、iOS/iPadOS、Android|
+|MEID|裝置的行動設備識別碼。|Windows、iOS/iPadOS、Android|
+|製造商|裝置的製造商。|Windows、iOS/iPadOS、Android|
+|型號|裝置的型號。|Windows、iOS/iPadOS、Android|
+|電話號碼|指派給裝置的手機號碼。|Windows、iOS/iPadOS、Android*|
+|訂閱電訊廠商|裝置的無線電訊廠商。|Windows、iOS/iPadOS、Android|
+|行動電話通訊技術|裝置使用的無線電話系統。|Windows、iOS/iPadOS、Android|
+|Wi-Fi MAC|裝置的媒體存取控制位址。|Windows、iOS/iPadOS、Android|
+|ICCID|積體電路卡識別碼，這是 SIM 卡的唯一識別碼。|Windows、iOS/iPadOS、Android|
+|註冊日期|裝置在 Intune 中註冊的日期與時間。|Windows、iOS/iPadOS、Android|
+|上次連絡|裝置最後連線至 Intune 的日期與時間。|Windows、iOS/iPadOS、Android|
 |啟用鎖定略過碼|此代碼可用來停用啟用鎖定。|iOS|
-|已註冊 Azure AD|若為 [是]  ，表示裝置已向 Azure Directory 註冊。|Windows、iOS、Android|
-|Intune 已註冊|若為 [是]  ，表示裝置已向 Intune 註冊|Windows、iOS、Android|
-|合規性|裝置的合規性狀態。|Windows、iOS、Android|
-|EAS 已啟用|若為 [是]  ，裝置便會與 Exchange 信箱同步處理。|Windows、iOS、Android|
-|EAS 啟用識別碼|裝置的 Exchange ActiveSync 識別碼。|Windows、iOS、Android|
-|受監督|若為 [是]  ，表示系統管理員對裝置有加強的控制力。|Windows、iOS、Android|
-|已加密|若為 [是]  ，表示會加密儲存在裝置上的資料。|Windows、iOS、Android|
+|已註冊 Azure AD|若為 [是]  ，表示裝置已向 Azure Directory 註冊。|Windows、iOS/iPadOS、Android|
+|Intune 已註冊|若為 [是]  ，表示裝置已向 Intune 註冊|Windows、iOS/iPadOS、Android|
+|合規性|裝置的合規性狀態。|Windows、iOS/iPadOS、Android|
+|EAS 已啟用|若為 [是]  ，裝置便會與 Exchange 信箱同步處理。|Windows、iOS/iPadOS、Android|
+|EAS 啟用識別碼|裝置的 Exchange ActiveSync 識別碼。|Windows、iOS/iPadOS、Android|
+|受監督|若為 [是]  ，表示系統管理員對裝置有加強的控制力。|Windows、iOS/iPadOS、Android|
+|已加密|若為 [是]  ，表示會加密儲存在裝置上的資料。|Windows、iOS/iPadOS、Android|
 
 > [!Note]  
 > 系統不會清查 Android Enterprise 專用或完全受控裝置上的電話號碼。

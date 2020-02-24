@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dce6d71a4bc056146b581458d5c39325adad1584
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: cd0a4b0c5e0b4cbaa7ef43ec40cddb3ab30d3070
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206902"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415489"
 ---
 # <a name="tutorial-configure-slack-to-use-intune-for-emm-and-app-configuration"></a>教學課程：設定 Slack 以針對 EMM 和應用程式設定使用 Intune
 
@@ -69,7 +69,7 @@ Slack 是您可以與 Microsoft Intune 搭配使用的共同作業應用程式�
 10. 按一下 **[儲存]** 。
 
 ### <a name="add-an-app-configuration-policy-for-slack-for-emm"></a>針對 Slack for EMM 新增應用程式設定原則
-針對 Slack for EMM iOS 新增應用程式設定原則。 受控裝置的應用程式設定原則是平台特定的，因此，您需要在 Android 裝置上針對您的 Slack 使用者新增不同的原則。
+針對 Slack for EMM iOS/iPadOS 新增應用程式設定原則。 受控裝置的應用程式設定原則是平台特定的，因此，您需要在 Android 裝置上針對您的 Slack 使用者新增不同的原則。
 1. 在系統管理中心中，選取 [應用程式]   > [應用程式設定原則]   > [新增]   > [受控裝置]  。
 2. 在 [名稱] 中，輸入「Slack 應用程式設定原則測試」。
 3. 在 [裝置註冊類型] 下方，確認已設定 [受控裝置]  。

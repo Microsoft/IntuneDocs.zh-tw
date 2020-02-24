@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 80ae9b3b1ab274e236ad43c52569574718d3eec4
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: ef9810f9414af4d1f57fa71189a6960b491800c0
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839313"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414894"
 ---
 # <a name="how-to-manage-data-transfer-between-ios-apps-in-microsoft-intune"></a>如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸
 
@@ -45,7 +45,7 @@ ms.locfileid: "75839313"
 ## <a name="configure-user-upn-setting-for-microsoft-intune-or-third-party-emm"></a>設定 Microsoft Intune 或協力廠商 EMM 的使用者 UPN 設定
 Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用者 UPN 設定，以識別已註冊的使用者帳戶。 UPN 設定會與您從 Intune 部署的應用程式保護原則搭配運作。 下列程序為 UPN 設定進行方式及所產生使用者體驗的一般流程︰
 
-1. 在 [Azure 入口網站](https://portal.azure.com)中，針對 iOS [建立和指派應用程式保護原則](app-protection-policies.md)。 根據公司需求設定原則設定，然後選取應該具有此原則的 iOS 應用程式。
+1. 在 [Azure 入口網站](https://portal.azure.com)中，針對 iOS/iPadOS [建立並指派應用程式保護原則](app-protection-policies.md)。 根據公司需求設定原則設定，然後選取應該具有此原則的 iOS 應用程式。
 
 2. 使用下列通用步驟，來部署您要透過 Intune 或協力廠商 MDM 解決方案管理的應用程式及電子郵件設定檔。 *範例 1* 也涵蓋這個體驗。
 
@@ -90,7 +90,7 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
 
 1. 使用者在已註冊的 iOS 裝置上開啟 Microsoft OneDrive 應用程式，並使用其公司帳戶登入。  使用者輸入的帳戶必須與您應用程式組態設定中為 Microsoft OneDrive 應用程式指定的帳戶 UPN 相符。
 
-2. 登入之後，您的系統管理員設定的應用程式設定會套用到 Microsoft OneDrive 中的使用者帳戶。  這包括將 [將組織資料傳送到其他應用程式]  設定設定為 [共用 OS 且受原則管理的應用程式]  值。
+2. 登入之後，您系統管理員所設定的應用程式設定會套用到 Microsoft OneDrive 中的使用者帳戶。  這包括將 [將組織資料傳送到其他應用程式]  設定設定為 [共用 OS 且受原則管理的應用程式]  值。
 
 3. 使用者預覽公司檔案並嘗試透過 Open-in 與受 iOS 管理的應用程式共用。  
 
@@ -105,7 +105,7 @@ Intune 或協力廠商 EMM 解決方案所管理的裝置**需要**設定使用�
 1. 當 Word 應用程式啟動時，會發生兩個體驗的其中一個：
    1. 在下列時機，資料會由 Intune APP 保護：
       - 使用者登入符合您在應用程式設定中為 Microsoft Word 應用程式指定之帳戶 UPN 的公司帳戶。 
-      - 您的系統管理員已設定應用程式設定套用到 Microsoft Word 中的使用者帳戶。  這包括將 [接收其他應用程式的資料]  設定設定為 [所有包含傳入組織資料的應用程式]  值。
+      - 您系統管理員所設定的應用程式設定會套用到 Microsoft Word 中的使用者帳戶。  這包括將 [接收其他應用程式的資料]  設定設定為 [所有包含傳入組織資料的應用程式]  值。
       - 資料傳輸成功，而且文件會標有應用程式中的公司身分識別。  Intune 應用程式保護文件的使用者動作。
    1. 在下列時機，資料**不會**由 Intune APP 保護：
       - 使用者**未**登入其公司帳戶。

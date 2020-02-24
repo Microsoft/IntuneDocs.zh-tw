@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: add92c038e33ba1b5873eb0e9588242f8f3d0f57
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 75914dc77fe351fffda21768b0136e636c567998
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207429"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415128"
 ---
 # <a name="set-up-enrollment-for-windows-devices"></a>設定 Windows 裝置的註冊
 
@@ -119,7 +119,7 @@ EnterpriseEnrollment-s.manage.microsoft.com 是註冊慣用的 FQDN；但在過�
 如需終端使用者工作的詳細資訊，請參閱[使用 Microsoft Intune 之使用者體驗的相關資源](../fundamentals/end-user-educate.md)。
 
 ## <a name="registration-and-enrollment-cnames"></a>登錄和註冊 CNAME
-Azure Active Directory 使用不同的 CNAME 註冊 iOS、Android 和 Windows 裝置。 Intune 條件式存取要求裝置必須註冊，也稱為「已加入工作場所」。 如果打算使用條件式存取，您也應該為所擁有的每個公司名稱設定 EnterpriseRegistration CNAME。
+Azure Active Directory 使用不同的 CNAME 註冊 iOS/iPadOS、Android 和 Windows 裝置。 Intune 條件式存取要求裝置必須註冊，也稱為「已加入工作場所」。 如果打算使用條件式存取，您也應該為所擁有的每個公司名稱設定 EnterpriseRegistration CNAME。
 
 | 類型 | 主機名稱 | 指向 | TTL |
 | --- | --- | --- | --- |

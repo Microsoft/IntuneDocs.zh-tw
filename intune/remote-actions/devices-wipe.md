@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 淘汰或抹除裝置 - Azure | Microsoft Docs
-description: 使用 Microsoft Intune 淘汰或抹除 Android、Android 工作設定檔、iOS、macOS 或 Windows 裝置。 也從 Azure Active Directory 中刪除裝置。
+description: 使用 Microsoft Intune 淘汰或抹除 Android、Android 工作設定檔、iOS/iPadOS、macOS 或 Windows 裝置。 也從 Azure Active Directory 中刪除裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cda7404d24ccb9bb1c42d6bb66d77f29ac925ac
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812466"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415522"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
@@ -43,7 +43,7 @@ ms.locfileid: "76812466"
 
 
 > [!NOTE]
-> 抹除動作不適用於已使用「使用者註冊」註冊的 iOS 裝置。
+> 抹除動作不適用於已使用「使用者註冊」註冊的 iOS/iPadOS 裝置。
 
 [保留註冊狀態和使用者帳戶]  選項僅適用於 Windows 10 版本 1709 或更新版本。
 

@@ -1,7 +1,7 @@
 ---
 title: 取得適用於 Intune 的 Apple MDM Push Certificate
 titleSuffix: ''
-description: 取得 Apple MDM Push Certificate 以使用 Intune 管理 iOS 裝置。
+description: 取得 Apple MDM Push Certificate 以使用 Intune 管理 iOS/iPadOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,24 +18,24 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 178e1a3d0f58eb925c4d48be10bfa46e68c6b2c6
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 673f63194b46ca7e4dbf1206d363cbe70c6e6098
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955451"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414434"
 ---
 # <a name="get-an-apple-mdm-push-certificate"></a>取得 Apple MDM Push Certificate
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-必須要有 Apple MDM Push Certificate，Intune 才能管理 iOS 和 macOS 裝置。 將憑證新增至 Intune 之後，使用者即可使用下列方式來註冊其裝置：
+必須要有 Apple MDM Push Certificate，Intune 才能管理 iOS/iPadOS 與 macOS 裝置。 將憑證新增至 Intune 之後，使用者即可使用下列方式來註冊其裝置：
 
 - 公司入口網站應用程式。
 
 - Apple 的大量註冊方法，例如「裝置登記方案」、Apple School Manager 或 Apple Configurator。
 
-如需有關註冊選項的詳細資訊，請參閱[選擇如何註冊 iOS 裝置](ios-enroll.md)。
+如需有關註冊選項的詳細資訊，請參閱[選擇註冊 iOS/iPadOS 裝置的方式](ios-enroll.md)。
 
 當 Push Certificate 到期時，您必須更新它。 進行更新時，請務必使用您最初建立 Push Certificate 時所使用的相同 Apple ID。
 
@@ -64,7 +64,7 @@ ms.locfileid: "74955451"
 前往憑證 (.pem) 檔案，選擇 [開啟]  ，然後選擇 [上傳]  。 Intune 可利用推播憑證，註冊及管理 Apple 裝置。
 
 ## <a name="renew-apple-mdm-push-certificate"></a>更新 Apple MDM Push Certificate
-Apple MDM Push Certificate 有效期限為一年，必須每年更新以維護 iOS 及 macOS 裝置管理。 如果您的憑證過期，即無法連絡註冊的 Apple 裝置。
+Apple MDM Push Certificate 有效期限為一年，且必須每年更新以維護 iOS/iPadOS 與 macOS 裝置管理。 如果您的憑證過期，即無法連絡註冊的 Apple 裝置。
 
 憑證會與用來建立憑證的 Apple ID 相關。 請以用於建立 MDM Push Certificate 的同一個 Apple ID 予以更新。
 
@@ -73,7 +73,7 @@ Apple MDM Push Certificate 有效期限為一年，必須每年更新以維護 i
 3. 選取 [建立您的 MDM Push Certificate]  ，以前往 Apple Push Certificates 入口網站。 尋找您想要更新的憑證，並選取 [更新]  。
 4. 在 [更新 Push Certificate]  畫面上，提供附註以協助您在未來識別憑證，選取 [選擇檔案]  以瀏覽至您下載的新要求檔案，然後選擇 [上傳]  。
    > [!TIP]
-   > 可由其 UID 識別憑證。 檢查憑證詳細資料的**主體識別碼**，尋找 UID 的 GUID 部分。 或者，在已註冊的 iOS 裝置上移至 [設定]   > [一般]   > [裝置]  [管理]   > [管理設定檔]   > [詳細資料]   > [管理設定檔]  。 第二個明細項目 [主題]  ，包含可與 Apple Push Certificates 入口網站憑證比對的唯一 GUID。
+   > 可由其 UID 識別憑證。 檢查憑證詳細資料的**主體識別碼**，尋找 UID 的 GUID 部分。 或者，在已註冊的 iOS/iPadOS 裝置上移至 [設定]   > [一般]   > [裝置]  [管理]   > [管理設定檔]   > [詳細資料]   > [管理設定檔]  。 第二個明細項目 [主題]  ，包含可與 Apple Push Certificates 入口網站憑證比對的唯一 GUID。
  
 6. 在 [確認]  畫面上，選取 [下載]  並將 .pem 檔案儲存於本機。
 7. 在 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 中，選取 [Apple MDM Push Certificate]  瀏覽圖示、選取從 Apple 下載的 .pem 檔案，然後選擇 [上傳]  。

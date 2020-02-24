@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e299601f69a7052ea52f9da2537306cb8556982b
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 96cd4997029c15396db91e9866bbb387c20f1044
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755369"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414438"
 ---
 # <a name="add-built-in-apps-to-microsoft-intune"></a>將內建應用程式新增至 Microsoft Intune
 
-*內建*應用程式類型可讓您輕鬆將 Office 365 應用程式等受控應用程式，指派給 iOS 和 Android 裝置。 您可以指派此應用程式類型的特定應用程式，例如 Excel、OneDrive、Outlook、Skype 及其他。 新增應用程式之後，應用程式會顯示為*內建 iOS 應用程式*或*內建 Android 應用程式*。 使用內建應用程式類型，您可以選擇向裝置使用者發佈這些應用程式的哪一些。
+「內建」  應用程式類型可讓您輕鬆將準備好的受控應用程式 (例如 Office 365 應用程式) 指派給 iOS/iPadOS 與 Android 裝置。 您可以指派此應用程式類型的特定應用程式，例如 Excel、OneDrive、Outlook、Skype 及其他。 新增應用程式之後，應用程式會顯示為*內建 iOS 應用程式*或*內建 Android 應用程式*。 使用內建應用程式類型，您可以選擇向裝置使用者發佈這些應用程式的哪一些。
 
 在舊版的 Intune 主控台中，Intune 提供數種預設的受控 Office 365 應用程式，例如 Outlook 和 OneDrive。 這些受控應用程式的應用程式類型標記為*受控 iOS Store 應用程式*或*受控 Android 應用程式*。 我們不建議使用這些應用程式類型，請使用內建應用程式類型。 藉著使用程式類型，您能夠獲得編輯及刪除 Office 365 應用程式的額外彈性。
 

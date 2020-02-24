@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d2a5629e6a318836e23c6a2f7fceb59363a0ed72
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: cd6e58efa096c006780c17d991a9ea5da26099d4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812485"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415554"
 ---
 # <a name="reset-or-remove-a-device-passcode-in-intune"></a>在 Intune 中重設或移除裝置密碼
 
@@ -35,8 +35,8 @@ ms.locfileid: "76812485"
 | ---- | ---- |
 | 版本為 6.x 或更舊版本的 Android 裝置 | 是 |
 | 已註冊為裝置擁有者的 Android Enterprise 裝置 | 是 |
-| iOS 裝置 | 是 |
-| 已透過使用者註冊進行註冊的 iOS 裝置 | 否 |
+| iOS/iPadOS 裝置 | 是 |
+| 已使用「使用者註冊」註冊的 iOS/iPadOS 裝置 | 否 |
 | 已透過工作設定檔進行註冊的 Android 裝置 | 否 |
 | 版本為 7.0 或更新版本的 Android 裝置 | 否 |
 | macOS | 否 |
@@ -68,9 +68,9 @@ ms.locfileid: "76812485"
 針對執行 8.x 或更新版本並以工作設定檔註冊的 Android Enterprise 裝置，終端使用者在完成註冊之後，會立即收到啟用重設密碼的通知。 如果工作設定檔密碼為必要且已設定，就會顯示通知。 輸入其密碼之後，就會關閉通知。
 
 
-## <a name="remove-ios-passcodes"></a>移除 iOS 密碼
+## <a name="remove-iosipados-passcodes"></a>移除 iOS/iPadOS 密碼
 
-請不要重設密碼，而是將它從 iOS 裝置中移除。 如果已設定密碼合規性政策，裝置會提示使用者在 [設定] 中設定新密碼。
+將密碼從 iOS/iPadOS 裝置中移除，而不加以重設。 如果已設定密碼合規性政策，裝置會提示使用者在 [設定] 中設定新密碼。
 
 ## <a name="next-steps"></a>後續步驟
 

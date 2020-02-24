@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ae3c2380aa27096be2490d2404858179ea9d222e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: b7861d26650aaf74ea9c58608c33e72495244575
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503186"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414216"
 ---
 # <a name="incomplete-user-enrollments-report"></a>未完成的使用者註冊報告
 
@@ -44,7 +44,7 @@ ms.locfileid: "72503186"
 
 ## <a name="what-does-the-report-show"></a>報告會顯示哪些內容？
 
-報告包含 iOS 和 Android 裝置的資料。
+報告包含 iOS/iPadOS 與 Android 裝置的資料。
 
 報告顯示過去兩週的資料，但您可以篩選報告以顯示最多為過去 30 天的任何期間。
 
@@ -86,10 +86,10 @@ ms.locfileid: "72503186"
 
 | 動作名稱 | 畫面或流程 | 平台 | 動作 |
 | ---- |---- |---- |---- |
-| iOSProfileLaunch | 提示顯示組態設定檔 | iOS | **忽略** |
-| iOSProfileLaunch | 安裝設定檔畫面 | iOS | **取消** |
-| iOSProfileLaunch | 提示信任設定檔來源註冊裝置 | iOS | **取消** |
-| iOSProfileLaunch | 安裝設定檔畫面，直到設定檔安裝完成 | iOS | 需要 > 30 分鐘 |
+| iOSProfileLaunch | 提示顯示組態設定檔 | iOS/iPadOS | **忽略** |
+| iOSProfileLaunch | 安裝設定檔畫面 | iOS/iPadOS | **取消** |
+| iOSProfileLaunch | 提示信任設定檔來源註冊裝置 | iOS/iPadOS | **取消** |
+| iOSProfileLaunch | 安裝設定檔畫面，直到設定檔安裝完成 | iOS/iPadOS | 需要 > 30 分鐘 |
 | AndroidPermissions | 裝置管理員啟用畫面 | Android | **取消** |
 | AndroidPermissions | 從提示核准撥打電話及管理通話，直到裝置管理員**啟用** | Android | 需要 > 30 分鐘 |
 | KnoxActivation | KLMS 代理程式啟用 (僅限 Samsung) | Android| **取消** |

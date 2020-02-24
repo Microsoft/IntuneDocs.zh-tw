@@ -1,7 +1,7 @@
 ---
-title: 透過 Microsoft Intune 開啟 iOS 受監管模式
+title: 使用 Microsoft Intune 開啟 iOS/iPadOS 受監管模式
 titleSuffix: ''
-description: 了解如何透過 Intune 開啟 iOS 受監管模式。
+description: 了解如何使用 Intune 開啟 iOS/iPadOS 受監管模式。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1e995dbc89321bf844151accd654a2d17d35afd9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0d266dbc9fa72b1579e05e7798315e2e718a9797
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713436"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413670"
 ---
-# <a name="turn-on-ios-supervised-mode"></a>開啟 iOS 受監管模式
+# <a name="turn-on-iosipados-supervised-mode"></a>開啟 iOS/iPadOS 受監管模式
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple iOS 受監管模式讓管理員在管理 Apple 裝置時擁有更多選項，適合用於大規模部署的公司擁有裝置。 舉例來說，您可以限制 AirDrop 或防止使用者變更裝置名稱。 如需需要受監管模式的設定清單，請參閱 [Intune 中的 iOS 裝置限制設定](../configuration/device-restrictions-ios.md)。
+Apple iOS/iPadOS 受監管模式讓管理員在管理 Apple 裝置時擁有更多選項，適合用於大規模部署的屬公司擁有裝置。 舉例來說，您可以限制 AirDrop 或防止使用者變更裝置名稱。 如需需要受監管模式的設定清單，請參閱 [Intune 中的 iOS 裝置限制設定](../configuration/device-restrictions-ios.md)。
 
 Intune 在 Apple [裝置註冊計劃 (DEP)](../enrollment/device-enrollment-program-enroll-ios.md) 中提供受監管模式的支援。
 
@@ -41,7 +41,7 @@ Intune 在 Apple [裝置註冊計劃 (DEP)](../enrollment/device-enrollment-prog
 
 ## <a name="turn-on-supervised-mode-after-enrollment"></a>在註冊之後開啟受監管模式
 
-註冊之後，開啟受監管模式的唯一方式是將 iOS 裝置連接到 Mac，然後[使用 Apple Configurator](../enrollment/apple-configurator-enroll-ios.md) (這會重設裝置)。 您無法在註冊之後，於 Intune 中設定裝置的受監管模式。
+註冊之後，開啟受監管模式的唯一方式是將 iOS/iPadOS 裝置連接到 Mac，然後[使用 Apple Configurator](../enrollment/apple-configurator-enroll-ios.md) (這會重設裝置)。 您無法在註冊之後，於 Intune 中設定裝置的受監管模式。
 
 ## <a name="identify-a-supervised-device"></a>識別受監管的裝置
 

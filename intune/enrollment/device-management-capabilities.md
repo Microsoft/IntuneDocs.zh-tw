@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 64df7ccad203109c201b0e18c3d20023690e31aa
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3bb0dd0fa4402421db83d41e4731ca144be24133
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503237"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415320"
 ---
 # <a name="enrolled-device-management-capabilities-of-microsoft-intune"></a>Microsoft Intune 的已註冊裝置管理功能
 
@@ -39,29 +39,29 @@ Microsoft Intune 可讓您向服務*註冊*某個範圍的裝置來管理這些�
 
 ## <a name="device-security-and-configuration"></a>裝置安全性和設定
 
-|功能|詳細資料|詳細資訊|
+|功能|詳細資料|更多資訊|
 |--------------|-----------|--------------------|
-|設定原則<br><br>自訂原則| 可讓您管理組織中行動裝置上的許多設定及功能。 例如，您可以要求密碼、限制嘗試失敗次數、限制螢幕鎖定之前的時間、設定密碼到期，以及禁止先前用過的密碼。 您也可以控制使用的硬體和軟體功能，例如裝置相機或網頁瀏覽器。<br><br>當設定原則未包含您需要的設定時，請使用自訂原則。 針對 iOS 裝置，您可以匯入您從 Apple 設定程式工具匯出的設定。 針對其他裝置，您可以使用開放行動聯盟的統一資源識別項 (OMA URI) 設定來設定裝置上的設定與功能。|[使用 Microsoft Intune 原則管理裝置的設定及功能](../protect/device-compliance-get-started.md)|
+|設定原則<br><br>自訂原則| 可讓您管理組織中行動裝置上的許多設定及功能。 例如，您可以要求密碼、限制嘗試失敗次數、限制螢幕鎖定之前的時間、設定密碼到期，以及禁止先前用過的密碼。 您也可以控制使用的硬體和軟體功能，例如裝置相機或網頁瀏覽器。<br><br>當設定原則未包含您需要的設定時，請使用自訂原則。 針對 iOS/iPadOS 裝置，您可以匯入您從 Apple Configurator 工具匯出的設定。 針對其他裝置，您可以使用開放行動聯盟的統一資源識別項 (OMA URI) 設定來設定裝置上的設定與功能。|[使用 Microsoft Intune 原則管理裝置的設定及功能](../protect/device-compliance-get-started.md)|
 |遠端抹除、遠端鎖定和密碼重設|當裝置遺失或遭竊時，可以清除敏感性資料。 例如，您可以遠端鎖定裝置、將它還原為原廠設定，或只抹除公司資料。<br><br>您可以在使用者失去裝置存取權的情況下重設密碼、鎖定遺失或遭竊的裝置，甚至抹除遺失或遭竊裝置上的資料。|透過[遠端鎖定](../remote-actions/device-remote-lock.md)及[密碼重設](../remote-actions/device-passcode-reset.md)來協助保護您的裝置|
 |資訊站模式|可讓您鎖定行動裝置的某些功能，例如螢幕擷取畫面及電源開關。 也可讓您限制裝置只能執行您指定的單一應用程式。 |[Microsoft Intune 的 iOS 設定原則設定](../configuration/device-restrictions-ios.md)|
 |Autopilot 重設|將工作傳送到裝置以從遠端啟動重設程序，從而避免 IT 人員或其他系統管理員需要造訪每部電腦來啟動該程序的需求。 在裝置上使用 Autopilot 重設時，將會移除裝置的主要使用者。 在重設後登入的下一個使用者將被設定為主要使用者。|[遠端 Windows Autopilot 重設](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset#reset-devices-with-remote-windows-autopilot-reset)|
 
 ## <a name="app-management"></a>應用程式管理
 
-|功能|詳細資料|詳細資訊|
+|功能|詳細資料|更多資訊|
 |--------------|-----------|--------------------|
 |應用程式部署及管理|提供多種工具協助您管理行動應用程式的生命週期，包括安裝檔案及應用程式存放區、密切監視應用程式狀態及移除應用程式等應用程式部署工作。|[在 Microsoft Intune 中部署應用程式](../apps/apps-deploy.md)|
 |符合規定及不符合規定的應用程式|可讓您指定相容應用程式 (使用者可以安裝的應用程式) 及不相容應用程式 (使用者不得安裝) 的清單。|[Microsoft Intune 的 iOS 原則設定](../configuration/device-restrictions-ios.md)|
 |行動應用程式管理|對於所有使用 Intune 管理的裝置和未使用 Intune 管理的裝置，使用行動應用程式管理來設定應用程式的限制。 您可以藉由限制某些作業來提升公司資料的安全性，例如複製並貼上、從外部備份資料，以及在應用程式間傳輸資料。|[在 Microsoft Intune 主控台中設定和部署行動應用程式管理原則](../developer/app-wrapper-prepare-android.md)|
-|iOS 行動裝置應用程式組態|使用行動裝置應用程式設定原則來為 iOS 應用程式提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定連接埠號碼或登入資訊。 您可以簡化應用程式設定，並減少連絡支援人員的次數。|[在 Microsoft Intune 中使用行動應用程式設定原則設定 iOS 應用程式](../apps/app-configuration-policies-use-ios.md)|
-|iOS 行動裝置應用程式佈建設定檔|協助您將佈建設定檔部署至即將到期的 iOS 應用程式。 |[使用 iOS 行動佈建設定檔原則，以避免您的應用程式過期](../apps/app-provisioning-profile-ios.md)|
+|iOS 行動裝置應用程式組態|使用行動裝置應用程式設定原則來為 iOS/iPadOS 應用程式提供使用者執行應用程式時可能需要的設定。 例如，應用程式可能需要使用者指定連接埠號碼或登入資訊。 您可以簡化應用程式設定，並減少連絡支援人員的次數。|[在 Microsoft Intune 中使用行動應用程式設定原則設定 iOS/iPadOS 應用程式](../apps/app-configuration-policies-use-ios.md)|
+|iOS/iPadOS 行動應用程式佈建設定檔|協助您將佈建設定檔部署至即將到期的 iOS/iPadOS 應用程式。 |[使用 iOS/iPadOS 行動佈建設定檔原則，以避免您的應用程式過期](../apps/app-provisioning-profile-ios.md)|
 |受管理的瀏覽器|設定受管理的瀏覽器原則來控制裝置使用者可以瀏覽的網站。 此外也可將行動應用程式管理原則，套用到受管理的瀏覽器。|[搭配 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取](../apps/app-configuration-managed-browser.md)|
 |Windows Hello 企業版|讓您與 Windows Hello 企業版整合，這是使用內部部署 Active Directory 或 Azure Active Directory 取代密碼、智慧卡或虛擬智慧卡來登入 Windows 10 的替代方法。|[使用 Microsoft Intune 控制裝置上的 Windows Hello 企業版設定](../protect/windows-hello.md)|
 |大量採購的應用程式|藉由從應用程式市集匯入授權資訊、追蹤您已經使用了多少個授權，並避免您安裝超過擁有數目的應用程式複本，來協助您管理透過大量採購方案購買的應用程式。|[使用 Microsoft Intune 管理大量購買的應用程式](../apps/vpp-apps.md)|
 
 ## <a name="company-resource-access"></a>公司資源存取
 
-|功能|詳細資料|詳細資訊|
+|功能|詳細資料|更多資訊|
 |--------------|-----------|--------------------|
 |憑證設定檔|建立及部署信任的憑證設定檔與簡單憑證註冊通訊協定 (SCEP) 憑證，以用來保護及驗證 Wi-Fi、VPN 與電子郵件設定檔。|[使用 Microsoft Intune 中的憑證設定檔來保護資源存取](../protect/certificates-configure.md)|
 |Wi-Fi 設定檔|將無線網路設定部署到您的使用者。 您可以藉由部署這些設定，盡可能減少使用者連線到公司網路所需的作業。|[Microsoft Intune 中的 Wi-Fi 連線](../configuration/wi-fi-settings-configure.md)|

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: babe556d6810ad027a1b0b3cae6364c99bc9a07c
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c7c47a829f8f609528f45b30d0dd9bf56d9d8eb9
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812507"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414896"
 ---
 # <a name="manage-web-access-using-a-microsoft-intune-policy-protected-browser"></a>使用 Microsoft Intune 的受原則保護瀏覽器來管理 Web 存取
 
@@ -42,7 +42,7 @@ ms.locfileid: "76812507"
 
 ## <a name="microsoft-edge-support"></a>Microsoft Edge 支援
 
-您可以針對企業案例，在 iOS 和 Android 裝置上使用 Microsoft Edge。 Microsoft Edge 支援與 Intune Managed Browser 相同的所有管理案例，並在終端使用者體驗中新增增強功能。 下列依據 Intune 原則啟用的 Microsoft Edge 企業功能包括：
+您可以針對 iOS/iPadOS 與 Android 裝置上的企業案例使用 Microsoft Edge。 Microsoft Edge 支援與 Intune Managed Browser 相同的所有管理案例，並在終端使用者體驗中新增增強功能。 下列依據 Intune 原則啟用的 Microsoft Edge 企業功能包括：
 
 - **雙重識別** - 使用者可以新增工作帳戶與個人帳戶以進行瀏覽。 系統會完整區隔兩個身分識別，類似於 Office 365 和 Outlook 中的架構與體驗。 Intune 系統管理員可以在工作帳戶內，針對受保護的瀏覽體驗設定所需原則。 
 - **Intune 應用程式保護原則整合** - 系統管理員現在可以將應用程式保護原則的目標設為 Microsoft Edge，藉此控制下列功能：剪下、複製及貼上、防止擷取螢幕畫面，以及確保使用者選取的連結只會在其他受控應用程式中開啟。
@@ -57,9 +57,9 @@ Microsoft Edge 和 Intune Managed Browser 是網頁瀏覽器應用程式，您�
 
 瀏覽器原則的作業系統需求：
 - Android 4 及更新版本，或
-- iOS 8.0 和更新版本。
+- iOS/iPadOS 8.0 與更新版本。
 
-較舊版本的 Android 和 iOS 能夠繼續使用 Managed Browser，但是無法安裝新版的應用程式，而且可能無法存取所有的應用程式功能。 建議您將這些裝置更新為受支援的作業系統版本。
+較舊版本的 Android 與 iOS/iPadOS 能夠繼續使用 Managed Browser，但將無法安裝新版應用程式，而且可能無法存取所有應用程式功能。 建議您將這些裝置更新為受支援的作業系統版本。
 
 >[!NOTE]
 >Managed Browser 不支援安全通訊端層版本 3 (SSLv3) 密碼編譯通訊協定。
@@ -123,9 +123,9 @@ Managed Browser 不支援傳統「條件式存取」原則。 如需詳細資訊
 
 ## <a name="single-sign-on-to-azure-ad-connected-web-apps-in-policy-protected-browsers"></a>在受原則保護瀏覽器中單一登入與 Azure AD 連線的 Web 應用程式
 
-iOS 和 Android 上的 Microsoft Edge 和 Intune Managed Browser 可利用與所有和 Azure AD 連線 Web 應用程式 (SaaS 和內部部署) 的 SSO。 當 Microsoft Authenticator 應用程式存在於 iOS 上，或是 Intune 公司入口網站應用程式存在於 Android 上時，受原則保護瀏覽器使用者便能存取與 Azure AD 連線的 Web 應用程式，而無須重新輸入認證。
+iOS/iPadOS 與 Android 上的 Microsoft Edge 與 Intune Managed Browser 能以 SSO 方式連線到與 Azure AD 連線的所有 Web 應用程式 (SaaS 與內部部署)。 當 Microsoft Authenticator 應用程式存在於 iOS/iPadOS 上，或 Intune 公司入口網站應用程式存在於 Android 上時，受原則保護之瀏覽器的使用者便能存取與 Azure AD 連線的 Web 應用程式，而無須重新輸入認證。
 
-SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式或 Android 上的 Intune 公司入口網站應用程式註冊。 如果另一個應用程式尚未註冊具有 Authenticator 應用程式或 Intune 公司入口網站的使用者裝置，則這些使用者在受原則保護瀏覽器中巡覽至與 Azure AD 連線的 Web 應用程式時，系統會提示他們註冊其裝置。 使用 Intune 所管理的帳戶註冊裝置之後，該帳戶也已啟用 Azure AD 已連線 Web 應用程式的 SSO。 
+SSO 要求您的裝置必須由 iOS/iPadOS 上的 Microsoft Authenticator 應用程式註冊，或是由 Android 上的 Intune 公司入口網站註冊。 如果另一個應用程式尚未註冊具有 Authenticator 應用程式或 Intune 公司入口網站的使用者裝置，則這些使用者在受原則保護瀏覽器中巡覽至與 Azure AD 連線的 Web 應用程式時，系統會提示他們註冊其裝置。 使用 Intune 所管理的帳戶註冊裝置之後，該帳戶也已啟用 Azure AD 已連線 Web 應用程式的 SSO。 
 
 > [!NOTE]
 > 裝置註冊是使用 Azure AD 服務的簡單簽入。 它不需要完整裝置註冊，而且不表示將裝置上的任何其他權限授與 IT。
@@ -138,7 +138,7 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [應用程式設定原則]   > [新增]   > [受管理的應用程式]  。
 3. 在 [建立應用程式設定原則]  窗格的 [基本]  頁面上，輸入應用程式組態設定的 [名稱]  和選擇性 [描述]  。
-4. 選擇 [選取公用應用程式]  ，然後選擇適用於 iOS、Android 或兩者的 [Managed Browser]  或 [邊緣]  。
+4. 選擇 [選取公用應用程式]  ，然後選擇適用於 iOS/iPadOS、Android 或兩者的 [Managed Browser]  和/或 [Edge]  。
 5. 按一下 [選取]  以返回 [建立應用程式設定原則]  窗格。
 6. 按一下 [下一步]  以顯示 [設定]  頁面。
 7. 在 [設定]  頁面上，您可以定義金鑰和值組以提供應用程式設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
@@ -186,7 +186,7 @@ SSO 要求您的裝置必須向 iOS 上的 Microsoft Authenticator 應用程式�
 
 ## <a name="how-to-configure-application-proxy-settings-for-protected-browsers"></a>如何設定受保護瀏覽器的應用程式 Proxy 設定
 
-Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) 可以一起使用，以支援下列 iOS 和 Android 裝置的使用者案例：
+Microsoft Edge 與 Intune Managed Browser 和 [Azure AD 應用程式 Proxy]( https://docs.microsoft.com/azure/active-directory/active-directory-application-proxy-get-started) \(部分機器翻譯\) 可以一起使用，以支援 iOS/iPadOS 和 Android 裝置使用者的下列案例：
 
 - 使用者下載並登入 Microsoft Outlook 應用程式。 自動套用 Intune 應用程式保護原則。 它們會加密已儲存的資料，並阻擋使用者將公司檔案傳輸至裝置上未受管理的應用程式或位置。 當使用者接著在 Outlook 中按一下內部網路網站的連結時，您可以指定用受保護的瀏覽器應用程式開啟該連結，不用其他瀏覽器。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的多重要素驗證和條件式存取進行驗證。 使用者以前從遠端找不到這個網站，現在不但可以存取，Outlook 中的連結也一如預期般運作。
 - 遠端使用者開啟受保護的瀏覽器應用程式，並瀏覽至使用內部 URL 的內部網路網站。 受保護的瀏覽器可辨識此內部網路網站是透過應用程式 Proxy 向使用者公開。 使用者會透過應用程式 Proxy 自動進行路由傳送，在到達內部網路網站之前，使用任何適用的多重要素驗證和條件式存取進行驗證。 使用者以前從遠端找不到這個網站，但現在可以存取。
@@ -316,9 +316,9 @@ Microsoft Edge 行動企業體驗的基石是雙重身分識別模型，這表�
 
 ## <a name="how-to-access-to-managed-app-logs-using-the-managed-browser-on-ios"></a>如何在 iOS 上使用受管理的瀏覽器存取受管理應用程式的記錄檔
 
-在其 iOS 裝置上安裝了受管理瀏覽器的使用者，可以檢視所有 Microsoft 所發行應用程式的管理狀態。 他們可以傳送記錄檔用於疑難排解其受管理的 iOS 應用程式。
+在其 iOS/iPadOS 裝置上安裝 Managed Browser 的使用者，可以檢視 Microsoft 所發行之所有應用程式的管理狀態。 他們可以傳送用來對其受控 iOS/iPadOS 應用程式進行疑難排解的記錄檔。
 
-1. 開啟 iOS [設定]  。
+1. 開啟 iOS/iPadOS [設定]  。
 2. 選取受管理的**瀏覽器**應用程式設定。
 3. 切換 [啟用 Intune 診斷]  在疑難排解模式中設定瀏覽器。
 4. 開啟受管理的**瀏覽器**。 按一下 [檢視 Intune 應用程式狀態]  查看個別的應用程式原則設定。
@@ -345,7 +345,7 @@ Microsoft Edge 行動企業體驗的基石是雙重身分識別模型，這表�
 ### <a name="turn-off-usage-data"></a>關閉使用量資料
 Microsoft 會自動收集有關 Managed Browser 效能和使用的匿名資料，以改善 Microsoft 產品和服務。 使用者可以在裝置上使用 **[使用方式資料]** 設定以關閉資料收集。 您無法控制這項資料的收集。
 
-- 在 iOS 裝置上，無法開啟使用者利用過期或未受信任的憑證瀏覽的網站。
+- 在 iOS/iPadOS 裝置上，使用者無法開啟具有過期或未受信任憑證的網站。
 
 ## <a name="next-steps"></a>後續步驟
 

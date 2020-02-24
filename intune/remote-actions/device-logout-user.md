@@ -1,7 +1,7 @@
 ---
-title: 登出 iOS 裝置的使用者
+title: 將 iOS/iPadOS 裝置的使用者登出
 titleSuffix: Microsoft Intune
-description: 了解如何使用 Intune 登出 iOS 裝置的目前使用者。
+description: 了解如何使用 Intune 登出 iOS/iPadOS 裝置的目前使用者。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdb23916319b06fb4d85b913209d1ac9e007d551
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713183"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413699"
 ---
-# <a name="logout-the-current-user-on-intune-managed-ios-devices"></a>在 Intune 管理的 iOS 裝置上登出目前的使用者
+# <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>在 Intune 受控 iOS/iPadOS 裝置上登出目前的使用者
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -35,7 +35,7 @@ ms.locfileid: "73713183"
 
 - Windows - 不支援
 - Windows Phone - 不支援
-- iOS - 支援 iOS 9.3 和更新版本 (僅限共用的 iPad 裝置)
+- iOS/iPadOS - 支援 iOS/iPadOS 9.3 和更新版本 (僅限共用的 iPad 裝置)
 - macOS - 不支援
 - Android - 不支援
 
@@ -43,7 +43,7 @@ ms.locfileid: "73713183"
 
 1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選取 [裝置]  。
 4. 在 [裝置和群組]  刀鋒視窗中選擇 [所有裝置]  。
-5. 從您管理的裝置清單中選擇 iOS 裝置，然後選擇 [登出目前的使用者]  裝置遠端動作。
+5. 從您管理的裝置清單中選擇 iOS/iPadOS 裝置，然後選擇 [登出目前的使用者]  裝置遠端動作。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune 的應用程式設定原則
 titleSuffix: ''
-description: 了解在 Microsoft Intune 中如何於 iOS 或 Android 裝置上使用應用程式設定原則。
+description: 了解在 Microsoft Intune 中如何於 iOS/iPadOS 或 Android 裝置上使用應用程式設定原則。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c9dc1d95806bcddf423bb4d92dbdf4961c15809
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812468"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414847"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
 應用程式設定原則可讓您在終端使用者執行應用程式之前，將組態設定指派給已指派給終端使用者的原則來去除應用程式設定問題。 在終端使用者裝置上設定應用程式時，這些設定會自動提供，使用者不需要採取動作。 每個應用程式的組態設定均為唯一。 
 
-您可以建立及使用應用程式設定原則，以提供 iOS 或 Android 應用程式的組態設定。 這些組態設定允許使用應用程式設定及管理來自訂應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是應用程式第一次執行時)，便會使用這些設定。 
+您可以建立並使用應用程式設定原則，來提供 iOS/iPadOS 或 Android 應用程式的組態設定。 這些組態設定允許使用應用程式設定及管理來自訂應用程式。 每當應用程式檢查是否有設定原則設定時 (通常是應用程式第一次執行時)，便會使用這些設定。 
 
 例如，應用程式組態設定可能需要您指定下列任何詳細資料：
 
@@ -71,7 +71,7 @@ ms.locfileid: "76812468"
 ![裝置註冊類型](./media/app-configuration-policies-overview/device-enrollment-type.png)
 
 > [!NOTE]
-> 針對多重身分識別應用程式 (例如 Microsoft Outlook)，可以考慮使用者喜好設定。 例如，焦點收件匣會遵循使用者設定，而不會變更設定。 其他參數可讓您控制使用者是否可以變更設定。 如需詳細資訊，請參閱 [Deploying Outlook for iOS and Android app configuration settings](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) (針對 iOS 和 Android 應用程式組態設定部署 Outlook)。
+> 針對多重身分識別應用程式 (例如 Microsoft Outlook)，可以考慮使用者喜好設定。 例如，焦點收件匣會遵循使用者設定，而不會變更設定。 其他參數可讓您控制使用者是否可以變更設定。 如需詳細資訊，請參閱[部署 iOS/iPadOS 和 Android 版 Outlook 應用程式組態設定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(部分機器翻譯\)。
 
 ## <a name="validate-the-applied-app-configuration-policy"></a>驗證已套用的應用程式設定原則
 
@@ -93,7 +93,7 @@ ms.locfileid: "76812468"
 
 ### <a name="ios-configuration-on-unmanaged-devices"></a>非受控裝置上的 iOS 設定
 
-您可以在非受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。 除了下列步驟之外，您可以使用 Microsoft Edge 來存取受控應用程式記錄。 如需詳細資訊，請參閱[在 iOS 上使用 Microsoft Edge 來存取受控應用程式記錄檔](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)。
+您可以在非受控裝置上使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS/iPadOS 設定。 除了下列步驟之外，您可以使用 Microsoft Edge 來存取受控應用程式記錄。 如需詳細資訊，請參閱[在 iOS/iPadOS 上使用 Microsoft Edge 來存取受控應用程式記錄](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)。
 
 1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Microsoft Edge**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
 2. 啟動 [Microsoft Edge]  並從導覽列中選取 [關於]   > [intunehelp]  。
@@ -137,7 +137,7 @@ ms.locfileid: "76812468"
 
 ### <a name="ios-configuration-on-managed-devices"></a>受控裝置上的 iOS 設定
 
-您可以在受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。
+您可以在受控裝置上使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS/iPadOS 設定。
 
 1. 如果尚未在裝置上安裝，請從 App Store 下載並安裝 **Microsoft Edge**。 如需詳細資訊，請參閱[受 Microsoft Intune 保護的應用程式](apps-supported-intune-apps.md)。
 2. 啟動 [Microsoft Edge]  並從導覽列中選取 [關於]   > [intunehelp]  。
@@ -149,7 +149,7 @@ ms.locfileid: "76812468"
 
 ### <a name="android-configuration-on-managed-devices"></a>受控裝置上的 Android 設定
 
-您可以在受控裝置上，使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS 設定。
+您可以在受控裝置上使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS/iPadOS 設定。
 
 若要收集 Android 裝置的記錄，您或終端使用者必須透過 USB 連線 (或裝置上的**檔案總管**同等功能) 從裝置下載記錄。 步驟如下：
 
@@ -173,7 +173,7 @@ ms.locfileid: "76812468"
 
 ### <a name="managed-devices"></a>受管理的裝置
 
-- 了解如何在 iOS 裝置上使用應用程式設定。  請參閱[為受控 iOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
+- 了解如何搭配 iOS/iPadOS 裝置使用應用程式設定。  請參閱[為受控 iOS/iPadOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
 - 了解如何在 Android 裝置上使用應用程式設定。  請參閱[為受管理的 Android 裝置新增應用程式設定原則](app-configuration-policies-use-android.md)。
 
 ### <a name="managed-apps"></a>受管理的應用程式

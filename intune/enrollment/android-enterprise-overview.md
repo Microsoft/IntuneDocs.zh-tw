@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a5c980b3f9ababaf94aa7b279e533679ed74b0e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 6941b3b79dd690c9861c8efead7f525e56e2b350
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72503372"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415406"
 ---
 # <a name="manage-android-work-profile-devices-with-intune"></a>使用 Intune 管理 Android 工作設定檔裝置
 
@@ -55,7 +55,7 @@ Android Enterprise 提供部署應用程式設定值到支援這些值之應用�
 
 ## <a name="email-configuration"></a>電子郵件組態
 
-Android Enterprise 不提供預設電子郵件應用程式，也不會像 iOS 般地提供原生的電子郵件設定檔物件。 但是電子郵件組態可藉由將應用程式組態設定套用到支援這些設定的應用程式來加以設定。 在 Play Store 中，Gmail 及 Nine Work 這兩個 Exchange ActiveSync (EAS) 用戶端應用程式支援使用 Android Enterprise 應用程式設定進行設定。
+Android Enterprise 不提供預設電子郵件應用程式，也不會像 iOS/iPadOS 般地提供原生的電子郵件設定檔物件。 但是電子郵件組態可藉由將應用程式組態設定套用到支援這些設定的應用程式來加以設定。 在 Play Store 中，Gmail 及 Nine Work 這兩個 Exchange ActiveSync (EAS) 用戶端應用程式支援使用 Android Enterprise 應用程式設定進行設定。
 
 Intune 會在將 Gmail 及 Nine Work 應用程式當成工作應用程式管理時，提供它們適用的組態範本。 其他支援應用程式組態設定檔的電子郵件應用程式可以透過行動裝置應用程式設定原則加以設定。
 

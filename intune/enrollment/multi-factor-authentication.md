@@ -17,12 +17,12 @@ ROBOTS: ''
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: db04b93deffd2476a97b952fd1c6942fa79e1f05
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: 14347d12888ff5ef61d4543409a08fbdeb371c89
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955383"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415209"
 ---
 # <a name="require-multi-factor-authentication-for-intune-device-enrollments"></a>需要 Intune 裝置註冊的多重要素驗證
 
@@ -36,7 +36,7 @@ MFA 的運作方式是要求使用下列任兩個或更多個驗證方法：
 - 您擁有的某種東西 (不容易複製的信任裝置，例如手機)。
 - 您是什麼 (生物特徵辨識，例如指紋)。
 
-iOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 10 Mobile 或更新版本的裝置支援 MFA。
+iOS/iPadOS、Android、Windows 8.1 或更新版本、Windows Phone 8.1 或者 Windows 10 行動裝置版或更新版本的裝置支援 MFA。
 
 當您啟用 MFA 時，終端使用者必須提供兩種形式的認證來註冊裝置。
 

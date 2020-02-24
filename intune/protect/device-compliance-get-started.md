@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/13/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a56d8f7aface3628ba5bc8985128ebb49c9cf404
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812177"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413637"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在裝置上設定規則可在您的組織中使用 Intune 存取資源
 
@@ -104,7 +104,9 @@ Intune 也包含一組內建的合規性政策設定。 下列內建政策會在
   - 允許公司入口網站使用位置服務。
   - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。 您可以透過開啟公司入口網站應用程式，或將裝置移動 500 公尺以上來觸發評估。 如果裝置未在 72 小時內移動 500 公尺，使用者就必須開啟 [公司入口網站] 應用程式來進行加強的越獄評估。
 
-- **合規性狀態有效期限 (天)** ：輸入一段期間，裝置要在期間內回報所有收到的合規性政策狀態。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。
+- **合規性狀態有效期限 (天)** ：輸入一段期間，裝置要在期間內回報所有收到的合規性政策狀態。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。 最小值是 1 天。
+
+  當預設合規性政策 ([裝置]   > [監視器]   > [設定合規性]  ) 為 [使用中]  時，就會顯示此設定。 此原則的背景工作每天執行一次。
 
 您可以使用這些內建政策來監視這些設定。 Intune 也會在不同的時間間隔[重新整理或檢查更新](create-compliance-policy.md#refresh-cycle-times)，端視裝置平台而定。 [對於 Microsoft Intune 中的裝置政策和設定檔的常見疑問、問題和解決方式](../configuration/device-profile-troubleshoot.md)是不錯的資源。
 

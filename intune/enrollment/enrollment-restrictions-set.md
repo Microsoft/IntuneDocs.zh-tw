@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0dac0607fcaa92ebe65a7ddacc3cd91c63bf246e
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 1263df126b371780b3c5c14ae619f0cb7c83d475
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971865"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415313"
 ---
 # <a name="set-enrollment-restrictions"></a>設定註冊限制
 
@@ -44,11 +44,11 @@ ms.locfileid: "76971865"
 - 可以註冊的裝置平台：
   - Android 裝置管理員
   - Android Enterprise 工作設定檔
-  - iOS
+  - iOS/iPadOS
   - macOS
   - Windows
   - Windows Mobile
-- iOS、Android 裝置管理員、Android Enterprise 工作設定檔、Windows 和 Windows Mobile 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
+- iOS/iPadOS、Android 裝置管理員、Android Enterprise 工作設定檔、Windows 與 Windows Mobile 的平台作業系統版本。 (只能使用 Windows 10 版本。 如果允許 Windows 8.1，請保留空白。)
   - 最低版本。
   - 最高版本。
 - 限制[個人擁有的裝置](device-enrollment.md#bring-your-own-device) (僅限 iOS、Android 裝置管理員、Android Enterprise 工作設定檔、macOS、Windows 與 Windows Mobile)。
@@ -67,7 +67,7 @@ ms.locfileid: "76971865"
 5. 在 [版本]  底下，選擇您希望可允許平台支援的最低與最高版本。 版本限制僅適用於已向公司入口網站註冊的裝置。
      支援的版本格式包含：
     - Android 裝置管理員與 Android Enterprise 工作設定檔支援 major.minor.rev.build。
-    - iOS 支援 major.minor.rev。作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
+    - iOS/iPadOS 支援 major.minor.rev。作業系統版本不適用於以裝置註冊計劃、Apple School Manager 或 Apple Configurator 應用程式註冊的 Apple 裝置。
     - Windows 支援 major.minor.build.rev，僅限 Windows 10。
     
     > [!IMPORTANT]
@@ -158,8 +158,8 @@ Intune 會將下列註冊標示為公司。 但是，因為它們不會為 Intun
 \* 如果透過 Autopilot 註冊，這些裝置將不會遭到封鎖。
 
 
-## <a name="blocking-personal-ios-devices"></a>封鎖個人 iOS 裝置
-根據預設，Intune 會將 iOS 裝置分類為個人擁有。 若要分類為公司所有，iOS 裝置必須符合下列其中一項條件：
+## <a name="blocking-personal-iosipados-devices"></a>封鎖個人 iOS/iPadOS 裝置
+根據預設，Intune 會將 iOS/iPadOS 裝置分類為個人擁有。 若要分類為屬公司擁有，iOS/iPadOS 裝置必須符合下列其中一個條件：
 - 已使用序號或 IMEI 註冊。
 - 使用自動裝置註冊 (先前為裝置註冊計劃) 註冊
 

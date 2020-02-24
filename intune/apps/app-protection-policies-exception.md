@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0ea66458060417fc828b2b7735b384e8cd3e25a9
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839383"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437846"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>如何建立 Intune 應用程式保護原則 (APP) 資料傳輸原則的例外狀況
 
@@ -38,7 +38,7 @@ ms.locfileid: "75839383"
 > 修改或新增至資料傳輸原則例外狀況，並不會影響其他應用程式保護原則，例如剪下、複製和貼上限制。 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 資料傳輸例外狀況
-對於以 iOS 為目標的原則，您可以依 URL 通訊協定設定資料傳輸例外狀況。 若要新增例外狀況，請檢查應用程式開發人員提供的文件，尋找支援的 URL 通訊協定的相關資訊。 如需 iOS 資料傳輸例外狀況的詳細資訊，請參閱 [iOS 應用程式防護原則設定 - 資料傳輸豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
+針對以 iOS/iPadOS 為目標的原則，您可以依 URL 通訊協定設定資料傳輸例外。 若要新增例外狀況，請檢查應用程式開發人員提供的文件，尋找支援的 URL 通訊協定的相關資訊。 如需 iOS/iPadOS 資料傳輸例外的詳細資訊，請參閱 [iOS 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
 
 > [!NOTE]
 > Microsoft 並沒有以手動方式尋找用於為第三方應用程式建立應用程式例外狀況之 URL 通訊協定的方法。 
@@ -53,9 +53,9 @@ ms.locfileid: "75839383"
 ### <a name="example"></a>範例
 藉由新增 **Webex** 套件作為 MAM 資料傳輸原則的例外狀況，會允許受管理 Outlook 電子郵件訊息內的 Webex 連結直接在 Webex 應用程式中開啟。 其他未受管理應用程式中的資料傳輸仍會受到限制。
 
-- iOS **Webex** 範例： 若要豁免 **Webex** 應用程式，以允許它由 Intune 受控應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>wbx</code>
+- iOS/iPadOS **Webex** 範例： 若要豁免 **Webex** 應用程式，以允許它由 Intune 受控應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>wbx</code>
     
-- iOS **Maps** 範例： 若要豁免原生 **Maps** 應用程式，以允許它由 Intune 受控應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>maps</code>
+- iOS/iPadOS **地圖**範例： 若要豁免原生 **Maps** 應用程式，以允許它由 Intune 受控應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>maps</code>
 
 - Android **Webex** 範例： 若要豁免 **Webex** 應用程式，以允許它由 Intune 受控應用程式叫用，您必須新增下列字串的資料傳輸例外狀況：<code>com.cisco.webex.meetings</code>
     
@@ -66,7 +66,7 @@ ms.locfileid: "75839383"
     
     <code>com.samsung.android.messaging</code>
 
-- Android **憑證安裝程式**範例：若要豁免原生 **憑證安裝程式** 應用程式，讓適用於 Android 的 Outlook 可以將 S/MIME 憑證 (以電子郵件附件的形式傳遞) 安裝到 Android 金鑰儲存區中，您必須為下列字串新增資料傳輸的例外狀況：<code>com.android.certinstaller</code>。 如需詳細資訊，請參閱[適用於 iOS 和 Android 的 Outlook 中敏感度標籤和保護](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android)。
+- Android **憑證安裝程式**範例：若要豁免原生 **憑證安裝程式** 應用程式，讓適用於 Android 的 Outlook 可以將 S/MIME 憑證 (以電子郵件附件的形式傳遞) 安裝到 Android 金鑰儲存區中，您必須為下列字串新增資料傳輸的例外狀況：<code>com.android.certinstaller</code>。 如需詳細資訊，請參閱 [iOS/iPadOS 與 Android 版 Outlook 中的敏感度標籤和保護](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/sensitive-labeling-and-protection-outlook-for-ios-android) \(部分機器翻譯\)。
 
 ## <a name="next-steps"></a>後續步驟
 

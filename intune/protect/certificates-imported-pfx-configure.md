@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 469ee615cd9a9f1d3a7aee40ce764b8d8100fe69
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
+ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912900"
+ms.lasthandoff: 02/14/2020
+ms.locfileid: "77258125"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用匯入的 PKCS 憑證
 
@@ -44,7 +44,7 @@ S/MIME 加密很具挑戰性，因為電子郵件是以特定憑證加密。 在
 
   當新版本可供使用時，此連接器會自動自行更新。 若要使用更新功能，您必須確定防火牆已開啟，可讓連接器在連接埠 **443** 上連絡 **autoupdate.msappproxy.net**。
 
-  如需連接器所存取之所有網路端點的詳細資訊，請參閱 [Intune 網路設定需求和頻寬](../fundamentals/network-bandwidth-use.md)。
+  如需詳細資訊，請參閱 [Microsoft intune 的網路端點](../fundamentals/intune-endpoints.md)和 [Intune 網路設定需求與頻寬](../fundamentals/network-bandwidth-use.md)。
 
 - **Windows 伺服器**：
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2b58cbd0aa07babd36c7a7e5aa3dcc5b8d32d58a
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73415047"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437914"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支援的作業系統與瀏覽器
 
@@ -87,16 +87,16 @@ ms.locfileid: "73415047"
 
 ### <a name="windows-pc-software-client"></a>Windows 電腦軟體用戶端
 
-[Intune 軟體用戶端](manage-windows-pcs-with-microsoft-intune.md)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 Windows 7 與更新版的電腦 (除了 Windows 10 家用版以外)。
+[Intune 軟體用戶端](manage-windows-pcs-with-microsoft-intune.md)可以部署並安裝在 Windows 電腦上當作替代的註冊方法。 只有使用 Intune 傳統入口網站時才提供這項功能。 您可以使用 Intune 軟體用戶端來管理 10 與更新版的 PC (除了 Windows 10 家用版以外)。
 
 > [!Note]
 > Microsoft 宣告 Windows 7 支援將於 2020 年 1 月 14 日結束。 在這一天，Intune 也會淘汰執行 Windows 7 的裝置支援。
 >
-> 如需詳細資訊，請參閱 [Intune 規劃變更：即將結束對 Windows 7 的支援](https://docs.microsoft.com/intune/fundamentals/whats-new#intune-plan-for-change-nearing-end-of-support-for-windows-7)
+> 如需詳細資訊，請參閱 [Intune 規劃變更：結束對 Windows 7 的支援](https://docs.microsoft.com/intune/fundamentals/whats-new#windows-7-ends-extended-support-) \(英文\)。
 >
-> Microsoft Intune 將在 2020 年 10 月 15 日淘汰對 Silverlight 型 Intune 主控台的支援。 此淘汰包括結束支援 Silverlight 主控台設定的電腦軟體用戶端 (也稱為「電腦代理程式」)
+> Microsoft Intune 將在 2020 年 10 月 15 日淘汰對 Silverlight 型 Intune 主控台的支援。 此淘汰包括結束支援 Silverlight 主控台設定的 PC 軟體用戶端 (也稱為「PC 代理程式」)。
 >
-> 如需詳細資訊，請參閱 [Microsoft Intune 終止支援 Silverlight 型系統管理主控台](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249) \(英文\)
+> 如需詳細資訊，請參閱 [Microsoft Intune 終止支援 Silverlight 型系統管理主控台](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Take-Action-Microsoft-Intune-ending-support-for-the-Silverlight/ba-p/916249) \(英文\)。
 
 <!--  ### Exchange ActiveSync management
 

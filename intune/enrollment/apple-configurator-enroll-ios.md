@@ -1,7 +1,7 @@
 ---
-title: iOS 裝置註冊 - Apple Configurator 與設定助理
+title: iOS/iPadOS 裝置註冊 - Apple Configurator 與設定助理
 titleSuffix: Microsoft Intune
-description: 了解如何使用 Apple Configurator 透過設定助理，來註冊公司擁有的 iOS 裝置。
+description: 了解如何使用 Apple Configurator 與設定助理，來註冊屬公司擁有的 iOS/iPadOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,26 +18,26 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f80312c2bd82063ed0b61c36bef9b8bf4ae3e1aa
-ms.sourcegitcommit: f26039d674eb4d61ab68264dd1a10b2e5e1d842c
+ms.openlocfilehash: 8ccd41b6ebc9bdf62c1603e508cb881a1be62ee7
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2019
-ms.locfileid: "74691789"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415393"
 ---
-# <a name="set-up-ios-device-enrollment-with-apple-configurator"></a>使用 Apple Configurator 設定 iOS 裝置註冊
+# <a name="set-up-iosipados-device-enrollment-with-apple-configurator"></a>使用 Apple Configurator 來設定 iOS/iPadOS 裝置註冊
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Intune 支援註冊 iOS 裝置，這些裝置使用在 Mac 電腦執行上的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344)。 使用 Apple Configurator 註冊裝置時，會要求您透過 USB 連接方式，將每個 iOS 裝置連接至 Mac 電腦來設定公司註冊作業。 您可以透過兩種方式使用 Apple Configurator 將裝置註冊到 Intune 中：
+Intune 支援使用在 Mac 電腦執行上的 [Apple Configurator](https://itunes.apple.com/app/apple-configurator-2/id1037126344) 註冊 iOS/iPadOS 裝置。 使用 Apple Configurator 註冊裝置時，會要求您透過 USB 連接方式，將每個 iOS/iPadOS 裝置連接至 Mac 電腦來設定公司註冊作業。 您可以透過兩種方式使用 Apple Configurator 將裝置註冊到 Intune 中：
 - **設定助理註冊** - 抹除裝置，並準備好裝置在設定助理期間進行註冊。
-- **直接註冊** - 不抹除裝置，而是透過 iOS 設定註冊裝置。 這個方法僅支援**無使用者親和性**的裝置。
+- **直接註冊** - 不抹除裝置，而是透過 iOS/iPadOS 設定註冊裝置。 這個方法僅支援**無使用者親和性**的裝置。
 
 Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollment-manager-enroll.md)一起使用。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
-- iOS 裝置的實體存取
+- iOS/iPadOS 裝置的實體存取
 - [設定 MDM 授權單位](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push Certificate](apple-mdm-push-certificate-get.md)
 - 裝置序號 (僅設定助理註冊)
@@ -46,7 +46,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 ## <a name="create-an-apple-configurator-profile-for-devices"></a>為建立裝置 Apple Configurator 設定檔
 
-裝置註冊設定檔會在註冊期間定義套用的設定。 這些設定只套用一次。 請遵循下列步驟建立註冊設定檔，使用 Apple Configurator 註冊 iOS 裝置。
+裝置註冊設定檔會在註冊期間定義套用的設定。 這些設定只套用一次。 依照這些步驟建立註冊設定檔，以使用 Apple Configurator 註冊 iOS/iPadOS 裝置。
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [設定檔]   > [建立]  。
 
@@ -87,7 +87,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
     F7TLWCLBX196,device details</br>
     DLXQPCWVGHMJ,device details
 
-   了解[如何尋找 iOS 裝置序號](https://support.apple.com/HT204073)。
+   了解[如何尋找 iOS/iPadOS 裝置序號](https://support.apple.com/HT204073)。
 2. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [裝置]   > [新增]  。
 
 5. 選取 [註冊設定檔]  套用到要匯入的序號。 如果您希望新的序號詳細資料覆寫任何現有的詳細資料，請選擇 [覆寫現有識別碼的詳細資料]  。
@@ -95,7 +95,7 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 ### <a name="reassign-a-profile-to-device-serial-numbers"></a>重新將設定檔指派給裝置序號
 
-當您匯入 Apple Configurator 註冊的 iOS 序號時，可以指派註冊設定檔。 您也可以在 Azure 入口網站中的兩個位置指派設定檔：
+當您匯入 Apple Configurator 註冊的 iOS/iPadOS 序號時，可以指派註冊設定檔。 您也可以在 Azure 入口網站中的兩個位置指派設定檔：
 - **Apple Configurator 裝置**
 - **AC 設定檔**
 
@@ -113,9 +113,9 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇要匯出的設定檔。
 2. 在設定檔中，選取 [匯出設定檔]  。
-3. 複製 [設定檔 URL]  。 然後，您可以在 Apple Configurator 中加以新增，以定義 iOS 裝置使用的 Intune 設定檔。
+3. 複製 [設定檔 URL]  。 然後，您可以在 Apple Configurator 中加以新增，以定義 iOS/iPadOS 裝置使用的 Intune 設定檔。
 
-   接著，以下列程序將此設定檔匯入 Apple Configurator，定義 iOS 裝置使用的 Intune 設定檔。
+   接著，您可以在下列程序中將此設定檔匯入 Apple Configurator，以定義 iOS/iPadOS 裝置使用的 Intune 設定檔。
 
 ### <a name="enroll-devices-with-setup-assistant"></a>使用設定助理註冊 iOS 裝置
 
@@ -124,16 +124,16 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
     > 在註冊過程中，裝置會重設為原廠設定。 最佳做法是將裝置重設，並加以啟動。 當您將裝置連線時，裝置應該會在 **Hello** 畫面。
     > 如果裝置已使用 Apple ID 帳戶註冊，則必須先從 Apple iCloud 中刪除裝置，然後再開始註冊程序。 錯誤提示顯示為「無法啟用 [裝置名稱]」。
 
-2. 在 [喜好設定]  窗格中，選取 [伺服器]  ，然後選擇加號 (+) 來啟動 [MDM 伺服器精靈]。 選擇 **[下一步]** 。
-3. 透過 Microsoft Intune，在 iOS 裝置的 [設定助理] 註冊下輸入 MDM 伺服器的**主機名稱或 URL** 及**註冊 URL**。 對於 [註冊 URL]，輸入從 Intune 匯出的註冊設定檔 URL。 選擇 **[下一步]** 。  
+2. 在 [喜好設定]  窗格中，選取 [伺服器]  ，然後選擇加號 (+) 來啟動 [MDM 伺服器精靈]。 選擇 [下一步]  。
+3. 使用 Microsoft Intune，在 iOS/iPadOS 裝置的 [設定助理] 註冊下輸入 MDM 伺服器的**主機名稱或 URL** 及**註冊 URL**。 對於 [註冊 URL]，輸入從 Intune 匯出的註冊設定檔 URL。 選擇 [下一步]  。  
     您可以放心地忽略指出「伺服器 URL 未經驗證」的警告。 請選擇 [下一步]  以繼續，直到精靈完成為止。
-4. 將 iOS 行動裝置連線到具有 USB 介面卡的 Mac 電腦。
-5. 選取您要管理的 iOS 裝置，然後選擇 [準備]  。 在 [準備 iOS 裝置]  窗格上，選取 [手動]  ，然後選擇 [下一步]  。
+4. 將 iOS/iPadOS 行動裝置連接到具有 USB 介面卡的 Mac 電腦。
+5. 選取您要管理的 iOS/iPadOS 裝置，然後選擇 [準備]  。 在 [準備 iOS/iPadOS 裝置]  窗格上，選取 [手動]  ，然後選擇 [下一步]  。
 6. 在 [Enroll in MDM Server]\(在 MDM 伺服器中註冊)  窗格上，選取您建立的伺服器名稱，然後選擇 [下一步]  。
 7. 在 [監督裝置]  窗格上，選取監督層級，然後選擇 [下一步]  。
 8. 在 [Create an Organization]\(建立組織)  窗格上，選擇 [組織]  或建立新的組織，然後選擇 [下一步]  。
-9. 在 [Configure iOS Setup Assistant]\(設定 iOS 設定助理)  窗格上，選擇要呈現給使用者的步驟，然後選擇 [準備]  。 若出現提示，請驗證以更新信任設定。  
-10. 當 iOS 裝置完成準備時，請拔除 USB 纜線。  
+9. 在 [設定 iOS/iPadOS 設定助理]  窗格上，選擇要向使用者顯示的步驟，然後選擇 [準備]  。 若出現提示，請驗證以更新信任設定。  
+10. 當 iOS/iPadOS 裝置完成準備時，請拔除 USB 纜線。  
 
 ### <a name="distribute-devices"></a>散發裝置
 裝置現在已準備好進行公司註冊。 關閉裝置，並將它們散發給使用者。 當使用者啟動其裝置時，設定助理就會啟動。
@@ -141,34 +141,34 @@ Apple Configurator 註冊方法不能與[裝置註冊管理員](device-enrollmen
 使用者收到裝置之後，他們必須完成設定助理。 已設定使用者親和性的裝置可以安裝並執行公司入口網站應用程式，以下載應用程式及管理裝置。
 
 ## <a name="direct-enrollment"></a>直接註冊
-使用 Apple Configurator 直接註冊 iOS 裝置時，您不需要該裝置的序號即可註冊裝置。 您也可以在 Intune 於註冊階段擷取裝置名稱之前，先命名該裝置以供識別。 直接註冊的裝置不支援公司入口網站應用程式。 這個方法不會抹除裝置。
+使用 Apple Configurator 直接註冊 iOS/iPadOS 裝置時，您不需要該裝置的序號即可註冊裝置。 您也可以在 Intune 於註冊階段擷取裝置名稱之前，先命名該裝置以供識別。 直接註冊的裝置不支援公司入口網站應用程式。 這個方法不會抹除裝置。
 
 無法安裝需要使用者關係的應用程式，包括用於安裝企業營運應用程式的公司入口網站應用程式。
 
-### <a name="export-the-profile-as-mobileconfig-to-ios-devices"></a>將設定檔匯出為 iOS 裝置的 .mobileconfig
+### <a name="export-the-profile-as-mobileconfig-to-iosipados-devices"></a>將設定檔匯出為 iOS/iPadOS 裝置的 .mobileconfig
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [Apple Configurator]   > [設定檔]  > 選擇要匯出的設定檔 > [匯出設定檔]  。
 2. 在 [直接註冊]  下，選擇 [下載設定檔]  ，並儲存檔案。 註冊設定檔僅在兩週內有效，到期後您就必須重新建立。
-3. 將檔案傳輸到執行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 電腦，以直接推送為 iOS 裝置的管理設定檔。
+3. 將檔案傳輸到執行 [Apple Configurator](https://itunes.apple.com/us/app/apple-configurator-2/id1037126344?mt=12) 的 Mac 電腦，以作為 iOS/iPadOS 裝置的管理設定檔直接推送。
 4. 利用下列步驟，使用 Apple Configurator 來準備裝置：
     1. 在 Mac 電腦上，開啟 [Apple Configurator 2.0]。
-    2. 將 iOS 裝置以 USB 線連接到 Mac 電腦。 關閉相片、iTunes 以及偵測到裝置時，為該裝置開啟的其他應用程式。
-    3. 在 Apple Configurator 中，依序選擇已連線的 iOS 裝置和 [新增]  按鈕。 可以新增至裝置的選項會出現在下拉式清單中。 選擇 [設定檔]  。
+    2. 將 iOS/iPadOS 裝置以 USB 線連接到 Mac 電腦。 關閉相片、iTunes 以及偵測到裝置時，為該裝置開啟的其他應用程式。
+    3. 在 Apple Configurator 中，選擇已連接的 iOS/iPadOS 裝置，然後選擇 [新增]  按鈕。 可以新增至裝置的選項會出現在下拉式清單中。 選擇 [設定檔]  。
 
         ![匯出設定助理註冊的螢幕擷取畫面，並醒目提示設定檔 URL](./media/apple-configurator-enroll-ios/ios-apple-configurator-add-profile.png)
 
     4. 使用檔案選擇器選取您從 Intune 匯出的 .mobileconfig 檔案，然後選擇 [新增]  。 設定檔會新增至裝置。 如果裝置「不受監督」，則需要在裝置上接受該安裝。
-5. 使用下列步驟可在 iOS 裝置上安裝設定檔。 裝置必須已完成 [設定助理]，而且可供使用。 如果註冊需要應用程式部署，裝置應該要設定 Apple ID，因為應用程式部署需要您具備登入 App Store 的 Apple ID。
-    1. 解除鎖定 iOS 裝置。
+5. 使用下列步驟可在 iOS/iPadOS 裝置上安裝設定檔。 裝置必須已完成 [設定助理]，而且可供使用。 如果註冊需要應用程式部署，裝置應該要設定 Apple ID，因為應用程式部署需要您具備登入 App Store 的 Apple ID。
+    1. 將 iOS/iPadOS 裝置解除鎖定。
     2. 在 [管理設定檔]  的 [安裝設定檔]  對話方塊中，選擇 [安裝]  。
     3. 如有必要，請提供裝置密碼或 Apple ID。
     4. 接受**警告**，然後選擇 [安裝]  。
     5. 接受**遠端警告**，然後選擇 [信任]  。
     6. 當 [Profile Installed]\(安裝的設定檔)  方塊確認設定檔為 [已安裝] 時，選擇 [完成]  。
 
-6. 在 iOS 裝置上，開啟 [設定]  ，並前往 [一般]   >  [裝置管理]   >  [管理設定檔]  。 確認其中有列出設定檔的安裝，並檢查 iOS 原則限制和已安裝的應用程式。 原則限制和應用程式可能需要 10 分鐘的時間才會出現在裝置上。
+6. 在 iOS/iPadOS 裝置上，開啟 [設定]  ，並前往 [一般]   > [裝置管理]   > [管理設定檔]  。 確認其中有列出設定檔的安裝，並檢查 iOS/iPadOS 原則限制和已安裝的應用程式。 原則限制和應用程式可能需要 10 分鐘的時間才會出現在裝置上。
 
-7. 散發裝置。 iOS 裝置現在已向 Intune 註冊並且受管理。
+7. 散發裝置。 iOS/iPadOS 裝置現在已向 Intune 註冊並且受管理。
 
 
 

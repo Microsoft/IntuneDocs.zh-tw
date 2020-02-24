@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b643ed41d01b70376dac32c26a66dcf9f9735ceb
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: c4b3313d5ec7fe81944431276a63bfafb7a1b3dc
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907214"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413622"
 ---
 # <a name="reset-the-passcode-on-windows-devices-using-intune"></a>使用 Intune 重設 Windows 裝置的密碼
 
@@ -60,11 +60,11 @@ ms.locfileid: "74907214"
 針對此 CSP 將值設定為 **True**。
 
 > [!TIP]
-> 建立原則之後，將其指派 (或部署) 給群組。 原則可以指派給使用者群組或裝置群組。 如果您指派給使用者群組，該群組可能包含其他裝置 (例如 IOS) 的使用者。 技術上來說並不會套用原則，但這些裝置仍然會包含在狀態詳細資料中。
+> 建立原則之後，將其指派 (或部署) 給群組。 原則可以指派給使用者群組或裝置群組。 如果您指派給使用者群組，該群組可能包含其他裝置 (例如 iOS/iPadOS) 的使用者。 技術上來說並不會套用原則，但這些裝置仍然會包含在狀態詳細資料中。
 
 ## <a name="reset-the-passcode"></a>重設密碼
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
 2. 選取 [裝置]  ，然後選取 [所有裝置]  。
 3. 選取您要重設密碼的裝置。 在裝置屬性中，選取 [重設密碼]  。
 4. 選取 [是]  確認。 密碼即產生，而且會在入口網站中顯示七天。

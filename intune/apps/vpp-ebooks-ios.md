@@ -1,5 +1,5 @@
 ---
-title: 管理大量採購的 iOS 電子書
+title: 管理大量採購的 iOS/iPadOS 電子書
 titleSuffix: Microsoft Intune
 description: 針對從 iOS Store 大量採購的電子書，了解如何將電子書同步到 Intune，然後管理並追蹤其使用情況。
 keywords: ''
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 08275e2573fe8aae8c59ea25c85cdd8f7a3246ee
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: f7c2bd0603961b9d618b3f743ecb323fb7fc9823
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563753"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437863"
 ---
-# <a name="how-to-manage-ios-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS 電子書
+# <a name="how-to-manage-iosipados-ebooks-you-purchased-through-a-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過大量採購方案購買的 iOS/iPadOS 電子書
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -37,7 +37,7 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 管理書籍的程序與[管理 VPP 應用程式](../vpp-apps-ios.md)的程序類似。
 
 ## <a name="manage-volume-purchased-books-for-ios-devices"></a>管理大量採購的 iOS 裝置書籍
-您可以透過[商務 Apple 大量採購方案](https://www.apple.com/business/vpp/)或[教育 Apple 大量採購方案](https://volume.itunes.apple.com/us/store)，購買多份 iOS 書籍授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將大量採購資訊與 Intune 同步處理，並追蹤大量採購的書籍使用情況。
+您可以透過[商務用 Apple 大量採購方案](https://www.apple.com/business/vpp/)或[教育用 Apple 大量採購方案](https://volume.itunes.apple.com/us/store)，購買多個 iOS/iPadOS 書籍授權。 這項程序包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Intune。  您可以將大量採購資訊與 Intune 同步處理，並追蹤大量採購的書籍使用情況。
 
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 在開始之前，請從 Apple 取得 VPP 權杖，並將它上傳至您的 Intune 帳戶。 此外：
@@ -46,7 +46,7 @@ Microsoft Intune 可協助您同步、管理及指派透過此方案購買的書
 * 每個權杖有效期限為一年。
 * Intune 預設與 Apple VPP 服務一天進行兩次同步處理。 您可以在任何時間啟動手動同步處理。
 * 在您將 VPP 權杖匯入到 Intune 之後，請不要將相同的權杖匯入到任何其他裝置管理解決方案。 這樣做會導致授權指派與使用者記錄遺失。
-* 開始搭配 Intune 使用 iOS 書籍之前，請移除任何其他行動裝置管理 (MDM) 廠商所建立的現有 VPP 使用者帳戶。 基於安全性考量，Intune 不會把這些使用者帳戶同步處理到 Intune。 Intune 只會同步處理 Intune 所建立的 Apple VPP 服務資料。
+* 開始搭配 Intune 使用 iOS/iPadOS 書籍之前，請移除搭配其他行動裝置管理 (MDM) 廠商所建立的任何現有 VPP 使用者帳戶。 基於安全性考量，Intune 不會把這些使用者帳戶同步處理到 Intune。 Intune 只會同步處理 Intune 所建立的 Apple VPP 服務資料。
 * 當您將書籍指派給裝置時，該裝置必須已安裝內建的 iBooks 應用程式。 如果未安裝，則使用者必須重新安裝該應用程式才能閱讀書籍。 您目前無法使用 Intune 來還原已移除的內建應用程式。
 * 您只能從 Apple 大量採購方案網站指派書籍。 您無法先上傳，然後再指派在內部建立的書籍。
 * 您目前無法以指派應用程式的相同方式將書籍指派給使用者類別。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 36a84296aabd2d78cbc3cdc14ffb8f696afa5c22
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
+ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75205253"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77437965"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -51,8 +51,8 @@ ms.locfileid: "75205253"
 - **已標幟的使用者**：其裝置遇到問題的使用者數目。 [已標幟的使用者]  下會報告已進行 JB (iOS) 或 Root (Android) 破解的裝置。 此外，這裡將會報告具有透過 Google SafetyNet 裝置證明檢查 (如果 IT 系統管理員有開啟) 標幟之裝置的使用者。 
 - **具潛在有害應用程式的使用者**：Google Play 安全防護所偵測到其 Android 裝置上可能具有害應用程式的使用者數目。 
 - **iOS 使用者狀態**和 **Android 使用者狀態**：已使用應用程式並在相關平台工作內容中獲派原則的使用者數目。 此資訊顯示由原則管理的使用者數目，以及使用工作內容中任何原則未設為目標之應用程式的使用者數目。 您可以考慮將這些使用者新增至原則。
-- [最受保護的 iOS 應用程式]  和 [最受保護的 Android 應用程式]  ：根據最常使用的 iOS 和 Android 應用程式，此資訊會依平台顯示受保護與未受保護之應用程式的數目。
-- [前幾大未註冊的已設定 iOS 應用程式]  和 [前幾大未註冊的已設定 Android 應用程式]  ：根據未註冊裝置最常使用的 iOS 和 Android 應用程式，此資訊會依平台顯示已設定之應用程式 (也就是使用應用程式設定原則) 的數目。
+- [最受保護的 iOS/iPadOS 應用程式]  與 [最受保護的 Android 應用程式]  ：根據最常使用的 iOS/iPadOS 與 Android 應用程式，此資訊會依平台顯示受保護與未受保護之應用程式的數目。
+- [前幾大未註冊的已設定 iOS/iPadOS 應用程式]  與 [前幾大未註冊的已設定 Android 應用程式]  ：根據未註冊裝置最常使用的 iOS/iPadOS 與 Android 應用程式，此資訊會依平台顯示已設定之應用程式 (也就是使用應用程式設定原則) 的數目。
 
     > [!NOTE]
     > 如果一個平台有多個原則，當至少指派一個原則給使用者時，使用者會視為由原則管理。
@@ -170,9 +170,9 @@ ms.locfileid: "75205253"
     ![[儲存報表] 確認方塊的螢幕擷取畫面](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Android 製造商、型號和安全性修補程式版本，以及 iOS 型號。 在 Intune 中，您可以藉由選取 [應用程式]   > [應用程式保護狀態]   > [應用程式防護報告: iOS、Android]  來存取這些欄位。 此外，這些參數會協助您設定適用於裝置製造商的 [允許]  清單 (Android)、適用於裝置型號的 [允許]  清單 (Android 和 iOS)，以及 [最低 Android 安全性修補程式版本]  設定。   
+> Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Android 製造商、型號與安全性修補程式版本，以及 iOS/iPadOS 型號。 在 Intune 中，您可以透過選取 [應用程式]   > [應用程式保護狀態]   > [應用程式防護報告: iOS/iPadOS、Android]  來存取這些欄位。 此外，這些參數會協助您設定適用於裝置製造商的 [允許]  清單 (Android)、適用於裝置型號的 [允許]  清單 (Android 和 iOS)，以及 [最低 Android 安全性修補程式版本]  設定。   
  
 ## <a name="see-also"></a>請參閱
-- [管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)
+- [管理 iOS/iPadOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)
 - [當 Android 應用程式交由應用程式防護原則管理時的行為](../fundamentals/end-user-mam-apps-android.md)
-- [當 iOS 應用程式交由應用程式防護原則管理時的行為](../fundamentals/end-user-mam-apps-ios.md)
+- [當 iOS/iPadOS 應用程式交由應用程式保護原則管理時的行為](../fundamentals/end-user-mam-apps-ios.md)

@@ -1,7 +1,7 @@
 ---
 title: 使用 Microsoft Intune 將自訂通知傳送給使用者
 titleSuffix: Microsoft Intune
-description: 使用 Intune 來建立自訂推播通知，並將其傳送給 iOS 和 Android 裝置的使用者
+description: 使用 Intune 來建立自訂推播通知，並將其傳送給 iOS/iPadOS 和 Android 裝置的使用者
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -18,30 +18,30 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 73b7617ad6a2d9aa756ddf9a8a4833289e5710ff
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 412dc631f2092d1eb7d9a7332b903a4742472202
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517474"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413876"
 ---
 # <a name="send-custom-notifications-in-intune"></a>在 Intune 中傳送自訂通知  
 
-使用 Microsoft Intune 將自訂通知傳送給受控 iOS 和 Android 裝置的使用者。 這些訊息會在使用者裝置上顯示為來自公司入口網站應用程式與來自 Microsoft Intune 應用程式的標準推播通知，與裝置上其他應用程式通知的出現方式一樣。 macOS 和 Windows 裝置均不支援 Intune 自訂通知。   
+使用 Microsoft Intune 將自訂通知傳送給受控 iOS/iPadOS 和 Android 裝置的使用者。 這些訊息會在使用者裝置上顯示為來自公司入口網站應用程式與來自 Microsoft Intune 應用程式的標準推播通知，與裝置上其他應用程式通知的出現方式一樣。 macOS 和 Windows 裝置均不支援 Intune 自訂通知。   
 
 自訂通知訊息包含簡短的標題和訊息本文，長度為 500 個字元或更少。 這些訊息可以針對任何一般通訊目的來自訂。
 
-### <a name="what-the-notification-looks-like-on-an-ios-device"></a>通知在 iOS 裝置上的外觀
+### <a name="what-the-notification-looks-like-on-an-iosipados-device"></a>通知在 iOS/iPadOS 裝置上的外觀
 
-如果您已在 iOS 裝置上開啟公司入口網站應用程式，則通知類似下列螢幕擷取畫面：
+如果您已在 iOS/iPadOS 裝置上開啟公司入口網站應用程式，則通知類似下列螢幕擷取畫面：
 
 > [!div class="mx-imgBorder"]
-> ![公司入口網站 iOS 測試通知](./media/custom-notifications/105046-1.png)
+> ![公司入口網站 iOS/iPadOS 測試通知](./media/custom-notifications/105046-1.png)
 
 如果裝置已鎖定，則通知類似下列螢幕擷取畫面：
 
 > [!div class="mx-imgBorder"]
-> ![鎖定的裝置 iOS 測試通知](./media/custom-notifications/105046-2.png)
+> ![鎖定的裝置 iOS/iPadOS 測試通知](./media/custom-notifications/105046-2.png)
 
 ### <a name="what-the-notification-looks-like-on-an-android-device"></a>通知在 Android 裝置上的外觀
 
@@ -75,14 +75,14 @@ ms.locfileid: "76517474"
 - 將訊息傳送至個別裝置時，每小時最多只能傳送 10 則訊息給同一個裝置。 
 - 您可以藉由將通知指派給群組，來將通知傳送至多個使用者或裝置。 使用群組時，每則通知最多可直接針對 25 個群組。 巢狀群組不計入於此總計中。  
 
-  群組可以包含使用者或裝置，但訊息只會傳送至使用者，以及使用者已註冊的每部 iOS 或 Android 裝置。  
+  群組可以包含使用者或裝置，但訊息只會傳送至使用者，以及使用者已註冊的每部 iOS/iPadOS 或 Android 裝置。  
 - 您可以將通知傳送至單一裝置。 您不需要使用群組，而是選取裝置，然後使用遠端[裝置動作](device-management.md#available-device-actions)來傳送自訂通知。  
 
 **傳遞**：  
 - Intune 會將訊息傳送給使用者的公司入口網站應用程式或 Microsoft Intune 應用程式，其之後會建立推播通知。 使用者不需要登入應用程式，通知也會推播到裝置上。  
 - Intune 和公司入口網站應用程式與 Microsoft Intune 應用程式無法保證能傳遞自訂通知。 自訂通知可能會延遲數小時顯示；如有此類延遲，則不應用於緊急訊息。  
-- Intune 中的自訂通知訊息會以標準推播通知形式顯示於裝置上。 如果公司入口網站應用程式在 iOS 裝置上開啟時收到通知，則會在應用程式中顯示通知，而不會推播通知。  
-- 視裝置設定，自訂通知可以在 iOS 和 Android 裝置的鎖定畫面上顯示。  
+- Intune 中的自訂通知訊息會以標準推播通知形式顯示於裝置上。 當 iOS/iPadOS 裝置收到通知時，如果公司入口網站應用程式在該裝置上是開啟的，則通知會在應用程式中顯示，而不是顯示為推播通知。  
+- 取決於裝置設定，自訂通知可以在 iOS/iPadOS 和 Android 裝置的鎖定畫面上顯示。  
 - 在 Android 裝置上，其他應用程式可能會存取您自訂通知中的資料。 請勿將其用於敏感通訊。  
 - 最近取消註冊的裝置使用者，或已從群組中移除的使用者，可能仍會收到稍後傳送至該群組的自訂通知。  同樣地，如果您在將自訂通知傳送至群組之後將使用者新增至該群組，則最近新增的使用者可能會收到先前傳送的通知訊息。  
 
@@ -127,7 +127,7 @@ Intune 會立即處理訊息。 已傳送訊息的唯一確認是您將在主控
 
 使用者可在裝置上看到 Intune 傳送的自訂通知訊息，作為來自公司入口網站應用程式或 Microsoft Intune 應用程式的標準推播通知。 這些通知類似於使用者從裝置上其他應用程式接收的推播通知。  
 
-如果公司入口網站應用程式在 iOS 裝置上開啟時收到通知，則會在應用程式中顯示通知，而不會推播通知。  
+在 iOS/iPadOS 裝置上，如果收到通知時公司入口網站應用程式是開啟的，則通知會在應用程式中顯示，而不是顯示為推播通知。  
 
 通知會持續顯示，直到使用者將其關閉為止。  
 

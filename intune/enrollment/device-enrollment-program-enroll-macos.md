@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 697e950c881a0c4233358d8363aa6cc7ec0006b2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74832690"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414499"
 ---
 # <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用裝置註冊計劃或 Apple School Manager 自動註冊 macOS 裝置
 
@@ -43,7 +43,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 4. [Assign DEP profile to devices](#assign-an-enrollment-profile-to-devices)
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 在 [Apple School Manager](https://school.apple.com/) 或 [Apple 的裝置註冊計劃](http://deploy.apple.com)中購買的裝置
 - 序號或採購單號碼的清單。
@@ -165,7 +165,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 由於 Intune 有管理您裝置的權限，您可以同步處理 Intune 與 Apple，以在 Azure 入口網站的 Intune 中查看受管理裝置。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]  > [macOS]  > [macOS 註冊]  > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]  > [同步]  。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-macos/image06.png)
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]  > [macOS]  > **[macOS 註冊]** > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]  > [同步]  。![選取 [註冊計劃裝置] 節點並選擇 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-macos/image06.png)
 
    為了符合 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
    - 完整同步處理每 7 天只能執行一次。 在完整同步期間，Intune 會擷取指派至已連線 Intune 之 Apple MDM 伺服器的序號完整更新清單。 若註冊計劃裝置從 Intune 入口網站刪除，但未從 DEP 入口網站中的 Apple MDM 伺服器解除指派，則在執行完整同步之前，該裝置都不會重新匯入 Intune。   
@@ -181,7 +181,7 @@ DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-en
 
 ### <a name="assign-a-default-profile"></a>指派預設設定檔
 
-您可以針對使用特定權杖註冊的所有裝置，挑選要套用的預設 macOS 和 iOS 設定檔。 
+您可以針對使用特定權杖註冊的所有裝置，挑選要套用的預設 macOS 與 iOS/iPadOS 設定檔。 
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [macOS]   > [macOS 註冊]   > [註冊方案權杖]  > 在清單中選擇權杖。
 2. 選擇 [設定預設設定檔]  、在下拉式清單中選擇設定檔，然後選擇 [儲存]  。 此設定檔將套用到使用該權杖註冊的所有裝置。

@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 328a578f4d2ada41bed17839f1f85b3b9add80fa
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 9cb323dc6f8110d77343fb11c9e0a1c40f9e3cd8
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885953"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415270"
 ---
 # <a name="troubleshoot-device-enrollment-in-microsoft-intune"></a>針對 Microsoft Intune 中的裝置註冊進行疑難排解
 
@@ -36,7 +36,7 @@ ms.locfileid: "75885953"
 在您開始進行疑難排解之前，請先確定您已正確設定 Intune，以便啟用註冊。 您可以在下列網址中閱讀那些設定需求的相關資訊:
 
 - [準備在 Microsoft Intune 中註冊裝置](../fundamentals/setup-steps.md)
-- [設定 iOS 和 Mac 裝置管理](../ios-enroll.md)
+- [設定 iOS/iPadOS 和 Mac 裝置管理](../ios-enroll.md)
 - [設定 Windows 裝置管理](windows-enroll.md)
 - [設定 Android 裝置管理](android-enroll.md) - 不需要其他步驟
 
@@ -49,7 +49,7 @@ ms.locfileid: "75885953"
 您所管理的裝置使用者可以收集註冊與診斷記錄檔，以供您檢閱。 有關使用者如何收集記錄檔之指示提供如下:
 
 - [將 Android 註冊錯誤傳送給 IT 系統管理員](https://docs.microsoft.com/intune-user-help/send-enrollment-errors-to-your-it-admin-android)
-- [將 iOS 錯誤傳送給 IT 系統管理員](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios)
+- [將 iOS/iPadOS 錯誤傳送給 IT 系統管理員](https://docs.microsoft.com/intune-user-help/send-errors-to-your-it-admin-ios) \(英文\)
 
 
 ## <a name="general-enrollment-issues"></a>一般註冊問題
@@ -93,7 +93,7 @@ ms.locfileid: "75885953"
 
 4. 如果失敗，請驗證使用者的認證已正確地與 Azure Active Directory 同步處理。
 
-5. 如果使用者成功登入，iOS 裝置會提示您安裝並註冊 Intune 公司入口網站應用程式。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
+5. 如果使用者成功登入，iOS/iPadOS 裝置會提示您安裝 Intune 公司入口網站應用程式並註冊。 在 Android 裝置上，您必須手動安裝 Intune 公司入口網站應用程式，才能重試註冊。
 
 ### <a name="mdm-authority-not-defined"></a>MDM 授權單位未定義
 **問題：** 使用者收到「MDM 授權單位未定義」  錯誤。
@@ -244,23 +244,23 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 如果伺服器憑證已正確安裝，您就會在結果中看到所有核取記號。 如果上述問題存在，您會看到報告的 [Certificate Name Matches] 和 [SSL Certificate is correctly Installed] 區段中有紅色 X。
 
 
-## <a name="ios-issues"></a>iOS 問題
+## <a name="iosipados-issues"></a>iOS/iPadOS 問題
 
-### <a name="ios-enrollment-errors"></a>iOS 註冊錯誤
-下表列出使用者在 Intune 中註冊 iOS 裝置時可能會遇到的錯誤。
+### <a name="iosipados-enrollment-errors"></a>iOS/iPadOS 註冊錯誤
+下表列出終端使用者在 Intune 中註冊 iOS/iPadOS 裝置時可能會遇到的錯誤。
 
 |錯誤訊息|問題|解決方案|
 |-------------|-----|----------|
-|NoEnrollmentPolicy|找不到註冊原則|請檢查所有註冊必要條件 (例如 APNs 憑證)，並確認已設定並啟用 [iOS as a platform]\(iOS 即平台)。 如需指示，請參閱[設定 iOS 和 Mac 裝置管理](../ios-enroll.md)。|
-|DeviceCapReached|已經註冊過多行動裝置。|使用者註冊其他行動裝置之前，必須先從公司入口網站移除其目前已註冊的其中一部行動裝置。 請參閱您所使用的裝置類型的指示：[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
-|APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 及[組織使用者和裝置](../fundamentals/groups-add.md)。|
-|AccountNotOnboarded|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 是可用來連絡已註冊 iOS 裝置的管道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需詳細資訊，請檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](../ios-enroll.md)。|
-|DeviceTypeNotSupported|使用者可能嘗試使用非 iOS 裝置進行註冊。 您嘗試註冊的行動裝置類型不受支援。<br /><br />確認裝置正在執行 iOS 8.0 版或更新版本。<br /><br />|確定您的使用者裝置正在執行 iOS 8.0 版或更新版本。|
-|UserLicenseTypeInvalid|裝置無法註冊，因為使用者帳戶還不是必要使用者群組的成員。<br /><br />|使用者必須是正確使用者群組的成員，才可以註冊裝置。 這則訊息表示他們的行動裝置管理授權單位並未擁有正確的授權類型。 例如，如果下列兩個條件都成立，他們就會看到此錯誤：<ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>如需詳細資訊，請檢閱下列文章：<br /><br />檢閱[使用 Microsoft Intune 設定 iOS 和 Mac 管理](../ios-enroll.md)，以及[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 和[組織使用者和裝置](../fundamentals/groups-add.md)，以取得如何設定使用者的資訊。|
+|NoEnrollmentPolicy|找不到註冊原則|請檢查所有註冊必要條件 (例如 Apple Push Notification Service (APNs) 憑證)，並確認已設定並啟用 [iOS/iPadOS as a platform] \(iOS/iPadOS 即平台\)。 如需指示，請參閱[設定 iOS/iPadOS 和 Mac 裝置管理](../ios-enroll.md)。|
+|DeviceCapReached|已經註冊過多行動裝置。|使用者註冊其他行動裝置之前，必須先從公司入口網站移除其目前已註冊的其中一部行動裝置。 請參閱您所使用的裝置類型的指示：[Android](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-android)、[iOS/iPadOS](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-ios)、[Windows](https://docs.microsoft.com/intune-user-help/unenroll-your-device-from-intune-windows)。|
+|APNSCertificateNotValid|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 提供可用來連絡已註冊 iOS/iPadOS 裝置的通道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需如何設定使用者的資訊，請檢閱[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 及[組織使用者和裝置](../fundamentals/groups-add.md)。|
+|AccountNotOnboarded|可讓行動裝置與貴公司網路通訊的憑證發生問題。<br /><br />|Apple Push Notification Service (APNs) 提供可用來連絡已註冊 iOS/iPadOS 裝置的通道。 在下列情況下，註冊將會失敗並顯示此訊息：<ul><li>取得 APNs 憑證的步驟未完成，或是</li><li>APNs 憑證已過期。</li></ul>如需詳細資訊，請檢閱[使用 Microsoft Intune 設定 iOS/iPadOS 和 Mac 管理](../ios-enroll.md)。|
+|DeviceTypeNotSupported|使用者可能嘗試使用非 iOS 裝置進行註冊。 您嘗試註冊的行動裝置類型不受支援。<br /><br />確認裝置正在執行 iOS/iPadOS 8.0 版或更新版本。<br /><br />|確定您使用者的裝置正在執行 iOS/iPadOS 8.0 版或更新版本。|
+|UserLicenseTypeInvalid|裝置無法註冊，因為使用者帳戶還不是必要使用者群組的成員。<br /><br />|使用者必須是正確使用者群組的成員，才可以註冊裝置。 這則訊息表示他們的行動裝置管理授權單位並未擁有正確的授權類型。 例如，如果下列兩個條件都成立，他們就會看到此錯誤：<ol><li>Intune 已設定為行動裝置管理授權單位</li><li>他們使用 System Center 2012 R2 Configuration Manager 授權。</li></ol>如需詳細資訊，請檢閱下列文章：<br /><br />檢閱[使用 Microsoft Intune 設定 iOS/iPadOS 和 Mac 管理](../ios-enroll.md)，以及[同步處理 Active Directory 並將使用者新增至 Intune](../fundamentals/users-add.md) 和[組織使用者和裝置](../fundamentals/groups-add.md)，以取得如何設定使用者的資訊。|
 |MdmAuthorityNotDefined|尚未定義行動裝置管理授權單位。<br /><br />|尚未在 Intune 中設定行動裝置管理授權單位。<br /><br />檢閱[開始使用 Microsoft Intune 30 天試用版](../fundamentals/free-trial-sign-up.md)中＜步驟 6：註冊行動裝置並安裝應用程式＞一節中的項目 #1。|
 
 ### <a name="devices-are-inactive-or-the-admin-console-cant-communicate-with-them"></a>裝置處於非使用狀態或管理主控台無法與它們通訊
-**問題︰** iOS 裝置未簽入 Intune 服務。 裝置必須定期簽入服務，才能維護對受保護公司資源的存取權。 如果裝置未簽入：
+**問題︰** iOS/iPadOS 裝置未簽入 Intune 服務。 裝置必須定期簽入服務，才能維護對受保護公司資源的存取權。 如果裝置未簽入：
 
 - 它們就無法從 Intune 服務接收原則、應用程式及遠端命令。
 - 它們會在系統管理員主控台中顯示其管理狀態為**狀況不良**。
@@ -268,15 +268,15 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 **解決方法：** 與您的終端使用者分享下列解決方法，協助他們重新取得公司資源的存取權。
 
-當使用者啟動 iOS 公司入口網站應用程式時，它會通知您裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步以重新連線 (使用者會看到**正在嘗試同步...** 訊息)。
+當使用者啟動 iOS/iPadOS 公司入口網站應用程式時，其會知道裝置是否與 Intune 失去連絡。 如果偵測到沒有連絡，它會自動嘗試與 Intune 同步以重新連線 (使用者會看到**正在嘗試同步...** 訊息)。
 
   ![正在嘗試同步通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_trying_to_sync_notification.png)
 
-如果同步處理成功，您會在 iOS 公司入口網站應用程式中看到**同步處理成功**內嵌通知，指出裝置處於狀況良好狀態。
+如果同步處理成功，您會在 iOS/iPadOS 公司入口網站應用程式中看到**同步處理成功**內嵌通知，指出裝置處於狀況良好狀態。
 
   ![同步處理成功通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_sync_successful_notification.png)
 
-如果同步處理失敗，使用者會在 iOS 公司入口網站應用程式中看到**無法同步**內嵌通知。
+如果同步處理失敗，使用者會在 iOS/iPadOS 公司入口網站應用程式中看到**無法同步**內嵌通知。
 
   ![無法同步通知](./media/troubleshoot-device-enrollment-in-intune/ios_cp_app_unable_to_sync_notification.png)
 
@@ -287,7 +287,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 註冊完成後，裝置會回復到正常狀態，並重新取得公司資源的存取權。
 
 ### <a name="verify-ws-trust-13-is-enabled"></a>確認已啟用 WS-Trust 1.3
-**問題**：裝置註冊計劃 (DEP) 無法註冊 iOS 裝置
+**問題**：無法註冊裝置註冊計劃 (DEP) iOS/iPadOS 裝置
 
 若要使用使用者親和性註冊 ，DEP 裝置必須啟用 WS-Trust 1.3 使用者名稱/混合端點，才能要求使用者權杖。 Active Directory 預設會啟用此端點。 若要取得已啟用的端點清單，請使用 Get-AdfsEndpoint PowerShell Cmdlet 並尋找 trust/13/UsernameMixed 端點。 例如：
 
@@ -301,7 +301,7 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 
 ### <a name="profile-installation-failed"></a>設定檔安裝失敗
-**問題：** 使用者的 iOS 裝置收到「設定檔安裝失敗」  錯誤。
+**問題：** 使用者在 iOS/iPadOS 裝置上收到**設定檔安裝失敗**錯誤。
 
 ### <a name="troubleshooting-steps-for-failed-profile-installation"></a>設定檔安裝失敗的疑難排解步驟
 
@@ -313,9 +313,9 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 4. 瀏覽至 [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com)，然後在系統提示時嘗試安裝設定檔。
 
-5. 確認適用於 iOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
+5. 確認適用於 iOS/iPadOS 的 Safari 是預設瀏覽器，而且已啟用 Cookie。
 
-### <a name="users-ios-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>使用者的 iOS 裝置卡在註冊畫面超過 10 分鐘
+### <a name="users-iosipados-device-is-stuck-on-an-enrollment-screen-for-more-than-10-minutes"></a>使用者的 iOS/iPadOS 裝置卡在註冊畫面超過 10 分鐘
 
 **問題**：註冊裝置時可能會卡在兩個畫面：
 - 等候 “Microsoft” 完成設定
@@ -323,11 +323,11 @@ Samsung Smart Manager 軟體 (隨附於某些 Samsung 裝置上) 可能會停用
 
 在下列情況下可能會發生此問題：
 - Apple 服務暫時中斷，或是
-- iOS 註冊設定為使用表格中所示的 VPP 權杖，但 VPP 權杖有問題。
+- iOS/iPadOS 註冊設定為使用表格中所示的 VPP 權杖，但 VPP 權杖有問題。
 
 | 註冊設定 | 值 |
 | ---- | ---- |
-| 平台 | iOS |
+| 平台 | iOS/iPadOS |
 | 使用者親和性 | 使用使用者親和性註冊 |
 |不向 Apple 設定輔助程式驗證，而向公司入口網站驗證 | 是 |
 | 使用 VPP 安裝公司入口網站 | 使用權杖：權杖位址 |

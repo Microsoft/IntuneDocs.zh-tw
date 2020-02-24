@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3d8aadbd876ea03da0f16acea82b71ebd85cf9be
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712254"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413683"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>尋找 Intune 裝置的主要使用者
 
@@ -30,7 +30,7 @@ ms.locfileid: "73712254"
 
 ## <a name="how-to-find-a-devices-primary-user"></a>如何尋找裝置的主要使用者
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]  > 選擇裝置。
 3. 在 [概觀]  頁面上，選擇 [查看更多]  ，您將會看到列出的主要使用者。
 
@@ -67,8 +67,8 @@ Intune 會在註冊期間或之後，自動將主要使用者新增至裝置。 
 | Windows | Azure AD Join (Autopilot 自我部署模式) | 無 | 不適用 | 
 | 跨平台 | 透過公司入口網站應用程式的使用者導向註冊 | 正在註冊使用者 | 註冊期間 |
 | 跨平台 | 裝置註冊管理員 (DEM) | 正在註冊 DEM 使用者 | 註冊期間 |
-| iOS、macOS | Apple 自動裝置註冊 (具有使用者親和性的 DEP) | 正在註冊使用者 | 註冊期間 |
-| iOS、macOS | Apple 自動裝置註冊 (不具使用者親和性的 DEP) | 無 | 不適用 |
+| iOS/iPadOS、macOS | Apple 自動裝置註冊 (具有使用者親和性的 DEP) | 正在註冊使用者 | 註冊期間 |
+| iOS/iPadOS、macOS | Apple 自動裝置註冊 (不具使用者親和性的 DEP) | 無 | 不適用 |
 | Android | Android 公司擁有的專用裝置 | 無 | 不適用 |
 
 ## <a name="primary-user-and-azure-ad-device-owner"></a>主要使用者和 Azure AD 裝置擁有者

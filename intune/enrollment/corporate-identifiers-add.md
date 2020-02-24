@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7cc67ce304dba500095c130e035a0b29322c84ef
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: 51538f8994557bba718f0e8344b1da8d3c7193fa
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956305"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414415"
 ---
 # <a name="identify-devices-as-corporate-owned"></a>識別公司所擁有的裝置
 
@@ -54,7 +54,7 @@ ms.locfileid: "75956305"
 | 裝置管理受控 Android OS v10 | 不支援 | 不支援 |
 | 其他 Android | 不支援 | 支援 |
 
-<!-- When you upload serial numbers for corporate-owned iOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
+<!-- When you upload serial numbers for corporate-owned iOS/iPadOS devices, they must be paired with a corporate enrollment profile. Devices must then be enrolled using either Apple’s device enrollment program (DEP) or Apple Configurator to have them appear as corporate-owned. -->
 
 [了解如何尋找 Apple 裝置序號](https://support.apple.com/HT204308)。<br>
 [了解如何尋找您的 Android 裝置序號](https://support.google.com/store/answer/3333000)。
@@ -77,8 +77,8 @@ ms.locfileid: "75956305"
 ```
 
 > [!IMPORTANT]
-> 某些 Android 與 iOS 裝置有多個 IMEI 編號。 Intune 根據每個已註冊的裝置，只會讀取一個 IMEI 編號。 若您匯入的 IMEI 編號不是 Intune 清查過的編號，裝置將會分類為個人裝置而非公司擁有的裝置。 若某部裝置有多個 IMEI 編號匯入，未清查編號的註冊狀態將會顯示**未知**。<br>
->也請注意︰建議使用序號識別 iOS 裝置。
+> 某些 Android 與 iOS/iPadOS 裝置有多個 IMEI 編號。 Intune 根據每個已註冊的裝置，只會讀取一個 IMEI 編號。 若您匯入的 IMEI 編號不是 Intune 清查過的編號，裝置將會分類為個人裝置而非公司擁有的裝置。 若某部裝置有多個 IMEI 編號匯入，未清查編號的註冊狀態將會顯示**未知**。<br>
+>也請注意︰建議使用序號識別 iOS/iPadOS 裝置。
 >Android 序號可能重複，或是不存在。 請洽詢裝置供應商，以了解序號是否為可靠的裝置識別碼。
 >裝置回報給 Intune 的序號，可能與裝置上 Android [設定/關於] 功能表中顯示的識別碼不符。 請驗證裝置製造商所回報的序號類型。
 >嘗試上傳序號含有點 (.) 的檔案會導致上傳失敗。 不支援含有點的序號。

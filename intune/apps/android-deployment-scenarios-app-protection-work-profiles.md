@@ -15,12 +15,12 @@ ms.reviewer: chrisbal
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: d0b4f8d5124924d013e7ac131dafc947a95c7b65
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 99738de7efc473c7886762534c6e377b4dba8397
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059788"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415101"
 ---
 # <a name="application-protection-policies-and-work-profiles-on-android-enterprise-devices-in-intune"></a>Intune 中 Android 企業裝置上的應用程式保護原則與工作設定檔
 
@@ -106,7 +106,7 @@ Office 應用程式 (例如 Outlook 和 OneDrive) 具有「多重身分識別」
 
 使用工作設定檔時，您應該停用此多重身分識別行為。 當您停用它時，工作設定檔中應用程式的徽章執行個體只能由組織身分識別來設定。 請使用 [允許的帳戶] 應用程式組態設定來支援 Office Android 應用程式。
 
-如需詳細資訊，請參閱[針對 iOS 和 Android 應用程式組態設定部署 Outlook](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(機器翻譯\)。
+如需詳細資訊，請參閱[部署 iOS/iPadOS 與 Android 版 Outlook 應用程式組態設定](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/outlook-for-ios-and-android/outlook-for-ios-and-android-configuration-with-microsoft-intune) \(英文\)。
 
 ## <a name="when-to-use-intune-app"></a>使用 Intune APP 的時機
 

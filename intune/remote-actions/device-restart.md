@@ -1,6 +1,6 @@
 ---
 title: 使用 Microsoft Intune 重新啟動裝置 - Azure | Micrososft Docs
-description: 在 Azure 入口網站中使用 [重新啟動] 遠端動作，重新啟動使用 Microsoft Intune 的 Windows 和 iOS 裝置。
+description: 在 Azure 入口網站中使用 [重新啟動] 遠端動作，重新啟動使用 Microsoft Intune 的 Windows 和 iOS/iPadOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 82ebf35d0eb435f2df4e6cf55274808e6fa690f4
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: 54fa0f796e96a2487793197cbbbe548fd8490856
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517536"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415625"
 ---
 # <a name="remotely-restart-devices-with-intune"></a>使用 Intune 從遠端重新啟動裝置
 
@@ -35,10 +35,10 @@ ms.locfileid: "76517536"
 - Windows - 支援 Windows 8.1 和更新版本
 - Windows Phone - 支援 Windows Phone 8.1 和更新版本
 - Android Kiosk 裝置 - Android 7.0 和更新版本上可支援
-- iOS - 支援
+- iOS/iPadOS - 支援
 
     > [!Note]  
-    > 此命令需要受監督的裝置和**裝置鎖定**存取權限。 裝置隨即重新啟動。 以密碼鎖定的 iOS 裝置在重新啟動之後，不會重新加入 Wi-Fi 網路。 重新啟動之後，裝置可能無法與伺服器通訊。
+    > 此命令需要受監督的裝置和**裝置鎖定**存取權限。 裝置隨即重新啟動。 以密碼鎖定的 iOS/iPadOS 裝置在重新啟動之後，不會重新加入 Wi-Fi 網路。 重新啟動之後，裝置可能無法與伺服器通訊。
 - macOS - 不支援
 - Android 和 Android 工作設定檔裝置 - 不支援
 

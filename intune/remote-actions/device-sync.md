@@ -16,17 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1001a7a3fde9c203fdad3d146ace57736ae7128d
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 21167b226556100e7e9920f31f859d6d6ce2a7bb
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73713443"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415536"
 ---
 # <a name="sync-devices-to-get-the-latest-policies-and-actions-with-intune"></a>使用 Intune 同步裝置以取得最新的原則和動作
 
 
-[同步]  裝置動作會強制所選裝置立即使用 Intune 簽入。 當裝置簽入時，會立即收到所有擱置動作或已指派給它的原則。 這項功能可協助您立即驗證和針對您已指派的原則進行疑難排解，不用等到下次排程的簽入。
+**同步**裝置動作會強制所選取的裝置立即使用 Intune 簽入。 當裝置簽入時，會立即收到所有擱置動作或已指派給它的原則。 這項功能可協助您立即驗證和針對您已指派的原則進行疑難排解，不用等到下次排程的簽入。
 
 ## <a name="supported-platforms"></a>支援的平台
 
@@ -38,7 +38,7 @@ ms.locfileid: "73713443"
 
 ## <a name="sync-a-device"></a>同步處理裝置
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
 3. 選取 [裝置]   > [所有裝置]  。
 4. 在您管理的裝置清單中，選取裝置以開啟 [概觀]  窗格，然後選取 [同步處理]  。
 5. 選取 [是]  確認。
@@ -49,7 +49,7 @@ ms.locfileid: "73713443"
 
 ## <a name="retryable-error-codes"></a>可重試的錯誤碼
 
-當系統管理員執行 [同步處理]  裝置動作時，失敗但引發可重試錯誤碼的 iOS 和 Androids 應用程式將提供給裝置使用。 不過，引發不可重試錯誤碼的應用程式必須等候七天，才能提供給裝置使用。
+當系統管理員執行 [同步處理]  裝置動作時，失敗但引發可重試錯誤碼的 iOS/iPadOS 和 Android 應用程式將提供給裝置使用。 不過，引發不可重試錯誤碼的應用程式必須等候七天，才能提供給裝置使用。
 
 
 | 錯誤碼  | 建議的描述 | 可重試 |

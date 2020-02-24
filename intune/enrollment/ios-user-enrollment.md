@@ -1,7 +1,7 @@
 ---
-title: 註冊 iOS 裝置 - 使用者註冊
+title: 註冊 iOS/iPadOS 裝置 - 使用者註冊
 titleSuffix: Microsoft Intune
-description: 了解如何設定 iOS 與 iPadOS 使用者註冊。
+description: 了解如何設定 iOS/iPadOS 與 iPadOS 使用者註冊。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0872eef38e3ea5a70ebb64d3ae3c62069045fa97
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: d22d8d4772754fddbd366610402d64acc28ffc65
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754609"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415256"
 ---
-# <a name="set-up-ios-and-ipados-user-enrollment-preview"></a>設定 iOS 與 iPadOS 使用者註冊 (預覽)
+# <a name="set-up-iosipados-and-ipados-user-enrollment-preview"></a>設定 iOS/iPadOS 與 iPadOS 使用者註冊 (預覽)
 
-您可以設定 Intune 使用 Apple 的使用者註冊程序，以註冊 iOS 與 iPadOS 裝置。 相較於其他註冊方法，使用者註冊會提供一組簡單好用的管理選項子集給管理員。
+您可以設定 Intune 使用 Apple 的使用者註冊程序來註冊 iOS/iPadOS 與 iPadOS 裝置。 相較於其他註冊方法，使用者註冊會提供一組簡單好用的管理選項子集給管理員。
 
 如需有關使用者註冊中提供哪些選項的詳細資訊，請參閱[使用者註冊支援的動作、密碼和其他選項](ios-user-enrollment-supported-actions.md)。
 
@@ -43,7 +43,7 @@ ms.locfileid: "76754609"
 
 註冊設定檔會定義要在註冊期間套用至裝置群組的設定。 
 
-1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [註冊類型 (預覽)]   > [建立設定檔]   > [iOS/iPadOS]  。 您可以使用此設定檔指出您的 iOS 和 iPadOS 終端使用者將會在非透過公司 Apple 方法註冊的裝置上擁有哪些註冊體驗。 如果您想要變更，可以在建立設定檔之後加以編輯。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [iOS]   > [iOS 註冊]   > [註冊類型 (預覽)]   > [建立設定檔]   > [iOS/iPadOS]  。 您可以使用此設定檔指出您的 iOS/iPadOS 與 iPadOS 終端使用者將會在非透過公司 Apple 方法註冊的裝置上擁有哪些註冊體驗。 如果您想要變更，可以在建立設定檔之後加以編輯。
 
     ![建立 Apple 註冊設定檔](./media/ios-user-enrollment/create-profile.png)
 
@@ -60,7 +60,7 @@ ms.locfileid: "76754609"
 
     - **裝置註冊**：此設定檔中的所有使用者都將使用 [裝置註冊]。
     - **使用者註冊**：此設定檔中的所有使用者都將使用 [使用者註冊]。
-    - **根據使用者的選擇來決定**：此群組中的所有使用者都可以選擇要使用的註冊類型。 當使用者註冊其裝置時，他們會看到可選擇 [我擁有此裝置]  或 [(公司) 擁有此裝置]  的選項。 如果選擇後者，就會使用裝置註冊來註冊裝置。 如果使用者選擇 [我擁有此裝置]  ，系統將會提供另一個選項，讓他們選擇要保護整部裝置，或只保護工作相關的應用程式與資料。 終端使用者選擇是否擁有裝置的動作會決定要在其裝置上實作的註冊類型。 Intune 中的「裝置擁有權」屬性也會反映這個使用者選擇項目。 如需要使用者體驗相關詳細資訊，請參閱[設定 iOS 裝置對公司資源的存取](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) \(部分機器翻譯\)。
+    - **根據使用者的選擇來決定**：此群組中的所有使用者都可以選擇要使用的註冊類型。 當使用者註冊其裝置時，他們會看到可選擇 [我擁有此裝置]  或 [(公司) 擁有此裝置]  的選項。 如果選擇後者，就會使用裝置註冊來註冊裝置。 如果使用者選擇 [我擁有此裝置]  ，系統將會提供另一個選項，讓他們選擇要保護整部裝置，或只保護工作相關的應用程式與資料。 終端使用者選擇是否擁有裝置的動作會決定要在其裝置上實作的註冊類型。 Intune 中的「裝置擁有權」屬性也會反映這個使用者選擇項目。 若要深入了解使用者體驗，請參閱[設定 iOS/iPadOS 裝置對公司資源的存取](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-ios) \(英文\)。
     
 5. 選取 [下一步]  。
 

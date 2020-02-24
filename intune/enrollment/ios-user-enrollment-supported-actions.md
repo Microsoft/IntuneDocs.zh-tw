@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/2/2019
+ms.date: 2/14/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e23e582a853f0b424296d8fb42f6c7d8fdd2984c
-ms.sourcegitcommit: 0d9e1452fcf5f15a80230838f80a427b9951cdb1
+ms.openlocfilehash: 9c6fb7da3a791d369fc3005367ee7670af8bc63e
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2019
-ms.locfileid: "75324860"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414137"
 ---
 # <a name="intune-actions-and-options-supported-with-apple-user-enrollment"></a>Apple 使用者註冊支援的 Intune 動作與選項
 
 使用者註冊支援一組裝置管理選項的子集。 如果將預先存在的設定檔套用至使用者註冊裝置，只會將使用者註冊支援的設定套用到該裝置。
 
 > [!NOTE]
-> Intune 中對 Apple 使用者註冊的支援目前為預覽狀態。
+> Intune 中適用於 iOS 和 iPadOS 的 Apple 使用者註冊支援目前為預覽狀態。
 
 ## <a name="password-settings"></a>密碼設定
 
@@ -107,19 +107,15 @@ ms.locfileid: "75324860"
 - 應用程式保護原則仍然會套用到這些應用程式。 不過，您將無法接管管理或部署這些應用程式的受控版本，除非使用者從裝置上刪除它們。
 - 需要監督的動作、設定、設定和命令。 
 
-## <a name="options-not-supported-in-preview"></a>預覽中不支援的選項
-- 允許/封鎖個人擁有的裝置的註冊裝置類型限制 
 
 ## <a name="known-issues-in-preview"></a>預覽中的已知問題
 - VPP 授權撤銷：已撤銷授權的通知未出現。 目前的行為是撤銷成功，但不會通知終端使用者。 
 - VPP 應用程式報告：在位於 [用戶端應用程式] > [應用程式] > [應用程式名稱] > [裝置安裝狀態] 的報告中，部署到使用者註冊裝置的 VPP 應用程式會回報為「失敗」，即使應用程式成功部署至裝置也是一樣。 
 - 應用程式報告：針對使用者註冊不支援的應用程式類型，報告可能會提供不相關的錯誤訊息。 
 - 公司入口網站應用程式體驗：使用者會看到所有以其為目標的應用程式，不論使用者註冊的裝置是否支援那些應用程式類型。 
-- 公司入口網站應用程式體驗：使用者會看到相同的文字，指出哪些組織可以查看和無法查看使用者和裝置註冊。
-- 如果使用者在註冊期間選取 [我的組織擁有此裝置]，除非在管理主控台內修改或透過圖形進行修改，否則裝置在 Intune 中仍會識別為 [個人]。 
-- 註冊目標：iPadOS 未列在平台選取器中。 iPadOS 在預覽中受到支援，但未在管理主控台中明確說明。 
+- 公司入口網站應用程式體驗：如果系統管理員已經自訂文字指出組織無法查看哪些項目，使用者會看到相同的文字，指出組織可以查看使用者和裝置註冊的哪些項目。
 
 
 ## <a name="next-steps"></a>後續步驟
 
-[設定 iOS 與 iPadOS 使用者註冊](ios-user-enrollment.md)
+[設定 iOS/iPadOS 與 iPadOS 使用者註冊](ios-user-enrollment.md)

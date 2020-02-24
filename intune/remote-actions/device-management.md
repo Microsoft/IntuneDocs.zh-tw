@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dde69fc70522684193f9cf6712a2192f77110dab
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754247"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413780"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
@@ -36,7 +36,7 @@ ms.locfileid: "76754247"
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選取 [裝置]  。 此檢視會顯示有關個別裝置的詳細資訊，以及它們各有哪些功能，包括：
 
-   - [概觀]  會顯示已註冊裝置的視覺化快照集，也會顯示有多少裝置使用不同的平台，包括 Android、iOS 等。
+   - [概觀]  會顯示已註冊裝置的視覺化快照集，也會顯示有多少裝置使用不同的平台，包括 Android、iOS/iPadOS 等。
    - [所有裝置]  會顯示您所管理的已註冊裝置清單。
 
      使用 [匯出]  功能來建立所有裝置的 .csv 清單，增量單位為 10,000 (Internet Explorer) 或 30,000 (Microsoft Edge、Chrome)。
@@ -70,7 +70,7 @@ ms.locfileid: "76754247"
   - [Android 遠端控制](teamviewer-support.md)
   - [同步裝置](device-sync.md)
   - [重新命名裝置](device-rename.md)
-  - [傳送自訂通知](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android、iOS)
+  - [傳送自訂通知](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android、iOS/iPadOS)
   - [BitLocker 金鑰輪替](../protect/encrypt-devices.md#rotate-bitlocker-recovery-keys) (僅限 Windows)
 
 ## <a name="next-steps"></a>後續步驟

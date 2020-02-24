@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0f5ee9a0fe27c3cf9de758fd7155dbd127fb1e5e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 11b339a3e94e60db43e8237d9f3d2c729b48a57d
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73712225"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77413618"
 ---
 # <a name="rename-a-device-in-intune"></a>在 Intune 中重新命名裝置
 
@@ -29,14 +29,14 @@ ms.locfileid: "73712225"
 
 您可以重新命名下列類型的裝置：
 - 公司擁有的 Windows 
-- 受 iOS 監督
+- iOS/iPadOS 受監管
 - 公司擁有的 MacOS 10
 
 這項功能目前不支援重新命名混合式 Azure AD Windows 裝置。
 
 ## <a name="rename-a-device"></a>重新命名裝置
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 3. 選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [更多]   > [重新命名裝置]  。
 4. 在 [重新命名裝置]  刀鋒視窗中，於文字方塊中輸入新名稱。 您可以使用字母、數字和連字號。 名稱必須包含至少一個字母或連字號。
 5. 如果要讓裝置在重新命名之後重新啟動，請選擇 [重新命名後重新啟動]  旁邊的 [是]  。

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06c1119b474d82c4d00db3276179b962ff5b5a44
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 4301afca471d0aa56fa1a0826ad7f88bcdf23de2
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755556"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414876"
 ---
 # <a name="add-app-configuration-policies-for-managed-apps-without-device-enrollment"></a>在不註冊裝置的情況下新增受管理應用程式的應用程式設定原則
 
@@ -41,7 +41,7 @@ ms.locfileid: "76755556"
 5. 按一下 [下一步]  以顯示 [設定]  頁面。
 6. 對於應用程式支援的每個組態設定，請輸入 [名稱]  和 [值]  。 
 
-   啟用 Intune App SDK 的應用程式支援機碼值組中的設定。 請參閱每個應用程式的文件，以深入了解支援的機碼值設定。 請注意，您可以使用會動態填入應用程式所產生資料的權杖。 如需詳細資訊，請參閱[使用權杖的設定值](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens)。 如需適用於 iOS 的 Outlook 應用程式設定原則設定的詳細資訊，請參閱[使用 Microsoft Intune 管理適用於 iOS 的 Outlook 應用程式](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx) \(機器翻譯\)。
+   啟用 Intune App SDK 的應用程式支援機碼值組中的設定。 請參閱每個應用程式的文件，以深入了解支援的機碼值設定。 請注意，您可以使用會動態填入應用程式所產生資料的權杖。 如需詳細資訊，請參閱[使用權杖的設定值](~/apps/app-configuration-policies-managed-app.md#configuration-values-for-using-tokens)。 如需 iOS/iPadOS 版 Outlook 應用程式設定原則設定的相關資訊，請參閱[使用 Microsoft Intune 管理 iOS/iPadOS 版 Outlook 應用程式設定](https://technet.microsoft.com/library/mt813789(v=exchg.150).aspx) \(部分機器翻譯\)。
 
     若要刪除設定，請選擇省略符號 ( **...** )，然後選取 [刪除]  。  
 

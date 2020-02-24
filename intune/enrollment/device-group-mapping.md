@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8ee8bc3cdee9f61a901854e08000e9e2cbbb2864
-ms.sourcegitcommit: e75718ee6cf93c0e6c915f2776b785fe8db9f7e0
+ms.openlocfilehash: f0976ff8e6ec45f1f861fd4a4e0474255d701ae4
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2019
-ms.locfileid: "74955366"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77414251"
 ---
 # <a name="categorize-devices-into-groups"></a>將裝置分類成群組
 
@@ -32,7 +32,7 @@ ms.locfileid: "74955366"
 
 裝置類別使用下列工作流程︰
 1. 建立使用者註冊其裝置時可從中選擇的類別。
-2. 當 iOS 和 Android 裝置的使用者註冊裝置時，他們必須從您設定的類別清單中選擇一個類別。 若要將類別指派給 Windows 裝置，使用者必須使用公司入口網站。
+2. 當 iOS/iPadOS 與 Android 裝置的使用者註冊裝置時，他們必須從您設定的類別清單中選擇一個類別。 若要將類別指派給 Windows 裝置，使用者必須使用公司入口網站。
 3. 您接著可以將原則和應用程式部署至這些群組。
 
 您可以建立想要的任何裝置類別。 例如：
@@ -76,13 +76,13 @@ ms.locfileid: "74955366"
 
 ## <a name="after-you-configure-device-groups"></a>設定裝置群組之後
 
-當 iOS 和 Android 裝置的使用者註冊其裝置時，他們必須從您設定的類別清單中選擇一個類別。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Intune 裝置群組或 Active Directory 安全性群組。
+當 iOS/iPadOS 與 Android 裝置的使用者註冊其裝置時，他們必須從您設定的類別清單中選擇一個類別。 選擇類別並完成註冊之後，他們的裝置會新增至與其所選類別相對應的 Intune 裝置群組或 Active Directory 安全性群組。
 
 Windows 使用者應該使用公司入口網站來選取類別。
 
 無論何種平台，您的使用者一律都可在註冊裝置後，前往 portal.manage.microsoft.com。 請讓使用者存取公司入口網站，然後移至 [我的裝置]  。 使用者可以選擇該頁面上所列的已註冊裝置，然後選取類別。
 
-選擇類別之後，裝置就會自動新增至您建立的對應群組。 如果某個裝置在您設定類別之前便已經註冊，使用者就會在公司入口網站上看到該裝置的相關通知。 這可讓使用者知道下次在 iOS 或 Android 上存取公司入口網站應用程式時，要選取一個類別。
+選擇類別之後，裝置就會自動新增至您建立的對應群組。 如果某個裝置在您設定類別之前便已經註冊，使用者就會在公司入口網站上看到該裝置的相關通知。 這可讓使用者知道下次在 iOS/iPadOS 或 Android 上存取公司入口網站應用程式時，要選取一個類別。
 
 ## <a name="further-information"></a>進一步資訊
 - 您可以在 Azure 入口網站中編輯裝置類別，但是必須手動更新所有參考此類別的 Azure AD 安全性群組。
