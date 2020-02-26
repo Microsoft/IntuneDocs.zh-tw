@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c81fa9b521b0d950fb69c29f7625981e709863d
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7945f1df3ddf1a6ff2c42a537e1071d1b5acff24
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76916106"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514263"
 ---
 # <a name="troubleshoot-device-to-ndes-server-communication-for-scep-certificate-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中針對 SCEP 憑證設定檔的裝置對 NDES 伺服器通訊進行疑難排解
 
@@ -89,9 +89,9 @@ fe80::f53d:89b8:c3e8:5fec%13 GET /certsrv/mscep/mscep.dll operation=GetCACaps&me
 fe80::f53d:89b8:c3e8:5fec%13 Dalvik/2.1.0+(Linux;+U;+Android+5.0;+P01M+Build/LRX21V) - 200 0 0 421 
 ```
 
-### <a name="ios-and-ipados-devices"></a>iOS 和 iPadOS 裝置
+### <a name="iosipados-devices"></a>iOS/iPadOS 裝置
 
-請檢閱[裝置偵錯記錄](troubleshoot-scep-certificate-profiles.md#logs-for-ios-and-ipados-devices)。 尋找與下列類似的項目，這些項目會在裝置連線至 NDES 時記錄：
+檢閱[裝置偵錯記錄](troubleshoot-scep-certificate-profiles.md#logs-for-ios-and-ipados-devices)。 尋找與下列類似的項目，這些項目會在裝置連線至 NDES 時記錄：
 
 ```
 debug    18:30:53.691033 -0500    profiled    Performing synchronous URL request: https://<server>-contoso.msappproxy.net/certsrv/mscep/mscep.dll?operation=GetCACert&message=SCEP%20Authority\ 

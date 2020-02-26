@@ -7,12 +7,12 @@ ms.topic: include
 ms.date: 11/19/2019
 ms.author: erikje
 ms.custom: include file
-ms.openlocfilehash: f23d81ddb07fcafb198cd725781747b61a3b73ea
-ms.sourcegitcommit: 67f926ba83f8a955e16b741a610ad84d6044f8f9
+ms.openlocfilehash: 373aeea9ab4fcbd075ac2ab18f205f3ddd191a39
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/21/2020
-ms.locfileid: "77529325"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609291"
 ---
 這些注意事項提供可協助您針對未來的 Intune 變更與功能進行準備的重要資訊。
 
@@ -84,7 +84,7 @@ https://helpx.adobe.com/acrobat/kb/intune-app-end-of-life.html
 
 [深入了解](https://go.microsoft.com/fwlink/?linkid=2107122)
 
-### <a name="decreasing-support-for-android-device-administrator"></a>減少 Android 裝置系統管理員的支援 
+### <a name="decreasing-support-for-android-device-administrator--5857738--"></a>減少 Android 裝置系統管理員的支援<!--5857738-->
 Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Android 2.2 發行)，是一種管理 Android 裝置的方式。 不過，您現在可以在 [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) \(隨 Android 5.0 發行\) 中找到已改善的管理功能。 為了要移到現代化、更豐富且更安全的裝置管理，Google 在新的 Android 版本中減少了裝置系統管理員的支援。
 
 #### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
@@ -108,24 +108,5 @@ Android 裝置系統管理員 (有時稱為「舊版」Android 管理，隨 Andr
 - [Google's guidance for migration from device administrator to Android Enterprise](http://static.googleusercontent.com/media/android.com/en/enterprise/static/2016/pdfs/enterprise/Android-Enterprise-Migration-Bluebook_2019.pdf) (Google 指南：從裝置系統管理員移轉到 Android Enterprise)
 - [Google's documentation on the plan to deprecate the device administrator API](https://developers.google.com/android/work/device-admin-deprecation) (Google 文件：裝置系統管理員 API 淘汰因應措施)
 
-### <a name="plan-for-change-intune-app-sdk-and-app-protection-policies-for-android-moving-to-support-android-50-and-higher-in-an-upcoming-release---4911065---"></a>規劃變更：適用於 Android 的 Intune App SDK 與應用程式保護原則會在即將推出的版本中開始支援 Android 5.0 與更新版本 <!--4911065 -->
-Intune 將會在即將推出的版本中開始支援 Android 5.x (Lollipop) 與更新版本。 使用最新的 Intune App SDK 更新任何已包裝的應用程式，並更新您的裝置。
-
-#### <a name="how-does-this-affect-me"></a>此變更會對我造成什麼影響？
-如果您使用的不是或不打算使用 Android 版 SDK 或應用程式，則此變更不會影響您。 若您使用 Intune App SDK，請務必更新至最新版本，並一併將您的裝置更新為 Android 5.x 與更高版本。 若不更新，則應用程式就不會收到更新，且其體驗品質會隨著時間而降低。
-
-在下面尋找執行 Android 4.x 版且在 Intune 中註冊的通用裝置清單。 若您有這類裝置，請採取適當步驟，以確定此裝置將支援 Android 5.0 版或更高版本，否則它會被支援 Android 5.0 版或更新版本的裝置所取代。 此清單並未包含所有可能需要評估的裝置：
-
-- Samsung SM-T561  
-- Samsung SM-T365
-- Samsung GT-I9195
-- Samsung SM-G800F
-- Samsung SM-G357FZ
-- Motorola XT1080
-- Samsung GT-I9305
-- Samsung SM-T231
-
-#### <a name="what-do-i-need-to-do-to-prepare-for-this-change"></a>我需要為這項變更做什麼準備？
-使用最新的 Intune App SDK 包裝您的應用程式。 您也可以設定 [需要最低 OS 版本 (僅警告)] 條件式啟動設定，以通知個人裝置的終端使用者進行升級。
 
 
