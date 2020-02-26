@@ -113,3 +113,5 @@
           href: troubleshoot-ios-enrollment-errors.md
         - name: 針對 Windows 裝置註冊進行疑難排解
           href: troubleshoot-windows-enrollment-errors.md
+        - name: 針對 Android 裝置註冊進行疑難排解
+          href: troubleshoot-android-enrollment.md

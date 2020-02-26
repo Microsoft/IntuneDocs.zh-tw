@@ -39,6 +39,8 @@
   items:
     - name: 什麼是 Intune 教育版？
       href: introduction-intune-education.md
+    - name: 什麼是適用於美國政府的 Intune？
+      href: introduction-intune-government.md
     - name: 高階架構
       href: high-level-architecture.md
     - name: 裝置生命週期
