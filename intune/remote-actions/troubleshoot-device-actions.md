@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7d4517d89e3b7365834e904c815b30a362540906
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
-ms.translationtype: MTE75
+ms.openlocfilehash: 545f287e8b7ee82e2008f239171b22e01714b8c7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755590"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514739"
 ---
 # <a name="troubleshoot-device-actions-in-intune"></a>針對 Intune 中的裝置動作進行疑難排解
 
@@ -34,7 +34,7 @@ Microsoft Intune 有許多動作可協助您管理裝置。 此文章提供一�
 ### <a name="i-clicked-the-disable-activation-lock-action-in-the-portal-but-nothing-happened-on-the-device"></a>我在入口網站中按一下 [停用啟用鎖定] 動作，但是裝置上沒有發生任何事。
 這是預期的結果。 開始 [停用啟用鎖定] 動作之後，Intune 會向 Apple 要求更新的代碼。 您會在裝置位於 [啟用鎖定] 畫面之後，手動在 [密碼] 欄位中輸入代碼。 此代碼只在 15 天內有效，因此請務必按一下動作並複製代碼，然後再發出 [抹除]。
 
-### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-ios-device"></a>為什麼我在 iOS 裝置的 [硬體概觀] 刀鋒視窗中看不到 [停用啟用鎖定] 代碼？
+### <a name="why-dont-i-see-the-disable-activation-lock-code-in-the-hardware-overview-blade-of-my-iosipados-device"></a>為什麼我在 iOS/iPadOS 裝置的 [硬體概觀] 刀鋒視窗中看不到 [停用啟用鎖定] 代碼？
 最可能的原因包括：
 - 代碼已過期，並已從服務中清除。
 - 裝置不受裝置限制原則的監督，而無法允許啟用鎖定。
@@ -43,7 +43,7 @@ Microsoft Intune 有許多動作可協助您管理裝置。 此文章提供一�
 
 ```GET - https://graph.microsoft.com/beta/deviceManagement/manageddevices('deviceId')?$select=activationLockBypassCode.```
 
-### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-ios-device"></a>為什麼我的 iOS 裝置的 [停用啟用鎖定] 動作呈現灰色？
+### <a name="why-is-the-disable-activation-lock-action-greyed-out-for-my-iosipados-device"></a>為什麼我的 iOS/iPadOS 裝置的 [停用啟用鎖定] 動作呈現灰色？
 最可能的原因包括： 
 - 代碼已過期，並已從服務中清除。
 - 裝置不受裝置限制原則的監督，而無法允許啟用鎖定。
@@ -90,8 +90,22 @@ Microsoft Intune 有許多動作可協助您管理裝置。 此文章提供一�
 3. 使用者必須接受允許重設密碼的第二個提示。
 完成這些步驟之後，您應該就不會再收到此回應。
 
-### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-ios-device-when-i-issue-the-remove-passcode-action"></a>當我發出 [移除密碼] 動作時，為什麼會提示我在 iOS 裝置上設定新密碼？
+### <a name="why-am-i-prompted-to-set-a-new-passcode-on-my-iosipados-device-when-i-issue-the-remove-passcode-action"></a>當我發出 [移除密碼] 動作時，為什麼會提示我在 iOS/iPadOS 裝置上設定新密碼？
 因為其中一個合規性原則需要密碼。
+
+
+## <a name="wipe-action"></a>抹除動作
+
+### <a name="i-cant-restart-a-windows-10-device-after-using-the-wipe-action"></a>我無法在使用抹除動作之後重新啟動 Windows 10 裝置
+這可能是因為您選擇 [抹除裝置，即使裝置斷電，仍繼續抹除]  。如果您選取此選項，請注意，這可能會導致某些 Windows 10 裝置無法再次啟動。 在 Windows 10 裝置上。
+
+這可能是因為 Windows 的安裝具有重大損毀，導致作業系統無法重新安裝所致。 在這種情況下，程序會失敗，並使系統處於 [Windows 修復環境]( https://docs.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference) \(部分機器翻譯\)。
+
+### <a name="i-cant-restart-a-bitlocker-encrypted-device-after-using-the-wipe-action"></a>我無法在使用抹除動作之後重新啟動 BitLocker 加密裝置
+這可能是因為您選擇 [抹除裝置，即使裝置斷電，仍繼續抹除]  。如果您選取此選項，請注意，這可能會導致某些 Windows 10 裝置無法再次啟動。 在 BitLocker 加密裝置上的選項。
+
+若要解決此問題，請使用可開機媒體在裝置上重新安裝 Windows 10。
+
 
 ## <a name="next-steps"></a>後續步驟
 

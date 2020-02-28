@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fb67cf2cb17b78c4034c3b73e229e160723d975e
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a4fdbf7ca252af9eb8513d437e3275692a1f8d13
+ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414400"
+ms.lasthandoff: 02/17/2020
+ms.locfileid: "77415247"
 ---
 # <a name="manage-windows-pcs-as-computers-via-intune-software-client"></a>透過 Intune 軟體用戶端將 Windows 電腦做為電腦管理
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414400"
 > [!WARNING]
 > Microsoft 宣告 [Windows 7 支援將於 2020 年 1 月 14 日結束](https://support.microsoft.com/help/4057281/windows-7-support-will-end-on-january-14-2020)。 在這一天，Intune 也會淘汰執行 Windows 7 的裝置支援。 Microsoft 強烈建議您移至 Windows 10，以防止任何服務或支援中斷。
 > 
-> 如需詳細資訊，請參閱 [Intune 規劃變更：即將結束對 Windows 7 的支援](../fundamentals/whats-new.md#intune-plan-for-change-nearing-end-of-support-for-windows-7)。
+> 如需詳細資訊，請參閱[規劃變更部落格文章](https://aka.ms/Windows7_Intune) \(英文\)。
 
 > [!NOTE]
 > 您可以使用 Microsoft Intune 來管理 Windows 電腦，[其方式包括使用行動裝置管理 (MDM) 作為行動裝置來管理](../enrollment/windows-enroll.md)，或使用 Intune 軟體用戶端作為電腦來管理，如下所述。 不過，Microsoft 建議客戶如有可能盡量[使用 MDM 管理解決方案](../enrollment/windows-enroll.md)。 如需詳細資訊，請參閱[比較作為電腦或行動裝置來管理 Windows 電腦](pc-management-comparison.md) 
@@ -49,7 +49,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 **硬體**：  
 以下列出安裝 Intune 用戶端軟體的最低硬體需求：
 
-|需求|詳細資訊|
+|需求|更多資訊|
 |---------------|--------------------|
 |Network (網路)|用戶端要求電腦必須具有網際網路連線。|
 |處理器和記憶體|請參考電腦作業系統的處理器和 RAM 需求。|
@@ -58,7 +58,7 @@ Intune 使用軟體用戶端最多可支援將 7,000 部 Windows 電腦做為電
 **軟體**：  
 下表列出安裝用戶端軟體的軟體需求：
 
-|需求|詳細資訊|
+|需求|更多資訊|
 |---------------|--------------------|
 |作業系統 | 執行 Windows 7 SP1 與 Windows 8.1 或更新版本的 Windows 裝置。 </br></br>**不支援家用版本。**|
 |系統管理權限|安裝用戶端軟體的帳戶必須擁有該裝置的本機系統管理員權限。|

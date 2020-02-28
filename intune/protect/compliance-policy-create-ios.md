@@ -1,6 +1,6 @@
 ---
-title: Microsoft Intune 中的 iOS 裝置相容性設定 - Azure | Microsoft Docs
-description: 查看您在 Microsoft Intune 中為 iOS 裝置設定相容性時可使用的所有設定清單。 要求電子郵件、檢查越獄或經破解的裝置、設定所允許的最低及最高作業系統、設定任何密碼限制，包括密碼長度和裝置的非使用狀態、限制應用程式等。
+title: Microsoft Intune 中的 iOS/iPadOS 裝置合規性設定 - Azure | Microsoft Docs
+description: 查看您在 Microsoft Intune 中為 iOS/iPadOS 裝置設定合規性時可使用的所有設定清單。 要求電子郵件、檢查越獄或經破解的裝置、設定所允許的最低及最高作業系統、設定任何密碼限制，包括密碼長度和裝置的非使用狀態、限制應用程式等。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,16 +17,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e9bcfed67eda96bb4d79317bcc69d21a5f8197bc
-ms.sourcegitcommit: 2b905913840d4133a7964fe4f54a58ea6e421e12
-ms.translationtype: MTE75
+ms.openlocfilehash: 437673878335b04b76c53b13f18acac32213720a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/07/2020
-ms.locfileid: "77074626"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514025"
 ---
-# <a name="ios-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune，透過 iOS 設定將裝置標示為相容或不相容
+# <a name="iosipados-settings-to-mark-devices-as-compliant-or-not-compliant-using-intune"></a>使用 Intune 用來將裝置標示為符合規範或不符合規範的 iOS/iPadOS 設定
 
-本文列出及描述您可在 Intune 中 iOS 裝置上設定的不同相容性設定。 作為您行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來要求電子郵件、將經破解 (越獄) 的裝置標示為不相容、設定允許的威脅等級、設定要過期的密碼等。
+本文列出及描述您可在 Intune 中於 iOS/iPadOS 裝置上設定的不同合規性設定。 作為您行動裝置管理 (MDM) 解決方案的一部分，請使用這些設定來要求電子郵件、將經破解 (越獄) 的裝置標示為不相容、設定允許的威脅等級、設定要過期的密碼等。
 
 本功能適用於：
 
@@ -86,11 +86,11 @@ ms.locfileid: "77074626"
 ### <a name="password"></a>密碼
 
 > [!NOTE]
-> 將相容性或設定原則套用至 iOS 裝置之後，系統每 15 分鐘會提示使用者設定密碼。 在設定密碼之前，使用者會一直收到系統提示。 設定好 iOS 裝置的密碼時，加密程式會自動啟動。 裝置會保持加密，直到停用密碼為止。
+> 將合規性或設定原則套用至 iOS/iPadOS 裝置之後，系統每 15 分鐘會提示使用者設定密碼。 在設定密碼之前，使用者會一直收到系統提示。 設定好 iOS/iPadOS 裝置的密碼時，加密程序會自動啟動。 裝置會保持加密，直到停用密碼為止。
 
 - **需要密碼來解除鎖定行動裝置**：  
   - [未設定]  (預設  ) - 不會評估此設定是否符合規範。  
-  - [需要]  - 使用者必須輸入密碼，才能存取其裝置。 使用密碼的 iOS 裝置會予以加密。
+  - [需要]  - 使用者必須輸入密碼，才能存取其裝置。 會加密使用密碼的 iOS/iPadOS 裝置。
 
 - **簡單密碼**：  
   - [未設定]  (預設)  - 使用者可以建立簡單密碼，例如 **1234** 或 **1111**。
@@ -125,7 +125,7 @@ ms.locfileid: "77074626"
   您可以透過將應用程式的套件組合識別碼新增至原則，來限制應用程式。 若裝置安裝了應用程式，則將裝置標示為不相容。
 
   - [應用程式名稱]  - 輸入使用者易記的名稱來協助您識別套件組合識別碼。
-  - [應用程式套件組合識別碼]  - 輸入應用程式提供者指派的唯一套件組合識別碼。 若要尋找套件組合識別碼，請參閱 [How to find the bundle ID for an iOS app](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (如何尋找 iOS 應用程式的套件組合識別碼) (開啟另一個 Microsoft 網站)。  
+  - [應用程式套件組合識別碼]  - 輸入應用程式提供者指派的唯一套件組合識別碼。 若要尋找套件組合識別碼，請參閱[如何尋找 iOS/iPadOS 應用程式的套件組合識別碼](https://support.microsoft.com/help/4294074/how-to-find-the-bundle-id-for-an-ios-app) (開啟另一個 Microsoft 網站)。  
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -1,7 +1,7 @@
 ---
-title: 適用於 iOS Classroom 應用程式的 Intune 設定
+title: 適用於 iOS/iPadOS Classroom 應用程式的 Intune 設定
 titleSuffix: Microsoft Intune
-description: 了解可用來控制 iOS 裝置上 Classroom 應用程式設定的 Intune 設定。
+description: 了解可用來控制 iOS/iPadOS 裝置上 Classroom 應用程式設定的 Intune 設定。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -18,17 +18,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6814b4d98b8512ce95119b05cc299964e486ac64
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 74b9e6818de2853ae22a1fa1bb580b32075dcf19
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784216"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514416"
 ---
-# <a name="how-to-configure-intune-settings-for-the-ios-classroom-app"></a>如何設定 iOS Classroom 應用程式的 Intune 設定
+# <a name="how-to-configure-intune-settings-for-the-iosipados-classroom-app"></a>如何設定 iOS/iPadOS Classroom 應用程式的 Intune 設定
 
 > [!NOTE]
-> Intune 目前不支援設定課堂應用程式。 此文章僅適用於在 Intune 中有現有 iOS 教育設定檔的使用者。  
+> Intune 目前不支援設定 Classroom 應用程式。 此文章僅適用於在 Intune 中有現有 iOS/iPadOS 教育設定檔的使用者。  
 
 ## <a name="introduction"></a>簡介
 [Classroom](https://itunes.apple.com/app/id1085319084) 應用程式可協助老師在課堂中引導學習，並控制學生的裝置。 例如，應用程式可讓老師：
@@ -39,7 +39,7 @@ ms.locfileid: "74784216"
 - 將學生的 iPad 導覽至一本書的書籤或章節
 - 將學生的 iPad 螢幕顯示到 Apple 電視上
 
-若要在裝置上設定教室，您必須建立及設定 Intune iOS 教育版裝置設定檔。
+若要在裝置上設定 Classroom，您必須建立及設定 Intune iOS/iPadOS 教育版裝置設定檔。
 
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
@@ -47,9 +47,9 @@ ms.locfileid: "74784216"
 
 - 老師和學生的 iPad 都必須在 Intune 中註冊。
 - 確認您已在老師的裝置上安裝 [Apple Classroom](https://itunes.apple.com/us/app/classroom/id1085319084?mt=8) 應用程式。 您可以手動或使用 [Intune 應用程式管理](../apps/app-management.md)安裝此應用程式。
-- 您必須設定憑證來驗證老師和學生所有裝置之間的連線 (請參閱步驟 2，在 Intune 中建立以及指派一個 iOS 教育版設計檔)。
+- 您必須設定憑證來驗證老師和學生裝置之間的連線 (請參閱步驟 2，在 Intune 中建立並指派 iOS/iPadOS 教育設定檔)。
 - 老師和學生的 iPad 必須連接相同的 Wi-Fi 網路，而且藍牙功能都開啟了。
-- Classroom 應用程式是在 iOS 9.3 或更新版本之受監督的 iPad 上執行。
+- Classroom 應用程式是在執行 iOS/iPadOS 9.3 或更新版本之受監督的 iPad 上執行。
 - 在此版本中，Intune 支援管理每個學生都有自己專用 iPad 的 1 對 1 案例。
 
 
@@ -72,7 +72,7 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 - [深入了解 Microsoft 學校資料同步處理](https://sds.microsoft.com/)
 - [深入了解 Azure Active Directory 中的授權](https://docs.microsoft.com/azure/active-directory/active-directory-licensing-whatis-azure-portal)
 
-## <a name="step-2---create-and-assign-an-ios-education-profile-in-intune"></a>步驟 2 - 在 Intune 中建立並指派 iOS 教育設定檔
+## <a name="step-2---create-and-assign-an-iosipados-education-profile-in-intune"></a>步驟 2 - 在 Intune 中建立並指派 iOS/iPadOS 教育設定檔
 
 ### <a name="configure-general-settings"></a>設定一般設定
 
@@ -80,7 +80,7 @@ SDS 會同步處理 SIS 的資訊，並將它儲存在 Azure AD 中。 Azure AD 
 3. 在 [Intune]  窗格中，選擇 [裝置設定]  。
 2. 在 [裝置設定]  窗格的 [管理]  區段下，選擇 [設定檔]  。
 5. 在 [設定檔] 窗格中，選擇 [建立設定檔]  。
-6. 在 [建立設定檔]  窗格中，輸入 iOS 教育設定檔的 [名稱]  和 [描述]  。
+6. 在 [建立設定檔]  窗格上，輸入 iOS/iPadOS 教育設定檔的 [名稱]  和 [描述]  。
 7. 從 [平台]  下拉式清單中，選擇 [iOS]  。
 8. 從 [設定檔類型]  下拉式清單中，選擇 [教育]  。
 9. 選擇 [設定]   >  [設定]  。

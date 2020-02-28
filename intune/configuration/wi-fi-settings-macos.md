@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a479bfa7b6a572ab2191fb651ce04145d8508c4b
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 8aa9fa9462b6278da566a3ff54264540144a38de
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206987"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512257"
 ---
 # <a name="add-wi-fi-settings-for-macos-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增適用於 macOS 裝置的 Wi-Fi 設定
-
-
 
 您可以建立含有特定 WiFi 設定的設定檔，然後將此設定檔部署到您的 macOS 裝置。 Microsoft Intune 提供許多功能，包括驗證您的網路、新增 PKS 或 SCEP 憑證等等。
 
@@ -38,7 +36,7 @@ ms.locfileid: "75206987"
 [建立裝置設定檔](device-profile-create.md)。
 
 > [!NOTE]
-> 這些設定適用于所有的註冊類型。 如需註冊類型的詳細資訊，請參閱[macOS 註冊](../enrollment/macos-enroll.md)。
+> 這些設定適用於所有註冊類型。 如需註冊類型的詳細資訊，請參閱 [macOS 註冊](../enrollment/macos-enroll.md)。
 
 ## <a name="basic-profiles"></a>基本設定檔
 
@@ -122,4 +120,4 @@ ms.locfileid: "75206987"
 
 設定檔已建立，但它不會執行任何動作。 接者，請[指派此設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-在[android](wi-fi-settings-android.md)、 [android Enterprise](wi-fi-settings-android-enterprise.md)、 [iOS](wi-fi-settings-ios.md)和[Windows 10](wi-fi-settings-windows.md)裝置上設定 wi-fi 設定。
+在 [Android](wi-fi-settings-android.md)、[Android Enterprise](wi-fi-settings-android-enterprise.md)、[iOS/iPadOS](wi-fi-settings-ios.md) 與 [Windows 10](wi-fi-settings-windows.md) 裝置上，設定 Wi-Fi 設定。

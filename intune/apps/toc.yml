@@ -13,6 +13,8 @@
       href: quickstart-create-assign-app-policy.md
 - name: 教學課程
   items:
+    - name: 保護受控裝置上的電子郵件
+      href: ../protect/tutorial-protect-email-on-enrolled-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: 保護非受控裝置上的電子郵件
       href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
     - name: 設定 Slack 為使用 Intune

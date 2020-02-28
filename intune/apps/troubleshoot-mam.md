@@ -17,16 +17,16 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 49bf59805476ebbcce3148738e40bfd11e4744eb
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
-ms.translationtype: MTE75
+ms.openlocfilehash: f5d5d62e1e05c8e29de1b5dba91647f2bfc3b186
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839320"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513328"
 ---
 # <a name="troubleshoot-mobile-application-management"></a>行動應用程式管理疑難排解
 
-本主題提供使用 Intune 應用程式防護（也稱為 MAM 或行動應用程式管理）時所發生常見問題的解決方案。
+此主題提供使用 Intune 應用程式防護 (也稱為 MAM 或行動應用程式管理) 時，所發生常見問題的解決方案。
 
 如果此資訊無法解決您的問題，請參閱[如何取得 Microsoft Intune 支援](../fundamentals/get-support.md)，以尋找更多方法來取得協助。
 
@@ -36,13 +36,13 @@ ms.locfileid: "75839320"
 
 | 問題 | 說明 | 解決方案 |
 | -- | -- | -- |
-| 原則未套用至商務用 Skype | 在 Azure 入口網站中設定的無裝置註冊應用程式保護原則，未套用至 iOS 和 Android 裝置上的商務用 Skype。 | 商務用 Skype 必須設定使用新式驗證。  請依照 [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (啟用租用戶的新式驗證) 中的指示，設定 Skype 的新式驗證。 |
+| 原則未套用至商務用 Skype | 在 Azure 入口網站中設定的無裝置註冊應用程式保護原則，未套用至 iOS/iPadOS 與 Android 裝置上的商務用 Skype。 | 商務用 Skype 必須設定使用新式驗證。  請依照 [Enable your tenant for modern authentication](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) (啟用租用戶的新式驗證) 中的指示，設定 Skype 的新式驗證。 |
 | 未套用 office 應用程式原則 | 應用程式保護原則不適用於任何使用者的任何[支援的 Office 應用程式](https://www.microsoft.com/cloud-platform/microsoft-intune-partners)。 | 確認使用者已獲得 Intune 授權，且部署的應用程式保護原則已將 Office 應用程式設為目標。 新部署的應用程式保護原則可能需要最多 8 小時才會套用。 |
 | 管理員無法在 Azure 入口網站中設定應用程式保護原則 | IT 系統管理員使用者無法在 Azure 入口網站中設定應用程式保護原則。 | 下列使用者角色可以存取 Azure 入口網站： <ul><li>全域管理員，您可以在 [Microsoft 365 系統管理中心](https://admin.microsoft.com/)設定</li><li>擁有者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li><li>參與者，您可以在 [Azure 入口網站](https://portal.azure.com/)中設定。</li></ul> 如需設定這些角色的說明，請參閱[以角色為基礎的系統管理 (RBAC) 搭配 Microsoft Intune](../fundamentals/role-based-access-control.md)。|
 |應用程式保護原則報表中遺漏使用者帳戶 | 管理員主控台報表沒有顯示最近部署應用程式保護原則的使用者帳戶。 | 如果使用者是應用程式保護原則的新目標，則可能需要最多 24 小時該使用者才會以目標使用者的狀態顯示在報表中。 |
 | 原則變更不作用 | 套用應用程式保護原則的變更與更新最多需時 8 個小時。 | 如適用，終端使用者可以登出應用程式並重新登入，來強制與服務同步。 |
-| 應用程式保護原則不適合 DEP | 應用程式保護原則不適用 Apple DEP 裝置。 | 請確認 Apple「裝置登記方案」(DEP) 與「使用者親和性」搭配使用。 需要在 DEP 下進行使用者驗證的任何應用程式都需要有使用者親和性。 <br><br>如需 iOS DEP 註冊的詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS 裝置](../enrollment/device-enrollment-program-enroll-ios.md)。|
-| 資料傳輸原則不適合 iOS | [允許應用程式將資料傳送至其他應用程式]  和 [允許應用程式接收其他應用程式的資料]  原則在 iOS 中不能順利管理資料傳輸。 | 請參閱[如何使用 Microsoft Intune 管理 iOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)。 |
+| 應用程式保護原則不適合 DEP | 應用程式保護原則不適用 Apple DEP 裝置。 | 請確認 Apple「裝置登記方案」(DEP) 與「使用者親和性」搭配使用。 需要在 DEP 下進行使用者驗證的任何應用程式都需要有使用者親和性。 <br><br>如需 iOS/iPadOS DEP 註冊的詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS/iPadOS 裝置](../enrollment/device-enrollment-program-enroll-ios.md)。|
+| 資料傳輸原則無法搭配 iOS/iPadOS 運作 | [允許應用程式將資料傳送至其他應用程式]  與 [允許應用程式接收其他應用程式的資料]  原則在 iOS/iPadOS 中不能順利管理資料傳輸。 | 請參閱[如何使用 Microsoft Intune 管理 iOS/iPadOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)。 |
 
 ## <a name="common-end-user-issues"></a>常見使用者問題
 
@@ -58,15 +58,15 @@ ms.locfileid: "75839320"
 
 平台 | 案例 | 說明 |
 ---| --- | --- |
-iOS | 終端使用者可以使用 iOS 共用延伸模組在不受管理的應用程式中開啟工作或學校資料，甚至可將資料傳輸原則設為 [僅限受管理的應用程式]  或 [沒有應用程式]  。 這樣不會流失資料嗎？ | Intune 應用程式保護原則必須管理裝置才能控制 iOS 共用延伸模組。 因此，**Intune 會先加密「公司」資料再於應用程式外共用**。 您可以嘗試在受管理的應用程式外開啟「公司」檔案加以驗證。 檔案應已加密且無法在受管理的應用程式之外開啟。
-iOS | 為什麼終端使用者會**收到安裝 Microsoft Authenticator 應用程式的提示** | 當套用以應用程式為基礎的條件式存取時，請參閱[需要核准的用戶端應用程式](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access)。
+iOS | 終端使用者可以使用 iOS/iPadOS 共用延伸模組在非受控應用程式中開啟工作或學校資料，甚至可將資料傳輸原則設定為 [僅限受管理的應用程式]  或 [沒有應用程式]  。 這樣不會流失資料嗎？ | Intune 應用程式保護原則必須管理裝置才能控制 iOS/iPadOS 共用延伸模組。 因此，**Intune 會先加密「公司」資料再於應用程式外共用**。 您可以嘗試在受管理的應用程式外開啟「公司」檔案加以驗證。 檔案應已加密且無法在受管理的應用程式之外開啟。
+iOS | 為什麼終端使用者會**收到安裝 Microsoft Authenticator 應用程式的提示** | 當套用以應用程式為基礎的條件式存取時需要此項目，請參閱[要求使用已核准的用戶端應用程式](https://docs.microsoft.com/azure/active-directory/conditional-access/app-based-conditional-access) \(部分機器翻譯\)。
 Android | 為什麼終端使用者**需要安裝公司入口網站應用程式**，即使我使用的是無裝置註冊的 MAM 應用程式保護？  | 在 Android 上，大部分的應用程式保護功能是內建在公司入口網站應用程式中。 **即使公司入口網站應用程式一律為必要，也不需要註冊裝置**。 至於無裝置註冊的應用程式保護，終端使用者只需要在裝置上安裝公司入口網站應用程式即可。
-iOS/Android | 應用程式保護原則未套用在 Outlook 應用程式的草稿電子郵件上 | 由於 Outlook 同時支援公司和個人內容，因此不會在草稿電子郵件上強制執行 MAM。
-iOS/Android | 應用程式保護原則不適用於 WXP 中的新檔（Word、Excel、PowerPoint） | 由於 WXP 支援公司和個人的內容，因此不會在新的檔上強制 MAM，除非它們儲存在已識別的公司位置（例如 OneDrive）。
-iOS/Android | 啟用原則時，應用程式不允許 [另存新檔] 儲存至本機儲存體 | 此設定的應用程式行為是由應用程式開發人員所控制。
-Android | Android 在哪些「原生」應用程式可以存取 MAM 保護內容的情況上有更多的限制 | Android 是一個開放式平臺，而「原生」應用程式關聯可以由使用者變更為可能不安全的應用程式。 套用[資料傳輸原則例外](app-protection-policies-exception.md)狀況來豁免特定的應用程式。
-Android | 防止 [另存新檔] 時，Azure 資訊保護（AIP）可以儲存為 PDF | 當使用 [另存新檔] PDF 時，AIP 會接受 MAM 原則以進行「停用列印」。
-iOS | 在 Outlook 應用程式中開啟 PDF 附件失敗，並出現「不允許動作」 | 如果使用者尚未通過 Intune 的 Acrobat Reader 驗證，或已使用指紋來驗證其組織，就會發生這種情況。 事先開啟 Acrobat Reader，並使用 UPN 認證進行驗證。
+iOS/Android | 應用程式保護原則未套用在 Outlook 應用程式的草稿電子郵件上 | 因為 Outlook 同時支援公司與個人內容，所以不會在草稿電子郵件上強制執行 MAM。
+iOS/Android | 應用程式保護原則不會套用至 WXP (Word、Excel、PowerPoint) 中的新文件 | 因為 WXP 支援公司與個人的內容，所以不會在新文件上強制執行 MAM，除非文件儲存在已識別的公司位置 (例如 OneDrive)。
+iOS/Android | 啟用原則時，應用程式不允許「另存新檔至本機儲存體」 | 此設定的應用程式行為是由應用程式開發人員控制的。
+Android | 關於哪些「原生」應用程式可以存取受 MAM 保護的內容，Android 比 iOS/iPadOS 有更多限制 | Android 是一個開放式平台，所以「原生」應用程式關聯可以由使用者變更，而造成可能不安全的應用程式。 套用[資料傳輸原則例外](app-protection-policies-exception.md)來豁免特定應用程式。
+Android | 當防止「另存新檔」時，Azure 資訊保護 (AIP) 可以「儲存為 PDF」 | 當使用 [儲存為 PDF] 時，AIP 會接受 MAM 原則的「停用列印」。
+iOS | 在 Outlook 應用程式中開啟 PDF 附件失敗，並出現「不允許此動作」 | 如果使用者尚未通過 Acrobat Reader for Intune 驗證，或已使用指紋來驗證其組織，就會發生這種情況。 事先開啟 Acrobat Reader，並使用 UPN 認證進行驗證。
 
 
 ### <a name="normal-usage-dialogs"></a>一般使用方式對話方塊
@@ -112,7 +112,7 @@ Android | **需要公司入口網站**：若要搭配此應用程式使用您的
 ## <a name="next-steps"></a>後續步驟
 
 - [驗證您的行動應用程式管理設定](app-protection-policies-validate.md)
-- 瞭解如何使用記錄檔進行 Intune 應用程式防護原則的疑難排解，請參閱[https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372)
+- 若要了解如何使用記錄檔對 Intune 應用程式防護原則進行疑難排解，請參閱 [https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-Troubleshooting-Intune-app-protection-policy-using/ba-p/330372) \(英文\)
 - 如需其他 Intune 疑難排解資訊，請參閱[使用疑難排解入口網站來協助公司的使用者](../fundamentals/help-desk-operators.md)。 
 - 深入了解 Microsoft Intune 的任何已知問題。 如需詳細資訊，請參閱 [Microsoft Intune 中的已知問題](../known-issues.md)。
 - 需要額外說明嗎？ 請參閱[如何取得 Microsoft Intune 支援](../fundamentals/get-support.md)。

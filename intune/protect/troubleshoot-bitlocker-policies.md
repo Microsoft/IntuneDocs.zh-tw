@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 61b703837598ddbe2c0c44874928b4444466c811
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: f3b32268d0b04dee84a737b9a1c768bc4fab7202
+ms.sourcegitcommit: 3964e6697b4d43e2c69a15e97c8d16f8c838645b
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886775"
+ms.lasthandoff: 02/21/2020
+ms.locfileid: "77556494"
 ---
 # <a name="troubleshoot-bitlocker-policies-in-microsoft-intune"></a>針對 Microsoft Intune 中的 BitLocker 原則進行疑難排解
 
@@ -35,11 +35,13 @@ BitLocker 磁碟機加密是 Microsoft Windows 作業系統所提供的服務，
 
 - **裝置設定原則** - 當您建立裝置組態設定檔以管理端點保護時，Intune 中會提供一些內建原則選項。 若要尋找這些選項，請[建立端點保護的裝置設定檔](endpoint-protection-configure.md#create-a-device-profile-containing-endpoint-protection-settings)、針對 [平台]  選取 [Windows 10 和更高版本]  ，然後針對 [設定]  選取 [Windows 加密]  類別。 
 
-   您可以在這裡閱讀可用選項與功能的相關資訊：[Windows 加密](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption)。
+   您可以在這裡閱讀可用選項與功能的相關資訊：[Windows 加密](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption) \(部分機器翻譯\)。
 
 - **安全性基準** - [安全性基準](security-baselines.md)是設定和預設值的已知群組，由相關安全性小組建議，以協助保護 Windows 裝置的安全。 不同的基準來源 (例如 *MDM 安全性基準*或 *Microsoft Defender ATP 基準*) 可以管理相同的設定以及彼此不同的設定。 它們也可以管理您使用裝置設定原則管理的相同設定。 
 
-除了 Intune 以外，BitLocker 設定也可能透過其他方式 (例如群組原則) 來管理，或由裝置使用者手動設定。
+除了 Intune，對於符合新式待命和 HSTI 規範的硬體，當使用其中一個功能時，每當使用者將裝置加入 Azure AD 時，就會自動開啟 BitLocker 裝置加密。 Azure AD 提供一個入口網站，其中也會備份修復金鑰，讓使用者可以視需要擷取自己的修復金鑰以進行自助服務。
+
+BitLocker 設定也可能可以透過其他方式 (例如群組原則) 來管理，或由裝置使用者手動設定。
 
 無論將設定套用至裝置的方式為何，BitLocker 原則都會使用 [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) 來設定裝置上的加密。 BitLocker CSP 內建於 Windows 中，而當 Intune 將 BitLocker 原則部署到指派的裝置時，是裝置上的 BitLocker CSP 將適當的值寫入 Windows 登錄，原則中的設定才能生效。
 
@@ -164,6 +166,15 @@ EncryptionMethodWithXtsRdvDropDown: 6 (The value 6 refers to the 128 bit encrypt
 
   2. **並非所有硬體都支援 BitLocker**。
      即使您有正確版本的 Windows，基礎裝置硬體仍可能不符合 BitLocker 加密的需求。 您可以在 Windows 文件中找到 [BitLocker 的系統需求](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview#system-requirements) \(部分機器翻譯\)，但要檢查的主要事項是裝置具有相容的 TPM 晶片 (1.2 或更新版本) 和信賴運算群組 (TCG) 相容的 BIOS 或 UEFI 韌體。
+     
+**Bitlocker 加密不會以無訊息方式執行** - 您已設定 Endpoint Protection 原則，將 [其他磁碟加密的警告] 設定設為 [封鎖]，而加密精靈仍然會出現：
+
+- **確認 Windows 版本支援無訊息加密** 這要求 1803 版的最低版本。 如果使用者不是裝置上的系統管理員，則其需要 1809 版的最低版本。 此外，針對不支援新式待命的裝置，1809 已新增支援
+
+**Bitlocker 加密裝置針對 Intune 合規性原則顯示為 [不符合規範]** - 當 BitLocker 加密未完成時，就會發生此問題。 根據磁碟大小、檔案數目和 BitLocker 設定等因素，BitLocker 加密可能需要很長的時間。 加密完成後，裝置便會顯示為 [符合規範]。 裝置也可能在最近安裝 Windows Update 後，隨即暫時不符合規範。
+
+**當原則指定 256 位元時，使用 128 位元演算法對裝置進行加密** -- 根據預設，Windows 10 會使用 XTS-AES 128 位元加密來將磁碟機加密。 請參閱這篇[在 Autopilot 期間為 BitLocker 設定 256 位元加密](https://techcommunity.microsoft.com/t5/intune-customer-success/setting-256-bit-encryption-for-bitlocker-during-autopilot-with/ba-p/323791#) \(英文\) 的指南。
+
 
 **範例調查**
 

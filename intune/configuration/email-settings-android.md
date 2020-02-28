@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/15/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43a2b00ae824656621c8a586e41ba6425c69ed40
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0a1bc53e0f05818b28bbd975e0de5cf5c9368afb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72506762"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512852"
 ---
 # <a name="android-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>在 Intune 中設定電子郵件、驗證及同步處理的 Android 裝置設定
 
@@ -38,10 +38,10 @@ ms.locfileid: "72506762"
 
 - **電子郵件伺服器**：輸入 Exchange Server 的主機名稱。 例如，輸入 `outlook.office365.com`。
 - **帳戶名稱**：輸入電子郵件帳戶的顯示名稱。 此名稱會在其裝置上向使用者顯示。
-- **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (Azure AD) 取得的屬性。 Intune 會動態產生此設定檔所使用的使用者名稱。 選項包括：
+- **AAD 中的使用者名稱屬性**：此名稱是 Intune 從 Azure Active Directory (Azure AD) 中取得的屬性。 Intune 會動態產生此設定檔所使用的使用者名稱。 選項包括：
   - **使用者主體名稱**：取得名稱，例如 `user1` 或 `user1@contoso.com`
   - **使用者名稱**：只取得名稱，例如 `user1`
-  - **SAM 帳戶名稱**：需要網域，例如 `domain\user1`。 SAM 帳戶名稱只能與 Android 裝置搭配使用。
+  - **sAM 帳戶名稱**：需要網域，例如 `domain\user1`。 SAM 帳戶名稱只能與 Android 裝置搭配使用。
 
     另請輸入：  
     - **使用者網域名稱來源**：選擇 [AAD]  (Azure Active Directory) 或 [自訂]  。
@@ -54,14 +54,14 @@ ms.locfileid: "72506762"
 
 - **AAD 中的電子郵件地址屬性**：此名稱是 Intune 從 Azure AD 取得的電子郵件屬性。 Intune 會動態產生此設定檔所使用的電子郵件地址。 選項包括：
   - **使用者主體名稱**：使用完整主體名稱 (例如 `user1@contoso.com` 或 `user1`) 作為電子郵件地址。
-  - **主要 SMTP 位址**：使用主要 SMTP 位址 (例如 `user1@contoso.com`) 登入 Exchange。
+  - **主要 SMTP 位址**：使用主要 SMTP 位址 (例如 `user1@contoso.com`) 來登入 Exchange。
 
 - **驗證方法**：選取 [使用者名稱和密碼]  或 [憑證]  作為電子郵件設定檔所使用的驗證方法。
   - 若要選取 [憑證]  ，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 
 ### <a name="security-settings"></a>安全性設定
 
-- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用安全通訊端層 (SSL) 通訊。
+- **SSL**：傳送電子郵件、接收電子郵件以及與 Exchange Server 進行通訊時，請使用 Secure Sockets Layer (SSL) 通訊。
 - **S/MIME**：使用 S/MIME 加密傳送外寄電子郵件。
   - 若要選取 [憑證]  ，請選取先前建立來驗證 Exchange 連線的用戶端 SCEP 或 PKCS 憑證設定檔。
 
@@ -72,15 +72,15 @@ ms.locfileid: "72506762"
 
 ### <a name="content-sync-settings"></a>內容同步設定
 
-- **要同步處理的內容類型**：選取想要在裝置上同步處理的內容類型。 [未設定]  會停用此設定。 設為 [未設定]  時，如果終端使用者在裝置上啟用同步處理，則會在裝置與 Intune 同步時再次停用同步處理，因為此原則已經過強化。 
+- **要同步處理的內容類型**：選取您想要在裝置上同步處理的內容類型。 [未設定]  會停用此設定。 設為 [未設定]  時，如果終端使用者在裝置上啟用同步處理，則會在裝置與 Intune 同步時再次停用同步處理，因為此原則已經過強化。 
 
   您可以同步處理下列內容：  
-  - **連絡人**：選擇 [啟用]  以允許終端使用者將連絡人同步至其裝置。
-  - **行事曆**：選擇 [啟用]  以允許終端使用者將行事曆同步至其裝置。
-  - **工作**：選擇 [啟用]  以允許終端使用者將工作同步至其裝置。
+  - **連絡人**：選擇 [啟用]  以允許使用者將連絡人同步至其裝置。
+  - **行事曆**：選擇 [啟用]  以允許使用者將行事曆同步至其裝置。
+  - **工作**：選擇 [啟用]  以允許使用者將工作同步至其裝置。
 
 ## <a name="next-steps"></a>後續步驟
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-您也可以為 [Android 企業 - 公司設定檔](email-settings-android-enterprise.md)、[iOS](email-settings-ios.md)、[Windows 10 和更新版本](email-settings-windows-10.md)及 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 建立電子郵件設定檔。
+您也可以為 [Android Enterprise - 公司設定檔](email-settings-android-enterprise.md)、[iOS/iPadOS](email-settings-ios.md)、[Windows 10 與更新版本](email-settings-windows-10.md)與 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 建立電子郵件設定檔。

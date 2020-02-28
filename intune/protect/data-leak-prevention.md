@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b3affffdf69445ced667d718587303a5409423bf
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502408"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514433"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>使用 Microsoft Intune 防止資料在非受控裝置上外洩
 
@@ -47,7 +47,7 @@ Intune 應用程式保護原則獨立於裝置管理之外。 不論 Office 行�
 
 ## <a name="action-plan"></a>動作計劃
 
-若是 iOS 和 Android 裝置：
+針對 iOS/iPadOS 和 Android 裝置：
 
 1. 了解[應用程式保護原則](../apps/app-protection-policy.md)如何運作。
 2. 了解如何為 Office 行動裝置應用程式[建立及部署應用程式保護原則](../apps/app-protection-policies.md)。
@@ -63,7 +63,7 @@ Intune 應用程式保護原則獨立於裝置管理之外。 不論 Office 行�
 
 在情況允許下，分享下列連結以提供其他資訊：
 
-* [當 iOS 應用程式交由應用程式防護原則管理時的行為](../fundamentals/end-user-mam-apps-ios.md)
+* [當 iOS/iPadOS 應用程式交由應用程式保護原則管理時的行為](../fundamentals/end-user-mam-apps-ios.md)
 * [當 Android 應用程式交由應用程式防護原則管理時的行為](../fundamentals/end-user-mam-apps-android.md)
 
 ## <a name="next-steps"></a>後續步驟

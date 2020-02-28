@@ -1,7 +1,7 @@
 ---
 title: 比較 Windows 電腦管理選項
 titleSuffix: Microsoft Intune
-description: 使用 Apple 裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊公司擁有的 iOS 裝置。
+description: 使用 Apple 裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊公司擁有的 iOS/iPadOS 裝置。
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic-keep
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d8fd53e9d12dd38639d204e214aea03d733e584b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: cda9a549cb12ab61da67da91272e9f388d32a2ef
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059205"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514977"
 ---
 # <a name="compare-managing-windows-pcs-as-computers-or-mobile-devices"></a>比較作為電腦或行動裝置來管理 Windows 電腦
 

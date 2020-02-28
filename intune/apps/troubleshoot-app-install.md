@@ -17,12 +17,12 @@ ms.reviewer: mghadial
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be66f99006b06dce9f9bfe21eafa9f2be302e7b9
-ms.sourcegitcommit: 70b40aa4743c8396f8d6a0163893c4a337d67c48
-ms.translationtype: MTE75
+ms.openlocfilehash: 13aea23f58c69d5c7e38f77ae7dfa19bd12edd35
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/23/2020
-ms.locfileid: "76540974"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511646"
 ---
 # <a name="troubleshoot-app-installation-issues"></a>針對應用程式安裝問題進行疑難排解
 
@@ -50,7 +50,7 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
     > 可以將相同的應用程式指派給多個群組，但對於該應用程式有不同的預期動作 (用途)。 例如，如果在應用程式指派期間針對某個使用者排除了該應用程式，則應用程式已解決的用途會顯示 [已排除]  。 如需詳細資訊，請參閱[如何解決應用程式用途之間的衝突](apps-deploy.md#how-conflicts-between-app-intents-are-resolved)。<br><br>
     > 如果必要的應用程式安裝失敗，您或您的技術服務人員將能夠同步裝置並重試應用程式安裝。
 
-應用程式安裝錯誤詳細資料會指出此問題。 您可以使用這些詳細資料，以決定解決問題所要採取的最佳動作。 如需有關針對應用程式安裝問題進行疑難排解的詳細資訊，請參閱 [Android 應用程式安裝錯誤](app-install-error-codes.md#android-app-installation-errors)和 [iOS 應用程式安裝錯誤](app-install-error-codes.md#ios-app-installation-errors)。
+應用程式安裝錯誤詳細資料會指出此問題。 您可以使用這些詳細資料，以決定解決問題所要採取的最佳動作。 如需有關針對應用程式安裝問題進行疑難排解的詳細資訊，請參閱 [Android 應用程式安裝錯誤](app-install-error-codes.md#android-app-installation-errors)和 [iOS 應用程式安裝錯誤](app-install-error-codes.md#ios-and-ipados-app-installation-errors)。
 
 > [!Note]  
 > 您也可以將瀏覽器指向 [https://aka.ms/intunetroubleshooting](https://aka.ms/intunetroubleshooting)來存取 [疑難排解]  窗格。
@@ -65,7 +65,7 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
   3. 瀏覽至 [Azure Active Directory 使用者](https://portal.azure.com/#pane/Microsoft_AAD_IAM/UsersManagementMenupane/AllUsers)。
   4. 選取受影響的使用者，然後按一下 [裝置]  。
   5. 如果使用者超過設定的限制，則會刪除不再需要的任何過時記錄。
-- 若是 iOS DEP 裝置，請確定使用者已在 [Intune 裝置概觀] 窗格中列為 [由使用者註冊]  。 如果顯示的是 NA，則為 Intune 公司入口網站部署設定原則。 如需詳細資訊，請參閱[設定公司入口網站應用程式](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-dep-devices)。
+- 針對 iOS/iPadOS DEP 裝置，請確定使用者已在 [Intune 裝置概觀] 窗格中列為 [由使用者註冊]  。 如果顯示的是 NA，則為 Intune 公司入口網站部署設定原則。 如需詳細資訊，請參閱[設定公司入口網站應用程式](app-configuration-policies-use-ios.md#configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices)。
 
 ## <a name="win32-app-installation-troubleshooting"></a>針對 Win32 應用程式安裝進行疑難排解
 
@@ -121,5 +121,5 @@ Intune 會根據特定使用者裝置上安裝的應用程式，提供應用程�
 ## <a name="next-steps"></a>後續步驟
 
 - 如需其他 Intune 疑難排解資訊，請參閱[使用疑難排解入口網站來協助公司的使用者](../fundamentals/help-desk-operators.md)。 
-- 深入了解 Microsoft Intune 的任何已知問題。 如需詳細資訊，請參閱 [Intune 客戶成功](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess)。
+- 深入了解 Microsoft Intune 的任何已知問題。 如需詳細資訊，請參閱 [Intune Customer Success](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess) (Intune 客戶成功)。
 - 需要額外說明嗎？ 請參閱[如何取得 Microsoft Intune 支援](../fundamentals/get-support.md)。

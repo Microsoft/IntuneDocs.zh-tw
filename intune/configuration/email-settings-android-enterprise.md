@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ search.appverid: MET150
 ms.reviewer: maholdaa
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: dc86e82f189377d63422cc3306b8554637164b0f
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 978ddf279dc221a56fddaf99da4dbb2377a93c24
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206426"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511148"
 ---
 # <a name="android-enterprise-device-settings-to-configure-email-authentication-and-synchronization-in-intune"></a>用以在 Intune 中設定電子郵件、驗證及同步處理的 Android 企業裝置設定
 
@@ -35,7 +35,7 @@ ms.locfileid: "75206426"
 
 ## <a name="before-you-begin"></a>開始之前
 
-建立[裝置設定檔](email-settings-configure.md#create-a-device-profile)（選擇工作設定檔），或建立[應用程式設定原則](../apps/app-configuration-policies-use-android.md)。
+建立[裝置組態設定檔](email-settings-configure.md#create-a-device-profile) (選擇工作設定檔)，或建立[應用程式設定原則](../apps/app-configuration-policies-use-android.md)。
 
 ## <a name="android-enterprise"></a>Android 企業
 
@@ -63,4 +63,4 @@ ms.locfileid: "75206426"
 
 [指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-您也可以為 [Android Samsung Knox](email-settings-android.md)、[iOS](email-settings-ios.md)、[Windows 10 和更新版本](email-settings-windows-10.md)及 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 裝置建立電子郵件設定檔。
+您也可以為 [Android Samsung Knox](email-settings-android.md)、[iOS/iPadOS](email-settings-ios.md)、[Windows 10 與更新版本](email-settings-windows-10.md)與 [Windows Phone 8.1](email-settings-windows-phone-8-1.md) 裝置建立電子郵件設定檔。

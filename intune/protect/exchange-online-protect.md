@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6ffcc4a7e48064e6a458126667cf6ab2c4e75777
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: ac670fd5e17462688fdfcde1b047e1071a49353a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502267"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515198"
 ---
 # <a name="protect-office-365-exchange-online-without-requiring-device-management"></a>保護 Office 365 Exchange Online 而不需要進行裝置管理
 
-您可以讓員工存取其公司電子郵件，而沒有設定裝置管理系統的額外負荷。 您可以透過 Intune 存取 Office 365 Exchange Online。 若要完成必要步驟，請確認您擁有 Microsoft 365 或 Azure Active Directory (進階) 和 Intune 的授權。 員工需要擁有[支援的 iOS 或 Android 裝置](../fundamentals/supported-devices-browsers.md)。 
+您可以讓員工存取其公司電子郵件，而沒有設定裝置管理系統的額外負荷。 您可以透過 Intune 存取 Office 365 Exchange Online。 若要完成必要步驟，請確認您擁有 Microsoft 365 或 Azure Active Directory (進階) 和 Intune 的授權。 員工需要擁有[支援的 iOS/iPadOS 或 Android 裝置](../fundamentals/supported-devices-browsers.md)。 
 
 您可以決定設定裝置管理系統。 這類型應用程式保護的運作方式與裝置管理無關。 
 
@@ -41,7 +41,7 @@ ms.locfileid: "72502267"
 
 ## <a name="what-to-tell-employees-and-students"></a>員工和學生須知
 
-* 請要求您的員工和學生從 Apple App Store 下載並安裝 Microsoft Outlook 或 Microsoft SharePoint for iOS，或是從 Google Play Store 下載並安裝 Android。 
+* 要求您的員工和學生從 Apple App Store 下載並安裝 iOS/iPadOS 版 Microsoft Outlook 或 Microsoft SharePoint，或是從 Google Play Store 下載並安裝 Android 版 Microsoft Outlook 或 Microsoft SharePoint。 
 * 如果您封鎖存取未使用新式驗證的應用程式，則請讓員工和學生知道這項限制。 
 
 ## <a name="next-steps"></a>後續步驟

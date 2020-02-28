@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ea4f4cd53af06bf6ec47ed14976526116d963690
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 7520e5883a89d6cd040be670aedc8436cc40fadb
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502391"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515181"
 ---
 # <a name="prevent-unauthorized-access-to-company-data-using-microsoft-intune"></a>使用 Microsoft Intune 防止未經授權的公司資料存取
 
@@ -50,5 +50,5 @@ ms.locfileid: "72502391"
 
 在接下來的步驟中，您可以深入了解提高公司資料保護的其他方式，包含： 
 
-* 了解如何使用 [iOS 和 Android 裝置上的 Azure 資訊保護](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq)。
+* 了解如何使用 [iOS/iPadOS 和 Android 裝置上的 Azure 資訊保護](https://docs.microsoft.com/information-protection/rms-client/mobile-app-faq) \(部分機器翻譯\)。
 * 若為 Windows Phone 和 Mac 電腦，請參閱 [Microsoft Rights Management 共用應用程式](https://technet.microsoft.com/dn451248)。

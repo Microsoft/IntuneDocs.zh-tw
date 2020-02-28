@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e88741609dc1a351d1971c907cd2e442cfd4b905
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 94ff28cf36457d2d8b20e173508b7c9894a7d5bc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72999513"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510532"
 ---
 # <a name="whats-new-in-the-intune-classic-portal---previous-months"></a>Intune 傳統入口網站的新功能 - 前幾個月
 
@@ -115,7 +115,7 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 
 您可在[應用程式 UI 的新功能](whats-new-app-ui.md)頁面上找到舊版登入體驗、使用認證的新登入體驗，以及從另一部裝置登入的新登入體驗的螢幕擷取畫面。
 
-#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>變更計畫：Intune 正在變更 Intune 合作夥伴入口網站體驗 <!-- 1050016 -->
+#### <a name="plan-for-change-intune-is-changing-the-intune-partner-portal-experience----1050016---"></a>規劃變更：Intune 正在變更 Intune 合作夥伴入口網站體驗 <!-- 1050016 -->
 
 我們會在 2017 年 5 月中旬的服務更新將 Intune 合作夥伴頁面從 manage.microsoft.com 移除。  
 
@@ -126,7 +126,7 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 
 #### <a name="apple-to-require-updates-for-application-transport-security---748318--"></a>Apple 要求必須更新 Application Transport Security <!--748318-->
 
-Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 進行的所有應用程式通訊，強制執行更嚴格的安全性。 此變更會影響使用 iOS 公司入口網站應用程式的 Intune 客戶。
+Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需求。 ATS 可用來對透過 HTTPS 通訊的所有應用程式強制執行更嚴格的安全性。 此變更會影響使用 iOS 公司入口網站應用程式的 Intune 客戶。
 
 我們已透過 Apple TestFlight 方案，提供符合新 ATS 需求的 iOS 版公司入口網站應用程式。 如果您想試用該版本以便測試 ATS 合規性，請傳送電子郵件到 <a href="mailto:CompanyPortalBeta@microsoft.com?subject=Register to TestFlight ATS Company Portal app">CompanyPortalBeta@microsoft.com</a>，並附上您的姓氏、名字、電子郵件地址和公司名稱。 如需詳細資訊，請檢閱我們的 [Intune 支援部落格](https://aka.ms/compportalats)。
 
@@ -150,9 +150,9 @@ Apple 宣布將會強制執行 Application Transport Security (ATS) 的特定需
 Android 版公司入口網站應用程式將會更新其使用者介面，以提供更現代化的外觀和操作，以及更佳的使用者體驗。 值得注意的更新如下︰
 
 - 色彩：公司入口網站索引標籤標頭會以 IT 定義的品牌上色。
-- 應用程式：在 [應用程式]  索引標籤中，已更新 [熱門應用程式]  和 [所有應用程式]  按鈕。
+- 應用程式：在 [應用程式]  索引標籤中，已更新 [精選應用程式]  和 [所有應用程式]  按鈕。
 - 搜尋：在 [應用程式]  索引標籤中，[搜尋]  按鈕是浮動的動作按鈕。
-- 瀏覽應用程式：[所有應用程式]  檢視會以索引標籤式的檢視顯示 [熱門]  、[所有]  與 [類別]  ，以更方便瀏覽。
+- 瀏覽應用程式：[所有應用程式]  檢視會以索引標籤式的檢視顯示 [精選]  、[所有]  與 [類別]  ，以更方便瀏覽。
 - 支援：已更新 [我的裝置]  和 [連絡 IT]  索引標籤以提高可讀性。
 
 如需有關這些變更的詳細資訊，請參閱 [Intune 使用者應用程式的 UI 更新](whats-new-app-ui.md)。
@@ -229,9 +229,9 @@ Microsoft 已經宣布 Microsoft Teams 正式運作。 更新後的 iOS 和 Andr
 從 3 月起，Android 版公司入口網站應用程式會遵循[素材設計方針](https://material.io/guidelines/material-design/introduction.html)建立更現代化的外觀與風格。 此改善的使用者體驗包括︰
 
 * __色彩__︰索引標籤標頭可根據您的自訂調色盤上色。
-* __介面__︰[應用程式] 索引標籤已更新 [精選 App] 和 [所有應用程式] 按鈕。[搜尋] 按鈕現在是浮動的動作按鈕。
-* __瀏覽__︰所有應用程式都會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以方便瀏覽。
-* __服務__︰[我的裝置] 和 [連絡 IT] 索引標籤皆已改善可讀性。
+* __介面__：已更新 [應用程式] 索引標籤中的 [精選 App] 和 [所有應用程式] 按鈕。[搜尋] 按鈕現在是浮動的動作按鈕。
+* __瀏覽__：[所有應用程式] 會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以更方便瀏覽。
+* __服務__：[我的裝置] 和 [連絡 IT] 索引標籤皆已改善可讀性。
 
 您可以在 [UI updates for Intune end user apps](whats-new-app-ui.md) (Intune 終端使用者應用程式的 UI 更新) 頁面上找到更新前後的影像。
 
@@ -256,7 +256,7 @@ Azure 入口網站中的系統管理體驗將使用已宣佈的新分組和目�
 已註冊的裝置和未註冊的裝置已新增新的應用程式保護報表。 深入了解如何[使用 Intune 監視行動應用程式管理原則](../apps/app-protection-policies-monitor.md)。
 
 #### <a name="android-711-support---694397--"></a>Android 7.1.1 支援 <!--694397-->
-Intune 現在完全支援和管理 Android 7.1.1。
+Intune 現在可完全支援及管理 Android 7.1.1。
 
 #### <a name="resolve-issue-where-ios-devices-are-inactive-or-the-admin-console-cannot-communicate-with-them---unknown--"></a>解決 iOS 裝置處於非使用狀態或管理員主控台無法與它們通訊的問題 <!--unknown-->
 當使用者的裝置與 Intune 失去連絡時，您可以提供新的疑難排解步驟，協助他們重新取得公司資源的存取權。 請參閱[裝置處於非使用狀態或管理員主控台無法與它們通訊](../enrollment/troubleshoot-device-enrollment-in-intune.md#devices-are-inactive-or-the-admin-console-cant-communicate-with-them)。
@@ -323,7 +323,7 @@ __移至 Azure 入口網站的註冊相關 Multi-Factor Authentication__ <!--VSO
 之前，系統管理員會移至 Intune 主控台或 Configuration Manager (2016 年 10 月以前的版本) 主控台，以設定用於 Intune 註冊的 MFA。 透過這項更新的功能，您現在將會使用 Intune 認證登入 [Microsoft Azure 入口網站](https://manage.windowsazure.com)，並透過 Azure AD 進行 MFA 設定。 如需詳細資訊，請參閱[這裡](https://aka.ms/mfa_ad)。
 
 __中國現在提供 Android 版公司入口網站應用程式__ <!--VSO 658093-->
-我們將在中國發佈適用於 Android 的公司入口網站應用程式以供下載。 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式市集取得應用程式。 適用於 Android 的公司入口網站應用程式可在下列市集下載：
+我們將在中國發佈適用於 Android 的公司入口網站應用程式以供下載。 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式服務商場取得應用程式。 適用於 Android 的公司入口網站應用程式可在下列市集下載：
 * [百度](https://go.microsoft.com/fwlink/?linkid=836946)
 * [華為](https://go.microsoft.com/fwlink/?linkid=836948)
 * [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
@@ -361,9 +361,9 @@ __可供 Windows 10 裝置使用的新 Microsoft Intune 公司入口網站__  Mi
 > [!IMPORTANT]
 > __在 Intune 和 Android for Work 上的更新__ 雖然您可以用__必要__動作部署 Android for Work 應用程式，但如果您已將 Intune 群組移轉至新的 Azure AD 群組，就只能將應用程式部署為__可用__。
 
-__Intune App SDK for Cordova 外掛程式現在支援 MAM 而不需註冊__ 應用程式開發人員可以現在使用 Intune App SDK for Cordova 外掛程式啟用 MAM 功能，而不必在其 Android 和 iOS 的 Cordova 應用程式進行裝置註冊。 您可以在[這裡](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)找到 Intune App SDK for Cordova 外掛程式。
+__Intune App SDK for Cordova 外掛程式現在支援 MAM 而不必註冊__ 應用程式開發人員可以現在使用 Intune App SDK for Cordova 外掛程式啟用 MAM 功能，而不必在其 Android 和 iOS/iPadOS 的 Cordova 應用程式進行裝置註冊。 您可以在[這裡](https://github.com/msintuneappsdk/cordova-plugin-ms-intune-mam)找到 Intune App SDK for Cordova 外掛程式。
 
-__Intune App SDK Xamarin 元件現在支援 MAM 而不需註冊__ 應用程式開發人員可以現在使用 Intune App SDK Xamarin 元件啟用 MAM 功能，而不必在其 Android 和 iOS 的 Xamarin 應用程式進行裝置註冊。 您可以在[這裡](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)找到 Intune App SDK Xamarin 元件。
+__Intune App SDK Xamarin 元件現在支援 MAM 而不必註冊__ 應用程式開發人員可以現在使用 Intune App SDK Xamarin 元件啟用 MAM 功能，而不必在其 Android 和 iOS/iPadOS 的 Xamarin 應用程式進行裝置註冊。 您可以在[這裡](https://github.com/msintuneappsdk/intune-app-sdk-xamarin)找到 Intune App SDK Xamarin 元件。
 
 ### <a name="notices"></a>通知
 

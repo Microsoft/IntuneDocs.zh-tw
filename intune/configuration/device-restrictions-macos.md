@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 10/22/2019
+ms.date: 02/18/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6513c09f252d5a914ace4e57e5a593877a387172
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
-ms.translationtype: MTE75
+ms.openlocfilehash: 3d26c4c6cd05a411555f7824ad21b72431eb569c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206545"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511167"
 ---
 # <a name="macos-device-settings-to-allow-or-restrict-features-using-intune"></a>使用 Intune 來允許或限制功能的 macOS 裝置設定
 
@@ -36,11 +36,11 @@ ms.locfileid: "75206545"
 [建立裝置限制組態設定檔](../device-restrictions-configure.md)。
 
 > [!NOTE]
-> 這些設定適用于不同的註冊類型。 如需不同註冊類型的詳細資訊，請參閱[macOS 註冊](../macos-enroll.md)。
+> 這些設定適用於不同註冊類型。 如需不同註冊類型的詳細資訊，請參閱 [macOS 註冊](../macos-enroll.md)。
 
 ## <a name="general"></a>一般
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用於：裝置註冊與自動裝置註冊
 
 - **定義查閱**：[封鎖]  會防止使用者將某個文字醒目提示，然後在裝置上查閱其定義。 [未設定]  (預設) 會允許存取定義查閱功能。
 - **聽寫**：[封鎖]  會防止使用者使用語音輸入來輸入文字。 [未設定]  (預設) 會允許使用者使用聽寫輸入。
@@ -62,29 +62,29 @@ ms.locfileid: "75206545"
     本功能適用於：  
     - macOS 10.13.4 與更新版本
 
-- **螢幕擷取畫面**：裝置必須在 Apple 的自動裝置註冊（DEP）中註冊。 當設定為 [**封鎖**] 時，使用者將無法儲存顯示畫面的螢幕擷取畫面。 它也會防止教室應用程式觀察遠端畫面。 [**未設定**] （預設）可讓使用者捕獲螢幕擷取畫面，並允許教室應用程式查看遠端畫面。
+- **螢幕擷取畫面**：裝置必須在 Apple 的自動裝置註冊 (DEP) 中註冊。 當設定為 [封鎖]  時，使用者無法儲存顯示器的螢幕擷取畫面。 這也會防止 [課堂] 應用程式觀察遠端畫面。 [未設定]  \(預設\) 允許使用者擷取螢幕擷取畫面，並允許 [課堂] 應用程式檢視遠端畫面。
 
-### <a name="settings-apply-to-automated-device-enrollment"></a>設定適用于：自動裝置註冊
+### <a name="settings-apply-to-automated-device-enrollment"></a>設定適用於：自動裝置註冊
 
-- **透過教室應用程式的遠端螢幕觀察**： [**停**用] 會防止老師使用教室應用程式查看其學生的畫面。 [**未設定**] （預設）可讓老師查看其學生的畫面。
+- **透過「課堂」應用程式觀看遠端螢幕畫面**：[停用]  會防止老師使用 [課堂] 應用程式查看其學生的畫面。 [未設定]  (預設) 可讓老師查看其學生的畫面。
 
-  若要使用此設定，請將**螢幕擷取畫面**設定設定為 [**未設定**] （允許螢幕擷取畫面）。
+  若要使用此設定，請將 [螢幕擷取畫面]  設定設定為 [未設定]  \(允許螢幕擷取畫面\)。
 
-- **課堂應用程式的無提示螢幕觀察**： [**允許**] 可讓老師看到學生的畫面，而不需要學生同意。 [**未設定**] （預設）會要求學生同意後，老師才會看到畫面。
+- **「課堂」應用程式的無提示螢幕畫面觀看**：[允許]  可讓老師看到學生的畫面，而不需要學生同意。 [未設定]  \(預設\) 會需要學生同意，老師才能看到畫面。
 
-  若要使用此設定，請將**螢幕擷取畫面**設定設定為 [**未設定**] （允許螢幕擷取畫面）。
+  若要使用此設定，請將 [螢幕擷取畫面]  設定設定為 [未設定]  \(允許螢幕擷取畫面\)。
 
-- **學生必須要求許可才能離開教室類別**： [**需要**] 會強制學生在未受管理的課堂課程中註冊，讓老師核准離開課程。 [**未設定**] （預設）可讓學生在學生選擇時離開課程。
+- **學生必須要求離開「課堂」教室的權限**：[需要]  會強制註冊非受控「課堂」課程的學生，必須經老師同意才能離開課程。 [未設定]  \(預設\) 可讓學生隨時能選擇離開課程。
 
-- **老師可以自動鎖定教室應用程式中的裝置或應用**程式： [**允許**] 可讓老師鎖定學生的裝置或應用程式，而不需要學生核准。 [**未設定**] （預設）會要求學生同意後，老師才能鎖定裝置或應用程式。
+- **老師可以在「課堂」應用程式中自動鎖定裝置或應用程式**：[允許]  可讓老師鎖定學生的裝置或應用程式，而不需要學生核准。 [未設定]  \(預設\) 會需要學生同意，老師才能鎖定裝置或應用程式。
 
-- **學生可以自動加入教室課程**： [**允許**] 可讓學生在不提示老師的情況下加入課程。 [**未設定**] （預設）需要老師核准才能加入類別。
+- **學生可以自動加入「課堂」教室**：[允許]  可讓學生在不提示老師的情況下加入教室。 [未設定]  \(預設\) 需要老師核准才能加入教室。
 
 ## <a name="password"></a>密碼
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用於：裝置註冊與自動裝置註冊
 
-- **密碼**：**需要**終端使用者輸入密碼才可存取該裝置。 [**未設定**] （預設）不需要密碼。 它也不會強制任何限制，例如封鎖簡單密碼或設定最小長度。
+- **密碼**：**需要**終端使用者輸入密碼才可存取該裝置。 [未設定]  \(預設\) 不需要密碼。 這也不會強制任何限制，例如，封鎖簡單密碼或設定最小長度。
   - **必要的密碼類型**：指定密碼是否只能是數字，或者是否必須為英數字元 (包含字母和數字)。
 
     本功能適用於：  
@@ -114,7 +114,7 @@ ms.locfileid: "75206545"
 
 ## <a name="built-in-apps"></a>內建應用程式
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用於：裝置註冊與自動裝置註冊
 
 - **封鎖 Safari 自動填滿**：[封鎖]  會停用裝置上 Safari 中的 [自動填滿] 功能。 [未設定]  (預設) 會允許使用者變更網頁瀏覽器中的自動完成設定。
 - **封鎖相機**：選擇 [封鎖]  以防止存取裝置上的相機。 [未設定]  (預設) 會允許存取裝置的相機。
@@ -127,32 +127,32 @@ ms.locfileid: "75206545"
 
 ## <a name="restricted-apps"></a>受限應用程式
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用於：裝置註冊與自動裝置註冊
 
-- **受限制應用程式的類型清單**：建立不允許使用者安裝或使用的應用程式清單。 選項包括：
+- **受限應用程式類型清單**：建立不允許使用者安裝或使用的應用程式清單。 選項包括：
 
-  - [**未設定**] （預設）： Intune 不會有任何限制。 使用者可以存取您指派的應用程式，以及內建應用程式。
-  - **禁止的應用程式**：沒有受 Intune 管理，且不應該安裝在裝置上的應用程式。 使用者不會無法安裝禁止的應用程式。 但是，如果使用者安裝此清單中的應用程式，則會在 Intune 中回報。
-  - **核准的應用程式**：允許使用者安裝的應用程式。 使用者絕不能安裝未列出的應用程式。 自動允許 Intune 所管理的應用程式。 使用者要安裝不在核准清單上的應用程式並不會受到阻止。 但如果有，則會在 Intune 中回報。
-- **應用程式套件組合識別碼**：輸入您要之應用程式的應用程式[搭售方案識別碼](bundle-ids-built-in-ios-apps.md)。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站有[內建的 apple 應用程式](https://support.apple.com/HT208094)清單。
-- **應用程式名稱**：輸入您要之應用程式的名稱。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站有[內建的 apple 應用程式](https://support.apple.com/HT208094)清單。
+  - **未設定** (預設值)：Intune 不會有任何限制。 使用者可以存取您指派的應用程式，以及內建應用程式。
+  - **禁止的應用程式**：沒有受 Intune 管理，且不應該安裝在裝置上的應用程式。 使用者在安裝禁止的應用程式時不會受到阻止。 但若使用者安裝此清單中的應用程式，Intune 會加以回報。
+  - **核准的應用程式**：允許使用者安裝的應用程式。 使用者絕不能安裝未列出的應用程式。 自動允許 Intune 所管理的應用程式。 使用者要安裝不在核准清單上的應用程式並不會受到阻止。 但若有人安裝，Intune 會加以回報。
+- **應用程式套件組合識別碼**：輸入您要之應用程式的應用程式[搭售方案識別碼](bundle-ids-built-in-ios-apps.md)。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站會提供[內建 Apple 應用程式](https://support.apple.com/HT208094)清單。
+- **應用程式名稱**：輸入您要之應用程式的名稱。 您可以顯示或隱藏內建應用程式和企業營運應用程式。 Apple 的網站會提供[內建 Apple 應用程式](https://support.apple.com/HT208094)清單。
 - **發行者**：輸入您要之應用程式的發行者。
 
 若要將應用程式新增至這些清單中，您可以：
 
 - **新增**：選取以建立您的應用程式清單。
-- **匯入**具有應用程式詳細資料 (包括其 URL) 的 CSV 檔案。 請使用 `<app bundle ID>, <app name>, <app publisher>` 格式。 或者，**匯出**以使用相同的格式來建立您所新增的應用程式清單。
+- **匯入**具有應用程式詳細資料 (包括其 URL) 的 CSV 檔案。 請使用 `<app bundle ID>, <app name>, <app publisher>` 格式。 或者，選取 [匯出]  可用使用相同的格式建立您所新增的應用程式清單。
 
 ## <a name="connected-devices"></a>已連線的裝置
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用於：裝置註冊與自動裝置註冊
 
 - **封鎖 AirDrop**：[封鎖]  會防止在裝置上使用 AirDrop。 [未設定]  (預設) 允許使用 AirDrop 功能與鄰近裝置交換內容。
 - **禁止 Apple Watch 自動解除鎖定**：[封鎖]  會防止使用者以他們的 Apple Watch 解除鎖定其 macOS 裝置。 [未設定]  (預設) 會允許使用者以 Apple Watch 解除鎖定其 macOS 裝置。
 
 ## <a name="cloud-and-storage"></a>雲端與儲存體
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用於：裝置註冊與自動裝置註冊
 
 - **防止同步 iCloud 鑰匙圈**：選擇 [封鎖]  可防止將儲存在 [鑰匙圈] 中的認證同步到 iCloud。 [未設定]  (預設) 會讓使用者同步這些認證。
 - **禁止 iCloud Document 同步**：[封鎖]  會防止 iCloud 同步文件和資料。 [未設定]  (預設) 會允許將文件和索引鍵/值同步到 iCloud 儲存空間。
@@ -162,15 +162,15 @@ ms.locfileid: "75206545"
 - **封鎖 iCloud 提醒事項備份**：[封鎖]  會防止 iCloud 同步處理到 macOS 提醒事項應用程式。 [未設定]  (預設) 會允許提醒同步到 iCloud。
 - **封鎖 iCloud 書籤備份**：[封鎖]  會防止 iCloud 同步處理裝置書籤。 [未設定]  (預設) 會允許書籤同步到 iCloud。
 - **封鎖 iCloud 備忘錄備份**：[封鎖]  會防止 iCloud 同步處理裝置備忘錄。 [未設定]  (預設) 會允許備忘稿同步到 iCloud。
-- **封鎖 ICloud 相片**圖庫： [**封鎖**] 會停用 icloud 相片媒體櫃，並防止 iCloud 同步裝置相片。 所有尚未從 iCloud 照片圖庫完整下載的相片，都會從裝置的本機儲存體上移除。 [**未設定**] （預設）允許在裝置與 ICloud 相片媒體櫃之間同步相片。
-- **遞交**： [**未設定**] （預設）可讓使用者在 macOS 裝置上啟動工作，然後繼續在另一部 iOS 或 macOS 裝置上啟動的工作。 [**封鎖**] 會防止裝置上的 [遞交] 功能。 
+- **封鎖 iCloud 照片圖庫**：[封鎖]  會停用 iCloud 照片圖庫，並防止 iCloud 同步處理裝置相片。 所有尚未從 iCloud 照片圖庫完整下載的相片，都會從裝置的本機儲存體上移除。 [未設定]  \(預設\) 允許在裝置與 iCloud 照片圖庫之間同步處理相片。
+- **遞交**：[未設定]  \(預設\) 會允許使用者在一部 macOS 裝置上開始工作，然後在另一部 iOS/iPadOS 或 macOS 裝置上繼續執行他們已啟動的工作。 [封鎖]  會防止裝置上的「接力」功能。 
 
   本功能適用於：  
   - macOS 10.15 與更新版本
 
 ## <a name="domains"></a>網域
 
-### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用于：裝置註冊和自動裝置註冊
+### <a name="settings-apply-to-device-enrollment-and-automated-device-enrollment"></a>設定適用於：裝置註冊與自動裝置註冊
 
 - **電子郵件網域 URL**：將一或多個 URL **新增**到清單中。 當使用者接收到來自不是您所設定之網域的電子郵件時，該電子郵件會在 macOS 郵件應用程式中標記為不受信任。
 
@@ -178,4 +178,4 @@ ms.locfileid: "75206545"
 
 [指派設定檔](../device-profile-assign.md)並[監視其狀態](../device-profile-monitor.md)。
 
-您也可以在 [iOS](../device-restrictions-ios.md) 裝置上限制裝置功能和設定。
+您也可以在 [iOS/iPadOS](../device-restrictions-ios.md) 裝置上限制裝置功能與設定。

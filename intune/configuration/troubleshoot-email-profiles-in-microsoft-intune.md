@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/05/2019
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38e8998d1720434b0fe866fc5cd41a0b733fc49b
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: a19830130f992a002b73402f5e13a8f062539917
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059848"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512665"
 ---
 # <a name="common-issues-and-resolutions-with-email-profiles-in-microsoft-intune"></a>Microsoft Intune 中有關電子郵件設定檔的常見問題和解決方式
 
@@ -31,21 +31,21 @@ ms.locfileid: "74059848"
 
 ## <a name="what-you-need-to-know"></a>您必須知道的事項
 
-- 已為註冊裝置的使用者部署電子郵件設定檔。 若要設定電子郵件設定檔，Intune 會在註冊期間，于使用者的電子郵件設定檔中使用 Azure Active Directory （AD）屬性。 [將電子郵件設定新增至裝置](email-settings-configure.md)可能是很好的資源。
+- 系統已為註冊裝置的使用者部署電子郵件設定檔。 為了設定電子郵件設定檔，Intune 會在註冊期間，使用使用者電子郵件設定檔中的 Azure Active Directory (AD) 屬性。 [將電子郵件設定新增至裝置](email-settings-configure.md)可能是很好的資源。
 - 針對 Android Enterprise，使用受控 Google Play 商店部署 Gmail 或 9 for Work。 [新增受控 Google Play 應用程式](../apps/apps-add-android-for-work.md)會列出步驟。
-- 適用于 iOS 和 Android 的 Microsoft Outlook 不支援電子郵件設定檔。 相反地，部署應用程式設定原則。 如需詳細資訊，請參閱[Outlook Configuration 設定](../apps/app-configuration-policies-outlook.md)。
-- 以裝置群組（而非使用者群組）為目標的電子郵件設定檔可能不會傳遞至裝置。 當裝置具有主要使用者時，裝置目標應該可以使用。 如果電子郵件設定檔包含使用者憑證，請務必以使用者群組為目標。
-- 系統可能會重複提示使用者輸入其電子郵件設定檔的密碼。 在此案例中，請檢查電子郵件設定檔中參照的所有憑證。 如果其中一個憑證不是以使用者為目標，則 Intune 會重試部署電子郵件設定檔。
+- iOS/iPadOS 版與 Android 版 Microsoft Outlook 不支援電子郵件設定檔。 請改為部署應用程式設定原則。 如需詳細資訊，請參閱 [Outlook 組態設定](../apps/app-configuration-policies-outlook.md)。
+- 以裝置群組 (而非使用者群組) 為目標的電子郵件設定檔可能不會傳遞至裝置。 當裝置具有主要使用者時，就可以將裝置設定為目標。 如果電子郵件設定檔包含使用者憑證，請務必以使用者群組為目標。
+- 系統可能會重複提示使用者輸入其電子郵件設定檔的密碼。 在此情況下，請檢查電子郵件設定檔中參照的所有憑證。 如果其中一個憑證不是以使用者為目標，則 Intune 會重試部署電子郵件設定檔。
 
 ## <a name="device-already-has-an-email-profile-installed"></a>裝置已經安裝電子郵件設定檔
 
-如果使用者在註冊 Intune 或 Office 365 MDM 之前建立電子郵件設定檔，Intune 所部署的電子郵件設定檔可能無法如預期般運作：
+如果使用者在註冊 Intune 或 Office 365 MDM 之前建立電子郵件設定檔，則 Intune 所部署的電子郵件設定檔可能不會如預期般運作：
 
-- **iOS**：Intune 依據主機名稱和電子郵件地址偵測到現有的重複電子郵件設定檔。 使用者建立的電子郵件設定檔會封鎖 Intune 建立的設定檔部署。 因為 iOS 使用者通常會先建立電子郵件設定檔再註冊，所以這個問題很常見。 公司入口網站應用程式指出使用者不符合規範，而且可能提示使用者移除電子郵件設定檔。
+- **iOS/iPadOS**：Intune 會根據主機名稱與電子郵件地址，來偵測是否有重複的電子郵件設定檔。 使用者建立的電子郵件設定檔會封鎖 Intune 建立的設定檔部署。 因為 iOS/iPadOS 使用者通常會先建立電子郵件設定檔再註冊，所以這個問題很常見。 公司入口網站應用程式指出使用者不符合規範，而且可能提示使用者移除電子郵件設定檔。
 
   使用者應該移除其電子郵件設定檔，才能部署 Intune 設定檔。 若要避免這個問題，請指示使用者先註冊，再讓 Intune 部署電子郵件設定檔。 接著，使用者可以建立自己的電子郵件設定檔。
 
-- **Windows**：Intune 依據主機名稱和電子郵件地址偵測到現有的重複電子郵件設定檔。 Intune 會覆寫使用者建立的現有電子郵件設定檔。
+- **Windows**：Intune 會根據主機名稱與電子郵件地址，來偵測是否有重複的電子郵件設定檔。 Intune 會覆寫使用者建立的現有電子郵件設定檔。
 
 - **Samsung KNOX Standard**：Intune 會根據電子郵件地址識別重複的電子郵件帳戶，並使用 Intune 設定檔予以覆寫。 如果使用者設定了該帳戶，Intune 設定檔會再次予以覆寫。 這可能會對帳戶設定遭覆寫的使用者造成混淆。
 
@@ -61,10 +61,10 @@ Samsung KNOX 不會使用主機名稱來識別設定檔。 建議您不要建立
 
 已自動設定電子郵件帳戶的使用者將無法從他們的裝置傳送圖片或影像。 如果未啟用 [允許從協力廠商應用程式傳送電子郵件]  ，就會發生此情況。
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]  。
-3. 選取您的電子郵件設定檔 >**屬性** > **設定**。
-4. 將 [**允許從協力廠商應用程式傳送電子郵件**] 設定設為 [**啟用**]。
+3. 選取您的電子郵件設定檔 > [屬性]   > [設定]  。
+4. 將 [允許從協力廠商應用程式傳送電子郵件]  設定設為 [啟用]  。
 
 ## <a name="next-steps"></a>後續步驟
 

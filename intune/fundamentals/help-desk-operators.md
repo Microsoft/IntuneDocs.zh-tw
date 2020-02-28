@@ -17,12 +17,12 @@ ms.reviewer: sumitp
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0094cdd12b2594cb60260d768daec8c5bed04c9c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3812d19122cf4dd85edf00a6fa12d9f2b89529aa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72510246"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514586"
 ---
 # <a name="use-the-troubleshooting-portal-to-help-users-at-your-company"></a>使用疑難排解入口網站協助您公司的使用者
 
@@ -59,14 +59,14 @@ ms.locfileid: "72510246"
 
 您可以使用 [疑難排解]  窗格檢閱使用者資訊。
 
-![針對儀表板進行疑難排解，並使用下表所述的編號區域](./media/help-desk-operators/troubleshooting-dash.png)
+![疑難排解儀表板，具有如下表所述的編號區域](./media/help-desk-operators/troubleshooting-dash.png)
 
-| 區域 | 名稱 | 說明 |
+| 區域 | Name | 說明 |
 | ---  | ---  | ---         |
 | 1.   | 帳戶狀態  | 顯示目前 Intune 租用戶的狀態是 [使用中]  或 [非使用中]  。       |
 | 2.   | 使用者選取  | 目前所選使用者的名稱。 按一下 [變更使用者]  選擇新的使用者。       |
 | 3.   | 使用者狀態  | 顯示使用者的 Intune 授權狀態、裝置數目、每部裝置的合規性、應用程式數目，以及應用程式合規性。       |
-| 4.   | 使用者資訊  | 使用清單來選取要在窗格中檢閱的詳細資料。 <br>您可以選取： <ul><li>用戶端應用程式<li>合規性政策<li> 設定原則<li>應用程式防護原則 <li>註冊限制</ul>      |
+| 4.   | 使用者資訊  | 使用清單來選取要在窗格中檢閱的詳細資料。 <br>您可以選取： <ul><li>用戶端應用程式<li>相容性原則<li> 設定原則<li>應用程式防護原則 <li>註冊限制</ul>      |
 | 5.   | 群組成員資格  | 顯示所選使用者所屬的目前群組。       |
 
 <!-- this section needs to be updated
@@ -269,7 +269,7 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 
 | 錯誤 | 詳細資料 |
 |-------------|----------|
-| iOS 逾時或失敗 | 裝置與 Intune 之間因使用者花太多時間完成註冊裝置所導致的逾時。 |
+| iOS/iPadOS 逾時或失敗 | 裝置與 Intune 之間因使用者花太多時間完成註冊裝置所導致的逾時。 |
 | 找不到使用者或使用者未獲授權 | 使用者缺少授權或已從服務移除。 |
 | 裝置已註冊 | 有人嘗試在其他使用者仍在註冊中的裝置上，使用公司入口網站來註冊裝置。 |
 | 尚未向 Intune 啟用 | 嘗試在未設定 Intune 行動裝置管理 (MDM) 授權單位時註冊。 |
@@ -286,14 +286,14 @@ An app protection policy is available to mobile apps that integrate with EMS tec
 | 未預期的 Autopilot 註冊方法 | 裝置嘗試使用不允許的方法進行註冊。 |
 | 已移除 Autopilot 裝置 | 已從此帳戶的 Autopilot 中移除嘗試註冊的裝置。 |
 | 已到達裝置上限 | 此註冊因為管理員所設定的裝置限制而被封鎖。 |
-| Apple 啟用 | 所有 iOS 裝置目前都無法註冊，因為 Intune 中缺少 Apple MDM Push Certificate 或該憑證已過期。 |
+| Apple 啟用 | 所有 iOS/iPadOS 裝置目前都無法註冊，因為 Intune 內缺少 Apple MDM Push Certificate 或該憑證已過期。 |
 | 裝置未預先註冊 | 裝置未預先註冊為公司，而且管理員已封鎖所有個人註冊項目。 |
 | 不支援功能 | 使用者可能正在嘗試透過與 Intune 設定不相容的方法進行註冊。 |
 
 ## <a name="collect-available-data-from-mobile-device"></a>從行動裝置收集可用的資料
 
 針對使用者的裝置問題進行疑難排解時，使用下列資源來協助收集裝置資料：
-- [將 iOS 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-errors-to-your-it-admin-ios)
+- [將 iOS/iPadOS 註冊錯誤傳送給 IT 系統管理員](/intune-user-help/send-errors-to-your-it-admin-ios)
 - [使用詳細資訊記錄來協助公司支援人員修正裝置問題](/intune-user-help/use-verbose-logging-to-help-your-it-administrator-fix-device-issues-android)
 - [使用 USB 纜線將 Android 記錄傳送給公司支援人員](/intune-user-help/send-diagnostic-data-logs-to-your-it-administrator-using-a-usb-cable-android)
 - [使用電子郵件將 Android 診斷資料記錄傳送給 IT 系統管理員](/intune-user-help/send-logs-to-your-it-admin-by-email-android)

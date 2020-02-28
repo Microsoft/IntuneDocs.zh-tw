@@ -16,12 +16,12 @@ ms.reviewer: dougeby
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ab41026cd9b2ceeaaa478fc27c984d0d89db4c5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 3a15bf0bd8ed0a46f330b159e45d0a5d5a4c7059
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74058535"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510379"
 ---
 # <a name="device-management-overview"></a>裝置管理概觀
 
@@ -33,7 +33,7 @@ ms.locfileid: "74058535"
 
 答案是 [Microsoft Intune](what-is-intune.md)。 Intune 提供行動裝置管理 (MDM) 與行動應用程式管理 (MAM)。 任何 MDM 或 MAM 解決方案的一些主要工作包括：
 
-- 支援不同的行動環境並安全地管理 iOS、Android、Windows 和 macOS 裝置。
+- 支援不同的行動環境並安全地管理 iOS/iPadOS、Android、Windows 和 macOS 裝置。
 - 確保裝置和應用程式都符合您組織的安全性需求。
 - 建立原則來協助確保組織擁有和個人裝置上的組織資料安全。
 - 使用單一整合的行動解決方案來實施這些原則，並協助管理裝置、應用程式、使用者和群組。
@@ -47,7 +47,7 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 
 許多人員通常會有使用不同平台的多部裝置。 例如，員工可能會使用 Surface Pro 處理工作，並使用 Android 行動裝置處理其個人檔案。 此外，每個人員通常會從多部裝置存取組織資源，例如 Microsoft Outlook 和 SharePoint。
 
-透過 Intune，您可以管理每個人員的多部裝置，以及在每部裝置上執行的不同平台，包括 iOS、macOS、Android 和 Windows。 Intune 會依裝置平台區隔原則和設定。 因此很容易管理及檢視特定平台的裝置。
+透過 Intune，您可以管理每個人員的多部裝置，以及在每部裝置上執行的不同平台，包括 iOS/iPadOS、macOS、Android 和 Windows。 Intune 會依裝置平台區隔原則和設定。 因此很容易管理及檢視特定平台的裝置。
 
 **[常見案例](common-scenarios.md)** 是一個絕佳資源，可讓您了解 Intune 如何解決使用行動裝置時的常見問題。 您將找到下列相關案例：  
 
@@ -63,7 +63,7 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 
 - **Microsoft 365** 是簡化常見 IT 工作的關鍵元件。 在 Microsoft 365 系統管理中心中，您可以建立使用者，和管理群組。 您也可以存取其他服務，例如 Intune、Azure AD 等。
 
-  例如，在 Microsoft 365 中建立 iOS 裝置群組。 然後，使用 Intune 將原則推送至 iOS 裝置群組以集中在 iOS 功能，例如存取 App Store、使用 AirDrop、備份到 iCloud、使用 Apple 網站篩選等。
+  例如，在 Microsoft 365 中建立 iOS/iPadOS 裝置群組。 然後，使用 Intune 將原則推送至專注於 iOS/iPadOS 功能的 iOS/iPadOS 裝置群組，例如存取 App Store、使用 AirDrop、備份到 iCloud、使用 Apple 網站篩選等。
 
 - **Windows Defender** 包含許多安全性功能，可協助保護 Windows 10 裝置。 例如，Intune 與 Windows Defender 搭配使用，您可以：
 
@@ -86,7 +86,7 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 
 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)是您一次管理及完成行動裝置工作的位置。 此工作區包含用於裝置管理的服務 (包括 Intune 與 Azure Active Directory)，以及用於管理用戶端應用程式的服務。
 
-在 [裝置管理] 系統管理中心，您可以：
+在 [裝置管理] 系統管理中心上，您可以：
 
 - [註冊裝置](../enrollment/device-enrollment.md)
 - [設定裝置合規性](../protect/device-compliance-get-started.md)
@@ -97,7 +97,7 @@ Microsoft 等許多組織使用 Intune 來保護使用者有權從其公司擁�
 - [管理角色](role-based-access-control.md)  
 - 管理軟體更新
   - [管理 Windows 10 更新](../protect/windows-update-for-business-configure.md)  
-  - [管理 iOS 更新](../protect/software-updates-ios.md)  
+  - [管理 iOS/iPadOS 更新](../protect/software-updates-ios.md)  
 - [Azure Active Directory](https://docs.microsoft.com/azure/active-directory)  
 - [管理使用者](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [管理群組和成員](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
