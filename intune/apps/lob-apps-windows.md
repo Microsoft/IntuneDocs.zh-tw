@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c3deb9f3c96a4c2c2de72b7016aca855f679bbd7
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: ceb4d2354ca073cf05f526df7638aebf8f16d5b7
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755117"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569484"
 ---
 # <a name="add-a-windows-line-of-business-app-to-microsoft-intune"></a>將 Windows 企業營運應用程式新增至 Microsoft Intune
 
@@ -32,7 +32,7 @@ ms.locfileid: "76755117"
 企業營運 (LOB) 應用程式是您從應用程式安裝檔案新增的應用程式。 這類應用程式通常是在內部撰寫的。 下列步驟提供指引，協助您將 Windows LOB 應用程式新增至 Microsoft Intune。
 
 > [!IMPORTANT]
-> 當使用具有 *.msi* 副檔名的安裝檔案部署 Win32 應用程式時，請考慮使用 [Intune 管理延伸模組](../apps/intune-management-extension.md)。 若您在 AutoPilot 註冊期間混合 Win32 應用程式與企業營運系統應用程式安裝，應用程式安裝可能會失敗。  
+> 當使用具有 .msi 副檔名的安裝檔案部署 Win32 應用程式時，請考慮使用 [Intune 管理延伸模組](../apps/intune-management-extension.md)。 若您在 AutoPilot 註冊期間混合 Win32 應用程式與企業營運系統應用程式安裝，應用程式安裝可能會失敗。  
 
 ## <a name="select-the-app-type"></a>選取應用程式類型
 
@@ -74,17 +74,17 @@ ms.locfileid: "76755117"
 ## <a name="step-2---select-scope-tags-optional"></a>步驟 2 - 選取範圍標籤 (選擇性)
 您可以使用範圍標籤來決定可在 Intune 中看見用戶端應用程式資訊的人員。 如需範圍標籤的完整詳細資料，請參閱[針對分散式 IT 使用角色型存取控制和範圍標籤](../fundamentals/scope-tags.md)。
 
-1. 按一下 [選取範圍標籤]  來選擇性地為應用程式新增範圍標籤。 
+1. 按一下 [選取範圍標籤]  以選擇性地為應用程式新增範圍標籤。 
 2. 按一下 [下一步]  以顯示 [指派]  頁面。
 
 ## <a name="step-3---assignments"></a>步驟 3 - 指派
 
-1. 為應用程式選取 [必要]  、[適用於已註冊的裝置]  ，或 [解除安裝]  群組指派。 如需詳細資訊，請參閱[新增群組來組織使用者和裝置](~/fundamentals/groups-add.md)和[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
+1. 為應用程式選取 [必要]  、[適用於已註冊的裝置]  ，或 [解除安裝]  群組指派。 如需詳細資訊，請參閱[新增群組來組織使用者和裝置](~/fundamentals/groups-add.md)與[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 2. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。 
 
 ## <a name="step-4---review--create"></a>步驟 4 - 檢閱 + 建立
 
-1. 檢閱您針對應用程式所輸入的值和設定。
+1. 檢閱您針對應用程式所輸入的值與設定。
 2. 當您完成時，請按一下 [建立]  以將應用程式新增到 Intune。
 
     企業營運應用程式的 [概觀]  刀鋒視窗隨即顯示。

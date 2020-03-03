@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/10/2020
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4db1a1a74c1a19f310aba0f1c10ed5d01869073f
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 02fa3acdaf0dc450afee97dfaaf5870166013356
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258125"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569518"
 ---
 # <a name="configure-and-use-imported-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用匯入的 PKCS 憑證
 
@@ -31,6 +31,17 @@ Microsoft Intune 支援使用匯入的公開金鑰組 (PKCS) 憑證，通常用�
 S/MIME 加密很具挑戰性，因為電子郵件是以特定憑證加密。 在您閱讀電子郵件的裝置上，您必須擁有加密電子郵件的憑證私密金鑰，以便對電子郵件進行解密。 加密憑證會定期更新，這表示您可能需要所有裝置上的加密歷程記錄，以確保您可以讀取較舊的電子郵件。  由於必須跨裝置使用相同的憑證，因此無法將 [SCEP](certificates-scep-configure.md) 或 [PKCS](certficates-pfx-configure.md) 憑證設定檔用於此目的，因為那些憑證傳遞機制提供了每一裝置唯一的憑證。
 
 如需搭配 Intune 使用 S/MIME 的詳細資訊，請參閱[使用 S/MIME 來加密電子郵件](certificates-s-mime-encryption-sign.md)。
+
+## <a name="supported-platforms"></a>支援的平台
+
+下列平台支援匯入 PFX 憑證：
+
+- Android - 裝置系統管理員
+- Android Enterprise - 完全受控
+- Android Enterprise - 工作設定檔
+- iOS
+- Mac
+- Windows 10
 
 ## <a name="requirements"></a>需求
 
@@ -49,6 +60,8 @@ S/MIME 加密很具挑戰性，因為電子郵件是以特定憑證加密。 在
 - **Windows 伺服器**：
 
   您會使用 Windows Server 來裝載適用於 Microsoft Intune 的 PFX 憑證連接器。  連接器是用來處理匯入至 Intune 之憑證的要求。
+  
+  連接器需要存取相同的連接埠，請參閱[裝置端點內容](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices)中，對於受控裝置的詳細描述。
 
   Intune 支援在與*適用於 Microsoft Intune 的 PFX 憑證連接器*相同的伺服器上安裝 *Microsoft Intune 憑證連接器*。
 

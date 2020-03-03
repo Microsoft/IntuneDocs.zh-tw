@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 46a23ca18e385fa085afb59a654290702465a0ce
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 57a1e1c9c8a03fae67f2a4a25b6b4f16a20a8ec7
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414041"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514450"
 ---
 # <a name="overview-of-the-microsoft-intune-mobile-device-management-mdm-lifecycle"></a>Microsoft Intune 行動裝置管理 (MDM) 生命週期的概觀
 
@@ -30,7 +30,7 @@ ms.locfileid: "73414041"
 
 ## <a name="enroll"></a>註冊
 
-現今的行動裝置管理 (MDM) 策略可以處理各種行動電話、平板電腦和個人電腦 (iOS、Android、Windows 和 Mac OS X)。 如果您需要管理裝置 (通常是管理公司裝置的情況)，第一個步驟是[設定裝置註冊](../enrollment/device-enrollment.md)。 您也可以向 Intune (MDM) 註冊 Windows 電腦或[安裝 Intune 用戶端軟體](../manage-windows-pcs-with-microsoft-intune.md)，以管理電腦。
+現今的行動裝置管理 (MDM) 策略可以處理各種行動電話、平板電腦和個人電腦 (iOS/iPadOS、Android、Windows 和 Mac OS X)。 如果您需要管理裝置 (通常是管理公司裝置的情況)，第一個步驟是[設定裝置註冊](../enrollment/device-enrollment.md)。 您也可以向 Intune (MDM) 註冊 Windows 電腦或[安裝 Intune 用戶端軟體](../manage-windows-pcs-with-microsoft-intune.md)，以管理電腦。
 
 ## <a name="configure"></a>設定
 

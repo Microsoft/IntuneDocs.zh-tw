@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 867873c78b34d5573084a3a6e44d7d4d67846423
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413637"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515164"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在裝置上設定規則可在您的組織中使用 Intune 存取資源
 
@@ -95,9 +95,9 @@ Intune 也包含一組內建的合規性政策設定。 下列內建政策會在
 
 
 > [!NOTE]
-> Intune 已暫時停用 iOS 裝置的增強型越獄偵測。
+> Intune 已暫時停用 iOS/iPadOS 裝置的增強型越獄偵測。
 
-- **加強的越獄偵測**：啟用時，此設定會使 iOS 裝置更頻繁地使用 Intune 來簽入。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
+- **加強的越獄偵測**：啟用時，此設定會使 iOS/iPadOS 裝置更頻繁地存回 Intune。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
 
   啟用此設定會要求裝置：
   - 啟用 OS 層級的位置服務。

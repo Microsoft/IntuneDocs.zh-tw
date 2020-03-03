@@ -6,24 +6,24 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
 ms.localizationpriority: high
 ms.technology: ''
 ms.assetid: 4b6dcbcc-4661-4463-9a36-698d673502c6
-ms.reviewer: elocholi
+ms.reviewer: jinyoon
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 01dae8f6c90155e649211ab226cf24eeade29b42
-ms.sourcegitcommit: f5108039f0ade52e95ea3ac1da1aa16d02224af3
+ms.openlocfilehash: 9dab1025e283ed1591c22b03ed4e3a61d40a20c3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2019
-ms.locfileid: "74946677"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515079"
 ---
 # <a name="integrate-jamf-pro-with-intune-for-compliance"></a>將 Jamf Pro 與 Intune 整合以取得合規性
 
@@ -33,7 +33,7 @@ ms.locfileid: "74946677"
 
 設定整合之後，您將接著在由 Jamf 管理的裝置上[設定 Jamf 和 Intune 以強制遵循條件式存取的規範](conditional-access-assign-jamf.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 ### <a name="products-and-services"></a>產品與服務
 
@@ -92,19 +92,17 @@ Jamf 和 Intune 必須能夠存取下列連接埠，才能正確整合：
 
 6. 選取 [管理]  下方的 [API 權限]  。 
 
-7. 在 [API 權限] 頁面上，選取 [新增權限]  以新增權限。 在 [要求 API 權限]  頁面上，選取 [Intune]  ，然後選取 [應用程式權限]  。 只選取 **update_device_attributes** 的核取方塊。
+7. 在 [API 權限] 頁面上，選取每個現有權限旁邊的 **...** 圖示，以移除此應用程式的所有權限。 請注意，這是必要操作。若此應用程式設定中有任何未預期的額外權限，整合將無法成功。
 
-8. 等候幾分鐘的時間，新的權限才會生效。 然後，選取 [授與  \<您的租用戶> 管理員同意]。 在新視窗中驗證帳戶，並遵循提示來授與應用程式存取權。  
+8. 接下來，我們會新增權限來更新裝置屬性。 在 [API 權限]  頁面上，選取 [新增權限]  以新增權限。 
 
-9. 您可能需要等候另幾分鐘的時間，管理員同意才會生效。
+9. 在 [要求 API 權限]  頁面上，選取 [Intune]  ，然後選取 [應用程式權限]  。 只選取 [update_device_attributes]  的核取方塊，然後儲存新的權限。
 
-10. 按一下頁面頂端的 [重新整理]  按鈕，以重新整理頁面。 確認已為 **update_device_attributes** 權限授與管理員同意。 
+10. 接下來，在 [API 權限]  頁面的左上角，**為 \<您的租用戶>  選取 [授與系統管理員同意]** ，以為此應用程式授與系統管理員的同意。 您可能需要在新視窗中重新驗證帳戶，並遵循提示來授與應用程式存取權。  
 
-11. 選取 [...]  功能表，然後選取 [撤銷管理員同意]  ，以從 [User.Read]  權限移除管理員同意。
+11. 按一下頁面頂端的 [重新整理]  按鈕，以重新整理頁面。 確認已為 **update_device_attributes** 權限授與管理員同意。 
 
-12. 您也必須移除 [User.Read]  權限。 在 [User.Read]  選取 [...]  功能表，然後選取 [移除權限]  。 
-
-8. 成功註冊應用程式之後，API 權限應該只會包含一項稱為 **update_device_attributes** 的權限，且應如下所示：
+12. 成功註冊應用程式之後，API 權限應該只會包含一項稱為 **update_device_attributes** 的權限，且應如下所示：
 
    ![順利取得權限](./media/conditional-access-integrate-jamf/sucessfull-app-registration.png)
 

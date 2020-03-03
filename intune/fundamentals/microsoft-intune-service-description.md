@@ -1,6 +1,6 @@
 ---
 title: Microsoft Intune 服務描述
-description: Microsoft Intune 是雲端式服務，可協助您管理 Windows、iOS、Mac OS X、Android 和 Windows Mobile 裝置。
+description: Microsoft Intune 是雲端式服務，可協助您管理 Windows、iOS/iPadOS、Mac OS X、Android 和 Windows 行動裝置版裝置。
 keywords: ''
 author: dougeby
 ms.author: dougeby
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7744fe217f39436e91f90fdf567f469c01986da4
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: 2b65276ed2da827017406c67838afd89a766b2dc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885641"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515062"
 ---
 # <a name="microsoft-intune-service-description"></a>Microsoft Intune 服務描述
 

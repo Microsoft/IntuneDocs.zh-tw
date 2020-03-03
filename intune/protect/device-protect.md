@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c18b6bcc8ec6e8d78862c0368c920fd3d79ce2b5
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 49c629039c08c892c7d6b19422d79c9eb1a8d760
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755573"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510464"
 ---
 # <a name="protect-devices-with-microsoft-intune"></a>使用 Microsoft Intune 保護裝置
 
@@ -43,7 +43,7 @@ Intune [設定原則](../configuration/device-profiles.md)藉由控制多項設�
 
 ## <a name="require-devices-to-be-compliant"></a>要求裝置符合規定
 Intune 提供[裝置法務遵循政策](device-compliance-get-started.md)，可讓您評估 (在某些情況下則為補救) 不符合您指定規則之規範的裝置。 例如，您可取得以下項目的報告：
-- 已越獄的 iOS 裝置
+- 已越獄的 iOS/iPadOS 裝置
 - 加密或未加密的裝置
 - Window 10 裝置的健康情況 (同運作狀況證明服務判斷)。
 
@@ -60,7 +60,7 @@ Intune 為您提供多種功能以協助保護應用程式及其資料。 例如
 Intune 可讓您與 [Windows Hello 企業版](windows-hello.md)整合，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡來登入 Windows 10 和更新版本的替代方法。
 
 ## <a name="disable-activation-lock-on-ios-devices"></a>在 iOS 裝置上停用啟用鎖定
-「啟用鎖定」是一項能協助保護使用者裝置的功能。 這項功能會要求使用者必須先輸入其 Apple ID 和密碼，才能清除或重新啟用裝置。 不過，這項功能也可能會產生問題，例如使用者離職卻未移除鎖定的狀況。 [停用 iOS 啟用鎖定](../remote-actions/device-activation-lock-disable.md)可以移除受監督的 iOS 裝置鎖定，幫助您重新配置或將其抹除。
+「啟用鎖定」是一項能協助保護使用者裝置的功能。 這項功能會要求使用者必須先輸入其 Apple ID 和密碼，才能清除或重新啟用裝置。 不過，這項功能也可能會產生問題，例如使用者離職卻未移除鎖定的狀況。 [停用 iOS/iPadOS 啟用鎖定](../remote-actions/device-activation-lock-disable.md)可以移除受監督的 iOS/iPadOS 裝置鎖定，幫助您重新配置或將其抹除。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0b7c0a7dfa4337983c12ada2d0f415c771bd0548
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 507c7ecff9715ebf9f24567c735592f3f255ccc9
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755182"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609170"
 ---
 # <a name="add-an-ios-line-of-business-app-to-microsoft-intune"></a>將 iOS 企業營運應用程式新增至 Microsoft Intune
 
@@ -31,10 +31,13 @@ ms.locfileid: "76755182"
 
 使用本文中的資訊，協助您將 iOS 企業營運 (LOB) 應用程式新增至 Microsoft Intune。 企業營運 (LOB) 應用程式是您從 IPA 應用程式安裝檔案新增至 Intune 的應用程式。 這類應用程式通常是在內部撰寫的。 您必須先加入 iOS Developer Enterprise Program。 如需做法詳細資訊，請參閱 [Apple 的網站](https://developer.apple.com/programs/ios/enterprise/) \(英文\)。
 
->[!NOTE]
->iOS 裝置的使用者可以移除部分內建的 iOS 應用程式，例如股票和地圖。 您無法使用 Intune 來重新部署這些應用程式。 如果使用者刪除這些應用程式，則必須移至應用程式商店，並手動重新安裝。
+> [!NOTE]
+> iOS 裝置的使用者可以移除部分內建的 iOS 應用程式，例如股票和地圖。 您無法使用 Intune 來重新部署這些應用程式。 如果使用者刪除這些應用程式，則必須移至應用程式商店，並手動重新安裝。
 >
->iOS LOB 應用程式對每個應用程式有 4 GB 的大小上限。
+> iOS LOB 應用程式對每個應用程式有 4 GB 的大小上限。
+
+> [!NOTE]
+> 組合識別碼 (例如，*com.contoso.app*) 必須為應用程式的唯一識別碼。 例如，若要在實際執行版本上安裝 LOB 應用程式的搶鮮版 (Beta)，以供測試之用，該搶鮮版 (Beta) 必須具有不同的唯一識別碼 (例如 *com.contoso.app-beta*)。 否則，該搶鮮版 (Beta) 會與實際執行版本重疊，並視其為升級。 重新命名 .ipa 檔案並不會影響此行為。
 
 ## <a name="select-the-app-type"></a>選取應用程式類型
 
@@ -50,7 +53,7 @@ ms.locfileid: "76755182"
 1. 在 [新增應用程式]  窗格中，按一下 [選取應用程式套件檔案]  。 
 2. 在 [應用程式套件檔案]  窗格中，選取 [瀏覽] 按鈕。 然後選取副檔名為 **.ipa** 的 iOS 安裝檔案。
    應用程式詳細資料隨即顯示。
-3. 當您完成時，請選取 [應用程式套件檔案]  窗格上的 [確定]  來新增應用程式。
+3. 當您完成時，請選取 [應用程式套件檔案]  窗格上的 [確定]  以新增應用程式。
 
 ### <a name="set-app-information"></a>設定應用程式資訊
 
@@ -72,17 +75,17 @@ ms.locfileid: "76755182"
 ## <a name="step-2---select-scope-tags-optional"></a>步驟 2 - 選取範圍標籤 (選擇性)
 您可以使用範圍標籤來決定可在 Intune 中看見用戶端應用程式資訊的人員。 如需範圍標籤的完整詳細資料，請參閱[針對分散式 IT 使用角色型存取控制和範圍標籤](../fundamentals/scope-tags.md)。
 
-1. 按一下 [選取範圍標籤]  來選擇性地為應用程式新增範圍標籤。 
+1. 按一下 [選取範圍標籤]  以選擇性地為應用程式新增範圍標籤。 
 2. 按一下 [下一步]  以顯示 [指派]  頁面。
 
 ## <a name="step-3---assignments"></a>步驟 3 - 指派
 
-1. 為應用程式選取 [必要]  、[適用於已註冊的裝置]  ，或 [解除安裝]  群組指派。 如需詳細資訊，請參閱[新增群組來組織使用者和裝置](~/fundamentals/groups-add.md)和[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
+1. 為應用程式選取 [必要]  、[適用於已註冊的裝置]  ，或 [解除安裝]  群組指派。 如需詳細資訊，請參閱[新增群組來組織使用者和裝置](~/fundamentals/groups-add.md)與[使用 Microsoft Intune 將應用程式指派給群組](apps-deploy.md)。
 2. 按一下 [下一步]  以顯示 [檢閱 + 建立]  頁面。 
 
 ## <a name="step-4---review--create"></a>步驟 4 - 檢閱 + 建立
 
-1. 檢閱您針對應用程式所輸入的值和設定。
+1. 檢閱您針對應用程式所輸入的值與設定。
 2. 當您完成時，請按一下 [建立]  以將應用程式新增到 Intune。
 
     企業營運應用程式的 [概觀]  刀鋒視窗隨即顯示。

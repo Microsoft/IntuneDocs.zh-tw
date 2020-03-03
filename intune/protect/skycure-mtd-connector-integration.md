@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 19c1bb959212ebeaea40f7089cba5533b6efeb71
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 9f639c4d2c2bcfa62f828fa18973fe6a513b1a82
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912602"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514858"
 ---
 # <a name="set-up-symantec-endpoint-protection-mobile-integration-with-intune"></a>設定 Symantec Endpoint Protection Mobile 與 Intune 整合
 
@@ -54,7 +54,7 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
 ### <a name="how-are-the-sep-mobile-apps-used-with-azure-ad-and-intune"></a>SEP Mobile 應用程式如何與 Azure AD 和 Intune 搭配使用？
 
-- **iOS 應用程式：** 允許終端使用者使用 iOS 應用程式登入 Azure AD。
+- **iOS 應用程式：** 允許終端使用者使用 iOS/iPadOS 應用程式登入 Azure AD。
 
 - **Android 應用程式：** 允許終端使用者使用 Android 應用程式登入 Azure AD。
 
@@ -77,11 +77,11 @@ SEP Mobile 支援兩種與 Intune 整合的模式：
 
 5. 當登入頁面開啟時，輸入您的 Intune 認證，然後選擇 [接受]  。
 
-    ![iOS 應用程式 Intune 登入提示的影像](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
+    ![iOS/iPadOS 應用程式 Intune 登入提示的影像](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 
 6. 應用程式新增至 Azure AD 之後，您會看到已成功新增應用程式的指示。
 
-    ![iOS 應用程式完成畫面的影像](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
+    ![iOS/iPadOS 應用程式完成畫面的影像](./media/skycure-mtd-connector-integration/symantec-portal-basic-added.png)
 
 7. 針對 [SEP Mobile Android]  和 [管理]  應用程式重複這些步驟。
 
@@ -136,11 +136,11 @@ SEP Mobile 會將執行其 Mobile Threat Defense 服務的裝置，與 Azure AD 
 
 6. 在 [iOS 應用程式]  旁，選擇 [新增至 Active Directory]  按鈕。
 
-    ![顯示將 iOS 應用程式新增到 Active Directory 的影像](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
+    ![顯示將 iOS/iPadOS 應用程式新增到 Active Directory 的影像](./media/skycure-mtd-connector-integration/symantec-portal-basic-add.png)
 
 7. 使用 Azure Active Directory 認證登入管理目錄的 Office 365 帳戶。
 
-8. 選擇 [接受]  按鈕以將 SEP Mobile iOS 應用程式新增至 Azure Active Directory。
+8. 選擇 [接受]  按鈕以將 SEP Mobile iOS/iPadOS 應用程式新增至 Azure Active Directory。
 
     ![顯示接受按鈕的影像](./media/skycure-mtd-connector-integration/symantec-portal-basic-accept.png)
 

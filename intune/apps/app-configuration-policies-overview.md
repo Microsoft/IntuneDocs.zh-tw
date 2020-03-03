@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2cf53b26c1617ca7fc493c837e57823c23781bc
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 334cadfb7e668febad95a512eb34f62a73667ec6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414847"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513991"
 ---
 # <a name="app-configuration-policies-for-microsoft-intune"></a>Microsoft Intune 的應用程式設定原則
 
@@ -91,7 +91,7 @@ ms.locfileid: "77414847"
 
 ## <a name="diagnostic-logs"></a>診斷記錄
 
-### <a name="ios-configuration-on-unmanaged-devices"></a>非受控裝置上的 iOS 設定
+### <a name="iosipados-configuration-on-unmanaged-devices"></a>非受控裝置上的 iOS/iPadOS 設定
 
 您可以在非受控裝置上使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS/iPadOS 設定。 除了下列步驟之外，您可以使用 Microsoft Edge 來存取受控應用程式記錄。 如需詳細資訊，請參閱[在 iOS/iPadOS 上使用 Microsoft Edge 來存取受控應用程式記錄](~/apps/manage-microsoft-edge.md#use-microsoft-edge-on-ios-to-access-managed-app-logs)。
 
@@ -135,7 +135,7 @@ ms.locfileid: "77414847"
 
 ![目標應用程式設定](./media/app-configuration-policies-overview/targeted-app-configuration-3.png)
 
-### <a name="ios-configuration-on-managed-devices"></a>受控裝置上的 iOS 設定
+### <a name="iosipados-configuration-on-managed-devices"></a>受控裝置上的 iOS/iPadOS 設定
 
 您可以在受控裝置上使用 [Intune 診斷記錄]  針對受控應用程式設定驗證 iOS/iPadOS 設定。
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 43c5d0731736df193bf615391ad486a60dff6cdd
-ms.sourcegitcommit: 2506cdbfccefd42587a76f14ee50c3849dad1708
+ms.openlocfilehash: b611b2307b7b4f7e789e7db9d070e4b6b3f1350c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/11/2020
-ms.locfileid: "75885907"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514484"
 ---
 # <a name="set-the-mobile-device-management-authority"></a>設定行動裝置管理授權單位
 
@@ -69,7 +69,7 @@ ms.locfileid: "75885907"
 當您切換至新的 MDM 授權單位之後，在裝置簽入服務並完成同步處理之前，很可能需要經歷一些轉換時間 (最多 8 小時)。 您必須在新的 MDM 授權單位中進行設定，以確保已註冊裝置在變更後會繼續受到管理及保護。 
 - 裝置在變更後必須與服務連線，新的 MDM 授權單位 (Intune 獨立部署) 的設定才能取代裝置上的現有設定。
 - 在您變更 MDM 授權單位之後，部分來自先前 MDM 授權單位的基本設定 (例如設定檔)，將會在裝置上保留最多七天的時間，或直到裝置首次連線至服務為止。 建議您盡快在新的 MDM 授權單位中設定應用程式及設定 (原則、設定檔、應用程式等)，並針對擁有現有已註冊裝置的使用者，將設定部署至包含這些使用者的使用者群組。 在 MDM 授權單位變更之後，裝置在連線至服務時便會立即接收到來自新 MDM 授權單位的新設定，以避免管理及保護上出現間隙。
-- 裝置若無關聯的使用者 (通常發生在 iOS 裝置註冊計劃或大量註冊的案例)，便不會移轉至新的 MDM 授權單位。 針對這些裝置，您需要連絡支援人員來取得協助，以便將這些裝置移至新的 MDM 授權單位。
+- 裝置若無相關聯的使用者 (通常發生在 iOS/iPadOS 裝置註冊計劃或大量註冊的案例)，便不會遷移至新的 MDM 授權單位。 針對這些裝置，您需要連絡支援人員來取得協助，以便將這些裝置移至新的 MDM 授權單位。
 
 ## <a name="change-mdm-authority-to-office-365"></a>將 MDM 授權單位變更為 Office 365
 
@@ -93,7 +93,7 @@ MDM 授權單位無法變更回「未知」。 服務會使用 MDM 授權單位�
 - 就算裝置在 MDM 授權單位變更期間 (或於結束後立即) 啟動電源並上線，在裝置能與處於新 MDM 授權單位之下的服務進行註冊之前，將會有最多 8 小時 (視下一個已排程一般簽入的時間而定) 的延遲。    
 
   > [!IMPORTANT]    
-  > 從變更 MDM 授權單位到將更新的 APNs 憑證上傳至新授權單位的期間內，針對 iOS 裝置的新裝置註冊及裝置簽入會失敗。 因此，在變更 MDM 授權單位之後，請務必盡快檢閱並將 APNs 憑證上傳至新的授權單位。
+  > 從變更 MDM 授權單位到將更新的 APN 憑證上傳至新授權單位的期間內，針對 iOS/iPadOS 裝置的新裝置註冊及裝置存回會失敗。 因此，在變更 MDM 授權單位之後，請務必盡快檢閱並將 APNs 憑證上傳至新的授權單位。
 
 - 使用者可以透過從裝置手動啟動服務簽入，來快速變更至新的 MDM 授權單位。 使用者可以使用公司入口網站應用程式並起始裝置合規性檢查，來輕鬆執行此變更。
 - 在變更 MDM 授權單位之後，若要在裝置簽入服務並完成同步處理後確認一切是否正常，請在新的 MDM 授權單位中尋找該裝置。

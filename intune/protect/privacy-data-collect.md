@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e93e69b5cce2c54ae07410309b33870dd828f563
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: bd204271b9ae3e57e15a101647444913749f4109
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509077"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514229"
 ---
 # <a name="data-collection-in-intune"></a>Intune 中的資料收集
 
@@ -112,7 +112,7 @@ Intune 所收集的匿名化資料可能包括但不限於：
   - 帳戶識別碼
   - EAS 裝置識別碼
   - 平台特定識別碼
-  - iOS 裝置的 AppleID
+  - iOS/iPadOS 裝置的 AppleID
   - 適用於 Mac 裝置的 Mac 位址
   - 適用於 Windows 裝置的 Windows 識別碼
 - 受控應用程式資訊
@@ -136,7 +136,7 @@ Intune 所收集的彙總資料可能包括但不限於：
   - installedDeviceCount：應用程式安裝所在的裝置數目。
   - notApplicableDeviceCount：應用程式不適用的裝置數目。
   - notInstalledDeviceCount：應用程式適用但未安裝的裝置數目。
-  - pendingInstallDeviceCount：應用程式適用但安裝擱置中的裝置數目。
+  - pendingInstallDeviceCount：應用程式適用但安裝暫止中的裝置數目。
 
 ## <a name="next-steps"></a>後續步驟
 

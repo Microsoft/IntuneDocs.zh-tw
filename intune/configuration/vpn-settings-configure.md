@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中將 VPN 設定新增至裝置 - Azure | Microsoft Docs
-description: 針對 Android、Android Enterprise、iOS、macOS 與 Windows 裝置，請使用內建設定來建立 Microsoft Intune 中的虛擬私人網路 (VPN) 連線。
+description: 針對 Android、Android Enterprise、iOS、iPadOS、macOS 與 Windows 裝置，請使用內建設定來建立 Microsoft Intune 中的虛擬私人網路 (VPN) 連線。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b11cbd3427b3b8e0a43a6e6e2af5fa80da45e16a
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 134ef9a2a4dfe8a4576c753a001439c42f678adc
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206273"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510808"
 ---
 # <a name="create-vpn-profiles-to-connect-to-vpn-servers-in-intune"></a>在 Intune 中建立 VPN 設定檔以連線到 VPN 伺服器
 
@@ -28,7 +28,7 @@ ms.locfileid: "75206273"
 
 虛擬私人網路 (VPN) 為您的使用者提供安全的組織網路遠端存取。 裝置會使用 VPN 連線設定檔來啟動與 VPN 伺服器的連線。 Microsoft Intune 中的 **VPN 設定檔**會將 VPN 設定指派給組織中的使用者與裝置，讓他們可以輕鬆且安全地連線到組織網路。
 
-例如，您想要使用連線到組織網路上檔案共用所需的設定，來設定所有 iOS 裝置。 您會建立包含這些設定的 VPN 設定檔。 接著，您需將此設定檔指派給所有擁有 iOS 裝置的使用者。 這些使用者會在可用的網路清單中看到此 VPN 連線，而且很輕鬆就能建立連線。
+例如，您想要使用連線到組織網路上檔案共用所需的設定來設定所有 iOS/iPadOS 裝置。 您會建立包含這些設定的 VPN 設定檔。 接著，您需將此設定檔指派給所有擁有 iOS/iPadOS 裝置的使用者。 這些使用者會在可用的網路清單中看到此 VPN 連線，而且很輕鬆就能建立連線。
 
 > [!NOTE]
 > 您可以使用 [Intune 自訂設定原則](custom-settings-configure.md)來建立下列平台的 VPN 設定檔：
@@ -47,19 +47,19 @@ ms.locfileid: "75206273"
 |連線類型|平台|
 |-|-|
 |自動|Windows 10|
-|Check Point Capsule VPN|- Android<br/>- Android Enterprise 工作設定檔<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Cisco AnyConnect|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS<br/>- macOS|
-|Cisco (IPSec)|iOS|
-|Citrix SSO|- Android<br/>- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- Android Enterprise 裝置擁有者 (完全受控)：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
-|自訂 VPN|- iOS<br/>- macOS|
-|F5 Access|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|IKEv2| - iOS<br/>- Windows 10|
+|Check Point Capsule VPN|- Android<br/>- Android Enterprise 工作設定檔<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Cisco AnyConnect|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS/iPadOS<br/>- macOS|
+|Cisco (IPSec)|iOS/iPadOS|
+|Citrix SSO|- Android<br/>- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- Android Enterprise 裝置擁有者 (完全受控)：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS/iPadOS<br/>- Windows 10|
+|自訂 VPN|- iOS/iPadOS<br/>- macOS|
+|F5 Access|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|IKEv2| - iOS/iPadOS<br/>- Windows 10|
 |L2TP|Windows 10|
-|Palo Alto Networks GlobalProtect|- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS<br/>- Windows 10|
+|Palo Alto Networks GlobalProtect|- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS/iPadOS<br/>- Windows 10|
 |PPTP|Windows 10|
-|Pulse Secure|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|SonicWall Mobile Connect|- Android<br/>- Android Enterprise 工作設定檔<br/>- iOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
-|Zscaler|- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS|
+|Pulse Secure|- Android<br/>- Android Enterprise 工作設定檔<br/>- Android Enterprise 裝置擁有者 (完全受控)<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|SonicWall Mobile Connect|- Android<br/>- Android Enterprise 工作設定檔<br/>- iOS/iPadOS<br/>- macOS<br/>- Windows 10<br/>- Windows 8.1<br/>- Windows Phone 8.1|
+|Zscaler|- Android Enterprise 工作設定檔：使用[應用程式設定原則](../apps/app-configuration-policies-use-android.md)<br/>- iOS/iPadOS|
 
 > [!IMPORTANT]
 > 您必須先針對設定檔安裝適用的 VPN 應用程式，才能使用指派至裝置的 VPN 設定檔。 您可以使用[什麼是 Microsoft Intune 應用程式管理？](../apps/app-management.md)一中的資訊，協助您使用 Intune 指派應用程式。  
@@ -119,4 +119,4 @@ VPN 設定檔可以使用來自不同製造商的多種連線類型及通訊協�
 
 一旦設定檔建立完成，它還不會執行任何動作。 接下來，[指派設定檔](device-profile-assign.md)給一些裝置。
 
-您也可以在 [Android](android-pulse-secure-per-app-vpn.md) 與 [iOS](vpn-setting-configure-per-app.md) 裝置上，建立及使用個別應用程式 VPN。
+您也可以在 [Android](android-pulse-secure-per-app-vpn.md) 與 [iOS/iPadOS](vpn-setting-configure-per-app.md) 裝置上，建立及使用個別應用程式 VPN。

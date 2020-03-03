@@ -1,7 +1,7 @@
 ---
 title: 在 Microsoft Intune 中移除 SCEP 或 PKCS 憑證 - Azure | Microsoft Docs
 titleSuffix: ''
-description: 系統管理員可以使用抹除或淘汰動作，自 Microsoft Intune 移除憑證。 在某些情況下，系統會自動移除憑證，例如取消註冊裝置或移除合規性政策。 在某些情況下，憑證會自動保留在裝置上，例如在 Intune 授權遺失或遭到移除時。 了解各自在 Android、Android Enterprise、iOS、macOS 和 Windows 裝置上的不同方式。
+description: 系統管理員可以使用抹除或淘汰動作，自 Microsoft Intune 移除憑證。 在某些情況下，系統會自動移除憑證，例如取消註冊裝置或移除合規性政策。 在某些情況下，憑證會自動保留在裝置上，例如在 Intune 授權遺失或遭到移除時。 了解各自在 Android、Android Enterprise、iOS/iPadOS、macOS 和 Windows 裝置上的不同方式。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ms.reviewer: lacranda
-ms.openlocfilehash: dbf6d95c8902a95993b972ff7639d4afb4324ac8
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: a77780c05b0f637a4ee5100f8c7a1a729c3ec674
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410181"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576258"
 ---
 # <a name="remove-scep-and-pkcs-certificates-in-microsoft-intune"></a>在 Microsoft Intune 中移除 SCEP 和 PKCS 憑證
 

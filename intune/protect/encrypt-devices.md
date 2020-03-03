@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/25/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.reviewer: annovich
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5209ce7fba30a156de055503751104f9090d49d7
-ms.sourcegitcommit: e7052114324b80d0503b107c934bb90b8eb29704
+ms.openlocfilehash: a5c844377dcd69b6caf5ef9f72fcb8dbb4ef8bd0
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2020
-ms.locfileid: "75755996"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609311"
 ---
 # <a name="use-device-encryption-with-intune"></a>搭配 Intune 使用裝置加密
 
@@ -39,17 +39,30 @@ Intune 也提供內建的[加密報告](encryption-monitor.md)，該報告會提
 
 使用 Intune 在執行 macOS 的裝置上設定 FileVault 磁碟加密。 然後，使用 Intune 加密報告來檢視這些裝置的加密詳細資料，並管理 FileVault 加密裝置的修復金鑰。
 
-請注意，若要讓 FileVault 在裝置上運作，需要使用者核准的裝置註冊。 使用者必須從系統偏好設定中手動核准管理設定檔，系統才會將註冊視為使用者核准。 
+若要讓 FileVault 在裝置上運作，則需要使用者核准的裝置註冊。 使用者必須從系統偏好設定中手動核准管理設定檔，系統才會將註冊視為使用者核准。
 
 FileVault 是隨附於 macOS 的完整磁碟加密程式。 您可以使用 Intune，在執行 **macOS 10.13 或更新版本**的裝置上設定 FileVault。
 
 若要設定 FileVault，請針對 macOS 平台建立 Endpoint Protection 的[裝置組態設定檔](../configuration/device-profile-create.md)。 FileVault 設定是 macOS Endpoint Protection 其中一項可用的設定類別。
 
-當您使用 FileVault 建立加密裝置的原則後，原則會以兩階段套用至裝置。 首先，裝置已準備好讓 Intune 擷取和備份修復金鑰。 這稱為委付。 委付金鑰之後，磁碟加密就可以啟動。
+當您使用 FileVault 建立加密裝置的原則後，原則會以兩階段套用至裝置。 首先，裝置已準備好讓 Intune 擷取和備份修復金鑰。 此動作稱為委付。 委付金鑰之後，磁碟加密就可以啟動。
 
 ![FileVault 設定](./media/encrypt-devices/filevault-settings.png)
 
 如需可讓您使用 Intune 來管理的 FileVault 設定詳細資料，請參閱適用於 macOS Endpoint Protection 設定的 Intune 文章中 [FileVault](endpoint-protection-macos.md#filevault)。
+
+### <a name="permissions-to-manage-filevault"></a>管理 FileVault 的權限
+
+若要在 Intune 中管理 FileVault，您的帳戶必須具有適用的 Intune [角色型存取控制](../fundamentals/role-based-access-control.md) (RBAC) 權限。
+
+下列為 FileVault 權限，其為 [遠端工作]  類別的一部分，以及授與權限的內建 RBAC 角色：
+ 
+- **取得 FileVault 金鑰**：
+  - 技術服務人員
+  - 端點安全性管理員
+
+- **輪替 FileVault 金鑰**
+  - 技術服務人員
 
 ### <a name="how-to-configure-macos-filevault"></a>如何設定 macOS FileVault
 
@@ -84,7 +97,7 @@ FileVault 是隨附於 macOS 的完整磁碟加密程式。 您可以使用 Intu
 
 ### <a name="retrieve-personal-recovery-key-from-mem-encrypted-macos-devices"></a>從 MEM 加密的 macOS 裝置擷取個人修復金鑰
 
-終端使用者將能夠使用 iOS 公司入口網站應用程式來擷取其個人修復金鑰 (FileVault 金鑰)。 具有個人修復金鑰的裝置必須向 Intune 註冊，並透過 Intune 以 FileVault 加密。 終端使用者可以使用 iOS 公司入口網站應用程式，開啟包含 FileVault 個人修復金鑰的網頁。 您也可以透過選取 [裝置]   > 已加密且已註冊的 macOS 裝置   > [取得修復金鑰]  ，從 Intune 擷取修復金鑰。 
+終端使用者可使用 iOS 公司入口網站應用程式來擷取其個人修復金鑰 (FileVault 金鑰)。 具有個人修復金鑰的裝置必須向 Intune 註冊，並透過 Intune 以 FileVault 加密。 終端使用者可以使用 iOS 公司入口網站應用程式，開啟包含 FileVault 個人修復金鑰的網頁。 您也可以透過選取 [裝置]   > 已加密且已註冊的 macOS 裝置   > [取得修復金鑰]  ，從 Intune 擷取修復金鑰。 
 
 ## <a name="bitlocker-encryption-for-windows-10"></a>適用於 Windows 10 的 BitLocker 加密
 
@@ -131,7 +144,7 @@ BitLocker 適用於執行 **Windows 10 或更新版本**的裝置。
 
   - **用戶端驅動的復原密碼旋轉**
 
-  此設定位於 [Windows 加密]  底下，並作為 Windows 10 Endpoint Protection 之裝置設定原則的一部分。
+  此設定位於 [Windows 加密]  底下，且為 Windows 10 Endpoint Protection 裝置設定原則的一部分。
   
 #### <a name="to-rotate-the-bitlocker-recovery-key"></a>輪替 BitLocker 修復金鑰
 

@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/06/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,21 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 061644a1c83b02902a6bbdaf3cfbd04815d32ea3
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: 9c2083d6f259b62b2856e08fec5ebcb696cbc0df
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755029"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576439"
 ---
-# <a name="manually-add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 手動新增 Windows 10 公司入口網站應用程式
+# <a name="add-the-windows-10-company-portal-app-by-using-microsoft-intune"></a>使用 Microsoft Intune 新增 Windows 10 公司入口網站應用程式
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-使用者可以透過 Microsoft Store 自行安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果企業需要由您指派公司入口網站應用程式給使用者，您也可以直接透過 Intune 手動指派 Windows 10 公司入口網站應用程式。 即使尚未整合 Intune 與商務用 Microsoft Store，您仍可以進行上述作業。
+使用者可以透過 Microsoft Store 自行安裝公司入口網站應用程式，以管理裝置及安裝應用程式。 不過，如果企業需要由您指派公司入口網站應用程式給使用者，則您可直接透過 Intune 指派 Windows 10 公司入口網站應用程式。 即使尚未整合 Intune 與商務用 Microsoft Store，您仍可以進行上述作業。
 
- > [!NOTE]
- > 本文中所述的選項需要您在每次應用程式更新發行之後指派手動更新。
+ > [!IMPORTANT]
+ > 若您下載了公司入口網站應用程式，則本文中所述的選項便需要您在每次應用程式發行更新之後指派手動更新。 若要為佈建了 Windows 10 Autopilot 的裝置部署公司入口網站應用程式，請參閱[新增 Windows 10 公司入口網站應用程式 Autopilot 裝置](~/apps/store-apps-company-portal-autopilot.md)。
 
 ## <a name="configure-settings-to-show-offline-apps"></a>組態設定以顯示離線應用程式
 1. 使用您的系統管理員帳戶，登入[商務用 Microsoft Store](https://www.microsoft.com/business-store)。

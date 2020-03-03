@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 84d33e0ff6bbe407d9838f97214f37d042a2e261
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6e00a2d3c245c1297f2ea28ab0184369e7d92980
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414691"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513940"
 ---
 # <a name="what-is-microsoft-intune-app-management"></a>什麼是 Microsoft Intune 應用程式管理？
 
@@ -92,20 +92,20 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
   - [監視應用程式](apps-monitor.md)。
 - **應用程式設定原則**：選取此選項來提供使用者執行應用程式時可能需要的設定。 如需詳細資訊，請參閱：
   - [Intune 的應用程式設定原則](app-configuration-policies-overview.md)。
-    - [iOS 應用程式設定原則](app-configuration-policies-use-ios.md)。
+    - [iOS/iPadOS 應用程式設定原則](app-configuration-policies-use-ios.md)。
     - [Android 應用程式設定原則](app-configuration-policies-use-android.md)。
 - **應用程式保護原則**：選取此選項，將各項設定與應用程式產生關聯並協助保護它所使用的公司資料。 例如，您可以限制某應用程式與其他應用程式的通訊能力，或者您可以要求使用者輸入 PIN 碼才能存取公司應用程式。 如需詳細資訊，請參閱：
   - [應用程式保護原則](app-protection-policies.md)。
 - **應用程式選擇性抹除**：選取此選項，從選取的使用者裝置只移除公司資料。 如需詳細資訊，請參閱：
   - [應用程式選擇性抹除](apps-selective-wipe.md)。
 - **iOS 應用程式佈建設定檔**：iOS/iPadOS 應用程式包含由憑證所簽署的佈建設定檔與程式碼。 憑證過期之後便無法再次執行應用程式。 Intune 為您提供了可以主動將新的佈建設定檔原則指派給有應用程式即將到期的裝置。 如需詳細資訊，請參閱：
-  - [iOS 應用程式佈建設定檔](app-provisioning-profile-ios.md)。
+  - [iOS/iPadOS 應用程式佈建設定檔](app-provisioning-profile-ios.md)。
 
 如需本節的詳細資訊，請參閱[管理應用程式](app-management.md)。
 
 ### <a name="monitor"></a>監視
 - **應用程式授權**：檢視、指派及監視從應用程式市集大量採購的應用程式。 如需詳細資訊，請參閱：
-  - [iOS 大量採購方案 (VPP) 應用程式](vpp-apps-ios.md)。
+  - [iOS/iPadOS 大量採購方案 (VPP) 應用程式](vpp-apps-ios.md)。
   - [商務用 Microsoft Store 大量採購應用程式](windows-store-for-business.md)。
 - **探索到的應用程式**：檢視 Intune 所指派或安裝在裝置上的應用程式。 如需詳細資訊，請參閱 [Intune 探索到的應用程式](app-discovered-apps.md)。
 - **應用程式安裝狀態**：檢視您所建立應用程式指派的狀態。 如需詳細資訊，請參閱[使用 Microsoft Intune 監視應用程式資訊和指派](apps-monitor.md#device-and-user-status-graphs)。
@@ -116,7 +116,7 @@ Intune 提供各種功能，可協助您在所要的裝置上取得所需的應�
 
 ### <a name="set-up"></a>設定
 - **iOS VPP 權杖**：套用並檢視您的 iOS/iPadOS 大量採購方案 (VPP) 授權。 如需詳細資訊，請參閱：
-  - [iOS 大量採購應用程式](vpp-apps-ios.md)
+  - [iOS/iPadOS 大量採購應用程式](vpp-apps-ios.md)
 - **Windows 企業憑證**：套用或檢視程式碼簽署憑證的狀態，此憑證可用來將企業營運應用程式發佈到您的受控 Windows 裝置。
 - **Windows Symantec 憑證**：套用或檢視 Symantec 程式碼簽署憑證的狀態，將 XAP 和 WP8.x appx 檔案發佈至 Windows 10 行動裝置版裝置時需要此憑證。
 - **商務用 Microsoft 網上商店**：設定對商務用 Microsoft Store 的整合。 執行此動作之後，可以將採購的應用程式同步到 Intune 並加以指派，以及追蹤授權使用狀況。 如需詳細資訊，請參閱：

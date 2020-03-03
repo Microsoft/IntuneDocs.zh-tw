@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3399cf006543c0a3554c4c6ec812554462d74231
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: 0232855773626693d848f77e561c51d281739215
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75691812"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514603"
 ---
 # <a name="guided-scenario---secure-microsoft-office-mobile-apps"></a>引導式案例 - 保護 Microsoft Office 行動應用程式 
 
-藉由在裝置管理入口網站中遵循此引導式案例，您可以在 iOS 和 Android 裝置上啟用基本的 Intune 應用程式保護。
+藉由在裝置管理入口網站中遵循此引導式案例，您可以在 iOS/iPadOS 和 Android 裝置上啟用基本的 Intune 應用程式保護。
 
 您啟用的應用程式保護將會強制執行下列動作： 
 - 加密工作檔案。
@@ -51,7 +51,7 @@ Office 行動應用程式以及適用於行動裝置的 Microsoft Edge 都支援
 
 應用程式型條件式存取和用戶端應用程式管理會新增一個安全性層級，方法是確定只有支援 Intune 應用程式保護原則的用戶端應用程式才能存取 Exchange Online 和其他 Office 365 服務。
 
-當您只允許 Microsoft Outlook 應用程式存取 Exchange Online 時，可以封鎖 iOS 和 Android 上內建的郵件應用程式。 此外，您可以封鎖沒有套用 Intune 應用程式保護原則的應用程式，阻擋它們存取 SharePoint Online。
+當您只允許 Microsoft Outlook 應用程式存取 Exchange Online 時，可以封鎖 iOS/iPadOS 和 Android 上內建的郵件應用程式。 此外，您可以封鎖沒有套用 Intune 應用程式保護原則的應用程式，阻擋它們存取 SharePoint Online。
 
 在這個範例中，系統管理員已經將應用程式保護原則套用至 Outlook 應用程式，接著套用條件式存取規則，將 Outlook 應用程式新增到可在存取公司電子郵件時使用之應用程式的核准清單中。
 
@@ -69,7 +69,7 @@ Office 行動應用程式以及適用於行動裝置的 Microsoft Edge 都支援
 
 藉由遵循 **Intune 應用程式保護**引導式案例，您將可避免在組織外部共用或洩漏資料。 
 
-指派的 iOS 和 Android 使用者必須在每次開啟 Office 應用程式時輸入 PIN。 在 5 次失敗的 PIN 嘗試之後，使用者必須重設其 PIN。 如果您已經需要裝置 PIN，使用者將不會受到影響。
+指派的 iOS/iPadOS 和 Android 使用者必須在每次開啟 Office 應用程式時輸入 PIN。 在 5 次失敗的 PIN 嘗試之後，使用者必須重設其 PIN。 如果您已經需要裝置 PIN，使用者將不會受到影響。
 
 ### <a name="what-you-will-need-to-continue"></a>您需要什麼才能繼續
 
@@ -86,7 +86,7 @@ Office 行動應用程式以及適用於行動裝置的 Microsoft Edge 都支援
 
 ## <a name="step-3---apps"></a>步驟 3 - 應用程式
 
-為了協助您開始使用，此引導式案例會預先選取下列行動應用程式，以在 iOS 和 Android 裝置上進行保護：
+為了協助您開始使用，此引導式案例會預先選取下列行動應用程式，以在 iOS/iPadOS 和 Android 裝置上進行保護：
 - Microsoft Excel 
 - Microsoft Word 
 - Microsoft Teams 

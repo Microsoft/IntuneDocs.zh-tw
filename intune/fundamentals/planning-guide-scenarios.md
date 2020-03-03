@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 96ebae46fd4935c3070319f16d35d5b53888e94c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 3f432ab20170dc702d2014bbac68ced06e51082e
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505167"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514892"
 ---
 # <a name="identify-mobile-device-management-use-case-scenarios"></a>識別行動裝置管理使用案例
 
@@ -79,15 +79,15 @@ ms.locfileid: "72505167"
 
 下一步是識別每個使用案例的相關聯行動裝置平台。 可能有多個平台。
 
-例如，公司的使用案例可能支援 iOS 和 Android Samsung Knox 裝置平台。 您的 BYOD 原則可能包含對於其他行動裝置平台的支援，例如 Android (非 Samsung Knox) 和 Windows 10 行動裝置版。 以前述範例為基礎，我們已建立行動裝置平台與每個使用案例的關聯性。
+例如，公司的使用案例可能支援 iOS/iPadOS 和 Android Samsung Knox 裝置平台。 您的 BYOD 原則可能包含對於其他行動裝置平台的支援，例如 Android (非 Samsung Knox) 和 Windows 10 行動裝置版。 以前述範例為基礎，我們已建立行動裝置平台與每個使用案例的關聯性。
 
 | **使用案例** | **次要使用案例** | **群組** | **裝置平台** |   
 |:---:|:---:|:---:|:---:|
-| 公司 | 資訊工作者 | 人力資源、財務 | iOS |                                                           
-| 公司 | 主管 | 人力資源、財務 | iOS |                                                           
+| 公司 | 資訊工作者 | 人力資源、財務 | iOS/iPadOS |                                                           
+| 公司 | 主管 | 人力資源、財務 | iOS/iPadOS |                                                           
 | 公司 | Kiosk | 零售 | Android |
-| BYOD | 資訊工作者 | 行銷、銷售 | iOS |                                                           
-| BYOD | 主管 | 行銷、銷售 | iOS |
+| BYOD | 資訊工作者 | 行銷、銷售 | iOS/iPadOS |                                                           
+| BYOD | 主管 | 行銷、銷售 | iOS/iPadOS |
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d302db46510b664aec5b0a71fd8b19985e29be37
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 48bfe727615f5165fc70ed2e08f98f01203dc895
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206120"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514824"
 ---
 # <a name="use-policy-sets-to-group-collections-of-management-objects"></a>使用原則集合將管理物件集合組成群組
 
@@ -52,7 +52,7 @@ ms.locfileid: "75206120"
 當您建立原則集合時，您會建立單一指派單位，並管理不同物件之間的關聯性。 對於位於原則集合外部的物件來說，原則集合將會是參考。 所包含物件中的任何變更也都會影響原則集合。 在您建立原則集合之後，您可以重複檢視及編輯其物件和指派。 
 
 > [!NOTE]
-> 原則集合支援 Windows、Android、macOS 及 iOS 設定，並可以跨平台指派。
+> 原則集合支援 Windows、Android、macOS 及 iOS/iPadOS 設定，並可以跨平台指派。
 
 ## <a name="how-to-create-a-policy-set"></a>如何建立原則集合
 
@@ -82,15 +82,15 @@ ms.locfileid: "75206120"
 - 建立原則集合時，如果具範圍的系統管理員嘗試在沒有選取任何範圍標籤的情況下建立原則集合，在抵達 [檢閱 + 建立]  頁面時，驗證將會失敗，且系統會在狀態列上顯示錯誤。 系統管理員必須切換到程序中不同的頁面，然後再返回 [檢閱 + 建立]  頁面。 這將會啟用 [建立]  選項。  
  
 - 原則集合目前支援下列應用程式類型：
-    - iOS 市集應用程式
-    - iOS 企業營運應用程式
-    - 受控 iOS 企業營運應用程式
+    - iOS/iPadOS store app
+    - iOS/iPadOS 企業營運應用程式
+    - 受控 iOS/iPadOS 企業營運應用程式
     - Android 市集應用程式
     - Android 企業營運應用程式
     - 受控 Android 企業營運應用程式
     - Office 365 專業增強版套件 (Windows 10)
     - 網頁連結
-    - 內建 iOS 應用程式
+    - 內建 iOS/iPadOS 應用程式
     - 內建 Android 應用程式
 
 - 不支援將原則設定指派從 [所有使用者]  設定為 [Autopilot 設定檔]  。
@@ -103,18 +103,18 @@ ms.locfileid: "75206120"
 
 - 支援原則集合的 MAM 原則類型包含下列項目： 
     - 以 MAM WIP(Windows) MDM 為目標的受控應用程式保護 
-    - 以 MAM iOS 為目標的受控應用程式保護
+    - 以 MAM iOS/iPadOS 為目標的受控應用程式保護
     - 以 MAM Android 為目標的受控應用程式保護
-    - 以 MAM iOS 為目標的受控應用程式設定
+    - 以 MAM iOS/iPadOS 為目標的受控應用程式設定
     - 以 MAM Android 為目標的受控應用程式設定
 
 - 不支援原則集合的 MAM 原則類型包含下列項目： 
     - 以 MAM WIP(Windows) 為目標的受控應用程式保護
 
 - MAM 會針對下列原則類型將原則集合指派以直接指派的形式處理：
-    - 以 MAM iOS 為目標的受控應用程式保護
+    - 以 MAM iOS/iPadOS 為目標的受控應用程式保護
     - 以 MAM Android 為目標的受控應用程式保護
-    - 以 MAM iOS 為目標的受控應用程式設定
+    - 以 MAM iOS/iPadOS 為目標的受控應用程式設定
     - 以 MAM Android 為目標的受控應用程式設定
 
     如果將原則新增至已部署至群組的原則集合，該群組將會在工作負載中顯示為已直接指派，而非「透過原則集合指派」。 因此，MAM 並不會處理來自原則集合的群組指派刪除。

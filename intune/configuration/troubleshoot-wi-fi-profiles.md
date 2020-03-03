@@ -1,11 +1,11 @@
 ---
 title: 檢閱 Microsoft Intune 中的 Wi-Fi 裝置設定檔記錄並進行疑難排解 - Azure | Microsoft Docs
-description: 了解 Microsoft Intune 中 Android、iOS 和 Windows 裝置上的 Wi-Fi 裝置組態設定檔問題，並進行疑難排解。 檢閱記錄，並查看一些常見的問題和可能的解決方式。
+description: 了解 Microsoft Intune 中 Android、iOS/iPadOS 和 Windows 裝置上的 Wi-Fi 裝置組態設定檔問題，並進行疑難排解。 檢閱記錄，並查看一些常見的問題和可能的解決方式。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 70f471e7f4db7ddce89d8956474822375c684944
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: db663f96f1e4fe84c506395b98c52956069e5426
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75547970"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512818"
 ---
 # <a name="troubleshoot-wi-fi-device-configuration-profiles-in-microsoft-intune"></a>針對 Microsoft Intune 中的 Wi-Fi 裝置組態設定檔進行疑難排解
 
-在 Intune 中，您可以建立裝置組態設定檔，其中包括 WiFi 網路的連線設定。 使用這些設定，將使用者的 Android、iOS 和 Windows 裝置連線到組織網路。
+在 Intune 中，您可以建立裝置組態設定檔，其中包括 WiFi 網路的連線設定。 使用這些設定，將使用者的 Android、iOS/iPadOS 和 Windows 裝置連線到組織網路。
 
 本文說明將 Wi-Fi 設定檔成功套用於裝置後的樣子。 它也包括記錄資訊、常見問題等等。 使用本文來協助您針對 Wi-Fi 設定檔進行疑難排解。
 
@@ -100,25 +100,25 @@ ms.locfileid: "75547970"
 
 ```
 
-## <a name="ios"></a>iOS
+## <a name="iosipados"></a>iOS/iPadOS
 
 在裝置上安裝 Wi-Fi 設定檔之後，它會顯示在 [管理設定檔]  中：
 
 > [!div class="mx-imgBorder"]
-> ![iOS 裝置上的管理設定檔](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
+> ![Intune 中 iOS/iPadOS 的管理設定檔](./media/troubleshoot-wi-fi-profiles/ios-management-profile.png)
 
 > [!div class="mx-imgBorder"]
-> ![Wi-Fi 連線會在 iOS 裝置上顯示為 Wi-Fi 網路](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
+> ![Wi-Fi 連線會在 Intune 中的 iOS/iPadOS 裝置上顯示為 Wi-Fi 網路](./media/troubleshoot-wi-fi-profiles/ios-wifi-connection-in-management-profile.png)
 
-### <a name="review-the-ios-console-and-device-logs"></a>檢閱 iOS 主控台和裝置記錄
+### <a name="review-the-iosipados-console-and-device-logs"></a>檢閱 iOS/iPadOS 主控台和裝置記錄
 
-在 iOS 裝置上，公司入口網站應用程式記錄不包含 Wi-Fi 設定檔的相關資訊。 若要查看 Wi-Fi 設定檔的安裝詳細資料，請使用主控台/裝置記錄：
+在 iOS/iPadOS 裝置上，公司入口網站應用程式記錄不包含 Wi-Fi 設定檔的資訊。 若要查看 Wi-Fi 設定檔的安裝詳細資料，請使用主控台/裝置記錄：
 
-1. 將 iOS 裝置連線到 Mac。 移至 [應用程式]   > [公用程式]  ，然後開啟主控台應用程式。
+1. 將 iOS/iPadOS 裝置連線到 Mac。 移至 [應用程式]   > [公用程式]  ，然後開啟主控台應用程式。
 2. 在 [動作]  底下，選取 [包含資訊訊息]  和 [包含偵錯訊息]  ：
 
     > [!div class="mx-imgBorder"]
-    > ![iOS 主控台應用程式中的 [包含資訊訊息] 和 [包含偵錯訊息]](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
+    > ![iOS/iPadOS 主控台應用程式中的 [包含資訊訊息] 和 [包含偵錯訊息]](./media/troubleshoot-wi-fi-profiles/ios-console-app-include-info-messages-debug-messages.png)
 
 3. 重現情節，並將記錄儲存至文字檔：
 
@@ -263,7 +263,7 @@ WiFiConfigurationServiceProvider: Node set value, type: (0x4), Result: (The oper
 
 - 如需 Microsoft Intune 中 Wi-Fi 設定檔的詳細資訊，請參閱下列文章：
 
-  - 針對執行 [Android](wi-fi-settings-android.md)、[iOS](wi-fi-settings-ios.md) 和 [Windows 10 與更新版本](wi-fi-settings-windows.md)的裝置新增 Wi-Fi 設定。
+  - 針對執行 [Android](wi-fi-settings-android.md)、[iOS/iPadOS](wi-fi-settings-ios.md) 和 [Windows 10 與更新版本](wi-fi-settings-windows.md)的裝置新增 Wi-Fi 設定。
   - [支援提示 - 如何在 Intune 中為 SCEP 憑證部署設定 NDES](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Support-Tip-How-to-configure-NDES-for-SCEP-certificate/ba-p/455125)
   - 針對 [SCEP 憑證設定檔部署](https://support.microsoft.com/help/4526725/troubleshooting-scep-profile-deployment-to-android-devices-in-intune)和 [NDES 設定](https://support.microsoft.com/help/4459540/troubleshoot-ndes-configuration-for-use-with-intune)進行疑難排解。
 

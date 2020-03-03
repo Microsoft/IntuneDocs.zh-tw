@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6167c48dcfd6b29749dca8d0378ff31ca239b154
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415367"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473748"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS/iPadOS 裝置
 
@@ -77,6 +77,9 @@ iOS/iPadOS 11 中對非監督式 DEP 裝置的支援已淘汰。 在 iOS/iPadOS 
     ![取得註冊計劃權杖。](./media/device-enrollment-program-enroll-ios/image01.png)
 
 2. 藉由選取 [我同意]  來將權限授與 Microsoft，以將使用者和裝置資訊傳送給 Apple。
+
+> [!NOTE]
+> 當您在步驟 2 之後下載 Intune 公開金鑰憑證後，請勿關閉精靈或巡覽出這個頁面。 這麼做會讓您下載的憑證失效，而必須重複此程序。 如果遇到此狀況，則您通常會注意到 [檢閱 + 建立] 索引標籤上的 [建立] 按鈕呈現灰色，而無法完成此程序。
 
    ![[Apple 憑證] 工作區中 [註冊計劃權杖] 窗格下載公開金鑰的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/add-enrollment-program-token-pane.png)
 

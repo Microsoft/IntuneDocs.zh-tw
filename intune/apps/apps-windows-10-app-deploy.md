@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/30/2020
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fa4510b95e1e84d9f94158833dac555daa33c690
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
+ms.openlocfilehash: 7251a2db0c36db9d01e51ca8fc62bd4e072d80e6
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912551"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609219"
 ---
 # <a name="windows-10-app-deployment-by-using-microsoft-intune"></a>使用 Microsoft Intune 進行 Windows 10 應用程式部署 
 
@@ -44,18 +44,19 @@ Microsoft Intune 支援 Windows 10 裝置上的各種應用程式類型和部署
 
 根據您使用者正在執行的 Windows 10 版本，指定支援的應用程式類型。 下表提供應用程式類型和 Windows 10 支援能力。
 
-| 應用程式類型 | 家庭 | 專業版 | Microsoft Store | 企業 | Education | S 模式 | HoloLens | SurfaceHub | WCOS | 行動電話 |
+| 應用程式類型 | 家庭 | 專業版 | Microsoft Store | 企業 | Education | S 模式 | HoloLens<sup>1 | Surface Hub | WCOS | 行動電話 |
 |----------------|------|-----|----------|------------|-----------|--------|-----------|------------|------|--------|
 |  .MSI | 否 | 是 | 是 | 是 | 是 | 否 | 否 | 否 | 否 | 否 |
 | .IntuneWin | 否 | 是 | 是 | 是 | 是 | 19H2+ | 否 | 否 | 否 | 否 |
-| Office C2R | 否 | 是 | 是 | 是 | 是 | 否 | 否 | 否 | 否 | 否 |
+| Office C2R | 否 | 是 | 是 | 是 | 是 | RS4+ | 否 | 否 | 否 | 否 |
 | LOB:APPX/MSIX | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 |
 | MSFB 離線 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 |
-| MSFB 上線 | 是 | 是 | 是 | 是 | 是 | 是 | RS4+ | 是 | 是 | 是 |
-| Web 應用程式 | 是 | 是 | 是 | 是 | 是 | 是 | 是<sup>1 | 是<sup>1 | 是 | 是 |
+| MSFB 上線 | 是 | 是 | 是 | 是 | 是 | 是 | RS4+ | 否 | 是 | 是 |
+| Web 應用程式 | 是 | 是 | 是 | 是 | 是 | 是 | 是<sup>2 | 是<sup>2 | 是 | 是<sup>2 |
 | 市集連結 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 | 是 |
 
-<sup>1</sup> 僅限從公司入口網站啟動。
+<sup>1</sup> 若要解除鎖定應用程式管理，請將 HoloLens 裝置升級為 [Holographic for Business](../fundamentals/windows-holographic-for-business.md)。<br />
+<sup>2</sup> 僅限從公司入口網站啟動。
 
 > [!NOTE]
 > 所有 Windows 應用程式類型都需要註冊。

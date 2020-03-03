@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c9b56ba1515608afb6c2a0d151f5412711d49e57
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: b83367bb2f1d3622a1fc4e11eedd88f3f26ee8dd
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886711"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510600"
 ---
 # <a name="use-a-custom-device-profile-to-create-a-wifi-profile-with-a-pre-shared-key-in-intune"></a>使用自訂裝置設定檔，在 Intune 中建立包含預先共用金鑰的 WiFi 設定檔
 
@@ -44,7 +44,7 @@ ms.locfileid: "76886711"
 
 - 從連線到該網路的電腦複製程式碼可能比較容易，如本文稍後所述。
 - 您可以新增更多 OMA URI 設定，以新增多個網路和金鑰。
-- 若為 iOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。
+- 針對 iOS/iPadOS，請使用 Mac 站上的 Apple Configurator 來設定設定檔。
 - PSK 需要 64 個十六進位數字的字串，或是 8 到 63 個可列印 ASCII 字元的複雜密碼。 不支援某些字元，例如星號 (*)。
 
 ## <a name="create-a-custom-profile"></a>建立自訂設定檔

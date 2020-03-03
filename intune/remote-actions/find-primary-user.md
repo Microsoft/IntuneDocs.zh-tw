@@ -17,18 +17,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fbafca746c43dada6281ffbfe1e34f01afa8ab91
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413683"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569450"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>尋找 Intune 裝置的主要使用者
 
 主要使用者 (也就是使用者裝置親和性) 是每個 Intune 裝置的屬性。 您可以為 Intune 裝置指派零或一位主要使用者。 若未指派任何主要使用者，即會將裝置稱為「共用裝置」。
 
-## <a name="how-to-find-a-devices-primary-user"></a>如何尋找裝置的主要使用者
+## <a name="find-a-devices-primary-user"></a>尋找裝置的主要使用者
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]  > 選擇裝置。
@@ -38,7 +38,7 @@ ms.locfileid: "77413683"
 主要使用者屬性可在下列位置，用來將授權的 Intune 使用者對應至其裝置：
 - 公司入口網站應用程式
 - 終端使用者網站
-- IT 專業人員體驗，例如對 Azure 入口網站中的頁面進行疑難排解。 這些頁面會使用主要使用者，將使用者帳戶對應至裝置。    
+- IT 專業人員體驗，例如對 Azure 入口網站中的頁面進行疑難排解。 這些頁面會使用主要使用者，將使用者帳戶對應至裝置。 
 
 ### <a name="company-portal-app"></a>公司入口網站應用程式
 公司入口網站應用程式預期登入公司入口網站的使用者帳戶為該裝置的主要使用者。 如果已將另一位使用者指派為主要使用者，公司入口網站就會顯示一則警告：

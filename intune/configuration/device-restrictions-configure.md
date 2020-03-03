@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/04/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -15,18 +15,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8c86252030a4baf957077cd889386bb8016554f1
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 53985a9af523ecf60efda5c5c651161c132e326c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206562"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511216"
 ---
 # <a name="configure-device-restriction-settings-in-microsoft-intune"></a>在 Microsoft Intune 中設定裝置限制設定
 
 
 
-Intune 包含裝置限制原則，可協助系統管理員控制 Android、iOS、macOS 及 Windows 裝置。 這些限制可讓您控制廣泛的設定及功能，以保護您組織的資源。 例如，系統管理員可以：
+Intune 包含裝置限制原則，可協助系統管理員控制 Android、iOS/iPadOS、macOS 及 Windows 裝置。 這些限制可讓您控制廣泛的設定及功能，以保護您組織的資源。 例如，系統管理員可以：
 
 - 允許或封鎖裝置相機
 - 控制針對 Google Play、應用程式市集、檢視文件，以及遊戲的存取
@@ -44,7 +44,7 @@ Intune 包含裝置限制原則，可協助系統管理員控制 Android、iOS�
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
-    - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，一個良好的原則名稱是 **iOS:Block camera on devices**。
+    - **名稱**：輸入政策的描述性名稱。 為您的設定檔命名，以方便之後能夠輕鬆識別。 例如，良好的原則名稱為 **iOS/iPadOS：Block camera on devices**。
     - **描述**：輸入政策的描述。 這是選擇性設定，但建議執行。
     - **平台**：選擇您的裝置平台。 選項包括：  
 

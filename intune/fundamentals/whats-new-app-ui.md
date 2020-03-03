@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7e38e4f8552b6ef217d264cfa74597bda5c665ab
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: aab10058fe507a956bb793902e6f7b09d8579966
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125042"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576537"
 ---
 # <a name="ui-updates-for-intune-end-user-apps"></a>Intune 終端使用者應用程式的 UI 更新
 
@@ -59,7 +59,7 @@ ms.locfileid: "77125042"
 ## <a name="week-of-october-28-2019"></a>2019 年 10 月 28 日當週  
 
 ### <a name="improved-checklist-design-in-company-portal-app-for-android----5550857---"></a>改善了 Android 版公司入口網站應用程式中的檢查清單設計 <!-- 5550857 -->  
-Android 版公司入口網站應用程式中的設定檢查清單已更新為採用輕量設計與新圖示。 這些變更與針對 iOS 版公司入口網站應用程式所做的最新更新一致。 針對已更新的註冊步驟，請參閱[使用 Android 工作設定檔註冊](/intune-user-help/enroll-device-android-work-profile)與[註冊您的 Android 裝置](/intune-user-help/enroll-device-android-company-portal)。  
+Android 版公司入口網站應用程式中的設定檢查清單已更新為採用輕量設計與新圖示。 這些變更與針對 iOS/iPadOS 版公司入口網站應用程式所做的最新更新一致。 針對已更新的註冊步驟，請參閱[使用 Android 工作設定檔註冊](/intune-user-help/enroll-device-android-work-profile)與[註冊您的 Android 裝置](/intune-user-help/enroll-device-android-company-portal)。  
 
 下列畫面顯示已更新的 Android 工作設定檔註冊檢查清單：
 
@@ -216,7 +216,7 @@ Intune Company Portal for Windows 10 應用程式已更新 [Fluent Design System
 ## <a name="week-of-april-2-2018"></a>2018 年 4 月 2 日當週
 
 ### <a name="user-experience-update-for-the-company-portal-app-for-ios----1412866---"></a>iOS 版公司入口網站應用程式的使用者體驗更新 <!-- 1412866 -->
-我們已經發行 iOS 版公司入口網站應用程式的主要使用者經驗更新。 此更新採用全新現代化外觀的視覺設計。 應用程式的功能不變，但強化了可用性與協助工具功能。  
+我們已經發行 iOS/iPadOS 版公司入口網站應用程式的主要使用者經驗更新。 此更新採用全新現代化外觀的視覺設計。 應用程式的功能不變，但強化了可用性與協助工具功能。  
 
 此外還包括：
 - iPhone X 的支援。
@@ -267,7 +267,7 @@ Intune Company Portal for Windows 10 應用程式已更新 [Fluent Design System
 
 ### <a name="improvements-to-device-setup-workflow-in-the-company-portal-for-ios-in-version-290----1417174---"></a>iOS 版公司入口網站 2.9.0 版中裝置設定工作流程的改善 <!-- 1417174 -->
 
-我們已經改進了 iOS 版公司入口網站應用程式的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
+我們已改善 iOS/iPadOS 版公司入口網站應用程式的裝置設定工作流程。 語言對使用者來說更簡單明瞭，而且我們已盡量將可以合併的畫面合併。 我們也透過在整個設定文字中使用您的公司名稱，讓語言更特定於您的公司。
 
 > [!NOTE]
 > 我們會將您在 Azure 入口網站中設定的公司名稱用於 [Microsoft Intune]   > [用戶端應用程式]   > [公司入口網站品牌]   > [公司名稱]  。 如果您沒有設定此值，我們將使用在 [Azure Active Directory]   > [屬性]   > [名稱]  中設定的租用戶名稱。 如果您尚未在 [公司入口網站品牌] 中設定公司名稱，且不希望顯示您的租用戶名稱，建議您在 [公司入口網站品牌] 索引標籤中設定公司名稱。如果您不希望在公司入口網站的標頭中顯示此字串，則可以取消選取 [在標誌旁顯示公司名稱] 核取方塊。
@@ -303,7 +303,7 @@ Windows 10 版「公司入口網站」應用程式中的 [設定] 頁面已更�
 ### <a name="search-improvements-to-the-company-portal-website----1331697---"></a>公司入口網站的搜尋改善 <!-- 1331697 -->
 我們正在改善應用程式搜尋功能，並從[公司入口網站](https://portal.manage.microsoft.com)開始。 除了 [名稱] 和 [描述] 欄位之外，現在也會對應用程式類別執行搜尋。 預設會依相關性的遞減順序來排序結果。 
 
-iOS 使用者也會收到這項變更，因為也會使用公司入口網站作為適用於 iOS 的公司入口網站應用程式一部分。 適用於 Android 和 Windows 的公司入口網站應用程式將會在接下來的幾個月收到類似的更新。
+iOS 使用者也會收到這項變更，因為也會使用公司入口網站作為適用於 iOS/iPadOS 公司入口網站應用程式的一部分。 適用於 Android 和 Windows 的公司入口網站應用程式將會在接下來的幾個月收到類似的更新。
 
 我們仍然會微調相關性的追蹤方式；因此，請使用公司入口網站底端的 [意見反應] 連結，讓我們知道其運作方式。
 
@@ -407,7 +407,7 @@ Windows 10 的公司入口網站應用程式會將 [類別]  標記從標題下�
 
 ### <a name="improved-sign-in-experience-across-company-portal-apps-for-all-platforms---user-story-1132123--"></a>已改善適用於所有平台公司入口網站應用程式的登入體驗 <!--User Story 1132123-->
 
-我們宣布將在幾個月內推出變更，以改進 Android、iOS 和 Windows 版 Intune 公司入口網站應用程式的登入體驗。 當 Azure AD 進行此變更時，新的使用者體驗會自動顯示在所有平台的公司入口網站應用程式上。 此外，使用者現在可以使用產生的一次性驗證碼，從另一部裝置登入公司入口網站。 在使用者需要不使用認證登入的情況下，這特別有用。  
+我們宣告將在幾個月內推出變更，以改善 Android、iOS/iPadOS 和 Windows 版 Intune 公司入口網站應用程式的登入體驗。 當 Azure AD 進行此變更時，新的使用者體驗會自動顯示在所有平台的公司入口網站應用程式上。 此外，使用者現在可以使用產生的一次性驗證碼，從另一部裝置登入公司入口網站。 在使用者需要不使用認證登入的情況下，這特別有用。  
 
 以下您可以看到舊版的登入體驗、使用認證的新登入體驗，以及從另一部裝置登入的新登入體驗。
 

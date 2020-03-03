@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/25/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6d35d7470508b610f850ca7f9f394e0d26bec677
-ms.sourcegitcommit: 576b9528629981e87e775fac146932e502f07a74
+ms.openlocfilehash: 99983b2d2776e72232c65fcfb12d8075061d804b
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2020
-ms.locfileid: "77258091"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609336"
 ---
 # <a name="configure-and-use-pkcs-certificates-with-intune"></a>透過 Intune 設定並使用 PKCS 憑證
 
@@ -66,7 +66,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
   Microsoft Intune 憑證連接器也支援聯邦資訊處理標準 (FIPS) 模式。 FIPS 並非必要，但啟用時可發出及撤銷憑證。
 
 - **適用於 Microsoft Intune 的 PFX 憑證連接器**：  
-  如果您打算使用 S/MIME 電子郵件加密，請使用 Intune 入口網站來下載支援匯入 PFX 憑證的 *PFX 憑證連接器*。  移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝匯入 PFX 憑證連接器的步驟」  。 使用入口網站中的下載連結，開始下載安裝程式 **PfxCertificateConnectorBootstrapper.exe**。 
+  如果您打算使用 S/MIME 電子郵件加密，請使用 Intune 入口網站來下載支援匯入 PFX 憑證的 *PFX 憑證連接器*。  移至 [裝置設定]   > [憑證連接器]   > [新增]  ，並遵循「安裝匯入 PFX 憑證連接器的步驟」  。 使用入口網站中的下載連結，開始下載安裝程式 **PfxCertificateConnectorBootstrapper.exe**。
 
   每個 Intune 租用戶都支援此連接器的單一執行個體。 您可在相同的伺服器上安裝此連接器，作為 Microsoft Intune 憑證連接器的執行個體。
 
@@ -79,10 +79,12 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
   如需詳細資訊，請參閱 [Microsoft intune 的網路端點](../fundamentals/intune-endpoints.md)和 [Intune 網路設定需求與頻寬](../fundamentals/network-bandwidth-use.md)。
 
 - **Windows 伺服器**：  
-  您可以使用 Windows Server 來裝載：
+  使用 Windows Server 來裝載：
 
   - Microsoft Intune 憑證連接器，用於驗證和 S/MIME 電子郵件簽署情況
   - 適用於 Microsoft Intune 的 PFX 憑證連接器，用於 S/MIME 電子郵件加密情況。
+
+  連接器需要存取相同的連接埠，請參閱[裝置端點內容](https://docs.microsoft.com/intune/fundamentals/intune-endpoints#access-for-managed-devices)中，對於受控裝置的詳細描述。
 
   Intune 支援在與 *Microsoft Intune 憑證連接器*相同的伺服器上安裝 *PFX 憑證連接器*。
   
@@ -124,7 +126,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 9. 在 [延伸模組]  中，確認您在 [應用程式原則]  下看到「加密檔案系統」、「安全電子郵件」和「用戶端驗證」。
 
     > [!IMPORTANT]
-    > 若為 iOS 憑證範本，請移至 [延伸模組]  索引標籤、更新 [金鑰使用方法]  ，並確認未選取 [簽章是原件證明]  。
+    > 若為 iOS/iPadOS 憑證範本，請前往 [延伸模組]  索引標籤、更新 [金鑰使用方式]  ，並確認未選取 [簽章為原件證明]  。
 
 10. 在 [安全性]  中，新增您安裝 Microsoft Intune 憑證連接器之伺服器的電腦帳戶。 允許此帳戶的 [讀取]  和 [註冊]  權限。
 11. 選取 [套用]   > [確定]  ，儲存憑證範本。 關閉 [憑證範本主控台]  。
@@ -208,12 +210,13 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
    |------------|------------|------------|
    |**更新閾值 (%)**        |<ul><li>全部         |建議為 20%  | 
    |**憑證有效期間**  |<ul><li>全部         |如果您沒有變更憑證範本，此選項可設定為一年。 |
-   |**金鑰儲存提供者 (KSP)**   |<ul><li>Windows 10  | 針對 Windows，選取要在裝置上儲存金鑰的位置。 |
+   |**金鑰儲存提供者 (KSP)**   |<ul><li>Windows 10  |針對 Windows，選取要在裝置上儲存金鑰的位置。 |
    |**憑證授權單位**      |<ul><li>全部         |顯示您企業 CA 的內部完整網域名稱 (FQDN)。  |
    |**憑證授權單位名稱** |<ul><li>全部         |列出您企業 CA 的名稱，例如 "Contoso Certification Authority"。 |
+   |**憑證範本名稱**    |<ul><li>全部         |列出您的憑證範本名稱。 |
    |**憑證類型**             |<ul><li>Android Enterprise (工作設定檔  )</li><li>iOS</li><li>macOS</li><li>Windows 10 及更新版本|選取類型： <ul><li> [使用者]  憑證可在憑證的主旨與 SAN 中包含使用者屬性和裝置屬性。 </il><li>[裝置]  憑證只能在憑證的主旨與 SAN 中包含裝置屬性。 針對無使用者裝置 (如 Kiosk 或其他共用裝置) 等情況使用 [裝置]。  <br><br> 此選項會影響 [主體名稱格式]。 |
-   |**主體名稱格式**          |<ul><li>全部         |針對大部分平台，除非另有需要，否則請將此選項設為 [一般名稱]  。<br><br>對於下列平台，[主體名稱格式] 取決於憑證類型： <ul><li>Android Enterprise (工作設定檔  )</li><li>iOS</li><li>macOS</li><li>Windows 10 及更新版本</li></ul>  <p> 請參閱此文章稍後的[主體名稱格式](#subject-name-format)。 |
-   |**主體別名**     |<ul><li>全部         |除非另有需要，否則請將此選項設定為 [使用者主體名稱 (UPN)]  。 |
+   |**主體名稱格式**          |<ul><li>全部         |如需如何設定主體名稱格式的詳細資料，請參閱本文稍後的[主體名稱格式](#subject-name-format)。  <br><br> 針對大部分平台，除非另有需要，否則請使用 [一般名稱]  選項。 <br><br>對於下列平台，[主體名稱格式] 取決於憑證類型： <ul><li>Android Enterprise (工作設定檔  )</li><li>iOS</li><li>macOS</li><li>Windows 10 及更新版本</li></ul>  <p>  |
+   |**主體別名**     |<ul><li>全部         |針對「屬性」  ，除非另有需要，否則請選取 [使用者主體名稱 (UPN)]  並設定對應的「值」  ，然後按一下 [新增]  。 <br><br>如需詳細資訊，請參閱本文稍後的[主體名稱格式](#subject-name-format)。|
    |**擴充金鑰使用方法**           |<ul><li> Android 裝置管理員 </li><li>Android Enterprise (裝置擁有者  、工作設定檔  ) </li><li>Windows 10 |憑證需要 [用戶端驗證]  ，使用者或裝置才能向伺服器進行驗證。 |
    |**允許所有應用程式存取私密金鑰** |<ul><li>macOS  |設定為 [啟用]  ，將 PKCS 憑證私密金鑰的存取權，授與為相關聯 Mac 裝置設定的應用程式。 <br><br> 如需此設定的詳細資訊，請參閱 Apple 開發人員文件中[組態設定檔參考](https://developer.apple.com/business/documentation/Configuration-Profile-Reference.pdf) \(英文\) 的 *AllowAllAppsAccess* 憑證承載一節。 |
    |**根憑證**             |<ul><li>Android 裝置管理員 </li><li>Android Enterprise (裝置擁有者  、工作設定檔  ) |選取先前指派的根 CA 憑證設定檔。 |
@@ -284,8 +287,6 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
   > - 裝置憑證的「主體」  或 *SAN* 中所使用裝置屬性 (例如 **IMEI**、**SerialNumber** 和 **FullyQualifiedDomainName**)，這些屬性可由具有裝置存取權的人員來偽造。
   > - 裝置必須支援憑證設定檔中指定的所有變數，才能在該裝置上安裝該設定檔。  例如，如果 SCEP 設定檔的主體名稱中使用 **{{IMEI}}** ，但該設定檔指派給沒有 IMEI 編號的裝置，則設定檔安裝將會失敗。  
  
-
-
 ## <a name="whats-new-for-connectors"></a>連接器的新功能
 
 這兩個憑證連接器的更新會定期發行。 當我們更新連接器時，您可在此閱讀有關變更的資訊。
@@ -303,7 +304,7 @@ Microsoft Intune 中包含的內建設定，可使用 PKCS 憑證對您的組織
 - **適用於 Microsoft Intune 的 PFX 憑證連接器 - 6.1905.0.402 版**  
   此版本的變更：  
   - 連接器的輪詢間隔已從 5 分鐘縮短為 30 秒。
- 
+
 ### <a name="april-2-2019"></a>2019 年 4 月 2 日
 
 - **Intune 憑證連接器 - 6.1904.1.0 版**  

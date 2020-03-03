@@ -1,6 +1,6 @@
 ---
-title: 使用應用程式保護原則的 iOS 應用程式
-description: 本主題說明當 iOS 應用程式交由應用程式保護原則管理時的行為。
+title: 使用應用程式保護原則的 iOS/iPadOS 應用程式
+description: 本主題描述當 iOS/iPadOS 應用程式交由應用程式保護原則管理時的行為。
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 165ce160339647e396b9cfc3a8374f21c77665f8
-ms.sourcegitcommit: f9dc50642efa8656054ef67f9335b9b46b655f93
+ms.openlocfilehash: c854811a9deb938613af872f3cf86244ab9121b3
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/02/2020
-ms.locfileid: "75606616"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514654"
 ---
-# <a name="what-to-expect-when-your-ios-app-is-managed-by-app-protection-policies"></a>當 iOS 應用程式交由應用程式保護原則管理時的行為
+# <a name="what-to-expect-when-your-iosipados-app-is-managed-by-app-protection-policies"></a>當 iOS/iPadOS 應用程式交由應用程式保護原則管理時的行為
 
 Intune 應用程式保護原則適用於公司或學校所使用的應用程式。 這表示當您的員工和學生在個人內容中使用他們的應用程式時，他們的體驗可能不會有任何差異。 不過，在公司或學校內容中，他們可能會收到提示以做出帳戶決策、更新其設定，或與您聯繫以尋求幫助。 使用此文章來了解使用者在嘗試存取和使用受 Intune 保護的應用程式時的體驗。  
 
@@ -34,7 +34,7 @@ Intune 應用程式保護原則適用於公司或學校所使用的應用程式�
 
 <!--- The following screenshot from the Skype app illustrates this restart request: --->
 
-<!---  ![Screenshot of the iOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
+<!---  ![Screenshot of the iOS/iPadOS device showing PIN prompt](./media/end-user-mam-apps-ios/iOS_AppPINPrompt.png) --->
 
 針對**在 Intune 中註冊以進行管理**的裝置，使用者會看到其應用程式現在已受管理的訊息。
 

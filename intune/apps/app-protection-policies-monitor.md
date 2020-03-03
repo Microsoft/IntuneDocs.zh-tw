@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 899e2d2dc8458d0909f01e9dfcc1056874ef0fa7
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 317f39b28909196d03ef5e7c68c7980f5fdfea3f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437965"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512206"
 ---
 # <a name="how-to-monitor-app-protection-policies"></a>如何監視應用程式保護原則
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
@@ -48,7 +48,7 @@ ms.locfileid: "77437965"
    ![[Intune 行動應用程式管理] 窗格的 [摘要] 圖格螢幕擷取畫面](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
 
 - **指派的使用者**：您公司中使用與工作內容原則建立關聯之應用程式的指派使用者當中，受到保護且授權的總數，以及未受保護且未授權的總數。
-- **已標幟的使用者**：其裝置遇到問題的使用者數目。 [已標幟的使用者]  下會報告已進行 JB (iOS) 或 Root (Android) 破解的裝置。 此外，這裡將會報告具有透過 Google SafetyNet 裝置證明檢查 (如果 IT 系統管理員有開啟) 標幟之裝置的使用者。 
+- **已標幟的使用者**：其裝置遇到問題的使用者數目。 [已標幟的使用者]  下會報告已進行越獄 (iOS/iPadOS) 或 Root (Android) 的裝置。 此外，這裡將會報告具有透過 Google SafetyNet 裝置證明檢查 (如果 IT 系統管理員有開啟) 標幟之裝置的使用者。 
 - **具潛在有害應用程式的使用者**：Google Play 安全防護所偵測到其 Android 裝置上可能具有害應用程式的使用者數目。 
 - **iOS 使用者狀態**和 **Android 使用者狀態**：已使用應用程式並在相關平台工作內容中獲派原則的使用者數目。 此資訊顯示由原則管理的使用者數目，以及使用工作內容中任何原則未設為目標之應用程式的使用者數目。 您可以考慮將這些使用者新增至原則。
 - [最受保護的 iOS/iPadOS 應用程式]  與 [最受保護的 Android 應用程式]  ：根據最常使用的 iOS/iPadOS 與 Android 應用程式，此資訊會依平台顯示受保護與未受保護之應用程式的數目。
@@ -61,7 +61,7 @@ ms.locfileid: "77437965"
 您可以透過選擇 [標有旗標的使用者]  磚和 [具潛在有害應用程式的使用者]  磚來取得摘要的詳細檢視。
 
 ### <a name="flagged-users"></a>標有旗標的使用者
-[詳細檢視] 會顯示錯誤訊息、發生錯誤時存取的應用程式、受影響的裝置作業系統平台和時間戳記。 此錯誤通常用於已進行越獄 (iOS) 或 Root (Android) 的裝置。 此外，這裡會報告具有透過「SafetyNet 裝置證明」條件式啟動檢查旗標之裝置的使用者，以及 Google 所報告的原因。 若要從報告中移除使用者，裝置本身的狀態必須已變更，這會在下一次根偵測檢查 (或越獄檢查/SafetyNet 檢查發生) 需要回報正面結果之後發生。 如果裝置已真正修復，則在窗格重新載入時，將會在 [標有旗標的使用者] 報表上進行重新整理。
+[詳細檢視] 會顯示錯誤訊息、發生錯誤時存取的應用程式、受影響的裝置作業系統平台和時間戳記。 此錯誤通常用於已進行越獄 (iOS/iPadOS) 或 Root (Android) 的裝置。 此外，這裡會報告具有透過「SafetyNet 裝置證明」條件式啟動檢查旗標之裝置的使用者，以及 Google 所報告的原因。 若要從報告中移除使用者，裝置本身的狀態必須已變更，這會在下一次根偵測檢查 (或越獄檢查/SafetyNet 檢查發生) 需要回報正面結果之後發生。 如果裝置已真正修復，則在窗格重新載入時，將會在 [標有旗標的使用者] 報表上進行重新整理。
 
 ### <a name="users-with-potentially-harmful-apps"></a>具潛在有害應用程式的使用者
 這裡會報告具有透過 [需要對應用程式進行威脅掃描]  條件式啟動檢查旗標之裝置的使用者，以及 Google 所報告的威脅類別。 如果這份報告中列出的應用程式是透過 Intune 部署的，請連絡該應用程式的應用程式開發人員，或移除該應用程式，以使其無法指派給您的使用者。 詳細的檢視會顯示：
@@ -170,7 +170,7 @@ ms.locfileid: "77437965"
     ![[儲存報表] 確認方塊的螢幕擷取畫面](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
    
 > [!NOTE]
-> Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Android 製造商、型號與安全性修補程式版本，以及 iOS/iPadOS 型號。 在 Intune 中，您可以透過選取 [應用程式]   > [應用程式保護狀態]   > [應用程式防護報告: iOS/iPadOS、Android]  來存取這些欄位。 此外，這些參數會協助您設定適用於裝置製造商的 [允許]  清單 (Android)、適用於裝置型號的 [允許]  清單 (Android 和 iOS)，以及 [最低 Android 安全性修補程式版本]  設定。   
+> Intune 提供其他裝置報告欄位，包括應用程式註冊識別碼、Android 製造商、型號與安全性修補程式版本，以及 iOS/iPadOS 型號。 在 Intune 中，您可以透過選取 [應用程式]   > [應用程式保護狀態]   > [應用程式防護報告: iOS/iPadOS、Android]  來存取這些欄位。 此外，這些參數會協助您設定適用於裝置製造商的 [允許]  清單 (Android)、適用於裝置型號的 [允許]  清單 (Android 和 iOS/iPadOS)，以及 [最低 Android 安全性修補程式版本]  設定。   
  
 ## <a name="see-also"></a>請參閱
 - [管理 iOS/iPadOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md)

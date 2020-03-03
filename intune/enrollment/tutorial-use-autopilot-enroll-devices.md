@@ -19,12 +19,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9b0bb0bd1f0df3aeb4185542d424bd3ffffe42cd
-ms.sourcegitcommit: 52475fcd8d05d2f6b858d780ebb3d88eaadb0849
+ms.openlocfilehash: 257b15879f6df5763c407904a2c2b46319d64fb7
+ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "76036548"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77473740"
 ---
 # <a name="tutorial-use-autopilot-to-enroll-windows-devices-in-intune"></a>教學課程：使用 Autopilot 在 Intune 中註冊 Windows 裝置
 
@@ -91,7 +91,7 @@ Windows AutoPilot 簡化了裝置註冊程序。 您可以使用 Microsoft Intun
 建立裝置群組之後，必須建立部署設定檔，才能設定 Autopilot 裝置。
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]   > [Windows]   > [Windows 註冊]   > [部署設定檔]   > [建立設定檔]  。
-2. 在 [基本]  頁面上，針對 [名稱]  輸入 *Autopilot 設定檔*。 針對 [描述]  輸入 *Autopilot 裝置的測試設定檔*。
+2. 在 [基本]  頁面上，針對 [名稱]  輸入「Autopilot 設定檔」  。 針對 [描述]  輸入 *Autopilot 裝置的測試設定檔*。
 3. 把 [將所有目標裝置轉換為 Autopilot]  設為 [是]  。 此設定可確保清單中的所有裝置都會向 AutoPilot 部署服務註冊。 等候 48 小時讓註冊處理完畢。
 4. 選取 [下一步]  。
 5. 在 [首次體驗 (OOBE)]  頁面上，針對 [部署模式]  選擇 [使用者驅動]  。 具有此設定檔的裝置會與註冊裝置的使用者相關聯。 需有使用者認證，才能註冊裝置。

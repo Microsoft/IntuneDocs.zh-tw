@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3f67a08ef3cbfae4a801333e5f8ffb5469e723ed
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 65a13c2690f08c2244f31854556a88b6301c6ac5
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77438050"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576019"
 ---
 # <a name="disable-activation-lock-on-supervised-iosipados-devices-with-intune"></a>使用 Intune 在受監督的 iOS/iPadOS 裝置上停用啟用鎖定
 
@@ -63,7 +63,7 @@ Intune 可以要求執行 iOS/iPadOS 8.0 和更新版本之受監督裝置的啟
 在您可以停用裝置上的啟用鎖定之前，必須先遵循下列指示加以啟用：
 
 1. 使用[如何設定裝置限制設定](/intune-azure/configure-devices/how-to-configure-device-restrictions)中的資訊，來設定適用於 iOS/iPadOS 的 Intune 裝置限制設定檔。
-2. 在 [iOS 的裝置限制設定](../configuration/device-restrictions-ios.md) 中，於 [一般]  設定下，啟用 [啟用鎖定]  選項。
+2. 在 [iOS/iPadOS 的裝置限制設定](../configuration/device-restrictions-ios.md) 中，於 [一般]  設定下，啟用 [啟用鎖定]  選項。
 3. 儲存設定檔，然後將其[指派](../configuration/device-profile-assign.md)給您想要管理停用啟用鎖定的裝置。
 
 

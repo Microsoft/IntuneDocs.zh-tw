@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e565f40aac2a2b97f547a5b68a70a887d9e820ae
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: d90e3757ced90bea21e4033b6baa93bfa201b1f2
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207463"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514212"
 ---
 # <a name="integrate-wandera-mobile-threat-protection-with-intune"></a>將 Wandera Mobile Threat Protection 與 Intune 整合  
 
@@ -91,7 +91,7 @@ Intune 與 Wandera 現在已連結。
 如需有關從 Wandera 執行此程序的詳細資訊，請登入 Wandera [RADAR](https://radar.wandera.com/login)。 移至 [設定]   > [EMM Integration] \(EMM 整合\)  ，選取 [App Push] \(應用程式推播\)  索引標籤，然後選取 [Microsoft Intune]  。 [應用程式推播] 索引標籤會使用 Intune 特定指示來更新。  
 
 ### <a name="add-the-wandera-apps"></a>新增 Wandera 應用程式  
-在 Intune 中建立用戶端應用程式以部署 Wandera app 應用程式到 Android 與 iOS 裝置。 請參閱[新增 MTD 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)以了解 Wandera 應用程式的特定程序與自訂詳細資料。  
+在 Intune 中建立用戶端應用程式以將 Wandera 應用程式部署至 Android 與 iOS/iPadOS 裝置。 請參閱[新增 MTD 應用程式](mtd-apps-ios-app-configuration-policy-add-assign.md)以了解 Wandera 應用程式的特定程序與自訂詳細資料。  
 
 建立應用程式之後，返回這裡以建立同步群組並指派應用程式。
 
@@ -105,14 +105,14 @@ Intune 與 Wandera 現在已連結。
 
    ![設定同步群組](./media/wandera-mtd-connector-integration/configure-sync-group.png)
 
-3. 選取 [成員]  並指派包括您要搭配 Wandera 使用之 Android 與 iOS 裝置的群組。
+3. 選取 [成員]  並指派包括您要搭配 Wandera 使用 Android 與 iOS/iPadOS 裝置的群組。
 
 4. 選取 [建立]  以儲存群組。
 
 如需詳細資訊，請參閱[部署應用程式](../apps/apps-deploy.md)
 
 ### <a name="assign-the-wandera-apps-to-the-synchronization-group"></a>指派 Wandera 應用程式到同步群組  
-針對您為 iOS 與 Android 建立的 Wandera 應用程式重複下列程序。
+針對您為 iOS/iPadOS 與 Android 建立的 Wandera 應用程式重複下列程序。
 
 1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [所有應用程式]  ，然後選取 [Wandera] 應用程式。

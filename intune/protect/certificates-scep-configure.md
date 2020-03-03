@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 24d0a8160d852a5a44f5df688b7e0bc230d56704
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: c454ae6184f4d2a7c3c31f3c61d2cf4331ac187c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966380"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514093"
 ---
 # <a name="configure-infrastructure-to-support-scep-with-intune"></a>設定基礎結構以支援 SCEP 與 Intune
 
@@ -148,7 +148,7 @@ Intune 支援使用簡單憑證註冊通訊協定 (SCEP) 來[驗證與您應用�
        > [!IMPORTANT]
        > 僅新增您需要的應用程式原則。 向您的安全性系統管理員確認您的選擇。
 
-     - 針對 iOS 和 macOS 憑證範本，另請編輯 [金鑰使用方法]  ，並確保未選取 [簽章是原件證明]  。
+     - 針對 iOS/iPadOS 和 macOS 憑證範本，另請編輯 [金鑰使用方法]  ，並確保未選取 [簽章是原件證明]  。
 
      ![範本, 延伸索引標籤](./media/certificates-scep-configure/scep-ndes-extensions.jpg)  
 
@@ -217,7 +217,7 @@ Intune 憑證連接器需要具有「用戶端驗證」  增強金鑰使用方�
 根據預設，Intune 使用範本中所設定的值。 不過，您可以設定 CA 以允許要求者輸入不同的值，然後就可以從 Intune 主控台內設定該值。
 
 > [!IMPORTANT]
-> 針對 iOS 和 macOS，一律使用範本中的值集合。
+> 針對 iOS/iPadOS 和 macOS，請一律使用範本中的值集合。
 
 #### <a name="to-configure-a-value-that-can-be-set-from-within-the-intune-console"></a>設定可在 Intune 主控台內設定的值
 

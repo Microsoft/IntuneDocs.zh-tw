@@ -17,12 +17,12 @@ ms.reviewer: dagerrit
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f617e85e78ac5436567790d416c988742a2abe4c
-ms.sourcegitcommit: de663ef5f3e82e0d983899082a7f5b62c63f24ef
+ms.openlocfilehash: c880251d59810dc02446020ed02fd6049878262c
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2020
-ms.locfileid: "75956233"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515011"
 ---
 # <a name="plan-communications"></a>規劃溝通
 
@@ -52,7 +52,7 @@ ms.locfileid: "75956233"
 
 - [註冊您的 Android 裝置](https://www.youtube.com/watch?v=k0Q_sGLSx6o&t=1s)
 - [註冊 Android 工作設定檔裝置](https://www.youtube.com/watch?v=9Dl8HsGk4tI&t=3s)
-- [註冊 iOS 裝置](https://www.youtube.com/watch?v=mJyv6YcHi7c)
+- [註冊您的 iOS/iPadOS 裝置](https://www.youtube.com/watch?v=mJyv6YcHi7c)
 - [註冊 macOS 裝置](https://www.youtube.com/watch?v=Pa2pfhwq_yk)
 - [註冊 Windows](https://www.youtube.com/watch?v=TKQxEckBHiE)
 
@@ -61,5 +61,5 @@ ms.locfileid: "75956233"
 Intune 提供可用來向使用者宣導註冊裝置的其他資源：
 
 - [如何指導使用者使用 Microsoft Intune](end-user-educate.md)中詳述行動裝置作業系統平台註冊步驟。
-- [IT 系統管理員的 Intune 裝置註冊](../enrollment/device-enrollment.md)說明如何在 Intune 中註冊 Android、iOS 和 Mac 裝置。
-- 與您的 Android、 iOS 和 Windows 使用者共用公司入口網站應用程式。
+- [IT 系統管理員的 Intune 裝置註冊](../enrollment/device-enrollment.md)說明如何在 Intune 中註冊 Android、iOS/iPadOS 和 Mac 裝置。
+- 與您的 Android、 iOS/iPadOS 和 Windows 使用者共用公司入口網站應用程式。

@@ -1,7 +1,7 @@
 ---
-title: 註冊 macOS 裝置 - 裝置註冊計劃或 Apple School Manager
+title: 註冊 macOS 裝置 - Apple Business Manager 或 Apple School Manager
 titleSuffix: ''
-description: 了解如何使用裝置註冊計劃來註冊屬公司擁有的 macOS 裝置。
+description: 了解如何註冊公司擁有的 macOS 裝置。
 keywords: ''
 author: ErikjeMS
 ms.author: erikje
@@ -18,22 +18,22 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d55139a106599664f801a6bf73b0e0e8db24b57a
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6ef08ea65a4976bcf77154108e415634dbae8e05
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77414499"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514331"
 ---
-# <a name="automatically-enroll-macos-devices-with-the-device-enrollment-program-or-apple-school-manager"></a>使用裝置註冊計劃或 Apple School Manager 自動註冊 macOS 裝置
+# <a name="automatically-enroll-macos-devices-with-the-apple-business-manager-or-apple-school-manager"></a>使用 Apple Business Manager 或 Apple School Manager 自動註冊 macOS 裝置
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-您可以針對透過 Apple 的[裝置註冊計劃 (DEP) ](https://deploy.apple.com)或 [Apple School Manager](https://school.apple.com/) 購買的 macOS 裝置設定 Intune 註冊。 針對大量裝置，這兩種註冊您都可以使用，且不需要實際取得裝置。 您可以將 macOS 裝置直接寄送給使用者。 當使用者開啟裝置電源時，會以預先設定的設定來執行設定助理，並註冊裝置以接受 Intune 管理。
+您可以為透過 Apple [Apple Business Manager](https://business.apple.com/) 或 [Apple School Manager](https://school.apple.com/) 購買的 macOS 裝置設定 Intune 註冊。 針對大量裝置，這兩種註冊您都可以使用，且不需要實際取得裝置。 您可以將 macOS 裝置直接寄送給使用者。 當使用者開啟裝置電源時，會以預先設定的設定來執行設定助理，並註冊裝置以接受 Intune 管理。
 
-若要設定註冊，您要使用 Intune 與 Apple DEP 入口網站。 您可以建立註冊設定檔，其中包含在註冊期間套用至裝置的設定。
+若要設定註冊，請使用 Intune 和 Apple 入口網站。 您可以建立註冊設定檔，其中包含在註冊期間套用至裝置的設定。
 
-DEP 註冊或 Apple School Manager 都不能與裝[置註冊管理員](device-enrollment-manager-enroll.md)搭配使用。
+Apple Businesss Manager 註冊或 Apple School Manager 註冊都無法搭配[裝置註冊管理員](device-enrollment-manager-enroll.md)運作。
 
 <!--
 **Steps to enable enrollment programs from Apple**

@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4d05e33dbc28707bc6f929be72ba4a77c2e0641c
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 85aac54a81d81dc138dd12612db183aae839b72b
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206052"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575992"
 ---
 # <a name="add-partner-certification-authority-in-intune-using-scep"></a>使用 SCEP 在 Intune 中新增協力廠商憑證授權單位
 
-搭配 Intune 使用協力廠商憑證授權單位 (CA)。 協力廠商 CA 可以使用簡單憑證註冊通訊協定 (SCEP) 搭配新的或更新的憑證來佈建行動裝置，並可以支援 Windows、iOS、Android 及 macOS 裝置。
+搭配 Intune 使用協力廠商憑證授權單位 (CA)。 協力廠商 CA 可以使用簡單憑證註冊通訊協定 (SCEP) 以搭配新或已更新的憑證來佈建行動裝置，並可以支援 Windows、iOS/iPadOS、Android 及 macOS 裝置。
 
 使用這項功能分成兩部分：開放原始碼 API 和 Intune 系統管理員工作。
 

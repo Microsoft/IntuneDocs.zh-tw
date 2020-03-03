@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: baeece091358a7cd05f0d1f8db7c0032870fc262
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 472b23581cddad16a1b7eaf37ddf99e7e37e70f5
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207089"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569229"
 ---
 # <a name="network-access-control-nac-integration-with-intune"></a>搭配 Intune 的網路存取控制 (NAC) 整合
 
@@ -67,31 +67,34 @@ NAC 會與條件式存取搭配運作以提供存取控制決定。 如需詳細
 
 ## <a name="use-nac-for-vpn-on-your-ios-devices"></a>在您的 iOS 裝置上針對 VPN 使用 NAC  
 
-- 無需在 VPN 設定檔中啟用 NAC，也可在下列 VPN 中使用 NAC：
+無需在 VPN 設定檔中啟用 NAC，也可在下列 VPN 中使用 NAC：
 
   - 適用於 Cisco Legacy AnyConnect 的 NAC
   - F5 Access Legacy
   - Citrix VPN
 
-- NAC 也適用於 Citrix SSO 和 F5 Access。 啟用適用於 Citrix SSO 的 NAC：
+NAC 也支援 Cisco AnyConnect、Citrix SSO 和 F5 存取。 
+
+### <a name="to-enable-nac-for-cisco-anyconnect-for-ios"></a>針對適用於 iOS 的 Cisco AnyConnect 啟用 NAC：
+
+  - 將適用於 NAC 的 Intune 與 ISE 整合，如以下連結中所述。
+  - 將 VPN 設定檔中的 [啟用網路存取控制 (NAC)]  設為 [是]  。
+
+### <a name="to-enable-nac-for-citrix-sso"></a>啟用適用於 Citrix SSO 的 NAC：
 
   - 使用 Citrix Gateway 12.0.59 或更高版本。  
   - 使用者必須已安裝 Citrix SSO 1.1.6 或更新版本。
   - [針對 NAC 將 NetScaler 與 Intune 整合](https://docs.citrix.com/en-us/netscaler-gateway/12/microsoft-intune-integration/configuring-network-access-control-device-check-for-netscaler-gateway-virtual-server-for-single-factor-authentication-deployment.html) (如 Citrix 產品文件中所述)。
   - 在 VPN 設定檔中，選取 [基底設定]   > [啟用網路存取控制 (NAC)]  > 選取 [我同意]  。
 
-  基於安全性考量，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
 
-- 啟用適用於 F5 Access 的 NAC：
+### <a name="to-enable-nac-for-f5-access"></a>啟用適用於 F5 Access 的 NAC：
 
   - 使用 F5 BIG-IP 13.1.1.5。 不支援 BIG-IP 14。
   - 針對 NAC 整合 BIG-IP 與 Intune。 [Overview:Configuring APM for device posture checks with endpoint management systems](https://support.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html#guid-0bd12e12-8107-40ec-979d-c44779a8cc89) (概觀：設定 APM 以向端點管理系統確認裝置狀態) F5 指南列有這些步驟。
   - 在 VPN 設定檔中，選取 [基底設定]   > [啟用網路存取控制 (NAC)]  > 選取 [我同意]  。
 
   基於安全性考量，VPN 連線每隔 24 小時會中斷一次。 VPN 可以立即重新連線。
-
-- iOS 上的下列 VPN 用戶端不支援網路存取控制：
-  - Cisco AnyConnect
 
 我們將與合作夥伴共同發行適用於這些新版用戶端的 NAC 解決方案。 當解決方案準備好後，將會更新本文以提供其他資訊。
 

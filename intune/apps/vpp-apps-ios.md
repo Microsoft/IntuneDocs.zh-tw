@@ -1,7 +1,7 @@
 ---
 title: 管理 Apple 大量採購的應用程式
 titleSuffix: Microsoft Intune
-description: 針對從 iOS 與 macOS App Store 大量採購的應用程式，了解如何將應用程式同步處理到 Microsoft Intune，然後管理及並追蹤其使用情況。
+description: 針對從 iOS/iPadOS 與 macOS App Store 大量採購的應用程式，了解如何將應用程式同步處理到 Microsoft Intune，然後管理及並追蹤其使用情況。
 keywords: ''
 author: Erikre
 ms.author: erikre
@@ -18,19 +18,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: d965ac35719d809ab922d28f76dec1754e9a4c6b
-ms.sourcegitcommit: 9b29478f815e10c46c8030abe0146d601ce0e28c
+ms.openlocfilehash: 9127ee06bc2125f476c18e9b8e46a127e48d0245
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77051621"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513396"
 ---
 # <a name="how-to-manage-ios-and-macos-apps-purchased-through-apple-volume-purchase-program-with-microsoft-intune"></a>如何使用 Microsoft Intune 管理透過 Apple 大量採購方案購買的 iOS 與 macOS 應用程式
 
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-Apple 讓您使用 [Apple Business Manager](https://business.apple.com/) 或 [Apple School Manager](https://school.apple.com/)，針對您想要在組織中用於 iOS 和 macOS 裝置上的應用程式購買多個授權。 您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。 購買應用程式授權可協助您有效地管理公司內的應用程式，並保留對已購買之應用程式的擁有權和控制。 
+Apple 讓您使用 [Apple Business Manager](https://business.apple.com/) 或 [Apple School Manager](https://school.apple.com/)，針對您想要在組織中用於 iOS/iPadOS 和 macOS 裝置上的應用程式購買多個授權。 您可以將您的大量採購資訊與 Intune 同步處理，並追蹤大量採購的應用程式使用情況。 購買應用程式授權可協助您有效地管理公司內的應用程式，並保留對已購買之應用程式的擁有權和控制。 
 
 Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的應用程式：
 
@@ -38,13 +38,13 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 - 追蹤有多少已購買的應用程式可供使用及已經使用。
 - 協助您安裝所擁有之最大授權數量的應用程式。
 
-此外，針對從 Apple Business Manager 所購買的書籍，您可以使用 Intune 來針對 iOS 裝置進行同步處理、管理及指派。 如需詳細資訊，請參閱[如何管理透過大量採購方案購買的 iOS 電子書](vpp-ebooks-ios.md)。
+此外，針對從 Apple Business Manager 所購買的書籍，您可以使用 Intune 來針對 iOS/iPadOS 裝置進行同步處理、管理及指派。 如需詳細資訊，請參閱[如何管理透過大量採購方案購買的 iOS/iPadOS 電子書](vpp-ebooks-ios.md)。
 
 ## <a name="what-are-location-tokens"></a>什麼是位置權杖？
 位置權杖也稱為大量採購方案 (VPP) 權杖。 這些權杖是用來指派及管理使用 Apple Business Manager 購買的授權。 內容管理員可以購買及指派授權，並在 Apple Business Manager 與他們具授權的位置權杖相關聯。 接著會從 Apple Business Manager 下載這些位置權杖，並在 Microsoft Intune 中上傳它們。 Microsoft Intune 支援針對每個租用戶上傳多個位置權杖。 每個權杖有效期限為一年。
 
 ## <a name="how-are-purchased-apps-licensed"></a>已購買之應用程式的授權方式為何？
-可以使用 Apple 針對 iOS 和 macOS 裝置所提供的兩種授權類型，來將已購買的應用程式指派給群組。
+您可以使用 Apple 針對 iOS/iPadOS 和 macOS 裝置所提供的兩種授權類型，以將已購買的應用程式指派給群組。
 
 |   | 裝置授權 | 使用者授權 |
 |-----|------------------|----------------|
@@ -156,9 +156,9 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 
 ## <a name="revoking-app-licenses"></a>撤銷應用程式授權
 
-您可以根據指定的裝置、使用者或應用程式，撤銷所有相關聯的 iOS 或 macOS 大量採購方案 (VPP) 應用程式授權。  但 iOS 和 macOS 平台之間有一些差異。 
+您可以根據指定的裝置、使用者或應用程式，撤銷所有相關聯的 iOS/iPadOS 或 macOS 大量採購方案 (VPP) 應用程式授權。  但 iOS/iPadOS 和 macOS 平台之間有一些差異。 
 
-|   | iOS | macOS |
+|   | iOS/iPadOS | macOS |
 |-----|------------------|----------------|
 | **移除應用程式指派** | 當您移除已指派給使用者的應用程式，Intune 會回收使用者或裝置授權，並從裝置解除安裝應用程式。 | 當您移除已指派給使用者的應用程式授權時，Intune 會回收該使用者或裝置授權。 該應用程式不會從裝置解除安裝。 |
 | **撤銷應用程式授權** | 撤銷應用程式授權會從使用者或裝置回收應用程式授權。 您必須將指派變更為 [解除安裝]  來從裝置移除應用程式。 | 撤銷應用程式授權會從使用者或裝置回收應用程式授權。 具有已撤銷授權的 macOS 應用程式仍可在裝置上使用，但必須等到將授權重新指派給使用者或裝置之後，才能更新。 根據 Apple，這類應用程式會在 30 天的寬限期後移除。 不過，Apple 不會提供讓 Intune 使用 [解除安裝] 指派動作來移除應用程式的方法。
@@ -184,14 +184,14 @@ Microsoft Intune 可藉由下列方式協助您管理透過此方案所購買的
 
 ## <a name="deleting-a-vpp-app"></a>刪除 VPP 應用程式
 
-目前，您無法從 Microsoft Intune 刪除 iOS VPP 應用程式。
+目前，您無法從 Microsoft Intune 刪除 iOS/iPadOS VPP 應用程式。
 
 ## <a name="assigning-custom-role-permissions-for-vpp"></a>指派 VPP 的自訂角色權限
 
 您可以使用指派給 Intune 中自訂系統管理員角色的權限，獨立控制 Apple VPP 權杖和 VPP 應用程式的存取權。
 
 * 若要允許 Intune 自訂角色管理 [應用程式]   > [Apple VPP 權杖]  底下的 Apple VPP 權杖，請指派 [受管理的應用程式]  權限。
-* 若要允許 Intune 自訂角色管理 [應用程式]   > [所有應用程式]  下使用 iOS VPP 權杖購買的應用程式，請指派 [行動應用程式]  權限。 
+* 若要允許 Intune 自訂角色管理 [應用程式]   > [所有應用程式]  下使用 iOS/iPadOS VPP 權杖購買的應用程式，請指派 [行動應用程式]  權限。 
 
 ## <a name="additional-information"></a>其他資訊
 

@@ -1,7 +1,7 @@
 ---
 title: Microsoft Intune 中加密裝置的加密報表
 titleSuffix: Microsoft Intune
-description: 從 Microsoft Intune 入口網站檢視有關 iOS 或 Windows 裝置加密狀態的報表，以及存取 FileVault 和 BitLocker 修復金鑰。
+description: 從 Microsoft Intune 入口網站檢視有關 iOS/iPadOS 或 Windows 裝置加密狀態的報表，以及存取 FileVault 和 BitLocker 修復金鑰。
 keywords: ''
 author: brenduns
 ms.author: brenduns
@@ -17,12 +17,12 @@ ms.reviewer: shpate
 ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
-ms.openlocfilehash: 5d9508c5d69b0790efa37ee633f8216bfd2bb30c
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: daa302813c7ea3ad35ecfa7dd8d70436bfe5e1a4
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164672"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510498"
 ---
 # <a name="monitor-device-encryption-with-intune"></a>搭配 Intune 監視裝置加密
 
@@ -34,7 +34,7 @@ Microsoft Intune 加密報表是一個集中式位置，用於檢視有關裝置
 
 加密報表顯示您所管理各種支援裝置的常見詳細資料。 下列各節提供有關 Intune 在報表中所顯示資訊的詳細資料。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>先決條件
 
 加密報表支援在執行下列作業系統版本的裝置上進行報告：
 

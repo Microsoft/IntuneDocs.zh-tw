@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5b61c333f41054194b44c7517e508fe1ef6d28d4
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: c6678c3fbc247ac0595775c0ccc72c7bdb9c55e1
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812377"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513090"
 ---
 # <a name="assign-user-and-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中指派使用者和裝置設定檔
 
@@ -89,7 +89,7 @@ ms.locfileid: "76812377"
 
 ### <a name="user-groups"></a>使用者群組
 
-套用至使用者群組的設定檔設定一律會與使用者一起使用，並且在登入其許多裝置時，與使用者一起使用。 使用者通常擁有許多裝置，例如工作用的 Surface Pro 和個人的 iOS 裝置。 而且，使用者也可以從這些裝置存取電子郵件和其他組織資源。
+套用至使用者群組的設定檔設定一律會與使用者一起使用，並且在登入其許多裝置時，與使用者一起使用。 使用者通常擁有許多裝置，例如工作用的 Surface Pro 和個人的 iOS/iPadOS 裝置。 而且，使用者也可以從這些裝置存取電子郵件和其他組織資源。
 
 例如：
 

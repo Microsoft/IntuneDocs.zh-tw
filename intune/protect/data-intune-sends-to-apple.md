@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a2f1be7a2457cca7da62883370c9e273168c6a29
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 0c550fba45e5e6b16e49e7103fde40de1e08ba55
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72502436"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576470"
 ---
 # <a name="data-intune-sends-to-apple"></a>Intune 傳送至 Apple 的資料
 
@@ -54,18 +54,18 @@ ms.locfileid: "72502436"
 | ASM/DEP | org_id | DEP 客戶識別碼。 此索引鍵僅適用於通訊協定第 3 版和更新版本。 |
 | ASM/DEP | serial_number | 裝置的序號 (字串)。 |
 | ASM/DEP | 模型 | 模型名稱 (字串)。 |
-| ASM/DEP | 描述 | 裝置的描述 (字串)。 |
+| ASM/DEP | description | 裝置的描述 (字串)。 |
 | ASM/DEP | asset_tag | 裝置的資產標籤 (字串)。 |
 | ASM/DEP | profile_status | 設定檔安裝的狀態。 可能的值：**空白**、**已指派**、**已推送**或**已移除**。 |
 | ASM/DEP | profile_uuid | 指派之設定檔的唯一識別碼。 |
 | ASM/DEP | device_assigned_by | 指派裝置之人員的電子郵件。 |
-| ASM/DEP | os | 裝置作業系統：iOS、OSX 或 tvOS。 此索引鍵在 X-Server 通訊協定第 2 版和更新版本中有效。 |
+| ASM/DEP | os | 裝置作業系統：iOS/iPadOS、OSX 或 tvOS。 此索引鍵在 X-Server 通訊協定第 2 版和更新版本中有效。 |
 | ASM/DEP | device_family | 裝置的 Apple 產品系列：iPad、iPhone、iPod、Mac 或 AppleTV。 此索引鍵在 X-Server 通訊協定第 2 版和更新版本中有效。 |
 | ASM/DEP | profile_name | 字串。 人類看得懂的設定檔名稱。 |
 | ASM/DEP | support_phone_number | 選擇性。 字串。 組織的支援電話號碼。 |
 | ASM/DEP | support_email_address | 選擇性。 字串。 組織的支援電子郵件地址。 此索引鍵在 X-Server 通訊協定第 2 版和更新版本中有效。 |
 | ASM/DEP | department | 選擇性。 字串。 使用者定義的部門或位置名稱。 |
-| ASM/DEP | 裝置 | 包含裝置序號的字串陣列。 (可能是空的。) |
+| ASM/DEP | devices | 包含裝置序號的字串陣列。 (可能是空的。) |
 | VPP | Intune 使用者識別碼 GUID | Intune 所產生的 GUID。 |
 | VPP | 受控的 AppleId UPN | 設定與 Apple 的 VPP 權杖連線時，由系統管理員所指定的 AppleID。 |
 | VPP | 序號 | 受控裝置的序號。 |

@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/05/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c8748639f0407de7b1bb83f646b7decf8c838766
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 6dff94a9bfeb21f09b8a8c629e10ba562d7e642b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206664"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511417"
 ---
 # <a name="create-a-device-profile-in-microsoft-intune"></a>在 Microsoft Intune 中建立裝置設定檔
 
@@ -87,7 +87,7 @@ ms.locfileid: "75206664"
 
      例如，如果針對平台選取 [iOS/iPadOS]  ，您的設定檔類型選項會看起來類似下列設定檔：
 
-     ![在 Intune 中建立 iOS 設定檔](./media/device-profile-create/create-device-profile.png)
+     ![在 Intune 中建立 iOS/iPadOS 設定檔](./media/device-profile-create/create-device-profile.png)
 
 4. 完成後，請選取 [確定]   > [建立]  以儲存變更。 就會建立設定檔，並顯示在清單中。
 
@@ -171,10 +171,10 @@ Intune 會使用各種重新整理循環來檢查組態設定檔是否有更新�
   **設定檔名稱**：系統管理範本 - 適用於所有 Windows 10 使用者的 OneDrive 組態設定檔  
   **設定檔描述**：OneDrive 系統管理範本設定檔，包含適用於所有 Windows 10 使用者的最低與基礎設定。 由 user@contoso.com 建立，以防止使用者將組織資料共用至個人 OneDrive 帳戶。
 
-  **設定檔名稱**：適用於所有 iOS 使用者的 VPN 設定檔  
-  **設定檔描述**：VPN 設定檔，包含讓所有 iOS 使用者連線到 Contoso VPN 的最低與基礎設定。 由 user@contoso.com 建立，讓使用者自動向 VPN 驗證，而不是提示使用者輸入其使用者名稱和密碼。
+  **設定檔名稱**：適用於所有 iOS/iPadOS 使用者的 VPN 設定檔  
+  **設定檔描述**：VPN 設定檔，包含讓所有 iOS/iPadOS 使用者連線到 Contoso VPN 的最低與基礎設定。 由 user@contoso.com 建立，讓使用者自動向 VPN 驗證，而不是提示使用者輸入其使用者名稱和密碼。
 
-- 藉由其工作來建立您的設定檔，例如，設定 Microsoft Edge 設定、啟用 Microsoft Defender 防毒程式設定、封鎖 iOS 越獄裝置等等。
+- 藉由其工作來建立您的設定檔，例如，設定 Microsoft Edge 設定、啟用 Microsoft Defender 防毒程式設定、封鎖 iOS/iPadOS 越獄裝置等。
 
 - 建立適用於特定群組的設定檔，例如，行銷、銷售、IT 系統管理員，或依地點或學校系統。
 

@@ -1,11 +1,11 @@
 ---
-title: 使用 Microsoft Intune 建立 iOS 或 macOS 裝置設定檔 - Azure | Micrososft Docs
-description: 新增或建立 iOS 或 macOS 裝置設定檔，然後在 Microsoft Intune 中設定 AirPrint 的設定、主畫面配置、應用程式通知、共用裝置、單一登入，以及網路內容篩選器設定。
+title: 使用 Microsoft Intune 建立 iOS/iPadOS 或 macOS 裝置設定檔 - Azure | Micrososft Docs
+description: 新增或建立 iOS、iPadOS 或 macOS 裝置設定檔，然後在 Microsoft Intune 中設定 AirPrint 的設定、主畫面配置、應用程式通知、共用裝置、單一登入，以及網路內容篩選器設定。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 12/12/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,16 +16,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1fb628d68f50ce1862b3cce51f9fd08804d042a6
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 52c31cc7d3949b42251d3e45075864762cda6930
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206715"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513141"
 ---
-# <a name="add-ios-or-macos-device-feature-settings-in-intune"></a>在 Intune 中新增 iOS 或 macOS 裝置功能設定
+# <a name="add-ios-ipados-or-macos-device-feature-settings-in-intune"></a>在 Intune 中新增 iOS、iPadOS 或 macOS 裝置功能設定
 
-Intune 包含許多可協助系統管理員控制 iOS 和 macOS 裝置的功能和設定。 例如，系統管理員可以：
+Intune 包含許多可協助系統管理員控制 iOS、iPadOS 和 macOS 裝置的功能和設定。 例如，系統管理員可以：
 
 - 允許使用者存取您網路中的 AirPrint 印表機
 - 將應用程式與資料夾新增至主畫面，包括新增頁面
@@ -34,15 +34,15 @@ Intune 包含許多可協助系統管理員控制 iOS 和 macOS 裝置的功能�
 - 為使用者提供在應用程式之間共用認證的安全單一登入體驗
 - 篩選使用成人內容語言的網站，並允許或封鎖特定網站
 
-Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂這些設定。 在設定檔中新增這些功能之後，接著將該設定檔推送或部署至組織中的 iOS 和 macOS 裝置。
+Intune 會使用「組態設定檔」來依據貴組織的需求建立和自訂這些設定。 在設定檔中新增這些功能之後，接著將該設定檔推送或部署至組織中的 iOS/iPadOS 和 macOS 裝置。
 
-本文描述您可以設定的各種功能，並示範如何建立裝置組態設定檔。 您也可以查看適用於 [iOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 裝置的所有可用設定。
+本文描述您可以設定的各種功能，並示範如何建立裝置組態設定檔。 您也可以查看適用於 [iOS/iPadOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 裝置的所有可用設定。
 
 ## <a name="airprint"></a>AirPrint
 
 AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在 Intune 中，您可以將 AirPrint 資訊新增至裝置。
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS 上的 AirPrint](ios-device-features-settings.md#airprint) 和 [macOS 上的 AirPrint](macos-device-features-settings.md#airprint)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS 上的 AirPrint](ios-device-features-settings.md#airprint) 和 [macOS 上的 AirPrint](macos-device-features-settings.md#airprint)。
 
 如需 AirPrint 的詳細資訊，請參閱 Apple 網站上的[關於 AirPrint](https://support.apple.com/HT201311)。
 
@@ -54,9 +54,9 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 ## <a name="app-notifications"></a>應用程式通知
 
-選擇 iOS 和 iPad 裝置上的應用程式接收通知的方式。 例如，從 Intune 傳送應用程式通知，以使其顯示於通知中心、顯示於鎖定畫面上或播放音效。
+選擇 iOS 和 iPadOS 裝置上應用程式接收通知的方式。 例如，從 Intune 傳送應用程式通知，以使其顯示於通知中心、顯示於鎖定畫面上或播放音效。
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS 上的應用程式通知](ios-device-features-settings.md#app-notifications)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS 上的應用程式通知](ios-device-features-settings.md#app-notifications)。
 
 如需此功能的詳細資訊，請參閱 Apple 網站上的[通知](https://developer.apple.com/notifications/) \(英文\)。
 
@@ -89,7 +89,7 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 - 使用 **Dock** 設定來將應用程式或資料夾新增至畫面。 例如，在裝置 Dock 上顯示 [Safari] 和 [郵件] 應用程式。
 - 新增您想要顯示於主畫面上的**頁面**，以及要顯示於每個頁面上的應用程式。 例如，新增 [Contoso]  頁面，然後在此頁面上新增 [設定] 應用程式。
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS 上的主畫面配置](ios-device-features-settings.md#home-screen-layout)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS 上的主畫面配置](ios-device-features-settings.md#home-screen-layout)。
 
 適用於：
 
@@ -100,7 +100,7 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 使用這些設定以在登入視窗和鎖定畫面上顯示自訂訊息或文字。 例如，您可以輸入「若遺失，請送回...」訊息，並顯示資產標籤資訊。
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS 上的鎖定畫面訊息設定](ios-device-features-settings.md#lock-screen-message)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS 上的鎖定畫面訊息設定](ios-device-features-settings.md#lock-screen-message)。
 
 如需鎖定畫面訊息的詳細資訊，請參閱 Apple 網站上的 [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) \(英文\)。
 
@@ -136,11 +136,11 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 若要使用單一登入，請確定您已具備：
 
 - 已將程式碼撰寫成會在裝置上的單一登入中尋找使用者認證存放區的應用程式。
-- 設定進行 iOS 裝置單一登入的 Intune。
+- 設定進行 iOS/iPadOS 裝置單一登入的 Intune。
 
 ![單一登入窗格](./media/device-features-configure/sso-blade.png)
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS 上的單一登入](ios-device-features-settings.md#single-sign-on)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS 上的單一登入](ios-device-features-settings.md#single-sign-on)。
 
 適用於：
 
@@ -156,7 +156,7 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 - 重新導向類型是專為 OAuth 和 SAML2 等新式驗證通訊協定所設計。
 - 認證類型是專為挑戰和回應驗證流程所設計。 您可以在 Apple 所提供的 Kerberos 特定認證擴充功能和一般認證擴充功能之間進行選擇。
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS SSO 應用程式擴充功能](ios-device-features-settings.md#single-sign-on-app-extension)和 [macOS SSO 應用程式擴充功能](macos-device-features-settings.md#single-sign-on-app-extension)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS SSO 應用程式延伸模組](ios-device-features-settings.md#single-sign-on-app-extension)和 [macOS SSO 應用程式延伸模組](macos-device-features-settings.md#single-sign-on-app-extension)。
 
 如需開發 SSO 應用程式擴充功能的詳細資訊，請觀賞 Apple 網站上的[可擴充的企業 SSO](https://developer.apple.com/videos/play/tech-talks/301) \(英文\)。 若要閱讀 Apple 的功能描述，請瀏覽[「單一登入延伸功能」承載資料設定](https://support.apple.com/guide/mdm/single-sign-on-extensions-mdmfd9cdf845/web)。 
 
@@ -171,7 +171,7 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 >
 > - 從開發觀點來看，透過**單一登入應用程式延伸模組**，您可以使用任何類型的重新導向 SSO 或認證 SSO 驗證。 使用**單一登入**，您只能使用 Kerberos SSO 驗證。
 >
-> - Kerberos **單一登入應用程式延伸模組**是由 Apple 所開發，並內建於 iOS 13.0+ 和 macOS 10.15+ 平台。 內建的 Kerberos 延伸模組可用來將使用者登入支援 Kerberos 驗證的原生應用程式和網站。 **單一登入**不是 Apple 的 Kerberos 實作。
+> - Kerberos **單一登入應用程式延伸模組**是由 Apple 所開發，並內建於 iOS/iPadOS 13.0+ 和 macOS 10.15+ 平台。 內建的 Kerberos 延伸模組可用來將使用者登入支援 Kerberos 驗證的原生應用程式和網站。 **單一登入**不是 Apple 的 Kerberos 實作。
 >
 > - 內建的 Kerberos **單一登入應用程式延伸模組**可處理網頁和應用程式的 Kerberos 挑戰，就像是**單一登入**一樣。 不過，內建的 Kerberos 延伸模組支援密碼變更，且在企業網路中的表現更佳。 當您決定要使用**單一登入應用程式延伸模組**或**單一登入**時，建議使用延伸模組，因為其效能和功能均已獲得改善。
 
@@ -183,9 +183,9 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 ## <a name="wallpaper"></a>桌布
 
-將自訂的 .png、.jpg 或 .jpeg 影像新增至您的受監督 iOS 裝置。 例如，使用 Intune 來將公司標誌新增至裝置上的鎖定畫面。
+將自訂的 .png、.jpg 或 .jpeg 影像新增至受監督 iOS/iPadOS 裝置。 例如，使用 Intune 來將公司標誌新增至裝置上的鎖定畫面。
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS 上的背景圖案](ios-device-features-settings.md#wallpaper)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS 上的底色圖案](ios-device-features-settings.md#wallpaper)。
 
 適用於：
 
@@ -196,7 +196,7 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 這些設定可以使用 Apple 的內建自動篩選演算法來評估網頁，並封鎖成人內容和成人語言。 您也可以建立已允許的網頁連結及受限制之網頁連結的清單。 例如，您可以允許僅開啟 `contoso` 網站。
 
-如需可在 Intune 中設定的設定清單，請參閱 [iOS 上的內容篩選](ios-device-features-settings.md#web-content-filter)。
+如需可在 Intune 中設定的設定清單，請參閱 [iOS/iPadOS 上的內容篩選](ios-device-features-settings.md#web-content-filter)。
 
 適用於：
 
@@ -229,4 +229,4 @@ AirPrint 是可讓裝置透過無線網路列印到檔案的 Apple 功能。 在
 
 建立設定檔之後即可加以指派。 接下來，[指派設定檔](device-profile-assign.md)並[監視其狀態](device-profile-monitor.md)。
 
-檢視適用於 [iOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 裝置的所有裝置功能設定。
+檢視適用於 [iOS/iPadOS](ios-device-features-settings.md) 和 [macOS](macos-device-features-settings.md) 裝置的所有裝置功能設定。

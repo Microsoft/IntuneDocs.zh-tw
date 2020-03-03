@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b67e3b14fd94376fb6dacad88fa58ddc460a6bc5
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: f056f665ebee0d1e2315129a4fe739b2c490ca98
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73057573"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514841"
 ---
 # <a name="mobile-threat-defense-integration-with-intune"></a>Mobile Threat Defense 與 Intune 的整合
 
@@ -50,7 +50,7 @@ Intune 使用 Mobile Threat Defense 連接器，在 Intune 與您選擇的 MTD �
 此服務為選擇性；預設不會共用應用程式清查資訊。 Intune 管理員必須在 Mobile Threat Defense 設定中啟用 **iOS 裝置的應用程式同步**，才能共用任何應用程式清查資訊。
 
 **應用程式清查**  
-如果您啟用 iOS 裝置的應用程式同步，公司和個人擁有的 iOS 裝置清查都會傳送給您的 MTD 服務提供者。 應用程式清查中的資料包括：
+如果您啟用 iOS/iPadOS 裝置的應用程式同步，則公司和個人擁有的 iOS/iPadOS 裝置清查都會傳送給 MTD 服務提供者。 應用程式清查中的資料包括：
 
 - 應用程式識別碼
 - 應用程式版本
@@ -63,20 +63,20 @@ Intune 使用 Mobile Threat Defense 連接器，在 Intune 與您選擇的 MTD �
 
 ## <a name="sample-scenarios-for-enrolled-devices-using-device-compliance-policies"></a>使用裝置合規性政策註冊之裝置的範例案例
 
-將裝置視為受到 Mobile Threat Defense 解決方案所感染時︰
+當 Mobile Threat Defense 解決方案將裝置視為被感染時︰
 
 ![顯示 Mobile Threat Defense 受感染裝置的圖片](./media/mobile-threat-defense/MTD-image-1.png)
 
-補救裝置時，會授與存取權︰
+修復裝置之後會授與存取權：
 
 ![顯示授與 Mobile Threat Defense 存取權的圖片](./media/mobile-threat-defense/MTD-image-2.png)
 
 ## <a name="sample-scenarios-for-unenrolled-devices-using-intune-app-protection-policies"></a>使用 Intune 應用程式防護原則註冊之裝置 (尚未註冊) 的範例案例
 
-將裝置視為受到 Mobile Threat Defense 解決方案所感染時︰<br>
+當 Mobile Threat Defense 解決方案將裝置視為被感染時︰<br>
 ![顯示 Mobile Threat Defense 受感染裝置的影像](./media/mobile-threat-defense/MTD-image-3.png)
 
-補救裝置時，會授與存取權︰<br>
+修復裝置之後會授與存取權：<br>
 ![顯示授與 Mobile Threat Defense 存取權的影像](./media/mobile-threat-defense/MTD-image-4.png)
 
 > [!NOTE]

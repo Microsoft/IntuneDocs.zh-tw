@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ad363785888a92d1e8be4f2d28690278a2efaae9
-ms.sourcegitcommit: c7c6be3833d9a63d43f31d598b555b49b33cf5cb
+ms.openlocfilehash: 3cd153a4c602ba49a5b5135d1d6cb32a61f2668d
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76966295"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576507"
 ---
 # <a name="create-and-assign-scep-certificate-profiles-in-intune"></a>在 Intune 中建立並指派 SCEP 憑證設定檔
 
@@ -60,7 +60,7 @@ ms.locfileid: "76966295"
 
    - **憑證類型**：
 
-     *(適用於：Android、Android Enterprise、iOS、macOS、Windows 8.1 和更新版本，以及 Windows 10 和更新版本。)*
+     *(適用於：Android、Android Enterprise、iOS/iPadOS、macOS、Windows 8.1 和更新版本，以及 Windows 10 和更新版本。)*
 
      根據您要使用憑證設定檔的方式來選取類型：
 
@@ -280,7 +280,7 @@ Exception:    at Microsoft.ConfigurationManager.CertRegPoint.ChallengeValidation
 - 雖然您會分別建立及指派受信任的憑證設定檔和 SCEP 憑證設定檔，但兩者都必須受指派。 如果裝置上未安裝這兩者，SCEP 憑證原則將會失敗。 請確定所有受信任根憑證設定檔都會部署到與 SCEP 設定檔相同的群組。
 
 > [!NOTE]
-> 在 iOS 裝置上，當 SCEP 憑證設定檔與額外設定檔 (例如 Wi-Fi 或 VPN 設定檔) 關聯時，裝置會接受那些每個額外設定檔的憑證。 這會導致 iOS 裝置具有多個由 SCEP 憑證要求提供的憑證。  如果需要單一憑證，您必須使用 PKCS 憑證，而不是 SCEP 憑證。  這是因為 SCEP 和 PKCS 憑證傳遞至裝置的方式有所差異。
+> 在 iOS/iPadOS 裝置上，當 SCEP 憑證設定檔與額外設定檔 (例如 Wi-Fi 或 VPN 設定檔) 建立關聯時，裝置會接受那些設定檔中每一個額外設定檔的憑證。 這會導致 iOS/iPadOS 裝置具有多個由 SCEP 憑證要求傳遞的憑證。  如果需要單一憑證，您必須使用 PKCS 憑證，而不是 SCEP 憑證。  這是因為 SCEP 和 PKCS 憑證傳遞至裝置的方式有所差異。
 
 ## <a name="next-steps"></a>後續步驟
 

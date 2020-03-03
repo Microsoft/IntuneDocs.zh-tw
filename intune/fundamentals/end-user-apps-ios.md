@@ -1,6 +1,6 @@
 ---
-title: iOS 使用者如何取得其應用程式
-description: 讓終端使用者可以使用 iOS 應用程式的方法
+title: iOS/iPadOS 使用者如何取得其應用程式
+description: 讓終端使用者可以使用 iOS/iPadOS 應用程式的方法
 keywords: ''
 author: lenewsad
 ms.author: lanewsad
@@ -17,14 +17,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 06cc977ce8b0b892e1020436f89ada4a40bac3f2
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 344c2e3f3ed53852aa6b749c9ebf6d451dd313ff
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73413985"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514382"
 ---
-# <a name="how-your-ios-users-get-their-apps"></a>iOS 使用者如何取得其應用程式
+# <a name="how-your-iosipados-users-get-their-apps"></a>iOS/iPadOS 使用者如何取得其應用程式
 
 使用這項資訊，了解您的使用者取得您透過 Microsoft Intune 散發之應用程式的方式和位置。
 
@@ -34,9 +34,9 @@ ms.locfileid: "73413985"
 
 **受管理的應用程式** - 可透過原則進行管理的應用程式，以及已由 Intune「包裝」或已透過 Intune 應用程式軟體開發套件 (SDK) 建置的應用程式。 這些應用程式可由 Intune 管理，並套用應用程式保護原則。
 
-**非受控的應用程式** - 使用者可從未與 Intune 應用程式 SDK 整合的 iOS App Store 下載的應用程式。 Intune 無法控制這些應用程式的散發、管理或選擇性抹除。  
+**非受控的應用程式** - 使用者可從 iOS/iPadOS App Store (未與 Intune 應用程式 SDK 整合) 下載的應用程式 。 Intune 無法控制這些應用程式的散發、管理或選擇性抹除。  
 
-Apple 限制禁止公司入口網站應用程式中列出企業營運應用程式及受管理的 App Store 應用程式。 為了解決此問題，iOS 版公司入口網站應用程式中的磚會將使用者指向單一位置 (公司入口網站) 中的不同檢視，以取得他們所有的應用程式。
+Apple 限制禁止公司入口網站應用程式中列出企業營運應用程式及受管理的 App Store 應用程式。 為了因應此問題，iOS/iPadOS 版公司入口網站應用程式中的磚會將使用者指向單一位置 (公司入口網站) 內不同檢視，以取得其所有的應用程式。
 
 已註冊的使用者可在公司入口網站應用程式的 [應用程式] 畫面上點選下列磚，以取得他們的應用程式：
 

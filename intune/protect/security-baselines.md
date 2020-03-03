@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 04436c38fc6c4100a8232ea1ad23585f350d6aae
-ms.sourcegitcommit: a82d25d98fdf0ba766f8f074871d4f13725e23f9
+ms.openlocfilehash: 43e104d9f32f6b6204ffc3bd461bb06764543e3c
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75548138"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569263"
 ---
 # <a name="use-security-baselines-to-configure-windows-10-devices-in-intune"></a>在 Intune 中使用安全性基準來設定 Windows 10 裝置
 
@@ -103,7 +103,7 @@ ms.locfileid: "75548138"
 
 ### <a name="create-the-profile"></a>建立設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [端點安全性]   > [安全性基準]  以檢視可用基準清單。
 
@@ -142,7 +142,7 @@ ms.locfileid: "75548138"
 
    ![檢閱基準](./media/security-baselines/review.png)
 
-9. 建立設定檔之後，您可以透過移至 [裝置安全性]   > [安全性基準]  、選取您設定的基準類型，然後選取 [設定檔]  來編輯該設定檔。 從可用設定檔清單選取設定檔，然後選取 [內容]  。 您可以從所有可用設定索引標籤編輯設定，然後選取 [檢閱並儲存]  以認可您的變更。
+9. 建立設定檔之後，您可以透過前往 [端點安全性]   > [安全性基準]  、選取您設定的基準類型，然後選取 [設定檔]  來編輯該設定檔。 從可用設定檔清單選取設定檔，然後選取 [內容]  。 您可以從所有可用設定索引標籤編輯設定，然後選取 [檢閱並儲存]  以認可您的變更。
 
 ### <a name="change-the-baseline-version-for-a-profile"></a>變更設定檔的基準版本
 
@@ -162,7 +162,7 @@ ms.locfileid: "75548138"
 
 #### <a name="to-change-the-baseline-version-for-a-profile"></a>變更設定檔的基準版本
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。 
 
 2. 選取 [端點安全性]   > [安全性基準]  ，然後選取具有您要變更之設定檔的基準類型圖格。
 
@@ -214,7 +214,7 @@ Microsoft 安全性小組擁有多年直接與 Windows 開發人員和安全性�
 
 - Microsoft 會持續發佈適用於群組原則 (GPO) 的安全性基準和[安全性合規性工具組](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) \(部分機器翻譯\)，而這已行之有年。 許多組織都會使用這些基準。 這些基準中的建議均來自 Microsoft 安全性小組與企業客戶和外部機構的合作，包括美國國防部 (DoD)、美國國家標準技術研究所 (NIST) 及其他更多組織。 我們會與這些組織分享我們的建議和基準。 這些組織也擁有自己的建議，而這些建議均會密切地反映出 Microsoft 的建議。 隨著行動裝置管理 (MDM) 持續成長到雲端，Microsoft 建立了這些群組原則基準的對等 MDM 建議。 這些額外的基準均內建於 Microsoft Intune，並包含關於遵循 (或未遵循) 基準之使用者、群組和裝置的合規性報告。
 
-- 許多客戶都會使用 Intune 基準建議作為起點，然後進行自訂以符合他們的 IT 和安全性需求。 Microsoft 的 Windows 10 RS5 **MDM 安全性基準**是第一個要發行的基準。 此基準會以一般基礎結構來建置，讓客戶最終可根據 CIS、NIST 和其他標準匯入其他安全性基準。 它目前適用於 Windows，而最終將包含 iOS 和 Android。
+- 許多客戶都會使用 Intune 基準建議作為起點，然後進行自訂以符合他們的 IT 和安全性需求。 Microsoft 的 Windows 10 RS5 **MDM 安全性基準**是第一個要發行的基準。 此基準會以一般基礎結構來建置，讓客戶最終可根據 CIS、NIST 和其他標準匯入其他安全性基準。 其目前適用於 Windows，而最終將包含 iOS/iPadOS 和 Android。
 
 - 使用 Azure Active Directory (AD) 搭配 Microsoft Intune，從內部部署 Active Directory 群組原則移轉到純雲端解決方案是一趟旅程。 [Security Compliance Toolkit](https://docs.microsoft.com/windows/security/threat-protection/security-compliance-toolkit-10) 中包括群組原則範本，可協助您管理混合式 AD 與 Azure AD 裝置。 這些裝置可以視需要從雲端 (Intune) 取得 MDM 設定，以及從內部部署網域控制站取得群組原則設定。
 

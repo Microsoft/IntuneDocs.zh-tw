@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c4cffafd4145ab536157ea55c732ac27bec29538
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73801616"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515130"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense 連接器與 Intune
 
@@ -33,7 +33,7 @@ ms.locfileid: "73801616"
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune 和 Check Point SandBlast Mobile 如何協助保護您的公司資源？
 
-適用於 Android 及 iOS 的 Check Point SandBlast Mobile 應用程式可擷取檔案系統、網路堆疊，裝置和應用程式遙測 (如果可用)，然後將遙測資料傳送至 Check Point SandBlast Mobile 雲端服務，以評估裝置的行動威脅風險。
+適用於 Android 及 iOS/iPadOS 的 Check Point SandBlast Mobile 應用程式可擷取檔案系統、網路堆疊，裝置和應用程式遙測 (如果可用)，然後將遙測資料傳送至 Check Point SandBlast Mobile 雲端服務，以評定裝置的行動威脅風險。
 
 Intune 裝置合規性原則包含以 Check Point SandBlast Mobile 風險評估為基礎的 Check Point SandBlast Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。 如果發現裝置不相容，則會封鎖使用者對 Exchange Online 和 SharePoint Online 這類公司資源的存取。 使用者也會從 Check Point SandBlast Mobile 應用程式收到指導方針，以解決問題並重新取得公司資源的存取權。
 
@@ -57,7 +57,7 @@ Intune 裝置合規性原則包含以 Check Point SandBlast Mobile 風險評估�
 
 ![Check Point MTD 授與存取權](./media/checkpoint-sandblast-mobile-mobile-threat-defense-connector/checkpoint-MTD-3.PNG)
 
-### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
+### <a name="control-access-based-on-threat-to-network"></a>依據對網路的威脅性來控制存取
 
 偵測網路中的「攔截式攻擊」  等威脅，並根據裝置風險保護對 Wi-Fi 網路的存取。
 
@@ -69,7 +69,7 @@ Intune 裝置合規性原則包含以 Check Point SandBlast Mobile 風險評估�
 
 ![Check Point MTD 授與 Wi-Fi 存取權](./media/checkpoint-sandblast-mobile-mobile-threat-defense-connector/checkpoint-MTD-5.PNG)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>依據對網路的威脅來控制對 SharePoint Online 的存取
 
 偵測網路中的「攔截式攻擊」  等威脅，並根據裝置風險防止對公司檔案進行同步處理。
 

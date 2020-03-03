@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 38bc86b1b9ba85eb7885a0e00673e551821063c1
-ms.sourcegitcommit: 459b0ee01eb6e69cc0ce66d4c4b81d73f510f96d
+ms.openlocfilehash: 4496a5bbc6d5ee5134dc4e6a795494710ea6865d
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2020
-ms.locfileid: "77034238"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515215"
 ---
 # <a name="overview-for-troubleshooting-scep-certificate-profiles-with-microsoft-intune"></a>針對 SCEP 憑證設定檔搭配 Microsoft Intune 進行疑難排解的概觀
 
@@ -123,9 +123,9 @@ ms.locfileid: "77034238"
 
 ### <a name="logs-for-ios-and-ipados-devices"></a>iOS 與 iPadOS 裝置的記錄
 
-針對執行 iOS 或 iPadOS 的裝置，您可以使用偵錯記錄與在 Mac 電腦上執行的 **Xcode**：
+針對執行 iOS/iPadOS 的裝置，您可以使用偵錯記錄與在 Mac 電腦上執行的 **Xcode**：
 
-1. 將 iOS 裝置連接到 Mac，然後移至 [應用程式]   > [工具程式]  以開啟 [終端機] 應用程式。 
+1. 將 iOS/iPadOS 裝置連線到 Mac，然後前往 [應用程式]   > [工具程式]  以開啟 [終端機] 應用程式。 
 
 2. 在 [動作]  下，選取 [包含資訊訊息]  和 [包含偵錯訊息]  。
 

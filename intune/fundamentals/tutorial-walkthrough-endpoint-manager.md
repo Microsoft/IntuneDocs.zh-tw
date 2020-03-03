@@ -18,12 +18,12 @@ ms.reviewer: ''
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 267f09c3dc16aab10fbe64f0e8662ee6f7c7ffa0
-ms.sourcegitcommit: ec69e7ccc6e6183862a48c1b03ca6a3bf573f354
+ms.openlocfilehash: 1d8950e57c2427c522d337807d315ed5c399c0d5
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2019
-ms.locfileid: "74907988"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514076"
 ---
 # <a name="tutorial-walkthrough-intune-in-microsoft-endpoint-manager"></a>教學課程：逐步解說 Microsoft 端點管理員中的 Intune
 
@@ -39,7 +39,7 @@ ms.locfileid: "74907988"
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 設定 Microsoft Intune 之前，請先檢閱下列需求：
 
 - [支援的作業系統與瀏覽器](../supported-devices-browsers.md) 
@@ -70,7 +70,7 @@ ms.locfileid: "74907988"
     
     Intune 可讓您管理員工的裝置與應用程式，包括員工存取公司資料的方式。 若要使用這項行動裝置管理 (MDM) 服務，裝置必須先在 Intune 中註冊。 裝置會在註冊時收到 MDM 憑證。 這項憑證會用來與 Intune 服務通訊。 
 
-    有數種方法可以在 Intune 中註冊員工裝置。 每種方法皆會因裝置擁有權 (個人或公司)、裝置類型 (iOS、Windows、Android) 及管理需求 (重設、親和性、鎖定) 而有所不同。 不過，您必須先設定 Intune 基礎結構，才能啟用裝置註冊。 裝置註冊特別要求您[設定 MDM 授權單位](mdm-authority-set.md)。 如需準備您 Intune 環境 (租用戶) 的詳細資訊，請參閱[設定 Intune](setup-steps.md)。 準備好 Intune 租用戶之後，您可以註冊裝置。 如需裝置註冊的詳細資訊，請參閱[什麼是裝置註冊？](../enrollment/device-enrollment.md)
+    有數種方法可以在 Intune 中註冊員工裝置。 每種方法皆會因裝置所有權 (個人或公司)、裝置類型 (iOS/iPadOS、Windows、Android) 及管理需求 (重設、親和性、鎖定) 而有所不同。 不過，您必須先設定 Intune 基礎結構，才能啟用裝置註冊。 裝置註冊特別要求您[設定 MDM 授權單位](mdm-authority-set.md)。 如需準備您 Intune 環境 (租用戶) 的詳細資訊，請參閱[設定 Intune](setup-steps.md)。 準備好 Intune 租用戶之後，您可以註冊裝置。 如需裝置註冊的詳細資訊，請參閱[什麼是裝置註冊？](../enrollment/device-enrollment.md)
 
 3. 從瀏覽窗格，選取 [裝置]  以顯示 Intune 租用戶已註冊裝置的詳細資料。 
 
@@ -117,7 +117,7 @@ ms.locfileid: "74907988"
     > [!TIP]
     > 如果您先前曾經在 Azure 入口網站中使用 Intune，則可以透過登入 [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) 並選取 [裝置設定]  ，在 Azure 入口網站中找到上述詳細資料。
 
-    Intune 包含您可以在組織內不同裝置上啟用或停用的設定及功能。 這些設定和功能會新增至「組態設定檔」。 您可以為不同的裝置和平台 (包括 iOS、Android、macOS 和 Windows) 建立設定檔。 然後，您可以使用 Intune 將設定檔套用至您組織中的裝置。   
+    Intune 包含您可以在組織內不同裝置上啟用或停用的設定及功能。 這些設定和功能會新增至「組態設定檔」。 您可以為不同的裝置和平台 (包括 iOS/iPadOS、Android、macOS 和 Windows) 建立設定檔。 然後，您可以使用 Intune 將設定檔套用至您組織中的裝置。   
 
     如需裝置設定的詳細資訊，請參閱[在 Microsoft Intune 中使用裝置設定檔將功能設定套用至您的裝置](../configuration/device-profiles.md)。
 

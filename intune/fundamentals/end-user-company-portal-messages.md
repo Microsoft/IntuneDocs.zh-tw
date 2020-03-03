@@ -17,12 +17,12 @@ ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 57467d3d073666c1c22ac0a412f68a258d5b3d75
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbc4e1cc8cf7bd578690bf3e34353a60ec67cdab
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "73414080"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514722"
 ---
 # <a name="help-end-users-understand-company-portal-app-messages"></a>幫助使用者了解公司入口網站應用程式訊息
 
@@ -117,7 +117,7 @@ ms.locfileid: "73414080"
 
 ### <a name="where-it-appears"></a>出現的位置
 
-如果您未將公司入口網站應用程式新增到**允許的應用程式**或**豁免應用程式**清單，如有使用者嘗試登入，將會登入失敗。 系統會顯示下列訊息：
+如果您未將公司入口網站應用程式新增到**允許的應用程式**或**豁免應用程式**清單，如有使用者嘗試登入，將會登入失敗。 隨即顯示下列訊息：
 
 > **您的公司支援部門必須提供您公司資源的存取權**  
 > 您的公司使用 Windows 資訊保護原則來保護裝置。 您的公司支援部門必須確認其允許公司入口網站存取那些資源。
@@ -126,7 +126,7 @@ ms.locfileid: "73414080"
 
 將公司入口網站新增至 Windows 資訊保護 (WIP) 應用程式防護原則中**允許的應用程式**或**豁免應用程式**清單。 如需詳細資訊，請參閱[使用 Intune 建立及部署 Windows 資訊保護 (WIP) 應用程式保護原則](../apps/windows-information-protection-policy-create.md)。
 
-## <a name="approve-a-ios-company-app-line-of-business-app-on-your-ios-device"></a>核准您的 iOS 裝置上的 iOS 公司應用程式 (企業營運應用程式) 
+## <a name="approve-a-iosipados-company-app-line-of-business-app-on-your-iosipados-device"></a>核准您 iOS/iPadOS 裝置上的 iOS/iPadOS 公司應用程式 (企業營運應用程式) 
 
 ### <a name="where-it-appears"></a>出現的位置
 
@@ -136,7 +136,7 @@ ms.locfileid: "73414080"
 
 ### <a name="what-it-means"></a>代表的意義
 
-此訊息表示您需要修改 iOS 裝置設定，以核准並安裝您公司針對 iOS 裝置所開發的應用程式。
+此訊息表示您需要修改 iOS/iPadOS 裝置設定，以核准並安裝您公司針對 iOS/iPadOS 裝置所開發的應用程式。
 
 當您使用公司入口網站安裝這類應用程式並啟動應用程式時，請在下載應用程式後，依照下列步驟來核准該應用程式：
 

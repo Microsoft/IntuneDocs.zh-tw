@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7a4d6db4f61dea1b073ccce7c4c3f727a91402c1
-ms.sourcegitcommit: 73b362173929f59e9df57e54e76d19834f155433
+ms.openlocfilehash: 4c938aba7fde84536af2452f13f6ed030fa1d823
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/27/2019
-ms.locfileid: "74563628"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576427"
 ---
 # <a name="how-to-configure-the-microsoft-intune-company-portal-app"></a>如何設定 Microsoft Intune 公司入口網站應用程式
 
@@ -37,9 +37,9 @@ ms.locfileid: "74563628"
 > [!Tip]
 > 當您自訂公司入口網站時，這些組態會同時套用到公司入口網站和公司入口網站應用程式。 請注意，使用者必須或指派 Intune 授權，才能存取「公司入口網站」網站。
 
-您可以透過自訂公司入口網站，協助為終端使用者提供熟悉且實用的體驗。 若要這樣做，請在 Intune 入口網站中，選取 [應用程式]   > [商標和自訂]  ，然後進行必要設定。
+您可以透過自訂公司入口網站，協助為終端使用者提供熟悉且實用的體驗。 若要進行，請巡覽至 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，選取 [租用戶管理]   > [商標及自訂]  ，然後進行必要的設定。
 
-當使用者從公司入口網站安裝 iOS 應用程式時，他們將會收到提示。 當 iOS 應用程式連結至 App Store、連結至大量採購方案 (VPP)，或連結至企業營運 (LOB) 應用程式時，就會發生這種情況。 提示可讓使用者接受此動作，或允許應用程式的管理。 提示將顯示您的公司名稱，或者，當您的公司名稱無法使用時，將顯示**公司入口網站**。 
+當使用者從公司入口網站安裝 iOS/iPadOS 應用程式時，便會收到提示。 這會在 iOS/iPadOS 應用程式連結到 App Store、大量採購方案 (VPP)，或是企業營運 (LOB) 應用程式時發生。 提示可讓使用者接受此動作，或允許應用程式的管理。 提示將顯示您的公司名稱，或者，當您的公司名稱無法使用時，將顯示**公司入口網站**。 
 
 > [!Note]
 > 如果您使用 Azure Government，應用程式記錄檔會提供給終端使用者，用來決定當他們在起始程序取得問題說明時如何進行共用。 不過，如果您未使用 Azure Government，當使用者在起始程序取得問題說明時，Windows 10 版公司入口網站會將應用程式記錄檔直接傳送給 Microsoft。 應用程式記錄檔傳送給 Microsoft 可以更輕鬆地進行疑難排解並解決問題。 
@@ -47,7 +47,7 @@ ms.locfileid: "74563628"
 ## <a name="company-information-and-privacy-statement"></a>公司資訊和隱私權聲明
 公司名稱顯示為公司入口網站標題。 當使用者按一下隱私權連結時，會顯示隱私權聲明。
 
-| 欄位名稱 | 長度上限 | 詳細資訊 |
+| 欄位名稱 | 長度上限 | 更多資訊 |
 |---|---|---|
 |**公司名稱**| 40 | 這個名稱會顯示為公司入口網站的標題，並以文字形式在 Intune 使用者體驗期間顯示。 |
 | **隱私權聲明 URL** |     79     | 您可以指定自己的公司隱私權聲明，在使用者從公司入口網站按一下隱私權連結時會顯示該聲明。 您必須以 `<https://www.contoso.com>` 格式輸入有效的 URL。 |
@@ -58,7 +58,7 @@ ms.locfileid: "74563628"
 ## <a name="support-information"></a>支援資訊
 輸入貴公司的支援資訊，為您的員工提供 Intune 相關問題的連絡人。
 
-|欄位名稱|長度上限|詳細資訊|
+|欄位名稱|長度上限|更多資訊|
 |---|---|---|
 |**連絡人姓名** | 40 | 此姓名會顯示在 [說明及支援]  頁面上。 |
 |**電話號碼** | 20 | 此連絡人電話號碼會顯示在 [說明及支援]  頁面上，讓員工能夠連絡您以尋求支援。 |
@@ -74,7 +74,7 @@ ms.locfileid: "74563628"
 ### <a name="theme-color-and-logo-in-the-company-portal"></a>公司入口網站的佈景主題色彩和標誌
 將佈景主題色彩套用到公司入口網站。 選取標準色彩，或針對自訂色彩輸入六位數的十六進位碼。
 
-|欄位名稱|詳細資訊|
+|欄位名稱|更多資訊|
 |---|---|
 |**選取標準色彩或輸入六位數的十六進位代碼**| 選擇 [標準]  以視覺方式選取色彩。 選擇 [自訂]  根據十六進位代碼值選取特定色彩。|
 |**選擇佈景主題色彩**| 選取要套用到公司入口網站的佈景主題色彩。 您可以從標準色彩中選擇，或輸入特定的十六進位碼。 |
@@ -86,17 +86,17 @@ ms.locfileid: "74563628"
 ### <a name="logo-to-use-on-white-or-light-backgrounds"></a>要在白色或淺色背景中使用的標誌
 選擇在白色或淺色背景中看起來最佳的標誌。
 
-|欄位名稱|詳細資訊|
+|欄位名稱|更多資訊|
 |---|---|
 |**上傳您的標誌**| 如果您已選擇要顯示公司標誌，就可以使用這個選項。 您可以上傳透明背景的標誌以達到最佳外觀效果。<p><ul><li>影像大小上限：400 像素 x 400 像素</li><li>檔案大小上限：750KB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
 
 ### <a name="brand-image-for-company-portal"></a>公司入口網站的品牌影像
 
-顯示反映您公司品牌的品牌影像。 儲存變更之後，可以選擇窗格頂端的 [在 Intune Web 入口網路中預覽您的設定]  來查看您的設定。 請注意，您只能在 iOS 裝置上預覽品牌影像，而無法在 Intune Web 入口網站中進行預覽。 
+顯示反映您公司品牌的品牌影像。 儲存變更之後，可以選擇窗格頂端的 [在 Intune Web 入口網路中預覽您的設定]  來查看您的設定。 請注意，您只能在 iOS/iPadOS 裝置上預覽品牌影像，而無法在 Intune Web 入口網站中進行預覽。 
 
-|欄位名稱|詳細資訊|
+|欄位名稱|更多資訊|
 |---|---|
-|**上傳您的品牌影像**| 此選項可讓您顯示品牌形象。 在 iOS 公司入口網站中，它會顯示為使用者設定檔頁面上的背景影像。<p><ul><li>建議影像寬度：大於 1125 像素 (必須至少為 650 像素)</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
+|**上傳您的品牌影像**| 此選項可讓您顯示品牌形象。 在 iOS/iPadOS 公司入口網站中，其會顯示為使用者設定檔頁面上的背景影像。<p><ul><li>建議影像寬度：大於 1125 像素 (必須至少為 650 像素)</li><li>影像大小上限：1.3 MB</li><li>檔案類型：PNG、JPG 或 JPEG</li></ul>|
 
 正確的品牌影像可讓公司品牌留下強烈印象，因而加強使用者對公司入口網站的信任。 以下是您擷取、選擇及最佳化公司入口網站影像時可能想要考慮的一些祕訣。 
 
@@ -108,7 +108,7 @@ ms.locfileid: "74563628"
 
 - 移除不必要的中繼資料。 影像檔可能隨附中繼資料，例如相機設定檔、地理位置、標題、字幕等。 請使用影像最佳化工具去除這項資訊來維護品質，同時符合檔案大小限制。 
 
-當 Intune 中的品牌影像新增或變更時，使用者可能不會在 iOS 裝置上看到變更，直到「公司入口網站」已在啟動時發現變更，然後重新啟動以顯示品牌影像。 
+當新增或變更 Intune 中的品牌影像時，直到「公司入口網站」在啟動時發現變更，然後重新啟動以顯示品牌影像之前，使用者都可能不會在 iOS/iPadOS 裝置上看到變更。 
 
 ### <a name="brand-image-examples"></a>品牌影像範例
 
@@ -122,20 +122,20 @@ ms.locfileid: "74563628"
 
 ## <a name="privacy-statement-customization"></a>隱私權聲明自訂
 
-您可以在受控 iOS 裝置上自訂要針對貴組織顯示的隱私權聲明。 此訊息會列出貴組織無法在受控 iOS 裝置上查看或執行的項目。
+您可以在受控 iOS/iPadOS 裝置上自訂要針對貴組織顯示的隱私權聲明。 此訊息會列出貴組織無法在受控 iOS/iPadOS 裝置上查看或執行的項目。
 
 在[公司入口網站自訂]   > [裝置管理與隱私權訊息]  底下，您可以：
 
 - 接受 [預設]  以使用顯示的清單，或
-- 選擇 [自訂]  ，以自訂貴組織無法在受控 iOS 裝置上查看或執行的項目。 您可以使用 [Markdown](https://daringfireball.net/projects/markdown/) \(英文\) 來加入項目符號、粗體、斜體和連結。
+- 選擇 [自訂]  ，以自訂貴組織無法在受控 iOS/iPadOS 裝置上查看或執行的項目。 您可以使用 [Markdown](https://daringfireball.net/projects/markdown/) \(英文\) 來加入項目符號、粗體、斜體和連結。
 
 ## <a name="company-portal-derived-credentials-for-ios-devices"></a>適用於 iOS 裝置的公司入口網站衍生認證
-Intune 支援個人識別驗證 (PIV) 和一般存取卡 (CAC) 衍生認證，與認證提供者 DISA Purebred、Entrust Datacard 和 Intercede 合作。 終端使用者將會完成其 iOS 裝置註冊後的其他步驟，以在公司入口網站應用程式中驗證其身分識別。 系統會先為您的租使用者設定認證提供者，並針對使用者或裝置將使用衍生認證的設定檔設為目標，以啟用衍生認證。
+Intune 支援個人識別驗證 (PIV) 和一般存取卡 (CAC) 衍生認證，與認證提供者 DISA Purebred、Entrust Datacard 和 Intercede 合作。 終端使用者將會完成其 iOS/iPadOS 裝置註冊後的其他步驟，以在公司入口網站應用程式中驗證其身分識別。 系統會先為您的租使用者設定認證提供者，並針對使用者或裝置將使用衍生認證的設定檔設為目標，以啟用衍生認證。
 
 > [!NOTE]
 > 使用者會根據您透過 Intune 指定的連結，看到衍生認證的相關指示。
 
-如需 iOS 裝置之衍生認證的詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](~/protect/derived-credentials.md)。
+如需 iOS/iPadOS 裝置衍生認證的詳細資訊，請參閱[在 Microsoft Intune 中使用衍生認證](~/protect/derived-credentials.md)。
 
 ## <a name="dark-mode-for-ios-company-portal"></a>iOS 公司入口網站的深色模式
 
@@ -177,7 +177,7 @@ iOS 公司入口網站可以使用深色模式。 使用者可以下載公司應
 - **重新命名**：此動作會變更使用者可以在公司入口網站中看到的裝置名稱。 它不會變更本機裝置名稱，只會變更公司入口網站中的清單。
 - **同步處理**：此動作會使用 Intune 服務來起始裝置簽入。 這會在公司入口網站中顯示為 [檢查狀態]  。
 - **遠端鎖定**：這會鎖定裝置，需要 PIN 才能將其解除鎖定。
-- **重設密碼**：此動作會用來重設裝置密碼。 在 iOS 裝置上，將會移除密碼，而終端使用者將需在設定中輸入新密碼。 在支援的 Android 裝置上，Intune 會產生新密碼，並暫時顯示於公司入口網站中。
+- **重設密碼**：此動作會用來重設裝置密碼。 在 iOS/iPadOS 裝置上，將會移除密碼，而終端使用者將需在設定中輸入新密碼。 在支援的 Android 裝置上，Intune 會產生新密碼，並暫時顯示於公司入口網站中。
 - **金鑰復原**：此動作是用來針對已加密的 macOS 裝置從「公司入口網站」網站復原個人復原金鑰。 
 
 ### <a name="self-service-actions"></a>自助動作
@@ -192,16 +192,16 @@ iOS 公司入口網站可以使用深色模式。 使用者可以下載公司應
 | 同步 | 可用 | 可用 | 可用 | 可用 |
 | 遠端鎖定 | 僅限 Windows Phone | 可用 | 可用 | 可用 |
 | 重設密碼 | 僅限 Windows Phone | 可用<sup>(8)</sup> | NA | 可用<sup>(6)</sup> |
-| 金鑰修復 | NA | NA | 可用<sup>(2)</sup> | NA |
+| 金鑰復原 | NA | NA | 可用<sup>(2)</sup> | NA |
 
 <sup>(1)</sup> 在已加入 Azure AD 的 Windows 裝置上，一律會封鎖**淘汰**。<br>
 <sup>(2)</sup> 只有透過 Web 入口網站才能使用 MacOS 的**金鑰復原**。<br>
 <sup>(3)</sup> 如果使用裝置註冊管理員註冊，則會停用所有遠端動作。<br>
 <sup>(4)</sup> **重新命名**只會變更公司入口網站應用程式或 Web 入口網站中的裝置名稱，而非裝置上的裝置名稱。<br>
 <sup>(5)</sup> 使用者註冊的 iOS 裝置上無法使用**抹除**。<br>
-<sup>(6)</sup> 在某些 Android 和 Android Enterprise 設定上不支援**密碼重設**。 如需詳細資訊，請參閱[在 Intune 中重設或移除裝置密碼](../remote-actions/device-passcode-reset.md)。<br>
+<sup>(6)</sup> 在某些 Android 和 Android Enterprise 設定上不支援**重設密碼**。 如需詳細資訊，請參閱[在 Intune 中重設或移除裝置密碼](../remote-actions/device-passcode-reset.md)。<br>
 <sup>(7)</sup> **淘汰**和**抹除**不適用於 Android Enterprise 裝置擁有者案例 (COPE、COBO、COSU)。<br> 
-<sup>(8)</sup> 使用者註冊的 iOS 裝置上無法使用 [重設密碼] **** 。
+<sup>(8)</sup> 使用者註冊的 iOS 裝置上無法使用**重設密碼**。
 
 ## <a name="next-steps"></a>後續步驟
 

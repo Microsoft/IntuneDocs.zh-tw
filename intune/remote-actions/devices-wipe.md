@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 62ba66469dfff004c3cd6a60284ec7466e8b9f00
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 41a46bd400c5901f0352709f6057bddac262ff9e
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77415522"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609371"
 ---
 # <a name="remove-devices-by-using-wipe-retire-or-manually-unenrolling-the-device"></a>使用抹除、淘汰或手動取消註冊裝置來移除裝置
 
@@ -47,7 +47,7 @@ ms.locfileid: "77415522"
 
 [保留註冊狀態和使用者帳戶]  選項僅適用於 Windows 10 版本 1709 或更新版本。
 
-Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過關閉裝置來規避抹除動作。 受保護的抹除會繼續嘗試重設裝置，直到成功為止。 在某些設定中，此動作可能會讓裝置無法重新啟動。
+Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過關閉裝置來規避抹除動作。 受保護的抹除會繼續嘗試重設裝置，直到成功為止。 在某些設定中，此動作可能會使裝置[無法重新啟動](troubleshoot-device-actions.md#wipe-action)。
 
 下次連線到 Intune 時，MDM 原則將會重新套用。
 
@@ -197,7 +197,10 @@ Perform protected wipe \(執行受保護的抹除\)  選項可確保無法透過
 
     ![Apple 重新指派的螢幕擷取畫面](./media/devices-wipe/apple-reassign.png)
 
-## <a name="fresh-start"></a>重新開始
+## <a name="device-states"></a>裝置狀態
+如需裝置狀態的描述，請參閱 [managementStates 集合](https://docs.microsoft.com/intune/developer/intune-data-warehouse-collections.md#managementstates)。
+
+## <a name="fresh-start"></a>全新開始
 
 適用於 Windows 10 裝置。 請深入了解[重新開始](device-fresh-start.md)。
 

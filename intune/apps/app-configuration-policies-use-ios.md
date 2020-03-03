@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 01/23/2020
+ms.date: 02/11/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6044ff5f8d169e36a11f9289f1772c809723b7fc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: af3c4e05a47e015384716588a28a6074898e2f6a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437999"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513957"
 ---
 # <a name="add-app-configuration-policies-for-managed-iosipados-devices"></a>為受控 iOS/iPadOS 裝置新增應用程式設定原則
 
@@ -43,7 +43,7 @@ ms.locfileid: "77437999"
 > [!TIP]
 > 此原則類型目前僅針對執行 iOS/iPadOS 8.0 與更新版本的裝置提供。 它支援下列應用程式安裝類型︰
 >
-> - **App Store 中的受管理 iOS 應用程式**
+> - **App Store 中的受控 iOS/iPadOS 應用程式**
 > - **iOS 應用程式套件**
 >
 > 如需應用程式安裝類型的詳細資訊，請參閱[如何將應用程式新增至 Microsoft Intune](apps-add.md)。 如需將應用程式設定整合至受控裝置的 .ipa 應用程式套件的詳細資訊，請參閱 [iOS 開發人員文件](https://developer.apple.com/library/archive/samplecode/sc2279/Introduction/Intro.html) \(英文\) 中的受控應用程式組態。
@@ -108,9 +108,10 @@ Microsoft Intune 提供應用程式專屬的組態設定。 您可在 Microsoft 
 
 針對 iOS/iPadOS 裝置，請使用下列機碼/值組：
 
-| **Key** | IntuneMAMAllowedAccountsOnly |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **值** | <ul><li>**啟用**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 機碼所定義的受控使用者帳戶。</li><li>**Disabled** (或任何不是以不區分大小寫方式與 **Enabled** 相符的值)：允許任何帳戶。</li></ul> |。
+| **Key** | **值** |
+|----|----|
+| IntuneMAMAllowedAccountsOnly | <ul><li>**啟用**：唯一允許的帳戶是 [IntuneMAMUPN](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm) 機碼所定義的受控使用者帳戶。</li><li>**Disabled** (或任何不是以不區分大小寫方式與 **Enabled** 相符的值)：允許任何帳戶。</li></ul> |
+| IntuneMAMUPN | <ul><li>允許用於登入應用程式其帳戶的 UPN。</li><li> 若為 Intune 註冊的裝置，<code>{{userprincipalname}}</code> 權杖可用來代表註冊的使用者帳戶。</li></ul>  |
 
    > [!NOTE]
    > 只允許搭配多身分識別使用已設定的組織帳戶時，您必須使用 iOS 版 OneDrive 10.34 或更新版本、iOS 版Outlook 2.99.0 或更新版本或 iOS 版 Edge 44.8.7 或更新版本，且必須使用 [Intune 應用程式保護原則](app-protection-policy.md)將應用程式設為目標。
@@ -181,7 +182,7 @@ Intune 支援內容清單中的下列資料類型：
 - \{\{serialnumberlast4digits\}\} - 例如，**G5V2** (適用於 iOS/iPadOS 裝置)
 - \{\{aaddeviceid\}\} - 例如 **ab0dc123-45d6-7e89-aabb-cde0a1234b56**
 
-## <a name="configure-the-company-portal-app-to-support-ios-dep-devices"></a>設定公司入口網站應用程式以支援 iOS DEP 裝置
+## <a name="configure-the-company-portal-app-to-support-ios-and-ipados-dep-devices"></a>設定公司入口網站應用程式以支援 iOS 和 iPadOS DEP 裝置
 
 DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App Store 版本不相容。 不過，您可以使用下列步驟，將公司入口網站應用程式設定成支援 iOS/iPadOS DEP 裝置。
 
@@ -204,7 +205,7 @@ DEP (Apple 的裝置註冊計劃) 註冊與公司入口網站應用程式的 App
 3. 使用目標為所需群組的應用程式設定原則，來將公司入口網站部署到裝置。 確定只將原則部署到已向 DEP 註冊的裝置群組。
 4. 告訴終端使用者在自動安裝公司入口網站應用程式時登入。
 
-## <a name="monitor-ios--app-configuration-status-per-device"></a>監視每個裝置的 iOS 應用程式設定狀態 
+## <a name="monitor-iosipados--app-configuration-status-per-device"></a>監視每個裝置的 iOS/iPadOS 應用程式設定狀態 
 一旦指派設定原則，您便可以監視每個受控裝置的 iOS/iPadOS 應用程式設定狀態。 從 Azure 入口網站的 [Microsoft Intune]  中，選取 [裝置]   > [所有裝置]  。 從受控裝置清單中，選取特定的裝置以顯示該裝置的窗格。 在裝置的窗格中，選取 [應用程式設定]  。  
 
 ## <a name="additional-information"></a>其他資訊

@@ -15,12 +15,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2c61449e17b96151d2717365e5193fd6c4bdaae3
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 5b38df90e47e709e02f12a6ccdab68714d04ca93
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509904"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575873"
 ---
 # <a name="quickstart-create-and-assign-a-custom-role"></a>快速入門：建立並指派自訂角色
 
@@ -28,7 +28,7 @@ ms.locfileid: "72509904"
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - 若要完成此快速入門，您必須[建立群組](quickstart-create-group.md)。
 
@@ -77,4 +77,4 @@ ms.locfileid: "72509904"
 若要繼續參閱此 Intune 快速入門系列，請前往下一個快速入門。
 
 > [!div class="nextstepaction"]
-> [快速入門：建立 iOS 的電子郵件裝置設定檔](../configuration/quickstart-email-profile.md)
+> [快速入門：建立 iOS/iPadOS 的電子郵件裝置設定檔](../configuration/quickstart-email-profile.md)

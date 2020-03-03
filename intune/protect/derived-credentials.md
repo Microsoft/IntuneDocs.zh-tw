@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f9e8bc347dc6336f665fcabfb4e716fef4818515
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 91442d262adb1d85217cb73f2f415766b89267af
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207193"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77510515"
 ---
 # <a name="use-derived-credentials-in-microsoft-intune"></a>在 Microsoft Intune 中使用衍生認證
 
@@ -37,7 +37,7 @@ ms.locfileid: "75207193"
 
 - Intune 管理員會指定衍生認證作為下列物件的驗證方法：  
 
-  - 常用的設定檔類型，例如 Wi-Fi、VPN 和電子郵件，其中包括 iOS 原生郵件應用程式
+  - 常用的設定檔類型，例如 Wi-Fi、VPN 和電子郵件，其中包括 iOS/iPadOS 原生郵件應用程式
 
   - 應用程式驗證
 
@@ -76,7 +76,7 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 
 規劃將 Intune 公司入口網站應用程式部署到將註冊衍生認證的裝置。 裝置使用者會使用公司入口網站應用程式來啟動認證註冊程序。
 
-針對 iOS 裝置，請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](../apps/store-apps-ios.md)。
+針對 iOS/iPadOS 裝置，請參閱[將 iOS/iPadOS 市集應用程式新增至 Microsoft Intune](../apps/store-apps-ios.md)。
 
 ## <a name="plan-for-derived-credentials"></a>規劃衍生認證
 
@@ -198,7 +198,7 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 **請完成下列工作**：
   
 1. 下載 [DISA Purebred 應用程式](https://cyber.mil/pki-pke/purebred/)。
-2. 在 Intune 中部署 DISA Purebred 應用程式。  請參閱[將 iOS 企業營運應用程式新增至 Microsoft Intune](../apps/lob-apps-ios.md)。
+2. 在 Intune 中部署 DISA Purebred 應用程式。  請參閱[將 iOS/iPadOS 企業營運應用程式新增至 Microsoft Intune](../apps/lob-apps-ios.md)。
 3. 針對 DISA Purebred 應用程式[建立個別應用程式 VPN](../configuration/vpn-settings-configure.md)。
 
 ## <a name="use-derived-credentials-for-authentication-and-smime-signing-and-encryption"></a>使用衍生認證進行驗證和 S/MIME 簽署和加密
@@ -224,7 +224,7 @@ Intune 支援每一租用戶單一衍生認證簽發者。 您可以設定 Intun
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列設定：
 
-    - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，**iOS 裝置設定檔的衍生認證**是良好的設定檔名稱。
+    - **名稱**：為設定檔輸入描述性名稱。 命名您的設定檔，以方便之後能輕鬆識別。 例如，**iOS/iPadOS 裝置設定檔的衍生認證**是良好設定檔名稱。
     - **描述**：輸入描述來概述設定和其他重要的詳細資料。
     - **平台**：選取 [iOS/iPadOS]  。
     - **設定檔類型**：選取 [衍生認證]  。

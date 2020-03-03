@@ -5,7 +5,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -16,12 +16,12 @@ ms.reviewer: shpate
 ms.suite: ems
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: cbf82c0bef88e4a6d0e790f4b0ecdf73d2731d5d
-ms.sourcegitcommit: 9bb1bcd9f1bdd53b470073da956bbd8b0935dfbc
+ms.openlocfilehash: 3d8ee4ec6a5bcb29a51b68cff7b840823b678636
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/31/2019
-ms.locfileid: "75556397"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569280"
 ---
 # <a name="monitor-security-baseline-and-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中監視安全性基準和設定檔
 
@@ -106,6 +106,18 @@ Intune 提供數個用來監視安全性基準的選項。 您可以監視適用
 
    ![查看安全性基準設定檔的各種不同監視選項](./media/security-baselines-monitor/monitor-status-options.png)
 
+## <a name="view-endpoint-security-configurations-per-device"></a>檢視每個裝置的端點安全性設定
+
+檢視適用於個別裝置的安全性設定詳細資料，其可協助您隔離設定不正確的設定。
+
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+
+2. 前往 [裝置]   > [所有裝置]  ，然後選取您要檢視的裝置。
+
+3. 在 [監視]  類別中，選取 [端點安全性設定]  來檢視適用於該裝置的安全性設定清單。
+
+4. 您也可以選取端點安全性設定，以鑽研和檢視評估裝置上該安全性設定的其他詳細資料。
+
 ## <a name="troubleshoot-using-per-setting-status"></a>使用每個設定的狀態來進行疑難排解
 
 您已部署安全性基準，但部署狀態顯示錯誤。 下列步驟提供您一些有關針對錯誤進行疑難排解的指引。
@@ -135,6 +147,7 @@ Intune 提供數個用來監視安全性基準的選項。 您可以監視適用
 [Windows 10 中診斷 MDM 失敗](https://docs.microsoft.com/windows/client-management/mdm/diagnose-mdm-failures-in-windows-10) \(英文\) 提供有關此內建報告的詳細資訊。
 
 > [!TIP]
+>
 > - 有些設定也會列出 GUID。 您可以在本機登錄 (regedit) 中搜尋此 GUID 來尋找任何已設定的值。
 > - [事件檢視器] 記錄檔可能也包含一些有關發生問題之設定的錯誤資訊 ([事件檢視器]   > [應用程式及服務記錄檔]   > [Microsoft]   > [Windows]   > [DeviceManagement-Enterprise-Diagnostics-Provider]   > [系統管理]  )。
 

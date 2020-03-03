@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: c7a6914e8174023704cfc593ec08a525ec5889f3
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 7d1a55f758be50c342a5c8851106f0c37e6aec50
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437897"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513719"
 ---
 # <a name="how-to-create-and-assign-app-protection-policies"></a>如何建立及部署應用程式保護原則
 
@@ -74,21 +74,21 @@ ms.locfileid: "77437897"
     此頁面提供資料遺失防護 (DLP) 控制項的設定，包含剪下、複製、貼上，以及另存新檔限制。 這些設定會決定使用者如何與套用此應用程式保護原則之應用程式中的資料互動。
 
     **資料保護設定**：<br>
-    - **iOS/iPadOS 資料保護** - 如需詳細資訊，請參閱 [iOS 應用程式保護原則設定 - 資料保護](~/apps/app-protection-policy-settings-ios.md#data-protection)。
+    - **iOS/iPadOS 資料保護** - 如需資訊，請參閱 [iOS/iPadOS 應用程式保護原則設定 - 資料保護](~/apps/app-protection-policy-settings-ios.md#data-protection)。
     - **Android 資料保護** - 如需詳細資訊，請參閱 [Android 應用程式保護原則設定 - 資料保護](~/apps/app-protection-policy-settings-android.md#data-protection)。
 
 7. 按一下 [下一步]  以顯示 [存取需求]  頁面。<br>
     此頁面提供的設定可讓您設定使用者必須符合的 PIN 和認證需求，才能存取工作內容中的應用程式。 
  
     **存取需求設定**：<br>
-    - **iOS/iPadOS 存取需求** - 如需詳細資訊，請參閱 [iOS 應用程式保護原則設定 - 存取需求](~/apps/app-protection-policy-settings-ios.md#access-requirements)。
+    - **iOS/iPadOS 存取需求** - 如需資訊，請參閱 [iOS/iPadOS 應用程式保護原則設定 - 存取需求](~/apps/app-protection-policy-settings-ios.md#access-requirements)。
     - **Android 存取需求** - 如需詳細資訊，請參閱 [Android 應用程式保護原則設定 - 存取需求](~/apps/app-protection-policy-settings-android.md#access-requirements)。
 
 8. 按一下 [下一步]  以顯示 [條件式啟動]  頁面。<br>
     此頁面提供您設定應用程式保護原則的登入安全性需求的設定。 選取 [設定]  ，並輸入使用者必須符合以登入公司應用程式的 [值]  。 然後選取使用者不符合您的需求時要採取的 [動作]  。 在某些情況下，您可以針對單一設定指定多個動作。
 
     **條件式啟動設定**：<br>
-    - **iOS/iPadOS 條件式啟動** - 如需詳細資訊，請參閱 [iOS 應用程式保護原則設定 - 條件式啟動](~/apps/app-protection-policy-settings-ios.md#conditional-launch)。
+    - **iOS/iPadOS 條件式啟動** - 如需資訊，請參閱 [iOS/iPadOS 應用程式保護原則設定 - 條件式啟動](~/apps/app-protection-policy-settings-ios.md#conditional-launch)。
     - **Android 條件式啟動** - 如需詳細資訊，請參閱 [Android 應用程式保護原則設定 - 條件式啟動](~/apps/app-protection-policy-settings-android.md#conditional-launch)。
 
 9. 按一下 [下一步]  以顯示 [指派]  頁面。<br>
@@ -180,7 +180,7 @@ ms.locfileid: "77437897"
 > [!NOTE]
 > 無論選擇哪種裝置類型，Android 裝置都將提示您安裝 Intune 公司入口網站應用程式。 例如，如果您選擇 [Android Enterprise]，則系統仍將提示使用非受控 Android 裝置的使用者。
 
-針對 iOS，需要額外的應用程式組態設定，才能將應用程式保護原則 (APP) 設定的目標設為 Intune 已註冊裝置上的應用程式：
+針對 iOS/iPadOS，需要額外的應用程式組態設定，才能將應用程式保護原則 (APP) 設定其目標設為 Intune 已註冊裝置上的應用程式：
 
 - **IntuneMAMUPN** 必須針對所有 MDM 受控應用程式進行設定。 如需詳細資訊，請參閱[如何使用 Microsoft Intune 管理 iOS/iPadOS 應用程式之間的資料傳輸](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm)。
 - **IntuneMAMDeviceID** 必須針對所有協力廠商及企業營運 MDM 受控應用程式進行設定。 **IntuneMAMDeviceID** 應設為裝置識別碼權杖。 例如 `key=IntuneMAMDeviceID, value={{deviceID}}`。 如需詳細資訊，請參閱[為受控 iOS/iPadOS 裝置新增應用程式設定原則](app-configuration-policies-use-ios.md)。
@@ -192,7 +192,7 @@ ms.locfileid: "77437897"
 ## <a name="policy-settings"></a>原則設定
 若要查看 iOS/iPadOS 與 Android 的完整原則設定清單，請選取下列其中一個連結︰
 
-- [iOS 原則](app-protection-policy-settings-ios.md)
+- [iOS/iPadOS policies](app-protection-policy-settings-ios.md)
 - [Android 原則](app-protection-policy-settings-android.md)
 
 ## <a name="next-steps"></a>後續步驟
@@ -200,4 +200,4 @@ ms.locfileid: "77437897"
 
 ## <a name="see-also"></a>請參閱
 * [當 Android 應用程式交由應用程式防護原則管理時的行為](../fundamentals/end-user-mam-apps-android.md)
-* [當 iOS 應用程式交由應用程式保護原則管理時的行為](../fundamentals/end-user-mam-apps-ios.md)
+* [當 iOS/iPadOS 應用程式交由應用程式保護原則管理時的行為](../fundamentals/end-user-mam-apps-ios.md)

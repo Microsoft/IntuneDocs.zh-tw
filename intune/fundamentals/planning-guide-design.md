@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9fa02a61148a03a64b88b38dcdc1799b30bc45db
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: f676a0e39bb5dae32d3032d1703dbb44f6b2e54a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886736"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514960"
 ---
 # <a name="create-a-design"></a>建立設計
 
@@ -111,7 +111,7 @@ ms.locfileid: "76886736"
 
 如果您的組織有全球支援，請務必在訂閱服務時規劃租用戶所在的位置。 在您第一次註冊 Intune 訂用帳戶時會定義國家/地區，並對應至下面所列的全球國家/地區：
 
-- 北美
+- 北美洲
 
 - 歐洲、中東和非洲地區
 
@@ -188,7 +188,7 @@ ms.locfileid: "76886736"
 
 ### <a name="determine-supported-device-platforms"></a>判斷支援的裝置平台
 
-您需要知道哪些裝置會放在環境中，並確認 Intune 是否會在建立您的設計時支援它們。 Intune 支援 iOS、Android 和 Windows 平台。
+您需要知道哪些裝置會放在環境中，並確認 Intune 是否會在建立您的設計時支援它們。 Intune 支援 iOS/iPadOS、Android 和 Windows 平台。
 
 [Intune 支援裝置的完整清單](supported-devices-browsers.md)。
 
@@ -296,8 +296,8 @@ Intune 支援公司擁有的裝置和個人裝置。 如果您透過裝置註冊
 
 | **類型** | **設定檔名稱** | **裝置平台** | **使用案例** |   
 |:---:|:---:|:---:|:---:|
-| 根 CA | 公司根 CA | Android、iOS、Windows Mobile | 公司、BYOD  |                                                           
-| SCEP | 使用者憑證 | Android、iOS、Windows Mobile | 公司、BYOD |                                                           
+| 根 CA | 公司根 CA | Android、iOS/iPadOS、Windows 行動裝置版 | 公司、BYOD  |                                                           
+| SCEP | 使用者憑證 | Android、iOS/iPadOS、Windows 行動裝置版 | 公司、BYOD |                                                           
 
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別憑證設定檔需求。
@@ -311,7 +311,7 @@ Wi-Fi 設定檔用來自動將行動裝置連線到無線網路。 Intune 支援
 | **類型** | **設定檔名稱** | **裝置平台** | **使用案例** |
 |:---:|:---:|:---:|:---:|
 | Wi-Fi | 亞洲 Wi-Fi 設定檔 | Android | 公司、BYOD 亞洲地區|
-| Wi-Fi | 北美地區 Wi-Fi 設定檔 | Android、iOS、Windows 10 Mobile | 公司、BYOD 北美地區 |
+| Wi-Fi | 北美地區 Wi-Fi 設定檔 | Android、iOS/iPadOS、Windows 10 行動裝置版 | 公司、BYOD 北美地區 |
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別 Wi-Fi 設定檔需求。
 
@@ -323,7 +323,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 | **類型** | **設定檔名稱** | **裝置平台** | **使用案例** |
 |:---:|:---:|:---:|:---:|
-| VPN | VPN Cisco 任何連線設定檔 | Android、iOS、Windows 10 Mobile | 公司、BYOD 北美地區及德國|
+| VPN | VPN Cisco 任何連線設定檔 | Android、iOS/iPadOS、Windows 10 行動裝置版 | 公司、BYOD 北美地區及德國|
 | VPN | Pulse Secure | Android | 公司、BYOD 亞洲地區 |
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別 VPN 設定檔需求。
@@ -374,7 +374,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 | **應用程式** | **目的** | **平台** | **使用案例** | **應用程式保護原則** |
 |:---:|:---:|:---:|:---:|:---:|
 | Outlook Mobile  | 可用 | iOS | 公司 - 主管 | 不可破解、加密檔案 |                                                         
-| Word | 可用 | iOS、Android - Samsung Knox、非 Knox、Windows 10 Mobile | 公司、BYOD | 不可破解、加密檔案 |                                                         
+| Word | 可用 | iOS/iPadOS、Android - Samsung Knox、非 Knox、Windows 10 行動裝置版 | 公司、BYOD | 不可破解、加密檔案 |                                                         
 
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別應用程式保護原則需求。
@@ -388,7 +388,7 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 | **原則名稱** | **裝置平台** | **設定** | **目標群組** |
 |:---:|:---:|:---:|:---:|
-| 相容性原則 | iOS、Android - Samsung Knox、非 Knox、Windows 10 Mobile | PIN - 必要項、不能破解 | 公司、BYOD |
+| 相容性原則 | iOS/iPadOS、Android - Samsung Knox、非 Knox、Windows 10 行動裝置版 | PIN - 必要項、不能破解 | 公司、BYOD |
 
 
 您可以[下載上述資料表的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0)來識別合規性政策需求。
@@ -404,8 +404,8 @@ VPN 設定檔讓使用者從遠端位置安全存取您的網路。 Intune 支�
 
 | **服務** | **新式驗證的平台** | **基本驗證** | **使用案例** |
 |:---:|:---:|:---:|:---:|
-| Exchange Online | iOS、Android | 封鎖 Intune 支援平台上不相容的裝置 | 公司、BYOD |
-| SharePoint Online | iOS、Android |  | 公司、BYOD |
+| Exchange Online | iOS/iPadOS、Android | 封鎖 Intune 支援平台上不相容的裝置 | 公司、BYOD |
+| SharePoint Online | iOS/iPadOS、Android |  | 公司、BYOD |
 
 您可以[下載上述表格的範本](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) \(英文\) 來識別條件式存取原則需求。
 

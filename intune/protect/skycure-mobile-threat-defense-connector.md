@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: be8fbb0bd96891eb3af3157deddfc325ebc5f2b9
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 884d7f5d4710b44c302598b3c34e704beace240a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72508936"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515266"
 ---
 # <a name="symantec-endpoint-protection-mobile-connector"></a>Symantec Endpoint Protection Mobile 連接器
 
@@ -41,7 +41,7 @@ ms.locfileid: "72508936"
 
 ## <a name="how-do-intune-and-sep-mobile-help-protect-your-company-resources"></a>Intune 和 SEP Mobile 如何協助保護您的公司資源？
 
-適用於 Android 或 iOS 的 SEP Mobile 應用程式可擷取檔案系統、網路堆疊，裝置和應用程式遙測 (如果可用)，然後將它傳送至 Symantec 雲端服務，以評估裝置的行動威脅風險。
+適用於 Android 或 iOS/iPadOS 的 SEP Mobile 應用程式可擷取檔案系統、網路堆疊，裝置和應用程式遙測 (如果可用)，然後將其傳送至 Symantec 雲端服務，以評定裝置的行動威脅風險。
 
 Intune 裝置合規性政策包含以 SEP Mobile 風險評估為基礎的 SEP Mobile 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。
 
@@ -75,7 +75,7 @@ Intune 支援兩種與 SEP Mobile 整合的模式：
 
 ![偵測到惡意應用程式並修復後授與存取權的影像](./media/skycure-mobile-threat-defense-connector/symantec-arch-2.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
+### <a name="control-access-based-on-threat-to-network"></a>依據對網路的威脅性來控制存取
 
 偵測網路中的「攔截式攻擊」  等威脅，並根據裝置風險保護對 Wi-Fi 網路的存取。
 
@@ -87,7 +87,7 @@ Intune 支援兩種與 SEP Mobile 整合的模式：
 
 ![補救後授與存取](./media/skycure-mobile-threat-defense-connector/symantec-arch-4.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>依據對網路的威脅來控制對 SharePoint Online 的存取
 
 偵測網路中的「攔截式攻擊」  等威脅，並根據裝置風險防止對公司檔案進行同步處理。
 
@@ -121,7 +121,7 @@ Intune 支援兩種與 SEP Mobile 整合的模式：
 
 - [設定 SEP Mobile 與 Intune 整合](skycure-mtd-connector-integration.md)
 
-- [新增並指派 SEP Mobile 應用程式、Microsoft Authenticator 和 iOS 應用程式設定原則](mtd-apps-ios-app-configuration-policy-add-assign.md)
+- [新增並指派 SEP Mobile 應用程式、Microsoft Authenticator 和 iOS/iPadOS 應用程式設定原則](mtd-apps-ios-app-configuration-policy-add-assign.md)
 
 - [使用 Intune 建立 SEP Mobile 的裝置合規性政策](mtd-device-compliance-policy-create.md)
 

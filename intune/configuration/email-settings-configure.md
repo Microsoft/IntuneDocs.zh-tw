@@ -1,12 +1,12 @@
 ---
 title: 在 Microsoft Intune 中設定電子郵件設定 - Azure | Microsoft Docs
 titleSuffix: ''
-description: 在 Microsoft Intune 中建立電子郵件設定檔，並將此設定檔部署到 Android Enterprise、iOS 和 Windows 裝置。 使用電子郵件設定檔來設定一般電子郵件設定，包括電子郵件伺服器和驗證方法，以連線到您所管理裝置上的公司電子郵件。
+description: 在 Microsoft Intune 中建立電子郵件設定檔，並將此設定檔部署到 Android Enterprise、iOS、iPadOS 和 Windows 裝置。 使用電子郵件設定檔來設定一般電子郵件設定，包括電子郵件伺服器和驗證方法，以連線到您所管理裝置上的公司電子郵件。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 110db564dce5ad68d3c2a26b85e60ecbe99e7335
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 908a20098917540e6f823d94c6643d15f13ecf68
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74059419"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511080"
 ---
 # <a name="add-email-settings-to-devices-using-intune"></a>使用 Intune 將電子郵件設定新增至裝置
 
@@ -31,15 +31,16 @@ Microsoft Intune 包含不同的電子郵件設定，可部署到您組織中的
 
 - Android Samsung Knox Standard 4.0 及更新版本
 - Android 企業
-- iOS 8.0 和更新版本
-- Windows Phone 8.1 和更新版本
+- iOS 8.0 及更新版本
+- iPadOS 13.0 和更新版本
+- Windows Phone 8.1 及更新版本
 - Windows 10 桌面版與 Windows 10 行動裝置版
 
 本文示範如何在 Microsoft Intune 中建立電子郵件設定檔。 它也包含不同平台的連結，以取得更具體的設定。
 
 ## <a name="create-a-device-profile"></a>建立裝置設定檔
 
-1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 3. 輸入下列內容：
 
@@ -89,7 +90,7 @@ Microsoft Intune 包含不同的電子郵件設定，可部署到您組織中的
 
 如果使用者已設定電子郵件帳戶，則會根據平台，以不同方式指派電子郵件設定檔。
 
-- **iOS**：依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 重複的電子郵件設定檔會封鎖 Intune 設定檔的指派。 在此情況下，公司入口網站應用程式會通知使用者其不符合規範，並提示終端使用者手動移除已設定的設定檔。 為協助避免此情況，請指示終端使用者「先」  註冊，然後再安裝電子郵件設定檔，以允許 Intune 設定該設定檔。
+- **iOS/iPadOS**：依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 重複的電子郵件設定檔會封鎖 Intune 設定檔的指派。 在此情況下，公司入口網站應用程式會通知使用者其不符合規範，並提示終端使用者手動移除已設定的設定檔。 為協助避免此情況，請指示終端使用者「先」  註冊，然後再安裝電子郵件設定檔，以允許 Intune 設定該設定檔。
 
 - **Windows：** 依據主機名稱和電子郵件地址，偵測到重複的現有電子郵件設定檔。 Intune 會覆寫終端使用者所建立的現有電子郵件設定檔。
 

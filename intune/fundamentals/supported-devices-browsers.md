@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 10/25/2019
+ms.date: 02/19/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: fundamentals
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e28f8a2cc43e4ca210a391151383633da457c056
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: ea115810d604ce7ad49bd23b40951ee3f3da67fc
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437914"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609267"
 ---
 # <a name="supported-operating-systems-and-browsers-in-intune"></a>Intune 中支援的作業系統與瀏覽器
 
@@ -32,6 +32,9 @@ ms.locfileid: "77437914"
 如需在裝置上安裝 Intune 方面的協助，請參閱[使用受控裝置完成工作](https://docs.microsoft.com/intune-user-help/company-portal-frequently-asked-questions)和 [Intune 網路頻寬用量](network-bandwidth-use.md)。
 
 如需設定服務提供者支援的詳細資訊，請瀏覽[設定服務提供者參考](https://docs.microsoft.com/windows/client-management/mdm/configuration-service-provider-reference) \(英文\)。
+
+> [!NOTE]
+> Intune 現在需要應用程式與裝置具有 Android 5.x (棒棒糖) 或更新版本，才能透過 Android 的公司入口網站應用程式及其 Intune App SDK 來存取公司資源。 這項要求並不會影響執行 4.4 版的 Polycom Android 小組裝置。 將會繼續支援這些裝置。 
 
 ## <a name="intune-supported-operating-systems"></a>Intune 支援的作業系統
 

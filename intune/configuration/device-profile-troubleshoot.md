@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/28/2020
+ms.date: 02/18/2020
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 881d0f095d2144ae42db4825336275980a19f419
-ms.sourcegitcommit: b0d683917af83170f85022b270270d8ced8e301c
+ms.openlocfilehash: 21497716f17ced83bdcc1952cb952151f993bb7b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76812352"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511322"
 ---
 # <a name="common-questions-issues-and-resolutions-with-device-policies-and-profiles-in-microsoft-intune"></a>對於 Microsoft Intune 中的裝置原則和設定檔的常見疑問、問題和解決方式
 
@@ -36,11 +36,11 @@ ms.locfileid: "76812352"
 
 一些其他建議：  
 
-- 如果您正在連線的 Wi-Fi 網路使用密碼或複雜密碼，請確認您可以直接連線到 Wi-Fi 路由器。 您可以使用 iOS 裝置進行測試。
+- 如果您正在連線的 Wi-Fi 網路使用密碼或複雜密碼，請確認您可以直接連線到 Wi-Fi 路由器。 您可以使用 iOS/iPadOS 裝置進行測試。
 - 成功連線至 Wi-Fi 端點 (Wi-Fi 路由器) 後，請注意使用的 SSID 和認證 (這個值是密碼或複雜密碼)。
 - 在 [預先共用金鑰] 欄位中輸入 SSID 和認證 (密碼或複雜密碼)。 
 - 部署到使用者數目有限的測試群組，建議僅限 IT 小組。 
-- 將您的 iOS 裝置同步處理到 Intune。 如尚未註冊，請註冊。 
+- 將您的 iOS/iPadOS 裝置同步處理到 Intune。 如尚未註冊，請註冊。 
 - 再次測試連線到相同的 Wi-Fi 端點 (如第一個步驟中所述)。
 - 推出較大的群組，最後是您組織中所有預期的使用者。 
 
@@ -54,7 +54,7 @@ Intune 會通知裝置使用 Intune 服務簽入。 通知時間各不相同，�
 
 | 平台 | 重新整理週期|
 | --- | --- |
-| iOS | 大約每 8 小時 |
+| iOS/iPadOS | 大約每 8 小時 |
 | macOS | 大約每 8 小時 |
 | Android | 大約每 8 小時 |
 | 註冊為裝置的 Windows 10 電腦 | 大約每 8 小時 |
@@ -65,7 +65,7 @@ Intune 會通知裝置使用 Intune 服務簽入。 通知時間各不相同，�
 
 | 平台 | 頻率 |
 | --- | --- |
-| iOS | 前 1 小時每 15 分鐘，之後大約每 8 小時 |  
+| iOS/iPadOS | 前 1 小時每 15 分鐘，之後大約每 8 小時 |  
 | macOS | 前 1 小時每 15 分鐘，之後大約每 8 小時 | 
 | Android | 前 15 分鐘每 3 分鐘，之後 2 小時每 15 分鐘，再來大約每 8 小時 | 
 | 註冊為裝置的 Windows 10 電腦 | 前 15 分鐘每 3 分鐘，之後 2 小時每 15 分鐘，再來大約每 8 小時 | 
@@ -102,7 +102,7 @@ Intune 會通知裝置使用 Intune 服務簽入。 通知時間各不相同，�
 
 原則會部署至應用程式並生效。 接著再部署另一個原則。 在此案例中，第一個原則會優先使用並持續套用。 第二個原則會顯示衝突。 如果同時套用這兩個原則，代表沒有優先的原則，則兩者處於衝突狀態。 任何衝突的設定都會設為限制最嚴格的值。
 
-## <a name="what-happens-when-ios-custom-policies-conflict"></a>iOS 自訂原則衝突時，會發生什麼情況？
+## <a name="what-happens-when-iosipados-custom-policies-conflict"></a>iOS/iPadOS 自訂原則衝突時，會發生什麼情況？
 
 Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識別項 (OMA-URI) 原則的承載。 它只做為傳遞機制。
 
@@ -144,7 +144,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
     - 允許 NFC
     - 允許 Wi-Fi
 
-  - **iOS**：移除所有設定，除了：
+  - **iOS/iPadOS**：移除所有設定，除了：
   
     - 允許語音漫遊
     - 允許數據漫遊
@@ -156,7 +156,7 @@ Intune 不會評估 Apple 設定檔或自訂開放行動聯盟的統一資源識
 
 若要將設定檔變更為較不安全的值，請重設安全性原則。 例如，在 Windows 8.1 的桌面上從右向內撥動，然後選取 [設定]   > [控制台]  。 選取 [使用者帳戶]  小程式。 左導覽功能表底部有一個 [重設安全性原則]  連結。 請加以選取，然後選擇 [重設原則]  。
 
-您可能需要淘汰 Android、Windows Phone 8.1 和更新版本、iOS 以及 Windows 10 等其他 MDM 裝置，再重新註冊到 Intune 中，以套用較不嚴格的設定檔。
+您可能需要淘汰 Android、Windows Phone 8.1 和更新版本、iOS/iPadOS 以及 Windows 10 等其他 MDM 裝置，並重新註冊到 Intune 中，以套用較不嚴格的設定檔。
 
 ## <a name="some-settings-in-a-windows-10-profile-return-not-applicable"></a>Windows 10 設定檔中的某些設定會傳回「不適用」
 

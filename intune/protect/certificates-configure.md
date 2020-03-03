@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 5092fa37f0bf6bd1320fa06fa58ac5e36f55aa3c
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: 63fa9f461fc9884d8c21e40cb4b5e3831f3b4b03
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74410193"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576534"
 ---
 # <a name="use-certificates-for-authentication-in-microsoft-intune"></a>在 Microsoft Intune 中使用憑證進行驗證
 
@@ -38,7 +38,7 @@ ms.locfileid: "74410193"
 
 若要部署這些憑證，請建立憑證設定檔並將其指派給裝置。
 
-您所建立的每個個別憑證設定檔都支援單一平台。 例如，如果您使用 PKCS 憑證，請為 Android 建立一個 PKCS 憑證設定檔，並為 iOS 建立另一個 PKCS 憑證設定檔。 如果您也要將 SCEP 憑證用於這兩個平台，請為 Android 建立一個 SCEP 憑證設定檔，並為 iOS 建立另一個。
+您所建立的每個個別憑證設定檔都支援單一平台。 例如，如果您使用 PKCS 憑證，請為 Android 建立一個 PKCS 憑證設定檔，並為 iOS/iPadOS 建立另一個 PKCS 憑證設定檔。 如果您也要將 SCEP 憑證用於這兩個平台，您可以為 Android 建立一個 SCEP 憑證設定檔，並為 iOS/iPadOS 建立另一個。
 
 ### <a name="general-considerations-when-you-use-a-microsoft-certification-authority"></a>使用 Microsoft 憑證授權單位時的一般考量
 
@@ -83,7 +83,7 @@ ms.locfileid: "74410193"
 | Android 企業 <br> - 完全受控 (裝置擁有者)   | ![支援](./media/certificates-configure/green-check.png) |   | ![支援](./media/certificates-configure/green-check.png) |   |
 | Android 企業 <br> - 專用 (裝置擁有者)   | ![支援](./media/certificates-configure/green-check.png)  |   | ![支援](./media/certificates-configure/green-check.png)  |   |
 | Android 企業 <br> - 工作設定檔    | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) |
-| iOS                   | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) |
+| iOS/iPadOS                   | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) | ![支援](./media/certificates-configure/green-check.png) |
 | macOS                 | ![支援](./media/certificates-configure/green-check.png) |  ![支援](./media/certificates-configure/green-check.png) |![支援](./media/certificates-configure/green-check.png)|![支援](./media/certificates-configure/green-check.png)|
 | Windows Phone 8.1     |![支援](./media/certificates-configure/green-check.png)  |  | ![支援](./media/certificates-configure/green-check.png)| ![支援](./media/certificates-configure/green-check.png) |
 | Windows 8.1 及更新版本 |![支援](./media/certificates-configure/green-check.png)  |  |![支援](./media/certificates-configure/green-check.png) |   |
@@ -105,7 +105,7 @@ ms.locfileid: "74410193"
 
 ### <a name="to-create-a-trusted-certificate-profile"></a>建立可信任的憑證設定檔
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  。
 

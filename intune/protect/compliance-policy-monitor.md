@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 89b4516017d7ac8bf1e27134db6a67a0a86b17cb
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 128f615a9551c31e6b0e0de4f1d269083874bf48
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206069"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77515113"
 ---
 # <a name="monitor-intune-device-compliance-policies"></a>監視 Intune 裝置合規性政策
 
@@ -77,7 +77,7 @@ ms.locfileid: "75206069"
   - 裝置未獲指派合規性政策，且沒有可檢查合規性之觸發程序
   - 裝置自上次更新合規性政策後就未曾簽入
   - 裝置未與特定使用者建立關聯，例如：
-    - 透過不具使用者親和性的 Apple 裝置註冊計劃 (DEP) 購買的 iOS 裝置
+    - 透過不具使用者親和性的 Apple 裝置註冊計劃 (DEP) 所購買 iOS/iPadOS 裝置
     - Android kiosk 或 Android Enterprise 專用裝置
   - 裝置使用裝置註冊管理員 (DEM) 帳戶註冊
 

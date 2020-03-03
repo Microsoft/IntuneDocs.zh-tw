@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9deee0dca675d7fd95445131ed98ea195972c6ac
-ms.sourcegitcommit: a7b479c84b3af5b85528db676594bdb3a1ff6ec6
+ms.openlocfilehash: c134eb1fc413a32f2a27034d8c3a993f18f8a9c9
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/22/2019
-ms.locfileid: "74409893"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576266"
 ---
 # <a name="tutorial-protect-exchange-online-email-on-managed-devices"></a>教學課程：保護受控裝置上的 Exchange Online 電子郵件
 
@@ -37,7 +37,7 @@ ms.locfileid: "74409893"
 
 如果您沒有 Intune 訂用帳戶，請[註冊免費試用帳戶](../fundamentals/free-trial-sign-up.md)。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 您將需要在本教學課程中，使用以下訂用帳戶測試租用戶：
 
@@ -45,7 +45,7 @@ ms.locfileid: "74409893"
 
 - 包含 Exchange ([免費試用](https://go.microsoft.com/fwlink/p/?LinkID=510938)) 的 Office 365 商務版訂用帳戶
 
-在開始之前，請先依照下列內容中的步驟，建立適用於 iOS 裝置的測試裝置設定檔：[Quickstart:Create an email device profile for iOS](../configuration/quickstart-email-profile.md) (快速入門：建立 iOS 的電子郵件裝置設定檔)
+在開始之前，請先依照下列內容中的步驟，建立適用於 iOS 裝置的測試裝置設定檔：[Quickstart:建立 iOS/iPadOS 的電子郵件裝置設定檔](../configuration/quickstart-email-profile.md)。
 
 ## <a name="sign-in-to-intune"></a>登入 Intune
 
@@ -162,7 +162,7 @@ ms.locfileid: "74409893"
 
 ## <a name="try-it-out"></a>試試看
 
-透過使用已建立的原則，所有嘗試登入 Office 365 電子郵件的 iOS 裝置都必須在 Intune 中註冊，並使用 iOS 版 Outlook 行動應用程式。 若要在 iOS 裝置上測試此案例，請嘗試使用您測試租用戶中使用者的認證登入 Exchange Online。 系統將會提示您註冊裝置並安裝 Outlook 行動應用程式。
+透過使用已建立的原則，所有嘗試登入 Office 365 電子郵件的 iOS/iPadOS 裝置都必須在 Intune 中註冊，並使用 iOS/iPadOS 版 Outlook 行動應用程式。 若要在 iOS 裝置上測試此案例，請嘗試使用您測試租用戶中使用者的認證登入 Exchange Online。 系統將會提示您註冊裝置並安裝 Outlook 行動應用程式。
 
 1. 若要在 iPhone 上測試，請前往 [設定]   > [密碼與帳戶]   > [新增帳戶]   > [Exchange]  。
 
@@ -181,7 +181,7 @@ ms.locfileid: "74409893"
 
 2. 選取 [裝置]   > [合規性政策]  。
 
-3. 在 [原則名稱]  清單中，選取測試原則的操作功能表 ( **...** )，然後選取 [刪除]  。 選取 [確定]  以確認。
+3. 在 [原則名稱]  清單中，選取測試原則的操作功能表 ( **...** )，然後選取 [刪除]  。 選取 [確定]  來確認。
 
 4. 選取 [端點安全性]   > [條件式存取]  。
 

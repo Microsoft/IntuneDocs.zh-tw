@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ae5a7508f27dbf15a58ba3386e744bb63bf102b
-ms.sourcegitcommit: e1ff157f692983b49bdd6e20cc9d0f93c3b3733c
+ms.openlocfilehash: 9622eb33cb4e7732b573e8caf56acf4e3966badb
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/11/2020
-ms.locfileid: "77125008"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609116"
 ---
 # <a name="manage-web-access-by-using-microsoft-edge-with-microsoft-intune"></a>透過搭配 Microsoft Intune 使用 Microsoft Edge 來管理 Web 存取
 
@@ -101,7 +101,7 @@ SSO 要求裝置必須註冊 iOS 裝置的 Microsoft Authenticator 應用程式�
 2. 選取 [應用程式]   > [應用程式設定原則]   > [新增]  。
 3. 在 [新增設定原則]  窗格上，輸入應用程式組態設定的 [名稱]  和選擇性 [描述]  。
 4. 針對 [裝置註冊]  類型請選擇 [受管理的應用程式]  。
-5. 選擇 [選取必要的應用程式]  。 然後在 [目標應用程式]  窗格上，選擇適用於 iOS、Adroid 或兩者的 [Managed Browser]  或 [Edge]  。
+5. 選擇 [選取必要的應用程式]  。 然後在 [目標應用程式]  窗格上，選擇適用於 iOS/iPadOS、Adroid 或兩者的 **Managed Browser** 或 **Edge**。
 6. 選取 [確定]  以返回 [新增設定原則]  窗格。
 7. 選取 [組態設定]  。 在 [設定]  窗格上，您可以定義機碼和值組來為 Microsoft Edge 提供設定。 請使用本文稍後的各個章節，來了解您可以定義的不同金鑰和值組。
 
@@ -136,7 +136,7 @@ Intune Managed Browser 和 Microsoft Edge 都可以用來作為被原則保護�
 - 如果裝置上僅下載 Microsoft Edge 且已經透過 Intune 原則設定為目標應用程式，則會開啟 Microsoft Edge。
 - 如果裝置上只有 Managed Browser 且已經透過 Intune 原則設定為目標應用程式，則會啟動 Managed Browser。
 
-在 iOS 上，針對已整合 Intune SDK for iOS v. 9.0.9+ 的應用程式：
+在 iOS/iPadOS 上，針對已整合 Intune SDK for iOS v. 9.0.9+ 的應用程式：
 - 如果裝置上同時有 Managed Browser 和 Microsoft Edge，則會啟動 Intune Managed Browser。  
 - 如果裝置上只有 Microsoft Edge 且已經透過 Intune 原則設定為目標應用程式，則會啟動 Microsoft Edge。
 - 如果裝置上只有 Managed Browser 且已經透過 Intune 原則設定為目標應用程式，則會啟動 Managed Browser。
@@ -188,7 +188,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 這些設定可讓您自訂 Microsoft Edge 的新索引標籤頁面，以顯示您組織的標誌與品牌色彩作為頁面背景。
 
 若要上傳您組織的標誌與色彩，請先完成下列步驟：
-- 在 Azure 入口網站中，瀏覽至 [Intune] -> [用戶端應用程式] -> [商標和自訂] -> [公司身分識別商標]
+- 在 Azure 入口網站中，巡覽至 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431) -> [租用戶管理]   -> [商標和自訂]   -> [公司身分識別商標]  。
 - 若要設定品牌的標誌，請在 [顯示] 下選擇 [僅限公司標誌]。 建議使用透明背景標誌。 
 - 若要設定您的品牌背景色彩，請在 [顯示] 下選擇 [佈景主題色彩]。 Microsoft Edge 會在新索引標籤頁面上套用較淺的色彩著色，以確保頁面具有高可讀性。 
 
@@ -201,7 +201,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 ## <a name="display-relevant-industry-news-on-new-tab-pages"></a>在新索引標籤頁面上顯示相關的產業新聞
 
-您可以在 Microsoft Edge 行動版中設定新索引標籤頁面體驗，以顯示與您組織相關的產業新聞。 當您啟用這項功能時，Microsoft Edge 行動版會使用您組織的網域名稱，從網路彙總您的組織、組織產業和競爭者的相關新聞，讓您的使用者可以從 Microsoft Edge 的集中式新索引標籤頁面中找到所有相關的外部新聞。 產業新聞預設為關閉，您可以為您的組織選擇加入。 
+您可以在 Microsoft Edge 行動版中設定新索引標籤頁面體驗，以顯示與您組織相關的產業新聞。 當您啟用這項功能時，Microsoft Edge 行動版會使用您組織的網域名稱，從網路彙總您的組織、組織產業和競爭者的相關新聞，讓您的使用者可以從 Microsoft Edge 的集中式新索引標籤頁面中找到所有相關外部新聞。 產業新聞預設為關閉，您可以為您的組織選擇加入。 
 
 |    機碼    |    值    |
 |------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|
@@ -285,7 +285,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 |    機碼    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** (預設值) 會允許 Microsoft Edge 將使用者轉換至其個人內容以開啟封鎖的網站。<p>**Block** 會防止 Microsoft Edge 轉換使用者。 使用者只會看見說明他們嘗試存取的網站已被封鎖的訊息。    |
+|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** (預設值) 會允許 Microsoft Edge 將使用者轉換至其個人內容以開啟封鎖的網站。<p>**Block** 會防止 Microsoft Edge 轉換使用者。 使用者只會看見說明其所嘗試存取網站已封鎖的訊息。    |
 
 ## <a name="open-restricted-links-directly-in-inprivate-tab-pages"></a>直接在 InPrivate 索引標籤頁面中開啟受限制的連結
 
@@ -293,19 +293,48 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 |    機碼    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.AllowTransitionOnBlock`    |    **True** 會允許 Microsoft Edge 將使用者轉換至其個人內容以開啟被封鎖的網站。<p>**Block** 會防止 Microsoft Edge 轉換使用者。 使用者只會看見說明他們嘗試存取的網站已被封鎖的訊息。    |
+|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** 會直接在 InPrivate 索引標籤中自動開啟網站，而不會提示使用者切換至其個人帳戶。 <p> **False** (預設值) 會封鎖 Microsoft Edge 中的網站，並要求使用者切換至其個人帳戶方可檢視。    |
 
-## <a name="disable-microsoft-edge-prompt-to-save-passwords"></a>停用 Microsoft Edge 提示以儲存密碼
+## <a name="disable-microsoft-edge-features-to-customize-the-end-user-experience-for-your-organizations-needs"></a>停用 Microsoft Edge 功能，並根據組織需求自訂終端使用者體驗
+
+### <a name="disable-prompts-to-share-usage-data-for-personalization"></a>停用共用個人化使用方式資料的提示 
+
+根據預設，Microsoft Edge 會提示使用者提供使用狀況資料收集，以將其瀏覽體驗個人化。 您可以防止此提示顯示給終端使用者，藉此停用共用這筆資料。 
 
 |    機碼    |    值    |
 |----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    `com.microsoft.intune.mam.managedbrowser.openInPrivateIfBlock`    |    **True** 會造成受限制的連結直接在 InPrivate 瀏覽中開啟。<p>**False** (預設) 會為使用者提供選項，以使用 InPrivate 瀏覽或其個人 (MSA) 帳戶開啟受限制的連結。    |
+|    `com.microsoft.intune.mam.managedbrowser.disableShareUsageData`    |     **True** 會停用此提示，使其無法向使用者顯示。    |
 
+### <a name="disable-prompts-to-share-browsing-history"></a>停用共用瀏覽歷程記錄的提示 
+
+根據預設，Microsoft Edge 會提示使用者提供瀏覽歷程記錄資料收集，以將其瀏覽體驗個人化。 您可以防止此提示顯示給終端使用者，藉此停用共用這筆資料。
+
+|    機碼    |    值    |
+|----------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     `com.microsoft.intune.man.managedbrowser.disableShareBrowsingHistory`    |     **True** 會停用此提示，使其無法向使用者顯示。     |
+
+### <a name="disable-prompts-that-offer-to-save-passwords"></a>停用儲存密碼的提示
 根據預設，iOS 上的 Microsoft Edge 提供將您的使用者密碼儲存至鑰匙圈的選項。 如果要為您的組織停用此提示，請設定下列設定：
 
 |    機碼    |    值    |
+|-----------------------|-----------------------|
+|    `com.microsoft.intune.mam.managedbrowser.disableFeatures`    |    **password** 會停用儲存終端使用者密碼的提示。    |
+
+### <a name="disable-inprivate-browsing-and-microsoft-accounts-to-restrict-browsing-to-work-only-contexts"></a>停用 InPrivate 瀏覽與 Microsoft 帳戶，將瀏覽限制為僅限工作的內容
+
+如果組織在高度管制的產業中運作，或使用個別應用程式 VPN 來允許使用者透過 Microsoft Edge 存取工作資源，則您可選擇將 Microsoft Edge 使用範圍限定在僅限受到 MAM 保護的內容。 此功能僅供已註冊 MDM 的裝置使用。
+
+|    機碼    |    值    |
 |-----------|-------------|
-|     'com.microsoft.intune.mam.managedbrowser.disableFeatures'    |    **password** 將會停用儲存密碼提示。    |
+|    `com.microsoft.intune.mam.managedbrowser.disableFeatures`    |    **inprivate** 會停用 InPrivate 瀏覽， <br> **msa** 會禁止使用者將其個人 Microsoft 帳戶 (MSA) 新增至 Microsoft Edge 應用程式。 <br> 若要停用多項功能，請使用 `|` 來分隔值。 例如，`inprivate|msa` 則會同時封鎖 InPrivate 與個人帳戶。   |
+
+### <a name="restrict-microsoft-edge-use-to-allowed-accounts-only"></a>將 Microsoft Edge 限制為僅限允許的帳戶使用
+
+除了封鎖 InPrivate 與 MSA 瀏覽之外，您也可以在使用者透過 AAD 帳戶登入時，只允許其使用 Microsoft Edge。 這項功能僅適用於已註冊 MDM 的使用者。 您可以在此處深入了解如何進行這項設定：
+
+- [Android 設定](~/apps/app-configuration-policies-use-android.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
+- [iOS 設定](~/apps/app-configuration-policies-use-ios.md#allow-only-configured-organization-accounts-in-multi-identity-apps)
+
 
 ## <a name="use-microsoft-edge-on-ios-to-access-managed-app-logs"></a>在 iOS 上使用 Microsoft Edge 來存取受控應用程式記錄檔 
 
@@ -322,7 +351,7 @@ Microsoft Edge 及 [Azure AD 應用程式 Proxy](https://docs.microsoft.com/azur
 
 以下是 Microsoft Edge 的其他安全性和隱私權考量：
 
-- Microsoft Edge 不會使用使用者在其裝置上針對原生瀏覽器所設定的設定，因為 Microsoft Edge 並無法存取這些設定。
+- Microsoft Edge 不會使用使用者在其裝置上針對原生瀏覽器 https://docs.microsoft.com/en-us/intune/apps/app-configuration-policies-use-android#allow-only-configured-organization-accounts-in-multi-identity-apps 所做的設定，因為 Microsoft Edge 無法存取這些設定。
 - 您可以在與 Microsoft Edge 相關聯的應用程式保護原則中設定 [需要簡單的 PIN 碼才能存取]  或 [需要公司認證才能存取]  選項。 如果使用者選取驗證頁面上的說明連結，他們便可以瀏覽任何網際網路網站，無論那些網站是否被加入原則中的已封鎖清單。
 - Microsoft Edge 可以在直接存取網站時，只封鎖網站的存取。 它不會在使用者使用中繼服務 (例如翻譯服務) 來存取網站時封鎖存取。
 - 若要允許驗證並存取 Intune 文件，請從允許或封鎖清單設定中排除 * **.microsoft.com**。 它一律會被允許。

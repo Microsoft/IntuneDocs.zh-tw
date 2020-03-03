@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 88beb8f4791c127b0a225878f5bc43b6dd9b4025
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: 9afb8f431ae301fe74f420c11205a7ed2637434b
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839366"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514620"
 ---
 # <a name="guided-scenario---deploy-microsoft-edge-for-mobile"></a>引導式案例 - 部署適用於行動裝置的 Microsoft Edge 
 
-透過遵循此[引導式案例](~/fundamentals/guided-scenarios-overview.md)，您便可以將 Microsoft Edge 應用程式指派至您組織位於 iOS 或 Android 裝置上的使用者。 指派此應用程式將能讓您的使用者順暢地使用其公司裝置瀏覽內容。 
+透過遵循此[引導式案例](~/fundamentals/guided-scenarios-overview.md)，您可以將 Microsoft Edge 應用程式指派至組織中使用 iOS/iPadOS 或 Android 裝置的使用者。 指派此應用程式將能讓您的使用者順暢地使用其公司裝置瀏覽內容。 
 
-Microsoft Edge 能讓使用者透過能協助他們合併、排列及管理工作內容的內建功能，來釐清網路上的雜亂內容。 在 Microsoft Edge 應用程式中使用其企業 Azure AD 帳戶登入的 iOS 和 Android 裝置的使用者，將會在瀏覽器中看見已預先載入的工作場所 [我的最愛]  ，以及您定義的網站篩選。
+Microsoft Edge 能讓使用者透過能協助他們合併、排列及管理工作內容的內建功能，來釐清網路上的雜亂內容。 在 Microsoft Edge 應用程式中使用其企業 Azure AD 帳戶來登入的 iOS/iPadOS 和 Android 裝置使用者，將會在瀏覽器中看見已預先載入的工作區 [我的最愛]  ，以及您定義的網站篩選。
 
 > [!NOTE]
-> 如果您已封鎖使用者註冊 iOS 或 Android 裝置的能力，此案例將不會啟用註冊，且使用者必須自行安裝 Edge。
+> 如果您已封鎖使用者註冊 iOS/iPadOS 或 Android 裝置的能力，則此案例將不會啟用註冊，且使用者必須自行安裝 Edge。
 下列依據 Intune 原則啟用的 Microsoft Edge 企業功能包括： 
 
 - **雙重識別** - 使用者可以新增工作帳戶與個人帳戶以進行瀏覽。 系統會完整區隔兩個身分識別，類似於 Office 365 和 Outlook 中的架構與體驗。 Intune 系統管理員可以在工作帳戶內，針對受保護的瀏覽體驗設定所需原則。 
@@ -49,9 +49,9 @@ Microsoft Edge 能讓使用者透過能協助他們合併、排列及管理工�
 
 ## <a name="step-1---introduction"></a>步驟 1 - 簡介
 
-透過遵循**部署適用於行動裝置的 Microsoft Edge** 引導式案例，您將會針對選取的 iOS 和 Android 使用者群組設定 Microsoft Edge 的基本部署。 此部署將會實作**雙重身分識別**與**受控我的最愛和首頁捷徑**。 此外，由選取使用者註冊的裝置，將會由 Intune 自動安裝 Microsoft Edge 應用程式。 此自動化安裝將會在所有使用者驅動的註冊類型上發生，這包含： 
-- 透過公司入口網站應用程式的 iOS 註冊 
-- 透過 Apple Business Manager 的 iOS 使用者親和性註冊 
+透過遵循**部署適用於行動裝置的 Microsoft Edge** 引導式案例，您將會針對所選取 iOS/iPadOS 和 Android 使用者群組設定 Microsoft Edge 的基本部署。 此部署將會實作**雙重身分識別**與**受控我的最愛和首頁捷徑**。 此外，由選取使用者註冊的裝置，將會由 Intune 自動安裝 Microsoft Edge 應用程式。 此自動化安裝將會在所有使用者驅動的註冊類型上發生，這包含： 
+- 透過公司入口網站應用程式進行 iOS/iPadOS 註冊 
+- 透過 Apple Business Manager 進行的 iOS/iPadOS 使用者親和性註冊 
 - 透過公司入口網站應用程式的舊版 Android 註冊 
 
 此引導式案例將會自動使 **MyApps** 出現在 Microsoft Edge [我的最愛] 之中，並以您針對 Intune 公司入口網站應用程式設定的相同商標來設定瀏覽器。 
@@ -60,13 +60,13 @@ Microsoft Edge 能讓使用者透過能協助他們合併、排列及管理工�
 我們會詢問您有關您使用者所需的工作場所我的最愛，以及您針對網頁瀏覽所需的篩選。 在您繼續之前，請確定您已完成下列工作：
 
 - 將使用者新增至 Azure AD 群組。 如需詳細資訊，請參閱[使用 Azure Active Directory 建立基本群組並新增成員](https://go.microsoft.com/fwlink/?linkid=2102458)。
-- 在 Intune 中註冊 iOS 或 Android 裝置。 如需詳細資訊，請參閱[裝置註冊](https://go.microsoft.com/fwlink/?linkid=2102547)。
+- 在 Intune 中註冊 iOS/iPadOS 或 Android 裝置。 如需詳細資訊，請參閱[裝置註冊](https://go.microsoft.com/fwlink/?linkid=2102547)。
 - 收集要新增至 Microsoft Edge 的工作場所我的最愛清單。
 - 收集要在 Microsoft Edge 中強制執行的網站篩選清單。
 
 ## <a name="step-2---basics"></a>步驟 2 - 基本
 
-在此步驟中，您必須為您的新 Microsoft Edge 原則輸入名稱和描述。 如果您稍後需要變更指派和設定，便可以參考這些原則。 引導式案例會為您的 iOS 裝置新增並指派 Microsoft Edge iOS 應用程式，同時為 Android 裝置新增並指派 Microsoft Edge Android 應用程式。 此外，此步驟將會為這些應用程式建立設定原則。
+在此步驟中，您必須為您的新 Microsoft Edge 原則輸入名稱和描述。 如果您稍後需要變更指派和設定，便可以參考這些原則。 引導式案例會為您的 iOS/iPadOS 裝置新增並指派 Microsoft Edge iOS/iPadOS 應用程式，也會為 Android 裝置新增並指派 Microsoft Edge Android 應用程式。 此外，此步驟將會為這些應用程式建立設定原則。
 
 ## <a name="step-3---configuration"></a>步驟 3 - 設定
 
@@ -74,7 +74,7 @@ Microsoft Edge 能讓使用者透過能協助他們合併、排列及管理工�
 
 ## <a name="step-4---assignments"></a>步驟 4 - 指派
 
-在此步驟中，您可以選擇想要包含以針對工作設定 Microsoft Edge 行動版的使用者群組。 Microsoft Edge 也將會安裝在由這些使用者所註冊的所有 iOS 和 Android 裝置上。
+在此步驟中，您可以選擇想要包含以針對工作設定 Microsoft Edge 行動版的使用者群組。 Microsoft Edge 也將會安裝在由這些使用者所註冊的所有 iOS/iPadOS 和 Android 裝置上。
 
 ## <a name="step-5---review--create"></a>步驟 5 - 檢閱 + 建立
 

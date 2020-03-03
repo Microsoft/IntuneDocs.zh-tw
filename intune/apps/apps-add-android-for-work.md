@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 138bf192f5244eb6e44a6be96af3cc15c47bdc76
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
+ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76755386"
+ms.lasthandoff: 02/26/2020
+ms.locfileid: "77609195"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 將受控 Google Play 應用程式新增至 Android Enterprise 裝置
 
@@ -80,20 +80,6 @@ ms.locfileid: "76755386"
 9. 按一下 [選取]  來選取應用程式。
 10. 按一下刀鋒視窗頂端的 [同步]  ，以與受控 Google Play 服務同步應用程式。
 11. 按一下 [重新整理]  以更新應用程式清單並顯示新增的應用程式。
-
-### <a name="add-additional-app-settings-to-a-managed-google-play-store-app"></a>新增其他應用程式設定到受控 Google Play 商店應用程式
-1. 如果您需要新增其他應用程式詳細資料，請從應用程式清單選取應用程式。
-2. 按一下 [屬性]   > [應用程式資訊]  旁邊的 [編輯]  。 [應用程式資訊]  頁面隨即顯示。
-3. 在 [應用程式資訊]  頁面中，新增應用程式詳細資料：
-    - **類別**：(選擇性) 選取一或多個內建的應用程式類別，或選取您建立的類別。 這麼做的話，當使用者在瀏覽公司入口網站時，可以更輕鬆地找到應用程式。
-    - **將此顯示為公司入口網站中的精選應用程式**：若要在使用者瀏覽應用程式時，於公司入口網站的主頁面上以醒目方式顯示應用程式套件，請選取此選項。
-    - **資訊 URL**：(選用) 輸入包含此應用程式相關資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
-    - **隱私權 URL**：(選擇性) 輸入包含這個應用程式之隱私權資訊的網站 URL。 使用者會在公司入口網站中看到這個 URL。
-    - **開發人員**：(選擇性) 輸入應用程式開發人員的姓名。
-    - **擁有者**：(選擇性) 輸入此應用程式的擁有者名稱，例如「人力資源部門」  。
-    - **附註**：(選擇性) 輸入要與此應用程式建立關聯的任何附註。
-4. 按一下 [檢閱並儲存]  來檢視 [檢閱並儲存]  頁面。 
-5. 完成後，請按一下 [儲存]  來在 Intune 中更新應用程式。
 
 ### <a name="add-a-managed-google-play-store-app-in-the-managed-google-play-console-alternative"></a>在受控 Google Play 主控台中新增受控 Google Play 商店應用程式 (替代方法)
 如果您希望將受控 Google Play 應用程式與 Intune 同步處理，而不是使用 Intune 直接新增，請使用下列步驟。
@@ -238,6 +224,9 @@ Android Enterprise 會要求您先在受控 Google Play Web 主控台中核准�
 
 ## <a name="delete-managed-google-play-apps"></a>刪除受控的 Google Play 應用程式
 必要時，您可以從 Microsoft Intune 刪除受控的 Google Play 應用程式。 若要刪除受控的 Google Play 應用程式，請在 Azure 入口網站中開啟 Microsoft Intune，然後選取 [應用程式]   > [所有應用程式]  。 從應用程式清單，選取受控的 Google Play 應用程式右側的省略符號 (...)，然後從顯示的清單選取 [刪除]  。 當您從應用程式清單刪除受控 Google Play 應用程式時，會自動取消核准受控 Google Play 應用程式。
+
+> [!NOTE]
+> 如果應用程式未獲核准，或已從受控 Google Play 商店中刪除，則該應用程式不會從 Intune 客戶端應用程式清單中移除。 如此一來，即使該應用程式未獲核准，您仍然可以將解除安裝原則套用到使用者。
 
 ## <a name="android-enterprise-system-apps"></a>Android Enterprise 系統應用程式
 

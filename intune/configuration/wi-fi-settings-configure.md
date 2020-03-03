@@ -1,11 +1,11 @@
 ---
 title: 在 Microsoft Intune 中建立裝置的 Wi-Fi 設定檔 - Azure | Microsoft Docs
-description: 請查看在 Microsoft Intune 中建立 Wi-Fi 裝置組態設定檔的步驟。 建立適用於 Android、Android 企業、Android kiosk、iOS、macOS、Windows 10 及更新版本，以及 Windows Holographic for Business 的設定檔。 您可以使用這些設定檔建立 WiFi 連線以使用憑證、選擇 EAP 類型、選取驗證方法、啟用 Proxy，以及執行更多作業。
+description: 請查看在 Microsoft Intune 中建立 Wi-Fi 裝置組態設定檔的步驟。 建立適用於 Android、Android 企業、Android kiosk、iOS、iPadOS、macOS、Windows 10 及更新版本，以及 Windows Holographic for Business 的設定檔。 您可以使用這些設定檔建立 WiFi 連線以使用憑證、選擇 EAP 類型、選取驗證方法、啟用 Proxy，以及執行更多作業。
 keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,21 +16,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 47eae4d2e662be85de2831666f944e57ba674417
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 3110998970eeaf654ab57397ec827090a4103f34
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206103"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512325"
 ---
 # <a name="add-and-use-wi-fi-settings-on-your-devices-in-microsoft-intune"></a>在 Microsoft Intune 中新增 Wi-Fi 設定並在您的裝置上使用
 
 Wi-Fi 是許多行動裝置用來存取網路的無線網路。 Microsoft Intune 包含內建的 Wi-Fi 設定，可被部署到貴組織中的使用者和裝置。 這組設定稱為「設定檔」，其可被指派給不同的使用者和群組。 指派之後，您的使用者即可在無須自行設定的情況下存取貴組織的 Wi-Fi 網路。
 
-例如，您安裝了名為 Contoso Wi-Fi 的新 Wi-Fi 網路。 然後您要將所有 iOS 裝置都設定為連線到此網路。 程序如下︰
+例如，您安裝了名為 Contoso Wi-Fi 的新 Wi-Fi 網路。 然後您要將所有 iOS/iPadOS 裝置都設定為連線到此網路。 程序如下︰
 
 1. 建立包含可連線到 Contoso Wi-Fi 無線網路之設定的 Wi-Fi 設定檔。
-2. 將設定檔指派給包含所有 iOS 裝置使用者的群組。
+2. 將設定檔指派給包含所有 iOS/iPadOS 裝置使用者的群組。
 3. 使用者即可在其裝置上的無線網路清單中找到此新的 Contoso Wi-Fi 網路。 然後他們可以使用您選擇的驗證方法連線到網路。
 
 本文列出建立 Wi-Fi 設定檔的步驟。 它也包含說明每個平台之不同設定的連結。
@@ -41,9 +41,10 @@ Wi-Fi 設定檔支援下列裝置平台：
 
 - Android 4 及更新版本
 - Android 企業與 kiosk
-- iOS 8.0 和更新版本
+- iOS 8.0 及更新版本
+- iPadOS 13.0 和更新版本
 - macOS X 10.11 與更新版本
-- Windows 10 和更新版本、Windows 10 行動裝置版，和 Windows Holographic for Business
+- Windows 10 及更新版本、Windows 10 行動裝置版，以及 Windows Holographic for Business
 
 > [!NOTE]
 > 對於執行 Windows 8.1 的裝置，可以匯入先前從其他裝置所匯出的 Wi-Fi 設定。

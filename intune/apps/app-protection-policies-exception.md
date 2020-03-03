@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 09c8a8819c288663936174e9317267c39eac63bc
-ms.sourcegitcommit: ecaff388038fb800f2e646f8efcf8f3b1e2fd1b1
+ms.openlocfilehash: 77a4f0ea0ee076907d2a6cd14000c5cf319231e6
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77437846"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513770"
 ---
 # <a name="how-to-create-exceptions-to-the-intune-app-protection-policy-app-data-transfer-policy"></a>如何建立 Intune 應用程式保護原則 (APP) 資料傳輸原則的例外狀況
 
@@ -32,13 +32,13 @@ ms.locfileid: "77437846"
 >[!WARNING] 
 > 您必須負責變更資料傳輸例外狀況原則。 新增項目到此原則允許未受管理的應用程式 (不由 Intune 管理的應用程式) 存取由受管理應用程式保護的資料。 對受保護資料的這種存取可能會導致資料安全性外洩。 請您只為您的組織必須使用但不支援 Intune 應用程式 (應用程式保護原則) 的應用程式新增資料傳輸例外狀況。 此外，也請只為您不認為是資料洩漏風險的應用程式新增例外狀況。
 
-在 Intune 應用程式防護原則中，將 [允許應用程式將資料傳送至其他應用程式]  設定為 [受原則管理的應用程式]  表示應用程式只能將資料傳送至由 Intune 管理的應用程式。 如果您需要允許將資料傳送到不支援 Intune 應用程式的特定應用程式，則可以使用 [選取排除的應用程式]  來為此原則建立例外狀況。 豁免允許由 Intune 管理的應用程式根據 URL 通訊協定 (iOS) 或套件名稱 (Android) 叫用非受控應用程式。 根據預設，Intune 會將重要的原生應用程式新增到此例外狀況的清單。 
+在 Intune 應用程式防護原則中，將 [允許應用程式將資料傳送至其他應用程式]  設定為 [受原則管理的應用程式]  表示應用程式只能將資料傳送至由 Intune 管理的應用程式。 如果您需要允許將資料傳送到不支援 Intune 應用程式的特定應用程式，則可以使用 [選取排除的應用程式]  來為此原則建立例外狀況。 豁免允許由 Intune 管理的應用程式根據 URL 通訊協定 (iOS/iPadOS) 或套件名稱 (Android) 叫用非受控應用程式。 根據預設，Intune 會將重要的原生應用程式新增到此例外狀況的清單。 
 
 > [!NOTE]
 > 修改或新增至資料傳輸原則例外狀況，並不會影響其他應用程式保護原則，例如剪下、複製和貼上限制。 
 
 ## <a name="ios-data-transfer-exceptions"></a>iOS 資料傳輸例外狀況
-針對以 iOS/iPadOS 為目標的原則，您可以依 URL 通訊協定設定資料傳輸例外。 若要新增例外狀況，請檢查應用程式開發人員提供的文件，尋找支援的 URL 通訊協定的相關資訊。 如需 iOS/iPadOS 資料傳輸例外的詳細資訊，請參閱 [iOS 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
+針對以 iOS/iPadOS 為目標的原則，您可以依 URL 通訊協定設定資料傳輸例外。 若要新增例外狀況，請檢查應用程式開發人員提供的文件，尋找支援的 URL 通訊協定的相關資訊。 如需 iOS/iPadOS 資料傳輸例外的詳細資訊，請參閱 [iOS/iPadOS 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)。
 
 > [!NOTE]
 > Microsoft 並沒有以手動方式尋找用於為第三方應用程式建立應用程式例外狀況之 URL 通訊協定的方法。 
@@ -71,5 +71,5 @@ ms.locfileid: "77437846"
 ## <a name="next-steps"></a>後續步驟
 
 - [建立及部署應用程式保護原則](app-protection-policies.md)
-- [iOS 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)
+- [iOS/iPadOS 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-ios.md#data-transfer-exemptions)
 - [Android 應用程式保護原則設定 - 資料傳輸豁免](app-protection-policy-settings-android.md#data-transfer-exemptions)

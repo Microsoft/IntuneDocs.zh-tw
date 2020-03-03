@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: fdc704d1971dfcc46ee2c3f5550e201d7a8e89fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 1cdfc7d42d3bffe1abe21deddfe146af953b150a
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72505194"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514943"
 ---
 # <a name="implement-your-microsoft-intune-plan"></a>實作 Microsoft Intune 計劃
 
@@ -39,7 +39,7 @@ ms.locfileid: "72505194"
 
 - Office 365 訂閱 (適用於 Office 應用程式和應用程式保護原則管理的應用程式)
 
-- Apple APN 憑證 (啟用 iOS 裝置平台管理)
+- Apple APN 憑證 (啟用 iOS/iPadOS 裝置平台管理)
 
 - Azure AD Connect (適用於目錄同步作業)
 
@@ -88,7 +88,7 @@ EMS/Intune 和 Office 365 新產品的所有目標使用者，都需要獲指派
 
 ### <a name="task-6-enable-device-platforms"></a>工作 6：啟用裝置平台
 
-依預設，除了 Apple 裝置 (iOS 和 Mac) 之外，大部分的裝置平台都會啟用。 您必須先啟用裝置平台，才可以在 Intune 中註冊及管理 iOS 裝置。 若要這樣做，您需要建立 MDM Push Certificate，並將其新增至 Intune。
+根據預設，除了 Apple 裝置 (iOS/iPadOS 和 Mac) 之外，大部分的裝置平台都會啟用。 您必須先啟用裝置平台，才可以在 Intune 中註冊及管理 iOS/iPadOS 裝置。 若要這樣做，您需要建立 MDM Push Certificate，並將其新增至 Intune。
 
 - 深入了解[如何啟用 Apple 裝置註冊](../enrollment/apple-mdm-push-certificate-get.md)。
 
@@ -130,7 +130,7 @@ Intune 支援 Exchange Online、Exchange 內部部署、SharePoint Online、商�
 
 ### <a name="task-13-enroll-devices"></a>工作 13：註冊裝置
 
-Intune 支援 iOS、Mac 作業系統、Android、Windows Desktop 和 Windows 行動裝置平台。 根據您的 Intune 部署使用案例和需求，適當啟用行動裝置平台。
+Intune 支援 iOS/iPadOS、Mac OS、Android、Windows 桌面和 Windows 行動裝置平台。 根據您的 Intune 部署使用案例和需求，適當啟用行動裝置平台。
 
 - 深入了解[註冊裝置以在 Intune 中管理](../enrollment/device-enrollment.md)。
 

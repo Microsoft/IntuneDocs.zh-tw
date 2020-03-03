@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11f194d702d0de123ec010409874eb40ab38a9fa
-ms.sourcegitcommit: 5178aec0244e023e73546f3d10f1a76eaf1f4a3e
+ms.openlocfilehash: 81554f03063269ff6bdca30e23a1ad135a2a1b77
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "76971820"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77512053"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  窗格上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -63,7 +63,7 @@ ms.locfileid: "76971820"
 |------|------|------|
 | **與原生連絡人應用程式同步應用程式** | 選擇 [封鎖]  ，防止應用程式將資料儲存至裝置上的原生「連絡人」應用程式。 如果您選擇 [允許]  ，則應用程式可以將資料儲存至裝置上的原生「連絡人」應用程式。 <br><br>當您執行選擇性抹除以移除應用程式中的工作或學校資料時，會移除直接從應用程式同步到原生「連絡人」應用程式的連絡人。 無法清除從原生通訊錄同步處理到其他外部來源的任何連絡人。 目前這僅適用於 Microsoft Outlook 應用程式。 | **允許** |
 | **列印組織資料** | 選擇 [封鎖]  ，防止應用程式列印公司或學校資料。 如果您將此設定保留為 [允許]  (預設值)，則使用者將能夠匯出及列印所有組織資料。 | **允許** |
-|**限制與其他應用程式的 Web 傳輸** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇： <ul><li>**任何應用程式**：允許任何應用程式中的 Web 連結。</li><li>**Intune Managed Browser**：只允許在 Intune Managed Browser 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**Microsoft Edge**：只允許在 Microsoft Edge 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**非受控瀏覽器**：只允許在 [非受控瀏覽器通訊協定]  設定中定義的非受控瀏覽器中開啟 Web 內容。 Web 內容在目標瀏覽器中將會是非受控。<br>**注意**：需要 Intune 公司入口網站 5.0.4415.0 版或更新版本。</li><br><br>**原則受控的瀏覽器**<br>在 Android 上，如果未安裝 Intune Managed Browser 或 Microsoft Edge，您的終端使用者可以從支援 HTTP/HTTPS 連結的其他原則受控應用程式中進行選擇。<p>如果受控瀏覽器為必要但尚未安裝，則會提示終端使用者安裝 Microsoft Edge。<p>如果原則受控的瀏覽器為必要，則 Android 應用程式連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。<p>**Intune 裝置註冊**<br>如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器可整合應用程式 SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul>**注意︰** *應用程式 SDK 無法判斷目標應用程式是否為瀏覽器。在 Android 裝置上，允許支援 HTTP/HTTPS 意圖的其他 Managed Browser 應用程式。* | **未設定** |
+|**限制與其他應用程式的 Web 傳輸** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇： <ul><li>**任何應用程式**：允許任何應用程式中的 Web 連結。</li><li>**Intune Managed Browser**：只允許在 Intune Managed Browser 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**Microsoft Edge**：只允許在 Microsoft Edge 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**非受控瀏覽器**：只允許在 [非受控瀏覽器通訊協定]  設定中定義的非受控瀏覽器中開啟 Web 內容。 Web 內容在目標瀏覽器中將會是非受控。<br>**注意**：需要 Intune 公司入口網站 5.0.4415.0 版或更新版本。</li><br><br>**原則受控的瀏覽器**<br>在 Android 上，如果未安裝 Intune Managed Browser 或 Microsoft Edge，您的終端使用者可以從支援 HTTP/HTTPS 連結的其他原則受控應用程式中進行選擇。<p>如果受控瀏覽器為必要但尚未安裝，則會提示終端使用者安裝 Microsoft Edge。<p>如果原則受控的瀏覽器為必要，則 Android 應用程式連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。<p>**Intune 裝置註冊**<br>如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS/iPadOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器可整合應用程式 SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul>**注意︰** *應用程式 SDK 無法判斷目標應用程式是否為瀏覽器。在 Android 裝置上，允許支援 HTTP/HTTPS 意圖的其他 Managed Browser 應用程式。* | **未設定** |
 |<ul><ui>**非受控瀏覽器** | 輸入單一瀏覽器的應用程式識別碼。 來自原則受控應用程式的 Web 內容 (http/https 連結) 將會在指定的瀏覽器中開啟。  Web 內容在目標瀏覽器中將會是非受控。 | **空白** |
 |<ul><ui>**非受控瀏覽器名稱** | 輸入與 [非受控瀏覽器識別碼]  關聯之瀏覽器的應用程式名稱。 若未安裝指定的瀏覽器，將會向使用者顯示此名稱。  | **空白** |
 | **組織資料通知** | 透過組織帳戶的 OS 通知，以指定要共用多少組織資料。 此原則設定會影響本機裝置和任何連線的裝置，例如穿戴式裝置和智慧型喇叭。 應用程式可能會提供其他控制項來自訂通知行為，或選擇不接受所有值。 從下列項目進行選取： <ul><li>**封鎖**：不要共用通知。</li><ul><li>如果應用程式不支援，則會允許通知。</li></ul><li>**封鎖組織資料**：不要在通知中共用組織資料。 例如，「您有新郵件」、「您有一個會議」</li><UL><li>如果應用程式不支援，則會封鎖通知。</li></ul><li>**允許**：共用通知中的組織資料</li><li>**任何應用程式**：不限制與這個應用程式之間的剪下、複製和貼上。</ul> <p>**注意**：*此設定需要應用程式支援。Android 4.95.0 版或更新版本的 Outlook 往後將會支援這項設定，預計於 2019 年 12 月 16 日當週發行。* | **允許**   |

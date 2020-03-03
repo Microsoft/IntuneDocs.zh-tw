@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 2daa7428cf8677f9e1a2b11db2b3ce65e2df8bc4
-ms.sourcegitcommit: 139853f8d6ea61786da7056cfb9024a6459abd70
+ms.openlocfilehash: f2baf60fed2c6010e5ae0784cda166ac4fabfd57
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2020
-ms.locfileid: "76754995"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77511730"
 ---
 # <a name="add-ios-store-apps-to-microsoft-intune"></a>將 iOS 市集應用程式新增至 Microsoft Intune
 
@@ -32,11 +32,11 @@ ms.locfileid: "76754995"
 使用本文中的資訊，協助您將 iOS 市集應用程式新增至 Microsoft Intune。 iOS 市集應用程式就是 Intune 安裝於使用者裝置的應用程式。 使用者是您公司的員工。 會自動更新 iOS 市集應用程式。
 
 >[!NOTE]
->雖然 iOS 裝置的使用者可以移除部分內建的 iOS 應用程式 (例如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果您的使用者刪除這些應用程式，則必須移至應用程式商店，並手動重新安裝。
+>雖然 iOS/iPadOS 裝置的使用者可以移除部分內建 iOS/iPadOS 應用程式 (例如股票和地圖)，但您無法使用 Intune 來重新部署這些應用程式。 如果您的使用者刪除這些應用程式，則必須移至應用程式商店，並手動重新安裝。
 
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-如果應用程式在應用程式市集中是免費的，您只能使用這個方法指派應用程式。 如果您想要使用 Intune 指派付費應用程式，請考慮使用 [iOS 大量採購方案](vpp-apps-ios.md)。
+如果應用程式在應用程式市集中是免費的，您只能使用這個方法指派應用程式。 如果您想要使用 Intune 指派付費應用程式，請考慮使用 [iOS/iPadOS 大量採購方案](vpp-apps-ios.md)。
 
 >[!NOTE]
 >當您使用 Microsoft Intune 時，建議使用 Microsoft Edge 或 Google Chrome 瀏覽器。

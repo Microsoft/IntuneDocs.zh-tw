@@ -15,19 +15,19 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f41d5d1ec3e302a277fe5e6ff6af9d33a7e89517
-ms.sourcegitcommit: d21539e52631c589bfeaa182418390f66672736c
+ms.openlocfilehash: 7d17749353bc3904a3d99210a5d56531d9af9c28
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2020
-ms.locfileid: "75564912"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77514807"
 ---
 # <a name="sophos-mobile-threat-defense-connector-with-intune"></a>Sophos Mobile Threat Defense 與 Intune 的連接器
 您可以根據由 Sophos Mobile (與 Microsoft Intune 整合的 Mobile Threat Defense (MTD) 解決方案) 所進行的風險評量，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Sophos Mobile 應用程式之裝置所收集的遙測來評定的。
 您可以根據透過 Intune 裝置合規性政策所啟用的 Sophos Mobile 風險評量，來設定條件式存取原則，而您可以根據偵測到的威脅，使用它們來允許或禁止不符合規範的裝置存取公司資源。
 
 ## <a name="how-do-intune-and-sophos-mobile-help-protect-your-company-resources"></a>Intune 和 Sophos Mobile 如何協助保護您的公司資源？
-適用於 Android 及 iOS 的 Sophos Mobile 應用程式可擷取檔案系統、網路堆疊、裝置和應用程式遙測 (如果可用)，然後將遙測資料傳送至 Sophos Mobile 雲端服務，以評定裝置的行動裝置威脅風險。
+適用於 Android 及 iOS/iPadOS 的 Sophos Mobile 應用程式可擷取檔案系統、網路堆疊、裝置和應用程式遙測 (如果可用)，然後將遙測資料傳送至 Sophos Mobile 雲端服務，以評定裝置的行動裝置威脅風險。
 Intune 裝置合規性政策包含以 Sophos Mobile 風險評定為基礎的 Sophos Mobile Threat Defense 規則。 啟用此規則時，Intune 會評估裝置是否符合您啟用的原則。 如果發現裝置不相容，則會封鎖使用者對 Exchange Online 和 SharePoint Online 這類公司資源的存取。 使用者也會從安裝在其裝置內的 Sophos Mobile 應用程式收到指導方針，以解決問題並重新取得公司資源的存取權。  
 
 ## <a name="sample-scenarios"></a>範例案例

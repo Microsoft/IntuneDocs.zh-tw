@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 11/13/2019
+ms.date: 02/18/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,23 +17,23 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 800bbd5199bd4389ee1ae8aa98a68e21456e7000
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: 951d3df8b842f1a0e76f875ea9fc7921c413494f
+ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75206613"
+ms.lasthandoff: 02/20/2020
+ms.locfileid: "77513059"
 ---
 # <a name="apply-features-and-settings-on-your-devices-using-device-profiles-in-microsoft-intune"></a>在 Microsoft Intune 中使用裝置設定檔將功能和設定套用至您的裝置
 
 
 
-Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設定和功能。 這些設定和功能會新增至「組態設定檔」。 您可以為不同的裝置和平台 (包括 iOS、Android 和 Windows) 建立設定檔。 然後，使用 Intune 套用或「指派」設定檔至裝置。
+Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設定和功能。 這些設定和功能會新增至「組態設定檔」。 您可以為不同的裝置和平台 (包括 iOS/iPadOS、Android 和 Windows) 建立設定檔。 然後，使用 Intune 套用或「指派」設定檔至裝置。
 
 作為行動裝置管理 (MDM) 解決方案的一部分，請使用這些組態設定檔完成不同的工作。 一些設定檔範例包括：
 
 - 在 Windows 10 裝置上，使用設定檔範本來封鎖 Internet Explorer 中的 ActiveX 控制項。
-- 在 iOS 和 macOS 裝置上，允許使用者在您的組織中使用 AirPrint 印表機。
+- 在 iOS/iPadOS 和 macOS 裝置上，允許使用者在您的組織中使用 AirPrint 印表機。
 - 允許或防止對裝置上藍牙的存取。
 - 建立 Wi-Fi 或 VPN 設定檔，讓不同裝置存取您的公司網路。
 - 管理軟體更新，包括它們的安裝時間。
@@ -67,7 +67,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 ## <a name="custom-profile"></a>自訂設定檔
 
-[自訂設定](custom-settings-configure.md)可讓系統管理員指派非 Intune 中內建的裝置設定。 您可以在 Android 裝置上輸入 OMA-URI 值。 對於 iOS 裝置，您可以匯入您在 Apple Configurator 中建立的設定檔。
+[自訂設定](custom-settings-configure.md)可讓系統管理員指派非 Intune 中內建的裝置設定。 您可以在 Android 裝置上輸入 OMA-URI 值。 針對 iOS/iPadOS 裝置，您可以匯入在 Apple Configurator 中建立的設定檔。
 
 這項功能支援：
 
@@ -89,7 +89,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 ## <a name="device-features"></a>裝置功能
 
-[裝置功能](device-features-configure.md)控制 iOS 和 macOS 裝置上的功能，例如 AirPrint、通知和鎖定畫面訊息。
+[裝置功能](device-features-configure.md)控制 iOS/iPadOS 和 macOS 裝置上的功能，例如 AirPrint、通知和鎖定畫面訊息。
 
 這項功能支援：
 
@@ -106,7 +106,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 ## <a name="device-restrictions"></a>裝置限制
 
-[裝置限制](device-restrictions-configure.md)控制安全性、硬體、資料共用，以及裝置上的更多設定。 例如，建立裝置限制設定檔以禁止 iOS 裝置的使用者使用裝置相機 。 
+[裝置限制](device-restrictions-configure.md)控制安全性、硬體、資料共用，以及裝置上的更多設定。 例如，建立裝置限制設定檔以禁止 iOS/iPadOS 裝置的使用者使用裝置相機。 
 
 這項功能支援：
 
@@ -129,7 +129,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 [教育設定 - Windows 10](education-settings-configure.md) 設定 [Windows「進行測驗」應用程式](https://education.microsoft.com/gettrained/win10takeatest)的選項。 當您設定這些選項時，裝置將無法執行其他應用程式，直到測驗結束為止。
 
-[教育設定 - iOS](../fundamentals/education-settings-configure-ios-shared.md) 使用 iOS Classroom 應用程式，可在課堂中引導學習並控制學生的裝置。 您可以設定 iPad 裝置，讓多個學生可以共用單一裝置。
+[教育設定 - iOS/iPadOS](../fundamentals/education-settings-configure-ios-shared.md) 使用 iOS Classroom 應用程式，可在課堂中引導學習並控制學生的裝置。 您可以設定 iPad 裝置，讓多個學生可以共用單一裝置。
 
 ## <a name="email"></a>電子郵件
 
@@ -186,7 +186,7 @@ Microsoft Intune 包含可讓您在組織內不同裝置上啟用或停用的設
 
 - Windows 10 及更新版本
 
-Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 與 [ios](device-restrictions-ios.md#kiosk) 裝置限制的形式提供。
+Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings) 與 [ios/iPadOS](device-restrictions-ios.md#kiosk) 裝置限制的形式提供。
 
 ## <a name="oemconfig"></a>OEMConfig
 
@@ -219,7 +219,7 @@ Kiosk 設定也透過 [Android](device-restrictions-android.md#kiosk)、[Android
 
 ## <a name="update-policies"></a>更新原則
 
-[iOS 更新原則](../protect/software-updates-ios.md)示範如何建立及指派 iOS 原則，以將軟體更新安裝在 iOS 裝置上。 您也可以檢閱安裝狀態。
+[iOS/iPadOS 更新原則](../protect/software-updates-ios.md)示範如何建立及指派 iOS/iPadOS 原則，以將軟體更新安裝在 iOS/iPadOS 裝置上。 您也可以檢閱安裝狀態。
 
 如需 Windows 裝置上的更新原則，請參閱[傳遞最佳化](delivery-optimization-windows.md)。 
 
