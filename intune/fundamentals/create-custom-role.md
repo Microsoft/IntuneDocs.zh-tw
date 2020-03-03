@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 68c2dc7df123593513c14e16e2626c7426f50b01
-ms.sourcegitcommit: e166b9746fcf0e710e93ad012d2f52e2d3ed2644
+ms.openlocfilehash: bfa2758546595d1e6237d88e128958c50759eb04
+ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/19/2019
-ms.locfileid: "75207412"
+ms.lasthandoff: 02/24/2020
+ms.locfileid: "77569178"
 ---
 # <a name="create-a-custom-role-in-intune"></a>在 Intune 中建立自訂角色
 
@@ -34,31 +34,30 @@ ms.locfileid: "75207412"
 
 ## <a name="to-create-a-custom-role"></a>建立自訂角色
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [角色]   > [所有角色]   > [新增]  。
+1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [租用戶管理]   > [角色]   > [所有角色]   > [建立]  。
 
-2. 在 [新增自訂角色]  刀鋒視窗中輸入新角色的名稱及描述，然後按一下 [權限]  。
+2. 在 [基本]  頁面上，輸入新角色的名稱與描述，然後選擇 [下一步]  。
 
-3. 在 [權限]  刀鋒視窗中，選擇此角色所要使用的權限。
+3. 在 [權限]  頁面上，選擇您希望搭配此角色使用的權限。
 
-4. 在 [範圍 (標籤)]  刀鋒視窗中，選擇此角色的標籤。 這個角色可以存取也擁有這些標籤的資源。
+4. 在 [範圍 (標籤)]  頁面上，選擇此角色的標籤。 這個角色可以存取也擁有這些標籤的資源。 選擇 [下一步]  。
 
-5. 完成後，選擇 [確定]  。
-
-6. 在 [新增自訂角色]  刀鋒視窗中按一下 [建立]  。 新角色會顯示在 [Intune 角色 - 所有角色]  刀鋒視窗上的清單中。
-
+5. 在 [檢閱 + 建立]  頁面上，當您完成操作時，請選擇 [建立]  。 新角色會顯示在 [Intune 角色 - 所有角色]  刀鋒視窗上的清單中。
 
 ## <a name="copy-a-role"></a>複製角色
 
 您也可以複製現有的角色。
 
-1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [角色]   > [所有角色]  > 選取清單中的角色 > [複製]  。
+1. 在 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)內，選擇 [租用戶管理]   > [角色]   > 所有角色  > 選取清單中角色的核取方塊 > [複製]  。
 
-2. 在 [角色重複]  底下，輸入名稱。 請務必使用唯一的名稱。
+2. 在 [基本]  頁面上，輸入名稱。 請務必使用唯一的名稱。
 
 3. 系統將會預先選取來自原始角色的所有權限和範圍標籤。 您可以接著變更重複角色的 [名稱]  、[描述]  、[權限]  ，以及 [範圍 (標籤)]  。
 
-4. 選取 [建立]  。 
+4. 在您進行所有希望的變更後，請選擇 [下一步]  來前往 [檢閱 + 建立]  頁面。 選取 [建立]  。 
 
 ## <a name="next-steps"></a>後續步驟
 - [將角色指派給使用者](assign-role.md)
 - [深入了解 Intune 中的角色型存取控制](role-based-access-control.md)
+
+
