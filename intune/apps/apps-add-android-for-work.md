@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: a4b3bd06bad6c31c2d0fb4c31a7ad605af96be86
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 126ea5a1798252f29e988553edfea462eff2fd7e
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609195"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256453"
 ---
 # <a name="add-managed-google-play-apps-to-android-enterprise-devices-with-intune"></a>使用 Intune 將受控 Google Play 應用程式新增至 Android Enterprise 裝置
 
@@ -155,9 +155,6 @@ ms.locfileid: "77609195"
 受控 Google Play 網頁連結是可安裝且可管理的，就像其他 Android 應用程式一樣。 安裝在裝置上時，它們將會與使用者已安裝的其他應用程式一起出現在他們的應用程式清單中。 點選時，它們將在裝置的瀏覽器中啟動。
 
 網頁連結將透過 Microsoft Edge 或您選擇部署的任何其他瀏覽器應用程式來開啟。 務必至少將一個瀏覽器應用程式部署至裝置，讓網頁連結能夠正確開啟。 不過，網頁連結可用的所有 [顯示]  選項 (全螢幕、獨立及最基本的 UI) 都只能搭配 Chrome 瀏覽器運作。 
-
-> [!IMPORTANT]
-> 在此文件發行時，有一個已知的 Google 錯誤會防止網頁連結透過 Chrome 以外的瀏覽器在裝置上開啟。 Google 已致力於修正此錯誤。  在 Microsoft 確認過 Google 已發佈其修正後，將會移除此通知。
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選取 [應用程式]   > [所有應用程式]   > [新增]  。

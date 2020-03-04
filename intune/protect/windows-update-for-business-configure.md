@@ -15,12 +15,12 @@ ms.reviewer: mghadial
 ms.suite: ems
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e478402f826809bda4f81315d5a1a4ff6e1a8b88
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
+ms.openlocfilehash: c9245ca028bdb5589df8c76b10560d9130a1108c
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886793"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181716"
 ---
 # <a name="manage-windows-10-software-updates-in-intune"></a>在 Intune 中管理 Windows 10 軟體更新
 
@@ -77,14 +77,14 @@ Windows 10 更新通道支援[範圍標籤](../fundamentals/scope-tags.md)。 �
 
 ### <a name="create-and-assign-update-rings"></a>建立及指派更新通道
 
-1. 登入 [Microsoft 端點管理員系統管理中心]( https://go.microsoft.com/fwlink/?linkid=2109431)。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 
 2. 選取 [裝置]   > [Windows]   > [Windows 10 更新通道]   > [建立]  。
 
 3. 在 [基本]  下，指定名稱、描述 (選擇性)，然後選取 [下一步]  。
-  ![建立更新通道]( ./media/windows-update-for-business-configure/basics-tab.png)
-  
-4. 在 [更新通道設定]  中，設定符合業務需求的設定。 如需可用設定的資訊，請參閱＜Windows 更新設定＞。 設定 [更新]  和 [使用者體驗] 設定之後，請選取 [下一步]  。
+  ![建立更新通道](./media/windows-update-for-business-configure/basics-tab.png)
+
+4. 在 [更新通道設定]  中，設定符合業務需求的設定。 如需可用設定的相關資訊，請參閱 [Windows 更新設定](../protect/windows-update-settings.md)。 設定 [更新]  和 [使用者體驗] 設定之後，請選取 [下一步]  。
 
 5. 若要將標籤套用到更新通道，請在 [範圍標籤]  下，選取 [+ 選取範圍標籤]  以開啟 [選取標籤]  窗格。 選擇一或多個標籤，然後按一下 [選取]  將其新增到更新通道並返回 [範圍標籤]  頁面。
 

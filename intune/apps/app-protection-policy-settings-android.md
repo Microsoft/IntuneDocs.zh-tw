@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/10/2019
+ms.date: 02/28/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 81554f03063269ff6bdca30e23a1ad135a2a1b77
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: deb272aa938b53c34df863e734701e2f410b4740
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77512053"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256419"
 ---
 # <a name="android-app-protection-policy-settings-in-microsoft-intune"></a>Microsoft Intune 的 Android 應用程式保護原則設定
 本文描述 Android 裝置的應用程式防護原則設定。 您可以在 Azure 入口網站的 [設定]  窗格上，為應用程式防護原則[設定](app-protection-policies.md)所述的原則設定。
@@ -49,8 +49,7 @@ ms.locfileid: "77512053"
 | **螢幕擷取和 Google 助理** | 選取 [封鎖]  ，在使用這個應用程式時封鎖裝置的螢幕擷取和 **Google 助理** 功能。 選擇 [允許]  ，也會在搭配使用這個應用程式與工作或學校帳戶時模糊應用程式切換器預覽影像。| **封鎖** |
 | **核准的鍵盤**  | 選取 [需要]  ，然後指定此原則核准的鍵盤清單。 <p>未使用核准鍵盤的使用者會收到提示，必須下載並安裝核准的鍵盤，才能使用受保護的應用程式。 此設定需要應用程式具有 Intune SDK for Android 版本 6.2.0 或更高版本。 | **不需要** |
 | <ul><ui>**選取要核准的鍵盤** | 當針對上一個選項選取 [需要]  時，可以使用這個選項。 選擇 [選取]  以管理可與受此原則保護的應用程式搭配使用的鍵盤和輸入方法清單。 您可以將其他鍵盤新增至清單，並移除任何預設選項。 您必須至少有一個核准的鍵盤，才能儲存設定。 若要新增鍵盤，請指定： <ul><li>**名稱**：識別鍵盤並向使用者顯示的易記名稱。 </li><li>**套件識別碼**：Google Play 商店中的應用程式套件識別碼。 例如，如果應用程式在 Play 商店中的 URL 為 `https://play.google.com/store/details?id=com.contoskeyboard.android.prod`，則套件識別碼為 `com.contosokeyboard.android.prod`。 此套件識別碼會以簡單的連結形式呈現給使用者，以從 Google Play 下載鍵盤。 <p><div class="NOTE"><p>注意</p><p>已指派多項應用程式防護原則的使用者，只能使用所有原則皆通用的核准鍵盤。</p> | |
-| **組織資料通知** | 透過組織帳戶的 OS 通知，以指定要共用多少組織資料。 此原則設定會影響本機裝置和任何連線的裝置，例如穿戴式裝置和智慧型喇叭。 應用程式可能會提供其他控制項來自訂通知行為，或選擇不接受所有值。 從下列項目進行選取： <ul><li>**封鎖**：不要共用通知。</li><ul><li>如果應用程式不支援，則會允許通知。</li></ul><li>**封鎖組織資料**：不要在通知中共用組織資料。 例如，「您有新郵件」；「您有一個會議」。</li><UL><li>如果應用程式不支援，則會封鎖通知。</li></ul><li>**允許**：共用通知中的組織資料</li><p>**注意**：*此設定需要應用程式支援。此時，適用於 Android 4.83.0 或更新版本的 Outlook 將支援此設定。* | **允許**   |
-  
+
 ### <a name="encryption"></a>加密
 | 設定 | 如何使用 | 預設值 |
 |------|------|------|
@@ -66,7 +65,7 @@ ms.locfileid: "77512053"
 |**限制與其他應用程式的 Web 傳輸** | 指定如何從原則受控的應用程式開啟 Web 內容 (HTTP/HTTPS 連結)。 從下列選項進行選擇： <ul><li>**任何應用程式**：允許任何應用程式中的 Web 連結。</li><li>**Intune Managed Browser**：只允許在 Intune Managed Browser 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**Microsoft Edge**：只允許在 Microsoft Edge 中開啟 Web 內容。 此瀏覽器為受原則管理的瀏覽器。</li><li>**非受控瀏覽器**：只允許在 [非受控瀏覽器通訊協定]  設定中定義的非受控瀏覽器中開啟 Web 內容。 Web 內容在目標瀏覽器中將會是非受控。<br>**注意**：需要 Intune 公司入口網站 5.0.4415.0 版或更新版本。</li><br><br>**原則受控的瀏覽器**<br>在 Android 上，如果未安裝 Intune Managed Browser 或 Microsoft Edge，您的終端使用者可以從支援 HTTP/HTTPS 連結的其他原則受控應用程式中進行選擇。<p>如果受控瀏覽器為必要但尚未安裝，則會提示終端使用者安裝 Microsoft Edge。<p>如果原則受控的瀏覽器為必要，則 Android 應用程式連結是由 [允許應用程式將資料傳送至其他應用程式]  原則設定所管理。<p>**Intune 裝置註冊**<br>如果您使用 Intune 管理裝置，請參閱[透過 Microsoft Intune 使用受管理的瀏覽器原則管理網際網路存取](app-configuration-managed-browser.md)。<p>**原則受控的 Microsoft Edge**<br>適用於行動裝置 (iOS/iPadOS 和 Android) 的 Microsoft Edge 瀏覽器支援 Intune 應用程式保護原則。 使用其公司 Azure AD 帳戶登入 Microsoft Edge 瀏覽器應用程式的使用者，將會受到 Intune 的保護。 Microsoft Edge 瀏覽器可整合應用程式 SDK，並支援其所有的資料保護原則，但會防止：<br><ul><li>**另存新檔**：Microsoft Edge 瀏覽器不允許使用者將直接的應用程式內連線新增至雲端儲存體提供者 (例如 OneDrive)。</li><li>**連絡人同步**：Microsoft Edge 瀏覽器不會儲存至原生連絡人清單。</li></ul>**注意︰** *應用程式 SDK 無法判斷目標應用程式是否為瀏覽器。在 Android 裝置上，允許支援 HTTP/HTTPS 意圖的其他 Managed Browser 應用程式。* | **未設定** |
 |<ul><ui>**非受控瀏覽器** | 輸入單一瀏覽器的應用程式識別碼。 來自原則受控應用程式的 Web 內容 (http/https 連結) 將會在指定的瀏覽器中開啟。  Web 內容在目標瀏覽器中將會是非受控。 | **空白** |
 |<ul><ui>**非受控瀏覽器名稱** | 輸入與 [非受控瀏覽器識別碼]  關聯之瀏覽器的應用程式名稱。 若未安裝指定的瀏覽器，將會向使用者顯示此名稱。  | **空白** |
-| **組織資料通知** | 透過組織帳戶的 OS 通知，以指定要共用多少組織資料。 此原則設定會影響本機裝置和任何連線的裝置，例如穿戴式裝置和智慧型喇叭。 應用程式可能會提供其他控制項來自訂通知行為，或選擇不接受所有值。 從下列項目進行選取： <ul><li>**封鎖**：不要共用通知。</li><ul><li>如果應用程式不支援，則會允許通知。</li></ul><li>**封鎖組織資料**：不要在通知中共用組織資料。 例如，「您有新郵件」、「您有一個會議」</li><UL><li>如果應用程式不支援，則會封鎖通知。</li></ul><li>**允許**：共用通知中的組織資料</li><li>**任何應用程式**：不限制與這個應用程式之間的剪下、複製和貼上。</ul> <p>**注意**：*此設定需要應用程式支援。Android 4.95.0 版或更新版本的 Outlook 往後將會支援這項設定，預計於 2019 年 12 月 16 日當週發行。* | **允許**   |
+| **組織資料通知** | 透過組織帳戶的 OS 通知，以指定要共用多少組織資料。 此原則設定會影響本機裝置和任何連線的裝置，例如穿戴式裝置和智慧型喇叭。 應用程式可能會提供其他控制項來自訂通知行為，或選擇不接受所有值。 從下列項目進行選取： <ul><li>**封鎖**：不要共用通知。</li><ul><li>如果應用程式不支援，則會允許通知。</li></ul><li>**封鎖組織資料**：不要在通知中共用組織資料。 例如，「您有新郵件」、「您有一個會議」</li><UL><li>如果應用程式不支援，則會封鎖通知。</li></ul><li>**允許**：共用通知中的組織資料</li></ul> <p>**注意**：*此設定需要應用程式支援。Android 4.95.0 版或更新版本的 Outlook 往後將會支援這項設定，預計於 2019 年 12 月 16 日當週發行。* | **允許**   |
 
 ## <a name="data-transfer-exemptions"></a>資料傳輸豁免
 

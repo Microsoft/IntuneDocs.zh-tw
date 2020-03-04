@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 11/07/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,21 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1b740ed1e16f60b15991f1aa450e623cd20b62ea
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 2471a48a1222448a2a45c7813bbb513cefda5276
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515130"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782013"
 ---
 # <a name="check-point-sandblast-mobile-threat-defense-connector-with-intune"></a>Check Point SandBlast Mobile Threat Defense 連接器與 Intune
 
 您可以根據由 Check Point SandBlast Mobile (與 Microsoft Intune 整合的 Mobile Threat Defense 解決方案) 所進行的風險評量，使用條件式存取來控制行動裝置對公司資源的存取。 風險評估的依據是收集自執行 Check Point SandBlast Mobile 應用程式裝置的遙測。
 
 您可以根據透過 Intune 裝置合規性政策所啟用的 Check Point SandBlast Mobile 風險評量，來設定條件式存取原則，而您可以根據偵測到的威脅，使用它們來允許或封鎖不符合規範的裝置存取公司資源。
+
+> [!NOTE]
+> 此 Mobile Threat Defense 廠商不支援尚未註冊的裝置。
 
 ## <a name="how-do-intune-and-check-point-sandblast-mobile-help-protect-your-company-resources"></a>Intune 和 Check Point SandBlast Mobile 如何協助保護您的公司資源？
 

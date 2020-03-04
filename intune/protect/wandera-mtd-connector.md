@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 06/26/2019
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,12 +15,12 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 3ee253b50ea525f7d156c77a83f486cf990da030
-ms.sourcegitcommit: af384c46ec8d8def6aa32c3b89947748dc6fd28f
+ms.openlocfilehash: f82a64cdb66528e3e1d3a81fd6119c4a99dff504
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2020
-ms.locfileid: "76517451"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782265"
 ---
 # <a name="wandera-mobile-threat-defense-connector-with-intune"></a>Wandera Mobile Threat Defense 與 Intune 的連接器  
 
@@ -32,6 +32,8 @@ ms.locfileid: "76517451"
 
 您可以設定以 Wandera 風險評定為基礎的條件式存取  原則 (透過 Intune 裝置合規性原則所啟用)。 風險評估原則可讓您根據偵測到的威脅，允許或封鎖不符合規範的裝置存取公司資源。  
 
+> [!NOTE]
+> 此 Mobile Threat Defense 廠商不支援尚未註冊的裝置。
 
 ## <a name="how-do-intune-and-wandera-mobile-threat-defense-help-protect-your-company-resources"></a>Intune 與 Wandera Mobile Threat Defense 如何協助保護您的公司資源？  
 

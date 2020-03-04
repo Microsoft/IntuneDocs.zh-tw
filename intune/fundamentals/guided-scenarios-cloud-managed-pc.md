@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/18/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: f78f3696827ebd50084f0e4b012c5f94427eeb35
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: 9ddd59715a0730a52738088700a1f2b9166bfa80
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74164576"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216206"
 ---
 # <a name="guided-scenario---cloud-managed-modern-desktop"></a>引導式案例 - 雲端管理的新式桌面
 
@@ -31,7 +31,7 @@ ms.locfileid: "74164576"
 
 若要在您自己的組織中評估雲端管理的現代化電腦，此引導式案例預先定義基本部署的所有必要設定。 在此引導式案例中，您將會建立一個安全的環境，並在其中嘗試 Intune 裝置管理功能。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 - [將 MDM 授權單位設定為 Intune](~/fundamentals/mdm-authority-set.md#set-mdm-authority-to-intune)：行動裝置管理 (MDM) 授權單位設定會決定您管理裝置的方式。 身為 IT 系統管理員，您必須在使用者可以註冊裝置以進行管理之前，設定 MDM 授權單位。
 - 最低 M365 E3 (或 M365 E5 以獲得最佳安全性)
 - Windows 10 1903 裝置 (已向 Windows Autopilot 註冊以獲得最佳終端使用者體驗)
