@@ -161,6 +161,8 @@
             - name: 應用程式保護原則概觀
               href: app-protection-policy.md
               displayName: app; protection; policy
+            - name: 使用 APP 的資料保護架構
+              href: app-protection-framework.md
             - name: 建立應用程式保護原則
               items:
                 - name: 一般設定
