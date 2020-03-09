@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/05/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 11b339a3e94e60db43e8237d9f3d2c729b48a57d
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: b286e095613c56f2d6fdfa5a2cf2cd1398611f12
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413618"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781841"
 ---
 # <a name="rename-a-device-in-intune"></a>在 Intune 中重新命名裝置
 
@@ -37,7 +37,7 @@ ms.locfileid: "77413618"
 ## <a name="rename-a-device"></a>重新命名裝置
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
-3. 選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [更多]   > [重新命名裝置]  。
+3. 選擇 [裝置]   > [所有裝置]  > 選擇裝置 > [...]   > [重新命名裝置]  。
 4. 在 [重新命名裝置]  刀鋒視窗中，於文字方塊中輸入新名稱。 您可以使用字母、數字和連字號。 名稱必須包含至少一個字母或連字號。
 5. 如果要讓裝置在重新命名之後重新啟動，請選擇 [重新命名後重新啟動]  旁邊的 [是]  。
 6. 選擇 [重新命名]  。

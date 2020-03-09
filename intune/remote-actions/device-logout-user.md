@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 08/27/2018
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6e23f95d169a95244abc8669eb9a19150cff8138
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 279b35f2dd7cd515784e86687b7917914ea9cf8c
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413699"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781903"
 ---
 # <a name="logout-the-current-user-on-intune-managed-iosipados-devices"></a>在 Intune 受控 iOS/iPadOS 裝置上登出目前的使用者
 
@@ -41,9 +41,8 @@ ms.locfileid: "77413699"
 
 ## <a name="how-to-log-out-the-current-user"></a>如何登出目前的使用者
 
-1. 登入 [Microsoft Endpoint Manager 系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選取 [裝置]  。
-4. 在 [裝置和群組]  刀鋒視窗中選擇 [所有裝置]  。
-5. 從您管理的裝置清單中選擇 iOS/iPadOS 裝置，然後選擇 [登出目前的使用者]  裝置遠端動作。
+1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)，然後選取 [裝置]   > [所有裝置]  。
+2. 選擇 iOS/iPadOS 裝置 > [...]   > [登出目前的使用者]  。
 
 ## <a name="next-steps"></a>後續步驟
 

@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 10/21/2019
+ms.date: 02/24/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e1cf0a3d8b30955be8413b376acd223a924be843
-ms.sourcegitcommit: 06dce5c8111592ad774247e86e539dd3128117e5
+ms.openlocfilehash: a0d1574599b9e514d4bb0289b88ad3c55cc24d15
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/30/2019
-ms.locfileid: "75545919"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782252"
 ---
 # <a name="add-mobile-threat-defense-apps-to-unenrolled-devices"></a>將 Mobile Threat Defense 應用程式新增至尚未註冊的裝置
 
@@ -33,21 +33,27 @@ ms.locfileid: "75545919"
 
 您也可以選擇使用 Intune 來新增和部署 Microsoft Authenticator 及 Mobile Threat Defense (MTD) 應用程式。
 
-> [!NOTE] 
-> 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：Better Mobile (Android)、Zimperium (Android、iOS)、Lookout for Work (Android/iOS)。
-> 
-> 針對尚未註冊的裝置，您**不需要 iOS 應用程式設定原則**，來為您搭配 Intune 使用的 iOS 應用程式設定 Mobile Threat Defense。 這是相較於 Intune 註冊裝置的主要差異。 
+> [!NOTE]
+> 此文章適用於所有支援應用程式防護原則的 Mobile Threat Defense 合作夥伴：
+>
+> - Better Mobile (Android、iOS/iPadOS)
+> - Zimperium (Android、iOS/iPadOS)
+> - Lookout for Work (Android、iOS/iPadOS)
+>
+> 針對尚未註冊的裝置，您**不需要 iOS 應用程式設定原則**，來為您搭配 Intune 使用的 iOS 應用程式設定 Mobile Threat Defense。 這是相較於 Intune 註冊裝置的主要差異。
 
 ## <a name="configure-microsoft-authenticator-for-ios-via-intune-optional"></a>透過 Intune 設定適用於 iOS 的 Microsoft Authenticator (選擇性)
+
 使用 Intune 應用程式防護原則搭配 Mobile Threat Defense 時，Intune 會引導使用者安裝、登入，並向 Microsoft Authenticator (iOS) 註冊其裝置。
 
 不過，如果您想要透過 Intune 公司入口網站將應用程式提供給使用者，請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](../apps/store-apps-ios.md) 的指示。 當您完成＜設定應用程式資訊＞  一節時，請使用此 [Microsoft Authenticator - iOS App Store URL](https://itunes.apple.com/us/app/microsoft-authenticator/id983156458?mt=8)。 在最後一個步驟中，請記得[使用 Intune 將應用程式指派給群組](../apps/apps-deploy.md)。
 
-> [!NOTE] 
+> [!NOTE]
 > 針對 iOS 裝置，您需要有 [Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to)，讓使用者可以透過 Azure AD 檢查其身分識別。 Intune 公司入口網站可作為 Android 裝置上的代理程式，讓使用者可以透過 Azure AD 檢查其身分識別。
 
 ## <a name="making-mobile-threat-defense-apps-available-via-intune-optional"></a>透過 Intune 提供 Mobile Threat Defense 應用程式 (選擇性)
-使用 Intune 應用程式防護原則搭配 Mobile Threat Defense 時，Intune 會引導使用者安裝並登入所需的 Mobile Threat Defense 用戶端應用程式。 
+
+使用 Intune 應用程式防護原則搭配 Mobile Threat Defense 時，Intune 會引導使用者安裝並登入所需的 Mobile Threat Defense 用戶端應用程式。
 
 不過，如果您想要透過 Intune 公司入口網站將應用程式提供給使用者，您可以在 [Azure 入口網站](https://portal.azure.com/)中執行以下步驟。 確定您已熟悉下列程序：
 
@@ -55,6 +61,7 @@ ms.locfileid: "75545919"
 - [使用 Intune 指派應用程式](../apps/apps-deploy.md)。
 
 ### <a name="making-lookout-for-work-available-to-end-users"></a>將 Lookout for Work 提供給使用者
+
 - **Android**  
   - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](../apps/store-apps-android.md) 的指示。 當您完成＜設定應用程式資訊＞  一節時，請使用此 [Lookout for Work - Play Store URL](https://play.google.com/store/apps/details?id=com.lookout.enterprise)。
 
@@ -76,11 +83,12 @@ ms.locfileid: "75545919"
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Check Point SandBlast Mobile - App Store URL](https://apps.apple.com/us/app/sandblast-mobile-protect/id1006390797) when completing the **Configure app information** section. -->
 
 ### <a name="making-zimperium-available-to-end-users"></a>將 Zimperium 提供給使用者
+
 - **Android**
   - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](../apps/store-apps-android.md) 的指示。 當您完成＜設定應用程式資訊＞  一節時，請使用此 [Zimperium - Play Store URL](https://play.google.com/store/apps/details?id=com.zimperium.zips&hl=en)。
 - **iOS**
   - 請參閱[將 iOS 市集應用程式新增至 Microsoft Intune](../apps/store-apps-ios.md) 的指示。 當您完成＜設定應用程式資訊＞  一節時，請使用此 [Zimperium - App Store URL](https://itunes.apple.com/us/app/zimperium-zips/id1030924459?mt=8)。
- 
+
 <!-- ### Making Pradeo available to end users
 - **Android**
   - See the instructions for [adding Android store apps to Microsoft Intune](../apps/store-apps-android.md). Use this [Pradeo - Play Store URL](https://play.google.com/store/apps/details?id=net.pradeo.service&hl=en_US) when completing the **Configure app information** section.
@@ -88,9 +96,11 @@ ms.locfileid: "75545919"
 - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Pradeo - App Store URL](https://itunes.apple.com/us/app/pradeo-agent/id547979360?mt=8) when completing the **Configure app information** section. -->
 
-### <a name="making-better-mobile-available-to-end-users"></a>將 Better Mobile 提供給使用者 
+### <a name="making-better-mobile-available-to-end-users"></a>將 Better Mobile 提供給使用者
+
 - **Android**
   - 請參閱[將 Android 市集應用程式新增至 Microsoft Intune](../apps/store-apps-android.md) 的指示。 當您完成＜設定應用程式資訊＞  一節時，請使用此 [Active Shield - Play Store URL](https://play.google.com/store/apps/details?id=com.better.active.shield.enterprise)。
+
 <!-- - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [ActiveShield - App Store URL](https://itunes.apple.com/us/app/activeshield/id980234260?mt=8&uo=4) when completing the **Configure app information** section. -->
 
@@ -108,7 +118,6 @@ ms.locfileid: "75545919"
 - **iOS**
   - See the instructions for [adding iOS store apps to Microsoft Intune](../apps/store-apps-ios.md). Use this [Wandera Mobile - - App Store URL](https://itunes.apple.com/app/wandera/id605469330) when completing the **Configure app information** section. -->
 
-## <a name="next-steps"></a>後續步驟  
+## <a name="next-steps"></a>後續步驟
 
 - [在 Intune 中針對尚未註冊的裝置啟用 Mobile Threat Defense 連接器](~/protect/mtd-enable-unenrolled-devices.md)
-

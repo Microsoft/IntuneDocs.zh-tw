@@ -6,7 +6,7 @@ keywords: ''
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 11/26/2019
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: apps
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure, seoapril2019
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 6faaa800d8dedc53ab20f1dae2c3049132642b7d
-ms.sourcegitcommit: 29f3ba071c9348686d3ad6f3b8864d8557e05b97
+ms.openlocfilehash: 07463f3bcac7d657659ece7fed2c40db53ee2122
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/26/2020
-ms.locfileid: "77609153"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256368"
 ---
 # <a name="how-to-manage-volume-purchased-apps-from-the-microsoft-store-for-business-with-microsoft-intune"></a>如何使用 Microsoft Intune 從商務用 Microsoft Store 管理大量購買的應用程式
 
@@ -51,7 +51,8 @@ ms.locfileid: "77609153"
 - 裝置必須加入 Active Directory Domain Services、Azure AD 或工作場所才能使用此功能。
 - 註冊的裝置必須使用 Windows 10 的 1511 版或更新版本。
 
-此外，從商務用 Microsoft 市集同步處理的相關集合和離線授權應用程式，現在將合併成 UI 中的單一應用程式項目。 來自個別套件的任何部署詳細資料都會移轉到單一項目。 若要在 Azure 入口網站中檢視相關的集合，請選取 [應用程式]  窗格中的 [應用程式授權]  。
+> [!NOTE]
+如果您停用受控裝置上的存放區 (不論是手動、透過原則或群組原則)，線上授權的應用程式將無法安裝。
 
 ## <a name="associate-your-microsoft-store-for-business-account-with-intune"></a>建立您的商務用 Microsoft 網上商店帳戶與 Intune 的關聯
 在 Intune 主控台中啟用同步處理之前，您必須將您的市集帳戶設定為使用 Intune 做為管理工具︰

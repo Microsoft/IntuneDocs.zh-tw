@@ -5,7 +5,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 03/02/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9cc568cbadb683f632ffd2365ab7023cd796f231
-ms.sourcegitcommit: 5ad0ce27a30ee3ef3beefc46d2ee49db6ec0cbe3
-ms.translationtype: MTE75
+ms.openlocfilehash: 1bc811bcac80f8321284ece8d3860efc7164a270
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/30/2020
-ms.locfileid: "76886704"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256317"
 ---
 # <a name="use-and-manage-android-enterprise-devices-with-oemconfig-in-microsoft-intune"></a>在 Microsoft Intune 中透過 OEMConfig 使用和管理 Android Enterprise 裝置
 
@@ -105,7 +105,7 @@ OEMConfig 原則是特殊類型的裝置設定原則，類似[應用程式設定
     > [!TIP]
     > 請參閱 OEM 文件以確保您能夠正確地設定屬性。 這些應用程式屬性是由 OEM 所包含，而非 Intune。 Intune 對屬性或是您所輸入的內容會進行最低限度的驗證。 例如，如果您針對連接埠號碼輸入 `abcd`，設定檔將會直接儲存，並搭配您所設定的值部署到您的裝置。 請確定您輸入的資訊是正確的。
 
-    - **設定設計工具**：當您選取此選項時，系統會為您顯示應用程式結構描述內的可用屬性以供您設定。
+    - **設定設計工具**：當您選取此選項時，系統會向您顯示應用程式結構描述內的可用屬性以供您設定。
 
       - 設定設計工具中的操作功能表會指出有更多選項可用。 例如，操作功能表可能會讓您新增、刪除及重新排列設定。 這些選項是由 OEM 所包含。 請務必閱讀 OEM 應用程式文件，以了解應該如何使用這些選項來建立設定檔。
 
@@ -115,7 +115,7 @@ OEMConfig 原則是特殊類型的裝置設定原則，類似[應用程式設定
 
       - 如果您在設定設計工具中建立空的 (未設定的) 配套，系統會在切換至 JSON 編輯器時加以刪除。
 
-    - **JSON 編輯器**：當您選取此選項時，系統會開啟 JSON 編輯器，其中包含內嵌在應用程式中的完整設定結構描述的範本。 在編輯器中，搭配適用於不同設定的值自訂範本。 如果您使用 [設定設計工具]  來變更值，JSON 編輯器會使用來自 [設定設計工具] 的值覆寫範本。
+    - **JSON 編輯器**：當您選取此選項時，JSON 編輯器即會開啟，並附帶內嵌在應用程式中的完整設定結構描述範本。 在編輯器中，搭配適用於不同設定的值自訂範本。 如果您使用 [設定設計工具]  來變更值，JSON 編輯器會使用來自 [設定設計工具] 的值覆寫範本。
 
       - 如果您更新現有設定檔，JSON 編輯器會顯示最後一次搭配設定檔儲存的設定。
 
@@ -161,7 +161,8 @@ OEMConfig 原則是特殊類型的裝置設定原則，類似[應用程式設定
 | Spectralink - Device | com.spectralink.slnkdevicesettings  |  |
 | Spectralink - Logging | com.spectralink.slnklogger |  |
 | Spectralink - VQO | com.spectralink.slnkvqo |  |
-| HMD Global | com.hmdglobal.app.oemconfig.ironman |  |
+| Seuic | com.seuic.seuicoemconfig | |
+| Unitech Electronics | com.unitech.oemconfig | |
 
 -----------------
 
@@ -169,6 +170,8 @@ OEMConfig 原則是特殊類型的裝置設定原則，類似[應用程式設定
 
 > [!NOTE]
 > OEMConfig 應用程式必須先由 Intune 上架，才能搭配 OEMConfig 設定檔進行設定。 在支援該應用程式之後，您不需要連絡 Microsoft 便能在租用戶中加以設定。 只要依照此頁面上的指示執行即可。
+>
+> 如果 OEMConfig 應用程式的行為不正確，請連絡 OEMConfig 應用程式的開發人員。 Intune 對個別 OEMConfig 應用程式的技術問題概不負責。
 
 ## <a name="next-steps"></a>後續步驟
 

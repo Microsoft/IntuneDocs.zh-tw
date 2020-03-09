@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b593cab8a9a89f895c668b2b49583b73cbfccffa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 45bcabf8c7dc932c9415fbd309bf09f53499fbcc
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515164"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781940"
 ---
 # <a name="set-rules-on-devices-to-allow-access-to-resources-in-your-organization-using-intune"></a>在裝置上設定規則可在您的組織中使用 Intune 存取資源
 
@@ -93,16 +93,13 @@ Intune 也包含一組內建的合規性政策設定。 下列內建政策會在
 
   如果裝置未獲指派合規性政策，則預設會將此裝置視為不符合規範。 如果您搭配合規性政策使用條件式存取，建議您將預設設定變更為 [不符合規範]  。 如果使用者因為未指派政策而不符合規範，[公司入口網站應用程式](../apps/company-portal-app.md)就會顯示 `No compliance policies have been assigned`。
 
-
-> [!NOTE]
-> Intune 已暫時停用 iOS/iPadOS 裝置的增強型越獄偵測。
-
-- **加強的越獄偵測**：啟用時，此設定會使 iOS/iPadOS 裝置更頻繁地存回 Intune。 啟用此屬性會使用裝置的位置服務，並影響電池使用量。 Intune 不會儲存使用者位置資料。
+- **加強的越獄偵測**：啟用時，此設定會造成 iOS/iPadOS 裝置上更頻繁發生越獄裝置狀態。 此設定只會影響以封鎖越獄裝置之合規性政策為目標的裝置。 啟用此屬性會使用裝置的位置服務，並可能影響電池使用量。 Intune 不會儲存使用者的位置資料，此資料只會用來在背景中更頻繁地觸發越獄偵測。 
 
   啟用此設定會要求裝置：
   - 啟用 OS 層級的位置服務。
-  - 允許公司入口網站使用位置服務。
-  - 至少每隔 72 小時對其越獄狀態進行一次評估並回報給 Intune。 否則，會將裝置標示為不符合規範。 您可以透過開啟公司入口網站應用程式，或將裝置移動 500 公尺以上來觸發評估。 如果裝置未在 72 小時內移動 500 公尺，使用者就必須開啟 [公司入口網站] 應用程式來進行加強的越獄評估。
+  - 一律允許公司入口網站使用位置服務。
+
+  您可以透過開啟公司入口網站應用程式，或將裝置實際移動約 500 公尺以上的顯著距離來觸發評估。 在 iOS 13 和更新版上，只要裝置提示使用者繼續允許公司入口網站在背景中使用其位置，此功能會要求使用者選取 [一律允許]。 如果使用者不一律允許位置存取，且有設定此設定的原則，則其裝置會標示為不相容。 請注意，Intune 無法保證每次顯著的位置變更都會執行越獄偵測檢查，因為這取決於裝置當時的網路連線。
 
 - **合規性狀態有效期限 (天)** ：輸入一段期間，裝置要在期間內回報所有收到的合規性政策狀態。 未在此期間內傳回狀態的裝置將被視為不相容。 預設值是 30 天。 最小值是 1 天。
 

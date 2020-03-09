@@ -18,16 +18,16 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 18815fb671e853bc0463fed750d40b80ccb285fb
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
-ms.translationtype: MTE75
+ms.openlocfilehash: 7fbbffb187fc9e9537bf647bc33e3d98879369c3
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74784267"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576056"
 ---
 # <a name="create-an-intune-report-from-the-odata-feed-with-power-bi"></a>使用 Power BI 從 OData 摘要建立 Intune 報表
 
-本文說明如何使用使用者互動式篩選的 Power BI Desktop，來建立 Intune 資料的樹狀圖視覺效果。 例如，您的 CFO 可能會想要知道裝置的整體分佈如何在公司擁有的裝置和個人裝置之間進行比較。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢視公司所擁有或個人擁有的 iOS、Android 和 Windows 裝置數目。
+本文說明如何使用搭配互動式篩選的 Power BI Desktop，以建立 Intune 資料的矩形式樹狀結構圖視覺效果。 例如，財務長可能想要知道公司所擁有裝置與個人裝置的裝置整體分佈比較。 矩形式樹狀結構圖提供裝置類型總數的深入解析。 您可以檢閱公司所擁有或個人擁有的 iOS/iPadOS、Android 和 Windows 裝置數目。
 
 ## <a name="overview-of-creating-the-chart"></a>建立圖表的概觀
 
@@ -43,11 +43,11 @@ ms.locfileid: "74784267"
 
 您在 Power BI 中使用資料表。 資料表包含資料欄位。 每個資料欄位具有資料類型。 欄位只能包含資料類型的資料。 資料類型為數字、文字、日期等等。 Power BI 中的資料表會在您載入模型時，填入來自您租用戶的最近歷程記錄資料。 雖然特定資料會隨時間改變，但除非更新了基礎資料模型，否則資料表結構不會改變。
 
-您可能會因為使用詞彙「實體」  和「資料表」  而感到混淆。 資料模型可透過 OData （開放式資料通訊協定）摘要存取。 在 OData 的世界，Power BI 中稱為資料表的容器被稱為「實體」。 這些詞彙都是指保存您資料的相同東西。 如需 OData 的詳細資訊，請參閱[Odata 總覽](/odata/overview)。
+您可能會因為使用詞彙「實體」  和「資料表」  而感到混淆。 資料模型可以透過 OData (開放式資料通訊協定) 摘要存取。 在 OData 的世界，Power BI 中稱為資料表的容器被稱為「實體」。 這些詞彙都是指保存您資料的相同東西。 如需 OData 的詳細資訊，請參閱 [OData 概觀](/odata/overview)。
 
 ## <a name="install-power-bi-desktop"></a>安裝 Power BI Desktop
 
-安裝最新版本的 Power BI Desktop。 您可以從 [PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop) 下載 Power BI Desktop。
+安裝最新版本的 Power BI Desktop。 您可以從下列位置下載 Power BI Desktop：[PowerBI.microsoft.com](https://powerbi.microsoft.com/desktop)
 
 ## <a name="connect-to-the-odata-feed-for-the-intune-data-warehouse-for-your-tenant"></a>連接到您租用戶之 Intune 資料倉儲的 OData 摘要
 
@@ -58,8 +58,8 @@ ms.locfileid: "74784267"
 2. 選取 [Microsoft Intune - 概觀]  刀鋒視窗右側 [其他工作]  下方的 [資料倉儲] 連結，以開啟 [Intune 資料倉儲]  窗格。
 3. 複製自訂摘要 URL。 例如：`https://fef.tenant.manage.microsoft.com/ReportingService/DataWarehouseFEService?api-version=beta`
 4. 開啟 Power BI Desktop。
-5. 從功能表列中，**選取 [** 檔案] > [**取得資料**] > [ **Odata**摘要]。
-6. 將您從先前步驟複製的自訂摘要 URL 貼入 [ **OData**摘要] 視窗的 [URL] 方塊中。
+5. 從功能表列中，選取 [檔案]   > [取得資料]   > [Odata 摘要]  。
+6. 將前面步驟中複製的自訂摘要 URL 貼入 [OData 摘要]  視窗的 URL 方塊中。
 7. 選取 [基本]  。
 
     ![您租用戶中 Intune 資料倉儲的 OData 摘要](./media/reports-proc-create-with-odata/reports-create-01-odatafeed.png)
@@ -88,15 +88,15 @@ ms.locfileid: "74784267"
 
 ## <a name="create-a-treemap-visualization"></a>建立矩形式樹狀結構圖視覺效果
 
-將階層式資料顯示為方塊中方塊的矩形式樹狀結構圖。 階層的每個分支都是一個方塊，包含顯示子分支的較小方塊。 您可以使用 Power BI desktop 來建立 Intune 租使用者資料的樹狀圖，以顯示裝置製造商類型的相對數量。
+將階層式資料顯示為方塊中方塊的矩形式樹狀結構圖。 階層的每個分支都是一個方塊，包含顯示子分支的較小方塊。 您可以使用 Power BI Desktop 來建立 Intune 租用戶資料的矩形式樹狀結構圖，其顯示裝置製造商類型的相對數量。
 
 ![Power BI 矩形式樹狀結構圖視覺效果](./media/reports-proc-create-with-odata/reports-create-03-treemap.png)
 
-1. 在 [**視覺效果**] 窗格中，尋找並選取 [**樹狀圖**]。 **樹狀圖**圖表將會加入至報表畫布。
-2. 在 [**欄位**] 窗格中，尋找 [`devices`] 資料表。
-3. 展開 [`devices`] 資料表，然後選取 [`manufacturer` 資料] 欄位。
-4. 將 [`manufacturer` 資料] 欄位拖曳至 [報表畫布]，然後放在 [**樹狀圖**] 圖表上。
-5. 將 [`deviceKey` 資料] 欄位從 [`devices`] 資料表拖曳至 [**視覺效果**] 窗格，並將它放在 [在**此處新增資料欄位**] 方塊中的 [**值**] 區段底下。  
+1. 在 [視覺效果]  窗格中，尋找並選取 [矩形式樹狀結構圖]  。 [矩形式樹狀結構圖]  圖表會新增至報表畫布。
+2. 在 [欄位]  窗格中，尋找 `devices` 資料表。
+3. 展開 `devices` 資料表，然後選取 `manufacturer` 資料欄位。
+4. 將 `manufacturer` 資料欄位拖曳到報表畫布，並置放在 [矩形式樹狀結構圖]  圖表上。
+5. 將 `deviceKey` 資料欄位從 `devices` 資料表拖曳到 [視覺效果]  窗格，並置放在 [值]  區段下標示為 [於此處新增資料欄位]  的方塊中。  
 
 您現在已有視覺效果，其可顯示您組織中的裝置製造商分佈。
 
@@ -106,19 +106,19 @@ ms.locfileid: "74784267"
 
 您可以將篩選新增到矩形式樹狀結構圖，以便可以使用您的應用程式回答其他問題。
 
-1. 若要新增篩選，請選取報表畫布，然後選取 [視覺效果]  底下的**交叉分析篩選器圖示** (![具有資料模型和所支援關聯性的矩形式樹狀結構圖](./media/reports-proc-create-with-odata/reports-create-slicer.png))。 空白的交叉分析篩選**器**視覺效果將會出現在畫布上。
-2. 在 [**欄位**] 窗格中，尋找 [`ownerTypes`] 資料表。
-3. 展開 [`ownerTypes`] 資料表，然後選取 [`ownerTypeName` 資料] 欄位。
-4. 將 [`onwerTypeName` 資料] 欄位從 [`ownerTypes`] 資料表拖曳至 [**篩選**] 窗格，並將它放在 [在**此頁面**上標記**新增資料欄位**] 方塊中的 [篩選] 區段底下。  
+1. 若要新增篩選，請選取報表畫布，然後選取 [視覺效果]  底下的**交叉分析篩選器圖示** (![具有資料模型和所支援關聯性的矩形式樹狀結構圖](./media/reports-proc-create-with-odata/reports-create-slicer.png))。 空白的 [交叉分析篩選器]  視覺效果會出現在畫布上。
+2. 在 [欄位]  窗格中，尋找 `ownerTypes` 資料表。
+3. 展開 `ownerTypes` 資料表，然後選取 `ownerTypeName` 資料欄位。
+4. 將 `onwerTypeName` 資料欄位從 `ownerTypes` 資料表拖曳到 [篩選條件]  窗格，並置放在 [此頁面上的篩選]  區段下標示為 [於此處新增資料欄位]  的方塊中。  
 
-   在 [`OwnerTypes`] 資料表下，有一個稱為 `OwnerTypeKey`的資料欄位，其中包含裝置是否為公司擁有或個人的資料。 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
+   在 `OwnerTypes` 資料表下，有一個稱為 `OwnerTypeKey` 的資料欄位，其包含指出裝置為公司擁有還是為個人擁有的資料。 因為您想要在此篩選中顯示易記名稱，所以請尋找 `ownerTypes` 資料表，並將 **ownerTypeName** 拖曳至交叉分析篩選器。 此範例說明資料模型支援資料表之間的關聯性。
 
 ![含有篩選的矩形式樹狀結構圖 - 支援資料表之間的關聯性](./media/reports-proc-create-with-odata/reports-create-08_ownertype.png)
 
 您現在已有互動式篩選，可用來切換公司所擁有的裝置和個人擁有的裝置。 您可使用此篩選來查看分佈變更。
 
-1. 選取交叉分析篩選器中的 [**公司**]，以查看公司擁有的裝置散發。
-2. 選取交叉分析篩選器內的 [**個人**]，以查看個人擁有的裝置。
+1. 選取 [交叉分析篩選器] 內的 [公司]  ，以查看公司所擁有的裝置分佈。
+2. 選取 [交叉分析篩選器] 內的 [個人]  ，以查看個人擁有的裝置。
 
 ## <a name="next-steps"></a>後續步驟
 

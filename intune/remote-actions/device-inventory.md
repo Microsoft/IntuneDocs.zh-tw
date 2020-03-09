@@ -5,7 +5,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 07/26/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: af4270587ab5894d52a7d12b1c2082b7b3298e51
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: df814abf9cdff3eb4d9fbac8183618461b590adb
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413750"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781920"
 ---
 # <a name="see-device-details-in-intune"></a>在 Intune 中查看裝置詳細資料
 
@@ -39,11 +39,16 @@ ms.locfileid: "77413750"
    - [概觀]  會顯示裝置名稱，並列出該裝置的一些重要屬性，包括它是否為「攜帶您自己的裝置」(BYOD) 裝置、簽入時間等。 您可以在裝置上執行下列動作：
       - [淘汰](devices-wipe.md#retire)
       - [抹除](devices-wipe.md#wipe)
+      - [刪除](devices-wipe.md#delete-devices-from-the-intune-portal)
       - [遠端鎖定](device-remote-lock.md)
-      - [同步裝置](device-sync.md)
+      - [同步處理](device-sync.md)
       - [重設密碼](device-passcode-reset.md)
       - [重新啟動](device-restart.md) (僅限 Windows)
       - [全新開始](device-fresh-start.md) (僅限 Windows)
+      - [Autopilot 重設]() (僅限 Windows)
+      - [快速掃描](../configuration/device-restrictions-windows-10.md) (僅限 Windows 10)
+      - [完整掃描](../configuration/device-restrictions-windows-10.md) (僅限 Windows 10)
+       - [重新命名裝置](device-rename.md)
       - 啟動遠端協助工作階段
    - 使用 [內容]  來指派[您所建立的類別](../enrollment/device-group-mapping.md)，以及將裝置的擁有權變更為個人裝置或公司裝置。
    - [硬體]  會包括許多裝置相關的詳細資料，例如裝置識別碼、作業系統與版本、儲存空間，以及更多詳細資料。

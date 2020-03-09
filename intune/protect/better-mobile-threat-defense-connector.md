@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/25/2018
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -15,18 +15,18 @@ ms.technology: ''
 ms.assetid: ''
 search.appverid: MET150
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1a52636a140778f6e78bfe081cda40b36ef2354f
-ms.sourcegitcommit: ebf72b038219904d6e7d20024b107f4aa68f57e6
+ms.openlocfilehash: cbab3aae2e38e1ce7d3c8c526b706d70e0cf2b2a
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "72509647"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781201"
 ---
 # <a name="better-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Better Mobile Threat Defense 連接器
 
 您可以根據由 Better Mobile (與 Microsoft Intune 整合的 Mobile Threat Defense (MTD) 解決方案) 所進行的風險評量，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Better Mobile 應用程式之裝置所收集的遙測來評定的。
 
-您可以根據透過 Intune 裝置相容性政策所啟用的 Better Mobile 風險評量，來設定條件式存取原則，而您可以根據偵測到的威脅，使用它們來允許或封鎖不符合規範的裝置存取公司資源。
+您可以根據透過適用於註冊裝置的 Intune 裝置相容性原則所啟用 Better Mobile 風險評定以設定條件式存取原則，然後使用這些原則，根據所偵測到威脅來允許或封鎖不相容的裝置存取公司資源。 針對未註冊的裝置，您可以使用應用程式保護原則，根據偵測到的威脅來強制執行封鎖或選擇性抹除。
 
 ## <a name="how-do-intune-and-better-mobile-help-protect-your-company-resources"></a>Intune 和 Better Mobile 如何協助保護您的公司資源？
 
@@ -56,7 +56,7 @@ Intune 裝置合規性原則包含以 Better Mobile 風險評定為基礎的 Mob
 
 ![偵測到惡意應用程式後授與存取](./media/better-mobile-threat-defense-connector/better_mobile_maliciousapps_unblocked.png)
 
-### <a name="control-access-based-on-threat-to-network"></a>根據網路威脅來控制存取權
+### <a name="control-access-based-on-threat-to-network"></a>依據對網路的威脅性來控制存取
 
 偵測到**攔截式攻擊**等網路威脅，並根據裝置風險保護 Wi-Fi 網路的存取。
 
@@ -68,7 +68,7 @@ Intune 裝置合規性原則包含以 Better Mobile 風險評定為基礎的 Mob
 
 ![顯示修復後授與存取權的影像](./media/better-mobile-threat-defense-connector/better_mobile_network_wifi_unblocked.png)
 
-### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>根據網路威脅來控制 SharePoint Online 的存取權
+### <a name="control-access-to-sharepoint-online-based-on-threat-to-network"></a>依據對網路的威脅來控制對 SharePoint Online 的存取
 
 偵測到**攔截式攻擊**等網路威脅，並根據裝置風險防止同步處理公司檔案。
 
@@ -86,7 +86,7 @@ Intune 裝置合規性原則包含以 Better Mobile 風險評定為基礎的 Mob
 
 - **iOS 8.0 及更新版本**
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 - Azure Active Directory Premium
 
@@ -105,3 +105,5 @@ Intune 裝置合規性原則包含以 Better Mobile 風險評定為基礎的 Mob
 - [建立 Better Mobile 裝置合規性原則](mtd-device-compliance-policy-create.md)
 
 - [啟用 Better Mobile MTD 連接器](mtd-connector-enable.md)
+
+- [建立 MTD 應用程式保護原則](mtd-app-protection-policy.md) 

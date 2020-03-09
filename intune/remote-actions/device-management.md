@@ -16,12 +16,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure; get-started
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: b780f22fd6823499128a3975f1812a1d1f7c032b
-ms.sourcegitcommit: 51591b862d97904291af7aa53a6eb341b11a761e
+ms.openlocfilehash: 6f5d11cade1e22ca5d306dd1896e8136f9e7c1ed
+ms.sourcegitcommit: a25f556aa9df4fcd9fdacccd12c9029bc6c5fe20
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/17/2020
-ms.locfileid: "77413780"
+ms.lasthandoff: 03/03/2020
+ms.locfileid: "78256385"
 ---
 # <a name="what-is-microsoft-intune-device-management"></a>什麼是 Microsoft Intune 裝置管理？
 
@@ -39,7 +39,7 @@ ms.locfileid: "77413780"
    - [概觀]  會顯示已註冊裝置的視覺化快照集，也會顯示有多少裝置使用不同的平台，包括 Android、iOS/iPadOS 等。
    - [所有裝置]  會顯示您所管理的已註冊裝置清單。
 
-     使用 [匯出]  功能來建立所有裝置的 .csv 清單，增量單位為 10,000 (Internet Explorer) 或 30,000 (Microsoft Edge、Chrome)。
+     使用 [匯出]  功能來建立所有裝置的 .zip 清單，增量單位為 10,000 (Internet Explorer) 或 30,000 (Microsoft Edge、Chrome)。
 
      選取任一裝置來[檢視有關該裝置的其他詳細資料](device-inventory.md)，包括硬體詳細資料、已安裝的應用程式、其合規性原則狀態等。
 
@@ -61,7 +61,7 @@ ms.locfileid: "77413780"
   - [抹除](devices-wipe.md#wipe)
   - [遠端鎖定](device-remote-lock.md)
   - [重設密碼](device-passcode-reset.md)
-  - [停用啟用鎖定](device-activation-lock-bypass.md) (僅限 iOS)
+  - [停用啟用鎖定](device-activation-lock-disable.md) (僅限 iOS)
   - [全新開始](device-fresh-start.md) (僅限 Windows)
   - [遺失模式](device-lost-mode.md) (僅限 iOS)
   - [尋找裝置](device-locate.md) (僅限 iOS)

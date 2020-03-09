@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d6dc10eca80a7d403d0ff44c25d3cfaed85fafa
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: f4a1d0575ce4c46c56fd1b3d2a7526a18a076fcf
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514195"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77576118"
 ---
 # <a name="troubleshoot-conditional-access"></a>條件式存取的疑難排解
 此文章說明您的使用者無法存取使用條件式存取所保護的資源時，或使用者可以存取受保護資源但應該封鎖受保護資源時，該怎麼辦。
@@ -44,7 +44,7 @@ ms.locfileid: "77514195"
 
 - 根據預設，使用者必須獲指派裝置合規性政策。 這可能取決於設定 [將未指派合規性原則的裝置標記為]  的設定，該設定位於 Intune 管理入口網站中的 [裝置合規性]   > [合規性政策設定]  下。
 
-- 如果使用者使用裝置的原生郵件用戶端，而非 Outlook，則必須在裝置上啟用 Exchange ActiveSync。 這在 iOS、Windows Phone 與 Android Knox 裝置都會自動進行。
+- 如果使用者使用裝置的原生郵件用戶端，而非 Outlook，則必須在裝置上啟用 Exchange ActiveSync。 iOS/iPadOS、Windows Phone 與 Android Knox 裝置都會自動進行。
 
 - 針對內部部署 Exchange，必須正確設定您的 Intune Exchange Connector。 如需詳細資訊，請參閱[針對 Microsoft Intune 中的 Exchange Connector 進行疑難排解](troubleshoot-exchange-connector.md)。
 

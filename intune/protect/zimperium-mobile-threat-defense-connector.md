@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 12/29/2017
+ms.date: 02/21/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,18 +18,18 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 9d0fe5634e5af6ef4c6f19e067131f151733c0b5
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 32ace832e44f1cb6d334f69a0c1f03cb41515b2f
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77515232"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77782037"
 ---
 # <a name="zimperium-mobile-threat-defense-connector-with-intune"></a>搭配 Intune 使用的 Zimperium Mobile Threat Defense 連接器
 
 您可以根據由 Zimperium (與 Microsoft Intune 整合的 Mobile Threat Defense (MTD) 解決方案) 所進行的風險評量，使用條件式存取來控制行動裝置對公司資源的存取。 風險是根據從執行 Zimperium 應用程式之裝置所收集的遙測來評定的。
 
-您可以根據透過 Intune 裝置合規性政策所啟用的 Zimperium 風險評量，來設定條件式存取原則。 風險評估原則可讓您根據偵測到的威脅，允許或封鎖不符合規範的裝置存取公司資源。
+您可以根據透過適用於註冊裝置的 Intune 裝置相容性原則所啟用的 Zimperium 風險評定來設定條件式存取原則，然後使用這些原則，以根據所偵測到威脅來允許或封鎖不相容的裝置存取公司資源。 針對未註冊的裝置，您可以使用應用程式保護原則，根據偵測到的威脅來強制執行封鎖或選擇性抹除。
 
 ## <a name="how-do-intune-and-zimperium-help-protect-your-company-resources"></a>Intune 和 Zimperium 如何協助您保護您的公司資源？
 
@@ -108,3 +108,5 @@ Intune 裝置合規性政策包含以 Zimperium 風險評定為基礎的 Zimperi
 - [建立 Zimperium 裝置合規性政策](mtd-device-compliance-policy-create.md)
 
 - [啟用 Zimperium MTD 連接器](mtd-connector-enable.md)
+
+- [建立 MTD 應用程式保護原則](../protect/mtd-app-protection-policy.md)

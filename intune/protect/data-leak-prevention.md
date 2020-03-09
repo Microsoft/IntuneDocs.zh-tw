@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 0d9e61cbe4f6d6e07c61fe182e639e715996f9ee
-ms.sourcegitcommit: c780e9988341a20f94fdeb8672bd13e0b302da93
+ms.openlocfilehash: 7f7a6203fcf641c41192eec8aaa0835939376d54
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77514433"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575928"
 ---
 # <a name="prevent-data-leaks-on-non-managed-devices-using-microsoft-intune"></a>使用 Microsoft Intune 防止資料在非受控裝置上外洩
 
@@ -31,7 +31,7 @@ ms.locfileid: "77514433"
 
 透過 Intune 設定的應用程式保護原則也適用於使用非 Microsoft 裝置管理解決方案進行管理的裝置。 裝置上的個人資料不會受影響；只有公司資料會由 IT 部門管理。 
 
-您可以在執行 Windows、iOS 或 Android 的裝置上，為 Office 行動裝置應用程式設定應用程式保護原則，以保護公司資料。 這些原則可讓您設定原則 (例如以應用程式為基礎的 PIN 或公司資料加密) 及其他進階設定，以限制使用者在受管理及未受管理應用程式間使用剪下、複製、貼上及另存新檔功能的方式。 您也可以從遠端抹除公司資料而無須要求使用者註冊裝置。
+您可以在執行 Windows、iOS/iPadOS 或 Android 的裝置上，為 Office 行動裝置應用程式設定應用程式保護原則，以保護公司資料。 這些原則可讓您設定原則 (例如以應用程式為基礎的 PIN 或公司資料加密) 及其他進階設定，以限制使用者在受管理及未受管理應用程式間使用剪下、複製、貼上及另存新檔功能的方式。 您也可以從遠端抹除公司資料而無須要求使用者註冊裝置。
 
 Intune 應用程式保護原則獨立於裝置管理之外。 不論 Office 行動應用程式應用程式是同時在未受管理和受 Intune 管理裝置上，或是在非 Microsoft MDM 解決方案所管理的裝置上，您都能運用應用程式保護原則加以管理。
 
@@ -42,7 +42,7 @@ Intune 應用程式保護原則獨立於裝置管理之外。 不論 Office 行�
 * 您的公司已可安全地轉換到雲端。
 * 您的公司使用 Office 365 Exchange Online、SharePoint Online、商務用 OneDrive 或 Yammer。
 * 您的公司有 Microsoft 365、Enterprise Mobility + Security (EMS) 或 Azure 資訊安全的授權。
-* 您的公司允許使用者從公司擁有或個人擁有的 Windows、iOS 或 Android 裝置存取公司資料。
+* 您的公司允許使用者從公司擁有或個人擁有的 Windows、iOS/iPadOS 或 Android 裝置存取公司資料。
 * 您的公司不想要求在裝置管理服務中註冊個人擁有的裝置。
 
 ## <a name="action-plan"></a>動作計劃

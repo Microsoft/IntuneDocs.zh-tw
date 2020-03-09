@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 842af9c8fffcb3755c81260739f4949768e75bac
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: e2075ed8328e6a33732e03fbf521d32b2edd6a35
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912670"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575832"
 ---
 # <a name="prepare-line-of-business-apps-for-app-protection-policies"></a>準備應用程式防護原則的企業營運應用程式
 
@@ -103,7 +103,7 @@ Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamari
 |封鎖螢幕擷取 (僅限 Android)|X|X|
 |不註冊裝置的 MAM 支援|X|X|
 |完整抹除應用程式資料|X|X|
-|在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意︰** 對於 iOS，移除管理設定檔時，也會移除應用程式。|X||
+|在多重身分識別案例中選擇性抹除公司和學校資料 <br><br>**注意︰** 若是 iOS/iPadOS，應用程式會隨管理設定檔一併移除。|X||
 |避免「另存新檔」|X||
 |目標應用程式組態 (或透過「MAM 通道」設定應用程式)|X|X|
 |支援多重身分識別|X||
@@ -117,7 +117,7 @@ Intune SDK 開發小組會針對用原生 Android、iOS (Obj-C、Swift)、Xamari
 |需要最低的 Intune SDK for iOS (僅限 iOS)|X|X|
 |SafetyNet 裝置證明 (僅限 Android)|X|X|
 |對應用程式進行威脅掃描 (僅限 Android)|X|X|
-|需要最高 Mobile Threat Defense 廠商裝置風險等級|X||
+|需要 Mobile Threat Defense 廠商裝置的最高風險等級|X||
 |設定組織帳戶的應用程式通知內容|X|X|
 |需要使用核准的鍵盤 (僅限 Android)|X|X|
 |需要應用程式保護原則 (條件式存取)|X||

@@ -17,19 +17,19 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 8d473d29536b4ffdcc221c8cf61c63725bae0fa2
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 699665f93d04801223f2fc6e6536d9b675e75242
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75653898"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181937"
 ---
 # <a name="microsoft-intune-app-sdk-for-android-testing-guide"></a>Microsoft Intune App SDK for Android 測試指南
 
-本指南可協助開發人員測試其受 Intune 管理的 Android 應用程式。  
+本指南可協助開發人員測試受 Intune 管理的 Android 應用程式。  
 
 ## <a name="prerequisite-test-accounts"></a>必要的測試帳戶
-您可以建立具有或不含預先產生之資料的新帳戶。 建立新帳戶：
+您可以建立附有或不含預先產生資料的新帳戶。 建立新帳戶：
 1. 移至 [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) 站台。 
 2. [設定 Intune](../fundamentals/setup-steps.md) 以啟用行動裝置管理 (MDM)。
 3. [建立使用者](../fundamentals/users-add.md)。
@@ -38,7 +38,7 @@ ms.locfileid: "75653898"
 
 
 ## <a name="azure-portal-policy-configuration"></a>Azure 入口網站原則設定
-在 [Azure 入口網站的 Intune 刀鋒視窗](../apps/app-protection-policies.md)中[建立及指派應用程式保護原則](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)。 您也可以在 Intune 分頁中建立及指派[應用程式設定原則](../apps/app-configuration-policies-overview.md)。
+在 [Azure 入口網站的 Intune 刀鋒視窗](../apps/app-protection-policies.md)中[建立及指派應用程式保護原則](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview)。 您也可以在 Intune 刀鋒視窗中建立及指派[應用程式設定原則](../apps/app-configuration-policies-overview.md)。
 
 > [!NOTE]
 > 如果您的應用程式未列於 Azure 入口網站中，您可以在文字方塊中選取 [更多應用程式]  選項並提供套件名稱，透過原則來定位該應用程式。
@@ -54,11 +54,11 @@ ms.locfileid: "75653898"
 1. 將 [需要 PIN 碼才可存取]  與 [需要公司認證以進行存取]  設定為 [是]  。 如需詳細資訊，請參閱 [Microsoft Intune 的 Android 應用程式保護原則設定](../apps/app-protection-policy-settings-android.md#access-requirements)。
 2. 確認下列條件：
     - 應用程式啟動應顯示輸入 PIN 的提示，和/或使用者在公司入口網站註冊期間所使用的生產環境。
-    - 無法顯示有效的登入提示，可能是因為 Android 資訊清單設定不正確，特別是 Azure Active Directory Authentication Library （ADAL）整合（SkipBroker、ClientID 和授權單位）的值。
+    - 無法顯示有效登入提示的原因可能是 Android 資訊清單設定不正確，特別是 Azure Active Directory 驗證程式庫 (ADAL) 整合 (SkipBroker、ClientID 和授權單位) 的值。
     - 若未顯示任何提示字元，可能是因整合的 `MAMActivity` 值不正確。 如需 `MAMActivity` 的詳細資訊，請參閱 [Microsoft Intune App SDK for Android 開發人員指南](app-sdk-android.md)。
 
 > [!NOTE] 
-> 如果先前的測試無法運作，下列測試可能也會失敗。 檢閱 [SDK](app-sdk-android.md##sdk-integration) 與 [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) 整合。
+> 如果前面的測試無法運作，則接下來的測試可能也會失敗。 檢閱 [SDK](app-sdk-android.md#sdk-integration) 與 [ADAL](app-sdk-android.md#configure-azure-active-directory-authentication-library-adal) 整合。
 
 ### <a name="restrict-transferring-and-receiving-data-with-other-apps"></a>限制傳送和接收其他應用程式的資料
 您可以控制公司管理應用程式之間的資料傳輸，如下所示：
@@ -89,7 +89,7 @@ ms.locfileid: "75653898"
 
 1. 將 [應用程式資料加密]  設為 [是]  。
 2. 確認下列條件：
-    - 一般應用程式行為不會受到影響。
+    - 一般的應用程式行為不會受到影響。
 
 ### <a name="prevent-android-backups"></a>禁止 Android 備份
 您可以控制應用程式備份，如下所示：
@@ -108,9 +108,9 @@ ms.locfileid: "75653898"
     - 受管理的內容已從應用程式移除。 如需詳細資訊，請參閱 [Microsoft Intune App SDK for Android 開發人員指南 - 選擇性抹除](app-sdk-android.md#selective-wipe)。
 
 ### <a name="multi-identity-support"></a>多重身分識別支援
-整合[多重身分識別支援](app-sdk-android.md#multi-identity-optional)是高風險的變更，必須先經過徹底測試。 最常見的問題是因為不正確地設定身分識別（內容與威脅層級），以及追蹤檔案（`MAMFileProtectionManager`）所造成。
+整合[多重身分識別支援](app-sdk-android.md#multi-identity-optional)是高風險的變更，必須先經過徹底測試。 最常見的問題是因為身分識別設定不正確 (內容與威脅層級) 與追蹤檔案 (`MAMFileProtectionManager`)。
 
-至少，請確認：
+請至少確認：
 
 - **另存新檔**原則是否正常運作於受控識別。
 - 複製並貼上的限制正確實施 (從受控到個人)。

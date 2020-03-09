@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: adca40b558a75d2c080fe453218f232a37b21daa
-ms.sourcegitcommit: cd90650c339795d44702e9dcd0b9679a7b438bb2
+ms.openlocfilehash: a1eca1f8911e9c6aae3b3725cf15f04d954c5f48
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/20/2020
-ms.locfileid: "77473748"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260311"
 ---
 # <a name="automatically-enroll-iosipados-devices-with-apples-device-enrollment-program"></a>使用 Apple 的裝置註冊計劃來自動註冊 iOS/iPadOS 裝置
 
@@ -41,6 +41,8 @@ DEP 註冊與公司入口網站應用程式的 App Store 版本不相容。 您�
 若要在註冊期間啟用新式驗證，請使用 DEP 設定檔中的 [使用 VPP 安裝公司入口網站]  將應用程式推送至裝置。 如需詳細資訊，請參閱[使用 Apple 的裝置註冊計劃來自動註冊 iOS/iPadOS 裝置](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile)。
 
 若要讓公司入口網站自動更新，並在已向 DEP 註冊的裝置上提供公司入口網站應用程式，請透過 Intune 將公司入口網站應用程式部署為必要的大量採購方案 (VPP) 應用程式，並套用[應用程式設定原則](../apps/app-configuration-policies-use-ios.md)。
+
+附註：在自動註冊裝置期間，當公司入口網站在單一應用程式模式中執行時，若按一下「深入了解」連結，則會因為單一應用程式模式而出現錯誤訊息。 當註冊完成後，且裝置不再處於單一應用程式模式時，您可以在 CP 中查看更多資訊。 
 
 ## <a name="what-is-supervised-mode"></a>何謂受監督模式？
 
@@ -144,7 +146,7 @@ iOS/iPadOS 11 中對非監督式 DEP 裝置的支援已淘汰。 在 iOS/iPadOS 
 5. 針對 [使用者親和性]  ，為具備此設定檔的裝置選擇需要或不需要由指派的使用者來進行註冊。
     - **搭配使用者親和性進行註冊** - 針對屬於使用者的裝置，以及想要使用公司入口網站進行像是安裝應用程式等服務的裝置，選擇此選項。 如果使用 ADFS，而且註冊設定檔將 [不向設定輔助程式驗證，而向公司入口網站驗證]  設定為 [否]  ，則需要 [WS-Trust 1.3 使用者名稱/混合端點](https://technet.microsoft.com/library/adfs2-help-endpoints) [深入了解](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint)。
 
-    - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 針對不會存取本機使用者資料的裝置，請使用此選項。 公司入口網站應用程式之類的應用程式無法運作。
+    - **不搭配使用者親和性進行註冊** - 針對未與任何使用者相關的裝置選擇此選項。 針對不會存取本機使用者資料的裝置，請使用此選項。 公司入口網站應用程式類的應用程式無法運作。
 
 5. 如果您選擇 [搭配使用者親和性進行註冊]  ，則可以讓使用者使用公司入口網站進行驗證，而不是 Apple 設定輔助程式。
 
@@ -248,7 +250,7 @@ iOS/iPadOS 11 中對非監督式 DEP 裝置的支援已淘汰。 在 iOS/iPadOS 
 
 1. 在 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)中，選擇 [裝置]  > [iOS]  > **[iOS 註冊]** > [註冊方案權杖]  > 選擇清單中的權杖 > [裝置]  > [同步]  。![[註冊計劃裝置] 節點與 [同步] 連結的螢幕擷取畫面。](./media/device-enrollment-program-enroll-ios/image06.png)
 
-   為了遵循 Apple 規定的可接受註冊計劃流量，Intune 具有下列限制︰
+   為遵循 Apple 條款內所規定的註冊計劃流量，Intune 具有下列限制︰
    - 完整同步處理每 7 天只能執行一次。 在完整同步期間，Intune 會擷取指派至已連線 Intune 之 Apple MDM 伺服器的序號完整更新清單。 如果從 Intune 入口網站刪除 DEP 裝置，則應該從 DEP 入口網站中的 Apple MDM 伺服器取消指派 DEP 裝置。 如果未解除指派，則在執行完整同步之前，不會將它重新匯入至 Intune。   
    - 同步會每 24 小時自動執行一次。 您也可以按一下 [同步]  按鈕來進行同步 (請勿在 15 分鐘內重複點選)。 所有同步要求都必須在 15 分鐘內完成。 [同步]  按鈕在同步完成前都會處於停用狀態。 此同步會重新整理現有的裝置狀態，以及匯入指派至 Apple MDM 伺服器的新裝置。   
 

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-classic
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 85b6d49f435ec45a2c6a2b81387ea25a1c15299b
-ms.sourcegitcommit: 8d7406b75ef0d75cc2ed03b1a5e5f74ff10b98c0
-ms.translationtype: MTE75
+ms.openlocfilehash: 19ecbc632b924dda297b3692cabf5345b4724b30
+ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/03/2020
-ms.locfileid: "75654068"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77575782"
 ---
 # <a name="reference-for-devices-entities"></a>裝置實體的參考
 
@@ -249,7 +249,7 @@ ms.locfileid: "75654068"
 | rowLastModifiedDateTimeUTC | 在資料倉儲中最後一次修改此裝置的 UTC 日期和時間。                                                                                                       |
 | manufacturer               | 裝置製造商                                                                                                                                                             |
 | 模型                      | 裝置的型號                                                                                                                                                                    |
-| operatingSystem            | 裝置的作業系統。 Windows、iOS 等。                                                                                                                                   |
+| operatingSystem            | 裝置的作業系統。 Windows、iOS/iPadOS 等等。                                                                                                                                   |
 | isDeleted                  | 顯示裝置是否已刪除的二進位檔。                                                                                                                                 |
 | androidSecurityPatchLevel  | Android 安全性修補程式等級                                                                                                                                                           |
 | MEID                       | MEID                                                                                                                                                                                   |
@@ -262,7 +262,7 @@ ms.locfileid: "75654068"
 | IMEI                       | IMEI                                                                                                                                                                                   |
 | cellularTechnology         | 裝置的行動電話通訊技術                                                                                                                                                    |
 | WiFiMacAddress             | Wi-Fi MAC                                                                                                                                                                              |
-| ICCD                       | 整合式電路卡識別碼                                                                                                                                                     |
+| ICCD                       | 積體電路卡識別碼                                                                                                                                                     |
 
 ## <a name="devicepropertyhistories"></a>devicePropertyHistories
 

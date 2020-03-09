@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 06/21/2019
+ms.date: 02/27/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: remote-actions
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 7ff03682ab406b92e3ea7f1e416188119913cc87
-ms.sourcegitcommit: 5881979c45fc973cba382413eaa193d369b8dcf6
+ms.openlocfilehash: b804eccfa6f860c77ab4a1a7f1fe5ae0f5baf101
+ms.sourcegitcommit: 045ca42cad6f86024af9a38a380535f42a6b4bef
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/24/2020
-ms.locfileid: "77569450"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77781827"
 ---
 # <a name="find-the-primary-user-of-an-intune-device"></a>尋找 Intune 裝置的主要使用者
 
@@ -32,7 +32,7 @@ ms.locfileid: "77569450"
 
 1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
 2. 選擇 [裝置]  > 選擇裝置。
-3. 在 [概觀]  頁面上，選擇 [查看更多]  ，您將會看到列出的主要使用者。
+3. 在 [概觀]  頁面中，您可以看到列出的主要使用者。
 
 ## <a name="what-is-the-primary-user"></a>什麼是主要使用者？
 主要使用者屬性可在下列位置，用來將授權的 Intune 使用者對應至其裝置：

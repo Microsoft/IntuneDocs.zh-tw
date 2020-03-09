@@ -5,7 +5,7 @@ keywords: sdk, Xamarin, intune
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 12/04/2019
+ms.date: 02/28/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: developer
@@ -17,12 +17,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 10f3d4c54d9a8fcb797ae3359b1a833ac9080548
-ms.sourcegitcommit: c46b0c2d4507be6a2786a4ea06009b2d5aafef85
-ms.translationtype: MTE75
+ms.openlocfilehash: 183cc5ed233de4a3285cf5cfd3290aead9c1de72
+ms.sourcegitcommit: 9ee2401a2f01373a962749b0728c22385dbcba6d
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2020
-ms.locfileid: "76912694"
+ms.lasthandoff: 02/29/2020
+ms.locfileid: "78181903"
 ---
 # <a name="microsoft-intune-app-sdk-xamarin-bindings"></a>Microsoft Intune App SDK Xamarin 繫結
 
@@ -108,7 +108,7 @@ Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.micros
 強調 Xamarin.iOS 應用程式中 MAM 功能的應用程式範例可在 [GitHub](https://github.com/msintuneappsdk/sample-intune-xamarin-ios) \(英文\) 找到。
 
 > [!NOTE] 
-> 沒有 iOS 的 Remapper。 整合到 Xamarin.Forms 應用程式應該與一般 Xamarin.iOS 專案相同。 
+> 沒有 iOS/iPadOS 的重新對應程式。 整合到 Xamarin.Forms 應用程式應該與一般 Xamarin.iOS 專案相同。 
 
 ## <a name="enabling-intune-app-protection-policies-in-your-android-mobile-app"></a>在 Android 行動應用程式中啟用 Intune 應用程式保護原則
 1. 將 [Microsoft.Intune.MAM.Xamarin.Android NuGet 套件](https://www.nuget.org/packages/Microsoft.Intune.MAM.Xamarin.Android)新增至 Xamarin.Android 專案。
@@ -133,10 +133,10 @@ Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.micros
 > [!NOTE]
 > Remapper 目前會防止在 Xamarin. Android 應用程式中進行偵錯。 建議進行手動整合，以對您的應用程式進行偵錯。
 
-#### <a name="renamed-methodsapp-sdk-androidmdrenamed-methods"></a>[重新命名的方法](app-sdk-android.md#renamed-methods)
+#### <a name="renamed-methods"></a>[重新命名的方法](app-sdk-android.md#renamed-methods)
 在許多情況下，Android 類別中可用的方法已在 MAM 取代類別中被標示為完稿。 在此情況下，MAM 取代類別會提供您應該覆寫且具有類似名稱的方法 (名稱具有 `MAM` 尾碼)。 例如，當衍生自 `MAMActivity`，而不是覆寫 `OnCreate()` 然後呼叫 `base.OnCreate()` 時，`Activity` 必須覆寫 `OnMAMCreate()` 並呼叫 `base.OnMAMCreate()`。
 
-#### <a name="mam-applicationapp-sdk-androidmdmamapplication"></a>[MAM 應用程式](app-sdk-android.md#mamapplication)
+#### <a name="mam-application"></a>[MAM 應用程式](app-sdk-android.md#mamapplication)
 您的應用程式必須定義 `Android.App.Application` 類別。 如果手動整合 MAM，其必須繼承自 `MAMApplication`。 確定您的子類別已正確地使用 `[Application]` 屬性加以裝飾，並覆寫 `(IntPtr, JniHandleOwnership)` 建構函式。
 
 ```csharp
@@ -150,7 +150,7 @@ Intune SDK 依賴 [Active Directory 驗證程式庫 (ADAL)](https://azure.micros
 > [!NOTE]
 > MAM Xamarin 繫結的問題可能導致在偵錯模式部署應用程式時，應用程式損毀。 因應措施就是，`Debuggable=false` 屬性必須新增至 `Application` 類別，而 `android:debuggable="true"` 旗標必須從資訊清單移除 (如果以手動方式設定)。
 
-#### <a name="enable-features-that-require-app-participationapp-sdk-androidmdenable-features-that-require-app-participation"></a>[啟用需要應用程式參與的功能](app-sdk-android.md#enable-features-that-require-app-participation)
+#### <a name="enable-features-that-require-app-participation"></a>[啟用需要應用程式參與的功能](app-sdk-android.md#enable-features-that-require-app-participation)
 範例：判斷應用程式是否需要 PIN
 
 ```csharp
@@ -170,7 +170,7 @@ return info?.PrimaryUser;
 MAMPolicyManager.GetPolicy(currentActivity).GetIsSaveToLocationAllowed(SaveLocation service, String username);
 ```
 
-#### <a name="register-for-notifications-from-the-sdkapp-sdk-androidmdregister-for-notifications-from-the-sdk"></a>[從 SDK 註冊通知](app-sdk-android.md#register-for-notifications-from-the-sdk)
+#### <a name="register-for-notifications-from-the-sdk"></a>[從 SDK 註冊通知](app-sdk-android.md#register-for-notifications-from-the-sdk)
 您的應用程式必須建立 `MAMNotificationReceiver`，並向 `MAMNotificationReceiverRegistry` 進行註冊，才能從 SDK 註冊通知。 這是藉由提供接收者以及想要在 `App.OnMAMCreate` 中接收的通知類型來完成，如下列範例所示：
 
 ```csharp
@@ -185,7 +185,7 @@ public override void OnMAMCreate()
     ...
 ```
 
-#### <a name="mam-enrollment-managerapp-sdk-androidmdmamenrollmentmanager"></a>[MAM 註冊管理員](app-sdk-android.md#mamenrollmentmanager)
+#### <a name="mam-enrollment-manager"></a>[MAM 註冊管理員](app-sdk-android.md#mamenrollmentmanager)
 
 ```csharp
 IMAMEnrollmentManager mgr = MAMComponents.Get<IMAMEnrollmentManager>();

@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: ''
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: e0ed343f652c4afe87273eeaa4a2e35b7669056d
-ms.sourcegitcommit: 637375a390b6e34f9c4415c77b99fe2980bbf554
+ms.openlocfilehash: d26721ff27f380917fec7f4d23c0c5524737a4a3
+ms.sourcegitcommit: fab685b22a010fe231b27a0c5eda34a6f22f4c8d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/10/2020
-ms.locfileid: "75839234"
+ms.lasthandoff: 03/02/2020
+ms.locfileid: "78216162"
 ---
 # <a name="understand-app-protection-policy-delivery-timing"></a>了解應用程式保護原則傳遞時間
 
@@ -38,6 +38,7 @@ ms.locfileid: "75839234"
 |    租用戶未上線    |    等候下一個重試間隔。  使用者的應用程式保護不在使用中。    |    24 小時    |    當您尚未設定 Intune 租用戶時就會發生。    |
 |    使用者未獲授權     |    等候下一個重試間隔。  使用者的應用程式保護不在使用中。     |    12 小時 - 不過，在 Android 裝置上，此間隔需要 Intune APP SDK 5.6.0 版或更新版本。 否則 Andriod 裝置的間隔是 24 小時。   |    當您未針對 Intune 授權使用者時就會發生。    |
 |    使用者未獲指派應用程式保護原則    |    等候下一個重試間隔。  使用者的應用程式保護不在使用中。    |    12 小時        |    當您尚未指派應用程式設定給使用者時就會發生。    |
+|    使用者已指派應用程式保護原則，但應用程式保護原則中未定義應用程式   |    等候下一個重試間隔。  使用者的應用程式保護不在使用中。    |    12 小時        |    當您未將應用程式新增至 [應用程式] 時就會發生此情況。    |
 |    使用者成功註冊 Intune MAM    |    應用程式保護已針對每個原則設定套用。    更新會根據重試間隔發生    |    根據使用者負載所定義的 Intune 服務。    通常是 30 分鐘。     |    當使用者成功向 Intune 服務註冊 MAM 設定時就會發生。    |
 
 > [!NOTE]

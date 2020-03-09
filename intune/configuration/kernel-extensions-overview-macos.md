@@ -6,7 +6,7 @@ keywords: ''
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 01/16/2020
+ms.date: 02/25/2020
 ms.topic: reference
 ms.service: microsoft-intune
 ms.subservice: configuration
@@ -16,14 +16,17 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 1075054f3812e8c40f38e705a440c46ba09fdd0e
-ms.sourcegitcommit: 11cbd2a9d90dea20f6dc1f54f0a6acbeec3a71d6
-ms.translationtype: MTE75
+ms.openlocfilehash: f8a516ce9dda525d5c7a48fcbc2c799471489d0d
+ms.sourcegitcommit: ff254acb94df88afc3e3e7b878084052adf40745
+ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2020
-ms.locfileid: "76146764"
+ms.lasthandoff: 02/25/2020
+ms.locfileid: "77600241"
 ---
 # <a name="add-macos-kernel-extensions-in-intune"></a>在 Intune 中新增 macOS 核心延伸模組
+
+> [!NOTE]
+> 系統延伸模組即將取代 macOS 核心延伸模組。 如需詳細資訊，請參閱[支援提示：在 Intune 中使用系統延伸模組，不要使用 macOS Catalina 10.15 的核心延伸模組](https://techcommunity.microsoft.com/t5/intune-customer-success/support-tip-using-system-extensions-instead-of-kernel-extensions/ba-p/1191413)。
 
 在 macOS 裝置上，您可以在核心層級新增功能。 這些功能可存取一般程式無法存取的作業系統部分。 貴組織可能會有應用程式、裝置功能等等中未提供的特定需求或需求。 
 
