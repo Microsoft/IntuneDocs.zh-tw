@@ -6,7 +6,7 @@ keywords: ''
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/24/2020
+ms.date: 02/26/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: protect
@@ -18,14 +18,14 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: intune-azure
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: 4962b4c75460b129f9df7729b5a34485d8ee0760
-ms.sourcegitcommit: 47c9af81c385c7e893fe5a85eb79cf08e69e6831
+ms.openlocfilehash: 6650c091917ea265783044efd78b19a7e032e6a7
+ms.sourcegitcommit: 5511b4f2b8a3383176a7afe2a22ad5a8d42caf7b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/25/2020
-ms.locfileid: "77576066"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "78169292"
 ---
-# <a name="create-a-conditional-access-policy-for-exchange-on-premises-and-legacy-exchange-online-dedicated"></a>為 Exchange 內部部署及舊版 Exchange Online Dedicated 建立條件式存取原則
+# <a name="configure-exchange-on-premises-access-for-intune"></a>設定 Intune 的 Exchange 內部部署存取
 
 本文將示範如何根據裝置合規性來設定 Exchange 內部部署的條件式存取。
 
@@ -62,10 +62,29 @@ ms.locfileid: "77576066"
 
 ### <a name="support-for-mobile-devices"></a>支援行動裝置
 
-- Windows Phone 8.1 和更新版本
-- iOS/iPadOS 上的原生電子郵件應用程式。
-- EAS 郵件用戶端 (例如 Android 4 或更新版本上的 Gmail)。
-- EAS 郵件用戶端 **Android 工作設定檔裝置：** Android 工作設定檔裝置只支援**工作設定檔**中的 **Gmail** 和 **Nine Work for Android Enterprise**。 若要搭配 Android 工作設定檔使用條件式存取，除了必須部署 Gmail 或 Nine Work for Android Enterprise 應用程式的電子郵件設定檔之外，還必須將那些應用程式部署為必要安裝。
+- **Windows Phone 8.1 和更新版本** - 若要建立條件式存取原則，請參閱[建立條件式存取原則](../protect/create-conditional-access-intune.md)
+- **iOS/iPadOS 的原生電子郵件應用程式** - 若要建立條件式存取原則，請參閱[建立條件式存取原則](../protect/create-conditional-access-intune.md)
+- **Android 4 或更新版本的 EAS 電子郵件用戶端，如 Gmail** - 若要建立條件式存取原則，請參閱[建立條件式存取原則](../protect/create-conditional-access-intune.md)
+
+- **Android 公司設定檔裝置的 EAS 電子郵件用戶端** - Android 公司設定檔裝置只支援 *Gmail* 和 *Nine Work for Android Enterprise*。 若要搭配 Android 公司設定檔使用條件式存取，除了必須部署 *Gmail* 或 *Nine Work for Android Enterprise* 應用程式的電子郵件設定檔之外，還必須將這些應用程式部署為必要安裝。 部署應用程式之後，您可以設定裝置型條件式存取。
+
+#### <a name="to-set-up-conditional-access-for-android-work-profile-devices"></a>設定 Android 公司設定檔裝置的條件式存取
+
+  1. 登入 [Microsoft 端點管理員系統管理中心](https://go.microsoft.com/fwlink/?linkid=2109431)。
+  
+  2. 將 Gmail 或 Nine Work 應用程式部署為必要  。
+
+  3. 選取 [裝置]   > [組態設定檔]   > [建立設定檔]  ，輸入設定檔的**名稱**和**描述**。
+
+  4. 選取 [平台]  中的 [Android 企業]  ，在 [設定檔類型]  中選取 [電子郵件]  。
+
+  5. 設定[電子郵件的設定檔設定](https://docs.microsoft.com/intune/configuration/email-settings-android-enterprise#android-enterprise)。
+
+  6. 當您完成時，請選取 [確定]   > [建立]  儲存變更。
+
+  7. 建立電子郵件設定檔之後，[將其指派給群組](https://docs.microsoft.com/intune/device-profile-assign)。
+
+  8. 設定[裝置型條件式存取](https://docs.microsoft.com/intune/protect/conditional-access-intune-common-ways-use#device-based-conditional-access)。
 
 > [!NOTE]
 > Android 與 iOS/iPadOS 版 Microsoft Outlook 不透過 Exchange 內部部署連接器支援。 若要利用 Azure Active Directory 條件式存取原則與 Intune 應用程式防護原則來保護您內部部署信箱的 iOS/iPadOS 與 Android 版 Outlook，請參閱[使用 Outlook for iOS/iPadOS and Android 的混合式新式驗證](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth)。

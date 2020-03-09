@@ -6,7 +6,7 @@ keywords: ''
 author: ErikjeMS
 ms.author: erikje
 manager: ''
-ms.date: 12/06/2018
+ms.date: 03/03/2020
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.subservice: enrollment
@@ -18,12 +18,12 @@ ms.suite: ems
 search.appverid: MET150
 ms.custom: seodec18
 ms.collection: M365-identity-device-management
-ms.openlocfilehash: ecb043300578e5eba0613b6fa5f0fb249b1e515c
-ms.sourcegitcommit: a66b5916eaab9cb537e483064efc584a6a63a390
+ms.openlocfilehash: ae445597cfd1afc4650c7a900ee335c939adedce
+ms.sourcegitcommit: 6608dc70d01376e0cd90aa620a2fe01337f6a2f1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/07/2020
-ms.locfileid: "75692152"
+ms.lasthandoff: 03/04/2020
+ms.locfileid: "78260175"
 ---
 # <a name="automatically-enroll-android-devices-by-using-samsungs-knox-mobile-enrollment"></a>使用 Samsung Knox Mobile Enrollment 自動註冊 Android 裝置
 
@@ -57,38 +57,44 @@ ms.locfileid: "75692152"
 
 ## <a name="create-mdm-profile"></a>建立 MDM 設定檔
 
-成功註冊您的公司之後，您便可以在 Knox 入口網站中使用下列資訊建立適用於 Microsoft Intune 的 MDM 設定檔。 您可以在 Knox 入口網站中為 Android 和 Android Enterprise 建立 MDM 設定檔。 
+成功註冊您的公司之後，您便可以在 Knox 入口網站中使用下列資訊建立適用於 Microsoft Intune 的 MDM 設定檔。 您可以在 Knox 入口網站中為 Android 和 Android Enterprise 建立 MDM 設定檔。
+- 若要建立 Android MDM 設定檔，請在 Knox 入口網站中選取 [Device Admin] \(裝置系統管理員\)  作為設定檔類型。 
+- 若要建立 Android 企業 MDM 設定檔，請在 Knox 入口網站中選取 [Device Owner] \(裝置擁有者\)  作為設定檔類型。  
 
-### <a name="for-android-enterprise"></a>針對 Android Enterprise
+### <a name="for-android"></a>適用於 Android
 
 | MDM 設定檔欄位| 必要？ | 值 | 
 |-------------------|-----------|-------| 
-|MDM Server URI \(MDM 伺服器 URI\)     | 否        |將此留白。 
-|設定檔名稱       | 是       |輸入您選擇的設定檔名稱。 
-|說明        | 否        |輸入描述設定檔的文字。 
-|MDM Agent APK \(MDM 代理程式 APK\)      | 是       |https://aka.ms/intune_kme_deviceowner 
-|以 Google 裝置擁有者來啟用此應用程式 | 是 | 選擇此選項以註冊於 Android Enterprise。 
-|支援的 MDM      | 是       |Microsoft Intune 
-|保留所有系統應用程式為啟用 | 否 | 選擇這個選項以確保所有應用程式可啟用，並可供設定檔使用。 如果未選擇此選項，則裝置的應用程式系統匣僅會顯示一組有限的系統應用程式。 例如電子郵件應用程式等應用程式仍會保持隱藏。 
-|Custom JSON \(自訂 JSON\)        | 否        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":"輸入 Intune 註冊權杖字串"}。 了解[如何建立註冊設定檔](android-kiosk-enroll.md)。 
-| 新增法律合約 | 否 | 將此留白。 
+|設定檔名稱       | 是       |輸入您選擇的設定檔名稱。 |
+|說明        | 否        |輸入描述設定檔的文字。 |
+|MDM Information (MDM 資訊)     | 是        |選擇 [Server URI not required for my MDM] \(我的 MDM 不需要伺服器 URI\)  。| 
+|MDM Agent APK \(MDM 代理程式 APK\)      | 是       |https://aka.ms/intune_kme_deviceowner| 
+|Custom JSON \(自訂 JSON\)        | 是*        |{"com.google.android.apps.work.clouddpc.EXTRA_ENROLLMENT_TOKEN":"輸入 Intune 註冊權杖字串"}。 瞭解如何為[專用裝置](android-kiosk-enroll.md)和[完全受控裝置](android-fully-managed-enroll.md)建立註冊權杖。 |
+|Skip Setup wizard \(略過設定精靈\)  | 否        |針對使用者選擇此選項以略過標準裝置設定提示。|
+|Allow End User to Cancel Enrollment \(允許使用者取消註冊\) | 否 | 選擇此選項以允許使用者取消 KME。|
+| Privacy Policy, EULAs and Terms of Service (隱私權原則、EULA 和服務條款) | 否 | 將此留白。 |
+| Support contact details (支援連絡人詳細資料) | 是 | 選擇 [Edit] \(編輯\) 以更新連絡人詳細資料 |
+|Associate a Knox license with this profile \(將 Knox 授權與此設定檔相關聯\) | 否 | 將此選項保持未選取。 使用 KME 註冊 Intune 並不需要 Knox 授權。|
 
-### <a name="for-android"></a>適用於 Android
+\* 在 Knox 入口網站中完成設定檔建立時，不需要此欄位。 不過，Intune 必須填入此欄位，才能讓設定檔在 Intune 中成功註冊裝置。
+
+### <a name="for-android-enterprise"></a>針對 Android Enterprise
 
 如需逐步指導方針，請參閱 [Samsung 的建立設定檔](https://docs.samsungknox.com/KME-Getting-Started/Content/create-profiles.htm) \(英文\) 的指示。
 
 | MDM 設定檔欄位| 必要？ | 值 |
 |-------------------|-----------|-------|
-|MDM Server URI \(MDM 伺服器 URI\)     | 否        |將此留白。
-|設定檔名稱       | 是       |輸入您選擇的設定檔名稱。
-|description        | 否        |輸入描述設定檔的文字。
-|MDM Agent APK \(MDM 代理程式 APK\)      | 是       |https://aka.ms/intune_kme
-|以 Google 裝置擁有者來啟用此應用程式 | 否 | 針對 Android，將此選項保持未選取。 此選項僅適用於 Android 企業。
-|Skip Setup wizard \(略過設定精靈\)  | 否        |針對使用者選擇此選項以略過標準裝置設定提示。
-|Allow End User to Cancel Enrollment \(允許使用者取消註冊\) | 否 | 選擇此選項以允許使用者取消 KME。
-|Custom JSON \(自訂 JSON\)        | 否        |將此留白。
-| 新增法律合約 | 否 | 將此留白。
-Associate a Knox license with this profile \(將 Knox 授權與此設定檔相關聯\) | 否 | 將此選項保持未選取。 使用 KME 註冊 Intune 並不需要 Knox 授權。
+|設定檔名稱       | 是       |輸入您選擇的設定檔名稱。|
+|說明        | 否        |輸入描述設定檔的文字。|
+|Pick your MDM (挑選您的 MDM) | 是 | 選擇 [Microsoft Intune]。 |
+|MDM Agent APK \(MDM 代理程式 APK\)      | 是       |https://aka.ms/intune_kme|
+|MDM Server URI \(MDM 伺服器 URI\)     | 否        |將此留白。|
+|Custom JSON Data (自訂 JSON 資料)        | 否        |將此留白。|
+|Dual DAR (雙重 DAR) | 否 | 將此留白。|
+|QR code for enrollment (用於註冊的 QR 代碼) | 否 | 您可以新增 QR 代碼以加速註冊。|
+|System applications (系統應用程式) | 是 | 選擇 [Leave all system apps enabled] \(保留所有系統應用程式為啟用\)  選項以確保所有應用程式可啟用，並可供設定檔使用。 如果未選擇此選項，則裝置的應用程式系統匣僅會顯示一組有限的系統應用程式。 例如電子郵件應用程式等應用程式仍會保持隱藏。 |
+|Privacy Policy, EULAs and Terms of Service (隱私權原則、EULA 和服務條款) | 否 | 將此留白。|
+|公司名稱 | 是 | 此名稱會在裝置註冊期間顯示。 |
 
 ## <a name="add-devices"></a>新增裝置
 
@@ -122,7 +128,7 @@ Associate a Knox license with this profile \(將 Knox 授權與此設定檔相�
 
 ## <a name="frequently-asked-questions"></a>常見問題集
 
-- **裝置擁有者支援：** Intune 支援使用 KME 入口網站註冊專用且完全受控的裝置。 其他 Android Enterprise 裝置擁有者模式將在 Intune 中可用時受支援。
+- 裝置擁有者支援：   - 裝置擁有者支援  Intune 支援使用 KME 入口網站註冊專用且完全受控的裝置。 其他 Android Enterprise 裝置擁有者模式將在 Intune 中可用時受支援。
 
 - **不支援工作設定檔：** KME 是一種企業裝置註冊方法，在 Android 工作設定檔中註冊的裝置可確保工作和個人資料在個人裝置上是分開的。 因此，在 Intune 中不支援使用 KME 將裝置註冊至工作設定檔。
 
